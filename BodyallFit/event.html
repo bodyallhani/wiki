@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>바디올핏 설 이벤트</title>
+  <meta name="description" content="새해에 시작한 3개월이 여름 몸매가 됩니다. 2월 한정: 바디올핏 2주 추가 증정(48,000원 상당)." />
+
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-390KQ62CTL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    // 기본 설정
+    gtag('config', 'G-390KQ62CTL', {
+      send_page_view: true
+    });
+
+    // 버튼 클릭 이벤트(버튼별 구분)
+    function trackCtaClick(label, url) {
+      try {
+        gtag('event', 'cta_click', {
+          event_category: 'CTA',
+          event_label: label,
+          link_url: url
+        });
+      } catch(e) {}
+    }
+  </script>
+
+  <style>
+    :root{
+      --bg:#f4f6fb;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --brand:#1f3b76;
+      --line:#e5e7eb;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 50% 0%, #ffffff 0%, var(--bg) 60%);
+      color:var(--text);
+    }
+    .wrap{
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 20px 16px 36px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px 18px;
+      box-shadow: 0 10px 30px rgba(2,6,23,.06);
+      text-align: center; /* 카드 내용 기본 중앙 정렬 */
+    }
+    
+    /* 뱃지 전용 컨테이너: 좌측 정렬 복원 */
+    .badge-wrap {
+      text-align: left;
+      margin-bottom: 14px;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 8px 12px;
+      border-radius:999px;
+      background: rgba(31,59,118,.08);
+      color: var(--brand);
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    /* 로고 스타일: 제목 아래 배치 및 중앙 정렬 */
+    .logo {
+      width: 60px;
+      height: auto;
+      margin: 10px auto 20px;
+      display: block;
+    }
+
+    h1{
+      margin:0 0 10px;
+      font-size: 34px;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+    .sub{
+      margin:0 0 18px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .hr{height:1px;background:var(--line);margin:16px 0;}
+    .kv{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 6px;
+    }
+    .kv .row{
+      display:flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: #f8fafc;
+      border:1px solid #eef2f7;
+    }
+    .k{color:#334155;font-weight:700;}
+    .v{color:#0f172a;font-weight:800;}
+    .note{
+      margin-top: 12px;
+      color: #64748b;
+      font-size: 13px;
+      line-height: 1.6;
+      text-align: left;
+    }
+    .btns{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    a.btn{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:10px;
+      text-decoration:none;
+      padding: 14px 14px;
+      border-radius: 14px;
+      font-weight: 900;
+      letter-spacing: -0.01em;
+      border:1px solid transparent;
+    }
+    .primary{
+      background: var(--brand);
+      color:#fff;
+    }
+    .ghost{
+      background:#fff;
+      color: var(--brand);
+      border-color: rgba(31,59,118,.25);
+    }
+    .footer{
+      margin-top: 14px;
+      text-align:center;
+      color:#94a3b8;
+      font-size: 12px;
+      line-height:1.6;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="badge-wrap">
+        <div class="badge">바디올핏 2026 설 이벤트</div>
+      </div>
+
+      <h1>설에 시작한 3개월이<br/>여름 몸매가 됩니다.</h1>
+
+      <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png" alt="바디올한의원" class="logo">
+
+      <p class="sub">
+        급하게 빼는 다이어트가 아니라,<br/>
+        <b>여름까지 유지되는 몸</b>을 만드는 기준으로 설계했습니다.
+      </p>
+
+      <div class="hr"></div>
+
+      <div class="kv">
+        <div class="row">
+          <div class="k">이벤트 기간</div>
+          <div class="v">26년 2월 5일 ~ 2월 22일</div>
+        </div>
+        <div class="row">
+          <div class="k">2026 설 혜택</div>
+          <div class="v">바디올핏 2주 추가 증정</div>
+        </div>
+        <div class="row">
+          <div class="k">혜택 가치</div>
+          <div class="v">48,000원 상당</div>
+        </div>
+      </div>
+
+      <p class="note">
+        ※ 할인 대신 ‘기간’을 더 드립니다. (기간 한정/조기 종료될 수 있음)<br/>
+        ※ 프로그램 구성/가격/기준은 아래 페이지에서 확인하실 수 있습니다.
+      </p>
+
+      <div class="btns">
+        <a class="btn primary"
+           href="https://body-all.co.kr/Body-Allfit?utm_source=instagram&utm_medium=social&utm_campaign=2026_newyear&utm_content=program_button"
+           target="_blank" rel="noopener"
+           onclick="trackCtaClick('program_button', this.href)">
+          바디올핏 프로그램 알아보기
+        </a>
+
+        <a class="btn ghost"
+           href="https://bodyallhani.github.io/Body_allFit/intake.html?utm_source=instagram&utm_medium=social&utm_campaign=2026_newyear&utm_content=start_button"
+           target="_blank" rel="noopener"
+           onclick="trackCtaClick('start_button', this.href)">
+          바디올핏 시작하기
+        </a>
+      </div>
+
+      <div class="footer">
+        바디올한의원 · BODYALL FIT PROGRAM
+      </div>
+    </section>
+  </main>
+</body>
+</html>

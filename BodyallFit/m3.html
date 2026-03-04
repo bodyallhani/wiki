@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>바디올핏 결제정보 입력</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Noto Sans KR", sans-serif;
+      background: #f1f3f4;
+      color: #202124;
+    }
+    .card {
+      max-width: 520px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px 18px 24px;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3);
+    }
+    h1 {
+      font-size: 1.2rem;
+      margin: 0 0 4px;
+    }
+    .subtitle {
+      font-size: 0.9rem;
+      color: #5f6368;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .field {
+      margin: 14px 0 20px;
+    }
+    .label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .required {
+      color: #d93025;
+      margin-left: 3px;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 4px;
+      border: 1px solid #dadce0;
+      font-size: 0.95rem;
+    }
+    input::placeholder,
+    textarea::placeholder {
+      font-size: 0.85rem;
+      color: #80868b;
+    }
+    textarea {
+      min-height: 60px;
+      resize: vertical;
+    }
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: #1a73e8;
+      box-shadow: 0 0 0 1px rgba(26,115,232,0.2);
+    }
+    .inline-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      font-size: 0.85rem;
+      margin-top: 4px;
+    }
+    .inline-options label {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .section-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin: 18px 0 6px;
+      padding-top: 6px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .small-hint {
+      font-size: 0.78rem;
+      color: #80868b;
+      margin-top: 2px;
+      line-height: 1.4;
+    }
+    .consent-box {
+      font-size: 0.8rem;
+      background: #eef3ff;
+      padding: 8px;
+      border-radius: 6px;
+      margin-top: 6px;
+      line-height: 1.5;
+    }
+    .consent-row {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+    }
+    button {
+      width: 100%;
+      margin-top: 16px;
+      padding: 10px 0;
+      border-radius: 6px;
+      border: none;
+      background: #1a73e8;
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:disabled {
+      opacity: 0.6;
+      cursor: default;
+    }
+    .hint {
+      font-size: 0.8rem;
+      color: #5f6368;
+      margin-top: 10px;
+      text-align: left;
+      line-height: 1.5;
+    }
+    .bottom-space {
+      height: 110px;
+    }
+    .hidden {
+      display: none;
+    }
+    .rrn-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .rrn-row input {
+      width: 100%;
+    }
+    .rrn-dash {
+      font-size: 1.1rem;
+      padding-top: 2px;
+    }
+
+    .image-wrapper {
+      text-align: center;
+      margin: 8px 0 10px;
+    }
+    .image-wrapper img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .field-desc {
+      font-size: 0.82rem;
+      color: #5f6368;
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+    .options-block label {
+      display: block;
+      font-size: 0.86rem;
+      margin-bottom: 4px;
+      cursor: pointer;
+    }
+    .options-block strong {
+      display: block;
+      margin: 8px 0 4px;
+      font-size: 0.9rem;
+    }
+    .highlight-box {
+      margin-top: 10px;
+      padding: 10px 10px;
+      border-radius: 6px;
+      border-left: 4px solid #d93025;
+      background: #fde7e7;
+      font-size: 0.8rem;
+      line-height: 1.5;
+    }
+    .total-amount {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #202124;
+    }
+    .total-amount span {
+      color: #d93025;
+    }
+    .error-text {
+      font-size: 0.78rem;
+      color: #d93025;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>바디올핏 결제정보 입력</h1>
+    <div class="subtitle">
+      현재까지의 상담내용을 토대로,<br />
+      결제 및 택배 발송에 필요한 정보를 입력해주시면 됩니다.
+    </div>
+
+    <form id="form3">
+      <!-- 1. 기본 정보 -->
+      <div class="section-title">1. 기본 정보</div>
+
+      <div class="field">
+        <div class="label">성함 <span class="required">*</span></div>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="실명 필수* 예: 장원영"
+        />
+      </div>
+
+      <div class="field">
+        <div class="label">주민등록번호 <span class="required">*</span></div>
+        <div class="rrn-row">
+          <input
+            type="tel"
+            id="rrn1_view"
+            inputmode="numeric"
+            maxlength="6"
+            placeholder="앞 6자리 (예: 960101)"
+          />
+          <span class="rrn-dash">-</span>
+          <input
+            type="text"
+            id="rrn2_view"
+            inputmode="numeric"
+            autocomplete="off"
+            placeholder="뒤 7자리"
+          />
+        </div>
+        <div class="small-hint">
+          <em>주민등록번호는, <strong>환자차트 작성</strong>과 <strong>바디올핏 처방을 위한 필수정보</strong>로만 쓰이게 됩니다.</em>
+        </div>
+        <div id="rrn2Error" class="error-text"></div>
+        <input type="hidden" id="rrn1" name="rrn1" />
+        <input type="hidden" id="rrn2" name="rrn2" />
+      </div>
+
+      <!-- 2. 택배 수령 정보 -->
+      <div class="section-title">2. 택배 수령 정보</div>
+
+      <div class="field">
+        <div class="label">수령인 이름 <span class="required">*</span></div>
+        <input
+          type="text"
+          id="ship_name"
+          name="ship_name"
+          required
+          placeholder="예: 장원영"
+        />
+      </div>
+
+      <div class="field">
+        <div class="label">수령인 연락처 <span class="required">*</span></div>
+        <input
+          type="tel"
+          id="ship_phone"
+          name="ship_phone"
+          inputmode="numeric"
+          pattern="\d*"
+          required
+          placeholder="예: 01012345678 (하이픈 없이)"
+        />
+      </div>
+
+      <div class="field">
+        <div class="label">택배 수령 주소 <span class="required">*</span></div>
+        <textarea
+          id="ship_address"
+          name="ship_address"
+          required
+          placeholder="예: (우편번호) 수원시 XX구 XX로 00, 000동 000호"
+        ></textarea>
+      </div>
+
+      <!-- 3. 결제 정보 -->
+      <div class="section-title">3. 결제 정보</div>
+
+      <div class="field">
+        <div class="image-wrapper">
+          <img
+            id="img3"
+            src="img3.jpg"
+            alt="바디올핏 프로그램 및 이벤트 가격 안내"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="label">
+          희망 다이어트 프로그램을 선택해주세요. <span class="required">*</span>
+        </div>
+        <div class="field-desc">
+          중복 선택 가능합니다.<br />
+          선택 즉시 아래에서 <strong>예상금액</strong>을 확인하실 수 있습니다.
+        </div>
+
+        <div class="options-block" id="programOptions">
+          <strong>★ 다이어트 프로그램</strong>
+          <label>
+            <input
+              type="checkbox"
+              name="program"
+              value="4주(2+1)"
+            />4주 프로그램 (바디올핏 3통 2+1) – 기간한정가 98,000원 (32%↓)
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="program"
+              value="8주(4+2)"
+            />8주 프로그램 (바디올핏 6통 4+2) – 기간한정가 187,000원 (35%↓)
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="program"
+              value="12주(8+3)"
+            />12주 프로그램 (바디올핏 11통 8+3) – 기간한정가 317,000원 (40%↓)
+          </label>
+
+          <strong>☆ 요요방지 프로그램 (6개월)</strong>
+          <label>
+            <input
+              type="checkbox"
+              name="program"
+              value="요요2x(16+4)"
+            />Double(2x) 요요방지 – 바디올핏 20통(16+4) / 547,000원 (43%↓)
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="program"
+              value="요요3x(24+5)"
+            />Triplet(3x) 요요방지 – 바디올핏 29통(24+5) / 752,000원 (46%↓)
+          </label>
+
+          <strong>보조: 장해독환</strong>
+          <label>
+            <input
+              type="checkbox"
+              name="program"
+              value="장해독1달(1통)"
+            />장해독환 1달 1통 (프로그램 추가 시 10,000원 → 10,000원)
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="program"
+              value="장해독3달(3통)"
+            />장해독환 3달 3통 (프로그램 추가 시 30,000원 → 20,000원)
+          </label>
+        </div>
+
+        <div class="highlight-box">
+          <strong>[처방 구매 시 필독사항]</strong><br /><br />
+          비대면의 경우,<br />
+          <strong>체험 프로그램, 장해독환 단독</strong>은 처방이 불가합니다. (대면만 가능)<br /><br />
+          다이어트 프로그램 중<br />
+          <strong>4·8주 프로그램</strong>은 4,000원의 택배비가 추가되며,<br />
+          <strong>12주 프로그램, 요요방지 프로그램</strong>은 택배비가 없습니다.
+        </div>
+
+        <div class="total-amount">
+          총 결제 예상금액: <span id="totalAmountText">0원</span>
+        </div>
+        <input type="hidden" id="total_amount" name="total_amount" value="0" />
+      </div>
+
+      <div class="field">
+        <div class="label">결제 방식 <span class="required">*</span></div>
+        <div class="inline-options">
+          <label><input type="radio" name="payment_method" value="카드 결제" required /> 카드 결제</label>
+          <label><input type="radio" name="payment_method" value="계좌이체" /> 계좌이체</label>
+        </div>
+        <div class="small-hint">
+          계좌이체를 선택하시면, 아래에 입금자명 및 현금영수증 정보를 입력해주시면 됩니다.
+        </div>
+      </div>
+
+      <div id="bankBlock" class="hidden">
+        <div class="field">
+          <div class="label">입금자명</div>
+          <input
+            type="text"
+            id="depositor_name"
+            name="depositor_name"
+            placeholder="실제 송금자 이름을 적어주세요."
+          />
+        </div>
+
+        <div class="field">
+          <div class="label">현금영수증 정보</div>
+          <div class="small-hint">
+            국세청 기준에 따라 현금영수증이 발행됩니다.<br />
+            (비워두시면, 알려주신 연락처로 현금영수증 발행됩니다)
+          </div>
+          <div class="field" style="margin-top:10px;">
+            <div class="label" style="font-weight:500; font-size:0.85rem;">현금영수증 종류</div>
+            <div class="inline-options">
+              <label><input type="radio" name="receipt_type" value="휴대폰 번호" /> 휴대폰 번호</label>
+              <label><input type="radio" name="receipt_type" value="사업자 번호" /> 사업자 번호</label>
+            </div>
+          </div>
+          <div class="field" style="margin-top:10px;">
+            <div class="label" style="font-weight:500; font-size:0.85rem;">번호 입력 (선택)</div>
+            <input
+              type="tel"
+              id="receipt_value"
+              name="receipt_value"
+              inputmode="numeric"
+              pattern="\d*"
+              placeholder="예: 01012345678 또는 1234567890"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- 개인정보 동의 -->
+      <div class="field">
+        <div class="label">개인정보 수집·이용 동의 <span class="required">*</span></div>
+        <div class="consent-box">
+          수집 항목: 성명, 연락처, 주민등록번호, 주소, 결제 및 배송 정보<br />
+          이용 목적: 바디올핏 처방 및 결제, 택배 발송, 세무 신고를 위한 현금영수증 발급 등<br />
+          보유 기간: 관련 법령에서 정한 기간 동안 보관 후 파기<br />
+          이미 이전 단계에서 동의하신 내용을 바탕으로 진행되며,<br />
+          추가적인 활용은 위 목적에 한정됩니다.
+        </div>
+        <div class="consent-row">
+          <input type="checkbox" id="final_consent" />
+          <label for="final_consent"><strong>위 내용에 동의합니다.</strong></label>
+        </div>
+      </div>
+
+      <input type="hidden" name="formType" value="3차" />
+      <input type="hidden" name="visit_mode" value="비대면" />
+      <input type="hidden" name="consent" value="동의함" />
+
+      <button type="submit" id="submitBtn3">완료하기</button>
+
+      <div class="hint">
+        ※ 잘못 입력된 내용이 없는지 제출 전 다시 한 번 확인해주세요.<br>
+        ※ [완료하기] 버튼을 누르시고, <strong>카톡으로 '설문 완료'</strong>라고 보내주세요.<br>
+        ※ 해당 설문까지 완료되면, 결제를 진행후 택배배송이 시작됩니다.
+      </div>
+
+      <div class="bottom-space"></div>
+    </form>
+  </div>
+
+  <script>
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzlKD52BulhyKf7fo_fZYGtNv2tYXcPCQcBTtYHKQObwoRMCaHPZt2NI8D1bPwqJRhTow/exec";
+    const KAKAO_URL  = "https://pf.kakao.com/_wdtXK/chat";
+
+    document.querySelectorAll('input[name="payment_method"]').forEach(function(radio) {
+      radio.addEventListener("change", function() {
+        const bankBlock = document.getElementById("bankBlock");
+        if (this.value === "계좌이체") {
+          bankBlock.classList.remove("hidden");
+        } else {
+          bankBlock.classList.add("hidden");
+        }
+      });
+    });
+
+    function onlyDigits(value, maxLen) {
+      const digits = (value || "").replace(/\D/g, "");
+      return maxLen ? digits.slice(0, maxLen) : digits;
+    }
+
+    const rrn1View   = document.getElementById("rrn1_view");
+    const rrn2View   = document.getElementById("rrn2_view");
+    const rrn1Hidden = document.getElementById("rrn1");
+    const rrn2Hidden = document.getElementById("rrn2");
+    const rrn2Error  = document.getElementById("rrn2Error");
+    const finalConsent = document.getElementById("final_consent");
+
+    rrn1View.addEventListener("input", function() {
+      this.value = onlyDigits(this.value, 6);
+    });
+
+    // 주민번호 뒷자리: 모바일 호환 input 기반 마스킹
+    let rrn2Real = "";
+
+    function maskDuringInput(digits) {
+      if (!digits) return "";
+      if (digits.length === 1) return digits; // 첫 자리만 보이게
+      const first = digits[0];
+      const last  = digits[digits.length - 1];
+      const middleMask = "*".repeat(digits.length - 2);
+      return first + middleMask + last;
+    }
+
+    function maskOnBlur(digits) {
+      if (!digits) return "";
+      return digits[0] + "*".repeat(digits.length - 1);
+    }
+
+    rrn2View.addEventListener("input", function(e) {
+      const inputType = e.inputType;
+      const data = e.data;
+
+      if (inputType === "deleteContentBackward" || inputType === "deleteContentForward") {
+        rrn2Real = rrn2Real.slice(0, -1);
+      } else if (inputType === "insertText" || inputType === "insertCompositionText") {
+        if (data && /\d/.test(data) && rrn2Real.length < 7) {
+          rrn2Real += data;
+        }
+      } else if (inputType === "insertFromPaste" || inputType === "insertFromDrop") {
+        const digits = (rrn2View.value || "").replace(/\D/g, "").slice(0, 7);
+        rrn2Real = digits;
+      } else {
+        const digits = (rrn2View.value || "").replace(/\D/g, "").slice(0, 7);
+        rrn2Real = digits;
+      }
+
+      rrn2View.value   = maskDuringInput(rrn2Real);
+      rrn2Hidden.value = rrn2Real;
+
+      if (!rrn2Real) {
+        rrn2Error.textContent = "";
+        rrn2View.style.borderColor = "#dadce0";
+      } else if (rrn2Real.length <= 7) {
+        rrn2Error.textContent = "";
+        rrn2View.style.borderColor = "#dadce0";
+      }
+    });
+
+    rrn2View.addEventListener("blur", function() {
+      if (!rrn2Real) {
+        rrn2View.value = "";
+        rrn2Hidden.value = "";
+        return;
+      }
+      rrn2View.value   = maskOnBlur(rrn2Real);
+      rrn2Hidden.value = rrn2Real;
+
+      if (rrn2Real.length !== 7) {
+        rrn2Error.textContent = "주민등록번호 뒷자리를 형식에 맞게 다시 적어주세요.";
+        rrn2View.style.borderColor = "#d93025";
+      }
+    });
+
+    rrn2View.addEventListener("focus", function() {
+      rrn2View.style.borderColor = "#dadce0";
+      rrn2Error.textContent = "";
+      rrn2View.value = maskDuringInput(rrn2Real);
+    });
+
+    rrn2View.addEventListener("paste", function(e) {
+      e.preventDefault();
+    });
+    rrn2View.addEventListener("drop", function(e) {
+      e.preventDefault();
+    });
+
+    // ▶ 주민번호 유효성 검사: 길이 + 날짜 + 7번째 자리(성별/세대 코드)만 검사, 체크섬은 제외
+    function isValidRRN(rrn1, rrn2) {
+      if (rrn1.length !== 6 || rrn2.length !== 7) return false;
+      const rrn = rrn1 + rrn2;
+      if (!/^\d{13}$/.test(rrn)) return false;
+
+      const yy = parseInt(rrn.substr(0, 2), 10);
+      const mm = parseInt(rrn.substr(2, 2), 10);
+      const dd = parseInt(rrn.substr(4, 2), 10);
+      const s7 = parseInt(rrn.charAt(6), 10);
+
+      let year;
+      if ([1,2,5,6].includes(s7)) {
+        year = 1900 + yy;
+      } else if ([3,4,7,8].includes(s7)) {
+        year = 2000 + yy;
+      } else {
+        return false; // 잘못된 성별/세대 코드
+      }
+
+      if (mm < 1 || mm > 12) return false;
+      const date = new Date(year, mm - 1, dd);
+      if (
+        date.getFullYear() !== year ||
+        date.getMonth() !== mm - 1 ||
+        date.getDate() !== dd
+      ) {
+        return false; // 존재할 수 없는 날짜
+      }
+
+      // 체크섬 검사는 제거 → 형식만 검사
+      return true;
+    }
+
+    (function setupProgramCalc() {
+      const programContainer = document.getElementById("programOptions");
+      const totalAmountText = document.getElementById("totalAmountText");
+      const totalAmountInput = document.getElementById("total_amount");
+
+      function getCheckedPrograms() {
+        const nodes = programContainer.querySelectorAll('input[name="program"]:checked');
+        return Array.from(nodes).map(n => n.value);
+      }
+
+      function validateProgramSelection(programArr) {
+        if (!programArr.length) {
+          totalAmountText.textContent = "0원";
+          totalAmountInput.value = "0";
+          return false;
+        }
+        const mainPrograms = programArr.filter(v =>
+          v.startsWith("4주(") ||
+          v.startsWith("8주(") ||
+          v.startsWith("12주(") ||
+          v.startsWith("요요2x") ||
+          v.startsWith("요요3x")
+        );
+        const detox = programArr.filter(v =>
+          v.startsWith("장해독1달") || v.startsWith("장해독3달")
+        );
+        if (detox.length > 0 && mainPrograms.length === 0) {
+          alert("장해독환은 다이어트 프로그램과 함께만 처방 가능합니다.\n4·8·12주 또는 요요방지 프로그램을 함께 선택해주세요.");
+          return false;
+        }
+        return true;
+      }
+
+      function calculateTotal(programArr) {
+        let total = 0;
+
+        programArr.forEach(v => {
+          if (v.startsWith("4주("))          total += 98000;
+          else if (v.startsWith("8주("))    total += 187000;
+          else if (v.startsWith("12주("))   total += 317000;
+          else if (v.startsWith("요요2x"))  total += 547000;
+          else if (v.startsWith("요요3x"))  total += 752000;
+          else if (v.startsWith("장해독1달")) total += 10000;
+          else if (v.startsWith("장해독3달")) total += 20000;
+        });
+
+        const has4or8 = programArr.some(v =>
+          v.startsWith("4주(") || v.startsWith("8주(")
+        );
+        const hasFreeShip = programArr.some(v =>
+          v.startsWith("12주(") || v.startsWith("요요2x") || v.startsWith("요요3x")
+        );
+
+        if (has4or8 && !hasFreeShip) {
+          total += 4000;
+        }
+        return total;
+      }
+
+      function updateTotal() {
+        const programArr = getCheckedPrograms();
+        if (!validateProgramSelection(programArr)) {
+          return;
+        }
+        if (!programArr.length) {
+          totalAmountText.textContent = "0원";
+          totalAmountInput.value = "0";
+          return;
+        }
+        const total = calculateTotal(programArr);
+        totalAmountText.textContent = total.toLocaleString("ko-KR") + "원";
+        totalAmountInput.value = String(total);
+      }
+
+      programContainer.addEventListener("change", updateTotal);
+    })();
+
+    document.getElementById("form3").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const form = document.getElementById("form3");
+      const btn  = document.getElementById("submitBtn3");
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      // 개인정보 동의 체크
+      if (!finalConsent.checked) {
+        alert("개인정보 수집·이용에 동의해주셔야 합니다.");
+        finalConsent.focus();
+        return;
+      }
+
+      const rrn1Val = onlyDigits(rrn1View.value, 6);
+      if (rrn1Val.length !== 6) {
+        rrn1View.focus();
+        alert("주민등록번호 앞 6자리를 정확히 입력해주세요.");
+        return;
+      }
+
+      if (!rrn2Real || rrn2Real.length !== 7) {
+        rrn2Error.textContent = "주민등록번호 뒷자리를 형식에 맞게 다시 적어주세요.";
+        rrn2View.style.borderColor = "#d93025";
+        rrn2View.focus();
+        return;
+      }
+
+      const rrn2Val = rrn2Real;
+
+      if (!isValidRRN(rrn1Val, rrn2Val)) {
+        rrn2Error.textContent = "실제 발급 형식과 다른 주민등록번호입니다. 다시 확인해주세요.";
+        rrn2View.style.borderColor = "#d93025";
+        rrn2View.focus();
+        return;
+      }
+
+      rrn2Error.textContent = "";
+      rrn2View.style.borderColor = "#dadce0";
+
+      rrn1Hidden.value = rrn1Val;
+      rrn2Hidden.value = rrn2Val;
+
+      const programNodes = document.querySelectorAll('input[name="program"]:checked');
+      const programArr = Array.from(programNodes).map(n => n.value);
+      if (!programArr.length) {
+        alert("희망하시는 프로그램을 최소 1개 이상 선택해주세요.");
+        return;
+      }
+
+      const mainPrograms = programArr.filter(v =>
+        v.startsWith("4주(") ||
+        v.startsWith("8주(") ||
+        v.startsWith("12주(") ||
+        v.startsWith("요요2x") ||
+        v.startsWith("요요3x")
+      );
+      const detox = programArr.filter(v =>
+        v.startsWith("장해독1달") || v.startsWith("장해독3달")
+      );
+      if (detox.length > 0 && mainPrograms.length === 0) {
+        alert("장해독환은 다이어트 프로그램과 함께만 처방 가능합니다.\n4·8·12주 또는 요요방지 프로그램을 함께 선택해주세요.");
+        return;
+      }
+
+      const paymentSelected = document.querySelector('input[name="payment_method"]:checked');
+      if (!paymentSelected) {
+        alert("결제 방식을 선택해주세요.");
+        return;
+      }
+
+      const name        = document.getElementById("name").value.trim();
+      const ship_name   = document.getElementById("ship_name").value.trim();
+      const ship_phone  = document.getElementById("ship_phone").value.trim();
+      const ship_address= document.getElementById("ship_address").value.trim();
+      const payment_method = paymentSelected.value;
+      const depositor_name = (document.getElementById("depositor_name").value || "").trim();
+      const receipt_type   = (document.querySelector('input[name="receipt_type"]:checked') || {}).value || "";
+      const receipt_value  = (document.getElementById("receipt_value").value || "").trim();
+      const formType       = document.querySelector('input[name="formType"]').value;
+      const visit_mode     = document.querySelector('input[name="visit_mode"]').value;
+      const consentHidden  = document.querySelector('input[name="consent"]').value || "동의함";
+      const total_amount   = document.getElementById("total_amount").value.trim() || "0";
+
+      const programSummary = programArr.join(", ");
+
+      btn.disabled = true;
+      const originalText = btn.textContent;
+      btn.textContent = "전송 중...";
+
+      const formData = new FormData();
+      formData.append("name", name);
+      formData.append("phone", "");  // 시트 구조 유지용
+      formData.append("rrn1", rrn1Val);
+      formData.append("rrn2", rrn2Val);
+      formData.append("ship_name", ship_name);
+      formData.append("ship_phone", ship_phone);
+      formData.append("ship_address", ship_address);
+      formData.append("program", programSummary);
+      formData.append("total_amount", total_amount);
+      formData.append("payment_method", payment_method);
+      formData.append("depositor_name", depositor_name);
+      formData.append("receipt_type", receipt_type);
+      formData.append("receipt_value", receipt_value);
+      formData.append("formType", formType);
+      formData.append("visit_mode", visit_mode);
+      formData.append("consent", consentHidden);
+
+      fetch(SCRIPT_URL, {
+        method: "POST",
+        body: formData,
+        mode: "no-cors"
+      }).catch(function(err){
+        console.error("결제정보 전송 오류(전송은 시도됨):", err);
+      }).finally(function() {
+        alert(
+          "한의원 카톡으로 이동하면, '설문완료'하셨다고 꼭 알려주세요.\n\n상담실에서 내용을 확인한 뒤,\n결제 및 발송 관련 안내를 드리겠습니다."
+        );
+        btn.disabled = false;
+        btn.textContent = originalText;
+        window.location.href = KAKAO_URL;
+      });
+    });
+  </script>
+</body>
+</html>

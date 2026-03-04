@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>바디올핏 프로그램 계산기</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Noto Sans KR", sans-serif;
+      background: #f1f3f4;
+      color: #202124;
+    }
+    .card {
+      max-width: 520px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px 18px 24px;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3);
+    }
+    h1 {
+      font-size: 1.2rem;
+      margin: 0 0 4px;
+    }
+    .subtitle {
+      font-size: 0.9rem;
+      color: #5f6368;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .field {
+      margin: 14px 0 20px;
+    }
+    .label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .field-desc {
+      font-size: 0.82rem;
+      color: #5f6368;
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+    .options-block label {
+      display: block;
+      font-size: 0.86rem;
+      margin-bottom: 4px;
+      cursor: pointer;
+    }
+    .options-block strong {
+      display: block;
+      margin: 8px 0 4px;
+      font-size: 0.9rem;
+    }
+    .highlight-box {
+      margin-top: 10px;
+      padding: 10px 10px;
+      border-radius: 6px;
+      border-left: 4px solid #d93025;
+      background: #fde7e7;
+      font-size: 0.8rem;
+      line-height: 1.5;
+    }
+    .total-amount {
+      margin-top: 12px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #202124;
+    }
+    .total-amount span {
+      color: #d93025;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>바디올핏 프로그램 계산기</h1>
+    <div class="subtitle">
+      아래에서 희망하시는 프로그램을 선택하시면<br />
+      택배비를 포함한 <strong>총 결제 예상금액</strong>이 자동 계산됩니다.
+    </div>
+
+    <!-- 프로그램 선택 / 계산 영역 -->
+    <div class="field">
+      <div class="label">
+        프로그램 선택
+      </div>
+      <div class="field-desc">
+        ● 복수 선택 가능합니다.<br />
+        ● 장해독환은 다이어트 프로그램과 <strong>함께 선택</strong>하셔야 합니다.<br />
+        ● 4·8주 프로그램만 선택 시 택배비 4,000원이 추가됩니다.
+      </div>
+
+      <div class="options-block" id="programOptions">
+        <strong>★ 다이어트 프로그램</strong>
+        <label>
+          <input
+            type="checkbox"
+            name="program"
+            value="4주(2+1)"
+          />4주 프로그램 (바디올핏 3통 2+1) – 기간한정가 98,000원 (32%↓)
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="program"
+            value="8주(4+2)"
+          />8주 프로그램 (바디올핏 6통 4+2) – 기간한정가 187,000원 (35%↓)
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="program"
+            value="12주(8+3)"
+          />12주 프로그램 (바디올핏 11통 8+3) – 기간한정가 317,000원 (40%↓)
+        </label>
+
+        <strong>☆ 요요방지 프로그램 (6개월)</strong>
+        <label>
+          <input
+            type="checkbox"
+            name="program"
+            value="요요2x(16+4)"
+          />Double(2x) 요요방지 – 바디올핏 20통(16+4) / 547,000원 (43%↓)
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="program"
+            value="요요3x(24+5)"
+          />Triplet(3x) 요요방지 – 바디올핏 29통(24+5) / 752,000원 (46%↓)
+        </label>
+
+        <strong>보조: 장해독환</strong>
+        <label>
+          <input
+            type="checkbox"
+            name="program"
+            value="장해독1달(1통)"
+          />장해독환 1달 1통 (프로그램 추가 시 10,000원 → 10,000원)
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="program"
+            value="장해독3달(3통)"
+          />장해독환 3달 3통 (프로그램 추가 시 30,000원 → 20,000원)
+        </label>
+      </div>
+
+      <div class="highlight-box">
+        <strong>[택배비 안내]</strong><br /><br />
+        · <strong>4·8주 프로그램</strong>만 선택 시: 택배비 4,000원 추가<br />
+        · <strong>12주, 요요방지 프로그램</strong> 포함 시: 택배비 무료<br />
+        · 장해독환은 어디까지나 <strong>보조 프로그램</strong>이며, 단독 처방 불가
+      </div>
+
+      <div class="total-amount">
+        총 결제 예상금액: <span id="totalAmountText">0원</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 프로그램 선택 → 총액 계산
+    (function setupProgramCalc() {
+      const programContainer = document.getElementById("programOptions");
+      const totalAmountText = document.getElementById("totalAmountText");
+
+      function getCheckedPrograms() {
+        const nodes = programContainer.querySelectorAll('input[name="program"]:checked');
+        return Array.from(nodes).map(n => n.value);
+      }
+
+      function validateProgramSelection(programArr) {
+        if (!programArr.length) {
+          totalAmountText.textContent = "0원";
+          return false;
+        }
+        // 장해독 단독 선택 방지
+        const mainPrograms = programArr.filter(v =>
+          v.startsWith("4주(") ||
+          v.startsWith("8주(") ||
+          v.startsWith("12주(") ||
+          v.startsWith("요요2x") ||
+          v.startsWith("요요3x")
+        );
+        const detox = programArr.filter(v =>
+          v.startsWith("장해독1달") || v.startsWith("장해독3달")
+        );
+        if (detox.length > 0 && mainPrograms.length === 0) {
+          alert("장해독환은 다이어트 프로그램과 함께만 선택 가능합니다.\n4·8·12주 또는 요요방지 프로그램을 함께 선택해주세요.");
+          return false;
+        }
+        return true;
+      }
+
+      function calculateTotal(programArr) {
+        let total = 0;
+
+        programArr.forEach(v => {
+          if (v.startsWith("4주("))           total += 98000;
+          else if (v.startsWith("8주("))      total += 187000;
+          else if (v.startsWith("12주("))     total += 317000;
+          else if (v.startsWith("요요2x"))    total += 547000;
+          else if (v.startsWith("요요3x"))    total += 752000;
+          else if (v.startsWith("장해독1달")) total += 10000;
+          else if (v.startsWith("장해독3달")) total += 20000;
+        });
+
+        const has4or8 = programArr.some(v =>
+          v.startsWith("4주(") || v.startsWith("8주(")
+        );
+        const hasFreeShip = programArr.some(v =>
+          v.startsWith("12주(") || v.startsWith("요요2x") || v.startsWith("요요3x")
+        );
+
+        // 4·8주만 있고 무료배송 프로그램이 없으면 택배비 4,000원 추가
+        if (has4or8 && !hasFreeShip) {
+          total += 4000;
+        }
+        return total;
+      }
+
+      function updateTotal() {
+        const programArr = getCheckedPrograms();
+
+        // 선택 없으면 0원
+        if (!programArr.length) {
+          totalAmountText.textContent = "0원";
+          return;
+        }
+
+        // 선택 유효성 검증
+        if (!validateProgramSelection(programArr)) {
+          totalAmountText.textContent = "0원";
+          return;
+        }
+
+        const total = calculateTotal(programArr);
+        totalAmountText.textContent = total.toLocaleString("ko-KR") + "원";
+      }
+
+      programContainer.addEventListener("change", updateTotal);
+    })();
+  </script>
+</body>
+</html>

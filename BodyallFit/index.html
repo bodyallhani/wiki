@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>BodyAllFit 랜딩</title>
+<style>
+  :root { --dock-h: 80px; --bg:#202536; --icon:#f4f5f9; --text:#ffffff; }
+
+  /* 기본 */
+  html,body{margin:0;padding:0;background:#000;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",Pretendard,"Noto Sans KR",Roboto,"Segoe UI",system-ui,sans-serif;
+    /* 도크가 가리지 않도록 하단 여백 확보 */
+    padding-bottom:calc(var(--dock-h) + env(safe-area-inset-bottom,0px));
+  }
+
+  /* 이미지 스택: 간격 0 */
+  .stack{font-size:0;line-height:0;background:#000;
+    padding-bottom:calc(var(--dock-h) + env(safe-area-inset-bottom,0px));
+  }
+  .stack img,.stack a{display:block;width:100%;margin:0;padding:0;}
+  .stack img{height:auto;border:0;vertical-align:top;}
+
+  /* 하단 고정 도크 */
+  .dock{
+    position:fixed; left:0; right:0; bottom:0; height:var(--dock-h);
+    background:var(--bg); display:flex; z-index:2147483647;
+    transform:translateZ(0); pointer-events:auto;
+    border-top:1px solid rgba(255,255,255,.08);
+    padding-bottom:max(env(safe-area-inset-bottom),0px);
+    box-shadow:0 -2px 10px rgba(0,0,0,.18);
+  }
+  .dock a{
+    flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-decoration:none; gap:6px; min-width:0;
+  }
+  .dock a .icon{
+    width:28px; height:28px; display:flex; align-items:center; justify-content:center;
+    line-height:1; color:var(--icon);
+  }
+  .dock a .icon svg{width:100%; height:100%; display:block;}
+  .dock a .icon-text{
+    font-size:18px; font-weight:800; color:var(--icon); letter-spacing:.5px;
+    display:flex; align-items:center; justify-content:center; width:100%; height:100%;
+  }
+  .dock a span{font-size:12px; line-height:1; color:var(--text); letter-spacing:.2px; white-space:nowrap;}
+
+  @media (hover:hover){ .dock a:hover{filter:brightness(1.08);} }
+  @media (min-width:480px){
+    :root{ --dock-h: 88px; }
+    .dock a .icon{width:30px;height:30px;}
+    .dock a .icon-text{font-size:20px;}
+    .dock a span{font-size:13px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- 이미지 스택 (세로, 간격 0) -->
+<main class="stack" role="main" aria-label="BodyAllFit 랜딩 이미지">
+  <img src="https://raw.githubusercontent.com/bodyallhani/Body_allFit/main/main001.png" alt="BodyAllFit 이미지 1" />
+  <img src="https://raw.githubusercontent.com/bodyallhani/Body_allFit/main/main002.png" alt="BodyAllFit 이미지 2" />
+  <a href="https://body-all.co.kr/1970018529" aria-label="자세히 보기로 이동">
+    <img src="https://raw.githubusercontent.com/bodyallhani/Body_allFit/main/main003.png" alt="BodyAllFit 이미지 3 (자세히 보기 링크)" />
+  </a>
+  <img src="https://raw.githubusercontent.com/bodyallhani/Body_allFit/main/main004.png" alt="BodyAllFit 이미지 4" />
+  <img src="https://raw.githubusercontent.com/bodyallhani/Body_allFit/main/main005.png" alt="BodyAllFit 이미지 5" />
+  <a href="https://forms.gle/cAtpNjx7uoKj5hF87" target="_blank" rel="noopener" aria-label="다이어트 신청 폼으로 이동">
+    <img src="https://raw.githubusercontent.com/bodyallhani/Body_allFit/main/main006.png" alt="BodyAllFit 이미지 6 (신청 링크)" />
+  </a>
+</main>
+
+<!-- 하단 고정 버튼 도크 -->
+<nav class="dock" aria-label="빠른 실행 버튼">
+  <!-- 전화상담 -->
+  <a href="tel:031-8067-5825" aria-label="전화상담">
+    <div class="icon">
+      <svg viewBox="0 0 24 24" fill="var(--icon)" aria-hidden="true">
+        <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V21a1 1 0 01-1 1C10.85 22 2 13.15 2 2a1 1 0 011-1h3.49a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.2 2.2z"/>
+      </svg>
+    </div>
+    <span>전화상담</span>
+  </a>
+
+  <!-- 다이어트 시작하기 -->
+  <a href="https://forms.gle/cAtpNjx7uoKj5hF87" target="_blank" rel="noopener" aria-label="다이어트 시작하기">
+    <div class="icon"><div class="icon-text">AllFit</div></div>
+    <span>다이어트 시작하기</span>
+  </a>
+
+  <!-- 네이버톡톡 (모티프: 중앙 정렬) -->
+  <a href="https://talk.naver.com/ct/w4eflu?frm=pnmb&frm=nmb_detail" target="_blank" rel="noopener" aria-label="네이버 톡톡">
+    <div class="icon">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <rect x="4" y="4" width="40" height="40" rx="8" ry="8"
+              fill="none" stroke="var(--icon)" stroke-width="4"/>
+        <text x="50%" y="52%" text-anchor="middle" dominant-baseline="middle"
+              font-size="22" font-weight="900" font-family="Arial, Helvetica, sans-serif"
+              fill="var(--icon)">N</text>
+      </svg>
+    </div>
+    <span>네이버톡톡</span>
+  </a>
+
+  <!-- 카톡상담 (브랜드 색상/형태 그대로) -->
+  <a href="https://pf.kakao.com/_wdtXK" target="_blank" rel="noopener" aria-label="카카오톡 상담">
+    <div class="icon">
+      <svg viewBox="0 0 240 240" aria-hidden="true">
+        <!-- 말풍선: #3C1E1E 채움, 꼬리 포함 -->
+        <path
+          d="M120 30
+             C 63 30 18 66 18 110
+             c 0 29 19 55 48 71
+             l -6 38
+             a 6 6 0 0 0 8 6
+             l 34 -18
+             c 10 2 20 3 30 3
+             c 57 0 102 -36 102 -80
+             C 234 66 177 30 120 30 Z"
+          fill="#3C1E1E"/>
+        <!-- TALK: #FEE500, 중앙보다 살짝 아래 -->
+        <text x="50%" y="56%" text-anchor="middle"
+              font-size="48" font-weight="900"
+              font-family="Arial, Helvetica, sans-serif"
+              fill="#FEE500">TALK</text>
+      </svg>
+    </div>
+    <span>카톡상담</span>
+  </a>
+</nav>
+
+</body>
+</html>

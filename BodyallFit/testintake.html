@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>바디올핏 다이어트</title>
+  <style>
+    :root{
+      --blue: #1f6feb;   /* 건강해보이는 파란색 */
+      --mint: #2ec9b0;   /* 민트색 */
+      --text: #111827;
+    }
+
+    * { box-sizing: border-box; }
+    body{
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #ffffff;
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+    }
+
+    .wrap{
+      width: min(520px, 92vw);
+      padding: 24px 0;
+      text-align: center;
+    }
+
+    h1{
+      margin: 0 0 26px;
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .btn{
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 64px;
+      border-radius: 14px;          /* 둥글게 */
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 800;
+
+      /* 3D 느낌 */
+      box-shadow:
+        0 10px 18px rgba(0,0,0,0.12),
+        0 3px 0 rgba(0,0,0,0.18);
+      transform: translateY(0);
+      transition: transform .08s ease, box-shadow .08s ease, filter .12s ease;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn:hover{ filter: brightness(1.03); }
+    .btn:active{
+      transform: translateY(3px);
+      box-shadow:
+        0 7px 14px rgba(0,0,0,0.12),
+        0 0px 0 rgba(0,0,0,0.18);
+    }
+
+    .btn.blue{
+      background: linear-gradient(180deg, #2b7bff 0%, var(--blue) 100%);
+    }
+    .btn.mint{
+      background: linear-gradient(180deg, #42ddc6 0%, var(--mint) 100%);
+    }
+
+    /* 버튼 사이 간격: 버튼 하나 더 들어갈 정도로 넓게 */
+    .gap{ height: 28px; }
+
+    /* 스크롤 없이 한 화면에 들어오도록 과도한 높이 방지 */
+    @media (max-height: 640px){
+      h1{ margin-bottom: 18px; }
+      .btn{ height: 58px; }
+      .gap{ height: 18px; }
+      .wrap{ padding: 16px 0; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>바디올핏 다이어트</h1>
+
+    <a class="btn blue" href="https://bodyallhani.github.io/Body_allFit/m1.html">
+      바디올핏이 처음이신 분
+    </a>
+
+    <div class="gap"></div>
+
+    <a class="btn mint" href="https://bodyallhani.github.io/Body_allFit/m4.html">
+      바디올핏을 이전에 복용해보신 분
+    </a>
+  </main>
+</body>
+</html>

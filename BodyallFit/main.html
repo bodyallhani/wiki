@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>바디올핏 - 쉽고 편한 다이어트</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+  <style>
+    /* CSS Reset 및 기본 설정 */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+      /* 미세한 중앙 그라데이션으로 깊이감 있는 화이트톤 연출 */
+      background: radial-gradient(circle at center, #ffffff 0%, #f8f9fa 100%);
+      height: 100vh; /* 화면 전체 높이 사용 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #1d1d1f;
+      overflow: hidden; /* 스크롤 방지 */
+    }
+
+    /* 메인 컨테이너 */
+    .intro-container {
+      text-align: center;
+      max-width: 480px;
+      width: 90%;
+      padding: 20px;
+      /* 등장 애니메이션 */
+      animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* 로고 스타일 */
+    .logo-wrapper {
+      margin-bottom: 30px;
+    }
+    .logo {
+      width: 64px;
+      height: auto;
+      opacity: 0.85;
+    }
+
+    /* 제품 이미지 섹션 */
+    .product-hero {
+      margin-bottom: 32px;
+      position: relative;
+    }
+    
+    /* 제품 이미지 둥둥 떠다니는 효과 */
+    .floating-image {
+      width: 100%;
+      max-width: 340px;
+      height: auto;
+      border-radius: 16px;
+      /* 부드럽고 고급스러운 그림자 */
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08), 0 5px 15px rgba(0,0,0,0.05);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* 텍스트 콘텐츠 */
+    .content h1 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -0.03em;
+      color: #111;
+    }
+    .content p {
+      font-size: 1rem;
+      color: #6e6e73;
+      margin-bottom: 40px;
+      font-weight: 500;
+    }
+
+    /* 액션 버튼 및 로딩 인디케이터 */
+    .actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* 바로 입장하기 버튼 */
+    .enter-btn {
+      display: inline-block;
+      padding: 14px 36px;
+      background-color: #1d1d1f; /* 세련된 블랙/다크네이비 */
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 12px rgba(29, 29, 31, 0.2);
+      border: 1px solid transparent;
+    }
+
+    .enter-btn:hover {
+      background-color: #333336;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(29, 29, 31, 0.3);
+    }
+
+    /* 자동 이동 로딩 바 */
+    .loading-wrapper {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 200px;
+      text-align: center;
+    }
+    .loader-container {
+      width: 100%;
+      height: 3px;
+      background-color: #e5e5ea;
+      border-radius: 3px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .loader-bar {
+      height: 100%;
+      width: 0%;
+      background-color: #1d1d1f;
+      border-radius: 3px;
+      /* JS로 실행될 트랜지션 */
+      transition: width 3.5s linear;
+    }
+    .loading-text {
+      font-size: 0.8rem;
+      color: #86868b;
+    }
+
+    /* 애니메이션 정의 */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 모바일 반응형 조정 */
+    @media (max-width: 480px) {
+      .content h1 { font-size: 1.5rem; }
+      .content p { font-size: 0.9rem; }
+      .floating-image { max-width: 280px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="intro-container">
+    <div class="logo-wrapper">
+      <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png" alt="바디올핏 로고" class="logo">
+    </div>
+
+    <div class="product-hero">
+      <img src="https://raw.githubusercontent.com/bodyallhani/Body_allFit/main/img1.jpg" alt="바디올핏 프리미엄 패키지" class="floating-image">
+    </div>
+
+    <div class="content">
+      <h1>당신이 바라던 핏, 바디올핏</h1>
+      <p>건강하고 아름다운 변화의 시작을 함께합니다.</p>
+    </div>
+
+    <div class="actions">
+      <a href="https://body-all.co.kr/Body_Allfit" class="enter-btn">바로 입장하기</a>
+      
+      <div class="loading-wrapper">
+        <div class="loader-container">
+          <div class="loader-bar" id="progress"></div>
+        </div>
+        <p class="loading-text">잠시 후 메인 페이지로 이동합니다...</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 설정: 이동할 URL과 대기 시간(ms)
+    const TARGET_URL = "https://body-all.co.kr/Body-Allfit";
+    const DELAY_MS = 4500; // 4.5초
+
+    // 페이지 로드 후 실행
+    window.addEventListener('DOMContentLoaded', () => {
+      const progressBar = document.getElementById('progress');
+      
+      // 1. 로딩 바 애니메이션 시작 (약간의 지연 후 시작하여 자연스럽게)
+      setTimeout(() => {
+        progressBar.style.width = '100%';
+      }, 100);
+
+      // 2. 설정된 시간 후 페이지 이동
+      setTimeout(() => {
+        window.location.href = TARGET_URL;
+      }, DELAY_MS);
+    });
+  </script>
+
+</body>
+</html>
