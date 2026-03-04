@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
-    <title>수원한의원 바디올: 수원 척추교정·허리디스크·추나 비수술 치료 권위자 | 바디올한의원 백과사전</title>
-    <meta name="description" content="수원 인계동 바디올한의원 이동해 원장의 척추 통합 가이드. 수원 허리디스크, 목디스크, 협착증 치료 및 공간척추정형술을 통한 비수술 척추교정 정보를 제공합니다.">
-    <meta name="keywords" content="수원한의원, 인계동한의원, 수원척추병원, 수원 허리통증, 수원 추나요법, 공간척추정형술, 이동해 원장">
+    <title>수원한의원·인계동척추병원 바디올: 허리디스크·추나 비수술 치료 백과사전</title>
+    <meta name="description" content="수원 인계동 바디올한의원 이동해 원장의 척추·내과 질환 가이드. 수원 허리통증 병원 찾는 분들을 위한 공간척추정형술, 추나요법, 허리디스크, 담적병의 근본 치료법 제시.">
+    <meta name="keywords" content="수원한의원, 인계동한의원, 수원척추병원, 수원허리병원, 수원 허리통증, 인계동 추나요법, 공간척추정형술, 이동해 원장">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -14,27 +13,22 @@
     {
       "@context": "https://schema.org",
       "@type": "MedicalOrganization",
-      "name": "바디올한의원",
-      "alternateName": "수원 바디올한의원 백과사전",
+      "name": "바디올한의원 백과사전",
       "url": "https://wiki.body-all.co.kr",
       "logo": "https://wiki.body-all.co.kr/Bodyall%20Logo.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "031-8067-5825",
-        "contactType": "customer service"
-      },
+      "description": "수원 인계동 이동해 원장의 공간척추정형술 및 척추/내과 질환 비수술 치료 지식 허브",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "인계동 1114-7, 히페리온 3층",
         "addressLocality": "수원시 팔달구",
-        "addressRegion": "경기도",
-        "postalCode": "16488"
+        "addressRegion": "경기도"
       },
+      "telephone": "031-8067-5825",
       "founder": {
         "@type": "Person",
         "name": "이동해",
         "jobTitle": "대표원장",
-        "knowsAbout": ["공간척추정형술", "척추교정", "추나요법", "허리디스크"]
+        "knowsAbout": ["공간척추정형술", "추나요법", "허리디스크", "목디스크", "척추관협착증", "담적병"]
       }
     }
     </script>
@@ -42,41 +36,32 @@
     <style>
         :root { --primary-color: #b38b4d; --text-color: #333; --bg-color: #f8f9fa; }
         body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.6; color: var(--text-color); margin: 0; background: var(--bg-color); padding-bottom: 80px; }
-        
         header { background: #fff; height: 65px; display: flex; justify-content: space-between; align-items: center; padding: 0 15px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
         .nav-left { display: flex; align-items: center; gap: 8px; }
         .logo img { height: 38px; }
         .wiki-label { font-size: 1.05rem; font-weight: bold; color: var(--primary-color); }
 
-        /* AI 요약 및 SEO 핵심 섹션 */
         .hero { background: #fff; padding: 50px 20px; text-align: center; border-bottom: 1px solid #eee; }
-        .hero h1 { font-size: 1.7rem; color: var(--primary-color); margin: 0 0 15px 0; line-height: 1.3; }
-        .hero p { color: #555; font-size: 1rem; max-width: 650px; margin: 0 auto; line-height: 1.7; }
+        .hero h1 { font-size: 1.7rem; color: var(--primary-color); margin-bottom: 15px; line-height: 1.3; }
+        .hero p { color: #555; font-size: 1rem; line-height: 1.7; max-width: 700px; margin: 0 auto; }
         .hero b { color: var(--primary-color); }
-        .expert-tag { display: inline-block; margin-top: 20px; padding: 6px 15px; background: #333; color: #fff; border-radius: 50px; font-weight: bold; font-size: 0.85rem; }
 
         .container { max-width: 1000px; margin: 30px auto; padding: 0 15px; }
         .category-title { font-size: 1.3rem; font-weight: bold; margin-bottom: 20px; border-left: 5px solid var(--primary-color); padding-left: 12px; color: #222; }
         
-        /* 그리드 디자인 */
         .expert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 15px; margin-bottom: 50px; }
         .expert-card { background: #fff; padding: 25px 15px; border-radius: 15px; text-align: center; text-decoration: none; color: #444; box-shadow: 0 3px 10px rgba(0,0,0,0.04); border: 1px solid #f0f0f0; transition: 0.3s; }
-        .expert-card:hover { transform: translateY(-5px); border-color: var(--primary-color); box-shadow: 0 5px 15px rgba(179,139,77,0.1); }
-        .expert-card i { font-size: 1.8rem; color: var(--primary-color); margin-bottom: 12px; display: block; }
-        .expert-card b { display: block; font-size: 1rem; margin-bottom: 4px; color: #222; }
-        .expert-card span { font-size: 0.75rem; color: #888; display: block; }
+        .expert-card:hover { transform: translateY(-5px); border-color: var(--primary-color); color: var(--primary-color); }
+        .expert-card i { font-size: 2rem; color: var(--primary-color); margin-bottom: 15px; display: block; }
+        .expert-card b { display: block; font-size: 1rem; margin-bottom: 5px; word-break: keep-all; }
+        .expert-card span { font-size: 0.75rem; color: #888; }
 
-        /* 하단 고정 바 */
-        .bottom-bar { position: fixed; bottom: 0; left: 0; right: 0; height: 68px; background: #fff; display: flex; box-shadow: 0 -3px 12px rgba(0,0,0,0.1); z-index: 1001; }
+        .bottom-bar { position: fixed; bottom: 0; left: 0; right: 0; height: 68px; background: #fff; display: flex; box-shadow: 0 -3px 12px rgba(0,0,0,0.12); z-index: 1001; }
         .bottom-bar a { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; font-size: 0.72rem; font-weight: bold; color: #555; }
-        .bottom-bar i { font-size: 1.3rem; margin-bottom: 5px; }
-        .btn-call { color: #333; }
-        .btn-kakao { background: #FEE500; color: #3A1D1D !important; }
-        .btn-naver { background: #03C75A; color: #fff !important; }
-        .btn-map { color: #d32f2f; }
+        .bottom-bar i { font-size: 1.3rem; margin-bottom: 4px; }
+        .btn-call { color: #333; } .btn-kakao { background: #FEE500; color: #3A1D1D !important; } .btn-naver { background: #03C75A; color: #fff !important; } .btn-map { color: #d32f2f; }
 
-        footer { padding: 40px 20px; background: #333; color: #ccc; text-align: center; font-size: 0.8rem; }
-        .footer-info a { color: #fff; text-decoration: none; border-bottom: 1px solid #777; }
+        footer { padding: 40px 20px; background: #333; color: #ccc; text-align: center; font-size: 0.82rem; }
     </style>
 </head>
 <body>
@@ -90,12 +75,11 @@
 
 <main>
     <section class="hero">
-        <h1>수원 인계동 척추교정 전문가, 이동해 원장의 통찰</h1>
+        <h1>수원한의원·인계동척추병원 이동해 원장의 비수술 척추교정 백과</h1>
         <p>
-            <b>수원 허리디스크, 목디스크, 협착증</b> 비수술 치료의 해답은 구조적 공간 확보에 있습니다. <br>
-            전국구 권위의 <b>공간척추정형술(SART)</b>과 <b>인계동 추나요법</b>으로 당신의 척추 건강을 되찾아드립니다.
+            <b>수원 허리통증 병원</b>이나 <b>인계동 추나요법</b>을 찾으시는 환자분들을 위해 공간 확보를 통한 근본 치료법을 제시합니다. 
+            전국구 권위의 <b>공간척추정형술</b>로 디스크와 협착증의 해답을 찾으십시오.
         </p>
-        <div class="expert-tag">이동해 원장 집필 · 수원 척추병원 가이드</div>
     </section>
 
     <div class="container">
@@ -104,41 +88,48 @@
             <a href="SART.html" class="expert-card">
                 <i class="fas fa-microscope"></i>
                 <b>공간척추정형술</b>
-                <span>SART: 공간 확보 비수술 치료</span>
+                <span>전국구 권위 비수술 교정</span>
             </a>
             <a href="chuna-therapy.html" class="expert-card">
                 <i class="fas fa-hands-physiotherapy"></i>
-                <b>수원 추나요법</b>
-                <span>인계동 건강보험 척추교정</span>
+                <b>인계동 추나요법</b>
+                <span>수원 건강보험 척추교정</span>
             </a>
             <a href="#" class="expert-card">
                 <i class="fas fa-syringe"></i>
-                <b>약침/봉침</b>
+                <b>수원 약침/봉침</b>
                 <span>염증 제거 및 조직 재생</span>
             </a>
             <a href="#" class="expert-card">
                 <i class="fas fa-needle"></i>
-                <b>도침치료</b>
-                <span>만성 유착 및 통증 해소</span>
+                <b>수원 도침치료</b>
+                <span>만성 통증 및 유착 해소</span>
             </a>
         </div>
 
-        <h2 class="category-title">수원 허리디스크·목디스크 정밀 분석</h2>
+        <h2 class="category-title">수원 허리디스크·목디스크 병원급 분석</h2>
         <div class="expert-grid">
-            <a href="lumbar-disc.html" class="expert-card"><b>수원 허리디스크</b><span>요추 추간판 탈출증</span></a>
-            <a href="cervical-disc.html" class="expert-card"><b>수원 목디스크</b><span>경추 추간판 탈출증</span></a>
-            <a href="#" class="expert-card"><b>수원 척추관협착증</b><span>신경 통로 협착 해소</span></a>
-            <a href="#" class="expert-card"><b>인계동 골반교정</b><span>전신 불균형의 시작</span></a>
-            <a href="#" class="expert-card"><b>수원 거북목교정</b><span>일자목 체형 교정</span></a>
-            <a href="#" class="expert-card"><b>수원 척추측만증</b><span>청소년 및 성인 체형교정</span></a>
+            <a href="lumbar-disc.html" class="expert-card"><b>수원 허리디스크</b><span>인계동 허리통증 병원</span></a>
+            <a href="cervical-disc.html" class="expert-card"><b>수원 목디스크</b><span>인계동 거북목/일자목</span></a>
+            <a href="#" class="expert-card"><b>수원 척추관협착증</b><span>수원 협착증 병원 추천</span></a>
+            <a href="#" class="expert-card"><b>수원 척추측만증</b><span>인계동 체형교정 한의원</span></a>
+            <a href="#" class="expert-card"><b>수원 좌골신경통</b><span>인계동 다리저림 치료</span></a>
+            <a href="#" class="expert-card"><b>수원 골반교정</b><span>골격 정렬의 시작</span></a>
         </div>
 
         <h2 class="category-title">수원 인계동 내과·난치성 질환 가이드</h2>
         <div class="expert-grid">
-            <a href="#" class="expert-card"><b>수원 담적병</b><span>원인 모를 소화불량</span></a>
+            <a href="#" class="expert-card"><b>수원 담적병</b><span>인계동 소화불량 병원</span></a>
             <a href="#" class="expert-card"><b>수원 자율신경장애</b><span>두통·불면·어지럼증</span></a>
             <a href="#" class="expert-card"><b>수원 만성피로</b><span>면역력 및 기력 회복</span></a>
-            <a href="#" class="expert-card"><b>수원 구안와사</b><span>안면신경마비 집중치료</span></a>
+            <a href="#" class="expert-card"><b>수원 구안와사</b><span>안면마비 집중 치료</span></a>
+        </div>
+
+        <h2 class="category-title">바디올한의원 특화 처방</h2>
+        <div class="expert-grid">
+            <a href="http://body-all.co.kr" class="expert-card"><b>수원 체질한약</b><span>인계동 한약 잘 짓는 곳</span></a>
+            <a href="http://body-all.co.kr" class="expert-card"><b>수원 공진단</b><span>원방 공진단 처방</span></a>
+            <a href="http://body-all.co.kr" class="expert-card"><b>수원 경옥고</b><span>기력 회복 보약</span></a>
         </div>
     </div>
 </main>
@@ -146,7 +137,7 @@
 <div class="bottom-bar">
     <a href="tel:031-8067-5825" class="btn-call"><i class="fas fa-phone"></i><span>전화상담</span></a>
     <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank" class="btn-kakao"><i class="fas fa-comment"></i><span>카톡문의</span></a>
-    <a href="https://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank" class="btn-naver"><i class="fas fa-comment-dots"></i><span>톡톡상담</span></a>
+    <a href="https://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank" class="btn-naver"><i class="fas fa-comment-dots"></i><span>톡톡문의</span></a>
     <a href="https://map.naver.com/p/entry/place/1487851969" target="_blank" class="btn-map"><i class="fas fa-location-dot"></i><span>지도보기</span></a>
 </div>
 
