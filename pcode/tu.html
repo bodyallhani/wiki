@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <title>태음축: 면역·호흡 시스템 | 바디올 난치 신경-기능센터</title>
+  <style>
+    :root {
+      --bg: #05080f; --card: rgba(255, 255, 255, 0.04); --text: #f8fafc;
+      --muted: #94a3b8; --line: rgba(255, 255, 255, 0.1);
+      --accent: #34d399; /* 태음축 상징: Emerald/Green */
+      --radius: 24px;
+    }
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
+    body { margin: 0; font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; word-break: keep-all; }
+    .bg-glow { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 10% 10%, rgba(52, 211, 153, 0.08) 0%, transparent 40%); z-index: -1; }
+    .container { max-width: 600px; margin: 0 auto; padding: 0 20px; }
+    a { color: inherit; text-decoration: none; }
+    .nav { position: sticky; top: 0; z-index: 100; backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); background: rgba(5, 8, 15, 0.8); border-bottom: 1px solid var(--line); }
+    .navin { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; }
+    .brand { display: flex; align-items: center; gap: 8px; }
+    .logo-dot { width: 20px; height: 20px; border-radius: 5px; background: var(--accent); }
+    .brand strong { font-size: 14px; }
+    .hero { padding: 40px 0 30px; text-align: left; }
+    .hero-img { width: 100%; height: 260px; border-radius: var(--radius); object-fit: cover; margin-bottom: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+    .kicker { font-size: 11px; font-weight: 800; color: var(--accent); letter-spacing: 2px; margin-bottom: 8px; text-transform: uppercase; }
+    .hero h1 { font-size: 30px; font-weight: 800; margin: 0 0 16px; line-height: 1.25; letter-spacing: -1px; }
+    .hero p { font-size: 16px; color: var(--muted); margin: 0; }
+    section { padding: 40px 0; border-top: 1px solid var(--line); }
+    .sec-header { margin-bottom: 24px; }
+    .sec-header h2 { font-size: 22px; font-weight: 800; margin: 0 0 8px; }
+    .symptom-card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px; margin-bottom: 12px; display: flex; gap: 16px; align-items: flex-start; }
+    .symptom-icon { min-width: 44px; height: 44px; border-radius: 12px; background: rgba(52, 211, 153, 0.1); display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 20px; font-weight: 700; }
+    .symptom-text h4 { margin: 0 0 4px; font-size: 17px; color: #fff; }
+    .symptom-text p { margin: 0; font-size: 14px; color: var(--muted); }
+    .logic-box { background: linear-gradient(135deg, rgba(52, 211, 153, 0.08), transparent); border-radius: var(--radius); padding: 28px; border: 1px solid rgba(52, 211, 153, 0.15); }
+    .logic-box h3 { font-size: 19px; margin: 0 0 14px; color: var(--accent); font-weight: 800; }
+    .logic-box p { font-size: 15px; color: var(--text); margin-bottom: 24px; }
+    .check-list { list-style: none; padding: 0; margin: 0; }
+    .check-item { display: flex; gap: 12px; font-size: 14px; margin-bottom: 12px; color: var(--muted); }
+    .check-item b { color: #fff; font-weight: 700; }
+    .check-item::before { content: "✓"; color: var(--accent); font-weight: 900; }
+    .cta-area { text-align: center; padding: 40px 0 60px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 18px 24px; border-radius: 16px; font-weight: 700; font-size: 16px; width: 100%; cursor: pointer; transition: 0.2s; border: none; text-decoration: none; }
+    .btn.primary { background: var(--accent); color: #000; margin-bottom: 12px; }
+    .btn.outline { background: transparent; border: 1px solid var(--line); color: var(--text); }
+    footer { padding: 40px 0 120px; text-align: center; color: var(--muted); font-size: 12px; }
+    .sticky-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; background: rgba(5, 8, 15, 0.95); backdrop-filter: blur(15px); padding: 16px 20px 30px; border-top: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+
+  <header class="nav">
+    <div class="navin">
+      <a class="brand" href="mainland.html">
+        <div class="logo-dot"></div>
+        <strong>태음축: 면역·호흡</strong>
+      </a>
+      <a href="mainland.html" style="font-size: 12px; color: var(--muted); font-weight: 600;">Home</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="border:none;">
+      <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/tu.png" class="hero-img" alt="Tae-Eum Defense">
+      <div class="kicker">The Guardian Shield</div>
+      <h1>무너진 방어막을 재건하고,<br><span style="color:var(--accent)">면역의 결속력</span>을 높이다.</h1>
+      <p>아토피나 비염은 단순한 염증이 아닙니다. 외부 자극을 걸러내지 못하는 당신의 방어막(태음축)에 구멍이 난 것입니다. 신호등(증상)을 끄는 것이 아니라, 성벽 자체를 튼튼하게 보수합니다.</p>
+    </section>
+
+    <section id="patterns">
+      <div class="sec-header">
+        <h2>면역 방어 불균형 패턴</h2>
+        <p>태음축의 약화가 보내는 과민 신호들</p>
+      </div>
+      
+      <div class="symptom-card">
+        <div class="symptom-icon">肺</div>
+        <div class="symptom-text">
+          <h4>호흡기 장벽 붕괴</h4>
+          <p>만성 비염, 천식, 잦은 기침 등 외부 공기의 자극에 코와 목의 점막이 과하게 반응하는 상태</p>
+        </div>
+      </div>
+
+      <div class="symptom-card">
+        <div class="symptom-icon">膚</div>
+        <div class="symptom-text">
+          <h4>피부 장벽 손실</h4>
+          <p>성인 아토피, 두드러기, 건선 등 피부 표면의 보호층이 약해져 사소한 자극에도 염증이 터지는 상태</p>
+        </div>
+      </div>
+
+      <div class="symptom-card">
+        <div class="symptom-icon">衛</div>
+        <div class="symptom-text">
+          <h4>면역 식별 오류</h4>
+          <p>꽃가루, 특정 음식, 급격한 온도 차 등 정상적인 자극을 적으로 오인하여 공격하는 과민 상태</p>
+        </div>
+      </div>
+    </section>
+
+    
+
+[Image of the human immune system]
+
+
+    <section id="logic">
+      <div class="logic-box">
+        <h3>왜 면역 장벽이 전신 방어의 핵심인가?</h3>
+        <p>태음축은 우리 몸의 <b>'국경 수비대'</b>입니다. 수비대가 무력화되면 몸 안은 늘 비상사태(만성 염증)가 됩니다. 바디올은 면역 세포의 '인식 지능'을 정상화하고, 점막과 피부의 '물리적 장벽'을 복구하여 평화를 되찾아드립니다.</p>
+
+        <ul class="check-list">
+          <li class="check-item"><b>상피 세포</b>와 <b>점막</b>의 결속력 강화</li>
+          <li class="check-item">과도한 <b>히스타민 반응</b>의 정상적 조율</li>
+          <li class="check-item">림프 및 혈액 내 <b>면역 세포 지능</b> 디버깅</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-area" style="border:none; padding-bottom: 120px;">
+      <div class="sec-header">
+        <h2>태음패턴 정밀 분석</h2>
+        <p>당신의 방어막이 왜 뚫렸는지,<br>P-CODE를 통해 근본 원인을 진단해 드립니다.</p>
+      </div>
+      <a href="https://bodyallhani.github.io/herbmed0/intake.html" class="btn primary">태음패턴 정밀 문진 시작</a>
+      <a href="mainland.html" class="btn outline" style="margin-top: 8px;">시스템 설명 더보기</a>
+    </section>
+
+    <footer>
+      <p>바디올한의원 · 난치 신경-기능센터</p>
+      <p style="opacity: 0.4; margin-top: 8px;">© 2024 Bodyall. Medical Precision.</p>
+    </footer>
+  </main>
+
+  <div class="sticky-bar">
+    <a href="https://bodyallhani.github.io/herbmed0/intake.html" class="btn primary" style="margin:0; box-shadow: 0 10px 20px rgba(52,211,153,0.2);">나의 태음축 정밀 진단받기</a>
+  </div>
+
+</body>
+</html>

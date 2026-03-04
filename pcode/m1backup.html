@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>기능축 분류 검사 | 바디올 난치 신경-기능센터</title>
+  <meta name="description" content="간단한 문항으로 현재 패턴을 4대 기능축(양명/궐음/태음/소음) 중 하나로 분류하고, 해당 안내 페이지로 연결합니다."/>
+  <meta property="og:title" content="기능축 분류 검사 | 바디올 난치 신경-기능센터"/>
+  <meta property="og:description" content="12문항 → 점수화 → 가장 가까운 축으로 자동 연결"/>
+  <meta property="og:type" content="website"/>
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#101a2f;
+      --card2:#0f1a33;
+      --text:#e8eefc;
+      --muted:#b8c4e6;
+      --line: rgba(232,238,252,.12);
+      --shadow: 0 14px 40px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 1040px;
+
+      --ym:#60a5fa; /* 양명: blue */
+      --gu:#a78bfa; /* 궐음: purple */
+      --tu:#a7f3d0; /* 태음: mint */
+      --su:#fbbf24; /* 소음: amber */
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Apple SD Gothic Neo","Noto Sans KR","Segoe UI", Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1100px 560px at 10% 5%, rgba(96,165,250,.12), transparent 60%),
+        radial-gradient(900px 540px at 90% 0%, rgba(167,139,250,.10), transparent 55%),
+        radial-gradient(900px 540px at 90% 110%, rgba(167,243,208,.10), transparent 55%),
+        radial-gradient(900px 540px at 10% 110%, rgba(251,191,36,.10), transparent 55%),
+        var(--bg);
+      line-height:1.6;
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:var(--max); margin:0 auto; padding:0 18px}
+
+    /* top nav */
+    .nav{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(11,18,32,.55);
+      border-bottom:1px solid var(--line);
+    }
+    .navin{display:flex; align-items:center; justify-content:space-between; padding:12px 0; gap:12px; flex-wrap:wrap}
+    .brand{display:flex; gap:10px; align-items:center}
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(96,165,250,.80), rgba(167,139,250,.80));
+      box-shadow: 0 10px 25px rgba(0,0,0,.18);
+    }
+    .brand strong{font-size:14px}
+    .brand span{display:block; font-size:12px; color:var(--muted)}
+    .navlinks{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+    .navlinks a{
+      font-size:12px; color:var(--muted);
+      padding:8px 10px; border-radius:12px;
+      border:1px solid transparent;
+    }
+    .navlinks a:hover{background:rgba(232,238,252,.06); color:var(--text)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px; border-radius:14px;
+      border:1px solid rgba(232,238,252,.18);
+      background: rgba(232,238,252,.06);
+      color:var(--text);
+      font-weight:650; font-size:13px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.18);
+      transition: transform .12s ease, background .12s ease;
+      cursor:pointer;
+      user-select:none;
+    }
+    .btn:hover{transform: translateY(-1px); background: rgba(232,238,252,.10)}
+    .btn.primary{
+      border:1px solid rgba(110,231,255,.22);
+      background: linear-gradient(135deg, rgba(110,231,255,.14), rgba(167,139,250,.12));
+    }
+
+    /* layout */
+    main{padding:18px 0 44px}
+    .hero{
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(16,26,47,.92), rgba(16,26,47,.72));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:20px;
+      overflow:hidden;
+      position:relative;
+    }
+    .kicker{
+      display:inline-flex; gap:8px; align-items:center;
+      font-size:12px; color:var(--muted);
+      border:1px solid rgba(232,238,252,.14);
+      padding:6px 10px; border-radius:999px;
+      background: rgba(232,238,252,.04);
+    }
+    h1{margin:10px 0 8px; font-size:24px; line-height:1.24; letter-spacing:-.2px}
+    .sub{margin:0; color:var(--muted); max-width:78ch}
+    .heroRow{display:flex; gap:10px; margin-top:12px; flex-wrap:wrap}
+    .note{
+      margin-top:12px;
+      font-size:12px;
+      color:rgba(184,196,230,.92);
+      border-left:2px solid rgba(232,238,252,.18);
+      padding:10px 12px;
+      background: rgba(232,238,252,.03);
+      border-radius: 10px;
+      max-width:86ch;
+    }
+    .heroArt{
+      position:absolute; inset:-150px -150px auto auto;
+      width:420px; height:420px;
+      opacity:.45; pointer-events:none;
+      filter: saturate(1.05);
+    }
+
+    /* 4 quadrants */
+    .quadWrap{margin-top:14px}
+    .quadGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:12px;
+    }
+    .quad{
+      border:1px solid rgba(232,238,252,.12);
+      background: rgba(15,26,51,.56);
+      border-radius: var(--radius);
+      padding:14px;
+      box-shadow: 0 10px 22px rgba(0,0,0,.16);
+      position:relative;
+      overflow:hidden;
+      min-height:108px;
+    }
+    .quad h3{margin:0 0 6px; font-size:13px}
+    .quad p{margin:0; font-size:12px; color:var(--muted); max-width:52ch}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      font-size:11px; color:var(--muted);
+      border:1px solid rgba(232,238,252,.14);
+      padding:5px 9px; border-radius:999px;
+      background: rgba(232,238,252,.03);
+      margin-bottom:8px;
+    }
+    .accentBar{
+      position:absolute; inset:0 auto 0 0;
+      width:4px;
+      opacity:.95;
+    }
+    .quad svg{
+      position:absolute; right:-18px; bottom:-18px;
+      width:120px; height:120px;
+      opacity:.35;
+    }
+    .quad:hover{background: rgba(15,26,51,.66)}
+
+    .ym .accentBar{background: rgba(96,165,250,.70)}
+    .gu .accentBar{background: rgba(167,139,250,.70)}
+    .tu .accentBar{background: rgba(167,243,208,.70)}
+    .su .accentBar{background: rgba(251,191,36,.70)}
+
+    /* quiz */
+    .panel{
+      margin-top:14px;
+      border:1px solid var(--line);
+      background: rgba(16,26,47,.70);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:16px;
+    }
+    .panelHead{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap:12px; flex-wrap:wrap;
+      margin-bottom:10px;
+    }
+    .panelHead h2{margin:0; font-size:16px; letter-spacing:-.2px}
+    .panelHead .mini{margin:0; color:var(--muted); font-size:12px}
+
+    .progressWrap{
+      margin:10px 0 14px;
+      display:flex; gap:10px; align-items:center; flex-wrap:wrap;
+    }
+    .bar{
+      flex:1 1 260px;
+      height:10px; border-radius:999px;
+      background: rgba(232,238,252,.08);
+      border:1px solid rgba(232,238,252,.10);
+      overflow:hidden;
+    }
+    .bar > div{
+      height:100%;
+      width:0%;
+      background: linear-gradient(90deg, rgba(96,165,250,.55), rgba(167,139,250,.45), rgba(167,243,208,.45), rgba(251,191,36,.45));
+      transition: width .18s ease;
+    }
+    .progressText{font-size:12px; color:var(--muted)}
+
+    .q{
+      border:1px solid rgba(232,238,252,.10);
+      background: rgba(15,26,51,.54);
+      border-radius: 16px;
+      padding:12px;
+    }
+    .q + .q{margin-top:10px}
+    .qTitle{
+      margin:0 0 10px;
+      font-size:13px;
+      letter-spacing:-.1px;
+    }
+
+    .scale{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:8px;
+    }
+    .opt{
+      border:1px solid rgba(232,238,252,.12);
+      background: rgba(232,238,252,.03);
+      border-radius: 14px;
+      padding:10px 10px;
+      cursor:pointer;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      user-select:none;
+      min-height:54px;
+      display:flex; flex-direction:column; justify-content:center;
+    }
+    .opt:hover{transform: translateY(-1px); background: rgba(232,238,252,.06)}
+    .opt strong{font-size:12px}
+    .opt span{font-size:11px; color:var(--muted)}
+    .opt[data-sel="1"]{
+      border-color: rgba(110,231,255,.22);
+      background: rgba(110,231,255,.08);
+    }
+
+    .actions{
+      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+      margin-top:14px;
+    }
+    .danger{
+      border-color: rgba(255,255,255,.14);
+      background: rgba(232,238,252,.04);
+      color: rgba(232,238,252,.92);
+    }
+
+    /* result */
+    .result{
+      display:none;
+      margin-top:14px;
+      border:1px solid rgba(232,238,252,.12);
+      background: linear-gradient(180deg, rgba(16,26,47,.92), rgba(16,26,47,.76));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:18px;
+    }
+    .resultTop{
+      display:flex; align-items:flex-start; justify-content:space-between;
+      gap:10px; flex-wrap:wrap;
+    }
+    .badge{
+      display:inline-flex; align-items:center; gap:10px;
+      border:1px solid rgba(232,238,252,.14);
+      background: rgba(232,238,252,.04);
+      padding:8px 10px;
+      border-radius: 14px;
+      font-size:12px;
+      color:var(--muted);
+    }
+    .badge i{
+      width:10px; height:10px; border-radius:999px; display:inline-block;
+      background: rgba(232,238,252,.20);
+    }
+    .result h3{margin:10px 0 6px; font-size:18px; letter-spacing:-.2px}
+    .result p{margin:0; color:var(--muted); font-size:13px; max-width:80ch}
+    .scoreGrid{
+      margin-top:12px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+    }
+    .srow{
+      border:1px solid rgba(232,238,252,.10);
+      background: rgba(15,26,51,.56);
+      border-radius: 16px;
+      padding:12px;
+    }
+    .srowHead{
+      display:flex; justify-content:space-between; gap:10px; align-items:center;
+      font-size:12px; color:var(--muted);
+      margin-bottom:8px;
+    }
+    .spark{
+      height:10px; border-radius:999px;
+      background: rgba(232,238,252,.07);
+      border:1px solid rgba(232,238,252,.10);
+      overflow:hidden;
+    }
+    .spark > div{height:100%; width:0%; border-radius:999px}
+    .spark .ymBar{background: rgba(96,165,250,.55)}
+    .spark .guBar{background: rgba(167,139,250,.55)}
+    .spark .tuBar{background: rgba(167,243,208,.55)}
+    .spark .suBar{background: rgba(251,191,36,.55)}
+
+    .resultActions{
+      margin-top:14px;
+      display:flex; gap:10px; flex-wrap:wrap;
+    }
+
+    @media (min-width: 900px){
+      h1{font-size:34px}
+      .scoreGrid{grid-template-columns: 1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container">
+      <div class="navin">
+        <a class="brand" href="mainland.html">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            <strong>바디올 난치 신경-기능센터</strong>
+            <span>기능축 분류 검사</span>
+          </div>
+        </a>
+        <nav class="navlinks" aria-label="빠른 이동">
+          <a href="mainland.html">메인</a>
+          <a href="ym.html">양명</a>
+          <a href="gu.html">궐음</a>
+          <a href="tu.html">태음</a>
+          <a href="su.html">소음</a>
+          <a class="btn primary" href="mainland.html#contact">상담/예약</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="top">
+      <svg class="heroArt" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+            <stop offset="0" stop-color="rgba(110,231,255,0.22)"/>
+            <stop offset="1" stop-color="rgba(110,231,255,0)"/>
+          </radialGradient>
+          <pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse">
+            <path d="M 18 0 L 0 0 0 18" fill="none" stroke="rgba(232,238,252,0.10)" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="420" height="420" fill="url(#grid)" opacity="0.55"/>
+        <circle cx="245" cy="165" r="160" fill="url(#glow)"/>
+        <circle cx="245" cy="165" r="110" fill="none" stroke="rgba(232,238,252,0.18)" stroke-width="1.8"/>
+        <path d="M115 250 C155 200, 215 190, 260 205 C300 220, 315 250, 345 260"
+              fill="none" stroke="rgba(110,231,255,0.18)" stroke-width="3" opacity="0.9"/>
+      </svg>
+
+      <div class="kicker">12문항 · 30초 · 4대 기능축 분류</div>
+      <h1>지금 불편은 “어느 축”에서 시작됐는지<br/>먼저 분류부터 합니다.</h1>
+      <p class="sub">
+        이 검사는 현재 패턴을 <b>양명(소화·대사)</b> / <b>궐음(자율신경)</b> / <b>태음(면역·호흡)</b> / <b>소음(회복·에너지)</b> 중
+        가장 가까운 축으로 분류해, 해당 안내 페이지로 연결합니다.
+      </p>
+
+      <div class="heroRow">
+        <button class="btn primary" id="startBtn" type="button">검사 시작</button>
+        <a class="btn" href="mainland.html">메인으로 이동</a>
+      </div>
+
+      <div class="note">
+        ※ 안내 목적의 분류입니다. 증상이 급격하거나 심한 경우는 지체 없이 의료진 평가가 필요합니다.
+      </div>
+
+      <div class="quadWrap" aria-label="4대 기능축 개요">
+        <div class="quadGrid">
+          <div class="quad ym" role="button" tabindex="0" data-go="ym.html" aria-label="양명축 페이지로 이동">
+            <div class="accentBar"></div>
+            <div class="pill">양명축 · 소화·대사</div>
+            <h3>먹고 나서 불편 / 더부룩 / 변동</h3>
+            <p>식후 증상, 속 더부룩함, 역류감, 변 패턴 흔들림, 식욕/당김의 변화</p>
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <path d="M28 68 C38 38, 78 38, 88 68 C78 88, 38 88, 28 68 Z" fill="rgba(96,165,250,.10)" stroke="rgba(96,165,250,.24)" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <div class="quad gu" role="button" tabindex="0" data-go="gu.html" aria-label="궐음축 페이지로 이동">
+            <div class="accentBar"></div>
+            <div class="pill">궐음축 · 자율신경</div>
+            <h3>긴장 / 두근 / 얕은 수면 / 변동성</h3>
+            <p>스트레스에 민감, 증상이 들쑥날쑥, 불안·예민, 자주 깨는 수면</p>
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <path d="M20 62 L36 62 L44 48 L54 78 L64 58 L74 62 L100 62" fill="none" stroke="rgba(167,139,250,.24)" stroke-width="2.6"/>
+              <circle cx="62" cy="62" r="38" fill="rgba(167,139,250,.08)" stroke="rgba(167,139,250,.18)" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <div class="quad tu" role="button" tabindex="0" data-go="tu.html" aria-label="태음축 페이지로 이동">
+            <div class="accentBar"></div>
+            <div class="pill">태음축 · 면역·호흡</div>
+            <h3>비염·기침·피부 / 반복 / 환절기</h3>
+            <p>감기·염증 반복, 알레르기 반응, 비염/기침/가래, 피부 가려움/트러블</p>
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <path d="M60 18 C78 28, 92 46, 90 68 C88 88, 74 100, 60 104 C46 100, 32 88, 30 68 C28 46, 42 28, 60 18 Z"
+                    fill="rgba(167,243,208,.10)" stroke="rgba(167,243,208,.24)" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <div class="quad su" role="button" tabindex="0" data-go="su.html" aria-label="소음축 페이지로 이동">
+            <div class="accentBar"></div>
+            <div class="pill">소음축 · 회복·에너지</div>
+            <h3>쉽게 지침 / 회복 느림 / 아침이 힘듦</h3>
+            <p>쉬어도 피곤, 회복 속도 저하, 지속력 떨어짐, 손발 차가움/무기력</p>
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <path d="M20 78 C34 60, 46 52, 60 52 C74 52, 86 60, 100 78" fill="none" stroke="rgba(251,191,36,.26)" stroke-width="3"/>
+              <path d="M32 88 C44 74, 52 68, 60 68 C68 68, 76 74, 88 88" fill="none" stroke="rgba(110,231,255,.18)" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="panel" id="quizPanel" style="display:none;">
+      <div class="panelHead">
+        <h2>문항에 답해 주세요</h2>
+        <p class="mini">최근 2주 기준으로 선택하시면 정확도가 올라갑니다.</p>
+      </div>
+
+      <div class="progressWrap" aria-label="진행도">
+        <div class="bar" aria-hidden="true"><div id="pbar"></div></div>
+        <div class="progressText" id="ptext">0 / 12</div>
+      </div>
+
+      <form id="quiz" autocomplete="off">
+        <!-- questions injected by JS -->
+      </form>
+
+      <div class="actions">
+        <button class="btn danger" type="button" id="resetBtn">초기화</button>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn" type="button" id="backTopBtn">위로</button>
+          <button class="btn primary" type="button" id="calcBtn">결과 보기</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULT -->
+    <section class="result" id="resultBox" aria-live="polite">
+      <div class="resultTop">
+        <div>
+          <div class="badge" id="axisBadge"><i></i><span>분류 결과</span></div>
+          <h3 id="axisTitle">-</h3>
+          <p id="axisDesc">-</p>
+        </div>
+        <div class="badge">
+          <span id="redirText">잠시 후 자동 이동합니다.</span>
+        </div>
+      </div>
+
+      <div class="scoreGrid" id="scoreGrid">
+        <!-- score bars injected -->
+      </div>
+
+      <div class="resultActions">
+        <a class="btn primary" id="goAxisBtn" href="#">해당 축 페이지로 이동</a>
+        <a class="btn" href="mainland.html">메인 랜딩으로 이동</a>
+        <a class="btn" href="#top" id="retakeBtn">다시 검사</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // -------------------------
+    // 1) 질문 설계(12문항) + 가중치
+    //    값: 0~3 (전혀/가끔/자주/거의 항상)
+    //    weights: 축별 가중치
+    // -------------------------
+    const AX = {
+      ym: { name: "양명축(소화·대사)", color: "rgba(96,165,250,.75)", file: "ym.html",
+            desc: "식후 불편·더부룩함·역류감·변동(변/식욕/당김)이 반복될 때, 소화·대사 축부터 정리하는 편이 효율적입니다."},
+      gu: { name: "궐음축(자율신경)", color: "rgba(167,139,250,.75)", file: "gu.html",
+            desc: "두근거림·긴장·예민·얕은 수면과 함께 증상이 ‘왔다 갔다’ 하는 변동성이 크다면, 조절(자율신경)과 리듬을 먼저 정리합니다."},
+      tu: { name: "태음축(면역·호흡)", color: "rgba(167,243,208,.75)", file: "tu.html",
+            desc: "비염·기침·감기 반복, 피부 트러블/가려움처럼 외부 자극에 쉽게 무너지는 패턴이라면, 방어-회복 축부터 정리합니다."},
+      su: { name: "소음축(회복·에너지)", color: "rgba(251,191,36,.80)", file: "su.html",
+            desc: "쉬어도 피곤하고 회복이 느리며 지속력이 떨어진다면, 회복력(리듬/지속력)부터 잡아 반복을 줄이는 방향으로 갑니다."}
+    };
+
+    const QUESTIONS = [
+      { t:"식후에 더부룩하거나, 속이 묵직하게 불편한 편이다.", w:{ym:2, gu:0, tu:0, su:0}},
+      { t:"역류감/트림/가슴 답답 같은 느낌이 자주 있다.", w:{ym:2, gu:1, tu:0, su:0}},
+      { t:"변(설사/변비/가스/복부팽만)이 컨디션에 따라 흔들린다.", w:{ym:2, gu:1, tu:0, su:1}},
+      { t:"스트레스를 받으면 증상이 확 올라오거나 변동이 커진다.", w:{ym:1, gu:2, tu:0, su:1}},
+      { t:"두근거림/긴장/예민이 자주 올라오고 몸이 먼저 반응한다.", w:{ym:0, gu:2, tu:0, su:1}},
+      { t:"잠이 얕거나 자주 깨고, 자도 개운하지 않은 날이 많다.", w:{ym:0, gu:2, tu:0, su:2}},
+      { t:"환절기/피로 때 비염·기침·가래가 쉽게 올라온다.", w:{ym:0, gu:0, tu:2, su:1}},
+      { t:"감기/염증이 잦거나 한 번 걸리면 오래 가는 편이다.", w:{ym:0, gu:0, tu:2, su:1}},
+      { t:"피부 가려움/트러블이 컨디션 저하와 함께 악화된다.", w:{ym:0, gu:0, tu:2, su:1}},
+      { t:"아침이 특히 힘들고, 몸이 풀리는 데 시간이 오래 걸린다.", w:{ym:0, gu:0, tu:0, su:2}},
+      { t:"조금 무리하면 회복에 며칠이 걸리고, 쉽게 바닥난다.", w:{ym:0, gu:0, tu:0, su:2}},
+      { t:"손발이 차거나 무기력이 쉽게 올라오고 지속력이 떨어진다.", w:{ym:0, gu:0, tu:0, su:2}},
+    ];
+
+    const SCALE = [
+      { v:0, a:"전혀 아니다", b:"해당 없음" },
+      { v:1, a:"가끔", b:"드물게" },
+      { v:2, a:"자주", b:"반복됨" },
+      { v:3, a:"거의 항상", b:"거의 매번" }
+    ];
+
+    // -------------------------
+    // 2) 렌더링
+    // -------------------------
+    const quizPanel = document.getElementById("quizPanel");
+    const quizForm  = document.getElementById("quiz");
+    const pbar = document.getElementById("pbar");
+    const ptext= document.getElementById("ptext");
+
+    const startBtn = document.getElementById("startBtn");
+    const resetBtn = document.getElementById("resetBtn");
+    const calcBtn  = document.getElementById("calcBtn");
+    const backTopBtn = document.getElementById("backTopBtn");
+
+    const resultBox = document.getElementById("resultBox");
+    const axisBadge = document.getElementById("axisBadge");
+    const axisTitle = document.getElementById("axisTitle");
+    const axisDesc  = document.getElementById("axisDesc");
+    const goAxisBtn = document.getElementById("goAxisBtn");
+    const scoreGrid = document.getElementById("scoreGrid");
+    const redirText = document.getElementById("redirText");
+    const retakeBtn = document.getElementById("retakeBtn");
+
+    // build quiz
+    function buildQuiz(){
+      quizForm.innerHTML = "";
+      QUESTIONS.forEach((q, idx)=>{
+        const wrap = document.createElement("div");
+        wrap.className = "q";
+        wrap.innerHTML = `
+          <p class="qTitle"><b>Q${idx+1}.</b> ${q.t}</p>
+          <div class="scale" role="radiogroup" aria-label="Q${idx+1} 선택지">
+            ${SCALE.map(s=>`
+              <div class="opt" role="radio" tabindex="0"
+                   aria-checked="false"
+                   data-q="${idx}" data-v="${s.v}">
+                <strong>${s.a}</strong>
+                <span>${s.b}</span>
+              </div>
+            `).join("")}
+          </div>
+          <input type="hidden" name="q${idx}" id="q${idx}" value="" />
+        `;
+        quizForm.appendChild(wrap);
+      });
+
+      // option click
+      quizForm.querySelectorAll(".opt").forEach(opt=>{
+        opt.addEventListener("click", ()=>selectOpt(opt));
+        opt.addEventListener("keydown", (e)=>{
+          if(e.key==="Enter" || e.key===" "){
+            e.preventDefault();
+            selectOpt(opt);
+          }
+        });
+      });
+      updateProgress();
+    }
+
+    function selectOpt(opt){
+      const qi = Number(opt.getAttribute("data-q"));
+      const v  = Number(opt.getAttribute("data-v"));
+      const hidden = document.getElementById(`q${qi}`);
+      hidden.value = String(v);
+
+      // clear siblings
+      const siblings = opt.parentElement.querySelectorAll(".opt");
+      siblings.forEach(s=>{
+        s.dataset.sel = "0";
+        s.setAttribute("aria-checked","false");
+      });
+      opt.dataset.sel = "1";
+      opt.setAttribute("aria-checked","true");
+
+      updateProgress();
+    }
+
+    function answeredCount(){
+      let c=0;
+      for(let i=0;i<QUESTIONS.length;i++){
+        if(document.getElementById(`q${i}`).value !== "") c++;
+      }
+      return c;
+    }
+
+    function updateProgress(){
+      const a = answeredCount();
+      const total = QUESTIONS.length;
+      const pct = Math.round((a/total)*100);
+      pbar.style.width = pct + "%";
+      ptext.textContent = `${a} / ${total}`;
+    }
+
+    // -------------------------
+    // 3) 점수 계산 + 자동 라우팅
+    // -------------------------
+    function calcScores(){
+      const raw = {ym:0, gu:0, tu:0, su:0};
+      let maxPossible = {ym:0, gu:0, tu:0, su:0};
+
+      QUESTIONS.forEach((q, i)=>{
+        const valStr = document.getElementById(`q${i}`).value;
+        const v = valStr==="" ? null : Number(valStr);
+        // max possible for normalization
+        Object.keys(raw).forEach(k=>{
+          const w = (q.w[k]||0);
+          maxPossible[k] += (3 * w);
+        });
+        if(v===null) return;
+        Object.keys(raw).forEach(k=>{
+          const w = (q.w[k]||0);
+          raw[k] += (v * w);
+        });
+      });
+
+      // normalize to 0~100
+      const norm = {};
+      Object.keys(raw).forEach(k=>{
+        norm[k] = maxPossible[k] ? Math.round((raw[k] / maxPossible[k]) * 100) : 0;
+      });
+
+      return {raw, norm};
+    }
+
+    function pickAxis(norm){
+      const entries = Object.entries(norm).sort((a,b)=>b[1]-a[1]);
+      const top = entries[0];
+      const second = entries[1];
+
+      // tie-break: if equal, prefer axis that has more "key item" answers (simple)
+      if(top[1] === second[1]){
+        // key indices per axis
+        const keys = {
+          ym:[0,2],
+          gu:[4,5],
+          tu:[6,7,8],
+          su:[9,10,11,5]
+        };
+        const keyScore = (k)=>{
+          return keys[k].reduce((sum, qi)=>{
+            const v = Number(document.getElementById(`q${qi}`).value || 0);
+            return sum + v;
+          },0);
+        };
+        const tK = top[0], sK = second[0];
+        if(keyScore(sK) > keyScore(tK)) return sK;
+      }
+      return top[0];
+    }
+
+    function persistResult(axisKey, norm){
+      const payload = {
+        axis: axisKey,
+        scores: norm,
+        ts: new Date().toISOString(),
+        version: "gen-intake-m1-v1"
+      };
+      try{
+        localStorage.setItem("genIntakeAxis", axisKey);
+        localStorage.setItem("genIntakeScores", JSON.stringify(payload));
+      }catch(e){}
+    }
+
+    let redirectTimer = null;
+
+    function showResult(axisKey, norm){
+      const ax = AX[axisKey];
+
+      // badge color
+      axisBadge.querySelector("i").style.background = ax.color;
+      axisBadge.querySelector("span").textContent = "분류 결과";
+
+      axisTitle.textContent = ax.name;
+      axisDesc.textContent = ax.desc;
+
+      // score bars
+      scoreGrid.innerHTML = "";
+      const rows = [
+        {k:"ym", label:"양명(소화·대사)", cls:"ymBar"},
+        {k:"gu", label:"궐음(자율신경)", cls:"guBar"},
+        {k:"tu", label:"태음(면역·호흡)", cls:"tuBar"},
+        {k:"su", label:"소음(회복·에너지)", cls:"suBar"}
+      ];
+      rows.forEach(r=>{
+        const v = norm[r.k] ?? 0;
+        const el = document.createElement("div");
+        el.className = "srow";
+        el.innerHTML = `
+          <div class="srowHead">
+            <span>${r.label}</span>
+            <span><b>${v}</b>/100</span>
+          </div>
+          <div class="spark"><div class="${r.cls}" style="width:${v}%"></div></div>
+        `;
+        scoreGrid.appendChild(el);
+      });
+
+      // prepare redirect url with params
+      const url = `${ax.file}?from=m1&axis=${axisKey}&ym=${norm.ym}&gu=${norm.gu}&tu=${norm.tu}&su=${norm.su}`;
+      goAxisBtn.href = url;
+
+      // show result section
+      resultBox.style.display = "block";
+      resultBox.scrollIntoView({behavior:"smooth", block:"start"});
+
+      // auto redirect
+      let sec = 5;
+      redirText.textContent = `${sec}초 후 자동 이동합니다.`;
+      if(redirectTimer) clearInterval(redirectTimer);
+      redirectTimer = setInterval(()=>{
+        sec--;
+        if(sec <= 0){
+          clearInterval(redirectTimer);
+          window.location.href = url;
+          return;
+        }
+        redirText.textContent = `${sec}초 후 자동 이동합니다.`;
+      }, 1000);
+    }
+
+    function validate(){
+      const a = answeredCount();
+      if(a < QUESTIONS.length){
+        // minimal friction: scroll to first unanswered
+        for(let i=0;i<QUESTIONS.length;i++){
+          if(document.getElementById(`q${i}`).value === ""){
+            const qEl = quizForm.children[i];
+            qEl.scrollIntoView({behavior:"smooth", block:"center"});
+            qEl.style.outline = "2px solid rgba(110,231,255,.22)";
+            qEl.style.outlineOffset = "2px";
+            setTimeout(()=>{ qEl.style.outline = "none"; }, 800);
+            break;
+          }
+        }
+        return false;
+      }
+      return true;
+    }
+
+    // -------------------------
+    // 4) events
+    // -------------------------
+    startBtn.addEventListener("click", ()=>{
+      quizPanel.style.display = "block";
+      buildQuiz();
+      quizPanel.scrollIntoView({behavior:"smooth", block:"start"});
+    });
+
+    // quadrant quick go (optional)
+    document.querySelectorAll(".quad").forEach(q=>{
+      const go = ()=> window.location.href = q.dataset.go;
+      q.addEventListener("click", go);
+      q.addEventListener("keydown", (e)=>{
+        if(e.key==="Enter" || e.key===" "){ e.preventDefault(); go(); }
+      });
+    });
+
+    resetBtn.addEventListener("click", ()=>{
+      if(redirectTimer) clearInterval(redirectTimer);
+      resultBox.style.display = "none";
+      quizForm.querySelectorAll("input[type='hidden']").forEach(i=> i.value="");
+      quizForm.querySelectorAll(".opt").forEach(o=>{
+        o.dataset.sel="0";
+        o.setAttribute("aria-checked","false");
+      });
+      updateProgress();
+      quizPanel.scrollIntoView({behavior:"smooth", block:"start"});
+    });
+
+    backTopBtn.addEventListener("click", ()=>{
+      window.scrollTo({top:0, behavior:"smooth"});
+    });
+
+    calcBtn.addEventListener("click", ()=>{
+      if(!validate()) return;
+      const {norm} = calcScores();
+      const axisKey = pickAxis(norm);
+      persistResult(axisKey, norm);
+      showResult(axisKey, norm);
+    });
+
+    retakeBtn.addEventListener("click", (e)=>{
+      e.preventDefault();
+      if(redirectTimer) clearInterval(redirectTimer);
+      resultBox.style.display = "none";
+      window.scrollTo({top:0, behavior:"smooth"});
+    });
+
+    // deep-link: start automatically if ?start=1
+    (function(){
+      const u = new URL(window.location.href);
+      if(u.searchParams.get("start")==="1"){
+        quizPanel.style.display = "block";
+        buildQuiz();
+      }
+    })();
+  </script>
+</body>
+</html>

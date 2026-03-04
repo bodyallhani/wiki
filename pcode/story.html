@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <title>Our Story | 바디올 난치 신경-기능센터</title>
+  
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+  <style>
+    :root {
+      --bg: #05080f;
+      --card: rgba(255, 255, 255, 0.03);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --line: rgba(255, 255, 255, 0.08);
+      --accent: #fbbf24;
+      --radius: 24px;
+      --max: 720px; /* 읽기 최적화된 폭 */
+    }
+
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+    
+    body {
+      margin: 0;
+      font-family: "Pretendard", -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.8;
+      word-break: keep-all;
+    }
+
+    /* 상단 네비게이션 */
+    .nav {
+      position: fixed; top: 0; width: 100%; z-index: 1000;
+      backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
+      background: rgba(5, 8, 15, 0.7); border-bottom: 1px solid var(--line);
+    }
+    .nav-in { max-width: var(--max); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; }
+    .back-btn { font-size: 14px; font-weight: 600; color: var(--muted); text-decoration: none; display: flex; align-items: center; gap: 5px; }
+
+    /* 레이아웃 구조 */
+    .container { max-width: var(--max); margin: 0 auto; padding: 100px 20px 140px; }
+
+    /* 섹션 스타일 */
+    section { margin-bottom: 120px; opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); }
+    section.visible { opacity: 1; transform: translateY(0); }
+
+    .img-box { width: 100%; border-radius: var(--radius); overflow: hidden; margin-bottom: 40px; border: 1px solid var(--line); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+    .img-box img { width: 100%; display: block; }
+
+    .label { font-size: 12px; font-weight: 800; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; display: block; }
+    h2 { font-size: 28px; font-weight: 800; line-height: 1.4; margin-bottom: 24px; letter-spacing: -1px; }
+    p { font-size: 17px; color: #cbd5e1; margin-bottom: 20px; }
+    p b { color: #fff; font-weight: 700; }
+
+    /* 논문 인용 박스 */
+    .quote-box {
+      background: var(--card); border-left: 3px solid var(--accent);
+      padding: 24px; border-radius: 0 16px 16px 0; margin: 30px 0;
+    }
+    .quote-box .cite { font-size: 13px; color: var(--muted); display: block; margin-top: 12px; }
+
+    /* 마지막 CTA */
+    .cta-box { text-align: center; padding: 60px 20px; background: linear-gradient(to bottom, transparent, rgba(251, 191, 36, 0.05)); border-radius: var(--radius); border: 1px solid var(--line); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 18px 36px; border-radius: 14px; font-weight: 700; font-size: 16px; text-decoration: none; transition: 0.3s; margin-top: 20px; }
+    .btn.primary { background: #fff; color: #000; }
+    .btn.primary:hover { transform: scale(1.05); }
+
+    footer { text-align: center; color: var(--muted); font-size: 13px; padding-top: 40px; border-top: 1px solid var(--line); }
+
+    @media (max-width: 480px) {
+      h2 { font-size: 24px; }
+      p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-in">
+      <a href="mainland.html" class="back-btn">← 메인으로 돌아가기</a>
+      <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png" style="height: 24px;" alt="Bodyall">
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section>
+      <div class="img-box">
+        <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/story1.png" alt="Research Journal">
+      </div>
+      <span class="label">The Beginning</span>
+      <h2>의사가 된 이유는 단순했습니다.<br>제 아토피를 직접 고치고 싶었으니까요.</h2>
+      <p>수십 년간 저를 괴롭혔던 아토피. 한의사가 된 후에도 악화와 완화가 반복되는 일상은 계속되었습니다. 수많은 환자를 완치로 이끌면서도, 정작 <b>제 피부가 붉게 달아오르는 날이면 깊은 무력감에 빠지곤 했습니다.</b></p>
+      <p>전통 한의학의 지혜를 모두 쏟아부어도 풀리지 않던 숙제. 저는 그 해답을 찾기 위해 다시 원점으로 돌아가 연구를 시작했습니다.</p>
+    </section>
+
+    <section>
+      <div class="img-box">
+        <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/story2.png" alt="Nerve and Science">
+      </div>
+      <span class="label">Scientific Evidence</span>
+      <h2>척추를 바로잡는 것만으로도<br>충분할 줄 알았습니다.</h2>
+      <p>처음에는 척추의 정렬에 집중했습니다. 척추의 틀어짐이 신경을 누르고, 그 신경이 지배하는 장기의 기능을 떨어뜨리는 것이 모든 난치 질환의 시작임을 알았기 때문입니다.</p>
+      <p>실제로 바디올의 척추 교정은 수많은 통증 질환에서 탁월한 결과를 보여주었습니다. 하지만 <b>자율신경의 핵심인 경추를 교정해도 제 아토피 증상은 완전히 사라지지 않았습니다.</b> 그때 한 논문의 문구가 저를 깨웠습니다.</p>
+      
+      <div class="quote-box">
+        "척추가 <b>신경을 쌀 몇톨 수준의 압력(10mmHg)</b>으로만 눌러도, <br>
+        단 15분 만에 <b>신경 기능의 50%가 소실</b>될 수 있습니다.<br>
+        척추의 아주 작은 틀어짐이 당신의 신경기능을 반토막 내는 것입니다."
+        <span class="cite">— Seth K. Sharpless, Professor of Psychology, University of Colorado</span>
+      </div>
+      <p>충격적이었습니다. 오랜 세월 틀어진 척추 아래에서 고통받던 제 신경계는 이미 정상적인 신호 전달 능력을 잃어버린 상태였습니다.</p>
+    </section>
+
+    <section>
+      <div class="img-box">
+        <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/story3.png" alt="System Debugging">
+      </div>
+      <span class="label">Software & Hardware</span>
+      <h2>하드웨어를 고쳐도,<br>소프트웨어의 오류는 남습니다.</h2>
+      <p>척추(하드웨어)를 바로잡아도 이미 수년간 잘못된 신호에 익숙해진 <b>내장 기관의 기능적 오류(소프트웨어)</b>는 스스로 지워지지 않습니다. 컴퓨터 본체를 수리해도 깨진 OS는 다시 설치해야 하듯, 우리 몸에도 <b>'시스템 디버깅(Debugging)'</b>이 필요했습니다.</p>
+      <p>저는 한의학적 전인론의 강점을 살려, 척추 신경 루트에 따른 패턴을 정밀하게 유형화했습니다. 주관적 진단이 아닌 <b>데이터로 증명되는 예측 가능한 진단 체계</b>, 그것이 바디올의 <b>P-CODE</b>입니다.</p>
+    </section>
+
+    <section>
+      <div class="img-box">
+        <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/story4.png" alt="Order Restoration">
+      </div>
+      <span class="label">The Proof</span>
+      <h2>제 몸이 먼저 반응했습니다.</h2>
+      <p>새롭게 설계한 P-CODE 시스템을 제 몸에 직접 적용했습니다. 맥파 진단기(SA3000P)를 통해 실시간 신체 리듬을 추적하며, <b>시스템 오류를 바로잡는 정밀한 한약 처방</b>을 투여했습니다.</p>
+      <p>결과는 놀라웠습니다. 수십 년간 낫지 않던 아토피가 데이터가 가리키는 패턴대로 움직이며 사라지기 시작했습니다. <b>진단 오차 범위를 획기적으로 줄인 시스템</b>이 가져온, 제 인생에서 처음 만난 '완전한 건강'이었습니다.</p>
+    </section>
+
+    <section>
+      <div class="img-box">
+        <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/story5.png" alt="The Mission">
+      </div>
+      <span class="label">Our Mission</span>
+      <h2>이제 저는 아토피 환자가 아닙니다.<br>하지만 그 간절함은 누구보다 잘 압니다.</h2>
+      <p>저는 더 이상 뜨겁고 가려운 피부 때문에 밤을 지새우지 않습니다. 하지만 <b>검사 결과는 정상인데 몸은 계속 아픈 환자들의 그 막막한 심정</b>만큼은 가슴 깊이 새겨져 있습니다.</p>
+      <p>바디올 난치 신경-기능센터는 단순한 증상 치료를 넘어, 당신의 삶을 지탱하는 <b>4대 기능축의 조화</b>를 다시 설계합니다. 제가 직접 증명해낸 이 시스템으로, 당신의 무너진 리듬을 다시 찾아드리겠습니다.</p>
+
+      <div class="cta-box">
+        <h3>당신의 기능축은 안녕하십니까?</h3>
+        <p>30초 간편 진단으로 당신의 무너진 축을 확인해 보세요.</p>
+        <a href="m1.html" class="btn primary">나의 유형 검사하기</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>바디올한의원 · 대표원장 이동해</p>
+      <p style="opacity: 0.3; margin-top: 10px;">© 2024 Bodyall Functional Medicine Center.</p>
+    </footer>
+
+  </main>
+
+  <script>
+    // 스크롤 시 섹션이 나타나는 애니메이션
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>

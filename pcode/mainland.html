@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <title>바디올 난치 신경-기능센터 | 4대 기능축 통합 진단</title>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-390KQ62CTL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-390KQ62CTL', { send_page_view: true });
+  </script>
+
+  <style>
+    :root {
+      --bg: #05080f; 
+      --card: rgba(255, 255, 255, 0.03);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --line: rgba(255, 255, 255, 0.08);
+      --accent: #ffffff;
+      --radius: 20px;
+      --max: 1140px;
+      --ym: #fbbf24; --gu: #a78bfa; --tu: #34d399; --su: #3b82f6;
+    }
+
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+    body {
+      margin: 0; font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
+      color: var(--text); background: var(--bg); line-height: 1.5; word-break: keep-all;
+    }
+    .bg-glow {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: radial-gradient(circle at 10% 10%, rgba(251, 191, 36, 0.05) 0%, transparent 40%),
+                  radial-gradient(circle at 90% 90%, rgba(59, 130, 246, 0.05) 0%, transparent 40%);
+      z-index: -1;
+    }
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    a { color: inherit; text-decoration: none; transition: 0.2s; }
+
+    /* Nav */
+    .nav { position: sticky; top: 0; z-index: 100; backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); background: rgba(5, 8, 15, 0.8); border-bottom: 1px solid var(--line); }
+    .navin { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; }
+    .brand { display: flex; align-items: center; gap: 8px; }
+    .logo-dot { width: 22px; height: 22px; border-radius: 6px; background: linear-gradient(135deg, var(--ym), var(--su)); }
+    .brand strong { font-size: 15px; letter-spacing: -0.5px; }
+
+    /* Spacing & Hierarchy */
+    section { padding: 120px 0; border-top: 1px solid var(--line); }
+    .hero { padding: 80px 0 120px; text-align: center; border-top: none; }
+    .kicker { font-size: 11px; font-weight: 800; color: #fff; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 12px; display: inline-block; padding: 4px 12px; border: 1px solid var(--line); border-radius: 99px; }
+    .hero-logo { width: 48px; height: auto; margin: 0 auto 24px; display: block; opacity: 0.9; }
+    .hero h1 { font-size: 32px; font-weight: 800; line-height: 1.3; margin: 0 0 20px; letter-spacing: -1px; }
+    .hero p.sub { font-size: 16px; color: var(--muted); margin-bottom: 32px; }
+
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 16px 24px; border-radius: 14px; font-weight: 700; font-size: 15px; width: 100%; border: 1px solid var(--line); transition: 0.3s; cursor: pointer; }
+    .btn.primary { background: #fff; color: #000; border: none; }
+    .btn.outline { background: transparent; color: #fff; }
+
+    /* Personalized Box */
+    .personal { display: none; margin: 30px 0 60px; padding: 24px; background: rgba(255,255,255,0.02); border-radius: var(--radius); border: 1.5px solid var(--ym); text-align: left; animation: fadeIn 0.5s ease; }
+    .p-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+    .p-badge { padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 800; border: 1px solid; }
+
+    /* Quadrant Grid */
+    .quad-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 20px; }
+    .quad { position: relative; height: 220px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); cursor: pointer; transition: 0.4s; }
+    .quad-img { position: absolute; inset: 0; background-size: cover; background-position: center; filter: brightness(0.4); transition: 0.6s; }
+    .quad:hover .quad-img { transform: scale(1.1); filter: brightness(0.6); }
+    .quad-content { position: relative; height: 100%; padding: 24px; display: flex; flex-direction: column; justify-content: flex-end; background: linear-gradient(to top, rgba(5, 8, 15, 0.9), transparent); }
+    .quad-content h3 { font-size: 19px; margin: 0 0 4px; }
+    .quad-content p { font-size: 13px; color: var(--muted); margin: 0; }
+
+    /* [Hybrid] Disease Maze UI */
+    .maze-wrap {
+      position: relative;
+      background: url('https://raw.githubusercontent.com/bodyallhani/gen-intake/main/maze-bg.png') no-repeat center;
+      background-size: cover;
+      border: 1px solid var(--line);
+      border-radius: 40px;
+      padding: 100px 20px;
+      margin: 20px 0;
+      overflow: hidden;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    }
+    .maze-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 700px; margin: 0 auto 50px; position: relative; z-index: 2; }
+    .s-tag { 
+      padding: 10px 18px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); 
+      border-radius: 99px; font-size: 14px; font-weight: 600; color: var(--muted); 
+      backdrop-filter: blur(10px); transition: 0.3s;
+    }
+    .s-tag:hover { border-color: #fff; color: #fff; transform: translateY(-3px); background: rgba(255,255,255,0.1); }
+    .maze-focus-line { width: 1px; height: 80px; background: linear-gradient(to bottom, transparent, var(--su)); margin: 0 auto 30px; position: relative; z-index: 2; }
+    .maze-core-badge {
+      font-size: 24px; font-weight: 800; color: #fff; background: rgba(5, 8, 15, 0.85);
+      display: inline-block; padding: 18px 40px; border-radius: 20px; border: 1.5px solid var(--su);
+      box-shadow: 0 0 40px rgba(59, 130, 246, 0.4); backdrop-filter: blur(15px);
+      position: relative; z-index: 2; margin-bottom: 40px;
+    }
+    .maze-desc {
+      color: #fff; font-size: 17px; margin-bottom: 40px; line-height: 1.8; 
+      max-width: 540px; margin-left: auto; margin-right: auto; position: relative; z-index: 2;
+      font-weight: 500; text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+    }
+
+    /* [Hybrid] Story Section with Background */
+    .story-wrap {
+      position: relative;
+      background: url('https://raw.githubusercontent.com/bodyallhani/gen-intake/main/story-bg.png') no-repeat center;
+      background-size: cover;
+      border: 1px solid var(--line);
+      border-radius: 40px;
+      padding: 80px 40px;
+      cursor: pointer;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .story-wrap:hover { border-color: rgba(255,255,255,0.2); transform: translateY(-5px); }
+    .story-content { position: relative; z-index: 2; text-align: left; max-width: 600px; }
+
+    /* FAQ System */
+    .faq-category { margin-bottom: 40px; }
+    .faq-category-title { font-size: 13px; font-weight: 800; color: var(--su); margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; }
+    .faq details { margin-bottom: 12px; background: var(--card); border-radius: 16px; border: 1px solid var(--line); transition: 0.3s; }
+    .faq details[open] { border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); }
+    .faq summary { padding: 20px; cursor: pointer; font-weight: 700; font-size: 15px; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    .faq summary::after { content: '+'; font-size: 18px; color: var(--muted); }
+    .faq details[open] summary::after { content: '-'; }
+    .faq .answer { padding: 0 20px 20px; color: #cbd5e1; font-size: 14px; line-height: 1.7; }
+
+    /* Sticky Footer */
+    .sticky { position: fixed; bottom: 16px; left: 16px; right: 16px; z-index: 200; background: #fff; color: #000; padding: 12px 20px; border-radius: 18px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 15px 35px rgba(0,0,0,0.5); }
+
+    footer { padding: 80px 0 140px; text-align: center; color: var(--muted); font-size: 12px; border-top: 1px solid var(--line); }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @media (min-width: 769px) { .quad-grid { grid-template-columns: repeat(2, 1fr); } .hero h1 { font-size: 52px; } }
+    @media (min-width: 1024px) { .quad-grid { grid-template-columns: repeat(4, 1fr); } }
+  </style>
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+
+  <header class="nav">
+    <div class="navin">
+      <a class="brand" href="mainland.html">
+        <div class="logo-dot"></div>
+        <strong>바디올 난치 신경-기능센터</strong>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero">
+      <div class="kicker">Bodyall P-CODE Diagnosis</div>
+      <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png" alt="바디올 로고" class="hero-logo">
+      <h1>파편화된 증상이 아닌<br><span style="background: linear-gradient(to right, var(--ym), var(--gu), var(--tu), var(--su)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">질병의 축</span>을 바로잡습니다.</h1>
+      <p class="sub">해결되지 않았던 난치성 증상의 원인.<br>무너진 4대 기능축 진단에서 해답을 찾습니다.</p>
+      <div style="padding: 0 10px;">
+        <a class="btn primary" href="m1.html">30초, 나의 유형 검사하기</a>
+        <a class="btn outline" href="#axes" style="margin-top:10px;">4대 기능축 시스템 보기</a>
+      </div>
+
+      <div class="personal" id="personalBox">
+        <div class="p-header">
+          <div class="p-badge" id="pBadge">ANALYSIS RESULT</div>
+          <div style="font-size: 11px; font-weight: 700; color: var(--muted);" id="pScore">SCORE DATA</div>
+        </div>
+        <h3 id="pTitle" style="margin: 0 0 10px; font-size: 20px;">-</h3>
+        <p id="pDesc" style="color: var(--muted); font-size: 15px; margin-bottom: 24px;">-</p>
+        <a class="btn primary" id="pGoAxis" href="javascript:void(0);" style="padding: 12px; width: auto;">나의 축 정밀 리포트 보기</a>
+      </div>
+    </section>
+
+    <section id="axes">
+      <div class="kicker">P-CODE 4 Axis System</div>
+      <div style="text-align: center; margin-bottom: 60px;">
+        <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 12px;">바디올 4대 기능축 시스템</h2>
+        <p style="color: var(--muted);">환자의 변증에 따른 기능 분류</p>
+      </div>
+      <div class="quad-grid">
+        <div class="quad" data-go="ym.html">
+          <div class="quad-img" style="background-image: url('https://raw.githubusercontent.com/bodyallhani/gen-intake/main/ym.png');"></div>
+          <div class="quad-content">
+            <h3>양명축: 소화·대사</h3>
+            <p>따뜻한 소화 에너지와 노폐물 배출 리듬</p>
+          </div>
+        </div>
+        <div class="quad" data-go="gu.html">
+          <div class="quad-img" style="background-image: url('https://raw.githubusercontent.com/bodyallhani/gen-intake/main/gu.png');"></div>
+          <div class="quad-content">
+            <h3>궐음축: 자율신경</h3>
+            <p>신경계의 고요함과 조화로운 신체 조율</p>
+          </div>
+        </div>
+        <div class="quad" data-go="tu.html">
+          <div class="quad-img" style="background-image: url('https://raw.githubusercontent.com/bodyallhani/gen-intake/main/tu.png');"></div>
+          <div class="quad-content">
+            <h3>태음축: 면역·호흡</h3>
+            <p>맑은 산소 순환과 견고한 세포 방어 체계</p>
+          </div>
+        </div>
+        <div class="quad" data-go="su.html">
+          <div class="quad-img" style="background-image: url('https://raw.githubusercontent.com/bodyallhani/gen-intake/main/su.png');"></div>
+          <div class="quad-content">
+            <h3>소음축: 회복·에너지</h3>
+            <p>심부 에너지 재생과 근본적 생명력 복구</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="disease-maze" style="text-align: center; border-top: none;">
+      <div class="kicker" style="color: var(--su);">Beyond the Disease Name</div>
+      <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 24px;">진단명은 현상일 뿐,<br>사람마다 <span style="color: var(--ym);">진짜 주인(축)</span>은 다릅니다.</h2>
+      
+      <div class="maze-wrap">
+        <div class="maze-tags">
+          <span class="s-tag">#성인아토피</span> <span class="s-tag">#공황장애</span> <span class="s-tag">#과민성대장</span>
+          <span class="s-tag">#만성비염</span> <span class="s-tag">#불면증</span> <span class="s-tag">#역류성식도염</span>
+          <span class="s-tag">#만성피로</span> <span class="s-tag">#갱년기</span> <span class="s-tag">#이명</span>
+          <span class="s-tag">#두드러기</span> <span class="s-tag">#어지럼증</span> <span class="s-tag">#건선</span>
+        </div>
+        
+        <div class="maze-focus-line"></div>
+        <div class="maze-core-badge">4대 기능축 불균형</div>
+        
+        <div class="maze-desc">
+          병명에 맞춘 뻔한 치료가 반복되었다면,<br>이제 당신의 증상을 지배하는 <b>진짜 원인</b>을 만날 차례입니다.
+        </div>
+        
+        <a class="btn primary" href="m1.html" style="width: auto; padding: 20px 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">내 몸의 진짜 '축' 확인하기 →</a>
+      </div>
+    </section>
+
+    <section id="brand-philosophy">
+      <div class="story-wrap" onclick="location.href='story.html'">
+        <div class="story-content">
+          <div class="kicker" style="color: var(--ym); border-color: var(--ym); margin-bottom: 24px;">THE ORIGIN</div>
+          <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 20px; line-height: 1.4; text-shadow: 0 2px 10px rgba(0,0,0,0.8);">
+            검사 결과는 정상인데,<br><span style="color: var(--ym);">왜 나는 계속 불편할까?</span>
+          </h2>
+          <p style="color: #cbd5e1; font-size: 16px; margin-bottom: 32px; line-height: 1.6; text-shadow: 0 2px 10px rgba(0,0,0,0.8);">
+            파편화된 증상 치료에 한계를 느끼고,<br>인체의 뿌리인 '4대 기능축'을 발견하기까지의 기록.
+          </p>
+          <div style="font-weight: 700; color: #fff; font-size: 15px; display: flex; align-items: center; gap: 8px;">
+            P-code 변증법의 Story 확인하기 <span>→</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div style="text-align: center; margin-bottom: 60px;"><h2>주요 궁금증</h2></div>
+      <div class="faq">
+        <div class="faq-category">
+          <div class="faq-category-title">Step 1. 원인과 개념</div>
+          <details><summary>병원 검사에서는 정상이라는데 왜 계속 아플까요?</summary><div class="answer">일반 검사는 장기의 '파괴'를 찾지만, 난치성 증상은 <b>'시스템 신호 오류'</b>에서 시작됩니다. 바디올은 보이지 않는 기능축의 리듬을 추적합니다.</div></details>
+          <details><summary>'4대 기능축'은 사상체질과 같은 개념인가요?</summary><div class="answer">고정된 체질만 보는 것이 아니라 <b>'현재 나의 몸이 어떤 패턴으로 고장 났는가'</b>에 집중합니다. 실시간 불균형을 바로잡는 것이 목적입니다.</div></details>
+        </div>
+        <div class="faq-category">
+          <div class="faq-category-title">Step 2. 진단 시스템</div>
+          <details><summary>SA3000P 맥파 검사는 일반 진맥과 무엇이 다른가요?</summary><div class="answer">전통 맥진과 디지털 맥파 분석을 결합하여 진단의 객관성을 극대화한 시스템입니다. 즉, <b>전통 방식과 디지털의 상호보완</b>인 셈입니다.</div></details>
+          <details><summary>30초 간편 진단만으로 정확히 알 수 있나요?</summary><div class="answer">유형화된 패턴 분석을 통한 1차 스크리닝이며, 이후 <b>세밀한 P-CODE 진단</b>을 거쳐 최종 처방이 결정됩니다.</div></details>
+        </div>
+        <div class="faq-category">
+          <div class="faq-category-title">Step 3. 과정과 안전성</div>
+          <details><summary>왜 여러 증상을 한꺼번에 치료하지 않고 '복구 순서'를 따지나요?</summary><div class="answer">우리 몸은 톱니바퀴와 같습니다. 에너지(소음축)가 없는데 배출(양명축)만 시키면 시스템이 무너집니다. 바디올은 <b>치료의 선후관계</b>를 명확히 합니다.</div></details>
+          <details><summary>양약을 오래 복용 중인데 한방 치료를 병합해도 괜찮을까요?</summary><div class="answer">대부분의 질환에서 한방 치료 병행은 큰 도움이 됩니다. 약에만 의존하던 <b>자생 기능을 복구</b>하여 궁극적으로 의존도를 낮추는 과정을 도와드립니다.</div></details>
+          <details><summary>한약이 간독성이 있다고 하던데 정말 괜찮나요?</summary><div class="answer">한약 간독성 이슈는 근거 없는 폄훼에 가깝습니다. 바디올은 <b>원내 혈액검사기</b>를 구비하여 간 기능을 과학적으로 모니터링하므로 안심하셔도 됩니다.</div></details>
+        </div>
+        <div class="faq-category">
+          <div class="faq-category-title">Step 4. 결과와 유지</div>
+          <details><summary>오래된 난치병을 어떻게 치료할 수 있나요?</summary><div class="answer">증상을 누르는 것이 아니라 <b>인체 시스템을 개선</b>하는 것입니다. 꽃가루에도 멀쩡한 사람처럼, 질병이 올라오지 않는 '축의 밸런스'를 만드는 것이 전략입니다.</div></details>
+          <details><summary>치료 효과는 보통 언제부터 체감할 수 있나요?</summary><div class="answer">대개 1~2주의 기능축 안정화를 거치면 수면, 소화 등 <b>기초 생체 지표</b>부터 개선되기 시작하며 점진적으로 주 증상이 완화됩니다.</div></details>
+          <details><summary>치료가 끝난 후 다시 나빠지는 현상은 없나요?</summary><div class="answer">바디올은 1:1로 <b>한의사가 직접 환자의 컨디션에 맞는 생활 관리법</b>을 안내합니다. 몸이 건강한 리듬을 스스로 기억하도록 자생력을 갖추게 합니다.</div></details>
+        </div>
+        <div class="faq-category">
+          <div class="faq-category-title">Step 5. 비용과 편의성</div>
+          <details><summary>거리가 멀어 방문이 힘든데 비대면 진료가 가능한가요?</summary><div class="answer">네, 가능합니다. 보건복지부 지침에 따라 전화/화상 상담 시스템이 구축되어 있어, 지방에서도 정밀한 <b>P-CODE 진단</b>을 받으실 수 있습니다.</div></details>
+          <details><summary>치료 비용은 구체적으로 어떻게 되나요?</summary><div class="answer"><b>- 15일: 28만 원 / 1개월: 46만 원 / 3개월: 108만 원</b><br>전문적인 정밀 진단 시스템 대비 합리적인 수준의 비용 정책을 유지하고 있습니다.</div></details>
+          <details><summary>바디올의 한약 처방은 무엇이 다른가요?</summary><div class="answer">문헌 고증을 통해 <b>원산지와 학명(Scientific Name)까지 정확히 일치</b>시키는 엄격한 관리 시스템을 거친 고순도 약재만을 고집합니다.</div></details>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>바디올한의원 · 난치 신경-기능센터</p>
+      <p style="opacity: 0.3; margin-top: 10px;">© 2024 Bodyall Center. Professional Healthcare.</p>
+    </footer>
+  </main>
+
+  <div class="sticky">
+    <div style="font-size: 14px; font-weight: 800;">심층 문진 작성</div>
+    <a class="btn primary" href="https://bodyallhani.github.io/herbmed0/intake.html" style="width: auto; padding: 10px 20px;">문진 시작</a>
+  </div>
+
+  <script>
+    // 1. Smooth Scroll (Refined to avoid interference with functional buttons)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        // If href is just "#" or empty, do nothing so other logic can take over
+        if (href === "#" || href === "" || href.length < 2) return;
+
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) { 
+          window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' }); 
+        }
+      });
+    });
+
+    // 2. Axis Cards Navigation
+    document.querySelectorAll(".quad").forEach(q => {
+      q.addEventListener("click", () => window.location.href = q.dataset.go);
+    });
+
+    // 3. Personalized Result & Dynamic Link Injection
+    (function(){
+      const AX = {
+        ym: { name:"양명축: 소화·대사", color:"#fbbf24", file:"ym.html", desc:"위장의 따뜻한 대사 에너지를 복구해야 하는 상태입니다." },
+        gu: { name:"궐음축: 자율신경", color:"#a78bfa", file:"gu.html", desc:"신경계의 조율 리듬을 고요하게 바로잡아야 합니다." },
+        tu: { name:"태음축: 면역·호흡", color:"#34d399", file:"tu.html", desc:"면역 방어막의 결속력을 높여 외부 자극을 차단해야 합니다." },
+        su: { name:"소음축: 회복·에너지", color:"#3b82f6", file:"su.html", desc:"근본적인 수기(水氣)를 채워 에너지를 재생해야 합니다." }
+      };
+
+      try {
+        const axis = localStorage.getItem("genIntakeAxis");
+        const rawScores = localStorage.getItem("genIntakeScores");
+        if(axis && AX[axis]) {
+          const box = document.getElementById("personalBox");
+          const scoreData = JSON.parse(rawScores);
+          const score = scoreData.scores;
+          
+          document.getElementById("pTitle").textContent = AX[axis].name;
+          document.getElementById("pTitle").style.color = AX[axis].color;
+          document.getElementById("pDesc").textContent = AX[axis].desc;
+          document.getElementById("pScore").textContent = `YM:${score.ym} GU:${score.gu} TU:${score.tu} SU:${score.su}`;
+          
+          // CRITICAL: Set the actual file destination for the button
+          const goBtn = document.getElementById("pGoAxis");
+          goBtn.href = AX[axis].file; 
+          // Manually handle navigation if necessary to bypass any residual events
+          goBtn.onclick = function() { window.location.href = AX[axis].file; };
+
+          document.getElementById("pBadge").style.color = AX[axis].color;
+          document.getElementById("pBadge").style.borderColor = AX[axis].color;
+          box.style.display = "block";
+        }
+      } catch(e) {}
+    })();
+  </script>
+</body>
+</html>

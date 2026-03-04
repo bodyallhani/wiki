@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>기능축 분류 검사 | 바디올 난치 신경-기능센터</title>
+  
+  <style>
+    :root {
+      --bg: #05080f; 
+      --card: rgba(255, 255, 255, 0.03);
+      --card-hover: rgba(255, 255, 255, 0.06);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --line: rgba(255, 255, 255, 0.08);
+      --accent: #6ee7ff;
+      --radius: 24px;
+      --max: 800px; /* 설문 집중도를 위해 폭을 좁힘 */
+
+      --ym: #60a5fa; --gu: #a78bfa; --tu: #6ee7b7; --su: #fbbf24;
+    }
+
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+    
+    body {
+      margin: 0;
+      font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      word-break: keep-all;
+    }
+
+    .bg-glow {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: 
+        radial-gradient(circle at 10% 10%, rgba(110, 231, 255, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 90% 90%, rgba(167, 139, 250, 0.05) 0%, transparent 40%);
+      z-index: -1; pointer-events: none;
+    }
+
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+    /* NAV */
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      background: rgba(5, 8, 15, 0.7);
+      border-bottom: 1px solid var(--line);
+    }
+    .navin { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
+    .logo-dot { width: 24px; height: 24px; border-radius: 7px; background: linear-gradient(135deg, var(--accent), var(--gu)); }
+    .brand strong { font-size: 15px; }
+
+    /* HERO */
+    .hero { padding: 80px 0 40px; text-align: center; }
+    .kicker { font-size: 12px; font-weight: 700; color: var(--accent); letter-spacing: 2px; margin-bottom: 12px; }
+    .hero h1 { font-size: clamp(28px, 4vw, 42px); font-weight: 800; margin: 0 0 16px; letter-spacing: -1px; line-height: 1.2; }
+    .hero p { color: var(--muted); font-size: 17px; margin-bottom: 32px; }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 14px 24px; border-radius: 16px; font-weight: 600; font-size: 15px;
+      cursor: pointer; transition: all 0.2s; border: 1px solid var(--line); text-decoration: none;
+    }
+    .btn.primary { background: #fff; color: #000; border: none; }
+    .btn.primary:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(255,255,255,0.1); }
+    .btn.outline { background: transparent; color: #fff; }
+
+    /* QUIZ PANEL */
+    .panel { display: none; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; margin-bottom: 60px; }
+    .progress-wrap { margin-bottom: 40px; }
+    .progress-bar { height: 6px; background: rgba(255,255,255,0.05); border-radius: 10px; overflow: hidden; margin-bottom: 10px; }
+    .progress-fill { height: 100%; width: 0%; background: var(--accent); transition: width 0.3s ease; }
+    .progress-text { font-size: 13px; color: var(--muted); font-weight: 600; }
+
+    .q-card { margin-bottom: 32px; animation: fadeIn 0.5s ease both; }
+    .q-title { font-size: 18px; font-weight: 600; margin-bottom: 16px; color: #fff; }
+    
+    .opt-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .opt {
+      background: rgba(255,255,255,0.02); border: 1px solid var(--line); padding: 16px; border-radius: 16px;
+      cursor: pointer; transition: 0.2s; text-align: center;
+    }
+    .opt:hover { background: var(--card-hover); border-color: rgba(255,255,255,0.2); }
+    .opt[data-sel="1"] { background: rgba(110, 231, 255, 0.1); border-color: var(--accent); color: var(--accent); }
+    .opt strong { display: block; font-size: 15px; }
+    .opt span { font-size: 12px; opacity: 0.6; }
+
+    /* RESULT BOX */
+    .result {
+      display: none; background: var(--card); border: 1px solid var(--accent); border-radius: var(--radius);
+      padding: 40px; margin-top: 40px; animation: slideUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .result-header { text-align: center; margin-bottom: 40px; }
+    .result-header h3 { font-size: 28px; margin: 10px 0; }
+    .result-header p { color: var(--muted); max-width: 500px; margin: 0 auto; }
+
+    .score-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+    .score-item { background: rgba(255,255,255,0.02); padding: 20px; border-radius: 20px; border: 1px solid var(--line); }
+    .score-label { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 10px; color: var(--muted); }
+    .score-bar-bg { height: 4px; background: rgba(255,255,255,0.05); border-radius: 10px; }
+    .score-bar-fill { height: 100%; border-radius: 10px; transition: width 1s ease-out; }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+    @media (max-width: 600px) {
+      .opt-grid { grid-template-columns: 1fr; }
+      .score-grid { grid-template-columns: 1fr; }
+      .hero { padding: 40px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+
+  <header class="nav">
+    <div class="container">
+      <div class="navin">
+        <a class="brand" href="mainland.html">
+          <div class="logo-dot"></div>
+          <strong>바디올 난치 신경-기능센터</strong>
+        </a>
+        <a href="mainland.html" class="btn outline" style="padding: 6px 16px; font-size: 13px;">나가기</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="heroSec">
+      <div class="kicker">Function Axis Test</div>
+      <h1>당신의 무너진 균형,<br>어디서부터 시작되었을까요?</h1>
+      <p>12가지 문항을 통해 현재 당신의 몸을 지배하는<br>핵심 기능축 패턴을 찾아보세요.</p>
+      <button class="btn primary" id="startBtn">분류 검사 시작하기</button>
+    </section>
+
+    <section class="panel" id="quizPanel">
+      <div class="progress-wrap">
+        <div class="progress-bar"><div class="progress-fill" id="pbar"></div></div>
+        <div class="progress-text" id="ptext">0 / 12</div>
+      </div>
+
+      <form id="quiz"></form>
+
+      <div style="display: flex; justify-content: space-between; margin-top: 40px;">
+        <button class="btn outline" id="resetBtn">초기화</button>
+        <button class="btn primary" id="calcBtn">진단 결과 확인</button>
+      </div>
+    </section>
+
+    <section class="result" id="resultBox">
+      <div class="result-header">
+        <div id="resBadge" style="display:inline-block; padding: 4px 12px; border-radius: 99px; font-size: 12px; font-weight: 700; margin-bottom: 16px; border: 1px solid;">분류 결과</div>
+        <h3 id="axisTitle">분석 중...</h3>
+        <p id="axisDesc"></p>
+      </div>
+
+      <div class="score-grid" id="scoreGrid"></div>
+
+      <div style="text-align: center;">
+        <a class="btn primary" id="goAxisBtn" href="#">정밀 분석 페이지로 이동</a>
+        <p id="redirText" style="font-size: 13px; color: var(--muted); margin-top: 16px;">5초 후 자동으로 이동합니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // 기존 로직 변수 (동일하게 유지)
+    const AX = {
+      ym: { name: "양명축: 소화·대사", color: "#60a5fa", file: "ym.html", desc: "식후 불편함과 대사 정체가 중심인 패턴입니다. 소화 기능의 우선 순위 정리가 필요합니다." },
+      gu: { name: "궐음축: 자율신경", color: "#a78bfa", file: "gu.html", desc: "신경계의 예민도가 높고 변동성이 큰 패턴입니다. 조절 리듬 회복이 최우선입니다." },
+      tu: { name: "태음축: 면역·호흡", color: "#6ee7b7", file: "tu.html", desc: "외부 환경 자극에 민감하고 면역 방어력이 저하된 패턴입니다. 방어-회복 축 강화가 필요합니다." },
+      su: { name: "소음축: 회복·에너지", color: "#fbbf24", file: "su.html", desc: "에너지 고갈과 낮은 회복력이 특징인 패턴입니다. 근본적인 에너지 복구가 시급합니다." }
+    };
+
+    const QUESTIONS = [
+      { t:"식후에 더부룩하거나, 속이 묵직하게 불편한 편이다.", w:{ym:2, gu:0, tu:0, su:0}},
+      { t:"역류감/트림/가슴 답답 같은 느낌이 자주 있다.", w:{ym:2, gu:1, tu:0, su:0}},
+      { t:"변(설사/변비/가스/복부팽만)이 컨디션에 따라 흔들린다.", w:{ym:2, gu:1, tu:0, su:1}},
+      { t:"스트레스를 받으면 증상이 확 올라오거나 변동이 커진다.", w:{ym:1, gu:2, tu:0, su:1}},
+      { t:"두근거림/긴장/예민이 자주 올라오고 몸이 먼저 반응한다.", w:{ym:0, gu:2, tu:0, su:1}},
+      { t:"잠이 얕거나 자주 깨고, 자도 개운하지 않은 날이 많다.", w:{ym:0, gu:2, tu:0, su:2}},
+      { t:"환절기/피로 때 비염·기침·가래가 쉽게 올라온다.", w:{ym:0, gu:0, tu:2, su:1}},
+      { t:"감기/염증이 잦거나 한 번 걸리면 오래 가는 편이다.", w:{ym:0, gu:0, tu:2, su:1}},
+      { t:"피부 가려움/트러블이 컨디션 저하와 함께 악화된다.", w:{ym:0, gu:0, tu:2, su:1}},
+      { t:"아침이 특히 힘들고, 몸이 풀리는 데 시간이 오래 걸린다.", w:{ym:0, gu:0, tu:0, su:2}},
+      { t:"조금 무리하면 회복에 며칠이 걸리고, 쉽게 바닥난다.", w:{ym:0, gu:0, tu:0, su:2}},
+      { t:"손발이 차거나 무기력이 쉽게 올라오고 지속력이 떨어진다.", w:{ym:0, gu:0, tu:0, su:2}},
+    ];
+
+    const SCALE = [
+      { v:0, a:"전혀 아님" }, { v:1, a:"가끔" }, { v:2, a:"자주" }, { v:3, a:"거의 항상" }
+    ];
+
+    const quizForm = document.getElementById("quiz");
+    const pbar = document.getElementById("pbar");
+    const ptext = document.getElementById("ptext");
+    let redirectTimer = null;
+
+    function buildQuiz() {
+      quizForm.innerHTML = "";
+      QUESTIONS.forEach((q, idx) => {
+        const wrap = document.createElement("div");
+        wrap.className = "q-card";
+        wrap.innerHTML = `
+          <div class="q-title">${idx + 1}. ${q.t}</div>
+          <div class="opt-grid">
+            ${SCALE.map(s => `<div class="opt" data-q="${idx}" data-v="${s.v}"><strong>${s.a}</strong></div>`).join("")}
+          </div>
+          <input type="hidden" name="q${idx}" id="q${idx}" value="" />
+        `;
+        quizForm.appendChild(wrap);
+      });
+
+      quizForm.querySelectorAll(".opt").forEach(opt => {
+        opt.addEventListener("click", function() {
+          const qi = this.dataset.q;
+          document.getElementById(`q${qi}`).value = this.dataset.v;
+          this.parentElement.querySelectorAll(".opt").forEach(s => s.dataset.sel = "0");
+          this.dataset.sel = "1";
+          updateProgress();
+        });
+      });
+    }
+
+    function updateProgress() {
+      let answered = 0;
+      for(let i=0; i<QUESTIONS.length; i++) {
+        if(document.getElementById(`q${i}`).value !== "") answered++;
+      }
+      const pct = (answered / QUESTIONS.length) * 100;
+      pbar.style.width = pct + "%";
+      ptext.textContent = `${answered} / ${QUESTIONS.length}`;
+    }
+
+    document.getElementById("startBtn").addEventListener("click", () => {
+      document.getElementById("heroSec").style.display = "none";
+      document.getElementById("quizPanel").style.display = "block";
+      buildQuiz();
+    });
+
+    document.getElementById("calcBtn").addEventListener("click", () => {
+      let allAnswered = true;
+      for(let i=0; i<QUESTIONS.length; i++) {
+        if(document.getElementById(`q${i}`).value === "") { allAnswered = false; break; }
+      }
+      if(!allAnswered) { alert("모든 문항에 답변해 주세요."); return; }
+
+      const scores = { ym:0, gu:0, tu:0, su:0 };
+      const maxScores = { ym:0, gu:0, tu:0, su:0 };
+
+      QUESTIONS.forEach((q, i) => {
+        const v = parseInt(document.getElementById(`q${i}`).value);
+        Object.keys(scores).forEach(k => {
+          scores[k] += v * (q.w[k] || 0);
+          maxScores[k] += 3 * (q.w[k] || 0);
+        });
+      });
+
+      const norm = {};
+      Object.keys(scores).forEach(k => norm[k] = Math.round((scores[k] / maxScores[k]) * 100));
+
+      const winner = Object.entries(norm).sort((a,b) => b[1] - a[1])[0][0];
+      
+      // 결과 저장
+      localStorage.setItem("genIntakeAxis", winner);
+      localStorage.setItem("genIntakeScores", JSON.stringify({ axis: winner, scores: norm }));
+
+      showResult(winner, norm);
+    });
+
+    function showResult(winner, norm) {
+      const ax = AX[winner];
+      document.getElementById("quizPanel").style.display = "none";
+      document.getElementById("resultBox").style.display = "block";
+      
+      const badge = document.getElementById("resBadge");
+      badge.style.borderColor = ax.color;
+      badge.style.color = ax.color;
+      
+      document.getElementById("axisTitle").textContent = ax.name;
+      document.getElementById("axisDesc").textContent = ax.desc;
+
+      const grid = document.getElementById("scoreGrid");
+      grid.innerHTML = "";
+      [
+        { k:'ym', l:'소화·대사', c:AX.ym.color },
+        { k:'gu', l:'자율신경', c:AX.gu.color },
+        { k:'tu', l:'면역·호흡', c:AX.tu.color },
+        { k:'su', l:'회복·에너지', c:AX.su.color }
+      ].forEach(item => {
+        const v = norm[item.k];
+        grid.innerHTML += `
+          <div class="score-item">
+            <div class="score-label"><span>${item.l}</span><b>${v}%</b></div>
+            <div class="score-bar-bg"><div class="score-bar-fill" style="width:${v}%; background:${item.c}"></div></div>
+          </div>
+        `;
+      });
+
+      const url = `${ax.file}?from=m1&axis=${winner}`;
+      document.getElementById("goAxisBtn").href = url;
+
+      let sec = 5;
+      redirectTimer = setInterval(() => {
+        sec--;
+        document.getElementById("redirText").textContent = `${sec}초 후 자동으로 이동합니다.`;
+        if(sec <= 0) window.location.href = url;
+      }, 1000);
+    }
+
+    document.getElementById("resetBtn").addEventListener("click", () => {
+      if(confirm("검사 내용을 초기화할까요?")) buildQuiz();
+    });
+  </script>
+</body>
+</html>

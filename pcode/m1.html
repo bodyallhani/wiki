@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <title>기능축 분류 검사 | 바디올 난치 신경-기능센터</title>
+  <style>
+    :root {
+      --bg: #05080f; 
+      --card: rgba(255, 255, 255, 0.04);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --line: rgba(255, 255, 255, 0.1);
+      --radius: 20px;
+      --ym: #fbbf24; --gu: #a78bfa; --tu: #34d399; --su: #3b82f6;
+    }
+
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
+    
+    body {
+      margin: 0;
+      font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
+      color: var(--text); background: var(--bg);
+      line-height: 1.6; word-break: keep-all;
+    }
+
+    .bg-glow {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+      z-index: -1;
+    }
+
+    .container { max-width: 600px; margin: 0 auto; padding: 0 20px; }
+
+    /* Nav */
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
+      background: rgba(5, 8, 15, 0.8); border-bottom: 1px solid var(--line);
+    }
+    .navin { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; }
+    .brand { display: flex; align-items: center; gap: 8px; text-decoration: none; color: inherit; }
+    .logo-dot { width: 20px; height: 20px; border-radius: 5px; background: linear-gradient(135deg, var(--ym), var(--su)); }
+
+    /* Intro Section */
+    .hero { padding: 40px 0; text-align: center; }
+    .kicker { font-size: 11px; font-weight: 800; color: var(--ym); letter-spacing: 1.5px; margin-bottom: 12px; }
+    .hero h1 { font-size: 28px; font-weight: 800; margin: 0 0 16px; line-height: 1.3; letter-spacing: -1px; }
+    
+    /* [핵심] 진실의 경고 문구 박스 */
+    .truth-warning {
+      background: rgba(251, 191, 36, 0.05);
+      border: 1px solid rgba(251, 191, 36, 0.2);
+      padding: 20px; border-radius: 16px; margin: 30px 0; text-align: left;
+    }
+    .truth-warning strong { color: var(--ym); display: block; margin-bottom: 8px; font-size: 15px; }
+    .truth-warning p { margin: 0; font-size: 14px; color: #cbd5e1; line-height: 1.6; }
+
+    /* Progress */
+    .progress-wrap {
+      position: sticky; top: 58px; z-index: 90;
+      background: var(--bg); padding: 12px 0; margin-bottom: 20px;
+    }
+    .progress-bar { height: 4px; background: rgba(255,255,255,0.05); border-radius: 10px; overflow: hidden; }
+    .progress-fill { height: 100%; width: 0%; background: linear-gradient(to right, var(--ym), var(--su)); transition: width 0.3s ease; }
+    .progress-text { font-size: 12px; color: var(--muted); margin-top: 8px; text-align: right; font-weight: 700; }
+
+    /* Question Cards */
+    #quizForm { padding-bottom: 140px; }
+    .q-card { 
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 24px; margin-bottom: 20px; animation: fadeIn 0.4s ease both;
+    }
+    .q-title { font-size: 17px; font-weight: 700; margin-bottom: 20px; color: #fff; }
+
+    /* Options */
+    .opt-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .opt {
+      background: rgba(255,255,255,0.02); border: 1px solid var(--line);
+      padding: 18px 10px; border-radius: 14px; cursor: pointer; text-align: center;
+      transition: all 0.2s;
+    }
+    .opt[data-sel="1"] { background: rgba(255, 255, 255, 0.1); border-color: #fff; color: #fff; }
+
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 18px 24px; border-radius: 16px; font-weight: 700; font-size: 15px; width: 100%; border: none; cursor: pointer; }
+    .btn.primary { background: #fff; color: #000; }
+    .btn.outline { background: transparent; border: 1px solid var(--line); color: var(--muted); }
+
+    .quiz-footer {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(5, 8, 15, 0.9); backdrop-filter: blur(15px);
+      padding: 20px; border-top: 1px solid var(--line); display: flex; gap: 10px;
+    }
+
+    /* Result & Loading */
+    #loadingScreen { display: none; padding: 100px 0; text-align: center; }
+    .loader-icon { width: 60px; height: 60px; border: 3px solid rgba(255,255,255,0.1); border-top-color: var(--ym); border-radius: 50%; margin: 0 auto 30px; animation: spin 1s infinite linear; }
+    .result { display: none; padding: 40px 0 100px; animation: slideUp 0.7s ease; }
+    .result-header { text-align: center; margin-bottom: 32px; }
+    .res-badge { display: inline-block; padding: 4px 14px; border-radius: 99px; font-size: 11px; font-weight: 800; border: 1px solid; margin-bottom: 12px; }
+
+    .score-item { background: var(--card); padding: 20px; border-radius: 18px; border: 1px solid var(--line); margin-bottom: 12px; }
+    .score-info { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 10px; }
+    .bar-bg { height: 6px; background: rgba(255,255,255,0.05); border-radius: 10px; overflow: hidden; }
+    .bar-fill { height: 100%; width: 0%; border-radius: 10px; transition: width 1.5s cubic-bezier(0.34, 1.56, 0.64, 1); }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes slideUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+
+  <header class="nav">
+    <div class="navin">
+      <a class="brand" href="mainland.html">
+        <div class="logo-dot"></div>
+        <strong>P-CODE 정밀 진단</strong>
+      </a>
+      <a href="mainland.html" style="font-size: 12px; color: var(--muted); font-weight: 600;">나가기</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="introSec">
+      <div class="kicker">Bodyall Functional Medicine</div>
+      <h1>병명 뒤에 숨겨진<br><span style="background: linear-gradient(to right, var(--ym), var(--su)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">몸의 주인</span> 찾기</h1>
+      
+      <div class="truth-warning">
+        <strong>⚠️ 검사 전 확인하세요</strong>
+        <p>결과가 당신의 앓고 있는 질환명과 다르게 나올 수 있습니다. 그것은 당신의 병을 만든 <b>'첫 번째 도미노'</b>가 예상치 못한 곳에 있다는 뜻이며, 동시에 지금까지 치료에 실패했던 <b>진짜 원인</b>을 발견했다는 증거입니다.</p>
+      </div>
+
+      <button class="btn primary" onclick="startQuiz()">진단 시작하기 (30초)</button>
+    </section>
+
+    <section class="panel" id="quizPanel" style="display: none;">
+      <div class="progress-wrap">
+        <div class="progress-bar"><div class="progress-fill" id="pbar"></div></div>
+        <div class="progress-text" id="ptext">0 / 12</div>
+      </div>
+      <form id="quizForm"></form>
+      <div class="quiz-footer">
+        <button class="btn outline" style="flex: 1;" onclick="resetQuiz()">초기화</button>
+        <button class="btn primary" style="flex: 2;" onclick="calculateResult()">결과 분석하기</button>
+      </div>
+    </section>
+
+    <section id="loadingScreen">
+      <div class="loader-icon"></div>
+      <div class="loader-text" id="loaderMsg">증상 데이터 매칭 중...</div>
+      <div class="loader-sub">당신의 신체 기능 리듬을 분석하고 있습니다.</div>
+    </section>
+
+    <section class="result" id="resultBox">
+      <div class="result-header">
+        <div id="resBadge" class="res-badge">DIAGNOSIS COMPLETE</div>
+        <h3 id="axisTitle" style="font-size: 26px; font-weight: 800; margin: 0 0 12px;">분석 결과</h3>
+        <p id="axisDesc" style="color: var(--muted); font-size: 15px; padding: 0 10px;"></p>
+      </div>
+      <div id="scoreGrid"></div>
+      <div style="margin-top: 40px; text-align: center; padding: 0 10px;">
+        <a class="btn primary" id="goAxisBtn" href="#">정밀 분석 리포트 보기</a>
+        <p id="redirText" style="font-size: 12px; color: var(--muted); margin-top: 20px; font-weight: 600;">5초 후 자동으로 상세 페이지로 이동합니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzDRDzsJR4DqaO1mtbvOgIn4v1XKcPpKN5Bb6M6SySD_ifVlamEFc0-jsSb_oZCVyEc/exec";
+
+    const AX = {
+      ym: { name: "양명축: 소화·대사", color: "#fbbf24", file: "ym.html", desc: "이 축이 무너지면 노폐물이 쌓여 전신 염증과 대사 오류를 일으킵니다. 당신의 질환을 해결할 첫 번째 열쇠입니다." },
+      gu: { name: "궐음축: 자율신경", color: "#a78bfa", file: "gu.html", desc: "과각성된 신경계가 신체 조율을 방해하고 있습니다. 시스템의 평온을 되찾는 것이 급선무입니다." },
+      tu: { name: "태음축: 면역·호흡", color: "#34d399", file: "tu.html", desc: "외부 자극에 대한 방어막이 뚫린 상태입니다. 세포의 결속력과 면역 리듬 복구가 시급합니다." },
+      su: { name: "소음축: 회복·에너지", color: "#3b82f6", file: "su.html", desc: "모든 회복의 동력이 되는 심부 에너지가 고갈되었습니다. 뿌리를 채워야 비로소 증상이 멈춥니다." }
+    };
+
+    const QUESTIONS = [
+      { t:"식후에 더부룩하거나, 속이 묵직하게 불편한 편이다.", w:{ym:2}},
+      { t:"역류감/트림/가슴 답답 같은 느낌이 자주 있다.", w:{ym:2, gu:1}},
+      { t:"변(설사/변비/가스)이 컨디션에 따라 자주 흔들린다.", w:{ym:2, gu:1, su:1}},
+      { t:"스트레스를 받으면 증상이 확 올라오거나 변동이 커진다.", w:{gu:2, ym:1, su:1}},
+      { t:"두근거림/긴장/예민함이 자주 느껴지고 몸이 먼저 반응한다.", w:{gu:2, su:1}},
+      { t:"잠이 얕거나 자주 깨고, 자도 개운하지 않은 날이 많다.", w:{gu:2, su:2}},
+      { t:"환절기나 피로 시 비염·기침·가래가 쉽게 발생한다.", w:{tu:2, su:1}},
+      { t:"감기나 각종 염증이 잦거나 한 번 걸리면 오래 가는 편이다.", w:{tu:2, su:1}},
+      { t:"피부 가려움/트러블이 컨디션 저하와 함께 악화된다.", w:{tu:2, su:1}},
+      { t:"아침이 특히 힘들고, 몸이 풀리는 데 시간이 오래 걸린다.", w:{su:2}},
+      { t:"조금만 무리해도 회복에 며칠이 걸리고 쉽게 방전된다.", w:{su:2}},
+      { t:"손발이 차거나 무기력이 쉽게 올라오고 지구력이 떨어진다.", w:{su:2}}
+    ];
+
+    const SCALE = [ { v:0, a:"전혀 아님" }, { v:1, a:"가끔" }, { v:2, a:"자주" }, { v:3, a:"항상" } ];
+
+    function startQuiz() {
+      document.getElementById("introSec").style.display = "none";
+      document.getElementById("quizPanel").style.display = "block";
+      buildQuiz();
+      window.scrollTo(0, 0);
+    }
+
+    function buildQuiz() {
+      const form = document.getElementById("quizForm");
+      form.innerHTML = "";
+      QUESTIONS.forEach((q, idx) => {
+        const div = document.createElement("div");
+        div.className = "q-card";
+        div.innerHTML = `<div class="q-title">${idx + 1}. ${q.t}</div><div class="opt-grid">${SCALE.map(s => `<div class="opt" onclick="selectOpt(this, ${idx}, ${s.v})"><strong>${s.a}</strong></div>`).join("")}</div><input type="hidden" id="q${idx}" value="" />`;
+        form.appendChild(div);
+      });
+    }
+
+    function selectOpt(el, qIdx, val) {
+      document.getElementById(`q${qIdx}`).value = val;
+      el.parentElement.querySelectorAll(".opt").forEach(o => o.setAttribute("data-sel", "0"));
+      el.setAttribute("data-sel", "1");
+      updateProgress();
+    }
+
+    function updateProgress() {
+      let answered = 0;
+      QUESTIONS.forEach((_, i) => { if(document.getElementById(`q${i}`).value !== "") answered++; });
+      document.getElementById("pbar").style.width = (answered / QUESTIONS.length) * 100 + "%";
+      document.getElementById("ptext").textContent = `${answered} / ${QUESTIONS.length}`;
+    }
+
+    async function calculateResult() {
+      let qValues = [];
+      for(let i=0; i<QUESTIONS.length; i++) {
+        let v = document.getElementById(`q${i}`).value;
+        if(v === "") { alert("모든 문항에 체크해 주세요."); return; }
+        qValues.push(v);
+      }
+
+      document.getElementById("quizPanel").style.display = "none";
+      document.getElementById("loadingScreen").style.display = "block";
+      window.scrollTo(0, 0);
+
+      const scores = { ym:0, gu:0, tu:0, su:0 };
+      const maxPossible = { ym:0, gu:0, tu:0, su:0 };
+      QUESTIONS.forEach((q, i) => {
+        const v = parseInt(qValues[i]);
+        Object.keys(AX).forEach(k => {
+          scores[k] += v * (q.w[k] || 0);
+          maxPossible[k] += 3 * (q.w[k] || 0);
+        });
+      });
+      const norm = {};
+      Object.keys(scores).forEach(k => norm[k] = Math.round((scores[k] / maxPossible[k]) * 100));
+      const winner = Object.entries(norm).sort((a,b) => b[1] - a[1])[0][0];
+
+      localStorage.setItem("genIntakeAxis", winner);
+      localStorage.setItem("genIntakeScores", JSON.stringify({ axis: winner, scores: norm }));
+
+      // 데이터 전송
+      const formData = new URLSearchParams();
+      formData.append("type", winner);
+      Object.keys(norm).forEach(k => formData.append(k, norm[k]));
+      qValues.forEach((v, i) => formData.append(`q${i}`, v));
+      fetch(SCRIPT_URL, { method:"POST", mode:"no-cors", body:formData });
+
+      setTimeout(() => showResult(winner, norm), 2000);
+    }
+
+    function showResult(winner, norm) {
+      document.getElementById("loadingScreen").style.display = "none";
+      document.getElementById("resultBox").style.display = "block";
+      const ax = AX[winner];
+      document.getElementById("resBadge").style.color = ax.color;
+      document.getElementById("resBadge").style.borderColor = ax.color;
+      document.getElementById("axisTitle").textContent = ax.name;
+      document.getElementById("axisTitle").style.color = ax.color;
+      document.getElementById("axisDesc").textContent = ax.desc;
+
+      const grid = document.getElementById("scoreGrid");
+      grid.innerHTML = "";
+      Object.keys(AX).forEach(k => {
+        grid.innerHTML += `<div class="score-item"><div class="score-info"><span>${AX[k].name.split(':')[0]}</span><strong>${norm[k]}%</strong></div><div class="bar-bg"><div class="bar-fill" style="width:${norm[k]}%; background:${AX[k].color}"></div></div></div>`;
+      });
+
+      const targetUrl = `${ax.file}?axis=${winner}`;
+      document.getElementById("goAxisBtn").href = targetUrl;
+      let sec = 5;
+      setInterval(() => {
+        sec--;
+        if(sec >= 0) document.getElementById("redirText").textContent = `${sec}초 후 상세 리포트로 이동합니다.`;
+        if(sec === 0) window.location.href = targetUrl;
+      }, 1000);
+    }
+
+    function resetQuiz() { if(confirm("답변을 초기화할까요?")) location.reload(); }
+  </script>
+</body>
+</html>

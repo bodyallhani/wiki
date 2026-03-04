@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <title>양명축: 소화·대사 시스템 | 바디올 난치 신경-기능센터</title>
+  <style>
+    :root {
+      --bg: #05080f; --card: rgba(255, 255, 255, 0.04); --text: #f8fafc;
+      --muted: #94a3b8; --line: rgba(255, 255, 255, 0.1);
+      --accent: #fbbf24; --radius: 24px;
+    }
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+    body { margin: 0; font-family: "Pretendard Variable", -apple-system, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; word-break: keep-all; }
+    .bg-glow { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 10% 10%, rgba(251, 191, 36, 0.08) 0%, transparent 40%); z-index: -1; }
+    .container { max-width: 600px; margin: 0 auto; padding: 0 20px; }
+    .nav { position: sticky; top: 0; z-index: 100; backdrop-filter: blur(15px); background: rgba(5, 8, 15, 0.8); border-bottom: 1px solid var(--line); }
+    .navin { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; }
+    .brand { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+    .logo-dot { width: 20px; height: 20px; border-radius: 5px; background: var(--accent); }
+    .hero { padding: 40px 0 30px; }
+    .hero-img { width: 100%; height: 260px; border-radius: var(--radius); object-fit: cover; margin-bottom: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+    .kicker { font-size: 11px; font-weight: 800; color: var(--accent); letter-spacing: 2px; margin-bottom: 8px; text-transform: uppercase; }
+    .hero h1 { font-size: 30px; font-weight: 800; margin: 0 0 16px; line-height: 1.25; letter-spacing: -1px; }
+    .hero p { font-size: 16px; color: var(--muted); }
+    section { padding: 40px 0; border-top: 1px solid var(--line); }
+    .symptom-card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px; margin-bottom: 12px; display: flex; gap: 16px; }
+    .symptom-icon { min-width: 44px; height: 44px; border-radius: 12px; background: rgba(251, 191, 36, 0.1); display: flex; align-items: center; justify-content: center; color: var(--accent); font-weight: 700; }
+    .logic-box { background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), transparent); border-radius: var(--radius); padding: 28px; border: 1px solid rgba(251, 191, 36, 0.15); }
+    .logic-box h3 { font-size: 19px; margin-bottom: 14px; color: var(--accent); font-weight: 800; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 18px 24px; border-radius: 16px; font-weight: 700; font-size: 16px; width: 100%; cursor: pointer; border: none; text-decoration: none; }
+    .btn.primary { background: var(--accent); color: #000; }
+    .sticky-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; background: rgba(5, 8, 15, 0.95); backdrop-filter: blur(15px); padding: 16px 20px 30px; border-top: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <header class="nav"><div class="navin"><a class="brand" href="mainland.html"><div class="logo-dot"></div><strong>양명축: 소화·대사</strong></a></div></header>
+  <main class="container">
+    <section class="hero" style="border:none;">
+      <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/ym.png" class="hero-img">
+      <div class="kicker">The OS of Metabolism</div>
+      <h1>진단명이 무엇이든,<br><span style="color:var(--accent)">양명축</span>은 배출구입니다.</h1>
+      <p>아토피, 피부염, 비염... 당신의 주 증상이 무엇이든 양명축(소화·대사)이 정체되면 몸 안의 독소는 엉뚱한 곳으로 터져 나옵니다. 우리는 배출로의 정체를 해결하여 전신 시스템을 디버깅합니다.</p>
+    </section>
+
+    <section id="patterns">
+      <div class="symptom-card"><div class="symptom-icon">胃</div><div class="symptom-text"><h4>상부 정체: 입구의 오류</h4><p>더부룩함, 역류, 식후 팽만감 등 에너지가 들어오는 길목이 막힌 상태입니다.</p></div></div>
+      <div class="symptom-card"><div class="symptom-icon">腸</div><div class="symptom-text"><h4>하부 정체: 출구의 붕괴</h4><p>가스, 불규칙한 배변 등 노폐물이 머물며 전신 염증 신호를 만드는 상태입니다.</p></div></div>
+      <div class="symptom-card"><div class="symptom-icon">代謝</div><div class="symptom-text"><h4>전신 정체: 시스템 과부하</h4><p>부종, 무거운 몸, 피부 트러블 등 대사 산물이 온몸을 압박하는 상태입니다.</p></div></div>
+    </section>
+
+    <section id="logic">
+      <div class="logic-box">
+        <h3>왜 양명축이 첫 번째 단추인가?</h3>
+        <p>양명축은 우리 몸의 <b>'에너지 보급소이자 폐기물 처리장'</b>입니다. 처리장이 막히면 면역계(태음)가 예민해지고 신경계(궐음)가 날카로워집니다. 바디올은 증상 완화제가 아닌, 막힌 하수도를 뚫는 정밀 처방으로 치료의 물꼬를 틉니다.</p>
+      </div>
+    </section>
+
+    <section class="cta-area" style="text-align: center; border:none; padding-bottom: 120px;">
+      <h2>양명축 정밀 복구 플랜</h2>
+      <p style="color:var(--muted); margin-bottom: 24px;">학명까지 일치시킨 프리미엄 약재와<br>원장님의 1:1 관리가 시작됩니다.</p>
+      <a href="https://bodyallhani.github.io/herbmed0/intake.html" class="btn primary">정밀 문진표 작성하기</a>
+    </section>
+  </main>
+  <div class="sticky-bar"><a href="https://bodyallhani.github.io/herbmed0/intake.html" class="btn primary">나의 양명축 정밀 진단받기</a></div>
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>바디올 청정한약 2차 문진표 (한의사용)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f7f7f9;
+      color: #222;
+    }
+
+    .page-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px 8px 150px; /* ⬅⬅ 하단 여백 크게: 모바일에서 복사 버튼 가리지 않도록 */
+      box-sizing: border-box;
+    }
+
+    h1, h2 {
+      margin-top: 24px;
+    }
+
+    .hint {
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+    /* 레이아웃 기본: 모바일 = 단일 컬럼 */
+    .layout {
+      display: block;
+    }
+
+    .form-container {
+      background: transparent;
+      box-sizing: border-box;
+      margin-bottom: 12px;
+    }
+
+    .note-container {
+      background: #ffffff;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+      box-sizing: border-box;
+      padding: 8px 10px;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+    }
+
+    .note-header {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .note-desc {
+      font-size: 0.75rem;
+      color: #666;
+      margin-bottom: 6px;
+    }
+
+    #noteArea {
+      width: 100%;
+      height: 90px;
+      box-sizing: border-box;
+      resize: none;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      padding: 6px 8px;
+      font-size: 0.8rem;
+      line-height: 1.4;
+      outline: none;
+    }
+
+    #noteArea:focus {
+      border-color: #1a73e8;
+      box-shadow: 0 0 0 1px rgba(26,115,232,0.2);
+    }
+
+    /* 기존 폼 스타일 유지 */
+    fieldset {
+      margin-bottom: 16px;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background: #fff;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.95rem;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 6px;
+      margin-top: 2px;
+      font-size: 0.95rem;
+      font-family: inherit;
+    }
+
+    textarea {
+      min-height: 60px;
+      resize: vertical;
+    }
+
+    #output {
+      width: 100%;
+      min-height: 260px;
+      box-sizing: border-box;
+      margin-top: 8px;
+      white-space: pre-wrap;
+      font-size: 0.9rem;
+      font-family: inherit;
+    }
+
+    button {
+      margin-top: 8px;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 6px;
+      border: 1px solid #888;
+      background: #fff;
+      font-family: inherit;
+    }
+
+    button.primary {
+      background: #1a73e8;
+      color: #fff;
+      border-color: #1a73e8;
+    }
+
+    /* ====== PC / 큰 화면 레이아웃 ====== */
+    @media (min-width: 900px) {
+      .page-wrapper {
+        padding: 20px 8px 24px; /* ⬅⬅ PC에서는 하단 여백 원래처럼 */
+      }
+
+      .layout {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .form-container {
+        flex: 0 0 65%;
+        max-height: calc(100vh - 80px);
+        overflow-y: auto;
+        padding-right: 4px;
+      }
+
+      .note-container {
+        position: static; /* PC에서는 고정 해제 */
+        flex: 0 0 35%;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        border-radius: 10px;
+        padding: 10px 12px;
+        height: auto;
+      }
+
+      #noteArea {
+        height: calc(100vh - 150px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <h1>바디올 청정한약 2차 문진표 (의사용)</h1>
+    <p class="hint">
+      1차 문진 후, 대면 진찰하면서 한의사가 직접 작성하는 용도.<br>
+      잘 모르거나 애매한 부분은 비워둘것.<br>
+      작성 후 <strong>“문진 텍스트 생성”</strong> 버튼을 눌러 나온 텍스트로 진단.
+    </p>
+
+    <div class="layout">
+      <!-- 좌측: 기존 2차 문진표 + 출력 -->
+      <div class="form-container">
+        <form id="doctorForm">
+          <fieldset>
+            <legend>기본정보 (의사용)</legend>
+            <label>*차트번호:
+              <input type="text" id="chartNo" placeholder="예: 1892" />
+            </label>
+            <label><strong>*이름:</strong>
+              <input type="text" id="name" />
+            </label>
+            <label><strong>*진찰일자:</strong>
+              <input type="text" id="date" placeholder="예: 2025-11-30" />
+            </label>
+            <label><strong>*담당 한의사:</strong>
+              <input type="text" id="doctor" />
+            </label>
+            <label>사전 문진 핵심 요약 (필요 시):
+              <textarea id="preSummary" placeholder="사전 문진에서 특히 눈에 띄는 포인트 메모용 (선택)"></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>체형 / 자세 / 시진</legend>
+            <label>체형·BMI·전반 체격 인상:
+              <textarea id="bodyShape" placeholder="허약/실증/비만 경향, 근육량, 체격 인상 등"></textarea>
+            </label>
+            <label>자세 / 정렬:
+              <textarea id="posture" placeholder="거북목, 라운드숄더, 흉추 굴곡/후만, 요추 전만, 골반 경사, 측만 등"></textarea>
+            </label>
+            <label>시진 – 안색·눈·입술·기색:
+              <textarea id="inspectionFace" placeholder="창백/홍조/혈색 부족, 눈 충혈/피로, 입술 색, 기운 느낌 등"></textarea>
+            </label>
+            <label>시진 – 흉곽·호흡·흉식/복식:
+              <textarea id="inspectionBreath" placeholder="호흡 깊이/빈도, 흉식·복식 여부, 과호흡 경향 등"></textarea>
+            </label>
+            <label>보행·기좌·움직임:
+              <textarea id="inspectionGait" placeholder="보행 패턴, 앉는 자세, 자주 움직이는지/가만히 있는지 등"></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend><strong>설진</strong></legend>
+            <label>설질:
+              <textarea id="tongueBody" placeholder="담홍/홍/자/담백/건조/부종/소설 등"></textarea>
+            </label>
+            <label>설태:
+              <textarea id="tongueCoat" placeholder="백태/황태/후태/무태/니태 등"></textarea>
+            </label>
+            <label>치흔·열문:
+              <textarea id="tongueTeeth" placeholder="치흔 유무, 열문 등"></textarea>
+            </label>
+            <label>홍점·어반:
+              <textarea id="tongueSpots" placeholder="홍점, 어반(瘀斑) 유무 및 위치 등"></textarea>
+            </label>
+            <label>설하정맥:
+              <textarea id="sublingualVein" placeholder="정맥 확장/비대 여부 등"></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend><strong>맥진</strong></legend>
+            <label>맥상:
+              <textarea id="pulseQuality" placeholder="弦/細/滑/濡/緩/遲/數/허실 등"></textarea>
+            </label>
+            <label>맥력·장단·심현:
+              <textarea id="pulseForce" placeholder="맥력, 장단, 심현 정도 등"></textarea>
+            </label>
+            <label>좌우 차이:
+              <textarea id="pulseSideDiff" placeholder="좌우 강약, 촌관척별 차이 등"></textarea>
+            </label>
+            <label>장부별 반응(촌·관·척):
+              <textarea id="pulseOrgans" placeholder="심·폐·간·비·신 등 장부 연관 소견"></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>압진 / 복진 / 근골격</legend>
+            <label><strong>흉협·상복부·명치 압통/긴장:</strong>
+              <textarea id="abdominal" placeholder="흉협창, 명치 답답/압통, 위완부 긴장 등"></textarea>
+            </label>
+            <label>장명·복부 촉진 소견:
+              <textarea id="bowelSounds" placeholder="장명, 복부 연부/긴장, 냉/열감 등"></textarea>
+            </label>
+            <label>경추·흉추·요추 촉진 소견:
+              <textarea id="spine" placeholder="C1~C7, T3~T5, L4~S1 압통/경결/가동성, 공간협착 느낌 등"></textarea>
+            </label>
+            <label>주요 근육(승모근, 견갑부, 요방형근, 둔근 등) 긴장/압통:
+              <textarea id="muscles" placeholder="근긴장, trigger point, 좌우 비대칭 등"></textarea>
+            </label>
+            <label>기타 압진/경결:
+              <textarea id="otherPalp" placeholder="사타구니, 흉곽, 늑간, 기타 특이 압통 부위 등"></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend><strong>위험신호</strong> / 양방적 고려</legend>
+            <label>심혈관 위험 소견:
+              <textarea id="cvRisk" placeholder="부정맥 의심, 흉통, 안정 시 호흡곤란, 실신/전실신, 혈압 이상 등"></textarea>
+            </label>
+            <label>신경학적 위험 소견:
+              <textarea id="neuroRisk" placeholder="편측 약화, 감각소실, 언어장애, 시야장애, 보행 이상 등"></textarea>
+            </label>
+            <label>기타 전원/검사 필요 소견:
+              <textarea id="otherRisk" placeholder="소화기 경고증상, 체중 급격 변화, 출혈 경향 등"></textarea>
+            </label>
+            <label>추가로 꼭 더 물어봐야 할 질문 (메모):
+              <textarea id="moreQuestions" placeholder="다음 내원/전화 상담 시 확인할 항목"></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>종합 변증 / 병기 판단</legend>
+            <label>1차 변증:
+              <textarea id="pattern1" placeholder="예: 간울비허, 비신양허, 간신음허, 담습중조, 기혈양허 등"></textarea>
+            </label>
+            <label>2차 변증 / 보조 변증:
+              <textarea id="pattern2" placeholder="예: 심비양허, 심담허겁, 어혈저체, 수음내정 등"></textarea>
+            </label>
+            <label>주요 병소 (장부/경락/척추 segment):
+              <textarea id="mainFocus" placeholder="중심 타겟으로 볼 부위 (장부 + 척추 레벨 등)"></textarea>
+            </label>
+            <label><strong>치료 우선순위:</strong>
+              <textarea id="priority" placeholder="예: 1) 자율신경 안정 2) 수면·소화 개선 3) 구조 교정 등"></textarea>
+            </label>
+            <label>교정/추나 vs 한약 비중에 대한 의사 판단:
+              <textarea id="planBalance" placeholder="예: 초기 2주 교정 우선 + 한약 병행, 이후 한약 비중 증가 등"></textarea>
+            </label>
+            <label>기타 임상 메모:
+              <textarea id="clinicalNote"></textarea>
+            </label>
+          </fieldset>
+
+          <button type="button" class="primary" onclick="generateText()">문진 텍스트 생성</button>
+          <button type="reset">입력 초기화</button>
+        </form>
+
+        <h2>문진 텍스트 (한의사용 2차 정보)</h2>
+        <p class="hint">
+          아래 내용을 전체 선택(Ctrl+A 또는 길게 누르기 → 전체선택) 후 복사<br>
+          <br>
+          <strong>“차트번호 1892 2차문진 보고.”</strong><br>
+        </p>
+        <textarea id="output" readonly></textarea>
+        <button type="button" onclick="copyOutput()">텍스트 복사하기</button>
+      </div>
+
+      <!-- 우측 / 모바일 하단: 메모 및 복붙용 텍스트창 -->
+      <div class="note-container">
+        <div class="note-header">1차 문진표 정리</div>
+        <div class="note-desc">
+        </div>
+        <textarea id="noteArea" placeholder="예:&#10;[설·맥] 담홍, 태박백, 홍점(+), 설하정맥 약간 팽창&#10;[복진] 명치 압통(+), 위완부 긴장(++), 흉추4–6번 긴장 등"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function v(id) {
+      return (document.getElementById(id).value || "").trim();
+    }
+
+    function generateText() {
+      const l = [];
+
+      l.push("[기본정보(의사용)]");
+      l.push("- 차트번호: " + v("chartNo"));
+      l.push("- 이름/이니셜: " + v("name"));
+      l.push("- 진찰일자: " + v("date"));
+      l.push("- 담당 한의사: " + v("doctor"));
+      l.push("- 사전 문진 요약(선택): " + v("preSummary"));
+      l.push("");
+      l.push("[체형 / 자세 / 시진]");
+      l.push("- 체형·체격 인상: " + v("bodyShape"));
+      l.push("- 자세·정렬: " + v("posture"));
+      l.push("- 시진(안색·눈·입술·기색): " + v("inspectionFace"));
+      l.push("- 시진(흉곽·호흡): " + v("inspectionBreath"));
+      l.push("- 보행·기좌·움직임: " + v("inspectionGait"));
+      l.push("");
+      l.push("[설진]");
+      l.push("- 설질: " + v("tongueBody"));
+      l.push("- 설태: " + v("tongueCoat"));
+      l.push("- 치흔·열문: " + v("tongueTeeth"));
+      l.push("- 홍점·어반: " + v("tongueSpots"));
+      l.push("- 설하정맥: " + v("sublingualVein"));
+      l.push("");
+      l.push("[맥진]");
+      l.push("- 맥상: " + v("pulseQuality"));
+      l.push("- 맥력·장단·심현: " + v("pulseForce"));
+      l.push("- 좌우 차이: " + v("pulseSideDiff"));
+      l.push("- 장부별 반응(촌·관·척): " + v("pulseOrgans"));
+      l.push("");
+      l.push("[압진 / 복진 / 근골격]");
+      l.push("- 흉협·상복부·명치 압통/긴장: " + v("abdominal"));
+      l.push("- 장명·복부 촉진: " + v("bowelSounds"));
+      l.push("- 경추·흉추·요추 촉진: " + v("spine"));
+      l.push("- 주요 근육 긴장/압통: " + v("muscles"));
+      l.push("- 기타 압진/경결: " + v("otherPalp"));
+      l.push("");
+      l.push("[위험 신호 / 양방적 고려]");
+      l.push("- 심혈관 위험 소견: " + v("cvRisk"));
+      l.push("- 신경학적 위험 소견: " + v("neuroRisk"));
+      l.push("- 기타 전원/검사 필요 소견: " + v("otherRisk"));
+      l.push("- 추가로 더 물어볼 질문: " + v("moreQuestions"));
+      l.push("");
+      l.push("[종합 변증 / 병기 판단]");
+      l.push("- 1차 변증: " + v("pattern1"));
+      l.push("- 2차 변증/보조 변증: " + v("pattern2"));
+      l.push("- 주요 병소(장부/경락/척추): " + v("mainFocus"));
+      l.push("- 치료 우선순위: " + v("priority"));
+      l.push("- 교정 vs 한약 비중 판단: " + v("planBalance"));
+      l.push("- 기타 임상 메모: " + v("clinicalNote"));
+
+      document.getElementById("output").value = l.join("\n");
+    }
+
+    function copyOutput() {
+      const out = document.getElementById("output");
+      out.focus();
+      out.select();
+      out.setSelectionRange(0, 99999); // 모바일 대응
+      document.execCommand("copy");
+      alert("복사되었습니다.");
+    }
+  </script>
+</body>
+</html>

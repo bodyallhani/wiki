@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <title>태음축: 면역·호흡 방어 시스템 | 바디올 난치 신경-기능센터</title>
+  <style>
+    :root {
+      --bg: #05080f; 
+      --card: rgba(255, 255, 255, 0.04);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --line: rgba(255, 255, 255, 0.1);
+      --accent: #34d399; /* 태음축 상징: Emerald Green */
+      --radius: 24px;
+    }
+
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
+    
+    body {
+      margin: 0;
+      font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      word-break: keep-all;
+    }
+
+    /* 맑은 산소와 숲의 정기를 상징하는 초록빛 배경 광원 */
+    .bg-glow {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: radial-gradient(circle at 50% 10%, rgba(52, 211, 153, 0.08) 0%, transparent 40%);
+      z-index: -1;
+    }
+
+    .container { max-width: 600px; margin: 0 auto; padding: 0 20px; }
+    a { color: inherit; text-decoration: none; }
+
+    /* Nav */
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
+      background: rgba(5, 8, 15, 0.8); border-bottom: 1px solid var(--line);
+    }
+    .navin { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; }
+    .brand { display: flex; align-items: center; gap: 8px; }
+    .logo-dot { width: 20px; height: 20px; border-radius: 5px; background: var(--accent); }
+    .brand strong { font-size: 14px; }
+
+    /* Hero Section */
+    .hero { padding: 40px 0 30px; text-align: left; }
+    .hero-img { 
+      width: 100%; height: 260px; border-radius: var(--radius); 
+      object-fit: cover; margin-bottom: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .kicker { font-size: 11px; font-weight: 800; color: var(--accent); letter-spacing: 2px; margin-bottom: 8px; text-transform: uppercase; }
+    .hero h1 { font-size: 30px; font-weight: 800; margin: 0 0 16px; line-height: 1.25; letter-spacing: -1px; }
+    .hero p { font-size: 16px; color: var(--muted); margin: 0; }
+
+    /* Pattern Section */
+    section { padding: 40px 0; border-top: 1px solid var(--line); }
+    .sec-header { margin-bottom: 24px; }
+    .sec-header h2 { font-size: 22px; font-weight: 800; margin: 0 0 8px; }
+    
+    .symptom-card { 
+      background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+      padding: 24px; margin-bottom: 12px; display: flex; gap: 16px; align-items: flex-start;
+    }
+    .symptom-icon { 
+      min-width: 44px; height: 44px; border-radius: 12px; background: rgba(52, 211, 153, 0.1);
+      display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 20px; font-weight: 700;
+    }
+    .symptom-text h4 { margin: 0 0 4px; font-size: 17px; color: #fff; }
+    .symptom-text p { margin: 0; font-size: 14px; color: var(--muted); }
+
+    /* Logic Section */
+    .logic-box {
+      background: linear-gradient(135deg, rgba(52, 211, 153, 0.08), transparent);
+      border-radius: var(--radius); padding: 28px; border: 1px solid rgba(52, 211, 153, 0.15);
+    }
+    .logic-box h3 { font-size: 19px; margin: 0 0 14px; color: var(--accent); font-weight: 800; }
+    .logic-box p { font-size: 15px; color: var(--text); margin-bottom: 24px; }
+
+    .check-list { list-style: none; padding: 0; margin: 0; }
+    .check-item { display: flex; gap: 12px; font-size: 14px; margin-bottom: 12px; color: var(--muted); }
+    .check-item b { color: #fff; font-weight: 700; }
+    .check-item::before { content: "✓"; color: var(--accent); font-weight: 900; }
+
+    /* CTA Area */
+    .cta-area { text-align: center; padding: 40px 0 60px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 18px 24px; border-radius: 16px; font-weight: 700; font-size: 16px;
+      width: 100%; cursor: pointer; transition: 0.2s; border: none;
+    }
+    .btn.primary { background: var(--accent); color: #000; margin-bottom: 12px; }
+    .btn.outline { background: transparent; border: 1px solid var(--line); color: var(--text); }
+
+    footer { padding: 40px 0 120px; text-align: center; color: var(--muted); font-size: 12px; }
+
+    /* Sticky Bottom CTA */
+    .sticky-bar {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(5, 8, 15, 0.95); backdrop-filter: blur(15px);
+      padding: 16px 20px 30px; border-top: 1px solid var(--line);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+
+  <header class="nav">
+    <div class="navin">
+      <a class="brand" href="mainland.html">
+        <div class="logo-dot"></div>
+        <strong>태음축: 면역·호흡</strong>
+      </a>
+      <a href="mainland.html" style="font-size: 12px; color: var(--muted); font-weight: 600;">Home</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="border:none;">
+      <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/tu.png" class="hero-img" alt="Tae-Eum Immune Defense">
+      <div class="kicker">Defense & Fresh Air</div>
+      <h1>외부 자극에도 흔들리지 않는<br><span style="color:var(--accent)">견고한 방어막</span>을 세우다.</h1>
+      <p>계절이 바뀔 때마다 반복되는 호흡기 질환과 피부 트러블. 약해진 몸의 경계선을 강화하여 무너진 면역 밸런스를 바로잡아드립니다.</p>
+    </section>
+
+    <section id="patterns">
+      <div class="sec-header">
+        <h2>면역 시스템의 붕괴 신호</h2>
+        <p>태음축이 약해졌을 때 나타나는 신체적 반응들</p>
+      </div>
+      
+      <div class="symptom-card">
+        <div class="symptom-icon">鼻</div>
+        <div class="symptom-text">
+          <h4>호흡기 과민 반응</h4>
+          <p>만성 비염, 잔기침, 가래가 잦으며 미세먼지나 온도 변화에 몸이 즉각적으로 반응하는 상태</p>
+        </div>
+      </div>
+
+      <div class="symptom-card">
+        <div class="symptom-icon">皮</div>
+        <div class="symptom-text">
+          <h4>피부 면역력 저하</h4>
+          <p>이유 없는 가려움, 습진, 두드러기 등 염증성 피부 질환이 컨디션에 따라 반복되는 현상</p>
+        </div>
+      </div>
+
+      <div class="symptom-card">
+        <div class="symptom-icon">炎</div>
+        <div class="symptom-text">
+          <h4>만성 염증 정체</h4>
+          <p>감기에 한 번 걸리면 폐렴 등으로 쉽게 이어지며, 신체 곳곳의 염증 수치가 잘 떨어지지 않는 상태</p>
+        </div>
+      </div>
+    </section><section id="logic">
+      <div class="logic-box">
+        <h3>우리 몸의 가장 바깥쪽 방패</h3>
+        <p>호흡기와 피부는 외부 세계와 만나는 최전선입니다. 태음축이 약해지면 방어막에 구멍이 난 것과 같습니다. 바디올은 단순 염증 완화를 넘어 점막 조직의 결속력을 높입니다.</p>
+
+        <ul class="check-list">
+          <li class="check-item"><b>호흡기 점막</b>의 자정 능력 및 습윤 환경 강화</li>
+          <li class="check-item"><b>피부 장벽</b> 리빌딩을 통한 외부 자극 차단</li>
+          <li class="check-item">과잉 면역 반응의 정상화 및 <b>T-세포 조절</b></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-area" style="border:none;">
+      <div class="sec-header">
+        <h2>면역 방어력 진단</h2>
+        <p>반복되는 염증은 지친 몸의 신호입니다.<br>당신의 방어막 상태를 정밀하게 분석하세요.</p>
+      </div>
+      <a href="https://bodyallhani.github.io/herbmed0/intake.html" class="btn primary">태음패턴 정밀 문진 시작</a>
+      <a href="mainland.html" class="btn outline" style="margin-top: 8px;">시스템 설명 더보기</a>
+    </section>
+
+    <footer>
+      <p>바디올한의원 · 난치 신경-기능센터</p>
+      <p style="opacity: 0.4; margin-top: 8px;">© 2024 Bodyall. Medical Precision.</p>
+    </footer>
+  </main>
+
+  <div class="sticky-bar">
+    <a href="https://bodyallhani.github.io/herbmed0/intake.html" class="btn primary" style="margin:0; box-shadow: 0 10px 20px rgba(52,211,153,0.2);">정밀 문진표 작성하기</a>
+  </div>
+
+</body>
+</html>

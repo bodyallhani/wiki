@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <title>소음축: 회복·에너지 시스템 | 바디올 난치 신경-기능센터</title>
+  <style>
+    :root {
+      --bg: #05080f; --card: rgba(255, 255, 255, 0.04); --text: #f8fafc;
+      --muted: #94a3b8; --line: rgba(255, 255, 255, 0.1);
+      --accent: #3b82f6; /* 소음축 상징: Blue/Deep Sea */
+      --radius: 24px;
+    }
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
+    body { margin: 0; font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; word-break: keep-all; }
+    .bg-glow { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 10% 10%, rgba(59, 130, 246, 0.08) 0%, transparent 40%); z-index: -1; }
+    .container { max-width: 600px; margin: 0 auto; padding: 0 20px; }
+    a { color: inherit; text-decoration: none; }
+    .nav { position: sticky; top: 0; z-index: 100; backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); background: rgba(5, 8, 15, 0.8); border-bottom: 1px solid var(--line); }
+    .navin { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; }
+    .brand { display: flex; align-items: center; gap: 8px; }
+    .logo-dot { width: 20px; height: 20px; border-radius: 5px; background: var(--accent); }
+    .brand strong { font-size: 14px; }
+    .hero { padding: 40px 0 30px; text-align: left; }
+    .hero-img { width: 100%; height: 260px; border-radius: var(--radius); object-fit: cover; margin-bottom: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+    .kicker { font-size: 11px; font-weight: 800; color: var(--accent); letter-spacing: 2px; margin-bottom: 8px; text-transform: uppercase; }
+    .hero h1 { font-size: 30px; font-weight: 800; margin: 0 0 16px; line-height: 1.25; letter-spacing: -1px; }
+    .hero p { font-size: 16px; color: var(--muted); margin: 0; }
+    section { padding: 40px 0; border-top: 1px solid var(--line); }
+    .sec-header { margin-bottom: 24px; }
+    .sec-header h2 { font-size: 22px; font-weight: 800; margin: 0 0 8px; }
+    .symptom-card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px; margin-bottom: 12px; display: flex; gap: 16px; align-items: flex-start; }
+    .symptom-icon { min-width: 44px; height: 44px; border-radius: 12px; background: rgba(59, 130, 246, 0.1); display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 20px; font-weight: 700; }
+    .symptom-text h4 { margin: 0 0 4px; font-size: 17px; color: #fff; }
+    .symptom-text p { margin: 0; font-size: 14px; color: var(--muted); }
+    .logic-box { background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), transparent); border-radius: var(--radius); padding: 28px; border: 1px solid rgba(59, 130, 246, 0.15); }
+    .logic-box h3 { font-size: 19px; margin: 0 0 14px; color: var(--accent); font-weight: 800; }
+    .logic-box p { font-size: 15px; color: var(--text); margin-bottom: 24px; }
+    .check-list { list-style: none; padding: 0; margin: 0; }
+    .check-item { display: flex; gap: 12px; font-size: 14px; margin-bottom: 12px; color: var(--muted); }
+    .check-item b { color: #fff; font-weight: 700; }
+    .check-item::before { content: "✓"; color: var(--accent); font-weight: 900; }
+    .cta-area { text-align: center; padding: 40px 0 60px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 18px 24px; border-radius: 16px; font-weight: 700; font-size: 16px; width: 100%; cursor: pointer; transition: 0.2s; border: none; text-decoration: none; }
+    .btn.primary { background: var(--accent); color: #fff; margin-bottom: 12px; }
+    .btn.outline { background: transparent; border: 1px solid var(--line); color: var(--text); }
+    footer { padding: 40px 0 120px; text-align: center; color: var(--muted); font-size: 12px; }
+    .sticky-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; background: rgba(5, 8, 15, 0.95); backdrop-filter: blur(15px); padding: 16px 20px 30px; border-top: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+
+  <header class="nav">
+    <div class="navin">
+      <a class="brand" href="mainland.html">
+        <div class="logo-dot"></div>
+        <strong>소음축: 회복·에너지</strong>
+      </a>
+      <a href="mainland.html" style="font-size: 12px; color: var(--muted); font-weight: 600;">Home</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="border:none;">
+      <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/su.png" class="hero-img" alt="So-Eum Source Energy">
+      <div class="kicker">The Power Source</div>
+      <h1>생명의 깊은 수기(水氣),<br><span style="color:var(--accent)">근본적 자생력</span>을 채우다.</h1>
+      <p>만성 피로는 의지력이 부족해서가 아닙니다. 당신의 몸을 돌리는 엔진 오일(소음축)이 완전히 말라버린 상태입니다. 모든 회복의 첫 단추인 심부 에너지를 다시 채웁니다.</p>
+    </section>
+
+    <section id="patterns">
+      <div class="sec-header">
+        <h2>에너지 고갈 패턴</h2>
+        <p>소음축의 수기(水氣)가 고갈되었을 때 나타나는 신호들</p>
+      </div>
+      
+      <div class="symptom-card">
+        <div class="symptom-icon">精</div>
+        <div class="symptom-text">
+          <h4>심부 원기 고갈</h4>
+          <p>충분히 자도 가시지 않는 만성 피로, 아침에 몸이 천근만근 무거워 일어설 힘조차 없는 상태</p>
+        </div>
+      </div>
+
+      <div class="symptom-card">
+        <div class="symptom-icon">冷</div>
+        <div class="symptom-text">
+          <h4>심부 온력 저하</h4>
+          <p>아랫배나 손발이 차갑고, 추위를 유난히 많이 타며 전신의 순환 에너지가 정체된 상태</p>
+        </div>
+      </div>
+
+      <div class="symptom-card">
+        <div class="symptom-icon">枯</div>
+        <div class="symptom-text">
+          <h4>점막 및 진액 건조</h4>
+          <p>눈과 입안이 바짝 마르고, 피부의 윤기가 사라지며 몸 안의 수분(진액)이 말라버린 상태</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="logic">
+      <div class="logic-box">
+        <h3>왜 소음축이 모든 회복의 시작인가?</h3>
+        <p>소음축은 우리 몸의 <b>'에너지 저수지'</b>입니다. 저수지가 마르면 면역(태음), 소화(양명), 신경(궐음)을 돌릴 동력이 사라집니다. 바디올은 증상을 억제하기 전에, 저수지의 물을 채워 몸이 스스로 치료를 시작할 수 있는 환경을 만듭니다.</p>
+
+        <ul class="check-list">
+          <li class="check-item">부신 및 신장 기능 강화를 통한 <b>원기 보강</b></li>
+          <li class="check-item">전신 순환을 위한 <b>심부 온도</b>의 정상화</li>
+          <li class="check-item">세포 재생에 필요한 <b>진액과 혈액</b> 공급</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-area" style="border:none; padding-bottom: 120px;">
+      <div class="sec-header">
+        <h2>소음패턴 정밀 분석</h2>
+        <p>당신의 연료 탱크가 얼마나 비어있는지,<br>P-CODE의 정밀한 지표로 확인해 보세요.</p>
+      </div>
+      <a href="https://bodyallhani.github.io/herbmed0/intake.html" class="btn primary">소음패턴 정밀 문진 시작</a>
+      <a href="mainland.html" class="btn outline" style="margin-top: 8px;">시스템 설명 더보기</a>
+    </section>
+
+    <footer>
+      <p>바디올한의원 · 난치 신경-기능센터</p>
+      <p style="opacity: 0.4; margin-top: 8px;">© 2024 Bodyall. Medical Precision.</p>
+    </footer>
+  </main>
+
+  <div class="sticky-bar">
+    <a href="https://bodyallhani.github.io/herbmed0/intake.html" class="btn primary" style="margin:0; box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);">나의 소음축 정밀 진단받기</a>
+  </div>
+
+</body>
+</html>

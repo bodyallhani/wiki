@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>양명축: 소화·대사 시스템 | 바디올 난치 신경-기능센터</title>
+  
+  <style>
+    :root {
+      --bg: #05080f; 
+      --card: rgba(255, 255, 255, 0.03);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --line: rgba(255, 255, 255, 0.08);
+      --accent: #60a5fa; /* 양명축 메인 컬러: Blue */
+      --radius: 24px;
+      --max: 1100px;
+    }
+
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+    
+    body {
+      margin: 0;
+      font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+
+    .bg-glow {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: radial-gradient(circle at 10% 10%, rgba(96, 165, 250, 0.1) 0%, transparent 40%);
+      z-index: -1; pointer-events: none;
+    }
+
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+    /* NAV */
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      background: rgba(5, 8, 15, 0.7); border-bottom: 1px solid var(--line);
+    }
+    .navin { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
+    .logo-dot { width: 24px; height: 24px; border-radius: 7px; background: var(--accent); }
+    .brand strong { font-size: 15px; }
+
+    /* HERO: Magazine Style */
+    .hero {
+      display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px;
+      padding: 100px 0 80px; align-items: center;
+    }
+    .hero-content h1 { font-size: clamp(32px, 5vw, 52px); font-weight: 800; line-height: 1.1; margin: 0 0 24px; }
+    .hero-content p { font-size: 18px; color: var(--muted); margin-bottom: 32px; }
+    .hero-image {
+      position: relative; height: 500px; border-radius: var(--radius); overflow: hidden;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+    }
+    .hero-image img { width: 100%; height: 100%; object-fit: cover; }
+
+    /* SECTION STYLE */
+    section { padding: 100px 0; border-top: 1px solid var(--line); }
+    .sec-label { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: 2px; margin-bottom: 16px; text-transform: uppercase; }
+    .sec-title { font-size: 32px; font-weight: 700; margin-bottom: 48px; }
+
+    /* SYMPTOM CARDS */
+    .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .card { background: var(--card); border: 1px solid var(--line); padding: 32px; border-radius: var(--radius); transition: 0.3s; }
+    .card:hover { border-color: var(--accent); background: rgba(96, 165, 250, 0.05); }
+    .card h3 { font-size: 20px; margin-bottom: 12px; }
+    .card p { color: var(--muted); font-size: 15px; margin: 0; }
+
+    /* LOGIC SECTION */
+    .logic-box {
+      background: linear-gradient(135deg, rgba(96, 165, 250, 0.1), transparent);
+      border-radius: var(--radius); padding: 48px; border: 1px solid rgba(96, 165, 250, 0.2);
+    }
+    .logic-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+
+    /* CTA AREA */
+    .cta-box { text-align: center; padding: 100px 20px; background: var(--card); border-radius: var(--radius); margin-bottom: 100px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 16px 40px; border-radius: 18px; font-weight: 700; font-size: 16px;
+      cursor: pointer; transition: 0.3s; text-decoration: none;
+    }
+    .btn.primary { background: var(--accent); color: #000; }
+    .btn.primary:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(96, 165, 250, 0.3); }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; text-align: center; padding: 60px 0; }
+      .hero-image { height: 300px; order: -1; }
+      .logic-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+
+  <header class="nav">
+    <div class="container">
+      <div class="navin">
+        <a class="brand" href="mainland.html">
+          <div class="logo-dot"></div>
+          <strong>바디올 난치 신경-기능센터</strong>
+        </a>
+        <div style="display: flex; gap: 20px; font-size: 14px; font-weight: 600;">
+          <a href="mainland.html">Home</a>
+          <a href="m1.html">Test</a>
+          <a href="#contact" style="color: var(--accent);">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="border:none;">
+      <div class="hero-content">
+        <div class="sec-label">Yang-Myeong Axis</div>
+        <h1>에너지의 근원,<br><span style="color:var(--accent)">소화와 대사</span>를 재건하다.</h1>
+        <p>먹는 즐거움이 고통이 된 당신에게.<br>단순한 소화제를 넘어 몸의 흡수와 배출 시스템을 다시 설계합니다.</p>
+        <a href="https://bodyallhani.github.io/herbmed0/intake.html" class="btn primary">나의 양명패턴 정밀문진</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=1000" alt="Digestive Health">
+      </div>
+    </section>
+
+    <section>
+      <div class="sec-label">The Pattern</div>
+      <h2 class="sec-title">혹시 이런 증상을<br>반복하고 계신가요?</h2>
+      <div class="grid-cards">
+        <div class="card">
+          <h3>상부 소화 정체</h3>
+          <p>식후 팽만감, 역류감, 잦은 트림과 가슴 답답함이 일상이 된 경우</p>
+        </div>
+        <div class="card">
+          <h3>불안정한 배출</h3>
+          <p>변비와 설사가 반복되거나 가스가 차서 아랫배가 늘 묵직한 경우</p>
+        </div>
+        <div class="card">
+          <h3>대사 신호 오류</h3>
+          <p>특정 음식이 심하게 당기거나, 식욕이 비정상적으로 널뛰는 상태</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="logic-box">
+        <div class="sec-label">The Logic</div>
+        <div class="logic-grid">
+          <div>
+            <h2 style="font-size: 28px; margin-top: 0;">왜 소화가 전신 건강의<br>뿌리일까요?</h2>
+            <p style="color: var(--muted);">양명축은 우리 몸의 '연료 보급소'입니다. 보급이 불안정하면 뇌신경(궐음), 면역계(태음), 회복력(소음)이 차례로 무너집니다. 증상만 억제하는 것이 아니라 보급로 자체를 뚫어주는 것이 바디올의 핵심입니다.</p>
+          </div>
+          <div style="background: rgba(255,255,255,0.03); padding: 30px; border-radius: 20px;">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="margin-bottom: 16px; display: flex; gap: 12px;">
+                <span style="color: var(--accent);">✔</span> <b>위장 평활근의 리듬 복구</b>
+              </li>
+              <li style="margin-bottom: 16px; display: flex; gap: 12px;">
+                <span style="color: var(--accent);">✔</span> <b>장내 미세 환경 대사 정상화</b>
+              </li>
+              <li style="margin-bottom: 0; display: flex; gap: 12px;">
+                <span style="color: var(--accent);">✔</span> <b>담적 및 노폐물 배출 가속화</b>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="border:none;">
+      <div class="cta-box">
+        <div class="sec-label">Start Today</div>
+        <h2 style="font-size: 32px; margin-bottom: 16px;">당신의 '양명축'을 바로잡을 시간</h2>
+        <p style="color: var(--muted); margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+          더 이상 검색에 의존하지 마세요. 정밀 문진 데이터를 통해 당신에게 가장 최적화된 치료 우선순위를 제안해 드립니다.
+        </p>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <a href="https://bodyallhani.github.io/herbmed0/intake.html" class="btn primary">정밀 문진표 작성</a>
+          <a href="mainland.html" class="btn" style="border: 1px solid var(--line);">메인으로 돌아가기</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="padding: 60px 0; border-top: 1px solid var(--line); text-align: center; color: var(--muted); font-size: 13px;">
+    <p>© 바디올 난치 신경-기능센터. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

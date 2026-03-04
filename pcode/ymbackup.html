@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>소화·대사축(양명축) | 바디올 난치 신경-기능센터</title>
+  <meta name="description" content="더부룩함, 역류, 명치 답답함, 식곤, 배변 변동. 소화·대사축(양명축)을 ‘기능축’ 관점에서 정리하고 중앙 진단 프로세스로 연결합니다."/>
+  <meta property="og:title" content="소화·대사축(양명축) | 바디올 난치 신경-기능센터"/>
+  <meta property="og:description" content="증상 나열이 아니라, 중심 기능축부터 잡아 치료 우선순위를 정리합니다."/>
+  <meta property="og:type" content="website"/>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#101a2f;
+      --card2:#0f1a33;
+      --text:#e8eefc;
+      --muted:#b8c4e6;
+      --line: rgba(232,238,252,.12);
+      --accent:#6ee7ff;
+      --accent2:#a78bfa;
+      --shadow: 0 14px 40px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 980px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Apple SD Gothic Neo","Noto Sans KR","Segoe UI", Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 10% 5%, rgba(110,231,255,.10), transparent 60%),
+        radial-gradient(900px 550px at 90% 0%, rgba(167,139,250,.12), transparent 55%),
+        radial-gradient(900px 550px at 50% 110%, rgba(110,231,255,.08), transparent 55%),
+        var(--bg);
+      line-height:1.6;
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:var(--max); margin:0 auto; padding:0 18px}
+    .nav{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(11,18,32,.55);
+      border-bottom:1px solid var(--line);
+    }
+    .navin{display:flex; align-items:center; justify-content:space-between; padding:12px 0; gap:12px; flex-wrap:wrap}
+    .brand{display:flex; gap:10px; align-items:center}
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(110,231,255,.85), rgba(167,139,250,.85));
+      box-shadow: 0 10px 25px rgba(110,231,255,.10);
+    }
+    .brand strong{font-size:14px}
+    .brand span{display:block; font-size:12px; color:var(--muted)}
+    .navlinks{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+    .navlinks a{
+      font-size:12px; color:var(--muted);
+      padding:8px 10px; border-radius:12px;
+      border:1px solid transparent;
+    }
+    .navlinks a:hover{background:rgba(232,238,252,.06); color:var(--text)}
+    .navlinks a.active{
+      color:var(--text);
+      border-color: rgba(110,231,255,.25);
+      background: rgba(110,231,255,.08);
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px; border-radius:14px;
+      border:1px solid rgba(110,231,255,.25);
+      background: rgba(110,231,255,.10);
+      color:var(--text);
+      font-weight:650; font-size:13px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.18);
+      transition: transform .12s ease, background .12s ease;
+      cursor:pointer;
+    }
+    .btn:hover{transform: translateY(-1px); background: rgba(110,231,255,.16)}
+    .btn.primary{
+      border:1px solid rgba(110,231,255,.35);
+      background: linear-gradient(135deg, rgba(110,231,255,.18), rgba(167,139,250,.18));
+    }
+
+    section{padding:20px 0}
+    .hero{padding:28px 0 10px}
+    .heroCard{
+      position:relative; overflow:hidden;
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(16,26,47,.92), rgba(16,26,47,.72));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:22px;
+    }
+    .kicker{
+      display:inline-flex; gap:8px; align-items:center;
+      font-size:12px; color:var(--muted);
+      border:1px solid rgba(232,238,252,.14);
+      padding:6px 10px; border-radius:999px;
+      background: rgba(232,238,252,.04);
+    }
+    h1{margin:10px 0 8px; font-size:26px; line-height:1.22; letter-spacing:-.3px}
+    .sub{color:var(--muted); margin:0 0 14px; max-width:64ch}
+    .ctaRow{display:flex; gap:10px; flex-wrap:wrap}
+    .heroArt{
+      position:absolute; inset:-110px -110px auto auto;
+      width:330px; height:330px;
+      opacity:.55; pointer-events:none;
+    }
+
+    .secTitle{display:flex; align-items:flex-end; justify-content:space-between; gap:12px; margin:0 0 12px}
+    .secTitle h2{margin:0; font-size:18px; letter-spacing:-.2px}
+    .secTitle p{margin:0; color:var(--muted); font-size:12px; max-width:68ch}
+
+    .grid2{display:grid; grid-template-columns:1fr; gap:12px}
+    .grid3{display:grid; grid-template-columns:1fr; gap:12px}
+    .card{
+      border:1px solid var(--line);
+      background: rgba(16,26,47,.72);
+      border-radius: var(--radius);
+      padding:16px;
+      box-shadow: 0 10px 22px rgba(0,0,0,.18);
+    }
+    .card h3{margin:0 0 6px; font-size:14px}
+    .card p{margin:0; color:var(--muted); font-size:13px}
+    .list{margin:10px 0 0; padding-left:18px; color:var(--muted); font-size:13px}
+
+    .checklist{display:grid; gap:10px; margin-top:10px}
+    .check{
+      display:flex; gap:10px; align-items:flex-start;
+      padding:12px 12px;
+      border:1px solid rgba(232,238,252,.12);
+      border-radius:16px;
+      background: rgba(15,26,51,.58);
+    }
+    .dot{
+      width:10px; height:10px; border-radius:999px;
+      background: rgba(110,231,255,.55);
+      margin-top:6px;
+      box-shadow: 0 0 0 3px rgba(110,231,255,.10);
+      flex:0 0 auto;
+    }
+    .check strong{display:block; font-size:13px; margin-bottom:2px}
+    .check span{display:block; font-size:12px; color:var(--muted)}
+
+    .quote{
+      border-left:2px solid rgba(110,231,255,.35);
+      padding:10px 12px;
+      color:var(--muted);
+      font-size:13px;
+      margin:10px 0 0;
+      background: rgba(232,238,252,.03);
+      border-radius: 10px;
+    }
+    .miniRow{display:flex; gap:10px; align-items:center; margin-top:10px; flex-wrap:wrap}
+    .tag{
+      font-size:12px; color:var(--muted);
+      border:1px solid rgba(232,238,252,.14);
+      background: rgba(232,238,252,.04);
+      padding:6px 10px; border-radius:999px;
+    }
+    .steps{counter-reset: step}
+    .step{
+      position:relative;
+      padding:16px 16px 16px 52px;
+      border:1px solid rgba(232,238,252,.10);
+      border-radius: 16px;
+      background: rgba(15,26,51,.52);
+    }
+    .step + .step{margin-top:10px}
+    .step:before{
+      counter-increment: step;
+      content: counter(step);
+      position:absolute; left:14px; top:14px;
+      width:28px; height:28px; border-radius:12px;
+      display:flex; align-items:center; justify-content:center;
+      font-weight:800; font-size:12px;
+      background: rgba(110,231,255,.14);
+      border:1px solid rgba(110,231,255,.25);
+    }
+
+    .banner{
+      border:1px solid rgba(110,231,255,.20);
+      background: linear-gradient(135deg, rgba(110,231,255,.10), rgba(167,139,250,.10));
+      border-radius: var(--radius);
+      padding:16px;
+      box-shadow: 0 10px 22px rgba(0,0,0,.18);
+      display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;
+    }
+    .banner strong{font-size:14px}
+    .banner span{display:block; font-size:12px; color:var(--muted); margin-top:2px}
+
+    .faq details{
+      border:1px solid rgba(232,238,252,.12);
+      border-radius: 16px;
+      background: rgba(15,26,51,.58);
+      padding:12px 14px;
+    }
+    .faq summary{cursor:pointer; font-weight:750; font-size:13px}
+    .faq p{margin:8px 0 0; color:var(--muted); font-size:13px}
+
+    .footer{
+      padding:26px 0 40px;
+      color: rgba(184,196,230,.85);
+      font-size:12px;
+      border-top:1px solid var(--line);
+    }
+    .muted{color:var(--muted)}
+
+    @media (min-width: 860px){
+      h1{font-size:36px}
+      .grid2{grid-template-columns:1fr 1fr}
+      .grid3{grid-template-columns:1fr 1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container">
+      <div class="navin">
+        <a class="brand" href="mainland.html">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            <strong>바디올 난치 신경-기능센터</strong>
+            <span>중앙 랜딩으로 돌아가기</span>
+          </div>
+        </a>
+
+        <nav class="navlinks" aria-label="페이지 이동">
+          <a class="active" href="ym.html">소화·대사(양명)</a>
+          <a href="gu.html">자율신경(궐음)</a>
+          <a href="tu.html">면역·호흡(태음)</a>
+          <a href="su.html">회복·에너지(소음)</a>
+          <a class="btn primary" href="mainland.html#contact">상담/예약</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="heroCard">
+          <svg class="heroArt" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="rgba(110,231,255,0.85)"/>
+                <stop offset="1" stop-color="rgba(167,139,250,0.85)"/>
+              </linearGradient>
+              <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+                <stop offset="0" stop-color="rgba(110,231,255,0.35)"/>
+                <stop offset="1" stop-color="rgba(110,231,255,0)"/>
+              </radialGradient>
+              <pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse">
+                <path d="M 18 0 L 0 0 0 18" fill="none" stroke="rgba(232,238,252,0.10)" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect x="0" y="0" width="420" height="420" fill="url(#grid)" opacity="0.55"/>
+            <circle cx="250" cy="170" r="150" fill="url(#glow)" opacity="0.9"/>
+            <circle cx="250" cy="170" r="120" fill="none" stroke="url(#rg)" stroke-width="2.2" opacity="0.55"/>
+            <circle cx="250" cy="170" r="86" fill="none" stroke="rgba(232,238,252,0.22)" stroke-width="1.6" opacity="0.6"/>
+            <path d="M110 265 C170 240, 230 260, 300 228" fill="none" stroke="rgba(110,231,255,0.22)" stroke-width="2" opacity="0.8"/>
+          </svg>
+
+          <div class="kicker">소화·대사축(양명축) · 비위 중심</div>
+          <h1>검사는 괜찮다는데<br/>식사만 하면 불편해지십니까?</h1>
+          <p class="sub">
+            더부룩함·명치 답답함·역류·가스·식곤·배변 변동이 반복될 때는,
+            증상만 쫓기보다 “중심 기능축(비위)”과 동반 축을 함께 정리하는 편이 빠릅니다.
+          </p>
+          <div class="ctaRow">
+            <a class="btn primary" href="#check">30초 체크</a>
+            <a class="btn" href="mainland.html">중앙 진단 프로세스 보기</a>
+          </div>
+          <div class="miniRow">
+            <span class="tag">중심축 정리</span>
+            <span class="tag">우선순위 설정</span>
+            <span class="tag">단계형 진행</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHECK -->
+    <section id="check">
+      <div class="container">
+        <div class="secTitle">
+          <h2>내 증상 30초 체크</h2>
+          <p>해당 항목이 많을수록 ‘소화·대사축’이 중심축일 가능성이 높습니다.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>대표 증상</h3>
+            <div class="checklist">
+              <div class="check"><div class="dot"></div><div><strong>식후 더부룩함·명치 답답</strong><span>양이 많지 않아도 부담이 오래 갑니다.</span></div></div>
+              <div class="check"><div class="dot"></div><div><strong>트림·가스·역류</strong><span>특정 음식/스트레스/수면 부족에 따라 변동합니다.</span></div></div>
+              <div class="check"><div class="dot"></div><div><strong>식곤·무기력</strong><span>식후 졸림/집중 저하가 반복됩니다.</span></div></div>
+              <div class="check"><div class="dot"></div><div><strong>배변 변동</strong><span>설사·변비가 번갈아 오거나 잔변감이 있습니다.</span></div></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>자주 같이 보이는 패턴</h3>
+            <ul class="list">
+              <li>컨디션이 떨어질수록 소화가 먼저 무너짐</li>
+              <li>긴장/불안이 올라오면 증상이 심해짐</li>
+              <li>휴식하면 나아지지만, 반복 재발함</li>
+              <li>검사 소견은 뚜렷하지 않거나 “경미”로 설명됨</li>
+            </ul>
+            <p class="quote">
+              핵심은 “위장만의 문제”로 단정하기보다, 소화축 + 자율신경축 + 회복축의 겹침을 먼저 확인하는 것입니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON vs MISSED -->
+    <section id="frame">
+      <div class="container">
+        <div class="secTitle">
+          <h2>흔한 설명 vs 놓치기 쉬운 포인트</h2>
+          <p>설명은 간단하지만, 치료 방향은 달라집니다.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>흔한 설명</h3>
+            <ul class="list">
+              <li>위가 약하다 / 소화가 느리다</li>
+              <li>스트레스성이다</li>
+              <li>자극적인 음식/야식 때문이다</li>
+            </ul>
+            <p class="quote">
+              틀린 말은 아닙니다. 다만 “왜 반복되는지”와 “어디부터 정리할지”가 흐려질 수 있습니다.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>양명축(비위) 프레임</h3>
+            <p>
+              소화불편은 장기 자체만이 아니라, <b>리듬(규칙성)</b>과 <b>추진력(움직임)</b>이 흔들릴 때 더 쉽게 반복됩니다.
+              그래서 우리는 증상을 길게 나열하기보다, 먼저 <b>중심 기능축(비위)</b>을 잡고 동반 축을 확인합니다.
+            </p>
+            <div class="miniRow">
+              <span class="tag">리듬</span>
+              <span class="tag">추진력</span>
+              <span class="tag">동반 축</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVALUATION -->
+    <section id="eval">
+      <div class="container">
+        <div class="secTitle">
+          <h2>우리가 보는 평가 포인트 3가지</h2>
+          <p>맥·설진 등 한의학적 평가에 더해, 현재 부담과 회복 상태를 함께 정리해 우선순위를 잡습니다.</p>
+        </div>
+
+        <div class="grid3">
+          <div class="card">
+            <h3>① 소화 리듬·추진력</h3>
+            <p>식후 불편이 “언제·얼마나·어떤 조건에서” 반복되는지 패턴을 잡습니다.</p>
+          </div>
+          <div class="card">
+            <h3>② 과흥분·긴장(동반 축)</h3>
+            <p>긴장/불안/수면 저하가 소화축을 무너뜨리는 트리거인지 확인합니다.</p>
+          </div>
+          <div class="card">
+            <h3>③ 회복력(재발 관리)</h3>
+            <p>회복이 느리면 좋아졌다가 다시 반복됩니다. 유지·재발 관리의 기준을 만듭니다.</p>
+          </div>
+        </div>
+
+        <div class="banner" style="margin-top:12px">
+          <div>
+            <strong>“증상 치료”가 아니라 “축 정리”부터</strong>
+            <span>소화축으로 들어와도, 겹치는 축까지 함께 정리하는 중앙 프로세스로 연결합니다.</span>
+          </div>
+          <a class="btn primary" href="mainland.html">중앙 랜딩으로 이동</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section id="steps">
+      <div class="container">
+        <div class="secTitle">
+          <h2>치료는 단계형으로 진행합니다</h2>
+          <p>“좋아졌다/나빠졌다”가 아니라, 확인 가능한 체크포인트로 조정합니다.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <div class="steps">
+              <div class="step">
+                <h3>1단계: 급한 불편 정리</h3>
+                <p>식후 부담, 역류, 가스 같은 현재 불편을 먼저 낮춥니다.</p>
+              </div>
+              <div class="step">
+                <h3>2단계: 재발 트리거 정리</h3>
+                <p>수면/긴장/생활 패턴과의 연결을 정리해 반복을 줄입니다.</p>
+              </div>
+              <div class="step">
+                <h3>3단계: 유지·재발 관리</h3>
+                <p>회복 리듬이 무너지지 않도록 기준을 만들고 조정합니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>경과 확인은 이렇게 단순화합니다</h3>
+            <ul class="list">
+              <li>식후 불편이 지속되는 시간(분/시간)</li>
+              <li>가장 불편한 시간대(아침/점심/저녁/야간)</li>
+              <li>트리거(수면 부족/긴장/특정 음식/과식)</li>
+              <li>배변 패턴(빈도/형태/잔변감)</li>
+            </ul>
+            <p class="quote">
+              이 기준은 상담 시 함께 정리합니다. 기록이 있어야 방향이 흔들리지 않습니다.
+            </p>
+            <div class="ctaRow" style="margin-top:10px">
+              <a class="btn primary" href="mainland.html#contact">상담/예약</a>
+              <a class="btn" href="mainland.html#dx">정밀 평가 보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAFETY -->
+    <section id="safety">
+      <div class="container">
+        <div class="secTitle">
+          <h2>이럴 땐 바로 평가가 필요합니다</h2>
+          <p>아래 항목은 지체하지 말고 의료진 평가를 권합니다.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>빠른 확인이 필요한 신호</h3>
+            <ul class="list">
+              <li>갑작스런 체중 감소</li>
+              <li>피 섞인 변/흑변</li>
+              <li>삼킴 곤란, 지속적 구토</li>
+              <li>심한 흉통/호흡곤란</li>
+            </ul>
+          </div>
+          <div class="card faq">
+            <details open>
+              <summary>검사에서 큰 문제가 없다는데도 왜 계속 불편하죠?</summary>
+              <p>구조적 이상 소견이 뚜렷하지 않아도, 리듬·추진력·긴장·회복력 같은 ‘기능 축’의 불균형이 반복을 만들 수 있습니다. 이 페이지는 소화축에서 그 가능성을 정리하고, 중앙 프로세스로 연결하기 위해 구성했습니다.</p>
+            </details>
+            <details>
+              <summary>이 페이지를 본 다음 무엇을 하면 좋을까요?</summary>
+              <p>내 증상이 소화축에 해당하는지 체크한 뒤, 중앙 랜딩에서 “겹치는 축”까지 함께 정리하는 흐름으로 들어오시면 됩니다.</p>
+            </details>
+          </div>
+        </div>
+
+        <div class="banner" style="margin-top:12px">
+          <div>
+            <strong>소화불편을 ‘위장’만으로 끝내지 않습니다</strong>
+            <span>중심축을 먼저 잡고, 겹치는 축을 함께 정리해 치료 우선순위를 세웁니다.</span>
+          </div>
+          <div class="ctaRow">
+            <a class="btn primary" href="mainland.html">중앙 랜딩 보기</a>
+            <a class="btn" href="gu.html">자율신경(궐음축)도 함께 보기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="muted">
+          바디올한의원 · 난치 신경-기능센터<br/>
+          주소 · 사업자 · 대표자 · 연락처 · 진료시간 (실제 정보로 교체)
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // 내부 앵커 부드러운 이동
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if(!el) return;
+        e.preventDefault();
+        el.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
