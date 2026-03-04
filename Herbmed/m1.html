@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>BNI 신경-기능지수 검사</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <style>
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      max-width:920px;margin:0 auto;padding:16px;
+      background:#f7f7f9;line-height:1.55;
+    }
+    h1{margin:10px 0 14px;}
+    .card{
+      background:#fff;border:1px solid #e0e3ec;border-radius:14px;
+      padding:16px;box-shadow:0 2px 6px rgba(0,0,0,0.04);
+    }
+    .hint{font-size:0.92rem;color:#555;margin-top:6px;}
+    .sec-title{
+      margin-top:14px;
+      font-weight:900;color:#202124;
+      display:flex;align-items:center;gap:8px;
+    }
+    .sec-badge{
+      display:inline-block;
+      font-size:0.78rem;
+      padding:3px 8px;border-radius:999px;
+      background:#e8f0fe;color:#1a73e8;font-weight:800;
+      border:1px solid #d7e3ff;
+    }
+
+    .q{
+      margin-top:10px;padding:12px;
+      border:1px solid #e6eaf4;border-radius:12px;background:#fafbff;
+    }
+    .q .title{font-weight:800;margin-bottom:10px;}
+    .opt{
+      display:flex;flex-direction:column;gap:8px;margin-top:6px;
+    }
+    .opt label{
+      display:flex;align-items:center;gap:8px;
+      padding:10px 10px;border:1px solid #d9deea;border-radius:10px;background:#fff;
+      cursor:pointer;
+    }
+    .opt input{transform:scale(1.05);}
+
+    .row{
+      display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;
+      align-items:center;
+    }
+    button{
+      padding:10px 14px;border-radius:10px;border:1px solid #888;background:#fff;cursor:pointer;
+      font-size:0.95rem;
+    }
+    button.primary{
+      background:#1a73e8;color:#fff;border-color:#1a73e8;font-weight:900;
+    }
+    button:disabled{opacity:0.6;cursor:not-allowed;}
+    .tiny{font-size:0.82rem;color:#666;margin-top:10px;}
+
+    /* ===== 결과 오버레이 (검은 화면) ===== */
+    .overlay{
+      position:fixed;inset:0;background:rgba(0,0,0,0.92);
+      display:none;align-items:center;justify-content:center;
+      padding:16px;z-index:9999;
+    }
+    .overlay.show{display:flex;}
+    .result-card{
+      width:min(760px,100%);
+      border:1px solid rgba(255,255,255,0.14);
+      border-radius:16px;padding:18px 16px;
+      background:rgba(15,15,20,0.35);
+      box-shadow:0 10px 30px rgba(0,0,0,0.35);
+      color:#f2f3f7;
+    }
+    .res-title{
+      font-weight:900;font-size:1.12rem;letter-spacing:0.2px;
+      margin-bottom:10px;
+    }
+    .loader{
+      display:flex;align-items:center;gap:10px;
+      margin:10px 0 6px;color:#dfe6ff;font-weight:800;
+    }
+    .dot{width:10px;height:10px;border-radius:50%;background:#9db7ff;animation:bounce 1s infinite ease-in-out;}
+    .dot:nth-child(2){animation-delay:0.12s;}
+    .dot:nth-child(3){animation-delay:0.24s;}
+    @keyframes bounce{0%,80%,100%{transform:translateY(0);opacity:0.6;}40%{transform:translateY(-6px);opacity:1;}}
+    .res-block{
+      margin-top:10px;border-top:1px solid rgba(255,255,255,0.12);
+      padding-top:12px;display:none;
+    }
+    .line{margin:6px 0;}
+    .big{
+      font-size:1.65rem;font-weight:950;letter-spacing:0.3px;margin:10px 0 6px;
+    }
+    .badge{
+      display:inline-block;padding:6px 10px;border-radius:999px;font-weight:950;
+      margin-left:8px;font-size:0.95rem;border:1px solid rgba(255,255,255,0.2);
+    }
+    /* 밝은 계열 강조색 (검은 배경 대비) */
+    .c-green{color:#a7ffeb;}
+    .c-yellow{color:#fff59d;}
+    .c-orange{color:#ffd180;}
+    .c-red{color:#ff8a80;}
+    .b-green{background:rgba(0,230,118,0.15); color:#a7ffeb;}
+    .b-yellow{background:rgba(255,235,59,0.14); color:#fff59d;}
+    .b-orange{background:rgba(255,152,0,0.14); color:#ffd180;}
+    .b-red{background:rgba(244,67,54,0.14); color:#ff8a80;}
+
+    .res-note{margin-top:10px;color:#cfd6ea;font-size:0.92rem;line-height:1.6;}
+    .subcopy{font-size:0.92rem;color:#d6def5;margin-top:6px;}
+    .res-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.28);color:#f2f3f7;}
+    .btn-next{background:#1a73e8;border:1px solid #1a73e8;color:#fff;font-weight:950;}
+  </style>
+</head>
+
+<body>
+  <h1>BNI 신경-기능지수 검사</h1>
+
+  <div class="card">
+    <div class="hint">
+      아래 문항은 “진단”이 아니라 <strong>신경-기능 패턴을 빠르게 요약</strong>하기 위한 지수입니다.<br>
+      답하기 애매하면 “보통”을 선택하셔도 됩니다. (약 1~2분)
+    </div>
+
+    <!-- ===== 수면(S) A1~A4 ===== -->
+    <div class="sec-title"><span class="sec-badge">수면</span> 잠의 깊이/회복감</div>
+
+    <div class="q" data-key="A1">
+      <div class="title">1) 잠들기까지 시간이 오래 걸리거나, 누워도 쉽게 잠이 오지 않습니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="A1" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="A1" value="1"> 아니다</label>
+        <label><input type="radio" name="A1" value="2"> 보통</label>
+        <label><input type="radio" name="A1" value="3"> 그렇다</label>
+        <label><input type="radio" name="A1" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <div class="q" data-key="A2">
+      <div class="title">2) 밤중에 자주 깨거나, 꿈이 많아서 수면이 끊기는 느낌이 있습니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="A2" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="A2" value="1"> 아니다</label>
+        <label><input type="radio" name="A2" value="2"> 보통</label>
+        <label><input type="radio" name="A2" value="3"> 그렇다</label>
+        <label><input type="radio" name="A2" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <div class="q" data-key="A3">
+      <div class="title">3) 자고 일어나도 개운하지 않고, “잔 것 같은데 피곤”한 날이 많습니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="A3" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="A3" value="1"> 아니다</label>
+        <label><input type="radio" name="A3" value="2"> 보통</label>
+        <label><input type="radio" name="A3" value="3"> 그렇다</label>
+        <label><input type="radio" name="A3" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <div class="q" data-key="A4">
+      <div class="title">4) 피곤할수록 오히려 예민해지거나(신경 곤두섬), 잠이 더 안 오는 느낌이 있습니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="A4" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="A4" value="1"> 아니다</label>
+        <label><input type="radio" name="A4" value="2"> 보통</label>
+        <label><input type="radio" name="A4" value="3"> 그렇다</label>
+        <label><input type="radio" name="A4" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <!-- ===== 소화(DB) B1~B4 ===== -->
+    <div class="sec-title"><span class="sec-badge">소화</span> 식후/복부 반응</div>
+
+    <div class="q" data-key="B1">
+      <div class="title">5) 식사 후 더부룩함/트림/가스/답답함이 자주 있습니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="B1" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="B1" value="1"> 아니다</label>
+        <label><input type="radio" name="B1" value="2"> 보통</label>
+        <label><input type="radio" name="B1" value="3"> 그렇다</label>
+        <label><input type="radio" name="B1" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <div class="q" data-key="B2">
+      <div class="title">6) 속쓰림/메스꺼움/명치 불편 같은 증상이 반복됩니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="B2" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="B2" value="1"> 아니다</label>
+        <label><input type="radio" name="B2" value="2"> 보통</label>
+        <label><input type="radio" name="B2" value="3"> 그렇다</label>
+        <label><input type="radio" name="B2" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <div class="q" data-key="B3">
+      <div class="title">7) 식사 후 졸림/멍함이 심하거나, 식후에 컨디션이 뚝 떨어지는 편입니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="B3" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="B3" value="1"> 아니다</label>
+        <label><input type="radio" name="B3" value="2"> 보통</label>
+        <label><input type="radio" name="B3" value="3"> 그렇다</label>
+        <label><input type="radio" name="B3" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <div class="q" data-key="B4">
+      <div class="title">8) 변비/설사/묽은 변/토막변 등 배변 리듬이 안정적이지 않습니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="B4" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="B4" value="1"> 아니다</label>
+        <label><input type="radio" name="B4" value="2"> 보통</label>
+        <label><input type="radio" name="B4" value="3"> 그렇다</label>
+        <label><input type="radio" name="B4" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <!-- ===== 자율신경(AC) C1~C4 ===== -->
+    <div class="sec-title"><span class="sec-badge">자율신경</span> 두근거림/호흡/땀/온도</div>
+
+    <div class="q" data-key="C1">
+      <div class="title">9) 특별한 이유 없이 두근거림/가슴 답답함/호흡 불편을 느끼는 일이 있습니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="C1" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="C1" value="1"> 아니다</label>
+        <label><input type="radio" name="C1" value="2"> 보통</label>
+        <label><input type="radio" name="C1" value="3"> 그렇다</label>
+        <label><input type="radio" name="C1" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <div class="q" data-key="C2">
+      <div class="title">10) 불안/초조/예민함이 쉽게 올라오고, 긴장이 잘 풀리지 않습니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="C2" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="C2" value="1"> 아니다</label>
+        <label><input type="radio" name="C2" value="2"> 보통</label>
+        <label><input type="radio" name="C2" value="3"> 그렇다</label>
+        <label><input type="radio" name="C2" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <div class="q" data-key="C3">
+      <div class="title">11) 땀(식은땀 포함)이나 열감/오한이 상황과 상관없이 들쑥날쑥합니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="C3" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="C3" value="1"> 아니다</label>
+        <label><input type="radio" name="C3" value="2"> 보통</label>
+        <label><input type="radio" name="C3" value="3"> 그렇다</label>
+        <label><input type="radio" name="C3" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <div class="q" data-key="C4">
+      <div class="title">12) 서 있거나 자세를 바꿀 때(누웠다 일어날 때 등) 어지럼/울렁거림/힘 빠짐이 있습니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="C4" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="C4" value="1"> 아니다</label>
+        <label><input type="radio" name="C4" value="2"> 보통</label>
+        <label><input type="radio" name="C4" value="3"> 그렇다</label>
+        <label><input type="radio" name="C4" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <!-- ===== 근골격/재발(MB) D1~D4 ===== -->
+    <div class="sec-title"><span class="sec-badge">근골격</span> 통증 패턴/재발/회복</div>
+
+    <div class="q" data-key="D1">
+      <div class="title">13) 같은 부위가 반복적으로 뻐근해지거나, “좋아졌다가 다시”가 반복됩니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="D1" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="D1" value="1"> 아니다</label>
+        <label><input type="radio" name="D1" value="2"> 보통</label>
+        <label><input type="radio" name="D1" value="3"> 그렇다</label>
+        <label><input type="radio" name="D1" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <div class="q" data-key="D2">
+      <div class="title">14) 가벼운 활동/운동 후 통증이 쉽게 올라오거나, 회복이 느린 편입니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="D2" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="D2" value="1"> 아니다</label>
+        <label><input type="radio" name="D2" value="2"> 보통</label>
+        <label><input type="radio" name="D2" value="3"> 그렇다</label>
+        <label><input type="radio" name="D2" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <div class="q" data-key="D3">
+      <div class="title">15) 검사에서 “큰 이상은 없다”는 말을 들었는데도, 통증/저림/불편이 지속됩니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="D3" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="D3" value="1"> 아니다</label>
+        <label><input type="radio" name="D3" value="2"> 보통</label>
+        <label><input type="radio" name="D3" value="3"> 그렇다</label>
+        <label><input type="radio" name="D3" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <div class="q" data-key="D4">
+      <div class="title">16) 아침에 뻣뻣하거나, 하루 중 특정 자세/시간대에 통증이 확실히 더 심해집니다.</div>
+      <div class="opt">
+        <label><input type="radio" name="D4" value="0"> 전혀 아니다</label>
+        <label><input type="radio" name="D4" value="1"> 아니다</label>
+        <label><input type="radio" name="D4" value="2"> 보통</label>
+        <label><input type="radio" name="D4" value="3"> 그렇다</label>
+        <label><input type="radio" name="D4" value="4"> 매우 그렇다</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <button class="primary" id="btnCalc" type="button">BNI 결과 계산하기</button>
+      <button id="btnReset" type="button">초기화</button>
+    </div>
+
+    <div class="tiny">
+      ※ 결과는 참고용입니다. 응급증상(흉통/호흡곤란/마비 등)은 즉시 의료기관에 문의하세요.
+    </div>
+  </div>
+
+  <!-- ===== 결과 오버레이 ===== -->
+  <div class="overlay" id="overlay">
+    <div class="result-card">
+      <div class="res-title">BNI 결과(즉시)</div>
+
+      <!-- 계산중 -->
+      <div class="loader" id="loadingBox">
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        <div>계산중…</div>
+      </div>
+
+      <!-- 결과 -->
+      <div class="res-block" id="resultBox">
+        <div class="line big" id="scoreLine"></div>
+        <div class="line" id="tierLine"></div>
+        <div class="line" id="codeLine"></div>
+
+        <div class="res-note" id="noteLine">
+          ※ 이 결과는 ‘진단’이 아니라, 신경-기능 패턴을 빠르게 요약한 지수입니다.
+        </div>
+
+        <div class="subcopy">
+          좀 더 정확한 분석을 원하신다면, 정밀 문진을 시작해보세요.
+        </div>
+
+        <div class="res-actions">
+          <button class="btn-next" id="btnGoM2" type="button">정밀 문진 시작하기</button>
+          <button class="btn-ghost" id="btnClose" type="button">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ✅ m1 저장용 Apps Script URL (원장님 제공)
+    const APPS_SCRIPT_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbzWPBIq7vJPL_9ADgmGGn-9ql9i3H25hk94QLnKtB-g9kgd10iNPx8JDEOQDIV8tAUy8g/exec";
+
+    // ✅ m2 위치(같은 폴더 기준)
+    const M2_URL = "m2.html";
+
+    const overlay = document.getElementById("overlay");
+    const loadingBox = document.getElementById("loadingBox");
+    const resultBox = document.getElementById("resultBox");
+
+    const scoreLine = document.getElementById("scoreLine");
+    const tierLine  = document.getElementById("tierLine");
+    const codeLine  = document.getElementById("codeLine");
+
+    const btnCalc = document.getElementById("btnCalc");
+    const btnReset = document.getElementById("btnReset");
+    const btnClose = document.getElementById("btnClose");
+    const btnGoM2 = document.getElementById("btnGoM2");
+
+    const KEYS = ["A1","A2","A3","A4","B1","B2","B3","B4","C1","C2","C3","C4","D1","D2","D3","D4"];
+
+    function getSelected(name){
+      const el = document.querySelector('input[name="'+name+'"]:checked');
+      return el ? Number(el.value) : null;
+    }
+
+    function meanOf(keys){
+      let s=0,c=0;
+      keys.forEach(k=>{
+        const v=getSelected(k);
+        if(v!==null){ s+=v; c++; }
+      });
+      return c ? (s/c) : null;
+    }
+
+    // 점수/분기/코드 생성
+    function computeScore(){
+      let sum=0, answered=0;
+      const raw = {};
+      KEYS.forEach(k=>{
+        const v = getSelected(k);
+        raw[k] = (v===null? "" : v);
+        if(v!==null){ sum+=v; answered++; }
+      });
+
+      if(answered === 0) return { ok:false, error:"no_answer" };
+
+      // 0~4 → 0~100 (응답한 문항 기준)
+      const score = Math.round((sum / (answered*4)) * 100);
+
+      let tier="GREEN";
+      if(score >= 75) tier="RED";
+      else if(score >= 50) tier="ORANGE";
+      else if(score >= 25) tier="YELLOW";
+
+      let label="안정군(GREEN)";
+      if(tier==="RED") label="상위 위험군(RED)";
+      else if(tier==="ORANGE") label="고위험군(ORANGE)";
+      else if(tier==="YELLOW") label="주의군(YELLOW)";
+
+      // 축 평균(0~4)
+      const mSleep = meanOf(["A1","A2","A3","A4"]);
+      const mDigest = meanOf(["B1","B2","B3","B4"]);
+      const mAuto = meanOf(["C1","C2","C3","C4"]);
+      const mMSK  = meanOf(["D1","D2","D3","D4"]);
+
+      // 코드 규칙: 평균이 2.75 이상이면 해당 축 태그
+      // (3점 이상이 많을 때 자연스럽게 붙는 수준)
+      const tags=[];
+      if(mSleep!==null && mSleep>=2.75) tags.push("SD"); // Sleep Dysreg
+      if(mDigest!==null && mDigest>=2.75) tags.push("DB"); // Digest Burden
+      if(mAuto!==null && mAuto>=2.75) tags.push("AC"); // Autonomic Cluster
+      if(mMSK!==null  && mMSK>=2.75)  tags.push("MB"); // Musculoskeletal Burden
+
+      // 태그가 없으면 가장 높은 축 2개를 코드로(분기 의미 확보용)
+      if(tags.length===0){
+        const arr = [
+          {k:"SD", v:(mSleep??-1)},
+          {k:"DB", v:(mDigest??-1)},
+          {k:"AC", v:(mAuto??-1)},
+          {k:"MB", v:(mMSK??-1)},
+        ].sort((a,b)=>b.v-a.v);
+        tags.push(arr[0].k);
+        if(arr[1].v >= 0) tags.push(arr[1].k);
+      }
+
+      const bni_code = tags.join("-");
+
+      return {
+        ok:true,
+        total_score: score,
+        tier,
+        label,
+        bni_code,
+        raw
+      };
+    }
+
+    function tierColorClass(tier){
+      if(tier==="RED") return { c:"c-red", b:"b-red" };
+      if(tier==="ORANGE") return { c:"c-orange", b:"b-orange" };
+      if(tier==="YELLOW") return { c:"c-yellow", b:"b-yellow" };
+      return { c:"c-green", b:"b-green" };
+    }
+
+    function openOverlayLoading(){
+      overlay.classList.add("show");
+      loadingBox.style.display="flex";
+      resultBox.style.display="none";
+    }
+
+    function showResultUI(res){
+      const cls = tierColorClass(res.tier);
+
+      scoreLine.innerHTML = `<span class="${cls.c}">[BNI 점수]</span> <span class="${cls.c}">${res.total_score}점</span>`;
+      tierLine.innerHTML  = `<span class="${cls.c}">[분류]</span> <span class="badge ${cls.b}">${res.label}</span>`;
+      codeLine.innerHTML  = `<span class="${cls.c}">[코드]</span> <span class="${cls.c}">${res.bni_code}</span>`;
+
+      loadingBox.style.display="none";
+      resultBox.style.display="block";
+    }
+
+    function persistForM2(res){
+      const payload = { score: res.total_score, label: res.label, code: res.bni_code, tier: res.tier };
+      try{ localStorage.setItem("BNI_PAYLOAD", JSON.stringify(payload)); }catch(e){}
+      return payload;
+    }
+
+    function buildM2Url(p){
+      const qs = new URLSearchParams();
+      qs.set("bni_score", String(p.score));
+      qs.set("bni_label", p.label);
+      qs.set("bni_code", p.code);
+      return M2_URL + "?" + qs.toString();
+    }
+
+    function getUTM(){
+      const qs = new URLSearchParams(location.search || "");
+      return {
+        utm_source: qs.get("utm_source") || "",
+        utm_medium: qs.get("utm_medium") || "",
+        utm_campaign: qs.get("utm_campaign") || "",
+        utm_term: qs.get("utm_term") || "",
+        utm_content: qs.get("utm_content") || "",
+      };
+    }
+
+    // ✅ 핵심: CORS/프리플라이트 회피를 위해 no-cors + 단순 text/plain(JSON 문자열)로 전송
+    function saveToSheetNoCors(payload){
+      const body = JSON.stringify(payload);
+
+      // headers를 넣으면 환경에 따라 preflight가 발생할 수 있어 "아예 생략"하는 게 가장 안전합니다.
+      // (Apps Script는 postData.contents로 raw를 받으므로, text/plain이어도 문제 없습니다.)
+      return fetch(APPS_SCRIPT_WEBAPP_URL, {
+        method: "POST",
+        mode: "no-cors",
+        cache: "no-store",
+        keepalive: true,
+        body
+      });
+    }
+
+    btnCalc.addEventListener("click", ()=>{
+      const res = computeScore();
+      if(!res.ok){
+        alert("최소 1개 이상 선택해 주세요.");
+        return;
+      }
+
+      btnCalc.disabled = true;
+      openOverlayLoading();
+
+      // 시트 저장 payload: Apps Script가 요구하는 필수키 정확히
+      const now = new Date();
+      const utm = getUTM();
+
+      const savePayload = {
+        timestamp_client: now.toISOString(),
+        bni_code: res.bni_code,
+        total_score: res.total_score,
+
+        // 서브스코어(선택): 축 평균(0~4)을 0~100으로 환산해 넣음(없어도 됨)
+        sub_a: "", sub_b: "", sub_c: "", sub_d: "",
+        type_top1: "", type_top2: "",
+
+        // 16문항 저장
+        A1: res.raw.A1, A2: res.raw.A2, A3: res.raw.A3, A4: res.raw.A4,
+        B1: res.raw.B1, B2: res.raw.B2, B3: res.raw.B3, B4: res.raw.B4,
+        C1: res.raw.C1, C2: res.raw.C2, C3: res.raw.C3, C4: res.raw.C4,
+        D1: res.raw.D1, D2: res.raw.D2, D3: res.raw.D3, D4: res.raw.D4,
+
+        // 메타
+        utm_source: utm.utm_source,
+        utm_medium: utm.utm_medium,
+        utm_campaign: utm.utm_campaign,
+        utm_term: utm.utm_term,
+        utm_content: utm.utm_content,
+        referrer: document.referrer || "",
+        page_url: location.href || "",
+        user_agent: navigator.userAgent || ""
+      };
+
+      // 저장 시도(응답 읽지 않음)
+      try { saveToSheetNoCors(savePayload); } catch(e){}
+
+      // “계산중” 연출 후 결과 표시
+      setTimeout(()=>{
+        showResultUI(res);
+        const p = persistForM2(res);
+        btnGoM2.dataset.m2url = buildM2Url(p);
+        btnCalc.disabled = false;
+      }, 900);
+    });
+
+    btnGoM2.addEventListener("click", ()=>{
+      const url = btnGoM2.dataset.m2url || M2_URL;
+      location.href = url;
+    });
+
+    btnClose.addEventListener("click", ()=> overlay.classList.remove("show"));
+    overlay.addEventListener("click", (e)=>{ if(e.target===overlay) overlay.classList.remove("show"); });
+
+    btnReset.addEventListener("click", ()=>{
+      document.querySelectorAll('input[type="radio"]').forEach(r=>r.checked=false);
+      alert("초기화했습니다.");
+    });
+  </script>
+</body>
+</html>
