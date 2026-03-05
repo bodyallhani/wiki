@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>수원 공간척추정형술: 4만례 임상 기반 인계동 척추교정 병원 가이드 | 바디올한의원</title>
-    <meta name="description" content="수원 인계동 바디올한의원 이동해 원장의 공간척추정형술(SART) 심층 분석. 척추도인안교학회 이사의 4만 례 임상 데이터로 증명하는 비수술 척추교정의 정수.">
-    <meta name="keywords" content="공간척추정형술, 공간척추교정, 수원척추병원, 수원한의원, 인계동한의원, 수원 허리통증 병원, 이동해 원장, SART">
+    <title>수원 공간척추정형술(SART): 4만례 임상 기반 척추교정 가이드 | 바디올한의원</title>
+    <meta name="description" content="수원 인계동 바디올한의원 이동해 원장의 공간척추정형술(SART) 심층 분석. 피사의 사탑 원리로 풀어본 척추 공간 확보의 중요성과 비수술 4단계 교정 프로세스.">
+    <meta name="keywords" content="공간척추교정, 공간척추정형술, 수원척추병원, 수원한의원, 인계동한의원, 수원 허리통증 병원, 이동해 원장, SART, 척추정렬회복술, 수원 도수치료">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -18,7 +18,7 @@
         "@type": "Person",
         "name": "이동해",
         "jobTitle": "대표원장",
-        "description": "척추도인안교학회 이사, 40,000례 이상 임상(2025.12 기준)"
+        "description": "척추진단교정학회 이사, 40,000례 이상 임상(25.12 기준)" [cite: 46]
       },
       "publisher": { "@type": "Organization", "name": "바디올한의원" }
     }
@@ -26,11 +26,10 @@
 
     <style>
         :root { --primary-color: #b38b4d; --text-color: #333; --bg-color: #f8f9fa; }
-        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.8; color: var(--text-color); margin: 0; background: var(--bg-color); padding-bottom: 80px; word-break: keep-all; }
+        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.8; color: var(--text-color); margin: 0; background: var(--bg-color); padding-bottom: 80px; word-break: keep-all; -webkit-font-smoothing: antialiased; }
         
         header { background: #fff; height: 65px; display: flex; justify-content: space-between; align-items: center; padding: 0 16px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
         .logo img { height: 30px; }
-        .lang-switcher { display: flex; gap: 4px; }
         .lang-switcher button { border: 1px solid #ddd; background: #fff; padding: 4px 10px; font-size: 0.75rem; border-radius: 4px; cursor: pointer; font-weight: bold; color: #666; }
         .lang-switcher button.active { background: var(--primary-color); color: #fff; border-color: var(--primary-color); }
 
@@ -41,31 +40,23 @@
         h3 { font-size: 1.1rem; margin-top: 30px; color: var(--primary-color); font-weight: bold; }
         
         .summary-box { background: #fdfaf5; padding: 25px; border-radius: 12px; margin: 30px 0; border: 1px solid #f0e6d6; font-size: 0.95rem; }
-        .expert-insight { background: #f0f4f8; padding: 25px; border-radius: 12px; margin: 35px 0; position: relative; font-size: 0.95rem; }
-        .expert-insight::before { content: "DIRECTOR'S INSIGHT"; position: absolute; top: -10px; left: 20px; background: #446084; color: #fff; padding: 2px 12px; font-size: 0.7rem; border-radius: 20px; font-weight: bold; }
-
         .image-box { text-align: center; margin: 35px 0; }
         .image-box img { max-width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .caption { display: block; font-size: 0.85rem; color: #777; margin-top: 12px; line-height: 1.5; font-weight: 500; }
-
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 30px 0; border-radius: 12px; }
-        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
         .compare-table { width: 100%; border-collapse: collapse; margin: 25px 0; font-size: 0.85rem; }
         .compare-table th { background: #f8f9fa; border: 1px solid #dee2e6; padding: 10px; }
         .compare-table td { border: 1px solid #dee2e6; padding: 10px; text-align: center; }
 
         /* 다국어 섹션 제어 */
-        [lang="en"], [lang="zh"] { display: none; }
+        .lang-content { display: none; }
+        .lang-content.active { display: block; }
 
-        /* CTA 버튼 스타일 */
         .cta-area { text-align: center; margin: 50px 0; }
-        .cta-button { display: inline-block; background: var(--primary-color); color: #fff; padding: 18px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1rem; box-shadow: 0 5px 15px rgba(179,139,77,0.3); transition: 0.3s; }
-        .cta-button:hover { transform: translateY(-3px); background: #96733d; }
+        .cta-button { display: inline-block; background: var(--primary-color); color: #fff; padding: 18px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1rem; box-shadow: 0 5px 15px rgba(179,139,77,0.3); }
 
         .bottom-bar { position: fixed; bottom: 0; left: 0; right: 0; height: 68px; background: #fff; display: flex; box-shadow: 0 -2px 10px rgba(0,0,0,0.08); z-index: 1001; }
-        .bottom-bar a { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; font-size: 0.72rem; font-weight: bold; color: #555; }
-        .bottom-bar i { font-size: 1.25rem; margin-bottom: 4px; }
+        .bottom-bar a { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; font-size: 0.75rem; font-weight: bold; color: #555; }
     </style>
 </head>
 <body>
@@ -73,7 +64,7 @@
 <header>
     <div class="nav-left">
         <a href="index.html" class="home-btn"><i class="fas fa-house"></i></a>
-        <div class="logo"><img src="Bodyall Logo.png" alt="Body-all Clinic"></div>
+        <div class="logo"><img src="Bodyall Logo.png" alt="바디올한의원"></div>
     </div>
     <div class="lang-switcher">
         <button onclick="changeLang('ko')" id="btn-ko" class="active">KO</button>
@@ -83,101 +74,99 @@
 </header>
 
 <div class="container">
-    <div class="lang-content" lang="ko">
-        <h1>공간척추정형술(SART): 4만 례 임상이 증명하는 척추 공간 회복의 원리</h1>
+    <div class="lang-content active" id="content-ko">
+        <h1>공간척추정형술(SART): 왜 단순 교정이 아닌 '공간 확보'가 필요한가요?</h1>
         
         <div class="summary-box">
-            <p><b>공간척추정형술(SART)</b>은 좁아진 척추 분절 사이의 간격을 물리적으로 확장하여 신경 압박을 해소하는 정밀 척추정렬회복술입니다. 척추도인안교학회 이사 <b>이동해 원장</b>이 40,000례 이상의 임상을 통해 정립한 비수술 치료의 핵심입니다.</p>
+            <b>이동해 원장의 고찰:</b> 척추 질환의 통증은 결과일 뿐입니다. 근본 원인은 뼈가 틀어지며 좁아진 <b>공간(Space)</b>에 있습니다. 바디올은 4만 례 이상의 임상 데이터를 통해 눌린 신경을 해방하는 정밀 공간 확보의 중요성을 입증해왔습니다[cite: 46, 59].
         </div>
 
+        <h2>1. 피사의 사탑 원리로 본 척추 치료의 본질</h2>
         <div class="image-box">
-            <img src="SART room.jpg" alt="수원 인계동 공간척추정형술 전용 치료실">
-            <span class="caption">바디올한의원 전용 교정실: 인상기를 통해 하중을 제어하고 척추 마디 사이의 공간을 확보합니다.</span>
+            <img src="Reason of Pain from Twisting of bone3.jpg" alt="피사의 사탑 비유를 통한 척추 정렬 원리">
+            <span class="caption">기울어진 사탑을 지탱하기 위해 밧줄(근육)을 아무리 당겨도 지반(골격)이 바로 서지 않으면 탑은 무너집니다. 척추 치료 역시 근육 이완보다 뼈의 정렬과 공간 확보가 우선되어야 합니다.</span>
         </div>
+        <p>수원 허리통증 병원을 찾는 많은 분이 마사지나 단순 물리치료 후 재발을 겪는 이유는 <b>'구조적 공간'</b>을 회복하지 못했기 때문입니다. 뼈와 뼈 사이의 간격이 좁아지면 그 사이를 지나는 신경은 물리적으로 압박받을 수밖에 없습니다[cite: 68].</p>
 
-        <h2>실제 공간척추정형술 시술 과정 (Full Video)</h2>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/I7vk9LDQdk0" title="바디올한의원 시술 영상" allowfullscreen></iframe>
-        </div>
-
-        <h2>1. 척추 질환의 근본 원인: '공간의 상실'</h2>
-        <p>수원 허리통증 병원이나 척추병원을 찾는 환자분들의 디스크 돌출과 협착증은 사실 척추 공간이 좁아지며 발생한 '결과'입니다. 척추 마디가 눌리면 추간판(디스크)은 밀려날 수밖에 없습니다.</p>
+        <h2>2. 바디올의 4단계 정밀 교정 프로세스</h2>
         
-
-[Image of the human spinal column]
-
-        <p>SART는 이 좁아진 공간을 다시 열어주어 신경 압박을 즉각 해소하고, 디스크가 제자리로 돌아가도록 유도합니다.</p>
-
-        <h2>2. 공간척추정형술의 3단계 치료 프로세스</h2>
-        <h3>Step 1: 골반 기반 정렬 (Pelvic Foundation)</h3>
-        <p>인체의 주춧돌인 골반의 틀어짐을 가장 먼저 바로잡습니다. 골반이 수평을 이루어야 척추 정렬이 유지됩니다.</p>
-        
-        <h3>Step 2: 인상기를 통한 공간 확보 (Space Decompression)</h3>
-        <p>특수 장비인 인상기를 활용하여 척추 마디마디를 정밀하게 견인합니다. 이때 눌려있던 신경근과 혈관이 소통을 시작합니다.</p>
-
+        <h3>Step 1. 기초 정렬 (Foundation Alignment)</h3>
         <div class="image-box">
-            <img src="manip1.jpg" alt="이동해 원장의 척추 교정 모습">
-            <span class="caption">이동해 원장의 정교한 수기 기법으로 척추의 미세 정렬을 회복합니다.</span>
+            <img src="01 Manipulation image 1.gif" alt="골격 기초 정렬 단계">
+            <span class="caption">척추의 주춧돌인 골반의 틀어짐을 바로잡아 전신 정렬의 기초를 세웁니다.</span>
         </div>
 
-        <h3>Step 3: 교타 기법을 통한 정밀 교정 (Precision Alignment)</h3>
-        <p>확보된 공간을 바탕으로 틀어진 분절을 교정망치로 세밀하게 타격하여 제자리로 복원합니다.</p>
-
+        <h3>Step 2. 공간 확보 및 견인 (Space Expansion)</h3>
         <div class="image-box">
-            <img src="hammer1.jpg" alt="안전한 교정 기구">
-            <span class="caption">한국의료기기안전정보원 등록 장비인 교정망치로 뼈를 하나하나 정밀하게 교정합니다.</span>
+            <img src="02 Manipulation image 2.gif" alt="척추 공간 확보 단계">
+            <span class="caption">인상기실(SART room)에서 하중을 제어하며 좁아진 척추 마디 사이의 간격을 물리적으로 확장합니다.</span>
         </div>
 
-        <div class="expert-insight">
-            <p><b>Director's Insight:</b><br>
-            척추도인안교학회 이사로서 4만 명 이상의 환자를 치료하며 얻은 확신은, 수술 없이도 척추 공간만 회복되면 인체는 스스로 치유된다는 점입니다. 단순 추나를 넘어선 정밀 정형술의 힘을 경험해 보십시오.</p>
+        <h3>Step 3. 정밀 분절 교정 (Precision Bone Setting)</h3>
+        <div class="image-box">
+            <img src="03 Manipulation image 3.gif" alt="미세 분절 교정 단계">
+            <span class="caption">확보된 공간을 바탕으로 틀어진 개별 척추 뼈를 제자리로 복원합니다.</span>
         </div>
+
+        <h3>Step 4. 정렬 유지 및 강화 (Stabilization)</h3>
+        <div class="image-box">
+            <img src="04 Manipulation image 4.gif" alt="척추 정렬 유지 단계">
+            <span class="caption">바르게 정렬된 뼈가 안정적으로 유지되도록 주변부 근막과 조직을 최적화합니다.</span>
+        </div>
+
+        <h2>3. 전문가의 도구: 안전하고 정밀한 교타 기법</h2>
+        <div class="image-box">
+            <img src="manip1.jpg" alt="이동해 원장의 공간척추정형술 시술 장면">
+            <span class="caption">상징적인 교정 장면: 척추진단교정학회 이사 이동해 원장이 직접 시술을 진행합니다[cite: 46].</span>
+        </div>
+        <p>바디올은 한국의료기기안전정보원에 등록된 정밀 교정 도구(`hammer2.jpg`)를 사용하여 손이 닿지 않는 깊은 분절까지 섬세하게 타격하여 교정합니다[cite: 68].</p>
 
         <div class="cta-area">
             <a href="http://body-all.co.kr/40" class="cta-button">더 자세히 알아보기</a>
         </div>
     </div>
 
-    <div class="lang-content" lang="en">
-        <h1>Space Spine Alignment Therapy (SART)</h1>
+    <div class="lang-content" id="content-en">
+        <h1>Space Spine Alignment Therapy (SART): Why 'Space Recovery' is the Key</h1>
         <div class="summary-box">
-            SART is a non-surgical procedure to restore spinal space and relieve nerve pressure, based on 40,000+ clinical cases by <b>Director Dong-hae Lee</b>.
+            <b>Insight by Dr. Lee:</b> Spinal pain is just a symptom. The root cause lies in <b>lost space</b> between vertebrae. Based on 40,000+ cases, we focus on restoring structural space[cite: 46, 68].
         </div>
-        <h2>The Core Principle: Space Recovery</h2>
-        <p>Spinal disorders often stem from narrowed spaces between vertebrae. SART creates the physical room necessary for nerves to breathe and discs to reposition naturally.</p>
-        <div class="image-box"><img src="SART room.jpg" alt="SART Clinic"></div>
-        <h3>3-Step Process</h3>
+                <h2>4-Step Precision Process</h2>
         <ul>
-            <li>Pelvic Balancing: Realigning the foundation.</li>
-            <li>Decompression: Utilizing specialized equipment to open spinal segments.</li>
-            <li>Precision Tapping: Realigning vertebrae using medical-grade instruments.</li>
+            <li><b>Step 1. Foundation:</b> Realigning the pelvis.</li>
+            <li><b>Step 2. Decompression:</b> Expanding intervertebral space in the SART room.</li>
+            <li><b>Step 3. Bone Setting:</b> Precise adjustment of tilted segments.</li>
+            <li><b>Step 4. Stabilization:</b> Maintaining the corrected alignment.</li>
         </ul>
         <div class="cta-area"><a href="http://body-all.co.kr/40" class="cta-button">Learn More</a></div>
     </div>
 
-    <div class="lang-content" lang="zh">
-        <h1>空间脊柱整形术 (SART): 恢复脊柱空间的非手术疗法</h1>
+    <div class="lang-content" id="content-zh">
+        <h1>空间脊柱整形术 (SART): 为什么恢复“空间”才是核心？</h1>
         <div class="summary-box">
-            由脊柱推拿学会理事 <b>李东海院长</b> 凭借 40,000 余例临床经验创立，通过恢复脊柱间隙解决疼痛根源。
+            <b>李东海院长的观点:</b> 脊柱疼痛的根源在于骨骼移位导致的空间丧失。通过 40,000 余例临床经验证明，物理性恢复间隙是解决神经压迫的关键 [cite: 46, 68]。
         </div>
-        <h2>核心原理：恢复结构空间</h2>
-        <p>腰椎间盘突出和管腔狭窄的根源在于脊柱空间的丧失。SART 通过物理方式拉开间隙，让受压的神经重新获得通畅。</p>
-        <div class="image-box"><img src="hammer1.jpg" alt="安全矫正器械"></div>
-        <div class="cta-area"><a href="http://body-all.co.kr/40" class="cta-button">查看更多详情</a></div>
+        <h2>非手术四步矫正流程</h2>
+        <ol>
+            <li><b>第一步 基础对齐:</b> 矫正骨盆骨基。</li>
+            <li><b>第二步 空间拓展:</b> 增加脊椎节段间距。</li>
+            <li><b>第三步 精密复位:</b> 细微调整移位骨骼。</li>
+            <li><b>第四步 巩固强化:</b> 维持健康的脊柱形态。</li>
+        </ol>
+        <div class="cta-area"><a href="http://body-all.co.kr/40" class="cta-button">查看详情</a></div>
     </div>
 </div>
 
 <div class="bottom-bar">
-    <a href="tel:031-8067-5825" class="btn-call"><i class="fas fa-phone"></i><span>전화상담</span></a>
-    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank" class="btn-kakao"><i class="fas fa-comment"></i><span>카톡문의</span></a>
-    <a href="https://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank" class="btn-naver"><i class="fas fa-comment-dots"></i><span>톡톡문의</span></a>
-    <a href="https://map.naver.com/p/entry/place/1487851969" target="_blank" class="btn-map"><i class="fas fa-location-dot"></i><span>지도보기</span></a>
+    <a href="tel:031-8067-5825">전화상담</a>
+    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank">카톡문의</a>
+    <a href="https://map.naver.com/p/entry/place/1487851969" target="_blank">지도보기</a>
 </div>
 
 <script>
     function changeLang(lang) {
-        document.querySelectorAll('.lang-content').forEach(el => el.style.display = 'none');
-        document.querySelectorAll('.lang-content[lang="' + lang + '"]').forEach(el => el.style.display = 'block');
+        document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+        document.getElementById('content-' + lang).classList.add('active');
         document.querySelectorAll('.lang-switcher button').forEach(btn => btn.classList.remove('active'));
         document.getElementById('btn-' + lang).classList.add('active');
         window.scrollTo(0, 0);
