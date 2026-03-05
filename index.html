@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="naver-site-verification" content="7a19535395c6c10e0bed51d415a1cf9302658f20" />
-    <meta name="google-site-verification" content="vpnC3N8l_40MbYT7zLY0qhpXSN5EPwRwKJuHSNe-QC4" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <title>바디올한의원 백과사전: 수원 척추교정·추나 및 내과질환·난치질환·담적병·공진단 정보</title>
-    <meta name="description" content="척추도인안교학회 이사 이동해 원장의 질환 백과. 4만례 임상 기반 공간척추정형술, 수원 허리디스크 및 전국구 담적병·난치질환·한약·보약 정보 가이드.">
+    <title>바디올한의원 백과사전: 수원 척추교정·추나 및 전국 담적병·한약 가이드</title>
+    <meta name="description" content="수원 인계동 바디올한의원 이동해 원장의 척추·내과 질환 백과사전. 4만 례 임상 기반 공간척추정형술, 수원 허리디스크 및 전국구 담적병·공진단 정보 제공.">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -16,88 +15,65 @@
       "@context": "https://schema.org",
       "@type": "MedicalOrganization",
       "name": "Body-all Clinic",
-      "alternateName": "바디올한의원",
       "url": "https://wiki.body-all.co.kr",
+      "logo": "https://wiki.body-all.co.kr/Bodyall%20Logo.png",
       "founder": {
         "@type": "Person",
-        "name": "이동해",
-        "description": "척추도인안교학회 이사, 한의사 척추교정 교육위원, 공간척추교정 4만 례 임상(2025.12)"
+        "name": "이동해 (Dong-hae Lee)",
+        "description": "Board Member of Korean Society of Spine Diagnosis and Correction, 40,000+ cases of Space Spine Alignment Therapy."
       }
     }
     </script>
 
     <style>
         :root { --primary-color: #b38b4d; --text-color: #333; --bg-color: #f8f9fa; --card-bg: #fff; }
-        
-        body { 
-            font-family: 'Pretendard', -apple-system, sans-serif; 
-            line-height: 1.6; color: var(--text-color); margin: 0; background: var(--bg-color); padding-bottom: 80px; 
-            word-break: keep-all; -webkit-font-smoothing: antialiased;
-        }
-
-        header { 
-            background: #fff; height: 60px; display: flex; justify-content: space-between; align-items: center; 
-            padding: 0 16px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
-        }
+        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: var(--text-color); margin: 0; background: var(--bg-color); padding-bottom: 80px; word-break: keep-all; -webkit-font-smoothing: antialiased; }
+        header { background: #fff; height: 60px; display: flex; justify-content: space-between; align-items: center; padding: 0 16px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
         .logo img { height: 28px; width: auto; }
-        
-        /* 다국어 선택기 */
-        .lang-switcher { display: flex; gap: 5px; }
-        .lang-switcher button { 
-            border: 1px solid #ddd; background: #fff; padding: 4px 10px; font-size: 0.75rem; 
-            border-radius: 4px; cursor: pointer; color: #666; font-weight: bold;
-        }
+        .lang-switcher button { border: 1px solid #ddd; background: #fff; padding: 4px 8px; font-size: 0.75rem; border-radius: 4px; cursor: pointer; color: #666; font-weight: bold; }
         .lang-switcher button.active { background: var(--primary-color); color: #fff; border-color: var(--primary-color); }
 
-        .hero { background: #fff; padding: 40px 20px 35px; text-align: center; border-bottom: 1px solid #f0f0f0; }
-        .hero h1 { font-size: 1.45rem; color: var(--primary-color); margin: 0 0 15px 0; font-weight: 800; line-height: 1.35; }
-        .hero .creds { 
-            font-size: 0.85rem; color: #888; margin-bottom: 18px; line-height: 1.5;
-            background: #fdfaf5; padding: 10px; border-radius: 8px; display: inline-block;
-        }
-        .hero p { color: #555; font-size: 0.95rem; line-height: 1.6; margin: 0; }
+        .hero { background: #fff; padding: 40px 20px; text-align: center; border-bottom: 1px solid #f0f0f0; }
+        .hero h1 { font-size: 1.5rem; color: var(--primary-color); margin: 0 0 15px 0; font-weight: 800; line-height: 1.4; }
+        .hero .creds { font-size: 0.85rem; color: #888; background: #fdfaf5; padding: 12px; border-radius: 8px; display: inline-block; margin-bottom: 15px; }
+        .hero p { color: #555; font-size: 0.95rem; line-height: 1.6; max-width: 650px; margin: 0 auto; }
+        .hero img { width: 100%; max-width: 500px; border-radius: 12px; margin-top: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
 
-        .container { max-width: 800px; margin: 20px auto; padding: 0 16px; }
-        .category-title { 
-            font-size: 1.15rem; color: #222; margin: 30px 0 15px; padding-left: 10px; 
-            border-left: 4px solid var(--primary-color); font-weight: bold; 
-        }
+        .container { max-width: 900px; margin: 20px auto; padding: 0 16px; }
+        .category-title { font-size: 1.2rem; color: #222; margin: 40px 0 20px; padding-left: 12px; border-left: 5px solid var(--primary-color); font-weight: bold; }
         
-        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-        .card { 
-            background: var(--card-bg); padding: 18px 10px; border-radius: 12px; 
-            text-align: center; text-decoration: none; color: #444; border: 1px solid #eee;
-            display: flex; flex-direction: column; justify-content: center; transition: 0.2s;
-        }
-        .card:active { background: #f9f9f9; transform: scale(0.98); }
-        .card i { font-size: 1.4rem; color: var(--primary-color); margin-bottom: 8px; }
-        .card b { font-size: 0.9rem; display: block; margin-bottom: 4px; line-height: 1.2; }
-        .card span { font-size: 0.72rem; color: #999; display: block; line-height: 1.3; }
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+        .card { background: var(--card-bg); border-radius: 15px; overflow: hidden; text-decoration: none; color: #333; border: 1px solid #eee; transition: 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.04); display: flex; flex-direction: column; }
+        .card-img { width: 100%; height: 110px; object-fit: cover; background: #eee; }
+        .card-body { padding: 12px; text-align: center; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; }
+        .card-body b { display: block; font-size: 0.9rem; margin-bottom: 4px; color: var(--primary-color); }
+        .card-body span { font-size: 0.72rem; color: #888; line-height: 1.3; }
 
-        /* 다국어 패치: 선택되지 않은 언어 숨김 */
-        [lang="en"], [lang="zh"] { display: none; }
+        .direct-answer { background: #f0f4f8; padding: 25px; border-radius: 15px; margin: 30px 0; }
+        .direct-answer h3 { font-size: 1.05rem; margin-top: 0; color: #2c3e50; }
+        .direct-answer p { font-size: 0.95rem; margin-bottom: 0; color: #444; }
 
-        .bottom-bar { 
-            position: fixed; bottom: 0; left: 0; right: 0; height: 68px; background: #fff; 
-            display: flex; box-shadow: 0 -2px 10px rgba(0,0,0,0.08); z-index: 1001; 
-        }
-        .bottom-bar a { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; font-size: 0.7rem; color: #555; font-weight: bold; }
-        .bottom-bar i { font-size: 1.25rem; margin-bottom: 4px; }
-        .btn-call { color: #333; } .btn-kakao { background: #FEE500; color: #3A1D1D !important; } .btn-naver { background: #03C75A; color: #fff !important; } .btn-map { color: #d32f2f; }
+        /* 다국어 섹션 제어 */
+        .lang-content { display: none; }
+        .lang-content.active { display: block; }
 
-        footer { padding: 40px 20px; background: #333; color: #bbb; text-align: center; font-size: 0.8rem; }
+        .bottom-bar { position: fixed; bottom: 0; left: 0; right: 0; height: 68px; background: #fff; display: flex; box-shadow: 0 -2px 12px rgba(0,0,0,0.1); z-index: 1001; }
+        .bottom-bar a { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; font-size: 0.75rem; color: #555; font-weight: bold; }
+        .bottom-bar i { font-size: 1.3rem; margin-bottom: 4px; }
+        .btn-call { color: #333; } .btn-kakao { background: #FEE500; color: #3A1D1D !important; } .btn-naver { background: #03C75A; color: #fff !important; }
 
-        @media (min-width: 600px) {
-            .grid { grid-template-columns: repeat(4, 1fr); }
-            .hero h1 { font-size: 2rem; }
-        }
+        footer { padding: 40px 20px; background: #333; color: #bbb; text-align: center; font-size: 0.85rem; line-height: 1.8; }
+        footer a { color: #eee; text-decoration: none; border-bottom: 1px solid #666; }
+
+        @media (min-width: 600px) { .grid { grid-template-columns: repeat(4, 1fr); } }
     </style>
 </head>
 <body>
 
 <header>
     <div class="nav-left">
-        <div class="logo"><img src="Bodyall Logo.png" alt="Body-all Clinic"></div>
+        <div class="logo"><img src="Bodyall Logo.png" alt="바디올한의원"></div>
+        <span class="wiki-label">백과사전</span>
     </div>
     <div class="lang-switcher">
         <button onclick="changeLang('ko')" id="btn-ko" class="active">KO</button>
@@ -107,121 +83,239 @@
 </header>
 
 <main>
-    <div class="lang-content" lang="ko">
+    <div class="lang-content active" id="content-ko">
         <section class="hero">
-            <h1>바디올한의원 백과사전</h1>
+            <h1>수원 인계동 척추교정·추나 가이드<br>바디올한의원 백과사전</h1>
             <div class="creds">
-                척추도인안교학회 이사 · 교정 교육위원<br>
-                공간척추교정 40,000례 이상 임상 (2025.12 기준)
+                척추진단교정학회 이사 · 공간척추교정 교육위원<br>
+                40,000례 이상의 공간척추정형술 임상 데이터(25.12 기준) [cite: 46]
             </div>
-            <p>통증이라는 '결과'가 아닌 <b>구조적 원인(Space)</b>에 집중하여 이동해 원장이 집필한 질환 통합 가이드입니다.</p>
+            <p>
+                <b>수원 허리통증 병원급 진료</b>를 고민하시는 분들께 4만 례의 임상 경험을 바탕으로 통증의 결과가 아닌 <b>구조적 원인(Space)</b>에 집중한 비수술 치료 정보를 공유합니다. [cite: 4, 46]
+            </p>
+            <img src="sangdam1.jpg" alt="이동해 원장 상담">
         </section>
+
         <div class="container">
-            <h2 class="category-title">수원 추나 및 척추교정 가이드</h2>
+            <section class="direct-answer">
+                <h3>Q. 수원 척추교정, 왜 바디올인가요?</h3>
+                <p><b>A. 뼈의 공간을 직접 확보하기 때문입니다.</b> 단순 근육 이완을 넘어 척추 마디 사이의 공간(Space)을 물리적으로 넓혀 신경 압박을 해소하는 것이 재발 방지의 핵심입니다. [cite: 68]</p>
+            </section>
+
+            <h2 class="category-title">01. 척추교정 및 추나 기술</h2>
             <div class="grid">
-                <a href="SART.html" class="card"><i class="fas fa-bone"></i><b>공간척추정형술</b><span>4만례 임상 기반</span></a>
-                <a href="chuna-therapy.html" class="card"><i class="fas fa-hands-physiotherapy"></i><b>인계동 추나요법</b><span>건강보험 척추교정</span></a>
-                <a href="lumbar-disc.html" class="card"><b>허리디스크</b><span>수원 허리통증 병원</span></a>
-                <a href="cervical-disc.html" class="card"><b>목디스크</b><span>수원 목통증 교정</span></a>
+                <a href="SART.html" class="card">
+                    <img src="manip1.jpg" class="card-img" alt="공간척추정형술">
+                    <div class="card-body"><b>공간척추정형술</b><span>4만례 임상 기반 공간 확보 [cite: 46]</span></div>
+                </a>
+                <a href="chuna-therapy.html" class="card">
+                    <img src="manip5.jpg" class="card-img" alt="수원 추나요법">
+                    <div class="card-body"><b>수원 추나요법</b><span>인계동 건강보험 정골추나 [cite: 69]</span></div>
+                </a>
+                <a href="#" class="card">
+                    <img src="hammer2.jpg" class="card-img" alt="정밀 교타요법">
+                    <div class="card-body"><b>정밀 교타요법</b><span>교정 도구를 이용한 미세 정렬</span></div>
+                </a>
+                <a href="#" class="card">
+                    <img src="Space restoration image1.gif" class="card-img" alt="약침 및 봉침">
+                    <div class="card-body"><b>약침·봉침 치료</b><span>신경 염증 제거 및 재생 [cite: 56]</span></div>
+                </a>
             </div>
 
-            <h2 class="category-title">만성 난치성 내과 질환</h2>
+            <h2 class="category-title">02. 척추 및 디스크 질환 분석</h2>
             <div class="grid">
-                <a href="#" class="card"><b>담적병</b><span>원인 모를 소화불량</span></a>
-                <a href="#" class="card"><b>역류성식도염</b><span>위장 기능 회복</span></a>
-                <a href="#" class="card"><b>자율신경장애</b><span>두통·불면·어지럼</span></a>
-                <a href="#" class="card"><b>구안와사</b><span>안면마비 집중치료</span></a>
+                <a href="lumbar-disc.html" class="card">
+                    <img src="Disc Herniation.jpg" class="card-img" alt="수원 허리디스크">
+                    <div class="card-body"><b>수원 허리디스크</b><span>요추 추간판 탈출증 정밀 교정 [cite: 68]</span></div>
+                </a>
+                <a href="cervical-disc.html" class="card">
+                    <img src="Reason of Pain from Twisting of bone.jpg" class="card-img" alt="수원 목디스크">
+                    <div class="card-body"><b>수원 목디스크</b><span>일자목·거북목 통증 관리 [cite: 68]</span></div>
+                </a>
+                <a href="#" class="card">
+                    <img src="Reason of Pain from Twisting of bone2.jpg" class="card-img" alt="척추관협착증">
+                    <div class="card-body"><b>척추관협착증</b><span>신경 통로 확보 및 보행 개선 [cite: 56]</span></div>
+                </a>
+                <a href="#" class="card">
+                    <img src="Reason of Pain from Twisting of bone3.jpg" class="card-img" alt="골반교정">
+                    <div class="card-body"><b>골반교정</b><span>전신 밸런스의 주춧돌 정렬 [cite: 68]</span></div>
+                </a>
             </div>
 
-            <h2 class="category-title">바디올 특화 처방 정보 (전국)</h2>
+            <h2 class="category-title">03. 내과 질환 및 특화 처방</h2>
             <div class="grid">
-                <a href="http://body-all.co.kr" class="card"><b>공진단(Gongjindan)</b><span>원방 효능과 처방 원리</span></a>
-                <a href="http://body-all.co.kr" class="card"><b>경옥고(Gyeongokgo)</b><span>기력 회복과 면역력</span></a>
-                <a href="http://body-all.co.kr" class="card"><b>체질한약</b><span>개인별 맞춤 처방의 원리</span></a>
-                <a href="http://body-all.co.kr" class="card"><b>성장한약</b><span>아이 건강 발달 가이드</span></a>
+                <a href="#" class="card"><b>담적병·위염</b><span>척추 정렬을 통한 위장 회복 [cite: 56]</span></a>
+                <a href="#" class="card"><b>자율신경장애</b><span>두통·불면·어지럼증 정보 [cite: 56]</span></a>
+                <a href="http://body-all.co.kr" class="card"><b>공진단·경옥고</b><span>원방의 효능을 담은 보약 정보</span></a>
+                <a href="http://body-all.co.kr" class="card"><b>체질 맞춤 한약</b><span>개인별 맞춤 처방의 원리 [cite: 67]</span></a>
             </div>
         </div>
     </div>
 
-    <div class="lang-content" lang="en">
+    <div class="lang-content" id="content-en">
         <section class="hero">
-            <h1>Body-all Encyclopedia</h1>
+            <h1>Suwon Ingye-dong Spine & Chuna Guide<br>Body-all Clinic Encyclopedia</h1>
             <div class="creds">
-                Board Member of Chuna Society<br>
-                40,000+ Spine Alignment Cases (2025.12)
+                Director, Spine Diagnosis & Correction Society<br>
+                40,000+ Clinical Cases of Space Spine Alignment (As of 2025.12) [cite: 46]
             </div>
-            <p>A comprehensive medical guide authored by Director Lee, focusing on <b>Structural Space</b>.</p>
+            <p>
+                For those seeking <b>hospital-level spine care in Suwon</b>, we provide non-surgical treatment information focused on <b>Structural Space</b> rather than just symptoms. [cite: 4, 46]
+            </p>
+            <img src="sangdam1.jpg" alt="Director Lee Consultation">
         </section>
+
         <div class="container">
-            <h2 class="category-title">Spinal Alignment (Suwon)</h2>
+            <section class="direct-answer">
+                <h3>Q. Why choose Body-all for Spine Correction in Suwon?</h3>
+                <p><b>A. Because we directly restore spinal space.</b> Beyond muscle relaxation, physically widening the space between vertebrae to relieve nerve pressure is the key to preventing recurrence. [cite: 68]</p>
+            </section>
+
+            <h2 class="category-title">01. Spine Correction & Chuna Techniques</h2>
             <div class="grid">
-                <a href="SART.html" class="card"><b>Spine Alignment</b><span>SART Therapy</span></a>
-                <a href="chuna-therapy.html" class="card"><b>Chuna Therapy</b><span>Manual Orthopedics</span></a>
-                <a href="lumbar-disc.html" class="card"><b>Lumbar Disc</b><span>Spine Care</span></a>
-                <a href="cervical-disc.html" class="card"><b>Cervical Disc</b><span>Neck Pain</span></a>
+                <a href="SART.html" class="card">
+                    <img src="manip1.jpg" class="card-img" alt="SART">
+                    <div class="card-body"><b>SART Therapy</b><span>40k Cases of Space Recovery [cite: 46]</span></div>
+                </a>
+                <a href="chuna-therapy.html" class="card">
+                    <img src="manip5.jpg" class="card-img" alt="Suwon Chuna">
+                    <div class="card-body"><b>Suwon Chuna Therapy</b><span>Manual Orthopedic Care [cite: 69]</span></div>
+                </a>
+                <a href="#" class="card">
+                    <img src="hammer2.jpg" class="card-img" alt="Hammering Therapy">
+                    <div class="card-body"><b>Hammering Therapy</b><span>Precision Segmental Correction</span></div>
+                </a>
+                <a href="#" class="card">
+                    <img src="Space restoration image1.gif" class="card-img" alt="Pharmacopuncture">
+                    <div class="card-body"><b>Pharmacopuncture</b><span>Nerve Decompression & Healing [cite: 56]</span></div>
+                </a>
             </div>
-            <h2 class="category-title">Specialized Herbal Medicine</h2>
+
+            <h2 class="category-title">02. Spine & Disc Disease Analysis</h2>
             <div class="grid">
-                <a href="#" class="card"><b>Gongjindan</b><span>Ancient Herbal Tonic</span></a>
-                <a href="#" class="card"><b>Gyeongokgo</b><span>Immunity & Recovery</span></a>
-                <a href="#" class="card"><b>Constitutional</b><span>Personalized Herbs</span></a>
-                <a href="#" class="card"><b>GI Health</b><span>Digestion Solution</span></a>
+                <a href="lumbar-disc.html" class="card">
+                    <img src="Disc Herniation.jpg" class="card-img" alt="Suwon Lumbar Disc">
+                    <div class="card-body"><b>Suwon Lumbar Disc</b><span>Precision Disc Alignment [cite: 68]</span></div>
+                </a>
+                <a href="cervical-disc.html" class="card">
+                    <img src="Reason of Pain from Twisting of bone.jpg" class="card-img" alt="Suwon Cervical Disc">
+                    <div class="card-body"><b>Suwon Cervical Disc</b><span>Posture & Neck Pain Care [cite: 68]</span></div>
+                </a>
+                <a href="#" class="card">
+                    <img src="Reason of Pain from Twisting of bone2.jpg" class="card-img" alt="Spinal Stenosis">
+                    <div class="card-body"><b>Spinal Stenosis</b><span>Nerve Pathway Recovery [cite: 56]</span></div>
+                </a>
+                <a href="#" class="card">
+                    <img src="Reason of Pain from Twisting of bone3.jpg" class="card-img" alt="Pelvic Correction">
+                    <div class="card-body"><b>Pelvic Correction</b><span>Total Balance Alignment [cite: 68]</span></div>
+                </a>
+            </div>
+
+            <h2 class="category-title">03. Internal Medicine & Special Prescriptions</h2>
+            <div class="grid">
+                <a href="#" class="card"><b>Gastric Disorders</b><span>Stomach Recovery via Alignment [cite: 56]</span></a>
+                <a href="#" class="card"><b>Autonomic Disorder</b><span>Headache & Insomnia Care [cite: 56]</span></a>
+                <a href="http://body-all.co.kr" class="card"><b>Gongjindan / Gyeongokgo</b><span>Premium Herbal Tonics</span></a>
+                <a href="http://body-all.co.kr" class="card"><b>Constitutional Herbs</b><span>Personalized Medicine [cite: 67]</span></a>
             </div>
         </div>
     </div>
 
-    <div class="lang-content" lang="zh">
+    <div class="lang-content" id="content-zh">
         <section class="hero">
-            <h1>Body-all 百科全书</h1>
+            <h1>水原 仁溪洞 脊柱矫正·推拿指南<br>Body-all 韩医院 百科全书</h1>
             <div class="creds">
-                脊柱推拿学会理事 · 教育委员<br>
-                拥有 40,000 例脊柱矫正临床经验 (2025.12)
+                脊柱诊断矫正学会理事 · 空间脊柱矫正教育委员<br>
+                拥有40,000例以上的空间脊柱整形术临床经验 (截至25.12) [cite: 46]
             </div>
-            <p>由李东海院长亲自撰写，专注于<b>结构空间(Space)</b>而非症状表面的疾病指南。</p>
+            <p>
+                对于寻找<b>水原脊柱专科医疗服务</b>的患者，我们基于4万例临床经验，为您提供专注于<b>结构空间(Space)</b>而非单纯缓解症状的非手术治疗信息。 [cite: 4, 46]
+            </p>
+            <img src="sangdam1.jpg" alt="李院长咨询">
         </section>
+
         <div class="container">
-            <h2 class="category-title">脊柱矫正与推拿 (水原)</h2>
+            <section class="direct-answer">
+                <h3>Q. 水原脊柱矫正，为什么选择 Body-all？</h3>
+                <p><b>A. 因为我们直接恢复骨骼空间。</b> 超越单纯的肌肉放松，物理性地拓宽脊椎节段间的空间(Space)以消除神经压迫，是防止复发的关键。 [cite: 68]</p>
+            </section>
+
+            <h2 class="category-title">01. 脊柱矫正与推拿技术</h2>
             <div class="grid">
-                <a href="SART.html" class="card"><b>空间脊柱整形术</b><span>4만례 临床经验</span></a>
-                <a href="chuna-therapy.html" class="card"><b>推拿疗法</b><span>健康保险适用</span></a>
-                <a href="lumbar-disc.html" class="card"><b>腰椎间盘突出</b><span>腰痛治疗</span></a>
-                <a href="cervical-disc.html" class="card"><b>颈椎间盘突出</b><span>颈部矫正</span></a>
+                <a href="SART.html" class="card">
+                    <img src="manip1.jpg" class="card-img" alt="SART">
+                    <div class="card-body"><b>空间脊柱整形术</b><span>基于4万例经验的结构恢复 [cite: 46]</span></div>
+                </a>
+                <a href="chuna-therapy.html" class="card">
+                    <img src="manip5.jpg" class="card-img" alt="水原推拿">
+                    <div class="card-body"><b>水原推拿疗法</b><span>仁溪洞健康保险正骨推拿 [cite: 69]</span></div>
+                </a>
+                <a href="#" class="card">
+                    <img src="hammer2.jpg" class="card-img" alt="精密切打疗法">
+                    <div class="card-body"><b>精密切打疗法</b><span>利用矫正工具进行微调</span></div>
+                </a>
+                <a href="#" class="card">
+                    <img src="Space restoration image1.gif" class="card-img" alt="药针治疗">
+                    <div class="card-body"><b>药针·蜂针治疗</b><span>消除神经炎症与再生 [cite: 56]</span></div>
+                </a>
             </div>
-            <h2 class="category-title">바디올 特色处方 (全国)</h2>
+
+            <h2 class="category-title">02. 脊柱与椎间盘疾病分析</h2>
             <div class="grid">
-                <a href="#" class="card"><b>供辰丹</b><span>功效与原方处方</span></a>
-                <a href="#" class="card"><b>琼玉膏</b><span>体力恢复与免疫力</span></a>
-                <a href="#" class="card"><b>体质韩药</b><span>个人定制处方原理</span></a>
-                <a href="#" class="card"><b>痰积病</b><span>慢性消化不良治疗</span></a>
+                <a href="lumbar-disc.html" class="card">
+                    <img src="Disc Herniation.jpg" class="card-img" alt="水原腰椎间盘">
+                    <div class="card-body"><b>水原腰椎间盘突出</b><span>腰椎间盘精密矫正 [cite: 68]</span></div>
+                </a>
+                <a href="cervical-disc.html" class="card">
+                    <img src="Reason of Pain from Twisting of bone.jpg" class="card-img" alt="水原颈椎间盘">
+                    <div class="card-body"><b>水原颈椎间盘突出</b><span>矫正龟颈与颈部疼痛 [cite: 68]</span></div>
+                </a>
+                <a href="#" class="card">
+                    <img src="Reason of Pain from Twisting of bone2.jpg" class="card-img" alt="脊柱管狭窄症">
+                    <div class="card-body"><b>脊柱管狭窄症</b><span>恢复神经通道与步行改善 [cite: 56]</span></div>
+                </a>
+                <a href="#" class="card">
+                    <img src="Reason of Pain from Twisting of bone3.jpg" class="card-img" alt="骨盆矫正">
+                    <div class="card-body"><b>骨盆矫正</b><span>全身平衡的基石对齐 [cite: 68]</span></div>
+                </a>
+            </div>
+
+            <h2 class="category-title">03. 内科疾病与特色处方</h2>
+            <div class="grid">
+                <a href="#" class="card"><b>痰积病·胃炎</b><span>通过脊柱调理恢复胃肠 [cite: 56]</span></a>
+                <a href="#" class="card"><b>自律神经失调</b><span>头痛·失眠·眩晕信息 [cite: 56]</span></a>
+                <a href="http://body-all.co.kr" class="card"><b>供辰丹·琼玉膏</b><span>蕴含古方功效的高级补品</span></a>
+                <a href="http://body-all.co.kr" class="card"><b>体质定制韩药</b><span>个人针对性处方原理 [cite: 67]</span></a>
             </div>
         </div>
     </div>
 </main>
 
 <div class="bottom-bar">
-    <a href="tel:031-8067-5825" class="btn-call"><i class="fas fa-phone"></i><span>전화상담</span></a>
-    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank" class="btn-kakao"><i class="fas fa-comment"></i><span>카톡문의</span></a>
-    <a href="https://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank" class="btn-naver"><i class="fas fa-comment-dots"></i><span>톡톡문의</span></a>
-    <a href="https://map.naver.com/p/entry/place/1487851969" target="_blank" class="btn-map"><i class="fas fa-location-dot"></i><span>지도보기</span></a>
+    <a href="tel:031-8067-5825" class="btn-call"><i class="fas fa-phone"></i><span>전화</span></a>
+    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank" class="btn-kakao"><i class="fas fa-comment"></i><span>카톡</span></a>
+    <a href="https://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank" class="btn-naver"><i class="fas fa-comment-dots"></i><span>톡톡</span></a>
+    <a href="https://map.naver.com/p/entry/place/1487851969" target="_blank" class="btn-map"><i class="fas fa-location-dot"></i><span>지도</span></a>
 </div>
 
 <footer>
     <div class="footer-info">
-        <b>바디올한의원 백과사전</b> | 대표원장: 이동해<br>
-        경기도 수원시 팔달구 인계동 1114-7, 히페리온 3층<br>
-        문의전화: 031-8067-5825 | © 2026 Body-all Encyclopedia.
+        <b>바디올한의원 (Body-all Clinic)</b> | 대표원장: 이동해 한의사 [cite: 42]<br>
+        [평일 야간진료] 10:00~20:30 / [주말·공휴일] 10:00~16:00 [cite: 48, 49]<br>
+        <a href="https://naver.me/53lcJrXB" target="_blank">수원시청역 9번출구 도보 3분, 1층 크리스피 도넛 건물 3층</a> [cite: 53]<br>
+        1층 전용 주차장 무료 이용 가능 [cite: 54]<br>
+        © 2026 Body-all Encyclopedia.
     </div>
 </footer>
 
 <script>
     function changeLang(lang) {
-        document.querySelectorAll('.lang-content').forEach(el => el.style.display = 'none');
-        document.querySelectorAll('.lang-content[lang="' + lang + '"]').forEach(el => el.style.display = 'block');
+        document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+        document.getElementById('content-' + lang).classList.add('active');
         document.querySelectorAll('.lang-switcher button').forEach(btn => btn.classList.remove('active'));
         document.getElementById('btn-' + lang).classList.add('active');
         window.scrollTo(0, 0);
     }
 </script>
-
 </body>
 </html>
