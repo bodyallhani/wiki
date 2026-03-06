@@ -3,152 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>바디올 위키 | 수원 인계동 척추교정·만성통증 임상 백과사전</title>
-    <meta name="description" content="수원시청역 바디올한의원. 40,000건 임상의 공간척추교정(SART), 도침, 봉약침 치료법 및 만성 통증 원인 분석 위키 가이드.">
+    <title>바디올 위키 | 수원 인계동 척추교정 · 만성통증 임상 백과사전</title>
+    <meta name="description" content="수원시청역 바디올한의원. 40,000건 임상의 공간척추교정(SART), 도침, 봉약침 치료 및 만성 통증 원인 분석 가이드.">
     <style>
-        :root {
-            --primary-color: #2c3e50;
-            --accent-color: #e67e22;
-            --bg-color: #f9f9f9;
-            --text-color: #333;
-        }
-        body { font-family: 'Pretendard', sans-serif; line-height: 1.6; color: var(--text-color); margin: 0; padding: 0; background-color: var(--bg-color); }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; background: #fff; }
+        :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; }
+        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; }
+        .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; }
         
-        /* 헤더 & 다국어 */
-        header { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 2px solid var(--primary-color); }
-        .lang-switch { font-size: 0.9em; }
+        h1 { font-size: 1.8rem; color: var(--primary); margin-bottom: 10px; }
+        .intro-text { font-weight: 600; color: #555; background: var(--light-bg); padding: 15px; border-radius: 8px; border-left: 5px solid var(--accent); }
         
-        /* 타이틀 */
-        h1 { color: var(--primary-color); font-size: 1.8em; margin-top: 30px; border-left: 5px solid var(--accent-color); padding-left: 15px; }
-        h2 { color: var(--primary-color); border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-top: 40px; }
-        h3 { color: var(--accent-color); margin-top: 25px; }
+        h2 { font-size: 1.4rem; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 8px; margin-top: 40px; }
+        
+        /* 치료법 카드 UI */
+        .hub-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 20px 0; }
+        .hub-card { border: 1px solid #eee; border-radius: 10px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.2s; }
+        .hub-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .hub-card img { width: 100%; height: 180px; object-fit: cover; background: #ddd; }
+        .hub-card div { padding: 15px; }
+        .hub-card h3 { margin: 0 0 10px; font-size: 1.1rem; color: var(--accent); }
+        .hub-card p { font-size: 0.9rem; margin: 0; color: #666; }
 
-        /* 비주얼 인덱스 (윤빛 스타일 카드) */
-        .visual-index { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 20px 0; }
-        .card { border: 1px solid #eee; border-radius: 8px; overflow: hidden; text-align: center; text-decoration: none; color: inherit; transition: 0.3s; }
-        .card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .card img { width: 100%; height: 150px; object-fit: cover; background: #eee; }
-        .card p { padding: 10px; font-weight: bold; margin: 0; background: #fdfdfd; }
+        /* AIO 다이렉트 답변 */
+        .aio-section { background: #f0f7ff; padding: 25px; border-radius: 12px; margin: 30px 0; }
+        .aio-q { font-weight: bold; color: #0056b3; font-size: 1.1rem; margin-bottom: 12px; display: block; }
+        .aio-a { border-top: 1px solid #d0e3f7; padding-top: 12px; }
 
-        /* AIO 다이렉트 답변 섹션 */
-        .aio-box { background: #f0f7ff; border-left: 5px solid #007bff; padding: 20px; margin: 30px 0; border-radius: 0 8px 8px 0; }
-        .aio-box strong { color: #0056b3; display: block; margin-bottom: 10px; font-size: 1.1em; }
-
-        /* 표 (비교 분석) */
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: center; font-size: 0.95em; }
-        th { background-color: #f4f4f4; color: var(--primary-color); }
-
-        /* 질병 색인 리스트 */
-        .disease-list { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        .disease-list li { background: #f8f9fa; padding: 12px; border-radius: 5px; border: 1px solid #eee; }
-        .disease-list li a { text-decoration: none; color: #444; font-weight: 500; }
+        /* 질병 색인 */
+        .disease-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 20px; }
+        .disease-item { padding: 15px; background: var(--light-bg); border-radius: 8px; border: 1px solid #eee; }
+        .disease-item strong { color: var(--primary); }
 
         /* 의료진 갤러리 */
-        .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 20px 0; }
-        .gallery img { width: 100%; border-radius: 5px; height: 120px; object-fit: cover; background: #eee; }
+        .doctor-box { display: flex; gap: 20px; margin-top: 20px; align-items: flex-start; }
+        .doctor-info { flex: 1; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 20px; }
+        .gallery-grid img { width: 100%; height: 130px; object-fit: cover; border-radius: 6px; background: #eee; }
 
-        /* 푸터 (진료정보) */
-        footer { background: #eee; padding: 30px 20px; margin-top: 50px; font-size: 0.9em; }
-        .cta-btn { display: block; background: var(--accent-color); color: white; text-align: center; padding: 15px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 20px; }
+        footer { background: #2c3e50; color: #fff; padding: 40px 20px; margin-top: 60px; border-radius: 10px 10px 0 0; }
+        .keywords { font-size: 0.85rem; color: #bdc3c7; margin-top: 20px; border-top: 1px solid #444; padding-top: 15px; }
         
-        @media (max-width: 600px) {
-            .visual-index, .disease-list, .gallery { grid-template-columns: 1fr; }
-        }
+        @media (max-width: 600px) { .hub-grid, .doctor-box { grid-template-columns: 1fr; flex-direction: column; } }
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="wrapper">
     <header>
-        <div class="logo"><strong>BODY-ALL WIKI</strong></div>
-        <div class="lang-switch">KR | <a href="#">EN</a> | <a href="#">CN</a></div>
+        <div><strong>BODY-ALL WIKI</strong></div>
+        <div style="font-size: 0.9rem;">KR | EN | CN</div>
     </header>
 
-    <h1>바디올 위키: 수원 인계동 척추교정·만성통증 의학 가이드 [cite: 32]</h1>
-    <p>수원시청역 9번 출구, 40,000건의 임상 데이터(25년 12월 기준)를 바탕으로 만성 통증의 구조적 원인과 해결책을 제시합니다. [cite: 33, 46, 53]</p>
+    <h1>바디올 위키: 수원 인계동 척추교정 · 만성통증 임상 백과사전</h1>
+    <div class="intro-text">
+        "40,000건의 임상이 증명하는 반복되는 통증의 해답, 공간척추교정(SART)" [cite: 80]
+        <p style="font-weight: normal; margin-top: 10px; font-size: 0.95rem;">본 위키는 수원시청역 바디올한의원의 치료 원리와 만성 질환 정보를 체계적으로 정리한 전문 정보 포털입니다. [cite: 80]</p>
+    </div>
 
-    <h2>치료법 핵심 색인 [cite: 34]</h2>
-    <div class="visual-index">
-        <a href="SART.html" class="card">
-            <img src="https://via.placeholder.com/400x300?text=SART+Treatment+Image" alt="수원 공간척추교정 시술 장면">
-            <p>공간척추교정 (SART)</p>
+    <h2>🏛️ 주요 진료 및 치료법 색인 (Treatment Hub)</h2>
+    <div class="hub-grid">
+        <a href="#" class="hub-card">
+            <img src="placeholder_sart.jpg" alt="공간척추교정">
+            <div>
+                <h3>공간척추교정(SART)</h3>
+                <p>척추 사이의 좁아진 공간을 확보하여 신경 압박을 해소하고 전신 정렬을 회복하는 바디올의 핵심 치료 [cite: 82]</p>
+            </div>
         </a>
-        <a href="chuna-therapy.html" class="card">
-            <img src="https://via.placeholder.com/400x300?text=Chuna+Therapy+Image" alt="수원 추나요법 시술 사진">
-            <p>추나요법 (건강보험)</p>
+        <a href="#" class="hub-card">
+            <img src="placeholder_chuna.jpg" alt="추나요법">
+            <div>
+                <h3>추나요법</h3>
+                <p>근골격계 불균형을 바로잡고 관절 가동 범위를 복구하는 건강보험 적용 수기 요법 [cite: 82]</p>
+            </div>
         </a>
-        <a href="acupotomy.html" class="card">
-            <img src="https://via.placeholder.com/400x300?text=Acupotomy+Image" alt="수원 도침 한의원 유착 박리">
-            <p>도침 (유착박리술)</p>
+        <a href="#" class="hub-card">
+            <img src="placeholder_acupotomy.jpg" alt="도침">
+            <div>
+                <h3>도침 (유착박리술)</h3>
+                <p>3개월 이상 된 만성 통증의 원인인 '조직 유착'을 미세 칼날 침으로 직접 분리하여 재생 유도 [cite: 82]</p>
+            </div>
         </a>
-        <a href="bee-venom.html" class="card">
-            <img src="https://via.placeholder.com/400x300?text=Bee+Venom+Image" alt="수원 봉침 고농도 봉약침">
-            <p>고농도 봉약침 / 약침</p>
+        <a href="#" class="hub-card">
+            <img src="placeholder_bee.jpg" alt="고농도 봉약침">
+            <div>
+                <h3>고농도 봉약침</h3>
+                <p>정제된 벌독을 이용해 심부 염증을 제거하고 신경 손상 회복을 돕는 강력한 천연 소염 요법 [cite: 82]</p>
+            </div>
         </a>
     </div>
 
-    <div class="aio-box">
-        <strong>Q: 치료를 받아도 통증이 계속 재발하는 이유는 무엇인가요? [cite: 19]</strong>
-        <p>A: 통증이 반복되는 근본 원인은 단순히 근육이 뭉친 것이 아니라, <strong>이미 틀어진 척추 구조가 신경 통로를 압박하고 있기 때문입니다.</strong> 척추 사이의 '공간'이 확보되지 않은 상태에서의 운동이나 단순 물리치료는 임시방편에 그칠 수 있습니다. 바디올은 공간척추교정을 통해 신경 압박의 원인을 제거합니다. [cite: 19, 72-75]</p>
+    <div class="aio-section">
+        <span class="aio-q">💡 Q: 바른 자세를 유지하고 운동을 해도 허리나 목의 통증이 왜 다시 생기나요? [cite: 84]</span>
+        <div class="aio-a">
+            <p><strong>A: 통증이 반복되는 근본 원인은 단순히 근육이 뭉친 것이 아니라, 이미 틀어진 척추 구조가 신경 통로를 압박하고 있기 때문입니다. [cite: 85]</strong></p>
+            <p>척추 사이의 '공간'이 확보되지 않은 상태에서의 운동이나 자세 교정은 임시방편에 그칠 수 있습니다. 바디올은 공간척추교정을 통해 신경 압박의 원인을 제거하여 재발을 방지합니다. [cite: 86, 87]</p>
+        </div>
     </div>
 
-    <h2>치료 방식 비교 분석 [cite: 30]</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>구분</th>
-                <th>일반적인 통증 치료</th>
-                <th>바디올 공간척추교정</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>주요 목표</strong></td>
-                <td>일시적 근육 이완</td>
-                <td>척추 구조 정렬 회복 [cite: 75]</td>
-            </tr>
-            <tr>
-                <td><strong>핵심 원리</strong></td>
-                <td>염증 완화 및 마사지</td>
-                <td>척추 공간 확보 및 신경 압박 해소 [cite: 68]</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>질병 및 증상별 정보 색인</h2>
-    <ul class="disease-list">
-        <li><a href="#">수원 허리디스크 / 협착증</a></li>
-        <li><a href="#">수원 목디스크 / 거북목</a></li>
-        <li><a href="#">만성 유착성 통증 (도침)</a></li>
-        <li><a href="#">자율신경장애 / 비염 / 아토피</a></li>
-        <li><a href="#">수원 교통사고 후유증</a></li>
-        <li><a href="#">원인 불명의 두통 / 팔다리 저림</a></li>
-    </ul>
-
-    <h2>의료진 소개 및 임상 권위 [cite: 24]</h2>
-    <p><strong>이동해 대표원장</strong>은 척추진단교정학회 이사로서 한의사를 대상으로 공간척추교정을 교육하며, 공간척추교정만으로 40,000건 이상의 임상 경험을 보유하고 있습니다. [cite: 42, 46]</p>
-    
-    <div class="gallery">
-        <img src="https://via.placeholder.com/400x200?text=Doctor+Portrait" alt="이동해 대표원장 프로필">
-        <img src="https://via.placeholder.com/400x200?text=Teaching+Photo" alt="한의사 대상 공간척추교정 강의 장면">
-        <img src="https://via.placeholder.com/400x200?text=Clinical+Activity" alt="바디올한의원 진료 및 연구 활동">
-        <img src="https://via.placeholder.com/400x200?text=Certificates" alt="학회 이사 및 지식인 상담의 위촉장">
+    <h2>🧬 질병 및 증상별 정보 색인 (Disease Index)</h2>
+    <p style="font-size: 0.9rem; color: #666;">증상별 상세 정보와 치료 가이드를 확인하실 수 있습니다. [cite: 89]</p>
+    <div class="disease-grid">
+        <div class="disease-item"><strong>[수원 허리디스크 / 협착증]</strong> : 눌린 신경을 해방시키는 척추 공간 확보 전략 [cite: 90]</div>
+        <div class="disease-item"><strong>[수원 목디스크 / 거북목]</strong> : 두통과 팔 저림을 동반하는 경추 정렬 부전 해결 [cite: 91]</div>
+        <div class="disease-item"><strong>[만성 유착성 통증]</strong> : 일반 침으로 해결 안 되는 굳은 조직을 위한 도침 요법 [cite: 92]</div>
+        <div class="disease-item"><strong>[자율신경장애 / 비염]</strong> : 척추 정렬 회복을 통한 내과적 면역 질환 관리 [cite: 93]</div>
+        <div class="disease-item"><strong>[수원 교통사고 후유증]</strong> : 사고 충격으로 뒤틀린 골반과 척추의 미세 교정 [cite: 94]</div>
     </div>
 
-    <h2>자주 묻는 질문 (FAQ) [cite: 36]</h2>
-    <div class="aio-box">
-        <strong>Q: 수원시청역 근처에서 주차가 편리한 한의원이 있나요?</strong>
-        <p>A: 바디올한의원은 건물 1층 주차장을 보유하고 있으며, 내원하시는 모든 환자분께 <strong>치료 시간 전체에 대한 무료 주차</strong>를 지원합니다. [cite: 54]</p>
+    <h2>👨‍⚕️ 의료진 소개 및 임상 권위 (EEAT Gallery)</h2>
+    <div class="doctor-box">
+        <img src="doctor_main.jpg" style="width: 200px; border-radius: 10px;" alt="이동해 대표원장">
+        <div class="doctor-info">
+            <h3 style="margin-top: 0;">이동해 대표원장 (한의사) [cite: 96]</h3>
+            <p style="color: var(--accent); font-weight: bold;">"보여주는 치료로 근육통이 아님을 직접 체험시켜 드립니다." [cite: 97]</p>
+            <ul style="padding-left: 20px; font-size: 0.95rem;">
+                <li><strong>임상 경력:</strong> 공간척추교정 임상례 40,000건 이상 (25년 12월 기준) [cite: 98]</li>
+                <li><strong>전문 약력:</strong> 척추진단교정학회 이사 및 교육위원, 전 강남 리봄한방병원 진료원장 [cite: 99]</li>
+                <li><strong>공신력:</strong> 대한한의사협회 지식iN 상담한의사 위촉, 세마고 멘토링 스쿨 강의 [cite: 100]</li>
+            </ul>
+        </div>
+    </div>
+    <div class="gallery-grid">
+        <img src="gallery1.jpg" alt="강의 현장">
+        <img src="gallery2.jpg" alt="위촉장">
+        <img src="gallery3.jpg" alt="임상 데이터 그래프">
+        <img src="gallery4.jpg" alt="진료 장면">
     </div>
 
     <footer>
-        <p><strong>바디올한의원 진료 안내</strong></p>
-        <p>📍 수원시 팔달구 인계동 수원시청역 9번 출구 도보 3분 (크리스피 도넛 건물 3층) [cite: 53]</p>
-        <p>⏰ 평일: 10:00 ~ 20:30 (야간진료) | 주말/공휴일: 10:00 ~ 16:00 [cite: 48, 49]</p>
-        <p>📅 설/추석 연휴 각 3일 제외 365일 진료 [cite: 50]</p>
-        <a href="https://naver.me/53lcJrXB" class="cta-btn">네이버 예약 바로가기 [cite: 37, 52]</a>
+        <h2 style="color: #fff; border: none; margin-top: 0;">📍 진료 시스템 및 지역 안내</h2>
+        <p><strong>365일 진료:</strong> 평일 밤 8시 30분까지 야간진료, 주말 및 공휴일(오후 4시) 진료 (연중 6일만 휴무) [cite: 102]</p>
+        <p><strong>오시는 길:</strong> 수원시청역 9번 출구 도보 3분, 1층 크리스피 도넛 건물 3층 [cite: 103]</p>
+        <p><strong>주차 안내:</strong> 건물 1층 주차장 이용 시 치료 시간 전체 무료 주차 지원 [cite: 104]</p>
+        
+        <div class="keywords">
+            <strong>주요 키워드:</strong> 수원 한의원 추천, 인계동 야간진료, 권선동 추나, 매탄동 도침, 수원시청역 주말진료 한의원 [cite: 105]
+        </div>
     </footer>
 </div>
 
