@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>수원 척추교정 최고의 전문팀: 바디올한의원 의료진 소개 | 바디올 위키</title>
+    <meta name="description" content="척추진단교정학회 교육이사이자 권위자인 이동해 대표원장과 그가 직접 수련시킨 3인의 정예 진료원장단이 협진하는 바디올 교정 엘리트 팀을 소개합니다. 4만 례의 임상과 학술적 전문성이 증명하는 세밀한 치료를 경험하세요.">
+    
+    <link rel="icon" type="image/png" href="Bodyall Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; --card-shadow: 0 4px 12px rgba(0,0,0,0.08); --top-bar-h: 60px; --bottom-bar-h: 70px; }
+        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; word-break: keep-all; padding-top: var(--top-bar-h); padding-bottom: var(--bottom-bar-h); }
+        .wrapper { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        
+        /* 상단 플로팅 바 */
+        .top-nav { position: fixed; top: 0; left: 0; right: 0; height: var(--top-bar-h); background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 10px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .nav-menu { display: flex; gap: 8px; white-space: nowrap; font-size: 0.78rem; font-weight: bold; align-items: center; }
+        .nav-menu a { text-decoration: none; color: #555; }
+        .nav-brand { display: flex; align-items: center; gap: 4px; color: var(--primary) !important; }
+        .lang-switch { font-size: 0.65rem; color: #888; border-left: 1px solid #ddd; padding-left: 8px; margin-left: 5px; font-weight: bold; flex-shrink: 0; }
+
+        /* 하단 플로팅 바 */
+        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: var(--bottom-bar-h); background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
+        .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-size: 0.72rem; font-weight: bold; }
+        .bottom-nav i { font-size: 1.3rem; margin-bottom: 4px; }
+
+        /* 의료진 헤더 */
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px; display: flex; justify-content: center; align-items: center; gap: 8px; }
+        h1 { font-size: 1.5rem; color: var(--primary); text-align: center; font-weight: 800; line-height: 1.4; margin: 20px 0; }
+
+        /* 메인 대표 이미지 스타일 */
+        .hero-img { width: 100%; aspect-ratio: 1080 / 810; object-fit: cover; border-radius: 12px; box-shadow: var(--card-shadow); margin-bottom: 30px; background: #eee; }
+        
+        .intro-box { background: var(--light-bg); padding: 25px; border-radius: 12px; border-left: 5px solid var(--accent); margin-bottom: 40px; font-size: 0.95rem; }
+        .intro-box strong { font-size: 1.15rem; color: #222; display: block; margin-bottom: 10px; }
+
+        /* 의료진 리스트 섹션 (810x1080 비율 강조) */
+        .doctor-list { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .doctor-card { background: #fff; border: 1px solid #eee; border-radius: 15px; padding: 20px; box-shadow: var(--card-shadow); display: flex; flex-direction: column; }
+        
+        /* 810:1080 (3:4 비율) 유지 */
+        .doctor-photo-wrapper { width: 100%; aspect-ratio: 810 / 1080; border-radius: 10px; overflow: hidden; margin-bottom: 15px; background: #eee; }
+        .doctor-photo { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+        .doctor-card:hover .doctor-photo { transform: scale(1.03); }
+        
+        .doctor-name-title { font-size: 1.2rem; font-weight: 800; color: var(--primary); margin: 0 0 5px; }
+        .doctor-title { color: var(--accent); font-weight: 700; font-size: 0.92rem; display: block; margin-bottom: 10px; }
+        
+        .doctor-current-roles { background: #fdf6ec; color: #c0392b; font-size: 0.8rem; font-weight: bold; padding: 6px 10px; border-radius: 4px; display: inline-block; margin-bottom: 15px; }
+        
+        .doctor-history-section { border-top: 1px solid #f0f0f0; padding-top: 15px; }
+        .doctor-history-label { font-size: 0.8rem; color: #7f8c8d; text-transform: uppercase; margin-bottom: 8px; display: block; }
+        .doctor-history-list { list-style: none; padding: 0; margin: 0; font-size: 0.85rem; color: #555; }
+        .doctor-history-list li { margin-bottom: 4px; padding-left: 12px; position: relative; }
+        .doctor-history-list li::before { content: "•"; position: absolute; left: 0; color: var(--accent); }
+
+        footer { background: #2c3e50; color: #fff; padding: 40px 25px; margin-top: 60px; border-radius: 20px 20px 0 0; }
+        .keyword-tag { display: inline-block; background: #eee; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #666; margin: 2px; }
+
+        /* 모바일 대응 */
+        @media (max-width: 700px) { 
+            .doctor-list { grid-template-columns: 1fr; } 
+            .doctor-photo-wrapper { max-width: 300px; margin: 0 auto 15px; }
+            .doctor-info { text-align: center; }
+            .doctor-history-list li { text-align: left; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="top-nav">
+    <div class="nav-menu">
+        <a href="index.html" class="nav-brand">
+            <img src="Bodyall Logo.png" alt="로고" style="height: 1.1rem; vertical-align: middle;">
+            <span style="font-weight: 800;">바디올한의원</span>
+        </a>
+        <a href="index.html#treatments">주요진료</a>
+        <a href="index.html#diseases">질병색인</a>
+        <a href="#doctor-list">의료진</a>
+        <a href="index.html#location">오시는길</a>
+    </div>
+    <div class="lang-switch">KR | EN | CN</div>
+</nav>
+
+<div class="wrapper">
+    <header>
+        <img src="Bodyall Logo.png" alt="로고" style="height: 1.6rem; vertical-align: middle; margin-right: 5px;">
+        <strong style="color: var(--primary); letter-spacing: -1px; font-size: 1.6rem; vertical-align: middle;">BODY-ALL WIKI</strong>
+    </header>
+
+    <img src="thumb_doctor_intro.jpg" alt="바디올한의원 교정 엘리트 팀 의료진" class="hero-img">
+
+    <h1>바디올한의원 의료진 안내:<br>4만 례의 임상과 학술적 전문성이 증명하는 세밀한 치료</h1>
+
+    <div class="intro-box">
+        <strong>"척추의 공간을 회복하는 일, 그 시작은 '압도적 경험'에 있습니다."</strong>
+        <p style="margin: 0; color: #555;">
+            수원 인계동에서 척추교정 잘하는 곳으로 신뢰받는 바디올한의원은 의료진의 숙련도를 가장 중요하게 생각합니다. 척추진단교정학회 교육이사인 대표원장의 정례 수련 아래, 네 분의 정예 원장단이 매일 모든 치료 케이스를 공유하고 논의하는 <strong>교정 엘리트 협진 시스템</strong>을 갖추고 있습니다.<br><br>
+            누구에게 치료받더라도 4만 례의 임상 데이터가 증명하는 일관성 있는 최고의 치료 효과를 경험하실 수 있도록 노력하고 있습니다.
+        </p>
+    </div>
+
+    <div id="doctor-list" class="doctor-list"></div>
+
+    <footer>
+        <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 찾아오시는 길 및 진료 시간 안내</h2>
+        <ul style="list-style: none; padding: 0; font-size: 0.92rem; margin-bottom: 20px; opacity: 0.9;">
+            <li>• 수원시청역 9번 출구 도보 3분 | 1층 크리스피 도넛 건물 3층</li>
+            <li>• <strong>평일 야간진료: 10:00 ~ 20:30 (점심 1-2시)</strong></li>
+            <li>• <strong><span style="color: #ff5252;">주말·공휴일 진료: 10:00 ~ 16:00 (점심 1-2시)</span></strong></li>
+        </ul>
+        <img src="clinic_location_map.jpg" alt="바디올한의원 약도" style="width: 100%; border-radius: 8px; margin: 15px 0;">
+        <a href="https://naver.me/53lcJrXB" target="_blank" style="display: block; background: #03c75a; color: #fff; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">네이버 지도로 길찾기 ➜</a>
+        
+        <div style="margin-top: 30px; font-size: 0.8rem; color: #95a5a6; border-top: 1px solid #444; padding-top: 20px;">
+            <strong>핵심 검색어:</strong> 
+            <span class="keyword-tag">수원 한의사 추천</span> <span class="keyword-tag">인계동 척추교정 전문의</span> 
+            <span class="keyword-tag">이동해 원장</span> <span class="keyword-tag">척추진단교정학회 교육이사</span>
+            <span class="keyword-tag">수원 추나 잘하는 곳</span> <span class="keyword-tag">인계동 야간진료 한의원</span>
+        </div>
+    </footer>
+</div>
+
+<nav class="bottom-nav">
+    <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>네이버톡톡</a>
+    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank"><i class="fas fa-comment"></i>카톡연결</a>
+    <a href="https://www.youtube.com/shorts/R8bRbHtSdfc" target="_blank"><i class="fab fa-youtube" style="color: #FF0000;"></i>유투브채널</a>
+    <a href="https://body-all.co.kr/Body-Allfit" target="_blank"><i class="fas fa-dumbbell"></i>바디올핏</a>
+</nav>
+
+<script>
+// 사용자님이 제공해주신 정보를 바탕으로 네 분의 원장님 데이터를 Im-Kim-Lee-Bae 순서로 완벽하게 구성했습니다.
+// 사진 파일명은 한글로 하지 말고 반드시 영문(예: im.jpg, kim.jpg 등)으로 변경해서 깃허브에 올린 후, 아래 photo 부분에 적용해 주세요.
+const doctorsData = [
+    {
+        name: "임칙좌",
+        role: "진료원장 (한의사)",
+        photo: "doctor_im.jpg", // 이 부분의 파일명을 변경해서 깃허브에 올린 영문 파일명과 맞춰주세요!
+        current: ["(현) 바디올한의원 SART 수석원장", "(전) 지양당한의원 진료원장"],
+        history: [
+            "척추도인안교학회 회원",
+            "척추신경추나학회 정회원 수료",
+            "동국대학교 다원학생회 홍보부장 역임",
+            "동국대학교 침구의학회 의료부장 역임",
+            "한방비만학회 전문가과정 수료",
+            "한방약침학회 전문가과정 수료"
+        ]
+    },
+    {
+        name: "김효정",
+        role: "진료원장 (한의사)",
+        photo: "doctor_kim.jpg",
+        current: ["(현) 바디올한의원 진료원장", "(전) 튼튼모아한의원 진료원장", "(전) 척척나한의원 진료원장", "(전) 다산하나한방병원 진료원장", "(전) 강남 위담한방병원 진료원장"],
+        history: [
+            "경희대학교 한의학과 졸업",
+            "대한한의학회 회원",
+            "경근근막침연구회(A-MPS) 정회원",
+            "대만 중의약대학 임상과정 수료",
+            "필라테스전문지도자격증 취득"
+        ]
+    },
+    {
+        name: "이동해",
+        role: "대표원장 (한의사)",
+        photo: "doctor_lee.jpg",
+        current: ["(현) 바디올한의원 대표원장", "척추진단교정학회 이사 및 교육위원 (교육이사)", "(전) 강남 리봄한방병원 진료원장", "(전) 자연과 한의원 노원점 진료원장", "(전) 지평보건지소 한방과장", "(전) 청운보건지소 한방과장"],
+        history: [
+            "공간척추교정 임상례 40,000건 이상 (25.12 기준)",
+            "가천대학교 한의과대학 본과생 특강 강사",
+            "대한한의사협회 네이버 지식iN 상담한의사",
+            "세마고등학교 멘토링 스쿨 전문직업인 강의",
+            "대한한의학회 회원",
+            "대한스포츠한의학회 회원",
+            "대한면역약침학회 회원",
+            "대한한방비만학회 회원"
+        ]
+    },
+    {
+        name: "배주현",
+        role: "진료원장 (한의사)",
+        photo: "doctor_bae.jpg",
+        current: ["(현) 바디올한의원 진료원장", "(전) 성심힐요양병원 한방과장", "(전) 푸른한의원 진료원장", "(전) 임한준한의원 진료원장", "(전) 평강부부한의원 진료원장", "(전) 경희다온한의원 진료원장", "(전) 자양으뜸한의원 진료원장"],
+        history: [
+            "대한한의학회 회원",
+            "대한면역약침학회 회원",
+            "대한한방비만학회 회원"
+        ]
+    }
+];
+
+// 데이터를 화면에 그려주는 함수 (수정 금지: 건드리면 디자인이 깨집니다!)
+function renderDoctors() {
+    const container = document.getElementById('doctor-list');
+    container.innerHTML = doctorsData.map(doc => `
+        <div class="doctor-card">
+            <div class="doctor-photo-wrapper">
+                <img src="${doc.photo}" alt="${doc.name} 원장" class="doctor-photo">
+            </div>
+            <div class="doctor-info">
+                <h3 class="doctor-name-title">${doc.name} ${doc.role.split(' ')[0]}</h3>
+                <span class="doctor-title">${doc.role}</span>
+                
+                <div class="doctor-history-section">
+                    <span class="doctor-history-label">현재 및 주요 전직</span>
+                    <ul class="doctor-history-list" style="color: #2c3e50; font-weight: bold; margin-bottom: 15px;">
+                        ${doc.current.map(h => `<li>${h}</li>`).join('')}
+                    </ul>
+                    
+                    <span class="doctor-history-label">이력 및 학술 활동</span>
+                    <ul class="doctor-history-list">
+                        ${doc.history.map(h => `<li>${h}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+renderDoctors();
+</script>
+
+</body>
+</html>
