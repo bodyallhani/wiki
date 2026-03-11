@@ -3,70 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>수원 허리디스크 비수술 치료: 인계동 척추교정 권위자 | 바디올한의원 백과사전</title>
-    <meta name="description" content="수원 인계동 바디올한의원 이동해 원장의 허리디스크(요추 추간판 탈출증) 가이드. 공간척추정형술(SART)을 통한 근본적인 공간 확보 치료법을 확인하세요.">
-    <meta name="keywords" content="수원 허리디스크, 인계동 허리디스크, 수원척추교정, 수원한의원, 수원척추병원, 공간척추정형술, 이동해 원장">
+    <title>수원 허리디스크·협착증: 비틀린 척추를 바로잡는 SART 공간교정 | 바디올 위키</title>
+    <meta name="description" content="수원 인계동 허리디스크 협착증 치료. 디스크를 압박하는 비틀린 구조를 바로잡아 신경의 길을 여는 SART 교정으로 수술 없이 허리 건강을 회복하세요.">
     
+    <link rel="icon" type="image/png" href="Bodyall Logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MedicalWebPage",
-      "name": "수원 허리디스크 비수술 치료법",
-      "publisher": { "@type": "Organization", "name": "바디올한의원 백과사전" },
-      "author": { "@type": "Person", "name": "이동해" },
-      "mainEntity": {
-        "@type": "MedicalCondition",
-        "name": "허리디스크",
-        "alternateName": "요추 추간판 탈출증",
-        "associatedAnatomy": { "@type": "AnatomicalStructure", "name": "Lumbar Spine" },
-        "possibleTreatment": [
-          { "@type": "MedicalTherapy", "name": "공간척추정형술" },
-          { "@type": "MedicalTherapy", "name": "수원 추나요법" }
-        ]
-      }
-    }
-    </script>
-    </head>
-<body>
-<header>
-    <div class="nav-left">
-        <a href="index.html" class="home-btn"><i class="fas fa-house"></i></a>
-        <div class="logo"><img src="Bodyall Logo.png" alt="수원 바디올한의원"></div>
-        <span class="wiki-label">백과사전</span>
-    </div>
-    <div class="lang-switch">
-        <a href="javascript:void(0)" onclick="showLang('ko')">KO</a>
-        <a href="javascript:void(0)" onclick="showLang('en')">EN</a>
-        <a href="javascript:void(0)" onclick="showLang('zh')">ZH</a>
-    </div>
-</header>
-
-<div class="container">
-    <section id="ko" class="lang-section active">
-        <h1>수원 허리디스크 (Lumbar Disc)</h1>
-        <div class="summary-box">
-            <b>이동해 원장의 전문 진단:</b> 수원 지역 허리디스크 환자분들의 공통점은 척추 사이의 공간이 심하게 좁아져 있다는 것입니다. 치료의 핵심은 디스크가 눌리지 않도록 <b>공간척추정형술(SART)</b>을 통해 공간을 확보하는 것입니다.
-        </div>
-
-        <p><b>인계동 허리디스크</b> 비수술 치료의 권위자 이동해 원장은 요추 추간판 탈출증의 근본 원인을 '구조적 공간 상실'로 정의합니다.</p>
-
-        <div class="image-box">
-            <img src="SART room.jpg" alt="수원 바디올한의원 공간척추정형술 치료실">
-            <span class="caption">바디올한의원 전용 치료실: 좁아진 요추 간격을 확장하여 신경 압박을 해소합니다.</span>
-        </div>
-
-        <h2>왜 수원 바디올의 공간척추정형술인가?</h2>
-        <p>단순한 <b>수원 추나요법</b>을 넘어, 바디올만의 정밀한 <b>공간척추정형술</b>은 디스크가 제자리로 돌아갈 환경을 물리적으로 조성합니다.</p>
+    <style>
+        :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; --card-shadow: 0 4px 12px rgba(0,0,0,0.08); --top-bar-h: 60px; --bottom-bar-h: 70px; }
+        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; word-break: keep-all; padding-top: var(--top-bar-h); padding-bottom: var(--bottom-bar-h); }
+        .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
         
-        <div class="image-box">
-            <img src="hammer1.jpg" alt="안전한 교타교정 기구">
-            <span class="caption">한국의료기기안전정보원에 등록된 안전한 기구를 활용한 정밀 분절 교정.</span>
-        </div>
+        /* 상단/하단 플로팅 바 */
+        .top-nav { position: fixed; top: 0; left: 0; right: 0; height: var(--top-bar-h); background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 10px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .nav-menu { display: flex; gap: 8px; white-space: nowrap; font-size: 0.78rem; font-weight: bold; align-items: center; }
+        .nav-menu a { text-decoration: none; color: #555; }
+        .nav-brand { display: flex; align-items: center; gap: 4px; color: var(--primary) !important; }
+        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: var(--bottom-bar-h); background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
+        .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-size: 0.72rem; font-weight: bold; }
+        .bottom-nav i { font-size: 1.3rem; margin-bottom: 4px; }
 
-        <a href="http://body-all.co.kr/40" class="cta-button" style="display:block; text-align:center; color:#fff; text-decoration:none;">바디올 허리디스크 프로그램 상세 보기 →</a>
-    </section>
+        /* 본문 스타일 */
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px; display: flex; justify-content: center; align-items: center; gap: 8px; }
+        h1 { font-size: 1.5rem; color: var(--primary); text-align: center; font-weight: 800; line-height: 1.4; margin: 20px 0; }
+        h2 { font-size: 1.35rem; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 50px; font-weight: 700; }
+        
+        .visual-img { width: 100%; border-radius: 12px; box-shadow: var(--card-shadow); margin-bottom: 20px; background: #eee; }
+        .side-by-side { display: flex; gap: 10px; margin-bottom: 20px; }
+        .side-by-side img { width: 49%; border-radius: 8px; box-shadow: var(--card-shadow); }
+        
+        /* 특정 이미지 사이즈 대응 (manip2.jpg 500x405) */
+        .manip-img { display: block; width: 100%; max-width: 500px; margin: 20px auto; border-radius: 10px; box-shadow: var(--card-shadow); }
+
+        .aio-box { background: #f4f8fb; padding: 25px; border-radius: 15px; margin: 40px 0; border: 1px solid #e1e9f0; }
+        .aio-q { font-weight: 800; color: #1a5fb4; font-size: 1.1rem; display: block; margin-bottom: 15px; }
+        
+        .info-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.88rem; }
+        .info-table th { background: var(--primary); color: #fff; padding: 12px; border: 1px solid #ddd; }
+        .info-table td { border: 1px solid #eee; padding: 12px; text-align: center; }
+
+        .link-card { display: block; background: #fff; border: 1px solid #eee; padding: 15px; border-radius: 10px; text-decoration: none; color: #333; margin-bottom: 10px; transition: 0.3s; }
+        .link-card:hover { border-color: var(--accent); background: #fff9f5; }
+        .link-card i { color: var(--accent); margin-right: 8px; }
+        
+        footer { background: #2c3e50; color: #fff; padding: 40px 25px; margin-top: 60px; border-radius: 20px 20px 0 0; }
+        .keyword-tag { display: inline-block; background: #eee; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #666; margin: 2px; }
+
+        @media (max-width: 600px) { h1 { font-size: 1.3rem; } .side-by-side { flex-direction: column; } .side-by-side img { width: 100%; } }
+    </style>
+</head>
+<body>
+
+<nav class="top-nav">
+    <div class="nav-menu">
+        <a href="index.html" class="nav-brand">
+            <img src="Bodyall Logo.png" alt="로고" style="height: 1.1rem; vertical-align: middle;">
+            <span style="font-weight: 800;">바디올한의원</span>
+        </a>
+        <a href="index.html#treatments">주요진료</a>
+        <a href="index.html#diseases">질병색인</a>
+        <a href="doctor-intro.html">의료진</a>
+        <a href="index.html#location">오시는길</a>
     </div>
+</nav>
+
+<div class="wrapper">
+    <header>
+        <img src="Bodyall Logo.png" alt="로고" style="height: 1.6rem; vertical-align: middle; margin-right: 5px;">
+        <strong style="color: var(--primary); letter-spacing: -1px; font-size: 1.6rem; vertical-align: middle;">BODY-ALL WIKI</strong>
+    </header>
+
+    <h1>수원 허리디스크·협착증 치료:<br>뼈를 바로잡아 신경의 길을 여는 바디올 SART 교정</h1>
+
+    <img src="sangdam1.jpg" alt="바디올한의원 허리디스크 협착증 정밀 상담" class="visual-img">
+
+    <p>허리디스크나 협착증 진단을 받고 수술을 고민 중이신가요? 혹은 치료를 받아도 통증이 계속 재발하시나요? 수원 인계동 바디올한의원은 <strong>"디스크는 결과일 뿐, 원인은 비틀린 구조"</strong>라는 관점에서 출발합니다. 디스크를 짓누르는 환경을 바꾸지 않으면 통증은 반복될 수밖에 없습니다.</p>
+
+    <section class="aio-box">
+        <span class="aio-q">💡 Q. 왜 내 허리 통증은 치료해도 자꾸 재발할까요?</span>
+        <div class="aio-a">
+            <p><strong>A. 뼈가 비틀려 '기울어진 환경'은 그대로이기 때문입니다.</strong></p>
+            <p>비유하자면, 지반이 기울어 기둥(척추)이 휘어졌는데 기둥 옆의 갈라진 벽지(디스크)만 새로 바르는 격입니다. 바디올은 기울어진 지반(골반)을 수평으로 맞추고, 비틀린 기둥(척추)을 바로 세워 디스크가 자연스럽게 제자리로 돌아갈 수 있는 <strong>'공간'</strong>을 만드는 SART 교정에 집중합니다.</p>
+        </div>
+    </section>
+
+    <h2>1. 허리디스크의 진짜 원인: "기울어진 바닥"</h2>
+    <p>허리디스크는 결과물입니다. 골반이라는 기초가 무너지면 그 위의 척추는 중심을 잡기 위해 비틀릴 수밖에 없습니다.</p>
+
+    <div class="side-by-side">
+        <img src="Reason of Pain from Twisting of bone.jpg" alt="평지와 경사면에서의 척추 비틀림 실사 비교">
+        <img src="Reason of Pain from Twisting of bone2.jpg" alt="골반 경사와 신경 압박 모식도">
+    </div>
+
+    <ul style="padding-left: 20px;">
+        <li><strong>골반의 불균형:</strong> 지면(골반)이 기울면 우리 몸은 척추를 반대 방향으로 꺾어 중심을 잡습니다.</li>
+        <li><strong>비대칭적 압박:</strong> 휘어진 척추 마디 사이에서 디스크 한쪽 면에만 과도한 압력이 가해져 수핵이 탈출하게 됩니다.</li>
+    </ul>
+
+    <h2>2. 근육 통증과 피사(Pisa)의 사탑 원리</h2>
+    <p>허리가 아플 때 근육이 딱딱하게 굳는 이유는 근육 자체의 병이라기보다 <strong>'뼈를 지탱하기 위한 처절한 노력'</strong>입니다.</p>
+    
+    <img src="Reason of Pain from Twisting of bone3.jpg" alt="피사의 사탑과 근육 밧줄 비유" class="visual-img">
+
+    <ul style="padding-left: 20px;">
+        <li><strong>밧줄 역할을 하는 근육:</strong> 건물이 기울면 무너지지 않게 한쪽에서 밧줄(근육)로 강하게 당겨야 합니다.</li>
+        <li><strong>근육의 비명:</strong> 24시간 내내 뼈를 붙들고 있는 근육은 결국 염증이 생기고 유착됩니다. 밧줄을 주무르는 것보다 <strong>탑(뼈)을 수직으로 세우는 것</strong>이 근본적인 해결책입니다.</li>
+    </ul>
+
+    <h2>3. 허리디스크 vs 척추관 협착증, 바디올의 처방</h2>
+    <table class="info-table">
+        <thead>
+            <tr>
+                <th style="width: 50%;">허리디스크 (추간판탈출증)</th>
+                <th style="width: 50%;">척추관 협착증</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>디스크 수핵이 탈출해 신경 압박</td>
+                <td>뼈, 인대가 두꺼워져 신경 통로 협착</td>
+            </tr>
+            <tr>
+                <td style="color: var(--accent); font-weight: bold;">SART 교정으로 압박 해소<br>& 염증 제어 약침 시술</td>
+                <td style="color: var(--accent); font-weight: bold;">SART 교정으로 압박 해소<br>& 도침 박리로 공간 확보</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img src="manip2.jpg" alt="바디올한의원 정밀 척추 교정(500x405)" class="manip-img">
+
+    <h2>4. 바디올의 3단계 통합 치료 시스템</h2>
+    <p>바디올은 구조적 원인과 기능적 문제를 동시에 해결하여 수술 없이 허리 건강을 회복합니다.</p>
+
+    <a href="SART.html" class="link-card">
+        <i class="fas fa-arrows-alt-v"></i> <strong>STEP 1. 공간 확보 (SART 교정)</strong>
+        <p style="font-size: 0.85rem; margin: 5px 0 0 25px;">비틀린 척추 마디마디를 견인하여 디스크가 쉴 수 있는 공간을 만듭니다.</p>
+    </a>
+    <a href="acupotomy.html" class="link-card">
+        <i class="fas fa-cut"></i> <strong>STEP 2. 유착 박리 (도침 요법)</strong>
+        <p style="font-size: 0.85rem; margin: 5px 0 0 25px;">뼈를 붙잡고 있는 질긴 유착 조직을 정리하여 교정의 완성도를 높입니다.</p>
+    </a>
+    <a href="herbal-medicine.html" class="link-card">
+        <i class="fas fa-tint"></i> <strong>STEP 3. 염증 제어 (고농도 봉약침)</strong>
+        <p style="font-size: 0.85rem; margin: 5px 0 0 25px;">눌려 있던 신경의 부종과 염증을 빠르게 가라앉혀 통증을 제어합니다.</p>
+    </a>
+
+    <h2>5. 365일 야간진료 및 정밀 진단 시스템</h2>
+    <img src="directors_group.jpg" alt="바디올한의원 교정 엘리트 원장단" class="visual-img">
+    <ul style="padding-left: 20px;">
+        <li><strong>평일 밤 8시 30분 야간진료:</strong> 직장인들도 퇴근 후 집중 교정이 가능합니다.</li>
+        <li><strong>무료 주차 지원:</strong> 건물 1층 전용 주차장 완비로 내원이 편리합니다.</li>
+    </ul>
+
+    <footer>
+        <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 예약 및 오시는 길</h2>
+        <img src="clinic_location_map.jpg" alt="바디올한의원 약도" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+        <a href="https://naver.me/53lcJrXB" target="_blank" style="display: block; background: #03c75a; color: #fff; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">네이버 예약으로 허리 정밀진단 받기 ➜</a>
+        
+        <div style="margin-top: 30px; font-size: 0.8rem; color: #95a5a6; border-top: 1px solid #444; padding-top: 20px;">
+            <strong>핵심 검색어:</strong> 
+            <span class="keyword-tag">수원 허리디스크</span> <span class="keyword-tag">수원 협착증</span> 
+            <span class="keyword-tag">인계동 허리통증</span> <span class="keyword-tag">SART 교정</span>
+            <span class="keyword-tag">공간척추교정 한의원</span> <span class="keyword-tag">수원 요추디스크</span>
+        </div>
+    </footer>
+</div>
+
+<nav class="bottom-nav">
+    <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>네이버톡톡</a>
+    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank"><i class="fas fa-comment"></i>카톡연결</a>
+    <a href="https://www.youtube.com/shorts/R8bRbHtSdfc" target="_blank"><i class="fab fa-youtube" style="color: #FF0000;"></i>유투브채널</a>
+    <a href="https://body-all.co.kr/Body-Allfit" target="_blank"><i class="fas fa-dumbbell"></i>바디올핏</a>
+</nav>
+
 </body>
 </html>
