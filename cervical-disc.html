@@ -3,148 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>수원 목디스크 비수술 교정 치료 | 바디올한의원 백과사전</title>
-    <meta name="description" content="수원 인계동 바디올한의원 이동해 원장의 목디스크 가이드. 거북목, 일자목 교정과 공간척추교정(SART)을 통한 비수술적 디스크 치료법을 제시합니다.">
+    <title>수원 목디스크·거북목 교정: 목이 아닌 골반부터 바로잡는 바디올 | 바디올 위키</title>
+    <meta name="description" content="수원 인계동 목디스크 거북목 치료. 목이 아픈 원인은 무너진 골반과 굽은 등입니다. 돌탑 원리를 이용한 전신 교정으로 지긋지긋한 어깨 통증과 디스크를 해결하세요.">
     
+    <link rel="icon" type="image/png" href="Bodyall Logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MedicalWebPage",
-      "name": "목디스크 (Cervical Disc Herniation)",
-      "publisher": { "@type": "Organization", "name": "바디올한의원 백과사전" },
-      "author": { "@type": "Person", "name": "이동해" },
-      "mainEntity": {
-        "@type": "MedicalCondition",
-        "name": "목디스크",
-        "alternateName": "경추 추간판 탈출증",
-        "associatedAnatomy": { "@type": "AnatomicalStructure", "name": "Cervical Spine" },
-        "possibleTreatment": [
-          { "@type": "MedicalTherapy", "name": "공간척추교정" },
-          { "@type": "MedicalTherapy", "name": "추나요법" }
-        ]
-      }
-    }
-    </script>
-
     <style>
-        :root { --primary-color: #b38b4d; --kakao-color: #FEE500; --naver-color: #03C75A; --text-color: #333; }
-        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.6; color: var(--text-color); margin: 0; background: #f4f4f4; padding-bottom: 80px; }
+        :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; --card-shadow: 0 4px 12px rgba(0,0,0,0.08); --top-bar-h: 60px; --bottom-bar-h: 70px; }
+        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; word-break: keep-all; padding-top: var(--top-bar-h); padding-bottom: var(--bottom-bar-h); }
+        .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
         
-        header { background: #fff; height: 60px; display: space-between; align-items: center; padding: 0 15px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; justify-content: space-between; }
-        .nav-left { display: flex; align-items: center; gap: 10px; }
-        .home-btn { font-size: 1.2rem; color: var(--primary-color); text-decoration: none; }
-        .logo img { height: 35px; vertical-align: middle; }
-        .wiki-label { font-size: 0.9rem; font-weight: bold; color: var(--primary-color); }
-        .lang-switch a { font-size: 0.8rem; text-decoration: none; color: #666; padding: 3px 7px; border: 1px solid #ddd; border-radius: 4px; margin-left: 2px; }
+        /* 상단/하단 플로팅 바 */
+        .top-nav { position: fixed; top: 0; left: 0; right: 0; height: var(--top-bar-h); background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 10px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .nav-menu { display: flex; gap: 8px; white-space: nowrap; font-size: 0.78rem; font-weight: bold; align-items: center; }
+        .nav-menu a { text-decoration: none; color: #555; }
+        .nav-brand { display: flex; align-items: center; gap: 4px; color: var(--primary) !important; }
+        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: var(--bottom-bar-h); background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
+        .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-size: 0.72rem; font-weight: bold; }
+        .bottom-nav i { font-size: 1.3rem; margin-bottom: 4px; }
 
-        .container { max-width: 800px; margin: 20px auto; background: #fff; padding: 25px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
-        h1 { font-size: 1.5rem; color: var(--primary-color); border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h2 { font-size: 1.2rem; background: #f9f2e8; border-left: 4px solid var(--primary-color); padding: 8px 12px; margin-top: 35px; }
+        /* 본문 스타일 */
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px; display: flex; justify-content: center; align-items: center; gap: 8px; }
+        h1 { font-size: 1.5rem; color: var(--primary); text-align: center; font-weight: 800; line-height: 1.4; margin: 20px 0; }
+        h2 { font-size: 1.35rem; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 50px; font-weight: 700; }
         
-        .summary-box { background: #f0f4f8; padding: 20px; border-radius: 8px; margin: 20px 0; font-size: 0.95rem; border-left: 5px solid var(--primary-color); }
-        .image-box { text-align: center; margin: 25px 0; }
-        .image-box img { max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .caption { display: block; font-size: 0.85rem; color: #777; margin-top: 10px; font-weight: 500; }
+        .visual-img { width: 100%; border-radius: 12px; box-shadow: var(--card-shadow); margin-bottom: 20px; background: #eee; }
+        .gif-img { display: block; width: 100%; border-radius: 12px; margin: 20px 0; }
 
-        .bottom-bar { position: fixed; bottom: 0; left: 0; right: 0; height: 65px; background: #fff; display: flex; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); z-index: 1001; }
-        .bottom-bar a { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; font-size: 0.7rem; font-weight: bold; color: #555; }
-        .bottom-bar i { font-size: 1.25rem; margin-bottom: 4px; }
-        .btn-call { color: #333; }
-        .btn-kakao { background: var(--kakao-color); color: #3A1D1D !important; }
-        .btn-naver { background: var(--naver-color); color: #fff !important; }
-        .btn-map { color: #d32f2f; }
+        .aio-box { background: #fdfaf5; padding: 25px; border-radius: 15px; margin: 40px 0; border: 1px solid #f3ece4; }
+        .aio-q { font-weight: 800; color: #8d6e63; font-size: 1.1rem; display: block; margin-bottom: 15px; }
+        
+        .info-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.88rem; }
+        .info-table th { background: var(--primary); color: #fff; padding: 12px; border: 1px solid #ddd; }
+        .info-table td { border: 1px solid #eee; padding: 12px; text-align: center; }
 
-        .lang-section { display: none; }
-        .lang-section.active { display: block; }
-        footer { padding: 30px 15px; background: #333; color: #ccc; font-size: 0.8rem; text-align: center; }
+        .link-card { display: block; background: #fff; border: 1px solid #eee; padding: 15px; border-radius: 10px; text-decoration: none; color: #333; margin-bottom: 10px; transition: 0.3s; }
+        .link-card:hover { border-color: var(--accent); background: #fff9f5; }
+        .link-card i { color: var(--accent); margin-right: 8px; }
+
+        .important-point { background: #fffcf0; padding: 20px; border-radius: 12px; border-left: 5px solid var(--accent); margin: 20px 0; }
+        
+        footer { background: #2c3e50; color: #fff; padding: 40px 25px; margin-top: 60px; border-radius: 20px 20px 0 0; }
+        .keyword-tag { display: inline-block; background: #eee; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #666; margin: 2px; }
+
+        @media (max-width: 600px) { h1 { font-size: 1.3rem; } }
     </style>
 </head>
 <body>
 
-<header>
-    <div class="nav-left">
-        <a href="index.html" class="home-btn"><i class="fas fa-house"></i></a>
-        <div class="logo"><img src="Bodyall Logo.png" alt="바디올한의원"></div>
-        <span class="wiki-label">백과사전</span>
+<nav class="top-nav">
+    <div class="nav-menu">
+        <a href="index.html" class="nav-brand">
+            <img src="Bodyall Logo.png" alt="로고" style="height: 1.1rem; vertical-align: middle;">
+            <span style="font-weight: 800;">바디올한의원</span>
+        </a>
+        <a href="index.html#treatments">주요진료</a>
+        <a href="index.html#diseases">질병색인</a>
+        <a href="doctor-intro.html">의료진</a>
+        <a href="index.html#location">오시는길</a>
     </div>
-    <div class="lang-switch">
-        <a href="javascript:void(0)" onclick="showLang('ko')">KO</a>
-        <a href="javascript:void(0)" onclick="showLang('en')">EN</a>
-        <a href="javascript:void(0)" onclick="showLang('zh')">ZH</a>
-    </div>
-</header>
+</nav>
 
-<div class="container">
-    <section id="ko" class="lang-section active">
-        <h1>목디스크 (Cervical Disc Herniation)</h1>
-        <div class="summary-box">
-            <b>이동해 원장의 고견:</b> 목디스크는 단순히 경추의 문제만이 아닙니다. 거북목, 일자목 등 무너진 경추 곡선을 회복하고, 신경이 눌리지 않도록 <b>충분한 공간(Space)</b>을 만들어주는 것이 치료의 핵심입니다.
+<div class="wrapper">
+    <header>
+        <img src="Bodyall Logo.png" alt="로고" style="height: 1.6rem; vertical-align: middle; margin-right: 5px;">
+        <strong style="color: var(--primary); letter-spacing: -1px; font-size: 1.6rem; vertical-align: middle;">BODY-ALL WIKI</strong>
+    </header>
+
+    <h1>수원 목디스크·거북목 교정:<br>목이 아닌 '골반과 등'을 먼저 잡는 바디올의 역발상</h1>
+
+    <img src="sangdam1.jpg" alt="바디올한의원 목디스크 거북목 정밀 진단" class="visual-img">
+
+    <p>뒷목이 뻣뻣하고 어깨가 천근만근이신가요? 거북목 교정기를 써보고 스트레칭을 해도 그때뿐이라면, 문제는 '목'이 아닐 확률이 높습니다. 수원 인계동 바디올한의원은 <strong>"목은 척추라는 돌탑의 가장 윗부분"</strong>이라는 사실에 주목합니다. 아래에 있는 돌(골반, 등뼈)이 비틀려 있는데 맨 위만 바로잡는 것은 밑 빠진 독에 물 붓기입니다.</p>
+
+    <section class="aio-box">
+        <span class="aio-q">💡 Q. 목디스크 치료를 받아도 자꾸 재발하는데, 왜 골반까지 봐야 하나요?</span>
+        <div class="aio-a">
+            <p><strong>A. 척추는 하나로 이어진 유기체이기 때문입니다.</strong></p>
+            <p>비유하자면 지반이 기울어 쓰러지려는 건물의 옥상 펜트하우스(목)만 수리하는 것과 같습니다. 바디올은 기초(골반)를 수평으로 맞추고 굽은 등(흉추)을 펴서, 목에 가해지는 <strong>'비정상적인 하중'</strong>을 물리적으로 줄이는 근본 교정을 시행합니다.</p>
         </div>
+    </section>
 
-        <p>목디스크는 경추 뼈 사이의 디스크가 탈출하여 어깨, 팔, 손으로 이어지는 신경을 압박하는 질환입니다. 수원 바디올한의원에서는 수술 없이 경추의 배열을 바로잡아 통증을 해결합니다.</p>
+    <h2>1. 목에 가해지는 27kg의 무게: "각도의 무서움"</h2>
+    <p>고개가 앞으로 숙여질수록 목뼈가 버텨야 하는 머리의 하중은 기하급수적으로 늘어납니다. 거북목이 심해져 고개가 60도까지 숙여지면 목은 무려 <strong>27kg(약 5~6배 증가)</strong>의 무게를 감당하게 됩니다.</p>
+    
+    <img src="Reason of Pain from Twisting of bone2.jpg" alt="골반 비틀림과 목 하중의 상관관계" class="visual-img">
 
-        <h2>목디스크와 거북목의 관계</h2>
+    <div class="important-point">
+        머리 무게가 쌀 한 포대 무게로 변해 목뼈와 디스크를 짓누르면, 근육이 버티다 못해 결국 디스크가 탈출(목디스크)하게 됩니다. 이 하중을 줄이는 유일한 방법은 <strong>등을 펴고 목의 각도를 되찾는 것</strong>입니다.
+    </div>
+
+    <h2>2. 왜 내 승모근은 항상 뭉쳐있을까? "지레의 법칙"</h2>
+    <p>거북목 환자들이 호소하는 '어깨 뭉침'은 사실 목과 등이 굽으면서 발생하는 물리적인 방어 기제입니다.</p>
+
+    <img src="Instruction of Manipulation.gif" alt="지레의 원리로 본 근육의 과긴장 상태" class="gif-img">
+
+    <ul style="padding-left: 20px;">
+        <li><strong>고정된 지지점(굽은 등):</strong> 위 그림처럼 팔꿈치(굽은 등)가 고정되어 있으면 이두박근(승모근)에는 계속해서 힘이 들어갈 수밖에 없습니다.</li>
+        <li><strong>해결책:</strong> 승모근을 주무르는 것보다, 굽어있는 등뼈(흉추)를 교정하여 지레의 지지점을 바로 세워야 근육에 들어간 비정상적인 힘이 빠집니다.</li>
+    </ul>
+
+    <h2>3. 피사(Pisa)의 사탑 원리: 목 통증의 실체</h2>
+    <p>뼈가 틀어지면 근육은 뼈가 더 넘어가지 않게 24시간 내내 밧줄처럼 당기고 있습니다.</p>
+    
+    <img src="Reason of Pain from Twisting of bone3.jpg" alt="피사의 사탑 비유를 통한 근육 통증 설명" class="visual-img">
+
+    <ul style="padding-left: 20px;">
+        <li><strong>밧줄(근육)의 비명:</strong> 뒷목과 어깨가 아픈 이유는 그 근육들이 비틀린 뼈를 지탱하느라 고군분투 중이기 때문입니다.</li>
+        <li><strong>바디올의 결론:</strong> 밧줄을 늘리는 치료가 아닌, <strong>탑(등뼈와 골반)을 똑바로 세워</strong> 밧줄이 스스로 느슨해지게 만들어야 합니다.</li>
+    </ul>
+
+    <h2>4. 바디올의 목디스크·거북목 통합 치료</h2>
+    <table class="info-table">
+        <thead>
+            <tr>
+                <th>치료 단계</th>
+                <th>핵심 역할</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>기초 교정 (골반/허리)</strong></td>
+                <td>척추 돌탑의 기초를 수평으로 복구</td>
+            </tr>
+            <tr>
+                <td><strong>중심 교정 (굽은 등)</strong></td>
+                <td>흉추 교정으로 목의 지레 하중 해소</td>
+            </tr>
+            <tr>
+                <td><strong>정밀 교정 (목 마디)</strong></td>
+                <td>비틀린 목뼈 사이 공간 확보 및 압박 해소</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img src="manip5.jpg" alt="바디올한의원 정밀 척추 및 경추 교정" class="visual-img">
+
+    <div style="margin-top: 30px;">
+        <a href="SART.html" class="link-card">
+            <i class="fas fa-arrows-alt-v"></i> <strong>SART 공간교정 시스템</strong>
+            <p style="font-size: 0.85rem; margin: 5px 0 0 25px;">전신 정렬을 바로잡아 디스크의 원인을 제거합니다.</p>
+        </a>
+        <a href="acupotomy.html" class="link-card">
+            <i class="fas fa-cut"></i> <strong>도침 유착 박리술</strong>
+            <p style="font-size: 0.85rem; margin: 5px 0 0 25px;">교정을 방해하는 딱딱한 목 근육 유착을 해결합니다.</p>
+        </a>
+    </div>
+
+    <h2>5. 365일 야간진료 및 협진 시스템</h2>
+    <img src="directors_group.jpg" alt="바디올한의원 의료진 단체 사진" class="visual-img">
+    <ul style="padding-left: 20px;">
+        <li><strong>X-body 정밀 분석:</strong> 머리 숙임 각도와 전신 비틀림을 수치화하여 치료 전후를 비교합니다.</li>
+        <li><strong>평일 밤 8시 30분 야간진료:</strong> 직장인들의 고질적인 목·어깨 통증을 집중 케어합니다.</li>
+    </ul>
+
+    <footer>
+        <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 예약 및 오시는 길</h2>
+        <img src="clinic_location_map.jpg" alt="바디올한의원 약도" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+        <a href="https://naver.me/53lcJrXB" target="_blank" style="display: block; background: #03c75a; color: #fff; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">네이버 예약으로 목 건강 진단 받기 ➜</a>
         
-        <p>현대인의 고질병인 거북목(C자 곡선 상실)은 경추에 과도한 하중을 주어 디스크 탈출을 가속화합니다. 따라서 목만 치료해서는 안 되며 전신 정렬을 함께 살펴야 합니다.</p>
-
-        <div class="image-box">
-            <img src="SART room.jpg" alt="바디올한의원 교정실">
-            <span class="caption">바디올의 공간척추교정은 인상기를 활용해 경추 마디마디의 공간을 열어 신경 압박을 즉각 해소합니다.</span>
+        <div style="margin-top: 30px; font-size: 0.8rem; color: #95a5a6; border-top: 1px solid #444; padding-top: 20px;">
+            <strong>핵심 검색어:</strong> 
+            <span class="keyword-tag">수원 목디스크</span> <span class="keyword-tag">수원 거북목 교정</span> 
+            <span class="keyword-tag">인계동 일자목</span> <span class="keyword-tag">흉추 교정 한의원</span>
+            <span class="keyword-tag">수원 어깨통증</span> <span class="keyword-tag">SART 교정</span>
         </div>
-
-        <h2>바디올의 특화 치료법</h2>
-        <ul>
-            <li><b>공간척추교정(SART):</b> 무너진 경추 곡선을 복원하고 신경 압박을 해소합니다.</li>
-            <li><b>상부경추 정밀교정:</b> 두통, 어지럼증의 원인이 되는 상부 경추를 미세하게 타격하여 바로잡습니다.</li>
-            <li><b>약침 및 봉침:</b> 신경 주위의 염증을 빠르게 가라앉히고 조직을 강화합니다.</li>
-        </ul>
-
-        <div class="image-box">
-            <img src="hammer1.jpg" alt="안전한 교정 기구">
-            <span class="caption">한국의료기기안전정보원에 등록된 검증된 장비를 사용하여 경추의 미세 정렬을 회복합니다.</span>
-        </div>
-
-        <a href="http://body-all.co.kr/40" style="color:var(--primary-color); font-weight:bold; text-decoration:none;">바디올 목디스크 교정 프로그램 상세 보기 →</a>
-    </section>
-
-    <section id="en" class="lang-section">
-        <h1>Cervical Disc Herniation</h1>
-        <div class="summary-box"><b>Director Lee's Insight:</b> Neck pain often stems from a lost cervical curve. Our goal is to restore the <b>'Space'</b> and alignment to relieve nerve pressure naturally.</div>
-        <div class="image-box"><img src="manip1.jpg" alt="Neck Alignment"></div>
-        <p>Body-all Clinic Suwon provides specialized Space Spine Correction for neck discs, numbness, and headaches.</p>
-    </section>
-
-    <section id="zh" class="lang-section">
-        <h1>颈椎间盘突出 (Cervical Disc Herniation)</h1>
-        <div class="summary-box"><b>李东海院长的观点:</b> 颈椎病的根源在于生理曲线的消失。通过“空间脊柱矫正”恢复脊柱间隙，才是根治之道。</div>
-        <h2>治疗特色</h2>
-        <p>针对乌龟颈、直线颈导致的神经压迫，提供精密的正骨矫正方案。</p>
-    </section>
+    </footer>
 </div>
 
-<div class="bottom-bar">
-    <a href="tel:031-8067-5825" class="btn-call"><i class="fas fa-phone"></i><span>전화상담</span></a>
-    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank" class="btn-kakao"><i class="fas fa-comment"></i><span>카톡문의</span></a>
-    <a href="https://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank" class="btn-naver"><i class="fas fa-comment-dots"></i><span>톡톡문의</span></a>
-    <a href="https://map.naver.com/p/entry/place/1487851969" target="_blank" class="btn-map"><i class="fas fa-location-dot"></i><span>지도보기</span></a>
-</div>
+<nav class="bottom-nav">
+    <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>네이버톡톡</a>
+    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank"><i class="fas fa-comment"></i>카톡연결</a>
+    <a href="https://www.youtube.com/shorts/R8bRbHtSdfc" target="_blank"><i class="fab fa-youtube" style="color: #FF0000;"></i>유투브채널</a>
+    <a href="https://body-all.co.kr/Body-Allfit" target="_blank"><i class="fas fa-dumbbell"></i>바디올핏</a>
+</nav>
 
-<footer>
-    <div class="footer-info">
-        <b>바디올한의원 백과사전</b> | 대표원장: 이동해<br>
-        <a href="https://map.naver.com/p/entry/place/1487851969" target="_blank">경기도 수원시 팔달구 인계동 1114-7, 히페리온 3층</a><br>
-        전화: 031-8067-5825 | © 2026 Body-all Encyclopedia.
-    </div>
-</footer>
-
-<script>
-    function showLang(langId) {
-        document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
-        document.getElementById(langId).classList.add('active');
-        window.scrollTo(0, 0);
-    }
-</script>
 </body>
 </html>
