@@ -3,141 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>수원 인계동 추나요법: 건강보험 척추교정 | 바디올한의원 백과사전</title>
-    <meta name="description" content="수원 인계동 바디올한의원 이동해 원장의 추나요법 가이드. 건강보험 적용으로 부담 없이, 공간척추교정 노하우가 결합된 정밀한 척추 교정을 경험하세요.">
+    <title>수원 추나·골타요법 가이드: 세밀한 분절 교정과 회복 | 바디올 위키</title>
+    <meta name="description" content="수원 추나요법 잘보는 곳을 찾는 분들을 위한 안내. 뼈 하나하나의 배열을 바로잡는 세밀한 분절 교정과 교타 기법(골타요법)을 통한 초기 통증의 구조적 회복 지향.">
     
+    <link rel="icon" type="image/png" href="Bodyall Logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MedicalWebPage",
-      "name": "추나요법 (Chuna Manual Therapy)",
-      "publisher": { "@type": "Organization", "name": "바디올한의원 백과사전" },
-      "author": { "@type": "Person", "name": "이동해" },
-      "mainEntity": {
-        "@type": "MedicalTherapy",
-        "name": "추나요법",
-        "indication": { "@type": "MedicalCondition", "name": "척추 질환, 골반 틀어짐, 근육 통증" }
-      }
-    }
-    </script>
-
     <style>
-        :root { --primary-color: #b38b4d; --kakao-color: #FEE500; --naver-color: #03C75A; --text-color: #333; }
-        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.6; color: var(--text-color); margin: 0; background: #f4f4f4; padding-bottom: 80px; }
+        :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; --card-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; word-break: keep-all; padding-top: 60px; padding-bottom: 80px; }
+        .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
         
-        header { background: #fff; height: 60px; display: flex; justify-content: space-between; align-items: center; padding: 0 15px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .nav-left { display: flex; align-items: center; gap: 10px; }
-        .home-btn { font-size: 1.2rem; color: var(--primary-color); text-decoration: none; }
-        .logo img { height: 35px; vertical-align: middle; }
-        .wiki-label { font-size: 0.9rem; font-weight: bold; color: var(--primary-color); }
-        .lang-switch a { font-size: 0.8rem; text-decoration: none; color: #666; padding: 3px 7px; border: 1px solid #ddd; border-radius: 4px; margin-left: 2px; }
+        /* 상단 플로팅 바 */
+        .top-nav { position: fixed; top: 0; left: 0; right: 0; height: 60px; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .nav-menu { display: flex; gap: 8px; white-space: nowrap; font-size: 0.78rem; font-weight: bold; align-items: center; }
+        .nav-menu a { text-decoration: none; color: #555; }
+        .nav-brand { display: flex; align-items: center; gap: 4px; color: var(--primary) !important; }
+        .lang-switch { font-size: 0.65rem; color: #888; border-left: 1px solid #ddd; padding-left: 8px; margin-left: 5px; font-weight: bold; flex-shrink: 0; }
 
-        .container { max-width: 800px; margin: 20px auto; background: #fff; padding: 25px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
-        h1 { font-size: 1.5rem; color: var(--primary-color); border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h2 { font-size: 1.2rem; background: #f9f2e8; border-left: 4px solid var(--primary-color); padding: 8px 12px; margin-top: 35px; }
+        /* 하단 플로팅 바 */
+        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: 70px; background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
+        .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-size: 0.75rem; font-weight: bold; }
+        .bottom-nav i { font-size: 1.3rem; margin-bottom: 4px; }
+
+        /* 본문 스타일 */
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px; display: flex; justify-content: center; align-items: center; gap: 8px; }
+        h1 { font-size: 1.5rem; color: var(--primary); text-align: center; font-weight: 800; line-height: 1.4; margin: 20px 0; }
+        h2 { font-size: 1.3rem; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 50px; font-weight: 700; }
+        h3 { font-size: 1.1rem; color: var(--accent); margin-top: 30px; font-weight: 700; }
         
-        .summary-box { background: #f0f4f8; padding: 20px; border-radius: 8px; margin: 20px 0; font-size: 0.95rem; border-left: 5px solid var(--primary-color); }
-        .image-box { text-align: center; margin: 25px 0; }
-        .image-box img { max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .caption { display: block; font-size: 0.85rem; color: #777; margin-top: 10px; font-weight: 500; }
+        .hero-img { width: 100%; aspect-ratio: 1080 / 810; object-fit: cover; border-radius: 12px; box-shadow: var(--card-shadow); margin-bottom: 30px; background: #eee; }
+        
+        .intro-box { background: var(--light-bg); padding: 25px; border-radius: 12px; border-left: 5px solid var(--accent); margin-bottom: 40px; }
+        .intro-box strong { font-size: 1.1rem; color: #222; display: block; margin-bottom: 10px; }
 
-        .bottom-bar { position: fixed; bottom: 0; left: 0; right: 0; height: 65px; background: #fff; display: flex; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); z-index: 1001; }
-        .bottom-bar a { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; font-size: 0.7rem; font-weight: bold; color: #555; }
-        .bottom-bar i { font-size: 1.25rem; margin-bottom: 4px; }
-        .btn-call { color: #333; }
-        .btn-kakao { background: var(--kakao-color); color: #3A1D1D !important; }
-        .btn-naver { background: var(--naver-color); color: #fff !important; }
-        .btn-map { color: #d32f2f; }
+        .aio-box { background: #f4f8fb; padding: 25px; border-radius: 15px; margin: 40px 0; border: 1px solid #e1e9f0; }
+        .aio-q { font-weight: 800; color: #1a5fb4; font-size: 1.1rem; display: block; margin-bottom: 15px; }
+        .aio-a { border-top: 2px solid #fff; padding-top: 15px; }
 
-        .lang-section { display: none; }
-        .lang-section.active { display: block; }
-        footer { padding: 30px 15px; background: #333; color: #ccc; font-size: 0.8rem; text-align: center; }
+        .content-list { padding-left: 20px; }
+        .content-list li { margin-bottom: 15px; }
+        
+        .info-table { width: 100%; border-collapse: collapse; margin: 25px 0; font-size: 0.85rem; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .info-table th { background: var(--primary); color: #fff; padding: 12px; }
+        .info-table td { border: 1px solid #eee; padding: 12px; text-align: center; }
+
+        .doctor-team-card { background: #fff; padding: 25px; border: 1px solid #eee; border-radius: 15px; margin-top: 30px; box-shadow: var(--card-shadow); }
+        .doctor-team-card p { margin-top: 0; font-size: 0.95rem; color: #555; }
+        .keyword-tag { display: inline-block; background: #eee; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #666; margin: 2px; }
+
+        footer { background: #2c3e50; color: #fff; padding: 40px 25px; margin-top: 60px; border-radius: 20px 20px 0 0; }
+        
+        @media (max-width: 600px) { h1 { font-size: 1.3rem; } }
     </style>
 </head>
 <body>
 
-<header>
-    <div class="nav-left">
-        <a href="index.html" class="home-btn"><i class="fas fa-house"></i></a>
-        <div class="logo"><img src="Bodyall Logo.png" alt="바디올한의원"></div>
-        <span class="wiki-label">백과사전</span>
+<nav class="top-nav">
+    <div class="nav-menu">
+        <a href="index.html" class="nav-brand">
+            <img src="Bodyall Logo.png" alt="로고" style="height: 1.1rem; vertical-align: middle;">
+            <span style="font-weight: 800;">바디올한의원</span>
+        </a>
+        <a href="index.html#treatments">주요진료</a>
+        <a href="index.html#diseases">질병색인</a>
+        <a href="index.html#doctor">의료진</a>
+        <a href="index.html#location">오시는길</a>
     </div>
-    <div class="lang-switch">
-        <a href="javascript:void(0)" onclick="showLang('ko')">KO</a>
-        <a href="javascript:void(0)" onclick="showLang('en')">EN</a>
-        <a href="javascript:void(0)" onclick="showLang('zh')">ZH</a>
-    </div>
-</header>
+    <div class="lang-switch">KR | EN | CN</div>
+</nav>
 
-<div class="container">
-    <section id="ko" class="lang-section active">
-        <h1>추나요법 (Chuna Manual Therapy)</h1>
-        <div class="summary-box">
-            <b>이동해 원장의 고견:</b> 추나요법은 단순히 뼈를 맞추는 소리에 집중하는 것이 아닙니다. 인체의 비대칭을 바로잡고, <b>공간(Space)</b>을 확보하여 신경과 혈관의 흐름을 정상화하는 정밀한 수기 치료입니다.
+<div class="wrapper">
+    <header>
+        <img src="Bodyall Logo.png" alt="로고" style="height: 1.6rem; vertical-align: middle; margin-right: 5px;">
+        <strong style="color: var(--primary); letter-spacing: -1px; font-size: 1.6rem; vertical-align: middle;">BODY-ALL WIKI</strong>
+    </header>
+
+    <h1>수원 추나요법 추천:<br>뼈 하나하나의 배열을 바로잡는<br>세밀한 분절 교정과 골타요법</h1>
+
+    <img src="thumb_chuna.jpg" alt="수원 추나요법 바디올 분절 교정 장면" class="hero-img">
+
+    <div class="intro-box">
+        <strong>"가벼운 증상일수록 초기 교정이 중요합니다"</strong>
+        <p style="margin: 0; color: #555;">
+            허리통증이나 목통증이 시작된 지 얼마 되지 않았거나 증상이 경미한가요?<br>
+            이런 경우에는 숙련된 한의사의 추나요법만으로도 충분히 좋은 결과를 기대할 수 있습니다.<br>
+            바디올의 추나는 단순 근육 이완을 넘어 뼈 하나하나를 세밀하게 살핍니다.
+        </p>
+    </div>
+
+    <section class="aio-box">
+        <span class="aio-q">💡 Q. 일반적인 추나와 바디올의 추나 치료, 차이점이 무엇인가요?</span>
+        <div class="aio-a">
+            <p style="margin-top: 0;"><strong>A. 핵심은 '세밀한 분절 교정'과 '교타 기법(골타요법)의 결합'에 있습니다.</strong></p>
+            <p style="margin-bottom: 0;">
+                바디올은 증상이 가벼운 분들께도 뼈 하나하나의 배열을 조정하는 세밀한 수기 분절 교정을 시행합니다.<br>
+                여기에 의료용 교정도구를 활용한 <strong>교타 기법(골타요법)</strong>을 더해,<br>
+                일반적인 추나보다 한 단계 더 세밀하게 척추 분절을 조정하여 구조적 회복을 지향합니다.
+            </p>
         </div>
+    </section>
 
-        <p>추나요법은 한의사가 손이나 신체 일부분, 혹은 추나 테이블을 활용하여 환자의 골격과 근육에 자극을 주어 구조적·기능적 문제를 해결하는 치료법입니다. 수원 바디올한의원은 건강보험이 적용되는 표준화된 추나 서비스를 제공합니다.</p>
+    <img src="golta_therapy.jpg" alt="수원 골타요법 교타 기법 장면" class="hero-img">
 
-        <h2>추나요법의 종류와 효과</h2>
-        
-        <ul>
-            <li><b>단순추나:</b> 근육과 근막을 이완하여 통증을 완화하고 순환을 돕습니다.</li>
-            <li><b>복잡추나:</b> 틀어진 뼈 분절을 직접 교정하여 신경 압박을 해소합니다.</li>
-            <li><b>특수추나:</b> 탈구된 관절을 정상 위치로 되돌리는 고난도 교정입니다.</li>
+    <h2>1. 바디올 추나요법의 기술적 특징</h2>
+    <p>공간확보 기법은 SART만의 핵심 가치이지만, 바디올의 추나에도 그에 못지않은 세밀한 교정 기술이 담겨 있습니다.</p>
+    
+    <ul class="content-list">
+        <li>
+            <strong>뼈 하나하나를 만지는 분절 교정:</strong><br>
+            단순히 척추 전체의 라인을 밀고 당기는 방식이 아닙니다. 통증의 원인이 되는 특정 분절(Segment)을 정확히 찾아내어 제자리를 찾도록 돕습니다.
+        </li>
+        <li>
+            <strong>안전한 교타 기법(골타요법):</strong><br>
+            손으로 닿기 어려운 미세한 틀어짐까지 세밀하게 조정하기 위해 안전한 의료용 도구를 활용합니다. 이는 많은 분들이 검색하시는 골타요법의 원리를 현대적으로 적용한 것입니다.
+        </li>
+        <li>
+            <strong>관절 가동 범위의 회복:</strong><br>
+            틀어짐으로 인해 뻣뻣해진 관절의 움직임을 정상화하여 통증 완화와 함께 몸의 부드러운 유연성을 되찾아줍니다.
+        </li>
+    </ul>
+
+    <img src="chuna_treatment.jpg" alt="수원 추나요법 세밀한 분절 교정" class="hero-img">
+
+    <h2>2. 이런 분들께 바디올 추나 치료를 추천합니다</h2>
+    <p>증상이 만성화되어 복잡한 치료로 넘어가기 전, 골든타임을 잡는 것이 현명합니다.</p>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;">
+        <div style="background: #fff; padding: 15px; border: 1px solid #eee; border-radius: 10px;">
+            <strong style="color: var(--accent);">초기 통증</strong><br>무거운 물건을 들거나 잘못된 자세로 갑자기 발생한 허리·목 통증
+        </div>
+        <div style="background: #fff; padding: 15px; border: 1px solid #eee; border-radius: 10px;">
+            <strong style="color: var(--accent);">초기 디스크</strong><br>저림이 심하지 않고 간헐적인 통증만 느껴지는 경우
+        </div>
+        <div style="background: #fff; padding: 15px; border: 1px solid #eee; border-radius: 10px;">
+            <strong style="color: var(--accent);">자세 불균형</strong><br>거북목이나 골반 틀어짐이 느껴지기 시작한 초기 단계
+        </div>
+        <div style="background: #fff; padding: 15px; border: 1px solid #eee; border-radius: 10px;">
+            <strong style="color: var(--accent);">효율적 관리</strong><br>비용과 시간 대비 효율적으로 척추 건강을 관리하고 싶은 분
+        </div>
+    </div>
+
+    <img src="chuna_consulting.jpg" alt="바디올한의원 추나 상담 및 진단" class="hero-img">
+
+    <h2>3. 추나요법 건강보험 및 실손보험 활용법</h2>
+    <table class="info-table">
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>내용 및 혜택</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>건강보험 적용</td>
+                <td>연간 20회까지 건강보험 혜택 적용 가능</td>
+            </tr>
+            <tr>
+                <td>실손보험(실비)</td>
+                <td>가입 보험 약관에 따라 급여 항목 실비 청구 가능</td>
+            </tr>
+            <tr>
+                <td>자동차보험</td>
+                <td>교통사고 후유증 예방을 위한 세밀한 교정 지원</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. 교육이사가 직접 지도하는 교정 엘리트 팀</h2>
+    <img src="directors_group.jpg" alt="바디올한의원 의료진 단체 사진" class="hero-img">
+    
+    <div class="doctor-team-card">
+        <p>
+            바디올의 추나는 단순한 마사지가 아닙니다. 척추진단교정학회 이사 겸 교육위원인 이동해 대표원장이 동 학회 소속 의료진과 함께 매일 정례스터디와 케이스발표를 통해, 뼈 하나하나를 다루는 세밀한 노하우를 직접 전수하며, 일관성 있는 치료효과를 위해 노력하고있습니다.<br><br>
+            어떤 원장님께 진료받더라도 4만 례의 임상 데이터를 바탕으로 한 <strong>최적의 분절 교정 포인트</strong>에 집중하여 만족도 높은 치료 결과를 지향합니다.
+        </p>
+    </div>
+
+    <footer>
+        <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 진료 안내 및 오시는 길</h2>
+        <ul style="list-style: none; padding: 0; font-size: 0.92rem; margin-bottom: 20px; opacity: 0.9;">
+            <li>• <strong>평일: 10:00 ~ 20:30 (야간진료 / 점심 1-2시)</strong></li>
+            <li>• <strong><span style="color: #ff5252;">주말·공휴일: 10:00 ~ 16:00 (점심 1-2시)</span></strong></li>
+            <li>• 수원시청역 9번 출구 도보 3분 (무료 주차 지원)</li>
         </ul>
-
-        <div class="image-box">
-            <img src="manip1.jpg" alt="수원 인계동 추나요법 시술 모습">
-            <span class="caption">바디올한의원 이동해 원장의 추나 시술: 골반과 요추의 정렬을 바로잡습니다.</span>
+        <img src="clinic_location_map.jpg" alt="바디올한의원 약도" style="width: 100%; border-radius: 8px; margin: 15px 0;">
+        <a href="https://naver.me/53lcJrXB" target="_blank" style="display: block; background: #03c75a; color: #fff; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">네이버 지도로 길찾기 ➜</a>
+        
+        <div style="margin-top: 30px; font-size: 0.8rem; color: #95a5a6; border-top: 1px solid #444; padding-top: 20px;">
+            <strong>핵심 검색어:</strong> 
+            <span class="keyword-tag">수원 추나</span> <span class="keyword-tag">수원 추나요법</span> 
+            <span class="keyword-tag">수원 골타요법</span> <span class="keyword-tag">수원 도수치료</span>
+            <span class="keyword-tag">인계동 한의원</span> <span class="keyword-tag">수원 척추병원</span>
         </div>
-
-        <h2>왜 바디올의 추나인가?</h2>
-        <p>수원 인계동 바디올한의원의 추나는 <b>공간척추교정(SART)</b> 노하우와 결합되어 시너지를 냅니다. 일반적인 추나보다 더 깊은 층의 공간 확보를 목표로 하여 치료의 유지력이 우수합니다.</p>
-
-        <div class="image-box">
-            <img src="SART room.jpg" alt="바디올한의원 추나 및 교정실">
-            <span class="caption">첨단 추나 테이블과 인상기가 구비된 전문 치료 공간입니다.</span>
-        </div>
-
-        <a href="http://body-all.co.kr/40" style="color:var(--primary-color); font-weight:bold; text-decoration:none;">추나요법 건강보험 혜택 및 비용 확인하기 →</a>
-    </section>
-
-    <section id="en" class="lang-section">
-        <h1>Chuna Manual Therapy</h1>
-        <div class="summary-box"><b>Director Lee's Insight:</b> Chuna is about restoring balance and creating <b>'Space'</b> for the nervous system to function optimally.</div>
-        <p>Body-all Clinic Suwon offers health-insured Chuna therapy for spinal alignment and chronic pain relief.</p>
-    </section>
-
-    <section id="zh" class="lang-section">
-        <h1>推拿疗法 (Chuna Manual Therapy)</h1>
-        <div class="summary-box"><b>李东海院长的观点:</b> 推拿不仅是缓解肌肉疲劳，更是通过物理方式恢复脊柱间隙，解除身体压迫。</div>
-        <p>水原Body-all韩医院提供纳入韩国国民健康保险的专业推拿矫正服务。</p>
-    </section>
+    </footer>
 </div>
 
-<div class="bottom-bar">
-    <a href="tel:031-8067-5825" class="btn-call"><i class="fas fa-phone"></i><span>전화상담</span></a>
-    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank" class="btn-kakao"><i class="fas fa-comment"></i><span>카톡문의</span></a>
-    <a href="https://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank" class="btn-naver"><i class="fas fa-comment-dots"></i><span>톡톡문의</span></a>
-    <a href="https://map.naver.com/p/entry/place/1487851969" target="_blank" class="btn-map"><i class="fas fa-location-dot"></i><span>지도보기</span></a>
-</div>
+<nav class="bottom-nav">
+    <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>네이버톡톡</a>
+    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank"><i class="fas fa-comment"></i>카톡연결</a>
+    <a href="https://www.youtube.com/shorts/R8bRbHtSdfc" target="_blank"><i class="fab fa-youtube" style="color: #FF0000;"></i>유투브채널</a>
+    <a href="https://body-all.co.kr/Body-Allfit" target="_blank"><i class="fas fa-dumbbell"></i>바디올핏</a>
+</nav>
 
-<footer>
-    <div class="footer-info">
-        <b>바디올한의원 백과사전</b> | 대표원장: 이동해<br>
-        <a href="https://map.naver.com/p/entry/place/1487851969" target="_blank">경기도 수원시 팔달구 인계동 1114-7, 히페리온 3층</a><br>
-        상담문의: 031-8067-5825 | © 2026 Body-all Encyclopedia.
-    </div>
-</footer>
-
-<script>
-    function showLang(langId) {
-        document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
-        document.getElementById(langId).classList.add('active');
-        window.scrollTo(0, 0);
-    }
-</script>
 </body>
 </html>
