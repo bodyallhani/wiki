@@ -13,6 +13,19 @@
   <url><loc>https://wiki.body-all.co.kr/cervical-disc.html</loc><priority>0.7</priority></url>
   <url><loc>https://wiki.body-all.co.kr/traffic-accident.html</loc><priority>0.7</priority></url>
 
+  <url><loc>https://wiki.body-all.co.kr/encyclopedia/index.html</loc><priority>0.8</priority></url>
+  <url><loc>https://wiki.body-all.co.kr/encyclopedia/0001.buttock-pain.html</loc><priority>0.7</priority></url>
+  <url><loc>https://wiki.body-all.co.kr/encyclopedia/0002.stiff-hands.html</loc><priority>0.7</priority></url>
+  <url><loc>https://wiki.body-all.co.kr/encyclopedia/0003.foot-pain.html</loc><priority>0.7</priority></url>
+  <url><loc>https://wiki.body-all.co.kr/encyclopedia/0004.shoulder-pain.html</loc><priority>0.7</priority></url>
+  <url><loc>https://wiki.body-all.co.kr/encyclopedia/0005.pes-anserine.html</loc><priority>0.7</priority></url>
+  <url><loc>https://wiki.body-all.co.kr/encyclopedia/0006.back-pain-lying.html</loc><priority>0.7</priority></url>
+  <url><loc>https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html</loc><priority>0.7</priority></url>
+  <url><loc>https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow.html</loc><priority>0.7</priority></url>
+  <url><loc>https://wiki.body-all.co.kr/encyclopedia/0009.tailbone-pain.html</loc><priority>0.7</priority></url>
+  <url><loc>https://wiki.body-all.co.kr/encyclopedia/0010.carpal-tunnel.html</loc><priority>0.7</priority></url>
+  <url><loc>https://wiki.body-all.co.kr/encyclopedia/0011.tmj-disorder.html</loc><priority>0.7</priority></url>
+
   <url><loc>https://wiki.body-all.co.kr/pcode/mainland.html</loc><priority>0.7</priority></url>
   <url><loc>https://wiki.body-all.co.kr/pcode/gu.html</loc><priority>0.6</priority></url>
   <url><loc>https://wiki.body-all.co.kr/pcode/su.html</loc><priority>0.6</priority></url>
@@ -20,9 +33,7 @@
   <url><loc>https://wiki.body-all.co.kr/pcode/ym.html</loc><priority>0.6</priority></url>
   <url><loc>https://wiki.body-all.co.kr/pcode/m1.html</loc><priority>0.6</priority></url>
   <url><loc>https://wiki.body-all.co.kr/pcode/story.html</loc><priority>0.6</priority></url>
-
   <url><loc>https://wiki.body-all.co.kr/gokkjd/intake.html</loc><priority>0.7</priority></url>
-
   <url><loc>https://wiki.body-all.co.kr/BodyallFit/index.html</loc><priority>0.7</priority></url>
   <url><loc>https://wiki.body-all.co.kr/BodyallFit/C1.html</loc><priority>0.6</priority></url>
   <url><loc>https://wiki.body-all.co.kr/BodyallFit/intake.html</loc><priority>0.6</priority></url>
