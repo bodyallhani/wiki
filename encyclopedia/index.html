@@ -1,83 +1,110 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>근골격계 증상별 자가진단 백과 | 바디올 위키</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; --card-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; word-break: keep-all; padding-top: 60px; padding-bottom: 80px; }
-        .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
-        
-        /* 플로팅 바 (기존 디자인 유지) */
-        .top-nav { position: fixed; top: 0; left: 0; right: 0; height: 60px; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .nav-menu { overflow-x: auto; display: flex; gap: 15px; white-space: nowrap; font-size: 0.9rem; font-weight: bold; }
-        .nav-menu a { text-decoration: none; color: #555; }
-        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: 70px; background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
-        .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-size: 0.75rem; font-weight: bold; }
-        .bottom-nav i { font-size: 1.3rem; margin-bottom: 4px; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>근골격계 증상별 자가진단 백과 | 바디올 위키</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; --card-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; word-break: keep-all; padding-top: 60px; padding-bottom: 80px; }
+        .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        /* 플로팅 바 (기존 디자인 유지) */
+        .top-nav { position: fixed; top: 0; left: 0; right: 0; height: 60px; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .nav-menu { overflow-x: auto; display: flex; gap: 15px; white-space: nowrap; font-size: 0.9rem; font-weight: bold; }
+        .nav-menu a { text-decoration: none; color: #555; }
+        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: 70px; background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
+        .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-size: 0.75rem; font-weight: bold; }
+        .bottom-nav i { font-size: 1.3rem; margin-bottom: 4px; }
 
-        /* 검색 및 리스트 구조 */
-        header { border-bottom: 2px solid var(--primary); padding: 20px 0; margin-bottom: 20px; text-align: center; }
-        .search-area { margin-bottom: 30px; }
-        #symptomSearch { width: 100%; padding: 15px; border: 2px solid #eee; border-radius: 12px; font-size: 1rem; outline: none; transition: 0.3s; }
-        #symptomSearch:focus { border-color: var(--accent); }
+        /* 검색 및 리스트 구조 */
+        header { border-bottom: 2px solid var(--primary); padding: 20px 0; margin-bottom: 20px; text-align: center; }
+        .search-area { margin-bottom: 30px; }
+        #symptomSearch { width: 100%; padding: 15px; border: 2px solid #eee; border-radius: 12px; font-size: 1rem; outline: none; transition: 0.3s; }
+        #symptomSearch:focus { border-color: var(--accent); }
 
-        .symptom-item { border-bottom: 1px solid #eee; padding: 20px 10px; list-style: none; }
-        .cat-tag { display: inline-block; color: var(--accent); font-weight: 800; font-size: 0.9rem; margin-bottom: 5px; }
-        .q-title { display: block; text-decoration: none; color: #333; font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; line-height: 1.4; }
-        .hash-tags { font-size: 0.85rem; color: #888; }
-        .date-info { color: #bbb; font-size: 0.8rem; margin-left: 10px; }
-    </style>
+        .symptom-item { border-bottom: 1px solid #eee; padding: 20px 10px; list-style: none; }
+        .cat-tag { display: inline-block; color: var(--accent); font-weight: 800; font-size: 0.9rem; margin-bottom: 5px; }
+        .q-title { display: block; text-decoration: none; color: #333; font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; line-height: 1.4; }
+        .hash-tags { font-size: 0.85rem; color: #888; }
+        .date-info { color: #bbb; font-size: 0.8rem; margin-left: 10px; }
+    </style>
+    <style>
+        /* --- 검색창 모바일 최적화 및 디자인 수정 --- */
+        @media (max-width: 600px) {
+            .search-area {
+                position: relative; /* 아이콘 배치를 위해 필요 */
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            
+            #symptomSearch {
+                padding: 18px 20px 18px 55px; /* 왼쪽 여백을 늘려 아이콘 공간 확보 */
+                font-size: 1.1rem; /* 모바일에서 가독성 및 터치 편의를 위해 약간 확대 */
+                border-radius: 30px; /* 더 둥글게 만들어 부드럽고 현대적인 느낌 */
+                border: 2px solid #ddd; /* 테두리를 살짝 더 진하게 */
+            }
+
+            .search-area i {
+                position: absolute;
+                left: 20px;
+                top: 50%;
+                transform: translateY(-50%); /* 세로 중앙 정렬 */
+                color: #999; /* 아이콘 색상 */
+                font-size: 1.4rem; /* 아이콘 크기 확대 */
+                pointer-events: none; /* 아이콘 클릭 시 입력창이 선택되도록 */
+            }
+        }
+    </style>
 </head>
 <body>
 
 <nav class="top-nav">
-    <div class="nav-menu">
-        <a href="../index.html" class="nav-brand"><img src="../Bodyall Logo.png" style="height: 1.1rem; vertical-align: middle;"> <span style="font-weight: 800;">바디올한의원</span></a>
-        <a href="../index.html#treatments">주요진료</a>
-        <a href="#hero" style="color: var(--accent);">증상백과</a>
-        <a href="../index.html#doctor">의료진</a>
-    </div>
+    <div class="nav-menu">
+        <a href="../index.html" class="nav-brand"><img src="../Bodyall Logo.png" style="height: 1.1rem; vertical-align: middle;"> <span style="font-weight: 800;">바디올한의원</span></a>
+        <a href="../index.html#treatments">주요진료</a>
+        <a href="#hero" style="color: var(--accent);">증상백과</a>
+        <a href="../index.html#doctor">의료진</a>
+    </div>
 </nav>
 
 <div class="wrapper" id="hero">
-    <header>
-        <img src="../Bodyall Logo.png" alt="로고" style="height: 1.4rem; margin-bottom: 10px;">
-        <h1 style="margin: 0; font-size: 1.5rem;">바디올 증상별 자가진단 백과</h1>
-    </header>
+    <header>
+        <img src="../Bodyall Logo.png" alt="로고" style="height: 1.4rem; margin-bottom: 10px;">
+        <h1 style="margin: 0; font-size: 1.5rem;">바디올 증상별 자가진단 백과</h1>
+    </header>
 
-    <div class="search-area">
-        <input type="text" id="symptomSearch" onkeyup="filterList()" placeholder="어디가 어떻게 아프신가요? (예: 엉덩이, 손가락, 저림...)">
-    </div>
+    <div class="search-area">
+        <i class="fas fa-search"></i>         <input type="text" id="symptomSearch" onkeyup="filterList()" placeholder="어디가 어떻게 아프신가요? (예: 엉덩이, 손가락, 저림...)">
+    </div>
 
-    <ul id="symptomList" style="padding: 0;">
-        <li class="symptom-item">
-            <span class="cat-tag">[허리/골반]</span>
-            <a href="./0001.buttock-pain.html" class="q-title">"오래 앉아 있거나 운전할 때 엉덩이가 찌릿하고 다리가 저려요"</a>
-            <div class="hash-tags">
-                #엉덩이찌릿 #다리저림원인 #이상근증후군 #좌골신경통 #골반통증 <span class="date-info">| 2026.03.13</span>
-            </div>
-        </li>
-        </ul>
+    <ul id="symptomList" style="padding: 0;">
+        <li class="symptom-item">
+            <span class="cat-tag">[허리/골반]</span>
+            <a href="./0001.buttock-pain.html" class="q-title">"오래 앉아 있거나 운전할 때 엉덩이가 찌릿하고 다리가 저려요"</a>
+            <div class="hash-tags">
+                #엉덩이찌릿 #다리저림원인 #이상근증후군 #좌골신경통 #골반통증 <span class="date-info">| 2026.03.13</span>
+            </div>
+        </li>
+        </ul>
 </div>
 
 <nav class="bottom-nav">
-    <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>네이버톡톡</a>
-    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank"><i class="fas fa-comment"></i>카톡연결</a>
-    <a href="./index.html"><i class="fas fa-search"></i>증상찾기</a>
-    <a href="../index.html"><i class="fas fa-home"></i>홈으로</a>
+    <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>네이버톡톡</a>
+    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank"><i class="fas fa-comment"></i>카톡연결</a>
+    <a href="./index.html"><i class="fas fa-search"></i>증상찾기</a>
+    <a href="../index.html"><i class="fas fa-home"></i>홈으로</a>
 </nav>
 
 <script>
 function filterList() {
-    let input = document.getElementById('symptomSearch').value.toLowerCase();
-    let items = document.getElementsByClassName('symptom-item');
-    for (let i = 0; i < items.length; i++) {
-        let text = items[i].textContent.toLowerCase();
-        items[i].style.display = text.includes(input) ? "" : "none";
-    }
+    let input = document.getElementById('symptomSearch').value.toLowerCase();
+    let items = document.getElementsByClassName('symptom-item');
+    for (let i = 0; i < items.length; i++) {
+        let text = items[i].textContent.toLowerCase();
+        items[i].style.display = text.includes(input) ? "" : "none";
+    }
 }
 </script>
 </body>
