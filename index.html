@@ -1,289 +1,280 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="naver-site-verification" content="7a19535395c6c10e0bed51d415a1cf9302658f20" />
-    <meta name="google-site-verification" content="nJTXmFXZf10Ks7qV6WyfzflwzWhN5D-Xw6kcjkn3rPs" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>바디올한의원 수원인계 – 365일 야간진료·공간척추교정·통증 치료 위키</title>
-    <meta name="description" content="수원시청역 바디올한의원. 40,000건 임상의 공간척추교정(SART), 도침, 봉약침 치료 및 만성 허리·목디스크 통증 원인 분석 공식 가이드.">
-    
-    <link rel="icon" type="image/png" href="Bodyall Logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; --card-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; word-break: keep-all; padding-top: 60px; padding-bottom: 80px; }
-        .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
-        
-        /* 상단 플로팅 바 */
-        .top-nav { position: fixed; top: 0; left: 0; right: 0; height: 60px; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .nav-menu { overflow-x: auto; display: flex; gap: 15px; white-space: nowrap; font-size: 0.9rem; font-weight: bold; -webkit-overflow-scrolling: touch; }
-        .nav-menu a { text-decoration: none; color: #555; }
-        .nav-brand { display: flex; align-items: center; gap: 4px; color: var(--primary) !important; }
-        .lang-switch { font-size: 0.75rem; color: #888; border-left: 1px solid #ddd; padding-left: 10px; margin-left: 10px; font-weight: bold; flex-shrink: 0; }
+    <meta charset="UTF-8">
+    <meta name="naver-site-verification" content="7a19535395c6c10e0bed51d415a1cf9302658f20" />
+    <meta name="google-site-verification" content="nJTXmFXZf10Ks7qV6WyfzflwzWhN5D-Xw6kcjkn3rPs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>바디올한의원 수원인계 – 365일 야간진료·공간척추교정·통증 치료 위키</title>
+    <meta name="description" content="수원시청역 바디올한의원. 40,000건 임상의 공간척추교정(SART), 도침, 봉약침 치료 및 만성 허리·목디스크 통증 원인 분석 공식 가이드.">
+    
+    <link rel="icon" type="image/png" href="Bodyall Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; --card-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; word-break: keep-all; padding-top: 60px; padding-bottom: 80px; }
+        .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        /* 상단 플로팅 바 */
+        .top-nav { position: fixed; top: 0; left: 0; right: 0; height: 60px; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .nav-menu { overflow-x: auto; display: flex; gap: 15px; white-space: nowrap; font-size: 0.9rem; font-weight: bold; -webkit-overflow-scrolling: touch; }
+        .nav-menu a { text-decoration: none; color: #555; }
+        .nav-brand { display: flex; align-items: center; gap: 4px; color: var(--primary) !important; }
+        .lang-switch { font-size: 0.75rem; color: #888; border-left: 1px solid #ddd; padding-left: 10px; margin-left: 10px; font-weight: bold; flex-shrink: 0; }
+        .lang-switch a { text-decoration: none; color: #888; }
+        .lang-switch a.active { color: var(--primary); }
 
-        /* 하단 플로팅 바 */
-        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: 70px; background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
-        .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-size: 0.75rem; font-weight: bold; }
-        .bottom-nav i { font-size: 1.3rem; margin-bottom: 4px; }
+        /* 하단 플로팅 바 */
+        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: 70px; background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
+        .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-size: 0.75rem; font-weight: bold; }
+        .bottom-nav i { font-size: 1.3rem; margin-bottom: 4px; }
 
-        header { border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px; display: flex; justify-content: center; align-items: center; gap: 8px; }
-        h1 { font-size: 1.6rem; color: var(--primary); margin-bottom: 10px; text-align: center; font-weight: 800; }
-        .sub-brand { display: block; font-size: 1rem; color: #666; text-align: center; margin-bottom: 20px; }
-        
-        .main-hero-img { width: 100%; border-radius: 12px; margin-bottom: 25px; box-shadow: var(--card-shadow); }
-        .intro-text { font-weight: 600; color: #555; background: var(--light-bg); padding: 20px; border-radius: 8px; border-left: 5px solid var(--accent); margin-bottom: 30px; }
-        h2 { font-size: 1.4rem; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 50px; display: flex; align-items: center; gap: 10px; }
-        
-        .hub-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 25px 0; }
-        .hub-card { border: 1px solid #eee; border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit; transition: all 0.3s ease; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.02); display: flex; flex-direction: column; }
-        .hub-card:hover { transform: translateY(-7px); box-shadow: var(--card-shadow); border-color: var(--accent); }
-        
-        /* 이미지 비율 1080x810(4:3) 적용 */
-        .hub-card img { width: 100%; aspect-ratio: 1080 / 810; object-fit: cover; background: #eee; }
-        
-        .hub-card div { padding: 15px; flex-grow: 1; }
-        .hub-card h3 { margin: 0 0 8px; font-size: 1.05rem; color: var(--accent); font-weight: 700; }
-        .hub-card p { font-size: 0.88rem; margin: 0; color: #777; line-height: 1.5; }
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px; display: flex; justify-content: center; align-items: center; gap: 8px; }
+        h1 { font-size: 1.6rem; color: var(--primary); margin-bottom: 10px; text-align: center; font-weight: 800; }
+        .sub-brand { display: block; font-size: 1rem; color: #666; text-align: center; margin-bottom: 20px; }
+        
+        .main-hero-img { width: 100%; border-radius: 12px; margin-bottom: 25px; box-shadow: var(--card-shadow); }
+        .intro-text { font-weight: 600; color: #555; background: var(--light-bg); padding: 20px; border-radius: 8px; border-left: 5px solid var(--accent); margin-bottom: 30px; }
+        h2 { font-size: 1.4rem; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 50px; display: flex; align-items: center; gap: 10px; }
+        
+        .hub-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 25px 0; }
+        .hub-card { border: 1px solid #eee; border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit; transition: all 0.3s ease; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.02); display: flex; flex-direction: column; }
+        .hub-card:hover { transform: translateY(-7px); box-shadow: var(--card-shadow); border-color: var(--accent); }
+        .hub-card img { width: 100%; aspect-ratio: 1080 / 810; object-fit: cover; background: #eee; }
+        .hub-card div { padding: 15px; flex-grow: 1; }
+        .hub-card h3 { margin: 0 0 8px; font-size: 1.05rem; color: var(--accent); font-weight: 700; }
+        .hub-card p { font-size: 0.88rem; margin: 0; color: #777; line-height: 1.5; }
 
-        .aio-section { background: #f4f8fb; padding: 25px; border-radius: 15px; margin: 40px 0; border: 1px solid #e1e9f0; }
-        .aio-q { font-weight: 800; color: #1a5fb4; font-size: 1.1rem; margin-bottom: 15px; display: block; }
-        .aio-a { border-top: 2px solid #fff; padding-top: 15px; }
-        .aio-a p { margin: 5px 0; font-size: 0.95rem; }
+        .aio-section { background: #f4f8fb; padding: 25px; border-radius: 15px; margin: 40px 0; border: 1px solid #e1e9f0; }
+        .aio-q { font-weight: 800; color: #1a5fb4; font-size: 1.1rem; margin-bottom: 15px; display: block; }
+        .aio-a { border-top: 2px solid #fff; padding-top: 15px; }
+        .aio-a p { margin: 5px 0; font-size: 0.95rem; }
 
-        .doctor-box { display: flex; gap: 25px; margin-top: 25px; background: #fff; padding: 20px; border-radius: 15px; border: 1px solid #f0f0f0; align-items: center; }
-        .doctor-info { flex: 1; }
-        .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 20px; }
-        .gallery-grid img { width: 100%; aspect-ratio: 1080 / 1030; object-fit: cover; border-radius: 8px; }
+        .doctor-box { display: flex; gap: 25px; margin-top: 25px; background: #fff; padding: 20px; border-radius: 15px; border: 1px solid #f0f0f0; align-items: center; }
+        .doctor-info { flex: 1; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 20px; }
+        .gallery-grid img { width: 100%; aspect-ratio: 1080 / 1030; object-fit: cover; border-radius: 8px; }
 
-        .map-box { width: 100%; height: auto; margin: 20px 0; border-radius: 12px; overflow: hidden; box-shadow: var(--card-shadow); }
-        .map-box img { width: 100%; display: block; }
-        .map-link-btn { display: block; background: #03c75a; color: #fff; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; transition: background 0.2s; }
-        .map-link-btn:hover { background: #02a34a; }
+        .map-box { width: 100%; height: auto; margin: 20px 0; border-radius: 12px; overflow: hidden; box-shadow: var(--card-shadow); }
+        .map-box img { width: 100%; display: block; }
+        .map-link-btn { display: block; background: #03c75a; color: #fff; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; transition: background 0.2s; }
+        .map-link-btn:hover { background: #02a34a; }
 
-        footer { background: #2c3e50; color: #fff; padding: 45px 25px; margin-top: 60px; border-radius: 20px 20px 0 0; }
-        footer p { margin: 8px 0; font-size: 0.95rem; opacity: 0.9; }
-        .keywords { font-size: 0.82rem; color: #95a5a6; margin-top: 25px; border-top: 1px solid #444; padding-top: 20px; line-height: 1.8; }
-        
-        @media (max-width: 650px) { .hub-grid { grid-template-columns: 1fr; } .doctor-box { flex-direction: column; text-align: center; } .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
-    </style>
+        footer { background: #2c3e50; color: #fff; padding: 45px 25px; margin-top: 60px; border-radius: 20px 20px 0 0; }
+        footer p { margin: 8px 0; font-size: 0.95rem; opacity: 0.9; }
+        .keywords { font-size: 0.82rem; color: #95a5a6; margin-top: 25px; border-top: 1px solid #444; padding-top: 20px; line-height: 1.8; }
+        
+        @media (max-width: 650px) { .hub-grid { grid-template-columns: 1fr; } .doctor-box { flex-direction: column; text-align: center; } .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+    </style>
 </head>
 <body>
 
 <nav class="top-nav">
-    <div class="nav-menu">
-        <a href="#hero" class="nav-brand">
-            <img src="Bodyall Logo.png" alt="로고" style="height: 1.1rem; vertical-align: middle;">
-            <span style="font-weight: 800;">바디올한의원</span>
-        </a>
-        <a href="#treatments">주요진료</a>
-        <a href="#diseases">질병색인</a>
-        <a href="#doctor">의료진</a>
-        <a href="#location">오시는길</a>
-    </div>
-    <div class="lang-switch">
-    <a href="index.html" class="active" style="color: var(--primary); text-decoration: none;">KR</a> | 
-    <a href="index_en.html" style="color: #888; text-decoration: none;">EN</a> | 
-    <a href="index_cn.html" style="color: #888; text-decoration: none;">CN</a>
+    <div class="nav-menu">
+        <a href="#hero" class="nav-brand">
+            <img src="Bodyall Logo.png" alt="로고" style="height: 1.1rem; vertical-align: middle;">
+            <span style="font-weight: 800;">바디올한의원</span>
+        </a>
+        <a href="#treatments">주요진료</a>
+        <a href="#diseases">질병색인</a>
+        <a href="#doctor">의료진</a>
+        <a href="#location">오시는길</a>
+    </div>
+    <div class="lang-switch">
+        <a href="index.html" class="active">KR</a> | 
+        <a href="index_en.html">EN</a> | 
+        <a href="index_cn.html">CN</a>
     </div>
 </nav>
 
 <div class="wrapper" id="hero">
-    <header>
-        <img src="Bodyall Logo.png" alt="로고" style="height: 1.6rem; vertical-align: middle; margin-right: 5px;">
-        <strong style="color: var(--primary); letter-spacing: -1px; font-size: 1.6rem; vertical-align: middle;">BODY-ALL WIKI</strong>
-    </header>
+    <header>
+        <img src="Bodyall Logo.png" alt="로고" style="height: 1.6rem; vertical-align: middle; margin-right: 5px;">
+        <strong style="color: var(--primary); letter-spacing: -1px; font-size: 1.6rem; vertical-align: middle;">BODY-ALL WIKI</strong>
+    </header>
 
-    <h1>바디올한의원 수원인계 –<br>365일 진료 통증·교정 백과</h1>
-    <span class="sub-brand">"올바른 척추를 통한, 활력넘치는 삶을 추구합니다"</span>
+    <h1>바디올한의원 수원인계 –<br>365일 진료 통증·교정 백과</h1>
+    <span class="sub-brand">"올바른 척추를 통한, 활력넘치는 삶을 추구합니다"</span>
 
-    <img src="directors_group.jpg" alt="바디올한의원 대표원장 및 의료진 협진 모습" class="main-hero-img">
+    <img src="directors_group.jpg" alt="바디올한의원 대표원장 및 의료진 협진 모습" class="main-hero-img">
 
-    <div class="intro-text">
-        <strong>"반복되는 통증의 종착점, 척추정렬회복술(SART)"</strong>
-        <p style="font-weight: normal; margin-top: 12px; font-size: 0.95rem; color: #666;">
-            수원 인계동에 위치한 바디올한의원은,<br>통증이라는 결과물이 아닌 구조적 원인에 집중합니다.<br>
-            본 위키는 본원 의료진의 임상 노하우와<br>질환별 핵심 정보를 담은 공식 가이드이며, 최신지견과 논문을 통해 지속적으로 업데이트됩니다.
-        </p>
-    </div>
+    <div class="intro-text">
+        <strong>"반복되는 통증의 종착점, 척추정렬회복술(SART)"</strong>
+        <p style="font-weight: normal; margin-top: 12px; font-size: 0.95rem; color: #666;">
+            수원 인계동에 위치한 바디올한의원은,<br>통증이라는 결과물이 아닌 구조적 원인에 집중합니다.<br>
+            본 위키는 본원 의료진의 임상 노하우와 질환별 핵심 정보를 담은 공식 가이드이며, 최신지견과 논문을 통해 지속적으로 업데이트됩니다.
+        </p>
+    </div>
 
-    <h2 id="treatments">🏛️ 주요 진료 및 치료법 색인</h2>
-    <div class="hub-grid">
-        <a href="SART.html" class="hub-card">
-            <img src="thumb_sart.jpg" alt="수원 공간척추교정 SART">
-            <div>
-                <h3>척추정렬회복술(SART)</h3>
-                <p>공간척추교정. 척추 마디 사이의 공간을 물리적으로 확보하여 신경 압박을 해소하고 세밀하게 척추분절을 하나하나 교정하는 바디올한의원의 핵심 교정술입니다.</p>
-            </div>
-        </a>
-        <a href="chuna-therapy.html" class="hub-card">
-            <img src="thumb_chuna.jpg" alt="수원 인계동 추나요법">
-            <div>
-                <h3>추나요법</h3>
-                <p>틀어진 골격을 바로잡고 관절 가동 범위를 복구하는 건강보험 적용 전문 수기 요법입니다. 바디올에서는 기존 추나에 공간척추교정 기법을 더해 더 깊은 교정을 시행합니다.</p>
-            </div>
-        </a>
-        <a href="pain-spine-clinic.html" class="hub-card">
-            <img src="thumb_pain_spine.jpg" alt="수원 통증 척추 클리닉">
-            <div>
-                <h3>통증·척추클리닉</h3>
-                <p>디스크, 협착증 등 만성적인 척추 질환의 근본 원인을 분석하고 치료하는 집중 클리닉입니다.</p>
-            </div>
-        </a>
-        <a href="doctor-intro.html" class="hub-card">
-            <img src="thumb_doctor_intro.jpg" alt="의료진 소개">
-            <div>
-                <h3>의료진소개</h3>
-                <p>바디올한의원의 의료진을 소개합니다.</p>
-            </div>
-        </a>
-        <a href="acupotomy.html" class="hub-card">
-            <img src="thumb_acupotomy.jpg" alt="수원 도침치료">
-            <div>
-                <h3>도침 (유착박리술)</h3>
-                <p>만성 염증으로 굳고 유착된 조직을 미세 분리하여 고질적인 통증을 해결하는 특수 침도 요법입니다.</p>
-            </div>
-        </a>
-        <a href="bee-venom.html" class="hub-card">
-            <img src="thumb_bee.jpg" alt="수원 봉침 약침">
-            <div>
-                <h3>고농도 봉약침</h3>
-                <p>정제된 벌독의 소염 작용을 통해 심부 염증을 제거하고 신경 재생을 돕는 천연 치료법입니다.</p>
-            </div>
-        </a>
-        <a href="BodyallFit/index.html" class="hub-card">
-            <img src="thumb_diet_fit.jpg" alt="바디올핏 다이어트">
-            <div>
-                <h3>바디올핏 다이어트</h3>
-                <p>몸무게는 척추건강과 직결됩니다. 가격은 낮추고 효과는 증대시킨, 요요 없이 건강한 감량을 돕는 바디올한의원의 다이어트 치료 프로그램입니다.</p>
-            </div>
-        </a>
-        <a href="herbal-medicine.html" class="hub-card">
-            <img src="thumb_herbal.jpg" alt="씨알공진단 경옥고">
-            <div>
-                <h3>씨알공진단/경옥고</h3>
-                <p>전문한의약품 GMP 약재와 현대화된 세밀한 조제법으로, 장기간 척추질환으로 소모된 기력을 보강하고 면역력을 높이는 보약입니다.</p>
-            </div>
-        </a>
-        <a href="pcode/mainland.html" class="hub-card">
-            <img src="thumb_pcode.jpg" alt="Pcode 체질한약">
-            <div>
-                <h3>Pcode 체질한약</h3>
-                <p>SA3000P 맥파진단과 전통적 한의학 진단을 바탕으로 개인의 선천적 장부 강약을 파악하여, 무너진 신체 밸런스를 바로잡고 질병의 근본 원인을 치료하는 맞춤형 체질 한약 프로그램입니다.</p>
-            </div>
-        </a>
-    </div>
+    <h2 id="treatments">🏛️ 주요 진료 및 치료법 색인</h2>
+    <div class="hub-grid">
+        <a href="SART.html" class="hub-card">
+            <img src="thumb_sart.jpg" alt="수원 공간척추교정 SART">
+            <div>
+                <h3>척추정렬회복술(SART)</h3>
+                <p>공간척추교정. 척추 마디 사이의 공간을 물리적으로 확보하여 신경 압박을 해소하고 세밀하게 척추분절을 하나하나 교정하는 바디올한의원의 핵심 교정술입니다.</p>
+            </div>
+        </a>
+        <a href="chuna-therapy.html" class="hub-card">
+            <img src="thumb_chuna.jpg" alt="수원 인계동 추나요법">
+            <div>
+                <h3>추나요법</h3>
+                <p>틀어진 골격을 바로잡고 관절 가동 범위를 복구하는 건강보험 적용 전문 수기 요법입니다. 바디올에서는 기존 추나에 공간척추교정 기법을 더해 더 깊은 교정을 시행합니다.</p>
+            </div>
+        </a>
+        <a href="pain-spine-clinic.html" class="hub-card">
+            <img src="thumb_pain_spine.jpg" alt="수원 통증 척추 클리닉">
+            <div>
+                <h3>통증·척추클리닉</h3>
+                <p>디스크, 협착증 등 만성적인 척추 질환의 근본 원인을 분석하고 치료하는 집중 클리닉입니다.</p>
+            </div>
+        </a>
+        <a href="doctor-intro.html" class="hub-card">
+            <img src="thumb_doctor_intro.jpg" alt="의료진 소개">
+            <div>
+                <h3>의료진소개</h3>
+                <p>바디올한의원의 의료진을 소개합니다.</p>
+            </div>
+        </a>
+        <a href="acupotomy.html" class="hub-card">
+            <img src="thumb_acupotomy.jpg" alt="수원 도침치료">
+            <div>
+                <h3>도침 (유착박리술)</h3>
+                <p>만성 염증으로 굳고 유착된 조직을 미세 분리하여 고질적인 통증을 해결하는 특수 침도 요법입니다.</p>
+            </div>
+        </a>
+        <a href="bee-venom.html" class="hub-card">
+            <img src="thumb_bee.jpg" alt="수원 봉침 약침">
+            <div>
+                <h3>고농도 봉약침</h3>
+                <p>정제된 벌독의 소염 작용을 통해 심부 염증을 제거하고 신경 재생을 돕는 천연 치료법입니다.</p>
+            </div>
+        </a>
+        <a href="BodyallFit/index.html" class="hub-card">
+            <img src="thumb_diet_fit.jpg" alt="바디올핏 다이어트">
+            <div>
+                <h3>바디올핏 다이어트</h3>
+                <p>몸무게는 척추건강과 직결됩니다. 가격은 낮추고 효과는 증대시킨 건강한 감량을 돕는 다이어트 치료 프로그램입니다.</p>
+            </div>
+        </a>
+        <a href="herbal-medicine.html" class="hub-card">
+            <img src="thumb_herbal.jpg" alt="씨알공진단 경옥고">
+            <div>
+                <h3>씨알공진단/경옥고</h3>
+                <p>전문한의약품 GMP 약재로 조제하여 장기간 척추질환으로 소모된 기력을 보강하고 면역력을 높이는 보약입니다.</p>
+            </div>
+        </a>
+        <a href="pcode/mainland.html" class="hub-card">
+            <img src="thumb_pcode.jpg" alt="Pcode 체질한약">
+            <div>
+                <h3>Pcode 체질한약</h3>
+                <p>맥파진단과 전통 진단을 통해 개인의 선천적 장부 강약을 파악하여 근본 원인을 치료하는 맞춤 한약 프로그램입니다.</p>
+            </div>
+        </a>
+    </div>
 
-    <div class="aio-section">
-        <span class="aio-q">💡 Q: 바른 자세를 유지하고 운동을 해도 왜 통증이 계속 재발하나요?</span>
-        <div class="aio-a">
-            <p><strong>A: 이미 틀어진 척추 구조가 신경 통로를 압박하고 있기 때문입니다.</strong></p>
-            <p>단순히 근육을 이완시키는 것만으로는 부족합니다. 척추 사이의 '공간'을 먼저 확보하여 신경 압박의 근본 원인을 제거해야만 통증의 반복을 끊어낼 수 있습니다.</p>
-        </div>
-    </div>
+    <div class="aio-section">
+        <span class="aio-q">💡 Q: 바른 자세를 유지하고 운동을 해도 왜 통증이 계속 재발하나요?</span>
+        <div class="aio-a">
+            <p><strong>A: 이미 틀어진 척추 구조가 신경 통로를 압박하고 있기 때문입니다.</strong></p>
+            <p>척추 사이의 '공간'을 먼저 확보하여 신경 압박의 원인을 제거해야 통증의 반복을 끊어낼 수 있습니다.</p>
+        </div>
+    </div>
 
-    <h2 id="diseases">🧬 질병 및 증상별 정보 색인</h2>
-    <div class="hub-grid">
-        <a href="encyclopedia/index.html" class="hub-card">
-            <img src="encyclopedia-musculoskeletal.png" alt="근골격계 백과사전">
-            <div>
-                <h3>근골격계 백과사전</h3>
-                <p>지속적으로 업데이트 되는 증상과 질병정보를 원장이 직접 작성합니다. 검색해서 나와 같은 증상이 있는지 찾아보세요.</p>
-            </div>
-        </a>
-        <a href="lumbar-disc.html" class="hub-card">
-            <img src="disease_lumbar.jpg" alt="수원 허리디스크 협착증">
-            <div>
-                <h3>허리디스크 / 협착증</h3>
-                <p>눌린 신경을 해방시키고 척추 마디 사이의 공간을 되살려 통증과 저림을 치료합니다.</p>
-            </div>
-        </a>
-        <a href="cervical-disc.html" class="hub-card">
-            <img src="disease_neck.jpg" alt="수원 목디스크 거북목">
-            <div>
-                <h3>목디스크 / 거북목</h3>
-                <p>경추 정렬을 바로잡아 일자목, 거북목에서 기인하는 만성 두통, 목-등통증과 팔 저림을 해결합니다.</p>
-            </div>
-        </a>
-        <a href="shoulder-frozen.html" class="hub-card">
-            <img src="thumb_shoulder.png" alt="수원 어깨통증 오십견">
-            <div>
-                <h3>어깨통증 / 오십견</h3>
-                <p>어깨만 보지 않고 굽은 등을 펴서 근본적인 공간 확보합니다. 유착된 조직 박리와 정렬 회복으로 고질적인 어깨 통증을 해결합니다.</p>
-            </div>
-        </a>
-        <a href="pcode/index.html" class="hub-card">
-            <img src="disease_inner.png" alt="수원 비염 자율신경장애">
-            <div>
-                <h3>자율신경 / 내과 질환</h3>
-                <p>척추 정렬 회복과 오장윤부 균형을 통해 위장 장애, 비염, 불면 등 자율신경계와 면역 질환을 관리합니다.</p>
-            </div>
-        </a>
-        <a href="traffic-accident.html" class="hub-card">
-            <img src="disease_car.jpg" alt="수원 교통사고 한의원">
-            <div>
-                <h3>교통사고 후유증</h3>
-                <p>사고 충격으로 뒤틀린 골반과 척추를 세밀하게 교정하여 만성 후유증을 예방합니다.</p>
-            </div>
-        </a>
-    </div>
+    <h2 id="diseases">🧬 질병 및 증상별 정보 색인</h2>
+    <div class="hub-grid">
+        <a href="encyclopedia/index.html" class="hub-card">
+            <img src="encyclopedia-musculoskeletal.png" alt="근골격계 백과사전">
+            <div>
+                <h3>근골격계 백과사전</h3>
+                <p>증상과 질병정보를 원장이 직접 작성합니다. 나에게 맞는 증상을 찾아보세요.</p>
+            </div>
+        </a>
+        <a href="lumbar-disc.html" class="hub-card">
+            <img src="disease_lumbar.jpg" alt="수원 허리디스크 협착증">
+            <div>
+                <h3>허리디스크 / 협착증</h3>
+                <p>눌린 신경을 해방시키고 척추 마디 사이의 공간을 되살려 통증을 치료합니다.</p>
+            </div>
+        </a>
+        <a href="cervical-disc.html" class="hub-card">
+            <img src="disease_neck.jpg" alt="수원 목디스크 거북목">
+            <div>
+                <h3>목디스크 / 거북목</h3>
+                <p>경추 정렬을 바로잡아 만성 두통, 목-등통증과 팔 저림을 해결합니다.</p>
+            </div>
+        </a>
+        <a href="shoulder-frozen.html" class="hub-card">
+            <img src="thumb_shoulder.png" alt="수원 어깨통증 오십견">
+            <div>
+                <h3>어깨통증 / 오십견</h3>
+                <p>굽은 등을 펴서 근본 공간을 확보하고 고질적인 어깨 통증을 해결합니다.</p>
+            </div>
+        </a>
+        <a href="pcode/index.html" class="hub-card">
+            <img src="disease_inner.png" alt="수원 비염 자율신경장애">
+            <div>
+                <h3>자율신경 / 내과 질환</h3>
+                <p>오장육부 균형을 통해 위장 장애, 비염, 불면 등 면역 질환을 관리합니다.</p>
+            </div>
+        </a>
+        <a href="traffic-accident.html" class="hub-card">
+            <img src="disease_car.jpg" alt="수원 교통사고 한의원">
+            <div>
+                <h3>교통사고 후유증</h3>
+                <p>뒤틀린 골반과 척추를 세밀하게 교정하여 만성 후유증을 예방합니다.</p>
+            </div>
+        </a>
+    </div>
 
-    <h2 id="doctor">👨‍⚕️ 의료진 소개</h2>
-    <div class="doctor-box">
-        <img src="doctor_lee.jpg" style="width: 180px; border-radius: 12px;" alt="바디올한의원 이동해 대표원장">
-        <div class="doctor-info">
-            <h3 style="margin-top: 0; font-size: 1.3rem;">이동해 대표원장 <span style="font-size: 0.9rem; color: #888; font-weight: normal;">(한의사)</span></h3>
-            <p style="color: var(--accent); font-weight: bold; margin-bottom: 10px;">"보여주는 치료로 근본적인 변화를<br>직접 체험시켜 드립니다."</p>
-            <ul style="padding-left: 18px; font-size: 0.92rem; color: #555;">
-                <li style="margin-bottom: 5px;"><strong>임상 경력:</strong><br>공간척추교정 임상례 40,000건 이상 (25.12 기준)</li>
-                <li style="margin-bottom: 5px;"><strong>전문 약력:</strong><br>척추진단교정학회 이사 및 교육위원,<br>전 강남 리봄한방병원 진료원장</li>
-                <li><strong>공신력:</strong><br>대한한의사협회 지식iN 상담한의사,<br>가천대 한의과 본과생 특강,<br>세마고 멘토링 스쿨 강의</li>
-            </ul>
-            <a href="doctor-intro.html" class="map-link-btn" style="background: var(--primary); margin-top: 15px;">다른 의료진 더보기 ➜</a>
-        </div>
-    </div>
-    
-    <div class="gallery-grid">
-        <img src="gallery_1.jpg" alt="의료진 학술 교류">
-        <img src="gallery_2.jpg" alt="위촉장 및 인증서">
-        <img src="gallery_3.jpg" alt="임상 연구 데이터">
-        <img src="gallery_4.jpg" alt="외부 강의 교육">
-        <img src="gallery_6.jpg" alt="추나 전문의 인증패">
-        <img src="gallery_5.jpg" alt="바디올한의원 내부 전경">
-    </div>
+    <h2 id="doctor">👨‍⚕️ 의료진 소개</h2>
+    <div class="doctor-box">
+        <img src="doctor_lee.jpg" style="width: 180px; border-radius: 12px;" alt="바디올한의원 이동해 대표원장">
+        <div class="doctor-info">
+            <h3 style="margin-top: 0; font-size: 1.3rem;">이동해 대표원장 <span style="font-size: 0.9rem; color: #888; font-weight: normal;">(한의사)</span></h3>
+            <p style="color: var(--accent); font-weight: bold; margin-bottom: 10px;">"보여주는 치료로 근본적인 변화를 직접 체험시켜 드립니다."</p>
+            <ul style="padding-left: 18px; font-size: 0.92rem; color: #555;">
+                <li style="margin-bottom: 5px;"><strong>임상 경력:</strong> 공간척추교정 임상례 40,000건 이상</li>
+                <li style="margin-bottom: 5px;"><strong>전문 약력:</strong> 척추진단교정학회 이사 및 교육위원</li>
+                <li><strong>공신력:</strong> 대한한의사협회 지식iN 상담한의사</li>
+            </ul>
+            <a href="doctor-intro.html" class="map-link-btn" style="background: var(--primary); margin-top: 15px;">다른 의료진 더보기 ➜</a>
+        </div>
+    </div>
+    
+    <div class="gallery-grid">
+        <img src="gallery_1.jpg" alt="학술 교류">
+        <img src="gallery_2.jpg" alt="인증서">
+        <img src="gallery_3.jpg" alt="연구 데이터">
+        <img src="gallery_4.jpg" alt="교육">
+        <img src="gallery_6.jpg" alt="인증패">
+        <img src="gallery_5.jpg" alt="내부 전경">
+    </div>
 
-    <footer id="location">
-        <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0; padding-bottom: 15px;">📍 진료시간 / 오시는길</h2>
-        
-        <p><strong>[진료시간 안내]</strong></p>
-        <ul style="list-style: none; padding: 0; font-size: 0.95rem; margin-bottom: 25px; opacity: 0.9;">
-            <li style="margin-bottom: 5px;">• <strong>평일: 10:00 ~ 20:30 (야간진료 / 점심 1-2시)</strong></li>
-            <li style="margin-bottom: 5px;">• <strong><span style="color: #ff5252;">주말·공휴일: 10:00 ~ 16:00 (점심 1-2시)</span></strong></li>
-            <li>• 설·추석 연휴 각 3일(총 6일) 외 365일 진료</li>
-        </ul>
-
-        <p><strong>[찾아오시는 길]</strong></p>
-        <div class="map-box">
-            <img src="clinic_location_map.jpg" alt="바디올한의원 오시는 길 지도" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
-        </div>
-        
-        <p style="margin-top: 20px;">
-            <a href="https://naver.me/53lcJrXB" target="_blank" style="color: #ffca28; text-decoration: underline; font-weight: bold; font-size: 1.05rem;">
-                수원시청역 9번 출구 도보 3분, 1층 크리스피 도넛 건물 3층
-            </a>
-        </p>
-        <a href="https://naver.me/53lcJrXB" target="_blank" class="map-link-btn">
-            네이버 지도로 길찾기 ➜
-        </a>
-        
-        <p style="margin-top: 15px; font-size: 0.9rem;"><strong>주차:</strong> 건물 1층 주차장 이용 (치료 시간 전체 무료 지원)</p>
-        
-        <div class="keywords">
-            수원 한의원, 인계동 한의원, 수원시청역 한의원, 야간진료 한의원, 수원 일요일 한의원, 추나요법, 공간척추교정, 도침, 봉침, 약침, 허리디스크, 목디스크, 협착증, 거북목, 오십견, 어깨통증, 교통사고 한의원, 다이어트 한의원, 공진단, 경옥고, 체질한약
-        </div>
-        <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 20px;">© 바디올한의원 수원인계점 BODY-ALL WIKI. All rights reserved.</p>
-    </footer>
+    <footer id="location">
+        <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0; padding-bottom: 15px;">📍 진료시간 / 오시는길</h2>
+        <p><strong>[진료시간 안내]</strong></p>
+        <ul style="list-style: none; padding: 0; font-size: 0.95rem; margin-bottom: 25px; opacity: 0.9;">
+            <li style="margin-bottom: 5px;">• <strong>평일: 10:00 ~ 20:30 (야간진료 / 점심 1-2시)</strong></li>
+            <li style="margin-bottom: 5px;">• <strong><span style="color: #ff5252;">주말·공휴일: 10:00 ~ 16:00 (점심 1-2시)</span></strong></li>
+            <li>• 명절 연휴 외 365일 진료</li>
+        </ul>
+        <div class="map-box">
+            <img src="clinic_location_map.jpg" alt="지표">
+        </div>
+        <p style="margin-top: 20px;">
+            <a href="https://naver.me/53lcJrXB" target="_blank" style="color: #ffca28; text-decoration: underline; font-weight: bold; font-size: 1.05rem;">
+                수원시청역 9번 출구 도보 3분, 1층 크리스피 도넛 건물 3층
+            </a>
+        </p>
+        <a href="https://naver.me/53lcJrXB" target="_blank" class="map-link-btn">네이버 지도로 길찾기 ➜</a>
+        <p style="margin-top: 15px; font-size: 0.9rem;"><strong>주차:</strong> 건물 1층 무료 주차 지원</p>
+        <div class="keywords">
+            수원 한의원, 인계동 한의원, 수원시청역, 야간진료, 추나요법, 공간척추교정, 허리디스크, 교통사고
+        </div>
+        <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 20px;">© 바디올한의원 수원인계점 BODY-ALL WIKI. All rights reserved.</p>
+    </footer>
 </div>
 
 </body>
