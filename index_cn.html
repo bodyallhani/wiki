@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>水原Bodyall韩医院 – 365日夜间诊疗·空间脊柱矫正·疼痛治疗百科</title>
+    <meta name="description" content="水原市政厅站Bodyall韩医院。拥有40,000例临床经验的空间脊柱矫正(SART)、小针刀、蜂毒疗法，提供慢性腰颈椎间盘突出疼痛根源分析官方指南。">
+    
+    <link rel="icon" type="image/png" href="Bodyall Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; --card-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; word-break: keep-all; padding-top: 60px; padding-bottom: 80px; }
+        .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        .top-nav { position: fixed; top: 0; left: 0; right: 0; height: 60px; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .nav-menu { overflow-x: auto; display: flex; gap: 15px; white-space: nowrap; font-size: 0.9rem; font-weight: bold; -webkit-overflow-scrolling: touch; }
+        .nav-menu a { text-decoration: none; color: #555; }
+        .nav-brand { display: flex; align-items: center; gap: 4px; color: var(--primary) !important; }
+        .lang-switch { font-size: 0.75rem; color: #888; border-left: 1px solid #ddd; padding-left: 10px; margin-left: 10px; font-weight: bold; flex-shrink: 0; }
+        .lang-switch a { text-decoration: none; color: #888; transition: color 0.2s; }
+        .lang-switch a.active { color: var(--primary); }
+
+        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: 70px; background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
+        .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-size: 0.75rem; font-weight: bold; }
+        .bottom-nav i { font-size: 1.3rem; margin-bottom: 4px; }
+
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px; display: flex; justify-content: center; align-items: center; gap: 8px; }
+        h1 { font-size: 1.6rem; color: var(--primary); margin-bottom: 10px; text-align: center; font-weight: 800; }
+        .sub-brand { display: block; font-size: 1rem; color: #666; text-align: center; margin-bottom: 20px; }
+        
+        .main-hero-img { width: 100%; border-radius: 12px; margin-bottom: 25px; box-shadow: var(--card-shadow); }
+        .intro-text { font-weight: 600; color: #555; background: var(--light-bg); padding: 20px; border-radius: 8px; border-left: 5px solid var(--accent); margin-bottom: 30px; }
+        h2 { font-size: 1.4rem; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 50px; display: flex; align-items: center; gap: 10px; }
+        
+        .hub-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 25px 0; }
+        .hub-card { border: 1px solid #eee; border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit; transition: all 0.3s ease; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.02); display: flex; flex-direction: column; }
+        .hub-card:hover { transform: translateY(-7px); box-shadow: var(--card-shadow); border-color: var(--accent); }
+        .hub-card img { width: 100%; aspect-ratio: 1080 / 810; object-fit: cover; background: #eee; }
+        .hub-card div { padding: 15px; flex-grow: 1; }
+        .hub-card h3 { margin: 0 0 8px; font-size: 1.05rem; color: var(--accent); font-weight: 700; }
+        .hub-card p { font-size: 0.88rem; margin: 0; color: #777; line-height: 1.5; }
+
+        .aio-section { background: #f4f8fb; padding: 25px; border-radius: 15px; margin: 40px 0; border: 1px solid #e1e9f0; }
+        .aio-q { font-weight: 800; color: #1a5fb4; font-size: 1.1rem; margin-bottom: 15px; display: block; }
+        .aio-a { border-top: 2px solid #fff; padding-top: 15px; }
+        .aio-a p { margin: 5px 0; font-size: 0.95rem; }
+
+        .doctor-box { display: flex; gap: 25px; margin-top: 25px; background: #fff; padding: 20px; border-radius: 15px; border: 1px solid #f0f0f0; align-items: center; }
+        .doctor-info { flex: 1; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 20px; }
+        .gallery-grid img { width: 100%; aspect-ratio: 1080 / 1030; object-fit: cover; border-radius: 8px; }
+
+        .map-box { width: 100%; height: auto; margin: 20px 0; border-radius: 12px; overflow: hidden; box-shadow: var(--card-shadow); }
+        .map-box img { width: 100%; display: block; }
+        .map-link-btn { display: block; background: #03c75a; color: #fff; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; transition: background 0.2s; }
+        .map-link-btn:hover { background: #02a34a; }
+
+        footer { background: #2c3e50; color: #fff; padding: 45px 25px; margin-top: 60px; border-radius: 20px 20px 0 0; }
+        footer p { margin: 8px 0; font-size: 0.95rem; opacity: 0.9; }
+        .keywords { font-size: 0.82rem; color: #95a5a6; margin-top: 25px; border-top: 1px solid #444; padding-top: 20px; line-height: 1.8; }
+        
+        @media (max-width: 650px) { .hub-grid { grid-template-columns: 1fr; } .doctor-box { flex-direction: column; text-align: center; } .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+    </style>
+</head>
+<body>
+
+<nav class="top-nav">
+    <div class="nav-menu">
+        <a href="#hero" class="nav-brand">
+            <img src="Bodyall Logo.png" alt="logo" style="height: 1.1rem; vertical-align: middle;">
+            <span style="font-weight: 800;">Bodyall 韩医院</span>
+        </a>
+        <a href="#treatments">主要诊疗</a>
+        <a href="#diseases">疾病索引</a>
+        <a href="#doctor">医疗团队</a>
+        <a href="#location">来院路线</a>
+    </div>
+    <div class="lang-switch">
+        <a href="index.html">KR</a> | <a href="index_en.html">EN</a> | <a href="index_cn.html" class="active">CN</a>
+    </div>
+</nav>
+
+<div class="wrapper" id="hero">
+    <header>
+        <img src="Bodyall Logo.png" alt="logo" style="height: 1.6rem; vertical-align: middle; margin-right: 5px;">
+        <strong style="color: var(--primary); letter-spacing: -1px; font-size: 1.6rem; vertical-align: middle;">BODY-ALL WIKI</strong>
+    </header>
+
+    <h1>水原Bodyall韩医院 –<br>365日诊疗 疼痛·矫正百科</h1>
+    <span class="sub-brand">"追求通过正确的脊柱恢复充满活力的生活"</span>
+
+    <img src="directors_group.jpg" alt="Bodyall韩医院医疗团队" class="main-hero-img">
+
+    <div class="intro-text">
+        <strong>"反复疼痛的终点，脊柱排列恢复术(SART)"</strong>
+        <p style="font-weight: normal; margin-top: 12px; font-size: 0.95rem; color: #666;">
+            位于水原仁溪洞的Bodyall韩医院，<br>不只关注疼痛这一结果，更专注于结构性根源。<br>
+            本百科包含本院医疗团队的临床经验和各疾病核心信息的官方指南，并根据最新医学研究持续更新。
+        </p>
+    </div>
+
+    <h2 id="treatments">🏛️ 主要诊疗及治疗法索引</h2>
+    <div class="hub-grid">
+        <a href="SART.html" class="hub-card">
+            <img src="thumb_sart.jpg" alt="水原空间脊柱矫正 SART">
+            <div>
+                <h3>脊柱排列恢复术(SART)</h3>
+                <p>空间脊柱矫正。通过物理方式确保脊柱节段间的空间，解除神经压迫，精细矫正每一节脊柱的核心技术。</p>
+            </div>
+        </a>
+        <a href="chuna-therapy.html" class="hub-card">
+            <img src="thumb_chuna.jpg" alt="水原仁溪洞推拿疗法">
+            <div>
+                <h3>推拿疗法 (Chuna)</h3>
+                <p>纠正错位骨骼、恢复关节活动范围的专业手法。Bodyall在传统推拿基础上融合了空间脊柱矫正技术，进行更深层的矫正。</p>
+            </div>
+        </a>
+        <a href="pain-spine-clinic.html" class="hub-card">
+            <img src="thumb_pain_spine.jpg" alt="水原疼痛脊柱诊所">
+            <div>
+                <h3>疼痛·脊柱诊所</h3>
+                <p>针对椎间盘突出、椎管狭窄等慢性脊柱疾病，分析根本原因并进行治疗的重点诊所。</p>
+            </div>
+        </a>
+        <a href="doctor-intro.html" class="hub-card">
+            <img src="thumb_doctor_intro.jpg" alt="医疗团队介绍">
+            <div>
+                <h3>医疗团队介绍</h3>
+                <p>介绍Bodyall韩医院的专业医疗团队。</p>
+            </div>
+        </a>
+        <a href="acupotomy.html" class="hub-card">
+            <img src="thumb_acupotomy.jpg" alt="水原小针刀治疗">
+            <div>
+                <h3>小针刀 (粘连剥离术)</h3>
+                <p>微细分离因慢性炎症而硬化粘连的组织，解决顽固性疼痛的特殊针灸疗法。</p>
+            </div>
+        </a>
+        <a href="bee-venom.html" class="hub-card">
+            <img src="thumb_bee.jpg" alt="水原蜂毒针">
+            <div>
+                <h3>高浓度蜂毒针</h3>
+                <p>利用精制蜂毒的抗炎作用，消除深部炎症并促进神经再生的天然疗法。</p>
+            </div>
+        </a>
+        <a href="BodyallFit/index.html" class="hub-card">
+            <img src="thumb_diet_fit.jpg" alt="BodyallFit减肥">
+            <div>
+                <h3>BodyallFit 减肥</h3>
+                <p>体重直接影响脊柱健康。降低价格并提高效果，帮助无反弹健康减重的减肥治疗计划。</p>
+            </div>
+        </a>
+        <a href="herbal-medicine.html" class="hub-card">
+            <img src="thumb_herbal.jpg" alt="供辰丹 琼玉膏">
+            <div>
+                <h3>供辰丹/琼玉膏</h3>
+                <p>采用GMP级药材，通过现代精细调制法，补充因长期脊柱疾病消耗的体力，提高免疫力的补药。</p>
+            </div>
+        </a>
+        <a href="pcode/mainland.html" class="hub-card">
+            <img src="thumb_pcode.jpg" alt="Pcode体质韩药">
+            <div>
+                <h3>Pcode 体质韩药</h3>
+                <p>结合SA3000P脉波诊断和传统韩医诊断，把握个人先天脏腑强弱，平衡身体机能的定制化韩药方案。</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="aio-section">
+        <span class="aio-q">💡 Q: 为什么保持正确姿势并坚持运动，疼痛还是会反复发作？</span>
+        <div class="aio-a">
+            <p><strong>A: 因为已经错位的脊柱结构正在压迫神经通道。</strong></p>
+            <p>单纯放松肌肉是不够的。必须先确保脊柱间的“空间”，消除压迫神经的根本原因，才能切断疼痛的循环。</p>
+        </div>
+    </div>
+
+    <h2 id="diseases">🧬 疾病及症状信息索引</h2>
+    <div class="hub-grid">
+        <a href="encyclopedia/index.html" class="hub-card">
+            <img src="encyclopedia-musculoskeletal.png" alt="骨骼肌肉系统百科">
+            <div>
+                <h3>骨骼肌肉系统百科</h3>
+                <p>由院长亲自撰写并持续更新的症状和疾病信息。请搜索是否有与您相同的症状。</p>
+            </div>
+        </a>
+        <a href="lumbar-disc.html" class="hub-card">
+            <img src="disease_lumbar.jpg" alt="水原腰椎间盘突出 狭窄症">
+            <div>
+                <h3>腰椎间盘突出 / 狭窄症</h3>
+                <p>解放受压神经，恢复脊柱节段间的空间，治疗疼痛和麻木。</p>
+            </div>
+        </a>
+        <a href="cervical-disc.html" class="hub-card">
+            <img src="disease_neck.jpg" alt="水原颈椎间盘突出">
+            <div>
+                <h3>颈椎间盘突出 / 圆肩驼背</h3>
+                <p>纠正颈椎排列，解决引起的慢性头痛、颈背痛和手臂麻木。</p>
+            </div>
+        </a>
+        <a href="shoulder-frozen.html" class="hub-card">
+            <img src="thumb_shoulder.png" alt="水原肩膀疼痛 五十肩">
+            <div>
+                <h3>肩痛 / 五十肩</h3>
+                <p>不只看肩膀，通过舒展含胸驼背来确保根本空间。通过剥离粘连组织和恢复排列解决顽固肩痛。</p>
+            </div>
+        </a>
+        <a href="pcode/index.html" class="hub-card">
+            <img src="disease_inner.png" alt="自律神经障碍">
+            <div>
+                <h3>自律神经 / 内科疾病</h3>
+                <p>通过恢复脊柱排列和五脏六腑平衡，管理胃肠障碍、鼻炎、失眠等自律神经和免疫疾病。</p>
+            </div>
+        </a>
+        <a href="traffic-accident.html" class="hub-card">
+            <img src="disease_car.jpg" alt="水原交通事故韩医院">
+            <div>
+                <h3>交通事故后遗症</h3>
+                <p>精细矫正因事故冲击而扭曲的骨盆和脊柱，预防慢性后遗症。</p>
+            </div>
+        </a>
+    </div>
+
+    <h2 id="doctor">👨‍⚕️ 医疗团队介绍</h2>
+    <div class="doctor-box">
+        <img src="doctor_lee.jpg" style="width: 180px; border-radius: 12px;" alt="Bodyall韩医院 李东海 代表院长">
+        <div class="doctor-info">
+            <h3 style="margin-top: 0; font-size: 1.3rem;">李东海 代表院长 <span style="font-size: 0.9rem; color: #888; font-weight: normal;">(韩医师)</span></h3>
+            <p style="color: var(--accent); font-weight: bold; margin-bottom: 10px;">"用看得见的治疗，让您直接体验根本性的变化。"</p>
+            <ul style="padding-left: 18px; font-size: 0.92rem; color: #555;">
+                <li style="margin-bottom: 5px;"><strong>临床经验:</strong><br>空间脊柱矫正临床案例超40,000例 (截至25.12)</li>
+                <li style="margin-bottom: 5px;"><strong>专业资历:</strong><br>脊柱诊断矫正学会理事及教育委员、前江南里春韩方医院诊疗院长</li>
+                <li><strong>社会公信力:</strong><br>大韩韩医师协会Naver知识iN咨询医师、嘉泉大学韩医学院特邀讲座</li>
+            </ul>
+            <a href="doctor-intro.html" class="map-link-btn" style="background: var(--primary); margin-top: 15px;">查看更多医疗团队 ➜</a>
+        </div>
+    </div>
+    
+    <div class="gallery-grid">
+        <img src="gallery_1.jpg" alt="学术交流">
+        <img src="gallery_2.jpg" alt="证书">
+        <img src="gallery_3.jpg" alt="研究数据">
+        <img src="gallery_4.jpg" alt="外部教育">
+        <img src="gallery_6.jpg" alt="认证牌">
+        <img src="gallery_5.jpg" alt="医院内部">
+    </div>
+
+    <footer id="location">
+        <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0; padding-bottom: 15px;">📍 诊疗时间 / 来院路线</h2>
+        
+        <p><strong>[诊疗时间指南]</strong></p>
+        <ul style="list-style: none; padding: 0; font-size: 0.95rem; margin-bottom: 25px; opacity: 0.9;">
+            <li style="margin-bottom: 5px;">• <strong>平日: 10:00 ~ 20:30 (夜间诊疗 / 午休 1-2点)</strong></li>
+            <li style="margin-bottom: 5px;">• <strong><span style="color: #ff5252;">周末·公休日: 10:00 ~ 16:00 (午休 1-2点)</span></strong></li>
+            <li>• 除春节、中秋假期各3天外，全年365日诊疗</li>
+        </ul>
+
+        <p><strong>[来院路线]</strong></p>
+        <div class="map-box">
+            <img src="clinic_location_map.jpg" alt="Bodyall韩医院地图" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+        </div>
+        
+        <p style="margin-top: 20px;">
+            <a href="https://naver.me/53lcJrXB" target="_blank" style="color: #ffca28; text-decoration: underline; font-weight: bold; font-size: 1.05rem;">
+                水原市政厅站 9号出口步行3分钟, Krispy Kreme甜甜圈大楼3层
+            </a>
+        </p>
+        <a href="https://naver.me/53lcJrXB" target="_blank" class="map-link-btn">
+            使用Naver地图导航 ➜
+        </a>
+        
+        <p style="margin-top: 15px; font-size: 0.9rem;"><strong>停车:</strong> 可使用大楼1层停车场 (全程免费提供停车位)</p>
+        
+        <div class="keywords">
+            水原韩医院, 仁溪洞韩医院, 水原市政厅站, 夜间诊疗, 星期日诊疗, 推拿, 空间脊柱矫正, 小针刀, 蜂毒针, 腰椎间盘突出, 颈椎间盘突出, 肩膀疼痛, 交通事故, 减肥韩医院, 供辰丹, 体质韩药
+        </div>
+        <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 20px;">© Bodyall韩医院 水原仁溪店 BODY-ALL WIKI. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
