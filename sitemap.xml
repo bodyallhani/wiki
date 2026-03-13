@@ -11,6 +11,7 @@
 
   <url><loc>https://wiki.body-all.co.kr/lumbar-disc.html</loc><priority>0.7</priority></url>
   <url><loc>https://wiki.body-all.co.kr/cervical-disc.html</loc><priority>0.7</priority></url>
+  <url><loc>https://wiki.body-all.co.kr/shoulder-frozen.html</loc><priority>0.7</priority></url>
   <url><loc>https://wiki.body-all.co.kr/traffic-accident.html</loc><priority>0.7</priority></url>
 
   <url><loc>https://wiki.body-all.co.kr/encyclopedia/index.html</loc><priority>0.8</priority></url>
@@ -26,6 +27,7 @@
   <url><loc>https://wiki.body-all.co.kr/encyclopedia/0010.carpal-tunnel.html</loc><priority>0.7</priority></url>
   <url><loc>https://wiki.body-all.co.kr/encyclopedia/0011.tmj-disorder.html</loc><priority>0.7</priority></url>
 
+  <url><loc>https://wiki.body-all.co.kr/pcode/index.html</loc><priority>0.6</priority></url>
   <url><loc>https://wiki.body-all.co.kr/pcode/mainland.html</loc><priority>0.7</priority></url>
   <url><loc>https://wiki.body-all.co.kr/pcode/gu.html</loc><priority>0.6</priority></url>
   <url><loc>https://wiki.body-all.co.kr/pcode/su.html</loc><priority>0.6</priority></url>
