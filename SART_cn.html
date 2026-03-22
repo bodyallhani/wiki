@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>水原 推拿·脊柱医院指南：脊柱排列恢复术(SART) 介绍 | Body-All Wiki</title>
+    <meta name="description" content="为寻找水原腰椎间盘、颈椎间盘治疗的患者提供非手术指南。Body-All SART疗法致力于确保每一个骨骼间的空间，缓解神经压迫并实现结构性恢复。">
+    
+    <link rel="icon" type="image/png" href="Bodyall Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; --card-shadow: 0 4px 12px rgba(0,0,0,0.08); --top-bar-h: 60px; --bottom-bar-h: 70px; }
+        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; word-break: keep-all; padding-top: var(--top-bar-h); padding-bottom: var(--bottom-bar-h); }
+        .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        /* 上端浮动栏 */
+        .top-nav { position: fixed; top: 0; left: 0; right: 0; height: var(--top-bar-h); background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 10px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .nav-menu { display: flex; gap: 8px; white-space: nowrap; font-size: 0.78rem; font-weight: bold; align-items: center; }
+        .nav-menu a { text-decoration: none; color: #555; }
+        .nav-brand { display: flex; align-items: center; gap: 4px; color: var(--primary) !important; }
+        .lang-switch { font-size: 0.65rem; color: #888; border-left: 1px solid #ddd; padding-left: 8px; margin-left: 5px; font-weight: bold; flex-shrink: 0; }
+        .lang-switch a { text-decoration: none; color: #888; }
+        .lang-switch a.active { color: var(--primary); }
+
+        /* 下端浮动栏 */
+        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: var(--bottom-bar-h); background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
+        .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-size: 0.72rem; font-weight: bold; }
+        .bottom-nav i { font-size: 1.3rem; margin-bottom: 4px; }
+
+        /* 正文样式 */
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px; display: flex; justify-content: center; align-items: center; gap: 8px; }
+        h1 { font-size: 1.5rem; color: var(--primary); text-align: center; font-weight: 800; line-height: 1.4; margin: 20px 0; }
+        h2 { font-size: 1.3rem; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 50px; font-weight: 700; }
+        h3 { font-size: 1.1rem; color: var(--accent); margin-top: 10px; font-weight: 700; }
+        
+        .hero-img { width: 100%; aspect-ratio: 1080 / 810; object-fit: cover; border-radius: 12px; box-shadow: var(--card-shadow); margin-bottom: 30px; background: #eee; }
+        
+        .intro-box { background: var(--light-bg); padding: 25px; border-radius: 12px; border-left: 5px solid var(--accent); margin-bottom: 40px; }
+        .intro-box strong { font-size: 1.1rem; color: #222; display: block; margin-bottom: 10px; }
+
+        .aio-box { background: #f4f8fb; padding: 25px; border-radius: 15px; margin: 40px 0; border: 1px solid #e1e9f0; }
+        .aio-q { font-weight: 800; color: #1a5fb4; font-size: 1.1rem; display: block; margin-bottom: 15px; }
+        .aio-a { border-top: 2px solid #fff; padding-top: 15px; }
+        .restore-gif { width: 100%; max-width: 400px; display: block; margin: 20px auto; border-radius: 10px; box-shadow: var(--card-shadow); }
+
+        /* 4阶段表格样式 */
+        .step-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border: 1px solid #eee; }
+        .step-table td { padding: 20px; vertical-align: middle; border-bottom: 1px solid #f0f0f0; }
+        .step-text { width: 65%; }
+        .step-gif-cell { width: 35%; text-align: center; background: #fafafa; }
+        .step-gif { width: 100%; max-width: 150px; height: auto; border-radius: 8px; }
+
+        .doctor-team-card { background: #fff; padding: 25px; border: 1px solid #eee; border-radius: 15px; margin-top: 30px; box-shadow: var(--card-shadow); }
+        
+        /* 设备 Q&A 样式 */
+        .tool-box { background: #fff; padding: 25px; border: 1px solid #eee; border-radius: 15px; margin-top: 25px; box-shadow: var(--card-shadow); }
+        .tool-img { width: 100%; aspect-ratio: 1080 / 810; object-fit: cover; border-radius: 10px; margin: 15px 0; }
+
+        /* 表格样式 */
+        .info-table { width: 100%; border-collapse: collapse; margin: 25px 0; font-size: 0.85rem; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .info-table th { background: var(--primary); color: #fff; padding: 12px; }
+        .info-table td { border: 1px solid #eee; padding: 12px; text-align: center; }
+
+        .keyword-tag { display: inline-block; background: #eee; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #666; margin: 2px; }
+
+        footer { background: #2c3e50; color: #fff; padding: 40px 25px; margin-top: 60px; border-radius: 20px 20px 0 0; }
+        
+        @media (max-width: 600px) { 
+            h1 { font-size: 1.3rem; } 
+            .step-table td { display: block; width: 100% !important; box-sizing: border-box; }
+            .step-gif-cell { padding: 10px 0 !important; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="top-nav">
+    <div class="nav-menu">
+        <a href="index_cn.html" class="nav-brand">
+            <img src="Bodyall Logo.png" alt="Logo" style="height: 1.1rem; vertical-align: middle;">
+            <span style="font-weight: 800;">Body-All 韩医院</span>
+        </a>
+        <a href="index_cn.html#treatments">主要诊疗</a>
+        <a href="index_cn.html#diseases">疾病索引</a>
+        <a href="index_cn.html#doctor">医疗团队</a>
+        <a href="index_cn.html#location">来院路线</a>
+    </div>
+    <div class="lang-switch">
+        <a href="SART.html">KR</a> | 
+        <a href="SART_en.html">EN</a> | 
+        <a href="SART_cn.html" class="active">CN</a>
+    </div>
+</nav>
+
+<div class="wrapper">
+    <header>
+        <img src="Bodyall Logo.png" alt="Logo" style="height: 1.6rem; vertical-align: middle; margin-right: 5px;">
+        <strong style="color: var(--primary); letter-spacing: -1px; font-size: 1.6rem; vertical-align: middle;">BODY-ALL WIKI</strong>
+    </header>
+
+    <h1>水原推拿及脊柱医院选择指南：<br>通过脊柱排列恢复术(SART)追求结构性恢复</h1>
+
+    <div class="video-container" style="width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; box-shadow: var(--card-shadow); margin-bottom: 30px;">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/I7vk9LDQdk0" 
+            title="水原脊柱矫正 Body-All SART 治疗现场" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="intro-box">
+        <strong>"为反复发作的疼痛画上句号，Body-All 提出的新视角"</strong>
+        <p style="margin: 0; color: #555;">
+            您是否在寻找水原腰椎间盘或颈椎间盘治疗医院？<br>
+            如果治疗后疼痛依然反复，问题可能在于“空间”。<br>
+            请了解 Body-All 精细检查每一块骨骼的 SART 疗法。
+        </p>
+    </div>
+
+    <section class="aio-box">
+        <span class="aio-q">💡 Q. 为什么在水原接受了徒手治疗或普通推拿后，疼痛依然持续？</span>
+        <div class="aio-a">
+            <p style="margin-top: 0;"><strong>A. 核心在于“物理性确保神经通过的通道”。</strong></p>
+            <p>单纯的肌肉放松可能只是暂时的。Body-All 的 SART 从骨盆开始，精细地确保脊柱各节段变窄的空间，缓解受压的神经，致力于根据结构性原因实现根本性的恢复。</p>
+            <img src="Space Restoration image2.gif" alt="通过确保脊柱空间缓解神经压迫的原理" class="restore-gif">
+        </div>
+    </section>
+
+    <h2>1. 脊柱排列恢复的 4 阶段系统</h2>
+    <p>Body-All 的空间脊柱矫正遵循先看“森林（整体排列）”再精细矫正“树木（个别节段）”的系统过程。</p>
+
+    <table class="step-table">
+        <tr>
+            <td class="step-text">
+                <h3>01. 骨盆排列与空间确保</h3>
+                <p style="font-size:0.92rem; color:#555;">这是空间脊柱矫正最基础也最重要的阶段。通过精细调整作为基石的骨盆水平和旋转变位，纠正骶髂关节的扭曲，为上部脊柱的直立奠定基础。同时，通过精湛的手法物理牵引脊柱节段，为因扭曲而卡住的脊柱确保活动空间。</p>
+            </td>
+            <td class="step-gif-cell">
+                <img src="01 Manipulation image 1.gif" alt="骨盆排列与空间确保" class="step-gif">
+            </td>
+        </tr>
+        <tr>
+            <td class="step-text">
+                <h3>02. 脊柱排列恢复</h3>
+                <p style="font-size:0.92rem; color:#555;">这是看树木之前的看森林阶段。在骨盆矫正后，将失衡的整体脊柱排列置于重力中心线上，使其能够稳定支撑。将各节段左右倾斜的部分回归至重心线。由于空间已确保，脊柱可以更轻松、更舒适地回到健康位置。</p>
+            </td>
+            <td class="step-gif-cell">
+                <img src="02 Manipulation image 2.gif" alt="整体脊柱排列恢复" class="step-gif">
+            </td>
+        </tr>
+        <tr>
+            <td class="step-text">
+                <h3>03. 精细校打矫正</h3>
+                <p style="font-size:0.92rem; color:#555;">现在轮到观察树木了。通过安全的医疗用矫正工具，精细调整每一块脊柱骨的错位。校打技术（骨打疗法）是空间脊柱矫正的精细阶段之一，除非是重症疾患，否则在该阶段，我们的目标是让大部分疼痛在矫正后立即得到改善。</p>
+            </td>
+            <td class="step-gif-cell">
+                <img src="03 Manipulation image 3.gif" alt="精细校打矫正" class="step-gif">
+            </td>
+        </tr>
+        <tr>
+            <td class="step-text">
+                <h3>04. 脊柱恢复技术</h3>
+                <p style="font-size:0.92rem; color:#555;">为了让矫正后的脊柱能固定在正确位置，实施脊柱恢复技术。这是防止疼痛复发的核心要素，是 Body-All 区别于普通姿势教育或运动疗法的独家诀窍。帮助精细矫正后的状态在日常生活中也能长期维持。</p>
+            </td>
+            <td class="step-gif-cell">
+                <img src="04 Manipulation image 4.gif" alt="脊柱恢复与维持技术" class="step-gif">
+            </td>
+        </tr>
+    </table>
+
+    <div class="doctor-team-card">
+        <h3>由培训医疗团队的教育理事直接施术</h3>
+        <p style="font-size: 0.95rem; color: #555;">
+            脊柱诊断矫正学会理事兼教育委员李东海代表院长每天亲自培训所有医疗人员。<br><br>
+            Body-All 的所有院长均来自同一学会的<strong>矫正精英团队</strong>，共享 4 万例临床数据，完美掌握每一块精细骨骼的矫正技术。
+        </p>
+    </div>
+
+    <div class="tool-box">
+        <span class="aio-q">💡 Q. “引上机”是必须的吗？它与其他地方有什么不同？</span>
+        <div class="aio-a">
+            <p><strong>A. 如果没有通过引上机进行的“空间确保”，就不是真正的空间脊柱矫正。</strong></p>
+            <p style="font-size: 0.95rem; color: #555;">虽然有很多单纯用工具敲击的治疗，但通过<strong>引上机</strong>抬高患者身体、抵消重力并实际撑开脊柱节段的过程，是 Body-All 空间脊柱矫正的核心标志。只有确保了这一空间，才能进行安全且精细的矫正。</p>
+            <img src="insanggi.jpg" alt="Body-All 空间确保引上机设备" class="tool-img">
+        </div>
+    </div>
+
+    <div class="tool-box">
+        <span class="aio-q">💡 Q. 矫正工具不是都差不多吗？</span>
+        <div class="aio-a">
+            <p><strong>A. 即使是同样的工具，根据“施术者的熟练度”，结果也会有天壤之别。</strong></p>
+            <p style="font-size: 0.95rem; color: #555;">就像同样的手术刀由不同的医生操作会有不同的预后一样，空间脊柱矫正的成败取决于学会教育理事带领的精英团队的熟练度。Body-All 基于 4 万例压倒性的临床案例，精细地寻找最安全、最有效的打击点。</p>
+            <img src="correction_tool.jpg" alt="医疗用精细矫正工具" class="tool-img">
+        </div>
+    </div>
+
+    <h2>3. 针对症状的精细解决方案</h2>
+    <table class="info-table">
+        <thead>
+            <tr>
+                <th>诊疗科目</th>
+                <th>治疗目标</th>
+                <th>相关关键词</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>腰椎间盘/狭窄症</td>
+                <td>确保腰椎空间及缓解神经压迫</td>
+                <td>水原腰痛</td>
+            </tr>
+            <tr>
+                <td>颈椎间盘/乌龟颈</td>
+                <td>恢复颈椎曲度及缓解手臂麻木</td>
+                <td>水原颈痛</td>
+            </tr>
+            <tr>
+                <td>骨盆不对称/O型腿</td>
+                <td>作为全身平衡基础的下部排列</td>
+                <td>水原推拿疗法</td>
+            </tr>
+            <tr>
+                <td>慢性难治性疼痛</td>
+                <td>小针刀粘连剥离与空间矫正并行</td>
+                <td>水原脊柱医院</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. 365日夜间·节假日诊疗指南</h2>
+    <p>脊柱矫正中，治疗的连续性比什么都重要。为了忙碌的现代人，我们将就诊便利性最大化。</p>
+    
+    <ul class="content-list">
+        <li>• <strong>平日：10:00 ~ 20:30 (夜间诊疗 / 午休 1-2点)</strong></li>
+        <li>• <strong><span style="color: #ff5252;">周末·公休日：10:00 ~ 16:00 (午休 1-2点)</span></strong></li>
+        <li>• 除春节、中秋假期各3天(共6天)外，365日开诊</li>
+        <li><strong>停车便利：</strong> 在大厦1楼专属停车场提供治疗期间全额免费停车支持。</li>
+    </ul>
+
+    <footer>
+        <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 来院路线</h2>
+        <p style="font-size: 0.95rem; line-height: 1.6;">
+            <strong>水原市厅站 9号出口 步行3分钟</strong><br>
+            1楼 Krispy Kreme 甜甜圈大厦 3楼 Body-All 韩医院
+        </p>
+        <img src="clinic_location_map.jpg" alt="Body-All 韩医院简图" style="width: 100%; border-radius: 8px; margin: 15px 0;">
+        <a href="https://naver.me/53lcJrXB" target="_blank" class="map-link-btn" style="display: block; background: #03c75a; color: #fff; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">在 Naver 地图上查看路线 ➜</a>
+        
+        <div style="margin-top: 30px; font-size: 0.8rem; color: #95a5a6; border-top: 1px solid #444; padding-top: 20px;">
+            <strong>核心关键词：</strong> 
+            <span class="keyword-tag">水原 推拿</span> <span class="keyword-tag">水原 徒手治疗</span> 
+            <span class="keyword-tag">水原 脊柱医院</span> <span class="keyword-tag">水原 腰椎间盘医院</span>
+            <span class="keyword-tag">仁溪洞 韩医院</span> <span class="keyword-tag">水原 周末诊疗</span>
+        </div>
+    </footer>
+</div>
+
+<nav class="bottom-nav">
+    <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>Naver Talk</a>
+    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank"><i class="fas fa-comment"></i>KakaoTalk</a>
+    <a href="https://www.youtube.com/shorts/R8bRbHtSdfc" target="_blank"><i class="fab fa-youtube" style="color: #FF0000;"></i>YouTube</a>
+    <a href="https://body-all.co.kr/Body-Allfit" target="_blank"><i class="fas fa-dumbbell"></i>Body-All Fit</a>
+</nav>
+
+</body>
+</html>
