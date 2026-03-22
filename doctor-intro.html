@@ -20,6 +20,8 @@
         .nav-menu a { text-decoration: none; color: #555; }
         .nav-brand { display: flex; align-items: center; gap: 4px; color: var(--primary) !important; }
         .lang-switch { font-size: 0.65rem; color: #888; border-left: 1px solid #ddd; padding-left: 8px; margin-left: 5px; font-weight: bold; flex-shrink: 0; }
+        .lang-switch a { text-decoration: none; color: #888; }
+        .lang-switch a.active { color: var(--primary); }
 
         /* 하단 플로팅 바 */
         .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: var(--bottom-bar-h); background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
@@ -81,7 +83,11 @@
         <a href="#doctor-list">의료진</a>
         <a href="index.html#location">오시는길</a>
     </div>
-    <div class="lang-switch">KR | EN | CN</div>
+    <div class="lang-switch">
+        <a href="doctor-intro.html" class="active">KR</a> | 
+        <a href="doctor-intro_en.html">EN</a> | 
+        <a href="doctor-intro_cn.html">CN</a>
+    </div>
 </nav>
 
 <div class="wrapper">
@@ -131,13 +137,11 @@
 </nav>
 
 <script>
-// 사용자님이 제공해주신 정보를 바탕으로 네 분의 원장님 데이터를 Im-Kim-Lee-Bae 순서로 완벽하게 구성했습니다.
-// 사진 파일명은 한글로 하지 말고 반드시 영문(예: im.jpg, kim.jpg 등)으로 변경해서 깃허브에 올린 후, 아래 photo 부분에 적용해 주세요.
 const doctorsData = [
     {
         name: "임칙좌",
         role: "진료원장 (한의사)",
-        photo: "doctor_im.jpg", // 이 부분의 파일명을 변경해서 깃허브에 올린 영문 파일명과 맞춰주세요!
+        photo: "doctor_im.jpg",
         current: ["(현) 바디올한의원 SART 수석원장", "(전) 지양당한의원 진료원장"],
         history: [
             "척추도인안교학회 회원",
@@ -190,7 +194,6 @@ const doctorsData = [
     }
 ];
 
-// 데이터를 화면에 그려주는 함수 (수정 금지: 건드리면 디자인이 깨집니다!)
 function renderDoctors() {
     const container = document.getElementById('doctor-list');
     container.innerHTML = doctorsData.map(doc => `
