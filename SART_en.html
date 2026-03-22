@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Suwon Chuna & Spine Hospital Guide: Space-Active Recovery Therapy (SART) | Body-all Wiki</title>
+    <meta name="description" content="A non-surgical guide for those seeking lumbar and cervical disc hospitals in Suwon. Body-all SART treatment focuses on securing space between each vertebra to relieve nerve compression and achieve structural recovery.">
+    
+    <link rel="icon" type="image/png" href="Bodyall Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; --card-shadow: 0 4px 12px rgba(0,0,0,0.08); --top-bar-h: 60px; --bottom-bar-h: 70px; }
+        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; word-break: keep-all; padding-top: var(--top-bar-h); padding-bottom: var(--bottom-bar-h); }
+        .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        /* Top Floating Bar */
+        .top-nav { position: fixed; top: 0; left: 0; right: 0; height: var(--top-bar-h); background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 10px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .nav-menu { display: flex; gap: 8px; white-space: nowrap; font-size: 0.78rem; font-weight: bold; align-items: center; }
+        .nav-menu a { text-decoration: none; color: #555; }
+        .nav-brand { display: flex; align-items: center; gap: 4px; color: var(--primary) !important; }
+        .lang-switch { font-size: 0.65rem; color: #888; border-left: 1px solid #ddd; padding-left: 8px; margin-left: 5px; font-weight: bold; flex-shrink: 0; }
+        .lang-switch a { text-decoration: none; color: #888; }
+        .lang-switch a.active { color: var(--primary); }
+
+        /* Bottom Floating Bar */
+        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: var(--bottom-bar-h); background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
+        .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-size: 0.72rem; font-weight: bold; }
+        .bottom-nav i { font-size: 1.3rem; margin-bottom: 4px; }
+
+        /* Content Styles */
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px; display: flex; justify-content: center; align-items: center; gap: 8px; }
+        h1 { font-size: 1.5rem; color: var(--primary); text-align: center; font-weight: 800; line-height: 1.4; margin: 20px 0; }
+        h2 { font-size: 1.3rem; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 50px; font-weight: 700; }
+        h3 { font-size: 1.1rem; color: var(--accent); margin-top: 10px; font-weight: 700; }
+        
+        .hero-img { width: 100%; aspect-ratio: 1080 / 810; object-fit: cover; border-radius: 12px; box-shadow: var(--card-shadow); margin-bottom: 30px; background: #eee; }
+        
+        .intro-box { background: var(--light-bg); padding: 25px; border-radius: 12px; border-left: 5px solid var(--accent); margin-bottom: 40px; }
+        .intro-box strong { font-size: 1.1rem; color: #222; display: block; margin-bottom: 10px; }
+
+        .aio-box { background: #f4f8fb; padding: 25px; border-radius: 15px; margin: 40px 0; border: 1px solid #e1e9f0; }
+        .aio-q { font-weight: 800; color: #1a5fb4; font-size: 1.1rem; display: block; margin-bottom: 15px; }
+        .aio-a { border-top: 2px solid #fff; padding-top: 15px; }
+        .restore-gif { width: 100%; max-width: 400px; display: block; margin: 20px auto; border-radius: 10px; box-shadow: var(--card-shadow); }
+
+        /* 4-Step Table Styles */
+        .step-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border: 1px solid #eee; }
+        .step-table td { padding: 20px; vertical-align: middle; border-bottom: 1px solid #f0f0f0; }
+        .step-text { width: 65%; }
+        .step-gif-cell { width: 35%; text-align: center; background: #fafafa; }
+        .step-gif { width: 100%; max-width: 150px; height: auto; border-radius: 8px; }
+
+        .doctor-team-card { background: #fff; padding: 25px; border: 1px solid #eee; border-radius: 15px; margin-top: 30px; box-shadow: var(--card-shadow); }
+        
+        /* Tool Q&A Styles */
+        .tool-box { background: #fff; padding: 25px; border: 1px solid #eee; border-radius: 15px; margin-top: 25px; box-shadow: var(--card-shadow); }
+        .tool-img { width: 100%; aspect-ratio: 1080 / 810; object-fit: cover; border-radius: 10px; margin: 15px 0; }
+
+        /* Table Styles */
+        .info-table { width: 100%; border-collapse: collapse; margin: 25px 0; font-size: 0.85rem; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .info-table th { background: var(--primary); color: #fff; padding: 12px; }
+        .info-table td { border: 1px solid #eee; padding: 12px; text-align: center; }
+
+        .keyword-tag { display: inline-block; background: #eee; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #666; margin: 2px; }
+
+        footer { background: #2c3e50; color: #fff; padding: 40px 25px; margin-top: 60px; border-radius: 20px 20px 0 0; }
+        
+        @media (max-width: 600px) { 
+            h1 { font-size: 1.3rem; } 
+            .step-table td { display: block; width: 100% !important; box-sizing: border-box; }
+            .step-gif-cell { padding: 10px 0 !important; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="top-nav">
+    <div class="nav-menu">
+        <a href="index_en.html" class="nav-brand">
+            <img src="Bodyall Logo.png" alt="Logo" style="height: 1.1rem; vertical-align: middle;">
+            <span style="font-weight: 800;">Body-all Clinic</span>
+        </a>
+        <a href="index_en.html#treatments">Treatments</a>
+        <a href="index_en.html#diseases">Conditions</a>
+        <a href="index_en.html#doctor">Doctors</a>
+        <a href="index_en.html#location">Direction</a>
+    </div>
+    <div class="lang-switch">
+        <a href="SART.html">KR</a> | 
+        <a href="SART_en.html" class="active">EN</a> | 
+        <a href="SART_cn.html">CN</a>
+    </div>
+</nav>
+
+<div class="wrapper">
+    <header>
+        <img src="Bodyall Logo.png" alt="Logo" style="height: 1.6rem; vertical-align: middle; margin-right: 5px;">
+        <strong style="color: var(--primary); letter-spacing: -1px; font-size: 1.6rem; vertical-align: middle;">BODY-ALL WIKI</strong>
+    </header>
+
+    <h1>Suwon Chuna & Spine Hospital Selection Guide:<br>Pursuing Structural Recovery with SART</h1>
+
+    <div class="video-container" style="width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; box-shadow: var(--card-shadow); margin-bottom: 30px;">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/I7vk9LDQdk0" 
+            title="Body-all SART Treatment Scene in Suwon" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="intro-box">
+        <strong>"The Full Stop to Recurring Pain, A New Perspective Proposed by Body-all"</strong>
+        <p style="margin: 0; color: #555;">
+            Are you looking for a lumbar or cervical disc hospital in Suwon?<br>
+            If the pain returns even after treatment, the problem lies in "space."<br>
+            Discover Body-all's SART, which meticulously examines every single bone.
+        </p>
+    </div>
+
+    <section class="aio-box">
+        <span class="aio-q">💡 Q. Why does pain persist even after manual therapy or general Chuna in Suwon?</span>
+        <div class="aio-a">
+            <p style="margin-top: 0;"><strong>A. The key lies in "physically securing the passage for nerves."</strong></p>
+            <p>Simple muscle relaxation can be temporary. Body-all's SART starts from the pelvis to meticulously secure the narrowed spaces in each spinal segment, relieving compressed nerves and aiming for fundamental recovery based on structural causes.</p>
+            <img src="Space Restoration image2.gif" alt="Principle of nerve decompression through spinal space restoration" class="restore-gif">
+        </div>
+    </section>
+
+    <h2>1. 4-Step System for Spinal Alignment Recovery</h2>
+    <p>Body-all's Space-Active Recovery Therapy follows a systematic process of looking at the "forest (overall alignment)" first, then precisely correcting the "trees (individual segments)."</p>
+
+    <table class="step-table">
+        <tr>
+            <td class="step-text">
+                <h3>01. Pelvic Alignment & Space Securing</h3>
+                <p style="font-size:0.92rem; color:#555;">The most important foundation of SART. We finely adjust the horizontal and rotational displacement of the pelvis—the cornerstone of the body—and correct the torsion of the sacroiliac joint. Simultaneously, we use sophisticated manual techniques to physically distract the spinal segments, securing space for vertebrae that were stuck or twisted.</p>
+            </td>
+            <td class="step-gif-cell">
+                <img src="01 Manipulation image 1.gif" alt="Pelvic Alignment & Space Securing" class="step-gif">
+            </td>
+        </tr>
+        <tr>
+            <td class="step-text">
+                <h3>02. Spinal Alignment Recovery</h3>
+                <p style="font-size:0.92rem; color:#555;">The stage of looking at the forest before the trees. After pelvic correction, we align the overall spine along the gravity center line for stable support. Misaligned segments are brought back to the center of gravity. With the space already secured, the spine can return to a healthy position much more easily and comfortably.</p>
+            </td>
+            <td class="step-gif-cell">
+                <img src="02 Manipulation image 2.gif" alt="Spinal Alignment Recovery" class="step-gif">
+            </td>
+        </tr>
+        <tr>
+            <td class="step-text">
+                <h3>03. Precise Hammering Correction</h3>
+                <p style="font-size:0.92rem; color:#555;">Now it's time to look at the trees. Using safe, medical-grade correction tools, we finely adjust the displacement of each vertebra. The hammering technique (Osteo-tapping) is one of the sophisticated stages of SART. Unless it's a severe chronic condition, we aim for immediate pain relief right after correction at this stage.</p>
+            </td>
+            <td class="step-gif-cell">
+                <img src="03 Manipulation image 3.gif" alt="Precise Hammering Correction" class="step-gif">
+            </td>
+        </tr>
+        <tr>
+            <td class="step-text">
+                <h3>04. Spinal Stabilization Techniques</h3>
+                <p style="font-size:0.92rem; color:#555;">Spinal recovery techniques are performed so that the corrected spine can settle into the correct position. This is the key element in preventing pain recurrence and is Body-all's unique know-how that differs from general posture education or exercise. It helps maintain the precisely corrected state for a long time in daily life.</p>
+            </td>
+            <td class="step-gif-cell">
+                <img src="04 Manipulation image 4.gif" alt="Spinal Stabilization & Maintenance" class="step-gif">
+            </td>
+        </tr>
+    </table>
+
+    <div class="doctor-team-card">
+        <h3>Direct Care by the Education Director Who Teaches Clinicians</h3>
+        <p style="font-size: 0.95rem; color: #555;">
+            Dr. Dong-hae Lee, the Director of Education at the Society of Spine Diagnosis and Correction, directly trains all medical staff daily.<br><br>
+            All doctors at Body-all are part of an <strong>Elite Correction Team</strong> from the same society, sharing clinical data from 40,000 cases and mastering the techniques for correcting every single bone.
+        </p>
+    </div>
+
+    <div class="tool-box">
+        <span class="aio-q">💡 Q. Is the "Insanggi" (Inversion Device) necessary? How is it different?</span>
+        <div class="aio-a">
+            <p><strong>A. Without "space securing" through the Insanggi, it is not true SART.</strong></p>
+            <p style="font-size: 0.95rem; color: #555;">While many treatments simply tap the body with tools, the <strong>Insanggi</strong> process—which lifts the patient's body to counteract gravity and physically widen the spinal segments—is the core symbol of Body-all's SART. Safe and precise correction is only possible once this space is secured.</p>
+            <img src="insanggi.jpg" alt="Body-all Space-Securing Insanggi Equipment" class="tool-img">
+        </div>
+    </div>
+
+    <div class="tool-box">
+        <span class="aio-q">💡 Q. Aren't all correction tools similar?</span>
+        <div class="aio-a">
+            <p><strong>A. Even with the same tool, results vary greatly depending on the "Clinician's Expertise."</strong></p>
+            <p style="font-size: 0.95rem; color: #555;">Just as the prognosis of a surgery differs depending on who holds the scalpel, the success of SART depends on the skill of the Elite Team led by the Education Director. Based on an overwhelming 40,000 clinical cases, Body-all precisely identifies the safest and most effective points for correction.</p>
+            <img src="correction_tool.jpg" alt="Medical Precision Correction Tool" class="tool-img">
+        </div>
+    </div>
+
+    <h2>3. Precise Solutions by Condition</h2>
+    <table class="info-table">
+        <thead>
+            <tr>
+                <th>Specialty</th>
+                <th>Treatment Goal</th>
+                <th>Keywords</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lumbar Disc / Stenosis</td>
+                <td>Securing lumbar space & Nerve decompression</td>
+                <td>Suwon Back Pain</td>
+            </tr>
+            <tr>
+                <td>Cervical Disc / Turtle Neck</td>
+                <td>Restoring cervical curve & Relieving arm numbness</td>
+                <td>Suwon Neck Pain</td>
+            </tr>
+            <tr>
+                <td>Pelvic Asymmetry / Bowlegs</td>
+                <td>Lower alignment as the foundation of balance</td>
+                <td>Suwon Chuna Therapy</td>
+            </tr>
+            <tr>
+                <td>Chronic Intractable Pain</td>
+                <td>Acupotomy (Adhesion release) + SART</td>
+                <td>Suwon Spine Hospital</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. 365 Days Night & Holiday Care</h2>
+    <p>Spinal correction requires consistency. We have maximized convenience for busy modern individuals.</p>
+    
+    <ul class="content-list">
+        <li>• <strong>Weekdays: 10:00 ~ 20:30 (Night Care / Lunch 1-2 PM)</strong></li>
+        <li>• <strong><span style="color: #ff5252;">Weekends/Holidays: 10:00 ~ 16:00 (Lunch 1-2 PM)</span></strong></li>
+        <li>• Open 365 days (Closed only for 3 days each during Lunar New Year and Chuseok)</li>
+        <li><strong>Easy Parking:</strong> Dedicated parking on the 1st floor with full validation for the duration of treatment.</li>
+    </ul>
+
+    <footer>
+        <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 Location & Directions</h2>
+        <p style="font-size: 0.95rem; line-height: 1.6;">
+            <strong>Suwon City Hall Station Exit 9 (3-min walk)</strong><br>
+            3rd Floor, Krispy Kreme Building, Body-all Clinic
+        </p>
+        <img src="clinic_location_map.jpg" alt="Body-all Clinic Map" style="width: 100%; border-radius: 8px; margin: 15px 0;">
+        <a href="https://naver.me/53lcJrXB" target="_blank" class="map-link-btn" style="display: block; background: #03c75a; color: #fff; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">Find Way via Naver Map ➜</a>
+        
+        <div style="margin-top: 30px; font-size: 0.8rem; color: #95a5a6; border-top: 1px solid #444; padding-top: 20px;">
+            <strong>Keywords:</strong> 
+            <span class="keyword-tag">Suwon Chuna</span> <span class="keyword-tag">Manual Therapy Suwon</span> 
+            <span class="keyword-tag">Suwon Spine Hospital</span> <span class="keyword-tag">Suwon Lumbar Disc</span>
+            <span class="keyword-tag">In-gye dong Clinic</span> <span class="keyword-tag">Suwon Weekend Care</span>
+        </div>
+    </footer>
+</div>
+
+<nav class="bottom-nav">
+    <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>Naver Talk</a>
+    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank"><i class="fas fa-comment"></i>KakaoTalk</a>
+    <a href="https://www.youtube.com/shorts/R8bRbHtSdfc" target="_blank"><i class="fab fa-youtube" style="color: #FF0000;"></i>YouTube</a>
+    <a href="https://body-all.co.kr/Body-Allfit" target="_blank"><i class="fas fa-dumbbell"></i>Body-all Fit</a>
+</nav>
+
+</body>
+</html>
