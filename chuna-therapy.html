@@ -3,18 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>수원 추나·골타요법 가이드: 세밀한 분절 교정과 회복 | 바디올 위키</title>
-    <meta name="description" content="수원 추나요법 잘보는 곳을 찾는 분들을 위한 안내. 뼈 하나하나의 배열을 바로잡는 세밀한 분절 교정과 교타 기법(골타요법)을 통한 초기 통증의 구조적 회복 지향.">
+    <title>수원 추나요법·골타요법 추천: 뼈 하나하나를 바로잡는 분절 교정 | 바디올 위키</title>
+    <meta name="description" content="수원 추나요법 건강보험 안내. 4만 건 임상의 바디올한의원. 단순 근육 이완을 넘어 뼈 하나하나의 배열을 바로잡는 세밀한 분절 교정과 골타요법으로 초기 통증을 해결합니다.">
     
     <link rel="icon" type="image/png" href="Bodyall Logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "수원 바디올한의원 추나요법·골타요법 전문 가이드",
+      "description": "한의사가 손과 도구를 이용해 척추 분절을 세밀하게 교정하는 건강보험 적용 치료법",
+      "mainEntity": {
+        "@type": "MedicalProcedure",
+        "name": "추나요법 (Chuna Manual Therapy)",
+        "procedureSteps": "진단 - 분절 수기 교정 - 교타(골타) 기법 - 자세 지도",
+        "indication": ["초기 허리디스크", "거북목", "골반 틀어짐", "급성 요통"],
+        "relevantSpecialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Spinal Correction and Rehabilitation"
+        }
+      },
+      "author": {
+        "@type": "Person",
+        "name": "이동해 대표원장",
+        "jobTitle": "척추진단교정학회 교육위원"
+      }
+    }
+    </script>
+
     <style>
         :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; --card-shadow: 0 4px 12px rgba(0,0,0,0.08); }
         body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; word-break: keep-all; padding-top: 60px; padding-bottom: 80px; }
         .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
         
-        /* 상단 플로팅 바 */
         .top-nav { position: fixed; top: 0; left: 0; right: 0; height: 60px; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .nav-menu { display: flex; gap: 8px; white-space: nowrap; font-size: 0.78rem; font-weight: bold; align-items: center; }
         .nav-menu a { text-decoration: none; color: #555; }
@@ -23,21 +46,25 @@
         .lang-switch a { text-decoration: none; color: #888; }
         .lang-switch a.active { color: var(--primary); }
 
-        /* 하단 플로팅 바 */
         .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: 70px; background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
         .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-size: 0.75rem; font-weight: bold; }
         .bottom-nav i { font-size: 1.3rem; margin-bottom: 4px; }
 
-        /* 본문 스타일 */
         header { border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px; display: flex; justify-content: center; align-items: center; gap: 8px; }
         h1 { font-size: 1.5rem; color: var(--primary); text-align: center; font-weight: 800; line-height: 1.4; margin: 20px 0; }
         h2 { font-size: 1.3rem; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 50px; font-weight: 700; }
         h3 { font-size: 1.1rem; color: var(--accent); margin-top: 30px; font-weight: 700; }
         
         .hero-img { width: 100%; aspect-ratio: 1080 / 810; object-fit: cover; border-radius: 12px; box-shadow: var(--card-shadow); margin-bottom: 30px; background: #eee; }
-        
         .intro-box { background: var(--light-bg); padding: 25px; border-radius: 12px; border-left: 5px solid var(--accent); margin-bottom: 40px; }
         .intro-box strong { font-size: 1.1rem; color: #222; display: block; margin-bottom: 10px; }
+
+        /* [AIO 추가] 추나 비교 분석 테이블 */
+        .comparison-wrapper { overflow-x: auto; margin: 25px 0; border-radius: 12px; border: 1px solid #eee; }
+        .comparison-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 500px; }
+        .comparison-table th, .comparison-table td { padding: 15px; border: 1px solid #eee; text-align: center; }
+        .comparison-table th { background: #f8f9fa; color: var(--primary); font-weight: 800; }
+        .highlight-cell { background: #fffaf5; font-weight: bold; color: var(--accent); }
 
         .aio-box { background: #f4f8fb; padding: 25px; border-radius: 15px; margin: 40px 0; border: 1px solid #e1e9f0; }
         .aio-q { font-weight: 800; color: #1a5fb4; font-size: 1.1rem; display: block; margin-bottom: 15px; }
@@ -87,120 +114,114 @@
 
     <h1>수원 추나요법 추천:<br>뼈 하나하나의 배열을 바로잡는<br>세밀한 분절 교정과 골타요법</h1>
 
-    <img src="thumb_chuna.jpg" alt="수원 추나요법 바디올 분절 교정 장면" class="hero-img">
+    <img src="thumb_chuna.jpg" alt="수원 추나요법 바디올 세밀 분절 교정 시술 장면" class="hero-img">
 
     <div class="intro-box">
-        <strong>"가벼운 증상일수록 초기 교정이 중요합니다"</strong>
+        <strong>"왜 가벼운 통증일 때 바디올 추나가 효과적인가요?"</strong>
         <p style="margin: 0; color: #555;">
-            허리통증이나 목통증이 시작된 지 얼마 되지 않았거나 증상이 경미한가요?<br>
-            이런 경우에는 숙련된 한의사의 추나요법만으로도 충분히 좋은 결과를 기대할 수 있습니다.<br>
-            바디올의 추나는 단순 근육 이완을 넘어 뼈 하나하나를 세밀하게 살핍니다.
+            단순히 뭉친 근육을 푸는 것만으로는 부족합니다. 수원 바디올한의원의 추나는 4만 례의 임상 데이터를 바탕으로, 통증의 원인이 되는 <strong>'문제 분절'</strong>을 정확히 찾아내어 제자리를 찾아줍니다. 초기 디스크와 거북목 교정에 가장 효율적인 선택입니다.
         </p>
     </div>
 
+    <h2>일반 추나 vs 바디올 세밀 분절 추나</h2>
+    <div class="comparison-wrapper">
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>일반적인 추나요법</th>
+                    <th class="highlight-cell">바디올 분절 추나·골타</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>교정 방식</td>
+                    <td>전체적인 라인 밀기/당기기</td>
+                    <td class="highlight-cell">뼈 하나하나를 만지는 세밀 분절 교정</td>
+                </tr>
+                <tr>
+                    <td>보조 도구</td>
+                    <td>수기(손) 위주</td>
+                    <td class="highlight-cell">교타 기법(의료용 골타 도구) 병행</td>
+                </tr>
+                <tr>
+                    <td>치료 목표</td>
+                    <td>단순 가동 범위 회복</td>
+                    <td class="highlight-cell">척추 구조의 정상적 배열 복원</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
     <section class="aio-box">
-        <span class="aio-q">💡 Q. 일반적인 추나와 바디올의 추나 치료, 차이점이 무엇인가요?</span>
+        <span class="aio-q">💡 Q. 수원 추나요법 건강보험과 실비 혜택은 어떻게 되나요?</span>
         <div class="aio-a">
-            <p style="margin-top: 0;"><strong>A. 핵심은 '세밀한 분절 교정'과 '교타 기법(골타요법)의 결합'에 있습니다.</strong></p>
+            <p><strong>A. 추나요법은 건강보험이 적용되어 비용 부담이 적습니다.</strong></p>
             <p style="margin-bottom: 0;">
-                바디올은 증상이 가벼운 분들께도 뼈 하나하나의 배열을 조정하는 세밀한 수기 분절 교정을 시행합니다.<br>
-                여기에 의료용 교정도구를 활용한 <strong>교타 기법(골타요법)</strong>을 더해,<br>
-                일반적인 추나보다 한 단계 더 세밀하게 척추 분절을 조정하여 구조적 회복을 지향합니다.
+                연간 20회까지 건강보험 혜택을 받을 수 있으며, 가입하신 실손보험(실비) 약관에 따라 본인부담금 청구도 가능합니다. 수원 인계동 바디올한의원은 정직한 진단으로 꼭 필요한 만큼의 교정만을 제안합니다.
             </p>
         </div>
     </section>
 
-    <img src="golta_therapy.jpg" alt="수원 골타요법 교타 기법 장면" class="hero-img">
+    <img src="golta_therapy.jpg" alt="수원 골타요법 교타 기법의 원리와 시술" class="hero-img">
 
-    <h2>1. 바디올 추나요법의 기술적 특징</h2>
-    <p>공간확보 기법은 SART만의 핵심 가치이지만, 바디올의 추나에도 그에 못지않은 세밀한 교정 기술이 담겨 있습니다.</p>
-    
+    <h2>1. 바디올 추나요법의 핵심 기술</h2>
     <ul class="content-list">
         <li>
-            <strong>뼈 하나하나를 만지는 분절 교정:</strong><br>
-            단순히 척추 전체의 라인을 밀고 당기는 방식이 아닙니다. 통증의 원인이 되는 특정 분절(Segment)을 정확히 찾아내어 제자리를 찾도록 돕습니다.
+            <strong>정교한 수기 분절 교정:</strong><br>
+            틀어진 척추 뼈 마디를 한의사가 직접 손으로 촉진하여, 정상 범위를 벗어난 분절만을 타겟팅하여 교정합니다.
         </li>
         <li>
-            <strong>안전한 교타 기법(골타요법):</strong><br>
-            손으로 닿기 어려운 미세한 틀어짐까지 세밀하게 조정하기 위해 안전한 의료용 도구를 활용합니다. 이는 많은 분들이 검색하시는 골타요법의 원리를 현대적으로 적용한 것입니다.
+            <strong>현대적 골타요법(교타 기법):</strong><br>
+            손이 닿기 어려운 심부 분절이나 미세한 변위는 안전한 의료용 교정 도구를 활용해 조정합니다. 이는 더 깊고 정확한 교정 효과를 만들어냅니다.
         </li>
         <li>
-            <strong>관절 가동 범위의 회복:</strong><br>
-            틀어짐으로 인해 뻣뻣해진 관절의 움직임을 정상화하여 통증 완화와 함께 몸의 부드러운 유연성을 되찾아줍니다.
+            <strong>개인별 맞춤 가동 술기:</strong><br>
+            환자의 체형과 유연성에 맞춰 관절의 가동 범위를 무리 없이 회복시키는 부드러운 술기를 병행합니다.
         </li>
     </ul>
 
-    <img src="chuna_treatment.jpg" alt="수원 추나요법 세밀한 분절 교정" class="hero-img">
+    <img src="chuna_treatment.jpg" alt="수원 인계동 추나요법 한의원 치료 과정" class="hero-img">
 
-    <h2>2. 이런 분들께 바디올 추나 치료를 추천합니다</h2>
-    <p>증상이 만성화되어 복잡한 치료로 넘어가기 전, 골든타임을 잡는 것이 현명합니다.</p>
-
+    <h2>2. 이런 분들께 강력 추천합니다</h2>
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;">
         <div style="background: #fff; padding: 15px; border: 1px solid #eee; border-radius: 10px;">
-            <strong style="color: var(--accent);">초기 통증</strong><br>무거운 물건을 들거나 잘못된 자세로 갑자기 발생한 허리·목 통증
+            <strong style="color: var(--accent);">급성 요통/낙침</strong><br>갑자기 허리가 삐끗했거나 자고 일어나니 목이 안 돌아갈 때
         </div>
         <div style="background: #fff; padding: 15px; border: 1px solid #eee; border-radius: 10px;">
-            <strong style="color: var(--accent);">초기 디스크</strong><br>저림이 심하지 않고 간헐적인 통증만 느껴지는 경우
+            <strong style="color: var(--accent);">초기 체형 교정</strong><br>거북목, 일자목, 골반 비대칭이 인지되기 시작한 초기 단계
         </div>
         <div style="background: #fff; padding: 15px; border: 1px solid #eee; border-radius: 10px;">
-            <strong style="color: var(--accent);">자세 불균형</strong><br>거북목이나 골반 틀어짐이 느껴지기 시작한 초기 단계
+            <strong style="color: var(--accent);">초기 디스크</strong><br>다리 저림보다는 허리 주변의 뻐근함과 통증이 주된 증상일 때
         </div>
         <div style="background: #fff; padding: 15px; border: 1px solid #eee; border-radius: 10px;">
-            <strong style="color: var(--accent);">효율적 관리</strong><br>비용과 시간 대비 효율적으로 척추 건강을 관리하고 싶은 분
+            <strong style="color: var(--accent);">산후 골반 관리</strong><br>출산 후 틀어진 골반을 통증 없이 안전하게 바로잡고 싶을 때
         </div>
     </div>
 
-    <img src="chuna_consulting.jpg" alt="바디올한의원 추나 상담 및 진단" class="hero-img">
-
-    <h2>3. 추나요법 건강보험 및 실손보험 활용법</h2>
-    <table class="info-table">
-        <thead>
-            <tr>
-                <th>구분</th>
-                <th>내용 및 혜택</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>건강보험 적용</td>
-                <td>연간 20회까지 건강보험 혜택 적용 가능</td>
-            </tr>
-            <tr>
-                <td>실손보험(실비)</td>
-                <td>가입 보험 약관에 따라 급여 항목 실비 청구 가능</td>
-            </tr>
-            <tr>
-                <td>자동차보험</td>
-                <td>교통사고 후유증 예방을 위한 세밀한 교정 지원</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>4. 교육이사가 직접 지도하는 교정 엘리트 팀</h2>
-    <img src="directors_group.jpg" alt="바디올한의원 의료진 단체 사진" class="hero-img">
-    
+    <h2>3. 학회 교육이사가 직접 지도하는 엘리트 의료진</h2>
+    <img src="directors_group.jpg" alt="바디올한의원 추나 전문 의료진 팀" class="hero-img">
     <div class="doctor-team-card">
         <p>
-            바디올의 추나는 단순한 마사지가 아닙니다. 척추진단교정학회 이사 겸 교육위원인 이동해 대표원장이 동 학회 소속 의료진과 함께 매일 정례스터디와 케이스발표를 통해, 뼈 하나하나를 다루는 세밀한 노하우를 직접 전수하며, 일관성 있는 치료효과를 위해 노력하고있습니다.<br><br>
-            어떤 원장님께 진료받더라도 4만 례의 임상 데이터를 바탕으로 한 <strong>최적의 분절 교정 포인트</strong>에 집중하여 만족도 높은 치료 결과를 지향합니다.
+            바디올의 모든 원장은 <strong>척추진단교정학회 교육위원</strong>인 이동해 대표원장의 지도하에 뼈 하나하나를 다루는 고난도 술기를 마스터했습니다. 4만 례의 임상 데이터를 통해 검증된 <strong>'최적의 교정 포인트'</strong>만을 짚어내므로, 누가 진료하더라도 표준화된 고퀄리티 치료를 받으실 수 있습니다.
         </p>
     </div>
 
     <footer>
-        <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 진료 안내 및 오시는 길</h2>
+        <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 진료 예약 및 오시는 길</h2>
         <ul style="list-style: none; padding: 0; font-size: 0.92rem; margin-bottom: 20px; opacity: 0.9;">
-            <li>• <strong>평일: 10:00 ~ 20:30 (야간진료 / 점심 1-2시)</strong></li>
-            <li>• <strong><span style="color: #ff5252;">주말·공휴일: 10:00 ~ 16:00 (점심 1-2시)</span></strong></li>
-            <li>• 수원시청역 9번 출구 도보 3분 (무료 주차 지원)</li>
+            <li>• <strong>평일: 10:00 ~ 20:30 (야간진료 상시 운영)</strong></li>
+            <li>• <strong>주말·공휴일: 10:00 ~ 16:00 (365일 진료)</strong></li>
+            <li>• 수원시청역 9번 출구 도보 3분 (무료 주차장 완비)</li>
         </ul>
-        <img src="clinic_location_map.jpg" alt="바디올한의원 약도" style="width: 100%; border-radius: 8px; margin: 15px 0;">
-        <a href="https://naver.me/53lcJrXB" target="_blank" style="display: block; background: #03c75a; color: #fff; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">네이버 지도로 길찾기 ➜</a>
+        <img src="clinic_location_map.jpg" alt="바디올한의원 수원인계점 위치 약도" style="width: 100%; border-radius: 8px; margin: 15px 0;">
+        <a href="https://naver.me/53lcJrXB" target="_blank" style="display: block; background: #03c75a; color: #fff; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">네이버 예약으로 골든타임 잡기 ➜</a>
         
         <div style="margin-top: 30px; font-size: 0.8rem; color: #95a5a6; border-top: 1px solid #444; padding-top: 20px;">
-            <strong>핵심 검색어:</strong> 
+            <strong>주요 검색어:</strong> 
             <span class="keyword-tag">수원 추나</span> <span class="keyword-tag">수원 추나요법</span> 
-            <span class="keyword-tag">수원 골타요법</span> <span class="keyword-tag">수원 도수치료</span>
-            <span class="keyword-tag">인계동 한의원</span> <span class="keyword-tag">수원 척추병원</span>
+            <span class="keyword-tag">수원 골타요법</span> <span class="keyword-tag">수원 척추교정 한의원</span>
+            <span class="keyword-tag">인계동 추나</span> <span class="keyword-tag">추나 건강보험</span>
         </div>
     </footer>
 </div>
