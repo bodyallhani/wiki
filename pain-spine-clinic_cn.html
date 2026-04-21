@@ -9,12 +9,32 @@
     <link rel="icon" type="image/png" href="Bodyall Logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Body-All 韩医院 痛症·脊柱诊所",
+      "description": "基于全身体态分析(Ex-body)和精密理学检查的定制型痛症治疗解决方案",
+      "medicalSpecialty": ["Pain Management", "Spinal Correction", "Acupotomy"],
+      "availableService": {
+        "@type": "MedicalProcedure",
+        "name": "骨骼肌肉系统痛症诊断与矫正治疗",
+        "procedureSteps": "Ex-body 分析 - 精密理学检查(Empty Can, SLR 等) - 定制型矫正与针灸治疗"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "水原市厅站 9号出口 仁溪洞",
+        "addressLocality": "水原市",
+        "addressRegion": "京畿道"
+      }
+    }
+    </script>
+
     <style>
         :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; --card-shadow: 0 4px 12px rgba(0,0,0,0.08); --top-bar-h: 60px; --bottom-bar-h: 70px; }
         body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; word-break: keep-all; padding-top: var(--top-bar-h); padding-bottom: var(--bottom-bar-h); }
         .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
         
-        /* 上端浮动栏 */
         .top-nav { position: fixed; top: 0; left: 0; right: 0; height: var(--top-bar-h); background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 10px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .nav-menu { display: flex; gap: 8px; white-space: nowrap; font-size: 0.78rem; font-weight: bold; align-items: center; }
         .nav-menu a { text-decoration: none; color: #555; }
@@ -23,12 +43,10 @@
         .lang-switch a { text-decoration: none; color: #888; }
         .lang-switch a.active { color: var(--primary); }
 
-        /* 下端浮动栏 */
         .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: var(--bottom-bar-h); background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
         .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-size: 0.72rem; font-weight: bold; }
         .bottom-nav i { font-size: 1.3rem; margin-bottom: 4px; }
 
-        /* 正文样式 */
         header { border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px; display: flex; justify-content: center; align-items: center; gap: 8px; }
         h1 { font-size: 1.5rem; color: var(--primary); text-align: center; font-weight: 800; line-height: 1.4; margin: 20px 0; }
         h2 { font-size: 1.35rem; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 60px; font-weight: 700; }
@@ -38,6 +56,13 @@
         .aio-box { background: #f4f8fb; padding: 25px; border-radius: 15px; margin: 40px 0; border: 1px solid #e1e9f0; }
         .aio-q { font-weight: 800; color: #1a5fb4; font-size: 1.1rem; display: block; margin-bottom: 15px; }
         .aio-a { border-top: 2px solid #fff; padding-top: 15px; }
+
+        /* [AIO 升级] 痛症治疗对比表样式 */
+        .comparison-wrapper { overflow-x: auto; margin: 25px 0; border-radius: 12px; border: 1px solid #eee; }
+        .comparison-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 500px; }
+        .comparison-table th, .comparison-table td { padding: 15px; border: 1px solid #eee; text-align: center; }
+        .comparison-table th { background: #f8f9fa; color: var(--primary); font-weight: 800; }
+        .highlight-cell { background: #fffaf5; font-weight: bold; color: var(--accent); }
 
         .content-list { padding-left: 20px; }
         .content-list li { margin-bottom: 15px; }
@@ -84,32 +109,61 @@
 
     <h1>水原痛症中心推荐：<br>按病因定制诊断与365日诊疗，切断慢性疼痛的连锁反应</h1>
 
-    <img src="thumb_pain_spine.jpg" alt="水原 Body-All 韩医院痛症中心精细诊察" class="hero-img">
+    <img src="thumb_pain_spine.jpg" alt="水原 Body-All 韩医院痛症中心精细诊察与体态分析" class="hero-img">
 
-    <p>从突然的肌肉僵硬抽筋到陈旧性的腰颈疼痛，痛症不仅仅是不便，更是降低生活质量的信号。水原仁溪洞 Body-All 韩医院从<strong>“为什么会疼？”</strong>这一根本问题出发，致力于提供针对患者体型与症状优化的精细治疗。</p>
+    <p>水原仁溪洞 Body-All 韩医院不只满足于缓解一时的疼痛，我们更关注 <strong>“为什么疼痛会反复？”</strong>。通过 4 万例临床经验总结出的独特诊疗系统，分析您的动力链 (Kinetic Chain) 结构，从根本上解决隐藏的痛点。</p>
+
+    <h2>普通痛症治疗 vs Body-All 痛症·脊柱诊所</h2>
+    <div class="comparison-wrapper">
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>区分</th>
+                    <th>一般的痛症治疗</th>
+                    <th class="highlight-cell">Body-All 痛症解决方案</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>诊断方式</td>
+                    <td>以疼痛部位为主的局部检查</td>
+                    <td class="highlight-cell">Ex-body 全身排列分析</td>
+                </tr>
+                <tr>
+                    <td>治疗观点</td>
+                    <td>消除炎症及放松肌肉</td>
+                    <td class="highlight-cell">修复结构性失衡 (动力链结构)</td>
+                </tr>
+                <tr>
+                    <td>核心技术</td>
+                    <td>单纯物理治疗及针刺</td>
+                    <td class="highlight-cell">SART空间矫正 + 小针刀 + 蜂毒针</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <section class="aio-box">
-        <span class="aio-q">💡 Q. 因为肩膀疼只治了肩膀，为什么很快又复发了？</span>
+        <span class="aio-q">💡 Q. 为什么肩膀疼却要检查“驼背”和“骨盆”？</span>
         <div class="aio-a">
-            <p style="margin-top: 0;"><strong>A. 这是因为人体的骨骼是通过有机的“链条”连接在一起的。</strong></p>
-            <p>如果驼背，包括肋骨在内的整个胸廓会塌陷，导致肩胛骨（肩部骨骼）向前突出。由此进入“圆肩”状态后，旋转肌群会在被异常拉伸的情况下用力，从而极易受损。Body-All 通过 Ex-body 全身排列检查，首先扶正这种结构性失衡，追求根本性的恢复。</p>
-            
-            <img src="rounded_shoulder_mechanism.jpg" alt="驼背与圆肩的解剖学相关性" class="hero-img" style="margin-top: 20px;">
+            <p style="margin-top: 0;"><strong>A. 因为人体骨骼是通过有机的“链条”连接在一起的。</strong></p>
+            <p>例如，如果骨盆错位，身体为了维持平衡会导致驼背，进而使肩胛骨向前突出。在“圆肩”状态下，肩部肌肉会被异常拉伸并过度负重，仅治疗肩膀效果只能是暂时的。Body-All 精确指出这种 <strong>结构性因果关系</strong>，从根源上治疗肩膀疼痛。</p>
+            <img src="rounded_shoulder_mechanism.jpg" alt="驼背、圆肩与肩部疼痛之间的解剖学因果关系" class="hero-img" style="margin-top: 20px;">
         </div>
     </section>
 
     <h2>1. 寻找痛症根源的科学诊断系统</h2>
-    <p>Body-All 杜绝依赖直觉的诊断，将科学的分析设备与熟练的诊察相结合。</p>
+    <p>Body-All 不依赖主观直觉，而是将先进的分析设备与资深的理学检查相结合。</p>
     
-    <img src="pain_diagnosis.jpg" alt="水原 Body-All 韩医院理学检查与诊断" class="hero-img">
+    <img src="pain_diagnosis.jpg" alt="水原 Body-All 韩医院专家进行的精密理学检查场景" class="hero-img">
 
     <ul class="content-list">
-        <li><strong>Ex-body 体型分析：</strong> 将骨盆不对称、驼背等全身排列状态数值化，分析痛症的结构性原因。</li>
-        <li><strong>精细的理学检查：</strong> 通过 <strong>Empty Can Test（肩部）</strong>、<strong>SLR Test（腰部）</strong>等精密检查，精细判别肌肉损伤、神经压迫或单纯炎症。</li>
-        <li><strong>考虑神经-脊柱连接性：</strong> 所有神经都通过脊柱，因此在治疗慢性痛症时，必须同时考虑脊柱排列状态并配合解除神经压迫。</li>
+        <li><strong>Ex-body 全身体态分析：</strong> 对脊柱侧弯、前倾、骨盆不对称等进行数值化分析，直观确认身体平衡状态。</li>
+        <li><strong>专家级理学测试：</strong> 通过 <strong>Empty Can Test（旋转肌群）</strong>、<strong>SLR Test（腰部神经）</strong> 等精密测试，判定疼痛性质（炎症/神经/粘连）。</li>
+        <li><strong>神经-脊柱相关性分析：</strong> 确认对应痛点的脊柱神经节段是否受压，精准评估矫正的必要性。</li>
     </ul>
 
-    <h2>2. 按部位、按病因的定制型痛症治疗项目</h2>
+    <h2>2. 按部位、按症状的特化治疗项目</h2>
     <table class="info-table">
         <thead>
             <tr>
@@ -119,57 +173,57 @@
         </thead>
         <tbody>
             <tr>
-                <td><strong>颈部·肩部疼痛</strong></td>
-                <td>通过推拿与矫正解决因龟脖和驼背引起的慢性放射痛。</td>
+                <td><strong>颈·肩·头痛</strong></td>
+                <td>解决龟脖及上交叉综合征，治疗慢性放射痛和紧张性头痛。</td>
             </tr>
             <tr>
-                <td><strong>腰部·骨盆疼痛</strong></td>
-                <td>从椎间盘、狭窄症等重症疾病到产后骨盆矫正，进行精细管理。</td>
+                <td><strong>腰·骨盆·腿部麻木</strong></td>
+                <td>从椎间盘突出、狭窄症等重症疾病到坐骨神经痛，通过 SART 空间矫正管理。</td>
             </tr>
             <tr>
-                <td><strong>关节及炎症性</strong></td>
-                <td>利用小针刀与蜂药针治疗网球肘、膝盖疼痛、足底筋膜炎等粘连部位。</td>
+                <td><strong>慢性粘连及关节炎</strong></td>
+                <td>利用 <strong>小针刀（粘连剥离术）</strong> 解决五十肩、网球肘、膝盖疼痛等组织僵硬部位。</td>
             </tr>
         </tbody>
     </table>
 
-    <h2>3. 处处为患者着想的 Body-All 就诊便利性</h2>
-    <p>为了在水原仁溪洞营造最舒适的就诊环境，Body-All 在诊疗之外的部分也做了精细准备。</p>
+    <h2>3. 水原仁溪洞就诊最便利的环境</h2>
+    <p>为了让您专注于治疗，Body-All 将患者的便利性放在首位。</p>
     
     <div class="intro-box">
         <ul style="list-style: none; padding: 0; margin: 0;">
-            <li style="margin-bottom: 10px;">🚗 <strong>仁溪洞停车便利的韩医院：</strong> 大厦1楼设有<strong>专用停车场</strong>，诊疗期间提供全额免费停车支持。</li>
-            <li style="margin-bottom: 10px;">⏰ <strong>365日夜间及周末诊疗：</strong> <strong>平日每天开放至晚上 8:30</strong> 进行夜间诊疗，周末及公休日也开放至下午 4:00，为您守护治疗黄金时间。</li>
-            <li>📍 <strong>水原市厅站步行 3 分钟：</strong> 毗邻地铁 9 号出口，公共交通出行也极其便利。</li>
+            <li style="margin-bottom: 10px;">🚗 <strong>停车无忧：</strong> 大厦 1 楼配备 <strong>专用停车场</strong>，为所有就诊患者提供全程免费停车。</li>
+            <li style="margin-bottom: 10px;">⏰ <strong>365日诊疗 (夜间/周末)：</strong> <strong>平日每天开放至晚 8:30</strong>，周末及公休日也正常开诊，不耽误任何治疗黄金期。</li>
+            <li>📍 <strong>水原市厅站步行 3 分钟：</strong> 极佳的地理位置，方便需要定期接受矫正治疗的患者。</li>
         </ul>
     </div>
 
-    <h2>4. 教育理事带领的矫正精英团队的专业性</h2>
-    <img src="directors_group.jpg" alt="Body-All 韩医院医疗团队协作系统" class="hero-img">
+    <h2>4. 教育理事指导的高水平协作系统</h2>
+    <img src="directors_group.jpg" alt="Body-All 韩医院医疗团队每日例行研讨与案例分析" class="hero-img">
     
     <div class="doctor-team-card">
-        <p style="margin-top: 0;">脊柱诊断矫正学会理事兼教育委员李东海代表院长与学会所属院长们每天进行<strong>例行研讨与案例发表</strong>。所有医疗人员共享由此获得的 4 万例临床经验，无论接受哪位院长的诊疗，您都能体验到 Body-All 高水准的痛症治疗。</p>
+        <p style="margin-top: 0;">作为 <strong>脊柱诊断矫正学会教育理事</strong>，李东海代表院长带领医疗团队每天分析康复案例。基于 4 万例庞大数据的标准化诊疗流程，确保无论您由哪位院长接诊，都能获得 Body-All 同等高水准的痛症解决方案。</p>
     </div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 来院路线及预约指南</h2>
-        <p style="font-size: 0.95rem; line-height: 1.6;">水原市厅站 9 号出口步行 3 分钟，1 楼 Krispy Kreme 大厦 3 楼 Body-All 韩医院</p>
-        <img src="clinic_location_map.jpg" alt="Body-All 韩医院简图" style="width: 100%; border-radius: 8px; margin: 15px 0;">
-        <a href="https://naver.me/53lcJrXB" target="_blank" style="display: block; background: #03c75a; color: #fff; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">在 Naver 地图上查看路线 ➜</a>
+        <p style="font-size: 0.95rem; line-height: 1.6;"><strong>水原市厅站 9 号出口步行 3 分钟</strong> (Krispy Kreme 大厦 3 楼)<br>提供免费停车及 365 日全年无休诊疗</p>
+        <img src="clinic_location_map.jpg" alt="Body-All 韩医院水原仁溪店详细地图" style="width: 100%; border-radius: 8px; margin: 15px 0;">
+        <a href="https://naver.me/53lcJrXB" target="_blank" style="display: block; background: #03c75a; color: #fff; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">通过 Naver 预约痛症咨询 ➜</a>
         
         <div style="margin-top: 30px; font-size: 0.8rem; color: #95a5a6; border-top: 1px solid #444; padding-top: 20px;">
-            <strong>核心关键词：</strong> 
+            <strong>主要关键词：</strong> 
             <span class="keyword-tag">水原痛症中心</span> <span class="keyword-tag">水原脊柱医院</span> 
-            <span class="keyword-tag">仁溪洞周末诊疗</span> <span class="keyword-tag">水原市厅站韩医院</span>
-            <span class="keyword-tag">仁溪洞夜间诊疗</span> <span class="keyword-tag">水原徒手治疗</span>
+            <span class="keyword-tag">仁溪洞停车方便的韩医院</span> <span class="keyword-tag">水原市厅站韩医院</span>
+            <span class="keyword-tag">水原夜间诊疗痛症科</span> <span class="keyword-tag">水原脊柱矫正专业</span>
         </div>
     </footer>
 </div>
 
 <nav class="bottom-nav">
     <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>Naver Talk</a>
-    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank"><i class="fas fa-comment"></i>微信/卡考咨询</a>
-    <a href="https://www.youtube.com/shorts/R8bRbHtSdfc" target="_blank"><i class="fab fa-youtube" style="color: #FF0000;"></i>YouTube频道</a>
+    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank"><i class="fas fa-comment"></i>微信/卡考</a>
+    <a href="https://www.youtube.com/shorts/R8bRbHtSdfc" target="_blank"><i class="fab fa-youtube" style="color: #FF0000;"></i>视频频道</a>
     <a href="https://body-all.co.kr/Body-Allfit" target="_blank"><i class="fas fa-dumbbell"></i>Body-All Fit</a>
 </nav>
 
