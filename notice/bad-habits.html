@@ -67,12 +67,11 @@
             border-bottom: 2px solid #edf2f7;
         }
 
-        /* 이미지 연속 배치를 위한 스타일 */
         .bad-habit-img {
             width: 100%;
             height: auto;
             border-radius: 12px;
-            margin-bottom: 10px; /* 이미지 사이 간격 */
+            margin-bottom: 10px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
@@ -150,6 +149,13 @@
             color: #495057;
             border: 1px solid #dee2e6;
         }
+
+        /* 인라인 텍스트 링크 스타일 */
+        .inline-link {
+            color: #0056b3;
+            font-weight: bold;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -166,7 +172,6 @@
         <h1>[피해야할 자세나 습관들]</h1>
         <p>척추의 안정성과 디스크 보호 측면에서 볼 때, 나쁜 자세는 척추 정렬을 직접적으로 무너뜨립니다. 건강할 때는 문제가 없더라도 <strong>교정 중에는 작은 자극이 큰 통증으로 이어질 수 있으니</strong> 아래 사항들을 반드시 주의해 주세요.</p>
 
-        <!-- 나쁜 자세 예시 이미지 2개 연속 배치 -->
         <img src="bad-habit1.png" alt="척추에 나쁜 자세 예시 1" class="bad-habit-img">
         <img src="bad-habit2.png" alt="척추에 나쁜 자세 예시 2" class="bad-habit-img">
         
@@ -189,12 +194,12 @@
 
         <div class="habit-card">
             <span class="habit-name">3. 휴식 없는 장시간 운전</span>
-            <p class="desc-text">20분 이상의 운전은 척추 정렬과 디스크 내압에 매우 큰 부담을 줍니다. 특히 자동차 시트는 쿠션 없이 앉을 경우 척추를 틀어지게 만드니 가급적 중간에 쉬면서 <strong>바디올 스트레칭</strong>을 해주세요.</p>
+            <p class="desc-text">20분 이상의 운전은 척추 정렬과 디스크 내압에 매우 큰 부담을 줍니다. 특히 자동차 시트는 쿠션을 사용하지 않으면 척추를 틀어지게 만드니 가급적 중간에 쉬면서 <a href="bodyall-stretching.html" class="inline-link">바디올 스트레칭</a>을 해주세요.</p>
         </div>
 
         <div class="habit-card">
             <span class="habit-name">4. 골반롤링 없이 20분 이상 앉기</span>
-            <p class="desc-text">앉는 자세는 허리와 등이 구부정해지기 가장 쉬운 자세입니다. 치료 초반에는 반드시 <strong>쿠션</strong>을 대어 지지하고, 추후에는 <strong>골반롤링</strong>을 통해 척추 사이의 공간을 확보하는 법을 실천해야 합니다. 둘 중 하나는 반드시 배워서 실천하셔야 척추가 다시 틀어지는 것을 막을 수 있습니다.</p>
+            <p class="desc-text">앉는 자세는 허리와 등이 구부정해지기 가장 쉬운 자세입니다. 치료 초반에는 반드시 <strong>쿠션</strong>을 대어 지지하고, 추후에는 <strong>골반롤링</strong>을 통해 척추 사이의 공간을 확보하는 법을 실천해야 합니다.</p>
             <div class="btn-inline-group">
                 <a href="cushion-chair.html" class="btn-sm">허리쿠션 사용법</a>
                 <a href="pelvic-rolling.html" class="btn-sm">골반 롤링법</a>
