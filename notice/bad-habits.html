@@ -67,10 +67,13 @@
             border-bottom: 2px solid #edf2f7;
         }
 
+        /* 이미지 연속 배치를 위한 스타일 */
         .bad-habit-img {
             width: 100%;
+            height: auto;
             border-radius: 12px;
-            margin: 10px 0 20px;
+            margin-bottom: 10px; /* 이미지 사이 간격 */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
         .habit-card {
@@ -103,7 +106,6 @@
             font-size: 18px;
         }
 
-        /* 인라인 버튼 */
         .btn-inline-group {
             display: flex;
             gap: 10px;
@@ -123,7 +125,6 @@
             border: 1px solid #dee2e6;
         }
 
-        /* 하단 메뉴 영역 */
         .bottom-menu {
             margin-top: 50px;
             display: flex;
@@ -165,9 +166,11 @@
         <h1>[피해야할 자세나 습관들]</h1>
         <p>척추의 안정성과 디스크 보호 측면에서 볼 때, 나쁜 자세는 척추 정렬을 직접적으로 무너뜨립니다. 건강할 때는 문제가 없더라도 <strong>교정 중에는 작은 자극이 큰 통증으로 이어질 수 있으니</strong> 아래 사항들을 반드시 주의해 주세요.</p>
 
-        <img src="bad posture.png" alt="척추에 나쁜 자세 예시" class="bad-habit-img">
+        <!-- 나쁜 자세 예시 이미지 2개 연속 배치 -->
+        <img src="bad-habit1.png" alt="척추에 나쁜 자세 예시 1" class="bad-habit-img">
+        <img src="bad-habit2.png" alt="척추에 나쁜 자세 예시 2" class="bad-habit-img">
         
-        <div class="habit-card">
+        <div class="habit-card" style="margin-top: 20px;">
             <span class="habit-name">❌ 피해야 할 대표 자세</span>
             <p class="desc-text">1. 바닥으로 숙이는 자세<br>2. 의자에 구부정하게 앉는 자세</p>
         </div>
@@ -206,7 +209,6 @@
             </div>
         </div>
 
-        <!-- 하단 메뉴 버튼 -->
         <nav class="bottom-menu">
             <a href="notice-precautions.html" class="btn">[교정후 필독 주의사항] ★</a>
             <a href="acute-care.html" class="btn">[급성기시 주의사항]</a>
