@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>척추위생법 Online Guide - 바디올한의원</title>
+    <meta name="description" content="바디올한의원 척추위생법 온라인 가이드입니다. 성공적인 척추교정과 올바른 자세, 체형 관리를 위한 필수 정보를 제공합니다.">
+    <!-- 가독성이 우수한 폰트(Pretendard) 적용 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <style>
+        :root {
+            --primary-color: #1a365d; /* 신뢰감을 주는 바디올 네이비 */
+            --accent-color: #e53e3e; /* 강조용 레드 */
+            --bg-color: #f8fafc;
+            --text-main: #2d3748;
+            --text-light: #718096;
+        }
+        
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-size: 18px; /* 노안을 고려한 기본 텍스트 크기 확대 */
+            line-height: 1.65;
+            padding-top: 70px; /* 플로팅 헤더 공간 확보 */
+            word-break: keep-all; /* 단어 단위 줄바꿈으로 가독성 향상 */
+        }
+
+        /* 고정 플로팅 바 (헤더) */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-sizing: border-box;
+            padding: 0 20px;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header-logo {
+            height: 32px;
+            width: auto;
+        }
+
+        .header-title {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+        }
+
+        .header-lang {
+            font-size: 15px;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        /* 메인 컨텐츠 영역 */
+        .container {
+            max-width: 768px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px 20px 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .main-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary-color);
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        .content-box {
+            font-size: 19px;
+            color: #333;
+        }
+
+        .content-box p {
+            margin-bottom: 18px;
+        }
+
+        .highlight {
+            font-weight: 700;
+            color: var(--primary-color);
+            background: linear-gradient(to top, #e2e8f0 40%, transparent 40%);
+        }
+
+        .signature {
+            text-align: right;
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-top: 30px;
+            border-top: 2px solid #edf2f7;
+            padding-top: 20px;
+        }
+
+        /* 메뉴 버튼 영역 */
+        .menu-section {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 18px 20px;
+            background-color: #ffffff;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            color: var(--primary-color);
+            font-size: 19px;
+            font-weight: 700;
+            text-decoration: none;
+            box-sizing: border-box;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .btn:active {
+            background-color: #edf2f7;
+            border-color: #cbd5e0;
+            transform: translateY(1px);
+        }
+
+        .btn-important {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border: none;
+            box-shadow: 0 4px 12px rgba(26, 54, 93, 0.25);
+        }
+
+        .btn-important:active {
+            background-color: #2a4365;
+        }
+
+        .btn-home {
+            background-color: #f7fafc;
+            color: var(--text-light);
+            text-align: center;
+            margin-top: 20px;
+            font-size: 17px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .icon-star {
+            color: #fbbf24;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 상단 고정 플로팅 바 -->
+    <header class="header">
+        <div class="header-left">
+            <img src="../Bodyall Logo.png" alt="바디올한의원 로고" class="header-logo">
+            <span class="header-title">척추위생법 Online Guide</span>
+        </div>
+        <div class="header-lang">ko / en / cn</div>
+    </header>
+
+    <main class="container">
+        <!-- 본문 내용 -->
+        <h1>올바른 척추,<br>바디올한의원과 함께 하세요!</h1>
+        
+        <img src="notice.png" alt="바디올한의원 척추 교정 치료 모습" class="main-image">
+        
+        <div class="content-box">
+            <p>오늘 <strong>바디올한의원</strong>에서 치료 잘 받으셨나요?</p>
+            <p>상담 때 강조하여 말씀드렸듯이, 성공적인 <span class="highlight">척추 교정치료</span>라는 것은 진료실을 나서 집에 돌아가신 일상 속에서도 계속 진행되어야 합니다.</p>
+            <p>꼭 다음 가이드 글들을 정독해 주시면, 통증 없이 <strong>건강한 척추로 회복</strong>하시는데 큰 도움이 되실 것입니다.</p>
+            <p>이미 치료를 받으신 분이시라면 이 척추위생법들을 저희 원장단으로부터 자세히 배우셨겠지만, 올바른 체형을 유지하기 위한 <strong>반복적인 학습</strong>이 매우 중요합니다. 꼭 다시 한번 읽어보시고 바른 자세를 정리하는 시간을 가지시길 바랍니다!</p>
+            <p>각 파트는 단순한 동작 설명이 아닌, 우리 몸이 회복되는 <strong>원리와 함께 설명</strong>됩니다. 원리를 함께 이해하시는 것이 척추 건강 지식을 완전한 내 것으로 만드는 것에 있어 매우 유리하니 꼭 원리까지도 이해하실 수 있기를 바랍니다.</p>
+            
+            <div class="signature">
+                - 바디올한의원 원장단 일동
+            </div>
+        </div>
+
+        <!-- 하위 페이지 메뉴 링크 -->
+        <nav class="menu-section">
+            <a href="notice-precautions.html" class="btn btn-important">[교정후 필독 주의사항] <span class="icon-star">★</span></a>
+            <a href="acute-care.html" class="btn">[급성기시 주의사항]</a>
+            <a href="bad-habits.html" class="btn">[피해야할 자세나 습관들]</a>
+            <a href="cushion-chair.html" class="btn">[허리쿠션 사용법 / 좋은 의자 고르는법]</a>
+            <a href="bodyall-stretching.html" class="btn">[바디올 스트레칭법 (척추정돈법)]</a>
+            <a href="pelvic-rolling.html" class="btn">[바디올 골반 롤링법 (척추중립법)]</a>
+            <a href="../index.html" class="btn btn-home">[바디올한의원 위키 Home]</a>
+        </nav>
+    </main>
+
+</body>
+</html>
