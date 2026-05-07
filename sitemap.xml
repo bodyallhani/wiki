@@ -28,6 +28,138 @@
 <url><loc>https://wiki.body-all.co.kr/doctor-intro_en.html</loc><xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/doctor-intro.html"/><xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/doctor-intro_en.html"/><xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/doctor-intro_cn.html"/><priority>0.7</priority></url>
 <url><loc>https://wiki.body-all.co.kr/doctor-intro_cn.html</loc><xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/doctor-intro.html"/><xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/doctor-intro_en.html"/><xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/doctor-intro_cn.html"/><priority>0.7</priority></url>
 
+<url>
+    <loc>https://wiki.body-all.co.kr/notice-precautions.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/notice-precautions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/notice-precautions_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/notice-precautions_cn.html"/>
+    <priority>0.9</priority>
+</url>
+<url>
+    <loc>https://wiki.body-all.co.kr/notice-precautions_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/notice-precautions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/notice-precautions_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/notice-precautions_cn.html"/>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://wiki.body-all.co.kr/notice-precautions_cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/notice-precautions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/notice-precautions_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/notice-precautions_cn.html"/>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://wiki.body-all.co.kr/acute-care.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/acute-care.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/acute-care_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/acute-care_cn.html"/>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://wiki.body-all.co.kr/acute-care_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/acute-care.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/acute-care_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/acute-care_cn.html"/>
+    <priority>0.7</priority>
+</url>
+<url>
+    <loc>https://wiki.body-all.co.kr/acute-care_cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/acute-care.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/acute-care_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/acute-care_cn.html"/>
+    <priority>0.7</priority>
+</url>
+
+<url>
+    <loc>https://wiki.body-all.co.kr/bad-habits.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/bad-habits.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/bad-habits_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/bad-habits_cn.html"/>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://wiki.body-all.co.kr/bad-habits_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/bad-habits.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/bad-habits_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/bad-habits_cn.html"/>
+    <priority>0.7</priority>
+</url>
+<url>
+    <loc>https://wiki.body-all.co.kr/bad-habits_cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/bad-habits.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/bad-habits_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/bad-habits_cn.html"/>
+    <priority>0.7</priority>
+</url>
+
+<url>
+    <loc>https://wiki.body-all.co.kr/cushion-chair.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/cushion-chair.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/cushion-chair_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/cushion-chair_cn.html"/>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://wiki.body-all.co.kr/cushion-chair_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/cushion-chair.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/cushion-chair_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/cushion-chair_cn.html"/>
+    <priority>0.7</priority>
+</url>
+<url>
+    <loc>https://wiki.body-all.co.kr/cushion-chair_cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/cushion-chair.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/cushion-chair_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/cushion-chair_cn.html"/>
+    <priority>0.7</priority>
+</url>
+
+<url>
+    <loc>https://wiki.body-all.co.kr/bodyall-stretching.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/bodyall-stretching.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/bodyall-stretching_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/bodyall-stretching_cn.html"/>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://wiki.body-all.co.kr/bodyall-stretching_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/bodyall-stretching.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/bodyall-stretching_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/bodyall-stretching_cn.html"/>
+    <priority>0.7</priority>
+</url>
+<url>
+    <loc>https://wiki.body-all.co.kr/bodyall-stretching_cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/bodyall-stretching.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/bodyall-stretching_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/bodyall-stretching_cn.html"/>
+    <priority>0.7</priority>
+</url>
+
+<url>
+    <loc>https://wiki.body-all.co.kr/pelvic-rolling.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/pelvic-rolling.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/pelvic-rolling_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/pelvic-rolling_cn.html"/>
+    <priority>0.9</priority>
+</url>
+<url>
+    <loc>https://wiki.body-all.co.kr/pelvic-rolling_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/pelvic-rolling.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/pelvic-rolling_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/pelvic-rolling_cn.html"/>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://wiki.body-all.co.kr/pelvic-rolling_cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/pelvic-rolling.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/pelvic-rolling_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/pelvic-rolling_cn.html"/>
+    <priority>0.8</priority>
+</url>
+  
 <url><loc>https://wiki.body-all.co.kr/encyclopedia/index.html</loc><xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/encyclopedia/index.html"/><xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/encyclopedia/index_en.html"/><xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/encyclopedia/index_cn.html"/><priority>0.8</priority></url>
 <url><loc>https://wiki.body-all.co.kr/encyclopedia/index_en.html</loc><xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/encyclopedia/index.html"/><xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/encyclopedia/index_en.html"/><xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/encyclopedia/index_cn.html"/><priority>0.7</priority></url>
 <url><loc>https://wiki.body-all.co.kr/encyclopedia/index_cn.html</loc><xhtml:link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/encyclopedia/index.html"/><xhtml:link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/encyclopedia/index_en.html"/><xhtml:link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/encyclopedia/index_cn.html"/><priority>0.7</priority></url>
