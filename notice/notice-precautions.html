@@ -22,7 +22,7 @@
             padding: 0;
             background-color: var(--bg-color);
             color: var(--text-main);
-            font-size: 19px; /* 시인성 확보를 위한 크기 */
+            font-size: 19px;
             line-height: 1.7;
             padding-top: 70px;
             word-break: keep-all;
@@ -44,7 +44,11 @@
 
         .header-logo { height: 32px; }
         .header-title { font-size: 19px; font-weight: 700; color: var(--primary-color); }
-        .header-lang { font-size: 15px; color: #718096; }
+
+        /* 번역 버튼 스타일 */
+        .header-lang { font-size: 15px; color: #718096; font-weight: 600; }
+        .header-lang a { text-decoration: none; color: inherit; margin: 0 3px; }
+        .header-lang a.active { color: var(--primary-color); text-decoration: underline; }
 
         .container {
             max-width: 768px;
@@ -85,7 +89,6 @@
             border-left: 4px solid #fcc419;
         }
 
-        /* 중간 삽입 버튼 */
         .inline-link-btn {
             display: inline-block;
             background-color: #e03131;
@@ -98,7 +101,6 @@
             font-size: 18px;
         }
 
-        /* 하단 메뉴 영역 */
         .bottom-menu {
             margin-top: 50px;
             display: flex;
@@ -131,14 +133,17 @@
 <body>
 
     <header class="header">
-    <div class="header-left">
-        <!-- 메인 페이지(index.html)로 연결되는 링크 추가 -->
-        <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
-            <img src="../Bodyall Logo.png" alt="바디올한의원 로고" class="header-logo">
-            <span class="header-title" style="color: #1a365d;">척추위생법 Online Guide</span>
-        </a>
-    </div>
-    <div class="header-lang">ko / en / cn</div>
+        <div class="header-left">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                <img src="../Bodyall Logo.png" alt="바디올한의원 로고" class="header-logo">
+                <span class="header-title" style="color: #1a365d;">척추위생법 Online Guide</span>
+            </a>
+        </div>
+        <div class="header-lang">
+            <a href="notice-precautions.html" class="active">ko</a> / 
+            <a href="notice-precautions_en.html">en</a> / 
+            <a href="notice-precautions_cn.html">cn</a>
+        </div>
     </header>
 
     <main class="container">
@@ -168,7 +173,7 @@
 
             <div class="notice-item">
                 <span class="item-title">5. 무엇이든 원장단에게 편하게 질문하세요.</span>
-                <div class="highlight-box">
+                <div class="highlight-box" style="padding: 15px; border-left: 4px solid #fcc419;">
                     척추교정 효과 = ‘충분한 교정 횟수’ + ‘교정된 위치에 머무는 시간’
                 </div>
                 <p>바디올한의원의 목표는 틀어진 뼈(하드웨어)뿐만 아니라, 이를 유지하는 습관(소프트웨어)까지 고치는 것입니다. 척추가 올바른 위치에서 충분히 적응할 수 있도록 궁금한 점은 언제든 해결하시고 유지 방법을 완벽히 습득하세요.</p>
@@ -180,7 +185,6 @@
             </div>
         </section>
 
-        <!-- 하단 메뉴 버튼 (현재 페이지 제외) -->
         <nav class="bottom-menu">
             <a href="acute-care.html" class="btn">[급성기시 주의사항]</a>
             <a href="bad-habits.html" class="btn">[피해야할 자세나 습관들]</a>
