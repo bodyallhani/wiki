@@ -2,242 +2,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habits and Postures to Avoid - BodyAll Clinic Spinal Hygiene</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Habits to Avoid - BodyAll Clinic</title>
     <link rel="icon" href="../Bodyall Logo.png" type="image/png">
-    <meta name="description" content="A guide to lifestyle habits to avoid during spinal correction treatment, such as drinking, hiking, and long drives. Maintain spinal hygiene with BodyAll Clinic.">
+    <meta name="description" content="Guide to lifestyle habits to avoid during spinal correction.">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <style>
         :root {
             --primary-color: #1a365d;
-            --accent-color: #d9480f;
             --bg-color: #f8fafc;
             --text-main: #2d3748;
             --no-color: #e03131;
         }
-        
         body {
             font-family: 'Pretendard', sans-serif;
             margin: 0; padding: 0;
             background-color: var(--bg-color);
             color: var(--text-main);
-            font-size: 18px;
+            font-size: 17px;
             line-height: 1.6;
-            padding-top: 70px;
+            padding-top: 60px;
             word-break: keep-all;
         }
-
         .header {
-            position: fixed;
-            top: 0; left: 0; width: 100%;
-            height: 60px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            padding: 0 20px;
-            box-sizing: border-box;
+            position: fixed; top: 0; left: 0; width: 100%; height: 60px;
+            background-color: #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000; padding: 0 15px; box-sizing: border-box; gap: 10px;
         }
-
-        .header-logo { height: 32px; }
-        .header-title { font-size: 17px; font-weight: 700; color: var(--primary-color); }
-        .header-lang { font-size: 14px; color: #718096; font-weight: 600; }
-        .header-lang a { text-decoration: none; color: inherit; margin: 0 3px; }
-        .header-lang a.active { color: var(--primary-color); text-decoration: underline; }
-
-        .container {
-            max-width: 768px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 30px 20px;
+        .header-left { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; }
+        .header-logo { height: 28px; flex-shrink: 0; }
+        .header-title {
+            font-size: 14px; font-weight: 700; color: var(--primary-color);
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
         }
-
-        h1 {
-            font-size: 24px;
-            color: var(--primary-color);
-            border-left: 6px solid var(--primary-color);
-            padding-left: 15px;
-            margin-bottom: 25px;
-            line-height: 1.3;
-        }
-
-        .section-title {
-            font-size: 21px;
-            font-weight: 800;
-            color: #1a365d;
-            margin: 40px 0 15px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #edf2f7;
-        }
-
-        .bad-habit-img {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            margin-bottom: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-
-        .habit-card {
-            margin-bottom: 25px;
-            padding: 20px;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            background-color: #fff;
-        }
-
-        .habit-name {
-            font-size: 19px;
-            font-weight: 800;
-            color: var(--no-color);
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .desc-text {
-            color: #4a5568;
-            margin-bottom: 0;
-        }
-
-        .highlight-box {
-            background-color: #fff5f5;
-            padding: 15px;
-            border-radius: 10px;
-            border-left: 4px solid var(--no-color);
-            margin-top: 15px;
-            font-size: 17px;
-        }
-
-        .btn-inline-group {
-            display: flex;
-            gap: 10px;
-            margin: 15px 0;
-        }
-
-        .btn-sm {
-            flex: 1;
-            background-color: #f1f3f5;
-            color: var(--primary-color);
-            text-align: center;
-            padding: 12px;
-            border-radius: 8px;
-            font-weight: 700;
-            text-decoration: none;
-            font-size: 15px;
-            border: 1px solid #dee2e6;
-        }
-
-        .bottom-menu {
-            margin-top: 50px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .btn {
-            display: block;
-            padding: 16px;
-            background-color: #ffffff;
-            border: 2px solid #e2e8f0;
-            border-radius: 12px;
-            color: var(--primary-color);
-            font-size: 17px;
-            font-weight: 700;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        .btn-home {
-            background-color: #f1f3f5;
-            color: #495057;
-            border: 1px solid #dee2e6;
-        }
-
-        .inline-link {
-            color: #0056b3;
-            font-weight: bold;
-            text-decoration: underline;
-        }
+        .header-lang { font-size: 13px; color: #718096; font-weight: 600; flex-shrink: 0; }
+        .header-lang a { text-decoration: none; color: inherit; margin: 0 2px; }
+        .header-lang a.active { color: var(--primary-color); text-decoration: underline; font-weight: 800; }
+        
+        .container { max-width: 768px; margin: 0 auto; background-color: #ffffff; padding: 25px 20px 40px; box-sizing: border-box; }
+        h1 { font-size: 22px; color: var(--primary-color); border-left: 5px solid var(--primary-color); padding-left: 12px; margin-bottom: 25px; line-height: 1.3; }
+        .bad-habit-img { width: 100%; height: auto; border-radius: 12px; margin-bottom: 10px; }
+        .habit-card { margin-bottom: 20px; padding: 18px; border: 1px solid #e2e8f0; border-radius: 12px; background-color: #fff; }
+        .habit-name { font-size: 18px; font-weight: 800; color: var(--no-color); margin-bottom: 8px; display: block; }
+        .desc-text { color: #4a5568; font-size: 16px; }
+        .highlight-box { background-color: #fff5f5; padding: 15px; border-radius: 10px; border-left: 4px solid var(--no-color); margin-top: 15px; font-size: 15px; }
+        .btn-inline-group { display: flex; gap: 8px; margin: 15px 0; flex-wrap: wrap; }
+        .btn-sm { flex: 1; min-width: 140px; background-color: #f1f3f5; color: var(--primary-color); text-align: center; padding: 12px; border-radius: 8px; font-weight: 700; font-size: 14px; border: 1px solid #dee2e6; text-decoration: none; }
+        .section-title { font-size: 19px; font-weight: 800; color: #1a365d; margin: 35px 0 15px; padding-bottom: 8px; border-bottom: 2px solid #edf2f7; }
+        .bottom-menu { margin-top: 40px; display: flex; flex-direction: column; gap: 10px; }
+        .btn { display: block; padding: 15px; background-color: #ffffff; border: 2px solid #e2e8f0; border-radius: 12px; color: var(--primary-color); font-size: 16px; font-weight: 700; text-decoration: none; text-align: center; line-height: 1.3; }
+        .btn-home { background-color: #f1f3f5; color: #495057; border: 1px solid #dee2e6; }
+        .inline-link { color: #0056b3; font-weight: bold; text-decoration: underline; }
+        @media (max-width: 360px) { .header-title { display: none; } }
     </style>
 </head>
 <body>
-
     <header class="header">
         <div class="header-left">
-            <a href="index_en.html" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+            <a href="index_en.html" style="text-decoration: none; display: flex; align-items: center; gap: 8px; min-width: 0;">
                 <img src="../Bodyall Logo.png" alt="BodyAll Logo" class="header-logo">
-                <span class="header-title" style="color: #1a365d;">Spinal Hygiene Online Guide</span>
+                <span class="header-title">Spinal Hygiene Online Guide</span>
             </a>
         </div>
         <div class="header-lang">
-            <a href="bad-habits.html">ko</a> / 
-            <a href="bad-habits_en.html" class="active">en</a> / 
-            <a href="bad-habits_cn.html">cn</a>
+            <a href="bad-habits.html">ko</a> / <a href="bad-habits_en.html" class="active">en</a> / <a href="bad-habits_cn.html">cn</a>
         </div>
     </header>
 
     <main class="container">
         <h1>[Habits and Postures to Avoid]</h1>
-        <p>In terms of spinal stability and disc protection, poor posture directly disrupts spinal alignment. Even if there are no problems when you are healthy, <strong>small irritations can lead to severe pain during correction treatment</strong>, so please be careful with the following items.</p>
-
-        <img src="bad-habit1.png" alt="Bad Posture Example 1" class="bad-habit-img">
-        <img src="bad-habit2.png" alt="Bad Posture Example 2" class="bad-habit-img">
+        <p>Poor posture directly disrupts spinal alignment. During treatment, <strong>small irritations can lead to severe pain</strong>, so please be careful.</p>
+        <img src="bad-habit1.png" alt="Bad Posture 1" class="bad-habit-img">
+        <img src="bad-habit2.png" alt="Bad Posture 2" class="bad-habit-img">
         
-        <div class="habit-card" style="margin-top: 20px;">
+        <div class="habit-card" style="margin-top: 15px;">
             <span class="habit-name">❌ Primary Postures to Avoid</span>
-            <p class="desc-text">
-                1. Bending your neck or back downward<br>
-                2. Slumping or slouching in a chair<br>
-                3. Sitting cross-legged on the floor<br>
-                ** Please do not maintain or repeat these postures for more than 15 minutes.
-            </p>
+            <p class="desc-text">1. Bending neck/back down / 2. Slumping / 3. Sitting cross-legged<br>** Do not maintain these for more than 15 minutes.</p>
         </div>
 
-        <h2 class="section-title">Precautions in Daily Life</h2>
-
+        <h2 class="section-title">Daily Precautions</h2>
         <div class="habit-card">
-            <span class="habit-name">1. Alcohol (Caution until recovered)</span>
-            <p class="desc-text">Drinking enough to get intoxicated within 2 weeks after pain has subsided or while it persists can cause a <strong>sudden relapse of severe pain</strong>.</p>
+            <span class="habit-name">1. Alcohol</span>
+            <p class="desc-text">Drinking within 2 weeks after pain subsides can cause a <strong>sudden relapse</strong>.</p>
         </div>
-
         <div class="habit-card">
-            <span class="habit-name">2. Hiking and Uphill Paths</span>
-            <p class="desc-text">Climbing stairs for a long time or hiking forces the <strong>lower back bones to bend backward (kyphosis)</strong> due to human anatomy, increasing the risk of re-misalignment. Please enjoy these after your health is restored.</p>
+            <span class="habit-name">2. Hiking & Uphill Paths</span>
+            <p class="desc-text">Increases the risk of re-misalignment. Please enjoy these after full recovery.</p>
         </div>
-
         <div class="habit-card">
-            <span class="habit-name">3. Long Drives Without Cushions or Rest</span>
-            <p class="desc-text">Driving for more than 20 minutes places a very high burden on spinal alignment and intradiscal pressure. Since car seats can cause misalignment if used without support, make sure to <a href="cushion-chair_en.html" class="inline-link">use a cushion</a> and take breaks for <a href="bodyall-stretching_en.html" class="inline-link">BodyAll Stretching</a> whenever possible.</p>
+            <span class="habit-name">3. Long Drives</span>
+            <p class="desc-text">Always <a href="cushion-chair_en.html" class="inline-link">use a cushion</a> and take breaks for <a href="bodyall-stretching_en.html" class="inline-link">stretching</a>.</p>
         </div>
-
         <div class="habit-card">
-            <span class="habit-name">4. Sitting for Over 20 Minutes Without Pelvic Rolling</span>
-            <p class="desc-text">Sitting is the position where it is easiest for the back and waist to slouch. In the early stages of treatment, you must support your back with a <strong>cushion</strong>. Later, you should practice creating space between vertebrae through <strong>pelvic rolling</strong>. It is also best to avoid crossing your legs when sitting.</p>
+            <span class="habit-name">4. Sitting for Over 20 Mins</span>
+            <p class="desc-text">Use a <strong>cushion</strong> in early stages and practice <strong>pelvic rolling</strong>. Avoid crossing legs.</p>
             <div class="btn-inline-group">
-                <a href="cushion-chair_en.html" class="btn-sm">How to Use Lumbar Cushions</a>
-                <a href="pelvic-rolling_en.html" class="btn-sm">Pelvic Rolling Technique</a>
+                <a href="cushion-chair_en.html" class="btn-sm">Lumbar Cushions</a>
+                <a href="pelvic-rolling_en.html" class="btn-sm">Pelvic Rolling</a>
             </div>
         </div>
 
         <div class="habit-card" style="border: 2px solid #1a365d; background-color: #f0f7ff;">
-            <span class="habit-name" style="color: #1a365d;">5. The Habit of Constant Tension for "Proper Posture"</span>
-            <p class="desc-text">Excessive obsession with proper posture can make the body more tense and uncomfortable. <strong>We will take care of the spinal correction (hardware).</strong> Patients only need to relax and mind the guidelines we provided.</p> However, please pay attention if your body balance is significantly collapsed, such as when leaning on one leg. Brief instances are not a problem, but long-term repetition can cause misalignment.
-            <div class="highlight-box">
-                Proper posture is not something created by forcing the body, but <strong>something that completes itself naturally once the spinal position changes and the method is re-learned</strong>. Never use excessive force!
-            </div>
+            <span class="habit-name" style="color: #1a365d;">5. Avoid Excessive Tension</span>
+            <p class="desc-text">Obsessing over "proper posture" creates tension. <strong>We handle the correction</strong>; you just relax and follow our guidelines.</p>
+            <div class="highlight-box">Proper posture completes itself <strong>naturally</strong> once the spine is corrected.</div>
         </div>
 
         <nav class="bottom-menu">
-            <a href="notice-precautions_en.html" class="btn">[Essential Post-Treatment Precautions] ★</a>
-            <a href="acute-care_en.html" class="btn">[Acute Phase Precautions]</a>
-            <a href="cushion-chair_en.html" class="btn">[Lumbar Cushions / Choosing a Good Chair]</a>
-            <a href="bodyall-stretching_en.html" class="btn">[BodyAll Stretching (Spinal Alignment)]</a>
-            <a href="pelvic-rolling_en.html" class="btn">[BodyAll Pelvic Rolling (Neutral Spine)]</a>
-            <a href="index_en.html" class="btn btn-home">Back to Guide Home</a>
+            <a href="notice-precautions_en.html" class="btn">[Essential Precautions] ★</a>
+            <a href="acute-care_en.html" class="btn">[Acute Phase Guide]</a>
+            <a href="cushion-chair_en.html" class="btn">[Cushions / Choosing a Chair]</a>
+            <a href="bodyall-stretching_en.html" class="btn">[BodyAll Stretching]</a>
+            <a href="pelvic-rolling_en.html" class="btn">[Pelvic Rolling]</a>
+            <a href="index_en.html" class="btn btn-home">Back to Home</a>
         </nav>
     </main>
-
 </body>
 </html>
