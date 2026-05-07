@@ -2,30 +2,30 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>矫正后必读注意事项 - BodyAll韩医院 脊柱卫生法</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>BodyAll 拉伸法 (脊柱整理法) - BodyAll 韩医院</title>
     <link rel="icon" href="../Bodyall Logo.png" type="image/png">
-    <meta name="description" content="BodyAll韩医院脊柱矫正治疗后务必遵守的注意事项。通过持续到院治疗和脊柱卫生习惯，终身维持矫正效果。">
+    <meta name="description" content="介绍 BodyAll 韩医院的核心自我管理法——脊柱整理法。">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <style>
         :root {
             --primary-color: #1a365d;
-            --accent-color: #d9480f;
+            --accent-color: #2b6cb0;
             --bg-color: #f8fafc;
             --text-main: #2d3748;
-            --text-point: #0056b3;
+            --highlight-bg: #ebf8ff;
         }
 
         body {
             font-family: 'Pretendard', sans-serif;
-            margin: 0;
-            padding: 0;
+            margin: 0; padding: 0;
             background-color: var(--bg-color);
             color: var(--text-main);
-            font-size: 18px;
+            font-size: 17px;
             line-height: 1.6;
-            padding-top: 70px;
+            padding-top: 60px;
             word-break: keep-all;
+            -webkit-text-size-adjust: none;
         }
 
         .header {
@@ -38,158 +38,175 @@
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
-            padding: 0 20px;
+            padding: 0 15px;
             box-sizing: border-box;
+            gap: 10px;
         }
 
-        .header-logo { height: 32px; }
-        .header-title { font-size: 17px; font-weight: 700; color: var(--primary-color); }
-        .header-lang { font-size: 14px; color: #718096; font-weight: 600; }
-        .header-lang a { text-decoration: none; color: inherit; margin: 0 3px; }
-        .header-lang a.active { color: var(--primary-color); text-decoration: underline; }
+        .header-left { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; }
+        .header-logo { height: 28px; flex-shrink: 0; }
+        .header-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--primary-color);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .header-lang {
+            font-size: 13px;
+            color: #718096;
+            font-weight: 600;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        .header-lang a { text-decoration: none; color: inherit; margin: 0 2px; }
+        .header-lang a.active { color: var(--primary-color); text-decoration: underline; font-weight: 800; }
 
         .container {
             max-width: 768px;
             margin: 0 auto;
             background-color: #ffffff;
-            padding: 30px 20px;
+            padding: 25px 20px 40px;
+            box-sizing: border-box;
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 22px;
             color: var(--primary-color);
-            border-left: 6px solid var(--primary-color);
-            padding-left: 15px;
-            margin-bottom: 30px;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 12px;
+            margin-bottom: 25px;
             line-height: 1.3;
         }
 
-        .notice-item {
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 1px dashed #e2e8f0;
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            background-color: #000;
+            border-radius: 12px;
+            margin-bottom: 20px;
         }
 
-        .item-title {
+        .video-container iframe {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            border: 0;
+        }
+
+        .main-img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .core-info {
+            background-color: #fff5f5;
+            border: 1px solid #ffa8a8;
+            padding: 18px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .core-info strong { color: #e03131; }
+
+        .method-box {
+            background-color: var(--highlight-bg);
+            padding: 20px;
+            border-radius: 16px;
+            margin-bottom: 35px;
+        }
+
+        .method-title {
             font-size: 20px;
             font-weight: 800;
-            color: var(--text-point);
+            color: var(--accent-color);
             margin-bottom: 12px;
             display: block;
         }
 
-        .highlight-box {
-            background-color: #fff9db;
-            padding: 15px;
-            border-radius: 8px;
-            font-weight: 700;
-            margin: 15px 0;
-            border-left: 4px solid #fcc419;
-            font-size: 17px;
+        .method-list { list-style: none; padding: 0; }
+        .method-list li {
+            margin-bottom: 12px;
+            padding-left: 28px;
+            position: relative;
+            font-size: 16px;
         }
+        .method-list li::before { content: '📍'; position: absolute; left: 0; }
 
-        .inline-link-btn {
-            display: inline-block;
-            background-color: #e03131;
-            color: #fff;
-            text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-weight: 700;
-            margin: 10px 0;
-            font-size: 17px;
-        }
-
-        .bottom-menu {
-            margin-top: 50px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
+        .bottom-menu { margin-top: 40px; display: flex; flex-direction: column; gap: 10px; }
         .btn {
             display: block;
-            padding: 16px;
+            padding: 15px;
             background-color: #ffffff;
             border: 2px solid #e2e8f0;
             border-radius: 12px;
             color: var(--primary-color);
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 700;
             text-decoration: none;
             text-align: center;
+            line-height: 1.3;
         }
+        .btn-home { background-color: #f1f3f5; color: #495057; border: 1px solid #dee2e6; }
 
-        .btn-home {
-            background-color: #f1f3f5;
-            color: #495057;
-            border: 1px solid #dee2e6;
+        @media (max-width: 360px) {
+            .header-title { display: none; }
         }
-
-        strong { color: #d9480f; }
     </style>
 </head>
 <body>
 
     <header class="header">
         <div class="header-left">
-            <a href="index_cn.html" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
-                <img src="../Bodyall Logo.png" alt="BodyAll徽标" class="header-logo">
+            <a href="index_cn.html" style="text-decoration: none; display: flex; align-items: center; gap: 8px; min-width: 0;">
+                <img src="../Bodyall Logo.png" alt="BodyAll 徽标" class="header-logo">
                 <span class="header-title">脊柱卫生法在线指南</span>
             </a>
         </div>
         <div class="header-lang">
-            <a href="notice-precautions.html">ko</a> / 
-            <a href="notice-precautions_en.html">en</a> / 
-            <a href="notice-precautions_cn.html" class="active">cn</a>
+            <a href="bodyall-stretching.html">ko</a> / 
+            <a href="bodyall-stretching_en.html" class="active">en</a> / 
+            <a href="bodyall-stretching_cn.html">cn</a>
         </div>
     </header>
 
     <main class="container">
-        <h1>[矫正后必读注意事项] ★</h1>
+        <h1>[BodyAll 拉伸法 (脊柱整理法)]</h1>
 
-        <section class="content">
-            <div class="notice-item">
-                <span class="item-title">1. 坚持定期就诊是矫正的关键。</span>
-                <p>脊柱矫正贵在<strong>连续性</strong>。通常如果治疗间隔超过一周，身体就会倾向于回到以前歪斜的状态。如果遇到长期难以预约的情况，请务必提前告知医院。（根据症状，每天接受矫正治疗也是可以的。）</p>
-            </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/视频ID" title="BodyAll 拉伸法演示" allowfullscreen></iframe>
+        </div>
 
-            <div class="notice-item">
-                <span class="item-title">2. 初期可能会出现暂时的不适感。</span>
-                <p>这是在治疗极初期（第1、2次等）经常发生的现象。随着多年歪斜固化的脊柱和肌肉得到放松并适应新的排列，可能会感到疼痛。这<strong>是身体正在发生变化的信号</strong>，并非治疗有误，请不必担心。</p>
-            </div>
+        <img src="bodyall-stretch.png" alt="BodyAll 拉伸动作指南" class="main-img">
 
-            <div class="notice-item">
-                <span class="item-title">3. 若疼痛剧烈，请在预约日前就诊。</span>
-                <p>如果感到严重不适，请不要忍耐，最好比预约日提前来院。应对越快，矫正就越安全高效。（为了减少等待时间，建议当日预约后再来院。）</p>
-            </div>
+        <div class="core-info">
+            <strong>⚠️ 注意事项:</strong><br>
+            核心是不要像折断腰部或颈部那样用力。肩膀也不宜强行向两侧张开。请集中感受上胸部向上下方舒展，同时上背部轻微后仰的感觉。
+        </div>
 
-            <div class="notice-item">
-                <span class="item-title">4. 疼痛减轻时才是最重要的时期！</span>
-                <p>疼痛缓解阶段并不代表痊愈，而是<strong>伤口开始愈合的敏感阶段</strong>。此时若掉以轻心、过度劳累，很容易再次失稳。因此，必须更严格地遵守院长教给您的各项守则。</p>
-                <a href="bad-habits_cn.html" class="inline-link-btn">👉 查看应避免的姿势/习惯</a>
-            </div>
-
-            <div class="notice-item">
-                <span class="item-title">5. 有任何疑问请随时咨询院长团。</span>
-                <div class="highlight-box">
-                    脊柱矫正效果 = “足够的矫正次数” + “停留在矫正位置的时间”
-                </div>
-                <p>BodyAll韩医院的目标不仅是修复歪斜的骨骼（硬件），还要纠正维持骨骼位置的习惯（软件）。为了让脊柱在正确的位置得到充分适应，请随时解决您的疑问，并完美掌握维持方法。</p>
-            </div>
-
-            <div class="notice-item" style="border-bottom: none;">
-                <span class="item-title">6. 我们追求“脊柱卫生”。</span>
-                <p>就像疏于刷牙会导致蛀牙一样，脊柱若不遵守<strong>“卫生（Hygiene）”</strong>也会引发疾病。BodyAll为您提供的知识和实践方法将成为让您的平均脊柱年龄保持年轻的终身习惯。请务必将此处学到的脊柱卫生法融入日常生活。</p>
-            </div>
+        <section class="method-box">
+            <span class="method-title">💡 为什么是“脊柱整理法”？</span>
+            <p>这种拉伸更接近于<strong>微调脊柱位置的“技巧”</strong>，而非单纯的肌肉放松。重点应放在<strong>骨骼位置的移动</strong>上，而非拉扯肌肉的感觉，这样效果才能最大化。</p>
+            
+            <ul class="method-list">
+                <li><strong>矫正中必备:</strong> 治疗期间建议每天进行 100 次以上。</li>
+                <li><strong>终身管理:</strong> 恢复健康后，每天坚持 10-20 次养成习惯也大有裨益。</li>
+                <li><strong>少量多次:</strong> 核心是利用日常间隙多次进行，而非一次性大量完成。</li>
+            </ul>
         </section>
 
         <nav class="bottom-menu">
+            <a href="notice-precautions_cn.html" class="btn">[矫正后必读注意事项] ★</a>
             <a href="acute-care_cn.html" class="btn">[急症期注意事项]</a>
             <a href="bad-habits_cn.html" class="btn">[应避免的姿势或习惯]</a>
-            <a href="cushion-chair_cn.html" class="btn">[腰部靠垫使用法 / 如何选择好椅子]</a>
-            <a href="bodyall-stretching_cn.html" class="btn">[BodyAll拉伸法 (脊柱整理法)]</a>
-            <a href="pelvic-rolling_cn.html" class="btn">[BodyAll骨盘滚动法 (脊柱中立法)]</a>
+            <a href="cushion-chair_cn.html" class="btn">[靠垫使用法 / 如何选择好椅子]</a>
+            <a href="pelvic-rolling_cn.html" class="btn">[BodyAll 骨盘滚动法]</a>
             <a href="index_cn.html" class="btn btn-home">返回指南首页</a>
         </nav>
     </main>
