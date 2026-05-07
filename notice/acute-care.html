@@ -15,8 +15,6 @@
             --text-main: #2d3748;
         }
 
-
-
         body {
             font-family: 'Pretendard', sans-serif;
             margin: 0;
@@ -45,7 +43,11 @@
 
         .header-logo { height: 32px; }
         .header-title { font-size: 19px; font-weight: 700; color: var(--primary-color); }
-        .header-lang { font-size: 15px; color: #718096; }
+        
+        /* 번역 버튼 스타일 */
+        .header-lang { font-size: 15px; color: #718096; font-weight: 600; }
+        .header-lang a { text-decoration: none; color: inherit; margin: 0 3px; }
+        .header-lang a.active { color: var(--primary-color); text-decoration: underline; }
 
         .container {
             max-width: 768px;
@@ -101,7 +103,6 @@
 
         .highlight { color: var(--danger-color); font-weight: 700; }
 
-        /* 하단 메뉴 영역 */
         .bottom-menu {
             margin-top: 50px;
             display: flex;
@@ -138,14 +139,17 @@
 <body>
 
     <header class="header">
-    <div class="header-left">
-        <!-- 메인 페이지(index.html)로 연결되는 링크 추가 -->
-        <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
-            <img src="../Bodyall Logo.png" alt="바디올한의원 로고" class="header-logo">
-            <span class="header-title" style="color: #1a365d;">척추위생법 Online Guide</span>
-        </a>
-    </div>
-    <div class="header-lang">ko / en / cn</div>
+        <div class="header-left">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                <img src="../Bodyall Logo.png" alt="바디올한의원 로고" class="header-logo">
+                <span class="header-title" style="color: #1a365d;">척추위생법 Online Guide</span>
+            </a>
+        </div>
+        <div class="header-lang">
+            <a href="acute-care.html" class="active">ko</a> / 
+            <a href="acute-care_en.html">en</a> / 
+            <a href="acute-care_cn.html">cn</a>
+        </div>
     </header>
 
     <main class="container">
@@ -181,7 +185,6 @@
         <h2 class="section-title">2. 목·어깨통증 급성기 관리</h2>
         <p>허리와 마찬가지로 급성기에는 과도하게 목을 젖히는 동작이 신경을 자극할 수 있습니다. 목 뒤에 깍지를 끼고 <a href="bodyall-stretching.html" class="link-text">바디올 스트레칭법</a>을 수시로 시행해 주시되, 절대 목을 꺾듯이 젖히지 않도록 각별히 주의하십시오.</p>
 
-        <!-- 하단 메뉴 버튼 (현재 페이지 제외) -->
         <nav class="bottom-menu">
             <a href="notice-precautions.html" class="btn">[교정후 필독 주의사항] ★</a>
             <a href="bad-habits.html" class="btn">[피해야할 자세나 습관들]</a>
