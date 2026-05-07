@@ -13,6 +13,8 @@
             --accent-color: #2b6cb0;
             --bg-color: #f8fafc;
             --text-main: #2d3748;
+            --important-bg: #fff5f5;
+            --important-border: #e03131;
         }
         
         body {
@@ -64,7 +66,7 @@
 
         .video-container {
             position: relative;
-            padding-bottom: 177.77%; /* Maintain Shorts/Portrait ratio */
+            padding-bottom: 177.77%;
             height: 0;
             overflow: hidden;
             background-color: #000;
@@ -83,6 +85,67 @@
             border-radius: 12px;
             margin-bottom: 25px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        /* Essential Prerequisites Section */
+        .condition-box {
+            background-color: var(--important-bg);
+            border: 2px solid var(--important-border);
+            padding: 25px;
+            border-radius: 16px;
+            margin: 30px 0;
+        }
+
+        .condition-title {
+            font-size: 20px;
+            font-weight: 900;
+            color: var(--important-border);
+            display: block;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .condition-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+
+        .condition-list li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+            font-weight: 600;
+            font-size: 17px;
+        }
+
+        .condition-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--important-border);
+        }
+
+        .btn-link-inline {
+            display: block;
+            text-align: center;
+            background-color: var(--important-border);
+            color: #fff;
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 10px;
+            font-weight: 700;
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        .condition-reason {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+            padding-top: 15px;
+            border-top: 1px solid rgba(224, 49, 49, 0.2);
+            margin-top: 15px;
         }
 
         .info-card {
@@ -169,13 +232,27 @@
     <main class="container">
         <h1>[BodyAll Pelvic Rolling (Neutral Spine)]</h1>
 
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/R8N2vl3YjzM" title="Pelvic Rolling Demonstration" allowfullscreen></iframe>
+        <div class="video-container" style="padding-bottom: 177.77%;">
+            <iframe src="https://www.youtube.com/embed/R8N2vl3YjzM" allowfullscreen></iframe>
         </div>
 
         <img src="pelvic-roll.png" alt="Sitting on Sit Bones and Pelvic Rolling" class="main-img">
 
         <p>This method, also known as <strong>"Sit-Bone Sitting,"</strong> is a core technique for maintaining proper spinal alignment while completely relaxing the body. Once you master this posture, your BodyAll correction treatment is successfully complete.</p>
+
+        <section class="condition-box">
+            <span class="condition-title">🚨 Prerequisites for Pelvic Rolling</span>
+            <ul class="condition-list">
+                <li>1. It must be performed while sitting on a chair. This is because the angle between the legs and torso should be approximately 90 degrees.</li>
+                <li>2. Pelvic rolling is impossible in car seats or overly soft sofas.</li>
+                <li>3. It is impossible while sitting cross-legged.</li>
+                <li>4. If pelvic rolling is impossible, you must use a lumbar cushion.</li>
+            </ul>
+            <a href="cushion-chair_en.html" class="btn-link-inline">👉 How to Use Lumbar Cushions</a>
+            <p class="condition-reason">
+                The reason is simple. As the thighs and abdomen get closer (e.g., bending the waist or lifting the legs high), the pelvis rotates backward. This pushes the lumbar vertebrae out and causes the back and waist to hunch, making it impossible for the spine to move into the correct position.
+            </p>
+        </section>
 
         <section class="info-card">
             <ul class="step-list">
