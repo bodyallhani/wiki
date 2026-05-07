@@ -43,6 +43,11 @@
         .header-logo { height: 32px; }
         .header-title { font-size: 19px; font-weight: 700; color: var(--primary-color); }
 
+        /* 번역 버튼 스타일 */
+        .header-lang { font-size: 15px; color: #718096; font-weight: 600; }
+        .header-lang a { text-decoration: none; color: inherit; margin: 0 3px; }
+        .header-lang a.active { color: var(--primary-color); text-decoration: underline; }
+
         .container {
             max-width: 768px;
             margin: 0 auto;
@@ -60,7 +65,7 @@
 
         .video-container {
             position: relative;
-            padding-bottom: 56.25%;
+            padding-bottom: 177.77%;
             height: 0;
             overflow: hidden;
             background-color: #000;
@@ -148,21 +153,24 @@
 <body>
 
     <header class="header">
-    <div class="header-left">
-        <!-- 메인 페이지(index.html)로 연결되는 링크 추가 -->
-        <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
-            <img src="../Bodyall Logo.png" alt="바디올한의원 로고" class="header-logo">
-            <span class="header-title" style="color: #1a365d;">척추위생법 Online Guide</span>
-        </a>
-    </div>
-    <div class="header-lang">ko / en / cn</div>
+        <div class="header-left">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                <img src="../Bodyall Logo.png" alt="바디올한의원 로고" class="header-logo">
+                <span class="header-title" style="color: #1a365d;">척추위생법 Online Guide</span>
+            </a>
+        </div>
+        <div class="header-lang">
+            <a href="pelvic-rolling.html" class="active">ko</a> / 
+            <a href="pelvic-rolling_en.html">en</a> / 
+            <a href="pelvic-rolling_cn.html">cn</a>
+        </div>
     </header>
 
     <main class="container">
         <h1>[바디올 골반 롤링법 (척추중립법)]</h1>
 
         <div class="video-container" style="padding-bottom: 177.77%;">
-        <iframe src="https://www.youtube.com/embed/R8N2vl3YjzM" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/R8N2vl3YjzM" allowfullscreen></iframe>
         </div>
 
         <img src="pelvic-roll.png" alt="좌골 앉기 및 골반 롤링 자세" class="main-img">
