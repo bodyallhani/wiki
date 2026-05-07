@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>바디올 골반 롤링법 (척추중립법) - 바디올한의원</title>
     <link rel="icon" href="../Bodyall Logo.png" type="image/png">
     <meta name="description" content="척추 교정의 완성, 바디올 골반 롤링법을 소개합니다. 좌골 앉기를 통해 힘을 빼고도 바른 자세를 유지하는 법을 배우세요.">
@@ -26,8 +26,10 @@
             line-height: 1.7;
             padding-top: 70px;
             word-break: keep-all;
+            -webkit-text-size-adjust: none;
         }
 
+        /* [UI 개선] 상단 플로팅 바 전용 스타일 */
         .header {
             position: fixed;
             top: 0; left: 0; width: 100%;
@@ -35,20 +37,51 @@
             background-color: #ffffff;
             box-shadow: 0 2px 10px rgba(0,0,0,0.08);
             display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap; /* 줄바꿈 절대 방지 */
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
-            padding: 0 20px;
+            padding: 0 15px;
             box-sizing: border-box;
+            gap: 12px;
         }
 
-        .header-logo { height: 32px; }
-        .header-title { font-size: 19px; font-weight: 700; color: var(--primary-color); }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 1;
+            min-width: 0; /* 제목 생략 처리를 위한 필수 설정 */
+        }
 
-        .header-lang { font-size: 15px; color: #718096; font-weight: 600; }
-        .header-lang a { text-decoration: none; color: inherit; margin: 0 3px; }
-        .header-lang a.active { color: var(--primary-color); text-decoration: underline; }
+        .header-logo { height: 28px; width: auto; flex-shrink: 0; }
 
+        .header-title {
+            font-size: 16px; /* 모바일 가독성을 위해 소폭 조정 */
+            font-weight: 700;
+            color: var(--primary-color);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; /* 제목이 길면 말줄임표 처리 */
+            letter-spacing: -0.3px;
+        }
+
+        .header-lang {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            color: #718096;
+            font-weight: 600;
+            flex-shrink: 0; /* 번역 버튼 영역 너비 고정 */
+            white-space: nowrap;
+        }
+        
+        .header-lang a { text-decoration: none; color: inherit; padding: 0 2px; }
+        .header-lang a.active { color: var(--primary-color); text-decoration: underline; font-weight: 800; }
+        .header-lang .divider { margin: 0 1px; color: #cbd5e0; font-weight: 400; }
+
+        /* 메인 컨텐츠 영역 (기존 유지) */
         .container {
             max-width: 768px;
             margin: 0 auto;
@@ -86,7 +119,6 @@
             margin-bottom: 25px;
         }
 
-        /* [추가] 필수조건 섹션 스타일 */
         .condition-box {
             background-color: var(--important-bg);
             border: 2px solid var(--important-border);
@@ -209,20 +241,26 @@
             color: #495057;
             border: 1px solid #dee2e6;
         }
+
+        @media (max-width: 360px) {
+            .header-title { display: none; }
+        }
     </style>
 </head>
 <body>
 
     <header class="header">
         <div class="header-left">
-            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 8px; min-width: 0;">
                 <img src="../Bodyall Logo.png" alt="바디올한의원 로고" class="header-logo">
-                <span class="header-title" style="color: #1a365d;">척추위생법 Online Guide</span>
+                <span class="header-title">척추위생법 Online Guide</span>
             </a>
         </div>
         <div class="header-lang">
-            <a href="pelvic-rolling.html" class="active">ko</a> / 
-            <a href="pelvic-rolling_en.html">en</a> / 
+            <a href="pelvic-rolling.html" class="active">ko</a>
+            <span class="divider">/</span>
+            <a href="pelvic-rolling_en.html">en</a>
+            <span class="divider">/</span>
             <a href="pelvic-rolling_cn.html">cn</a>
         </div>
     </header>
