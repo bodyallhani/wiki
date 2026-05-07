@@ -2,10 +2,10 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>BodyAll 骨盘滚动法 (脊柱中立法) - BodyAll 韩医院</title>
     <link rel="icon" href="../Bodyall Logo.png" type="image/png">
-    <meta name="description" content="脊柱矫正的完成，介绍BodyAll骨盘滚动法。通过坐骨坐姿，学习如何在放松状态下保持正确姿势。">
+    <meta name="description" content="脊柱矫正的完成，介绍 BodyAll 骨盘滚动法。通过坐骨坐姿，学习放松状态下保持正确姿势。">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <style>
         :root {
@@ -22,10 +22,11 @@
             margin: 0; padding: 0;
             background-color: var(--bg-color);
             color: var(--text-main);
-            font-size: 18px;
+            font-size: 17px;
             line-height: 1.6;
-            padding-top: 70px;
+            padding-top: 60px;
             word-break: keep-all;
+            -webkit-text-size-adjust: none;
         }
 
         .header {
@@ -38,28 +39,45 @@
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
-            padding: 0 20px;
+            padding: 0 15px;
             box-sizing: border-box;
+            gap: 10px;
         }
 
-        .header-logo { height: 32px; }
-        .header-title { font-size: 17px; font-weight: 700; color: var(--primary-color); }
-        .header-lang { font-size: 14px; color: #718096; font-weight: 600; }
-        .header-lang a { text-decoration: none; color: inherit; margin: 0 3px; }
-        .header-lang a.active { color: var(--primary-color); text-decoration: underline; }
+        .header-left { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; }
+        .header-logo { height: 28px; flex-shrink: 0; }
+        .header-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--primary-color);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .header-lang {
+            font-size: 13px;
+            color: #718096;
+            font-weight: 600;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        .header-lang a { text-decoration: none; color: inherit; margin: 0 2px; }
+        .header-lang a.active { color: var(--primary-color); text-decoration: underline; font-weight: 800; }
 
         .container {
             max-width: 768px;
             margin: 0 auto;
             background-color: #ffffff;
-            padding: 30px 20px;
+            padding: 25px 20px 40px;
+            box-sizing: border-box;
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 22px;
             color: var(--primary-color);
-            border-left: 6px solid var(--primary-color);
-            padding-left: 15px;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 12px;
             margin-bottom: 25px;
             line-height: 1.3;
         }
@@ -87,17 +105,16 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
 
-        /* 必备条件区块样式 */
         .condition-box {
             background-color: var(--important-bg);
             border: 2px solid var(--important-border);
-            padding: 25px;
+            padding: 20px;
             border-radius: 16px;
             margin: 30px 0;
         }
 
         .condition-title {
-            font-size: 20px;
+            font-size: 19px;
             font-weight: 900;
             color: var(--important-border);
             display: block;
@@ -105,26 +122,15 @@
             text-align: center;
         }
 
-        .condition-list {
-            list-style: none;
-            padding: 0;
-            margin: 0 0 20px 0;
-        }
-
+        .condition-list { list-style: none; padding: 0; margin: 0 0 15px 0; }
         .condition-list li {
-            margin-bottom: 12px;
-            padding-left: 20px;
+            margin-bottom: 10px;
+            padding-left: 18px;
             position: relative;
             font-weight: 600;
-            font-size: 17px;
+            font-size: 15px;
         }
-
-        .condition-list li::before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            color: var(--important-border);
-        }
+        .condition-list li::before { content: '•'; position: absolute; left: 0; color: var(--important-border); }
 
         .btn-link-inline {
             display: block;
@@ -136,12 +142,12 @@
             border-radius: 10px;
             font-weight: 700;
             margin: 15px 0;
-            font-size: 16px;
+            font-size: 15px;
         }
 
         .condition-reason {
-            font-size: 16px;
-            line-height: 1.6;
+            font-size: 15px;
+            line-height: 1.5;
             color: #444;
             padding-top: 15px;
             border-top: 1px solid rgba(224, 49, 49, 0.2);
@@ -151,65 +157,50 @@
         .info-card {
             background-color: #f8f9fa;
             border: 2px solid #e9ecef;
-            padding: 25px;
+            padding: 20px;
             border-radius: 16px;
             margin-bottom: 30px;
         }
 
-        .step-list {
-            list-style: none;
-            padding: 0;
-        }
-
+        .step-list { list-style: none; padding: 0; }
         .step-list li {
-            margin-bottom: 20px;
-            padding-left: 45px;
+            margin-bottom: 18px;
+            padding-left: 40px;
             position: relative;
             font-weight: 500;
+            font-size: 16px;
         }
-
         .step-list li span {
             position: absolute;
-            left: 0;
-            top: 2px;
+            left: 0; top: 2px;
             background-color: var(--primary-color);
             color: #fff;
-            width: 30px;
-            height: 30px;
+            width: 28px; height: 28px;
             border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 15px;
-            font-weight: 800;
+            display: flex; justify-content: center; align-items: center;
+            font-size: 14px; font-weight: 800;
         }
 
         .highlight-blue { color: #0056b3; font-weight: 800; }
 
-        .bottom-menu {
-            margin-top: 50px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
+        .bottom-menu { margin-top: 40px; display: flex; flex-direction: column; gap: 10px; }
         .btn {
             display: block;
-            padding: 16px;
+            padding: 15px;
             background-color: #ffffff;
             border: 2px solid #e2e8f0;
             border-radius: 12px;
             color: var(--primary-color);
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 700;
             text-decoration: none;
             text-align: center;
+            line-height: 1.3;
         }
+        .btn-home { background-color: #f1f3f5; color: #495057; border: 1px solid #dee2e6; }
 
-        .btn-home {
-            background-color: #f1f3f5;
-            color: #495057;
-            border: 1px solid #dee2e6;
+        @media (max-width: 360px) {
+            .header-title { display: none; }
         }
     </style>
 </head>
@@ -217,7 +208,7 @@
 
     <header class="header">
         <div class="header-left">
-            <a href="index_cn.html" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+            <a href="index_cn.html" style="text-decoration: none; display: flex; align-items: center; gap: 8px; min-width: 0;">
                 <img src="../Bodyall Logo.png" alt="BodyAll 徽标" class="header-logo">
                 <span class="header-title">脊柱卫生法在线指南</span>
             </a>
@@ -232,8 +223,8 @@
     <main class="container">
         <h1>[BodyAll 骨盘滚动法 (脊柱中立法)]</h1>
 
-        <div class="video-container" style="padding-bottom: 177.77%;">
-            <iframe src="https://www.youtube.com/embed/R8N2vl3YjzM" allowfullscreen></iframe>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/R8N2vl3YjzM" title="骨盘滚动法演示" allowfullscreen></iframe>
         </div>
 
         <img src="pelvic-roll.png" alt="坐骨坐姿及骨盘滚动姿势" class="main-img">
@@ -263,14 +254,14 @@
             </ul>
         </section>
 
-        <p>这种无需用力即可维持正确脊柱位置的感觉，与使用靠垫时的感觉非常相似。但由于感官上的习得至关重要，<span class="highlight-blue">强烈建议您尽可能直接接受院长团的指导。</span></p>
+        <p>这种无需用力即可维持正确脊柱位置的感觉，与使用靠垫时的感觉非常相似。由于感官上的习得至关重要，<span class="highlight-blue">强烈建议您尽可能直接接受院长团的指导。</span></p>
 
         <nav class="bottom-menu">
             <a href="notice-precautions_cn.html" class="btn">[矫正后必读注意事项] ★</a>
             <a href="acute-care_cn.html" class="btn">[急症期注意事项]</a>
             <a href="bad-habits_cn.html" class="btn">[应避免的姿势或习惯]</a>
-            <a href="cushion-chair_cn.html" class="btn">[腰部靠垫使用法 / 如何选择好椅子]</a>
-            <a href="bodyall-stretching_cn.html" class="btn">[BodyAll 拉伸法 (脊柱整理法)]</a>
+            <a href="cushion-chair_cn.html" class="btn">[靠垫使用法 / 如何选择好椅子]</a>
+            <a href="bodyall-stretching_cn.html" class="btn">[BodyAll 拉伸法]</a>
             <a href="index_cn.html" class="btn btn-home">返回指南首页</a>
         </nav>
     </main>
