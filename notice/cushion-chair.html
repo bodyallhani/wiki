@@ -43,6 +43,11 @@
         .header-logo { height: 32px; }
         .header-title { font-size: 19px; font-weight: 700; color: var(--primary-color); }
 
+        /* 번역 버튼 스타일 */
+        .header-lang { font-size: 15px; color: #718096; font-weight: 600; }
+        .header-lang a { text-decoration: none; color: inherit; margin: 0 3px; }
+        .header-lang a.active { color: var(--primary-color); text-decoration: underline; }
+
         .container {
             max-width: 768px;
             margin: 0 auto;
@@ -69,7 +74,7 @@
 
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 비율 */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             background-color: #000;
@@ -120,7 +125,6 @@
             left: 0;
         }
 
-        /* 하단 메뉴 및 링크 버튼 */
         .link-group {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -171,20 +175,23 @@
 <body>
 
     <header class="header">
-    <div class="header-left">
-        <!-- 메인 페이지(index.html)로 연결되는 링크 추가 -->
-        <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
-            <img src="../Bodyall Logo.png" alt="바디올한의원 로고" class="header-logo">
-            <span class="header-title" style="color: #1a365d;">척추위생법 Online Guide</span>
-        </a>
-    </div>
-    <div class="header-lang">ko / en / cn</div>
+        <div class="header-left">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                <img src="../Bodyall Logo.png" alt="바디올한의원 로고" class="header-logo">
+                <span class="header-title" style="color: #1a365d;">척추위생법 Online Guide</span>
+            </a>
+        </div>
+        <div class="header-lang">
+            <a href="cushion-chair.html" class="active">ko</a> / 
+            <a href="cushion-chair_en.html">en</a> / 
+            <a href="cushion-chair_cn.html">cn</a>
+        </div>
     </header>
 
     <main class="container">
         <h1>[허리쿠션 사용법 / 좋은 의자 고르는법]</h1>
 
-        <section>
+        <section id="link-to-cushion">
             <h2>1. 올바른 허리쿠션 사용법</h2>
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/영상ID" title="허리쿠션 사용법 가이드" allowfullscreen></iframe>
