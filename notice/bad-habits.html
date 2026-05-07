@@ -43,6 +43,11 @@
 
         .header-logo { height: 32px; }
         .header-title { font-size: 19px; font-weight: 700; color: var(--primary-color); }
+        
+        /* 번역 버튼 스타일 */
+        .header-lang { font-size: 15px; color: #718096; font-weight: 600; }
+        .header-lang a { text-decoration: none; color: inherit; margin: 0 3px; }
+        .header-lang a.active { color: var(--primary-color); text-decoration: underline; }
 
         .container {
             max-width: 768px;
@@ -151,7 +156,6 @@
             border: 1px solid #dee2e6;
         }
 
-        /* 인라인 텍스트 링크 스타일 */
         .inline-link {
             color: #0056b3;
             font-weight: bold;
@@ -162,14 +166,17 @@
 <body>
 
     <header class="header">
-    <div class="header-left">
-        <!-- 클릭 시 index.html로 이동하도록 링크 추가 -->
-        <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
-            <img src="../Bodyall Logo.png" alt="바디올한의원 로고" class="header-logo">
-            <span class="header-title">척추위생법 Online Guide</span>
-        </a>
-    </div>
-    <div class="header-lang">ko / en / cn</div>
+        <div class="header-left">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                <img src="../Bodyall Logo.png" alt="바디올한의원 로고" class="header-logo">
+                <span class="header-title" style="color: #1a365d;">척추위생법 Online Guide</span>
+            </a>
+        </div>
+        <div class="header-lang">
+            <a href="bad-habits.html" class="active">ko</a> / 
+            <a href="bad-habits_en.html">en</a> / 
+            <a href="bad-habits_cn.html">cn</a>
+        </div>
     </header>
 
     <main class="container">
@@ -181,7 +188,12 @@
         
         <div class="habit-card" style="margin-top: 20px;">
             <span class="habit-name">❌ 피해야 할 대표 자세</span>
-            <p class="desc-text">1. 목이나 허리를 숙이는 자세<br>2. 의자에 구부정하게 앉는 자세<br>3. 땅바닥에 양반다리하고 앉는 자세<br>** 15분이상 위 자세를 유지하거나, 자주 반복하지 않도록 해주세요.</p>
+            <p class="desc-text">
+                1. 목이나 허리를 숙이는 자세<br>
+                2. 의자에 구부정하게 앉는 자세<br>
+                3. 땅바닥에 양반다리하고 앉는 자세<br>
+                ** 15분이상 위 자세를 유지하거나, 자주 반복하지 않도록 해주세요.
+            </p>
         </div>
 
         <h2 class="section-title">생활 속 주의사항</h2>
