@@ -6,12 +6,11 @@
     <title>척추위생법 Online Guide - 바디올한의원</title>
     <link rel="icon" href="../Bodyall Logo.png" type="image/png">
     <meta name="description" content="바디올한의원 척추위생법 온라인 가이드입니다. 성공적인 척추교정과 올바른 자세, 체형 관리를 위한 필수 정보를 제공합니다.">
-    <!-- 가독성이 우수한 폰트(Pretendard) 적용 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <style>
         :root {
-            --primary-color: #1a365d; /* 신뢰감을 주는 바디올 네이비 */
-            --accent-color: #e53e3e; /* 강조용 레드 */
+            --primary-color: #1a365d;
+            --accent-color: #e53e3e;
             --bg-color: #f8fafc;
             --text-main: #2d3748;
             --text-light: #718096;
@@ -23,13 +22,12 @@
             padding: 0;
             background-color: var(--bg-color);
             color: var(--text-main);
-            font-size: 18px; /* 노안을 고려한 기본 텍스트 크기 확대 */
+            font-size: 18px;
             line-height: 1.65;
-            padding-top: 70px; /* 플로팅 헤더 공간 확보 */
-            word-break: keep-all; /* 단어 단위 줄바꿈으로 가독성 향상 */
+            padding-top: 70px;
+            word-break: keep-all;
         }
 
-        /* 고정 플로팅 바 (헤더) */
         .header {
             position: fixed;
             top: 0;
@@ -64,13 +62,24 @@
             letter-spacing: -0.5px;
         }
 
+        /* 번역 버튼 스타일 */
         .header-lang {
             font-size: 15px;
             color: var(--text-light);
-            font-weight: 500;
+            font-weight: 600;
+        }
+        
+        .header-lang a {
+            text-decoration: none;
+            color: inherit;
+            margin: 0 3px;
+        }
+        
+        .header-lang a.active {
+            color: var(--primary-color);
+            text-decoration: underline;
         }
 
-        /* 메인 컨텐츠 영역 */
         .container {
             max-width: 768px;
             margin: 0 auto;
@@ -122,7 +131,6 @@
             padding-top: 20px;
         }
 
-        /* 메뉴 버튼 영역 */
         .menu-section {
             margin-top: 40px;
             display: flex;
@@ -148,7 +156,6 @@
 
         .btn:active {
             background-color: #edf2f7;
-            border-color: #cbd5e0;
             transform: translateY(1px);
         }
 
@@ -157,10 +164,6 @@
             color: #ffffff;
             border: none;
             box-shadow: 0 4px 12px rgba(26, 54, 93, 0.25);
-        }
-
-        .btn-important:active {
-            background-color: #2a4365;
         }
 
         .btn-home {
@@ -180,17 +183,21 @@
 </head>
 <body>
 
-    <!-- 상단 고정 플로팅 바 -->
     <header class="header">
         <div class="header-left">
-            <img src="../Bodyall Logo.png" alt="바디올한의원 로고" class="header-logo">
-            <span class="header-title">척추위생법 Online Guide</span>
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                <img src="../Bodyall Logo.png" alt="바디올한의원 로고" class="header-logo">
+                <span class="header-title" style="color: #1a365d;">척추위생법 Online Guide</span>
+            </a>
         </div>
-        <div class="header-lang">ko / en / cn</div>
+        <div class="header-lang">
+            <a href="index.html" class="active">ko</a> / 
+            <a href="index_en.html">en</a> / 
+            <a href="index_cn.html">cn</a>
+        </div>
     </header>
 
     <main class="container">
-        <!-- 본문 내용 -->
         <h1>올바른 척추,<br>바디올한의원과 함께 하세요!</h1>
         
         <img src="notice.png" alt="바디올한의원 척추 교정 치료 모습" class="main-image">
@@ -199,15 +206,14 @@
             <p>오늘 <strong>바디올한의원</strong>에서 치료 잘 받으셨나요?</p>
             <p>상담 때 강조하여 말씀드렸듯이, 성공적인 <span class="highlight">척추 교정치료</span>라는 것은 진료실을 나서 집에 돌아가신 일상 속에서도 계속 진행되어야 합니다.</p>
             <p>꼭 다음 가이드 글들을 정독해 주시면, 통증 없이 <strong>건강한 척추로 회복</strong>하시는데 큰 도움이 되실 것입니다.</p>
-            <p>이미 치료를 받으신 분이시라면 이 척추위생법들을 저희 원장단으로부터 자세히 배우셨겠지만, 올바른 체형을 유지하기 위한 <strong>반복적인 학습</strong>이 매우 중요합니다. 꼭 다시 한번 읽어보시고 바른 자세를 정리하는 시간을 가지시길 바랍니다!</p>
-            <p>각 파트는 단순한 동작 설명이 아닌, 우리 몸이 회복되는 <strong>원리와 함께 설명</strong>됩니다. 원리를 함께 이해하시는 것이 척추 건강 지식을 완전한 내 것으로 만드는 것에 있어 매우 유리하니 꼭 원리까지도 이해하실 수 있기를 바랍니다.</p>
+            <p>이미 치료를 받으신 분이시라면 이 척추위생법들을 저희 원장단으로부터 자세히 배우셨겠지만, 올바른 체형을 유지하기 위한 <strong>반복적인 학습</strong>이 매우 중요합니다.</p>
+            <p>각 파트는 단순한 동작 설명이 아닌, 우리 몸이 회복되는 <strong>원리와 함께 설명</strong>됩니다. 원리를 이해하시는 것이 척추 건강 지식을 완전한 내 것으로 만드는 지름길입니다.</p>
             
             <div class="signature">
                 - 바디올한의원 원장단 일동
             </div>
         </div>
 
-        <!-- 하위 페이지 메뉴 링크 -->
         <nav class="menu-section">
             <a href="notice-precautions.html" class="btn btn-important">[교정후 필독 주의사항] <span class="icon-star">★</span></a>
             <a href="acute-care.html" class="btn">[급성기시 주의사항]</a>
