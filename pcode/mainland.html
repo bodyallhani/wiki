@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
+  <title>바디올 난치 신경-기능센터 | 4대 기능축 통합 진단</title>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-390KQ62CTL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-390KQ62CTL', { send_page_view: true });
+  </script>
+
+  <style>
+    :root {
+      --bg: #05080f; 
+      --card: rgba(255, 255, 255, 0.03);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --line: rgba(255, 255, 255, 0.08);
+      --accent: #ffffff;
+      --radius: 20px;
+      --max: 1140px;
+      --ym: #fbbf24; --gu: #a78bfa; --tu: #34d399; --su: #3b82f6;
+    }
+
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+    body {
+      margin: 0; font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
+      color: var(--text); background: var(--bg); line-height: 1.5; word-break: keep-all;
+    }
+    .bg-glow {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: radial-gradient(circle at 10% 10%, rgba(251, 191, 36, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 90%, rgba(59, 130, 246, 0.05) 0%, transparent 40%);
+      z-index: -1;
+    }
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    a { color: inherit; text-decoration: none; transition: 0.2s; }
+
+    /* Nav */
+    .nav { position: sticky; top: 0; z-index: 100; backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); background: rgba(5, 8, 15, 0.8); border-bottom: 1px solid var(--line); }
+    .navin { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; }
+    .brand { display: flex; align-items: center; gap: 8px; }
+    .logo-dot { width: 22px; height: 22px; border-radius: 6px; background: linear-gradient(135deg, var(--ym), var(--su)); }
+    .brand strong { font-size: 15px; letter-spacing: -0.5px; }
+
+    /* Spacing & Hierarchy */
+    section { padding: 120px 0; border-top: 1px solid var(--line); }
+    .hero { padding: 80px 0 120px; text-align: center; border-top: none; }
+    .kicker { font-size: 11px; font-weight: 800; color: #fff; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 12px; display: inline-block; padding: 4px 12px; border: 1px solid var(--line); border-radius: 99px; }
+    .hero-logo { width: 48px; height: auto; margin: 0 auto 24px; display: block; opacity: 0.9; }
+    .hero h1 { font-size: 32px; font-weight: 800; line-height: 1.3; margin: 0 0 20px; letter-spacing: -1px; }
+    .hero p.sub { font-size: 16px; color: var(--muted); margin-bottom: 32px; }
+
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 16px 24px; border-radius: 14px; font-weight: 700; font-size: 15px; width: 100%; border: 1px solid var(--line); transition: 0.3s; cursor: pointer; }
+    .btn.primary { background: #fff; color: #000; border: none; }
+    .btn.outline { background: transparent; color: #fff; }
+
+    /* Personalized Box */
+    .personal { display: none; margin: 30px 0 60px; padding: 24px; background: rgba(255,255,255,0.02); border-radius: var(--radius); border: 1.5px solid var(--ym); text-align: left; animation: fadeIn 0.5s ease; }
+    .p-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+    .p-badge { padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 800; border: 1px solid; }
+
+    /* Quadrant Grid */
+    .quad-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 20px; }
+    .quad { position: relative; height: 220px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); cursor: pointer; transition: 0.4s; }
+    .quad-img { position: absolute; inset: 0; background-size: cover; background-position: center; filter: brightness(0.4); transition: 0.6s; }
+    .quad:hover .quad-img { transform: scale(1.1); filter: brightness(0.6); }
+    .quad-content { position: relative; height: 100%; padding: 24px; display: flex; flex-direction: column; justify-content: flex-end; background: linear-gradient(to top, rgba(5, 8, 15, 0.9), transparent); }
+    .quad-content h3 { font-size: 19px; margin: 0 0 4px; }
+    .quad-content p { font-size: 13px; color: var(--muted); margin: 0; }
+
+    /* [Hybrid] Disease Maze UI */
+    .maze-wrap {
+      position: relative;
+      background: url('https://raw.githubusercontent.com/bodyallhani/gen-intake/main/maze-bg.png') no-repeat center;
+      background-size: cover;
+      border: 1px solid var(--line);
+      border-radius: 40px;
+      padding: 100px 20px;
+      margin: 20px 0;
+      overflow: hidden;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    }
+    .maze-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 700px; margin: 0 auto 50px; position: relative; z-index: 2; }
+    .s-tag { 
+      padding: 10px 18px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); 
+      border-radius: 99px; font-size: 14px; font-weight: 600; color: var(--muted); 
+      backdrop-filter: blur(10px); transition: 0.3s;
+    }
+    .s-tag:hover { border-color: #fff; color: #fff; transform: translateY(-3px); background: rgba(255,255,255,0.1); }
+    .maze-focus-line { width: 1px; height: 80px; background: linear-gradient(to bottom, transparent, var(--su)); margin: 0 auto 30px; position: relative; z-index: 2; }
+    .maze-core-badge {
+      font-size: 24px; font-weight: 800; color: #fff; background: rgba(5, 8, 15, 0.85);
+      display: inline-block; padding: 18px 40px; border-radius: 20px; border: 1.5px solid var(--su);
+      box-shadow: 0 0 40px rgba(59, 130, 246, 0.4); backdrop-filter: blur(15px);
+      position: relative; z-index: 2; margin-bottom: 40px;
+    }
+    .maze-desc {
+      color: #fff; font-size: 17px; margin-bottom: 40px; line-height: 1.8; 
+      max-width: 540px; margin-left: auto; margin-right: auto; position: relative; z-index: 2;
+      font-weight: 500; text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+    }
+
+    /* [Hybrid] Story Section with Background */
+    .story-wrap {
+      position: relative;
+      background: url('https://raw.githubusercontent.com/bodyallhani/gen-intake/main/story-bg.png') no-repeat center;
+      background-size: cover;
+      border: 1px solid var(--line);
+      border-radius: 40px;
+      padding: 80px 40px;
+      cursor: pointer;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .story-wrap:hover { border-color: rgba(255,255,255,0.2); transform: translateY(-5px); }
+    .story-content { position: relative; z-index: 2; text-align: left; max-width: 600px; }
+
+    /* FAQ System */
+    .faq-category { margin-bottom: 40px; }
+    .faq-category-title { font-size: 13px; font-weight: 800; color: var(--su); margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; }
+    .faq details { margin-bottom: 12px; background: var(--card); border-radius: 16px; border: 1px solid var(--line); transition: 0.3s; }
+    .faq details[open] { border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); }
+    .faq summary { padding: 20px; cursor: pointer; font-weight: 700; font-size: 15px; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    .faq summary::after { content: '+'; font-size: 18px; color: var(--muted); }
+    .faq details[open] summary::after { content: '-'; }
+    .faq .answer { padding: 0 20px 20px; color: #cbd5e1; font-size: 14px; line-height: 1.7; }
+
+    /* Sticky Footer */
+    .sticky { position: fixed; bottom: 16px; left: 16px; right: 16px; z-index: 200; background: #fff; color: #000; padding: 12px 20px; border-radius: 18px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 15px 35px rgba(0,0,0,0.5); }
+
+    footer { padding: 80px 0 140px; text-align: center; color: var(--muted); font-size: 12px; border-top: 1px solid var(--line); }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @media (min-width: 769px) { .quad-grid { grid-template-columns: repeat(2, 1fr); } .hero h1 { font-size: 52px; } }
+    @media (min-width: 1024px) { .quad-grid { grid-template-columns: repeat(4, 1fr); } }
+  </style>
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+
+  <header class="nav">
+    <div class="navin">
+      <a class="brand" href="mainland.html">
+        <div class="logo-dot"></div>
+        <strong>바디올 난치 신경-기능센터</strong>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero">
+      <div class="kicker">Bodyall P-CODE Diagnosis</div>
+      <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png" alt="바디올 로고" class="hero-logo">
+      <h1>파편화된 증상이 아닌<br><span style="background: linear-gradient(to right, var(--ym), var(--gu), var(--tu), var(--su)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">질병의 원인축</span>을 바로잡습니다.</h1>
+      <p class="sub">수원 인계동에서 대학병원 검사로도 원인을 찾지 못해 방황하던 만성·난치성 증상의 뿌리,<br>인체 내부의 무너진 4대 기능축 변증 진단 시스템에서 명확한 해답을 찾습니다.</p>
+      <div style="padding: 0 10px;">
+        <a class="btn primary" href="m1.html">30초, 나의 유형 검사하기</a>
+        <a class="btn outline" href="#axes" style="margin-top:10px;">4대 기능축 시스템 보기</a>
+      </div>
+
+      <div class="personal" id="personalBox">
+        <div class="p-header">
+          <div class="p-badge" id="pBadge">ANALYSIS RESULT</div>
+          <div style="font-size: 11px; font-weight: 700; color: var(--muted);" id="pScore">SCORE DATA</div>
+        </div>
+        <h3 id="pTitle" style="margin: 0 0 10px; font-size: 20px;">-</h3>
+        <p id="pDesc" style="color: var(--muted); font-size: 15px; margin-bottom: 24px;">-</p>
+        <a class="btn primary" id="pGoAxis" href="javascript:void(0);" style="padding: 12px; width: auto;">나의 축 정밀 리포트 보기</a>
+      </div>
+    </section>
+
+    <section id="axes">
+      <div class="kicker">P-CODE 4 Axis System</div>
+      <div style="text-align: center; margin-bottom: 60px;">
+        <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 12px;">바디올 4대 기능축 시스템</h2>
+        <p style="color: var(--muted);">수원 바디올한의원의 과학적 진단을 기반으로 한 환자 맞춤형 변증 및 한방 임상 기능 분류</p>
+      </div>
+      <div class="quad-grid">
+        <div class="quad" data-go="ym.html">
+          <div class="quad-img" style="background-image: url('https://raw.githubusercontent.com/bodyallhani/gen-intake/main/ym.png');"></div>
+          <div class="quad-content">
+            <h3>양명축: 소화·대사</h3>
+            <p>위장의 따뜻한 대사 에너지 복구 및 체내 잔류 독소·노폐물 배출 리듬 정상화</p>
+          </div>
+        </div>
+        <div class="quad" data-go="gu.html">
+          <div class="quad-img" style="background-image: url('https://raw.githubusercontent.com/bodyallhani/gen-intake/main/gu.png');"></div>
+          <div class="quad-content">
+            <h3>궐음축: 자율신경</h3>
+            <p>교감·부교감 신경계의 균형 회복과 과민해진 신체 조율 시스템 안정이 목표</p>
+          </div>
+        </div>
+        <div class="quad" data-go="tu.html">
+          <div class="quad-img" style="background-image: url('https://raw.githubusercontent.com/bodyallhani/gen-intake/main/tu.png');"></div>
+          <div class="quad-content">
+            <h3>태음축: 면역·호흡</h3>
+            <p>폐와 피부의 맑은 기혈 순환 촉진 및 세포 외벽의 견고한 면역 방어 체계 구축</p>
+          </div>
+        </div>
+        <div class="quad" data-go="su.html">
+          <div class="quad-img" style="background-image: url('https://raw.githubusercontent.com/bodyallhani/gen-intake/main/su.png');"></div>
+          <div class="quad-content">
+            <h3>소음축: 회복·에너지</h3>
+            <p>심부 진액과 골수 에너지를 충전하여 무너진 근본적 생명력 및 자생력 복구</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="disease-maze" style="text-align: center; border-top: none;">
+      <div class="kicker" style="color: var(--su);">Beyond the Disease Name</div>
+      <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 24px;">진단명은 표면적 현상일 뿐,<br>환자마다 증상을 지배하는 <span style="color: var(--ym);">진짜 원인축(Axis)</span>은 다릅니다.</h2>
+      
+      <div class="maze-wrap">
+        <div class="maze-tags">
+          <span class="s-tag">만성 아토피 피부염</span> <span class="s-tag">공황장애 및 불안증</span> <span class="s-tag">과민성 대장 증후군</span>
+          <span class="s-tag">알레르기성 만성 비염</span> <span class="s-tag">수면장애 및 불면증</span> <span class="s-tag">만성 역류성 식도염</span>
+          <span class="s-tag">부신피로 만성 피로 증후군</span> <span class="s-tag">갱년기 자율신경실조증</span> <span class="s-tag">신경성 이명증</span>
+          <span class="s-tag">난치성 한랭 두드러기</span> <span class="s-tag">이석증 외 원인불명 어지럼증</span> <span class="s-tag">만성 건선 피부질환</span>
+        </div>
+        
+        <div class="maze-focus-line"></div>
+        <div class="maze-core-badge">4대 기능축 불균형 변증</div>
+        
+        <div class="maze-desc">
+          단순히 질병명에만 맞춘 일편일률적인 처방과 일시적인 억제 치료가 반복되었다면, 이제 당신의 인체 시스템을 지배하는 <b>근본적인 원인</b>을 마주해야 합니다. 수원 바디올한의원은 자율신경(궐음), 소화대사(양명), 면역호흡(태음), 회복에너지(소음)로 분류되는 체내 기능축의 불균형 리듬을 정밀하게 복구합니다.
+        </div>
+        
+        <a class="btn primary" href="m1.html" style="width: auto; padding: 20px 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">내 몸의 진짜 '축' 확인하기 →</a>
+      </div>
+    </section>
+
+    <section id="brand-philosophy">
+      <div class="story-wrap" onclick="location.href='story.html'">
+        <div class="story-content">
+          <div class="kicker" style="color: var(--ym); border-color: var(--ym); margin-bottom: 24px;">THE ORIGIN</div>
+          <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 20px; line-height: 1.4; text-shadow: 0 2px 10px rgba(0,0,0,0.8);">
+            현대 의학적 검사 결과는 정상인데,<br><span style="color: var(--ym);">왜 나의 전신 증상은 계속 불편할까?</span>
+          </h2>
+          <p style="color: #cbd5e1; font-size: 16px; margin-bottom: 32px; line-height: 1.6; text-shadow: 0 2px 10px rgba(0,0,0,0.8);">
+            국소적이고 파편화된 대증치료의 한계를 통찰하고, 수원 인계동에서 수많은 난치성 질환자들을 임상 진료하며 인체의 뿌리 메커니즘인 '4대 기능축 변증 이론'을 정립하기까지의 기록입니다.
+          </p>
+          <div style="font-weight: 700; color: #fff; font-size: 15px; display: flex; align-items: center; gap: 8px;">
+            P-code 변증법의 학술적 임상 Story 확인하기 <span>→</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div style="text-align: center; margin-bottom: 60px;"><h2>난치 신경-기능 의학 FAQ</h2></div>
+      <div class="faq">
+        <div class="faq-category">
+          <div class="faq-category-title">Step 1. 만성 증상의 원인과 병리 개념</div>
+          <details><summary>종합병원 정밀 검사에서는 정상이라는데 왜 신체 불편감은 계속될까요?</summary><div class="answer">현대 의학적 스크리닝(CT, MRI, 일반 혈액검사)은 장기 구조의 기질적인 '조직의 파괴나 변형'을 포착하는 데 유리합니다. 반면, 검사상 원인을 찾지 못하는 만성 난치성 증상은 장기의 구조적 변형 이전 단계인 <b>'생체 신호 및 자율신경 시스템의 리듬 오류'</b>에서 기인합니다. 바디올은 보이지 않는 기능축의 불균형 리듬을 객관적으로 추적합니다.</div></details>
+          <details><summary>바디올의 '4대 기능축'은 기존의 사상체질의학이나 8체질과 같은 개념인가요?</summary><div class="answer">고정되어 평생 변하지 않는 유전적 체질만을 규정하는 것이 아닙니다. <b>'현재 환자의 몸이 환경적 스트레스와 불규칙한 손상으로 인해 어떤 병리적 패턴으로 무너져 있는가'</b>에 집중합니다. 실시간으로 변동하는 내부 불균형을 한의학적 변증 가이드라인에 맞춰 정밀하게 바로잡는 것이 치료의 핵심 목적입니다.</div></details>
+        </div>
+        <div class="faq-category">
+          <div class="faq-category-title">Step 2. P-CODE 과학적 진단 시스템</div>
+          <details><summary>원내에서 시행하는 SA3000P 맥파 분석 검사는 전통적인 진맥과 무엇이 다른가요?</summary><div class="answer">전통 한의학의 정밀 맥진(脈診) 기법과 현대 디지털 신호 처리 기술인 맥파 분석(Pulse Wave Analysis)을 융합하여 진단의 객관성을 극대화한 시스템입니다. 즉, <b>한의사의 고도화된 임상 경험과 디지털 장비의 상호보완</b>을 통해 자율신경계 균형도 및 혈관 탄성도를 정밀 계측합니다.</div></details>
+          <details><summary>30초 간편 모바일 문진 스크리닝만으로 처방의 방향을 알 수 있나요?</summary><div class="answer">수만 명의 임상 데이터를 바탕으로 유형화한 패턴 인식 기반의 1차 스크리닝 진단입니다. 본 모바일 검사 이후, <b>원내 내원 시 맥파 검사 및 한의사의 세밀한 대면 P-CODE 정밀 변증</b>을 종합적으로 거쳐 환자 개인별 최종 맞춤 처방이 결정됩니다.</div></details>
+        </div>
+        <div class="faq-category">
+          <div class="faq-category-title">Step 3. 치료 과정 및 한방 임상 안전성</div>
+          <details><summary>왜 여러 동시다발적 증상을 한꺼번에 치료하지 않고 '장기 복구 순서'를 따지나요?</summary><div class="answer">인체의 내장 기능은 유기적으로 연결된 톱니바퀴와 같습니다. 근본적인 심부 재생 에너지(소음축)가 고갈된 상태에서 대사 배출(양명축)만을 촉진시키면 생체 조율 시스템 자체가 붕괴됩니다. 수원 바디올한의원은 <b>치료의 선후관계와 장기 기능 복구의 기전적 순서</b>를 명확히 하여 안전하게 접근합니다.</div></details>
+          <details><summary>의학 병원에서 처방받은 양약을 장기 복용 중인데 한방 치료를 병합해도 괜찮을까요?</summary><div class="answer">대부분의 만성 질환에서 현대 의학적 치료와 한방 신경-기능 치료의 병행은 상호 보완적인 시너지 효과를 냅니다. 화학적 약물에만 의존하느라 둔화되었던 <b>인체 고유의 자생 기능 및 면역계를 복구</b>함으로써, 궁극적으로 복용 약물의 의존도를 자연스럽게 낮출 수 있도록 단계별 치료를 도와드립니다.</div></details>
+          <details><summary>한약을 장기 복용하면 간 수치가 올라간다는 간독성 이슈는 정말 안전한가요?</summary><div class="answer">한약의 간독성 우려는 한의사의 정밀 변증 처방을 거치지 않은 불법 약재의 임의 복용 시 발생하는 문제입니다. 수원 인계동 바디올한의원은 식품의약품안전처의 엄격한 hGMP 인증을 통과한 전문 의약품 한약재만을 사용하며, <b>원내 임상병리 자동 혈액검사 장비</b>를 구비하여 투약 전후의 간 기능 지표(AST, ALT, γ-GTP)를 과학적 수치로 모니터링하므로 장기 복용 시에도 안심하셔도 됩니다.</div></details>
+        </div>
+        <div class="faq-category">
+          <div class="faq-category-title">Step 4. 임상 치료 결과 및 건강 유지 관리</div>
+          <details><summary>치료가 어려운 오래된 난치성 면역·신경 질환을 어떻게 근본적으로 치료할 수 있나요?</summary><div class="answer">드러난 증상만을 억제하거나 가라앉히는 소염 대증 치료가 아니라, <b>인체의 전체적인 조율 시스템 자체를 체질적으로 개선</b>하는 것입니다. 급격한 외부 환경 변화나 스트레스 자극에도 신체 밸런스가 흔들리지 않도록 자율신경 및 면역 기능의 '축의 항상성(Homeostasis)'을 구축하는 것이 바디올의 치료 전략입니다.</div></details>
+          <details><summary>개인 맞춤 한약 처방의 효과는 보통 언제부터 몸으로 체감할 수 있나요?</summary><div class="answer">개인차가 있으나, 보통 1~2주간의 초기 기능축 안정화 단계를 거치면 깊은 수면 유도, 소화 효소 분비 촉진 등 <b>기초적 생체 기능 지표</b>부터 개선되기 시작합니다. 이후 기혈 순환이 정상 궤도에 오르며 만성 피부염, 불안장애 등 주 증상이 점진적으로 완화됩니다.</div></details>
+          <details><summary>증상이 호전되어 한방 치료가 완전히 끝난 후 다시 재발하거나 나빠지는 현상은 없나요?</summary><div class="answer">바디올한의원은 치료 종료 후에도 <b>담당 한의사가 직접 환자의 직업적 환경 및 생체 컨디션에 맞는 1:1 맞춤형 생활의학 관리법</b>을 안내해 드립니다. 치료를 통해 완벽히 구축된 건강한 기능축의 리듬을 세포와 신경계가 스스로 기억하여 자생력을 영구히 유지하도록 돕습니다.</div></details>
+        </div>
+        <div class="faq-category">
+          <div class="faq-category-title">Step 5. 치료 비용 정책 및 환자 편의성</div>
+          <details><summary>거리가 먼 지방이나 해외에 거주하여 매번 직접 내원이 힘든데 비대면 진료가 가능한가요?</summary><div class="answer">네, 원격 비대면 진료가 가능합니다. 보건복지부의 공식 의료 지침에 따라 유선 전화 및 화상 상담 진료 시스템이 완비되어 있어, 수원 이외의 전국의 모든 지역에서도 정밀 문진 데이터를 기반으로 한 <b>맞춤형 P-CODE 비대면 진단 및 한약 처방 배송</b>을 편리하게 받으실 수 있습니다.</div></details>
+          <details><summary>기능축 복구를 위한 한약 치료 비용은 구체적으로 어떻게 되나요?</summary><div class="answer"><b>- 15일 기준: 28만 원 / 1개월 기준: 46만 원 / 3개월 집중 과정: 108만 원</b><br>정밀 디지털 진단 시스템과 1:1 맞춤 변증 가치를 포함하여, 정직하고 투명한 정찰제 정책에 따라 합리적이고 전문적인 의료 비용을 제안합니다.</div></details>
+          <details><summary>바디올 난치 기능-기능센터의 맞춤 한약 처방은 타 병원과 무엇이 다른가요?</summary><div class="answer">전통 의학 문헌인 <b>《동의보감(東醫寶鑑)》 및 《상한론(傷寒論)》 본초 기전 문헌 고증</b>을 철저히 따릅니다. 약재 유효성분의 손실을 막기 위해 원산지 추적은 물론, 재배 식물의 학명(Scientific Name)까지 명확히 일치시키는 엄격한 천연물 품질 검증 프로세스를 통과한 최고 등급의 청정 약재만을 고집합니다.</div></details>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>수원 인계동 바디올한의원 · 난치 신경-기능센터</p>
+      <p style="opacity: 0.3; margin-top: 10px;">© 2020 Bodyall Center. Professional Healthcare.</p>
+    </footer>
+  </main>
+
+  <div class="sticky">
+    <div style="font-size: 14px; font-weight: 800;">심층 문진 작성</div>
+    <a class="btn primary" href="/Herbmed/intake.html" style="width: auto; padding: 10px 20px;">문진 시작</a>
+  </div>
+
+  <script>
+    // 1. Smooth Scroll (Refined to avoid interference with functional buttons)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        // If href is just "#" or empty, do nothing so other logic can take over
+        if (href === "#" || href === "" || href.length < 2) return;
+
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) { 
+          window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' }); 
+        }
+      });
+    });
+
+    // 2. Axis Cards Navigation
+    document.querySelectorAll(".quad").forEach(q => {
+      q.addEventListener("click", () => window.location.href = q.dataset.go);
+    });
+
+    // 3. Personalized Result & Dynamic Link Injection
+    (function(){
+      const AX = {
+        ym: { name:"양명축: 소화·대사", color:"#fbbf24", file:"ym.html", desc:"위장의 따뜻한 대사 에너지를 복구해야 하는 상태입니다." },
+        gu: { name:"궐음축: 자율신경", color:"#a78bfa", file:"gu.html", desc:"신경계의 조율 리듬을 고요하게 바로잡아야 합니다." },
+        tu: { name:"태음축: 면역·호흡", color:"#34d399", file:"tu.html", desc:"면역 방어막의 결속력을 높여 외부 자극을 차단해야 합니다." },
+        su: { name:"소음축: 회복·에너지", color:"#3b82f6", file:"su.html", desc:"근본적인 수기(水氣)를 채워 에너지를 재생해야 합니다." }
+      };
+
+      try {
+        const axis = localStorage.getItem("genIntakeAxis");
+        const rawScores = localStorage.getItem("genIntakeScores");
+        if(axis && AX[axis]) {
+          const box = document.getElementById("personalBox");
+          const scoreData = JSON.parse(rawScores);
+          const score = scoreData.scores;
+          
+          document.getElementById("pTitle").textContent = AX[axis].name;
+          document.getElementById("pTitle").style.color = AX[axis].color;
+          document.getElementById("pDesc").textContent = AX[axis].desc;
+          document.getElementById("pScore").textContent = `YM:${score.ym} GU:${score.gu} TU:${score.tu} SU:${score.su}`;
+          
+          // CRITICAL: Set the actual file destination for the button
+          const goBtn = document.getElementById("pGoAxis");
+          goBtn.href = AX[axis].file; 
+          // Manually handle navigation if necessary to bypass any residual events
+          goBtn.onclick = function() { window.location.href = AX[axis].file; };
+
+          document.getElementById("pBadge").style.color = AX[axis].color;
+          document.getElementById("pBadge").style.borderColor = AX[axis].color;
+          box.style.display = "block";
+        }
+      } catch(e) {}
+    })();
+  </script>
+</body>
+</html>
