@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/png" href="../Bodyall Logo.png">
-    <title>骨骼肌肉系统症状自诊百科 | Body-All Wiki</title>
+    <title>筋骨格系统各症状自我诊断百科 | Bodyall 百科</title>
+    <meta name="description" content="水原Bodyall韩医院医学百科全书：专业提供李东海院长的空间脊椎整骨术、推拿、针刀临床案例以及脊椎与内科疾病信息。">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* [1. 基础布局] */
         :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; --card-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; word-break: keep-all; padding-top: 60px; padding-bottom: 80px; }
+        body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; margin: 0; background: #fff; word-break: break-all; padding-top: 60px; padding-bottom: 80px; }
         .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; box-sizing: border-box; }
         
+        /* [2. 上/下端浮动导航栏] */
         .top-nav { position: fixed; top: 0; left: 0; right: 0; height: 60px; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .nav-menu { overflow-x: auto; display: flex; gap: 15px; white-space: nowrap; font-size: 0.9rem; font-weight: bold; align-items: center; }
         .nav-menu a { text-decoration: none; color: #555; display: flex; align-items: center; gap: 5px; }
+        
+        /* 语言切换样式 */
         .lang-switch { font-size: 0.75rem; color: #888; border-left: 1px solid #ddd; padding-left: 10px; margin-left: 10px; font-weight: bold; flex-shrink: 0; }
         .lang-switch a { text-decoration: none; color: #888; }
         .lang-switch a.active { color: var(--primary); }
@@ -22,14 +28,24 @@
         .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-size: 0.75rem; font-weight: bold; }
         .bottom-nav i { font-size: 1.3rem; margin-bottom: 4px; }
 
+        /* [3. 页眉区域] */
         header { border-bottom: 2px solid var(--primary); padding: 20px 0; margin-bottom: 20px; text-align: center; }
         header h1 { margin: 10px 0 0; font-size: 1.5rem; color: var(--primary); font-weight: 800; }
 
+        /* [4. 搜索框] */
         .search-area { position: relative; margin-bottom: 30px; width: 100%; }
-        .search-area i { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); color: #999; font-size: 1.2rem; pointer-events: none; z-index: 5; }
-        #symptomSearch { width: 100%; padding: 15px 15px 15px 50px; border: 2px solid #eee; border-radius: 12px; font-size: 1rem; outline: none; transition: 0.3s; box-sizing: border-box; background: #fff; }
+        .search-area i { 
+            position: absolute; left: 20px; top: 50%; transform: translateY(-50%); 
+            color: #999; font-size: 1.2rem; pointer-events: none; z-index: 5;
+        }
+        #symptomSearch { 
+            width: 100%; padding: 15px 15px 15px 50px; 
+            border: 2px solid #eee; border-radius: 12px; font-size: 1rem; 
+            outline: none; transition: 0.3s; box-sizing: border-box; background: #fff;
+        }
         #symptomSearch:focus { border-color: var(--accent); box-shadow: 0 0 8px rgba(230, 126, 34, 0.1); }
 
+        /* [5. 症状列表] */
         .symptom-list { padding: 0; margin: 0; list-style: none; }
         .symptom-item { border-bottom: 1px solid #eee; padding: 20px 10px; transition: 0.2s; }
         .symptom-item:hover { background: #fdfdfd; }
@@ -38,6 +54,7 @@
         .hash-tags { font-size: 0.88rem; color: #888; line-height: 1.6; }
         .date-info { color: #bbb; font-size: 0.8rem; margin-left: 8px; font-weight: normal; }
 
+        /* [6. 移动端响应式样式] */
         @media (max-width: 600px) {
             #symptomSearch { padding: 18px 15px 18px 50px; font-size: 1.05rem; border-radius: 30px; }
             .q-title { font-size: 1.05rem; }
@@ -50,115 +67,164 @@
 <nav class="top-nav">
     <div class="nav-menu">
         <a href="../index_cn.html" class="nav-brand">
-            <img src="../Bodyall Logo.png" alt="logo" style="height: 1.1rem;">
-            <span style="font-weight: 800; color: var(--primary);">Body-All 韩医院</span>
+            <img src="../Bodyall Logo.png" alt="Logo" style="height: 1.1rem;">
+            <span style="font-weight: 800; color: var(--primary);">Bodyall韩医院</span>
         </a>
-        <a href="../index_cn.html#treatments">主要诊疗</a>
+        <a href="../index_cn.html#treatments">核心诊疗</a>
         <a href="#hero" style="color: var(--accent);">症状百科</a>
-        <a href="../doctor-intro_cn.html">医疗团队</a>
+        <a href="../index_cn.html#doctor">医疗团队</a>
     </div>
     <div class="lang-switch">
-        <a href="index.html">KR</a> | <a href="index_en.html">EN</a> | <a href="index_cn.html" class="active">CN</a>
+        <a href="index.html">KR</a> | 
+        <a href="index_en.html">EN</a> | 
+        <a href="index_cn.html" class="active">CN</a>
     </div>
 </nav>
 
 <div class="wrapper" id="hero">
     <header>
-        <img src="../Bodyall Logo.png" alt="logo" style="height: 1.4rem;">
-        <h1>Body-All 症状自诊百科</h1>
+        <img src="../Bodyall Logo.png" alt="Logo" style="height: 1.4rem;">
+        <h1>Bodyall各症状自我诊断百科</h1>
     </header>
 
     <div class="search-area">
         <i class="fas fa-search"></i>
-        <input type="text" id="symptomSearch" onkeyup="filterList()" placeholder="您哪里疼？怎么疼？(例如：臀部、麻木...)">
+        <input type="text" id="symptomSearch" onkeyup="filterList()" placeholder="您哪里怎么不舒服？（例：臀部、麻木...）">
     </div>
 
     <ul id="symptomList" class="symptom-list">
+
+        <li class="symptom-item">
+            <span class="cat-tag">[脊椎管狭窄症]</span>
+            <a href="./0015.suwon-parents-spinal-stenosis_cn.html" class="q-title">"高龄父母被建议做狭窄症手术，可以通过推拿矫正治疗吗？"</a>
+            <div class="hash-tags">
+                #水原父母狭窄症 #仁溪洞老年推拿 #父母腰痛 #行动不便康复 #SART空间矫正 #银发安心推拿 <span class="date-info">| 2026.06.12</span>
+            </div>
+        </li>
+
+        <li class="symptom-item">
+            <span class="cat-tag">[脊椎管狭窄症]</span>
+            <a href="./0014.suwon-spinal-stenosis_cn.html" class="q-title">"稍微走点路腿就像要炸开、必须停下休息的狭窄症，可以不做手术治疗吗？"</a>
+            <div class="hash-tags">
+                #水原脊椎管狭窄症 #仁溪洞狭窄症韩医院 #间歇性跛行 #双腿麻木 #空间脊椎整骨术 #SART推拿 <span class="date-info">| 2026.06.12</span>
+            </div>
+        </li>
+
+        <li class="symptom-item">
+            <span class="cat-tag">[枕神经痛]</span>
+            <a href="./0013.suwon-occipital-neuralgia_cn.html" class="q-title">"后脑勺发麻、甚至眼睛都痛的枕神经痛，不做注射的根本原因治疗"</a>
+            <div class="hash-tags">
+                #水原枕神经痛 #仁溪洞头痛韩医院 #颈源性头痛 #眼球痛 #上颈椎矫正 #SART推拿 <span class="date-info">| 2026.06.12</span>
+            </div>
+        </li>
+
+        <li class="symptom-item">
+            <span class="cat-tag">[腰椎间盘突出]</span>
+            <a href="./0012.suwon-chuna-herniated-disk_cn.html" class="q-title">"做了20次神经阻滞术，腰还是像要断了一样痛，双腿发麻"</a>
+            <div class="hash-tags">
+                #水原腰椎间盘突出 #仁溪洞推拿 #腰椎间盘突出注射 #神经阻滞术副作用 #SART空间矫正 #骨打疗法 <span class="date-info">| 2026.06.12</span>
+            </div>
+        </li>
+
         <li class="symptom-item">
             <span class="cat-tag">[颞下颌关节]</span>
-            <a href="./0011.tmj-disorder_cn.html" class="q-title">“张嘴时耳朵前面响，还觉得疼”</a>
+            <a href="./0011.tmj-disorder_cn.html" class="q-title">"张嘴时下巴发出响声且疼痛"</a>
             <div class="hash-tags">
-                #颞下颌关节弹响 #下颌疼痛 #张口受限 #面部不对称 #关节盘移位 #打哈欠疼 <span class="date-info">| 2026.03.13</span>
+                #颞下颌关节弹响 #下巴疼痛 #张口受限 #面部不对称 #颞下颌关节盘 #打哈欠时疼痛 <span class="date-info">| 2026.03.13</span>
             </div>
         </li>
+
         <li class="symptom-item">
             <span class="cat-tag">[手腕/手指]</span>
-            <a href="./0010.carpal-tunnel_cn.html" class="q-title">“每天半夜手指麻得厉害，都会被麻醒”</a>
+            <a href="./0010.carpal-tunnel_cn.html" class="q-title">"每晚因手指发麻而惊醒"</a>
             <div class="hash-tags">
-                #腕管综合征 #正中神经压迫 #水原韩医院 #仁溪洞治疗 #手指麻木 <span class="date-info">| 2026.03.12</span>
+                #腕管综合征 #水腕管症候群 #水原韩医院 #仁溪洞韩医院 #手指麻木 <span class="date-info">| 2026.03.12</span>
             </div>
         </li>
+
         <li class="symptom-item">
-            <span class="cat-tag">[腰部/盆骨]</span>
-            <a href="./0009.tailbone-pain_cn.html" class="q-title">“坐着的时候尾骨一碰到椅子就疼”</a>
+            <span class="cat-tag">[腰部/骨盆]</span>
+            <a href="./0009.tailbone-pain_cn.html" class="q-title">"坐着时只要碰到尾骨就痛"</a>
             <div class="hash-tags">
-                #尾骨痛 #尾椎疼痛 #盆骨矫正 #水原推拿 #尾骨小针刀 <span class="date-info">| 2026.03.11</span>
+                #尾骨疼痛 #尾骨痛 #骨盆矫正 #水原推拿疗法 #尾骨针刀 <span class="date-info">| 2026.03.11</span>
             </div>
         </li>
+
         <li class="symptom-item">
-            <span class="cat-tag">[肘部/手臂]</span>
-            <a href="./0008.tennis-elbow_cn.html" class="q-title">“提重物时肘部外侧有刺痛感”</a>
+            <span class="cat-tag">[手肘/手臂]</span>
+            <a href="./0008.tennis-elbow_cn.html" class="q-title">"提东西时手肘外侧发麻且疼痛"</a>
             <div class="hash-tags">
-                #网球肘 #肱骨外上髁炎 #肘关节疼痛 #水原疼痛治疗 #仁溪洞物理治疗 <span class="date-info">| 2026.03.10</span>
+                #网球肘 #肱骨外上髁炎 #手肘疼痛 #水原手肘韩医院 #仁溪洞物理治疗 <span class="date-info">| 2026.03.10</span>
             </div>
         </li>
+
         <li class="symptom-item">
             <span class="cat-tag">[颈部/头痛]</span>
-            <a href="./0007.neck-headache_cn.html" class="q-title">“长时间用电脑后脖子僵硬，偏头痛严重”</a>
+            <a href="./0007.neck-headache_cn.html" class="q-title">"长时间用电脑脖子酸痛且头痛剧烈"</a>
             <div class="hash-tags">
-                #颈源性头痛 #圆肩驼背矫正 #直颈头痛 #枕神经痛 #水原颈椎矫正 <span class="date-info">| 2026.03.09</span>
+                #颈源性头痛 #乌龟颈矫正 #直颈头痛 #枕神经痛 #水原颈部矫正治疗 <span class="date-info">| 2026.03.09</span>
             </div>
         </li>
+
         <li class="symptom-item">
-            <span class="cat-tag">[腰部/盆骨]</span>
-            <a href="./0006.back-pain-lying_cn.html" class="q-title">“腰疼得厉害，根本没法平躺着睡觉”</a>
+            <span class="cat-tag">[腰部/骨盆]</span>
+            <a href="./0006.back-pain-lying_cn.html" class="q-title">"腰痛得无法平躺"</a>
             <div class="hash-tags">
-                #腰椎管狭窄 #腰大肌缩短 #睡眠腰痛 #水原腰椎矫正 #仁溪洞韩医院 <span class="date-info">| 2026.03.08</span>
+                #脊椎管狭窄症 #髂腰肌挛缩 #腰部睡眠疼痛 #水原腰部矫正 #仁溪洞韩医院 <span class="date-info">| 2026.03.08</span>
             </div>
         </li>
+
         <li class="symptom-item">
             <span class="cat-tag">[膝盖]</span>
-            <a href="./0005.pes-anserine_cn.html" class="q-title">“爬楼梯时膝盖内侧感到刺痛”</a>
+            <a href="./0005.pes-anserine_cn.html" class="q-title">"爬楼梯时膝盖内侧发麻且疼痛"</a>
             <div class="hash-tags">
-                #鹅足滑囊炎 #膝内侧疼痛 #膝盖滑膜炎 #楼梯膝盖痛 #水原膝盖韩医院 <span class="date-info">| 2026.03.07</span>
+                #鹅足滑囊炎 #膝盖内侧疼痛 #膝关节滑囊炎 #楼梯膝盖疼痛 #水原膝盖韩医院 <span class="date-info">| 2026.03.07</span>
             </div>
         </li>
+
         <li class="symptom-item">
             <span class="cat-tag">[肩膀/手臂]</span>
-            <a href="./0004.shoulder-pain_cn.html" class="q-title">“抬胳膊时肩膀卡住，晚上疼得睡不着”</a>
+            <a href="./0004.shoulder-pain_cn.html" class="q-title">"抬手臂时肩膀卡住且每晚疼痛"</a>
             <div class="hash-tags">
-                #五十肩治疗 #旋转肌群损伤 #驼背矫正 #水原肩膀治疗 #仁溪洞理疗 <span class="date-info">| 2026.03.06</span>
+                #肩周炎治疗 #旋转肌腱撕裂 #驼背矫正 #水原肩膀韩医院 #仁溪洞物理治疗 <span class="date-info">| 2026.03.06</span>
             </div>
         </li>
+
         <li class="symptom-item">
-            <span class="cat-tag">[脚部/足底]</span>
-            <a href="./0003.foot-pain_cn.html" class="q-title">“早晨起床落地第一步，脚底钻心地疼”</a>
+            <span class="cat-tag">[足部/足底]</span>
+            <a href="./0003.foot-pain_cn.html" class="q-title">"早上迈出第一步时足底剧烈疼痛"</a>
             <div class="hash-tags">
-                #足底筋膜炎 #脚底疼痛 #脚后跟疼 #水原足底治疗 #脚底物理治疗 <span class="date-info">| 2026.03.05</span>
+                #足底筋膜炎 #足底疼痛 #脚后跟疼痛 #水原足底筋膜炎 #足底物理治疗 <span class="date-info">| 2026.03.05</span>
             </div>
         </li>
+
         <li class="symptom-item">
             <span class="cat-tag">[手/手腕]</span>
-            <a href="./0002.stiff-hands_cn.html" class="q-title">“早晨醒来手指关节僵硬，无法弯曲”</a>
+            <a href="./0002.stiff-hands_cn.html" class="q-title">"早上醒来手指关节僵硬无法弯曲"</a>
             <div class="hash-tags">
-                #手指僵硬 #晨起手肿 #扳机指 #手指关节炎 #水原物理治疗 <span class="date-info">| 2026.03.04</span>
+                #手指僵硬 #清晨手部浮肿 #扳机指 #手指关节炎 #水原物理治疗 <span class="date-info">| 2026.03.04</span>
             </div>
-        </li>
+        </li>        
+        
         <li class="symptom-item">
-            <span class="cat-tag">[腰部/盆骨]</span>
-            <a href="./0001.buttock-pain_cn.html" class="q-title">“久坐或开车时屁股刺痛，腿也跟着发麻”</a>
+            <span class="cat-tag">[腰部/骨盆]</span>
+            <a href="./0001.buttock-pain_cn.html" class="q-title">"久坐或开车时臀部发麻且双腿麻木"</a>
             <div class="hash-tags">
-                #臀部刺痛 #腿麻原因 #梨状肌综合征 #坐骨神经痛 #盆骨疼痛 <span class="date-info">| 2026.03.03</span>
+                #臀部发麻 #双腿麻木原因 #梨状肌综合征 #坐骨神经痛 #骨盆疼痛 <span class="date-info">| 2026.03.03</span>
             </div>
         </li>
+
+        
     </ul>
+
+    
 </div>
 
 <nav class="bottom-nav">
-    <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>咨询</a>
-    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank"><i class="fas fa-comment" style="color: #FEE500;"></i>卡考</a>
+    <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>Naver TalkTalk</a>
+    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank"><i class="fas fa-comment" style="color: #FEE500;"></i>KakaoTalk</a>
     <a href="./index_cn.html"><i class="fas fa-search"></i>查找症状</a>
-    <a href="../index_cn.html"><i class="fas fa-home"></i>首页</a>
+    <a href="../index_cn.html"><i class="fas fa-home"></i>返回首页</a>
 </nav>
 
 <script>
@@ -171,5 +237,6 @@ function filterList() {
     }
 }
 </script>
+
 </body>
 </html>
