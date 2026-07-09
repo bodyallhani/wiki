@@ -1,0 +1,67 @@
+name: Google Indexing API Automation
+
+on:
+  push:
+    paths:
+      - '**/*.html' # HTML 파일이 수정되거나 새로 생길 때만 로봇을 깨웁니다.
+
+jobs:
+  google-indexing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 코드 가져오기
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 변경되거나 추가된 HTML 파일 목록 추출
+        run: |
+          # 수정/신규 파일 목록을 에러 없이 안전하게 한 줄로 정렬합니다.
+          FILES=$(git diff --name-only HEAD~1 HEAD | grep '\.html$' | tr '\n' ' ' || true)
+          echo "CHANGED_FILES=$FILES" >> $GITHUB_ENV
+
+      - name: Node.js 세팅
+        if: env.CHANGED_FILES != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 구글 인덱싱 API 호출 실행
+        if: env.CHANGED_FILES != ''
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+        run: |
+          npm install googleapis
+          cat << 'EOF' > index.js
+          const { google } = require('googleapis');
+          const key = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_KEY);
+          const files = process.env.CHANGED_FILES.split(' ').filter(Boolean);
+
+          const jwtClient = new google.auth.JWT(
+            key.client_email, null, key.private_key,
+            ['https://www.googleapis.com/auth/indexing'], null
+          );
+
+          async function main() {
+            await jwtClient.authorize();
+            const indexing = google.indexing('v1');
+            
+            for (const file of files) {
+              // 파일명을 기반으로 구글에 보낼 실시간 주소 자동 조립
+              const targetUrl = `https://wiki.body-all.co.kr/${file}`;
+              console.log(`구글 색인 요청 전송: ${targetUrl}`);
+              
+              try {
+                await indexing.urlNotifications.publish({
+                  auth: jwtClient,
+                  requestBody: { url: targetUrl, type: 'URL_UPDATED' }
+                });
+                console.log(`➔ [성공] 구글이 접수 완료했습니다.`);
+              } catch (err) {
+                console.error(`➔ [실패] 에러 내용:`, err.message);
+              }
+            }
+          }
+          main().catch(console.error);
+          EOF
+          node index.js
