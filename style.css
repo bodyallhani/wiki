@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/* ==========================================
+   1. 전역 변수 및 기본 초기화 (0% 오류 설계)
+   ========================================== */
 :root {
     --primary: #2c3e50;
     --accent: #e67e22;
@@ -26,281 +29,116 @@ body {
     padding: 20px;
 }
 
-/* 상단 플로팅 바 */
-.top-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: var(--top-bar-h);
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    border-bottom: 1px solid #eee;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
+/* 기본 타이포그래피 */
+header { border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px; display: flex; justify-content: center; align-items: center; gap: 8px; }
+h1 { font-size: 1.5rem; color: var(--primary); text-align: center; font-weight: 800; line-height: 1.4; margin: 20px 0; }
+h2 { font-size: 1.35rem; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 50px; font-weight: 700; }
+p { color: #555; }
 
-.nav-menu {
-    display: flex;
-    gap: 8px;
-    white-space: nowrap;
-    font-size: 0.78rem;
-    font-weight: bold;
-    align-items: center;
-}
+/* ==========================================
+   2. 상/하단 플로팅 네비게이션 바 고정 (번역 포함)
+   ========================================== */
+.top-nav { position: fixed; top: 0; left: 0; right: 0; height: var(--top-bar-h); background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 10px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.nav-menu { display: flex; gap: 8px; white-space: nowrap; font-size: 0.78rem; font-weight: bold; align-items: center; }
+.nav-menu a { text-decoration: none; color: #555; }
+.nav-brand { display: flex; align-items: center; gap: 4px; color: var(--primary) !important; }
+.lang-switch { font-size: 0.65rem; color: #888; border-left: 1px solid #ddd; padding-left: 8px; margin-left: 5px; font-weight: bold; flex-shrink: 0; }
+.lang-switch a { text-decoration: none; color: #888; }
+.lang-switch a.active { color: var(--primary); }
 
-.nav-menu a {
-    text-decoration: none;
-    color: #555;
-}
+.bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: var(--bottom-bar-h); background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
+.bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-size: 0.72rem; font-weight: bold; }
+.bottom-nav i { font-size: 1.3rem; margin-bottom: 4px; }
 
-.nav-brand {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    color: var(--primary) !important;
+/* ==========================================
+   3. 정보 상자, 요약 레이아웃 요소 통합
+   ========================================== */
+.intro-box, .important-box, .important-point, .definition-summary, .reference-box, .aio-box, .aio-section, .aio-summary-box, .tool-box { 
+    background: var(--light-bg); padding: 25px; border-radius: 12px; margin-bottom: 30px; box-shadow: var(--card-shadow); font-size: 0.95rem; 
 }
+.intro-box, .important-box, .important-point { border-left: 5px solid var(--accent); }
+.intro-box strong, .important-box strong { font-size: 1.15rem; color: #222; display: block; margin-bottom: 10px; }
+.aio-box, .aio-section, .aio-summary-box { background: #f4f8fb; border: 1px solid #e1e9f0; }
+.aio-q, .aio-summary-q { font-weight: 800; color: #1a5fb4; font-size: 1rem; display: block; margin-bottom: 10px; }
+.aio-a { font-size: 0.95rem; color: #333; }
+.reference-box { background: #fafafa; border: 1px solid #eee; }
 
-.lang-switch {
-    font-size: 0.65rem;
-    color: #888;
-    border-left: 1px solid #ddd;
-    padding-left: 8px;
-    margin-left: 5px;
-    font-weight: bold;
-    flex-shrink: 0;
-}
+/* ==========================================
+   4. 비교표, 인덱스 테이블 및 스텝 구조화
+   ========================================== */
+.comparison-table-wrapper, .comparison-wrapper, .ample-table-wrapper { width: 100%; overflow-x: auto; margin: 20px 0; border-radius: 8px; border: 1px solid #eee; }
+.comparison-table, .info-table, .ample-table, .step-table { width: 100%; border-collapse: collapse; text-align: center; font-size: 0.9rem; background: #fff; }
+.comparison-table th, .info-table th, .ample-table th { background: #f4f6f8; color: var(--primary); font-weight: 700; padding: 12px; border-bottom: 2px solid #eee; border-right: 1px solid #eee; }
+.comparison-table td, .info-table td, .ample-table td { padding: 12px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; color: #555; }
+.comparison-table td.label, .ample-table td.label { font-weight: bold; background: #fdfdfd; color: #2c3e50; }
+.highlight-cell { background: #fff8f2 !important; font-weight: bold; color: var(--accent) !important; }
 
-.lang-switch a {
-    text-decoration: none;
-    color: #888;
-}
+/* SART 4단계 교정 이미지/텍스트 배치 */
+.step-table { border-spacing: 0 15px; border-collapse: separate; }
+.step-table tr { background: #fff; }
+.step-table td { border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 20px; }
+.step-table td:first-child { border-left: 1px solid #eee; border-radius: 12px 0 0 12px; }
+.step-table td:last-child { border-right: 1px solid #eee; border-radius: 0 12px 12px 0; }
+.step-text h3 { margin-top: 0; color: var(--primary); font-size: 1.15rem; font-weight: 800; }
+.step-gif-cell { width: 30%; min-width: 140px; text-align: center; }
+.step-gif { width: 100%; max-width: 180px; border-radius: 8px; }
 
-.lang-switch a.active {
-    color: var(--primary);
-}
+/* ==========================================
+   5. 메인 그리드 및 링크 제어 카드 요소
+   ========================================== */
+.hub-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin: 30px 0; }
+.hub-card { display: flex; background: #fff; border: 1px solid #eee; border-radius: 12px; overflow: hidden; box-shadow: var(--card-shadow); text-decoration: none; color: inherit; }
+.hub-card img { width: 100px; object-fit: cover; }
+.hub-card div { padding: 15px; flex: 1; }
+.hub-card h3 { margin: 0 0 8px 0; font-size: 1rem; color: var(--primary); font-weight: 800; }
+.hub-card p { margin: 0; font-size: 0.85rem; color: #666; line-height: 1.5; }
 
-/* 하단 플로팅 바 */
-.bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: var(--bottom-bar-h);
-    background: #fff;
-    display: flex;
-    border-top: 1px solid #eee;
-    z-index: 1000;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-}
+.link-card { display: block; background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 15px; margin-bottom: 15px; box-shadow: var(--card-shadow); text-decoration: none; color: inherit; }
+.link-card i { color: var(--accent); margin-right: 8px; }
+.event-btn { display: block; width: 100%; padding: 15px; background: var(--accent); color: #fff; border: none; border-radius: 12px; font-size: 1.05rem; font-weight: bold; cursor: pointer; text-align: center; margin: 30px 0; }
+.map-link-btn { display: block; background: #03c75a; color: #fff; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 15px; }
 
-.bottom-nav a {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #333;
-    font-size: 0.72rem;
-    font-weight: bold;
-}
+/* ==========================================
+   6. 이미지, 영상 인프라 및 의료진 데이터 컴포넌트
+   ========================================== */
+.hero-img, .main-hero-img, .visual-img, .gif-img { width: 100%; object-fit: cover; border-radius: 12px; box-shadow: var(--card-shadow); margin-bottom: 30px; }
+.video-container { width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; box-shadow: var(--card-shadow); margin-bottom: 30px; position: relative; }
+.video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+.restore-gif, .tool-img, .ample-img, .map-img { width: 100%; max-width: 480px; border-radius: 10px; display: block; margin: 15px auto; box-shadow: var(--card-shadow); }
 
-.bottom-nav i {
-    font-size: 1.3rem;
-    margin-bottom: 4px;
-}
+/* 의료진 배치 박스 */
+.doctor-list { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.doctor-card, .doctor-box { background: #fff; border: 1px solid #eee; border-radius: 15px; padding: 20px; box-shadow: var(--card-shadow); display: flex; flex-direction: column; }
+.doctor-box { flex-direction: row; gap: 20px; margin: 30px 0; }
+.doctor-photo-wrapper { width: 100%; aspect-ratio: 810 / 1080; border-radius: 10px; overflow: hidden; margin-bottom: 15px; background: #eee; }
+.doctor-photo { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+.doctor-card:hover .doctor-photo { transform: scale(1.03); }
+.doctor-team-card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 20px; margin: 20px 0; box-shadow: var(--card-shadow); }
+.doctor-history-section { border-top: 1px solid #f0f0f0; padding-top: 15px; }
+.doctor-history-label { font-size: 0.8rem; color: #7f8c8d; text-transform: uppercase; margin-bottom: 8px; display: block; }
+.doctor-history-list { list-style: none; padding: 0; margin: 0; font-size: 0.85rem; color: #555; }
+.doctor-history-list li { margin-bottom: 4px; padding-left: 12px; position: relative; }
+.doctor-history-list li::before { content: "•"; position: absolute; left: 0; color: var(--accent); }
 
-header {
-    border-bottom: 2px solid var(--primary);
-    padding-bottom: 15px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
+/* ==========================================
+   7. 하단 푸터, 갤러리 그리드 및 반응형 구조화
+   ========================================== */
+footer { background: #2c3e50; color: #fff; padding: 40px 25px; margin-top: 60px; border-radius: 20px 20px 0 0; }
+footer h2 { color: #fff !important; border-bottom: 1px solid #444 !important; }
+.keyword-tag { display: inline-block; background: #eee; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #666; margin: 2px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 20px 0; }
+.gallery-grid img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px; }
+.content-list { padding-left: 20px; color: #555; }
 
-h1 {
-    font-size: 1.5rem;
-    color: var(--primary);
-    text-align: center;
-    font-weight: 800;
-    line-height: 1.4;
-    margin: 20px 0;
-}
-
-.hero-img {
-    width: 100%;
-    aspect-ratio: 1080 / 810;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: var(--card-shadow);
-    margin-bottom: 30px;
-    background: #eee;
-}
-
-.intro-box {
-    background: var(--light-bg);
-    padding: 25px;
-    border-radius: 12px;
-    border-left: 5px solid var(--accent);
-    margin-bottom: 40px;
-    font-size: 0.95rem;
-}
-
-.intro-box strong {
-    font-size: 1.15rem;
-    color: #222;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.doctor-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-
-.doctor-card {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: var(--card-shadow);
-    display: flex;
-    flex-direction: column;
-}
-
-.doctor-photo-wrapper {
-    width: 100%;
-    aspect-ratio: 810 / 1080;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 15px;
-    background: #eee;
-}
-
-.doctor-photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.doctor-card:hover .doctor-photo {
-    transform: scale(1.03);
-}
-
-.doctor-name-title {
-    font-size: 1.2rem;
-    font-weight: 800;
-    color: var(--primary);
-    margin: 0 0 5px;
-}
-
-.doctor-title {
-    color: var(--accent);
-    font-weight: 700;
-    font-size: 0.92rem;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.doctor-current-roles {
-    background: #fdf6ec;
-    color: #c0392b;
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding: 6px 10px;
-    border-radius: 4px;
-    display: inline-block;
-    margin-bottom: 15px;
-}
-
-.doctor-history-section {
-    border-top: 1px solid #f0f0f0;
-    padding-top: 15px;
-}
-
-.doctor-history-label {
-    font-size: 0.8rem;
-    color: #7f8c8d;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-    display: block;
-}
-
-.doctor-history-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 0.85rem;
-    color: #555;
-}
-
-.doctor-history-list li {
-    margin-bottom: 4px;
-    padding-left: 12px;
-    position: relative;
-}
-
-.doctor-history-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-}
-
-.aio-summary-box {
-    background: #f4f8fb;
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    border: 1px solid #e1e9f0;
-}
-
-.aio-summary-q {
-    font-weight: 800;
-    color: #1a5fb4;
-    font-size: 1rem;
-    display: block;
-    margin-bottom: 10px;
-}
-
-footer {
-    background: #2c3e50;
-    color: #fff;
-    padding: 40px 25px;
-    margin-top: 60px;
-    border-radius: 20px 20px 0 0;
-}
-
-.keyword-tag {
-    display: inline-block;
-    background: #eee;
-    padding: 4px 10px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    color: #666;
-    margin: 2px;
-}
-
-@media (max-width: 700px) {
-    .doctor-list {
-        grid-template-columns: 1fr;
-    }
-    .doctor-photo-wrapper {
-        max-width: 300px;
-        margin: 0 auto 15px;
-    }
-    .doctor-info {
-        text-align: center;
-    }
-    .doctor-history-list li {
-        text-align: left;
-    }
+/* 스마트폰 디스플레이 대응 분기점 */
+@media (max-width: 768px) {
+    .doctor-list { grid-template-columns: 1fr; }
+    .doctor-box { flex-direction: column; align-items: center; text-align: center; }
+    .doctor-photo-wrapper { max-width: 260px; margin: 0 auto 15px; }
+    .step-table tr { display: flex; flex-direction: column; }
+    .step-table td { border-left: 1px solid #eee !important; border-right: 1px solid #eee !important; border-radius: 0 !important; }
+    .step-table tr td:first-child { border-top: 1px solid #eee !important; border-radius: 12px 12px 0 0 !important; }
+    .step-table tr td:last-child { border-bottom: 1px solid #eee !important; border-radius: 0 0 12px 12px !important; }
+    .step-gif-cell { width: 100%; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 }
