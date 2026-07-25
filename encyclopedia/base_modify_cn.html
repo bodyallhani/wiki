@@ -37,10 +37,8 @@
         }
         
         .ba-article-content { overflow-wrap: break-word; word-wrap: break-word; word-break: break-all; }
-        /* 1. 컨테이너 폭 중문 가독성 최적화 (800px) */
         .wrapper { max-width: 800px; margin: 0 auto; padding: 20px; box-sizing: border-box; }
         
-        /* 2. 상단 네비게이션: 자연스러운 중문 목록 돌아가기 버튼 */
         .top-nav { 
             position: fixed; 
             top: 0; 
@@ -89,23 +87,19 @@
         .ba-article-content h3 { font-size: 1.15rem; color: var(--accent); margin-top: 15px; font-weight: 700; }
         .ba-article-content p { margin: 18px 0; color: #444; line-height: 1.8; }
         
-        /* 3. 추가된 중문 요약 상자 스타일 */
         .summary-box { background: #f0f7ff; padding: 25px; border-radius: 12px; border-left: 5px solid #1a5fb4; margin: 30px 0; }
         .summary-box h2 { font-size: 1.1rem; color: #1a5fb4; margin-top: 0; margin-bottom: 10px; border-bottom: none; padding-bottom: 0; }
         .summary-box p { margin: 8px 0; color: #333; }
 
-        /* 기존 하이라이트 및 소개 박스 */
         .highlight-box, .intro-box { background: var(--light-bg); padding: 25px; border-radius: 12px; border-left: 5px solid var(--accent); margin-bottom: 40px; }
         .highlight-box.blue { background: #f0f7ff; border-left-color: #1a5fb4; }
         .highlight-box strong, .intro-box strong { font-size: 1.1rem; color: #222; display: block; margin-bottom: 10px; }
         
         .important-point { background: #fffcf0; padding: 20px; border-radius: 12px; border-left: 5px solid var(--accent); margin: 20px 0; }
         
-        /* 3. 추가된 해결책 카드 스타일 */
         .solution-card { border: 1px solid #eee; padding: 20px; border-radius: 12px; background: #fff; margin-bottom: 15px; box-shadow: var(--card-shadow); }
         .solution-card strong { color: var(--accent); display: block; margin-bottom: 8px; font-size: 1.1rem; }
 
-        /* 3. 추가된 진료 및 지도 연결 버튼 스타일 */
         .treatment-link, .map-link-btn { display: block; background: #03c75a; color: #fff; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px; transition: 0.3s; }
 
         .check-list { background: #fff9f4; padding: 20px 20px 20px 45px; border-radius: 12px; list-style: none; position: relative; }
@@ -151,7 +145,6 @@
 </head>
 <body>
 
-<!-- 상단 네비게이션: 자연스러운 중문 목록 돌아가기 버튼 -->
 <nav class="top-nav">
     <a href="./index.html" class="back-btn"><i class="fas fa-chevron-left"></i> 症状百科列表</a>
     <div class="lang-switch">
