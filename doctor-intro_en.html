@@ -92,6 +92,33 @@
         footer { background: #2c3e50; color: #fff; padding: 40px 25px; margin-top: 60px; border-radius: 20px 20px 0 0; }
         .keyword-tag { display: inline-block; background: #eee; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #666; margin: 2px; }
 
+        .event-btn { 
+            display: block; 
+            width: 100%; 
+            max-width: 320px; 
+            margin: 25px auto; 
+            padding: 14px 20px; 
+            background: var(--accent); 
+            color: #ffffff !important; 
+            font-weight: bold; 
+            font-size: 0.95rem; 
+            border: none; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            box-shadow: var(--card-shadow); 
+            transition: all 0.2s ease; 
+            text-align: center; 
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        .event-btn:hover { 
+            background: #d35400; 
+            transform: translateY(-2px);
+        }
+        .event-btn:active {
+            transform: translateY(0);
+        }
+        
         @media (max-width: 700px) { 
             .doctor-list { grid-template-columns: 1fr; } 
             .doctor-photo-wrapper { max-width: 300px; margin: 0 auto 15px; }
