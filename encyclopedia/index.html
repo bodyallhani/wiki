@@ -54,6 +54,33 @@
         .hash-tags { font-size: 0.88rem; color: #888; line-height: 1.6; }
         .date-info { color: #bbb; font-size: 0.8rem; margin-left: 8px; font-weight: normal; }
 
+        .event-btn { 
+            display: block; 
+            width: 100%; 
+            max-width: 320px; 
+            margin: 25px auto; 
+            padding: 14px 20px; 
+            background: var(--accent); 
+            color: #ffffff !important; 
+            font-weight: bold; 
+            font-size: 0.95rem; 
+            border: none; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            box-shadow: var(--card-shadow); 
+            transition: all 0.2s ease; 
+            text-align: center; 
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        .event-btn:hover { 
+            background: #d35400; 
+            transform: translateY(-2px);
+        }
+        .event-btn:active {
+            transform: translateY(0);
+        }
+
         /* [6. 모바일 특화 반응형 스타일] */
         @media (max-width: 600px) {
             #symptomSearch { padding: 18px 15px 18px 50px; font-size: 1.05rem; border-radius: 30px; }
