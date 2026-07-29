@@ -6,6 +6,7 @@
     <title>바디올핏 다이어트 백과사전 | 의학적 근거 중심의 대사·체질 교정 가이드</title>
     <meta name="description" content="양약/GLP-1(오젬픽, 마운자로) 부작용 분석부터 한약 대사 증진 메커니즘, 대표원장 1:1 밀착 케어를 통한 요요 없는 건강한 다이어트 정보 제공.">
     
+    <!-- 2단계 상위 폴더 경로 (../..) 적용 -->
     <link rel="icon" type="image/png" href="../../Bodyall Logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" crossorigin />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -14,7 +15,7 @@
         :root { 
             --primary: #2c3e50; 
             --accent: #e67e22; 
-            --diet-color: #27ae60; /* 다이어트 상징 생명력 그린 */
+            --diet-color: #007aff; /* [수정1] 시원한 파란색 계열(스마트 블루)로 변경 */
             --light-bg: #f8f9fa; 
             --card-shadow: 0 4px 12px rgba(0,0,0,0.06); 
             --top-bar-h: 60px; 
@@ -29,37 +30,89 @@
         }
         .wrapper { max-width: 800px; margin: 0 auto; padding: 20px; box-sizing: border-box; }
         
-        .top-nav { position: fixed; top: 0; left: 0; right: 0; height: var(--top-bar-h); background: rgba(255, 255, 255, 0.98); display: flex; align-items: center; justify-content: space-between; padding: 0 20px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.03); }
-        .top-nav .brand-title { text-decoration: none; color: var(--primary); font-weight: 800; font-size: 1.05rem; display: flex; align-items: center; gap: 8px; }
-        .lang-switch { font-size: 0.75rem; color: #888; font-weight: bold; border-left: 1px solid #ddd; padding-left: 8px; }
+        /* 상단 네비게이션 */
+        .top-nav { position: fixed; top: 0; left: 0; right: 0; height: var(--top-bar-h); background: rgba(255, 255, 255, 0.98); display: flex; align-items: center; justify-content: space-between; padding: 0 15px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.03); }
+        .top-nav .brand-title { text-decoration: none; color: var(--primary); font-weight: 800; font-size: 0.95rem; display: flex; align-items: center; gap: 6px; }
+        .lang-switch { font-size: 0.75rem; color: #888; font-weight: bold; border-left: 1px solid #ddd; padding-left: 8px; flex-shrink: 0; }
         .lang-switch a { text-decoration: none; color: #888; padding: 0 3px; }
         .lang-switch a.active { color: var(--diet-color); font-weight: 800; }
 
-        .index-header { text-align: center; padding: 30px 10px 20px 10px; background: #f0fdf4; border-radius: 16px; margin-bottom: 25px; border: 1px solid #dccebe; }
-        .index-header h1 { font-size: 1.5rem; color: var(--primary); font-weight: 800; margin: 0 0 10px 0; }
-        .index-header p { font-size: 0.9rem; color: #555; margin: 0; }
+        /* 대문 헤더 (파란색 테마 배경으로 변경) */
+        .index-header { text-align: center; padding: 30px 15px; background: #f0f7ff; border-radius: 16px; margin-bottom: 25px; border: 1px solid #cce5ff; }
+        .index-header h1 { font-size: 1.45rem; color: var(--primary); font-weight: 800; margin: 0 0 10px 0; }
+        .index-header p { font-size: 0.9rem; color: #555; margin: 0 0 18px 0; line-height: 1.6; }
+        
+        /* [수정2] 대문 메인 이미지 반응형 처리 */
+        .header-main-img {
+            display: block;
+            max-width: 100%;
+            width: 100%;       /* 모바일에서는 100% 꽉참 */
+            max-width: 450px;  /* PC에서는 450px까지만 커지도록 제한 */
+            height: auto;
+            margin: 15px auto 20px auto; /* 가운데 정렬 및 여백 */
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 122, 255, 0.15); /* 파란색 그림자 효과 */
+            object-fit: cover;
+        }
 
+        /* 메인 CTA 버튼 */
+        .main-fit-btn {
+            display: inline-block;
+            background: var(--diet-color);
+            color: #ffffff !important;
+            font-weight: bold;
+            font-size: 0.95rem;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 122, 255, 0.25);
+            transition: all 0.2s ease;
+        }
+        .main-fit-btn:hover { background: #005bb5; transform: translateY(-2px); }
+
+        /* 카테고리 태그 탭 */
         .category-tabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 10px; margin-bottom: 20px; scrollbar-width: none; }
-        .tab-btn { background: #fff; border: 1px solid #ddd; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; color: #666; white-space: nowrap; text-decoration: none; }
+        .tab-btn { background: #fff; border: 1px solid #ddd; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; color: #666; white-space: nowrap; text-decoration: none; cursor: pointer; }
         .tab-btn.active { background: var(--diet-color); color: #fff; border-color: var(--diet-color); }
 
+        /* 게시글 카드 리스트 */
         .article-list { display: flex; flex-direction: column; gap: 15px; }
         .article-card { display: block; background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 20px; text-decoration: none; color: #333; box-shadow: var(--card-shadow); transition: all 0.2s ease; }
         .article-card:hover { border-color: var(--diet-color); transform: translateY(-2px); }
-        .card-tag { display: inline-block; background: #e8f5e9; color: var(--diet-color); font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; }
+        
+        /* 카드 태그 색상 (파란색 테마) */
+        .card-tag { display: inline-block; background: #e6f2ff; color: var(--diet-color); font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; }
         .card-title { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin: 0 0 8px 0; line-height: 1.4; }
         .card-hashtags { font-size: 0.8rem; color: #888; }
 
+        /* 푸터 영역 */
         footer { background: #2c3e50; color: #fff; padding: 30px 20px; margin-top: 50px; border-radius: 16px 16px 0 0; font-size: 0.85rem; }
+        
+        /* [수정3] 푸터 내 바디올핏 더 알아보기 버튼 */
+        .footer-fit-btn { 
+            display: inline-block; 
+            background: var(--diet-color); 
+            color: #fff; 
+            padding: 10px 22px; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            margin-top: 10px; 
+            margin-bottom: 15px; 
+            transition: 0.2s; 
+        }
+        .footer-fit-btn:hover { background: #005bb5; }
+
+        /* 하단 고정 네비게이션 */
         .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: var(--bottom-bar-h); background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.08); padding-bottom: env(safe-area-inset-bottom); }
         .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-weight: bold; font-size: 0.75rem; }
-        .bottom-nav a i { font-size: 1.3rem; margin-bottom: 4px; }
+        .bottom-nav a i { font-size: 1.2rem; margin-bottom: 3px; }
     </style>
 </head>
 <body>
 
 <nav class="top-nav">
-    <a href="../../index.html" class="brand-title"><i class="fas fa-leaf" style="color:var(--diet-color);"></i> 바디올 위키 [BodyallFit]</a>
+    <a href="../../index.html" class="brand-title"><i class="fas fa-chevron-left"></i> 바디올 메인 위키</a>
     <div class="lang-switch">
         <a href="./index.html" class="active">KR</a> | 
         <a href="./index_en.html">EN</a> | 
@@ -69,20 +122,32 @@
 
 <div class="wrapper">
     <header class="index-header">
-        <h1>🌱 바디올핏 다이어트 백과사전</h1>
+        <!-- 테마에 맞게 잎사귀 이모지 대신 푸른 보석(물방울/다이아) 느낌으로 변경 가능하나 우선 기본 텍스트 강조 유지 -->
+        <h1>💧 바디올핏 다이어트 백과사전</h1>
+        
+        <!-- [수정2 적용] 타이틀 바로 밑 반응형 메인 이미지 삽입 -->
+        <img src="./image/index-1.webp" alt="바디올핏 다이어트 메인" class="header-main-img">
+
         <p>포장 거품을 뺀 합리적 다이어트 한약과 대표원장 1:1 밀착 케어로 완성하는 건강한 대사 교정</p>
+        
+        <a href="https://body-all.co.kr/Body-Allfit" target="_blank" rel="noopener noreferrer" class="main-fit-btn">
+            <i class="fas fa-dumbbell"></i> 바디올핏 프로그램 자세히 보기 ➜
+        </a>
     </header>
 
+    <!-- 카테고리 탭 (JS 필터링 연결) -->
     <div class="category-tabs">
-        <a href="#" class="tab-btn active" onclick="filterCategory('all', this); return false;">전체 보기</a>
-        <a href="#" class="tab-btn" onclick="filterCategory('category-1', this); return false;">GLP-1/양약 비교 분석</a>
-        <a href="#" class="tab-btn" onclick="filterCategory('category-2', this); return false;">체질별·상황별 다이어트</a>
-        <a href="#" class="tab-btn" onclick="filterCategory('category-3', this); return false;">1:1 밀착케어 & 대사 원리</a>
+        <a class="tab-btn active" onclick="filterCategory('all', this)">전체 보기</a>
+        <a class="tab-btn" onclick="filterCategory('category-1', this)">GLP-1/양약 비교 분석</a>
+        <a class="tab-btn" onclick="filterCategory('category-2', this)">체질별·상황별 다이어트</a>
+        <a class="tab-btn" onclick="filterCategory('category-3', this)">1:1 밀착케어 & 대사 원리</a>
     </div>
 
+    <!-- 게시글 목록 영역 -->
     <main class="article-list">
         
-        <a href="./0101.mounjaro-vs-korean-diet-herb.html" class="article-card">
+        <!-- 샘플 게시글 카드 1 -->
+        <a href="./0101.mounjaro-vs-korean-diet-herb.html" class="article-card" data-category="category-1">
             <span class="card-tag">양약/GLP-1 비교</span>
             <h2 class="card-title">"마운자로·오젬픽 주사 중단 후 요요 현상, 생체역학적 대사 유지 치료로 극복할 수 있나요?"</h2>
             <div class="card-hashtags">#마운자로부작용 #다이어트한약비교 #기초대사량증진 #바디올핏</div>
@@ -91,40 +156,44 @@
     </main>
 
     <footer>
-        <h3 style="color:#fff; margin-top:0;">📍 바디올한의원 바디올핏 클리닉</h3>
-        <p style="color:#ccc; line-height:1.6;">
+        <h3 style="color:#fff; margin-top:0; margin-bottom:5px;">📍 바디올한의원 바디올핏 클리닉</h3>
+        
+        <!-- [수정3 적용] 병원 타이틀 바로 밑에 바디올핏 즉시 연결 버튼 추가 -->
+        <a href="https://body-all.co.kr/Body-Allfit" target="_blank" rel="noopener noreferrer" class="footer-fit-btn">
+            바디올핏 더 알아보기 ➜
+        </a>
+
+        <p style="color:#ccc; line-height:1.6; margin-top:10px;">
             수원시청역 9번 출구 도보 3분 | 대표원장 1:1 카톡 밀착 케어 시스템<br>
             불필요한 포장 거품을 제거하여 합리적인 가격으로 내실 있는 다이어트 한약을 처방합니다.
         </p>
     </footer>
 </div>
 
+<!-- 하단 고정 네비게이션 -->
 <nav class="bottom-nav">
-    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank" rel="noopener noreferrer"><i class="fas fa-comment" style="color:#FEE500; background:#3c1e1e; border-radius:50%; padding:2px;"></i>1:1 카톡상담</a>
+    <a href="https://body-all.co.kr/Body-Allfit" target="_blank" rel="noopener noreferrer"><i class="fas fa-dumbbell" style="color: var(--diet-color);"></i>바디올핏</a>
+    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank" rel="noopener noreferrer"><i class="fas fa-comment" style="color:#FEE500; background:#3c1e1e; border-radius:50%; padding:2px;"></i>카톡상담</a>
     <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank" rel="noopener noreferrer"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>네이버톡톡</a>
-    <a href="../../index.html"><i class="fas fa-home"></i>메인 위키로</a>
+    <a href="../../index.html"><i class="fas fa-home"></i>메인 위키</a>
 </nav>
 
-    <script>
-        function filterCategory(category, element) {
-            // 1. 모든 탭의 색상을 회색(비활성)으로 초기화
-            let tabs = document.querySelectorAll('.tab-btn');
-            tabs.forEach(tab => tab.classList.remove('active'));
-            
-            // 2. 지금 클릭한 탭만 초록색(활성)으로 변경
-            element.classList.add('active');
+<script>
+    function filterCategory(category, element) {
+        let tabs = document.querySelectorAll('.tab-btn');
+        tabs.forEach(tab => tab.classList.remove('active'));
+        element.classList.add('active');
 
-            // 3. 모든 원고 카드를 순회하며 이름표(data-category) 검사
-            let cards = document.querySelectorAll('.article-card');
-            cards.forEach(card => {
-                if (category === 'all' || card.getAttribute('data-category') === category) {
-                    card.style.display = 'block'; // 조건에 맞으면 보여줌
-                } else {
-                    card.style.display = 'none';  // 조건에 안 맞으면 숨김
-                }
-            });
-        }
-    </script>
+        let cards = document.querySelectorAll('.article-card');
+        cards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+</script>
 
 </body>
 </html>
