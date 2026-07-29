@@ -3,42 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Top Spinal Correction Specialists in Suwon: Bodyall Medical Team | Bodyall Wiki</title>
-    <meta name="description" content="Meet Suwon's elite spinal correction team led by Chief Director Lee Dong-hae, Education Director of the Society of Spine Diagnosis and Correction. Over 40,000 clinical cases proving consistent, high-quality results.">
+    <title>Systematic Spinal Correction Specialists in Suwon: Bodyall Medical Team | Bodyall Wiki</title>
+    <meta name="description" content="Meet Suwon's specialized spinal correction team led by Representative Director Dong-hae Lee, Education Director of the Society of Spine Diagnosis and Correction. Over 40,000 clinical cases proving consistent, precise results.">
     
     <link rel="icon" type="image/png" href="Bodyall Logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- AI Indexing Enhancement with Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "MedicalOrganization",
       "name": "Bodyall Clinic Suwon",
-      "medicalSpecialty": "Spinal Correction, Chuna Manual Therapy, Rehabilitation",
+      "url": "https://body-all.co.kr",
+      "logo": "Bodyall Logo.png",
+      "medicalSpecialty": ["Spinal Correction", "Chuna Manual Therapy", "Acupuncture"],
       "employee": [
         {
           "@type": "Physician",
           "name": "Dong-hae Lee",
           "jobTitle": "Representative Director",
-          "description": "Education Director of the Society of Spine Diagnosis & Correction, 40,000+ clinical cases."
+          "image": "doctor_lee.jpg",
+          "description": "Education Director of the Society of Spine Diagnosis & Correction, 40,000+ SART clinical cases.",
+          "memberOf": ["Society of Spine Diagnosis and Correction", "Association of Korean Medicine", "Korean Sports Medicine Society", "Korean Immune Pharmacopuncture Society"],
+          "knowsAbout": ["Spinal Space Correction", "Spine Disorders", "Weight Loss Korean Medicine"]
         },
         {
           "@type": "Physician",
           "name": "Yunchan Choi",
           "jobTitle": "Chief SART Physician",
-          "description": "Expert in SART technique and Sports Medicine."
+          "image": "doctor_choi.jpg",
+          "description": "Chief SART Physician at Bodyall Clinic, completed Sports Medicine Team Doctor program.",
+          "memberOf": ["Society of Spine Do-in An-gyo", "Korean Sports Medicine Society"],
+          "knowsAbout": ["Chuna Therapy", "Sports Injury", "Musculoskeletal Pain"]
         },
         {
           "@type": "Physician",
           "name": "Hyo-jung Kim",
           "jobTitle": "Associate Director",
-          "description": "Kyung Hee University graduate, specialist in Anatomy-based Muscle study."
+          "image": "doctor_kim.jpg",
+          "description": "Kyung Hee University graduate, specialist in Anatomy-based Muscle & Point Study (A-MPS).",
+          "alumniOf": "Kyung Hee University College of Korean Medicine",
+          "memberOf": ["Association of Korean Medicine", "Anatomy-based Muscle & Point Study Group"],
+          "knowsAbout": ["A-MPS Acupuncture", "Spinal Correction", "Posture Correction"]
         },
         {
           "@type": "Physician",
           "name": "Ju-hyun Bae",
           "jobTitle": "Associate Director",
-          "description": "Specialist in Immune Pharmacopuncture and chronic pain management."
+          "image": "doctor_bae.jpg",
+          "description": "Full Member of Korean Immune Pharmacopuncture Society, specialized in chronic pain management.",
+          "memberOf": ["Association of Korean Medicine", "Korean Immune Pharmacopuncture Society", "Korean Medicine Obesity Society"],
+          "knowsAbout": ["Immune Pharmacopuncture", "Chronic Pain Management", "Obesity Care"]
         }
       ]
     }
@@ -63,13 +79,13 @@
 
         header { border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px; display: flex; justify-content: center; align-items: center; gap: 8px; }
         h1 { font-size: 1.5rem; color: var(--primary); text-align: center; font-weight: 800; line-height: 1.4; margin: 20px 0; }
+        h2.section-title { font-size: 1.3rem; color: var(--primary); margin: 30px 0 20px; border-left: 4px solid var(--accent); padding-left: 10px; }
 
         .hero-img { width: 100%; aspect-ratio: 1080 / 810; object-fit: cover; border-radius: 12px; box-shadow: var(--card-shadow); margin-bottom: 30px; background: #eee; }
         
         .intro-box { background: var(--light-bg); padding: 25px; border-radius: 12px; border-left: 5px solid var(--accent); margin-bottom: 40px; font-size: 0.95rem; }
         .intro-box strong { font-size: 1.15rem; color: #222; display: block; margin-bottom: 10px; }
 
-        /* [AIO Upgrade] AI Summary Box */
         .aio-summary-box { background: #f4f8fb; padding: 20px; border-radius: 15px; margin-bottom: 40px; border: 1px solid #e1e9f0; }
         .aio-summary-q { font-weight: 800; color: #1a5fb4; font-size: 1rem; display: block; margin-bottom: 10px; }
 
@@ -92,37 +108,11 @@
         footer { background: #2c3e50; color: #fff; padding: 40px 25px; margin-top: 60px; border-radius: 20px 20px 0 0; }
         .keyword-tag { display: inline-block; background: #eee; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #666; margin: 2px; }
 
-        .event-btn { 
-            display: block; 
-            width: 100%; 
-            max-width: 320px; 
-            margin: 25px auto; 
-            padding: 14px 20px; 
-            background: var(--accent); 
-            color: #ffffff !important; 
-            font-weight: bold; 
-            font-size: 0.95rem; 
-            border: none; 
-            border-radius: 8px; 
-            cursor: pointer; 
-            box-shadow: var(--card-shadow); 
-            transition: all 0.2s ease; 
-            text-align: center; 
-            text-decoration: none;
-            box-sizing: border-box;
-        }
-        .event-btn:hover { 
-            background: #d35400; 
-            transform: translateY(-2px);
-        }
-        .event-btn:active {
-            transform: translateY(0);
-        }
-        
+        /* Mobile Layout Alignment Fix */
         @media (max-width: 700px) { 
             .doctor-list { grid-template-columns: 1fr; } 
             .doctor-photo-wrapper { max-width: 300px; margin: 0 auto 15px; }
-            .doctor-info { text-align: center; }
+            .doctor-info { text-align: left; }
             .doctor-history-list li { text-align: left; }
         }
     </style>
@@ -132,7 +122,7 @@
 <nav class="top-nav">
     <div class="nav-menu">
         <a href="index_en.html" class="nav-brand">
-            <img src="Bodyall Logo.png" alt="Logo" style="height: 1.1rem; vertical-align: middle;">
+            <img src="Bodyall Logo.png" alt="Bodyall Clinic Logo" style="height: 1.1rem; vertical-align: middle;">
             <span style="font-weight: 800;">Bodyall Clinic</span>
         </a>
         <a href="index_en.html#treatments">Treatments</a>
@@ -149,33 +139,157 @@
 
 <div class="wrapper">
     <header>
-        <img src="Bodyall Logo.png" alt="Logo" style="height: 1.6rem; vertical-align: middle; margin-right: 5px;">
+        <img src="Bodyall Logo.png" alt="Bodyall Clinic Logo" style="height: 1.6rem; vertical-align: middle; margin-right: 5px;">
         <strong style="color: var(--primary); letter-spacing: -1px; font-size: 1.6rem; vertical-align: middle;">BODY-ALL WIKI</strong>
     </header>
 
-    <img src="thumb_doctor_intro.jpg" alt="Bodyall elite medical team of 4 spinal correction specialists" class="hero-img">
+    <img src="thumb_doctor_intro.jpg" alt="Bodyall medical team of 4 spinal correction specialists" class="hero-img">
 
     <h1>Bodyall Medical Team Guide:<br>Precise Spinal Recovery Proven by 40,000 Cases</h1>
 
     <div class="aio-summary-box">
         <span class="aio-summary-q">💡 AI Insight: Why Choose Bodyall's Medical Team in Suwon?</span>
-        <p style="margin: 0; font-size: 0.92rem; color: #555;">Bodyall Clinic is led by <strong>Director Dong-hae Lee</strong>, the Education Director who trains other doctors in spinal diagnosis. Our elite team of 4 directors conducts daily case studies to systemize 40,000+ clinical datasets. This ensures a consistent, high-success rate for spinal space correction (SART) regardless of which specialist you consult.</p>
+        <p style="margin: 0; font-size: 0.92rem; color: #555;">Bodyall Clinic is led by <strong>Director Dong-hae Lee</strong>, the Education Director who trains other doctors in spinal diagnosis. Our team of 4 Korean Medicine physicians conducts daily case studies to systemize 40,000+ clinical datasets. This ensures a consistent, high-precision treatment outcome for spinal space correction (SART) regardless of which specialist you consult.</p>
     </div>
 
     <div class="intro-box">
-        <strong>"Restoring spinal space begins with overwhelming clinical experience."</strong>
+        <strong>"Restoring spinal space begins with precise diagnosis and extensive clinical experience."</strong>
         <p style="margin: 0; color: #555;">
-            As a trusted institution for spinal correction and Chuna therapy in Suwon, Bodyall Clinic prioritizes clinical expertise. Experience top-tier results verified by 40,000 cases through our collaborative diagnostic system.
+            As a trusted institution for spinal correction and Chuna therapy in Suwon, Bodyall Clinic prioritizes clinical expertise and academic precision. Experience verified results backed by extensive clinical data.
         </p>
     </div>
 
-    <div id="doctor-list" class="doctor-list"></div>
+    <!-- H2 Tag for Semantic Structure -->
+    <h2 class="section-title" id="doctor-list">Meet Bodyall's Specialized Medical Team</h2>
+
+    <!-- Static HTML for Doctors (Optimal for AI crawling & mobile alignment) -->
+    <div class="doctor-list">
+        <!-- Dong-hae Lee (Representative Director) -->
+        <div class="doctor-card">
+            <div class="doctor-photo-wrapper">
+                <img src="doctor_lee.jpg" alt="Dong-hae Lee, Representative Director at Bodyall Suwon" class="doctor-photo">
+            </div>
+            <div class="doctor-info">
+                <h3 class="doctor-name-title">Dong-hae Lee, K.M.D</h3>
+                <span class="doctor-title">Representative Director</span>
+                <div class="doctor-history-section">
+                    <span class="doctor-history-label">Present & Key Experience</span>
+                    <ul class="doctor-history-list" style="color: #2c3e50; font-weight: bold; margin-bottom: 15px;">
+                        <li>(Current) Chief Executive Director of Bodyall Clinic</li>
+                        <li>Education Director & Board Member of the Society of Spine Diagnosis and Correction</li>
+                        <li>(Former) Clinical Director at Gangnam Re-Bom Hospital</li>
+                        <li>(Former) Clinic Director at Nature & Clinic (Nowon)</li>
+                        <li>(Former) Head of Korean Medicine at Jipyeong Health Center</li>
+                        <li>(Former) Head of Korean Medicine at Cheongun Health Center</li>
+                    </ul>
+                    <span class="doctor-history-label">Credentials & Academic Activity</span>
+                    <ul class="doctor-history-list">
+                        <li>Over 40,000 SART Clinical Cases</li>
+                        <li>Guest Lecturer at Gachon Univ. College of Korean Medicine</li>
+                        <li>Official Naver Jisik-iN Health Consultant for AKM</li>
+                        <li>Sema High School Mentoring School Special Lecturer</li>
+                        <li>Full Member of the Association of Korean Medicine</li>
+                        <li>Full Member of Korean Sports Medicine Society</li>
+                        <li>Full Member of Korean Immune Pharmacopuncture Society</li>
+                        <li>Full Member of Korean Medicine Obesity Society</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Yunchan Choi (Chief SART Physician) -->
+        <div class="doctor-card">
+            <div class="doctor-photo-wrapper">
+                <img src="doctor_choi.jpg" alt="Yunchan Choi, Chief SART Physician at Bodyall Suwon" class="doctor-photo">
+            </div>
+            <div class="doctor-info">
+                <h3 class="doctor-name-title">Yunchan Choi, K.M.D</h3>
+                <span class="doctor-title">Chief SART Physician</span>
+                <div class="doctor-history-section">
+                    <span class="doctor-history-label">Present & Key Experience</span>
+                    <ul class="doctor-history-list" style="color: #2c3e50; font-weight: bold; margin-bottom: 15px;">
+                        <li>(Current) Chief SART Physician at Bodyall Clinic</li>
+                        <li>(Former) Head of Korean Medicine at Gyeongsan Health Center</li>
+                        <li>(Former) Head of Korean Medicine at Jillyang Health Center</li>
+                    </ul>
+                    <span class="doctor-history-label">Credentials & Academic Activity</span>
+                    <ul class="doctor-history-list">
+                        <li>Full Member of Society of Spine Do-in An-gyo</li>
+                        <li>Completed Team Doctor Program of Korean Sports Medicine Society</li>
+                        <li>Completed Better Acupuncture Institute Course</li>
+                        <li>Completed SONO-Hani Ultrasound Master Course</li>
+                        <li>Completed M&L Healing Camp Course</li>
+                        <li>Completed Chuna Therapy Health Insurance Training</li>
+                        <li>Former General Affairs Director of Gimihoe, Daegu Haany Univ.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hyo-jung Kim (Associate Director) -->
+        <div class="doctor-card">
+            <div class="doctor-photo-wrapper">
+                <img src="doctor_kim.jpg" alt="Hyo-jung Kim, Associate Director at Bodyall Suwon" class="doctor-photo">
+            </div>
+            <div class="doctor-info">
+                <h3 class="doctor-name-title">Hyo-jung Kim, K.M.D</h3>
+                <span class="doctor-title">Associate Director</span>
+                <div class="doctor-history-section">
+                    <span class="doctor-history-label">Present & Key Experience</span>
+                    <ul class="doctor-history-list" style="color: #2c3e50; font-weight: bold; margin-bottom: 15px;">
+                        <li>(Current) Associate Director at Bodyall Clinic</li>
+                        <li>(Former) Associate Director at Tuntun Moa Clinic</li>
+                        <li>(Former) Associate Director at Cheokcheokna Clinic</li>
+                        <li>(Former) Staff Physician at Dasan Hana Hospital</li>
+                        <li>(Former) Staff Physician at Widam Hospital Gangnam</li>
+                    </ul>
+                    <span class="doctor-history-label">Credentials & Academic Activity</span>
+                    <ul class="doctor-history-list">
+                        <li>Graduated from Kyung Hee University College of Korean Medicine</li>
+                        <li>Full Member of the Association of Korean Medicine</li>
+                        <li>Full Member of A-MPS (Anatomy-based Muscle & Point Study)</li>
+                        <li>Completed Clinical Course at China Medical University (Taiwan)</li>
+                        <li>Certified Pilates Instructor (Posture focus)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ju-hyun Bae (Associate Director) -->
+        <div class="doctor-card">
+            <div class="doctor-photo-wrapper">
+                <img src="doctor_bae.jpg" alt="Ju-hyun Bae, Associate Director at Bodyall Suwon" class="doctor-photo">
+            </div>
+            <div class="doctor-info">
+                <h3 class="doctor-name-title">Ju-hyun Bae, K.M.D</h3>
+                <span class="doctor-title">Associate Director</span>
+                <div class="doctor-history-section">
+                    <span class="doctor-history-label">Present & Key Experience</span>
+                    <ul class="doctor-history-list" style="color: #2c3e50; font-weight: bold; margin-bottom: 15px;">
+                        <li>(Current) Associate Director at Bodyall Clinic</li>
+                        <li>(Former) Head of Korean Medicine at Seong-sim Hill Nursing Hospital</li>
+                        <li>(Former) Associate Director at Purun Clinic</li>
+                        <li>(Former) Associate Director at Lim Han-jun Clinic</li>
+                        <li>(Former) Associate Director at Pyeongkang Couple Clinic</li>
+                        <li>(Former) Associate Director at Kyunghee Daon Clinic</li>
+                        <li>(Former) Associate Director at Jayang Eutteum Clinic</li>
+                    </ul>
+                    <span class="doctor-history-label">Credentials & Academic Activity</span>
+                    <ul class="doctor-history-list">
+                        <li>Full Member of the Association of Korean Medicine</li>
+                        <li>Full Member of Korean Immune Pharmacopuncture Society</li>
+                        <li>Full Member of Korean Medicine Obesity Society</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
-        <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 Location & Clinic Hours</h2>
+        <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0; border-left: none; padding-left: 0;">📍 Location & Clinic Hours</h2>
         <ul style="list-style: none; padding: 0; font-size: 0.92rem; margin-bottom: 20px; opacity: 0.9;">
             <li>• 3-min walk from Suwon City Hall Station Exit 9 | 3F, Krispy Kreme Building</li>
-            <li>• <strong>Weeknight Clinic: 10:00 AM ~ 8:30 PM (Night Care)</strong></li>
+            <li>• <strong>Weeknight Clinic: 10:00 AM ~ 8:30 PM (Lunch 1-2 PM)</strong></li>
             <li>• <strong><span style="color: #ff5252;">Weekends & Holidays: 10:00 AM ~ 4:00 PM (Lunch 1-2 PM)</span></strong></li>
         </ul>
         <img src="clinic_location_map.jpg" alt="Bodyall Clinic Suwon Map for international patients" style="width: 100%; border-radius: 8px; margin: 15px 0;">
@@ -196,108 +310,6 @@
     <a href="https://www.youtube.com/shorts/R8bRbHtSdfc" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" style="color: #FF0000;"></i>YouTube</a>
     <a href="https://body-all.co.kr/Body-Allfit" target="_blank" rel="noopener noreferrer"><i class="fas fa-dumbbell"></i>Bodyall Fit</a>
 </nav>
-
-<script>
-const doctorsData = [
-    {
-        name: "Dong-hae Lee",
-        role: "Representative Director (K.M.D)",
-        photo: "doctor_lee.jpg",
-        current: [
-            "(Current) Chief Executive Director of Bodyall Clinic", 
-            "Education Director & Board Member of the Society of Spine Diagnosis and Correction", 
-            "(Former) Clinical Director at Gangnam Re-Bom Hospital", 
-            "(Former) Clinic Director at Nature & Clinic (Nowon)"
-        ],
-        history: [
-            "Over 40,000 SART Clinical Cases (as of Dec 2025)",
-            "Guest Lecturer at Gachon Univ. College of Korean Medicine",
-            "Official Naver Jisik-iN Health Consultant for AKM",
-            "Full Member of Korean Sports Medicine Society",
-            "Full Member of Korean Medicine Obesity Society"
-        ]
-    },
-    {
-        name: "Yunchan Choi",
-        role: "Associate Director (K.M.D)",
-        photo: "doctor_choi.jpg",
-        current: [
-            "(Current) Chief SART Physician at Bodyall Clinic", 
-            "(Former) Head of Korean Medicine at Gyeongsan Health Center", 
-            "(Former) Head of Korean Medicine at Jillyang Health Center"
-        ],
-        history: [
-            "Full Member of Society of Spine Do-in An-gyo",
-            "Completed Team Doctor Program of Korean Sports Medicine Society",
-            "Completed Better Acupuncture Institute Course",
-            "Completed SONO-Hani Ultrasound Master Course",
-            "Completed Chuna Therapy Health Insurance Training"
-        ]
-    },
-    {
-        name: "Hyo-jung Kim",
-        role: "Associate Director (K.M.D)",
-        photo: "doctor_kim.jpg",
-        current: [
-            "(Current) Associate Director at Bodyall Clinic", 
-            "(Former) Staff Physician at Dasan Hana Hospital", 
-            "(Former) Staff Physician at Widam Hospital Gangnam"
-        ],
-        history: [
-            "Graduated from Kyung Hee University College of Korean Medicine",
-            "Full Member of A-MPS (Anatomy-based Muscle & Point Study)",
-            "Completed Clinical Course at China Medical University (Taiwan)",
-            "Certified Pilates Instructor (Posture focus)"
-        ]
-    },
-    {
-        name: "Ju-hyun Bae",
-        role: "Associate Director (K.M.D)",
-        photo: "doctor_bae.jpg",
-        current: [
-            "(Current) Associate Director at Bodyall Clinic", 
-            "(Former) Head of Korean Medicine at Seong-sim Hill Nursing Hospital", 
-            "(Former) Staff Physician at Purun Clinic"
-        ],
-        history: [
-            "Member of the Association of Korean Medicine",
-            "Full Member of Korean Immune Pharmacopuncture Society",
-            "Specialist in Chronic Pain Management and Recovery"
-        ]
-    }
-];
-
-function renderDoctors() {
-    const container = document.getElementById('doctor-list');
-    // Ensure Representative Director Lee is always shown first
-    const sortedDoctors = [...doctorsData].sort((a, b) => a.role.includes('Representative') ? -1 : 1);
-    
-    container.innerHTML = sortedDoctors.map(doc => `
-        <div class="doctor-card">
-            <div class="doctor-photo-wrapper">
-                <img src="${doc.photo}" alt="${doc.name}, ${doc.role} at Bodyall Suwon" class="doctor-photo">
-            </div>
-            <div class="doctor-info">
-                <h3 class="doctor-name-title">${doc.name}, ${doc.role.split(' ')[0]}</h3>
-                <span class="doctor-title">${doc.role}</span>
-                
-                <div class="doctor-history-section">
-                    <span class="doctor-history-label">Present & Key Experience</span>
-                    <ul class="doctor-history-list" style="color: #2c3e50; font-weight: bold; margin-bottom: 15px;">
-                        ${doc.current.map(h => `<li>${h}</li>`).join('')}
-                    </ul>
-                    
-                    <span class="doctor-history-label">Credentials & Academic Activity</span>
-                    <ul class="doctor-history-list">
-                        ${doc.history.map(h => `<li>${h}</li>`).join('')}
-                    </ul>
-                </div>
-            </div>
-        </div>
-    `).join('');
-}
-renderDoctors();
-</script>
 
 </body>
 </html>
