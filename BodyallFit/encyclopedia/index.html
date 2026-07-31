@@ -86,8 +86,20 @@
         .card-hashtags { font-size: 0.8rem; color: #888; }
 
         /* 푸터 영역 */
-        footer { background: #2c3e50; color: #fff; padding: 30px 20px; margin-top: 50px; border-radius: 16px 16px 0 0; font-size: 0.85rem; }
+        footer { background: #2c3e50; color: #fff; padding: 30px 20px; margin-top: 50px; border-radius: 16px 16px 0 0; font-size: 0.85rem; text-align: center; }
         
+        /* 푸터 대표원장 이미지 */
+        .footer-doctor-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 15px auto;
+            display: block;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        }
+
         /* [수정3] 푸터 내 바디올핏 더 알아보기 버튼 */
         .footer-fit-btn { 
             display: inline-block; 
@@ -97,7 +109,7 @@
             border-radius: 8px; 
             text-decoration: none; 
             font-weight: bold; 
-            margin-top: 10px; 
+            margin-top: 5px; 
             margin-bottom: 15px; 
             transition: 0.2s; 
         }
@@ -152,14 +164,18 @@
     <footer>
         <h3 style="color:#fff; margin-top:0; margin-bottom:5px;">📍 바디올한의원 바디올핏 클리닉</h3>
         
-        <!-- [수정3 적용] 병원 타이틀 바로 밑에 바디올핏 즉시 연결 버튼 추가 -->
+        <!-- 대표원장 프로필 이미지 추가 -->
+        <img src="./image/index-doctor.webp" alt="바디올한의원 대표원장" class="footer-doctor-img">
+
+        <!-- [수정3 적용] 병원 타이틀 및 이미지 아래 바디올핏 즉시 연결 버튼 추가 -->
         <a href="https://body-all.co.kr/Body-Allfit" target="_blank" rel="noopener noreferrer" class="footer-fit-btn">
             바디올핏 더 알아보기 ➜
         </a>
 
         <p style="color:#ccc; line-height:1.6; margin-top:10px;">
             수원시청역 9번 출구 도보 3분 | 대표원장 1:1 카톡 밀착 케어 시스템<br>
-            불필요한 포장 거품을 제거하여 합리적인 가격으로 내실 있는 다이어트 한약을 처방합니다.
+            불필요한 포장 거품을 제거하여<br>
+            합리적인 가격으로 내실 있는 다이어트 한약을 처방합니다.
         </p>
     </footer>
 </div>
