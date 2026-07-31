@@ -92,8 +92,20 @@
         .card-hashtags { font-size: 0.78rem; color: #888; word-break: break-all; }
 
         /* Footer Section */
-        footer { background: #2c3e50; color: #fff; padding: 30px 20px; margin-top: 50px; border-radius: 16px 16px 0 0; font-size: 0.82rem; }
+        footer { background: #2c3e50; color: #fff; padding: 30px 20px; margin-top: 50px; border-radius: 16px 16px 0 0; font-size: 0.82rem; text-align: center; }
         
+        /* Footer Chief Doctor Profile Image */
+        .footer-doctor-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 15px auto;
+            display: block;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        }
+
         .footer-fit-btn { 
             display: inline-block; 
             background: var(--diet-color); 
@@ -102,7 +114,7 @@
             border-radius: 8px; 
             text-decoration: none; 
             font-weight: 700; 
-            margin-top: 10px; 
+            margin-top: 5px; 
             margin-bottom: 15px; 
             transition: 0.2s; 
         }
@@ -156,13 +168,17 @@
     <footer>
         <h3 style="color:#fff; margin-top:0; margin-bottom:5px;">📍 Body-All Korean Medicine Clinic | Body-All Fit Clinic</h3>
         
+        <!-- Chief Doctor Profile Image -->
+        <img src="./image/index-doctor.webp" alt="Chief Doctor of Body-All Clinic" class="footer-doctor-img">
+
         <a href="https://body-all.co.kr/Body-Allfit" target="_blank" rel="noopener noreferrer" class="footer-fit-btn">
             Learn More About Body-All Fit ➜
         </a>
 
         <p style="color:#ccc; line-height:1.6; margin-top:10px;">
             3-min walk from Suwon City Hall Station Exit 9 | 1-on-1 Direct KakaoTalk Care System by Chief Doctor<br>
-            We prescribe authentic, effective Korean herbal medicine at reasonable prices by excluding unnecessary packaging markup.
+            We prescribe authentic, effective Korean herbal medicine<br>
+            at reasonable prices by excluding unnecessary packaging markup.
         </p>
     </footer>
 </div>
