@@ -14,6 +14,12 @@
     <meta property="og:description" content="Official structural guide for chronic back and neck pain based on over 40,000 clinical cases.">
     <meta property="og:url" content="https://wiki.body-all.co.kr/index_en.html">
 
+    <meta property="og:image" content="https://wiki.body-all.co.kr/directors_group.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bodyall Clinic Suwon – 365 Days Pain Relief & Spine Correction Wiki">
+    <meta name="twitter:description" content="Bodyall Korean Medicine Clinic in Suwon. Providing SART (Spinal Space Correction), Acupotomy, and Bee Venom therapy based on over 40,000 clinical cases.">
+    <meta name="twitter:image" content="https://wiki.body-all.co.kr/directors_group.jpg">
+
     <link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/index.html" />
     <link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/index_en.html" />
     <link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/index_cn.html" />
@@ -23,74 +29,105 @@
     <link rel="icon" type="image/png" href="Bodyall Logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "MedicalWebPage",
-        "name": "Bodyall Clinic Suwon – 365 Days Pain Relief & Spine Correction Wiki",
-        "description": "Bodyall Korean Medicine Clinic in Suwon. Providing SART (Spinal Space Correction), Acupotomy, and Bee Venom therapy based on over 40,000 clinical cases.",
-        "aspect": "Treatment",
-        "publisher": {
-          "@type": "MedicalBusiness",
-          "name": "Bodyall Korean Medicine Clinic Suwon",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Suwon-si",
-            "addressRegion": "Gyeonggi-do",
-            "addressCountry": "KR"
-          }
-        }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://wiki.body-all.co.kr/index_en.html#clinic",
+      "name": "Bodyall Korean Medicine Clinic",
+      "url": "https://wiki.body-all.co.kr/index_en.html",
+      "logo": "https://wiki.body-all.co.kr/Bodyall%20Logo.png",
+      "image": "https://wiki.body-all.co.kr/directors_group.jpg",
+      "description": "Bodyall Korean Medicine Clinic in Suwon. Providing SART (Spinal Space Correction), Acupotomy, and Bee Venom therapy based on over 40,000 clinical cases.",
+      "telephone": "031-8067-5825",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3F, 1114-7 Ingye-dong, Paldal-gu",
+        "addressLocality": "Suwon-si",
+        "addressRegion": "Gyeonggi-do",
+        "addressCountry": "KR"
       },
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Bodyall Korean Medicine Clinic",
-        "description": "Bodyall Korean Medicine Clinic in Suwon. Providing SART (Spinal Space Correction), Acupotomy, and Bee Venom therapy based on over 40,000 clinical cases.",
-        "areaServed": [
-          {"@type": "City", "name": "Suwon"},
-          {"@type": "City", "name": "Gwanggyo"},
-          {"@type": "City", "name": "Dongtan"},
-          {"@type": "City", "name": "Yeongtong"}
-        ]
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
       },
-        {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "#doctor_lee",
-    "name": "Donghae Lee",
-    "jobTitle": "Chief Director",
-    "worksFor": {
-      "@type": "MedicalBusiness",
-      "name": "Suwon Ingye-dong Bodyall Korean Medicine Clinic"
-    }
-  },
-      {
-        "@context": "https://schema.org",
-        "@type": "MedicalProcedure",
-        "name": "Spine Alignment Recovery Therapy (SART)",
-        "description": "A biomechanical conservative correction technique that secures physical space between vertebral segments based on the principles of traditional osteopathy and Chuna manual therapy.",
-        "procedureType": {
-          "@type": "MedicalProcedureType",
-          "name": "NonInvasiveProcedure"
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Why Bodyall is a Preferred Choice for Expats in Suwon?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Because we focus on structural space restoration for chronic conditions that haven't fully responded to conventional care. Many international patients visit us after trying general adjustments or physical therapy. Our unique SART and bone hammering techniques address the underlying structural space to support conservative management."
-            }
-          }
-        ]
+      "areaServed": [
+        {"@type": "City", "name": "수원"},
+        {"@type": "City", "name": "인계동"},
+        {"@type": "City", "name": "광교"},
+        {"@type": "City", "name": "동탄"},
+        {"@type": "City", "name": "영통"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ],
+      "employee": {
+        "@type": "Person",
+        "@id": "https://wiki.body-all.co.kr/index_en.html#doctor_lee",
+        "name": "Donghae Lee",
+        "jobTitle": "Chief Director"
       }
-    ]
-    </script>
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/index_en.html#webpage",
+      "name": "Bodyall Clinic Suwon – 365 Days Pain Relief & Spine Correction Wiki",
+      "url": "https://wiki.body-all.co.kr/index_en.html",
+      "description": "Bodyall Korean Medicine Clinic in Suwon. Providing SART (Spinal Space Correction), Acupotomy, and Bee Venom therapy based on over 40,000 clinical cases.",
+      "provider": {
+        "@type": "MedicalOrganization",
+        "name": "Bodyall Korean Medicine Clinic"
+      },
+      "about": [
+        {
+          "@type": "MedicalCondition",
+          "name": "Lumbar Disc Herniation & Spinal Stenosis"
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Cervical Disc Herniation & Turtle Neck Syndrome"
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "Shoulder Pain & Frozen Shoulder"
+        }
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/index_en.html#sart_procedure",
+      "name": "Spine Alignment Recovery Therapy (SART)",
+      "description": "A biomechanical conservative correction technique that secures physical space between vertebral segments based on the principles of traditional osteopathy and Chuna manual therapy.",
+      "procedureType": {
+        "@type": "MedicalProcedureType",
+        "name": "NonInvasiveProcedure"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://wiki.body-all.co.kr/index_en.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why Bodyall is a Preferred Choice for Expats in Suwon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because we focus on structural space restoration for chronic conditions that haven't fully responded to conventional care. Many international patients visit us after trying general adjustments or physical therapy. Our unique SART and bone hammering techniques address the underlying structural space to support conservative management."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
     <style>
         :root { --primary: #2c3e50; --accent: #e67e22; --light-bg: #f8f9fa; --card-shadow: 0 4px 12px rgba(0,0,0,0.08); }
@@ -215,7 +252,7 @@
 As a foreigner friendly, English-speaking clinic in Suwon, Bodyall Clinic focuses on the structural root cause of a herniated disc in Suwon. Our core SART program offers an advanced alternative to general chiropractic in Suwon by securing intervertebral space through Chuna therapy in English.<br><br>
 Located in Ingye-dong, we operate a 365-day Sunday clinic in Suwon to support expats in Suwon, Gwanggyo, and Dongtan. This wiki provides objective guides based on clinical data.
         </p>
-</main>
+    </div>
 
     <h2 id="treatments">🏛️ Primary Treatments Index</h2>
 
@@ -375,7 +412,7 @@ Located in Ingye-dong, we operate a 365-day Sunday clinic in Suwon to support ex
         <p style="margin-top: 15px; font-size: 0.9rem;"><strong>Parking:</strong> Free parking available on the 1st floor</p>
         <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 20px;">© Bodyall Clinic Suwon Ingye BODY-ALL WIKI. All rights reserved.</p>
     </footer>
-</div>
+</main>
 
 <nav class="bottom-nav">
     <a href="#location"><i class="fa-solid fa-map-location-dot"></i>Directions</a>
