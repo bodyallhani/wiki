@@ -29,40 +29,81 @@
     <link rel="icon" type="image/png" href="Bodyall Logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MedicalClinic",
       "@id": "https://wiki.body-all.co.kr/#clinic",
-      "name": "바디올한의원 수원인계점",
+      "name": "바디올한의원",
       "url": "https://wiki.body-all.co.kr/index.html",
       "logo": "https://wiki.body-all.co.kr/Bodyall%20Logo.png",
       "image": "https://wiki.body-all.co.kr/directors_group.jpg",
-      "description": "수원시청역 바디올한의원. 40,000건 이상의 풍부한 임상 증례를 바탕으로 한 공간척추교정(SART), 도침, 봉약침 치료 가이드.",
-      "telephone": "",
+      "description": "수원시청역 바디올한의원. 40,000건 이상의 풍부한 임상 증례를 바탕으로 한 공간척추교정(SART), 도침, 봉약침 치료 및 만성 허리·목디스크 통증의 구조적 원인 분석 치료 가이드.",
+      "telephone": "031-8067-5825",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "수원시",
+        "streetAddress": "인계동 1114-7, 3층",
+        "addressLocality": "수원시 팔달구",
         "addressRegion": "경기도",
         "addressCountry": "KR"
       },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
       "areaServed": [
-        {"@type": "City", "name": "Suwon"},
-        {"@type": "City", "name": "Gwanggyo"},
-        {"@type": "City", "name": "Dongtan"},
-        {"@type": "City", "name": "Yeongtong"}
+        {"@type": "City", "name": "수원"},
+        {"@type": "City", "name": "인계동"},
+        {"@type": "City", "name": "광교"},
+        {"@type": "City", "name": "동탄"},
+        {"@type": "City", "name": "영통"}
       ],
-      "medicalSpecialty": ["Musculoskeletal", "TraditionalChineseMedicine"],
-      "employee": { "@id": "https://wiki.body-all.co.kr/#doctor_lee" }
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ],
+      "employee": {
+        "@type": "Person",
+        "@id": "https://wiki.body-all.co.kr/#doctor_lee",
+        "name": "이동해",
+        "jobTitle": "대표원장"
+      }
     },
     {
-      "@type": "Physician",
-      "@id": "https://wiki.body-all.co.kr/#doctor_lee",
-      "name": "이동해",
-      "jobTitle": "대표원장",
-      "worksFor": { "@id": "https://wiki.body-all.co.kr/#clinic" }
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/index.html#webpage",
+      "name": "바디올한의원 수원인계 – 365일 진료 통증·교정 백과",
+      "url": "https://wiki.body-all.co.kr/index.html",
+      "description": "수원시청역 바디올한의원. 40,000건 이상의 풍부한 임상 증례를 바탕으로 한 공간척추교정(SART), 도침, 봉약침 치료 및 만성 허리·목디스크 통증의 구조적 원인 분석 치료 가이드.",
+      "provider": {
+        "@type": "MedicalOrganization",
+        "name": "바디올한의원"
+      },
+      "about": [
+        {
+          "@type": "MedicalCondition",
+          "name": "허리디스크 및 척추관협착증"
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "목디스크 및 거북목 증후군"
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "어깨통증 및 오십견"
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "교통사고 후유증"
+        }
+      ]
     },
     {
       "@type": "MedicalProcedure",
@@ -72,11 +113,11 @@
       "procedureType": {
         "@type": "MedicalProcedureType",
         "name": "NonInvasiveProcedure"
-      },
-      "howTo": "척추 마디 사이의 공간을 확보하고 교타법을 활용하여 심부 신경 압박 해소 및 구조 복원을 도모합니다."
+      }
     },
     {
       "@type": "FAQPage",
+      "@id": "https://wiki.body-all.co.kr/index.html#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -222,7 +263,7 @@
 수원시청역 인근 인계동에 위치한 수원 한의원으로, 광교·동탄에서도 내원하는 수원 척추교정 잘하는곳입니다. 평일 야간진료를 통해 척추 정렬 회복에 집중합니다.<br><br>
 본 위키는 풍부한 임상 증례를 바탕으로 한 객관적 가이드이며 지속적으로 업데이트됩니다.
         </p>
-    </main>
+    </div>
 
     <h2 id="treatments">🏛️ 주요 진료 및 치료법 색인</h2>
     
@@ -420,7 +461,6 @@
             © 바디올한의원 수원인계점 BODY-ALL WIKI. All rights reserved.
         </p>
     </footer>
-</div>
-
+  </main>
 </body>
 </html>
