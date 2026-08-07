@@ -135,7 +135,7 @@
         </div>
         <div class="row">
           <div class="k">이벤트 한정 인원</div>
-          <div class="v">선착순 50명</div>
+          <div class="v">선착순 <span id="count-number">50</span>명</div>
         </div>
       </div>
 
@@ -165,5 +165,40 @@
       </div>
     </section>
   </main>
+
+  <!-- 자동 인원 차감 자바스크립트 -->
+  <script>
+    (function() {
+      // ==========================================
+      // [수정 가능 조건 설정 구역]
+      // ==========================================
+      const startDateStr = "2026-08-01"; // 이벤트 시작 날짜 (YYYY-MM-DD)
+      const initialCount = 50;           // 시작 인원수
+      const decreaseHours = 24;          // 차감 주기 (시간 단위, 24 = 24시간마다 1명씩 차감)
+      const minCount = 3;                // 마감 최소 인원 (이 숫자 이하로는 안 내려감)
+
+      // ==========================================
+      // [자동 연산 로직 - 건드리지 않으셔도 됩니다]
+      // ==========================================
+      const startDate = new Date(startDateStr + "T00:00:00");
+      const now = new Date();
+      const diffMs = now - startDate;
+
+      if (diffMs > 0) {
+        const diffHours = diffMs / (1000 * 60 * 60);
+        const decreaseAmount = Math.floor(diffHours / decreaseHours);
+        let currentCount = initialCount - decreaseAmount;
+
+        if (currentCount < minCount) {
+          currentCount = minCount;
+        }
+
+        const countElement = document.getElementById('count-number');
+        if (countElement) {
+          countElement.innerText = currentCount;
+        }
+      }
+    })();
+  </script>
 </body>
 </html>
