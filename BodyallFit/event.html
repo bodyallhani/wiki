@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>바디올핏 폭염 바캉스 이벤트</title>
+  <title>바디올핏 한여름 폭염 이벤트</title>
   <meta name="description" content="바디올핏 다이어트 한약 이벤트. 이벤트 참여시 48,000원 상당의 다이어트 한약 2주분 추가 (2026년 8월 1일 ~ 2026년 8월 31일)" />
 
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
@@ -38,7 +38,7 @@
       margin:0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif;
       background-color: var(--bg);
-      background-image: url('https://res.cloudinary.com/k57don4w/image/fetch/q_auto,f_auto/');
+      background-image: url('https://res.cloudinary.com/k57don4w/image/fetch/q_auto,f_auto/https%3A%2F%2Fres.cloudinary.com%2Fk57don4w%2Fimage%2Fupload%2Fv1786096461%2Fymibvyfcvouu7r2d2qdw.png');
       background-size: cover;
       background-position: center;
       background-attachment: fixed; /* 스크롤 시 배경 고정 (고급스러운 패럴랙스 느낌) */
@@ -113,14 +113,14 @@
   <main class="wrap">
     <section class="card">
       <div class="badge-wrap">
-        <div class="badge">바디올핏 폭염 바캉스 이벤트</div>
+        <div class="badge">바디올핏 한여름 폭염 이벤트</div>
       </div>
 
-      <h1>폭염 속에서 시작해야 가을 핏 완성</h1>
+      <h1>폭염 속 시작이 가을 핏을 만든다</h1>
 
       <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png" alt="바디올한의원" class="logo">
 
-      <p class="sub">무리한 절식 없이, 가을까지 유지되는 바디라인을 만드는 3개월의 기준.</p>
+      <p class="sub">급하게 빼는 다이어트 대신, 가을까지 유지되는 몸을 만드는 기준.</p>
 
       <div class="hr"></div>
 
@@ -135,7 +135,7 @@
         </div>
         <div class="row">
           <div class="k">이벤트 한정 인원</div>
-          <div class="v">선착순 50명</div>
+          <div class="v">선착순 <span id="count-number">50</span>명</div>
         </div>
       </div>
 
@@ -165,5 +165,40 @@
       </div>
     </section>
   </main>
+
+  <!-- 자동 인원 차감 자바스크립트 -->
+  <script>
+    (function() {
+      // ==========================================
+      // [수정 가능 조건 설정 구역]
+      // ==========================================
+      const startDateStr = "2026-08-01"; // 이벤트 시작 날짜 (YYYY-MM-DD)
+      const initialCount = 50;           // 시작 인원수
+      const decreaseHours = 24;          // 차감 주기 (시간 단위, 24 = 24시간마다 1명씩 차감)
+      const minCount = 3;                // 마감 최소 인원 (이 숫자 이하로는 안 내려감)
+
+      // ==========================================
+      // [자동 연산 로직 - 건드리지 않으셔도 됩니다]
+      // ==========================================
+      const startDate = new Date(startDateStr + "T00:00:00");
+      const now = new Date();
+      const diffMs = now - startDate;
+
+      if (diffMs > 0) {
+        const diffHours = diffMs / (1000 * 60 * 60);
+        const decreaseAmount = Math.floor(diffHours / decreaseHours);
+        let currentCount = initialCount - decreaseAmount;
+
+        if (currentCount < minCount) {
+          currentCount = minCount;
+        }
+
+        const countElement = document.getElementById('count-number');
+        if (countElement) {
+          countElement.innerText = currentCount;
+        }
+      }
+    })();
+  </script>
 </body>
 </html>
