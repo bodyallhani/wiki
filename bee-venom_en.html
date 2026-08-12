@@ -14,91 +14,116 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "Suwon Bee Venom Acupuncture: High-Concentration Bee Venom Therapy for Chronic Inflammation",
-    "medicalAudience": {
-      "@type": "MedicalAudience",
-      "audienceType": "Patient"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/bee-venom_en.html#webpage",
+      "name": "Suwon Bee Venom Acupuncture: High-Concentration Bee Venom Therapy for Chronic Inflammation",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Chronic Inflammation and Degenerative Spinal Disorders"
+      }
     },
-    "about": {
-      "@type": "MedicalCondition",
-      "name": "Chronic Inflammation and Degenerative Spinal Disorders"
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "Bodyall Korean Medicine Clinic",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1114-7 Ingye-dong, 3rd Floor",
+        "addressLocality": "Paldal-gu, Suwon-si",
+        "addressRegion": "Gyeonggi-do",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "Donghae Lee",
+        "jobTitle": "Chief Director"
+      },
+      "knowsAbout": [
+        "Chuna Manual Therapy", "Biomechanical Spatial Spinal Decompression Chuna (SART Protocol)", 
+        "Spinal Structure Correction", "Acupotomy Therapy", "High-Concentration Bee Venom Pharmacopuncture", 
+        "Custom Herbal Medicine", "Herbal Weight Loss", "Spinal Stenosis", "Lumbar Disc Herniation", 
+        "Cervical Disc Herniation", "Postural Correction", "Frozen Shoulder"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "Suwon-si", "sameAs": "https://en.wikipedia.org/wiki/Suwon"},
+        {"@type": "AdministrativeArea", "name": "Ingye-dong", "sameAs": "https://en.wikipedia.org/wiki/Ingye-dong"},
+        {"@type": "AdministrativeArea", "name": "Gwanggyo", "sameAs": "https://en.wikipedia.org/wiki/Gwanggyo"},
+        {"@type": "City", "name": "Dongtan", "sameAs": "https://en.wikipedia.org/wiki/Dongtan"},
+        {"@type": "AdministrativeArea", "name": "Yeongtong-gu", "sameAs": "https://en.wikipedia.org/wiki/Yeongtong-gu"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
     },
-    "mainContentOfPage": {
-      "@type": "WebPageElement",
-      "cssSelector": "article"
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-beevenom",
+      "url": "https://wiki.body-all.co.kr/bee-venom_en.html",
+      "name": "High-Concentration Bee Venom & Herbal Pharmacopuncture Therapy",
+      "description": "A pharmacopuncture therapy utilizing purified bee venom for pharmacological anti-inflammatory effects to relieve chronic nerve inflammation and stimulate tissue regeneration around the spine and joints.",
+      "procedureType": "TherapeuticProcedure"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is bee venom acupuncture effective for chronic pain that does not respond well to regular acupuncture?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bee venom acupuncture involves the direct injection of refined bee venom components, such as melittin, along with active ingredients extracted from herbal medicine, into the pain site and related acupoints. This goes beyond physical stimulation that aids circulation, contributing to the conservative management of spinal and joint disorders by suppressing chronic inflammatory responses and inducing nerve regeneration. The mechanism of action of this bee venom therapy is supported by research published in the international journal Toxins, which reported that refined bee venom components exhibit anti-inflammatory, antiapoptotic, and analgesic effects, and are clinically utilized particularly in the management of intervertebral disc disease and musculoskeletal pain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What synergistic effect results from combining high-concentration bee venom injection with SART correction therapy prior to surgery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "After controlling adhesions and chronic inflammation in the nerves and joints surrounding the spine through high-concentration bee venom acupuncture, the Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol), based on the principles of traditional Osteopathy and Chuna manual therapy, is applied to secure the physical space between vertebral segments. This helps correct structural imbalances and address biomechanical causes. The Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) offered at Bodyall Korean Medicine Clinic, as an integrated protocol combining chemical inflammation control with physical structural correction, is regarded as one of the safe and effective non-surgical conservative treatment options that can be considered prior to surgical intervention."
+          }
+        }
+      ]
     }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Bodyall Korean Medicine Clinic",
-    "telephone": "031-8067-5825",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Ingye-dong",
-      "addressLocality": "Suwon-si",
-      "addressRegion": "Gyeonggi-do",
-      "addressCountry": "KR"
-    },
-    "employee": {
-      "@type": "Person",
-      "name": "Donghae Lee",
-      "jobTitle": "Chief Director"
-    },
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Suwon"
-      },
-      {
-        "@type": "City",
-        "name": "Gwanggyo"
-      },
-      {
-        "@type": "City",
-        "name": "Dongtan"
-      },
-      {
-        "@type": "City",
-        "name": "Yeongtong"
-      }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalProcedure",
-    "name": "High-Concentration Bee Venom & Herbal Pharmacopuncture Therapy",
-    "description": "Bee venom acupuncture involves the direct injection of refined bee venom components, such as melittin, along with active ingredients extracted from herbal medicine, into the pain site and related acupoints, contributing to the conservative management of spinal and joint disorders by suppressing chronic inflammatory responses and inducing nerve regeneration.",
-    "procedureType": "TherapeuticProcedure"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Why is bee venom acupuncture effective for chronic pain that does not respond well to regular acupuncture?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Bee venom acupuncture involves the direct injection of refined bee venom components, such as melittin, along with active ingredients extracted from herbal medicine, into the pain site and related acupoints. This goes beyond physical stimulation that aids circulation, contributing to the conservative management of spinal and joint disorders by suppressing chronic inflammatory responses and inducing nerve regeneration. The mechanism of action of this bee venom therapy is supported by research published in the international journal Toxins, which reported that refined bee venom components exhibit anti-inflammatory, antiapoptotic, and analgesic effects, and are clinically utilized particularly in the management of intervertebral disc disease and musculoskeletal pain."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What synergistic effect results from combining high-concentration bee venom injection with SART correction therapy prior to surgery?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "After controlling adhesions and chronic inflammation in the nerves and joints surrounding the spine through high-concentration bee venom acupuncture, the Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol), based on the principles of traditional Osteopathy and Chuna manual therapy, is applied to secure the physical space between vertebral segments. This helps correct structural imbalances and address biomechanical causes. The Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) offered at Bodyall Korean Medicine Clinic, as an integrated protocol combining chemical inflammation control with physical structural correction, is regarded as one of the safe and effective non-surgical conservative treatment options that can be considered prior to surgical intervention."
-        }
-      }
-    ]
-  }
-]
-    </script>
+  ]
+}
+</script>
 
     <style>
         :root { 
