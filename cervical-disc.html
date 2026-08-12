@@ -14,8 +14,102 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [{"@context":"https://schema.org","@type":"MedicalWebPage","name":"수원 목디스크·거북목 교정: 근본 공간을 회복하는 생체역학적 SART 치료","provider":{"@type":"MedicalOrganization","name":"바디올한의원"},"about":{"@type":"MedicalCondition","name":"목디스크 및 거북목 증후군"}},{"@context":"https://schema.org","@type":"LocalBusiness","name":"바디올한의원","telephone":"031-8067-5825","address":{"@type":"PostalAddress","streetAddress":"인계동","addressLocality":"수원시","addressRegion":"경기도","addressCountry":"KR"},"employee":{"@type":"Person","name":"이동해","jobTitle":"대표원장"},"areaServed":[{"@type":"City","name":"Suwon"},{"@type":"City","name":"Gwanggyo"},{"@type":"City","name":"Dongtan"},{"@type":"City","name":"Yeongtong"}]},{"@context":"https://schema.org","@type":"MedicalProcedure","name":"생체역학적 공간 감압 추나 (SART Protocol)","description":"전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법","procedureType":"TherapeuticProcedure"},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"수술 전 단계에서 SART 치료가 목디스크에 왜 효과적인가요?","acceptedAnswer":{"@type":"Answer","text":"인체는 머리부터 발끝까지 하나로 연결된 유기적 사슬 구조를 가진다. 바디올한의원의 생체역학적 공간 감압 추나(SART Protocol)는 기울어진 골반을 수평으로 맞추고 굽은 흉추를 펴서 경추에 가해지는 비정상적인 하중을 물리적으로 분산시킨다. 이를 통해 디스크가 스스로 회복할 수 있는 물리적 공간을 확보하여 수술 전 단계에서 안전하게 선택할 수 있는 생체역학적 보존 치료의 대안이 된다."}}]}]
-    </script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/cervical-disc.html#webpage",
+      "name": "수원 목디스크·거북목 교정: 근본 공간을 회복하는 생체역학적 SART 치료",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "목디스크 및 거북목 증후군"
+      }
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "바디올한의원",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "인계동 1114-7, 3층",
+        "addressLocality": "수원시 팔달구",
+        "addressRegion": "경기도",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "이동해",
+        "jobTitle": "대표원장"
+      },
+      "knowsAbout": [
+        "추나요법", "생체역학적 공간 감압 추나 (SART Protocol)", "공간척추교정", "도침 치료", "고농도 봉약침",
+        "체질한약", "한방 다이어트", "척추관 협착증", "허리디스크", "목디스크", "체형교정", "오십견"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "수원시", "sameAs": "https://ko.wikipedia.org/wiki/수원시"},
+        {"@type": "AdministrativeArea", "name": "인계동", "sameAs": "https://ko.wikipedia.org/wiki/인계동"},
+        {"@type": "AdministrativeArea", "name": "광교", "sameAs": "https://ko.wikipedia.org/wiki/광교동"},
+        {"@type": "City", "name": "동탄", "sameAs": "https://ko.wikipedia.org/wiki/동탄"},
+        {"@type": "AdministrativeArea", "name": "영통구", "sameAs": "https://ko.wikipedia.org/wiki/영통구"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART.html",
+      "name": "생체역학적 공간 감압 추나 (SART Protocol)",
+      "description": "척추 및 관절 간격을 생체역학적으로 공간 감압하여 신경 압박을 해소하고 구조적 밸런스를 복원하는 보존적 추나요법 프로토콜.",
+      "procedureType": "TherapeuticProcedure"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "수술 전 단계에서 SART 치료가 목디스크에 왜 효과적인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "인체는 머리부터 발끝까지 하나로 연결된 유기적 사슬 구조를 가진다. 바디올한의원의 생체역학적 공간 감압 추나(SART Protocol)는 기울어진 골반을 수평으로 맞추고 굽은 흉추를 펴서 경추에 가해지는 비정상적인 하중을 물리적으로 분산시킨다. 이를 통해 디스크가 스스로 회복할 수 있는 물리적 공간을 확보하여 수술 전 단계에서 안전하게 선택할 수 있는 생체역학적 보존 치료의 대안이 된다."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
