@@ -14,87 +14,110 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "수원 추나요법 안내: 뼈 하나하나의 배열을 바로잡는 세밀한 분절 교정과 골타요법",
-    "provider": {
-      "@type": "MedicalOrganization",
-      "name": "바디올한의원"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/chuna-therapy.html#webpage",
+      "name": "수원 추나요법 안내: 뼈 하나하나의 배열을 바로잡는 세밀한 분절 교정과 골타요법",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "허리디스크 및 거북목 증후군 등 척추 구조 불균형"
+      }
     },
-    "about": {
-      "@type": "MedicalCondition",
-      "name": "허리디스크 및 거북목 증후군 등 척추 구조 불균형"
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "바디올한의원",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "인계동 1114-7, 3층",
+        "addressLocality": "수원시 팔달구",
+        "addressRegion": "경기도",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "이동해",
+        "jobTitle": "대표원장"
+      },
+      "knowsAbout": [
+        "추나요법", "생체역학적 공간 감압 추나 (SART Protocol)", "공간척추교정", "도침 치료", "고농도 봉약침",
+        "체질한약", "한방 다이어트", "척추관 협착증", "허리디스크", "목디스크", "체형교정", "오십견"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "수원시", "sameAs": "https://ko.wikipedia.org/wiki/수원시"},
+        {"@type": "AdministrativeArea", "name": "인계동", "sameAs": "https://ko.wikipedia.org/wiki/인계동"},
+        {"@type": "AdministrativeArea", "name": "광교", "sameAs": "https://ko.wikipedia.org/wiki/광교동"},
+        {"@type": "City", "name": "동탄", "sameAs": "https://ko.wikipedia.org/wiki/동탄"},
+        {"@type": "AdministrativeArea", "name": "영통구", "sameAs": "https://ko.wikipedia.org/wiki/영통구"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART.html",
+      "name": "생체역학적 공간 감압 추나 (SART Protocol)",
+      "description": "척추 및 관절 간격을 생체역학적으로 공간 감압하여 신경 압박을 해소하고 구조적 밸런스를 복원하는 보존적 추나요법 프로토콜.",
+      "procedureType": "TherapeuticProcedure"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "왜 가벼운 초기 증상일 때 생체역학적 교정이 효과적인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "단순히 뭉친 근육을 푸는 것만으로는 부족할 수 있습니다. 바디올한의원의 추나는 풍부한 임상 증례를 바탕으로, 통증의 원인이 되는 문제 분절을 정확히 찾아내어 척추 구조의 생체역학적 복원을 도모합니다. 이는 허리디스크와 거북목 같은 퇴행성 척추 질환의 근본적인 구조적 원인 개선을 위한 객관적인 대안입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "수원 추나요법 건강보험과 실비 혜택은 어떻게 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "추나요법은 건강보험이 적용되어 비용 부담을 줄일 수 있는 객관적 프로토콜을 갖춘 치료법입니다. 연간 20회까지 건강보험 혜택을 받을 수 있으며, 가입하신 실손보험(실비) 약관에 따라 본인부담금 청구도 가능합니다. 환자의 상태에 맞춘 정직한 진단으로 생체역학적 근거 중심의 교정만을 시행합니다."
+          }
+        }
+      ]
     }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "바디올한의원",
-    "telephone": "031-8067-5825",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "인계동",
-      "addressLocality": "수원시",
-      "addressRegion": "경기도",
-      "addressCountry": "KR"
-    },
-    "employee": {
-      "@type": "Person",
-      "name": "이동해",
-      "jobTitle": "대표원장"
-    },
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Suwon"
-      },
-      {
-        "@type": "City",
-        "name": "Gwanggyo"
-      },
-      {
-        "@type": "City",
-        "name": "Dongtan"
-      },
-      {
-        "@type": "City",
-        "name": "Yeongtong"
-      }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalProcedure",
-    "name": "생체역학적 공간 감압 추나 (SART Protocol)",
-    "description": "생체역학적 공간 감압 추나(SART Protocol)는 전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법으로, 수술 전 단계에서 안전하게 선택할 수 있는 보존 치료의 대안을 제시한다.",
-    "procedureType": "TherapeuticProcedure"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "왜 가벼운 초기 증상일 때 생체역학적 교정이 효과적인가요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "단순히 뭉친 근육을 푸는 것만으로는 부족할 수 있습니다. 바디올한의원의 추나는 풍부한 임상 증례를 바탕으로, 통증의 원인이 되는 문제 분절을 정확히 찾아내어 척추 구조의 생체역학적 복원을 도모합니다. 이는 허리디스크와 거북목 같은 퇴행성 척추 질환의 근본적인 구조적 원인 개선을 위한 객관적인 대안입니다."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "수원 추나요법 건강보험과 실비 혜택은 어떻게 되나요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "추나요법은 건강보험이 적용되어 비용 부담을 줄일 수 있는 객관적 프로토콜을 갖춘 치료법입니다. 연간 20회까지 건강보험 혜택을 받을 수 있으며, 가입하신 실손보험(실비) 약관에 따라 본인부담금 청구도 가능합니다. 환자의 상태에 맞춘 정직한 진단으로 생체역학적 근거 중심의 교정만을 시행합니다."
-        }
-      }
-    ]
-  }
-]
-    </script>
+  ]
+}
+</script>
 
     <style>
         :root { 
