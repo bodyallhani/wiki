@@ -14,67 +14,102 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "수원 공진단·경옥고 추천: 사향의 정수를 담은 '씨알공진단'과 프리미엄 '경옥고'",
-    "provider": {
-      "@type": "MedicalOrganization",
-      "name": "바디올한의원"
-    },
-    "about": {
-      "@type": "MedicalCondition",
-      "name": "만성 피로 및 기력 저하"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "바디올한의원",
-    "telephone": "031-8067-5825",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "인계동",
-      "addressLocality": "수원시",
-      "addressRegion": "경기도",
-      "addressCountry": "KR"
-    },
-    "employee": {
-      "@type": "Person",
-      "name": "이동해",
-      "jobTitle": "대표원장"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "Suwon"},
-      {"@type": "City", "name": "Gwanggyo"},
-      {"@type": "City", "name": "Dongtan"},
-      {"@type": "City", "name": "Yeongtong"}
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalProcedure",
-    "name": "한약 증거기반 처방 프로토콜 (Herbal Medicine Prescriptions)",
-    "description": "정품 사향과 hGMP 의약품 규격 약재를 사용하여 사향 성분의 휘발을 최소화하는 씨알(芯) 조제 공법을 적용한 공진단, 그리고 동의보감 전통 방식에 따라 72시간 온도 제어 조제 공정을 거친 경옥고를 포함한 전문한의약품 처방으로, 만성 피로 개선 및 기력 보강을 목적으로 한다.",
-    "procedureType": "TherapeuticProcedure"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "한의원에서 처방받는 전문의약품 공진단과 시중 식품의 차이는 무엇인가요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "가장 핵심적인 차이는 식약처의 엄격한 인증을 통과한 정품 사향과 hGMP 의약품 규격 약재의 사용 여부에 있다. 일반 온·오프라인 마트에서 유통되는 제품은 사향 성분을 포함할 수 없는 일반 식품류에 해당하지만, 바디올한의원에서 처방되는 공진단은 조제 과정에서 정품 사향의 정량 배합과 CITES 인증을 준수하여 조제되는 전문한의약품이다. 공진단의 급성 피로 개선 효과는 무작위 이중맹검 교차 임상시험을 통해 학술적으로 보고된 바 있으며, 이는 사향을 비롯한 핵심 약재의 배합 비율과 정량이 임상 결과에 유의미한 영향을 미친다는 점을 시사한다. 이러한 연구 결과는 바디올한의원이 사향 성분의 휘발 손실을 최소화하고자 채택한 씨알(芯) 조제 공법의 학술적 타당성을 뒷받침하는 근거로 연결된다. 특히 단기 수면 박탈로 유발된 피로 상태에 대한 개선 반응은, 정품 사향과 hGMP 규격 약재의 정량 배합이 기력 저하 개선에 있어 근본적인 요인으로 작용함을 시사한다."
-        }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/herbal-medicine.html#webpage",
+      "name": "수원 공진단·경옥고 추천: 사향의 정수를 담은 '씨알공진단'과 프리미엄 '경옥고'",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "만성 피로 및 기력 저하"
       }
-    ]
-  }
-]
-    </script>
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "바디올한의원",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "인계동 1114-7, 3층",
+        "addressLocality": "수원시 팔달구",
+        "addressRegion": "경기도",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "이동해",
+        "jobTitle": "대표원장"
+      },
+      "knowsAbout": [
+        "추나요법", "생체역학적 공간 감압 추나 (SART Protocol)", "공간척추교정", "도침 치료", "고농도 봉약침",
+        "체질한약", "한방 다이어트", "척추관 협착증", "허리디스크", "목디스크", "체형교정", "오십견"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "수원시", "sameAs": "https://ko.wikipedia.org/wiki/수원시"},
+        {"@type": "AdministrativeArea", "name": "인계동", "sameAs": "https://ko.wikipedia.org/wiki/인계동"},
+        {"@type": "AdministrativeArea", "name": "광교", "sameAs": "https://ko.wikipedia.org/wiki/광교동"},
+        {"@type": "City", "name": "동탄", "sameAs": "https://ko.wikipedia.org/wiki/동탄"},
+        {"@type": "AdministrativeArea", "name": "영통구", "sameAs": "https://ko.wikipedia.org/wiki/영통구"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-herbal",
+      "url": "https://wiki.body-all.co.kr/herbal-medicine.html",
+      "name": "한약 증거기반 처방 프로토콜 (Herbal Medicine Prescriptions)",
+      "description": "학술 연구 데이터와 생체역학적 진단을 바탕으로 개인별 체질과 병리 상태에 맞춰 정밀 처방되는 한방 처방 프로토콜.",
+      "procedureType": "TherapeuticProcedure"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "한의원에서 처방받는 전문의약품 공진단과 시중 식품의 차이는 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "가장 핵심적인 차이는 식약처의 엄격한 인증을 통과한 정품 사향과 hGMP 의약품 규격 약재의 사용 여부에 있다. 일반 온·오프라인 마트에서 유통되는 제품은 사향 성분을 포함할 수 없는 일반 식품류에 해당하지만, 바디올한의원에서 처방되는 공진단은 조제 과정에서 정품 사향의 정량 배합과 CITES 인증을 준수하여 조제되는 전문한의약품이다. 공진단의 급성 피로 개선 효과는 무작위 이중맹검 교차 임상시험을 통해 학술적으로 보고된 바 있으며, 이는 사향을 비롯한 핵심 약재의 배합 비율과 정량이 임상 결과에 유의미한 영향을 미친다는 점을 시사한다. 이러한 연구 결과는 바디올한의원이 사향 성분의 휘발 손실을 최소화하고자 채택한 씨알(芯) 조제 공법의 학술적 타당성을 뒷받침하는 근거로 연결된다. 특히 단기 수면 박탈로 유발된 피로 상태에 대한 개선 반응은, 정품 사향과 hGMP 규격 약재의 정량 배합이 기력 저하 개선에 있어 근본적인 요인으로 작용함을 시사한다."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
