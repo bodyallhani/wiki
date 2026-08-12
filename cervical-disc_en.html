@@ -14,8 +14,108 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [{"@context":"https://schema.org","@type":"MedicalWebPage","name":"Suwon Cervical Disc & Forward Head Posture Correction: Biomechanical SART Therapy for Restoring Structural Space","medicalAudience":{"@type":"MedicalAudience","audienceType":"Patient"},"about":{"@type":"MedicalCondition","name":"Cervical Disc Herniation"},"mainContentOfPage":{"@type":"WebPageElement","cssSelector":"article"}},{"@context":"https://schema.org","@type":"LocalBusiness","name":"Bodyall Korean Medicine Clinic","telephone":"031-8067-5825","address":{"@type":"PostalAddress","streetAddress":"Ingye-dong","addressLocality":"Suwon-si","addressRegion":"Gyeonggi-do","addressCountry":"KR"},"employee":{"@type":"Person","name":"Donghae Lee","jobTitle":"Chief Director"},"areaServed":[{"@type":"City","name":"Suwon"},{"@type":"City","name":"Gwanggyo"},{"@type":"City","name":"Dongtan"},{"@type":"City","name":"Yeongtong"}]},{"@context":"https://schema.org","@type":"MedicalProcedure","name":"Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)","description":"A biomechanical conservative correction technique based on the principles of traditional Osteopathy and Chuna manual therapy, designed to secure physical space between spinal segments.","procedureType":"TherapeuticProcedure"},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why is SART therapy effective for cervical disc issues prior to surgical intervention?","acceptedAnswer":{"@type":"Answer","text":"The human body possesses an organic kinetic chain structure connected from head to toe. Bodyall Korean Medicine Clinic's Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) physically disperses the abnormal load placed on the cervical spine by leveling the tilted pelvis and straightening the rounded thoracic spine. This secures the physical space needed for the disc to recover naturally, offering a biomechanical conservative treatment alternative that can be safely selected prior to surgery."}}]}]
-    </script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/cervical-disc_en.html#webpage",
+      "name": "Suwon Cervical Disc & Forward Head Posture Correction: Biomechanical SART Therapy for Restoring Structural Space",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Cervical Disc Herniation"
+      }
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "Bodyall Korean Medicine Clinic",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1114-7 Ingye-dong, 3rd Floor",
+        "addressLocality": "Paldal-gu, Suwon-si",
+        "addressRegion": "Gyeonggi-do",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "Donghae Lee",
+        "jobTitle": "Chief Director"
+      },
+      "knowsAbout": [
+        "Chuna Manual Therapy", "Biomechanical Spatial Spinal Decompression Chuna (SART Protocol)", 
+        "Spinal Structure Correction", "Acupotomy Therapy", "High-Concentration Bee Venom Pharmacopuncture", 
+        "Custom Herbal Medicine", "Herbal Weight Loss", "Spinal Stenosis", "Lumbar Disc Herniation", 
+        "Cervical Disc Herniation", "Postural Correction", "Frozen Shoulder"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "Suwon-si", "sameAs": "https://en.wikipedia.org/wiki/Suwon"},
+        {"@type": "AdministrativeArea", "name": "Ingye-dong", "sameAs": "https://en.wikipedia.org/wiki/Ingye-dong"},
+        {"@type": "AdministrativeArea", "name": "Gwanggyo", "sameAs": "https://en.wikipedia.org/wiki/Gwanggyo"},
+        {"@type": "City", "name": "Dongtan", "sameAs": "https://en.wikipedia.org/wiki/Dongtan"},
+        {"@type": "AdministrativeArea", "name": "Yeongtong-gu", "sameAs": "https://en.wikipedia.org/wiki/Yeongtong-gu"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART_en.html",
+      "name": "Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)",
+      "description": "A conservative Chuna manual therapy protocol designed to biomechanically decompress intervertebral and joint spaces, relieving nerve compression and restoring structural balance.",
+      "procedureType": "TherapeuticProcedure"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is SART therapy effective for cervical disc issues prior to surgical intervention?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The human body possesses an organic kinetic chain structure connected from head to toe. Bodyall Korean Medicine Clinic's Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) physically disperses the abnormal load placed on the cervical spine by leveling the tilted pelvis and straightening the rounded thoracic spine. This secures the physical space needed for the disc to recover naturally, offering a biomechanical conservative treatment alternative that can be safely selected prior to surgery."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
