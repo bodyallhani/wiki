@@ -14,8 +14,111 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [{"@context":"https://schema.org","@type":"MedicalWebPage","name":"水原颈椎间盘/乌龟颈矫正:恢复根本空间的生物力学SART治疗","medicalAudience":{"@type":"MedicalAudience","audienceType":"Patient"},"about":{"@type":"MedicalCondition","name":"颈椎间盘突出症"},"mainContentOfPage":{"@type":"WebPageElement","cssSelector":"article"}},{"@context":"https://schema.org","@type":"LocalBusiness","name":"Bodyall韩医院 (Bodyall Korean Medicine Clinic)","telephone":"031-8067-5825","address":{"@type":"PostalAddress","streetAddress":"仁溪洞","addressLocality":"水原市","addressRegion":"京畿道","addressCountry":"KR"},"employee":{"@type":"Person","name":"李东海","jobTitle":"代表院长"},"areaServed":[{"@type":"City","name":"水原"},{"@type":"City","name":"仁溪洞"},{"@type":"City","name":"光教"},{"@type":"City","name":"东滩"},{"@type":"City","name":"灵通"}]},{"@context":"https://schema.org","@type":"MedicalProcedure","name":"生物力学空间减压推拿 (SART Protocol)","description":"基于传统整骨医学(Osteopathy)及推拿疗法原理,旨在确保脊椎节段间物理空间的生物力学保守矫正技术","procedureType":"TherapeuticProcedure"},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"手术前阶段SART治疗为何对颈椎间盘有效?","acceptedAnswer":{"@type":"Answer","text":"人体从头到脚具有一个相连的有机链式结构。Bodyall韩医院的生物力学空间减压推拿(SART Protocol)通过水平矫正倾斜的骨盆并伸展弯曲的胸椎,从物理层面分散颈椎所承受的异常负荷。由此确保椎间盘自主恢复所需的物理空间,成为手术前阶段可安全选择的生物力学保守治疗替代方案。"}}]}]
-    </script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/cervical-disc_cn.html#webpage",
+      "name": "水原颈椎间盘/乌龟颈矫正:恢复根本空间的生物力学SART治疗",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "颈椎间盘突出症"
+      },
+      "mainContentOfPage": {
+        "@type": "WebPageElement",
+        "cssSelector": "article"
+      }
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "Bodyall韩医院 (Bodyall Korean Medicine Clinic)",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "仁溪洞 1114-7, 3楼",
+        "addressLocality": "水原市 八达区",
+        "addressRegion": "京畿道",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "李东海",
+        "jobTitle": "代表院长"
+      },
+      "knowsAbout": [
+        "推拿疗法", "生物力学空间减压推拿 (SART Protocol)", "空间脊椎矫正", "小针刀疗法",
+        "高浓度蜂毒针疗法", "体质韩药", "韩方减肥", "脊柱管狭窄症", "腰椎间盘突出",
+        "颈椎间盘突出", "体型矫正", "肩周炎"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "水原市", "sameAs": "https://zh.wikipedia.org/wiki/水原市"},
+        {"@type": "AdministrativeArea", "name": "仁溪洞", "sameAs": "https://zh.wikipedia.org/wiki/仁溪洞"},
+        {"@type": "AdministrativeArea", "name": "光教", "sameAs": "https://zh.wikipedia.org/wiki/光教洞"},
+        {"@type": "City", "name": "东滩", "sameAs": "https://zh.wikipedia.org/wiki/東灘_(韓國)"},
+        {"@type": "AdministrativeArea", "name": "灵通区", "sameAs": "https://zh.wikipedia.org/wiki/靈通區"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART_cn.html",
+      "name": "生物力学空间减压推拿 (SART Protocol)",
+      "description": "一种保守的推拿疗法方案，旨在通过生物力学对椎间隙和关节空间进行减压，缓解神经压迫并恢复结构平衡。",
+      "procedureType": "TherapeuticProcedure"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "手术前阶段SART治疗为何对颈椎间盘有效?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "人体从头到脚具有一个相连的有机链式结构。Bodyall韩医院的生物力学空间减压推拿(SART Protocol)通过水平矫正倾斜的骨盆并伸展弯曲的胸椎,从物理层面分散颈椎所承受的异常负荷。由此确保椎间盘自主恢复所需的物理空间,成为手术前阶段可安全选择的生物力学保守治疗替代方案。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
