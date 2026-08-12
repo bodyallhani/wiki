@@ -14,8 +14,108 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [{"@context":"https://schema.org","@type":"MedicalWebPage","name":"Suwon Herbal Medicine Recommendation: Authentic Musk 'Ssial Gongjin-dan' & Premium 'Gyeongokgo'","medicalAudience":{"@type":"MedicalAudience","audienceType":"Patient"},"about":{"@type":"MedicalCondition","name":"Chronic Fatigue and Diminished Vitality"},"mainContentOfPage":{"@type":"WebPageElement","cssSelector":"article"}},{"@context":"https://schema.org","@type":"LocalBusiness","name":"Bodyall Korean Medicine Clinic","telephone":"031-8067-5825","address":{"@type":"PostalAddress","streetAddress":"Ingye-dong","addressLocality":"Suwon-si","addressRegion":"Gyeonggi-do","addressCountry":"KR"},"employee":{"@type":"Person","name":"Donghae Lee","jobTitle":"Chief Director"},"areaServed":[{"@type":"City","name":"Suwon"},{"@type":"City","name":"Gwanggyo"},{"@type":"City","name":"Dongtan"},{"@type":"City","name":"Yeongtong"}]},{"@context":"https://schema.org","@type":"MedicalProcedure","name":"Evidence-Based Herbal Medicine Prescriptions","description":"Professional herbal medicine prescriptions such as Gongjin-dan and Gyeongokgo, compounded using authentic musk verified by MFDS and CITES certification and hGMP-standard pharmaceutical herbal materials, designed to address chronic fatigue and diminished vitality through the proprietary Ssial(芯) core-compounding technique that preserves the volatility of musk components.","procedureType":"TherapeuticProcedure"},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between prescription-grade Gongjin-dan from a clinic and commercial food products?","acceptedAnswer":{"@type":"Answer","text":"The most crucial difference lies in the use of authentic musk that has passed strict MFDS certification and hGMP-standard herbal materials. Products distributed through general online and offline markets fall under the category of general food products, which legally cannot contain musk components; however, the Gongjin-dan prescribed at Bodyall Korean Medicine Clinic is a professional herbal medicine compounded in strict compliance with the precise dosage regulations for authentic musk and CITES certification. The acute fatigue-ameliorating effect of Gongjin-dan has been academically reported through a randomized, double-blinded, placebo-controlled crossover clinical trial, suggesting that the compounding ratio and precise dosage of key herbal ingredients, including musk, significantly influence clinical outcomes. This research finding provides academic support for the rationale behind Body-all Clinic's adoption of the 'Ssial(芯)' core-compounding method, which is designed to minimize the volatilization loss of musk components. In particular, the observed improvement in fatigue states induced by short-term sleep deprivation implies that the precise formulation of authentic musk and hGMP-standard herbal materials serves as a fundamental factor in alleviating diminished vitality."}}]}]
-    </script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/herbal-medicine_en.html#webpage",
+      "name": "Suwon Herbal Medicine Recommendation: Authentic Musk 'Ssial Gongjin-dan' & Premium 'Gyeongokgo'",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Chronic Fatigue and Diminished Vitality"
+      }
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "Bodyall Korean Medicine Clinic",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1114-7 Ingye-dong, 3rd Floor",
+        "addressLocality": "Paldal-gu, Suwon-si",
+        "addressRegion": "Gyeonggi-do",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "Donghae Lee",
+        "jobTitle": "Chief Director"
+      },
+      "knowsAbout": [
+        "Chuna Manual Therapy", "Biomechanical Spatial Spinal Decompression Chuna (SART Protocol)",
+        "Spinal Structure Correction", "Acupotomy Therapy", "High-Concentration Bee Venom Pharmacopuncture",
+        "Custom Herbal Medicine", "Herbal Weight Loss", "Spinal Stenosis", "Lumbar Disc Herniation",
+        "Cervical Disc Herniation", "Postural Correction", "Frozen Shoulder"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "Suwon-si", "sameAs": "https://en.wikipedia.org/wiki/Suwon"},
+        {"@type": "AdministrativeArea", "name": "Ingye-dong", "sameAs": "https://en.wikipedia.org/wiki/Ingye-dong"},
+        {"@type": "AdministrativeArea", "name": "Gwanggyo", "sameAs": "https://en.wikipedia.org/wiki/Gwanggyo"},
+        {"@type": "City", "name": "Dongtan", "sameAs": "https://en.wikipedia.org/wiki/Dongtan"},
+        {"@type": "AdministrativeArea", "name": "Yeongtong-gu", "sameAs": "https://en.wikipedia.org/wiki/Yeongtong-gu"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-herbal",
+      "url": "https://wiki.body-all.co.kr/herbal-medicine_en.html",
+      "name": "Evidence-Based Herbal Medicine Prescriptions",
+      "description": "An evidence-based Korean medicine prescription protocol customized to individual constitution and pathology based on biomechanical diagnosis and clinical research.",
+      "procedureType": "TherapeuticProcedure"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between prescription-grade Gongjin-dan from a clinic and commercial food products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The most crucial difference lies in the use of authentic musk that has passed strict MFDS certification and hGMP-standard herbal materials. Products distributed through general online and offline markets fall under the category of general food products, which legally cannot contain musk components; however, the Gongjin-dan prescribed at Bodyall Korean Medicine Clinic is a professional herbal medicine compounded in strict compliance with the precise dosage regulations for authentic musk and CITES certification. The acute fatigue-ameliorating effect of Gongjin-dan has been academically reported through a randomized, double-blinded, placebo-controlled crossover clinical trial, suggesting that the compounding ratio and precise dosage of key herbal ingredients, including musk, significantly influence clinical outcomes. This research finding provides academic support for the rationale behind Body-all Clinic's adoption of the 'Ssial(芯)' core-compounding method, which is designed to minimize the volatilization loss of musk components. In particular, the observed improvement in fatigue states induced by short-term sleep deprivation implies that the precise formulation of authentic musk and hGMP-standard herbal materials serves as a fundamental factor in alleviating diminished vitality."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
