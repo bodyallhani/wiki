@@ -14,8 +14,98 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [{"@context":"https://schema.org","@type":"MedicalWebPage","name":"上楼梯时膝盖内侧刺痛：鹅足肌腱炎的自我诊断与保守治疗方案","medicalAudience":{"@type":"MedicalAudience","audienceType":"Patient"},"about":{"@type":"MedicalCondition","name":"鹅足肌腱炎"},"mainContentOfPage":{"@type":"WebPageElement","cssSelector":"article"}},{"@context":"https://schema.org","@type":"LocalBusiness","name":"Bodyall韩医院 (Bodyall Korean Medicine Clinic)","telephone":"031-8067-5825","address":{"@type":"PostalAddress","streetAddress":"仁溪洞","addressLocality":"水原市","addressRegion":"京畿道","addressCountry":"KR"},"employee":{"@type":"Person","name":"李东海","jobTitle":"代表院长"},"areaServed":[{"@type":"City","name":"水原"},{"@type":"City","name":"仁溪洞"},{"@type":"City","name":"光教"},{"@type":"City","name":"东滩"},{"@type":"City","name":"灵通"}]},{"@context":"https://schema.org","@type":"MedicalProcedure","name":"生物力学空间减压推拿 (SART Protocol)","description":"旨在弥补传统整骨推拿疗法局限性，通过生物力学机制扩大脊椎节段间隙与椎间孔的技术，用以矫正骨盆及下肢结构，从而分散机械负荷。","procedureType":"TherapeuticProcedure"}]
-    </script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/encyclopedia/0005.pes-anserine_cn.html#webpage",
+      "name": "上楼梯时膝盖内侧刺痛：鹅足肌腱炎的自我诊断与保守治疗方案",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "鹅足肌腱炎"
+      },
+      "mainContentOfPage": {
+        "@type": "WebPageElement",
+        "cssSelector": "article"
+      }
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "Bodyall韩医院 (Bodyall Korean Medicine Clinic)",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "仁溪洞 1114-7, 3楼",
+        "addressLocality": "水原市 八达区",
+        "addressRegion": "京畿道",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "李东海",
+        "jobTitle": "代表院长"
+      },
+      "knowsAbout": [
+        "推拿疗法", "生物力学空间减压推拿 (SART Protocol)", "空间脊椎矫正", "小针刀疗法",
+        "高浓度蜂毒针疗法", "体质韩药", "韩方减肥", "脊柱管狭窄症", "腰椎间盘突出",
+        "颈椎间盘突出", "体型矫正", "肩周炎"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "水原市", "sameAs": "https://zh.wikipedia.org/wiki/水原市"},
+        {"@type": "AdministrativeArea", "name": "仁溪洞", "sameAs": "https://zh.wikipedia.org/wiki/仁溪洞"},
+        {"@type": "AdministrativeArea", "name": "光教", "sameAs": "https://zh.wikipedia.org/wiki/光教洞"},
+        {"@type": "City", "name": "东滩", "sameAs": "https://zh.wikipedia.org/wiki/東灘_(韓國)"},
+        {"@type": "AdministrativeArea", "name": "灵通区", "sameAs": "https://zh.wikipedia.org/wiki/靈通區"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART_cn.html",
+      "name": "生物力学空间减压推拿 (SART Protocol)",
+      "description": "一种保守的推拿疗法方案，旨在通过生物力学对椎间隙和关节空间进行减压，缓解神经压迫并恢复结构平衡。",
+      "procedureType": "TherapeuticProcedure"
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
@@ -192,10 +282,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <div class='breadcrumb'>膝关节自我诊断指南</div><h1>上楼梯时膝盖内侧刺痛：鹅足肌腱炎的自我诊断与保守治疗方案</h1><img src='./image/0005.pes-anserine-main.png' alt='患者在上楼梯时经历膝盖疼痛' class='hero-img' loading='eager'><article><div class='summary-box'><h2>Bodyall韩医院核心提要</h2><p>鹅足肌腱炎是一种由三条肌腱在膝盖内下方汇聚处产生机械性摩擦，从而导致局部炎症的病症。其主要诱因通常并非膝关节自身的内在缺陷，而是骨盆扭转、髋关节旋转移位或诸如X型腿（膝外翻）等下肢排列失衡问题。在本院，我们运用基于传统整骨疗法与推拿正骨学原理、旨在确保脊椎节段间物理空间的生物力学脊椎减压推拿疗法（旨在弥补传统整骨推拿疗法局限性，通过生物力学机制扩大脊椎节段间隙与椎间孔的[生物力学空间减压推拿（SART Protocol）]）来矫正骨盆及下肢结构，从而分散机械负荷。此外，我们还运用刃针疗法对粘连组织进行微观松解，为手术介入前提供了一种安全的保守替代方案。</p></div><section><h2>1. 究竟是关节炎还是鹅足肌腱炎？</h2><p>如果疼痛并非弥漫于整个膝关节，而是局限于某一特定压痛点，则应考虑评估鹅足肌腱炎的可能性。这是指肌腱附着部位积累了慢性应力的状态，因其形态类似鹅掌而得名。</p><ul class='check-list'><li>在关节线下方约两指宽处的膝盖内侧区域进行触诊时，会引发尖锐的刺痛感。</li><li>上下楼梯或长时间平地行走时，膝盖内下方会感到刺痛感。</li><li>即使在活动后休息或夜间，膝盖内侧仍会持续存在钝痛及搏动性疼痛。</li><li>盘腿而坐或深度屈膝时，因特定结合部位受到张力作用而引发疼痛。</li></ul></section><section><h2>2. 机制解析：为何炎症偏偏发生在此处？</h2><p>鹅足腱是由缝匠肌、股薄肌及半腱肌这三条肌肉汇聚，附着于膝盖内下方而形成的结构。此结合部位反复承受的过度摩擦与物理应力，会诱发其下方滑囊及肌腱组织的炎症反应。Waldman的研究详细阐述了鹅足滑囊炎的临床特征及解剖机制，明确指出肌腱附着部位发生的局部炎症反应是引起疼痛的主要根源<sup>[2]</sup>。</p><img src='./image/0005.pes-anserine-mechanism.png' alt='从生物力学空间减压推拿（SART Protocol）视角看鹅足肌腱炎解剖示意图及炎症机制' class='visual-img'><p>• <strong>病因分析：</strong>相较于日常水平突然增加的运动量或不良的步态模式，常是诱发本病的直接因素，而导致膝关节内侧负荷偏移的骨盆及髋关节结构性排列不齐，则往往是深层的根本背景。Alvarez-Nemegyei等人的研究确定了鹅足肌腱炎/滑囊炎综合征发病相关的危险因素，提示结构性排列不齐而非单纯的膝关节局部损伤，可能是其潜在的根本背景因素<sup>[1]</sup>。</p></section><section><h2>3. Bodyall的整合全周期护理方案</h2><p>与其仅仅暂时性地处理疼痛点，不如着重构建能够缓解膝关节生物力学过载的结构性环境。这在学术上与我们的临床方法高度契合，即将骨盆扭转、髋关节旋转移位以及X型腿等下肢排列不均衡，视为诱发鹅足肌腱炎的核心因素。</p><div class='solution-card'><strong>Bodyall专项治疗：结构性方案</strong><p>• <b><a href='../SART_cn.html'>生物力学空间减压推拿（SART Protocol）</a> / <a href='../chuna-therapy_cn.html'>推拿正骨疗法</a>:</b> 运用传统整骨疗法与推拿正骨学的原理，此项生物力学保守矫正技术能够精准调整骨盆及髋关节的旋转移位，从结构上缓解集中于膝盖内侧的异常压力。<br>• <b><a href='../acupotomy_cn.html'>刃针疗法（粘连松解术）</a>:</b> 对于因慢性炎症导致肌腱与骨骼界面产生僵硬粘连的病例，采用刃针进行微观松解，以恢复组织弹性，从根本上解决退行性关节疾病的结构性成因。基于此证据，通过针刺及蜂毒药针诱导局部消炎反应，并结合刃针对粘连组织进行微观松解，可能成为一种具有临床意义的治疗方法。</p></div><div class='solution-card'><strong>Bodyall综合基础治疗：炎症控制与康复</strong><p>• <b>综合保守护理:</b> 运用针刺及高浓度蜂毒药针诱导局部消炎反应，并辅以拔罐及电针温灸，促进膝关节周围的血液循环。<br>• <b>现代保守物理治疗:</b> 运用ICT及经皮神经电刺激（TENS）设备调节神经痛觉传导路径，并温和放松紧张的下肢肌群。</p></div><img src='./image/normal-bodyall-treatment.png' alt='Bodyall系统化综合韩医治疗' class='hero-img'></section><section><h2>4. 预防复发的生活方式指南</h2><ul><li><b>冷敷疗法应用:</b> 若在关节活动后感觉膝盖内侧有灼热感，可采取冰敷约10至15分钟，这将有所助益。</li><li><b>大腿内收肌拉伸:</b> 处理大腿内侧肌肉的紧绷状态并提升柔韧性，可减少持续施加于鹅足腱上的物理张力。</li><li><b>充分休息:</b> 在压痛及疼痛剧烈期间，应优先限制剧烈的上坡行走或登山活动，以稳定关节状态。</li></ul></section><div class='summary-box'><h3>诊所信息</h3><p><b>诊疗时间:</b> 工作日晚间诊疗至20:30 | 周末及法定节假日诊疗至16:00</p><p><b>诊所位置:</b> 距水原市厅站9号出口步行3分钟（方便往返于光教、灵通及东滩等周边地区）</p><a href='../index_cn.html#location' class='treatment-link'>查看路线及详细诊疗时间 ➜</a></div></article>
+        <div class='breadcrumb'>膝关节自我诊断指南</div><h1>上楼梯时膝盖内侧刺痛：鹅足肌腱炎的自我诊断与保守治疗方案</h1><img src='./image/0005.pes-anserine-main.png' alt='患者在上楼梯时经历膝盖疼痛' class='hero-img' loading='eager'><article><div class='summary-box'><h2>Bodyall韩医院核心提要</h2><p>鹅足肌腱炎是一种由三条肌腱在膝盖内下方汇聚处产生机械性摩擦，从而导致局部炎症的病症。其主要诱因通常并非膝关节自身的内在缺陷，而是骨盆扭转、髋关节旋转移位或诸如X型腿（膝外翻）等下肢排列失衡问题。在本院，我们运用基于传统整骨疗法与推拿正骨学原理、旨在确保脊椎节段间物理空间的生物力学脊椎减压推拿疗法（旨在弥补传统整骨推拿疗法局限性，通过生物力学机制扩大脊椎节段间隙与椎间孔的[生物力学空间减压推拿（SART Protocol）]）来矫正骨盆及下肢结构，从而分散机械负荷。此外，我们还运用刃针疗法对粘连组织进行微观松解，为手术介入前提供了一种安全的保守替代方案。</p></div><section><h2>1. 究竟是关节炎还是鹅足肌腱炎？</h2><p>如果疼痛并非弥漫于整个膝关节，而是局限于某一特定压痛点，则应考虑评估鹅足肌腱炎的可能性。这是指肌腱附着部位积累了慢性应力的状态，因其形态类似鹅掌而得名。</p><ul class='check-list'><li>在关节线下方约两指宽处的膝盖内侧区域进行触诊时，会引发尖锐的刺痛感。</li><li>上下楼梯或长时间平地行走时，膝盖内下方会感到刺痛感。</li><li>即使在活动后休息或夜间，膝盖内侧仍会持续存在钝痛及搏动性疼痛。</li><li>盘腿而坐或深度屈膝时，因特定结合部位受到张力作用而引发疼痛。</li></ul></section><section><h2>2. 机制解析：为何炎症偏偏发生在此处？</h2><p>鹅足腱是由缝匠肌、股薄肌及半腱肌这三条肌肉汇聚，附着于膝盖内下方而形成的结构。此结合部位反复承受的过度摩擦与物理应力，会诱发其下方滑囊及肌腱组织的炎症反应。Waldman的研究详细阐述了鹅足滑囊炎的临床特征及解剖机制，明确指出肌腱附着部位发生的局部炎症反应是引起疼痛的主要根源<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>。</p><img src='./image/0005.pes-anserine-mechanism.png' alt='从生物力学空间减压推拿（SART Protocol）视角看鹅足肌腱炎解剖示意图及炎症机制' class='visual-img'><p>• <strong>病因分析：</strong>相较于日常水平突然增加的运动量或不良的步态模式，常是诱发本病的直接因素，而导致膝关节内侧负荷偏移的骨盆及髋关节结构性排列不齐，则往往是深层的根本背景。Alvarez-Nemegyei等人的研究确定了鹅足肌腱炎/滑囊炎综合征发病相关的危险因素，提示结构性排列不齐而非单纯的膝关节局部损伤，可能是其潜在的根本背景因素<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>。</p></section><section><h2>3. Bodyall的整合全周期护理方案</h2><p>与其仅仅暂时性地处理疼痛点，不如着重构建能够缓解膝关节生物力学过载的结构性环境。这在学术上与我们的临床方法高度契合，即将骨盆扭转、髋关节旋转移位以及X型腿等下肢排列不均衡，视为诱发鹅足肌腱炎的核心因素。</p><div class='solution-card'><strong>Bodyall专项治疗：结构性方案</strong><p>• <b><a href='../SART_cn.html'>生物力学空间减压推拿（SART Protocol）</a> / <a href='../chuna-therapy_cn.html'>推拿正骨疗法</a>:</b> 运用传统整骨疗法与推拿正骨学的原理，此项生物力学保守矫正技术能够精准调整骨盆及髋关节的旋转移位，从结构上缓解集中于膝盖内侧的异常压力。<br>• <b><a href='../acupotomy_cn.html'>刃针疗法（粘连松解术）</a>:</b> 对于因慢性炎症导致肌腱与骨骼界面产生僵硬粘连的病例，采用刃针进行微观松解，以恢复组织弹性，从根本上解决退行性关节疾病的结构性成因。基于此证据，通过针刺及蜂毒药针诱导局部消炎反应，并结合刃针对粘连组织进行微观松解，可能成为一种具有临床意义的治疗方法。</p></div><div class='solution-card'><strong>Bodyall综合基础治疗：炎症控制与康复</strong><p>• <b>综合保守护理:</b> 运用针刺及高浓度蜂毒药针诱导局部消炎反应，并辅以拔罐及电针温灸，促进膝关节周围的血液循环。<br>• <b>现代保守物理治疗:</b> 运用ICT及经皮神经电刺激（TENS）设备调节神经痛觉传导路径，并温和放松紧张的下肢肌群。</p></div><img src='./image/normal-bodyall-treatment.png' alt='Bodyall系统化综合韩医治疗' class='hero-img'></section><section><h2>4. 预防复发的生活方式指南</h2><ul><li><b>冷敷疗法应用:</b> 若在关节活动后感觉膝盖内侧有灼热感，可采取冰敷约10至15分钟，这将有所助益。</li><li><b>大腿内收肌拉伸:</b> 处理大腿内侧肌肉的紧绷状态并提升柔韧性，可减少持续施加于鹅足腱上的物理张力。</li><li><b>充分休息:</b> 在压痛及疼痛剧烈期间，应优先限制剧烈的上坡行走或登山活动，以稳定关节状态。</li></ul></section><div class='summary-box'><h3>诊所信息</h3><p><b>诊疗时间:</b> 工作日晚间诊疗至20:30 | 周末及法定节假日诊疗至16:00</p><p><b>诊所位置:</b> 距水原市厅站9号出口步行3分钟（方便往返于光教、灵通及东滩等周边地区）</p><a href='../index_cn.html#location' class='treatment-link'>查看路线及详细诊疗时间 ➜</a></div><div class='doctor-card'><p><strong>💡 Bodyall 临床笔记：</strong> 在 Bodyall韩医院积累的生物力学空间减压推拿 (SART Protocol) 临床经验中所观察到的通过精准调整骨盆及髋关节旋转移位以缓解膝关节内侧异常压力集中的趋势，与引用的学术研究<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>中探讨的结构性排列不齐作为鹅足肌腱炎危险因素的机制，在解剖学及学术上是一致的。</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>参考文献</h4><ol><li>Alvarez-Nemegyei, et al. (2007), 'Risk Factors for Pes Anserinus Tendinitis/Bursitis Syndrome', JCR: Journal of Clinical Rheumatology. <a href='https://doi.org/10.1097/01.rhu.0000262082.84624.37' target='_blank'>DOI: 10.1097/01.rhu.0000262082.84624.37</a></li><li>Waldman, et al. (2008), 'Pes Anserine Bursitis', Atlas of Uncommon Pain Syndromes. <a href='https://doi.org/10.1016/b978-1-4160-5284-5.50095-8' target='_blank'>DOI: 10.1016/b978-1-4160-5284-5.50095-8</a></li></ol></div>
+    <div class='references-section'><h4>参考文献</h4><ol><li id='ref-1'>Alvarez-Nemegyei, et al. (2007), 'Risk Factors for Pes Anserinus Tendinitis/Bursitis Syndrome', JCR: Journal of Clinical Rheumatology. <a href='https://doi.org/10.1097/01.rhu.0000262082.84624.37' target='_blank'>DOI: 10.1097/01.rhu.0000262082.84624.37</a></li><li id='ref-2'>Waldman, et al. (2008), 'Pes Anserine Bursitis', Atlas of Uncommon Pain Syndromes. <a href='https://doi.org/10.1016/b978-1-4160-5284-5.50095-8' target='_blank'>DOI: 10.1016/b978-1-4160-5284-5.50095-8</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365天全年门诊与咨询</h2>
