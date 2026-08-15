@@ -14,73 +14,153 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "Why Are My Finger Joints Stiff and Hard to Bend in the Morning? Causes and Solutions for Rust-Like Hand Stiffness",
-    "medicalAudience": {
-      "@type": "MedicalAudience",
-      "audienceType": "Patient"
-    },
-    "about": {
-      "@type": "MedicalCondition",
-      "name": "Trigger Finger and Finger Joint Tenosynovitis"
-    },
-    "mainContentOfPage": {
-      "@type": "WebPageElement",
-      "cssSelector": "article"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Bodyall Korean Medicine Clinic",
-    "telephone": "031-8067-5825",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Ingye-dong",
-      "addressLocality": "Suwon-si",
-      "addressRegion": "Gyeonggi-do",
-      "addressCountry": "KR"
-    },
-    "employee": {
-      "@type": "Person",
-      "name": "Donghae Lee",
-      "jobTitle": "Chief Director"
-    },
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Suwon"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/encyclopedia/0002.stiff-hands_en.html#webpage",
+      "name": "Why Are My Finger Joints Stiff and Hard to Bend in the Morning? Causes and Solutions for Rust-Like Hand Stiffness",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
       },
-      {
-        "@type": "City",
-        "name": "Ingye-dong"
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
       },
-      {
-        "@type": "City",
-        "name": "Gwanggyo"
-      },
-      {
-        "@type": "City",
-        "name": "Dongtan"
-      },
-      {
-        "@type": "City",
-        "name": "Yeongtong"
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Trigger Finger and Finger Joint Tenosynovitis"
       }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalProcedure",
-    "name": "Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)",
-    "description": "A biomechanical conservative correction technique based on the principles of traditional Osteopathy and Chuna manual therapy that secures physical space between spinal segments, facilitating smooth nerve conduction by correcting the alignment of the neck (cervical spine) and arm.",
-    "procedureType": "TherapeuticProcedure"
-  }
-]
-    </script>
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "Bodyall Korean Medicine Clinic",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1114-7 Ingye-dong, 3rd Floor",
+        "addressLocality": "Paldal-gu, Suwon-si",
+        "addressRegion": "Gyeonggi-do",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "Donghae Lee",
+        "jobTitle": "Chief Director"
+      },
+      "knowsAbout": [
+        "Chuna Manual Therapy",
+        "Biomechanical Spatial Spinal Decompression Chuna (SART Protocol)",
+        "Spinal Structure Correction",
+        "Acupotomy Therapy",
+        "High-Concentration Bee Venom Pharmacopuncture",
+        "Custom Herbal Medicine",
+        "Herbal Weight Loss",
+        "Spinal Stenosis",
+        "Lumbar Disc Herniation",
+        "Cervical Disc Herniation",
+        "Postural Correction",
+        "Frozen Shoulder"
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Suwon-si",
+          "sameAs": "https://en.wikipedia.org/wiki/Suwon"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ingye-dong",
+          "sameAs": "https://en.wikipedia.org/wiki/Ingye-dong"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Gwanggyo",
+          "sameAs": "https://en.wikipedia.org/wiki/Gwanggyo"
+        },
+        {
+          "@type": "City",
+          "name": "Dongtan",
+          "sameAs": "https://en.wikipedia.org/wiki/Dongtan"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Yeongtong-gu",
+          "sameAs": "https://en.wikipedia.org/wiki/Yeongtong-gu"
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "10:00",
+          "closes": "13:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "14:00",
+          "closes": "20:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "10:00",
+          "closes": "13:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "14:00",
+          "closes": "16:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "PublicHolidays",
+          "opens": "10:00",
+          "closes": "13:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "PublicHolidays",
+          "opens": "14:00",
+          "closes": "16:00"
+        }
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART_en.html",
+      "name": "Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)",
+      "description": "A conservative Chuna manual therapy protocol designed to biomechanically decompress intervertebral and joint spaces, relieving nerve compression and restoring structural balance.",
+      "procedureType": "TherapeuticProcedure"
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
@@ -257,10 +337,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <div class='breadcrumb'>Hand/Wrist Self-Diagnosis Guide</div><h1>Why Are My Finger Joints Stiff and Hard to Bend in the Morning? Causes and Solutions for Rust-Like Hand Stiffness</h1><img src='./image/0002.stiff-hands-main.png' alt='Patient experiencing finger stiffness after waking up in the morning' class='hero-img' loading='eager'><article><section><div class='summary-box'><h2>💡 30-Second Summary from Bodyall Korean Medicine Clinic (Serving Inge-dong Suwon, Gwanggyo, Yeongtong, and Dongtan)</h2><p>• <b>Morning stiffness (matutinal gelling)</b> is a classic sign of periarticular inflammation and reduced circulation.</p><p>• The pattern of <b>clicking or pain</b> varies depending on the specific cause, such as trigger finger, tenosynovitis, or arthritis.</p><p>• Bodyall offers a conservative solution combining the <b>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) with systematic Korean medicine treatments</b> to address the underlying structural causes of degenerative conditions.</p></div></section><section><h2>1. Why Are My Fingers So Stiff?</h2><p>If you have difficulty making a fist or straightening your fingers upon waking, check the symptoms below. These often suggest tissue adhesion or inflammation rather than simple fatigue.</p><ul class='check-list'><li>Finger joint stiffness lasts more than 30 minutes after waking in the morning.</li><li>Finger joints are swollen and painful when pressed.</li><li>A clicking or catching sensation occurs when bending or straightening a specific finger. This locking phenomenon, characteristic of stenosing tenosynovitis (trigger finger), is closely related to the structural narrowing of the tendon passage<sup>[1]</sup>.</li><li>Difficulty performing delicate tasks such as gripping objects or opening a bottle cap.</li></ul></section><section><h2>2. Mechanism of Pain Induction</h2><p>When the hands remain still during sleep, the synovial fluid between joints hardens and circulation decreases. In areas with chronic inflammation, tissue swelling and adhesion narrow the passage, resulting in severe stiffness.</p><img src='./image/0002.joint-inflammation.png' alt='Causes of finger joint arthritis and tenosynovitis' class='visual-img'></section><section><h2>3. Bodyall's Total Care Solution</h2><p>Bodyall Korean Medicine Clinic approaches treatment by combining specialized therapies that resolve structural causes with foundational Korean medicine and physical therapy that manage pain.</p><div class='solution-grid'><div class='solution-card'><strong>Bodyall Specialized Treatment: Structural Resolution</strong><p>• <b><a href='../SART_en.html'>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)</a>:</b> Based on the principles of traditional Osteopathy and Chuna manual therapy, this is a biomechanical conservative correction technique that secures physical space between spinal segments. This helps facilitate smooth nerve conduction by correcting the alignment of the neck (cervical spine) and arm, along with <a href='../chuna-therapy_en.html'>Chuna manual therapy</a>, addressing the root cause of finger pain.<br>• <b><a href='../acupotomy_en.html'>Acupotomy Treatment (Adhesiolysis)</a>:</b> An overview synthesizing multiple systematic reviews suggests that acupotomy treatment holds meaningful evidence regarding clinical effectiveness and safety when applied to musculoskeletal conditions<sup>[2]</sup>. Based on this review, Bodyall Korean Medicine Clinic approaches acupotomy as a conservative treatment alternative that can be safely selected prior to surgery, gradually restoring range of motion by micro-dissecting the hardened and adhered tendon passages.</p></div><div class='solution-card'><strong>Foundational Korean Medicine Treatment: Enhancing Recovery</strong><p>• <b>Acupuncture and <a href='../bee-venom_en.html'>High-Concentration Bee Venom Pharmacopuncture</a>:</b> Controls deep inflammation through potent anti-inflammatory action, aiding the surrounding tissue's natural recovery.<br>• <b>Cupping and Moxibustion Therapy:</b> Promotes peripheral blood circulation in the fingertips and gently relaxes stiffened fascia and soft tissues.</p></div><div class='solution-card'><strong>Modern Physical Therapy: Pain Control and Functional Recovery</strong><p>• <b>Interferential Current Therapy (ICT) & Transcutaneous Electrical Nerve Stimulation (TENS):</b> Delivers electrical stimulation to deep muscle layers to relieve excessive tension and normalize nerve conduction.<br>• <b>Infrared Therapy:</b> Induces deep thermal effects to increase tissue flexibility and enhance local blood flow.</p></div></div><img src='./image/normal-bodyall-treatment.png' alt='Systematic physical therapy for finger joints at Bodyall Korean Medicine Clinic' class='hero-img'></section><section><h2>4. Self-Management Guide for Daily Life</h2><p>These management methods create a synergistic effect when combined with treatment. Try repeating them every morning.</p><ul><li><b>Warm Water Soak:</b> Immediately after waking, soak your hands in warm water (38-40 degrees Celsius) for 5 minutes while gently repeating opening and closing motions.</li><li><b>Finger Stretching:</b> Using the opposite hand, slowly bend each finger backward one at a time to relieve tension.</li></ul><div class='doctor-card'><h3>📍 Clinic Information</h3><p><b>Hours:</b> Weekday evening consultations until 20:30 | Weekends and Holidays until 16:00</p><p><b>Location:</b> 3-minute walk from Exit 9 of Suwon City Hall Station (Convenient access from Gwanggyo, Yeongtong, Dongtan, and other major southern Gyeonggi areas)</p><a href='../index_en.html#location' class='treatment-link'>View Directions & Detailed Hours ➜</a></div></section></article>
+        <div class='breadcrumb'>Hand/Wrist Self-Diagnosis Guide</div><h1>Why Are My Finger Joints Stiff and Hard to Bend in the Morning? Causes and Solutions for Rust-Like Hand Stiffness</h1><img src='./image/0002.stiff-hands-main.png' alt='Patient experiencing finger stiffness after waking up in the morning' class='hero-img' loading='eager'><article><section><div class='summary-box'><h2>💡 30-Second Summary from Bodyall Korean Medicine Clinic (Serving Inge-dong Suwon, Gwanggyo, Yeongtong, and Dongtan)</h2><p>• <b>Morning stiffness (matutinal gelling)</b> is a classic sign of periarticular inflammation and reduced circulation.</p><p>• The pattern of <b>clicking or pain</b> varies depending on the specific cause, such as trigger finger, tenosynovitis, or arthritis.</p><p>• Bodyall offers a conservative solution combining the <b>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) with systematic Korean medicine treatments</b> to address the underlying structural causes of degenerative conditions.</p></div></section><section><h2>1. Why Are My Fingers So Stiff?</h2><p>If you have difficulty making a fist or straightening your fingers upon waking, check the symptoms below. These often suggest tissue adhesion or inflammation rather than simple fatigue.</p><ul class='check-list'><li>Finger joint stiffness lasts more than 30 minutes after waking in the morning.</li><li>Finger joints are swollen and painful when pressed.</li><li>A clicking or catching sensation occurs when bending or straightening a specific finger. This locking phenomenon, characteristic of stenosing tenosynovitis (trigger finger), is closely related to the structural narrowing of the tendon passage<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>.</li><li>Difficulty performing delicate tasks such as gripping objects or opening a bottle cap.</li></ul></section><section><h2>2. Mechanism of Pain Induction</h2><p>When the hands remain still during sleep, the synovial fluid between joints hardens and circulation decreases. In areas with chronic inflammation, tissue swelling and adhesion narrow the passage, resulting in severe stiffness.</p><img src='./image/0002.joint-inflammation.png' alt='Causes of finger joint arthritis and tenosynovitis' class='visual-img'></section><section><h2>3. Bodyall's Total Care Solution</h2><p>Bodyall Korean Medicine Clinic approaches treatment by combining specialized therapies that resolve structural causes with foundational Korean medicine and physical therapy that manage pain.</p><div class='solution-grid'><div class='solution-card'><strong>Bodyall Specialized Treatment: Structural Resolution</strong><p>• <b><a href='../SART_en.html'>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)</a>:</b> Based on the principles of traditional Osteopathy and Chuna manual therapy, this is a biomechanical conservative correction technique that secures physical space between spinal segments. This helps facilitate smooth nerve conduction by correcting the alignment of the neck (cervical spine) and arm, along with <a href='../chuna-therapy_en.html'>Chuna manual therapy</a>, addressing the root cause of finger pain.<br>• <b><a href='../acupotomy_en.html'>Acupotomy Treatment (Adhesiolysis)</a>:</b> An overview synthesizing multiple systematic reviews suggests that acupotomy treatment holds meaningful evidence regarding clinical effectiveness and safety when applied to musculoskeletal conditions<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>. Based on this review, Bodyall Korean Medicine Clinic approaches acupotomy as a conservative treatment alternative that can be safely selected prior to surgery, gradually restoring range of motion by micro-dissecting the hardened and adhered tendon passages.</p></div><div class='solution-card'><strong>Foundational Korean Medicine Treatment: Enhancing Recovery</strong><p>• <b>Acupuncture and <a href='../bee-venom_en.html'>High-Concentration Bee Venom Pharmacopuncture</a>:</b> Controls deep inflammation through potent anti-inflammatory action, aiding the surrounding tissue's natural recovery.<br>• <b>Cupping and Moxibustion Therapy:</b> Promotes peripheral blood circulation in the fingertips and gently relaxes stiffened fascia and soft tissues.</p></div><div class='solution-card'><strong>Modern Physical Therapy: Pain Control and Functional Recovery</strong><p>• <b>Interferential Current Therapy (ICT) & Transcutaneous Electrical Nerve Stimulation (TENS):</b> Delivers electrical stimulation to deep muscle layers to relieve excessive tension and normalize nerve conduction.<br>• <b>Infrared Therapy:</b> Induces deep thermal effects to increase tissue flexibility and enhance local blood flow.</p></div></div><img src='./image/normal-bodyall-treatment.png' alt='Systematic physical therapy for finger joints at Bodyall Korean Medicine Clinic' class='hero-img'></section><section><h2>4. Self-Management Guide for Daily Life</h2><p>These management methods create a synergistic effect when combined with treatment. Try repeating them every morning.</p><ul><li><b>Warm Water Soak:</b> Immediately after waking, soak your hands in warm water (38-40 degrees Celsius) for 5 minutes while gently repeating opening and closing motions.</li><li><b>Finger Stretching:</b> Using the opposite hand, slowly bend each finger backward one at a time to relieve tension.</li></ul><div class='doctor-card'><h3>📍 Clinic Information</h3><p><b>Hours:</b> Weekday evening consultations until 20:30 | Weekends and Holidays until 16:00</p><p><b>Location:</b> 3-minute walk from Exit 9 of Suwon City Hall Station (Convenient access from Gwanggyo, Yeongtong, Dongtan, and other major southern Gyeonggi areas)</p><a href='../index_en.html#location' class='treatment-link'>View Directions & Detailed Hours ➜</a></div></section><div class='doctor-card'><p><strong>💡 Bodyall Clinical Note:</strong> The trend of range-of-motion recovery observed in stiffened and adhered tendon passages within Bodyall Korean Medicine Clinic's accumulated acupotomy clinical experience aligns anatomically and scientifically with the clinical effectiveness and safety mechanisms of acupotomy for musculoskeletal conditions demonstrated in the cited systematic review<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>.</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>References</h4><ol><li>Deng, et al. (2021), 'Different acupotomy for Stenosing tenosynovitis A protocol for systematic review and network meta-analysis'. <a href='https://doi.org/10.37766/inplasy2021.5.0059' target='_blank'>DOI: 10.37766/inplasy2021.5.0059</a></li><li>Kwon, et al. (2019), 'Clinical effectiveness and safety of acupotomy: An overview of systematic reviews', Complementary Therapies in Clinical Practice. <a href='https://doi.org/10.1016/j.ctcp.2019.07.002' target='_blank'>DOI: 10.1016/j.ctcp.2019.07.002</a></li></ol></div>
+    <div class='references-section'><h4>References</h4><ol><li id='ref-1'>Deng, et al. (2021), 'Different acupotomy for Stenosing tenosynovitis A protocol for systematic review and network meta-analysis'. <a href='https://doi.org/10.37766/inplasy2021.5.0059' target='_blank'>DOI: 10.37766/inplasy2021.5.0059</a></li><li id='ref-2'>Kwon, et al. (2019), 'Clinical effectiveness and safety of acupotomy: An overview of systematic reviews', Complementary Therapies in Clinical Practice. <a href='https://doi.org/10.1016/j.ctcp.2019.07.002' target='_blank'>DOI: 10.1016/j.ctcp.2019.07.002</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365 Days Care & Consultation</h2>
