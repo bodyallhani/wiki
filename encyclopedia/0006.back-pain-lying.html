@@ -14,67 +14,89 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "밤마다 찾아오는 허리 통증, 똑바로 눕기조차 힘든 이유는 무엇일까요?",
-    "provider": {
-      "@type": "MedicalOrganization",
-      "name": "바디올한의원"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/encyclopedia/0006.back-pain-lying.html#webpage",
+      "name": "밤마다 찾아오는 허리 통증, 똑바로 눕기조차 힘든 이유는 무엇일까요?",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "요추 척추관협착증 및 장요근 단축에 의한 야간 요통"
+      }
     },
-    "about": {
-      "@type": "MedicalCondition",
-      "name": "요추 척추관협착증 및 장요근 단축에 의한 야간 요통"
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "바디올한의원",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "인계동 1114-7, 3층",
+        "addressLocality": "수원시 팔달구",
+        "addressRegion": "경기도",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "이동해",
+        "jobTitle": "대표원장"
+      },
+      "knowsAbout": [
+        "추나요법", "생체역학적 공간 감압 추나 (SART Protocol)", "공간척추교정", "도침 치료", "고농도 봉약침",
+        "체질한약", "한방 다이어트", "척추관 협착증", "허리디스크", "목디스크", "체형교정", "오십견"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "수원시", "sameAs": "https://ko.wikipedia.org/wiki/수원시"},
+        {"@type": "AdministrativeArea", "name": "인계동", "sameAs": "https://ko.wikipedia.org/wiki/인계동"},
+        {"@type": "AdministrativeArea", "name": "광교", "sameAs": "https://ko.wikipedia.org/wiki/광교동"},
+        {"@type": "City", "name": "동탄", "sameAs": "https://ko.wikipedia.org/wiki/동탄"},
+        {"@type": "AdministrativeArea", "name": "영통구", "sameAs": "https://ko.wikipedia.org/wiki/영통구"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART.html",
+      "name": "생체역학적 공간 감압 추나 (SART Protocol)",
+      "description": "척추 및 관절 간격을 생체역학적으로 공간 감압하여 신경 압박을 해소하고 구조적 밸런스를 복원하는 보존적 추나요법 프로토콜.",
+      "procedureType": "TherapeuticProcedure"
     }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "바디올한의원",
-    "telephone": "031-8067-5825",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "인계동 1114-7, 3층",
-      "addressLocality": "수원시 팔달구",
-      "addressRegion": "경기도",
-      "addressCountry": "KR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 37.2651444,
-      "longitude": 127.0336222
-    },
-    "employee": {
-      "@type": "Person",
-      "name": "이동해",
-      "jobTitle": "대표원장"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "수원"},
-      {"@type": "City", "name": "인계동"},
-      {"@type": "City", "name": "광교"},
-      {"@type": "City", "name": "동탄"},
-      {"@type": "City", "name": "영통"}
-    ],
-    "openingHoursSpecification": [
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalProcedure",
-    "name": "생체역학적 공간 감압 추나 (SART Protocol)",
-    "description": "생체역학적 공간 감압 추나(SART Protocol)는 전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법이다. 정렬이 어긋난 요추와 골반을 정밀하게 조정하여 가해지는 압박 요소를 해소하고, 척추체 간격을 물리적으로 확장함으로써 추간공 내 신경근 압박을 완화하는 방식으로 요추 과전만을 안정화한다.",
-    "procedureType": "TherapeuticProcedure"
-  }
-]
-    </script>
+  ]
+}
+</script>
 
     <style>
         :root { 
@@ -226,10 +248,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <div class='breadcrumb'>증상백과 > 척추/관절</div><h1>밤마다 찾아오는 허리 통증, 똑바로 눕기조차 힘든 이유는 무엇일까요?</h1><img src='./image/0006.back-pain-lying-main.png' alt='허리 통증으로 침대에서 고통스러워하는 환자' class='hero-img' loading='eager'><article><section><div class='summary-box'><h2>💡 30초 핵심 요약</h2><p>• 똑바로 누울 때 느껴지는 통증은 척추관 내부의 물리적 압박이나 허리 전면부 장요근의 과도한 긴장 및 단축으로 인해 발생할 수 있다.</p><p>• 옆으로 웅크린 자세에서만 편안함을 느낀다면, 이는 척추의 구조적 변형이나 협착 경향이 진행 중임을 시사하므로 체계적인 진단이 필요하다.</p><p>• 바디올한의원의 생체역학적 공간 감압 추나(SART Protocol)는 퇴행성 척추 질환의 근본적인 구조적 원인 개선을 도모하는, 수술 전 단계에서 안전하게 선택할 수 있는 생체역학적 보존 치료의 대안 중 하나로 고려될 수 있다.</p></div></section><section><h2>1. 나의 수면 자세와 통증 체크</h2><p>피곤해서 편히 눕고 싶음에도 불구하고, 정작 침대에 누우면 허리 주변으로 묵직한 압박감이나 통증이 나타나는 경우가 많다. 아래 수면 패턴을 통해 자신의 척추 상태를 간접적으로 평가해볼 수 있다.</p><ul class='check-list'><li>침대에 바르게 누웠을 때 허리 아래 공간이 과도하게 뜨면서 찌릿한 요통이 유발된다.</li><li>하지를 곧게 펴고 누우면 다리 전체 노선으로 저린 느낌이나 근력 저하감이 동반된다.</li><li>무릎 아래에 구조물을 고이거나 몸을 옆으로 웅크려야만 척추 긴장도가 감소한다.</li><li>기상 직후 요추부의 강직감이 심해 즉시 상체를 펴기 어렵고 일정 시간 움직여야 부드러워진다.</li></ul></section><section><h2>2. 생체역학 메커니즘 분석: 왜 눕는 자세가 아픈가</h2><p>앙와위(똑바로 누운 자세)에서 요통이 심화되는 구조적 요인은 크게 두 가지 기전으로 설명할 수 있다.</p><img src='./image/0006.back-pain-mechanism.png' alt='생체역학적 공간 감압 추나 (SART Protocol) 척추관협착 및 장요근 단축 메커니즘 설명도' class='visual-img'><p><b>요추 전만에 따른 척추관 내압 상승:</b> 상하체를 수평으로 편 상태로 누우면 해부학적으로 요추의 전만이 강조된다. 이 과정에서 신경이 주행하는 통로인 척추관의 단면적이 상대적으로 좁아지게 되며, 퇴행성 변화를 겪는 신경 조직이 물리적으로 압박을 받아 야간 통증을 유발한다. 요추 척추관협착증에 대한 도침치료 효과를 다룬 체계적 문헌고찰 및 메타분석 연구는 해당 치료법이 척추관 협착 관련 증상 개선에 학술적으로 검토된 보존적 접근임을 확인시켜 주며, 이는 앙와위 자세에서 발생하는 척추관 내압 상승 문제를 다각도로 접근하는 데 있어 수술 전 안전하고 효과적인 비수술적 보존 치료 선택지 중 하나로 고려될 수 있음을 시사한다<sup>[2]</sup>.</p><p><b>장요근 단축에 의한 전방 견인력 가중:</b> 오랜 시간 좌식 생활을 유지하면 고관절 굴곡근인 장요근이 만성적으로 짧아진다. 이 상태에서 다리를 펴고 누우면 단축된 장요근이 요추를 전방으로 강하게 잡아당겨 척추 후방 관절과 주변 인대 조직에 과도한 기계적 스트레스를 부하하게 된다. 요추 척추관협착증 환자를 대상으로 도침치료와 한방 치료를 병행한 임상 연구는 신경 조직 주변의 유착을 박리하는 접근법이 척추 구조 개선에 학술적 근거를 제공할 수 있음을 시사한다<sup>[1]</sup>.</p></section><section><h2>3. 바디올의 통합 구조 솔루션 (Total Care)</h2><p>신경 구조물의 압박을 완화하는 공간적 여유를 확보하고, 요추 분절을 비정상적으로 견인하는 장력 불균형을 해소하는 보존적 접근이 중요하다.</p><div class='solution-card'><strong>바디올 특화 프로그램: 구조적 공간의 회복</strong><p>• <b><a href='../SART.html'>생체역학적 공간 감압 추나(SART Protocol)</a> / <a href='../chuna-therapy.html'>추나요법</a>:</b> 생체역학적 공간 감압 추나(SART Protocol)는 전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법이다. 정렬이 어긋난 요추와 골반을 정밀하게 조정하여 가해지는 압박 요소를 해소하고, 척추체 간격을 물리적으로 확장함으로써 추간공 내 신경근 압박을 완화하는 방식으로 요추 과전만을 안정화한다.</p><p>• <b><a href='../acupotomy.html'>도침치료(유착박리술)</a>:</b> 요추 전면부에서 비정상적인 장력을 발생시키는 장요근 부착부와 심부 인대의 유착을 미세 박리하여 요추의 구조적 가동 범위를 자연스럽게 회복하도록 돕는다.</p></div><div class='solution-card'><strong>바디올 종합 기초 프로그램: 심부 순환 및 근육 이완</strong><p>• <b>복합 보존 요법:</b> 침 치료와 고농도 약침 요법을 활용하여 신경 주변부의 미세한 긴장과 부종을 가라앉히며, 부항 및 전자뜸 요법을 병행하여 척추 심부 조직의 혈액 순환을 촉진한다.</p><p>• <b>현대적 한방 물리치료:</b> ICT 및 TENS 기기를 적용해 요추 기립근 등 외재근의 과도한 긴장을 완화하고 신경 감각의 과민화를 안정 상태로 유도한다.</p></div><img src='./image/normal-bodyall-treatment.png' alt='바디올의 체계적인 종합 한방 치료' class='hero-img'></section><section><h2>4. 수면 질 개선을 위한 생체역학적 응급 처치</h2><ul><li><b>하지 하부 지지물 활용:</b> 바르게 누울 때 무릎 아래에 적절한 높이의 베개를 받쳐주면 요추 전만이 완화되고 척추관 내부 공간이 확보되어 통증 경감에 도움이 된다.</li><li><b>심부 온열 요법:</b> 입면 전 요추 주변부에 따뜻한 온열 찜질을 시행하면 심부 근육의 긴장도가 감소하여 수면 중 발생하는 강직을 예방할 수 있다.</li><li><b>장요근 이완 스트레칭:</b> 낮 시간 동안 가벼운 런지 형태의 스트레칭을 통해 짧아진 고관절 굴곡근을 이완시켜주면 누웠을 때 요추에 가해지는 전방 견인력을 줄일 수 있다.</li></ul></section><section><div class='highlight-box blue'><h3>📍 진료 안내</h3><p><b>진료 시간:</b> 평일 20:30까지 야간진료 | 주말·공휴일 16:00까지</p><p><b>위치:</b> 수원시청역 9번 출구 도보 3분</p><a href='../index.html#location' class='treatment-link'>오시는 길 & 진료시간 상세 보기 ➜</a></div></section></article>
+        <div class='breadcrumb'>증상백과 > 척추/관절</div><h1>밤마다 찾아오는 허리 통증, 똑바로 눕기조차 힘든 이유는 무엇일까요?</h1><img src='./image/0006.back-pain-lying-main.png' alt='허리 통증으로 침대에서 고통스러워하는 환자' class='hero-img' loading='eager'><article><section><div class='summary-box'><h2>💡 30초 핵심 요약</h2><p>• 똑바로 누울 때 느껴지는 통증은 척추관 내부의 물리적 압박이나 허리 전면부 장요근의 과도한 긴장 및 단축으로 인해 발생할 수 있다.</p><p>• 옆으로 웅크린 자세에서만 편안함을 느낀다면, 이는 척추의 구조적 변형이나 협착 경향이 진행 중임을 시사하므로 체계적인 진단이 필요하다.</p><p>• 바디올한의원의 생체역학적 공간 감압 추나(SART Protocol)는 퇴행성 척추 질환의 근본적인 구조적 원인 개선을 도모하는, 수술 전 단계에서 안전하게 선택할 수 있는 생체역학적 보존 치료의 대안 중 하나로 고려될 수 있다.</p></div></section><section><h2>1. 나의 수면 자세와 통증 체크</h2><p>피곤해서 편히 눕고 싶음에도 불구하고, 정작 침대에 누우면 허리 주변으로 묵직한 압박감이나 통증이 나타나는 경우가 많다. 아래 수면 패턴을 통해 자신의 척추 상태를 간접적으로 평가해볼 수 있다.</p><ul class='check-list'><li>침대에 바르게 누웠을 때 허리 아래 공간이 과도하게 뜨면서 찌릿한 요통이 유발된다.</li><li>하지를 곧게 펴고 누우면 다리 전체 노선으로 저린 느낌이나 근력 저하감이 동반된다.</li><li>무릎 아래에 구조물을 고이거나 몸을 옆으로 웅크려야만 척추 긴장도가 감소한다.</li><li>기상 직후 요추부의 강직감이 심해 즉시 상체를 펴기 어렵고 일정 시간 움직여야 부드러워진다.</li></ul></section><section><h2>2. 생체역학 메커니즘 분석: 왜 눕는 자세가 아픈가</h2><p>앙와위(똑바로 누운 자세)에서 요통이 심화되는 구조적 요인은 크게 두 가지 기전으로 설명할 수 있다.</p><img src='./image/0006.back-pain-mechanism.png' alt='생체역학적 공간 감압 추나 (SART Protocol) 척추관협착 및 장요근 단축 메커니즘 설명도' class='visual-img'><p><b>요추 전만에 따른 척추관 내압 상승:</b> 상하체를 수평으로 편 상태로 누우면 해부학적으로 요추의 전만이 강조된다. 이 과정에서 신경이 주행하는 통로인 척추관의 단면적이 상대적으로 좁아지게 되며, 퇴행성 변화를 겪는 신경 조직이 물리적으로 압박을 받아 야간 통증을 유발한다. 요추 척추관협착증에 대한 도침치료 효과를 다룬 체계적 문헌고찰 및 메타분석 연구는 해당 치료법이 척추관 협착 관련 증상 개선에 학술적으로 검토된 보존적 접근임을 확인시켜 주며, 이는 앙와위 자세에서 발생하는 척추관 내압 상승 문제를 다각도로 접근하는 데 있어 수술 전 안전하고 효과적인 비수술적 보존 치료 선택지 중 하나로 고려될 수 있음을 시사한다<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>.</p><p><b>장요근 단축에 의한 전방 견인력 가중:</b> 오랜 시간 좌식 생활을 유지하면 고관절 굴곡근인 장요근이 만성적으로 짧아진다. 이 상태에서 다리를 펴고 누우면 단축된 장요근이 요추를 전방으로 강하게 잡아당겨 척추 후방 관절과 주변 인대 조직에 과도한 기계적 스트레스를 부하하게 된다. 요추 척추관협착증 환자를 대상으로 도침치료와 한방 치료를 병행한 임상 연구는 신경 조직 주변의 유착을 박리하는 접근법이 척추 구조 개선에 학술적 근거를 제공할 수 있음을 시사한다<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>.</p></section><section><h2>3. 바디올의 통합 구조 솔루션 (Total Care)</h2><p>신경 구조물의 압박을 완화하는 공간적 여유를 확보하고, 요추 분절을 비정상적으로 견인하는 장력 불균형을 해소하는 보존적 접근이 중요하다.</p><div class='solution-card'><strong>바디올 특화 프로그램: 구조적 공간의 회복</strong><p>• <b><a href='../SART.html'>생체역학적 공간 감압 추나(SART Protocol)</a> / <a href='../chuna-therapy.html'>추나요법</a>:</b> 생체역학적 공간 감압 추나(SART Protocol)는 전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법이다. 정렬이 어긋난 요추와 골반을 정밀하게 조정하여 가해지는 압박 요소를 해소하고, 척추체 간격을 물리적으로 확장함으로써 추간공 내 신경근 압박을 완화하는 방식으로 요추 과전만을 안정화한다.</p><p>• <b><a href='../acupotomy.html'>도침치료(유착박리술)</a>:</b> 요추 전면부에서 비정상적인 장력을 발생시키는 장요근 부착부와 심부 인대의 유착을 미세 박리하여 요추의 구조적 가동 범위를 자연스럽게 회복하도록 돕는다.</p></div><div class='solution-card'><strong>바디올 종합 기초 프로그램: 심부 순환 및 근육 이완</strong><p>• <b>복합 보존 요법:</b> 침 치료와 고농도 약침 요법을 활용하여 신경 주변부의 미세한 긴장과 부종을 가라앉히며, 부항 및 전자뜸 요법을 병행하여 척추 심부 조직의 혈액 순환을 촉진한다.</p><p>• <b>현대적 한방 물리치료:</b> ICT 및 TENS 기기를 적용해 요추 기립근 등 외재근의 과도한 긴장을 완화하고 신경 감각의 과민화를 안정 상태로 유도한다.</p></div><img src='./image/normal-bodyall-treatment.png' alt='바디올의 체계적인 종합 한방 치료' class='hero-img'></section><section><h2>4. 수면 질 개선을 위한 생체역학적 응급 처치</h2><ul><li><b>하지 하부 지지물 활용:</b> 바르게 누울 때 무릎 아래에 적절한 높이의 베개를 받쳐주면 요추 전만이 완화되고 척추관 내부 공간이 확보되어 통증 경감에 도움이 된다.</li><li><b>심부 온열 요법:</b> 입면 전 요추 주변부에 따뜻한 온열 찜질을 시행하면 심부 근육의 긴장도가 감소하여 수면 중 발생하는 강직을 예방할 수 있다.</li><li><b>장요근 이완 스트레칭:</b> 낮 시간 동안 가벼운 런지 형태의 스트레칭을 통해 짧아진 고관절 굴곡근을 이완시켜주면 누웠을 때 요추에 가해지는 전방 견인력을 줄일 수 있다.</li></ul></section><section><div class='highlight-box blue'><h3>📍 진료 안내</h3><p><b>진료 시간:</b> 평일 20:30까지 야간진료 | 주말·공휴일 16:00까지</p><p><b>위치:</b> 수원시청역 9번 출구 도보 3분</p><a href='../index.html#location' class='treatment-link'>오시는 길 & 진료시간 상세 보기 ➜</a></div></section><div class='doctor-card'><p><strong>💡 바디올 임상 노트:</strong> 실제 임상 현장에서 다수 관찰되는 도침 유착 박리술 시행 후 요추 전면부 장력 완화 및 척추 구조적 가동성 회복 경향은, 인용된 학술 연구<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>에서 확인된 도침치료와 한방 치료 병행에 따른 신경 조직 주변 유착 박리 및 척추 구조 개선 메커니즘과 해부학적 원리를 함께합니다. 아울러 앙와위 자세에서 발생하는 척추관 내압 상승 문제에 대해서도, 체계적 문헌고찰을 통해 검토된 도침치료 효과 관련 연구<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>가 뒷받침하는 보존적 접근 방식과 궤를 함께하는 임상적 경향성을 나타냅니다.</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>참고문헌</h4><ol><li>Yuk, et al. (2013), '요추 척추관협착증에 대한 도침치료와 한방 치료 병행 임상 연구(Clinical Study of Lumbar Spine Stenosis Treated by Using Acupotomy Combined with Oriental Medical Treatments)', Journal of Pharmacopuncture. <a href='https://doi.org/10.3831/kpi.2013.16.017' target='_blank'>DOI: 10.3831/kpi.2013.16.017</a></li><li>Kang, et al. (2025), '요추 척추관협착증에 대한 도침치료 효과: 체계적 문헌고찰 및 메타분석(Effects of Acupotomy Treatment for Lumbar Spinal Stenosis: A Systematic Review and Meta Analysis)', Journal of Korean Medicine Rehabilitation. <a href='https://doi.org/10.18325/jkmr.2025.35.4.69' target='_blank'>DOI: 10.18325/jkmr.2025.35.4.69</a></li></ol></div>
+    <div class='references-section'><h4>참고문헌</h4><ol><li id='ref-1'>Yuk, et al. (2013), '요추 척추관협착증에 대한 도침치료와 한방 치료 병행 임상 연구(Clinical Study of Lumbar Spine Stenosis Treated by Using Acupotomy Combined with Oriental Medical Treatments)', Journal of Pharmacopuncture. <a href='https://doi.org/10.3831/kpi.2013.16.017' target='_blank'>DOI: 10.3831/kpi.2013.16.017</a></li><li id='ref-2'>Kang, et al. (2025), '요추 척추관협착증에 대한 도침치료 효과: 체계적 문헌고찰 및 메타분석(Effects of Acupotomy Treatment for Lumbar Spinal Stenosis: A Systematic Review and Meta Analysis)', Journal of Korean Medicine Rehabilitation. <a href='https://doi.org/10.18325/jkmr.2025.35.4.69' target='_blank'>DOI: 10.18325/jkmr.2025.35.4.69</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365일 진료 및 상담</h2>
