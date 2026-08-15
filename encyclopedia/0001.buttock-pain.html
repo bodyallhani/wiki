@@ -14,67 +14,89 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "이상근 증후군 자가진단, 엉덩이 통증과 다리 저림의 원인 분석",
-    "provider": {
-      "@type": "MedicalOrganization",
-      "name": "바디올한의원"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/encyclopedia/0001.buttock-pain.html#webpage",
+      "name": "이상근 증후군 자가진단, 엉덩이 통증과 다리 저림의 원인 분석",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "이상근 증후군 및 좌골신경통"
+      }
     },
-    "about": {
-      "@type": "MedicalCondition",
-      "name": "이상근 증후군 및 좌골신경통"
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "바디올한의원",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "인계동 1114-7, 3층",
+        "addressLocality": "수원시 팔달구",
+        "addressRegion": "경기도",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "이동해",
+        "jobTitle": "대표원장"
+      },
+      "knowsAbout": [
+        "추나요법", "생체역학적 공간 감압 추나 (SART Protocol)", "공간척추교정", "도침 치료", "고농도 봉약침", 
+        "체질한약", "한방 다이어트", "척추관 협착증", "허리디스크", "목디스크", "체형교정", "오십견"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "수원시", "sameAs": "https://ko.wikipedia.org/wiki/수원시"},
+        {"@type": "AdministrativeArea", "name": "인계동", "sameAs": "https://ko.wikipedia.org/wiki/인계동"},
+        {"@type": "AdministrativeArea", "name": "광교", "sameAs": "https://ko.wikipedia.org/wiki/광교동"},
+        {"@type": "City", "name": "동탄", "sameAs": "https://ko.wikipedia.org/wiki/동탄"},
+        {"@type": "AdministrativeArea", "name": "영통구", "sameAs": "https://ko.wikipedia.org/wiki/영통구"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART.html",
+      "name": "생체역학적 공간 감압 추나 (SART Protocol)",
+      "description": "척추 및 관절 간격을 생체역학적으로 공간 감압하여 신경 압박을 해소하고 구조적 밸런스를 복원하는 보존적 추나요법 프로토콜.",
+      "procedureType": "TherapeuticProcedure"
     }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "바디올한의원",
-    "telephone": "031-8067-5825",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "인계동 1114-7, 3층",
-      "addressLocality": "수원시 팔달구",
-      "addressRegion": "경기도",
-      "addressCountry": "KR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 37.2651444,
-      "longitude": 127.0336222
-    },
-    "employee": {
-      "@type": "Person",
-      "name": "이동해",
-      "jobTitle": "대표원장"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "수원"},
-      {"@type": "City", "name": "인계동"},
-      {"@type": "City", "name": "광교"},
-      {"@type": "City", "name": "동탄"},
-      {"@type": "City", "name": "영통"}
-    ],
-    "openingHoursSpecification": [
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalProcedure",
-    "name": "생체역학적 공간 감압 추나 (SART Protocol)",
-    "description": "전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법이다. 이를 통해 정밀하게 틀어진 골반과 천추의 정렬을 바로잡아, 신경이 물리적으로 압박받는 구조적 악순환을 근본적으로 개선한다.",
-    "procedureType": "TherapeuticProcedure"
-  }
-]
-    </script>
+  ]
+}
+</script>
 
     <style>
         :root { 
@@ -226,10 +248,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <div class='breadcrumb'>허리/골반 자가진단 가이드</div><h1>이상근 증후군 자가진단, 엉덩이 통증과 다리 저림의 원인 분석</h1><img src='./image/0001.buttock-pain-main.png' alt='운전 중 엉덩이 통증과 다리 저림을 느끼는 환자' class='hero-img' loading='eager'><article><section><div class='summary-box'><h2>💡 메디컬 에디터가 분석한 핵심 요약</h2><p>이상근 증후군은 골반 심부의 근육이 좌골신경을 압박하여 하지 방사통을 유발하는 생체역학적 이상 증상이다.</p><p>요추 추간판 탈출증과 임상적으로 유사하나, 요추 자체보다는 엉덩이 심부의 극심한 압통과 좌석에 앉을 때 악화되는 저림이 주된 특징이다.</p><p>수원 인계동 본원을 비롯하여 광교, 영통, 동탄 등 주변 지역에서 찾아오시는 임상 사례를 분석해 보면, 퇴행성 척추 질환의 근본적인 구조적 원인 개선을 도모하는 솔루션을 위해 틀어진 골반 및 척추 분절의 정렬을 바로잡는 보존적 교정이 필수적이다.</p></div></section><section><h2>임상적 감별을 위한 이상근 증후군 자가진단</h2><p>허리 자체의 뚜렷한 통증 없이 유독 엉덩이 외측 및 하지 후면을 따라 이어지는 저림 현상으로 일상생활에 불편함을 겪고 계시다면, 단순 근육 피로를 넘어선 신경 압박 상태일 가능성이 크다. 아래의 임상적 징후 중 3개 이상 부합한다면 정밀한 생체역학적 검진이 권장된다.</p><ul class='check-list'><li>장시간 운전을 하거나 사무실 의자에 30분 이상 연속으로 착석할 때 엉덩이 깊은 곳에서 찌릿한 신경통이 서서히 올라온다.</li><li>바닥에 양반다리로 편하게 앉거나 의자에서 습관적으로 다리를 교차해 앉을 때 고관절 외회전근이 자극되어 저림 현상이 가중된다.</li><li>통증이 나타나는 쪽 엉덩이의 중앙부인 좌골신경 통과 부위를 손으로 지그시 압박할 때 소스라칠 정도의 방사통과 극심한 압통이 유발된다.</li><li>야간 수면 시 특정 방향으로 돌아눕거나 체위를 변경할 때 골반 내부 근육의 긴장도가 일시적으로 높아지며 통증이 심화된다.</li><li>계단을 오르거나 가파른 경사로를 도보로 이동할 때 대둔근과 이상근이 수축하면서 허벅지 뒤쪽이 강하게 당기는 증상이 발현된다.</li></ul></section><section><h2>생체역학적 관점에서 본 통증의 발생 메커니즘</h2><p>골반 깊숙한 곳에 위치한 이상근(Piriformis)은 고관절의 안정성을 유지하는 핵심 근육이다. 이 근육의 바로 아래로는 인체에서 가장 굵은 신경망인 좌골신경(Sciatic Nerve)이 주행한다. 척추와 골반의 불균형, 혹은 지속적인 불량 자세로 인해 이상근이 비정상적으로 과긴장하거나 비대해지면, 통증을 유발하는 신경 압박이 지속해서 발생하게 된다.</p><img src='../manip2.jpg' alt='생체역학적 공간 감압 추나 (SART Protocol) 골반 교정 치료 모습' class='visual-img'></section><section><h2>요추 추간판 탈출증과 이상근 증후군의 임상적 차이점</h2><p>두 질환은 하지막의 방사통을 공유하기 때문에 혼동하기 쉬우나, 신경이 압박받는 근원적인 해부학적 위치에 따라 명확한 차이점을 보인다.</p><div class='table-wrapper'><table class='custom-table'><thead><tr><th>구분</th><th>요추 추간판 탈출증 (허리디스크)</th><th>이상근 증후군</th></tr></thead><tbody><tr><td><b>통증의 주된 발현지</b></td><td>요추 부위의 국소 통증 및 하지막 전체 방사통</td><td>둔부 심부의 압통 및 허벅지 후면 중심의 저림</td></tr><tr><td><b>요추 굴곡 시 반응</b></td><td>상체를 앞으로 숙일 때 디스크 압박으로 저림 심화</td><td>자세 변화에 따른 요추 가동 범위 제한이 비교적 적음</td></tr><tr><td><b>임상적 유발 특징</b></td><td>복압이 상승하는 기침이나 재채기 시 통증 유발</td><td>장시간 착석하여 둔부에 직접적인 체중 부하 시 최악</td></tr></tbody></table></div></section><section><h2>구조적 원인을 해결하는 단계별 보존적 솔루션</h2><p>둔부 근육의 일시적인 이완이나 표층적인 치료만으로는 골반의 정렬 상태가 회복되지 않아 증상이 쉽게 재발할 수 있다. 바디올은 생체역학적 비틀림을 바로잡아 정밀하게 원인을 제어한다.</p><ul><li><b>생체역학적 공간 감압 추나(SART Protocol):</b> 전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법이다. 이를 통해 정밀하게 틀어진 골반과 천추의 정렬을 바로잡아, 신경이 물리적으로 압박받는 구조적 악순환을 근본적으로 개선한다.</li><li><b>추나요법:</b> 고관절 주위의 단축된 근막 체인을 이완하고 관절의 가동성을 복원하여, 수술 전 단계에서 안전하게 선택할 수 있는 생체역학적 보존 치료의 대안을 제공한다.</li><li><b>도침 (유착박리술):</b> 만성적인 자극으로 인해 해부학적으로 유착되고 섬유화되어 딱딱해진 이상근의 변성 부위를 미세 박리하여 깊은 곳의 신경 압박을 직접 해소한다. 이상근 증후군에 대한 도침 치료의 효과를 체계적으로 분석한 연구는 만성적으로 유착되고 섬유화된 이상근 부위에 대한 침습적 접근이 좌골신경 압박 완화에 임상적으로 활용되고 있음을 시사한다<sup>[2]</sup>. 본원에서 시행하는 도침 역시 이와 같은 생체역학적 원리를 바탕으로, 딱딱해진 이상근의 변성 부위를 미세하게 박리하여 신경 압박을 직접적으로 해소하는 접근법을 채택하고 있다. 또한 심둔부증후군(Deep Gluteal Syndrome)을 대상으로 초음파 유도 하이드로디섹션과 도침 병행 치료의 단기 효과를 비교 분석한 후향적 임상 연구는 둔부 심부에서 발생하는 신경 압박성 통증에 대해 도침을 활용한 병행 접근이 임상적으로 검토되고 있음을 보여준다<sup>[1]</sup>. 본원의 도침 치료 역시 이와 같은 학술적 흐름에 부합하여, 이상근 주변 조직의 유착을 정밀하게 박리함으로써 좌골신경 압박이라는 근본적인 구조적 문제에 접근하고 있다.</li><li><b>고농도 봉약침:</b> 좌골신경 주위에 유발된 무균성 염증 반응을 신속하게 억제하고 통증 매개 물질을 차단하여 신경 손상을 예방한다.</li></ul><p>바디올한의원의 생체역학적 공간 감압 추나(SART Protocol)는 이러한 임상적 근거를 바탕으로 이상근 증후군에 대한 안전하고 효과적인 비수술적 보존 치료 선택지 중 하나로 검토될 수 있다.</p><div class='doctor-card'><h3>📍 진료 안내</h3><p><b>진료 시간:</b> 평일 20:30까지 야간진료 | 주말·공휴일 16:00까지</p><p><b>위치:</b> 수원시청역 9번 출구 도보 3분 (광교, 영통, 동탄 등 광역 교통망 연계)</p><a href='../index.html#location' class='treatment-link'>오시는 길 & 진료시간 상세 보기 ➜</a></div></section></article>
+        <div class='breadcrumb'>허리/골반 자가진단 가이드</div><h1>이상근 증후군 자가진단, 엉덩이 통증과 다리 저림의 원인 분석</h1><img src='./image/0001.buttock-pain-main.png' alt='운전 중 엉덩이 통증과 다리 저림을 느끼는 환자' class='hero-img' loading='eager'><article><section><div class='summary-box'><h2>💡 메디컬 에디터가 분석한 핵심 요약</h2><p>이상근 증후군은 골반 심부의 근육이 좌골신경을 압박하여 하지 방사통을 유발하는 생체역학적 이상 증상이다.</p><p>요추 추간판 탈출증과 임상적으로 유사하나, 요추 자체보다는 엉덩이 심부의 극심한 압통과 좌석에 앉을 때 악화되는 저림이 주된 특징이다.</p><p>수원 인계동 본원을 비롯하여 광교, 영통, 동탄 등 주변 지역에서 찾아오시는 임상 사례를 분석해 보면, 퇴행성 척추 질환의 근본적인 구조적 원인 개선을 도모하는 솔루션을 위해 틀어진 골반 및 척추 분절의 정렬을 바로잡는 보존적 교정이 필수적이다.</p></div></section><section><h2>임상적 감별을 위한 이상근 증후군 자가진단</h2><p>허리 자체의 뚜렷한 통증 없이 유독 엉덩이 외측 및 하지 후면을 따라 이어지는 저림 현상으로 일상생활에 불편함을 겪고 계시다면, 단순 근육 피로를 넘어선 신경 압박 상태일 가능성이 크다. 아래의 임상적 징후 중 3개 이상 부합한다면 정밀한 생체역학적 검진이 권장된다.</p><ul class='check-list'><li>장시간 운전을 하거나 사무실 의자에 30분 이상 연속으로 착석할 때 엉덩이 깊은 곳에서 찌릿한 신경통이 서서히 올라온다.</li><li>바닥에 양반다리로 편하게 앉거나 의자에서 습관적으로 다리를 교차해 앉을 때 고관절 외회전근이 자극되어 저림 현상이 가중된다.</li><li>통증이 나타나는 쪽 엉덩이의 중앙부인 좌골신경 통과 부위를 손으로 지그시 압박할 때 소스라칠 정도의 방사통과 극심한 압통이 유발된다.</li><li>야간 수면 시 특정 방향으로 돌아눕거나 체위를 변경할 때 골반 내부 근육의 긴장도가 일시적으로 높아지며 통증이 심화된다.</li><li>계단을 오르거나 가파른 경사로를 도보로 이동할 때 대둔근과 이상근이 수축하면서 허벅지 뒤쪽이 강하게 당기는 증상이 발현된다.</li></ul></section><section><h2>생체역학적 관점에서 본 통증의 발생 메커니즘</h2><p>골반 깊숙한 곳에 위치한 이상근(Piriformis)은 고관절의 안정성을 유지하는 핵심 근육이다. 이 근육의 바로 아래로는 인체에서 가장 굵은 신경망인 좌골신경(Sciatic Nerve)이 주행한다. 척추와 골반의 불균형, 혹은 지속적인 불량 자세로 인해 이상근이 비정상적으로 과긴장하거나 비대해지면, 통증을 유발하는 신경 압박이 지속해서 발생하게 된다.</p><img src='../manip2.jpg' alt='생체역학적 공간 감압 추나 (SART Protocol) 골반 교정 치료 모습' class='visual-img'></section><section><h2>요추 추간판 탈출증과 이상근 증후군의 임상적 차이점</h2><p>두 질환은 하지막의 방사통을 공유하기 때문에 혼동하기 쉬우나, 신경이 압박받는 근원적인 해부학적 위치에 따라 명확한 차이점을 보인다.</p><div class='table-wrapper'><table class='custom-table'><thead><tr><th>구분</th><th>요추 추간판 탈출증 (허리디스크)</th><th>이상근 증후군</th></tr></thead><tbody><tr><td><b>통증의 주된 발현지</b></td><td>요추 부위의 국소 통증 및 하지막 전체 방사통</td><td>둔부 심부의 압통 및 허벅지 후면 중심의 저림</td></tr><tr><td><b>요추 굴곡 시 반응</b></td><td>상체를 앞으로 숙일 때 디스크 압박으로 저림 심화</td><td>자세 변화에 따른 요추 가동 범위 제한이 비교적 적음</td></tr><tr><td><b>임상적 유발 특징</b></td><td>복압이 상승하는 기침이나 재채기 시 통증 유발</td><td>장시간 착석하여 둔부에 직접적인 체중 부하 시 최악</td></tr></tbody></table></div></section><section><h2>구조적 원인을 해결하는 단계별 보존적 솔루션</h2><p>둔부 근육의 일시적인 이완이나 표층적인 치료만으로는 골반의 정렬 상태가 회복되지 않아 증상이 쉽게 재발할 수 있다. 바디올은 생체역학적 비틀림을 바로잡아 정밀하게 원인을 제어한다.</p><ul><li><b>생체역학적 공간 감압 추나(SART Protocol):</b> 전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법이다. 이를 통해 정밀하게 틀어진 골반과 천추의 정렬을 바로잡아, 신경이 물리적으로 압박받는 구조적 악순환을 근본적으로 개선한다.</li><li><b>추나요법:</b> 고관절 주위의 단축된 근막 체인을 이완하고 관절의 가동성을 복원하여, 수술 전 단계에서 안전하게 선택할 수 있는 생체역학적 보존 치료의 대안을 제공한다.</li><li><b>도침 (유착박리술):</b> 만성적인 자극으로 인해 해부학적으로 유착되고 섬유화되어 딱딱해진 이상근의 변성 부위를 미세 박리하여 깊은 곳의 신경 압박을 직접 해소한다. 이상근 증후군에 대한 도침 치료의 효과를 체계적으로 분석한 연구는 만성적으로 유착되고 섬유화된 이상근 부위에 대한 침습적 접근이 좌골신경 압박 완화에 임상적으로 활용되고 있음을 시사한다<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>. 본원에서 시행하는 도침 역시 이와 같은 생체역학적 원리를 바탕으로, 딱딱해진 이상근의 변성 부위를 미세하게 박리하여 신경 압박을 직접적으로 해소하는 접근법을 채택하고 있다. 또한 심둔부증후군(Deep Gluteal Syndrome)을 대상으로 초음파 유도 하이드로디섹션과 도침 병행 치료의 단기 효과를 비교 분석한 후향적 임상 연구는 둔부 심부에서 발생하는 신경 압박성 통증에 대해 도침을 활용한 병행 접근이 임상적으로 검토되고 있음을 보여준다<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>. 본원의 도침 치료 역시 이와 같은 학술적 흐름에 부합하여, 이상근 주변 조직의 유착을 정밀하게 박리함으로써 좌골신경 압박이라는 근본적인 구조적 문제에 접근하고 있다.</li><li><b>고농도 봉약침:</b> 좌골신경 주위에 유발된 무균성 염증 반응을 신속하게 억제하고 통증 매개 물질을 차단하여 신경 손상을 예방한다.</li></ul><p>바디올한의원의 생체역학적 공간 감압 추나(SART Protocol)는 이러한 임상적 근거를 바탕으로 이상근 증후군에 대한 안전하고 효과적인 비수술적 보존 치료 선택지 중 하나로 검토될 수 있다.</p><div class='doctor-card'><h3>📍 진료 안내</h3><p><b>진료 시간:</b> 평일 20:30까지 야간진료 | 주말·공휴일 16:00까지</p><p><b>위치:</b> 수원시청역 9번 출구 도보 3분 (광교, 영통, 동탄 등 광역 교통망 연계)</p><a href='../index.html#location' class='treatment-link'>오시는 길 & 진료시간 상세 보기 ➜</a></div></section><div class='doctor-card'><p><strong>💡 바디올 임상 노트:</strong> 실제 임상 현장에서 관찰되는 도침 유착 박리술의 만성 섬유화 조직 가동성 회복 경향은, 심둔부증후군을 대상으로 한 학술 연구<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>에서 검토된 신경 압박성 통증에 대한 병행 접근 효과와 해부학적으로 궤를 함께하며, 이상근 부위 유착 박리를 통한 좌골신경 압박 완화 원리는 별도의 체계적 문헌고찰<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>에서 제시된 임상적 활용 근거와도 일치하는 흐름을 나타냅니다.</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>참고문헌</h4><ol><li>Tuo, et al. (2026), 'Ultrasound-Guided Hydrodissection Combined with Acupotomy Release versus Hydrodissection Alone for Deep Gluteal Syndrome: A Retrospective Study on Short-Term Efficacy', Journal of Pain Research. <a href='https://doi.org/10.2147/jpr.s564639' target='_blank'>DOI: 10.2147/jpr.s564639</a></li><li>Park, et al. (2021), 'Systematic Review and Meta-analysis on Acupotomy for Piriformis Muscle Syndrome', Journal of Korean Medicine Rehabilitation. <a href='https://doi.org/10.18325/jkmr.2021.31.2.25' target='_blank'>DOI: 10.18325/jkmr.2021.31.2.25</a></li></ol></div>
+    <div class='references-section'><h4>참고문헌</h4><ol><li id='ref-1'>Tuo, et al. (2026), 'Ultrasound-Guided Hydrodissection Combined with Acupotomy Release versus Hydrodissection Alone for Deep Gluteal Syndrome: A Retrospective Study on Short-Term Efficacy', Journal of Pain Research. <a href='https://doi.org/10.2147/jpr.s564639' target='_blank'>DOI: 10.2147/jpr.s564639</a></li><li id='ref-2'>Park, et al. (2021), 'Systematic Review and Meta-analysis on Acupotomy for Piriformis Muscle Syndrome', Journal of Korean Medicine Rehabilitation. <a href='https://doi.org/10.18325/jkmr.2021.31.2.25' target='_blank'>DOI: 10.18325/jkmr.2021.31.2.25</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365일 진료 및 상담</h2>
