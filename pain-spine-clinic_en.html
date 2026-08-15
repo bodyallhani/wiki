@@ -14,80 +14,116 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "Pain & Spine Clinic",
-    "medicalAudience": {
-      "@type": "MedicalAudience",
-      "audienceType": "Patient"
-    },
-    "about": {
-      "@type": "MedicalCondition",
-      "name": "Lumbar Disc Herniation"
-    },
-    "mainContentOfPage": {
-      "@type": "WebPageElement",
-      "cssSelector": "article"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Bodyall Korean Medicine Clinic",
-    "telephone": "031-8067-5825",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Ingye-dong",
-      "addressLocality": "Suwon-si",
-      "addressRegion": "Gyeonggi-do",
-      "addressCountry": "KR"
-    },
-    "employee": {
-      "@type": "Person",
-      "name": "Donghae Lee",
-      "jobTitle": "Chief Director"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "Suwon"},
-      {"@type": "City", "name": "Ingye-dong"},
-      {"@type": "City", "name": "Gwanggyo"},
-      {"@type": "City", "name": "Dongtan"},
-      {"@type": "City", "name": "Yeongtong"}
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalProcedure",
-    "name": "Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)",
-    "description": "A biomechanical conservative correction technique based on the principles of traditional osteopathy and Chuna manipulation that secures physical space between spinal segments to safely relieve nerve compression in degenerative spinal diseases such as lumbar spinal stenosis and lumbar disc herniation.",
-    "procedureType": "TherapeuticProcedure"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "My shoulder hurts, but why do you need to check my rounded back and pelvis?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "This is because the human body is connected as an organic chain from head to toe. For example, if the pelvis is misaligned, the back rounds and the scapula is pushed forward as a compensatory action. In this rounded shoulder state, the shoulder muscles are stretched and overloaded, meaning treating the shoulder alone provides only temporary relief. Bodyall Korean Medicine Clinic precisely identifies this structural causal relationship to treat the root of shoulder pain, based on a conservative treatment protocol that considers the entire body's kinetic chain."
-        }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/pain-spine-clinic_en.html#webpage",
+      "name": "Pain & Spine Clinic",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
       },
-      {
-        "@type": "Question",
-        "name": "Why is Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) effective as a pre-surgical option?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) is a biomechanical conservative correction technique that secures physical space between spinal segments based on the principles of traditional osteopathy and Chuna manipulation. A prospective pilot study examining the influence of flexion distraction spinal manipulation on patients with lumbar spinal stenosis indicates that conservative approaches aimed at creating physical space between spinal segments have been an area of academic interest in managing degenerative spinal conditions. Because it aims to reduce nerve compression and disc pressure caused by structural deformities, thereby improving the fundamental structural causes of chronic degenerative spinal diseases such as lumbar back pain and spinal stenosis, it becomes a rational and safe alternative to be considered prior to surgical intervention."
-        }
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Lumbar Disc Herniation"
       }
-    ]
-  }
-]
-    </script>
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "Bodyall Korean Medicine Clinic",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1114-7 Ingye-dong, 3rd Floor",
+        "addressLocality": "Paldal-gu, Suwon-si",
+        "addressRegion": "Gyeonggi-do",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "Donghae Lee",
+        "jobTitle": "Chief Director"
+      },
+      "knowsAbout": [
+        "Chuna Manual Therapy", "Biomechanical Spatial Spinal Decompression Chuna (SART Protocol)", 
+        "Spinal Structure Correction", "Acupotomy Therapy", "High-Concentration Bee Venom Pharmacopuncture", 
+        "Custom Herbal Medicine", "Herbal Weight Loss", "Spinal Stenosis", "Lumbar Disc Herniation", 
+        "Cervical Disc Herniation", "Postural Correction", "Frozen Shoulder"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "Suwon-si", "sameAs": "https://en.wikipedia.org/wiki/Suwon"},
+        {"@type": "AdministrativeArea", "name": "Ingye-dong", "sameAs": "https://en.wikipedia.org/wiki/Ingye-dong"},
+        {"@type": "AdministrativeArea", "name": "Gwanggyo", "sameAs": "https://en.wikipedia.org/wiki/Gwanggyo"},
+        {"@type": "City", "name": "Dongtan", "sameAs": "https://en.wikipedia.org/wiki/Dongtan"},
+        {"@type": "AdministrativeArea", "name": "Yeongtong-gu", "sameAs": "https://en.wikipedia.org/wiki/Yeongtong-gu"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART_en.html",
+      "name": "Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)",
+      "description": "A conservative Chuna manual therapy protocol designed to biomechanically decompress intervertebral and joint spaces, relieving nerve compression and restoring structural balance.",
+      "procedureType": "TherapeuticProcedure"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "My shoulder hurts, but why do you need to check my rounded back and pelvis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This is because the human body is connected as an organic chain from head to toe. For example, if the pelvis is misaligned, the back rounds and the scapula is pushed forward as a compensatory action. In this rounded shoulder state, the shoulder muscles are stretched and overloaded, meaning treating the shoulder alone provides only temporary relief. Bodyall Korean Medicine Clinic precisely identifies this structural causal relationship to treat the root of shoulder pain, based on a conservative treatment protocol that considers the entire body's kinetic chain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) effective as a pre-surgical option?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) is a biomechanical conservative correction technique that secures physical space between spinal segments based on the principles of traditional osteopathy and Chuna manipulation. A prospective pilot study examining the influence of flexion distraction spinal manipulation on patients with lumbar spinal stenosis indicates that conservative approaches aimed at creating physical space between spinal segments have been an area of academic interest in managing degenerative spinal conditions. Because it aims to reduce nerve compression and disc pressure caused by structural deformities, thereby improving the fundamental structural causes of chronic degenerative spinal diseases such as lumbar back pain and spinal stenosis, it becomes a rational and safe alternative to be considered prior to surgical intervention."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
@@ -264,10 +300,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <article><p>Bodyall Korean Medicine Clinic is located in Ingye-dong, Suwon, but serves as a destination treatment institution for patients visiting from the greater Gyeonggi Southern region, including Gwanggyo, Dongtan, and Yeongtong, seeking biomechanical correction for intractable spinal conditions. At Bodyall Korean Medicine Clinic, we perform biomechanical conservative treatments for degenerative spinal diseases such as lumbar spinal stenosis and lumbar disc herniation by applying the Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) to secure physical space between spinal segments and safely relieve nerve compression. Utilizing a proprietary diagnostic system established through 40,000 rich clinical cases, we analyze the patient's kinetic chain to identify the hidden root causes of pain and improve underlying structural mechanisms.</p><section><div class='highlight-box'><strong>Three Key Biomechanical Features of Pain Treatment at Bodyall Korean Medicine Clinic</strong><ul><li><strong>Full-Body Kinetic Chain Analysis:</strong> Combining the Ex-body full-body alignment analysis equipment with precise physical examination methods, we trace the causal relationship between structural misalignment and pain throughout the body, rather than focusing solely on the local area.</li><li><strong>Correction Based on Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol):</strong> Based on the principles of traditional osteopathy and Chuna manipulation, we apply a biomechanical conservative correction technique to secure physical space between spinal segments, thereby reducing intra-spinal pressure.</li><li><strong>Integrated Conservative Solution Linkage:</strong> We combine acupotomy for precisely dissecting chronic tissue adhesions with pharmacopuncture to control inflammatory pain, assisting in the restoration of structural balance.</li></ul></div></section><h2>General Pain Treatment vs. Bodyall Pain & Spine Clinic</h2><div class='table-wrapper'><table class='custom-table'><thead><tr><th>Category</th><th>General Pain Treatment</th><th>Bodyall Pain Solution</th></tr></thead><tbody><tr><td>Diagnostic Method</td><td>Local examination focused on the pain area</td><td>Ex-body full-body alignment analysis and multi-angle physical testing</td></tr><tr><td>Treatment Perspective</td><td>Temporary reduction of inflammation and muscle relaxation</td><td>Improving the fundamental structural causes of degenerative spinal diseases (kinetic chain restoration)</td></tr><tr><td>Core Techniques</td><td>Simple physical therapy and acupuncture</td><td>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) + Acupotomy + Pharmacopuncture combination</td></tr></tbody></table></div><section><div class='highlight-box blue'><strong>💡 Q. My shoulder hurts, but why do you need to check my rounded back and pelvis?</strong><p>This is because the human body is connected as an organic chain from head to toe. For example, if the pelvis is misaligned, the back rounds and the scapula is pushed forward as a compensatory action. In this rounded shoulder state, the shoulder muscles are stretched and overloaded, meaning treating the shoulder alone provides only temporary relief. Bodyall Korean Medicine Clinic precisely identifies this structural causal relationship to treat the root of shoulder pain, based on a conservative treatment protocol that considers the entire body's kinetic chain.</p><img src='rounded_shoulder_mechanism.jpg' alt='Anatomical correlation between rounded back and rounded shoulder, and the mechanism inducing shoulder pain' class='media-img'></div></section><section><div class='highlight-box blue'><strong>💡 Q. Why is Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) effective as a pre-surgical option?</strong><p>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) is a biomechanical conservative correction technique that secures physical space between spinal segments based on the principles of traditional osteopathy and Chuna manipulation. A prospective pilot study examining the influence of flexion distraction spinal manipulation on patients with lumbar spinal stenosis indicates that conservative approaches aimed at creating physical space between spinal segments have been an area of academic interest in managing degenerative spinal conditions<sup>[1]</sup>. Because it aims to reduce nerve compression and disc pressure caused by structural deformities, thereby improving the fundamental structural causes of chronic degenerative spinal diseases such as lumbar back pain and spinal stenosis, it becomes a rational and safe alternative to be considered prior to surgical intervention.</p></div></section><h2>1. A Scientific Diagnostic System to Identify the Cause of Pain</h2><p>Bodyall establishes a systematic solution by combining objective analysis equipment with skilled physical examinations focused on causal relationships.</p><img src='pain_diagnosis.jpg' alt='Precise physical examination and diagnosis by medical staff at Bodyall Korean Medicine Clinic Suwon' class='media-img'><ul><li><strong>Ex-body Full-Body Analysis:</strong> Precisely quantifies spinal scoliosis, lordosis, and pelvic asymmetry to objectively confirm the collapsed balance of the body.</li><li><strong>Expert-Level Physical Testing:</strong> Precisely determines the anatomical nature of pain through tests such as the Empty Can Test (rotator cuff tendon damage assessment), Patrick Test (hip joint mobility and pain evaluation), and SLR Test (differentiation of lumbar nerve compression via straight leg raise).</li><li><strong>Nerve-Spine Correlation Analysis:</strong> Accurately diagnoses the necessity of biomechanical correction by confirming physical compression of the spinal nerve segment responsible for the pain area.</li></ul><h2>2. Specialized Treatment Programs by Area and Symptom</h2><div class='table-wrapper'><table class='custom-table'><thead><tr><th>Pain Type</th><th>Bodyall's Detailed Solution</th></tr></thead><tbody><tr><td><strong>Neck, Shoulder, Headache</strong></td><td>We treat the causes of chronic radiating pain and tension headaches caused by nerve compression by correcting turtle neck and upper crossed syndrome.</td></tr><tr><td><strong>Lower Back, Pelvis, Leg Numbness</strong></td><td>We manage representative degenerative spinal diseases such as lumbar disc herniation and spinal stenosis, as well as sciatica, by restoring intervertebral segmental spacing through Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol). A multi-center randomized clinical trial evaluating spinal manipulation combined with electrical dry needling as an adjunct to conventional physical therapy in lumbar spinal stenosis patients suggests that integrated conservative strategies combining structural correction techniques with needle-based interventions are subject to ongoing international academic scrutiny<sup>[2]</sup>.</td></tr><tr><td><strong>Chronic Adhesions and Arthritis</strong></td><td>We efficiently resolve areas with limited range of motion due to tissue stiffness and adhesion, such as frozen shoulder, tennis elbow, and knee arthritis, through acupotomy (adhesiolysis).</td></tr></tbody></table></div><h2>3. The Most Comfortable Environment to Visit in Ingye-dong, Suwon</h2><p>Bodyall has considered patient convenience from multiple angles to allow full focus on treatment.</p><section><div class='highlight-box'><ul><li>🚗 <strong>Convenient Access with No Parking Worries:</strong> A dedicated parking lot on the 1st floor of the building supports a pleasant and comfortable free parking environment for all visitors.</li><li>⏰ <strong>365-Day Care (Night/Weekend):</strong> We offer evening care until 8:30 PM on weekdays and open on weekends and holidays to systematically respond to acute pain without delay.</li><li>📍 <strong>3-Minute Walk from Suwon City Hall Station Exit 9:</strong> Excellent access to public transportation in the Gyeonggi Southern region provides an optimal route for those requiring regular body alignment and spinal correction treatments.</li></ul></div></section><h2>4. Advanced Collaborative Treatment System Led by an Educational Committee Member</h2><img src='directors_group.jpg' alt='Daily regular study session and case presentation by medical staff at Bodyall Korean Medicine Clinic' class='media-img'><div class='doctor-card'><p>Chief Director Donghae Lee, an educational committee member of the Spinal Diagnosis and Correction Society, and the Bodyall medical staff analyze actual clinical cases daily and share the latest structural correction techniques. Built upon a standardized treatment protocol systematically incorporating vast clinical data from 40,000 cases, patients can experience the same high-quality pain solution focused on structural mechanisms, regardless of which medical staff member provides the treatment.</p></div><section><div class='highlight-box'><p>The Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) administered at this clinic is a conservative approach that aims to alleviate nerve compression by securing physical space between spinal segments, representing a non-surgical alternative that precisely implements academically supported principles for managing degenerative spinal diseases in a clinical setting.</p></div></section></article>
+        <article><p>Bodyall Korean Medicine Clinic is located in Ingye-dong, Suwon, but serves as a destination treatment institution for patients visiting from the greater Gyeonggi Southern region, including Gwanggyo, Dongtan, and Yeongtong, seeking biomechanical correction for intractable spinal conditions. At Bodyall Korean Medicine Clinic, we perform biomechanical conservative treatments for degenerative spinal diseases such as lumbar spinal stenosis and lumbar disc herniation by applying the Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) to secure physical space between spinal segments and safely relieve nerve compression. Utilizing a proprietary diagnostic system established through 40,000 rich clinical cases, we analyze the patient's kinetic chain to identify the hidden root causes of pain and improve underlying structural mechanisms.</p><section><div class='highlight-box'><strong>Three Key Biomechanical Features of Pain Treatment at Bodyall Korean Medicine Clinic</strong><ul><li><strong>Full-Body Kinetic Chain Analysis:</strong> Combining the Ex-body full-body alignment analysis equipment with precise physical examination methods, we trace the causal relationship between structural misalignment and pain throughout the body, rather than focusing solely on the local area.</li><li><strong>Correction Based on Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol):</strong> Based on the principles of traditional osteopathy and Chuna manipulation, we apply a biomechanical conservative correction technique to secure physical space between spinal segments, thereby reducing intra-spinal pressure.</li><li><strong>Integrated Conservative Solution Linkage:</strong> We combine acupotomy for precisely dissecting chronic tissue adhesions with pharmacopuncture to control inflammatory pain, assisting in the restoration of structural balance.</li></ul></div></section><h2>General Pain Treatment vs. Bodyall Pain & Spine Clinic</h2><div class='table-wrapper'><table class='custom-table'><thead><tr><th>Category</th><th>General Pain Treatment</th><th>Bodyall Pain Solution</th></tr></thead><tbody><tr><td>Diagnostic Method</td><td>Local examination focused on the pain area</td><td>Ex-body full-body alignment analysis and multi-angle physical testing</td></tr><tr><td>Treatment Perspective</td><td>Temporary reduction of inflammation and muscle relaxation</td><td>Improving the fundamental structural causes of degenerative spinal diseases (kinetic chain restoration)</td></tr><tr><td>Core Techniques</td><td>Simple physical therapy and acupuncture</td><td>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) + Acupotomy + Pharmacopuncture combination</td></tr></tbody></table></div><section><div class='highlight-box blue'><strong>💡 Q. My shoulder hurts, but why do you need to check my rounded back and pelvis?</strong><p>This is because the human body is connected as an organic chain from head to toe. For example, if the pelvis is misaligned, the back rounds and the scapula is pushed forward as a compensatory action. In this rounded shoulder state, the shoulder muscles are stretched and overloaded, meaning treating the shoulder alone provides only temporary relief. Bodyall Korean Medicine Clinic precisely identifies this structural causal relationship to treat the root of shoulder pain, based on a conservative treatment protocol that considers the entire body's kinetic chain.</p><img src='rounded_shoulder_mechanism.jpg' alt='Anatomical correlation between rounded back and rounded shoulder, and the mechanism inducing shoulder pain' class='media-img'></div></section><section><div class='highlight-box blue'><strong>💡 Q. Why is Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) effective as a pre-surgical option?</strong><p>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) is a biomechanical conservative correction technique that secures physical space between spinal segments based on the principles of traditional osteopathy and Chuna manipulation. A prospective pilot study examining the influence of flexion distraction spinal manipulation on patients with lumbar spinal stenosis indicates that conservative approaches aimed at creating physical space between spinal segments have been an area of academic interest in managing degenerative spinal conditions<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>. Because it aims to reduce nerve compression and disc pressure caused by structural deformities, thereby improving the fundamental structural causes of chronic degenerative spinal diseases such as lumbar back pain and spinal stenosis, it becomes a rational and safe alternative to be considered prior to surgical intervention.</p></div></section><h2>1. A Scientific Diagnostic System to Identify the Cause of Pain</h2><p>Bodyall establishes a systematic solution by combining objective analysis equipment with skilled physical examinations focused on causal relationships.</p><img src='pain_diagnosis.jpg' alt='Precise physical examination and diagnosis by medical staff at Bodyall Korean Medicine Clinic Suwon' class='media-img'><ul><li><strong>Ex-body Full-Body Analysis:</strong> Precisely quantifies spinal scoliosis, lordosis, and pelvic asymmetry to objectively confirm the collapsed balance of the body.</li><li><strong>Expert-Level Physical Testing:</strong> Precisely determines the anatomical nature of pain through tests such as the Empty Can Test (rotator cuff tendon damage assessment), Patrick Test (hip joint mobility and pain evaluation), and SLR Test (differentiation of lumbar nerve compression via straight leg raise).</li><li><strong>Nerve-Spine Correlation Analysis:</strong> Accurately diagnoses the necessity of biomechanical correction by confirming physical compression of the spinal nerve segment responsible for the pain area.</li></ul><h2>2. Specialized Treatment Programs by Area and Symptom</h2><div class='table-wrapper'><table class='custom-table'><thead><tr><th>Pain Type</th><th>Bodyall's Detailed Solution</th></tr></thead><tbody><tr><td><strong>Neck, Shoulder, Headache</strong></td><td>We treat the causes of chronic radiating pain and tension headaches caused by nerve compression by correcting turtle neck and upper crossed syndrome.</td></tr><tr><td><strong>Lower Back, Pelvis, Leg Numbness</strong></td><td>We manage representative degenerative spinal diseases such as lumbar disc herniation and spinal stenosis, as well as sciatica, by restoring intervertebral segmental spacing through Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol). A multi-center randomized clinical trial evaluating spinal manipulation combined with electrical dry needling as an adjunct to conventional physical therapy in lumbar spinal stenosis patients suggests that integrated conservative strategies combining structural correction techniques with needle-based interventions are subject to ongoing international academic scrutiny<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>.</td></tr><tr><td><strong>Chronic Adhesions and Arthritis</strong></td><td>We efficiently resolve areas with limited range of motion due to tissue stiffness and adhesion, such as frozen shoulder, tennis elbow, and knee arthritis, through acupotomy (adhesiolysis).</td></tr></tbody></table></div><h2>3. The Most Comfortable Environment to Visit in Ingye-dong, Suwon</h2><p>Bodyall has considered patient convenience from multiple angles to allow full focus on treatment.</p><section><div class='highlight-box'><ul><li>🚗 <strong>Convenient Access with No Parking Worries:</strong> A dedicated parking lot on the 1st floor of the building supports a pleasant and comfortable free parking environment for all visitors.</li><li>⏰ <strong>365-Day Care (Night/Weekend):</strong> We offer evening care until 8:30 PM on weekdays and open on weekends and holidays to systematically respond to acute pain without delay.</li><li>📍 <strong>3-Minute Walk from Suwon City Hall Station Exit 9:</strong> Excellent access to public transportation in the Gyeonggi Southern region provides an optimal route for those requiring regular body alignment and spinal correction treatments.</li></ul></div></section><h2>4. Advanced Collaborative Treatment System Led by an Educational Committee Member</h2><img src='directors_group.jpg' alt='Daily regular study session and case presentation by medical staff at Bodyall Korean Medicine Clinic' class='media-img'><div class='doctor-card'><p>Chief Director Donghae Lee, an educational committee member of the Spinal Diagnosis and Correction Society, and the Bodyall medical staff analyze actual clinical cases daily and share the latest structural correction techniques. Built upon a standardized treatment protocol systematically incorporating vast clinical data from 40,000 cases, patients can experience the same high-quality pain solution focused on structural mechanisms, regardless of which medical staff member provides the treatment.</p></div><section><div class='highlight-box'><p>The Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) administered at this clinic is a conservative approach that aims to alleviate nerve compression by securing physical space between spinal segments, representing a non-surgical alternative that precisely implements academically supported principles for managing degenerative spinal diseases in a clinical setting.</p></div></section><div class='doctor-card'><p><strong>💡 Bodyall Clinical Note:</strong> The trend of structural improvement in intervertebral spacing observed through Bodyall Korean Medicine Clinic's accumulated Chuna therapy clinical experience aligns anatomically and scientifically with the biomechanical decompression mechanisms explored in the cited pilot study on flexion distraction spinal manipulation for lumbar spinal stenosis patients<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>.</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>References</h4><ol><li>Smith, et al. (2022), 'The influence of flexion distraction spinal manipulation on patients with lumbar spinal stenosis: A prospective, open-label, single-arm, pilot study', Journal of Bodywork and Movement Therapies. <a href='https://doi.org/10.1016/j.jbmt.2022.05.012' target='_blank'>DOI: 10.1016/j.jbmt.2022.05.012</a></li><li>Young, et al. (2024), 'Spinal manipulation and electrical dry needling as an adjunct to conventional physical therapy in patients with lumbar spinal stenosis: a multi-center randomized clinical trial', The Spine Journal. <a href='https://doi.org/10.1016/j.spinee.2023.12.002' target='_blank'>DOI: 10.1016/j.spinee.2023.12.002</a></li></ol></div>
+    <div class='references-section'><h4>References</h4><ol><li id='ref-1'>Smith, et al. (2022), 'The influence of flexion distraction spinal manipulation on patients with lumbar spinal stenosis: A prospective, open-label, single-arm, pilot study', Journal of Bodywork and Movement Therapies. <a href='https://doi.org/10.1016/j.jbmt.2022.05.012' target='_blank'>DOI: 10.1016/j.jbmt.2022.05.012</a></li><li id='ref-2'>Young, et al. (2024), 'Spinal manipulation and electrical dry needling as an adjunct to conventional physical therapy in patients with lumbar spinal stenosis: a multi-center randomized clinical trial', The Spine Journal. <a href='https://doi.org/10.1016/j.spinee.2023.12.002' target='_blank'>DOI: 10.1016/j.spinee.2023.12.002</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365 Days Care & Consultation</h2>
