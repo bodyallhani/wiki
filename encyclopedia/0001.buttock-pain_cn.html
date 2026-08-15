@@ -14,78 +14,98 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "梨状肌综合征自我诊断：解析臀部疼痛与下肢麻木的成因",
-    "medicalAudience": {
-      "@type": "MedicalAudience",
-      "audienceType": "Patient"
-    },
-    "about": {
-      "@type": "MedicalCondition",
-      "name": "梨状肌综合征"
-    },
-    "mainContentOfPage": {
-      "@type": "WebPageElement",
-      "cssSelector": "article"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Bodyall韩医院 (Bodyall Korean Medicine Clinic)",
-    "telephone": "031-8067-5825",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "仁溪洞",
-      "addressLocality": "水原市",
-      "addressRegion": "京畿道",
-      "addressCountry": "KR"
-    },
-    "employee": {
-      "@type": "Person",
-      "name": "李东海",
-      "jobTitle": "代表院长"
-    },
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "水原"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/encyclopedia/0001.buttock-pain_cn.html#webpage",
+      "name": "梨状肌综合征自我诊断：解析臀部疼痛与下肢麻木的成因",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
       },
-      {
-        "@type": "City",
-        "name": "仁溪洞"
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
       },
-      {
-        "@type": "City",
-        "name": "光教"
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "梨状肌综合征"
       },
-      {
-        "@type": "City",
-        "name": "东滩"
-      },
-      {
-        "@type": "City",
-        "name": "灵通"
+      "mainContentOfPage": {
+        "@type": "WebPageElement",
+        "cssSelector": "article"
       }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalProcedure",
-    "name": "生物力学空间减压推拿 (SART Protocol)",
-    "description": "这是一种旨在弥补传统整骨推拿疗法局限性，基于传统整骨疗法及推拿手法原理，确保脊椎节段间物理空间的生物力学保守矫正技术。通过此方法，可对精准错位的骨盆及骶骨进行重新对位，从根本上改善神经受到物理性压迫的结构性恶性循环。",
-    "procedureType": "TherapeuticProcedure"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": []
-  }
-]
-    </script>
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "Bodyall韩医院 (Bodyall Korean Medicine Clinic)",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "仁溪洞 1114-7, 3楼",
+        "addressLocality": "水原市 八达区",
+        "addressRegion": "京畿道",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "李东海",
+        "jobTitle": "代表院长"
+      },
+      "knowsAbout": [
+        "推拿疗法", "生物力学空间减压推拿 (SART Protocol)", "空间脊椎矫正", "小针刀疗法", 
+        "高浓度蜂毒针疗法", "体质韩药", "韩方减肥", "脊柱管狭窄症", "腰椎间盘突出", 
+        "颈椎间盘突出", "体型矫正", "肩周炎"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "水原市", "sameAs": "https://zh.wikipedia.org/wiki/水原市"},
+        {"@type": "AdministrativeArea", "name": "仁溪洞", "sameAs": "https://zh.wikipedia.org/wiki/仁溪洞"},
+        {"@type": "AdministrativeArea", "name": "光教", "sameAs": "https://zh.wikipedia.org/wiki/光教洞"},
+        {"@type": "City", "name": "东滩", "sameAs": "https://zh.wikipedia.org/wiki/東灘_(韓國)"},
+        {"@type": "AdministrativeArea", "name": "灵通区", "sameAs": "https://zh.wikipedia.org/wiki/靈通區"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART_cn.html",
+      "name": "生物力学空间减压推拿 (SART Protocol)",
+      "description": "一种保守的推拿疗法方案，旨在通过生物力学对椎间隙和关节空间进行减压，缓解神经压迫并恢复结构平衡。",
+      "procedureType": "TherapeuticProcedure"
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
@@ -262,10 +282,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <div class='breadcrumb'>腰椎/骨盆自我诊断指南</div><h1>梨状肌综合征自我诊断：解析臀部疼痛与下肢麻木的成因</h1><img src='./image/0001.buttock-pain-main.png' alt='患者驾车时出现臀部疼痛与下肢麻木症状' class='hero-img' loading='eager'><article><section><div class='summary-box'><h2>💡 医学编辑核心解析</h2><p>梨状肌综合征是一种深层骨盆肌肉压迫坐骨神经，从而导致下肢放射性疼痛的生物力学异常病症。</p><p>虽然临床表现与腰椎间盘突出相似，但其主要特征并非源于腰椎本身的疼痛，而是臀部深处存在严重压痛，且久坐时麻木感会明显加重。</p><p>基于对本院位于水原市仁溪洞的主院及光教、灵通、东滩等周边地区患者的临床病例分析，通过保守治疗矫正错位的骨盆及脊椎节段对位，是旨在改善退行性脊椎疾病结构性根本原因的必要解决方案。</p></div></section><section><h2>梨状肌综合征自我诊断的临床鉴别要点</h2><p>如果在日常生活中，即使没有明显的腰部疼痛，也持续出现臀部外侧及下肢后方的麻木感而感到不适，这可能提示存在超越单纯肌肉疲劳的神经压迫状态。若以下临床症状符合三项以上，建议接受精密的生物力学评估。</p><ul class='check-list'><li>长时间驾驶或在办公室椅子上久坐超过30分钟时，臀部深处会逐渐产生一种尖锐的深部神经痛感。</li><li>盘腿坐在地板上或习惯性翘二郎腿坐在椅子上时，由于对髋关节外旋肌群的刺激，麻木感会加重。</li><li>用力按压坐骨神经通过的患侧臀部中心点时，会引发令人惊颤的放射性疼痛及严重压痛。</li><li>睡眠中翻身或改变体位至特定方向时，由于骨盆内部肌肉张力暂时性增加，疼痛会随之加剧。</li><li>上楼梯或行走于陡坡时，随着臀大肌与梨状肌的收缩，大腿后侧会产生强烈的牵拉感。</li></ul></section><section><h2>从生物力学角度看疼痛发生机制</h2><p>位于骨盆深处的梨状肌，是维持髋关节稳定性的关键肌肉。在该肌肉正下方，走行着人体内最粗的神经网络——坐骨神经。当因脊柱骨盆失衡或长期不良姿势导致梨状肌出现异常性张力过高或肥厚时，便会造成持续性的神经压迫，从而诱发疼痛。</p><img src='../manip2.jpg' alt='采用生物力学空间减压推拿 (SART Protocol) 进行骨盆矫正治疗' class='visual-img'></section><section><h2>腰椎间盘突出与梨状肌综合征的临床差异</h2><p>由于两种病症均伴有下肢放射性疼痛，因此极易混淆；然而，根据神经压迫的根本解剖学位置不同，二者存在明确差异。</p><div class='table-wrapper'><table class='custom-table'><thead><tr><th>分类</th><th>腰椎间盘突出</th><th>梨状肌综合征</th></tr></thead><tbody><tr><td><b>主要疼痛发生部位</b></td><td>局限性腰部疼痛及整个下肢的放射性疼痛</td><td>以大腿后侧为中心的深部臀肌压痛及麻木</td></tr><tr><td><b>腰椎前屈反应</b></td><td>身体前屈时因椎间盘受压导致麻木加重</td><td>根据体位变化，腰椎活动范围受限相对较少</td></tr><tr><td><b>临床诱发特征</b></td><td>咳嗽或打喷嚏等增加腹压的动作会诱发疼痛</td><td>久坐且臀部直接承重时症状最为严重</td></tr></tbody></table></div></section><section><h2>针对结构性病因的阶段性保守解决方案</h2><p>仅通过暂时性放松臀部肌肉或表层治疗，往往难以恢复骨盆的正常排列，导致症状极易复发。Bodyall通过矫正潜在的生物力学扭转，精准控制病症根源。</p><ul><li><b>生物力学空间减压推拿 (SART Protocol)：</b>这是一种旨在弥补传统整骨推拿疗法局限性，基于传统整骨疗法及推拿手法原理，确保脊椎节段间物理空间的生物力学保守矫正技术。通过此方法，可对精准错位的骨盆及骶骨进行重新对位，从根本上改善神经受到物理性压迫的结构性恶性循环。</li><li><b>推拿手法治疗：</b>通过放松髋关节周围缩短的肌筋膜链并恢复关节活动度，提供一种在手术前阶段可安全考虑的生物力学保守治疗替代方案。</li><li><b>针刀（粘连松解术）：</b>该技术通过对因慢性刺激而发生解剖学粘连及纤维化（硬化）的梨状肌退变区域进行微创剥离，直接解除深部神经压迫。一项系统分析针刀疗法对梨状肌综合征疗效的研究表明，针对慢性粘连及纤维化梨状肌组织进行的侵入性干预，在临床上被用于缓解坐骨神经压迫<sup>[2]</sup>。本院实施的针刀疗法同样采用基于此相同生物力学原理的方法，通过精细剥离硬化变性的梨状肌区域，直接解除神经压迫。此外，一项比较超声引导下水分离联合针刀松解术与单纯水分离术治疗深臀综合征短期疗效的回顾性临床研究表明，针对臀部深层神经压迫性疼痛，采用针刀联合治疗的干预方式正在临床上得到探讨<sup>[1]</sup>。本院所提供的针刀治疗与这一学术趋势相契合，通过精准松解梨状肌周围组织的粘连，从结构层面着手解决坐骨神经压迫这一根本问题。</li><li><b>高浓度蜂毒针药：</b>可迅速抑制坐骨神经周围诱发的无菌性炎症反应，并阻断疼痛传导物质，从而防止神经损伤的进一步加重。</li></ul><p>Bodyall韩医院所提供的生物力学空间减压推拿 (SART Protocol)，基于上述临床证据，可作为梨状肌综合征安全有效的非手术保守治疗选择方案之一进行考量。</p><div class='doctor-card'><h3>📍 医院信息</h3><p><b>诊疗时间：</b>工作日夜间诊疗至20:30 | 周末及节假日至16:00</p><p><b>位置：</b>距水原市厅站9号出口步行3分钟（连接光教、灵通、东滩等都市圈交通网络）</p><a href='../index_cn.html#location' class='treatment-link'>查看路线及详细时间 ➜</a></div></section></article>
+        <div class='breadcrumb'>腰椎/骨盆自我诊断指南</div><h1>梨状肌综合征自我诊断：解析臀部疼痛与下肢麻木的成因</h1><img src='./image/0001.buttock-pain-main.png' alt='患者驾车时出现臀部疼痛与下肢麻木症状' class='hero-img' loading='eager'><article><section><div class='summary-box'><h2>💡 医学编辑核心解析</h2><p>梨状肌综合征是一种深层骨盆肌肉压迫坐骨神经，从而导致下肢放射性疼痛的生物力学异常病症。</p><p>虽然临床表现与腰椎间盘突出相似，但其主要特征并非源于腰椎本身的疼痛，而是臀部深处存在严重压痛，且久坐时麻木感会明显加重。</p><p>基于对本院位于水原市仁溪洞的主院及光教、灵通、东滩等周边地区患者的临床病例分析，通过保守治疗矫正错位的骨盆及脊椎节段对位，是旨在改善退行性脊椎疾病结构性根本原因的必要解决方案。</p></div></section><section><h2>梨状肌综合征自我诊断的临床鉴别要点</h2><p>如果在日常生活中，即使没有明显的腰部疼痛，也持续出现臀部外侧及下肢后方的麻木感而感到不适，这可能提示存在超越单纯肌肉疲劳的神经压迫状态。若以下临床症状符合三项以上，建议接受精密的生物力学评估。</p><ul class='check-list'><li>长时间驾驶或在办公室椅子上久坐超过30分钟时，臀部深处会逐渐产生一种尖锐的深部神经痛感。</li><li>盘腿坐在地板上或习惯性翘二郎腿坐在椅子上时，由于对髋关节外旋肌群的刺激，麻木感会加重。</li><li>用力按压坐骨神经通过的患侧臀部中心点时，会引发令人惊颤的放射性疼痛及严重压痛。</li><li>睡眠中翻身或改变体位至特定方向时，由于骨盆内部肌肉张力暂时性增加，疼痛会随之加剧。</li><li>上楼梯或行走于陡坡时，随着臀大肌与梨状肌的收缩，大腿后侧会产生强烈的牵拉感。</li></ul></section><section><h2>从生物力学角度看疼痛发生机制</h2><p>位于骨盆深处的梨状肌，是维持髋关节稳定性的关键肌肉。在该肌肉正下方，走行着人体内最粗的神经网络——坐骨神经。当因脊柱骨盆失衡或长期不良姿势导致梨状肌出现异常性张力过高或肥厚时，便会造成持续性的神经压迫，从而诱发疼痛。</p><img src='../manip2.jpg' alt='采用生物力学空间减压推拿 (SART Protocol) 进行骨盆矫正治疗' class='visual-img'></section><section><h2>腰椎间盘突出与梨状肌综合征的临床差异</h2><p>由于两种病症均伴有下肢放射性疼痛，因此极易混淆；然而，根据神经压迫的根本解剖学位置不同，二者存在明确差异。</p><div class='table-wrapper'><table class='custom-table'><thead><tr><th>分类</th><th>腰椎间盘突出</th><th>梨状肌综合征</th></tr></thead><tbody><tr><td><b>主要疼痛发生部位</b></td><td>局限性腰部疼痛及整个下肢的放射性疼痛</td><td>以大腿后侧为中心的深部臀肌压痛及麻木</td></tr><tr><td><b>腰椎前屈反应</b></td><td>身体前屈时因椎间盘受压导致麻木加重</td><td>根据体位变化，腰椎活动范围受限相对较少</td></tr><tr><td><b>临床诱发特征</b></td><td>咳嗽或打喷嚏等增加腹压的动作会诱发疼痛</td><td>久坐且臀部直接承重时症状最为严重</td></tr></tbody></table></div></section><section><h2>针对结构性病因的阶段性保守解决方案</h2><p>仅通过暂时性放松臀部肌肉或表层治疗，往往难以恢复骨盆的正常排列，导致症状极易复发。Bodyall通过矫正潜在的生物力学扭转，精准控制病症根源。</p><ul><li><b>生物力学空间减压推拿 (SART Protocol)：</b>这是一种旨在弥补传统整骨推拿疗法局限性，基于传统整骨疗法及推拿手法原理，确保脊椎节段间物理空间的生物力学保守矫正技术。通过此方法，可对精准错位的骨盆及骶骨进行重新对位，从根本上改善神经受到物理性压迫的结构性恶性循环。</li><li><b>推拿手法治疗：</b>通过放松髋关节周围缩短的肌筋膜链并恢复关节活动度，提供一种在手术前阶段可安全考虑的生物力学保守治疗替代方案。</li><li><b>针刀（粘连松解术）：</b>该技术通过对因慢性刺激而发生解剖学粘连及纤维化（硬化）的梨状肌退变区域进行微创剥离，直接解除深部神经压迫。一项系统分析针刀疗法对梨状肌综合征疗效的研究表明，针对慢性粘连及纤维化梨状肌组织进行的侵入性干预，在临床上被用于缓解坐骨神经压迫<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>。本院实施的针刀疗法同样采用基于此相同生物力学原理的方法，通过精细剥离硬化变性的梨状肌区域，直接解除神经压迫。此外，一项比较超声引导下水分离联合针刀松解术与单纯水分离术治疗深臀综合征短期疗效的回顾性临床研究表明，针对臀部深层神经压迫性疼痛，采用针刀联合治疗的干预方式正在临床上得到探讨<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>。本院所提供的针刀治疗与这一学术趋势相契合，通过精准松解梨状肌周围组织的粘连，从结构层面着手解决坐骨神经压迫这一根本问题。</li><li><b>高浓度蜂毒针药：</b>可迅速抑制坐骨神经周围诱发的无菌性炎症反应，并阻断疼痛传导物质，从而防止神经损伤的进一步加重。</li></ul><p>Bodyall韩医院所提供的生物力学空间减压推拿 (SART Protocol)，基于上述临床证据，可作为梨状肌综合征安全有效的非手术保守治疗选择方案之一进行考量。</p><div class='doctor-card'><h3>📍 医院信息</h3><p><b>诊疗时间：</b>工作日夜间诊疗至20:30 | 周末及节假日至16:00</p><p><b>位置：</b>距水原市厅站9号出口步行3分钟（连接光教、灵通、东滩等都市圈交通网络）</p><a href='../index_cn.html#location' class='treatment-link'>查看路线及详细时间 ➜</a></div></section><div class='doctor-card'><p><strong>💡 Bodyall 临床笔记：</strong> 在Bodyall韩医院积累的针刀治疗临床经验中所观察到的通过精细剥离硬化及纤维化的梨状肌区域以直接解除神经受压状态的趋势，与引用的学术研究<a href='#ref-1' class='ref-link'><sup>[1]</sup></a><a href='#ref-2' class='ref-link'><sup>[2]</sup></a>中探讨的针刀干预及粘连松解机制在解剖学及学术上是一致的。</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>参考文献</h4><ol><li>Tuo, et al. (2026), 'Ultrasound-Guided Hydrodissection Combined with Acupotomy Release versus Hydrodissection Alone for Deep Gluteal Syndrome: A Retrospective Study on Short-Term Efficacy', Journal of Pain Research. <a href='https://doi.org/10.2147/jpr.s564639' target='_blank'>DOI: 10.2147/jpr.s564639</a></li><li>Park, et al. (2021), 'Systematic Review and Meta-analysis on Acupotomy for Piriformis Muscle Syndrome', Journal of Korean Medicine Rehabilitation. <a href='https://doi.org/10.18325/jkmr.2021.31.2.25' target='_blank'>DOI: 10.18325/jkmr.2021.31.2.25</a></li></ol></div>
+    <div class='references-section'><h4>参考文献</h4><ol><li id='ref-1'>Tuo, et al. (2026), 'Ultrasound-Guided Hydrodissection Combined with Acupotomy Release versus Hydrodissection Alone for Deep Gluteal Syndrome: A Retrospective Study on Short-Term Efficacy', Journal of Pain Research. <a href='https://doi.org/10.2147/jpr.s564639' target='_blank'>DOI: 10.2147/jpr.s564639</a></li><li id='ref-2'>Park, et al. (2021), 'Systematic Review and Meta-analysis on Acupotomy for Piriformis Muscle Syndrome', Journal of Korean Medicine Rehabilitation. <a href='https://doi.org/10.18325/jkmr.2021.31.2.25' target='_blank'>DOI: 10.18325/jkmr.2021.31.2.25</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365天全年门诊与咨询</h2>
