@@ -14,71 +14,108 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "Recommended Suwon Traffic Accident Clinic: From Injured Tissue Recovery to Precise Structural Alignment",
-    "medicalAudience": {
-      "@type": "MedicalAudience",
-      "audienceType": "Patient"
-    },
-    "about": {
-      "@type": "MedicalCondition",
-      "name": "Traffic Accident Whiplash Sequelae"
-    },
-    "mainContentOfPage": {
-      "@type": "WebPageElement",
-      "cssSelector": "article"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Bodyall Korean Medicine Clinic",
-    "telephone": "031-8067-5825",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Ingye-dong",
-      "addressLocality": "Suwon-si",
-      "addressRegion": "Gyeonggi-do",
-      "addressCountry": "KR"
-    },
-    "employee": {
-      "@type": "Person",
-      "name": "Donghae Lee",
-      "jobTitle": "Chief Director"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "Suwon"},
-      {"@type": "City", "name": "Gwanggyo"},
-      {"@type": "City", "name": "Dongtan"},
-      {"@type": "City", "name": "Yeongtong"}
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalProcedure",
-    "name": "Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)",
-    "description": "A conservative correction technique based on the principles of traditional osteopathic medicine and Chuna manual therapy that secures physical space between spinal segments, restoring the interval compressed by impact to alleviate nerve irritation.",
-    "procedureType": "TherapeuticProcedure"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Why does the pain gradually intensify several days after a traffic accident rather than immediately following the collision?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The whiplash injury sustained at the time of the accident induces subtle alignment changes in the spinal segments. As the initial bodily tension resolves, irritation of the damaged fascia and nerves surrounding the spine becomes fully manifest, resulting in the onset of sequelae pain."
-        }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/traffic-accident_en.html#webpage",
+      "name": "Recommended Suwon Traffic Accident Clinic: From Injured Tissue Recovery to Precise Structural Alignment",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Traffic Accident Whiplash Sequelae"
       }
-    ]
-  }
-]
-    </script>
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "Bodyall Korean Medicine Clinic",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1114-7 Ingye-dong, 3rd Floor",
+        "addressLocality": "Paldal-gu, Suwon-si",
+        "addressRegion": "Gyeonggi-do",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "Donghae Lee",
+        "jobTitle": "Chief Director"
+      },
+      "knowsAbout": [
+        "Chuna Manual Therapy", "Biomechanical Spatial Spinal Decompression Chuna (SART Protocol)",
+        "Spinal Structure Correction", "Acupotomy Therapy", "High-Concentration Bee Venom Pharmacopuncture",
+        "Custom Herbal Medicine", "Herbal Weight Loss", "Spinal Stenosis", "Lumbar Disc Herniation",
+        "Cervical Disc Herniation", "Postural Correction", "Frozen Shoulder"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "Suwon-si", "sameAs": "https://en.wikipedia.org/wiki/Suwon"},
+        {"@type": "AdministrativeArea", "name": "Ingye-dong", "sameAs": "https://en.wikipedia.org/wiki/Ingye-dong"},
+        {"@type": "AdministrativeArea", "name": "Gwanggyo", "sameAs": "https://en.wikipedia.org/wiki/Gwanggyo"},
+        {"@type": "City", "name": "Dongtan", "sameAs": "https://en.wikipedia.org/wiki/Dongtan"},
+        {"@type": "AdministrativeArea", "name": "Yeongtong-gu", "sameAs": "https://en.wikipedia.org/wiki/Yeongtong-gu"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART_en.html",
+      "name": "Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)",
+      "description": "A conservative Chuna manual therapy protocol designed to biomechanically decompress intervertebral and joint spaces, relieving nerve compression and restoring structural balance.",
+      "procedureType": "TherapeuticProcedure"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why does the pain gradually intensify several days after a traffic accident rather than immediately following the collision?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The whiplash injury sustained at the time of the accident induces subtle alignment changes in the spinal segments. As the initial bodily tension resolves, irritation of the damaged fascia and nerves surrounding the spine becomes fully manifest, resulting in the onset of sequelae pain."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
@@ -212,10 +249,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <article><h1>Recommended Suwon Traffic Accident Clinic: From Injured Tissue Recovery to Precise Structural Alignment</h1><img src='traffic_accident_hero.png' alt='Depiction of post-traffic accident sequelae caused by collision impact' class='media-img'><section><div class='highlight-box'><strong>'Minimizing sequelae requires identifying the structural cause, not just alleviating symptoms'</strong><p>Persistent bodily pain following an accident, despite normal findings on precision imaging, may originate from subtle changes in spinal alignment and soft tissue adhesion. Bodyall Korean Medicine Clinic proposes a conservative solution that goes beyond superficial muscle relaxation to correct segmental structures displaced by impact. A systematic recovery program can be conducted without out-of-pocket costs through auto insurance coverage.</p><div class='table-wrapper'><table class='custom-table'><thead><tr><th colspan='2'>Three Biomechanical Characteristics of Bodyall Korean Medicine Clinic's Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)</th></tr></thead><tbody><tr><td>Securing Physical Space</td><td>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) is a conservative correction technique based on the principles of traditional osteopathic medicine and Chuna manual therapy that secures physical space between spinal segments, restoring the interval compressed by impact to alleviate nerve irritation.</td></tr><tr><td>Resolving Deep Adhesions</td><td>Utilizing microscopic acupotomy techniques, this method precisely separates and decompresses tough soft tissue and fascial adhesions that have become tightly bound due to impact trauma.</td></tr><tr><td>Whole-Body Balance Recalibration</td><td>By considering the kinetic chain connecting the horizontal pelvic structure to the cervical spine, this approach prevents mechanical overload phenomena in which the impact of external trauma becomes concentrated on a specific segment.</td></tr></tbody></table></div></div></section><section><div class='highlight-box blue'><strong>💡 Q. I felt fine right after the accident, but why does the pain gradually worsen over time?</strong><img src='Reason of Pain_accident.png' alt='Comparison of impact absorption differences based on structural alignment status during a traffic accident' class='media-img'><p><strong>'If structural balance was already compromised beforehand, the repercussions of external impact become more profound'</strong></p><p>Immediately following an accident, pain is often not perceived instantly due to sudden bodily tension and adrenaline release triggered by the collision. However, as this tension subsides over time, the subtly altered spinal alignment resulting from whiplash injury begins to continuously irritate surrounding nerves and soft tissue, leading to the full onset of pain.</p><p>To address the structural cause of these post-traffic accident sequelae, Bodyall Korean Medicine Clinic applies the Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)—a biomechanical conservative correction technique based on the principles of traditional osteopathic medicine and Chuna manual therapy that secures physical space between spinal segments—to stably restore compromised bodily balance. The auto insurance process allows patients to focus on systematic alignment care without complicated procedures.</p></div></section><h2>⚠️ Why Obtaining a Diagnosis Immediately After an Accident is Crucial</h2><section><div class='highlight-box'><ul><li><strong>Establishing Causality:</strong> It serves as objective medical evidence proving the correlation between the accident occurrence and the onset of pain.</li><li><strong>Securing Sufficient Treatment Duration:</strong> Since initial diagnostic findings serve as the basis for determining future payment guarantee scope and duration, it is advisable to undergo a thorough examination through medical staff with clinical experience.</li><li><strong>Documenting Latent Sequelae:</strong> It is safer to precisely record, at an early stage, subtle mechanical changes in the pelvic and spinal structures that are difficult to identify with the naked eye.</li></ul></div></section><h2>1. Bodyall Korean Medicine Clinic's Structural Phased Recovery System</h2><p>Considering the acutely sensitized bodily state resulting from accident impact, precision treatment is administered with intensity customized to each phase.</p><img src='manip5.png' alt='Gentle Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) care to prevent post-traffic accident sequelae at Bodyall Korean Medicine Clinic' class='media-img'><ul><li><strong>Microstructural Alignment:</strong> Gently restores segments that have become compressed or subtly misaligned between spinal segments due to whiplash impact.</li><li><strong>Fascial Release Care:</strong> Loosens excessively tensed and hardened muscles and deep fascia to improve local circulation and promote bodily recovery.</li><li><strong>Precision Ultrasound Diagnosis:</strong> Through organic precision diagnosis by Korean medicine doctors, muscle tears or micro-inflammation sites that are difficult to confirm with the naked eye or physical examination alone are clearly targeted.</li></ul><h2>2. Auto Insurance 1:1 Customized Integrated Program</h2><div class='table-wrapper'><table class='custom-table'><thead><tr><th>Treatment Item</th><th>Detailed Role and Recovery Effect</th></tr></thead><tbody><tr><td><strong>Blood Stasis Herbal Medicine</strong></td><td>Assists in expelling blood stasis resulting from micro-damage within the body and helps alleviate psychological instability that may accompany post-accident recovery.</td></tr><tr><td><strong>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)</strong></td><td>Restores whole-body balance disrupted by impact and promotes the release of tension in the cervical and lumbar spine.</td></tr><tr><td><strong>High-Concentration Bee Venom Acupuncture</strong></td><td>A conservative treatment that alleviates the inflammatory response deep within the injured site and induces cellular regeneration.</td></tr><tr><td><strong>Acupotomy Therapy</strong></td><td>Meticulously resolves the tough soft tissue adhesion structures that have bound together due to accident aftermath, causing chronic pain. A clinical case study combining ultrasound-guided perineural injection with acupotomy reported that while local anesthetic injection alone provided only temporary and partial symptom relief, subsequent acupotomy treatment resulted in a visual analog pain scale (VAS) reduction from 10 to 1, along with improved ultrasound signal in the perineural soft tissue<sup>[1]</sup>. Furthermore, in the management of cervical nerve irritation and soft tissue adhesion, a systematic literature review confirmed that the group receiving combined acupotomy and nerve block therapy demonstrated significantly superior results in overall effective rate compared to the group receiving nerve block therapy alone<sup>[2]</sup>.</td></tr></tbody></table></div><h2>3. Uninterrupted Sequelae Management with 365-Day Evening Consultations</h2><img src='directors_group.jpg' alt='Bodyall medical staff collaborative care system for preventing traffic accident sequelae in Suwon' class='media-img'><section><div class='highlight-box'><p>Bodyall Korean Medicine Clinic is located in Ingye-dong, Suwon, and serves as a hub treatment institution visited by patients from the greater Gyeonggi Southern region, including Gwanggyo, Dongtan, and Yeongtong, for biomechanical correction of intractable spinal disorders and management of traffic accident sequelae. The clinic provides evening consultations until 8:30 PM on weekdays as well as weekend and holiday consultations, offering systematic medical services to ensure patients do not miss the critical early intensive treatment period. A dedicated parking lot on the first floor of the building is available, and rapid administrative procedures are supported using only the auto insurance claim number.</p></div></section><h2>💬 Frequently Asked Questions (FAQ) Regarding Traffic Accident Sequelae</h2><section><div class='highlight-box blue'><strong>💡 Q. Why does the pain gradually intensify several days after a traffic accident rather than immediately following the collision?</strong><p>The whiplash injury sustained at the time of the accident induces subtle alignment changes in the spinal segments. As the initial bodily tension resolves, irritation of the damaged fascia and nerves surrounding the spine becomes fully manifest, resulting in the onset of sequelae pain.</p></div></section><h2>Consultation Information</h2><div class='doctor-card'><p>For consultations regarding traffic accident recovery and structural correction, please contact the Chief Director, Donghae Lee, at Bodyall Korean Medicine Clinic (031-8067-5825).</p></div></article>
+        <article><h1>Recommended Suwon Traffic Accident Clinic: From Injured Tissue Recovery to Precise Structural Alignment</h1><img src='traffic_accident_hero.png' alt='Depiction of post-traffic accident sequelae caused by collision impact' class='media-img'><section><div class='highlight-box'><strong>'Minimizing sequelae requires identifying the structural cause, not just alleviating symptoms'</strong><p>Persistent bodily pain following an accident, despite normal findings on precision imaging, may originate from subtle changes in spinal alignment and soft tissue adhesion. Bodyall Korean Medicine Clinic proposes a conservative solution that goes beyond superficial muscle relaxation to correct segmental structures displaced by impact. A systematic recovery program can be conducted without out-of-pocket costs through auto insurance coverage.</p><div class='table-wrapper'><table class='custom-table'><thead><tr><th colspan='2'>Three Biomechanical Characteristics of Bodyall Korean Medicine Clinic's Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)</th></tr></thead><tbody><tr><td>Securing Physical Space</td><td>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) is a conservative correction technique based on the principles of traditional osteopathic medicine and Chuna manual therapy that secures physical space between spinal segments, restoring the interval compressed by impact to alleviate nerve irritation.</td></tr><tr><td>Resolving Deep Adhesions</td><td>Utilizing microscopic acupotomy techniques, this method precisely separates and decompresses tough soft tissue and fascial adhesions that have become tightly bound due to impact trauma.</td></tr><tr><td>Whole-Body Balance Recalibration</td><td>By considering the kinetic chain connecting the horizontal pelvic structure to the cervical spine, this approach prevents mechanical overload phenomena in which the impact of external trauma becomes concentrated on a specific segment.</td></tr></tbody></table></div></div></section><section><div class='highlight-box blue'><strong>💡 Q. I felt fine right after the accident, but why does the pain gradually worsen over time?</strong><img src='Reason of Pain_accident.png' alt='Comparison of impact absorption differences based on structural alignment status during a traffic accident' class='media-img'><p><strong>'If structural balance was already compromised beforehand, the repercussions of external impact become more profound'</strong></p><p>Immediately following an accident, pain is often not perceived instantly due to sudden bodily tension and adrenaline release triggered by the collision. However, as this tension subsides over time, the subtly altered spinal alignment resulting from whiplash injury begins to continuously irritate surrounding nerves and soft tissue, leading to the full onset of pain.</p><p>To address the structural cause of these post-traffic accident sequelae, Bodyall Korean Medicine Clinic applies the Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)—a biomechanical conservative correction technique based on the principles of traditional osteopathic medicine and Chuna manual therapy that secures physical space between spinal segments—to stably restore compromised bodily balance. The auto insurance process allows patients to focus on systematic alignment care without complicated procedures.</p></div></section><h2>⚠️ Why Obtaining a Diagnosis Immediately After an Accident is Crucial</h2><section><div class='highlight-box'><ul><li><strong>Establishing Causality:</strong> It serves as objective medical evidence proving the correlation between the accident occurrence and the onset of pain.</li><li><strong>Securing Sufficient Treatment Duration:</strong> Since initial diagnostic findings serve as the basis for determining future payment guarantee scope and duration, it is advisable to undergo a thorough examination through medical staff with clinical experience.</li><li><strong>Documenting Latent Sequelae:</strong> It is safer to precisely record, at an early stage, subtle mechanical changes in the pelvic and spinal structures that are difficult to identify with the naked eye.</li></ul></div></section><h2>1. Bodyall Korean Medicine Clinic's Structural Phased Recovery System</h2><p>Considering the acutely sensitized bodily state resulting from accident impact, precision treatment is administered with intensity customized to each phase.</p><img src='manip5.png' alt='Gentle Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) care to prevent post-traffic accident sequelae at Bodyall Korean Medicine Clinic' class='media-img'><ul><li><strong>Microstructural Alignment:</strong> Gently restores segments that have become compressed or subtly misaligned between spinal segments due to whiplash impact.</li><li><strong>Fascial Release Care:</strong> Loosens excessively tensed and hardened muscles and deep fascia to improve local circulation and promote bodily recovery.</li><li><strong>Precision Ultrasound Diagnosis:</strong> Through organic precision diagnosis by Korean medicine doctors, muscle tears or micro-inflammation sites that are difficult to confirm with the naked eye or physical examination alone are clearly targeted.</li></ul><h2>2. Auto Insurance 1:1 Customized Integrated Program</h2><div class='table-wrapper'><table class='custom-table'><thead><tr><th>Treatment Item</th><th>Detailed Role and Recovery Effect</th></tr></thead><tbody><tr><td><strong>Blood Stasis Herbal Medicine</strong></td><td>Assists in expelling blood stasis resulting from micro-damage within the body and helps alleviate psychological instability that may accompany post-accident recovery.</td></tr><tr><td><strong>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)</strong></td><td>Restores whole-body balance disrupted by impact and promotes the release of tension in the cervical and lumbar spine.</td></tr><tr><td><strong>High-Concentration Bee Venom Acupuncture</strong></td><td>A conservative treatment that alleviates the inflammatory response deep within the injured site and induces cellular regeneration.</td></tr><tr><td><strong>Acupotomy Therapy</strong></td><td>Meticulously resolves the tough soft tissue adhesion structures that have bound together due to accident aftermath, causing chronic pain. A clinical case study combining ultrasound-guided perineural injection with acupotomy reported that while local anesthetic injection alone provided only temporary and partial symptom relief, subsequent acupotomy treatment resulted in a visual analog pain scale (VAS) reduction from 10 to 1, along with improved ultrasound signal in the perineural soft tissue<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>. Furthermore, in the management of cervical nerve irritation and soft tissue adhesion, a systematic literature review confirmed that the group receiving combined acupotomy and nerve block therapy demonstrated significantly superior results in overall effective rate compared to the group receiving nerve block therapy alone<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>.</td></tr></tbody></table></div><h2>3. Uninterrupted Sequelae Management with 365-Day Evening Consultations</h2><img src='directors_group.jpg' alt='Bodyall medical staff collaborative care system for preventing traffic accident sequelae in Suwon' class='media-img'><section><div class='highlight-box'><p>Bodyall Korean Medicine Clinic is located in Ingye-dong, Suwon, and serves as a hub treatment institution visited by patients from the greater Gyeonggi Southern region, including Gwanggyo, Dongtan, and Yeongtong, for biomechanical correction of intractable spinal disorders and management of traffic accident sequelae. The clinic provides evening consultations until 8:30 PM on weekdays as well as weekend and holiday consultations, offering systematic medical services to ensure patients do not miss the critical early intensive treatment period. A dedicated parking lot on the first floor of the building is available, and rapid administrative procedures are supported using only the auto insurance claim number.</p></div></section><h2>💬 Frequently Asked Questions (FAQ) Regarding Traffic Accident Sequelae</h2><section><div class='highlight-box blue'><strong>💡 Q. Why does the pain gradually intensify several days after a traffic accident rather than immediately following the collision?</strong><p>The whiplash injury sustained at the time of the accident induces subtle alignment changes in the spinal segments. As the initial bodily tension resolves, irritation of the damaged fascia and nerves surrounding the spine becomes fully manifest, resulting in the onset of sequelae pain.</p></div></section><h2>Consultation Information</h2><div class='doctor-card'><p>For consultations regarding traffic accident recovery and structural correction, please contact the Chief Director, Donghae Lee, at Bodyall Korean Medicine Clinic (031-8067-5825).</p></div><div class='doctor-card'><p><strong>💡 Bodyall Clinical Note:</strong> The trend of tissue dissection and pain reduction observed in the resolution of tough soft tissue adhesion structures through Bodyall Korean Medicine Clinic's accumulated acupotomy clinical experience aligns anatomically and scientifically with the significant VAS score reduction and improved ultrasound signal in perineural soft tissue demonstrated in the cited clinical case study<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>, and further corresponds to the mechanical principles of superior overall effective rates confirmed when combining acupotomy with nerve block therapy for cervical radiculopathy as indicated in the systematic literature review<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>.</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>References</h4><ol><li>Rao, et al., Journal of Back and Musculoskeletal Rehabilitation, 2022, 'The combined treatment of entrapped Infrapatellar Branch of the Saphenous Nerve after ACL reconstruction: Ultrasound-guided perineural injection and acupotomy'. <a href='https://doi.org/10.3233/bmr-210110' target='_blank'>DOI: 10.3233/bmr-210110</a></li><li>Choi, et al., Medicine, 2025, 'Effectiveness of acupotomy combined with nerve block therapy for cervical radiculopathy: A systematic review and meta-analysis'. <a href='https://doi.org/10.1097/md.0000000000042771' target='_blank'>DOI: 10.1097/md.0000000000042771</a></li></ol></div>
+    <div class='references-section'><h4>References</h4><ol><li id='ref-1'>Rao, et al., Journal of Back and Musculoskeletal Rehabilitation, 2022, 'The combined treatment of entrapped Infrapatellar Branch of the Saphenous Nerve after ACL reconstruction: Ultrasound-guided perineural injection and acupotomy'. <a href='https://doi.org/10.3233/bmr-210110' target='_blank'>DOI: 10.3233/bmr-210110</a></li><li id='ref-2'>Choi, et al., Medicine, 2025, 'Effectiveness of acupotomy combined with nerve block therapy for cervical radiculopathy: A systematic review and meta-analysis'. <a href='https://doi.org/10.1097/md.0000000000042771' target='_blank'>DOI: 10.1097/md.0000000000042771</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365 Days Care & Consultation</h2>
