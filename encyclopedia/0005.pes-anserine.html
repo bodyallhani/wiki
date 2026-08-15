@@ -14,67 +14,89 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "'계단 오를 때 무릎 안쪽이 찌릿하고 아파요' 거위발건염 자가진단 및 보존적 관리",
-    "provider": {
-      "@type": "MedicalOrganization",
-      "name": "바디올한의원"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/encyclopedia/0005.pes-anserine.html#webpage",
+      "name": "'계단 오를 때 무릎 안쪽이 찌릿하고 아파요' 거위발건염 자가진단 및 보존적 관리",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "거위발건염 (Pes Anserine Bursitis/Tendinitis)"
+      }
     },
-    "about": {
-      "@type": "MedicalCondition",
-      "name": "거위발건염 (Pes Anserine Bursitis/Tendinitis)"
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "바디올한의원",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "인계동 1114-7, 3층",
+        "addressLocality": "수원시 팔달구",
+        "addressRegion": "경기도",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "이동해",
+        "jobTitle": "대표원장"
+      },
+      "knowsAbout": [
+        "추나요법", "생체역학적 공간 감압 추나 (SART Protocol)", "공간척추교정", "도침 치료", "고농도 봉약침", 
+        "체질한약", "한방 다이어트", "척추관 협착증", "허리디스크", "목디스크", "체형교정", "오십견"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "수원시", "sameAs": "https://ko.wikipedia.org/wiki/수원시"},
+        {"@type": "AdministrativeArea", "name": "인계동", "sameAs": "https://ko.wikipedia.org/wiki/인계동"},
+        {"@type": "AdministrativeArea", "name": "광교", "sameAs": "https://ko.wikipedia.org/wiki/광교동"},
+        {"@type": "City", "name": "동탄", "sameAs": "https://ko.wikipedia.org/wiki/동탄"},
+        {"@type": "AdministrativeArea", "name": "영통구", "sameAs": "https://ko.wikipedia.org/wiki/영통구"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART.html",
+      "name": "생체역학적 공간 감압 추나 (SART Protocol)",
+      "description": "척추 및 관절 간격을 생체역학적으로 공간 감압하여 신경 압박을 해소하고 구조적 밸런스를 복원하는 보존적 추나요법 프로토콜.",
+      "procedureType": "TherapeuticProcedure"
     }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "바디올한의원",
-    "telephone": "031-8067-5825",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "인계동 1114-7, 3층",
-      "addressLocality": "수원시 팔달구",
-      "addressRegion": "경기도",
-      "addressCountry": "KR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 37.2651444,
-      "longitude": 127.0336222
-    },
-    "employee": {
-      "@type": "Person",
-      "name": "이동해",
-      "jobTitle": "대표원장"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "수원"},
-      {"@type": "City", "name": "인계동"},
-      {"@type": "City", "name": "광교"},
-      {"@type": "City", "name": "동탄"},
-      {"@type": "City", "name": "영통"}
-    ],
-    "openingHoursSpecification": [
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalProcedure",
-    "name": "생체역학적 공간 감압 추나 (SART Protocol)",
-    "description": "전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법으로, 골반과 고관절의 회전 변위를 정밀하게 조정하고 무릎 안쪽으로 집중되는 비정상적인 압력을 구조적으로 완화한다.",
-    "procedureType": "TherapeuticProcedure"
-  }
-]
-    </script>
+  ]
+}
+</script>
 
     <style>
         :root { 
@@ -226,10 +248,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <div class='breadcrumb'>무릎 자가진단 가이드</div><h1>'계단 오를 때 무릎 안쪽이 찌릿하고 아파요' 거위발건염 자가진단 및 보존적 관리</h1><img src='./image/0005.pes-anserine-main.png' alt='계단을 오를 때 무릎 통증을 느끼는 환자' class='hero-img' loading='eager'><article><div class='summary-box'><h2>💡 수원 인계동, 광교, 영통, 동탄 등 각지에서 내원하는 바디올한의원의 핵심 요약</h2><p>거위발건염은 무릎 안쪽 아래 부위에서 세 개의 근육 힘줄이 결합하는 지점에 역학적 마찰로 인해 염증이 발생하는 질환입니다. 대개 무릎 자체의 결함보다는 골반의 비틀림이나 고관절 회전 변위, X자 다리 형태의 하지 정렬 불균형이 주요인으로 작용합니다. 본원에서는 전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법인 생체역학적 공간 감압 추나(SART Protocol)를 통해 골반 및 하지 구조를 바로잡아 하중을 분산시키고, 유착된 조직을 도침으로 미세 박리하여 수술 전 단계에서 안전하게 선택할 수 있는 보존적 대안을 제안합니다.</p></div><section><h2>1. 관절염일까요? 거위발건염일까요?</h2><p>무릎 관절 전반의 통증이 아니라 특정 지점에 국소적인 압통이 집중된다면 거위발건염의 가능성을 검토해야 합니다. 거위발 형상을 띠는 힘줄 부착부에 지속적인 부하가 누적된 상태를 의미합니다.</p><ul class='check-list'><li>무릎 관절선 아래로 손가락 두 마디 가량 내려온 안쪽 부위를 압박할 때 날카로운 통증이 유발된다.</li><li>계단을 오르내리거나 평지에서 장시간 보행 시 무릎 내측 하단이 찌릿한 느낌을 받는다.</li><li>활동을 마친 후나 야간에 휴식을 취하는 과정에서도 무릎 안쪽으로 욱신거리는 증상이 지속된다.</li><li>양반다리 자세를 취하거나 무릎을 깊게 굴곡시킬 때 특정 결합 부위가 당기면서 통증이 발생한다.</li></ul></section><section><h2>2. 메커니즘 분석: 왜 하필 그곳에 염증이 생길까?</h2><p>거위발건은 봉공근, 박근, 반건양근이라는 세 가지 근육이 무릎 내측 하단에 모여 부착되는 구조물입니다. 이 결합 부위에 과도한 마찰과 물리적 응력이 반복적으로 가해지면 내부 점액낭과 힘줄 조직에 염증성 반응이 유발됩니다. Waldman의 저술은 거위발건 점액낭염의 임상적 특성과 해부학적 기전을 상세히 기술하며, 힘줄 부착 부위에 발생하는 국소적인 염증 반응이 통증의 주된 원인임을 명시하고 있다<sup>[2]</sup>.</p><img src='./image/0005.pes-anserine-mechanism.png' alt='생체역학적 공간 감압 추나 (SART Protocol) 관점의 거위발건염 해부도 및 염증 발생 기전' class='visual-img'><p>• <strong>발병 원인:</strong> 평소보다 갑작스럽게 증가한 운동량이나 부적절한 보행 패턴이 유발 요인이 되며, 구조적으로 무릎 내측에 하중이 편중되도록 만드는 골반 및 고관절의 부정렬이 근본적인 배경으로 작용하는 경우가 많습니다. Alvarez-Nemegyei 등의 연구는 거위발건염 증후군의 발병에 관여하는 위험 요인들을 규명하여, 단순히 무릎 관절 자체의 손상보다는 구조적인 정렬 이상이 근본적인 배경이 될 수 있음을 시사한다<sup>[1]</sup>.</p></section><section><h2>3. 바디올의 통합 치료 솔루션 (Total Care)</h2><p>통증이 나타나는 지점만을 일시적으로 제어하는 방식에서 벗어나, 무릎 관절에 가해지는 생체역학적 과부하를 해소하는 구조적 환경을 조성하는 것이 중요합니다. 이는 본원에서 골반의 비틀림이나 고관절 회전 변위, X자 다리 형태의 하지 정렬 불균형을 거위발건염의 핵심 유발 요인으로 판단하는 임상적 접근과 학술적 궤를 함께한다.</p><div class='solution-card'><strong>바디올 특화 치료: 구조적 해소</strong><p>• <b><a href='../SART.html'>생체역학적 공간 감압 추나(SART Protocol)</a> / <a href='../chuna-therapy.html'>추나요법</a>:</b> 전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법인 생체역학적 공간 감압 추나(SART Protocol)를 활용하여 골반과 고관절의 회전 변위를 정밀하게 조정하고 무릎 안쪽으로 집중되는 비정상적인 압력을 구조적으로 완화합니다.<br>• <b><a href='../acupotomy.html'>도침치료(유착박리술)</a>:</b> 만성적인 염증 상태로 인해 힘줄과 골조직 계면이 딱딱하게 유착된 경우, 도침을 통해 미세 박리를 시행함으로써 조직의 유연성을 확보하고 퇴행성 관절 질환의 근본적인 구조적 원인 개선을 도모합니다. 이러한 근거를 바탕으로, 침 치료와 봉약침을 통한 국소 소염 반응 유도와 더불어 도침을 이용한 유착 조직의 미세 박리가 임상적으로 의미 있는 접근법이 될 수 있다.</p></div><div class='solution-card'><strong>바디올 종합 기초 치료: 염증 제어 및 회복</strong><p>• <b>종합 보존 치료:</b> 침 치료와 고농도 봉약침을 통해 국소적인 소염 반응을 유도하고, 부항 및 전자뜸 치료를 병행하여 무릎 주변부의 혈류 순환을 촉진합니다.<br>• <b>현대 보존 물리치료:</b> ICT와 TENS 기기를 적용하여 신경적인 통증 전달 경로를 조절하고 긴장도가 높아진 하체 근육을 부드럽게 이완시킵니다.</p></div><img src='./image/normal-bodyall-treatment.png' alt='바디올의 체계적인 종합 한방 치료' class='hero-img'></section><section><h2>4. 재발 방지를 위한 생활 수칙</h2><ul><li><b>냉찜질 적용:</b> 관절 활동 이후 무릎 내측 부위에 열감이 인지된다면 10~15분 내외로 아이싱을 시행하는 것이 도움이 됩니다.</li><li><b>허벅지 내전근 스트레칭:</b> 허벅지 안쪽 근육의 단축을 해소하고 유연성을 보완하면 거위발건에 지속적으로 가해지는 물리적 장력을 줄일 수 있습니다.</li><li><b>충분한 휴식:</b> 압통과 통증이 강하게 발현되는 시기에는 무리한 경사지 보행이나 등산을 제한하고 관절을 안정시키는 것이 우선입니다.</li></ul></section><div class='summary-box'><h3>📍 진료 안내</h3><p><b>진료 시간:</b> 평일 20:30까지 야간진료 | 주말·공휴일 16:00까지</p><p><b>위치:</b> 수원시청역 9번 출구 도보 3분 (광교, 영통, 동탄 등 주변 지역에서도 편리하게 내원하실 수 있습니다)</p><a href='../index.html#location' class='treatment-link' style='background: #03c75a;'>오시는 길 & 진료시간 상세 보기 ➜</a></div></article>
+        <div class='breadcrumb'>무릎 자가진단 가이드</div><h1>'계단 오를 때 무릎 안쪽이 찌릿하고 아파요' 거위발건염 자가진단 및 보존적 관리</h1><img src='./image/0005.pes-anserine-main.png' alt='계단을 오를 때 무릎 통증을 느끼는 환자' class='hero-img' loading='eager'><article><div class='summary-box'><h2>💡 수원 인계동, 광교, 영통, 동탄 등 각지에서 내원하는 바디올한의원의 핵심 요약</h2><p>거위발건염은 무릎 안쪽 아래 부위에서 세 개의 근육 힘줄이 결합하는 지점에 역학적 마찰로 인해 염증이 발생하는 질환입니다. 대개 무릎 자체의 결함보다는 골반의 비틀림이나 고관절 회전 변위, X자 다리 형태의 하지 정렬 불균형이 주요인으로 작용합니다. 본원에서는 전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법인 생체역학적 공간 감압 추나(SART Protocol)를 통해 골반 및 하지 구조를 바로잡아 하중을 분산시키고, 유착된 조직을 도침으로 미세 박리하여 수술 전 단계에서 안전하게 선택할 수 있는 보존적 대안을 제안합니다.</p></div><section><h2>1. 관절염일까요? 거위발건염일까요?</h2><p>무릎 관절 전반의 통증이 아니라 특정 지점에 국소적인 압통이 집중된다면 거위발건염의 가능성을 검토해야 합니다. 거위발 형상을 띠는 힘줄 부착부에 지속적인 부하가 누적된 상태를 의미합니다.</p><ul class='check-list'><li>무릎 관절선 아래로 손가락 두 마디 가량 내려온 안쪽 부위를 압박할 때 날카로운 통증이 유발된다.</li><li>계단을 오르내리거나 평지에서 장시간 보행 시 무릎 내측 하단이 찌릿한 느낌을 받는다.</li><li>활동을 마친 후나 야간에 휴식을 취하는 과정에서도 무릎 안쪽으로 욱신거리는 증상이 지속된다.</li><li>양반다리 자세를 취하거나 무릎을 깊게 굴곡시킬 때 특정 결합 부위가 당기면서 통증이 발생한다.</li></ul></section><section><h2>2. 메커니즘 분석: 왜 하필 그곳에 염증이 생길까?</h2><p>거위발건은 봉공근, 박근, 반건양근이라는 세 가지 근육이 무릎 내측 하단에 모여 부착되는 구조물입니다. 이 결합 부위에 과도한 마찰과 물리적 응력이 반복적으로 가해지면 내부 점액낭과 힘줄 조직에 염증성 반응이 유발됩니다. Waldman의 저술은 거위발건 점액낭염의 임상적 특성과 해부학적 기전을 상세히 기술하며, 힘줄 부착 부위에 발생하는 국소적인 염증 반응이 통증의 주된 원인임을 명시하고 있다<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>.</p><img src='./image/0005.pes-anserine-mechanism.png' alt='생체역학적 공간 감압 추나 (SART Protocol) 관점의 거위발건염 해부도 및 염증 발생 기전' class='visual-img'><p>• <strong>발병 원인:</strong> 평소보다 갑작스럽게 증가한 운동량이나 부적절한 보행 패턴이 유발 요인이 되며, 구조적으로 무릎 내측에 하중이 편중되도록 만드는 골반 및 고관절의 부정렬이 근본적인 배경으로 작용하는 경우가 많습니다. Alvarez-Nemegyei 등의 연구는 거위발건염 증후군의 발병에 관여하는 위험 요인들을 규명하여, 단순히 무릎 관절 자체의 손상보다는 구조적인 정렬 이상이 근본적인 배경이 될 수 있음을 시사한다<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>.</p></section><section><h2>3. 바디올의 통합 치료 솔루션 (Total Care)</h2><p>통증이 나타나는 지점만을 일시적으로 제어하는 방식에서 벗어나, 무릎 관절에 가해지는 생체역학적 과부하를 해소하는 구조적 환경을 조성하는 것이 중요합니다. 이는 본원에서 골반의 비틀림이나 고관절 회전 변위, X자 다리 형태의 하지 정렬 불균형을 거위발건염의 핵심 유발 요인으로 판단하는 임상적 접근과 학술적 궤를 함께한다.</p><div class='solution-card'><strong>바디올 특화 치료: 구조적 해소</strong><p>• <b><a href='../SART.html'>생체역학적 공간 감압 추나(SART Protocol)</a> / <a href='../chuna-therapy.html'>추나요법</a>:</b> 전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법인 생체역학적 공간 감압 추나(SART Protocol)를 활용하여 골반과 고관절의 회전 변위를 정밀하게 조정하고 무릎 안쪽으로 집중되는 비정상적인 압력을 구조적으로 완화합니다.<br>• <b><a href='../acupotomy.html'>도침치료(유착박리술)</a>:</b> 만성적인 염증 상태로 인해 힘줄과 골조직 계면이 딱딱하게 유착된 경우, 도침을 통해 미세 박리를 시행함으로써 조직의 유연성을 확보하고 퇴행성 관절 질환의 근본적인 구조적 원인 개선을 도모합니다. 이러한 근거를 바탕으로, 침 치료와 봉약침을 통한 국소 소염 반응 유도와 더불어 도침을 이용한 유착 조직의 미세 박리가 임상적으로 의미 있는 접근법이 될 수 있다.</p></div><div class='solution-card'><strong>바디올 종합 기초 치료: 염증 제어 및 회복</strong><p>• <b>종합 보존 치료:</b> 침 치료와 고농도 봉약침을 통해 국소적인 소염 반응을 유도하고, 부항 및 전자뜸 치료를 병행하여 무릎 주변부의 혈류 순환을 촉진합니다.<br>• <b>현대 보존 물리치료:</b> ICT와 TENS 기기를 적용하여 신경적인 통증 전달 경로를 조절하고 긴장도가 높아진 하체 근육을 부드럽게 이완시킵니다.</p></div><img src='./image/normal-bodyall-treatment.png' alt='바디올의 체계적인 종합 한방 치료' class='hero-img'></section><section><h2>4. 재발 방지를 위한 생활 수칙</h2><ul><li><b>냉찜질 적용:</b> 관절 활동 이후 무릎 내측 부위에 열감이 인지된다면 10~15분 내외로 아이싱을 시행하는 것이 도움이 됩니다.</li><li><b>허벅지 내전근 스트레칭:</b> 허벅지 안쪽 근육의 단축을 해소하고 유연성을 보완하면 거위발건에 지속적으로 가해지는 물리적 장력을 줄일 수 있습니다.</li><li><b>충분한 휴식:</b> 압통과 통증이 강하게 발현되는 시기에는 무리한 경사지 보행이나 등산을 제한하고 관절을 안정시키는 것이 우선입니다.</li></ul></section><div class='summary-box'><h3>📍 진료 안내</h3><p><b>진료 시간:</b> 평일 20:30까지 야간진료 | 주말·공휴일 16:00까지</p><p><b>위치:</b> 수원시청역 9번 출구 도보 3분 (광교, 영통, 동탄 등 주변 지역에서도 편리하게 내원하실 수 있습니다)</p><a href='../index.html#location' class='treatment-link' style='background: #03c75a;'>오시는 길 & 진료시간 상세 보기 ➜</a></div><div class='doctor-card'><p><strong>💡 바디올 임상 노트:</strong> 실제 임상 현장에서 다수 관찰되는 골반 및 고관절 부정렬 개선을 위한 생체역학적 공간 감압 추나(SART Protocol) 적용 시, 무릎 내측으로 편중되던 하중 분산 경향은 인용된 학술 연구<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>에서 밝힌 거위발건염 발병의 구조적 위험 요인 규명과 궤를 함께하며, 이는 국소 통증 부위를 넘어선 근본적인 정렬 교정의 임상적 타당성을 시사하는 경향을 나타냅니다.</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>참고문헌</h4><ol><li>Alvarez-Nemegyei, et al. (2007), 'Risk Factors for Pes Anserinus Tendinitis/Bursitis Syndrome', JCR: Journal of Clinical Rheumatology. <a href='https://doi.org/10.1097/01.rhu.0000262082.84624.37' target='_blank'>DOI: 10.1097/01.rhu.0000262082.84624.37</a></li><li>Waldman, et al. (2008), 'Pes Anserine Bursitis', Atlas of Uncommon Pain Syndromes. <a href='https://doi.org/10.1016/b978-1-4160-5284-5.50095-8' target='_blank'>DOI: 10.1016/b978-1-4160-5284-5.50095-8</a></li></ol></div>
+    <div class='references-section'><h4>참고문헌</h4><ol><li id='ref-1'>Alvarez-Nemegyei, et al. (2007), 'Risk Factors for Pes Anserinus Tendinitis/Bursitis Syndrome', JCR: Journal of Clinical Rheumatology. <a href='https://doi.org/10.1097/01.rhu.0000262082.84624.37' target='_blank'>DOI: 10.1097/01.rhu.0000262082.84624.37</a></li><li id='ref-2'>Waldman, et al. (2008), 'Pes Anserine Bursitis', Atlas of Uncommon Pain Syndromes. <a href='https://doi.org/10.1016/b978-1-4160-5284-5.50095-8' target='_blank'>DOI: 10.1016/b978-1-4160-5284-5.50095-8</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365일 진료 및 상담</h2>
