@@ -14,83 +14,118 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "수원 오십견·어깨통증 치료: 굽은 등을 펴야 어깨가 열립니다",
-    "provider": {
-      "@type": "MedicalOrganization",
-      "name": "바디올한의원"
-    },
-    "about": {
-      "@type": "MedicalCondition",
-      "name": "오십견 및 어깨통증"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "바디올한의원",
-    "telephone": "031-8067-5825",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "인계동",
-      "addressLocality": "수원시",
-      "addressRegion": "경기도",
-      "addressCountry": "KR"
-    },
-    "employee": {
-      "@type": "Person",
-      "name": "이동해",
-      "jobTitle": "대표원장"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "수원"},
-      {"@type": "City", "name": "광교"},
-      {"@type": "City", "name": "동탄"},
-      {"@type": "City", "name": "영통"}
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalProcedure",
-    "name": "생체역학적 공간 감압 추나 (SART Protocol)",
-    "description": "전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법이다.",
-    "procedureType": "TherapeuticProcedure"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "치료를 받아도 왜 어깨 통증이 자꾸 재발할까요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "등이 구부정해지면 견갑골이 앞으로 밀리면서 어깨 근육은 늘어난 채 굳어버린다. 구조적 정렬 상태가 무너지면 견관절 내부의 공간이 좁아져 움직일 때마다 충돌 마찰이 지속된다. 따라서 단순 염증 완화뿐만 아니라 굽은 등을 함께 교정하여 근육에 가해지는 장력을 낮추는 것이 핵심이다."
-        }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/shoulder-frozen.html#webpage",
+      "name": "수원 오십견·어깨통증 치료: 굽은 등을 펴야 어깨가 열립니다",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
       },
-      {
-        "@type": "Question",
-        "name": "굽은 등 교정이 어깨 통증 치료에 미치는 생체역학적 영향은 무엇인가요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "흉추의 후만이 심해지면 견갑골이 전방으로 전위되면서 회전근개 근육군의 장력이 임계치에 도달하게 된다. 바디올한의원의 생체역학적 공간 감압 추나(SART Protocol) 교정은 이러한 구조적 팽팽함을 해소하여 관절 마찰과 심부 염증을 줄이고 어깨의 정상 가동 범위를 회복하도록 돕는다."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "오십견 치료에서 도침 유착박리술은 어떤 역할을 하나요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "유착성 관절낭염으로 인해 굳어버린 관절막 분절에 미세 도침을 적용하여 만성적인 유착 부위를 정밀하게 박리한다. 63명의 동결견 환자를 대상으로 한 전향적 이중맹검 무작위대조연구에서, 초음파 유도하 관절강 확장술과 도침요법을 병행한 치료군은 관절강 확장술 단독 시행군에 비해 능동가동범위와 Constant-Murley Scale 점수에서 유의미하게 우수한 결과를 나타냈다. 특히 병행 치료군에서는 오구상완인대(CHL) 두께 감소와 회전근개 간극의 저에코 비후 비율이 대조군보다 낮게 측정되어 조직학적 유착 개선 효과가 초음파 영상으로 객관적으로 확인되었으며, 전체 유효율에서도 병행 치료군이 93.94%로 대조군의 76.67%보다 유의하게 높게 나타나 도침요법이 관절낭 유착 해소에 기여하는 보조적 역할을 수행함을 시사한다. 이는 침습적 수술 전 단계에서 안전하게 선택할 수 있는 생체역학적 보존 치료의 대안으로 즉각적인 가동성 확보에 기여한다."
-        }
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "오십견 및 회전근개 손상"
       }
-    ]
-  }
-]
-    </script>
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "바디올한의원",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "인계동 1114-7, 3층",
+        "addressLocality": "수원시 팔달구",
+        "addressRegion": "경기도",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "이동해",
+        "jobTitle": "대표원장"
+      },
+      "knowsAbout": [
+        "추나요법", "생체역학적 공간 감압 추나 (SART Protocol)", "공간척추교정", "도침 치료", "고농도 봉약침", 
+        "체질한약", "한방 다이어트", "척추관 협착증", "허리디스크", "목디스크", "체형교정", "오십견"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "수원시", "sameAs": "https://ko.wikipedia.org/wiki/수원시"},
+        {"@type": "AdministrativeArea", "name": "인계동", "sameAs": "https://ko.wikipedia.org/wiki/인계동"},
+        {"@type": "AdministrativeArea", "name": "광교", "sameAs": "https://ko.wikipedia.org/wiki/광교동"},
+        {"@type": "City", "name": "동탄", "sameAs": "https://ko.wikipedia.org/wiki/동탄"},
+        {"@type": "AdministrativeArea", "name": "영통구", "sameAs": "https://ko.wikipedia.org/wiki/영통구"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART.html",
+      "name": "생체역학적 공간 감압 추나 (SART Protocol)",
+      "description": "척추 및 관절 간격을 생체역학적으로 공간 감압하여 신경 압박을 해소하고 구조적 밸런스를 복원하는 보존적 추나요법 프로토콜.",
+      "procedureType": "TherapeuticProcedure"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "치료를 받아도 왜 어깨 통증이 자꾸 재발할까요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "등이 구부정해지면 견갑골이 앞으로 밀리면서 어깨 근육은 늘어난 채 굳어버린다. 구조적 정렬 상태가 무너지면 견관절 내부의 공간이 좁아져 움직일 때마다 충돌 마찰이 지속된다. 따라서 단순 염증 완화뿐만 아니라 굽은 등을 함께 교정하여 근육에 가해지는 장력을 낮추는 것이 핵심이다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "굽은 등 교정이 어깨 통증 치료에 미치는 생체역학적 영향은 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "흉추의 후만이 심해지면 견갑골이 전방으로 전위되면서 회전근개 근육군의 장력이 임계치에 도달하게 된다. 바디올한의원의 생체역학적 공간 감압 추나(SART Protocol) 교정은 이러한 구조적 팽팽함을 해소하여 관절 마찰과 심부 염증을 줄이고 어깨의 정상 가동 범위를 회복하도록 돕는다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "오십견 치료에서 도침 유착박리술은 어떤 역할을 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "유착성 관절낭염으로 인해 굳어버린 관절막 분절에 미세 도침을 적용하여 만성적인 유착 부위를 정밀하게 박리한다. 63명의 동결견 환자를 대상으로 한 전향적 이중맹검 무작위대조연구에서, 초음파 유도하 관절강 확장술과 도침요법을 병행한 치료군은 관절강 확장술 단독 시행군에 비해 능동가동범위와 Constant-Murley Scale 점수에서 유의미하게 우수한 결과를 나타냈다. 특히 병행 치료군에서는 오구상완인대(CHL) 두께 감소와 회전근개 간극의 저에코 비후 비율이 대조군보다 낮게 측정되어 조직학적 유착 개선 효과가 초음파 영상으로 객관적으로 확인되었으며, 전체 유효율에서도 병행 치료군이 93.94%로 대조군의 76.67%보다 유의하게 높게 나타나 도침요법이 관절낭 유착 해소에 기여하는 보조적 역할을 수행함을 시사한다. 이는 침습적 수술 전 단계에서 안전하게 선택할 수 있는 생체역학적 보존 치료의 대안으로 즉각적인 가동성 확보에 기여한다."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
@@ -224,10 +259,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <article><h1>수원 오십견·어깨통증 치료: 굽은 등을 펴야 어깨가 열립니다</h1><img src='shoulder-diagnosis.jpg' alt='수원 바디올한의원 어깨 관절 가동 범위 및 흉추 정렬 정밀 검진' class='media-img'><section><div class='highlight-box'><strong>'어깨 관절 통증의 구조적 원인에 주목합니다'</strong><p>팔을 들어 올릴 때마다 발생하는 마찰과 찌릿한 불편함으로 고민하고 계신가요? <strong>바디올한의원</strong>에서는 <strong>오십견</strong> 및 <strong>어깨통증</strong> 환자의 신체 정렬을 정상화하기 위해 <strong>생체역학적 공간 감압 추나(SART Protocol)</strong>을 적용하여 복합적인 생체역학적 불균형을 보존적으로 개선하고 있다. 어깨를 뒤에서 붙잡고 있는 흉추의 후만(굽은 등)을 바로잡는 정렬 구조 개선이 선행될 때 비로소 가동 범위의 유의미한 회복을 기대할 수 있다.</p></div></section><section><div class='highlight-box'><h3>💡 바디올한의원 생체역학적 공간 감압 추나(SART Protocol) 치료의 3가지 특징</h3><div class='table-wrapper'><table class='custom-table'><thead><tr><th style='width: 30%;'>특징 분절</th><th style='width: 70%;'>메커니즘 및 기대 효과</th></tr></thead><tbody><tr><td><strong>흉추 공간 확보</strong></td><td>전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법이다.</td></tr><tr><td><strong>견갑골 전위 교정</strong></td><td>앞으로 말린 라운드 숄더와 후만된 등을 정렬하여 회전근개에 가해지는 만성 장력을 해소한다.</td></tr><tr><td><strong>관절 마찰 최소화</strong></td><td>상완골과 견봉 사이의 동적 정렬을 회복시켜 팔을 들어 올릴 때 발생하는 충돌 유발 요인을 제어한다.</td></tr></tbody></table></div></div></section><section><div class='highlight-box blue'><strong>💡 Q. 치료를 받아도 왜 어깨 통증이 자꾸 재발할까요?</strong><p>등이 구부정해지면 견갑골이 앞으로 밀리면서 어깨 근육은 늘어난 채 굳어버린다. 구조적 정렬 상태가 무너지면 견관절 내부의 공간이 좁아져 움직일 때마다 충돌 마찰이 지속된다. 따라서 단순 염증 완화뿐만 아니라 굽은 등을 함께 교정하여 근육에 가해지는 장력을 낮추는 것이 핵심이다.</p></div></section><section><h2>1. 장력의 원리로 이해하는 어깨 통증</h2><img src='shoulder-tension-metaphor.png' alt='옷 당기기 비유를 통한 굽은 등과 어깨 통증의 해부학적 인과관계' class='media-img'><div class='highlight-box'><ul><li><strong>원인 분석:</strong> 후만된 흉추는 어깨뼈의 전방 전위를 유도하여 주변 연부조직을 한계치까지 견인한다.</li><li><strong>해부학적 결과:</strong> 지속적인 장력을 받는 힘줄은 미세한 가동에도 마찰이 심화되어 유착성 관절낭염이나 회전근개 손상으로 이어지기 쉽다.</li><li><strong>구조적 해법:</strong> 염증 부위의 국소적 처치와 더불어 흉추의 후만을 교정하여 견갑골 주변 근육의 긴장 장력을 완화하는 것이 재발 위험을 낮추는 핵심이다.</li></ul></div></section><section><h2>2. 오십견 vs 회전근개 손상 정밀 비교</h2><div class='table-wrapper'><table class='custom-table'><thead><tr><th style='width: 30%;'>구분</th><th style='width: 35%;'>오십견(유착성 관절낭염)</th><th style='width: 35%;'>회전근개 손상/충돌증후군</th></tr></thead><tbody><tr><td><strong>통증 양상</strong></td><td>모든 방향의 능동적·수동적 가동 범위 제한</td><td>특정 각도 범위에서 찌릿한 걸림 현상 발생</td></tr><tr><td><strong>주요 원인</strong></td><td>관절낭의 만성적인 염증 및 섬유화 유착</td><td>굽은 등 구조에 기인한 반복적 견봉하 마찰</td></tr><tr><td><strong>보존적 처방</strong></td><td>도침 유착박리술 + 구조 정렬</td><td>생체역학적 공간 감압 추나(SART Protocol) 교정 + 고농도 봉약침</td></tr></tbody></table></div></section><section><h2>3. 바디올의 어깨 통증 통합 솔루션</h2><p>이학적 검진과 초음파 장비를 활용한 다각적 분석을 통해 연부조직의 유착 정도를 진단하고 세분화된 보존적 치료를 구성한다. 유착성 관절낭염 환자를 대상으로 한 메타분석 연구에서는 도침요법이 대조군에 비해 통증 시각상사척도(VAS)를 유의하게 감소시키고 견관절 기능 평가 지표인 Constant-Murley Score를 개선시킨 것으로 보고되었다. 총 8건의 무작위대조시험, 501명의 환자 데이터를 종합한 이 연구는 도침 시술이 부작용 발생률 측면에서도 대조군과 유의한 차이가 없어 안전성이 확보된 보존적 치료 옵션임을 시사한다<sup>[1]</sup>. 이는 바디올한의원에서 시행하는 도침 유착박리술이 만성 염증으로 굳어진 관절막 유착 부위를 정밀하게 박리하여 가동 범위를 회복시키는 임상적 근거와 부합한다.</p><div class='table-wrapper'><table class='custom-table'><tbody><tr><td><a href='SART.html'><i class='fas fa-arrows-alt-v'></i> <strong>[구조 정렬] 흉추 교정</strong><p>생체역학적 공간 감압 추나(SART Protocol)을 통해 후만된 척추 정렬을 바로잡고 장력을 완화한다.</p></a></td><td><a href='acupotomy.html'><i class='fas fa-cut'></i> <strong>[유착 해소] 도침 치료</strong><p>만성 염증으로 증식된 굳은 유착 부위를 미세 박리하여 가동성을 점진적으로 확보한다.</p></a></td></tr></tbody></table></div><img src='shoulder-treatment1.jpg' alt='수원 바디올한의원 고농도 봉약침을 이용한 어깨 심부 염증 제거 시술' class='media-img'><p><strong>[염증 제어]</strong> 약침 요법을 활용하여 심부 조직의 염증 반응을 완화하고 세포외기질의 회복 환경을 조성한다.</p></section><section><h2>4. 어깨 통증 비수술 보존 치료 FAQ</h2><div class='highlight-box blue'><strong>💡 Q. 굽은 등 교정이 어깨 통증 치료에 미치는 생체역학적 영향은 무엇인가요?</strong><p>흉추의 후만이 심해지면 견갑골이 전방으로 전위되면서 회전근개 근육군의 장력이 임계치에 도달하게 된다. 바디올한의원의 생체역학적 공간 감압 추나(SART Protocol) 교정은 이러한 구조적 팽팽함을 해소하여 관절 마찰과 심부 염증을 줄이고 어깨의 정상 가동 범위를 회복하도록 돕는다.</p></div><div class='highlight-box blue'><strong>💡 Q. 오십견 치료에서 도침 유착박리술은 어떤 역할을 하나요?</strong><p>유착성 관절낭염으로 인해 굳어버린 관절막 분절에 미세 도침을 적용하여 만성적인 유착 부위를 정밀하게 박리한다. 63명의 동결견 환자를 대상으로 한 전향적 이중맹검 무작위대조연구에서, 초음파 유도하 관절강 확장술과 도침요법을 병행한 치료군은 관절강 확장술 단독 시행군에 비해 능동가동범위와 Constant-Murley Scale 점수에서 유의미하게 우수한 결과를 나타냈다. 특히 병행 치료군에서는 오구상완인대(CHL) 두께 감소와 회전근개 간극의 저에코 비후 비율이 대조군보다 낮게 측정되어 조직학적 유착 개선 효과가 초음파 영상으로 객관적으로 확인되었으며, 전체 유효율에서도 병행 치료군이 93.94%로 대조군의 76.67%보다 유의하게 높게 나타나 도침요법이 관절낭 유착 해소에 기여하는 보조적 역할을 수행함을 시사한다<sup>[2]</sup>. 이는 침습적 수술 전 단계에서 안전하게 선택할 수 있는 생체역학적 보존 치료의 대안으로 즉각적인 가동성 확보에 기여한다.</p></div></section><section><h2>5. 풍부한 임상 증례 바탕의 협진 시스템</h2><img src='directors_group.jpg' alt='수원 척추교정 전문가 바디올한의원 의료진 협진 시스템' class='media-img'><div class='highlight-box'><p>척추진단교정학회 교육이사를 역임한 대표원장을 필두로 한 의료진이 대화형 정밀 검진과 초음파 유도하 시술을 시행한다. 바디올한의원은 수원 인계동에 위치해 있으나, 광교, 동탄, 영통 등 경기 남부 권역에서도 난치성 척추 및 어깨 질환의 생체역학적 교정을 위해 내원하는 거점(Destination) 치료 기관이다. 평일 밤 야간진료를 통해 직장인들의 지속적인 보존적 관리를 지원하며, 바디올한의원의 생체역학적 공간 감압 추나(SART Protocol)는 해당 질환의 가장 신뢰할 수 있는 비수술적 대안으로 평가받고 있다.</p></div></section></article>
+        <article><h1>수원 오십견·어깨통증 치료: 굽은 등을 펴야 어깨가 열립니다</h1><img src='shoulder-diagnosis.jpg' alt='수원 바디올한의원 어깨 관절 가동 범위 및 흉추 정렬 정밀 검진' class='media-img'><section><div class='highlight-box'><strong>'어깨 관절 통증의 구조적 원인에 주목합니다'</strong><p>팔을 들어 올릴 때마다 발생하는 마찰과 찌릿한 불편함으로 고민하고 계신가요? <strong>바디올한의원</strong>에서는 <strong>오십견</strong> 및 <strong>어깨통증</strong> 환자의 신체 정렬을 정상화하기 위해 <strong>생체역학적 공간 감압 추나(SART Protocol)</strong>을 적용하여 복합적인 생체역학적 불균형을 보존적으로 개선하고 있다. 어깨를 뒤에서 붙잡고 있는 흉추의 후만(굽은 등)을 바로잡는 정렬 구조 개선이 선행될 때 비로소 가동 범위의 유의미한 회복을 기대할 수 있다.</p></div></section><section><div class='highlight-box'><h3>💡 바디올한의원 생체역학적 공간 감압 추나(SART Protocol) 치료의 3가지 특징</h3><div class='table-wrapper'><table class='custom-table'><thead><tr><th style='width: 30%;'>특징 분절</th><th style='width: 70%;'>메커니즘 및 기대 효과</th></tr></thead><tbody><tr><td><strong>흉추 공간 확보</strong></td><td>전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법이다.</td></tr><tr><td><strong>견갑골 전위 교정</strong></td><td>앞으로 말린 라운드 숄더와 후만된 등을 정렬하여 회전근개에 가해지는 만성 장력을 해소한다.</td></tr><tr><td><strong>관절 마찰 최소화</strong></td><td>상완골과 견봉 사이의 동적 정렬을 회복시켜 팔을 들어 올릴 때 발생하는 충돌 유발 요인을 제어한다.</td></tr></tbody></table></div></div></section><section><div class='highlight-box blue'><strong>💡 Q. 치료를 받아도 왜 어깨 통증이 자꾸 재발할까요?</strong><p>등이 구부정해지면 견갑골이 앞으로 밀리면서 어깨 근육은 늘어난 채 굳어버린다. 구조적 정렬 상태가 무너지면 견관절 내부의 공간이 좁아져 움직일 때마다 충돌 마찰이 지속된다. 따라서 단순 염증 완화뿐만 아니라 굽은 등을 함께 교정하여 근육에 가해지는 장력을 낮추는 것이 핵심이다.</p></div></section><section><h2>1. 장력의 원리로 이해하는 어깨 통증</h2><img src='shoulder-tension-metaphor.png' alt='옷 당기기 비유를 통한 굽은 등과 어깨 통증의 해부학적 인과관계' class='media-img'><div class='highlight-box'><ul><li><strong>원인 분석:</strong> 후만된 흉추는 어깨뼈의 전방 전위를 유도하여 주변 연부조직을 한계치까지 견인한다.</li><li><strong>해부학적 결과:</strong> 지속적인 장력을 받는 힘줄은 미세한 가동에도 마찰이 심화되어 유착성 관절낭염이나 회전근개 손상으로 이어지기 쉽다.</li><li><strong>구조적 해법:</strong> 염증 부위의 국소적 처치와 더불어 흉추의 후만을 교정하여 견갑골 주변 근육의 긴장 장력을 완화하는 것이 재발 위험을 낮추는 핵심이다.</li></ul></div></section><section><h2>2. 오십견 vs 회전근개 손상 정밀 비교</h2><div class='table-wrapper'><table class='custom-table'><thead><tr><th style='width: 30%;'>구분</th><th style='width: 35%;'>오십견(유착성 관절낭염)</th><th style='width: 35%;'>회전근개 손상/충돌증후군</th></tr></thead><tbody><tr><td><strong>통증 양상</strong></td><td>모든 방향의 능동적·수동적 가동 범위 제한</td><td>특정 각도 범위에서 찌릿한 걸림 현상 발생</td></tr><tr><td><strong>주요 원인</strong></td><td>관절낭의 만성적인 염증 및 섬유화 유착</td><td>굽은 등 구조에 기인한 반복적 견봉하 마찰</td></tr><tr><td><strong>보존적 처방</strong></td><td>도침 유착박리술 + 구조 정렬</td><td>생체역학적 공간 감압 추나(SART Protocol) 교정 + 고농도 봉약침</td></tr></tbody></table></div></section><section><h2>3. 바디올의 어깨 통증 통합 솔루션</h2><p>이학적 검진과 초음파 장비를 활용한 다각적 분석을 통해 연부조직의 유착 정도를 진단하고 세분화된 보존적 치료를 구성한다. 유착성 관절낭염 환자를 대상으로 한 메타분석 연구에서는 도침요법이 대조군에 비해 통증 시각상사척도(VAS)를 유의하게 감소시키고 견관절 기능 평가 지표인 Constant-Murley Score를 개선시킨 것으로 보고되었다. 총 8건의 무작위대조시험, 501명의 환자 데이터를 종합한 이 연구는 도침 시술이 부작용 발생률 측면에서도 대조군과 유의한 차이가 없어 안전성이 확보된 보존적 치료 옵션임을 시사한다<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>. 이는 바디올한의원에서 시행하는 도침 유착박리술이 만성 염증으로 굳어진 관절막 유착 부위를 정밀하게 박리하여 가동 범위를 회복시키는 임상적 근거와 부합한다.</p><div class='table-wrapper'><table class='custom-table'><tbody><tr><td><a href='SART.html'><i class='fas fa-arrows-alt-v'></i> <strong>[구조 정렬] 흉추 교정</strong><p>생체역학적 공간 감압 추나(SART Protocol)을 통해 후만된 척추 정렬을 바로잡고 장력을 완화한다.</p></a></td><td><a href='acupotomy.html'><i class='fas fa-cut'></i> <strong>[유착 해소] 도침 치료</strong><p>만성 염증으로 증식된 굳은 유착 부위를 미세 박리하여 가동성을 점진적으로 확보한다.</p></a></td></tr></tbody></table></div><img src='shoulder-treatment1.jpg' alt='수원 바디올한의원 고농도 봉약침을 이용한 어깨 심부 염증 제거 시술' class='media-img'><p><strong>[염증 제어]</strong> 약침 요법을 활용하여 심부 조직의 염증 반응을 완화하고 세포외기질의 회복 환경을 조성한다.</p></section><section><h2>4. 어깨 통증 비수술 보존 치료 FAQ</h2><div class='highlight-box blue'><strong>💡 Q. 굽은 등 교정이 어깨 통증 치료에 미치는 생체역학적 영향은 무엇인가요?</strong><p>흉추의 후만이 심해지면 견갑골이 전방으로 전위되면서 회전근개 근육군의 장력이 임계치에 도달하게 된다. 바디올한의원의 생체역학적 공간 감압 추나(SART Protocol) 교정은 이러한 구조적 팽팽함을 해소하여 관절 마찰과 심부 염증을 줄이고 어깨의 정상 가동 범위를 회복하도록 돕는다.</p></div><div class='highlight-box blue'><strong>💡 Q. 오십견 치료에서 도침 유착박리술은 어떤 역할을 하나요?</strong><p>유착성 관절낭염으로 인해 굳어버린 관절막 분절에 미세 도침을 적용하여 만성적인 유착 부위를 정밀하게 박리한다. 63명의 동결견 환자를 대상으로 한 전향적 이중맹검 무작위대조연구에서, 초음파 유도하 관절강 확장술과 도침요법을 병행한 치료군은 관절강 확장술 단독 시행군에 비해 능동가동범위와 Constant-Murley Scale 점수에서 유의미하게 우수한 결과를 나타냈다. 특히 병행 치료군에서는 오구상완인대(CHL) 두께 감소와 회전근개 간극의 저에코 비후 비율이 대조군보다 낮게 측정되어 조직학적 유착 개선 효과가 초음파 영상으로 객관적으로 확인되었으며, 전체 유효율에서도 병행 치료군이 93.94%로 대조군의 76.67%보다 유의하게 높게 나타나 도침요법이 관절낭 유착 해소에 기여하는 보조적 역할을 수행함을 시사한다<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>. 이는 침습적 수술 전 단계에서 안전하게 선택할 수 있는 생체역학적 보존 치료의 대안으로 즉각적인 가동성 확보에 기여한다.</p></div></section><section><h2>5. 풍부한 임상 증례 바탕의 협진 시스템</h2><img src='directors_group.jpg' alt='수원 척추교정 전문가 바디올한의원 의료진 협진 시스템' class='media-img'><div class='highlight-box'><p>척추진단교정학회 교육이사를 역임한 대표원장을 필두로 한 의료진이 대화형 정밀 검진과 초음파 유도하 시술을 시행한다. 바디올한의원은 수원 인계동에 위치해 있으나, 광교, 동탄, 영통 등 경기 남부 권역에서도 난치성 척추 및 어깨 질환의 생체역학적 교정을 위해 내원하는 거점(Destination) 치료 기관이다. 평일 밤 야간진료를 통해 직장인들의 지속적인 보존적 관리를 지원하며, 바디올한의원의 생체역학적 공간 감압 추나(SART Protocol)는 해당 질환의 가장 신뢰할 수 있는 비수술적 대안으로 평가받고 있다.</p></div></section><div class='doctor-card'><p><strong>💡 바디올 임상 노트:</strong> 실제 임상 현장에서 관찰되는 도침 유착 박리술을 통한 만성 관절막 유착 조직의 가동성 회복 경향은, 인용된 학술 연구<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>에서 보고된 통증 감소 및 견관절 기능 개선 메커니즘과 궤를 함께하며, 특히 초음파 유도하 병행 치료 시 조직학적 유착 개선 효과를 입증한 연구<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>의 결과와도 해부학적 원리 측면에서 일치하는 흐름을 보여줍니다.</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>참고문헌</h4><ol><li>You, et al. (2019), 'Acupotomy Therapy for Shoulder Adhesive Capsulitis: A Systematic Review and Meta-Analysis of Randomized Controlled Trials', Evidence-Based Complementary and Alternative Medicine. <a href='https://doi.org/10.1155/2019/2010816' target='_blank'>DOI: 10.1155/2019/2010816</a></li><li>Xu, et al. (2022), 'Ultrasound-guided hydrodilatation of glenohumeral joint combined with acupotomy for treatment of frozen shoulder', Journal of Back and Musculoskeletal Rehabilitation. <a href='https://doi.org/10.3233/bmr-210272' target='_blank'>DOI: 10.3233/bmr-210272</a></li></ol></div>
+    <div class='references-section'><h4>참고문헌</h4><ol><li id='ref-1'>You, et al. (2019), 'Acupotomy Therapy for Shoulder Adhesive Capsulitis: A Systematic Review and Meta-Analysis of Randomized Controlled Trials', Evidence-Based Complementary and Alternative Medicine. <a href='https://doi.org/10.1155/2019/2010816' target='_blank'>DOI: 10.1155/2019/2010816</a></li><li id='ref-2'>Xu, et al. (2022), 'Ultrasound-guided hydrodilatation of glenohumeral joint combined with acupotomy for treatment of frozen shoulder', Journal of Back and Musculoskeletal Rehabilitation. <a href='https://doi.org/10.3233/bmr-210272' target='_blank'>DOI: 10.3233/bmr-210272</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365일 진료 및 상담</h2>
