@@ -14,8 +14,103 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [{"@context":"https://schema.org","@type":"MedicalWebPage","name":"The Fear of the First Step in the Morning: Sharp, Tearing Plantar Pain – A Clinical Analysis of Plantar Fasciitis","medicalAudience":{"@type":"MedicalAudience","audienceType":"Patient"},"about":{"@type":"MedicalCondition","name":"Plantar Fasciitis"},"mainContentOfPage":{"@type":"WebPageElement","cssSelector":"article"}},{"@context":"https://schema.org","@type":"LocalBusiness","name":"Bodyall Korean Medicine Clinic","telephone":"031-8067-5825","address":{"@type":"PostalAddress","streetAddress":"Ingye-dong","addressLocality":"Suwon-si","addressRegion":"Gyeonggi-do","addressCountry":"KR"},"employee":{"@type":"Person","name":"Donghae Lee","jobTitle":"Chief Director"},"areaServed":[{"@type":"City","name":"Suwon"},{"@type":"City","name":"Ingye-dong"},{"@type":"City","name":"Gwanggyo"},{"@type":"City","name":"Dongtan"},{"@type":"City","name":"Yeongtong"}]},{"@context":"https://schema.org","@type":"MedicalProcedure","name":"Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)","description":"A biomechanical conservative correction technique based on the principles of traditional Osteopathy and Chuna Manual Therapy that secures physical space between spinal segments, correcting rotational displacement of the pelvis to evenly distribute pressure on both legs and resolve overload directed toward the sole of the foot.","procedureType":"TherapeuticProcedure"},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[]}]
-    </script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/encyclopedia/0003.foot-pain_en.html#webpage",
+      "name": "The Fear of the First Step in the Morning: Sharp, Tearing Plantar Pain – A Clinical Analysis of Plantar Fasciitis",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Plantar Fasciitis"
+      }
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "Bodyall Korean Medicine Clinic",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1114-7 Ingye-dong, 3rd Floor",
+        "addressLocality": "Paldal-gu, Suwon-si",
+        "addressRegion": "Gyeonggi-do",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "Donghae Lee",
+        "jobTitle": "Chief Director"
+      },
+      "knowsAbout": [
+        "Chuna Manual Therapy",
+        "Biomechanical Spatial Spinal Decompression Chuna (SART Protocol)",
+        "Spinal Structure Correction",
+        "Acupotomy Therapy",
+        "High-Concentration Bee Venom Pharmacopuncture",
+        "Custom Herbal Medicine",
+        "Herbal Weight Loss",
+        "Spinal Stenosis",
+        "Lumbar Disc Herniation",
+        "Cervical Disc Herniation",
+        "Postural Correction",
+        "Frozen Shoulder"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "Suwon-si", "sameAs": "https://en.wikipedia.org/wiki/Suwon"},
+        {"@type": "AdministrativeArea", "name": "Ingye-dong", "sameAs": "https://en.wikipedia.org/wiki/Ingye-dong"},
+        {"@type": "AdministrativeArea", "name": "Gwanggyo", "sameAs": "https://en.wikipedia.org/wiki/Gwanggyo"},
+        {"@type": "City", "name": "Dongtan", "sameAs": "https://en.wikipedia.org/wiki/Dongtan"},
+        {"@type": "AdministrativeArea", "name": "Yeongtong-gu", "sameAs": "https://en.wikipedia.org/wiki/Yeongtong-gu"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART_en.html",
+      "name": "Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)",
+      "description": "A conservative Chuna manual therapy protocol designed to biomechanically decompress intervertebral and joint spaces, relieving nerve compression and restoring structural balance.",
+      "procedureType": "TherapeuticProcedure"
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
@@ -192,10 +287,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <div class='breadcrumb'>Symptom Index > Foot & Sole Self-Diagnosis Guide</div><h1>The Fear of the First Step in the Morning: Sharp, Tearing Plantar Pain – A Clinical Analysis of Plantar Fasciitis</h1><img src='./image/0003.foot-pain-main.png' alt='Patient experiencing plantar pain after waking up in the morning' class='hero-img' loading='eager'><article><section><div class='summary-box'><h2>💡 In-Depth Structural Analysis for the Suwon Ingye-dong, Gwanggyo, Yeongtong, and Dongtan Regions</h2><p>Plantar fasciitis develops due to the accumulation of inflammation and micro-tears in the shock-absorbing membrane of the sole of the foot.</p><p>If localized treatment of the sole itself provides slow improvement, an asymmetrical concentration of body weight caused by pelvic imbalance should be suspected.</p><p>Based on the principles of traditional Osteopathy and Chuna Manual Therapy, Bodyall Korean Medicine Clinic proposes a solution that combines Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)—which secures physical space between spinal segments—with Acupotomy and deep physical therapy to promote fundamental structural improvement in degenerative spinal and joint disorders.</p></div></section><section><h2>1. Could I Have Plantar Fasciitis?</h2><p>Simple, temporary fatigue in the sole of the foot and chronic plantar fasciitis show distinct differences in the pattern of pain presentation. It is necessary to precisely examine the sensation felt when taking the first step immediately after waking up.</p><ul class='check-list'><li>When stepping down from the bed immediately after waking, a sharp, tearing pain is felt around the heel area.</li><li>Sudden movement after sitting for a long period also causes a sharp pulling sensation around the plantar arch.</li><li>Pain seems to temporarily decrease after walking for a certain period, but symptoms worsen again with a throbbing sensation as activity increases in the evening.</li><li>Severe tenderness occurs when a specific point on the inner side of the heel bone is pressed with a finger.</li></ul></section><section><h2>2. The Real Cause of the Pain</h2><p>The plantar fascia is a key fibrous tissue that supports the normal arch of the foot and disperses shock during walking. Sudden weight gain, flatfoot deformity, or wearing footwear that fails to properly support the foot can act as triggering factors. However, a point that requires greater clinical attention is the misalignment of the pelvis. When the pelvis loses its center and rotates, a functional discrepancy in leg length occurs, resulting in an excessive concentration of biomechanical load on one specific side of the plantar surface during gait.</p><img src='./image/0003.plantar-fascia-mechanism.png' alt='Anatomical diagram illustrating the mechanism of plantar fasciitis' class='visual-img'></section><section><h2>3. Integrated Structural Restoration and Conservative Treatment Solutions</h2><p>At Bodyall Korean Medicine Clinic, where patients visit for clear structural correction and body alignment restoration not only from Ingye-dong but also from major surrounding hubs such as Gwanggyo, Yeongtong, and Dongtan, we assist in controlling localized inflammatory swelling in the sole while also correcting the balance of the entire skeletal system to help maintain sustained relief.</p><div class='solution-grid'><div class='solution-card'><strong>Bodyall's Specialized Treatment: Structural Load Distribution</strong><p>We offer a biomechanical conservative treatment alternative that can be safely considered prior to surgery through Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol), a biomechanical conservative correction technique based on the principles of traditional Osteopathy and Chuna Manual Therapy that secures physical space between spinal segments. By correcting rotational displacement of the pelvis, this method evenly distributes the pressure on both legs, resolving overload directed toward the sole of the foot. Furthermore, fascial tissue that has become thick and hardened due to chronic inflammation is treated using Acupotomy, a micro-adhesiolysis technique, to precisely separate fibrotic areas and restore inherent flexibility. Academic research on the application of acupotomy treatment for calcaneodynia shows that the review of invasive micro-adhesiolysis procedures for heel pain is being conducted within the academic community<sup>[2]</sup>.</p></div><div class='solution-card'><strong>Traditional Korean Medicine Approach: Local Inflammation and Pain Control</strong><p>Acupuncture treatment is combined with high-concentration bee venom pharmacopuncture to rapidly suppress inflammatory reactions occurring in the deep tissues around the heel and sole, alleviating nerve stimulation. A randomized controlled study conducted on patients with plantar fasciitis found that the treatment group receiving acupuncture showed significantly greater improvement in morning pain scores and pressure pain threshold immediately upon waking compared to the control group<sup>[1]</sup>. Additionally, cupping and moxibustion treatments that relax the calf muscle groups structurally reduce abnormal traction forces transmitted to the plantar fascia caused by the shortening of the gastrocnemius and soleus muscles.</p></div><div class='solution-card'><strong>Modern Physical Therapy: Promoting Deep Tissue Regeneration</strong><p>Precise electrical stimulation, such as Interferential Current Therapy (ICT) and Transcutaneous Electrical Nerve Stimulation (TENS), relieves tension in deep muscles and induces a temporary nerve-blocking effect. Simultaneously, this is organically combined with infrared deep heat therapy to facilitate smooth blood circulation around the fascia and promote cellular regeneration of the tissue, thereby alleviating chronic swelling and pain.</p></div></div><img src='./image/normal-bodyall-treatment.png' alt='Systematic plantar physical therapy at Bodyall Korean Medicine Clinic' class='hero-img'></section><section><h2>4. Lifestyle Guidelines for Continuous Management</h2><p>To maximize the efficiency of treatment and maintain body balance, it is advisable to combine the following self-management therapies in daily life.</p><ul><li><b>Lower Leg Muscle Stretching:</b> Pushing against a wall with both hands to flexibly stretch the Achilles tendon and calf muscles significantly reduces the tension applied to the plantar fascia.</li><li><b>Plantar Arch Massage:</b> While sitting in a chair, placing a golf ball or tennis ball under the arch of the foot and gently rolling it while applying body weight helps to alleviate micro-adhesions in the fascia.</li></ul></section></article>
+        <div class='breadcrumb'>Symptom Index > Foot & Sole Self-Diagnosis Guide</div><h1>The Fear of the First Step in the Morning: Sharp, Tearing Plantar Pain – A Clinical Analysis of Plantar Fasciitis</h1><img src='./image/0003.foot-pain-main.png' alt='Patient experiencing plantar pain after waking up in the morning' class='hero-img' loading='eager'><article><section><div class='summary-box'><h2>💡 In-Depth Structural Analysis for the Suwon Ingye-dong, Gwanggyo, Yeongtong, and Dongtan Regions</h2><p>Plantar fasciitis develops due to the accumulation of inflammation and micro-tears in the shock-absorbing membrane of the sole of the foot.</p><p>If localized treatment of the sole itself provides slow improvement, an asymmetrical concentration of body weight caused by pelvic imbalance should be suspected.</p><p>Based on the principles of traditional Osteopathy and Chuna Manual Therapy, Bodyall Korean Medicine Clinic proposes a solution that combines Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)—which secures physical space between spinal segments—with Acupotomy and deep physical therapy to promote fundamental structural improvement in degenerative spinal and joint disorders.</p></div></section><section><h2>1. Could I Have Plantar Fasciitis?</h2><p>Simple, temporary fatigue in the sole of the foot and chronic plantar fasciitis show distinct differences in the pattern of pain presentation. It is necessary to precisely examine the sensation felt when taking the first step immediately after waking up.</p><ul class='check-list'><li>When stepping down from the bed immediately after waking, a sharp, tearing pain is felt around the heel area.</li><li>Sudden movement after sitting for a long period also causes a sharp pulling sensation around the plantar arch.</li><li>Pain seems to temporarily decrease after walking for a certain period, but symptoms worsen again with a throbbing sensation as activity increases in the evening.</li><li>Severe tenderness occurs when a specific point on the inner side of the heel bone is pressed with a finger.</li></ul></section><section><h2>2. The Real Cause of the Pain</h2><p>The plantar fascia is a key fibrous tissue that supports the normal arch of the foot and disperses shock during walking. Sudden weight gain, flatfoot deformity, or wearing footwear that fails to properly support the foot can act as triggering factors. However, a point that requires greater clinical attention is the misalignment of the pelvis. When the pelvis loses its center and rotates, a functional discrepancy in leg length occurs, resulting in an excessive concentration of biomechanical load on one specific side of the plantar surface during gait.</p><img src='./image/0003.plantar-fascia-mechanism.png' alt='Anatomical diagram illustrating the mechanism of plantar fasciitis' class='visual-img'></section><section><h2>3. Integrated Structural Restoration and Conservative Treatment Solutions</h2><p>At Bodyall Korean Medicine Clinic, where patients visit for clear structural correction and body alignment restoration not only from Ingye-dong but also from major surrounding hubs such as Gwanggyo, Yeongtong, and Dongtan, we assist in controlling localized inflammatory swelling in the sole while also correcting the balance of the entire skeletal system to help maintain sustained relief.</p><div class='solution-grid'><div class='solution-card'><strong>Bodyall's Specialized Treatment: Structural Load Distribution</strong><p>We offer a biomechanical conservative treatment alternative that can be safely considered prior to surgery through Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol), a biomechanical conservative correction technique based on the principles of traditional Osteopathy and Chuna Manual Therapy that secures physical space between spinal segments. By correcting rotational displacement of the pelvis, this method evenly distributes the pressure on both legs, resolving overload directed toward the sole of the foot. Furthermore, fascial tissue that has become thick and hardened due to chronic inflammation is treated using Acupotomy, a micro-adhesiolysis technique, to precisely separate fibrotic areas and restore inherent flexibility. Academic research on the application of acupotomy treatment for calcaneodynia shows that the review of invasive micro-adhesiolysis procedures for heel pain is being conducted within the academic community<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>.</p></div><div class='solution-card'><strong>Traditional Korean Medicine Approach: Local Inflammation and Pain Control</strong><p>Acupuncture treatment is combined with high-concentration bee venom pharmacopuncture to rapidly suppress inflammatory reactions occurring in the deep tissues around the heel and sole, alleviating nerve stimulation. A randomized controlled study conducted on patients with plantar fasciitis found that the treatment group receiving acupuncture showed significantly greater improvement in morning pain scores and pressure pain threshold immediately upon waking compared to the control group<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>. Additionally, cupping and moxibustion treatments that relax the calf muscle groups structurally reduce abnormal traction forces transmitted to the plantar fascia caused by the shortening of the gastrocnemius and soleus muscles.</p></div><div class='solution-card'><strong>Modern Physical Therapy: Promoting Deep Tissue Regeneration</strong><p>Precise electrical stimulation, such as Interferential Current Therapy (ICT) and Transcutaneous Electrical Nerve Stimulation (TENS), relieves tension in deep muscles and induces a temporary nerve-blocking effect. Simultaneously, this is organically combined with infrared deep heat therapy to facilitate smooth blood circulation around the fascia and promote cellular regeneration of the tissue, thereby alleviating chronic swelling and pain.</p></div></div><img src='./image/normal-bodyall-treatment.png' alt='Systematic plantar physical therapy at Bodyall Korean Medicine Clinic' class='hero-img'></section><section><h2>4. Lifestyle Guidelines for Continuous Management</h2><p>To maximize the efficiency of treatment and maintain body balance, it is advisable to combine the following self-management therapies in daily life.</p><ul><li><b>Lower Leg Muscle Stretching:</b> Pushing against a wall with both hands to flexibly stretch the Achilles tendon and calf muscles significantly reduces the tension applied to the plantar fascia.</li><li><b>Plantar Arch Massage:</b> While sitting in a chair, placing a golf ball or tennis ball under the arch of the foot and gently rolling it while applying body weight helps to alleviate micro-adhesions in the fascia.</li></ul></section><div class='doctor-card'><p><strong>💡 Bodyall Clinical Note:</strong> The trend of accelerated relief in morning pressure pain scores observed in Bodyall Korean Medicine Clinic's accumulated acupuncture and bee venom pharmacopuncture clinical experience for plantar fasciitis aligns anatomically and scientifically with the reduction in deep tissue inflammation and pressure pain threshold demonstrated in the cited randomized controlled trial<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>.</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>References</h4><ol><li>Zhang, et al. (2011), 'Acupuncture Treatment for Plantar Fasciitis: A Randomized Controlled Trial with Six Months Follow-Up', Evidence-Based Complementary and Alternative Medicine. <a href='https://doi.org/10.1093/ecam/nep186' target='_blank'>DOI: 10.1093/ecam/nep186</a></li><li>Shen, et al. (2018), 'Acupotomy for calcaneodynia', Medicine. <a href='https://doi.org/10.1097/md.0000000000010143' target='_blank'>DOI: 10.1097/md.0000000000010143</a></li></ol></div>
+    <div class='references-section'><h4>References</h4><ol><li id='ref-1'>Zhang, et al. (2011), 'Acupuncture Treatment for Plantar Fasciitis: A Randomized Controlled Trial with Six Months Follow-Up', Evidence-Based Complementary and Alternative Medicine. <a href='https://doi.org/10.1093/ecam/nep186' target='_blank'>DOI: 10.1093/ecam/nep186</a></li><li id='ref-2'>Shen, et al. (2018), 'Acupotomy for calcaneodynia', Medicine. <a href='https://doi.org/10.1097/md.0000000000010143' target='_blank'>DOI: 10.1097/md.0000000000010143</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365 Days Care & Consultation</h2>
