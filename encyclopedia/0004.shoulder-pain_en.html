@@ -14,8 +14,95 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [{"@context":"https://schema.org","@type":"MedicalWebPage","name":"Shoulder Pain When Raising Your Arm or Reaching Behind Your Back: Correcting Thoracic Kyphosis to Open Up the Shoulder","medicalAudience":{"@type":"MedicalAudience","audienceType":"Patient"},"about":{"@type":"MedicalCondition","name":"Frozen Shoulder and Rotator Cuff Disorders"},"mainContentOfPage":{"@type":"WebPageElement","cssSelector":"article"}},{"@context":"https://schema.org","@type":"LocalBusiness","name":"Bodyall Korean Medicine Clinic","telephone":"031-8067-5825","address":{"@type":"PostalAddress","streetAddress":"1114-7 Ingye-dong, 3rd Floor","addressLocality":"Paldal-gu, Suwon-si","addressRegion":"Gyeonggi-do","addressCountry":"KR"},"geo":{"@type":"GeoCoordinates","latitude":37.2651444,"longitude":127.0336222},"employee":{"@type":"Person","name":"Donghae Lee","jobTitle":"Chief Director"},"areaServed":[{"@type":"City","name":"Suwon"},{"@type":"City","name":"Ingye-dong"},{"@type":"City","name":"Gwanggyo"},{"@type":"City","name":"Dongtan"},{"@type":"City","name":"Yeongtong"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"14:00","closes":"20:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"10:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"14:00","closes":"16:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"PublicHolidays","opens":"10:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"PublicHolidays","opens":"14:00","closes":"16:00"}]},{"@context":"https://schema.org","@type":"MedicalProcedure","name":"Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)","description":"Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) is a biomechanical conservative correction technique grounded in the principles of traditional Osteopathy and Chuna manual therapy, designed to secure physical space between spinal segments.","procedureType":"TherapeuticProcedure"}]
-    </script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/encyclopedia/0004.shoulder-pain_en.html#webpage",
+      "name": "Shoulder Pain When Raising Your Arm or Reaching Behind Your Back: Correcting Thoracic Kyphosis to Open Up the Shoulder",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Frozen Shoulder and Rotator Cuff Disorders"
+      }
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "Bodyall Korean Medicine Clinic",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1114-7 Ingye-dong, 3rd Floor",
+        "addressLocality": "Paldal-gu, Suwon-si",
+        "addressRegion": "Gyeonggi-do",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "Donghae Lee",
+        "jobTitle": "Chief Director"
+      },
+      "knowsAbout": [
+        "Chuna Manual Therapy", "Biomechanical Spatial Spinal Decompression Chuna (SART Protocol)",
+        "Spinal Structure Correction", "Acupotomy Therapy", "High-Concentration Bee Venom Pharmacopuncture",
+        "Custom Herbal Medicine", "Herbal Weight Loss", "Spinal Stenosis", "Lumbar Disc Herniation",
+        "Cervical Disc Herniation", "Postural Correction", "Frozen Shoulder"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "Suwon-si", "sameAs": "https://en.wikipedia.org/wiki/Suwon"},
+        {"@type": "AdministrativeArea", "name": "Ingye-dong", "sameAs": "https://en.wikipedia.org/wiki/Ingye-dong"},
+        {"@type": "AdministrativeArea", "name": "Gwanggyo", "sameAs": "https://en.wikipedia.org/wiki/Gwanggyo"},
+        {"@type": "City", "name": "Dongtan", "sameAs": "https://en.wikipedia.org/wiki/Dongtan"},
+        {"@type": "AdministrativeArea", "name": "Yeongtong-gu", "sameAs": "https://en.wikipedia.org/wiki/Yeongtong-gu"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART_en.html",
+      "name": "Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)",
+      "description": "A conservative Chuna manual therapy protocol designed to biomechanically decompress intervertebral and joint spaces, relieving nerve compression and restoring structural balance.",
+      "procedureType": "TherapeuticProcedure"
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
@@ -192,10 +279,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <article><div class='breadcrumb'>Shoulder & Arm Self-Diagnosis Guide</div><h1>Shoulder Pain When Raising Your Arm or Reaching Behind Your Back: Correcting Thoracic Kyphosis to Open Up the Shoulder</h1><img src='../shoulder-diagnosis.jpg' alt='Bodyall shoulder and thoracic spine alignment examination' class='hero-img' loading='eager'><section><div class='summary-box'><h2>Key Summary from Bodyall Korean Medicine Clinic</h2><p>The structural cause of shoulder pain often lies in the alignment changes of the 'kyphotic thoracic spine,' which holds the shoulder from behind.</p><p>When the upper back rounds forward, it generates 'tension' that pulls the shoulder muscles taut, triggering inflammation and adhesion formation.</p><p>Bodyall secures spinal space using 'Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)' and resolves adhesions through acupotomy and physical therapy.</p></div></section><section><h2>1. Do You Struggle With These Movements?</h2><p>Shoulder disorders are not simply characterized by pain alone; a reduced range of joint motion is a defining feature. Reviewing the following symptoms is recommended.</p><ul class='check-list'><li>Sharp pain occurs at a specific angle when raising the arm overhead.</li><li>Movements such as clasping hands behind the back or zipping up a dress are impossible.</li><li>Lying on the affected shoulder at night intensifies pain, disrupting sleep.</li><li>The shoulder feels stone-hard and stiff, with the neck also constantly feeling tight.</li></ul></section><section><h2>2. Mechanism Analysis: Twisting an Arm While the Sleeve Is Pulled Taut Tears the Fabric</h2><p>Moving the arm while the upper back is rounded creates a mechanical situation similar to forcibly rotating an arm while someone grips the sleeve tightly from behind.</p><img src='../shoulder-tension-metaphor.png' alt='Visual diagram illustrating the principle of tension' class='visual-img'><p><b>• Cause (Kyphotic Upper Back):</b> A rounded upper back tilts the scapula forward, pulling the muscles taut and generating tension.<br><b>• Result (Pain):</b> Taut muscles undergo friction easily even with small movements, leading to inflammation (frozen shoulder, tears) much like a seam bursting open.</p></section><section><h2>3. Distinguishing Frozen Shoulder vs. Rotator Cuff Disorders</h2><div class='table-wrapper'><table class='custom-table'><thead><tr><th>Category</th><th>Frozen Shoulder</th><th>Rotator Cuff Injury</th></tr></thead><tbody><tr><td><b>Pain Pattern</b></td><td>Restricted movement in all directions</td><td>Pain only at specific angles</td></tr><tr><td><b>Cause</b></td><td>Capsular adhesion and degenerative change</td><td>Repetitive friction and tearing</td></tr><tr><td><b>Primary Treatment</b></td><td>Acupotomy release + structural alignment</td><td>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) + bee venom pharmacopuncture</td></tr></tbody></table></div></section><section><h2>4. A Solution Aimed at Improving the Fundamental Structural Causes of Degenerative Spinal Conditions</h2><p>Structural alignment that releases the 'hand pulling from the side' (tension) must precede other steps to establish a biomechanical conservative treatment alternative that can be safely considered prior to surgery.</p><div class='solution-card'><strong>Resolving Structural Causes: Bodyall's Specialized Treatments</strong><p>• <b><a href='../SART_en.html'>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)</a> / <a href='../chuna-therapy_en.html'>Chuna Manual Therapy</a>:</b> Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) is a biomechanical conservative correction technique grounded in the principles of traditional Osteopathy and Chuna manual therapy, designed to secure physical space between spinal segments. Since the shoulder joint is directly influenced by the alignment of the thoracic and cervical spine, correcting a kyphotic upper back and misaligned spine stably restores the physical space necessary for shoulder movement.<br>• <b><a href='../acupotomy_en.html'>Acupotomy Therapy (Adhesion Release)</a>:</b> This technique micro-dissects stiffened joint capsules and adherent tissue to immediately restore mobility. According to a systematic review and meta-analysis of randomized controlled trials, acupotomy therapy demonstrated a statistically significant reduction in Visual Analogue Scale (VAS) pain scores and improvement in the Constant-Murley Score (CMS) among patients with shoulder adhesive capsulitis compared to control groups<sup>[1]</sup>. This evidence aligns academically with the mechanical principle of dissecting tension-induced adhesions caused by thoracic kyphosis, and no statistically significant difference in adverse events was observed between groups, supporting the safety profile of this intervention.</p></div><img src='../shoulder-manipulation.jpg' alt='Bodyall structural correction to straighten the upper back' class='visual-img'><div class='solution-card'><strong>Deep Inflammation Control: Bodyall's Comprehensive Foundational Treatment</strong><p>• <b>Integrated Treatment Solution:</b> Acupuncture and high-concentration bee venom pharmacopuncture address deep inflammation, while cupping and electronic moxibustion promote blood circulation.<br>• <b>Modern Physical Therapy:</b> ICT and TENS devices relax tightened muscles and stabilize pain-signaling nerves. According to a case report, acupotomy was performed to release adhesions in the glenohumeral joint capsule, coracohumeral ligament, and surrounding periarticular muscle groups, with immediate improvement observed in passive abduction and reduction in pain scores following treatment. At the six-week follow-up, active abduction range further recovered while the pain score remained stabilized, suggesting that this stepwise adhesion release and functional remodeling protocol corresponds academically with the principles underlying acupotomy therapy<sup>[2]</sup>.</p></div><img src='./image/normal-bodyall-treatment.png' alt='Bodyall systematic comprehensive Korean medicine treatment' class='hero-img'></section><section><h2>5. Self-Management Guide for Daily Life</h2><ul><li><b>Pendulum Exercise:</b> Bend the upper body forward, let the affected arm hang down, and gently swing it in a circular motion.</li><li><b>Towel Stretch:</b> Hold a towel with both hands and use the healthy arm to slowly pull the affected arm upward.</li></ul></section><div class='doctor-card'><h3>📍 Clinic Information</h3><p><b>Hours:</b> Weekday night hours until 20:30 | Weekends & holidays until 16:00</p><p><b>Location:</b> 3-minute walk from Exit 9 of Suwon City Hall Station</p><a href='../index.html#location' class='treatment-link'>View Directions & Detailed Hours ➜</a></div></article>
+        <article><div class='breadcrumb'>Shoulder & Arm Self-Diagnosis Guide</div><h1>Shoulder Pain When Raising Your Arm or Reaching Behind Your Back: Correcting Thoracic Kyphosis to Open Up the Shoulder</h1><img src='../shoulder-diagnosis.jpg' alt='Bodyall shoulder and thoracic spine alignment examination' class='hero-img' loading='eager'><section><div class='summary-box'><h2>Key Summary from Bodyall Korean Medicine Clinic</h2><p>The structural cause of shoulder pain often lies in the alignment changes of the 'kyphotic thoracic spine,' which holds the shoulder from behind.</p><p>When the upper back rounds forward, it generates 'tension' that pulls the shoulder muscles taut, triggering inflammation and adhesion formation.</p><p>Bodyall secures spinal space using 'Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)' and resolves adhesions through acupotomy and physical therapy.</p></div></section><section><h2>1. Do You Struggle With These Movements?</h2><p>Shoulder disorders are not simply characterized by pain alone; a reduced range of joint motion is a defining feature. Reviewing the following symptoms is recommended.</p><ul class='check-list'><li>Sharp pain occurs at a specific angle when raising the arm overhead.</li><li>Movements such as clasping hands behind the back or zipping up a dress are impossible.</li><li>Lying on the affected shoulder at night intensifies pain, disrupting sleep.</li><li>The shoulder feels stone-hard and stiff, with the neck also constantly feeling tight.</li></ul></section><section><h2>2. Mechanism Analysis: Twisting an Arm While the Sleeve Is Pulled Taut Tears the Fabric</h2><p>Moving the arm while the upper back is rounded creates a mechanical situation similar to forcibly rotating an arm while someone grips the sleeve tightly from behind.</p><img src='../shoulder-tension-metaphor.png' alt='Visual diagram illustrating the principle of tension' class='visual-img'><p><b>• Cause (Kyphotic Upper Back):</b> A rounded upper back tilts the scapula forward, pulling the muscles taut and generating tension.<br><b>• Result (Pain):</b> Taut muscles undergo friction easily even with small movements, leading to inflammation (frozen shoulder, tears) much like a seam bursting open.</p></section><section><h2>3. Distinguishing Frozen Shoulder vs. Rotator Cuff Disorders</h2><div class='table-wrapper'><table class='custom-table'><thead><tr><th>Category</th><th>Frozen Shoulder</th><th>Rotator Cuff Injury</th></tr></thead><tbody><tr><td><b>Pain Pattern</b></td><td>Restricted movement in all directions</td><td>Pain only at specific angles</td></tr><tr><td><b>Cause</b></td><td>Capsular adhesion and degenerative change</td><td>Repetitive friction and tearing</td></tr><tr><td><b>Primary Treatment</b></td><td>Acupotomy release + structural alignment</td><td>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) + bee venom pharmacopuncture</td></tr></tbody></table></div></section><section><h2>4. A Solution Aimed at Improving the Fundamental Structural Causes of Degenerative Spinal Conditions</h2><p>Structural alignment that releases the 'hand pulling from the side' (tension) must precede other steps to establish a biomechanical conservative treatment alternative that can be safely considered prior to surgery.</p><div class='solution-card'><strong>Resolving Structural Causes: Bodyall's Specialized Treatments</strong><p>• <b><a href='../SART_en.html'>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)</a> / <a href='../chuna-therapy_en.html'>Chuna Manual Therapy</a>:</b> Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) is a biomechanical conservative correction technique grounded in the principles of traditional Osteopathy and Chuna manual therapy, designed to secure physical space between spinal segments. Since the shoulder joint is directly influenced by the alignment of the thoracic and cervical spine, correcting a kyphotic upper back and misaligned spine stably restores the physical space necessary for shoulder movement.<br>• <b><a href='../acupotomy_en.html'>Acupotomy Therapy (Adhesion Release)</a>:</b> This technique micro-dissects stiffened joint capsules and adherent tissue to immediately restore mobility. According to a systematic review and meta-analysis of randomized controlled trials, acupotomy therapy demonstrated a statistically significant reduction in Visual Analogue Scale (VAS) pain scores and improvement in the Constant-Murley Score (CMS) among patients with shoulder adhesive capsulitis compared to control groups<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>. This evidence aligns academically with the mechanical principle of dissecting tension-induced adhesions caused by thoracic kyphosis, and no statistically significant difference in adverse events was observed between groups, supporting the safety profile of this intervention.</p></div><img src='../shoulder-manipulation.jpg' alt='Bodyall structural correction to straighten the upper back' class='visual-img'><div class='solution-card'><strong>Deep Inflammation Control: Bodyall's Comprehensive Foundational Treatment</strong><p>• <b>Integrated Treatment Solution:</b> Acupuncture and high-concentration bee venom pharmacopuncture address deep inflammation, while cupping and electronic moxibustion promote blood circulation.<br>• <b>Modern Physical Therapy:</b> ICT and TENS devices relax tightened muscles and stabilize pain-signaling nerves. According to a case report, acupotomy was performed to release adhesions in the glenohumeral joint capsule, coracohumeral ligament, and surrounding periarticular muscle groups, with immediate improvement observed in passive abduction and reduction in pain scores following treatment. At the six-week follow-up, active abduction range further recovered while the pain score remained stabilized, suggesting that this stepwise adhesion release and functional remodeling protocol corresponds academically with the principles underlying acupotomy therapy<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>.</p></div><img src='./image/normal-bodyall-treatment.png' alt='Bodyall systematic comprehensive Korean medicine treatment' class='hero-img'></section><section><h2>5. Self-Management Guide for Daily Life</h2><ul><li><b>Pendulum Exercise:</b> Bend the upper body forward, let the affected arm hang down, and gently swing it in a circular motion.</li><li><b>Towel Stretch:</b> Hold a towel with both hands and use the healthy arm to slowly pull the affected arm upward.</li></ul></section><div class='doctor-card'><h3>📍 Clinic Information</h3><p><b>Hours:</b> Weekday night hours until 20:30 | Weekends & holidays until 16:00</p><p><b>Location:</b> 3-minute walk from Exit 9 of Suwon City Hall Station</p><a href='../index.html#location' class='treatment-link'>View Directions & Detailed Hours ➜</a></div><div class='doctor-card'><p><strong>💡 Bodyall Clinical Note:</strong> The pattern of immediate mobility restoration and pain reduction following adhesion release observed in Bodyall Korean Medicine Clinic's accumulated acupotomy clinical experience corresponds to the mechanical principles of capsular and periarticular tissue dissection demonstrated in the cited research findings<a href='#ref-1' class='ref-link'><sup>[1]</sup></a><a href='#ref-2' class='ref-link'><sup>[2]</sup></a>.</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>References</h4><ol><li>You, et al., Evidence-Based Complementary and Alternative Medicine, 2019. <a href='https://doi.org/10.1155/2019/2010816' target='_blank'>DOI: 10.1155/2019/2010816</a></li><li>Hu, et al., Medicine, 2025. <a href='https://doi.org/10.1097/md.0000000000044115' target='_blank'>DOI: 10.1097/md.0000000000044115</a></li></ol></div>
+    <div class='references-section'><h4>References</h4><ol><li id='ref-1'>You, et al., Evidence-Based Complementary and Alternative Medicine, 2019. <a href='https://doi.org/10.1155/2019/2010816' target='_blank'>DOI: 10.1155/2019/2010816</a></li><li id='ref-2'>Hu, et al., Medicine, 2025. <a href='https://doi.org/10.1097/md.0000000000044115' target='_blank'>DOI: 10.1097/md.0000000000044115</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365 Days Care & Consultation</h2>
