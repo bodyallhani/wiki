@@ -9,7 +9,6 @@
     __OG_TAGS__
     __HEAD_SEO_TAGS__
 
-    <!-- 2단계 상위 루트 폴더 로고 경로 적용 -->
     <link rel="icon" type="image/png" href="../../Bodyall Logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" crossorigin />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -33,16 +32,48 @@
             line-height: 1.8; color: #333; margin: 0; background: #fff; 
             padding-top: var(--top-bar-h);
             padding-bottom: calc(var(--bottom-bar-h) + env(safe-area-inset-bottom)); 
-            word-break: keep-all;
+            word-break: break-all;
+            overflow-wrap: break-word;
         }
         
-        .ba-article-content { overflow-wrap: break-word; word-wrap: break-word; word-break: keep-all; }
+        .ba-article-content { overflow-wrap: break-word; word-wrap: break-word; word-break: break-all; }
         .wrapper { max-width: 800px; margin: 0 auto; padding: 20px; box-sizing: border-box; }
-
-        .top-nav { position: fixed; top: 0; left: 0; right: 0; height: var(--top-bar-h); background: rgba(255, 255, 255, 0.98); display: flex; align-items: center; justify-content: space-between; padding: 0 20px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .top-nav .back-btn { text-decoration: none; color: var(--primary); font-weight: 800; font-size: 0.95rem; display: flex; align-items: center; gap: 6px; }
-        .lang-switch { font-size: 0.75rem; color: #888; font-weight: bold; flex-shrink: 0; border-left: 1px solid #ddd; padding-left: 8px; margin-left: 5px; }
-        .lang-switch a { text-decoration: none; color: #888; padding: 0 3px; }
+        
+        .top-nav { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            height: var(--top-bar-h); 
+            background: rgba(255, 255, 255, 0.98); 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 0 15px; 
+            border-bottom: 1px solid #eee; 
+            z-index: 1000; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+        }
+        .top-nav .back-btn { 
+            text-decoration: none; 
+            color: var(--primary); 
+            font-weight: 800; 
+            font-size: 0.95rem; 
+            display: flex; 
+            align-items: center; 
+            gap: 6px; 
+        }
+        
+        .lang-switch { 
+            font-size: 0.75rem; 
+            color: #888; 
+            font-weight: bold; 
+            flex-shrink: 0; 
+            border-left: 1px solid #ddd; 
+            padding-left: 10px; 
+            margin-left: 10px; 
+        }
+        .lang-switch a { text-decoration: none; color: #888; padding: 0 2px; }
         .lang-switch a.active { color: var(--primary); font-weight: 800; }
 
         .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: var(--bottom-bar-h); background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); padding-bottom: env(safe-area-inset-bottom); }
@@ -55,7 +86,7 @@
         .ba-article-content h2 { font-size: 1.35rem; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 45px; display: flex; align-items: center; gap: 8px; font-weight: 700; }
         .ba-article-content h3 { font-size: 1.15rem; color: var(--accent); margin-top: 15px; font-weight: 700; }
         .ba-article-content p { margin: 18px 0; color: #444; line-height: 1.8; }
-
+        
         .summary-box { background: #f0f7ff; padding: 25px; border-radius: 12px; border-left: 5px solid #1a5fb4; margin: 30px 0; }
         .summary-box h2 { font-size: 1.1rem; color: #1a5fb4; margin-top: 0; margin-bottom: 10px; border-bottom: none; padding-bottom: 0; }
         .summary-box p { margin: 8px 0; color: #333; }
@@ -63,9 +94,9 @@
         .highlight-box, .intro-box { background: var(--light-bg); padding: 25px; border-radius: 12px; border-left: 5px solid var(--accent); margin-bottom: 40px; }
         .highlight-box.blue { background: #f0f7ff; border-left-color: #1a5fb4; }
         .highlight-box strong, .intro-box strong { font-size: 1.1rem; color: #222; display: block; margin-bottom: 10px; }
-
+        
         .important-point { background: #fffcf0; padding: 20px; border-radius: 12px; border-left: 5px solid var(--accent); margin: 20px 0; }
-
+        
         .solution-card { border: 1px solid #eee; padding: 20px; border-radius: 12px; background: #fff; margin-bottom: 15px; box-shadow: var(--card-shadow); }
         .solution-card strong { color: var(--accent); display: block; margin-bottom: 8px; font-size: 1.1rem; }
 
@@ -74,13 +105,13 @@
         .check-list { background: #fff9f4; padding: 20px 20px 20px 45px; border-radius: 12px; list-style: none; position: relative; }
         .check-list li { margin-bottom: 15px; font-weight: 500; line-height: 1.7; position: relative; }
         .check-list li::before { content: "\f00c"; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; left: -25px; color: var(--accent); }
-
+        
         .table-wrapper, .comparison-wrapper { overflow-x: auto; margin: 25px 0; border-radius: 12px; border: 1px solid #eee; }
         .custom-table, .info-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 500px; }
         .custom-table th, .custom-table td, .info-table th, .info-table td { padding: 15px; border: 1px solid #eee; text-align: center; }
         .custom-table th, .info-table th { background: var(--primary); color: #fff; font-weight: 800; }
         .highlight-cell { background: #fffaf5; font-weight: bold; color: var(--accent); }
-
+        
         .video-container { width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; box-shadow: var(--card-shadow); margin-bottom: 30px; }
         .ba-article-content img, .media-img, .visual-img, .hero-img, .gif-img { 
             max-width: 100%; 
@@ -92,7 +123,7 @@
             box-shadow: var(--card-shadow); 
             box-sizing: border-box; 
         }
-
+        
         .aio-box { background: #fdfaf5; padding: 25px; border-radius: 15px; margin: 40px 0; border: 1px solid #f3ece4; }
         .aio-q { font-weight: 800; color: #8d6e63; font-size: 1.1rem; display: block; margin-bottom: 15px; }
         .aio-a { border-top: 2px solid #fff; padding-top: 15px; }
@@ -101,7 +132,7 @@
         .step-table td { padding: 20px; vertical-align: middle; border-bottom: 1px solid #f0f0f0; }
         .step-gif-cell { width: 35%; text-align: center; background: #fafafa; }
         .step-gif { max-width: 100%; width: 150px; border-radius: 8px; height: auto; }
-
+        
         .doctor-card { background: #fff; padding: 25px; border: 1px solid #eee; border-radius: 15px; margin-top: 30px; box-shadow: var(--card-shadow); }
         .link-card { display: block; background: #fff; border: 1px solid #eee; padding: 15px; border-radius: 10px; text-decoration: none; color: #333; margin-bottom: 10px; transition: 0.3s; }
         .link-card:hover { border-color: var(--accent); background: #fff9f5; }
@@ -111,7 +142,7 @@
         .references-section h4 { margin-top: 0; color: var(--primary); font-size: 1rem; }
         .ref-link { text-decoration: none; font-weight: bold; color: #1a5fb4; margin-left: 2px; }
         .keyword-tag { display: inline-block; background: #eee; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #666; margin: 2px; }
-
+        
         footer { background: #2c3e50; color: #fff; padding: 40px 25px; margin-top: 60px; border-radius: 20px 20px 0 0; }
 
         .event-btn { 
@@ -135,7 +166,7 @@
         }
         .event-btn:hover { background: #d35400; transform: translateY(-2px); }
         .event-btn:active { transform: translateY(0); }
-
+        
         @media (max-width: 600px) { 
             .wrapper { padding: 15px; } 
             .step-table td { display: block; width: 100% !important; box-sizing: border-box; } 
@@ -168,7 +199,7 @@
             <strong>水原市厅站9号出口步行3分钟</strong><br>
             提供平日夜间门诊（至20:30）及周六/周日/法定节假日门诊，让您在繁忙的日常生活中也能轻松、顺畅地接受治疗。
         </p>
-        <a href="https://naver.me/53lcJrXB" target="_blank" class="map-link-btn" style="display: block; background: #03c75a; color: #fff; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 15px;">立即前往Naver预约 ➜</a>
+        <a href="https://naver.me/53lcJrXB" target="_blank" class="map-link-btn">前往Naver预约 ➜</a>
     </footer>
 </div>
   
