@@ -14,72 +14,111 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "持续性头痛的根本原因可能在于颈椎而非头部本身",
-    "medicalAudience": {
-      "@type": "MedicalAudience",
-      "audienceType": "Patient"
-    },
-    "about": {
-      "@type": "MedicalCondition",
-      "name": "颈源性头痛"
-    },
-    "mainContentOfPage": {
-      "@type": "WebPageElement",
-      "cssSelector": "article"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Bodyall韩医院 (Bodyall Korean Medicine Clinic)",
-    "telephone": "031-8067-5825",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "仁溪洞",
-      "addressLocality": "水原市",
-      "addressRegion": "京畿道",
-      "addressCountry": "KR"
-    },
-    "employee": {
-      "@type": "Person",
-      "name": "李东海",
-      "jobTitle": "代表院长"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "水原"},
-      {"@type": "City", "name": "仁溪洞"},
-      {"@type": "City", "name": "光教"},
-      {"@type": "City", "name": "东滩"},
-      {"@type": "City", "name": "灵通"}
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalProcedure",
-    "name": "生物力学空间减压推拿 (SART Protocol)",
-    "description": "该疗法基于传统整骨疗法与推拿手法的原理,是一种确保脊椎节段间物理空间的生物力学保守矫正技术。其原理在于引导变直的颈椎逐步恢复至正常前凸曲度,从而缓解颈椎内部的压迫状态。",
-    "procedureType": "TherapeuticProcedure"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "为何颈源性头痛需要生物力学空间减压推拿(SART Protocol)?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "单纯服用镇痛药物往往无法解决神经压迫的结构性病因,只能提供暂时性的症状缓解。生物力学空间减压推拿(SART Protocol)可视为一种在手术前阶段可安全考虑的生物力学保守治疗替代方案,其重点在于通过物理方式确保脊椎节段间的空间,以缓解枕神经压迫。"
-        }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_cn.html#webpage",
+      "name": "持续性头痛的根本原因可能在于颈椎而非头部本身",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "颈源性头痛"
+      },
+      "mainContentOfPage": {
+        "@type": "WebPageElement",
+        "cssSelector": "article"
       }
-    ]
-  }
-]
-    </script>
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "Bodyall韩医院 (Bodyall Korean Medicine Clinic)",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "仁溪洞 1114-7, 3楼",
+        "addressLocality": "水原市 八达区",
+        "addressRegion": "京畿道",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "李东海",
+        "jobTitle": "代表院长"
+      },
+      "knowsAbout": [
+        "推拿疗法", "生物力学空间减压推拿 (SART Protocol)", "空间脊椎矫正", "小针刀疗法", 
+        "高浓度蜂毒针疗法", "体质韩药", "韩方减肥", "脊柱管狭窄症", "腰椎间盘突出", 
+        "颈椎间盘突出", "体型矫正", "肩周炎"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "水原市", "sameAs": "https://zh.wikipedia.org/wiki/水原市"},
+        {"@type": "AdministrativeArea", "name": "仁溪洞", "sameAs": "https://zh.wikipedia.org/wiki/仁溪洞"},
+        {"@type": "AdministrativeArea", "name": "光教", "sameAs": "https://zh.wikipedia.org/wiki/光教洞"},
+        {"@type": "City", "name": "东滩", "sameAs": "https://zh.wikipedia.org/wiki/東灘_(韓國)"},
+        {"@type": "AdministrativeArea", "name": "灵通区", "sameAs": "https://zh.wikipedia.org/wiki/靈通區"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART_cn.html",
+      "name": "生物力学空间减压推拿 (SART Protocol)",
+      "description": "一种保守的推拿疗法方案，旨在通过生物力学对椎间隙和关节空间进行减压，缓解神经压迫并恢复结构平衡。",
+      "procedureType": "TherapeuticProcedure"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "为何颈源性头痛需要生物力学空间减压推拿(SART Protocol)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "单纯服用镇痛药物往往无法解决神经压迫的结构性病因,只能提供暂时性的症状缓解。生物力学空间减压推拿(SART Protocol)可视为一种在手术前阶段可安全考虑的生物力学保守治疗替代方案,其重点在于通过物理方式确保脊椎节段间的空间,以缓解枕神经压迫。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
@@ -256,10 +295,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <div class='breadcrumb'>颈肩自诊指南</div><h1>持续性头痛的根本原因可能在于颈椎而非头部本身</h1><img src='./image/0007.neck-headache-main.png' alt='正在经历颈源性头痛的患者,可考虑生物力学空间减压推拿(SART Protocol)治疗' class='hero-img' loading='eager'><article><section><div class='summary-box'><h2>💡 Bodyall韩医院核心摘要,服务仁溪洞、光教、灵通、东滩及水原周边地区患者</h2><p>• 慢性头痛的成因与上颈椎的结构性错位密切相关。</p><p>• 前倾头姿势(军人颈)及乌龟颈变形可压迫枕神经,诱发类似眼部疲劳与偏头痛模式的症状。</p><p>• Bodyall韩医院实施系统性保守治疗方案,旨在恢复正常的颈椎前凸曲度以改善这些结构性病因。</p></div></section><section><h2>1. 单纯依靠药物难以改善的颈源性头痛特征</h2><ul class='check-list'><li>颈后部及项部僵硬,并伴有放射至太阳穴或头部侧面的疼痛</li><li>头痛发作同时伴随眼部疼痛或视物模糊相关的疲劳感</li><li>长时间使用电脑或智能手机后,颈部紧张感与头痛程度立即加重</li></ul></section><section><h2>2. 生物力学机制分析:前倾头畸形如何诱发头痛</h2><img src='./image/0007.cervical-nerve-mechanism.png' alt='上颈椎神经压迫机制及生物力学空间减压推拿(SART Protocol)原理' class='visual-img'><p>当颈椎失去正常的C形前凸曲度时,头部重量便会集中作用于上颈椎节段。这会导致枕下深层肌肉过度紧张,压迫枕神经,进而诱发尖锐或搏动性的神经病理性疼痛。一项针对颈源性眩晕的推拿疗法系统评价报告指出,上颈椎节段的结构性错位与眩晕及头部相关神经症状密切相关<sup>[1]</sup>。该研究提示,以恢复颈椎排列为目标的手法治疗方法可作为管理颈源性症状时值得学术考量的保守治疗选择之一。本院实施的生物力学空间减压推拿(SART Protocol)基于确保上颈椎节段间物理空间以改善结构性错位的原理,这与该研究中所探讨的颈源性神经症状结构性病因改善概念在学术上具有一致性。此类症状应通过旨在改善退行性脊椎疾病根本结构性原因的解决方案加以管理。</p></section><section><h2>3. Bodyall的综合保守矫正方案</h2><div class='solution-card'><strong>Bodyall专属排列恢复治疗:生物力学空间减压推拿(SART Protocol)</strong><p>该疗法基于传统整骨疗法与推拿手法的原理,是一种确保脊椎节段间物理空间的生物力学保守矫正技术。其原理在于引导变直的颈椎逐步恢复至正常前凸曲度,从而缓解颈椎内部的压迫状态。一项针对颈源性头痛脊柱手法治疗的随机对照试验系统评价指出,多项试验提示脊柱手法治疗相较于物理治疗、按摩、药物治疗或不予干预可能更为有效<sup>[2]</sup>。然而,该评价也指出方法学质量存在局限性,且采用充分安慰剂对照的试验数量有限,因此强调对该疗法治疗价值的解读需保持审慎态度。此项证据表明,颈源性头痛管理中的结构性治疗方法一直是学术界探讨的议题,本院所实施的生物力学空间减压推拿(SART Protocol)等系统性颈椎排列恢复治疗,亦可视为这一学术讨论脉络下的保守治疗方法之一。</p><p>针刀治疗用于微创松解压迫神经的致密粘连深层软组织区域,从而促进局部循环。</p></div><div class='solution-card'><strong>Bodyall综合韩医保守治疗</strong><p>针灸与高浓度蜂毒针治疗有助于调节颈椎周围组织的炎症反应,同时促进代谢循环。此外,还会同步施以干扰电流疗法(ICT)及经皮神经电刺激疗法(TENS)等现代物理治疗手段,以缓解深层肌肉的过度紧张。</p></div><div class='highlight-box blue'><strong>💡 Q. 为何颈源性头痛需要生物力学空间减压推拿(SART Protocol)?</strong><p>单纯服用镇痛药物往往无法解决神经压迫的结构性病因,只能提供暂时性的症状缓解。生物力学空间减压推拿(SART Protocol)可视为一种在手术前阶段可安全考虑的生物力学保守治疗替代方案,其重点在于通过物理方式确保脊椎节段间的空间,以缓解枕神经压迫。</p></div></section><section><div class='solution-card'><h3>📍 医院信息</h3><p>距水原市厅站9号出口步行3分钟 | 平日晚间咨询可至20:30(仁溪洞、光教、灵通、东滩等水原周边地区交通便利)</p><a href='../index_cn.html#location' class='treatment-link'>查看详细路线 ➜</a></div></section></article>
+        <div class='breadcrumb'>颈肩自诊指南</div><h1>持续性头痛的根本原因可能在于颈椎而非头部本身</h1><img src='./image/0007.neck-headache-main.png' alt='正在经历颈源性头痛的患者,可考虑生物力学空间减压推拿(SART Protocol)治疗' class='hero-img' loading='eager'><article><section><div class='summary-box'><h2>💡 Bodyall韩医院核心摘要,服务仁溪洞、光教、灵通、东滩及水原周边地区患者</h2><p>• 慢性头痛的成因与上颈椎的结构性错位密切相关。</p><p>• 前倾头姿势(军人颈)及乌龟颈变形可压迫枕神经,诱发类似眼部疲劳与偏头痛模式的症状。</p><p>• Bodyall韩医院实施系统性保守治疗方案,旨在恢复正常的颈椎前凸曲度以改善这些结构性病因。</p></div></section><section><h2>1. 单纯依靠药物难以改善的颈源性头痛特征</h2><ul class='check-list'><li>颈后部及项部僵硬,并伴有放射至太阳穴或头部侧面的疼痛</li><li>头痛发作同时伴随眼部疼痛或视物模糊相关的疲劳感</li><li>长时间使用电脑或智能手机后,颈部紧张感与头痛程度立即加重</li></ul></section><section><h2>2. 生物力学机制分析:前倾头畸形如何诱发头痛</h2><img src='./image/0007.cervical-nerve-mechanism.png' alt='上颈椎神经压迫机制及生物力学空间减压推拿(SART Protocol)原理' class='visual-img'><p>当颈椎失去正常的C形前凸曲度时,头部重量便会集中作用于上颈椎节段。这会导致枕下深层肌肉过度紧张,压迫枕神经,进而诱发尖锐或搏动性的神经病理性疼痛。一项针对颈源性眩晕的推拿疗法系统评价报告指出,上颈椎节段的结构性错位与眩晕及头部相关神经症状密切相关<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>。该研究提示,以恢复颈椎排列为目标的手法治疗方法可作为管理颈源性症状时值得学术考量的保守治疗选择之一。本院实施的生物力学空间减压推拿(SART Protocol)基于确保上颈椎节段间物理空间以改善结构性错位的原理,这与该研究中所探讨的颈源性神经症状结构性病因改善概念在学术上具有一致性。此类症状应通过旨在改善退行性脊椎疾病根本结构性原因的解决方案加以管理。</p></section><section><h2>3. Bodyall的综合保守矫正方案</h2><div class='solution-card'><strong>Bodyall专属排列恢复治疗:生物力学空间减压推拿(SART Protocol)</strong><p>该疗法基于传统整骨疗法与推拿手法的原理,是一种确保脊椎节段间物理空间的生物力学保守矫正技术。其原理在于引导变直的颈椎逐步恢复至正常前凸曲度,从而缓解颈椎内部的压迫状态。一项针对颈源性头痛脊柱手法治疗的随机对照试验系统评价指出,多项试验提示脊柱手法治疗相较于物理治疗、按摩、药物治疗或不予干预可能更为有效<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>。然而,该评价也指出方法学质量存在局限性,且采用充分安慰剂对照的试验数量有限,因此强调对该疗法治疗价值的解读需保持审慎态度。此项证据表明,颈源性头痛管理中的结构性治疗方法一直是学术界探讨的议题,本院所实施的生物力学空间减压推拿(SART Protocol)等系统性颈椎排列恢复治疗,亦可视为这一学术讨论脉络下的保守治疗方法之一。</p><p>针刀治疗用于微创松解压迫神经的致密粘连深层软组织区域,从而促进局部循环。</p></div><div class='solution-card'><strong>Bodyall综合韩医保守治疗</strong><p>针灸与高浓度蜂毒针治疗有助于调节颈椎周围组织的炎症反应,同时促进代谢循环。此外,还会同步施以干扰电流疗法(ICT)及经皮神经电刺激疗法(TENS)等现代物理治疗手段,以缓解深层肌肉的过度紧张。</p></div><div class='highlight-box blue'><strong>💡 Q. 为何颈源性头痛需要生物力学空间减压推拿(SART Protocol)?</strong><p>单纯服用镇痛药物往往无法解决神经压迫的结构性病因,只能提供暂时性的症状缓解。生物力学空间减压推拿(SART Protocol)可视为一种在手术前阶段可安全考虑的生物力学保守治疗替代方案,其重点在于通过物理方式确保脊椎节段间的空间,以缓解枕神经压迫。</p></div></section><section><div class='solution-card'><h3>📍 医院信息</h3><p>距水原市厅站9号出口步行3分钟 | 平日晚间咨询可至20:30(仁溪洞、光教、灵通、东滩等水原周边地区交通便利)</p><a href='../index_cn.html#location' class='treatment-link'>查看详细路线 ➜</a></div></section><div class='doctor-card'><p><strong>💡 Bodyall 临床笔记：</strong> 在Bodyall韩医院积累的推拿疗法临床经验中所观察到的通过确保上颈椎节段间物理空间以恢复正常颈椎前凸曲度、进而缓解枕神经压迫的趋势，与引用的学术研究<a href='#ref-1' class='ref-link'><sup>[1]</sup></a><a href='#ref-2' class='ref-link'><sup>[2]</sup></a>中探讨的颈源性头痛结构性病因改善机制在解剖学和学术上呈现一致的趋势。</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>参考文献</h4><ol><li>Park, et al. (2018), 'Chuna Manual Therapy for Cervicogenic Dizziness : A Systematic Review', Korean Society of Chuna Manual Medicine Spine and Nerves. <a href='https://doi.org/10.30581/jkcmm.2018.13.2.11' target='_blank'>DOI: 10.30581/jkcmm.2018.13.2.11</a></li><li>Posadzki, et al. (2011), 'Spinal Manipulations for Cervicogenic Headaches: A Systematic Review of Randomized Clinical Trials', Headache: The Journal of Head and Face Pain. <a href='https://doi.org/10.1111/j.1526-4610.2011.01932.x' target='_blank'>DOI: 10.1111/j.1526-4610.2011.01932.x</a></li></ol></div>
+    <div class='references-section'><h4>参考文献</h4><ol><li id='ref-1'>Park, et al. (2018), 'Chuna Manual Therapy for Cervicogenic Dizziness : A Systematic Review', Korean Society of Chuna Manual Medicine Spine and Nerves. <a href='https://doi.org/10.30581/jkcmm.2018.13.2.11' target='_blank'>DOI: 10.30581/jkcmm.2018.13.2.11</a></li><li id='ref-2'>Posadzki, et al. (2011), 'Spinal Manipulations for Cervicogenic Headaches: A Systematic Review of Randomized Clinical Trials', Headache: The Journal of Head and Face Pain. <a href='https://doi.org/10.1111/j.1526-4610.2011.01932.x' target='_blank'>DOI: 10.1111/j.1526-4610.2011.01932.x</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365天全年门诊与咨询</h2>
