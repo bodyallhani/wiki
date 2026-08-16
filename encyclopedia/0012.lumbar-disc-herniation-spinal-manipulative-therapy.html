@@ -14,8 +14,102 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [{"@context":"https://schema.org","@type":"MedicalWebPage","name":"요추 추간판 탈출증, 척추 수기 치료를 통한 구조적 접근의 학술적 근거","provider":{"@type":"MedicalOrganization","name":"바디올한의원"},"about":{"@type":"MedicalCondition","name":"요추 추간판 탈출증"}},{"@context":"https://schema.org","@type":"LocalBusiness","name":"바디올한의원","telephone":"031-8067-5825","address":{"@type":"PostalAddress","streetAddress":"인계동 1114-7, 3층","addressLocality":"수원시 팔달구","addressRegion":"경기도","addressCountry":"KR"},"geo":{"@type":"GeoCoordinates","latitude":37.2651444,"longitude":127.0336222},"employee":{"@type":"Person","name":"이동해","jobTitle":"대표원장"},"areaServed":[{"@type":"City","name":"수원"},{"@type":"City","name":"인계동"},{"@type":"City","name":"광교"},{"@type":"City","name":"동탄"},{"@type":"City","name":"영통"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"14:00","closes":"20:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"10:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"14:00","closes":"16:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"PublicHolidays","opens":"10:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"PublicHolidays","opens":"14:00","closes":"16:00"}]},{"@context":"https://schema.org","@type":"MedicalProcedure","name":"생체역학적 공간 감압 추나 (SART Protocol)","description":"골반과 척추간공 전체의 정렬 및 유착된 연부조직의 유동성을 정밀하게 회복시키는 것을 핵심 기전으로 삼으며, 급격한 물리적 충격 없이 정밀한 압력 제어를 통해 척추간공의 압박을 완화하고 신경근의 유동성을 확보하는 원리를 기반으로 한다.","procedureType":"TherapeuticProcedure"},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"척추 수기 치료는 급성기와 만성기 환자 모두에게 적용 가능한가요?","acceptedAnswer":{"@type":"Answer","text":"1년간의 장기 추적 관찰 자료에 따르면, 정교한 압력 제어를 기반으로 한 척추 수기 치료는 급성 및 만성 요추 추간판 탈출증 환자 모두에서 장기적 관점의 예후 관리에 참고할 수 있는 임상적 자료로 활용되고 있다."}}]}]
-    </script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy.html#webpage",
+      "name": "요추 추간판 탈출증, 척추 수기 치료를 통한 구조적 접근의 학술적 근거",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "요추 추간판 탈출증"
+      }
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "바디올한의원",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "인계동 1114-7, 3층",
+        "addressLocality": "수원시 팔달구",
+        "addressRegion": "경기도",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "이동해",
+        "jobTitle": "대표원장"
+      },
+      "knowsAbout": [
+        "추나요법", "생체역학적 공간 감압 추나 (SART Protocol)", "공간척추교정", "도침 치료", "고농도 봉약침", 
+        "체질한약", "한방 다이어트", "척추관 협착증", "허리디스크", "목디스크", "체형교정", "오십견"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "수원시", "sameAs": "https://ko.wikipedia.org/wiki/수원시"},
+        {"@type": "AdministrativeArea", "name": "인계동", "sameAs": "https://ko.wikipedia.org/wiki/인계동"},
+        {"@type": "AdministrativeArea", "name": "광교", "sameAs": "https://ko.wikipedia.org/wiki/광교동"},
+        {"@type": "City", "name": "동탄", "sameAs": "https://ko.wikipedia.org/wiki/동탄"},
+        {"@type": "AdministrativeArea", "name": "영통구", "sameAs": "https://ko.wikipedia.org/wiki/영통구"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART.html",
+      "name": "생체역학적 공간 감압 추나 (SART Protocol)",
+      "description": "척추 및 관절 간격을 생체역학적으로 공간 감압하여 신경 압박을 해소하고 구조적 밸런스를 복원하는 보존적 추나요법 프로토콜.",
+      "procedureType": "TherapeuticProcedure"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "척추 수기 치료는 급성기와 만성기 환자 모두에게 적용 가능한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1년간의 장기 추적 관찰 자료에 따르면, 정교한 압력 제어를 기반으로 한 척추 수기 치료는 급성 및 만성 요추 추간판 탈출증 환자 모두에서 장기적 관점의 예후 관리에 참고할 수 있는 임상적 자료로 활용되고 있다."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
@@ -167,10 +261,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <div class='breadcrumb'>증상 백과 > 허리/골반</div><h1>요추 추간판 탈출증, 척추 수기 치료를 통한 구조적 접근의 학술적 근거</h1><img src='./image/0012.lumbar-disc-herniation-spinal-manipulative-therapy-1.webp' alt='요추 추간판 탈출증 바디올한의원 진료' class='hero-img' loading='eager'><article><section><p>앉아 있다가 일어설 때 허리 아래에서 다리로 뻗치는 듯한 저림이 반복된다면, 단순 근육통을 넘어선 구조적 문제를 의심해볼 필요가 있다. 요추 추간판 탈출증은 척추뼈 사이의 디스크가 밀려나와 신경근을 압박하며 발생하는 대표적인 척추 질환으로, 통증의 양상이 다리 저림, 감각 이상, 근력 저하 등으로 다양하게 나타난다.</p><div class='summary-box'><p><strong>핵심 요약</strong></p><ul><li>요추 추간판 탈출증은 디스크 돌출로 신경근이 압박되어 하지방사통을 유발하는 척추 질환이다.</li><li>척추 수기 치료는 국소 통증 관리를 넘어 척추 정렬과 골반 균형을 함께 고려하는 접근법이다.</li><li>정밀한 압력 제어를 통한 도수치료는 급성기 및 만성기 환자 모두에서 장기적 관점의 임상적 개입 수단으로 고려될 수 있다.</li><li>바디올한의원의 생체역학적 공간 감압 추나(SART Protocol)는 척추간공 전체의 정렬 회복을 핵심 기전으로 삼는다.</li></ul></div><h2>요추 추간판 탈출증의 발생 기전과 구조적 특징</h2><img src='./image/0012.lumbar-disc-herniation-spinal-manipulative-therapy-2.webp' alt='요추 추간판 탈출증 척추 수기 치료 해부학적 구조' class='visual-img' loading='lazy'><p>척추뼈 사이에 위치한 추간판은 수핵과 섬유륜으로 구성되어 충격을 흡수하는 완충 역할을 담당한다. 반복적인 자세 부담이나 외상, 노화에 따른 퇴행성 변화로 섬유륜에 미세 균열이 생기면 내부의 수핵이 후방으로 밀려나와 신경근을 압박하게 되고, 이 과정에서 요통뿐 아니라 다리로 뻗치는 방사통과 저림 증상이 동반된다. 특히 요추 4-5번, 요추 5번과 천추 1번 사이 분절에서 호발하며, 신경근 압박 부위에 따라 통증 양상과 감각 이상 부위가 달라진다.</p><p>흥미로운 점은 요추 추간판 탈출증이 단일 분절의 문제로만 국한되지 않는다는 것이다. 척추 추체 간의 정렬과 골반 천장관절의 생체역학적 균형을 함께 고려해야 한다는 임상적 근거가 제시되고 있는데<sup>[1]</sup>, 이는 요추부 디스크 문제가 골반과 척추 전체의 구조적 불균형과 긴밀하게 연동되어 있음을 시사한다.</p></section><section><h2>척추 수기 치료의 임상적 접근과 안전성</h2><p>척추 수기 치료(Spinal Manipulation)는 척추 추체 간의 미세 가동성을 회복시켜 신경근 압박을 완화하고 구조적 정렬을 개선하는 비수술적 치료법으로 임상 현장에서 활용되고 있다. 특히 고속 저강도(High-Velocity, Low-Amplitude) 기법은 짧고 정교한 힘 조절을 통해 척추 분절의 유동성을 회복시키는 방식으로, 급성기뿐만 아니라 만성화된 추간판 탈출증 환자군에서도 유의미한 임상적 개입 수단으로 고려될 수 있다는 관찰 결과가 있다<sup>[2]</sup>.</p><div class='highlight-box'><p><strong>💡 Q. 척추 수기 치료는 급성기와 만성기 환자 모두에게 적용 가능한가요?</strong></p><p>1년간의 장기 추적 관찰 자료에 따르면, 정교한 압력 제어를 기반으로 한 척추 수기 치료는 급성 및 만성 요추 추간판 탈출증 환자 모두에서 장기적 관점의 예후 관리에 참고할 수 있는 임상적 자료로 활용되고 있다.</p></div><h2>골반과 척추 전체를 고려하는 생체역학적 공간 감압 추나(SART Protocol)</h2><p>바디올한의원의 생체역학적 공간 감압 추나(SART Protocol)는 요추 추간판 탈출증 치료 시 단일 분절만을 다루는 것이 아니라, 골반과 척추간공 전체의 정렬 및 유착된 연부조직의 유동성을 정밀하게 회복시키는 것을 핵심 기전으로 삼는다. 이는 척추 수기 치료를 통한 비수술적 접근이 추간판 탈출증 환자의 구조적 균형 회복에 기여할 수 있다는 학술적 근거와 이론적 궤를 같이 한다.</p><p>또한 생체역학적 공간 감압 추나(SART Protocol)는 급격한 물리적 충격 없이 정밀한 압력 제어를 통해 척추간공의 압박을 완화하고 신경근의 유동성을 확보하는 원리를 기반으로 하는데, 이러한 접근 방식은 정밀한 수기 치료의 안전성 및 지속성에 관한 임상적 관찰 결과와 부합한다. 이처럼 바디올한의원의 생체역학적 공간 감압 추나(SART Protocol)는 요추 추간판 탈출증에 대해 수술 전 안전하게 고려할 수 있는 비수술적 보존 치료 대안 중 하나로 자리매김하고 있다.</p><div class='table-wrapper'><table class='custom-table'><thead><tr><th>구분</th><th>일반 척추 수기 치료</th><th>생체역학적 공간 감압 추나(SART Protocol)</th></tr></thead><tbody><tr><td>접근 범위</td><td>국소 분절 중심</td><td>골반-척추간공 전체 정렬</td></tr><tr><td>치료 기전</td><td>단일 부위 가동성 회복</td><td>연부조직 유동성 및 공간 확보</td></tr><tr><td>적용 시기</td><td>급성기 중심</td><td>급성 및 만성 통합 관리</td></tr><tr><td>충격 강도</td><td>고속 저강도 기법 포함</td><td>정밀 압력 제어 기반</td></tr></tbody></table></div></section><section><h2>일상 속 관리와 재발 방지를 위한 구조적 접근</h2><p>요추 추간판 탈출증은 치료 이후에도 자세 습관과 척추 주변 근력 유지가 중요하다. 장시간 앉아 있는 자세는 요추 분절에 부담을 가중시키므로, 주기적으로 자세를 전환하고 코어 근력을 강화하는 습관이 필요하다. 척추와 골반의 정렬 균형을 함께 관리하는 접근법은 단기적 통증 완화를 넘어 원인에 맞는 구조적 개선을 목표로 하는 치료 방향과 맞닿아 있다.</p></section></article>
+        <div class='breadcrumb'>증상 백과 > 허리/골반</div><h1>요추 추간판 탈출증, 척추 수기 치료를 통한 구조적 접근의 학술적 근거</h1><img src='./image/0012.lumbar-disc-herniation-spinal-manipulative-therapy-1.webp' alt='요추 추간판 탈출증 바디올한의원 진료' class='hero-img' loading='eager'><article><section><p>앉아 있다가 일어설 때 허리 아래에서 다리로 뻗치는 듯한 저림이 반복된다면, 단순 근육통을 넘어선 구조적 문제를 의심해볼 필요가 있다. 요추 추간판 탈출증은 척추뼈 사이의 디스크가 밀려나와 신경근을 압박하며 발생하는 대표적인 척추 질환으로, 통증의 양상이 다리 저림, 감각 이상, 근력 저하 등으로 다양하게 나타난다.</p><div class='summary-box'><p><strong>핵심 요약</strong></p><ul><li>요추 추간판 탈출증은 디스크 돌출로 신경근이 압박되어 하지방사통을 유발하는 척추 질환이다.</li><li>척추 수기 치료는 국소 통증 관리를 넘어 척추 정렬과 골반 균형을 함께 고려하는 접근법이다.</li><li>정밀한 압력 제어를 통한 도수치료는 급성기 및 만성기 환자 모두에서 장기적 관점의 임상적 개입 수단으로 고려될 수 있다.</li><li>바디올한의원의 생체역학적 공간 감압 추나(SART Protocol)는 척추간공 전체의 정렬 회복을 핵심 기전으로 삼는다.</li></ul></div><h2>요추 추간판 탈출증의 발생 기전과 구조적 특징</h2><img src='./image/0012.lumbar-disc-herniation-spinal-manipulative-therapy-2.webp' alt='요추 추간판 탈출증 척추 수기 치료 해부학적 구조' class='visual-img' loading='lazy'><p>척추뼈 사이에 위치한 추간판은 수핵과 섬유륜으로 구성되어 충격을 흡수하는 완충 역할을 담당한다. 반복적인 자세 부담이나 외상, 노화에 따른 퇴행성 변화로 섬유륜에 미세 균열이 생기면 내부의 수핵이 후방으로 밀려나와 신경근을 압박하게 되고, 이 과정에서 요통뿐 아니라 다리로 뻗치는 방사통과 저림 증상이 동반된다. 특히 요추 4-5번, 요추 5번과 천추 1번 사이 분절에서 호발하며, 신경근 압박 부위에 따라 통증 양상과 감각 이상 부위가 달라진다.</p><p>흥미로운 점은 요추 추간판 탈출증이 단일 분절의 문제로만 국한되지 않는다는 것이다. 척추 추체 간의 정렬과 골반 천장관절의 생체역학적 균형을 함께 고려해야 한다는 임상적 근거가 제시되고 있는데<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>, 이는 요추부 디스크 문제가 골반과 척추 전체의 구조적 불균형과 긴밀하게 연동되어 있음을 시사한다.</p></section><section><h2>척추 수기 치료의 임상적 접근과 안전성</h2><p>척추 수기 치료(Spinal Manipulation)는 척추 추체 간의 미세 가동성을 회복시켜 신경근 압박을 완화하고 구조적 정렬을 개선하는 비수술적 치료법으로 임상 현장에서 활용되고 있다. 특히 고속 저강도(High-Velocity, Low-Amplitude) 기법은 짧고 정교한 힘 조절을 통해 척추 분절의 유동성을 회복시키는 방식으로, 급성기뿐만 아니라 만성화된 추간판 탈출증 환자군에서도 유의미한 임상적 개입 수단으로 고려될 수 있다는 관찰 결과가 있다<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>.</p><div class='highlight-box'><p><strong>💡 Q. 척추 수기 치료는 급성기와 만성기 환자 모두에게 적용 가능한가요?</strong></p><p>1년간의 장기 추적 관찰 자료에 따르면, 정교한 압력 제어를 기반으로 한 척추 수기 치료는 급성 및 만성 요추 추간판 탈출증 환자 모두에서 장기적 관점의 예후 관리에 참고할 수 있는 임상적 자료로 활용되고 있다.</p></div><h2>골반과 척추 전체를 고려하는 생체역학적 공간 감압 추나(SART Protocol)</h2><p>바디올한의원의 생체역학적 공간 감압 추나(SART Protocol)는 요추 추간판 탈출증 치료 시 단일 분절만을 다루는 것이 아니라, 골반과 척추간공 전체의 정렬 및 유착된 연부조직의 유동성을 정밀하게 회복시키는 것을 핵심 기전으로 삼는다. 이는 척추 수기 치료를 통한 비수술적 접근이 추간판 탈출증 환자의 구조적 균형 회복에 기여할 수 있다는 학술적 근거와 이론적 궤를 같이 한다.</p><p>또한 생체역학적 공간 감압 추나(SART Protocol)는 급격한 물리적 충격 없이 정밀한 압력 제어를 통해 척추간공의 압박을 완화하고 신경근의 유동성을 확보하는 원리를 기반으로 하는데, 이러한 접근 방식은 정밀한 수기 치료의 안전성 및 지속성에 관한 임상적 관찰 결과와 부합한다. 이처럼 바디올한의원의 생체역학적 공간 감압 추나(SART Protocol)는 요추 추간판 탈출증에 대해 수술 전 안전하게 고려할 수 있는 비수술적 보존 치료 대안 중 하나로 자리매김하고 있다.</p><div class='table-wrapper'><table class='custom-table'><thead><tr><th>구분</th><th>일반 척추 수기 치료</th><th>생체역학적 공간 감압 추나(SART Protocol)</th></tr></thead><tbody><tr><td>접근 범위</td><td>국소 분절 중심</td><td>골반-척추간공 전체 정렬</td></tr><tr><td>치료 기전</td><td>단일 부위 가동성 회복</td><td>연부조직 유동성 및 공간 확보</td></tr><tr><td>적용 시기</td><td>급성기 중심</td><td>급성 및 만성 통합 관리</td></tr><tr><td>충격 강도</td><td>고속 저강도 기법 포함</td><td>정밀 압력 제어 기반</td></tr></tbody></table></div></section><section><h2>일상 속 관리와 재발 방지를 위한 구조적 접근</h2><p>요추 추간판 탈출증은 치료 이후에도 자세 습관과 척추 주변 근력 유지가 중요하다. 장시간 앉아 있는 자세는 요추 분절에 부담을 가중시키므로, 주기적으로 자세를 전환하고 코어 근력을 강화하는 습관이 필요하다. 척추와 골반의 정렬 균형을 함께 관리하는 접근법은 단기적 통증 완화를 넘어 원인에 맞는 구조적 개선을 목표로 하는 치료 방향과 맞닿아 있다.</p></section><div class='doctor-card'><p><strong>💡 바디올 임상 노트:</strong> 실제 임상 현장에서 관찰되는 생체역학적 공간 감압 추나(SART Protocol)의 골반-척추간공 전체 정렬 회복 경향은, 인용된 학술 연구<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>에서 제시된 척추 추체 간 정렬 및 골반 천장관절 생체역학적 균형 개선 원리와 해부학적으로 궤를 함께합니다. 아울러 정밀한 압력 제어를 통해 급격한 물리적 충격 없이 신경근 유동성을 확보하는 접근 방식은, 급성 및 만성 요추 추간판 탈출증 환자군 모두에서 유의미한 임상적 개입 수단으로 고려될 수 있다는 관찰 결과<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>와도 부합하는 경향을 나타냅니다.</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>참고문헌</h4><ol><li>Shokri, et al. (2018), 'Spinal manipulation in the treatment of patients with MRI-confirmed lumbar disc herniation and sacroiliac joint hypomobility: a quasi-experimental study', Chiropractic & Manual Therapies. <a href='https://doi.org/10.1186/s12998-018-0185-z' target='_blank'>DOI: 10.1186/s12998-018-0185-z</a></li><li>Leemann, et al. (2014), 'Outcomes of Acute and Chronic Patients With Magnetic Resonance Imaging–Confirmed Symptomatic Lumbar Disc Herniations Receiving High-Velocity, Low-Amplitude, Spinal Manipulative Therapy: A Prospective Observational Cohort Study With One-Year Follow-Up', Journal of Manipulative and Physiological Therapeutics. <a href='https://doi.org/10.1016/j.jmpt.2013.12.011' target='_blank'>DOI: 10.1016/j.jmpt.2013.12.011</a></li></ol></div>
+    <div class='references-section'><h4>참고문헌</h4><ol><li id='ref-1'>Shokri, et al. (2018), 'Spinal manipulation in the treatment of patients with MRI-confirmed lumbar disc herniation and sacroiliac joint hypomobility: a quasi-experimental study', Chiropractic & Manual Therapies. <a href='https://doi.org/10.1186/s12998-018-0185-z' target='_blank'>DOI: 10.1186/s12998-018-0185-z</a></li><li id='ref-2'>Leemann, et al. (2014), 'Outcomes of Acute and Chronic Patients With Magnetic Resonance Imaging–Confirmed Symptomatic Lumbar Disc Herniations Receiving High-Velocity, Low-Amplitude, Spinal Manipulative Therapy: A Prospective Observational Cohort Study With One-Year Follow-Up', Journal of Manipulative and Physiological Therapeutics. <a href='https://doi.org/10.1016/j.jmpt.2013.12.011' target='_blank'>DOI: 10.1016/j.jmpt.2013.12.011</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365일 진료 및 상담</h2>
