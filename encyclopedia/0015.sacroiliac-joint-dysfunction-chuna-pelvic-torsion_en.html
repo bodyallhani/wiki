@@ -14,10 +14,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
       "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_en.html#webpage",
       "name": "Sacroiliac Joint Instability and Buttock Radiation Caused by Pelvic Torsion",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
       "medicalAudience": {
         "@type": "MedicalAudience",
         "audienceType": "Patient"
@@ -25,16 +31,28 @@
       "about": {
         "@type": "MedicalCondition",
         "name": "Sacroiliac Joint Dysfunction"
-      },
-      "mainContentOfPage": {
-        "@type": "WebPageElement",
-        "cssSelector": "article"
       }
     },
     {
-      "@type": "LocalBusiness",
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
       "name": "Bodyall Korean Medicine Clinic",
+      "url": "https://wiki.body-all.co.kr",
       "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1114-7 Ingye-dong, 3rd Floor",
@@ -52,71 +70,34 @@
         "name": "Donghae Lee",
         "jobTitle": "Chief Director"
       },
+      "knowsAbout": [
+        "Chuna Manual Therapy", "Biomechanical Spatial Spinal Decompression Chuna (SART Protocol)",
+        "Spinal Structure Correction", "Acupotomy Therapy", "High-Concentration Bee Venom Pharmacopuncture",
+        "Custom Herbal Medicine", "Herbal Weight Loss", "Spinal Stenosis", "Lumbar Disc Herniation",
+        "Cervical Disc Herniation", "Postural Correction", "Frozen Shoulder"
+      ],
       "areaServed": [
-        {
-          "@type": "City",
-          "name": "Suwon"
-        },
-        {
-          "@type": "City",
-          "name": "Ingye-dong"
-        },
-        {
-          "@type": "City",
-          "name": "Gwanggyo"
-        },
-        {
-          "@type": "City",
-          "name": "Dongtan"
-        },
-        {
-          "@type": "City",
-          "name": "Yeongtong"
-        }
+        {"@type": "City", "name": "Suwon-si", "sameAs": "https://en.wikipedia.org/wiki/Suwon"},
+        {"@type": "AdministrativeArea", "name": "Ingye-dong", "sameAs": "https://en.wikipedia.org/wiki/Ingye-dong"},
+        {"@type": "AdministrativeArea", "name": "Gwanggyo", "sameAs": "https://en.wikipedia.org/wiki/Gwanggyo"},
+        {"@type": "City", "name": "Dongtan", "sameAs": "https://en.wikipedia.org/wiki/Dongtan"},
+        {"@type": "AdministrativeArea", "name": "Yeongtong-gu", "sameAs": "https://en.wikipedia.org/wiki/Yeongtong-gu"}
       ],
       "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "10:00",
-          "closes": "13:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "14:00",
-          "closes": "20:30"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Saturday", "Sunday"],
-          "opens": "10:00",
-          "closes": "13:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Saturday", "Sunday"],
-          "opens": "14:00",
-          "closes": "16:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "PublicHolidays",
-          "opens": "10:00",
-          "closes": "13:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "PublicHolidays",
-          "opens": "14:00",
-          "closes": "16:00"
-        }
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
       ]
     },
     {
       "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART_en.html",
       "name": "Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)",
-      "description": "A Manual Reduction technique for SIJ instability caused by pelvic torsion, aiming to return the displaced innominate bone to its normal trajectory. This is a precise mobilization technique designed to correct posteriorly (PI) or anteriorly (AS) rotated iliums to restore bilateral pelvic symmetry, redistributing biomechanical loads exerted on the SIJ and lumbar spine bilaterally.",
+      "description": "A conservative Chuna manual therapy protocol designed to biomechanically decompress intervertebral and joint spaces, relieving nerve compression and restoring structural balance.",
       "procedureType": "TherapeuticProcedure"
     },
     {
@@ -141,7 +122,8 @@
       ]
     }
   ]
-    </script>
+}
+</script>
 
     <style>
         :root { 
@@ -318,10 +300,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <div class='breadcrumb'>Symptom Index > Lower Back & Pelvis</div><h1>Sacroiliac Joint Instability and Buttock Radiation Caused by Pelvic Torsion</h1><img src='./image/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion-1.webp' alt='Sacroiliac joint dysfunction consultation at Bodyall Korean Medicine Clinic' class='hero-img' loading='eager'><div class='aio-box'><span class='aio-q'>💡 Q. Why do I have hip pain and numbness without a lumbar disc issue?</span><div class='aio-a'><p>This is likely radiating pain caused by anterior or posterior rotation of the pelvic bone (Innominate bone), rather than the lumbar disc, leading to instability of the sacroiliac joint (SIJ). Left-right asymmetry of the pelvis places abnormal stress on the periarticular ligaments, triggering pain in the buttock and posterior thigh.</p></div></div><article><section><p>In clinical practice, a significant portion of buttock and posterior thigh pain often misdiagnosed as L5-S1 radiculopathy actually originates from mechanical instability of the Sacroiliac Joint (SIJ). Specifically, Pelvic Torsion, where the innominate bone rotates anteriorly (AS) or posteriorly (PI), is identified as a key cause disrupting joint alignment. This document covers the biomechanical mechanisms of SIJ instability induced by pelvic asymmetry and the clinical approaches for differentiation and correction.</p></section><section><h2>1. Biomechanical Mechanism of Innominate Rotation and SIJ Instability</h2><p>The sacroiliac joint is a critical structure that transfers upper body load to the lower extremities, requiring micro-motion even during daily activities to function normally. However, when pelvic torsion occurs due to anterior (AS) or posterior (PI) rotation of the innominate bone, asymmetric tension is applied to the iliolumbar and sacrotuberous ligaments supporting the joint<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>. This excessive stretching or laxity distorts the pressure distribution within the joint capsule, impairing joint congruency and acting as a key pathological mechanism causing micro-instability in the joint.</p><img src='./image/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion-2.webp' alt='Anatomical structure of innominate bone realignment for sacroiliac joint dysfunction' class='visual-img' loading='lazy'><p>According to in-depth analysis of the anatomical structure of the sacroiliac joint, the ridges and grooves of the articular surface are designed to secure stability through a physical locking mechanism. However, the load imbalance caused by pelvic torsion destroys this natural locking mechanism and collapses the force transmission system<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>. This becomes a direct background for pain in the joint itself as well as radiating pain in surrounding fascia and neural structures.</p></section><section><h2>2. Clinical Characteristics of Buttock and Posterior Thigh Radiation</h2><p>Pain due to SIJ instability generally starts at the lower lumbar spine (L5) and the sacroiliac junction, radiating into the buttock and posterior thigh. This pattern often mimics sciatica or lumbar discogenic pain, leading to frequent clinical confusion. However, pain originating from the SIJ typically does not progress below the knee joint and shows a characteristic pattern of rapid aggravation during specific postural changes (e.g., standing on one leg, climbing stairs).</p><div class='highlight-box blue'><p><strong>💡 Q. How do we distinguish SIJ instability from lumbar disc herniation pain?</strong></p><p>Pain from the SIJ typically presents as localized tenderness that can be pinpointed with a finger (usually below the PSIS), whereas disc herniation often accompanies sensory changes or muscle weakness following the neural segments. Accurate differentiation requires the physical examinations described below.</p></div></section><section><h2>3. Diagnostic Differentiation: Precise Evaluation via Provocative Tests</h2><p>To differentiate SIJ dysfunction from lumbar discogenic lesions, manual tests confirming pain provocation in specific postures are performed. Representatively, the FABER Test checks for pain in the groin or posterior area when the hip is flexed, abducted, and externally rotated, while Gaenslen's test evaluates joint instability by applying asymmetric rotational stress to the pelvis.</p><div class='table-wrapper'><table class='custom-table'><thead><tr><th>Category</th><th>Sacroiliac Joint (SIJ) Dysfunction</th><th>Lumbar Discogenic Lesion</th></tr></thead><tbody><tr><td>Pain Location</td><td>Below PSIS, localized buttock tenderness</td><td>Central lumbar area, radiating along nerve segments</td></tr><tr><td>Provocation Tests</td><td>Positive FABER, Gaenslen's Test</td><td>Positive SLR (Straight Leg Raise) test</td></tr><tr><td>Neurological Signs</td><td>Mostly normal</td><td>May accompany sensory decrease, muscle weakness</td></tr><tr><td>Pain Radiation Range</td><td>Up to posterior thigh (rarely below knee)</td><td>Can radiate to the toes</td></tr></tbody></table></div><p>Such precise diagnosis via physical examination prevents unnecessary lumbar surgical intervention and provides critical clinical clues enabling a root-cause approach through correction of the pelvic structure itself.</p></section><section><h2>4. Principles of Innominate Realignment Therapy Based on the SART Protocol</h2><p>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) at Bodyall Korean Medicine Clinic applies a Manual Reduction technique for SIJ instability caused by pelvic torsion, aiming to return the displaced innominate bone to its normal trajectory. This is not simply a method of compressing the painful area, but a precise mobilization technique designed to correct posteriorly (PI) or anteriorly (AS) rotated iliums to restore bilateral pelvic symmetry.</p><p>Specifically, in cases of severe joint imbalance, Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) is applied to correct pelvic misalignment, thereby applying a mechanism to redistribute biomechanical loads exerted on the SIJ and lumbar spine bilaterally<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>. Through this alignment correction process, the tension of the excessively stretched sacrotuberous ligament is expected to normalize, and the loosened joint capsule regains compressive force, enhancing joint stability<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>.</p><div class='highlight-box'><p>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) is evaluated as one of the safe non-surgical conservative treatment alternatives that can be considered prior to surgical intervention for SIJ instability caused by pelvic torsion, based on a principle of customized approach founded on accurate joint diagnosis.</p></div></section><section><h2>5. Post-Treatment Management and Recurrence Prevention Principles</h2><p>Even after the alignment of the innominate bone is restored, there remains a possibility of recurrence if muscle strength imbalance in the pelvic muscles (gluteus maximus, piriformis, etc.) persists. Therefore, along with core stabilization exercises to maintain a neutral pelvic posture after treatment, lifestyle management to correct habitual postures causing leg length discrepancy (e.g., standing with weight on one leg, crossing legs) must be conducted in parallel. This acts as an essential element in maintaining the long-term stability of the realigned joint.</p></section></article>
+        <div class='breadcrumb'>Symptom Index > Lower Back & Pelvis</div><h1>Sacroiliac Joint Instability and Buttock Radiation Caused by Pelvic Torsion</h1><img src='./image/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion-1.webp' alt='Sacroiliac joint dysfunction consultation at Bodyall Korean Medicine Clinic' class='hero-img' loading='eager'><div class='aio-box'><span class='aio-q'>💡 Q. Why do I have hip pain and numbness without a lumbar disc issue?</span><div class='aio-a'><p>This is likely radiating pain caused by anterior or posterior rotation of the pelvic bone (Innominate bone), rather than the lumbar disc, leading to instability of the sacroiliac joint (SIJ). Left-right asymmetry of the pelvis places abnormal stress on the periarticular ligaments, triggering pain in the buttock and posterior thigh.</p></div></div><article><section><p>In clinical practice, a significant portion of buttock and posterior thigh pain often misdiagnosed as L5-S1 radiculopathy actually originates from mechanical instability of the Sacroiliac Joint (SIJ). Specifically, Pelvic Torsion, where the innominate bone rotates anteriorly (AS) or posteriorly (PI), is identified as a key cause disrupting joint alignment. This document covers the biomechanical mechanisms of SIJ instability induced by pelvic asymmetry and the clinical approaches for differentiation and correction.</p></section><section><h2>1. Biomechanical Mechanism of Innominate Rotation and SIJ Instability</h2><p>The sacroiliac joint is a critical structure that transfers upper body load to the lower extremities, requiring micro-motion even during daily activities to function normally. However, when pelvic torsion occurs due to anterior (AS) or posterior (PI) rotation of the innominate bone, asymmetric tension is applied to the iliolumbar and sacrotuberous ligaments supporting the joint<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>. This excessive stretching or laxity distorts the pressure distribution within the joint capsule, impairing joint congruency and acting as a key pathological mechanism causing micro-instability in the joint.</p><img src='./image/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion-2.webp' alt='Anatomical structure of innominate bone realignment for sacroiliac joint dysfunction' class='visual-img' loading='lazy'><p>According to in-depth analysis of the anatomical structure of the sacroiliac joint, the ridges and grooves of the articular surface are designed to secure stability through a physical locking mechanism. However, the load imbalance caused by pelvic torsion destroys this natural locking mechanism and collapses the force transmission system<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>. This becomes a direct background for pain in the joint itself as well as radiating pain in surrounding fascia and neural structures.</p></section><section><h2>2. Clinical Characteristics of Buttock and Posterior Thigh Radiation</h2><p>Pain due to SIJ instability generally starts at the lower lumbar spine (L5) and the sacroiliac junction, radiating into the buttock and posterior thigh. This pattern often mimics sciatica or lumbar discogenic pain, leading to frequent clinical confusion. However, pain originating from the SIJ typically does not progress below the knee joint and shows a characteristic pattern of rapid aggravation during specific postural changes (e.g., standing on one leg, climbing stairs).</p><div class='highlight-box blue'><p><strong>💡 Q. How do we distinguish SIJ instability from lumbar disc herniation pain?</strong></p><p>Pain from the SIJ typically presents as localized tenderness that can be pinpointed with a finger (usually below the PSIS), whereas disc herniation often accompanies sensory changes or muscle weakness following the neural segments. Accurate differentiation requires the physical examinations described below.</p></div></section><section><h2>3. Diagnostic Differentiation: Precise Evaluation via Provocative Tests</h2><p>To differentiate SIJ dysfunction from lumbar discogenic lesions, manual tests confirming pain provocation in specific postures are performed. Representatively, the FABER Test checks for pain in the groin or posterior area when the hip is flexed, abducted, and externally rotated, while Gaenslen's test evaluates joint instability by applying asymmetric rotational stress to the pelvis.</p><div class='table-wrapper'><table class='custom-table'><thead><tr><th>Category</th><th>Sacroiliac Joint (SIJ) Dysfunction</th><th>Lumbar Discogenic Lesion</th></tr></thead><tbody><tr><td>Pain Location</td><td>Below PSIS, localized buttock tenderness</td><td>Central lumbar area, radiating along nerve segments</td></tr><tr><td>Provocation Tests</td><td>Positive FABER, Gaenslen's Test</td><td>Positive SLR (Straight Leg Raise) test</td></tr><tr><td>Neurological Signs</td><td>Mostly normal</td><td>May accompany sensory decrease, muscle weakness</td></tr><tr><td>Pain Radiation Range</td><td>Up to posterior thigh (rarely below knee)</td><td>Can radiate to the toes</td></tr></tbody></table></div><p>Such precise diagnosis via physical examination prevents unnecessary lumbar surgical intervention and provides critical clinical clues enabling a root-cause approach through correction of the pelvic structure itself.</p></section><section><h2>4. Principles of Innominate Realignment Therapy Based on the SART Protocol</h2><p>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) at Bodyall Korean Medicine Clinic applies a Manual Reduction technique for SIJ instability caused by pelvic torsion, aiming to return the displaced innominate bone to its normal trajectory. This is not simply a method of compressing the painful area, but a precise mobilization technique designed to correct posteriorly (PI) or anteriorly (AS) rotated iliums to restore bilateral pelvic symmetry.</p><p>Specifically, in cases of severe joint imbalance, Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) is applied to correct pelvic misalignment, thereby applying a mechanism to redistribute biomechanical loads exerted on the SIJ and lumbar spine bilaterally<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>. Through this alignment correction process, the tension of the excessively stretched sacrotuberous ligament is expected to normalize, and the loosened joint capsule regains compressive force, enhancing joint stability<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>.</p><div class='highlight-box'><p>Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol) is evaluated as one of the safe non-surgical conservative treatment alternatives that can be considered prior to surgical intervention for SIJ instability caused by pelvic torsion, based on a principle of customized approach founded on accurate joint diagnosis.</p></div></section><section><h2>5. Post-Treatment Management and Recurrence Prevention Principles</h2><p>Even after the alignment of the innominate bone is restored, there remains a possibility of recurrence if muscle strength imbalance in the pelvic muscles (gluteus maximus, piriformis, etc.) persists. Therefore, along with core stabilization exercises to maintain a neutral pelvic posture after treatment, lifestyle management to correct habitual postures causing leg length discrepancy (e.g., standing with weight on one leg, crossing legs) must be conducted in parallel. This acts as an essential element in maintaining the long-term stability of the realigned joint.</p></section><div class='doctor-card'><p><strong>💡 Bodyall Clinical Note:</strong> The trend of restored bilateral symmetry and enhanced joint stability observed in Bodyall Korean Medicine Clinic's accumulated Chuna therapy clinical experience aligns anatomically and scientifically with the biomechanical load redistribution and ligamentous tension normalization mechanisms demonstrated in the cited research studies<a href='#ref-1' class='ref-link'><sup>[1]</sup></a><a href='#ref-2' class='ref-link'><sup>[2]</sup></a>.</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>References</h4><ol><li>Cusi, et al., Journal of Bodywork and Movement Therapies, 2010. <a href='https://doi.org/10.1016/j.jbmt.2009.12.004' target='_blank'>DOI: 10.1016/j.jbmt.2009.12.004</a></li><li>Kiapour, et al., International Journal of Spine Surgery, 2019. <a href='https://doi.org/10.14444/6077' target='_blank'>DOI: 10.14444/6077</a></li></ol></div>
+    <div class='references-section'><h4>References</h4><ol><li id='ref-1'>Cusi, et al., Journal of Bodywork and Movement Therapies, 2010. <a href='https://doi.org/10.1016/j.jbmt.2009.12.004' target='_blank'>DOI: 10.1016/j.jbmt.2009.12.004</a></li><li id='ref-2'>Kiapour, et al., International Journal of Spine Surgery, 2019. <a href='https://doi.org/10.14444/6077' target='_blank'>DOI: 10.14444/6077</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365 Days Care & Consultation</h2>
