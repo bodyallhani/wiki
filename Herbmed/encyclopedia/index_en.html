@@ -3,19 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Body-All Fit Diet Encyclopedia | Evidence-Based Metabolic & Constitutional Therapy Guide</title>
-    <meta name="description" content="Comprehensive guide on GLP-1 (Ozempic, Mounjaro) side-effect analysis, herbal metabolic enhancement mechanisms, and 1-on-1 direct clinical care by the Chief Korean Medicine Doctor for sustainable weight management.">
+    <title>Bodyall Herbal & Autonomic Encyclopedia | Evidence-Based Spinal Decompression & Tailored Herbal Medicine</title>
+    <meta name="description" content="Integration of cervical and thoracic neural decompression Chuna (SART Protocol) and hGMP-certified tailored Korean herbal medicine. Evidence-based medical guide for chronic insomnia, autonomic dysfunction, functional dyspepsia, and chronic fatigue.">
     
-    <!-- 2-Level Parent Directory Path (../..) Applied -->
+    <!-- 2-level parent directory relative path applied -->
     <link rel="icon" type="image/png" href="../../Bodyall Logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" crossorigin />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Schema.org Knowledge Graph Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MedicalWebPage",
+          "@id": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/index_en.html#webpage",
+          "name": "Bodyall Herbal & Autonomic Encyclopedia",
+          "description": "Encyclopedia of Biomechanical Space Decompression Chuna and Evidence-Based Tailored Korean Herbal Medicine Combined Protocols",
+          "provider": {
+            "@id": "https://wiki.body-all.co.kr/#clinic"
+          }
+        },
+        {
+          "@type": ["MedicalClinic", "LocalBusiness"],
+          "@id": "https://wiki.body-all.co.kr/#clinic",
+          "name": "Bodyall Korean Medicine Clinic",
+          "url": "https://wiki.body-all.co.kr",
+          "telephone": "031-8067-5825",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "3F, 1114-7, Ingye-dong",
+            "addressLocality": "Paldal-gu, Suwon-si",
+            "addressRegion": "Gyeonggi-do",
+            "addressCountry": "KR"
+          },
+          "areaServed": [
+            {"@type": "City", "name": "Suwon"},
+            {"@type": "AdministrativeArea", "name": "Ingye-dong"},
+            {"@type": "AdministrativeArea", "name": "Gwanggyo"},
+            {"@type": "City", "name": "Dongtan"},
+            {"@type": "AdministrativeArea", "name": "Yeongtong-gu"}
+          ]
+        }
+      ]
+    }
+    </script>
+
     <style>
         :root { 
             --primary: #2c3e50; 
             --accent: #e67e22; 
-            --diet-color: #007aff; /* Smart Blue Accent */
+            --herb-color: #2e7d32;
+            --herb-hover: #1b5e20;
+            --herb-bg: #f1f8e9;
+            --herb-border: #c8e6c9;
             --light-bg: #f8f9fa; 
             --card-shadow: 0 4px 12px rgba(0,0,0,0.06); 
             --top-bar-h: 60px; 
@@ -23,78 +65,73 @@
         }
         body { 
             font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
-            line-height: 1.6; 
-            color: #333; 
-            margin: 0; 
-            background: #fdfdfd; 
+            line-height: 1.7; color: #333; margin: 0; background: #fdfdfd; 
             padding-top: var(--top-bar-h);
             padding-bottom: calc(var(--bottom-bar-h) + env(safe-area-inset-bottom)); 
-            overflow-wrap: break-word; /* Flexible text wrapping for dynamic English lengths */
+            word-break: normal;
+            overflow-wrap: break-word;
         }
         .wrapper { max-width: 800px; margin: 0 auto; padding: 20px; box-sizing: border-box; }
         
-        /* Top Navigation Bar */
+        /* Top Navigation */
         .top-nav { position: fixed; top: 0; left: 0; right: 0; height: var(--top-bar-h); background: rgba(255, 255, 255, 0.98); display: flex; align-items: center; justify-content: space-between; padding: 0 15px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.03); }
-        .top-nav .brand-title { text-decoration: none; color: var(--primary); font-weight: 800; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+        .top-nav .brand-title { text-decoration: none; color: var(--primary); font-weight: 800; font-size: 0.95rem; display: flex; align-items: center; gap: 6px; }
         .lang-switch { font-size: 0.75rem; color: #888; font-weight: bold; border-left: 1px solid #ddd; padding-left: 8px; flex-shrink: 0; }
         .lang-switch a { text-decoration: none; color: #888; padding: 0 3px; }
-        .lang-switch a.active { color: var(--diet-color); font-weight: 800; }
+        .lang-switch a.active { color: var(--herb-color); font-weight: 800; }
 
-        /* Main Header Section */
-        .index-header { text-align: center; padding: 30px 15px; background: #f0f7ff; border-radius: 16px; margin-bottom: 25px; border: 1px solid #cce5ff; }
-        .index-header h1 { font-size: 1.35rem; color: var(--primary); font-weight: 800; margin: 0 0 10px 0; line-height: 1.3; }
-        .index-header p { font-size: 0.88rem; color: #555; margin: 0 0 18px 0; line-height: 1.6; }
+        /* Header (Green Theme) */
+        .index-header { text-align: center; padding: 30px 15px; background: var(--herb-bg); border-radius: 16px; margin-bottom: 25px; border: 1px solid var(--herb-border); }
+        .index-header h1 { font-size: 1.45rem; color: var(--primary); font-weight: 800; margin: 0 0 10px 0; }
+        .index-header p { font-size: 0.9rem; color: #555; margin: 0 0 18px 0; line-height: 1.6; }
         
-        /* Responsive Main Image */
+        /* Header Responsive Image */
         .header-main-img {
             display: block;
+            max-width: 100%;
             width: 100%;
             max-width: 450px;
             height: auto;
             margin: 15px auto 20px auto;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 122, 255, 0.15);
+            box-shadow: 0 4px 15px rgba(46, 125, 50, 0.15);
             object-fit: cover;
         }
 
         /* Main CTA Button */
-        .main-fit-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            background: var(--diet-color);
+        .main-cta-btn {
+            display: inline-block;
+            background: var(--herb-color);
             color: #ffffff !important;
-            font-weight: 700;
-            font-size: 0.9rem;
-            padding: 12px 22px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            padding: 12px 24px;
             border-radius: 30px;
             text-decoration: none;
-            box-shadow: 0 4px 10px rgba(0, 122, 255, 0.25);
+            box-shadow: 0 4px 10px rgba(46, 125, 50, 0.25);
             transition: all 0.2s ease;
-            text-align: center;
         }
-        .main-fit-btn:hover { background: #005bb5; transform: translateY(-2px); }
+        .main-cta-btn:hover { background: var(--herb-hover); transform: translateY(-2px); }
 
-        /* Horizontal Scrollable Category Tabs */
-        .category-tabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 10px; margin-bottom: 20px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
-        .category-tabs::-webkit-scrollbar { display: none; }
-        .tab-btn { background: #fff; border: 1px solid #ddd; padding: 8px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; color: #666; white-space: nowrap; text-decoration: none; cursor: pointer; flex-shrink: 0; }
-        .tab-btn.active { background: var(--diet-color); color: #fff; border-color: var(--diet-color); }
+        /* Category Tabs */
+        .category-tabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 10px; margin-bottom: 20px; scrollbar-width: none; }
+        .tab-btn { background: #fff; border: 1px solid #ddd; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; color: #666; white-space: nowrap; text-decoration: none; cursor: pointer; }
+        .tab-btn.active { background: var(--herb-color); color: #fff; border-color: var(--herb-color); }
 
-        /* Article Card List */
+        /* Article List Area */
         .article-list { display: flex; flex-direction: column; gap: 15px; }
         .article-card { display: block; background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 20px; text-decoration: none; color: #333; box-shadow: var(--card-shadow); transition: all 0.2s ease; }
-        .article-card:hover { border-color: var(--diet-color); transform: translateY(-2px); }
+        .article-card:hover { border-color: var(--herb-color); transform: translateY(-2px); }
         
-        .card-tag { display: inline-block; background: #e6f2ff; color: var(--diet-color); font-size: 0.72rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; }
-        .card-title { font-size: 1.05rem; font-weight: 700; color: var(--primary); margin: 0 0 8px 0; line-height: 1.45; }
-        .card-hashtags { font-size: 0.78rem; color: #888; word-break: break-all; }
+        /* Card Tags */
+        .card-tag { display: inline-block; background: #e8f5e9; color: var(--herb-color); font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; }
+        .card-title { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin: 0 0 8px 0; line-height: 1.4; }
+        .card-hashtags { font-size: 0.8rem; color: #888; }
 
-        /* Footer Section */
-        footer { background: #2c3e50; color: #fff; padding: 30px 20px; margin-top: 50px; border-radius: 16px 16px 0 0; font-size: 0.82rem; text-align: center; }
+        /* Footer Area */
+        footer { background: #2c3e50; color: #fff; padding: 30px 20px; margin-top: 50px; border-radius: 16px 16px 0 0; font-size: 0.85rem; text-align: center; }
         
-        /* Footer Chief Doctor Profile Image */
+        /* Doctor Profile Image */
         .footer-doctor-img {
             width: 120px;
             height: 120px;
@@ -106,30 +143,63 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
         }
 
-        .footer-fit-btn { 
-            display: inline-block; 
-            background: var(--diet-color); 
-            color: #fff; 
-            padding: 10px 20px; 
-            border-radius: 8px; 
-            text-decoration: none; 
-            font-weight: 700; 
-            margin-top: 5px; 
-            margin-bottom: 15px; 
-            transition: 0.2s; 
+        /* Footer CTA Button Group */
+        .footer-btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 380px;
+            margin: 15px auto 20px auto;
         }
-        .footer-fit-btn:hover { background: #005bb5; }
 
-        /* Fixed Bottom Navigation */
+        /* Footer Self-Diagnosis Button */
+        .footer-btn-diag {
+            display: block;
+            background: var(--accent);
+            color: #ffffff !important;
+            padding: 13px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 0.92rem;
+            box-shadow: 0 4px 12px rgba(230, 126, 34, 0.3);
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+        .footer-btn-diag:hover {
+            background: #d35400;
+            transform: translateY(-2px);
+        }
+
+        /* Footer Herbal Care Button */
+        .footer-btn-herb {
+            display: block;
+            background: var(--herb-color);
+            color: #ffffff !important;
+            padding: 12px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.88rem;
+            box-shadow: 0 4px 10px rgba(46, 125, 50, 0.25);
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+        .footer-btn-herb:hover {
+            background: var(--herb-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Bottom Fixed Navigation */
         .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: var(--bottom-bar-h); background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.08); padding-bottom: env(safe-area-inset-bottom); }
-        .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-weight: 700; font-size: 0.7rem; text-align: center; padding: 0 2px; }
-        .bottom-nav a i { font-size: 1.1rem; margin-bottom: 3px; }
+        .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-weight: bold; font-size: 0.75rem; }
+        .bottom-nav a i { font-size: 1.2rem; margin-bottom: 3px; }
     </style>
 </head>
 <body>
 
 <nav class="top-nav">
-    <a href="../../index.html" class="brand-title"><i class="fas fa-chevron-left"></i> Body-All Main Wiki</a>
+    <a href="../../index.html" class="brand-title"><i class="fas fa-chevron-left"></i> Bodyall Main Wiki</a>
     <div class="lang-switch">
         <a href="./index.html">KR</a> | 
         <a href="./index_en.html" class="active">EN</a> | 
@@ -139,76 +209,56 @@
 
 <div class="wrapper">
     <header class="index-header">
-        <h1>💧 Body-All Fit Diet Encyclopedia</h1>
+        <h1>🌿 Bodyall Herbal & Autonomic Encyclopedia</h1>
         
-        <!-- Responsive Main Image Header -->
-        <img src="./image/index-1.webp" alt="Body-All Fit Diet Clinic" class="header-main-img">
+        <img src="./image/index-herb.webp" alt="Bodyall Herbal and Autonomic Encyclopedia Main" class="header-main-img">
 
-        <p>Evidence-based herbal metabolic therapy and 1-on-1 direct care by the Chief Korean Medicine Doctor—eliminating redundant packaging costs for sensible weight management.</p>
+        <p>Evidence-based medical guide for chronic internal and autonomic disorders through structural spinal neural decompression (SART Protocol) and hGMP-standard tailored herbal medicine.</p>
         
-        <a href="https://body-all.co.kr/Body-Allfit" target="_blank" rel="noopener noreferrer" class="main-fit-btn">
-            <i class="fas fa-dumbbell"></i> Explore Body-All Fit Program ➜
+        <a href="https://wiki.body-all.co.kr/pcode/mainland.html" target="_blank" rel="noopener noreferrer" class="main-cta-btn">
+            <i class="fas fa-clipboard-check"></i> Start My Symptom-Specific Self-Diagnosis ➜
         </a>
     </header>
 
-    <!-- Category Filter Tabs -->
     <div class="category-tabs">
-        <a class="tab-btn active" onclick="filterCategory('all', this)">All Topics</a>
-        <a class="tab-btn" onclick="filterCategory('category-1', this)">GLP-1 vs. Herbal Medicine</a>
-        <a class="tab-btn" onclick="filterCategory('category-2', this)">Constitutional Weight Loss</a>
-        <a class="tab-btn" onclick="filterCategory('category-3', this)">1:1 Care & Metabolism</a>
+        <a class="tab-btn active" onclick="filterCategory('all', this)">View All</a>
+        <a class="tab-btn" onclick="filterCategory('category-1', this)">Autonomic & Sleep Disorders</a>
+        <a class="tab-btn" onclick="filterCategory('category-2', this)">Damjeok & Digestive Disorders</a>
+        <a class="tab-btn" onclick="filterCategory('category-3', this)">Constitutional Care & Vitality</a>
     </div>
 
-    <!-- Article Card List -->
     <main class="article-list">
 
-    <a href="./0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_en.html" class="article-card" data-category="category-1">
-        <span class="card-tag">GLP-1 & Med Comparison</span>
-        <h2 class="card-title">Appetite Rebound After Stopping GLP-1 or Phentermine: Metabolic Strategies to Lower Weight Regain Risk</h2>
-    </a>
-
-    <a href="./0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_en.html" class="article-card" data-category="category-3">
-        <span class="card-tag">1:1 Care & Metabolic Principles</span>
-        <h2 class="card-title">Tired of relying on pills alone? Lower your yoyo risk with 1:1 metabolic care from our medical director</h2>
-    </a>
-
-    <a href="./0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html" class="article-card" data-category="category-2">
-        <span class="card-tag">Tailored Diet by Constitution</span>
-        <h2 class="card-title">Postpartum or menopause: why does belly fat linger? A personalized metabolic approach based on your body type</h2>
-    </a>
-
-    <a href="./0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html" class="article-card" data-category="category-1">
-        <span class="card-tag">GLP-1 & Med Comparison</span>
-        <h2 class="card-title">Regaining weight after stopping Mounjaro or Ozempic? Herbal metabolic therapy to rebuild your BMR without GLP-1 side effects or muscle loss</h2>
-    </a>
         
 
     </main>
 
     <footer>
-        <h3 style="color:#fff; margin-top:0; margin-bottom:5px;">📍 Body-All Korean Medicine Clinic | Body-All Fit Clinic</h3>
+        <h3 style="color:#fff; margin-top:0; margin-bottom:5px;">📍 Bodyall Herbal & Autonomic Clinic</h3>
         
-        <!-- Chief Doctor Profile Image -->
-        <img src="./image/index-doctor.webp" alt="Chief Doctor of Body-All Clinic" class="footer-doctor-img">
+        <img src="./image/index-doctor.webp" alt="Bodyall Clinic Chief Doctor Lee Dong-hae" class="footer-doctor-img">
 
-        <a href="https://body-all.co.kr/Body-Allfit" target="_blank" rel="noopener noreferrer" class="footer-fit-btn">
-            Learn More About Body-All Fit ➜
-        </a>
+        <div class="footer-btn-group">
+            <a href="https://wiki.body-all.co.kr/pcode/mainland.html" target="_blank" rel="noopener noreferrer" class="footer-btn-diag">
+                <i class="fas fa-clipboard-check"></i> Go to Symptom-Specific Self-Diagnosis ➜
+            </a>
+            <a href="https://wiki.body-all.co.kr/herbal-medicine_en.html" target="_blank" rel="noopener noreferrer" class="footer-btn-herb">
+                <i class="fas fa-mortar-pestle"></i> Explore Bodyall Premium Herbal Prescriptions ➜
+            </a>
+        </div>
 
-        <p style="color:#ccc; line-height:1.6; margin-top:10px;">
-            3-min walk from Suwon City Hall Station Exit 9 | 1-on-1 Direct KakaoTalk Care System by Chief Doctor<br>
-            We prescribe authentic, effective Korean herbal medicine<br>
-            at reasonable prices by excluding unnecessary packaging markup.
+        <p style="color:#ccc; line-height:1.6; margin-top:15px;">
+            Suwon City Hall Station, Exit 9 (3-minute walk) | 1:1 Tailored Pulse Diagnosis & Constitutional Decoction by Chief Doctor<br>
+            Prescribing prescription-grade Korean herbal medicines utilizing exclusively CITES-certified genuine musk and stringent hGMP standard medicinal herbs to restore systemic neural conduction and visceral organ function.
         </p>
     </footer>
 </div>
 
-<!-- Fixed Bottom Navigation Bar -->
 <nav class="bottom-nav">
-    <a href="https://body-all.co.kr/Body-Allfit" target="_blank" rel="noopener noreferrer"><i class="fas fa-dumbbell" style="color: var(--diet-color);"></i>Body-All Fit</a>
-    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank" rel="noopener noreferrer"><i class="fas fa-comment" style="color:#FEE500; background:#3c1e1e; border-radius:50%; padding:2px;"></i>Kakao Chat</a>
     <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank" rel="noopener noreferrer"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>Naver Talk</a>
-    <a href="../../index.html"><i class="fas fa-home"></i>Main Wiki</a>
+    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank" rel="noopener noreferrer"><i class="fas fa-comment"></i>KakaoTalk</a>
+    <a href="https://wiki.body-all.co.kr/pcode/mainland.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-clipboard-check" style="color: #e67e22;"></i>Self-Diagnosis</a>
+    <a href="https://wiki.body-all.co.kr/herbal-medicine_en.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-mortar-pestle" style="color: #27ae60;"></i>Herbal Care</a>
 </nav>
 
 <script>
