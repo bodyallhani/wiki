@@ -14,81 +14,102 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    [
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "지긋지긋한 두통, 원인은 머리가 아니라 목에 있습니다: 경추성 두통의 생체역학적 교정",
-    "provider": {
-      "@type": "MedicalOrganization",
-      "name": "바디올한의원"
-    },
-    "about": {
-      "@type": "MedicalCondition",
-      "name": "경추성 두통 및 일자목/거북목 증후군"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "바디올한의원",
-    "telephone": "031-8067-5825",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "인계동 1114-7, 3층",
-      "addressLocality": "수원시 팔달구",
-      "addressRegion": "경기도",
-      "addressCountry": "KR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 37.2651444,
-      "longitude": 127.0336222
-    },
-    "employee": {
-      "@type": "Person",
-      "name": "이동해",
-      "jobTitle": "대표원장"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "수원"},
-      {"@type": "City", "name": "인계동"},
-      {"@type": "City", "name": "광교"},
-      {"@type": "City", "name": "동탄"},
-      {"@type": "City", "name": "영통"}
-    ],
-    "openingHoursSpecification": [
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalProcedure",
-    "name": "생체역학적 공간 감압 추나 (SART Protocol)",
-    "description": "전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법이다. 일자목을 다시 정상적인 전만 곡선으로 유도하여 경추 내부의 압박을 해소하는 것을 원리로 한다.",
-    "procedureType": "TherapeuticProcedure"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "경추성 두통에 생체역학적 공간 감압 추나(SART Protocol)가 왜 필요한가요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "단순 진통제 복용은 신경 압박의 구조적 원인을 해결하지 못하고 증상을 일시적으로 완화하는 데 그치는 경우가 많다. 생체역학적 공간 감압 추나(SART Protocol)는 척추 분절 간 간격을 물리적으로 확보하여 후두신경 압박을 완화하는 데 초점을 맞춘 수술 전 단계에서 안전하게 선택할 수 있는 생체역학적 보존 치료의 대안으로 접근할 수 있다."
-        }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html#webpage",
+      "name": "지긋지긋한 두통, 원인은 머리가 아니라 목에 있습니다: 경추성 두통의 생체역학적 교정",
+      "provider": {
+        "@id": "https://wiki.body-all.co.kr/#clinic"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "경추성 두통 및 일자목/거북목 증후군"
       }
-    ]
-  }
-]
-    </script>
+    },
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
+      "name": "바디올한의원",
+      "url": "https://wiki.body-all.co.kr",
+      "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "인계동 1114-7, 3층",
+        "addressLocality": "수원시 팔달구",
+        "addressRegion": "경기도",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.2651444,
+        "longitude": 127.0336222
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "이동해",
+        "jobTitle": "대표원장"
+      },
+      "knowsAbout": [
+        "추나요법", "생체역학적 공간 감압 추나 (SART Protocol)", "공간척추교정", "도침 치료", "고농도 봉약침",
+        "체질한약", "한방 다이어트", "척추관 협착증", "허리디스크", "목디스크", "체형교정", "오십견"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "수원시", "sameAs": "https://ko.wikipedia.org/wiki/수원시"},
+        {"@type": "AdministrativeArea", "name": "인계동", "sameAs": "https://ko.wikipedia.org/wiki/인계동"},
+        {"@type": "AdministrativeArea", "name": "광교", "sameAs": "https://ko.wikipedia.org/wiki/광교동"},
+        {"@type": "City", "name": "동탄", "sameAs": "https://ko.wikipedia.org/wiki/동탄"},
+        {"@type": "AdministrativeArea", "name": "영통구", "sameAs": "https://ko.wikipedia.org/wiki/영통구"}
+      ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+      "url": "https://wiki.body-all.co.kr/SART.html",
+      "name": "생체역학적 공간 감압 추나 (SART Protocol)",
+      "description": "척추 및 관절 간격을 생체역학적으로 공간 감압하여 신경 압박을 해소하고 구조적 밸런스를 복원하는 보존적 추나요법 프로토콜.",
+      "procedureType": "TherapeuticProcedure"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "경추성 두통에 생체역학적 공간 감압 추나(SART Protocol)가 왜 필요한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "단순 진통제 복용은 신경 압박의 구조적 원인을 해결하지 못하고 증상을 일시적으로 완화하는 데 그치는 경우가 많다. 생체역학적 공간 감압 추나(SART Protocol)는 척추 분절 간 간격을 물리적으로 확보하여 후두신경 압박을 완화하는 데 초점을 맞춘 수술 전 단계에서 안전하게 선택할 수 있는 생체역학적 보존 치료의 대안으로 접근할 수 있다."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
     <style>
         :root { 
@@ -240,10 +261,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <div class='breadcrumb'>목/어깨 자가진단 가이드</div><h1>지긋지긋한 두통, 원인은 머리가 아니라 목에 있습니다: 경추성 두통의 생체역학적 교정</h1><img src='./image/0007.neck-headache-main.png' alt='경추성 두통을 느끼는 환자, 생체역학적 공간 감압 추나 (SART Protocol) 대상' class='hero-img' loading='eager'><article><section><div class='summary-box'><h2>💡 수원 인계동을 비롯해 광교, 영통, 동탄 등 인근 지역에서도 내원하는 바디올한의원의 핵심 요약</h2><p>• 만성 두통의 원인은 상부 경추의 구조적 부정렬과 밀접한 연관이 있다.</p><p>• 일자목과 거북목 변형은 후두부 신경을 압박하여 안구 뻐근함 및 편두통 양상의 증상을 유발할 수 있다.</p><p>• 바디올은 구조적 원인을 개선하기 위해 경추의 정상적인 전만 곡선을 유도하는 체계적인 보존 치료를 시행한다.</p></div></section><section><h2>1. 일반적인 약물 복용만으로 호전되지 않는 경추성 두통의 특징</h2><ul class='check-list'><li>뒷목과 뒷덜미 부위가 뻣뻣해지면서 관자놀이나 측두부 쪽으로 통증이 방사되는 경우</li><li>두통과 함께 안구 통증이 동반되거나 시야가 침침해지는 피로감이 나타나는 경우</li><li>컴퓨터나 스마트폰을 장시간 사용한 직후 목의 긴장도와 함께 두통이 심화되는 경우</li></ul></section><section><h2>2. 생체역학적 메커니즘 분석: 거북목 변형이 유발하는 두통의 원인</h2><img src='./image/0007.cervical-nerve-mechanism.png' alt='상부 경추 신경 압박 기전 및 생체역학적 공간 감압 추나 (SART Protocol) 원리' class='visual-img'><p>목의 정상적인 C자형 전만 곡선이 상실되면 머리의 하중이 상부 경추 분절에 집중된다. 이로 인해 후두부 심부 근육들이 과도하게 긴장하여 후두신경을 압박하게 되며, 결과적으로 찌릿하거나 지끈거리는 신경성 통증을 유발한다. 경추성 어지럼증에 대한 체계적 문헌고찰에 따르면 상부 경추 분절의 구조적 부정렬은 어지럼 및 두부 관련 신경학적 증상과 밀접한 관련이 있는 것으로 보고된다<sup>[1]</sup>. 이러한 연구는 경추의 정렬 회복을 목표로 하는 추나요법적 접근이 경추성 증상 관리에 있어 학술적으로 고려될 수 있는 보존적 치료 선택지임을 시사한다. 본원에서 시행하는 생체역학적 공간 감압 추나(SART Protocol)는 상부 경추 분절 간 물리적 공간을 확보하여 구조적 부정렬을 개선하고자 하는 원리에 기반하며, 이는 해당 연구에서 다루는 경추성 신경학적 증상의 구조적 원인 개선 개념과 학술적으로 부합한다. 이는 퇴행성 척추 질환의 근본적인 구조적 원인 개선을 도모하는 솔루션을 통해 관리되어야 한다.</p></section><section><h2>3. 바디올의 통합 보존적 교정 솔루션</h2><div class='solution-card'><strong>바디올 특화 정렬 회복 치료: 생체역학적 공간 감압 추나(SART Protocol)</strong><p>전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법이다. 일자목을 다시 정상적인 전만 곡선으로 유도하여 경추 내부의 압박을 해소하는 것을 원리로 한다. 경추성 두통에 대한 척추 수기치료의 무작위 대조 임상시험을 체계적으로 검토한 연구에서는 다수의 시험이 척추 수기치료가 물리치료, 마사지, 약물치료 또는 무처치군에 비해 더 효과적임을 시사한다고 보고하였다<sup>[2]</sup>. 다만 해당 연구는 방법론적 질의 한계와 위약 대조가 충분히 이루어진 시험이 제한적임을 지적하며 접근법의 치료적 가치에 대해 신중한 해석이 필요함을 강조한다. 이는 경추성 두통 관리에 있어 구조적 접근 방식이 학술적으로 검토되어 왔음을 보여주는 근거이며, 본원에서 시행하는 생체역학적 공간 감압 추나(SART Protocol)와 같은 체계적인 경추 정렬 회복 치료 역시 이러한 학술적 논의의 연장선상에서 이해될 수 있는 보존적 치료 접근 중 하나로 볼 수 있다.</p><p>도침치료를 통해 신경을 압박하는 단단하게 유착된 심부 연부조직 부위를 미세 분리하여 국소 순환을 돕는다.</p></div><div class='solution-card'><strong>바디올 종합 한방 보존 치료</strong><p>침 및 고농도 봉약침 치료를 통해 경추 주변 조직의 염증 반응을 제어하고 대사 순환을 촉진한다. 또한 간섭파 전류치료(ICT) 및 경피경혈자극요법(TENS) 등 현대 물리치료를 병행하여 깊은 근육의 과긴장을 완화한다.</p></div><div class='highlight-box blue'><strong>💡 Q. 경추성 두통에 생체역학적 공간 감압 추나(SART Protocol)가 왜 필요한가요?</strong><p>단순 진통제 복용은 신경 압박의 구조적 원인을 해결하지 못하고 증상을 일시적으로 완화하는 데 그치는 경우가 많다. 생체역학적 공간 감압 추나(SART Protocol)는 척추 분절 간 간격을 물리적으로 확보하여 후두신경 압박을 완화하는 데 초점을 맞춘 수술 전 단계에서 안전하게 선택할 수 있는 생체역학적 보존 치료의 대안으로 접근할 수 있다.</p></div></section><section><div class='solution-card'><h3>📍 진료 안내</h3><p>수원시청역 9번 출구 도보 3분 | 평일 20:30 야간진료 (수원 인계동, 광교, 영통, 동탄 등 인근 지역 연계 교통 편리)</p><a href='../index.html#location' class='treatment-link'>오시는 길 상세 보기 ➜</a></div></section></article>
+        <div class='breadcrumb'>목/어깨 자가진단 가이드</div><h1>지긋지긋한 두통, 원인은 머리가 아니라 목에 있습니다: 경추성 두통의 생체역학적 교정</h1><img src='./image/0007.neck-headache-main.png' alt='경추성 두통을 느끼는 환자, 생체역학적 공간 감압 추나 (SART Protocol) 대상' class='hero-img' loading='eager'><article><section><div class='summary-box'><h2>💡 수원 인계동을 비롯해 광교, 영통, 동탄 등 인근 지역에서도 내원하는 바디올한의원의 핵심 요약</h2><p>• 만성 두통의 원인은 상부 경추의 구조적 부정렬과 밀접한 연관이 있다.</p><p>• 일자목과 거북목 변형은 후두부 신경을 압박하여 안구 뻐근함 및 편두통 양상의 증상을 유발할 수 있다.</p><p>• 바디올은 구조적 원인을 개선하기 위해 경추의 정상적인 전만 곡선을 유도하는 체계적인 보존 치료를 시행한다.</p></div></section><section><h2>1. 일반적인 약물 복용만으로 호전되지 않는 경추성 두통의 특징</h2><ul class='check-list'><li>뒷목과 뒷덜미 부위가 뻣뻣해지면서 관자놀이나 측두부 쪽으로 통증이 방사되는 경우</li><li>두통과 함께 안구 통증이 동반되거나 시야가 침침해지는 피로감이 나타나는 경우</li><li>컴퓨터나 스마트폰을 장시간 사용한 직후 목의 긴장도와 함께 두통이 심화되는 경우</li></ul></section><section><h2>2. 생체역학적 메커니즘 분석: 거북목 변형이 유발하는 두통의 원인</h2><img src='./image/0007.cervical-nerve-mechanism.png' alt='상부 경추 신경 압박 기전 및 생체역학적 공간 감압 추나 (SART Protocol) 원리' class='visual-img'><p>목의 정상적인 C자형 전만 곡선이 상실되면 머리의 하중이 상부 경추 분절에 집중된다. 이로 인해 후두부 심부 근육들이 과도하게 긴장하여 후두신경을 압박하게 되며, 결과적으로 찌릿하거나 지끈거리는 신경성 통증을 유발한다. 경추성 어지럼증에 대한 체계적 문헌고찰에 따르면 상부 경추 분절의 구조적 부정렬은 어지럼 및 두부 관련 신경학적 증상과 밀접한 관련이 있는 것으로 보고된다<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>. 이러한 연구는 경추의 정렬 회복을 목표로 하는 추나요법적 접근이 경추성 증상 관리에 있어 학술적으로 고려될 수 있는 보존적 치료 선택지임을 시사한다. 본원에서 시행하는 생체역학적 공간 감압 추나(SART Protocol)는 상부 경추 분절 간 물리적 공간을 확보하여 구조적 부정렬을 개선하고자 하는 원리에 기반하며, 이는 해당 연구에서 다루는 경추성 신경학적 증상의 구조적 원인 개선 개념과 학술적으로 부합한다. 이는 퇴행성 척추 질환의 근본적인 구조적 원인 개선을 도모하는 솔루션을 통해 관리되어야 한다.</p></section><section><h2>3. 바디올의 통합 보존적 교정 솔루션</h2><div class='solution-card'><strong>바디올 특화 정렬 회복 치료: 생체역학적 공간 감압 추나(SART Protocol)</strong><p>전통 정골의학(Osteopathy) 및 추나요법의 원리를 바탕으로 척추 분절 간의 물리적 공간을 확보하는 생체역학적 보존 교정 기법이다. 일자목을 다시 정상적인 전만 곡선으로 유도하여 경추 내부의 압박을 해소하는 것을 원리로 한다. 경추성 두통에 대한 척추 수기치료의 무작위 대조 임상시험을 체계적으로 검토한 연구에서는 다수의 시험이 척추 수기치료가 물리치료, 마사지, 약물치료 또는 무처치군에 비해 더 효과적임을 시사한다고 보고하였다<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>. 다만 해당 연구는 방법론적 질의 한계와 위약 대조가 충분히 이루어진 시험이 제한적임을 지적하며 접근법의 치료적 가치에 대해 신중한 해석이 필요함을 강조한다. 이는 경추성 두통 관리에 있어 구조적 접근 방식이 학술적으로 검토되어 왔음을 보여주는 근거이며, 본원에서 시행하는 생체역학적 공간 감압 추나(SART Protocol)와 같은 체계적인 경추 정렬 회복 치료 역시 이러한 학술적 논의의 연장선상에서 이해될 수 있는 보존적 치료 접근 중 하나로 볼 수 있다.</p><p>도침치료를 통해 신경을 압박하는 단단하게 유착된 심부 연부조직 부위를 미세 분리하여 국소 순환을 돕는다.</p></div><div class='solution-card'><strong>바디올 종합 한방 보존 치료</strong><p>침 및 고농도 봉약침 치료를 통해 경추 주변 조직의 염증 반응을 제어하고 대사 순환을 촉진한다. 또한 간섭파 전류치료(ICT) 및 경피경혈자극요법(TENS) 등 현대 물리치료를 병행하여 깊은 근육의 과긴장을 완화한다.</p></div><div class='highlight-box blue'><strong>💡 Q. 경추성 두통에 생체역학적 공간 감압 추나(SART Protocol)가 왜 필요한가요?</strong><p>단순 진통제 복용은 신경 압박의 구조적 원인을 해결하지 못하고 증상을 일시적으로 완화하는 데 그치는 경우가 많다. 생체역학적 공간 감압 추나(SART Protocol)는 척추 분절 간 간격을 물리적으로 확보하여 후두신경 압박을 완화하는 데 초점을 맞춘 수술 전 단계에서 안전하게 선택할 수 있는 생체역학적 보존 치료의 대안으로 접근할 수 있다.</p></div></section><section><div class='solution-card'><h3>📍 진료 안내</h3><p>수원시청역 9번 출구 도보 3분 | 평일 20:30 야간진료 (수원 인계동, 광교, 영통, 동탄 등 인근 지역 연계 교통 편리)</p><a href='../index.html#location' class='treatment-link'>오시는 길 상세 보기 ➜</a></div></section><div class='doctor-card'><p><strong>💡 바디올 임상 노트:</strong> 실제 임상 현장에서 관찰되는 생체역학적 공간 감압 추나(SART Protocol)의 상부 경추 정렬 회복 및 신경학적 증상 개선 경향은, 인용된 학술 연구<a href='#ref-1' class='ref-link'><sup>[1]</sup></a><a href='#ref-2' class='ref-link'><sup>[2]</sup></a>에서 보고된 척추 수기치료의 구조적 접근 원리와 궤를 함께합니다.</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>참고문헌</h4><ol><li>Park, et al. (2018), 'Chuna Manual Therapy for Cervicogenic Dizziness : A Systematic Review', Korean Society of Chuna Manual Medicine Spine and Nerves. <a href='https://doi.org/10.30581/jkcmm.2018.13.2.11' target='_blank'>DOI: 10.30581/jkcmm.2018.13.2.11</a></li><li>Posadzki, et al. (2011), 'Spinal Manipulations for Cervicogenic Headaches: A Systematic Review of Randomized Clinical Trials', Headache: The Journal of Head and Face Pain. <a href='https://doi.org/10.1111/j.1526-4610.2011.01932.x' target='_blank'>DOI: 10.1111/j.1526-4610.2011.01932.x</a></li></ol></div>
+    <div class='references-section'><h4>참고문헌</h4><ol><li id='ref-1'>Park, et al. (2018), 'Chuna Manual Therapy for Cervicogenic Dizziness : A Systematic Review', Korean Society of Chuna Manual Medicine Spine and Nerves. <a href='https://doi.org/10.30581/jkcmm.2018.13.2.11' target='_blank'>DOI: 10.30581/jkcmm.2018.13.2.11</a></li><li id='ref-2'>Posadzki, et al. (2011), 'Spinal Manipulations for Cervicogenic Headaches: A Systematic Review of Randomized Clinical Trials', Headache: The Journal of Head and Face Pain. <a href='https://doi.org/10.1111/j.1526-4610.2011.01932.x' target='_blank'>DOI: 10.1111/j.1526-4610.2011.01932.x</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365일 진료 및 상담</h2>
