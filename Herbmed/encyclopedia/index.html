@@ -6,12 +6,10 @@
     <title>바디올 한약·자율신경 백과사전 | 근거기반 척추교정·맞춤한약 가이드</title>
     <meta name="description" content="경추·흉추 신경 감압 추나요법(SART)과 hGMP 규격 체질 한약의 결합. 만성 불면증, 자율신경실조, 담적·소화장애, 만성피로에 대한 의학적 근거 중심 정보 제공.">
     
-    <!-- 2단계 상위 폴더 경로 (../..) 적용 -->
     <link rel="icon" type="image/png" href="../../Bodyall Logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" crossorigin />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Schema.org 지식 그래프 구조화 데이터 -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -54,7 +52,7 @@
         :root { 
             --primary: #2c3e50; 
             --accent: #e67e22; 
-            --herb-color: #2e7d32; /* 신뢰감 있는 보태니컬 그린 */
+            --herb-color: #2e7d32;
             --herb-hover: #1b5e20;
             --herb-bg: #f1f8e9;
             --herb-border: #c8e6c9;
@@ -72,19 +70,16 @@
         }
         .wrapper { max-width: 800px; margin: 0 auto; padding: 20px; box-sizing: border-box; }
         
-        /* 상단 네비게이션 */
         .top-nav { position: fixed; top: 0; left: 0; right: 0; height: var(--top-bar-h); background: rgba(255, 255, 255, 0.98); display: flex; align-items: center; justify-content: space-between; padding: 0 15px; border-bottom: 1px solid #eee; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.03); }
         .top-nav .brand-title { text-decoration: none; color: var(--primary); font-weight: 800; font-size: 0.95rem; display: flex; align-items: center; gap: 6px; }
         .lang-switch { font-size: 0.75rem; color: #888; font-weight: bold; border-left: 1px solid #ddd; padding-left: 8px; flex-shrink: 0; }
         .lang-switch a { text-decoration: none; color: #888; padding: 0 3px; }
         .lang-switch a.active { color: var(--herb-color); font-weight: 800; }
 
-        /* 대문 헤더 (그린 테마 배경) */
         .index-header { text-align: center; padding: 30px 15px; background: var(--herb-bg); border-radius: 16px; margin-bottom: 25px; border: 1px solid var(--herb-border); }
         .index-header h1 { font-size: 1.45rem; color: var(--primary); font-weight: 800; margin: 0 0 10px 0; }
         .index-header p { font-size: 0.9rem; color: #555; margin: 0 0 18px 0; line-height: 1.6; }
         
-        /* 대문 메인 이미지 반응형 처리 */
         .header-main-img {
             display: block;
             max-width: 100%;
@@ -97,7 +92,6 @@
             object-fit: cover;
         }
 
-        /* 메인 CTA 버튼 */
         .main-cta-btn {
             display: inline-block;
             background: var(--herb-color);
@@ -112,25 +106,20 @@
         }
         .main-cta-btn:hover { background: var(--herb-hover); transform: translateY(-2px); }
 
-        /* 카테고리 태그 탭 */
         .category-tabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 10px; margin-bottom: 20px; scrollbar-width: none; }
         .tab-btn { background: #fff; border: 1px solid #ddd; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; color: #666; white-space: nowrap; text-decoration: none; cursor: pointer; }
         .tab-btn.active { background: var(--herb-color); color: #fff; border-color: var(--herb-color); }
 
-        /* 게시글 카드 리스트 */
         .article-list { display: flex; flex-direction: column; gap: 15px; }
         .article-card { display: block; background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 20px; text-decoration: none; color: #333; box-shadow: var(--card-shadow); transition: all 0.2s ease; }
         .article-card:hover { border-color: var(--herb-color); transform: translateY(-2px); }
         
-        /* 카드 태그 색상 (그린 테마) */
         .card-tag { display: inline-block; background: #e8f5e9; color: var(--herb-color); font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; }
         .card-title { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin: 0 0 8px 0; line-height: 1.4; }
         .card-hashtags { font-size: 0.8rem; color: #888; }
 
-        /* 푸터 영역 */
         footer { background: #2c3e50; color: #fff; padding: 30px 20px; margin-top: 50px; border-radius: 16px 16px 0 0; font-size: 0.85rem; text-align: center; }
         
-        /* 푸터 대표원장 이미지 */
         .footer-doctor-img {
             width: 120px;
             height: 120px;
@@ -142,22 +131,50 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
         }
 
-        /* 푸터 내 한약 알아보기 버튼 */
-        .footer-cta-btn { 
-            display: inline-block; 
-            background: var(--herb-color); 
-            color: #fff; 
-            padding: 10px 22px; 
-            border-radius: 8px; 
-            text-decoration: none; 
-            font-weight: bold; 
-            margin-top: 5px; 
-            margin-bottom: 15px; 
-            transition: 0.2s; 
+        .footer-btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 380px;
+            margin: 15px auto 20px auto;
         }
-        .footer-cta-btn:hover { background: var(--herb-hover); }
 
-        /* 하단 고정 네비게이션 */
+        .footer-btn-diag {
+            display: block;
+            background: var(--accent);
+            color: #ffffff !important;
+            padding: 13px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 0.92rem;
+            box-shadow: 0 4px 12px rgba(230, 126, 34, 0.3);
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+        .footer-btn-diag:hover {
+            background: #d35400;
+            transform: translateY(-2px);
+        }
+
+        .footer-btn-herb {
+            display: block;
+            background: var(--herb-color);
+            color: #ffffff !important;
+            padding: 12px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.88rem;
+            box-shadow: 0 4px 10px rgba(46, 125, 50, 0.25);
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+        .footer-btn-herb:hover {
+            background: var(--herb-hover);
+            transform: translateY(-2px);
+        }
+
         .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: var(--bottom-bar-h); background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.08); padding-bottom: env(safe-area-inset-bottom); }
         .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-weight: bold; font-size: 0.75rem; }
         .bottom-nav a i { font-size: 1.2rem; margin-bottom: 3px; }
@@ -178,7 +195,6 @@
     <header class="index-header">
         <h1>🌿 바디올 한약·자율신경 백과사전</h1>
         
-        <!-- 대문 반응형 메인 이미지 -->
         <img src="./image/index-herb.webp" alt="바디올 한약 자율신경 백과 메인" class="header-main-img">
 
         <p>구조적 척추 신경 감압(SART)과 hGMP 규격 근거기반 맞춤 한약으로 다스리는 만성 내과·자율신경 질환 가이드</p>
@@ -188,7 +204,6 @@
         </a>
     </header>
 
-    <!-- 카테고리 탭 (JS 필터링 연결) -->
     <div class="category-tabs">
         <a class="tab-btn active" onclick="filterCategory('all', this)">전체 보기</a>
         <a class="tab-btn" onclick="filterCategory('category-1', this)">자율신경·수면장애</a>
@@ -196,49 +211,34 @@
         <a class="tab-btn" onclick="filterCategory('category-3', this)">체질개선·기력보강</a>
     </div>
 
-    <!-- 게시글 목록 영역 -->
     <main class="article-list">
 
-    <!-- 아티클 카드 샘플 (신규 생성 파일들이 적재되는 영역) -->
-    <a href="./0001.autonomic-insomnia-sart-herbal-synergy.html" class="article-card" data-category="category-1">
-        <span class="card-tag">자율신경·수면장애</span>
-        <h2 class="card-title">수면제에도 안 듣는 만성 불면증, 상부 경추 감압(SART)과 자율신경 조절 한약의 복합 기전</h2>
-        <div class="card-hashtags">#만성불면 #교감신경항진 #경추추나요법 #산조인시호탕</div>
-    </a>
-
-    <a href="./0002.damjeok-functional-dyspepsia-thoracic-chuna.html" class="article-card" data-category="category-2">
-        <span class="card-tag">담적·소화기질환</span>
-        <h2 class="card-title">위내시경은 정상인데 지속되는 속쓰림·담적, 흉추 분절 교정과 위장 평활근 혈류 회복 한약</h2>
-        <div class="card-hashtags">#기능성소화불량 #담적병 #흉추신경감압 #건위맞춤한약</div>
-    </a>
-
-    <a href="./0003.chronic-fatigue-gongjindan-bioavailability-rct.html" class="article-card" data-category="category-3">
-        <span class="card-tag">체질개선·기력보강</span>
-        <h2 class="card-title">단기 수면 박탈 및 만성 피로 개선, 정품 사향 씨알 조제 공진단의 학술적 근거와 임상 가치</h2>
-        <div class="card-hashtags">#씨알공진단 #정품사향CITES #만성피로개선 #hGMP의약품한약</div>
-    </a>
+        
 
     </main>
 
     <footer>
         <h3 style="color:#fff; margin-top:0; margin-bottom:5px;">📍 바디올한의원 한약·자율신경 클리닉</h3>
         
-        <!-- 대표원장 프로필 이미지 -->
         <img src="./image/index-doctor.webp" alt="바디올한의원 대표원장" class="footer-doctor-img">
 
-        <a href="https://wiki.body-all.co.kr/herbal-medicine.html" target="_blank" rel="noopener noreferrer" class="footer-cta-btn">
-            바디올 프리미엄 보약 처방 알아보기 ➜
-        </a>
+        <div class="footer-btn-group">
+            <a href="https://wiki.body-all.co.kr/pcode/mainland.html" target="_blank" rel="noopener noreferrer" class="footer-btn-diag">
+                <i class="fas fa-clipboard-check"></i> 나의 증상 유형별 자가진단 바로가기 ➜
+            </a>
+            <a href="https://wiki.body-all.co.kr/herbal-medicine.html" target="_blank" rel="noopener noreferrer" class="footer-btn-herb">
+                <i class="fas fa-mortar-pestle"></i> 바디올 프리미엄 보약 처방 알아보기 ➜
+            </a>
+        </div>
 
-        <p style="color:#ccc; line-height:1.6; margin-top:10px;">
-            수원시청역 9번 출구 도보 3분 | 대표원장 1:1 맞춤 진맥 및 체질 정밀 탕전<br>
+        <p style="color:#ccc; line-height:1.6; margin-top:15px;">
+            수원시청역 9번 출구 도보 3분 | 대표원장 1:1 맞춤 진맥 및 체질 맞춤 탕전<br>
             식약처 인증 정품 사향(CITES)과 엄격한 hGMP 의약품 규격 약재만을 사용하여<br>
-            근본적인 신경 전도와 장부 기능을 회복시키는 전문 한의약품을 처방합니다.
+            인체 전신적인 신경 전도와 장부 기능을 회복시키는 전문 한의약품을 처방합니다.
         </p>
     </footer>
 </div>
 
-<!-- 하단 고정 네비게이션 (규격 완벽 동기화) -->
 <nav class="bottom-nav">
     <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank" rel="noopener noreferrer"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>네이버톡톡</a>
     <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank" rel="noopener noreferrer"><i class="fas fa-comment"></i>카톡연결</a>
