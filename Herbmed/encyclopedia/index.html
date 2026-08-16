@@ -3,26 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>바디올핏 다이어트 백과사전 | 의학적 근거 중심의 대사·체질 교정 가이드</title>
-    <meta name="description" content="양약/GLP-1(오젬픽, 마운자로) 부작용 분석부터 한약 대사 증진 메커니즘, 대표원장 1:1 밀착 케어를 통한 요요 없는 건강한 다이어트 정보 제공.">
+    <title>바디올 한약·자율신경 백과사전 | 근거기반 척추교정·맞춤한약 가이드</title>
+    <meta name="description" content="경추·흉추 신경 감압 추나요법(SART)과 hGMP 규격 체질 한약의 결합. 만성 불면증, 자율신경실조, 담적·소화장애, 만성피로에 대한 의학적 근거 중심 정보 제공.">
     
     <!-- 2단계 상위 폴더 경로 (../..) 적용 -->
     <link rel="icon" type="image/png" href="../../Bodyall Logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" crossorigin />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Schema.org 지식 그래프 구조화 데이터 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MedicalWebPage",
+          "@id": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/index.html#webpage",
+          "name": "바디올 한약·자율신경 백과사전",
+          "description": "생체역학적 공간 감압 추나와 근거기반 맞춤 한약 복합 치료 프로토콜 백과",
+          "provider": {
+            "@id": "https://wiki.body-all.co.kr/#clinic"
+          }
+        },
+        {
+          "@type": ["MedicalClinic", "LocalBusiness"],
+          "@id": "https://wiki.body-all.co.kr/#clinic",
+          "name": "바디올한의원",
+          "url": "https://wiki.body-all.co.kr",
+          "telephone": "031-8067-5825",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "인계동 1114-7, 3층",
+            "addressLocality": "수원시 팔달구",
+            "addressRegion": "경기도",
+            "addressCountry": "KR"
+          },
+          "areaServed": [
+            {"@type": "City", "name": "수원시"},
+            {"@type": "AdministrativeArea", "name": "인계동"},
+            {"@type": "AdministrativeArea", "name": "광교"},
+            {"@type": "City", "name": "동탄"},
+            {"@type": "AdministrativeArea", "name": "영통구"}
+          ]
+        }
+      ]
+    }
+    </script>
+
     <style>
         :root { 
             --primary: #2c3e50; 
             --accent: #e67e22; 
-            --diet-color: #007aff; /* [수정1] 시원한 파란색 계열(스마트 블루)로 변경 */
+            --herb-color: #2e7d32; /* 신뢰감 있는 보태니컬 그린 */
+            --herb-hover: #1b5e20;
+            --herb-bg: #f1f8e9;
+            --herb-border: #c8e6c9;
             --light-bg: #f8f9fa; 
             --card-shadow: 0 4px 12px rgba(0,0,0,0.06); 
             --top-bar-h: 60px; 
             --bottom-bar-h: 70px; 
         }
         body { 
-            font-family: 'Pretendard', -apple-system, sans-serif; 
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
             line-height: 1.7; color: #333; margin: 0; background: #fdfdfd; 
             padding-top: var(--top-bar-h);
             padding-bottom: calc(var(--bottom-bar-h) + env(safe-area-inset-bottom)); 
@@ -35,53 +77,53 @@
         .top-nav .brand-title { text-decoration: none; color: var(--primary); font-weight: 800; font-size: 0.95rem; display: flex; align-items: center; gap: 6px; }
         .lang-switch { font-size: 0.75rem; color: #888; font-weight: bold; border-left: 1px solid #ddd; padding-left: 8px; flex-shrink: 0; }
         .lang-switch a { text-decoration: none; color: #888; padding: 0 3px; }
-        .lang-switch a.active { color: var(--diet-color); font-weight: 800; }
+        .lang-switch a.active { color: var(--herb-color); font-weight: 800; }
 
-        /* 대문 헤더 (파란색 테마 배경으로 변경) */
-        .index-header { text-align: center; padding: 30px 15px; background: #f0f7ff; border-radius: 16px; margin-bottom: 25px; border: 1px solid #cce5ff; }
+        /* 대문 헤더 (그린 테마 배경) */
+        .index-header { text-align: center; padding: 30px 15px; background: var(--herb-bg); border-radius: 16px; margin-bottom: 25px; border: 1px solid var(--herb-border); }
         .index-header h1 { font-size: 1.45rem; color: var(--primary); font-weight: 800; margin: 0 0 10px 0; }
         .index-header p { font-size: 0.9rem; color: #555; margin: 0 0 18px 0; line-height: 1.6; }
         
-        /* [수정2] 대문 메인 이미지 반응형 처리 */
+        /* 대문 메인 이미지 반응형 처리 */
         .header-main-img {
             display: block;
             max-width: 100%;
-            width: 100%;       /* 모바일에서는 100% 꽉참 */
-            max-width: 450px;  /* PC에서는 450px까지만 커지도록 제한 */
+            width: 100%;
+            max-width: 450px;
             height: auto;
-            margin: 15px auto 20px auto; /* 가운데 정렬 및 여백 */
+            margin: 15px auto 20px auto;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 122, 255, 0.15); /* 파란색 그림자 효과 */
+            box-shadow: 0 4px 15px rgba(46, 125, 50, 0.15);
             object-fit: cover;
         }
 
         /* 메인 CTA 버튼 */
-        .main-fit-btn {
+        .main-cta-btn {
             display: inline-block;
-            background: var(--diet-color);
+            background: var(--herb-color);
             color: #ffffff !important;
             font-weight: bold;
             font-size: 0.95rem;
             padding: 12px 24px;
             border-radius: 30px;
             text-decoration: none;
-            box-shadow: 0 4px 10px rgba(0, 122, 255, 0.25);
+            box-shadow: 0 4px 10px rgba(46, 125, 50, 0.25);
             transition: all 0.2s ease;
         }
-        .main-fit-btn:hover { background: #005bb5; transform: translateY(-2px); }
+        .main-cta-btn:hover { background: var(--herb-hover); transform: translateY(-2px); }
 
         /* 카테고리 태그 탭 */
         .category-tabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 10px; margin-bottom: 20px; scrollbar-width: none; }
         .tab-btn { background: #fff; border: 1px solid #ddd; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; color: #666; white-space: nowrap; text-decoration: none; cursor: pointer; }
-        .tab-btn.active { background: var(--diet-color); color: #fff; border-color: var(--diet-color); }
+        .tab-btn.active { background: var(--herb-color); color: #fff; border-color: var(--herb-color); }
 
         /* 게시글 카드 리스트 */
         .article-list { display: flex; flex-direction: column; gap: 15px; }
         .article-card { display: block; background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 20px; text-decoration: none; color: #333; box-shadow: var(--card-shadow); transition: all 0.2s ease; }
-        .article-card:hover { border-color: var(--diet-color); transform: translateY(-2px); }
+        .article-card:hover { border-color: var(--herb-color); transform: translateY(-2px); }
         
-        /* 카드 태그 색상 (파란색 테마) */
-        .card-tag { display: inline-block; background: #e6f2ff; color: var(--diet-color); font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; }
+        /* 카드 태그 색상 (그린 테마) */
+        .card-tag { display: inline-block; background: #e8f5e9; color: var(--herb-color); font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; }
         .card-title { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin: 0 0 8px 0; line-height: 1.4; }
         .card-hashtags { font-size: 0.8rem; color: #888; }
 
@@ -100,10 +142,10 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
         }
 
-        /* [수정3] 푸터 내 바디올핏 더 알아보기 버튼 */
-        .footer-fit-btn { 
+        /* 푸터 내 한약 알아보기 버튼 */
+        .footer-cta-btn { 
             display: inline-block; 
-            background: var(--diet-color); 
+            background: var(--herb-color); 
             color: #fff; 
             padding: 10px 22px; 
             border-radius: 8px; 
@@ -113,7 +155,7 @@
             margin-bottom: 15px; 
             transition: 0.2s; 
         }
-        .footer-fit-btn:hover { background: #005bb5; }
+        .footer-cta-btn:hover { background: var(--herb-hover); }
 
         /* 하단 고정 네비게이션 */
         .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: var(--bottom-bar-h); background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.08); padding-bottom: env(safe-area-inset-bottom); }
@@ -134,78 +176,74 @@
 
 <div class="wrapper">
     <header class="index-header">
-        <!-- 테마에 맞게 잎사귀 이모지 대신 푸른 보석(물방울/다이아) 느낌으로 변경 가능하나 우선 기본 텍스트 강조 유지 -->
-        <h1>💧 바디올핏 다이어트 백과사전</h1>
+        <h1>🌿 바디올 한약·자율신경 백과사전</h1>
         
-        <!-- [수정2 적용] 타이틀 바로 밑 반응형 메인 이미지 삽입 -->
-        <img src="./image/index-1.webp" alt="바디올핏 다이어트 메인" class="header-main-img">
+        <!-- 대문 반응형 메인 이미지 -->
+        <img src="./image/index-herb.webp" alt="바디올 한약 자율신경 백과 메인" class="header-main-img">
 
-        <p>포장 거품을 뺀 합리적 다이어트 한약과 대표원장 1:1 밀착 케어로 완성하는 건강한 대사 교정</p>
+        <p>구조적 척추 신경 감압(SART)과 hGMP 규격 근거기반 맞춤 한약으로 다스리는 만성 내과·자율신경 질환 가이드</p>
         
-        <a href="https://body-all.co.kr/Body-Allfit" target="_blank" rel="noopener noreferrer" class="main-fit-btn">
-            <i class="fas fa-dumbbell"></i> 바디올핏 프로그램 자세히 보기 ➜
+        <a href="https://wiki.body-all.co.kr/pcode/mainland.html" target="_blank" rel="noopener noreferrer" class="main-cta-btn">
+            <i class="fas fa-clipboard-check"></i> 나의 증상 유형별 자가진단 시작하기 ➜
         </a>
     </header>
 
     <!-- 카테고리 탭 (JS 필터링 연결) -->
     <div class="category-tabs">
         <a class="tab-btn active" onclick="filterCategory('all', this)">전체 보기</a>
-        <a class="tab-btn" onclick="filterCategory('category-1', this)">GLP-1/양약 비교 분석</a>
-        <a class="tab-btn" onclick="filterCategory('category-2', this)">체질별·상황별 다이어트</a>
-        <a class="tab-btn" onclick="filterCategory('category-3', this)">1:1 밀착케어 & 대사 원리</a>
+        <a class="tab-btn" onclick="filterCategory('category-1', this)">자율신경·수면장애</a>
+        <a class="tab-btn" onclick="filterCategory('category-2', this)">담적·소화기질환</a>
+        <a class="tab-btn" onclick="filterCategory('category-3', this)">체질개선·기력보강</a>
     </div>
 
     <!-- 게시글 목록 영역 -->
     <main class="article-list">
 
-    <a href="./0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support.html" class="article-card" data-category="category-1">
-        <span class="card-tag">양약/GLP-1 비교</span>
-        <h2 class="card-title">GLP-1·펜터민 중단 후 식욕 재증가, 요요 리스크 낮추는 대사 관리 원리</h2>
+    <!-- 아티클 카드 샘플 (신규 생성 파일들이 적재되는 영역) -->
+    <a href="./0001.autonomic-insomnia-sart-herbal-synergy.html" class="article-card" data-category="category-1">
+        <span class="card-tag">자율신경·수면장애</span>
+        <h2 class="card-title">수면제에도 안 듣는 만성 불면증, 상부 경추 감압(SART)과 자율신경 조절 한약의 복합 기전</h2>
+        <div class="card-hashtags">#만성불면 #교감신경항진 #경추추나요법 #산조인시호탕</div>
     </a>
 
-    <a href="./0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau.html" class="article-card" data-category="category-3">
-        <span class="card-tag">1:1 밀착케어 & 대사 원리</span>
-        <h2 class="card-title">약에만 의존하는 다이어트의 한계, 대표원장 1:1 맞춤 대사관리로 요요 리스크 낮추기</h2>
+    <a href="./0002.damjeok-functional-dyspepsia-thoracic-chuna.html" class="article-card" data-category="category-2">
+        <span class="card-tag">담적·소화기질환</span>
+        <h2 class="card-title">위내시경은 정상인데 지속되는 속쓰림·담적, 흉추 분절 교정과 위장 평활근 혈류 회복 한약</h2>
+        <div class="card-hashtags">#기능성소화불량 #담적병 #흉추신경감압 #건위맞춤한약</div>
     </a>
 
-    <a href="./0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html" class="article-card" data-category="category-2">
-        <span class="card-tag">체질별·상황별 다이어트</span>
-        <h2 class="card-title">산후에도, 갱년기에도 왜 배만 남을까? 체질과 상황에 맞춰 다시 잡는 맞춤 대사 다이어트</h2>
+    <a href="./0003.chronic-fatigue-gongjindan-bioavailability-rct.html" class="article-card" data-category="category-3">
+        <span class="card-tag">체질개선·기력보강</span>
+        <h2 class="card-title">단기 수면 박탈 및 만성 피로 개선, 정품 사향 씨알 조제 공진단의 학술적 근거와 임상 가치</h2>
+        <div class="card-hashtags">#씨알공진단 #정품사향CITES #만성피로개선 #hGMP의약품한약</div>
     </a>
-
-    <a href="./0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html" class="article-card" data-category="category-1">
-        <span class="card-tag">양약/GLP-1 비교</span>
-        <h2 class="card-title">마운자로·오젬픽 끊고 다시 살찐다면? GLP-1 부작용·근손실 없이 대사를 살리는 한약 대사 다이어트</h2>
-    </a>
-        
 
     </main>
 
     <footer>
-        <h3 style="color:#fff; margin-top:0; margin-bottom:5px;">📍 바디올한의원 바디올핏 클리닉</h3>
+        <h3 style="color:#fff; margin-top:0; margin-bottom:5px;">📍 바디올한의원 한약·자율신경 클리닉</h3>
         
-        <!-- 대표원장 프로필 이미지 추가 -->
+        <!-- 대표원장 프로필 이미지 -->
         <img src="./image/index-doctor.webp" alt="바디올한의원 대표원장" class="footer-doctor-img">
 
-        <!-- [수정3 적용] 병원 타이틀 및 이미지 아래 바디올핏 즉시 연결 버튼 추가 -->
-        <a href="https://body-all.co.kr/Body-Allfit" target="_blank" rel="noopener noreferrer" class="footer-fit-btn">
-            바디올핏 더 알아보기 ➜
+        <a href="https://wiki.body-all.co.kr/herbal-medicine.html" target="_blank" rel="noopener noreferrer" class="footer-cta-btn">
+            바디올 프리미엄 보약 처방 알아보기 ➜
         </a>
 
         <p style="color:#ccc; line-height:1.6; margin-top:10px;">
-            수원시청역 9번 출구 도보 3분 | 대표원장 1:1 카톡 밀착 케어 시스템<br>
-            불필요한 포장 거품을 제거하여<br>
-            합리적인 가격으로 내실 있는 다이어트 한약을 처방합니다.
+            수원시청역 9번 출구 도보 3분 | 대표원장 1:1 맞춤 진맥 및 체질 정밀 탕전<br>
+            식약처 인증 정품 사향(CITES)과 엄격한 hGMP 의약품 규격 약재만을 사용하여<br>
+            근본적인 신경 전도와 장부 기능을 회복시키는 전문 한의약품을 처방합니다.
         </p>
     </footer>
 </div>
 
-<!-- 하단 고정 네비게이션 -->
+<!-- 하단 고정 네비게이션 (규격 완벽 동기화) -->
 <nav class="bottom-nav">
-    <a href="https://body-all.co.kr/Body-Allfit" target="_blank" rel="noopener noreferrer"><i class="fas fa-dumbbell" style="color: var(--diet-color);"></i>바디올핏</a>
-    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank" rel="noopener noreferrer"><i class="fas fa-comment" style="color:#FEE500; background:#3c1e1e; border-radius:50%; padding:2px;"></i>카톡상담</a>
     <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank" rel="noopener noreferrer"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>네이버톡톡</a>
-    <a href="../../index.html"><i class="fas fa-home"></i>메인 위키</a>
+    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank" rel="noopener noreferrer"><i class="fas fa-comment"></i>카톡연결</a>
+    <a href="https://wiki.body-all.co.kr/pcode/mainland.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-clipboard-check" style="color: #e67e22;"></i>자가진단</a>
+    <a href="https://wiki.body-all.co.kr/herbal-medicine.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-mortar-pestle" style="color: #27ae60;"></i>보약</a>
 </nav>
 
 <script>
