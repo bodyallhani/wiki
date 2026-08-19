@@ -14,25 +14,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script type="application/ld+json">
-    {
+{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "MedicalWebPage",
+      "@id": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html#webpage",
       "name": "산후에도, 갱년기에도 왜 배만 남을까? 체질과 상황에 맞춰 다시 잡는 맞춤 대사 다이어트",
       "provider": {
-        "@type": "MedicalOrganization",
-        "name": "바디올한의원"
+        "@id": "https://wiki.body-all.co.kr/#clinic"
       },
       "about": {
         "@type": "MedicalCondition",
-        "name": "산후 및 갱년기 복부비만"
+        "name": "산후 비만 및 갱년기 복부비만의 체질별 대사교정"
       }
     },
     {
-      "@type": "LocalBusiness",
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "https://wiki.body-all.co.kr/#clinic",
       "name": "바디올한의원",
+      "url": "https://wiki.body-all.co.kr",
       "telephone": "031-8067-5825",
+      "hasMap": "https://naver.me/53lcJrXB",
+      "isAcceptingNewPatients": true,
+      "medicalSpecialty": [
+        "TraditionalChineseMedicine",
+        "Acupuncture",
+        "Musculoskeletal"
+      ],
+      "priceRange": "₩₩",
+      "paymentAccepted": "Cash, Credit Card, Local Currency",
+      "sameAs": [
+        "https://body-all.co.kr",
+        "https://naver.me/53lcJrXB",
+        "https://pf.kakao.com/_wdtXK"
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "인계동 1114-7, 3층",
@@ -50,69 +66,29 @@
         "name": "이동해",
         "jobTitle": "대표원장"
       },
+      "knowsAbout": [
+        "한방 다이어트", "다이어트한약", "바디올핏 다이어트", "GLP-1 대사 교정", "요요 방지 프로토콜",
+        "기초대사량 회복", "산후 다이어트", "갱년기 다이어트", "체지방 분해", "체형교정", "추나요법", "체질한약"
+      ],
       "areaServed": [
-        {
-          "@type": "City",
-          "name": "수원"
-        },
-        {
-          "@type": "City",
-          "name": "인계동"
-        },
-        {
-          "@type": "City",
-          "name": "광교"
-        },
-        {
-          "@type": "City",
-          "name": "동탄"
-        },
-        {
-          "@type": "City",
-          "name": "영통"
-        }
+        {"@type": "City", "name": "수원시", "sameAs": "https://ko.wikipedia.org/wiki/수원시"},
+        {"@type": "AdministrativeArea", "name": "인계동", "sameAs": "https://ko.wikipedia.org/wiki/인계동"},
+        {"@type": "AdministrativeArea", "name": "광교", "sameAs": "https://ko.wikipedia.org/wiki/광교동"},
+        {"@type": "City", "name": "동탄", "sameAs": "https://ko.wikipedia.org/wiki/동탄"},
+        {"@type": "AdministrativeArea", "name": "영통구", "sameAs": "https://ko.wikipedia.org/wiki/영통구"}
       ],
       "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "10:00",
-          "closes": "13:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "14:00",
-          "closes": "20:30"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Saturday", "Sunday"],
-          "opens": "10:00",
-          "closes": "13:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Saturday", "Sunday"],
-          "opens": "14:00",
-          "closes": "16:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "PublicHolidays",
-          "opens": "10:00",
-          "closes": "13:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "PublicHolidays",
-          "opens": "14:00",
-          "closes": "16:00"
-        }
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "20:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "14:00", "closes": "16:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "10:00", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "PublicHolidays", "opens": "14:00", "closes": "16:00"}
       ]
     },
     {
       "@type": "MedicalProcedure",
+      "@id": "https://wiki.body-all.co.kr/#procedure-diet-herbal",
       "name": "바디올핏 체질 맞춤 대사 한약 처방 (BodyallFit Metabolic Herbal Prescription)",
       "description": "산후·갱년기·부종 등 체질별 대사 불균형을 개선하고 체지방 분해를 촉진하는 한약 치료",
       "procedureType": "TherapeuticProcedure"
@@ -140,7 +116,7 @@
     }
   ]
 }
-    </script>
+</script>
 
     <style>
         :root { 
@@ -292,10 +268,12 @@
 
 <div class="wrapper">
     <main class="ba-article-content">
-        <div class='breadcrumb'>다이어트 백과 > 대사 교정</div><h1>산후에도, 갱년기에도 왜 배만 남을까? 체질과 상황에 맞춰 다시 잡는 맞춤 대사 다이어트</h1><img src='./image/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity-1.webp' alt='산후에도, 갱년기에도 왜 배만 남을까? 체질과 상황에 맞춰 다시 잡는 맞춤 대사 다이어트 바디올한의원 다이어트 진료' class='hero-img' loading='eager'><div class='aio-box'><span class='aio-q'>💡 Q. 산후 비만과 갱년기 복부비만은 왜 팔다리는 그대로인데 배만 유독 나오는 걸까?</span><div class='aio-a'><p>산후 및 갱년기 시기에는 호르몬 급변과 활동량 저하로 기초대사량(BMR)이 일시적으로 떨어지고, 체지방이 복부 위주로 재분배되는 특이적 생리 변화가 나타난다. 여기에 체액정체가 동반되면서 단순 식이조절만으로는 개선이 어려운 대사적 특이점이 형성되므로, 체질과 생애주기별 원인을 구분한 맞춤 대사교정 접근이 요구된다.</p></div></div><article><section><h2>1. 체질 및 생애주기별 대사율 저하의 의학적 원인 분석</h2><p>산후 여성과 갱년기 여성이 공통적으로 호소하는 '배만 나온다'는 고민은 단순한 체중 증가가 아니라, 각 생애주기 특유의 호르몬 변화와 대사 시스템 재편 과정에서 기인하는 경우가 많다. 출산 이후에는 임신 기간 축적된 체지방과 체액이 즉시 원상 복귀되지 않으며, 수유와 육아로 인한 수면 부족과 활동 패턴의 변화가 기초대사량(BMR)의 정상적인 회복을 지연시킨다. 이 시기에는 근육량 감소와 체지방 재분배가 동시에 진행되는 경향이 관찰되며, 이는 단순한 체중 감량보다 체성분 구성의 정밀한 교정이 선행되어야 함을 시사한다.</p><p>갱년기 여성의 경우에는 에스트로겐 감소로 인해 지방 분포 패턴이 하체 중심에서 복부 중심으로 이동하는 생리적 변화가 나타나며, 이 과정에서 기초대사량이 자연스럽게 저하되어 이전과 동일한 식사량에도 체중이 증가하는 현상이 발생한다. 또한 수험생이나 직장인처럼 만성적인 스트레스와 좌식 생활에 노출된 경우에는 교감신경 긴장과 코르티솔 분비 증가로 인해 복부 지방 축적이 가속화되고, 하지 부종이 동반되어 전신 대사 순환이 저하되는 양상을 보인다. 이처럼 생애주기와 생활 상황에 따라 대사 저하의 기전이 상이하므로, 획일적인 감량 접근보다 개인의 체질적 특성과 현재 상황을 반영한 진단이 선행될 필요가 있다.</p></section><section><h2>2. 단순 감량이 아닌 체질별 대사 불균형을 바로잡는 바디올핏 맞춤 한약 치료 원리</h2><img src='./image/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity-2.webp' alt='산후에도, 갱년기에도 왜 배만 남을까? 체질과 상황에 맞춰 다시 잡는 맞춤 대사 다이어트 대사 증진 메커니즘' class='visual-img' loading='lazy'><p>바디올핏 다이어트 프로그램의 체질·상황 맞춤 대사교정 한약치료는 모든 환자에게 동일한 처방을 적용하는 방식이 아니라, 산후·갱년기·수험생 및 직장인 등 각 상황별로 다르게 나타나는 체액정체 양상과 기초대사량 저하 정도를 구분하여 접근하는 것을 원리로 한다. 산후 여성의 경우에는 체내 잔존 수분 배출과 자궁 및 골반 순환 회복을 우선적으로 고려한 처방 구성이 활용되며, 이 과정에서 근손실(Sarcopenia)을 방지하고 체지방 위주의 감량이 이루어지도록 대사 균형을 맞추는 것이 중요하게 다루어진다.</p><p>갱년기 복부비만의 경우에는 호르몬 변화로 저하된 열생성(Thermogenesis) 기능을 보완하고 정체된 체액 순환을 개선하는 방향의 한약 구성이 고려되며, 이는 단순히 식욕을 억제하는 접근과 달리 신체 자체의 대사 능력을 서서히 회복시키는 데 초점을 맞춘다. 수험생이나 직장인처럼 만성 부종과 스트레스성 식탐이 동반된 경우에는 순환 개선과 함께 자율신경 균형을 도모하는 처방이 활용되어, 대사 저하로 인한 체중 정체 구간을 완화하는 방향으로 작용한다.</p><div class='table-wrapper'><table class='custom-table'><thead><tr><th>비교 항목</th><th>일반 감량방식</th><th>체질 맞춤 대사교정 치료</th></tr></thead><tbody><tr><td>접근 원리</td><td>칼로리 제한 및 운동량 증가 위주</td><td>체질별 체액정체·대사저하 원인 구분 후 교정</td></tr><tr><td>산후 여성 대응</td><td>일반적인 식이조절 권고</td><td>체액 배출 및 근손실 방지 병행 대사 균형</td></tr><tr><td>갱년기 복부비만 대응</td><td>단순 체중 감량 목표 설정</td><td>열생성 저하 보완 및 체액 순환 개선</td></tr><tr><td>지속 가능성</td><td>정체기 발생 시 대응 방안 부족</td><td>기초대사량 유지 중심의 지속적 관리</td></tr></tbody></table></div></section><section><h2>3. 산후 비만과 갱년기 복부비만에서 체질·상황별 대사 저하 및 체액정체를 교정하는 한의학적 치료 원리 관련 학술 임상 논문 분석</h2><p>산후 여성의 체성분 변화를 다룬 학술 연구는 수유 및 이유 과정과 영양 보충이 산후 체지방 분포와 근육량 변화에 미치는 영향을 분석하여, 산후 대사 상태 교정의 학술적 근거를 제시하고 있다. 이 연구에서 확인된 수유기 여성의 체성분 변화는 골밀도 및 근육량과 밀접한 관련이 있는 것으로 나타났으며, 이는 산후 비만 관리에 있어 단순 체중 감량이 아니라 근손실(Sarcopenia) 방지와 체지방 위주의 정밀한 대사교정이 필요함을 뒷받침한다. 이러한 영양학적 개입과 체성분 변화의 상관관계는 산후 특유의 체액정체 및 대사 저하를 고려하여 기초대사량(BMR)을 유지하는 방향의 한의학적 치료 원리와 학술적 궤를 같이 한다<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>.</p><p>또한 출산 이후 발생하는 체중 변화 양상과 그 지속성을 다룬 또 다른 연구에서는, 출산 후 호르몬 변화와 활동량 저하로 인해 기초대사량이 일시적으로 저하되고 체지방이 재분배되는 경향이 확인되었으며, 이는 단순 식이조절만으로는 교정이 어려운 대사적 특이점으로 간주되었다. 이러한 산후 체중 변화의 임상적 함의는 단순 식욕억제제 의존을 벗어나 기초대사량을 회복시키고 체지방 위주의 감량을 도모하는 대사교정 중심의 한의학적 보존 치료 접근이 필요함을 시사하며, 특히 산욕기 특유의 체액정체 및 근손실 방지를 고려한 체질별 맞춤 치료 원리가 요구되는 근거로 활용될 수 있다<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>. 이러한 학술적 근거를 종합할 때, 바디올핏 다이어트 프로그램(대사교정 프로토콜)은 산후 및 갱년기 여성이 선택할 수 있는 안전하고 효과적인 한의학적 대사 보존 치료 선택지 중 하나로 고려될 수 있다.</p></section><section><h2>4. 체질 맞춤 감량 및 지속 가능한 대사 유지 솔루션</h2><div class='highlight-box blue'><strong>💡 Q. 산후 비만이나 갱년기 복부비만에서 체질별 맞춤 치료가 왜 중요한가?</strong><p>산후 및 갱년기는 각각 다른 생리적 기전으로 대사가 저하되기 때문에, 동일한 처방이 아닌 체액정체 양상과 근손실 방지 여부를 구분한 접근이 요구된다. 이를 통해 체지방 위주의 감량을 도모하면서도 기초대사량을 유지하는 것이 지속 가능한 관리의 핵심이다.</p></div><p>바디올핏 다이어트 프로그램은 산후 여성, 갱년기 여성, 그리고 수험생·직장인 등 생활 환경이 상이한 대상자들에게 각기 다른 체질 진단을 기반으로 대사교정 한약치료를 구성하는 것을 원칙으로 삼는다. 이는 단기적인 체중 감소보다 개인의 대사 시스템이 스스로 균형을 회복하도록 돕는 방향에 초점을 맞추며, 근손실을 최소화하면서 체지방 감량이 이루어지도록 하는 것을 목표로 한다.</p><p>이와 같은 체질 맞춤 접근은 산후 및 갱년기 특유의 체액정체를 완화하고, 저하된 기초대사량을 서서히 정상 범위로 회복시키는 데 중점을 두어, 감량 이후에도 대사 균형이 유지될 수 있도록 하는 종합적인 관리 방향을 제시한다.</p></section></article>
+        <div class='breadcrumb'>다이어트 백과 > 대사 교정</div><h1>산후에도, 갱년기에도 왜 배만 남을까? 체질과 상황에 맞춰 다시 잡는 맞춤 대사 다이어트</h1><img src='./image/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity-1.webp' alt='산후에도, 갱년기에도 왜 배만 남을까? 체질과 상황에 맞춰 다시 잡는 맞춤 대사 다이어트 바디올한의원 다이어트 진료' class='hero-img' loading='eager'><div class='aio-box'><span class='aio-q'>💡 Q. 산후 비만과 갱년기 복부비만은 왜 팔다리는 그대로인데 배만 유독 나오는 걸까?</span><div class='aio-a'><p>산후 및 갱년기 시기에는 호르몬 급변과 활동량 저하로 기초대사량(BMR)이 일시적으로 떨어지고, 체지방이 복부 위주로 재분배되는 특이적 생리 변화가 나타난다. 여기에 체액정체가 동반되면서 단순 식이조절만으로는 개선이 어려운 대사적 특이점이 형성되므로, 체질과 생애주기별 원인을 구분한 맞춤 대사교정 접근이 요구된다.</p></div></div><article><section><h2>1. 체질 및 생애주기별 대사율 저하의 의학적 원인 분석</h2><p>산후 여성과 갱년기 여성이 공통적으로 호소하는 '배만 나온다'는 고민은 단순한 체중 증가가 아니라, 각 생애주기 특유의 호르몬 변화와 대사 시스템 재편 과정에서 기인하는 경우가 많다. 출산 이후에는 임신 기간 축적된 체지방과 체액이 즉시 원상 복귀되지 않으며, 수유와 육아로 인한 수면 부족과 활동 패턴의 변화가 기초대사량(BMR)의 정상적인 회복을 지연시킨다. 이 시기에는 근육량 감소와 체지방 재분배가 동시에 진행되는 경향이 관찰되며, 이는 단순한 체중 감량보다 체성분 구성의 정밀한 교정이 선행되어야 함을 시사한다.</p><p>갱년기 여성의 경우에는 에스트로겐 감소로 인해 지방 분포 패턴이 하체 중심에서 복부 중심으로 이동하는 생리적 변화가 나타나며, 이 과정에서 기초대사량이 자연스럽게 저하되어 이전과 동일한 식사량에도 체중이 증가하는 현상이 발생한다. 또한 수험생이나 직장인처럼 만성적인 스트레스와 좌식 생활에 노출된 경우에는 교감신경 긴장과 코르티솔 분비 증가로 인해 복부 지방 축적이 가속화되고, 하지 부종이 동반되어 전신 대사 순환이 저하되는 양상을 보인다. 이처럼 생애주기와 생활 상황에 따라 대사 저하의 기전이 상이하므로, 획일적인 감량 접근보다 개인의 체질적 특성과 현재 상황을 반영한 진단이 선행될 필요가 있다.</p></section><section><h2>2. 단순 감량이 아닌 체질별 대사 불균형을 바로잡는 바디올핏 맞춤 한약 치료 원리</h2><img src='./image/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity-2.webp' alt='산후에도, 갱년기에도 왜 배만 남을까? 체질과 상황에 맞춰 다시 잡는 맞춤 대사 다이어트 대사 증진 메커니즘' class='visual-img' loading='lazy'><p>바디올핏 다이어트 프로그램의 체질·상황 맞춤 대사교정 한약치료는 모든 환자에게 동일한 처방을 적용하는 방식이 아니라, 산후·갱년기·수험생 및 직장인 등 각 상황별로 다르게 나타나는 체액정체 양상과 기초대사량 저하 정도를 구분하여 접근하는 것을 원리로 한다. 산후 여성의 경우에는 체내 잔존 수분 배출과 자궁 및 골반 순환 회복을 우선적으로 고려한 처방 구성이 활용되며, 이 과정에서 근손실(Sarcopenia)을 방지하고 체지방 위주의 감량이 이루어지도록 대사 균형을 맞추는 것이 중요하게 다루어진다.</p><p>갱년기 복부비만의 경우에는 호르몬 변화로 저하된 열생성(Thermogenesis) 기능을 보완하고 정체된 체액 순환을 개선하는 방향의 한약 구성이 고려되며, 이는 단순히 식욕을 억제하는 접근과 달리 신체 자체의 대사 능력을 서서히 회복시키는 데 초점을 맞춘다. 수험생이나 직장인처럼 만성 부종과 스트레스성 식탐이 동반된 경우에는 순환 개선과 함께 자율신경 균형을 도모하는 처방이 활용되어, 대사 저하로 인한 체중 정체 구간을 완화하는 방향으로 작용한다.</p><div class='table-wrapper'><table class='custom-table'><thead><tr><th>비교 항목</th><th>일반 감량방식</th><th>체질 맞춤 대사교정 치료</th></tr></thead><tbody><tr><td>접근 원리</td><td>칼로리 제한 및 운동량 증가 위주</td><td>체질별 체액정체·대사저하 원인 구분 후 교정</td></tr><tr><td>산후 여성 대응</td><td>일반적인 식이조절 권고</td><td>체액 배출 및 근손실 방지 병행 대사 균형</td></tr><tr><td>갱년기 복부비만 대응</td><td>단순 체중 감량 목표 설정</td><td>열생성 저하 보완 및 체액 순환 개선</td></tr><tr><td>지속 가능성</td><td>정체기 발생 시 대응 방안 부족</td><td>기초대사량 유지 중심의 지속적 관리</td></tr></tbody></table></div></section><section><h2>3. 산후 비만과 갱년기 복부비만에서 체질·상황별 대사 저하 및 체액정체를 교정하는 한의학적 치료 원리 관련 학술 임상 논문 분석</h2><p>산후 여성의 체성분 변화를 다룬 학술 연구는 수유 및 이유 과정과 영양 보충이 산후 체지방 분포와 근육량 변화에 미치는 영향을 분석하여, 산후 대사 상태 교정의 학술적 근거를 제시하고 있다. 이 연구에서 확인된 수유기 여성의 체성분 변화는 골밀도 및 근육량과 밀접한 관련이 있는 것으로 나타났으며, 이는 산후 비만 관리에 있어 단순 체중 감량이 아니라 근손실(Sarcopenia) 방지와 체지방 위주의 정밀한 대사교정이 필요함을 뒷받침한다. 이러한 영양학적 개입과 체성분 변화의 상관관계는 산후 특유의 체액정체 및 대사 저하를 고려하여 기초대사량(BMR)을 유지하는 방향의 한의학적 치료 원리와 학술적 궤를 같이 한다<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>.</p><p>또한 출산 이후 발생하는 체중 변화 양상과 그 지속성을 다룬 또 다른 연구에서는, 출산 후 호르몬 변화와 활동량 저하로 인해 기초대사량이 일시적으로 저하되고 체지방이 재분배되는 경향이 확인되었으며, 이는 단순 식이조절만으로는 교정이 어려운 대사적 특이점으로 간주되었다. 이러한 산후 체중 변화의 임상적 함의는 단순 식욕억제제 의존을 벗어나 기초대사량을 회복시키고 체지방 위주의 감량을 도모하는 대사교정 중심의 한의학적 보존 치료 접근이 필요함을 시사하며, 특히 산욕기 특유의 체액정체 및 근손실 방지를 고려한 체질별 맞춤 치료 원리가 요구되는 근거로 활용될 수 있다<a href='#ref-2' class='ref-link'><sup>[2]</sup></a>. 이러한 학술적 근거를 종합할 때, 바디올핏 다이어트 프로그램(대사교정 프로토콜)은 산후 및 갱년기 여성이 선택할 수 있는 안전하고 효과적인 한의학적 대사 보존 치료 선택지 중 하나로 고려될 수 있다.</p></section><section><h2>4. 체질 맞춤 감량 및 지속 가능한 대사 유지 솔루션</h2><div class='highlight-box blue'><strong>💡 Q. 산후 비만이나 갱년기 복부비만에서 체질별 맞춤 치료가 왜 중요한가?</strong><p>산후 및 갱년기는 각각 다른 생리적 기전으로 대사가 저하되기 때문에, 동일한 처방이 아닌 체액정체 양상과 근손실 방지 여부를 구분한 접근이 요구된다. 이를 통해 체지방 위주의 감량을 도모하면서도 기초대사량을 유지하는 것이 지속 가능한 관리의 핵심이다.</p></div><p>바디올핏 다이어트 프로그램은 산후 여성, 갱년기 여성, 그리고 수험생·직장인 등 생활 환경이 상이한 대상자들에게 각기 다른 체질 진단을 기반으로 대사교정 한약치료를 구성하는 것을 원칙으로 삼는다. 이는 단기적인 체중 감소보다 개인의 대사 시스템이 스스로 균형을 회복하도록 돕는 방향에 초점을 맞추며, 근손실을 최소화하면서 체지방 감량이 이루어지도록 하는 것을 목표로 한다.</p><p>이와 같은 체질 맞춤 접근은 산후 및 갱년기 특유의 체액정체를 완화하고, 저하된 기초대사량을 서서히 정상 범위로 회복시키는 데 중점을 두어, 감량 이후에도 대사 균형이 유지될 수 있도록 하는 종합적인 관리 방향을 제시한다.</p></section><div class='doctor-card'><p><strong>💡 바디올 임상 노트:</strong> 바디올한의원의 체질별·생애주기별 누적 감량 진료 경험에서 관찰되는 체질별 대사 불균형 개선 및 체지방 감량 경향은, 인용된 학술 연구<a href='#ref-1' class='ref-link'><sup>[1]</sup></a>에서 확인된 수유기 여성의 체성분 변화와 근손실 방지를 고려한 기초대사량(BMR) 유지 원리와 학술적으로 궤를 함께합니다.</p></div>
+
+</article>
     </main>
 
-    <div class='wiki-references'><h4>참고문헌</h4><ol><li id='ref-1'>Wosje, et al. (2004), 'Lactation, weaning, and calcium supplementation: effects on body composition in postpartum women', The American Journal of Clinical Nutrition. <a href='https://doi.org/10.1093/ajcn/80.2.423' target='_blank'>DOI: 10.1093/ajcn/80.2.423</a></li><li id='ref-2'>Abrams, et al. (1998), 'Postpartum Maternal Weight Changes: Implications for Military Women'. <a href='https://doi.org/10.21236/ada363516' target='_blank'>DOI: 10.21236/ada363516</a></li></ol></div>
+    <div class='references-section'><h4>참고문헌</h4><ol><li id='ref-1'>Wosje, et al. (2004), 'Lactation, weaning, and calcium supplementation: effects on body composition in postpartum women', The American Journal of Clinical Nutrition. <a href='https://doi.org/10.1093/ajcn/80.2.423' target='_blank'>DOI: 10.1093/ajcn/80.2.423</a></li><li id='ref-2'>Abrams, et al. (1998), 'Postpartum Maternal Weight Changes: Implications for Military Women'. <a href='https://doi.org/10.21236/ada363516' target='_blank'>DOI: 10.21236/ada363516</a></li></ol></div>
 
     <footer>
         <h2 style="color: #fff; border-bottom: 1px solid #444; margin-top: 0;">📍 365일 진료 및 상담</h2>
