@@ -1,67 +1,75 @@
-name: Google Indexing API Automation
+name: Validate sitemap for published HTML
 
 on:
   push:
+    branches: [main]
     paths:
-      - '**/*.html' # HTML 파일이 수정되거나 새로 생길 때만 로봇을 깨웁니다.
+      - '**/*.html'
+      - 'sitemap.xml'
+      - '.github/workflows/google-index.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sitemap-validation-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  google-indexing:
+  validate-sitemap:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
-      - name: 코드 가져오기
+      - name: Check out the published source
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: 변경되거나 추가된 HTML 파일 목록 추출
+      - name: Validate sitemap URLs and repository targets
+        shell: bash
         run: |
-          # 수정/신규 파일 목록을 에러 없이 안전하게 한 줄로 정렬합니다.
-          FILES=$(git diff --name-only HEAD~1 HEAD | grep '\.html$' | tr '\n' ' ' || true)
-          echo "CHANGED_FILES=$FILES" >> $GITHUB_ENV
+          python3 - <<'PY'
+          import os
+          import pathlib
+          import urllib.parse
+          import xml.etree.ElementTree as ET
 
-      - name: Node.js 세팅
-        if: env.CHANGED_FILES != ''
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: 구글 인덱싱 API 호출 실행
-        if: env.CHANGED_FILES != ''
-        env:
-          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
-        run: |
-          npm install googleapis
-          cat << 'EOF' > index.js
-          const { google } = require('googleapis');
-          const key = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_KEY);
-          const files = process.env.CHANGED_FILES.split(' ').filter(Boolean);
-
-          const jwtClient = new google.auth.JWT(
-            key.client_email, null, key.private_key,
-            ['https://www.googleapis.com/auth/indexing'], null
-          );
-
-          async function main() {
-            await jwtClient.authorize();
-            const indexing = google.indexing('v1');
-            
-            for (const file of files) {
-              // 파일명을 기반으로 구글에 보낼 실시간 주소 자동 조립
-              const targetUrl = `https://wiki.body-all.co.kr/${file}`;
-              console.log(`구글 색인 요청 전송: ${targetUrl}`);
-              
-              try {
-                await indexing.urlNotifications.publish({
-                  auth: jwtClient,
-                  requestBody: { url: targetUrl, type: 'URL_UPDATED' }
-                });
-                console.log(`➔ [성공] 구글이 접수 완료했습니다.`);
-              } catch (err) {
-                console.error(`➔ [실패] 에러 내용:`, err.message);
-              }
-            }
-          }
-          main().catch(console.error);
-          EOF
-          node index.js
+          root = pathlib.Path.cwd().resolve()
+          sitemap = root / 'sitemap.xml'
+          data = sitemap.read_bytes()
+          if len(data) > 50 * 1024 * 1024:
+              raise SystemExit('Sitemap exceeds the 50 MB uncompressed limit')
+          document = ET.fromstring(data.decode('utf-8'))
+          ns = '{http://www.sitemaps.org/schemas/sitemap/0.9}'
+          if document.tag != ns + 'urlset':
+              raise SystemExit('Expected a sitemap urlset')
+          entries = document.findall(ns + 'url')
+          if not 1 <= len(entries) <= 50000:
+              raise SystemExit('Invalid sitemap URL count')
+          seen = set()
+          for entry in entries:
+              locations = entry.findall(ns + 'loc')
+              if len(locations) != 1:
+                  raise SystemExit('Each sitemap entry must contain one loc')
+              loc = (locations[0].text or '').strip()
+              url = urllib.parse.urlsplit(loc)
+              if (url.scheme != 'https' or url.netloc != 'wiki.body-all.co.kr'
+                      or url.query or url.fragment or loc in seen):
+                  raise SystemExit('Invalid or duplicate sitemap URL: ' + loc)
+              seen.add(loc)
+              path = urllib.parse.unquote(url.path).lstrip('/')
+              if not path or path.endswith('/'):
+                  path += 'index.html'
+              target = (root / path).resolve()
+              if not target.is_relative_to(root) or not target.is_file():
+                  raise SystemExit('Sitemap target missing from source: ' + loc)
+          message = (
+              f'Validated {len(seen)} sitemap URLs and repository targets.\n\n'
+              'Discovery uses the published sitemap and Search Console. '
+              'Ordinary medical articles are not eligible for Google Indexing API. '
+              'Validation does not guarantee crawling, indexing or ranking. '
+              'No HTML, sitemap dates or publication state were changed.\n'
+          )
+          print(message)
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as output:
+              output.write(message)
+          PY
