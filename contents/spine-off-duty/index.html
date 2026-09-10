@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102e2b">
+  <title>척추야, 퇴근하자! | 바디올 60초 게임</title>
+  <meta name="description" content="업무 알림은 피하고, 쉬는 틈은 챙기고. 뼈대리와 함께하는 바디올한의원의 60초 퇴근 챌린지. 설치 없이 즐기는 무료 웹게임입니다. 게임 점수는 건강 상태를 뜻하지 않습니다.">
+  <link rel="canonical" href="https://wiki.body-all.co.kr/contents/spine-off-duty/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="척추야, 퇴근하자! — 60초 퇴근 챌린지">
+  <meta property="og:description" content="딱 5분만? 안 됩니다. 제 몸도 퇴근합니다. 바디올한의원이 만든 한 손 게임.">
+  <meta property="og:url" content="https://wiki.body-all.co.kr/contents/spine-off-duty/">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./engine.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#start">게임 시작으로 건너뛰기</a>
+  <div class="site-wrap">
+    <header class="site-header">
+      <a class="brand" href="https://wiki.body-all.co.kr/" aria-label="바디올한의원 위키로 이동"><b>bodyall<span>®</span></b><span class="brand-divider"></span><span>바디올한의원<br><strong>PLAY LAB</strong></span></a>
+      <div class="header-right"><span class="edition">작은 게임, 내 몸을 위한 한 판.</span><span class="edition-no">NO. 01</span></div>
+    </header>
+    <main class="arcade-shell" aria-label="척추야, 퇴근하자 게임">
+      <div class="machine-top"><span><i aria-hidden="true"></i> BODYALL ORIGINAL</span><span>60-SECOND CHALLENGE</span></div>
+      <div class="machine-body">
+        <section class="game-column" aria-label="게임 화면">
+          <div class="hud" aria-label="게임 현황">
+            <div class="hud-time"><span>퇴근까지</span><strong id="time">60<small>초</small></strong></div>
+            <div class="hud-score"><span>이번 기록</span><strong id="score">0000</strong></div>
+            <div class="hud-cups"><span>남은 커피</span><strong id="cups" aria-label="3잔">● ● ●</strong></div>
+          </div>
+          <div class="arena" id="arena">
+            <canvas id="game" width="480" height="580" aria-label="좌우로 의자를 움직여 주황색 업무 카드를 피하고 초록색 쉬는 틈을 받으세요.">이 게임은 Canvas를 지원하는 브라우저가 필요합니다.</canvas>
+            <div id="stage-banner" class="stage-banner" hidden><span id="stage-caption">ROUND 01</span><strong id="stage-title">알림 지옥</strong></div>
+            <div id="game-toast" class="game-toast" aria-live="polite"></div>
+            <div class="start-screen" id="start-screen">
+              <div class="stamp">내 몸도 퇴근이 필요해</div>
+              <h1>척추야,<br><span>퇴근하자!</span></h1>
+              <p class="intro">업무는 피하고. 쉬는 틈은 챙기고.</p>
+              <div class="mascot-stage"><span class="speech-bubble">저 오늘 칼퇴합니다.</span><img class="mascot" src="./assets/employee.png" alt="커피를 들고 의자에 앉은 말랑한 직장인 캐릭터 뼈대리" width="230" height="230"><span class="mascot-label">뼈대리 · 퇴근에 진심</span></div>
+              <p id="challenge-note" class="challenge-note" hidden>친구와 같은 패턴으로 도전합니다.</p>
+              <button class="button primary start-button" id="start" disabled><span id="start-label">뼈대리 출근 준비 중…</span><span aria-hidden="true">▶</span></button>
+              <p class="start-note" id="start-note">한 판 60초 · 손가락 하나 · 설치 없이 바로</p>
+              <button class="text-button" id="how-button">처음이세요? 조작법 보기</button>
+            </div>
+            <div class="countdown-screen" id="countdown-screen" hidden><span>퇴근 작전 시작</span><strong id="countdown">3</strong><p>주황색은 피하고, 초록색은 받으세요.</p></div>
+            <div class="pause-screen" id="pause-screen" hidden><span class="eyebrow">잠깐 쉬어가는 중</span><h2>세상은 잠시<br>기다리라고 하죠.</h2><p>게임 시간도 멈췄습니다.</p><button class="button primary" id="resume">다시 퇴근하러 가기 ▶</button><button class="text-button light" id="quit">첫 화면으로</button></div>
+          </div>
+          <div class="fatigue-row"><span>업무 피로 <small>게임 속 게이지</small></span><div class="meter" role="progressbar" aria-label="게임 속 업무 피로" aria-valuemin="0" aria-valuemax="100" aria-valuenow="12" id="fatigue-meter"><span id="fatigue-fill"></span></div><b id="fatigue-value">12%</b></div>
+          <div class="control-strip">
+            <div class="direction-controls"><button id="left" aria-label="왼쪽으로 이동" disabled>←</button><span>드래그 / 방향키</span><button id="right" aria-label="오른쪽으로 이동" disabled>→</button></div>
+            <button id="pause" class="icon-button" aria-label="게임 일시정지" disabled>Ⅱ</button>
+          </div>
+        </section>
+        <aside class="side-panel">
+          <div class="mission-card"><span class="eyebrow">TODAY'S MISSION</span><h2>퇴근은<br>몸과 함께.</h2><p>정시 퇴근까지 딱 60초.<br>뼈대리의 평화를 지켜주세요.</p><div class="mission-line"></div><div class="rule"><span class="rule-chip work-chip">!</span><div><b>업무 알림 피하기</b><p>부딪히면 커피 한 잔이 날아가요.</p></div></div><div class="rule"><span class="rule-chip break-chip">+</span><div><b>쉬는 틈 챙기기</b><p>피로는 내려가고, 점수는 올라가요.</p></div></div><p class="mini-rule">가만히 버티기만 하면 피로가 쌓여요.<br>이건 게임 규칙, 건강 진단은 아니에요.</p></div>
+          <div class="record-card"><span class="eyebrow">MY PERSONAL BEST</span><strong id="best-score">0<small>점</small></strong><span>이 브라우저에 저장된 최고기록</span></div>
+          <div class="settings"><button id="sound" aria-pressed="false"><span aria-hidden="true">♪</span> 소리 꺼짐</button><button id="motion" aria-pressed="false">효과 줄이기</button></div>
+          <p class="game-disclaimer">게임 속 피로·점수·캐릭터는 재미를 위한 표현입니다. 실제 척추 정렬, 질환, 치료 필요성을 판단하지 않습니다.</p>
+        </aside>
+      </div>
+      <footer class="machine-footer"><span>건강은 점수가 아니니까.</span><span>MADE BY 바디올한의원</span></footer>
+    </main>
+    <footer class="site-footer"><p>몸을 움직일 땐 화면을 잠시 내려놓으세요.</p><button class="text-button" id="info-button">건강 안내 · 개인정보</button></footer>
+  </div>
+
+  <dialog id="how-dialog" class="modal">
+    <button class="close-button" data-close aria-label="조작법 닫기">×</button><span class="eyebrow">HOW TO CLOCK OUT</span><h2>설명은 짧게.<br>퇴근은 빠르게.</h2>
+    <ol class="how-list"><li><b>화면을 좌우로 드래그하세요.</b><p>의자가 손가락을 따라갑니다. PC에서는 ← → 또는 A, D로 움직여요.</p></li><li><b>주황색 업무 카드는 피하세요.</b><p>부딪힐 때마다 커피 한 잔 손실! 3잔을 모두 쏟으면 한 판이 끝나요.</p></li><li><b>초록색 ‘쉬는 틈’은 받으세요.</b><p>업무 피로 −25. 연속으로 챙기면 보너스! 피로가 100이 되어도 한 판이 끝나요.</p></li></ol>
+    <p class="tip">아슬아슬하게 업무를 피하면 추가 점수. 한 판 60초를 버티면 퇴근 성공입니다.</p><button class="button primary" data-close>좋아요, 이해했어요</button>
+  </dialog>
+
+  <dialog id="result-dialog" class="modal result-modal">
+    <button class="close-button" data-close aria-label="결과 닫기">×</button><div class="result-topline"><span>BODYALL OFF DUTY</span><span id="result-stamp">퇴근 결재</span></div>
+    <p class="eyebrow" id="result-eyebrow">오늘의 게임 속 별명</p><h2 id="result-title">정시퇴근 수호자</h2><p id="result-copy"></p>
+    <div class="result-score"><strong id="result-score">0</strong><span>퇴근력 POINTS</span></div>
+    <div class="result-stats"><div><b id="result-time">0초</b><span>버틴 시간</span></div><div><b id="result-breaks">0번</b><span>챙긴 쉬는 틈</span></div><div><b id="result-near">0번</b><span>아슬아슬 회피</span></div></div>
+    <p id="new-record" class="new-record" hidden>이 브라우저의 최고기록을 바꿨어요!</p><p class="result-medical-note">게임 기록입니다. 실제 건강 상태나 척추 정렬을 뜻하지 않습니다.</p>
+    <div class="result-actions"><button id="retry" class="button primary">한 판 더! ↻</button><button id="share" class="button secondary">친구에게 도전장 ↗</button></div>
+    <div class="result-subactions"><button id="save-card" class="text-button">기록 카드 저장</button><button id="new-game" class="text-button">새로운 패턴으로</button></div>
+    <div id="share-fallback" class="share-fallback" hidden><label for="share-url">복사가 안 되면 이 링크를 길게 눌러 복사하세요.</label><input id="share-url" readonly aria-label="친구에게 보낼 도전 링크"></div>
+    <p class="action-status" id="share-status" role="status"></p>
+    <section class="body-check"><span class="eyebrow">이번에는, 화면 밖의 나.</span><h3>방금, 같은 자세로<br>계속 앉아 계셨나요?</h3><p>편안한 범위에서 자세를 바꿔보세요.<br>불편함이 반복된다면 원인을 확인해보세요.</p><button id="check-button" class="button check-button">내 생활 돌아보기 <span>선택 · 10초</span></button></section>
+    <div class="clinic-links"><a data-track="place" href="https://naver.me/53lcJrXB" target="_blank" rel="noopener noreferrer">바디올 위치·예약 안내 ↗</a><a data-track="content" href="https://wiki.body-all.co.kr/pain-spine-clinic.html" target="_blank" rel="noopener noreferrer">목·허리 진료 알아보기 ↗</a></div>
+  </dialog>
+
+  <dialog id="check-dialog" class="modal">
+    <button class="close-button" data-close aria-label="생활 점검 닫기">×</button><span class="eyebrow">BODYALL BODY CHECK-IN</span><h2>내 몸의 일상도<br>잠깐 확인해요.</h2><p>해당하는 항목을 골라보세요. 점수나 진단은 나오지 않으며, 선택 내용은 저장·전송하지 않습니다.</p>
+    <fieldset class="check-options"><legend class="sr-only">평소 생활에서 해당하는 항목</legend><label><input type="checkbox" name="habit" value="screen"><span>화면에 집중하다 보면 몸이 가까이 가 있어요.</span></label><label><input type="checkbox" name="habit" value="still"><span>일하다 보면 자세를 바꿀 틈을 자주 놓쳐요.</span></label><label><input type="checkbox" name="habit" value="symptom"><span>목·허리 불편함이 반복되거나 일상에 지장을 줘요.</span></label></fieldset>
+    <div class="check-advice" id="check-advice" aria-live="polite">자세의 겉모습만으로 척추 상태를 단정할 수는 없어요. 몸의 느낌과 일상 속 움직임도 함께 돌아보세요.</div>
+    <p class="urgent-note">갑자기 힘이 빠지거나, 대소변 조절 이상·회음부 감각 저하, 큰 외상 뒤 통증이 있다면 게임 결과와 무관하게 신속히 의료기관에서 평가받으세요.</p>
+    <a class="button primary" data-track="consult" href="https://naver.me/53lcJrXB" target="_blank" rel="noopener noreferrer">바디올 위치·예약 안내 ↗</a><div class="resource-links"><a data-track="chuna" href="https://wiki.body-all.co.kr/chuna-therapy.html" target="_blank" rel="noopener noreferrer">추나요법 안내</a><a data-track="sart" href="https://wiki.body-all.co.kr/SART.html" target="_blank" rel="noopener noreferrer">공간척추교정 SART 안내</a></div><button class="text-button" data-close>돌아가기</button>
+  </dialog>
+
+  <dialog id="info-dialog" class="modal">
+    <button class="close-button" data-close aria-label="안내 닫기">×</button><span class="eyebrow">PLEASE NOTE</span><h2>게임은 가볍게.<br>안내는 정확하게.</h2>
+    <h3>건강 안내</h3><p>이 콘텐츠는 바디올한의원의 생활습관 인식용 게임입니다. 피로 게이지·커피·퇴근력·캐릭터 움직임은 가상의 게임 규칙이며, 신체 검사나 실제 생체역학 시뮬레이션이 아닙니다.</p><p>특정 자세나 게임 점수만으로 척추 변형, 질환, 치료 필요성을 판단할 수 없습니다. 척추에는 정상적인 곡선이 있으며, 일자로 고정하는 것이 이 게임의 건강 목표가 아닙니다.</p><p>편안한 범위에서 움직이고, 통증이 심해지면 억지로 동작을 계속하지 마세요. 불편함이 지속되거나 일상에 지장을 주면 의료진과 상의하세요.</p>
+    <h3>개인정보와 기록</h3><p>로그인·카메라·마이크 권한을 요청하지 않습니다. 최고기록과 소리·효과 설정만 이 브라우저에 저장합니다. 생활 점검 응답은 저장하거나 전송하지 않습니다.</p><p>도전 링크에는 게임 패턴 코드만 포함됩니다. 기록 카드와 공유 문구에는 게임 점수가 들어갑니다. 외부 사이트로 이동하거나 공유 기능을 이용하면 해당 서비스의 정책이 적용됩니다. 사이트 제공 과정에서 호스팅 서비스의 기본 접속 로그가 남을 수 있습니다.</p><p>이 버전에는 별도 분석 서비스나 광고 추적기를 넣지 않았습니다.</p>
+    <h3>참고 자료</h3><div class="resource-links vertical"><a href="https://www.nhs.uk/conditions/back-pain/" target="_blank" rel="noopener noreferrer">NHS · 요통과 활동, 진료가 필요한 상황 ↗</a><a href="https://www.nhs.uk/conditions/scoliosis/" target="_blank" rel="noopener noreferrer">NHS · 척추측만증의 원인과 평가 ↗</a></div><p class="info-date">콘텐츠 제작: 바디올한의원 · 게임 v1.0<br>건강 안내 출처 확인: 2026-09-10</p><button class="button primary" data-close>확인했어요</button>
+  </dialog>
+  <noscript><div class="noscript">게임을 실행하려면 브라우저의 JavaScript를 켜주세요. <a href="https://wiki.body-all.co.kr/">바디올 위키 보기</a></div></noscript>
+</body>
+</html>
