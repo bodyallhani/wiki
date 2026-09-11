@@ -57,10 +57,10 @@
   function start(){
     if(!assetsReady){loadAssets();return;}
     playSound('start');reset();$('intro').hidden=true;$('result-view').hidden=true;$('question-view').hidden=false;game.dataset.state='question';syncActor();
-    renderQuestion();say('손목은 편히 두게. 자, 시작해 볼까?');tone(620,.1);event('game_start');
+    event('game_start');renderQuestion();say('손목은 편히 두게. 자, 시작해 볼까?');tone(620,.1);
   }
   function renderQuestion(){
-    busy=false;const q=D.questions[index];$('question').textContent=q.text;
+    busy=false;const q=D.questions[index];$('question').textContent=q.text;event('question_view',{question:index+1,repair});
     $('question-count').replaceChildren(document.createTextNode(String(repair?repairAt+1:index+1).padStart(2,'0')+' '));const total=document.createElement('i');total.textContent=repair?'/ 3':'/ 10';$('question-count').append(total);
     $('progress').setAttribute('aria-valuemax',repair?'3':'10');$('progress').setAttribute('aria-valuenow',String(repair?repairAt:index));$('progress-fill').style.width=((repair?repairAt/3:index/10)*100)+'%';
     document.querySelector('.question-meta>span:first-child').textContent=repair?'전생을 조금 더 또렷하게':'화타의 물음';
@@ -136,7 +136,7 @@
     const buttons=document.createElement('div');buttons.className='share-buttons';body.append(buttons);
     const share=addButton(buttons,'이 결과 친구에게 보내기 ↗','primary',async()=>{
       // Keep the result URL in the main share. Some apps discard text/URLs when a file is attached.
-      const payload=E.sharePayload(snapshot);
+      const payload=E.sharePayload(snapshot);event('share_attempt',{result:snapshot.id});
       if(!navigator.share){await copyLink(snapshot,body);return;}
       share.disabled=true;
       try{await navigator.share(payload);event('share_api_resolved',{result:snapshot.id,withImage:false});}

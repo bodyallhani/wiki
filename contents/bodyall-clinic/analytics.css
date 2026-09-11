@@ -1,0 +1,5 @@
+.analytics-choice{max-width:640px;margin:12px auto 0;padding-top:10px;border-top:1px solid #9baa9144;font-size:12px;line-height:1.6;color:#64725d;text-align:center}
+.analytics-choice[hidden],.analytics-choice [hidden]{display:none!important}
+.analytics-choice p{margin:0 0 5px!important;font-size:12px!important}
+.analytics-choice button,.analytics-choice a{font:inherit;color:inherit;background:transparent;border:0;text-underline-offset:3px;text-decoration:underline;padding:8px;cursor:pointer}
+.analytics-choice button:focus-visible,.analytics-choice a:focus-visible{outline:2px solid #52694a;outline-offset:2px}

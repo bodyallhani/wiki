@@ -26,13 +26,14 @@ async function boot({missingPortraitModule=false,failingActor=false,shareNavigat
  let now=0,serial=0;const timers=new Map(),warnings=[];
  const clock={schedule(fn,delay){const id=++serial;timers.set(id,{at:now+delay,fn});return id;},cancel(id){timers.delete(id);}};
  class Image{set src(value){this._src=value;queueMicrotask(()=>this.onload?.());}}
- const context=vm.createContext({document,Image,URL,URLSearchParams,location:{search:locationSearch},navigator:shareNavigator,innerHeight:900,CustomEvent:class{},console:{warn:(...a)=>warnings.push(a),log(){}},clock});
+ const events=[];
+ const context=vm.createContext({document,Image,URL,URLSearchParams,location:{search:locationSearch},navigator:shareNavigator,innerHeight:900,CustomEvent:class{constructor(type,options){this.type=type;this.detail=options.detail;}},events,console:{warn:(...a)=>warnings.push(a),log(){}},clock});
  vm.runInContext(`
   window=globalThis;
   function setTimeout(fn,delay){'use strict';if(this!==undefined&&this!==globalThis)throw new TypeError('Illegal invocation');return clock.schedule(fn,delay);}
   function clearTimeout(id){'use strict';if(this!==undefined&&this!==globalThis)throw new TypeError('Illegal invocation');clock.cancel(id);}
   function matchMedia(){return {matches:false,addEventListener(){}};}
-  function addEventListener(){} function dispatchEvent(){}
+  function addEventListener(){} function dispatchEvent(e){if(e.type==='bodyall:game-event')events.push(e.detail);}
  `,context);
  for(const name of scriptNames){
   if(missingPortraitModule&&['actor.js','reactions.js'].includes(name))continue;
@@ -48,7 +49,7 @@ async function boot({missingPortraitModule=false,failingActor=false,shareNavigat
  await advance(950);
  assert.equal(ids.get('question').textContent,'요즘 몸 상태는 어떤가?');assert.equal(answers.children.length,5);
  if(failingActor)assert.equal(warnings.length,1);else assert.equal(warnings.length,0);
- return {ids,context,flush,advance,document};
+ return {ids,context,flush,advance,document,events};
 }
 if(require.main===module)(async()=>{await boot();await boot({failingActor:true});await boot({missingPortraitModule:true});console.log(JSON.stringify({defaultWindowTimers:true,startButtonUnlocks:true,firstAnswerAdvances:true,portraitFailureDoesNotBlockPlay:true,missingPortraitModuleDoesNotBlockPlay:true,browserTested:false},null,2));})().catch(error=>{console.error(error);process.exitCode=1;});
 module.exports={boot};

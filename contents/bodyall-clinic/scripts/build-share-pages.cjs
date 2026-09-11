@@ -45,9 +45,12 @@ const ROOT=path.resolve(__dirname,'..'),esc=s=>String(s).replace(/[&<>"']/g,c=>(
   <meta name="twitter:description" content="${esc(description)}">
   <meta name="twitter:image" content="${esc(image)}">
   <link rel="stylesheet" href="../../shared-result.css?v=2">
+  <link rel="stylesheet" href="../../analytics.css?v=huata-stats1">
+  <script src="../../analytics-config.js?v=huata-stats1" defer></script>
+  <script src="../../analytics.js?v=huata-stats1" defer></script>
   <script src="../../data.js?v=huata-bodyall1" defer></script>
   <script src="../../engine.js?v=huata-bodyall1" defer></script>
-  <script src="../../shared-result.js?v=2" defer></script>
+  <script src="../../shared-result.js?v=huata-stats1" defer></script>
 </head>
 <body data-result-id="${esc(r.id)}">
   <main class="shared-result">
@@ -65,6 +68,7 @@ const ROOT=path.resolve(__dirname,'..'),esc=s=>String(s).replace(/[&<>"']/g,c=>(
     <footer class="shared-footer">
       <a class="shared-clinic" href="${esc(D.clinicURL)}" target="_blank" rel="noopener"><img src="../../assets/huata-symbol.webp" alt=""><span>© Bodyall</span></a>
       <p>삼국지연의를 바탕으로 만든 재미용 테스트입니다.</p>
+      <div class="analytics-choice" id="analytics-choice" hidden><p id="analytics-status"></p><button id="analytics-allow" type="button">통계 참여</button><button id="analytics-deny" type="button">건너뛰기</button><a href="../../privacy.html" target="_blank" rel="noopener">수집 안내</a></div>
     </footer>
   </main>
 </body>

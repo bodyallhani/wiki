@@ -10,4 +10,5 @@
     }catch(ignore){}
   }
   render();window.addEventListener('hashchange',render);
+  document.querySelector?.('.shared-start')?.addEventListener('click',()=>window.dispatchEvent(new CustomEvent('bodyall:game-event',{detail:{name:'shared_result_start'}})));
 })();
