@@ -1,0 +1,19 @@
+{
+  "endpoint_id": "fal-ai/qwen-3-tts/voice-design/1.7b",
+  "input": {
+    "language": "Korean",
+    "max_new_tokens": 300,
+    "prompt": "An unmistakably elderly Korean grandfather, 82 years old, reacting softly while listening to a visitor. A distinctly old male voice with dry weathered rasp, a slightly reedy nasal resonance, softly leaking breath, gentle uneven tremor and unhurried phrasing. Warm, kindly, slightly amused, like an old physician. Perform five separate spontaneous nonverbal reactions in sequence, with a short quiet pause between each one: a thoughtful closed-mouth hum, a double agreeing hum, a hesitant uh, a small aha of recognition, then a gentle breathy old man's chuckle. No spoken sentences. The final huh-huh-huh is actual soft chuckling. Single consistent elderly speaker throughout. Dry close microphone, no music, no background sound, no echo.",
+    "text": "음… 음음… 어… 아하! 허허허…"
+  },
+  "pricing": {
+    "unit_price": 0.09,
+    "unit": "1000 characters",
+    "currency": "USD"
+  },
+  "result": "queue_submit_rejected",
+  "error": "User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing.",
+  "request_id": null,
+  "audio_created": false,
+  "next": "Wait for user to confirm Fal balance has been topped up. Then submit this prepared request once; no existing job is running."
+}

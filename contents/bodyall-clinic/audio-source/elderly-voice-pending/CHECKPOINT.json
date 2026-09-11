@@ -1,5 +1,5 @@
 {
-  "status": "blocked_on_age_controllable_voice_generation",
+  "status": "blocked_on_fal_exhausted_balance",
   "date": "2026-09-11",
   "repository": "bodyallhani/wiki",
   "publicMain": "e4f6c0dba687dd1ed3a15d743330e37768e54ff0",
@@ -10,6 +10,13 @@
   "rejectedAssetsPublished": false,
   "preparedPlayback": "audio-source/elderly-voice-pending/sound.js",
   "preparedTest": "audio-source/elderly-voice-pending/test-sound.cjs",
-  "next": "Connect Fal; inspect live tools/skills/schema; design one elderly sample before generating the remaining clips",
-  "browserTested": false
+  "next": "User tops up Fal balance; submit saved FAL_REQUEST.json once, then retrieve and evaluate elderly sample. Do not ask to reconnect Fal.",
+  "browserTested": false,
+  "checkpointCommit": "75ebb16d80ae2f7d19238cede72499d1ce6d8412",
+  "checkpointSaved": true,
+  "falConnection": "confirmed_connected",
+  "falModel": "fal-ai/qwen-3-tts/voice-design/1.7b",
+  "falError": "Queue submit failed (403): User is locked. Reason: Exhausted balance.",
+  "falJobId": null,
+  "newAudioCreated": false
 }
