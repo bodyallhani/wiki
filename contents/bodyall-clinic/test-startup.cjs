@@ -18,7 +18,7 @@ class Element{
  getBoundingClientRect(){return {top:0,left:0,right:800,bottom:500};}
  showModal(){this.open=true;}close(){this.open=false;this.fire('close');}
 }
-async function boot({missingPortraitModule=false,failingActor=false,shareNavigator={},locationSearch=''}={}){
+async function boot({missingPortraitModule=false,failingActor=false,shareNavigator={},locationSearch='',firstCode='A'}={}){
  const ids=new Map([...html.matchAll(/\bid="([^"]+)"/g)].map(m=>[m[1],new Element()]));
  ids.get('game').dataset.state='intro';ids.get('start').disabled=true;ids.get('start-label').textContent='거울을 닦는 중…';
  const other=new Map(),body=new Element('body');
@@ -36,18 +36,18 @@ async function boot({missingPortraitModule=false,failingActor=false,shareNavigat
   function addEventListener(){} function dispatchEvent(e){if(e.type==='bodyall:game-event')events.push(e.detail);}
  `,context);
  for(const name of scriptNames){
-  if(missingPortraitModule&&['actor.js','reactions.js'].includes(name))continue;
+  if(missingPortraitModule&&['actor.js','reactions-v2.js'].includes(name))continue;
   vm.runInContext(fs.readFileSync(path.join(__dirname,name),'utf8'),context,{filename:name});
   if(name==='actor.js'&&failingActor)vm.runInContext("HuataActor.create=()=>({start(){throw new Error('portrait failure');},stop(){},reset(){},react(){}})",context);
  }
  async function flush(){for(let i=0;i<12;i++)await Promise.resolve();}
  await flush();
  assert.equal(ids.get('start-label').textContent,'손목 맡기기');assert.equal(ids.get('start').disabled,false);
- ids.get('start').click();assert.equal(ids.get('game').dataset.state,'question');assert.equal(ids.get('question').textContent,'성별은 어떻게 되나?');
- const answers=ids.get('answers');assert.equal(answers.children.length,4);answers.children[0].click();assert(answers.children.every(b=>b.disabled));
+ ids.get('start').click();assert.equal(ids.get('game').dataset.state,'question');assert.equal(ids.get('question').textContent,'어떤 말을 들으면 가장 기운이 나나?');
+ const answers=ids.get('answers');assert.equal(answers.children.length,5);answers.children['ABCDN'.indexOf(firstCode)].click();assert(answers.children.every(b=>b.disabled));
  async function advance(ms){const end=now+ms;for(;;){const next=[...timers].filter(([,v])=>v.at<=end).sort((a,b)=>a[1].at-b[1].at)[0];if(!next)break;timers.delete(next[0]);now=next[1].at;next[1].fn();await flush();}now=end;}
  await advance(950);
- assert.equal(ids.get('question').textContent,'요즘 몸 상태는 어떤가?');assert.equal(answers.children.length,5);
+ assert.equal(ids.get('question').textContent,'오늘은 좀 쉬라고 하면?');assert.equal(answers.children.length,5);
  if(failingActor)assert.equal(warnings.length,1);else assert.equal(warnings.length,0);
  return {ids,context,flush,advance,document,events};
 }

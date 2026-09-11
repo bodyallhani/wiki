@@ -1,0 +1,238 @@
+{
+  "version": "huata-v2",
+  "personalAnalysis": "At most two allowlisted public sentence IDs in the fragment, with optional limited-evidence flag; no raw answer sequence.",
+  "kakao": "OS share sheet or copy/paste; no direct Kakao SDK transmission is configured. Static OG preview has character and canonical analysis; recipient screen and copied text preserve personalized analysis.",
+  "legacy": "result/<id>/ and data.js / engine.js are preserved.",
+  "records": [
+    {
+      "id": "zhuge",
+      "name": "제갈량",
+      "family": "cool",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/zhuge/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/zhuge/portrait.jpg",
+      "title": "나는 전생에 ‘제갈량’ — 머릿속에 지도가 펼쳐진 책사",
+      "description": "이유를 납득한 뒤 결정해요. 할 일을 정리하고 역할을 나눠요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/huata-portraits.webp#tile=0"
+    },
+    {
+      "id": "cao",
+      "name": "조조",
+      "family": "cool",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/cao/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/cao/portrait.jpg",
+      "title": "나는 전생에 ‘조조’ — 판을 읽고 먼저 움직이는 승부사",
+      "description": "요점을 알면 결정을 미루지 않아요. 할 일을 정리하고 역할을 나눠요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/huata-portraits.webp#tile=1"
+    },
+    {
+      "id": "liu",
+      "name": "유비",
+      "family": "cool",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/liu/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/liu/portrait.jpg",
+      "title": "나는 전생에 ‘유비’ — 사람을 모으는 군주",
+      "description": "함께 있는 사람들의 취향을 살펴요. 든든한 사람이라는 말이 좋아요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/huata-portraits.webp#tile=2"
+    },
+    {
+      "id": "guan",
+      "name": "관우",
+      "family": "cool",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/guan/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/guan/portrait.jpg",
+      "title": "나는 전생에 ‘관우’ — 한 번 한 약속은 지키는 장수",
+      "description": "내 선택이 주변에 미칠 영향을 생각해요. 하던 일을 정리해야 편히 쉬어요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/huata-portraits.webp#tile=3"
+    },
+    {
+      "id": "zhang",
+      "name": "장비",
+      "family": "cool",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/zhang/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/zhang/portrait.jpg",
+      "title": "나는 전생에 ‘장비’ — 속마음이 먼저 튀어나오는 호걸",
+      "description": "틀린 말은 그 자리에서 바로 짚어요. 같이 의논하며 일을 풀어가요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/huata-portraits.webp#tile=4"
+    },
+    {
+      "id": "zhao",
+      "name": "조운",
+      "family": "cool",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/zhao/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/zhao/portrait.jpg",
+      "title": "나는 전생에 ‘조운’ — 위기에서 더 선명해지는 해결사",
+      "description": "도움이 필요하면 먼저 손을 보태요. 끝날 때까지 결과를 쉽게 장담하지 않아요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/huata-portraits.webp#tile=5"
+    },
+    {
+      "id": "sun",
+      "name": "손권",
+      "family": "cool",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/sun/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/sun/portrait.jpg",
+      "title": "나는 전생에 ‘손권’ — 혼자보다 함께 강해지는 군주",
+      "description": "믿을 만한 사람에게 맡길 줄 알아요. 할 일을 정리하고 역할을 나눠요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/huata-portraits.webp#tile=6"
+    },
+    {
+      "id": "zhou",
+      "name": "주유",
+      "family": "cool",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/zhou/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/zhou/portrait.jpg",
+      "title": "나는 전생에 ‘주유’ — 잘하는데, 더 잘하고 싶은 지휘관",
+      "description": "실력을 인정받을 때 힘이 나요. 할 일을 정리하고 역할을 나눠요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/huata-portraits.webp#tile=7"
+    },
+    {
+      "id": "sima",
+      "name": "사마의",
+      "family": "cool",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/sima/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/sima/portrait.jpg",
+      "title": "나는 전생에 ‘사마의’ — 마지막 수를 남겨두는 전략가",
+      "description": "끝날 때까지 결과를 쉽게 장담하지 않아요. 이유를 납득한 뒤 결정해요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/huata-portraits.webp#tile=8"
+    },
+    {
+      "id": "huang",
+      "name": "황충",
+      "family": "cool",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/huang/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/huang/portrait.jpg",
+      "title": "나는 전생에 ‘황충’ — 실력으로 대답하는 노장",
+      "description": "질수록 한 번 더 해보고 싶어요. 시간이 나면 몸을 움직이고 싶어요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/huata-portraits.webp#tile=9"
+    },
+    {
+      "id": "lu",
+      "name": "여포",
+      "family": "cool",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/lu/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/lu/portrait.jpg",
+      "title": "나는 전생에 ‘여포’ — 말보다 실전이 빠른 무장",
+      "description": "요점을 알면 결정을 미루지 않아요. 도움이 필요하면 먼저 손을 보태요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/huata-portraits.webp#tile=10"
+    },
+    {
+      "id": "diao",
+      "name": "초선",
+      "family": "cool",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/diao/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/diao/portrait.jpg",
+      "title": "나는 전생에 ‘초선’ — 사람의 마음으로 판을 바꾸는 인물",
+      "description": "상대가 민망하지 않도록 따로 말해요. 함께 있는 사람들의 취향을 살펴요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/huata-portraits.webp#tile=11"
+    },
+    {
+      "id": "meng",
+      "name": "맹획",
+      "family": "fun",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/meng/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/meng/portrait.jpg",
+      "title": "나는 전생에 ‘맹획’ — 졌지만, 아직 안 진 사람",
+      "description": "질수록 한 번 더 해보고 싶어요. 납득하기 전에는 쉽게 물러서지 않아요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/portraits-v2/meng.webp"
+    },
+    {
+      "id": "dong",
+      "name": "동탁",
+      "family": "fun",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/dong/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/dong/portrait.jpg",
+      "title": "나는 전생에 ‘동탁’ — 내가 좋아야 천하태평",
+      "description": "원하는 게 있으면 직접 설득해요. 납득하기 전에는 쉽게 물러서지 않아요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/portraits-v2/dong.webp"
+    },
+    {
+      "id": "yuan",
+      "name": "원술",
+      "family": "fun",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/yuan/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/yuan/portrait.jpg",
+      "title": "나는 전생에 ‘원술’ — 일단 왕관부터 주문했다",
+      "description": "잘될 조짐이 보이면 성공한 모습부터 그려요. 실력을 인정받을 때 힘이 나요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/portraits-v2/yuan.webp"
+    },
+    {
+      "id": "liushan",
+      "name": "유선",
+      "family": "fun",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/liushan/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/liushan/portrait.jpg",
+      "title": "나는 전생에 ‘유선’ — 천하보다 오늘의 평온",
+      "description": "쉴 기회가 생기면 기꺼이 쉬어요. 잘하는 사람에게 부탁할 줄 알아요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/portraits-v2/liushan.webp"
+    },
+    {
+      "id": "jiao",
+      "name": "장각",
+      "family": "fun",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/jiao/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/jiao/portrait.jpg",
+      "title": "나는 전생에 ‘장각’ — 취미를 시작했는데 교주가 됐다",
+      "description": "좋은 일이 생기면 사람들을 모아 알리고 싶어요. 원하는 게 있으면 직접 설득해요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/portraits-v2/jiao.webp"
+    },
+    {
+      "id": "li",
+      "name": "이각",
+      "family": "fun",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/li/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/li/portrait.jpg",
+      "title": "나는 전생에 ‘이각’ — 같은 편인데 일단 의심함",
+      "description": "상대가 왜 말리는지 의도부터 살펴요. 할 일을 정리하고 역할을 나눠요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/portraits-v2/li.webp"
+    },
+    {
+      "id": "xing",
+      "name": "형도영",
+      "family": "fun",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/xing/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/xing/portrait.jpg",
+      "title": "나는 전생에 ‘형도영’ — 자기소개는 여포급",
+      "description": "실력을 인정받을 때 힘이 나요. 잘될 조짐이 보이면 성공한 모습부터 그려요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/portraits-v2/xing.webp"
+    },
+    {
+      "id": "mi",
+      "name": "예형",
+      "family": "fun",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/mi/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/mi/portrait.jpg",
+      "title": "나는 전생에 ‘예형’ — 입으로 천하통일",
+      "description": "틀린 말은 그 자리에서 바로 짚어요. 납득하기 전에는 쉽게 물러서지 않아요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/portraits-v2/mi.webp"
+    },
+    {
+      "id": "zuo",
+      "name": "좌자",
+      "family": "fun",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/zuo/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/zuo/portrait.jpg",
+      "title": "나는 전생에 ‘좌자’ — 단톡방에 가끔 출몰하는 신선",
+      "description": "할 말도 농담에 섞어 전하는 편이에요. 계획 없는 시간은 마음 가는 대로 보내요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/portraits-v2/zuo.webp"
+    },
+    {
+      "id": "xu",
+      "name": "허저",
+      "family": "fun",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/xu/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/xu/portrait.jpg",
+      "title": "나는 전생에 ‘허저’ — 설명은 됐고, 어디 들면 되나",
+      "description": "도움이 필요하면 먼저 손을 보태요. 시간이 나면 몸을 움직이고 싶어요. 너는 누구였어? 화타에게 물어봐!",
+      "portraitSource": "assets/portraits-v2/xu.webp"
+    },
+    {
+      "id": "horse",
+      "name": "하후돈이 타던 말",
+      "family": "special",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/horse/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/v2/horse/portrait.jpg",
+      "title": "나는 전생에 하후돈이 타던 말ㅋㅋ 너는 사람이었어?",
+      "description": "질문이 열 개여도 대답은 하나예요. 전생의 이름은 화타도 모르겠대요. 너는 사람이었어? 화타에게 물어봐!",
+      "portraitSource": "assets/huata-horse.webp"
+    }
+  ]
+}

@@ -29,5 +29,5 @@ assert(!source.includes('localStorage'));assert(!source.includes('fetch('));
 const html=fs.readFileSync(path.join(__dirname,'index.html'),'utf8');
 const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,new Set(ids).size);
 for(const m of source.matchAll(/\$\('([^']+)'\)/g))assert(ids.includes(m[1]),'Missing DOM id '+m[1]);
-for(const name of ['data.js','engine.js','app.js','style.css'])assert(html.includes(name));
+for(const name of ['data-v2.js','engine-v2.js','app.js','style.css'])assert(html.includes(name));
 console.log(JSON.stringify({cases:4**7,people:12,distribution,allUnknownHorse:true,noSymptomsInMatching:true,allEvidenceFromAnswers:true,shareOnlyResult:true,domTargetsValid:true,browserTested:false},null,2));

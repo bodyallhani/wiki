@@ -1,0 +1,98 @@
+{
+  "version": "huata-v2",
+  "method": "Built-in image_gen; one original portrait per call",
+  "styleReference": "assets/huata-portraits.webp",
+  "packaging": "Game exports: 512×512 nearest-neighbor sizing and WebP quality 92. Original generated PNGs are preserved separately.",
+  "assets": [
+    {
+      "id": "jiao",
+      "prompt": "Use case: stylized-concept. Asset type: a SINGLE square character portrait for a Korean Three Kingdoms pixel-art personality game. The attached portrait atlas is a STYLE REFERENCE ONLY, do not reproduce its grid or characters. Match the reference's finely shaded retro pixel-art look, sharp visible pixel clusters at roughly 360x360 base resolution, realistic expressive facial anatomy, rich but restrained colors. One character only, straight-on head-and-shoulders portrait looking directly toward the player as a reflection in a mirror. Full headdress fits with small space above; shoulders fill lower edge; face centered and large, eyes around 43% down the image. Flat solid deep dark teal background #063c43. Soft even front light. No mirror, no frame, no border, no text, no lettering, no logos, no UI, no extra people. This is an ORIGINAL interpretation of the public-domain Romance of the Three Kingdoms, do not copy any existing game portrait. Make personality instantly readable and gently funny, not a caricature with distorted anatomy. Zhang Jiao (장각), the Yellow Turban leader. An intense middle-aged Chinese religious preacher with black moustache and pointed beard, bright yellow cloth turban with hanging tails, mustard-yellow and ochre Taoist robe, simple wood beads. Lean face, almost-too-convinced gleaming eyes and raised eyebrows, a faint inviting grin as if about to recruit the viewer into his extremely enthusiastic hobby club. Comical conviction, charismatic but slightly unnerving. Face entirely frontal; no hand obscuring it.",
+      "path": "assets/portraits-v2/jiao.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 94546,
+      "sha256": "2cf194b55640a757b1a2f221d1c21a3016c23fe84c724944b65f279ed2bc3fdf"
+    },
+    {
+      "id": "meng",
+      "prompt": "Use case: stylized-concept. Asset type: a SINGLE square character portrait for a Korean Three Kingdoms pixel-art personality game. The attached portrait atlas is a STYLE REFERENCE ONLY, do not reproduce its grid or characters. Match the reference's finely shaded retro pixel-art look, sharp visible pixel clusters at roughly 360x360 base resolution, realistic expressive facial anatomy, rich but restrained colors. One character only, straight-on head-and-shoulders portrait looking directly toward the player as a reflection in a mirror. Full headdress fits with small space above; shoulders fill lower edge; face centered and large, eyes around 43% down the image. Flat solid deep dark teal background #063c43. Soft even front light. No mirror, no frame, no border, no text, no lettering, no logos, no UI, no extra people. This is an ORIGINAL interpretation of the public-domain Romance of the Three Kingdoms, do not copy any existing game portrait. Make personality instantly readable and gently funny, not a caricature with distorted anatomy. Meng Huo (맹획), a rugged and boisterous southern king. Broad strong face, dark thick moustache and beard, warm brown skin, red headband with modest feather and bronze ornament, fur-lined rugged ancient armor and ochre cloak. He grins stubbornly and confidently with chin slightly lifted, as though he has just lost but is already insisting on one more round. Affectionately funny, energetic, proud; not ugly or racially caricatured.",
+      "path": "assets/portraits-v2/meng.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 110276,
+      "sha256": "2020b8274401559204c831adf47058672dc48a1b6e038e02ed2250e230f23664"
+    },
+    {
+      "id": "yuan",
+      "prompt": "Use case: stylized-concept. Asset type: a SINGLE square character portrait for a Korean Three Kingdoms pixel-art personality game. The attached portrait atlas is a STYLE REFERENCE ONLY, do not reproduce its grid or characters. Match the reference's finely shaded retro pixel-art look, sharp visible pixel clusters at roughly 360x360 base resolution, realistic expressive facial anatomy, rich but restrained colors. One character only, straight-on head-and-shoulders portrait looking directly toward the player as a reflection in a mirror. Full headdress fits with small space above; shoulders fill lower edge; face centered and large, eyes around 43% down the image. Flat solid deep dark teal background #063c43. Soft even front light. No mirror, no frame, no border, no text, no lettering, no logos, no UI, no extra people. This is an ORIGINAL interpretation of the public-domain Romance of the Three Kingdoms, do not copy any existing game portrait. Make personality instantly readable and gently funny, not a caricature with distorted anatomy. Yuan Shu (원술), a self-important would-be emperor. Middle-aged Chinese noble with groomed black moustache and narrow beard, unusually elaborate gold imperial crown with a few dangling beads pushed aside so the face remains clear, rich red-and-gold patterned robes. Perfectly frontal. Puffed-up posture, slightly raised chin and self-satisfied dreamy smile; he looks like he has already ordered the crown before accomplishing the job. The excessive royal polish and smug expectation create humor.",
+      "path": "assets/portraits-v2/yuan.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 97124,
+      "sha256": "fce0e9001470486bfce7579f9ba0f3b9d03d38195dfba03f26b54b3c49d43021"
+    },
+    {
+      "id": "dong",
+      "prompt": "Use case: stylized-concept. Asset type: SINGLE square character portrait for a Korean Three Kingdoms pixel-art personality game. Attached atlas is STYLE REFERENCE ONLY, never output a grid. Match its finely shaded retro pixel art, visible sharp pixel clusters at roughly 360x360 base resolution, expressive believable anatomy, rich restrained colors. One original character, front-facing head and shoulders, looks at player like his own mirror reflection. Full headdress fits, shoulders fill bottom edge, centered large face and eyes about 43% down. Flat solid dark teal #063c43 background. Soft even front lighting. No frame, mirror, borders, text, labels, logos, UI, extra characters. Original public-domain novel interpretation, never copy a modern game's artwork. Personality must be clearly and affectionately comical, not ugly or grotesque. Dong Zhuo (동탁), a middle-aged powerful Chinese warlord. Broad full cheeks, thick neatly trimmed black beard and moustache, opulent burgundy robe over heavy gold-and-black armor, small imposing dark crown. Expansive comfortable posture, narrow pleased eyes and a deeply self-satisfied smile, as if everything is fine because HE is comfortable. Regal, formidable, ridiculously pleased with himself. Do not use bodily ugliness or deformity for humor.",
+      "path": "assets/portraits-v2/dong.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 103444,
+      "sha256": "2a84bfa01976207b793479bce2124c8740c69ca20e3726a64a1609e3208875f6"
+    },
+    {
+      "id": "liushan",
+      "prompt": "Use case: stylized-concept. Asset type: SINGLE square character portrait for a Korean Three Kingdoms pixel-art personality game. Attached atlas is STYLE REFERENCE ONLY, never output a grid. Match its finely shaded retro pixel art, visible sharp pixel clusters at roughly 360x360 base resolution, expressive believable anatomy, rich restrained colors. One original character, front-facing head and shoulders, looks at player like his own mirror reflection. Full headdress fits, shoulders fill bottom edge, centered large face and eyes about 43% down. Flat solid dark teal #063c43 background. Soft even front lighting. No frame, mirror, borders, text, labels, logos, UI, extra characters. Original public-domain novel interpretation, never copy a modern game's artwork. Personality must be clearly and affectionately comical, not ugly or grotesque. Liu Shan (유선), a soft-faced young-adult Chinese emperor. Round gentle face, very slight moustache, small gold ceremonial cap with restrained beads kept out of the face, luxurious pale gold and green robes. Relaxed dropped shoulders, half-lidded peaceful eyes and relieved tiny smile. Looks blissfully unconcerned because somebody capable is handling everything. Endearing extreme relaxation; never portray low intelligence, drooling or a child.",
+      "path": "assets/portraits-v2/liushan.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 85872,
+      "sha256": "f6f506ae738bf03dafbbb7c061009b1da46044c1498f5f427f83f5e61df48eb2"
+    },
+    {
+      "id": "li",
+      "prompt": "Use case: stylized-concept. Asset type: SINGLE square character portrait for a Korean Three Kingdoms pixel-art personality game. Attached atlas is STYLE REFERENCE ONLY, never output a grid. Match its finely shaded retro pixel art, visible sharp pixel clusters at roughly 360x360 base resolution, expressive believable anatomy, rich restrained colors. One original character, front-facing head and shoulders, looks at player like his own mirror reflection. Full headdress fits, shoulders fill bottom edge, centered large face and eyes about 43% down. Flat solid dark teal #063c43 background. Soft even front lighting. No frame, mirror, borders, text, labels, logos, UI, extra characters. Original public-domain novel interpretation, never copy a modern game's artwork. Personality must be clearly and affectionately comical, not ugly or grotesque. Li Jue (이각), a grizzled middle-aged Chinese military warlord. Weathered angular face, short coarse black beard and heavy brows, iron military helmet with modest dark red trim and rough charcoal lamellar armor. Face and eyes oriented forward but one eyebrow raised skeptically, mouth a thin unsure line as though he suspects even his own team. Slightly baffled expression, distinguish from a heroic clean-cut general. No blood or scars as the punchline.",
+      "path": "assets/portraits-v2/li.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 90448,
+      "sha256": "dddf8a00ef7d8cbf94cf902bdb8b4b6f9eaf1bfe6a36169099d4a30e930c0cfe"
+    },
+    {
+      "id": "xing",
+      "prompt": "Use case: stylized-concept. Asset type: SINGLE square character portrait for a Korean Three Kingdoms pixel-art personality game. Attached atlas is STYLE REFERENCE ONLY, never output a grid. Match its finely shaded retro pixel art, visible sharp pixel clusters at roughly 360x360 base resolution, expressive believable anatomy, rich restrained colors. One original character, front-facing head and shoulders, looks at player like his own mirror reflection. Full headdress fits, shoulders fill bottom edge, centered large face and eyes about 43% down. Flat solid dark teal #063c43 background. Soft even front lighting. No frame, mirror, borders, text, labels, logos, UI, extra characters. Original public-domain novel interpretation, never copy a modern game's artwork. Personality must be clearly and affectionately comical, not ugly or grotesque. Xing Daorong (형도영), a bombastic Chinese general. Middle-aged, handlebar moustache, aggressively magnificent gold-trimmed helmet with a bright red plume, showy bronze-and-red armor and cloak, wide squared shoulders. Chin high, puffed chest, self-important smirk, with a tiny hint of nervous uncertainty in the eyes. He seems to have rehearsed an epic introduction despite being ready to retreat. Comical overconfidence and grand entrance, front-facing.",
+      "path": "assets/portraits-v2/xing.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 97440,
+      "sha256": "161b8a47e544d3d7e9d3a7b7c6b686ff8180fd0359cce0a4acb490b5a710a495"
+    },
+    {
+      "id": "mi",
+      "prompt": "Use case: stylized-concept. Asset type: SINGLE square character portrait for a Korean Three Kingdoms pixel-art personality game. Attached atlas is STYLE REFERENCE ONLY, never output a grid. Match its finely shaded retro pixel art, visible sharp pixel clusters at roughly 360x360 base resolution, expressive believable anatomy, rich restrained colors. One original character, front-facing head and shoulders, looks at player like his own mirror reflection. Full headdress fits, shoulders fill bottom edge, centered large face and eyes about 43% down. Flat solid dark teal #063c43 background. Soft even front lighting. No frame, mirror, borders, text, labels, logos, UI, extra characters. Original public-domain novel interpretation, never copy a modern game's artwork. Personality must be clearly and affectionately comical, not ugly or grotesque. Mi Heng (예형), a young-adult Chinese scholar known for unfiltered sharp speech. Lean face, untidy small moustache and pointed beard, simple dark cloth scholar cap, pale off-white scholar robe with navy collar. One eyebrow visibly raised, wry sharp half-smile, lips slightly parted as if he is about to say exactly the inconvenient thing on his mind. Intelligent, sarcastic and cheeky. Direct frontal gaze.",
+      "path": "assets/portraits-v2/mi.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 72838,
+      "sha256": "25d04010c47494f81f233d2db0a5c0882adc6df9fd1eec5343d7c502c912db33"
+    },
+    {
+      "id": "zuo",
+      "prompt": "Use case: stylized-concept. Asset type: SINGLE square character portrait for a Korean Three Kingdoms pixel-art personality game. Attached atlas is STYLE REFERENCE ONLY, never output a grid. Match its finely shaded retro pixel art, visible sharp pixel clusters at roughly 360x360 base resolution, expressive believable anatomy, rich restrained colors. One original character, front-facing head and shoulders, looks at player like his own mirror reflection. Full headdress fits, shoulders fill bottom edge, centered large face and eyes about 43% down. Flat solid dark teal #063c43 background. Soft even front lighting. No frame, mirror, borders, text, labels, logos, UI, extra characters. Original public-domain novel interpretation, never copy a modern game's artwork. Personality must be clearly and affectionately comical, not ugly or grotesque. Zuo Ci (좌자), an elderly Chinese Taoist magician. Very old but lively face, long white beard and eyebrows, simple gray Taoist cloth cap, weathered muted blue and gray robe. Merry sly smile, head facing dead forward and eyes looking directly at viewer, just slightly mischievous narrowed eyes. Like a mysterious grandfather who has dropped a joke into a serious group chat and will disappear. No glowing magical effects, no staff in front of the face.",
+      "path": "assets/portraits-v2/zuo.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 85642,
+      "sha256": "a9e8d216004f57a6054cc05163e894704bb33a8a9a1fe36558a2c0797a5dd7f5"
+    },
+    {
+      "id": "xu",
+      "prompt": "Use case: stylized-concept. Asset type: SINGLE square character portrait for a Korean Three Kingdoms pixel-art personality game. Attached atlas is STYLE REFERENCE ONLY, never output a grid. Match its finely shaded retro pixel art, visible sharp pixel clusters at roughly 360x360 base resolution, expressive believable anatomy, rich restrained colors. One original character, front-facing head and shoulders, looks at player like his own mirror reflection. Full headdress fits, shoulders fill bottom edge, centered large face and eyes about 43% down. Flat solid dark teal #063c43 background. Soft even front lighting. No frame, mirror, borders, text, labels, logos, UI, extra characters. Original public-domain novel interpretation, never copy a modern game's artwork. Personality must be clearly and affectionately comical, not ugly or grotesque. Xu Chu (허저), an enormously sturdy Chinese bodyguard. Middle-aged broad square face, short thick black beard and moustache, humble dark iron helmet or sturdy black cloth headband, thick neck, huge armored shoulders in restrained bronze lamellar armor with a cream cloth collar. Earnest eager grin and bright willing eyes, ready to stand up and physically help before anyone finishes explaining. Lovably excessive readiness, powerful and dependable. Keep fully clothed and frontal; no stupidity or distorted anatomy.",
+      "path": "assets/portraits-v2/xu.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 94750,
+      "sha256": "d35baeb8fae2ad0f2ba1c9cc36eed465e0c2d5b52cee7caec8ff453b3bffdd02"
+    }
+  ]
+}

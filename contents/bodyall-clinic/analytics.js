@@ -1,19 +1,21 @@
 (function(root){
   'use strict';
-  const IDS=['zhuge','cao','liu','guan','zhang','zhao','sun','zhou','sima','huang','lu','diao','horse'];
+  const LEGACY_IDS=['zhuge','cao','liu','guan','zhang','zhao','sun','zhou','sima','huang','lu','diao','horse'];
+  const IDS=[...LEGACY_IDS,'meng','dong','yuan','liushan','jiao','li','xing','mi','zuo','xu'];
+  const FUN=['meng','dong','yuan','liushan','jiao','li','xing','mi','zuo','xu'];
   const SOURCES=['kakao','instagram','naver_cafe','naver_blog','community','youtube','offline','bodyall'];
   const CONSENT_KEY='huata.stats.consent.v1';
   function context(href,referrer,config){
     const u=new URL(href),base=config.basePath;
     if(u.protocol!=='https:'||u.hostname!==config.allowedHost)return null;
-    const relative=u.pathname.slice(base.length),match=relative.match(/^result\/([a-z]+)\/(?:index.html)?$/);
+    const relative=u.pathname.slice(base.length),match=relative.match(/^result\/(v2\/)?([a-z]+)\/(?:index.html)?$/);
     if(!u.pathname.startsWith(base)||(!['','index.html'].includes(relative)&&!match))return null;
-    if(match&&!IDS.includes(match[1]))return null;
+    if(match&&!(match[1]?IDS:LEGACY_IDS).includes(match[2]))return null;
     let ref='';try{const r=new URL(referrer);if(r.protocol==='https:'||r.protocol==='http:')ref=r.origin+'/';}catch(ignore){}
     const tagged=u.searchParams.get('src'),campaign=SOURCES.includes(tagged)?tagged:'';
     // Strip all arbitrary query strings, answer fragments, and referrer paths.
-    return {location:u.origin+base+(match?'result/'+match[1]+'/':''),referrer:ref,
-      page:match?'shared':'game',result:match?match[1]:null,
+    return {location:u.origin+base+(match?'result/'+(match[1]||'')+match[2]+'/':''),referrer:ref,
+      page:match?'shared':'game',result:match?match[2]:null,version:match?(match[1]?'huata-v2':'huata-1'):config.version,
       invited:!match&&u.searchParams.get('from')==='friend'&&IDS.includes(u.searchParams.get('r')),
       campaign};
   }
@@ -24,7 +26,8 @@
     let buffer=[],ready=false,run=null;const pageSeen=new Set();
     function emit(name,extra={}){
       if(!configured||consent==='denied')return;
-      const item={name,params:{content_group:'huata',game_version:config.version,page_kind:page.page,
+      const version=run?.version||page.version;
+      const item={name:version==='huata-v2'?name.replace(/^huata_/,'huata_v2_'):name,params:{content_group:'huata',game_version:version,page_kind:page.page,
         page_location:page.location,page_referrer:page.referrer,page_title:'화타의 전생 진찰소',...extra}};
       if(page.campaign)item.params.campaign_source=page.campaign;
       if(consent==='granted'&&ready){try{send(item);}catch(ignore){}}
@@ -35,7 +38,7 @@
       if(!configured||consent==='denied'||!detail||typeof detail!=='object')return;
       // This switch is the allowlist. Never forward arbitrary event fields or answer values.
       if(detail.name==='game_start'){
-        run={seen:new Set(),complete:false,result:null};emit('huata_start');
+        run={seen:new Set(),complete:false,result:null,version:['huata-1','huata-v2'].includes(detail.version)?detail.version:page.version};emit('huata_start');
         if(page.invited)emit('huata_friend_start');return;
       }
       if(detail.name==='question_view'){
@@ -46,7 +49,7 @@
         if(!run||run.complete)return;
         if(detail.result==='fog'){once('huata_fog',undefined,run.seen);return;}
         if(!IDS.includes(detail.result))return;
-        run.complete=true;run.result=detail.result;emit('huata_complete',{result_id:run.result});
+        run.complete=true;run.result=detail.result;emit('huata_complete',{result_id:run.result,result_family:run.result==='horse'?'special':FUN.includes(run.result)?'fun':'cool'});
         emit('huata_result_'+run.result);return;
       }
       if(detail.name==='shared_result_start'){

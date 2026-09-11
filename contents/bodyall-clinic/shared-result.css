@@ -14,3 +14,5 @@ h1{margin:0 0 9px;font-family:'Batang',serif;font-size:2.35rem;line-height:1.35;
 .shared-meta{margin:13px 0 0;font-size:.875rem;color:#69745e}
 .shared-footer{padding:17px 16px;background:#e3e3d3;border-top:1px solid #cec9b7}.shared-clinic{display:inline-flex;gap:9px;align-items:center;justify-content:center;color:#384d3b;text-decoration:none;font-weight:700;font-size:.9375rem}.shared-clinic img{width:25px;height:25px;object-fit:contain}.shared-footer p{margin:10px 0 0;font-size:.8125rem;line-height:1.6;color:#66725c}
 @media(max-width:420px){body{padding:12px 9px}.shared-main{padding:23px 18px}.shared-portrait{width:190px}h1{font-size:2rem}.shared-alias{font-size:.9375rem}}
+/* V2 quote is separate from the recipient's actual answer-derived analysis. */
+.shared-quote{max-width:30rem;margin:1rem auto;color:#ccbd99;font-size:.92rem;line-height:1.65;word-break:keep-all;overflow-wrap:anywhere}

@@ -3,11 +3,11 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
 const D=require('./data.js'),E=require('./engine.js'),{boot}=require('./test-startup.cjs');
 const decode=s=>s.replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&lt;/g,'<').replace(/&gt;/g,'>');
 async function finishAs(id,navigator={}){
- const h=await boot({shareNavigator:navigator,locationSearch:'?r=lu&from=friend'});
+ const V=require('./data-v2.js'),VEngine=require('./engine-v2.js'),p=V.people.find(p=>p.id===id),answers=[...p.pattern];
+ const h=await boot({firstCode:answers[0],shareNavigator:navigator,locationSearch:'?r=lu&from=friend'});
  assert(h.ids.get('friend-note').textContent.includes('여포'));
- const p=D.people.find(p=>p.id===id),answers=['A','D','E',...p.pattern];
  for(let q=1;q<10;q++){
-  const i=D.questions[q].answers.findIndex(a=>a.code===answers[q]);h.ids.get('answers').children[i].click();await h.advance(q===9?1250:950);
+  const i=V.questions[q].answers.findIndex(a=>a.code===answers[q]);h.ids.get('answers').children[i].click();await h.advance(q===9?1250:950);
  }
  await h.advance(3000);await h.flush();assert.equal(h.ids.get('result-name').textContent,p.name);
  assert.equal(h.ids.get('story-source').href,p.biographyURL);assert(!h.ids.get('story-source').hidden);
@@ -15,7 +15,7 @@ async function finishAs(id,navigator={}){
  h.ids.get('share').click();
  const buttons=h.ids.get('dialog-body').children.find(e=>e.className==='share-buttons');
  assert(buttons,'Share controls must exist before the card promise resolves');
- return {...h,buttons,result:E.getResult(answers)};
+ return {...h,buttons,result:VEngine.getResult(answers)};
 }
 (async()=>{
  const records=JSON.parse(fs.readFileSync(path.join(__dirname,'SHARING.json'),'utf8')).records;assert.equal(records.length,13);
@@ -35,13 +35,14 @@ async function finishAs(id,navigator={}){
  const sun=E.previewResult('sun');for(const hash of ['#a=99','#a=27','#a=9.9','#a=<script>','#a=9.10.14'])assert.deepEqual(E.sharedResult('sun',hash).analysis,sun.analysis);
  assert.throws(()=>E.shareURL({id:'../sun'}));assert.throws(()=>E.previewResult('fog'));
  const faint=E.getResult(['A','D','E','N','N','B','N','N','N','N']);assert.equal(E.sharedResult(faint.id,new URL(E.shareURL(faint)).hash).analysis.length,1);
+ const VEngine=require('./engine-v2.js');
  const shared=[];const native=await finishAs('sun',{share:payload=>{shared.push(payload);return Promise.resolve();}});
  native.buttons.children[0].click();assert.equal(shared.length,1);await native.flush();
- assert.equal(shared[0].title,E.shareTitle(native.result));assert.equal(shared[0].text,E.shareText(native.result));assert.equal(shared[0].url,E.shareURL(native.result));assert(!('files' in shared[0]));
+ assert.equal(shared[0].title,VEngine.shareTitle(native.result));assert.equal(shared[0].text,VEngine.shareText(native.result));assert.equal(shared[0].url,VEngine.shareURL(native.result));assert(!('files' in shared[0]));
  for(const t of native.result.analysis)assert(shared[0].text.includes(t));assert(shared[0].text.includes(native.result.title));
- const copied=[];const fallback=await finishAs('lu',{clipboard:{writeText:async text=>copied.push(text)}});fallback.buttons.children[0].click();await fallback.flush();assert.equal(copied[0],E.shareText(fallback.result)+'\n'+E.shareURL(fallback.result));
+ const copied=[];const fallback=await finishAs('lu',{clipboard:{writeText:async text=>copied.push(text)}});fallback.buttons.children[0].click();await fallback.flush();assert.equal(copied[0],VEngine.shareText(fallback.result)+'\n'+VEngine.shareURL(fallback.result));
  const cancelled=await finishAs('sun',{share:()=>Promise.reject(Object.assign(new Error('cancel'),{name:'AbortError'})),clipboard:{writeText:()=>{throw new Error('Cancel must not copy');}}});cancelled.buttons.children[0].click();await cancelled.flush();assert(!cancelled.buttons.children[0].disabled);
- const manual=await finishAs('lu',{});manual.buttons.children[0].click();await manual.flush();const box=manual.ids.get('dialog-body').querySelector('textarea');assert(box.value.includes('여포'));assert(box.value.includes(E.shareURL(manual.result)));
+ const manual=await finishAs('lu',{});manual.buttons.children[0].click();await manual.flush();const box=manual.ids.get('dialog-body').querySelector('textarea');assert(box.value.includes('여포'));assert(box.value.includes(VEngine.shareURL(manual.result)));
  // The receiving page preserves the sender's short analysis without applying their result to the new quiz.
  const paragraphs=[];const received=E.getResult(['A','D','E',...'CDBCCCC']);const fragment=new URL(E.shareURL(received)).hash;
  const context={window:{HuataEngine:E,addEventListener(){}},location:{hash:fragment},document:{body:{dataset:{resultId:'sun'}},createElement:()=>({}),getElementById:()=>({replaceChildren:(...nodes)=>paragraphs.push(...nodes)})}};

@@ -47,17 +47,24 @@
     clearTimeout(mutterTimer);$('mutter').textContent=text;$('mutter').classList.add('visible');
     perform('react',expression,motion);mutterTimer=setTimeout(()=>$('mutter').classList.remove('visible'),2600);
   }
-  function react(q,code){const response=R?R.forAnswer(q,code,answers):{line:'그렇구먼. 다음 이야기도 들려주게.',expression:'neutral',gesture:'nod'};say(response.line,response.expression,response.gesture);playSound('acknowledge',{question:q,code,expression:response.expression});}
+  function react(q,code){
+    const response=R?R.forAnswer(q,code,answers):{line:'그렇구먼. 다음 이야기도 들려주게.',expression:'neutral',gesture:'nod'};
+    if([1,4,6,8].includes(q)||(q===9&&answers.every(a=>a==='N')))say(response.line,response.expression,response.gesture);
+    else{clearTimeout(mutterTimer);$('mutter').classList.remove('visible');perform('react',response.expression,response.gesture);}
+    playSound('acknowledge',{question:q,code,expression:response.expression});
+  }
   function clearCard(){if(blobURL)URL.revokeObjectURL(blobURL);blobURL=null;cardPromise=null;}
   function reset(){
     generation++;cancelScheduled();clearCard();playSound('stopVoice');answers=Array(10).fill(null);index=0;result=null;repair=false;repairAt=0;busy=false;perform('reset');
-    game.classList.remove('mirror-awake','face-visible','horse','fog');$('mutter').classList.remove('visible');$('story').open=false;
+    game.classList.remove('mirror-awake','face-visible','horse','fog','comic');$('mutter').classList.remove('visible');$('story').open=false;
     $('reveal-caption').textContent='';$('stage').setAttribute('aria-label','내 손목을 짚으며 거울을 들고 있는 화타');
   }
   function start(){
     if(!assetsReady){loadAssets();return;}
     playSound('start');reset();$('intro').hidden=true;$('result-view').hidden=true;$('question-view').hidden=false;game.dataset.state='question';syncActor();
     event('game_start');renderQuestion();say('손목은 편히 두게. 자, 시작해 볼까?');tone(620,.1);
+    // Optional portrait downloads never gate questions or the start button.
+    D.people.filter(p=>p.portrait).forEach(p=>loadImage(p.portrait).catch(()=>null));
   }
   function renderQuestion(){
     busy=false;const q=D.questions[index];$('question').textContent=q.text;event('question_view',{question:index+1,repair});
@@ -86,17 +93,20 @@
   function setPortrait(person){
     const face=$('reflection');
     if(person.id==='horse'){face.style.backgroundImage="url('"+assetPaths.horse+"')";face.style.backgroundSize='100% 100%';face.style.backgroundPosition='50% 50%';}
+    else if(person.portrait){face.style.backgroundImage="url('"+person.portrait+"')";face.style.backgroundSize='100% 100%';face.style.backgroundPosition='50% 50%';}
     else if(Number.isInteger(person.tile)){face.style.backgroundImage="url('"+assetPaths.atlas+"')";face.style.backgroundSize='300% 400%';face.style.backgroundPosition=((person.tile%3)*50)+'% '+(Math.floor(person.tile/3)*100/3)+'%';}
   }
   function reveal(){
     playSound('stopVoice');result=E.getResult(answers);busy=true;repair=false;$('question-view').hidden=true;$('mutter').classList.remove('visible');clearTimeout(mutterTimer);game.dataset.state='revealing';syncActor();
     game.classList.toggle('horse',result.kind==='horse');game.classList.toggle('fog',result.kind==='fog');$('reveal-caption').textContent='“자, 직접 보게.”';
+    game.classList.toggle('comic',result.family==='fun');perform('react',result.family==='fun'||result.kind==='horse'?'surprised':'warm','tilt');
     if(result.kind!=='fog')setPortrait(result);
     const token=generation, quick=reduced.matches, duration=quick?650:2600;
     tone(330,.25);tone(440,.35,.15);tone(660,.4,.3);
     later(()=>{if(token!==generation)return;game.classList.add('mirror-awake');},quick?80:1000);
-    later(()=>{if(token!==generation)return;game.classList.add('face-visible');tone(result.kind==='horse'?190:880,.24);},quick?240:1670);
-    if(result.kind==='horse')later(()=>{if(token===generation)$('reveal-caption').textContent='“……자네, 사람이 아니었구만.”';},quick?370:2110);
+    later(()=>{if(token!==generation)return;game.classList.add('face-visible');tone(880,.24);},quick?240:1670);
+    if(result.kind==='horse')later(()=>{if(token===generation)$('reveal-caption').textContent='“'+result.revealQuote+'”';},quick?370:2110);
+    else if(result.family==='fun')later(()=>{if(token===generation)$('reveal-caption').textContent='“어디서 본 얼굴인가 했더니…”';},quick?370:2070);
     later(()=>{if(token===generation)renderResult();},result.kind==='horse'?duration+450:duration);
   }
   function renderResult(){
@@ -107,7 +117,7 @@
       $('result-eyebrow').textContent='안개 낀 거울';$('result-title').textContent='아직은 얼굴이 잘 보이지 않아요.';
       $('result-quote').textContent='“성격 이야기 세 가지만 더 들려주겠나?”';$('share').textContent='답변 보태기';$('story').hidden=true;
     }else{
-      $('result-eyebrow').textContent=result.faint?'희미하게 보이는 전생':'거울에 비친 당신의 전생';$('result-title').textContent=result.title;
+      $('result-eyebrow').textContent=result.faint?'적은 단서로 비친 전생':'거울에 비친 당신의 전생';$('result-title').textContent=result.title;
       result.analysis.forEach(text=>{const p=document.createElement('p');p.textContent=text;$('analysis').append(p);});
       $('result-quote').textContent='“'+result.quote+'”';$('share').textContent='내 결과 공유하기 ↗';$('story').hidden=false;$('story-copy').textContent=result.story;
       $('story-source').hidden=!result.biographyURL;
@@ -160,17 +170,17 @@
     catch(error){let box=body.querySelector('textarea');if(!box){box=document.createElement('textarea');box.className='copy-fallback';box.readOnly=true;box.setAttribute('aria-label','복사할 공유 문구와 링크');box.rows=4;body.append(box);}box.value=text;box.focus();box.select();announce('선택된 문구를 복사해주세요.');}
   }
   async function makeCard(snapshot){
-    const [atlas,horse,logo]=await Promise.all([loadImage(assetPaths.atlas),loadImage(assetPaths.horse),loadImage(assetPaths.logo)]);
-    if(document.fonts&&document.fonts.ready)await document.fonts.ready;
+    const [atlas,horse,logo,portrait]=await Promise.all([loadImage(assetPaths.atlas),loadImage(assetPaths.horse),loadImage(assetPaths.logo),snapshot.portrait?loadImage(snapshot.portrait):Promise.resolve(null)]);
+    if(document.fonts&&document.fonts.ready)await Promise.race([document.fonts.ready,new Promise(resolve=>setTimeout(resolve,1800))]);
     const canvas=document.createElement('canvas');canvas.width=1080;canvas.height=1350;const ctx=canvas.getContext('2d');if(!ctx)throw new Error('canvas');
-    window.HuataCard.draw(ctx,snapshot,{atlas,horse,logo});
+    window.HuataCard.draw(ctx,snapshot,{atlas,horse,logo,portrait});
     const blob=await new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(new Error('export')),'image/png'));
     return {blob,width:1080,height:1350};
   }
   $('start').addEventListener('click',start);$('retry').addEventListener('click',()=>{closeDialog();start();game.scrollIntoView({block:'start',behavior:reduced.matches?'instant':'smooth'});});$('share').addEventListener('click',openShare);
   $('back').addEventListener('click',()=>{if(busy)return;if(repair){if(repairAt===0){repair=false;renderResult();return;}repairAt--;index=repairQuestions[repairAt];}else if(index>0)index--;renderQuestion();});
   $('sound').addEventListener('click',()=>playSound('toggle'));
-  $('help').addEventListener('click',()=>{showDialog('화타의 전생 진찰소');const body=$('dialog-body');addText(body,'앞에 앉은 사람은 한의사로 돌아온 화타. 손목을 맡긴 사람은 지금의 나예요. 거울에는 내 삼국지 전생이 나타나요.');addText(body,'열 가지 물음에 가까운 답을 골라보세요. 고민되면 “잘 모르겠어요”도 괜찮아요.');addText(body,'삼국지연의의 인물을 현대적으로 해석한 재미용 테스트입니다. 실제 진단이나 검증된 심리검사가 아닙니다.','fine');addText(body,'답변은 이 화면 안에서만 계산해요. 공유 카드에는 인물과 짧은 성향 분석이 담기며, 성별·몸 상태·불편한 부위는 공유하지 않아요.','fine');});
+  $('help').addEventListener('click',()=>{showDialog('화타의 전생 진찰소');const body=$('dialog-body');addText(body,'앞에 앉은 사람은 한의사로 돌아온 화타. 손목을 맡긴 사람은 지금의 나예요. 거울에는 내 삼국지 전생이 나타나요.');addText(body,'열 가지 물음에 가까운 답을 골라보세요. 고민되면 “잘 모르겠어요”도 괜찮아요.');addText(body,'삼국지연의의 인물을 현대적으로 해석한 재미용 테스트입니다. 실제 진단이나 검증된 심리검사가 아닙니다.','fine');addText(body,'답변은 이 화면 안에서만 계산해요. 공유 카드에는 인물과 별칭, 실제 답변에서 뽑은 짧은 성향 분석이 담겨요.','fine');});
   $('dialog-close').addEventListener('click',closeDialog);dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog();}});
   document.querySelector('.clinic').addEventListener('click',()=>event('clinic_link_click'));
   try{const f=E.friend(new URLSearchParams(location.search).get('r'));if(f){$('friend-note').textContent='친구는 '+f.name+' — '+f.title+'. 이번엔 내 전생을 알아볼 차례!';$('friend-note').hidden=false;event('share_landing',{friendResult:f.id});}}catch(ignore){}

@@ -10,7 +10,7 @@
     dashboardURL:'',
     allowedHost:'wiki.body-all.co.kr',
     basePath:'/contents/bodyall-clinic/',
-    version:'huata-stats1'
+    version:'huata-v2'
   };
   root.HuataAnalyticsConfig=config;
   if(typeof module!=='undefined'&&module.exports)module.exports=config;

@@ -7,7 +7,7 @@
     {id:'chuckle',text:'허허…',src:'assets/huata-approved-chuckle.mp3',moods:['warm']}
   ];
   function eligible({question=0,code='N',expression='neutral'}={}){
-    const calm=code==='N'||question===0||(question===1&&code!=='B'&&code!=='D')||(question===2&&code!=='E');
+    const calm=code==='N';
     const mood=calm?'calm':expression==='surprised'?'surprised':expression==='thoughtful'?'calm':'warm';
     return cues.filter(c=>c.moods.includes(mood));
   }

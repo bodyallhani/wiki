@@ -2,7 +2,7 @@
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
-const D=require('./data.js'),R=require('./reactions.js'),A=require('./actor.js');
+const D=require('./data-v2.js'),R=require('./reactions-v2.js'),A=require('./actor.js');
 let checked=0;
 for(let i=0;i<D.questions.length;i++)for(const a of D.questions[i].answers){
  const answers=Array(10).fill('A');answers[i]=a.code;
@@ -34,7 +34,7 @@ actor.reset();assert.equal(pending.size,0);assert.equal(face.style.backgroundPos
 reduce=true;actor.start();assert.equal(pending.size,0);actor.react('warm','chuckle');assert.equal(gesture.dataset.motion,'rest');advance(2450);assert.equal(pending.size,0);
 actor.stop();
 const html=fs.readFileSync(path.join(__dirname,'index.html'),'utf8');
-assert(html.indexOf('reactions.js')<html.indexOf('app.js'));
+assert(html.indexOf('reactions-v2.js')<html.indexOf('app.js'));
 assert(html.indexOf('actor.js')<html.indexOf('app.js'));
 for(const source of [html,fs.readFileSync(path.join(__dirname,'style.css'),'utf8'),fs.readFileSync(path.join(__dirname,'app.js'),'utf8')]){
  for(const m of source.matchAll(/assets\/[a-z0-9-]+\.webp/g))assert(fs.existsSync(path.join(__dirname,m[0])),'Missing '+m[0]);

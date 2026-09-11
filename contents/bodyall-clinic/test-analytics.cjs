@@ -40,10 +40,10 @@ function accept(t){t.choose('granted');t.activate();}
  const stats=summarize(parseCSV(csv));assert.equal(stats.starts,1000);assert.equal(stats.completionRate,.8);assert.equal(stats.shareRate,.25);assert.equal(stats.people[0].name,'손권');
  assert.throws(()=>parseCSV('name,count\na,1'));assert.throws(()=>parseCSV('Event name,Event count\nhuata_start,bad'));assert.throws(()=>parseCSV('Event name,Event count\nhuata_start,"1'));assert.throws(()=>parseCSV('Event name,Event count\npage_view,100'));
  // Exercise the real app event order through a complete game, not only handcrafted events.
- const h=await boot(),real=fixture();accept(real.tracker);const realEvents=h.events;
- const D=require('./data.js'),p=D.people.find(p=>p.id==='sun'),answers=['A','D','E',...p.pattern];
+ const D=require('./data-v2.js'),p=D.people.find(p=>p.id==='sun'),answers=[...p.pattern];
+ const h=await boot({firstCode:answers[0]}),real=fixture();accept(real.tracker);const realEvents=h.events;
  for(let q=1;q<10;q++){h.ids.get('answers').children[D.questions[q].answers.findIndex(a=>a.code===answers[q])].click();await h.advance(q===9?1250:950);}
  await h.advance(3000);await h.flush();for(const detail of realEvents)real.tracker.capture(detail);
- assert.equal(real.sent.filter(e=>e.name==='huata_start').length,1);assert.equal(real.sent.filter(e=>e.name.startsWith('huata_step_')).length,10);assert.equal(real.sent.filter(e=>e.name==='huata_result_sun').length,1);
+ assert.equal(real.sent.filter(e=>e.name==='huata_v2_start').length,1);assert.equal(real.sent.filter(e=>e.name.startsWith('huata_v2_step_')).length,10);assert.equal(real.sent.filter(e=>e.name==='huata_v2_result_sun').length,1);
  console.log(JSON.stringify({noRequestsBeforeConsent:true,answerAndUrlDataExcluded:true,restrictedToGameHostAndPaths:true,replayAndRepairDeduplicated:true,shareIntentSeparateFromDelivery:true,crossTabWithdrawalDoesNotLoop:true,analyticsFailureDoesNotBlockGame:true,realGameTenStepsAndResult:true,koreanCsvSummary:true,liveGoogleReceiptVerified:false},null,2));
 })().catch(error=>{console.error(error);process.exitCode=1;});
