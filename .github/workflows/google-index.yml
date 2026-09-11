@@ -1,12 +1,8 @@
 name: Validate sitemap for published HTML
 
+# Automatic execution paused at the owner's request during existing-page repair.
+# No Google Indexing API requests are made by this workflow.
 on:
-  push:
-    branches: [main]
-    paths:
-      - '**/*.html'
-      - 'sitemap.xml'
-      - '.github/workflows/google-index.yml'
   workflow_dispatch:
 
 permissions:
