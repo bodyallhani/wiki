@@ -22,6 +22,8 @@ for(let n=0;n<4**7;n++){
 assert.equal(minEvidence,2);Object.values(distribution).forEach(count=>assert(count>0));
 const faint=E.getResult(['A','D','E','A','N','N','N','N','N','N']);assert(faint.faint);assert.equal(faint.analysis.length,1);
 assert.equal(E.friend('<script>'),null);assert.throws(()=>E.getResult([]));
+assert(E.shareText(E.friend('cao')).includes('조조였대'));
+assert(E.shareText(E.friend('zhuge')).includes('제갈량이었대'));
 const source=fs.readFileSync(path.join(__dirname,'app.js'),'utf8');
 assert(!source.includes('localStorage'));assert(!source.includes('fetch('));
 const html=fs.readFileSync(path.join(__dirname,'index.html'),'utf8');

@@ -29,7 +29,10 @@
     if (!friend(result.id)) throw new Error('공유할 수 없는 결과입니다.');
     const url = new URL(D.url); url.searchParams.set('r', result.id); url.searchParams.set('from','friend'); url.searchParams.set('v','1'); return url.href;
   }
-  function shareText(result) { return (result.id === 'horse' ? '너는 뭐 나왔냐. 나는 말 나옴ㅋㅋ' : '나 전생에 '+result.name+'이었대ㅋㅋ 너는 누구냐')+'\n화타의 전생 진찰소 · 바디올한의원'; }
+  function shareText(result) {
+    const last=result.name.charCodeAt(result.name.length-1),past=(last-0xAC00)%28===0?'였대':'이었대';
+    return (result.id === 'horse' ? '너는 뭐 나왔냐. 나는 말 나옴ㅋㅋ' : '나 전생에 '+result.name+past+'ㅋㅋ 너는 누구냐')+'\n화타의 전생 진찰소 · 바디올한의원';
+  }
   const api = {getResult, valid, friend, shareURL, shareText}; root.HuataEngine=api;
   if (typeof module !== 'undefined' && module.exports) module.exports=api;
 })(typeof globalThis !== 'undefined' ? globalThis : window);
