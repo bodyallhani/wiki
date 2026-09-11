@@ -4,7 +4,7 @@
   const game=$('game'), dialog=$('dialog'), reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
   const assetPaths={room:'assets/huata-room.webp',doctor:'assets/huata-doctor.webp',expressions:'assets/huata-expressions.webp',atlas:'assets/huata-portraits.webp',horse:'assets/huata-horse.webp',logo:'assets/huata-symbol.webp'};
   const imageCache=new Map(), assetImages={};
-  let answers=Array(10).fill(null), index=0, result=null, busy=false, soundOn=false, audioContext=null, generation=0;
+  let answers=Array(10).fill(null), index=0, result=null, busy=false, generation=0;
   let mutterTimer=0, toastTimer=0, repair=false, repairAt=0, blobURL=null, cardPromise=null, assetsReady=false, dialogSession=0;
   const repairQuestions=[5,6,8];
   let sceneVisible=true;
@@ -25,12 +25,10 @@
   function cancelScheduled(){for(const id of scheduled)clearTimeout(id);scheduled.clear();clearTimeout(mutterTimer);}
   function announce(message){$('toast').textContent=message;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2800);}
   function event(name, extra={}){window.dispatchEvent(new CustomEvent('bodyall:game-event',{detail:{name,version:D.version,...extra}}));}
-  function tone(frequency=500,duration=.055,delay=0){
-    if(!soundOn||!audioContext)return;
-    const t=audioContext.currentTime+delay, osc=audioContext.createOscillator(),gain=audioContext.createGain();
-    osc.type='triangle';osc.frequency.setValueAtTime(frequency,t);gain.gain.setValueAtTime(0,t);gain.gain.linearRampToValueAtTime(.045,t+.01);gain.gain.exponentialRampToValueAtTime(.0001,t+duration);
-    osc.connect(gain);gain.connect(audioContext.destination);osc.start(t);osc.stop(t+duration+.02);osc.onended=()=>{osc.disconnect();gain.disconnect();};
-  }
+  let sound=null;
+  try{if(window.HuataSound)sound=window.HuataSound.create({onState:enabled=>{$('sound').setAttribute('aria-pressed',String(enabled));$('sound').textContent=enabled?'소리 켜짐':'소리 꺼짐';$('sound').title=enabled?'음악과 목소리 끄기':'음악과 목소리 켜기';},onError:announce});}catch(error){console.warn('Audio unavailable',error);}
+  function playSound(method,...args){if(!sound)return;try{sound[method](...args);}catch(error){console.warn('Audio skipped',error);}}
+  function tone(frequency=500,duration=.055,delay=0){playSound('effect',frequency,duration,delay);}
   function loadImage(src){
     if(imageCache.has(src))return imageCache.get(src);
     const promise=new Promise((resolve,reject)=>{
@@ -49,16 +47,16 @@
     clearTimeout(mutterTimer);$('mutter').textContent=text;$('mutter').classList.add('visible');
     perform('react',expression,motion);mutterTimer=setTimeout(()=>$('mutter').classList.remove('visible'),2600);
   }
-  function react(q,code){const response=R?R.forAnswer(q,code,answers):{line:'그렇구먼. 다음 이야기도 들려주게.',expression:'neutral',gesture:'nod'};say(response.line,response.expression,response.gesture);}
+  function react(q,code){const response=R?R.forAnswer(q,code,answers):{line:'그렇구먼. 다음 이야기도 들려주게.',expression:'neutral',gesture:'nod'};say(response.line,response.expression,response.gesture);playSound('acknowledge',{question:q,code,expression:response.expression});}
   function clearCard(){if(blobURL)URL.revokeObjectURL(blobURL);blobURL=null;cardPromise=null;}
   function reset(){
-    generation++;cancelScheduled();clearCard();answers=Array(10).fill(null);index=0;result=null;repair=false;repairAt=0;busy=false;perform('reset');
+    generation++;cancelScheduled();clearCard();playSound('stopVoice');answers=Array(10).fill(null);index=0;result=null;repair=false;repairAt=0;busy=false;perform('reset');
     game.classList.remove('mirror-awake','face-visible','horse','fog');$('mutter').classList.remove('visible');$('story').open=false;
     $('reveal-caption').textContent='';$('stage').setAttribute('aria-label','내 손목을 짚으며 거울을 들고 있는 화타');
   }
   function start(){
     if(!assetsReady){loadAssets();return;}
-    reset();$('intro').hidden=true;$('result-view').hidden=true;$('question-view').hidden=false;game.dataset.state='question';syncActor();
+    playSound('start');reset();$('intro').hidden=true;$('result-view').hidden=true;$('question-view').hidden=false;game.dataset.state='question';syncActor();
     renderQuestion();say('손목은 편히 두게. 자, 시작해 볼까?');tone(620,.1);event('game_start');
   }
   function renderQuestion(){
@@ -91,7 +89,7 @@
     else if(Number.isInteger(person.tile)){face.style.backgroundImage="url('"+assetPaths.atlas+"')";face.style.backgroundSize='300% 400%';face.style.backgroundPosition=((person.tile%3)*50)+'% '+(Math.floor(person.tile/3)*100/3)+'%';}
   }
   function reveal(){
-    result=E.getResult(answers);busy=true;repair=false;$('question-view').hidden=true;$('mutter').classList.remove('visible');clearTimeout(mutterTimer);game.dataset.state='revealing';syncActor();
+    playSound('stopVoice');result=E.getResult(answers);busy=true;repair=false;$('question-view').hidden=true;$('mutter').classList.remove('visible');clearTimeout(mutterTimer);game.dataset.state='revealing';syncActor();
     game.classList.toggle('horse',result.kind==='horse');game.classList.toggle('fog',result.kind==='fog');$('reveal-caption').textContent='“자, 직접 보게.”';
     if(result.kind!=='fog')setPortrait(result);
     const token=generation, quick=reduced.matches, duration=quick?650:2600;
@@ -126,7 +124,7 @@
     game.dataset.state='question';syncActor();game.classList.remove('mirror-awake','face-visible','fog');$('result-view').hidden=true;$('question-view').hidden=false;$('reveal-caption').textContent='';renderQuestion();
     say('떠오르는 것부터 골라보게.');
   }
-  function showDialog(title){dialogSession++;$('dialog-title').textContent=title;$('dialog-body').replaceChildren();if(!dialog.open)dialog.showModal();syncActor();}
+  function showDialog(title){playSound('stopVoice');dialogSession++;$('dialog-title').textContent=title;$('dialog-body').replaceChildren();if(!dialog.open)dialog.showModal();syncActor();}
   function closeDialog(){dialogSession++;dialog.close();syncActor();}
   function addText(parent,text,cls){const p=document.createElement('p');p.textContent=text;if(cls)p.className=cls;parent.append(p);return p;}
   function addButton(parent,text,cls,fn){const b=document.createElement('button');b.type='button';b.textContent=text;b.className=cls;b.addEventListener('click',fn);parent.append(b);return b;}
@@ -171,21 +169,16 @@
   }
   $('start').addEventListener('click',start);$('retry').addEventListener('click',()=>{closeDialog();start();game.scrollIntoView({block:'start',behavior:reduced.matches?'instant':'smooth'});});$('share').addEventListener('click',openShare);
   $('back').addEventListener('click',()=>{if(busy)return;if(repair){if(repairAt===0){repair=false;renderResult();return;}repairAt--;index=repairQuestions[repairAt];}else if(index>0)index--;renderQuestion();});
-  $('sound').addEventListener('click',async()=>{
-    soundOn=!soundOn;
-    try{if(soundOn){const Audio=window.AudioContext||window.webkitAudioContext;if(!Audio)throw new Error('audio');if(!audioContext)audioContext=new Audio();await audioContext.resume();}}
-    catch(error){soundOn=false;announce('이 브라우저에서는 소리 없이 진행할게요.');}
-    $('sound').setAttribute('aria-pressed',String(soundOn));$('sound').textContent=soundOn?'소리 켜짐':'소리 꺼짐';$('sound').title=soundOn?'효과음 끄기':'효과음 켜기';if(soundOn)tone(660,.1);
-  });
+  $('sound').addEventListener('click',()=>playSound('toggle'));
   $('help').addEventListener('click',()=>{showDialog('화타의 전생 진찰소');const body=$('dialog-body');addText(body,'앞에 앉은 사람은 한의사로 돌아온 화타. 손목을 맡긴 사람은 지금의 나예요. 거울에는 내 삼국지 전생이 나타나요.');addText(body,'열 가지 물음에 가까운 답을 골라보세요. 고민되면 “잘 모르겠어요”도 괜찮아요.');addText(body,'삼국지연의의 인물을 현대적으로 해석한 재미용 테스트입니다. 실제 진단이나 검증된 심리검사가 아닙니다.','fine');addText(body,'답변은 이 화면 안에서만 계산해요. 공유 카드에는 인물과 짧은 성향 분석이 담기며, 성별·몸 상태·불편한 부위는 공유하지 않아요.','fine');});
   $('dialog-close').addEventListener('click',closeDialog);dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog();}});
   document.querySelector('.clinic').addEventListener('click',()=>event('clinic_link_click'));
   try{const f=E.friend(new URLSearchParams(location.search).get('r'));if(f){$('friend-note').textContent='친구의 전생은 '+f.name+'. 당신은?';$('friend-note').hidden=false;event('share_landing',{friendResult:f.id});}}catch(ignore){}
-  document.addEventListener('visibilitychange',syncActor);
+  document.addEventListener('visibilitychange',()=>{syncActor();playSound(document.hidden?'pause':'resume');});
   dialog.addEventListener('close',syncActor);
   if(reduced.addEventListener)reduced.addEventListener('change',()=>{perform('stop');syncActor();});
   if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{sceneVisible=entries[0].isIntersecting;syncActor();},{threshold:0});observer.observe($('stage'));}
-  window.addEventListener('pageshow',syncActor);
-  window.addEventListener('pagehide',e=>{perform('stop');if(e.persisted)return;cancelScheduled();if(blobURL)URL.revokeObjectURL(blobURL);});
+  window.addEventListener('pageshow',()=>{syncActor();playSound('resume');});
+  window.addEventListener('pagehide',e=>{playSound('pause');perform('stop');if(e.persisted)return;cancelScheduled();if(blobURL)URL.revokeObjectURL(blobURL);});
   loadAssets();
 })();

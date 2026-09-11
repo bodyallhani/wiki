@@ -45,3 +45,10 @@
 ### 화타의 대화 반응
 
 `reactions.js`가 선택한 답변에 맞는 짧은 대사·표정·동작을 정하고, `actor.js`가 눈 깜빡임과 일시적 자세 변화를 제어합니다. `REACTION_ARTWORK.json`에 4×2 표정 그림의 프레임 순서와 원본 좌표가 있습니다. 손과 거울을 고정한 채 상체만 움직이며, 선택 후 잠시 응답을 보여줍니다. `node test-reactions.cjs`로 반응 연결과 타이머 수명주기를 확인합니다.
+
+
+### 음악과 목소리
+
+첫 시작 클릭 후 `sound.js`가 1분 오리지널 곡 `assets/huata-courtyard.mp3`를 반복합니다. 소리 버튼은 음악·추임새·효과음을 함께 제어합니다. 추임새 10종은 현재 기기의 한국어 음성 합성으로 재생하므로 음색이 기기에 따라 달라질 수 있습니다. 고정된 화타 목소리의 녹음 제작은 `audio-source/VOICE_REQUEST.md`에 남겼습니다. 음악은 `audio-source/compose.py`의 직접 작곡·합성 출력이며 추가 API 호출이 없습니다.
+
+`node test-sound.cjs`, `node test-startup.cjs`로 선택 반응/시작 흐름을 검사합니다. `test-card-centering.cjs`는 선택적 검증 도구 `@napi-rs/canvas`가 필요합니다.

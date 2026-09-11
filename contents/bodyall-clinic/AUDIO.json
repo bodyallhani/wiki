@@ -1,0 +1,114 @@
+{
+  "title": "화타의 뜰",
+  "source": "audio-source/compose.py",
+  "audioFile": "assets/huata-courtyard.mp3",
+  "composition": "Original 16-bar D pentatonic, 64 BPM; synthesized plucked strings, flute and soft open-fifth drone.",
+  "durationSeconds": 60,
+  "encodedDurationSeconds": 60.048,
+  "sampleRate": 32000,
+  "channels": 2,
+  "sha256": "cf5fffc41ab3d0c6bcb0c5fcb381450d7f187c8edfee795cace143e9fc6c031f",
+  "speech": {
+    "mode": "device Korean speech synthesis",
+    "recordedVoiceStatus": "pending: plugin connected but generator tool not exposed to active task",
+    "cues": [
+      {
+        "id": "mm",
+        "text": "음.",
+        "moods": [
+          "calm",
+          "warm",
+          "surprised"
+        ],
+        "pitch": 0.76
+      },
+      {
+        "id": "mm-mm",
+        "text": "음, 음.",
+        "moods": [
+          "calm",
+          "warm"
+        ],
+        "pitch": 0.79
+      },
+      {
+        "id": "aha",
+        "text": "아하.",
+        "moods": [
+          "calm",
+          "warm",
+          "surprised"
+        ],
+        "pitch": 0.86
+      },
+      {
+        "id": "oh",
+        "text": "오오.",
+        "moods": [
+          "warm",
+          "surprised"
+        ],
+        "pitch": 0.89
+      },
+      {
+        "id": "ho",
+        "text": "호오.",
+        "moods": [
+          "warm",
+          "surprised"
+        ],
+        "pitch": 0.78
+      },
+      {
+        "id": "isee",
+        "text": "그렇군.",
+        "moods": [
+          "calm",
+          "warm"
+        ],
+        "pitch": 0.77
+      },
+      {
+        "id": "understood",
+        "text": "알겠네.",
+        "moods": [
+          "calm",
+          "warm"
+        ],
+        "pitch": 0.8
+      },
+      {
+        "id": "good",
+        "text": "좋네.",
+        "moods": [
+          "warm"
+        ],
+        "pitch": 0.83
+      },
+      {
+        "id": "indeed",
+        "text": "그렇구먼.",
+        "moods": [
+          "calm",
+          "warm"
+        ],
+        "pitch": 0.75
+      },
+      {
+        "id": "chuckle",
+        "text": "허허.",
+        "moods": [
+          "warm"
+        ],
+        "pitch": 0.79
+      }
+    ]
+  },
+  "playback": {
+    "gestureStart": true,
+    "loop": true,
+    "musicVolume": 0.28,
+    "voiceDuckingVolume": 0.1,
+    "mutePersistsDuringReplay": true
+  }
+}
