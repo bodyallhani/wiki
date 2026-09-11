@@ -19,7 +19,7 @@ const ROOT=path.resolve(__dirname,'..'),esc=s=>String(s).replace(/[&<>"']/g,c=>(
   else ctx.drawImage(atlas,(r.tile%3)*tile,Math.floor(r.tile/3)*tile,tile,tile,0,0,tile,tile);
   fs.writeFileSync(path.join(directory,'portrait.jpg'),portrait.toBuffer('image/jpeg',92));
   const url=E.shareURL({id:r.id}),title=E.shareTitle(r),description=r.title+' · '+r.analysis.join(' '),image=new URL('portrait.jpg',url).href;
-  const start=new URL(D.url);start.searchParams.set('r',r.id);start.searchParams.set('from','friend');start.searchParams.set('v','result-share2');
+  const start=new URL(D.url);start.searchParams.set('r',r.id);start.searchParams.set('from','friend');start.searchParams.set('v','huata-bodyall1');
   const html=`<!doctype html>
 <html lang="ko">
 <head>
@@ -32,7 +32,7 @@ const ROOT=path.resolve(__dirname,'..'),esc=s=>String(s).replace(/[&<>"']/g,c=>(
   <link rel="canonical" href="${esc(url)}">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
-  <meta property="og:site_name" content="화타의 전생 진찰소 · 바디올한의원">
+  <meta property="og:site_name" content="화타의 전생 진찰소">
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:url" content="${esc(url)}">
@@ -45,8 +45,8 @@ const ROOT=path.resolve(__dirname,'..'),esc=s=>String(s).replace(/[&<>"']/g,c=>(
   <meta name="twitter:description" content="${esc(description)}">
   <meta name="twitter:image" content="${esc(image)}">
   <link rel="stylesheet" href="../../shared-result.css?v=2">
-  <script src="../../data.js?v=huata1" defer></script>
-  <script src="../../engine.js?v=huata-result-share2" defer></script>
+  <script src="../../data.js?v=huata-bodyall1" defer></script>
+  <script src="../../engine.js?v=huata-bodyall1" defer></script>
   <script src="../../shared-result.js?v=2" defer></script>
 </head>
 <body data-result-id="${esc(r.id)}">
@@ -63,7 +63,7 @@ const ROOT=path.resolve(__dirname,'..'),esc=s=>String(s).replace(/[&<>"']/g,c=>(
       <p class="shared-meta">질문 10개 · 약 1분 · 가입 없이</p>
     </section>
     <footer class="shared-footer">
-      <a class="shared-clinic" href="${esc(D.clinicURL)}" target="_blank" rel="noopener"><img src="../../assets/huata-symbol.webp" alt=""><span>바디올한의원</span></a>
+      <a class="shared-clinic" href="${esc(D.clinicURL)}" target="_blank" rel="noopener"><img src="../../assets/huata-symbol.webp" alt=""><span>© Bodyall</span></a>
       <p>삼국지연의를 바탕으로 만든 재미용 테스트입니다.</p>
     </footer>
   </main>

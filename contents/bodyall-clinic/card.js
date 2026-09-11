@@ -28,13 +28,13 @@
     const analysisLines=snapshot.analysis.flatMap(text=>{fitText(ctx,text,840,33,26,500,sans);return lines(ctx,text,840);});
     ctx.font='500 31px '+sans;analysisLines.slice(0,4).forEach(text=>{ctx.fillText(text,540,y);y+=45;});
     ctx.fillStyle='#d5c89e';ctx.font='500 26px '+sans;ctx.fillText('너는 누구였을까?',540,1190);
-    const clinic='바디올한의원',logoW=44,logoH=logoW*logo.height/logo.width,gap=18,centerY=1244;
-    ctx.fillStyle='#f2e3b7';ctx.font='700 31px '+sans;ctx.textAlign='left';
-    const metrics=ctx.measureText(clinic),textW=metrics.width,groupX=(1080-logoW-gap-textW)/2;
+    const credit='© Bodyall',logoW=34,logoH=logoW*logo.height/logo.width,gap=12,centerY=1254;
+    ctx.fillStyle='#d5c89e';ctx.font='400 28px '+sans;ctx.textAlign='left';
+    const metrics=ctx.measureText(credit),textW=metrics.width,groupX=(1080-logoW-gap-textW)/2;
     const ascent=metrics.actualBoundingBoxAscent??25,descent=metrics.actualBoundingBoxDescent??6;
     ctx.drawImage(logo,groupX,centerY-logoH/2,logoW,logoH);
-    ctx.fillText(clinic,groupX+logoW+gap,centerY+(ascent-descent)/2);
-    ctx.textAlign='center';ctx.fillStyle='#9dad8e';ctx.font='400 18px '+sans;ctx.fillText('wiki.body-all.co.kr',540,1298);
+    ctx.fillText(credit,groupX+logoW+gap,centerY+(ascent-descent)/2);
+    ctx.textAlign='center';
   }
   const api={draw};root.HuataCard=api;
   if(typeof module!=='undefined'&&module.exports)module.exports=api;

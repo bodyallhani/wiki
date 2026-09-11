@@ -55,7 +55,7 @@
   function shareText(result) {
     const person=previewResult(result.id),analysis=Array.isArray(result.analysis)&&result.analysis.length?result.analysis:person.analysis;
     const opening=person.id==='horse'?'나는 전생에 ‘'+person.name+'’…ㅋㅋ':'나는 전생에 ‘'+person.name+'’!';
-    return opening+'\n'+person.title+'\n'+analysis.slice(0,2).join(' ')+'\n\n너는 누구였어? 화타한테 물어봐!\n화타의 전생 진찰소 · 바디올한의원';
+    return opening+'\n'+person.title+'\n'+analysis.slice(0,2).join(' ')+'\n\n너는 누구였어? 화타한테 물어봐!\n화타의 전생 진찰소 · © Bodyall';
   }
   function sharePayload(result) { return {title:shareTitle(result),text:shareText(result),url:shareURL(result)}; }
   const api = {getResult, valid, friend, previewResult, sharedResult, shareURL, shareTitle, shareText, sharePayload}; root.HuataEngine=api;

@@ -13,6 +13,7 @@
     ['어떤 말을 들으면 가장 힘이 나나?', ['“덕분에 해결됐어.”', '“역시 네가 제일 잘해.”', '“네가 있어 든든해.”', '“네 마음 이해해.”']],
     ['할 일이 남았는데 쉬라고 하면?', ['정리만 끝내고 쉴게요', '조금만 더 해볼게요', '부탁해 두고 쉴게요', '지금 쉴 때면 쉬어야죠']]
   ].map(([text, answers], i) => ({ id: i + 1, text, answers: answers.map((label, n) => ({ code: String.fromCharCode(65 + n), label })).concat({code:'N', label:'잘 모르겠어요'}) }));
+  const biographyPages = {zhang:'장비_(삼국지)', zhao:'조운_(촉한)', diao:'초선_(삼국지)'};
   const people = [
     {id:'zhuge', name:'제갈량', role:'촉의 책사', title:'머릿속에 지도가 펼쳐진 책사', pattern:'AAAAAAA', quote:'제갈량이었구만! 그 부채는 어디 두고 왔나?', chapter:'103', story:'제갈량은 세세한 업무까지 직접 살폈어요. 남에게 맡기기 어려운 마음에는 자신이 받은 책임을 끝까지 다하려는 뜻이 있었죠.'},
     {id:'cao', name:'조조', role:'위의 군주', title:'판을 읽고 먼저 움직이는 승부사', pattern:'AABBAAD', quote:'조조로군! 이 작은 방에서 천하를 논할 셈인가?', chapter:'001', story:'조조는 권모와 임기응변에 능한 인물로 등장해요. 변화하는 상황에서 길을 찾고, 생각을 행동으로 옮기는 모습에 주목했어요.'},
@@ -26,7 +27,7 @@
     {id:'huang', name:'황충', role:'백전노장', title:'실력으로 대답하는 노장', pattern:'BDDDBBB', quote:'황충이었군! 아직 한창이라는 표정이구먼.', chapter:'053', story:'황충은 관우와 겨루며 무예와 활솜씨를 보여줘요. 나이나 겉모습보다 자기 실력으로 대답하는 모습을 담았어요.'},
     {id:'lu', name:'여포', role:'천하의 무장', title:'말보다 실전이 빠른 무장', pattern:'BBABBBB', quote:'여포였구만! 적토마는 밖에 세워뒀나?', chapter:'016', story:'여포는 멀리 세운 극을 활로 맞혀 두 진영의 다툼을 중재해요. 스스로 가진 능력으로 상황을 바꾸려는 모습에 주목했어요.'},
     {id:'diao', name:'초선', role:'마음을 읽는 인물', title:'사람의 마음으로 판을 바꾸는 인물', pattern:'CCCCADC', quote:'초선이었군! 칼 없이도 판을 흔들던 자네.', chapter:'008', story:'초선은 왕윤의 계획에 참여해 동탁과 여포 사이에서 역할을 수행해요. 사람의 마음과 관계를 통해 상황을 바꾸는 모습을 담았어요.'}
-  ].map((p,i) => ({...p, tile:i}));
+  ].map((p,i) => ({...p, tile:i, biographyURL:'https://ko.wikipedia.org/wiki/'+encodeURIComponent(biographyPages[p.id]||p.name)}));
   const analysis = [
     ['쉬면서도 다음 일을 생각해요.', '가만히 있기보다 움직이는 편이에요.', '쉬다가도 사람을 챙겨요.', '혼자 조용히 보내는 시간을 좋아해요.'],
     ['스트레스를 받으면 생각이 많아져요.', '스트레스를 받으면 반응이 빨라져요.', '다른 사람의 반응을 신경 써요.', '혼자 생각을 정리하는 편이에요.'],

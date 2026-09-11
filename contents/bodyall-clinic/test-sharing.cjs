@@ -10,6 +10,8 @@ async function finishAs(id,navigator={}){
   const i=D.questions[q].answers.findIndex(a=>a.code===answers[q]);h.ids.get('answers').children[i].click();await h.advance(q===9?1250:950);
  }
  await h.advance(3000);await h.flush();assert.equal(h.ids.get('result-name').textContent,p.name);
+ assert.equal(h.ids.get('story-source').href,p.biographyURL);assert(!h.ids.get('story-source').hidden);
+ assert.equal(h.ids.get('story-source').textContent,p.name+' 알아보기 (한국어) ↗');
  h.ids.get('share').click();
  const buttons=h.ids.get('dialog-body').children.find(e=>e.className==='share-buttons');
  assert(buttons,'Share controls must exist before the card promise resolves');

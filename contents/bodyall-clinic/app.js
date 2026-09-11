@@ -110,7 +110,8 @@
       $('result-eyebrow').textContent=result.faint?'희미하게 보이는 전생':'거울에 비친 당신의 전생';$('result-title').textContent=result.title;
       result.analysis.forEach(text=>{const p=document.createElement('p');p.textContent=text;$('analysis').append(p);});
       $('result-quote').textContent='“'+result.quote+'”';$('share').textContent='내 결과 공유하기 ↗';$('story').hidden=false;$('story-copy').textContent=result.story;
-      $('story-source').hidden=!result.chapter;if(result.chapter)$('story-source').href='https://zh.wikisource.org/wiki/三國演義/第'+result.chapter+'回';
+      $('story-source').hidden=!result.biographyURL;
+      if(result.biographyURL){$('story-source').href=result.biographyURL;$('story-source').textContent=result.name+' 알아보기 (한국어) ↗';}
       const snapshot=result;cardPromise=makeCard(snapshot).catch(()=>null);
     }
     $('stage').setAttribute('aria-label',result.kind==='fog'?'아직 실루엣이 흐릿한 거울':'거울에 비친 '+result.name+'의 정면 얼굴');
@@ -143,14 +144,14 @@
       finally{share.disabled=false;}
     });
     const save=addButton(buttons,'이미지 저장','secondary',()=>{
-      if(!blobURL)return;const a=document.createElement('a');a.href=blobURL;a.download='바디올_전생_'+snapshot.name.replaceAll(' ','_')+'.png';document.body.append(a);a.click();a.remove();event('result_card_export',{result:snapshot.id});announce('이미지를 열었다면 길게 눌러 저장할 수도 있어요.');
+      if(!blobURL)return;const a=document.createElement('a');a.href=blobURL;a.download='Bodyall_전생_'+snapshot.name.replaceAll(' ','_')+'.png';document.body.append(a);a.click();a.remove();event('result_card_export',{result:snapshot.id});announce('이미지를 열었다면 길게 눌러 저장할 수도 있어요.');
     });save.disabled=true;
     addButton(buttons,'결과 문구·링크 복사','secondary',()=>copyLink(snapshot,body));
     addText(body,navigator.share?'공유 창에서 카카오톡 등 원하는 앱을 선택하세요.':'결과 문구와 링크를 복사해 카카오톡에 붙여넣으세요.','share-help');
     const pending=addText(body,'결과 이미지를 준비하는 중…','share-help');event('share_preview_open',{result:snapshot.id});
     if(!cardPromise)cardPromise=makeCard(snapshot).catch(()=>null);
     const card=await cardPromise;if(token!==generation||session!==dialogSession||!dialog.open)return;pending.remove();
-    if(card){if(blobURL)URL.revokeObjectURL(blobURL);blobURL=URL.createObjectURL(card.blob);const img=document.createElement('img');img.className='card-image';img.src=blobURL;img.alt=snapshot.name+' · '+snapshot.title+' · '+snapshot.analysis.join(' ')+' · 바디올한의원';body.append(img);save.disabled=false;}
+    if(card){if(blobURL)URL.revokeObjectURL(blobURL);blobURL=URL.createObjectURL(card.blob);const img=document.createElement('img');img.className='card-image';img.src=blobURL;img.alt=snapshot.name+' · '+snapshot.title+' · '+snapshot.analysis.join(' ')+' · © Bodyall';body.append(img);save.disabled=false;}
     else addText(body,'이미지를 준비하지 못했지만, 위 버튼으로 결과를 보낼 수 있어요.','share-help');
   }
   async function copyLink(snapshot,body){
