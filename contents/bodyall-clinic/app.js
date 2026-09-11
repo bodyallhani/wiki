@@ -9,8 +9,17 @@
   const repairQuestions=[5,6,8];
   let sceneVisible=true;
   function actorActive(){return assetsReady&&sceneVisible&&!document.hidden&&!dialog.open&&['intro','question'].includes(game.dataset.state);}
-  const actor=window.HuataActor.create({face:$('doctor-face'),gesture:$('doctor-gesture'),canAnimate:actorActive,reduced:()=>reduced.matches});
-  function syncActor(){const active=actorActive();game.classList.toggle('actor-paused',!active);if(active)actor.start();else actor.stop();}
+  let actor=null,actorFailed=false;
+  try{if(window.HuataActor)actor=window.HuataActor.create({face:$('doctor-face'),gesture:$('doctor-gesture'),canAnimate:actorActive,reduced:()=>reduced.matches});}
+  catch(error){actorFailed=true;console.warn('Portrait initialization failed',error);}
+  function perform(method,...args){
+    if(!actor||actorFailed)return;
+    try{actor[method](...args);}catch(error){
+      actorFailed=true;game.classList.remove('has-expressions');game.classList.add('actor-paused');
+      try{actor.stop();}catch(ignore){}console.warn('Portrait animation paused',error);
+    }
+  }
+  function syncActor(){const active=actorActive()&&!!actor&&!actorFailed;game.classList.toggle('actor-paused',!active);perform(active?'start':'stop');}
   const scheduled=new Set();
   function later(fn,ms){const id=setTimeout(()=>{scheduled.delete(id);fn();},ms);scheduled.add(id);return id;}
   function cancelScheduled(){for(const id of scheduled)clearTimeout(id);scheduled.clear();clearTimeout(mutterTimer);}
@@ -33,17 +42,17 @@
     $('start').disabled=true;$('start-label').textContent='거울을 닦는 중…';
     try{
       await Promise.all(Object.entries(assetPaths).map(async([key,path])=>{assetImages[key]=await loadImage(path);}));
-      assetsReady=true;game.classList.add('has-expressions');syncActor();$('start').disabled=false;$('start-label').textContent='손목 맡기기';$('asset-status').textContent='질문 10개 · 약 1분 · 가입 없이';
+      assetsReady=true;if(actor&&!actorFailed)game.classList.add('has-expressions');$('start').disabled=false;$('start-label').textContent='손목 맡기기';$('asset-status').textContent='질문 10개 · 약 1분 · 가입 없이';syncActor();
     }catch(err){assetsReady=false;syncActor();$('start').disabled=false;$('start-label').textContent='그림 다시 불러오기';$('asset-status').textContent='그림을 불러오지 못했어요. 한 번 더 눌러주세요.';}
   }
   function say(text,expression='warm',motion='nod'){
     clearTimeout(mutterTimer);$('mutter').textContent=text;$('mutter').classList.add('visible');
-    actor.react(expression,motion);mutterTimer=setTimeout(()=>$('mutter').classList.remove('visible'),2600);
+    perform('react',expression,motion);mutterTimer=setTimeout(()=>$('mutter').classList.remove('visible'),2600);
   }
-  function react(q,code){const response=R.forAnswer(q,code,answers);say(response.line,response.expression,response.gesture);}
+  function react(q,code){const response=R?R.forAnswer(q,code,answers):{line:'그렇구먼. 다음 이야기도 들려주게.',expression:'neutral',gesture:'nod'};say(response.line,response.expression,response.gesture);}
   function clearCard(){if(blobURL)URL.revokeObjectURL(blobURL);blobURL=null;cardPromise=null;}
   function reset(){
-    generation++;cancelScheduled();clearCard();answers=Array(10).fill(null);index=0;result=null;repair=false;repairAt=0;busy=false;actor.reset();
+    generation++;cancelScheduled();clearCard();answers=Array(10).fill(null);index=0;result=null;repair=false;repairAt=0;busy=false;perform('reset');
     game.classList.remove('mirror-awake','face-visible','horse','fog');$('mutter').classList.remove('visible');$('story').open=false;
     $('reveal-caption').textContent='';$('stage').setAttribute('aria-label','내 손목을 짚으며 거울을 들고 있는 화타');
   }
@@ -174,9 +183,9 @@
   try{const f=E.friend(new URLSearchParams(location.search).get('r'));if(f){$('friend-note').textContent='친구의 전생은 '+f.name+'. 당신은?';$('friend-note').hidden=false;event('share_landing',{friendResult:f.id});}}catch(ignore){}
   document.addEventListener('visibilitychange',syncActor);
   dialog.addEventListener('close',syncActor);
-  reduced.addEventListener('change',()=>{actor.stop();syncActor();});
+  if(reduced.addEventListener)reduced.addEventListener('change',()=>{perform('stop');syncActor();});
   if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{sceneVisible=entries[0].isIntersecting;syncActor();},{threshold:0});observer.observe($('stage'));}
   window.addEventListener('pageshow',syncActor);
-  window.addEventListener('pagehide',e=>{actor.stop();if(e.persisted)return;cancelScheduled();if(blobURL)URL.revokeObjectURL(blobURL);});
+  window.addEventListener('pagehide',e=>{perform('stop');if(e.persisted)return;cancelScheduled();if(blobURL)URL.revokeObjectURL(blobURL);});
   loadAssets();
 })();

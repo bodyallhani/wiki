@@ -2,7 +2,7 @@
 (function(root){
   'use strict';
   const columns={neutral:0,warm:1,thoughtful:2,surprised:3};
-  function create({face,gesture,canAnimate,reduced,clock={setTimeout,clearTimeout},random=Math.random}){
+  function create({face,gesture,canAnimate,reduced,clock={setTimeout:(fn,delay)=>setTimeout(fn,delay),clearTimeout:id=>clearTimeout(id)},random=Math.random}){
     let running=false,expression='neutral',blinkTimer=0,openTimer=0,restTimer=0,poseTimer=0;
     function paint(closed=false){face.style.backgroundPosition=(columns[expression]*100/3)+'% '+(closed?100:0)+'%';}
     function clear(name){clock.clearTimeout(name);}
