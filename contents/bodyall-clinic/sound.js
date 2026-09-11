@@ -1,17 +1,12 @@
-/* Original local BGM + ten Korean acknowledgements. Sound never gates gameplay. */
+/* Original local BGM + five fixed nonverbal Hua Tuo voice clips. Sound never gates gameplay. */
 (function(root){
   'use strict';
   const cues=[
-    {id:'mm',text:'음.',moods:['calm','warm','surprised'],pitch:.76},
-    {id:'mm-mm',text:'음, 음.',moods:['calm','warm'],pitch:.79},
-    {id:'aha',text:'아하.',moods:['calm','warm','surprised'],pitch:.86},
-    {id:'oh',text:'오오.',moods:['warm','surprised'],pitch:.89},
-    {id:'ho',text:'호오.',moods:['warm','surprised'],pitch:.78},
-    {id:'isee',text:'그렇군.',moods:['calm','warm'],pitch:.77},
-    {id:'understood',text:'알겠네.',moods:['calm','warm'],pitch:.80},
-    {id:'good',text:'좋네.',moods:['warm'],pitch:.83},
-    {id:'indeed',text:'그렇구먼.',moods:['calm','warm'],pitch:.75},
-    {id:'chuckle',text:'허허.',moods:['warm'],pitch:.79}
+    {id:'mm',text:'음…',src:'assets/huata-voice-mm.mp3',moods:['calm','warm']},
+    {id:'mm-mm',text:'음음',src:'assets/huata-voice-mm-mm.mp3',moods:['calm','warm']},
+    {id:'uh',text:'어…',src:'assets/huata-voice-uh.mp3',moods:['calm','warm','surprised']},
+    {id:'aha',text:'아하!',src:'assets/huata-voice-aha.mp3',moods:['warm','surprised']},
+    {id:'chuckle',text:'허허…',src:'assets/huata-voice-chuckle.mp3',moods:['warm']}
   ];
   function eligible({question=0,code='N',expression='neutral'}={}){
     const calm=code==='N'||question===0||(question===1&&code!=='B'&&code!=='D')||(question===2&&code!=='E');
@@ -19,15 +14,20 @@
     return cues.filter(c=>c.moods.includes(mood));
   }
   function create({env=root,random=Math.random,onState=()=>{},onError=()=>{}}={}){
-    let enabled=false,choiceMade=false,paused=false,music=null,context=null,lastCue=null,voiceToken=0,voiceTimer=0;
-    const used=new Set(),reported=new Set();
+    let enabled=false,choiceMade=false,paused=false,music=null,context=null,voice=null,lastCue=null,voiceToken=0,voiceTimer=0;
+    const used=new Set(),reported=new Set(),players=new Map();
     const after=(fn,ms)=>env.setTimeout(fn,ms),cancel=id=>env.clearTimeout(id);
     function report(key,message){if(!reported.has(key)){reported.add(key);onError(message);}}
     function stopVoice(){
       voiceToken++;cancel(voiceTimer);
-      try{env.speechSynthesis?.cancel();}catch(ignore){}
+      if(voice){voice.onended=null;voice.onerror=null;try{voice.pause();voice.currentTime=0;}catch(ignore){}voice=null;}
       if(music)music.volume=.28;
     }
+    function getVoice(cue){
+      if(players.has(cue.id))return players.get(cue.id);
+      try{const player=new env.Audio(cue.src);player.preload='auto';player.volume=.88;players.set(cue.id,player);return player;}catch(ignore){return null;}
+    }
+    function prepareVoices(){cues.forEach(cue=>getVoice(cue));}
     function playMusic(){
       if(!enabled||paused)return;
       try{
@@ -43,10 +43,10 @@
     }
     function setEnabled(value){
       enabled=!!value;onState(enabled);
-      if(enabled&&!paused){prepareEffects();playMusic();try{env.speechSynthesis?.getVoices();}catch(ignore){}}
+      if(enabled&&!paused){prepareVoices();prepareEffects();playMusic();}
       else{stopVoice();if(music)music.pause();try{const p=context?.suspend();if(p&&p.catch)p.catch(()=>{});}catch(ignore){}}
     }
-    function start(){paused=false;if(!choiceMade){choiceMade=true;setEnabled(true);}else if(enabled){prepareEffects();playMusic();}}
+    function start(){paused=false;if(!choiceMade){choiceMade=true;setEnabled(true);}else if(enabled){prepareVoices();prepareEffects();playMusic();}}
     function toggle(){choiceMade=true;paused=false;setEnabled(!enabled);}
     function pause(){paused=true;stopVoice();if(music)music.pause();try{const p=context?.suspend();if(p&&p.catch)p.catch(()=>{});}catch(ignore){}}
     function resume(){paused=false;if(enabled){prepareEffects();playMusic();}}
@@ -57,20 +57,17 @@
       const cue=pool[Math.min(pool.length-1,Math.floor(random()*pool.length))];if(!cue)return;
       used.add(cue.id);lastCue=cue.id;
       stopVoice();const token=voiceToken;
+      const player=getVoice(cue);
+      if(!player){report('voice','이 브라우저에서는 추임새를 재생하지 못했어요.');return;}
+      voice=player;
+      function finish(){if(token!==voiceToken)return;cancel(voiceTimer);player.onended=null;player.onerror=null;voice=null;if(music)music.volume=.28;}
       try{
-        const synth=env.speechSynthesis,Utterance=env.SpeechSynthesisUtterance;
-        if(!synth||!Utterance){report('voice','이 브라우저는 추임새 음성을 지원하지 않아 음악만 재생해요.');return;}
-        const voices=synth.getVoices(),korean=voices.filter(v=>/^ko(?:-|_)?/i.test(v.lang));
-        if(voices.length&&!korean.length){report('korean','한국어 음성을 찾지 못해 배경음악만 재생해요.');return;}
-        const utterance=new Utterance(cue.text);utterance.lang='ko-KR';utterance.rate=.94;utterance.pitch=cue.pitch;utterance.volume=.84;
-        const male=korean.find(v=>/InJoon|Hyunsu|Hyunsoo|Minho|male|남성/i.test(v.name));
-        if(male||korean[0])utterance.voice=male||korean[0];
-        function finish(){if(token!==voiceToken)return;cancel(voiceTimer);if(music)music.volume=.28;}
-        utterance.onend=finish;utterance.onerror=finish;
+        player.currentTime=0;player.onended=finish;player.onerror=()=>{finish();report('voice-file','추임새를 불러오지 못했어요. 게임은 계속할 수 있어요.');};
         if(music)music.volume=.10;
-        synth.speak(utterance);
-        voiceTimer=after(()=>{if(token===voiceToken){try{synth.cancel();}catch(ignore){}finish();}},1700);
-      }catch(ignore){if(music)music.volume=.28;}
+        const play=player.play();
+        if(play&&play.then)play.then(()=>{if(!enabled||paused||(token!==voiceToken&&voice!==player))player.pause();}).catch(()=>{if(token===voiceToken)finish();});
+        voiceTimer=after(()=>{if(token===voiceToken)stopVoice();},2000);
+      }catch(ignore){finish();}
       return cue.id;
     }
     function effect(frequency=500,duration=.055,delay=0){

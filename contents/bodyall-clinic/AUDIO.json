@@ -9,100 +9,152 @@
   "channels": 2,
   "sha256": "cf5fffc41ab3d0c6bcb0c5fcb381450d7f187c8edfee795cace143e9fc6c031f",
   "speech": {
-    "mode": "device Korean speech synthesis",
-    "recordedVoiceStatus": "pending: plugin connected but generator tool not exposed to active task",
+    "mode": "five fixed local MP3 files",
+    "recordedVoiceStatus": "generated and edited with a locally executed open model; no paid API",
+    "targetVoice": "82-year-old Korean grandfather: weathered rasp, soft breath, slight tremor, warm manner",
+    "generator": {
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+      "modelLicense": "Apache-2.0",
+      "execution": "Local CPU; no paid API",
+      "seed": 82,
+      "decoderInt8": true,
+      "speakerMode": "same elderly character description for all five; no real person reference",
+      "instruct": "An 82-year-old Korean grandfather. Clearly elderly male, with a dry weathered rasp, a slightly reedy resonance, softly leaking breath, a gentle uneven tremor and slow relaxed phrasing. Warm, kindly and slightly amused, like a very old physician. One brief natural nonverbal reaction, then stop. Soft intimate voice, no music, no background noise.",
+      "clips": [
+        {
+          "id": "mm",
+          "text": "음.",
+          "sampleRate": 24000,
+          "durationSeconds": 1.2
+        },
+        {
+          "id": "mm-mm",
+          "text": "음, 음.",
+          "sampleRate": 24000,
+          "durationSeconds": 3.76
+        },
+        {
+          "id": "uh",
+          "text": "어.",
+          "sampleRate": 24000,
+          "durationSeconds": 2.64
+        },
+        {
+          "id": "aha",
+          "text": "아하!",
+          "sampleRate": 24000,
+          "durationSeconds": 1.84
+        },
+        {
+          "id": "chuckle",
+          "text": "허허.",
+          "sampleRate": 24000,
+          "durationSeconds": 2.8
+        }
+      ],
+      "elapsedSeconds": 62.96
+    },
     "cues": [
       {
         "id": "mm",
-        "text": "음.",
-        "moods": [
-          "calm",
-          "warm",
-          "surprised"
+        "file": "assets/huata-voice-mm.mp3",
+        "durationSeconds": 0.885,
+        "sourceSegments": [
+          [
+            0,
+            0.94
+          ]
         ],
-        "pitch": 0.76
+        "trimFromSeconds": 0.015,
+        "trimToSeconds": 0.9,
+        "peak": 0.7528,
+        "rms": 0.115,
+        "gain": 2.1662,
+        "sha256": "67b8d5a4780b20cb4d2b6793d74cde33b42dc1872fb8122d27ccca49258ddb01",
+        "bytes": 7725
       },
       {
         "id": "mm-mm",
-        "text": "음, 음.",
-        "moods": [
-          "calm",
-          "warm"
+        "file": "assets/huata-voice-mm-mm.mp3",
+        "durationSeconds": 1.785,
+        "sourceSegments": [
+          [
+            0.28,
+            1.16
+          ],
+          [
+            1.86,
+            2.67
+          ]
         ],
-        "pitch": 0.79
+        "trimFromSeconds": 0.015,
+        "trimToSeconds": 1.8,
+        "peak": 0.3625,
+        "rms": 0.115,
+        "gain": 0.6099,
+        "sha256": "00487a1836a393de55a6f72cd4d0167bb87ebf58e3fe40d65dd11367a394aeb7",
+        "bytes": 15021
+      },
+      {
+        "id": "uh",
+        "file": "assets/huata-voice-uh.mp3",
+        "durationSeconds": 1.225,
+        "sourceSegments": [
+          [
+            0.36,
+            1.69
+          ]
+        ],
+        "trimFromSeconds": 0.045,
+        "trimToSeconds": 1.27,
+        "peak": 0.7398,
+        "rms": 0.115,
+        "gain": 2.2707,
+        "sha256": "410539984aad7313b211527a7e9046224bacf29541cbca34730abf1e589f515f",
+        "bytes": 10605
       },
       {
         "id": "aha",
-        "text": "아하.",
-        "moods": [
-          "calm",
-          "warm",
-          "surprised"
+        "file": "assets/huata-voice-aha.mp3",
+        "durationSeconds": 0.685,
+        "sourceSegments": [
+          [
+            0.34,
+            1.14
+          ]
         ],
-        "pitch": 0.86
-      },
-      {
-        "id": "oh",
-        "text": "오오.",
-        "moods": [
-          "warm",
-          "surprised"
-        ],
-        "pitch": 0.89
-      },
-      {
-        "id": "ho",
-        "text": "호오.",
-        "moods": [
-          "warm",
-          "surprised"
-        ],
-        "pitch": 0.78
-      },
-      {
-        "id": "isee",
-        "text": "그렇군.",
-        "moods": [
-          "calm",
-          "warm"
-        ],
-        "pitch": 0.77
-      },
-      {
-        "id": "understood",
-        "text": "알겠네.",
-        "moods": [
-          "calm",
-          "warm"
-        ],
-        "pitch": 0.8
-      },
-      {
-        "id": "good",
-        "text": "좋네.",
-        "moods": [
-          "warm"
-        ],
-        "pitch": 0.83
-      },
-      {
-        "id": "indeed",
-        "text": "그렇구먼.",
-        "moods": [
-          "calm",
-          "warm"
-        ],
-        "pitch": 0.75
+        "trimFromSeconds": 0.045,
+        "trimToSeconds": 0.73,
+        "peak": 0.686,
+        "rms": 0.115,
+        "gain": 2.2799,
+        "sha256": "c1d22b3bccfe306ee9c902056ff3b7f27d0d4e976a0170c0aa874c11f41e1b4e",
+        "bytes": 6189
       },
       {
         "id": "chuckle",
-        "text": "허허.",
-        "moods": [
-          "warm"
+        "file": "assets/huata-voice-chuckle.mp3",
+        "durationSeconds": 1.295,
+        "sourceSegments": [
+          [
+            0.08,
+            1.45
+          ]
         ],
-        "pitch": 0.79
+        "trimFromSeconds": 0.005,
+        "trimToSeconds": 1.3,
+        "peak": 0.5084,
+        "rms": 0.115,
+        "gain": 4.094,
+        "sha256": "151346f85968eec64fc64c2e44219ee9c817eb2656b75b734a843ad9af70f53e",
+        "bytes": 10989
       }
-    ]
+    ],
+    "sourceArchive": "audio-source/elderly-voice-source.zip",
+    "processing": "Select complete short reactions; trim edge silence; balance RMS; fade boundaries. No pitch shifting or time stretching.",
+    "deviceSpeechFallback": false,
+    "audition": "Generated for the specified elderly character; perceived age has not been confirmed by user for this new set."
   },
   "playback": {
     "gestureStart": true,
