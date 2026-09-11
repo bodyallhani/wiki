@@ -1,0 +1,182 @@
+{
+  "atlas": "assets/huata-expressions.webp",
+  "sourceImage": "assets/huata-doctor.webp",
+  "sourceImageSize": {
+    "width": 1536,
+    "height": 1024
+  },
+  "atlasSize": {
+    "width": 1921,
+    "height": 819
+  },
+  "layout": {
+    "columns": 4,
+    "rows": 2,
+    "tileWidth": 480.25,
+    "tileHeight": 409.5,
+    "padding": 0,
+    "gap": 0,
+    "normalizedTileSize": {
+      "width": 0.25,
+      "height": 0.5
+    },
+    "cssBackgroundSize": "400% 200%"
+  },
+  "recommendedOverlayRectangle": {
+    "x": 635,
+    "y": 271,
+    "width": 225,
+    "height": 200,
+    "status": "Approximate visual starting point; validate composite alignment in game."
+  },
+  "originalSuggestedOverlayRectangle": {
+    "x": 610,
+    "y": 285,
+    "width": 280,
+    "height": 200
+  },
+  "frames": [
+    {
+      "index": 0,
+      "name": "neutral",
+      "expression": "neutral",
+      "blink": false,
+      "column": 0,
+      "row": 0,
+      "sourceRect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 480.25,
+        "height": 409.5
+      }
+    },
+    {
+      "index": 1,
+      "name": "amused",
+      "expression": "amused",
+      "blink": false,
+      "column": 1,
+      "row": 0,
+      "sourceRect": {
+        "x": 480.25,
+        "y": 0.0,
+        "width": 480.25,
+        "height": 409.5
+      }
+    },
+    {
+      "index": 2,
+      "name": "thoughtful",
+      "expression": "thoughtful",
+      "blink": false,
+      "column": 2,
+      "row": 0,
+      "sourceRect": {
+        "x": 960.5,
+        "y": 0.0,
+        "width": 480.25,
+        "height": 409.5
+      }
+    },
+    {
+      "index": 3,
+      "name": "surprised",
+      "expression": "surprised",
+      "blink": false,
+      "column": 3,
+      "row": 0,
+      "sourceRect": {
+        "x": 1440.75,
+        "y": 0.0,
+        "width": 480.25,
+        "height": 409.5
+      }
+    },
+    {
+      "index": 4,
+      "name": "neutral_blink",
+      "expression": "neutral",
+      "blink": true,
+      "column": 0,
+      "row": 1,
+      "sourceRect": {
+        "x": 0.0,
+        "y": 409.5,
+        "width": 480.25,
+        "height": 409.5
+      }
+    },
+    {
+      "index": 5,
+      "name": "amused_blink",
+      "expression": "amused",
+      "blink": true,
+      "column": 1,
+      "row": 1,
+      "sourceRect": {
+        "x": 480.25,
+        "y": 409.5,
+        "width": 480.25,
+        "height": 409.5
+      }
+    },
+    {
+      "index": 6,
+      "name": "thoughtful_blink",
+      "expression": "thoughtful",
+      "blink": true,
+      "column": 2,
+      "row": 1,
+      "sourceRect": {
+        "x": 960.5,
+        "y": 409.5,
+        "width": 480.25,
+        "height": 409.5
+      }
+    },
+    {
+      "index": 7,
+      "name": "surprised_blink",
+      "expression": "surprised",
+      "blink": true,
+      "column": 3,
+      "row": 1,
+      "sourceRect": {
+        "x": 1440.75,
+        "y": 409.5,
+        "width": 480.25,
+        "height": 409.5
+      }
+    }
+  ],
+  "renderRecommendation": "Use fixed geometry for every frame and image-rendering:pixelated. Recommend a gently feathered inner-face mask when compositing with the original scene, preserving its ears, scalp, external hair and full beard silhouette. The source rectangle in the prompt is narrower than the initially proposed rectangle to exclude most outer head features.",
+  "qaNotes": [
+    "All eight frames are present in the correct row-major order.",
+    "All four bottom-row frames show fully closed eyelids.",
+    "Top row has subtle neutral/amused distinction, visibly raised eyebrow in thoughtful, and visibly wider eyes/small open mouth in surprised.",
+    "Identity, nose placement and close-up framing are visually consistent across cells, but exact source-pixel registration is not guaranteed by generative editing. Inspect the composited overlay in the game before delivery.",
+    "Generated atlas dimensions are not divisible by the grid: use normalized/fractional tile coordinates to avoid accumulated cropping error. The generated crop includes somewhat more forehead than requested; recommended overlay position compensates approximately."
+  ],
+  "generationMode": "built-in image_gen",
+  "prompt": "Use case: identity-preserve.\nAsset type: a production pixel-art INNER FACE expression sprite atlas for an existing game, one image, exactly 4 equal columns by 2 equal rows, tightly tiled without margins or gaps. Output target 1880x800 pixels (each cell 470x400), or a similarly proportioned 2.35:1 atlas.\nInput image 1 is the original edit target and identity reference: the elderly Hua Tuo doctor in the existing scene. Preserve this SAME recognizably elderly man's identity, exact slightly tilted head orientation, asymmetry, nose, warm peach/tan skin colors, white feathery eyebrows and white moustache. Preserve the original textured detailed pixel-art technique and hard pixel edges.\nCritical framing: Each of the eight cells is ONLY the same INNER FACE rectangular crop from the original image at original pixel rectangle x=630,y=285,width=235,height=200 in the 1536x1024 original. This is a super tight patch containing both white eyebrows, eyes, nose, mouth, portions of forehead/cheeks, and the upper white moustache. It is NOT a whole head portrait. No scalp or topknot; no complete beard or chin silhouette; no body or ears. Facial parts naturally touch and are cropped by rectangle edges, exactly like copying that fixed source rectangle. Fill every cell edge-to-edge with the cropped face. Do not zoom out to show heads. Keep feature positions and all crop borders identical across all eight frames, for perfectly stable animation.\nExact frame order:\nTOP ROW LEFT TO RIGHT: 1 neutral attentive, softly open eyes like original, closed resting mouth; 2 warmly amused smile, cheeks slightly lifted, visibly smiling mouth while eyes remain open; 3 thoughtfully raise just one eyebrow, open observant eyes, mild contemplative closed mouth; 4 visibly surprised, eyes wider, a small open round mouth.\nBOTTOM ROW LEFT TO RIGHT: 5 exact frame1 with both eyes fully CLOSED in a natural blink; 6 exact frame2 with both eyes fully CLOSED in a natural blink; 7 exact frame3 with both eyes fully CLOSED in a natural blink; 8 exact frame4 with both eyes fully CLOSED in a natural blink, keeping the surprised little open mouth. Each bottom frame matches its top frame's other features. Bottom row MUST have completely closed eyelids with no visible pupils or eye whites.\nOnly animate eyebrows, eyelids, subtle cheeks and mouth. Keep nose, forehead, face position, scale, crop, age, skin lighting and moustache outer boundary constant. Strong clear expressions must read at 235x200 gameplay resolution. Every cell is identical geometry and intended to overlay the SAME source coordinates without jitter. Flat aligned sprite atlas, no perspective.\nAbsolutely no frames, no lines separating cells, no letters, labels or numbering, no titles, no UI, no props, no shadows around cells, no added background, no transparent gaps; just eight edge-to-edge matching tight inner-face crops in the specified 4x2 grid.\n",
+  "requestedOverlayRectangle": {
+    "x": 630,
+    "y": 285,
+    "width": 235,
+    "height": 200
+  },
+  "appliedOverlayRectangle": {
+    "x": 629,
+    "y": 267,
+    "width": 240,
+    "height": 205,
+    "sourceWidth": 1536,
+    "sourceHeight": 1024
+  },
+  "integrationNotes": [
+    "Game sprite frame inspected for neutral face registration with edge feathering; browser UI not tested.",
+    "Geometry remains fixed across all eight frames. Four expressions and corresponding blinks.",
+    "Native dimensions preserved; WebP quality94 format conversion only."
+  ],
+  "productionSHA256": "b33ee2ff2433d9b3961e0fd2d9a56c4d55d7c86337dec5a6630dc48a588d2b65"
+}

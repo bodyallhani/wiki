@@ -1,12 +1,16 @@
 (function () {
   'use strict';
-  const D=window.HuataData, E=window.HuataEngine, $=id=>document.getElementById(id);
+  const D=window.HuataData, E=window.HuataEngine, R=window.HuataReactions, $=id=>document.getElementById(id);
   const game=$('game'), dialog=$('dialog'), reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
-  const assetPaths={room:'assets/huata-room.webp',doctor:'assets/huata-doctor.webp',atlas:'assets/huata-portraits.webp',horse:'assets/huata-horse.webp',logo:'assets/huata-symbol.webp'};
+  const assetPaths={room:'assets/huata-room.webp',doctor:'assets/huata-doctor.webp',expressions:'assets/huata-expressions.webp',atlas:'assets/huata-portraits.webp',horse:'assets/huata-horse.webp',logo:'assets/huata-symbol.webp'};
   const imageCache=new Map(), assetImages={};
   let answers=Array(10).fill(null), index=0, result=null, busy=false, soundOn=false, audioContext=null, generation=0;
   let mutterTimer=0, toastTimer=0, repair=false, repairAt=0, blobURL=null, cardPromise=null, assetsReady=false, dialogSession=0;
-  const repairQuestions=[5,6,8], spoken=new Set();
+  const repairQuestions=[5,6,8];
+  let sceneVisible=true;
+  function actorActive(){return assetsReady&&sceneVisible&&!document.hidden&&!dialog.open&&['intro','question'].includes(game.dataset.state);}
+  const actor=window.HuataActor.create({face:$('doctor-face'),gesture:$('doctor-gesture'),canAnimate:actorActive,reduced:()=>reduced.matches});
+  function syncActor(){const active=actorActive();game.classList.toggle('actor-paused',!active);if(active)actor.start();else actor.stop();}
   const scheduled=new Set();
   function later(fn,ms){const id=setTimeout(()=>{scheduled.delete(id);fn();},ms);scheduled.add(id);return id;}
   function cancelScheduled(){for(const id of scheduled)clearTimeout(id);scheduled.clear();clearTimeout(mutterTimer);}
@@ -29,27 +33,23 @@
     $('start').disabled=true;$('start-label').textContent='거울을 닦는 중…';
     try{
       await Promise.all(Object.entries(assetPaths).map(async([key,path])=>{assetImages[key]=await loadImage(path);}));
-      assetsReady=true;$('start').disabled=false;$('start-label').textContent='손목 맡기기';$('asset-status').textContent='질문 10개 · 약 1분 · 가입 없이';
-    }catch(err){assetsReady=false;$('start').disabled=false;$('start-label').textContent='그림 다시 불러오기';$('asset-status').textContent='그림을 불러오지 못했어요. 한 번 더 눌러주세요.';}
+      assetsReady=true;game.classList.add('has-expressions');syncActor();$('start').disabled=false;$('start-label').textContent='손목 맡기기';$('asset-status').textContent='질문 10개 · 약 1분 · 가입 없이';
+    }catch(err){assetsReady=false;syncActor();$('start').disabled=false;$('start-label').textContent='그림 다시 불러오기';$('asset-status').textContent='그림을 불러오지 못했어요. 한 번 더 눌러주세요.';}
   }
-  function say(text){
-    clearTimeout(mutterTimer);$('mutter').textContent=text;$('mutter').classList.add('visible');mutterTimer=setTimeout(()=>$('mutter').classList.remove('visible'),2400);
+  function say(text,expression='warm',motion='nod'){
+    clearTimeout(mutterTimer);$('mutter').textContent=text;$('mutter').classList.add('visible');
+    actor.react(expression,motion);mutterTimer=setTimeout(()=>$('mutter').classList.remove('visible'),2600);
   }
-  function react(q, code){
-    if(spoken.has(q)||repair)return;
-    const phrases={3:'전생에도 이런 버릇이 있었을까…',6:'어디서 본 듯한데…',8:'이제 조금 보이는군.'};
-    if(q===1){const p={A:'요즘 쉽게 지치는구먼.',B:'움직일 기운은 충분하구먼.',C:'날마다 좀 다르구먼.',D:'대체로 괜찮다니 다행이네.',N:'음… 어디 보자.'};say(p[code]);spoken.add(q);}
-    else if(phrases[q]){say(phrases[q]);spoken.add(q);}
-  }
+  function react(q,code){const response=R.forAnswer(q,code,answers);say(response.line,response.expression,response.gesture);}
   function clearCard(){if(blobURL)URL.revokeObjectURL(blobURL);blobURL=null;cardPromise=null;}
   function reset(){
-    generation++;cancelScheduled();clearCard();answers=Array(10).fill(null);index=0;result=null;repair=false;repairAt=0;busy=false;spoken.clear();
+    generation++;cancelScheduled();clearCard();answers=Array(10).fill(null);index=0;result=null;repair=false;repairAt=0;busy=false;actor.reset();
     game.classList.remove('mirror-awake','face-visible','horse','fog');$('mutter').classList.remove('visible');$('story').open=false;
     $('reveal-caption').textContent='';$('stage').setAttribute('aria-label','내 손목을 짚으며 거울을 들고 있는 화타');
   }
   function start(){
     if(!assetsReady){loadAssets();return;}
-    reset();$('intro').hidden=true;$('result-view').hidden=true;$('question-view').hidden=false;game.dataset.state='question';
+    reset();$('intro').hidden=true;$('result-view').hidden=true;$('question-view').hidden=false;game.dataset.state='question';syncActor();
     renderQuestion();say('손목은 편히 두게. 자, 시작해 볼까?');tone(620,.1);event('game_start');
   }
   function renderQuestion(){
@@ -74,7 +74,7 @@
       if(token!==generation)return;
       if(repair){repairAt++;if(repairAt<repairQuestions.length){index=repairQuestions[repairAt];renderQuestion();}else reveal();}
       else if(index<9){index++;renderQuestion();}else reveal();
-    },170);
+    },index===9?1250:950);
   }
   function setPortrait(person){
     const face=$('reflection');
@@ -82,7 +82,7 @@
     else if(Number.isInteger(person.tile)){face.style.backgroundImage="url('"+assetPaths.atlas+"')";face.style.backgroundSize='300% 400%';face.style.backgroundPosition=((person.tile%3)*50)+'% '+(Math.floor(person.tile/3)*100/3)+'%';}
   }
   function reveal(){
-    result=E.getResult(answers);busy=true;repair=false;$('question-view').hidden=true;$('mutter').classList.remove('visible');clearTimeout(mutterTimer);game.dataset.state='revealing';
+    result=E.getResult(answers);busy=true;repair=false;$('question-view').hidden=true;$('mutter').classList.remove('visible');clearTimeout(mutterTimer);game.dataset.state='revealing';syncActor();
     game.classList.toggle('horse',result.kind==='horse');game.classList.toggle('fog',result.kind==='fog');$('reveal-caption').textContent='“자, 직접 보게.”';
     if(result.kind!=='fog')setPortrait(result);
     const token=generation, quick=reduced.matches, duration=quick?650:2600;
@@ -93,7 +93,7 @@
     later(()=>{if(token===generation)renderResult();},result.kind==='horse'?duration+450:duration);
   }
   function renderResult(){
-    busy=false;game.dataset.state='result';$('intro').hidden=true;$('question-view').hidden=true;$('result-view').hidden=false;
+    busy=false;game.dataset.state='result';syncActor();$('intro').hidden=true;$('question-view').hidden=true;$('result-view').hidden=false;
     game.classList.toggle('fog',result.kind==='fog');game.classList.toggle('horse',result.kind==='horse');
     $('result-name').textContent=result.name;$('analysis').replaceChildren();$('story').open=false;
     if(result.kind==='fog'){
@@ -114,11 +114,11 @@
   }
   function repairAnswers(){
     generation++;cancelScheduled();clearCard();repair=true;repairAt=0;index=repairQuestions[0];
-    game.dataset.state='question';game.classList.remove('mirror-awake','face-visible','fog');$('result-view').hidden=true;$('question-view').hidden=false;$('reveal-caption').textContent='';renderQuestion();
+    game.dataset.state='question';syncActor();game.classList.remove('mirror-awake','face-visible','fog');$('result-view').hidden=true;$('question-view').hidden=false;$('reveal-caption').textContent='';renderQuestion();
     say('떠오르는 것부터 골라보게.');
   }
-  function showDialog(title){dialogSession++;$('dialog-title').textContent=title;$('dialog-body').replaceChildren();if(!dialog.open)dialog.showModal();}
-  function closeDialog(){dialogSession++;dialog.close();}
+  function showDialog(title){dialogSession++;$('dialog-title').textContent=title;$('dialog-body').replaceChildren();if(!dialog.open)dialog.showModal();syncActor();}
+  function closeDialog(){dialogSession++;dialog.close();syncActor();}
   function addText(parent,text,cls){const p=document.createElement('p');p.textContent=text;if(cls)p.className=cls;parent.append(p);return p;}
   function addButton(parent,text,cls,fn){const b=document.createElement('button');b.type='button';b.textContent=text;b.className=cls;b.addEventListener('click',fn);parent.append(b);return b;}
   async function openShare(){
@@ -172,6 +172,11 @@
   $('dialog-close').addEventListener('click',closeDialog);dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog();}});
   document.querySelector('.clinic').addEventListener('click',()=>event('clinic_link_click'));
   try{const f=E.friend(new URLSearchParams(location.search).get('r'));if(f){$('friend-note').textContent='친구의 전생은 '+f.name+'. 당신은?';$('friend-note').hidden=false;event('share_landing',{friendResult:f.id});}}catch(ignore){}
-  window.addEventListener('pagehide',e=>{if(e.persisted)return;cancelScheduled();if(blobURL)URL.revokeObjectURL(blobURL);});
+  document.addEventListener('visibilitychange',syncActor);
+  dialog.addEventListener('close',syncActor);
+  reduced.addEventListener('change',()=>{actor.stop();syncActor();});
+  if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{sceneVisible=entries[0].isIntersecting;syncActor();},{threshold:0});observer.observe($('stage'));}
+  window.addEventListener('pageshow',syncActor);
+  window.addEventListener('pagehide',e=>{actor.stop();if(e.persisted)return;cancelScheduled();if(blobURL)URL.revokeObjectURL(blobURL);});
   loadAssets();
 })();

@@ -15,11 +15,13 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23172d2b'/%3E%3Cellipse cx='32' cy='27' rx='18' ry='21' fill='%23cda565'/%3E%3Cellipse cx='32' cy='27' rx='13' ry='16' fill='%233a5750'/%3E%3Cpath d='M28 46h8v14h-8z' fill='%23cda565'/%3E%3Cpath d='m24 22 10-8' stroke='%23eadab8' stroke-width='3'/%3E%3C/svg%3E">
   <link rel="preload" as="image" href="assets/huata-room.webp">
   <link rel="preload" as="image" href="assets/huata-doctor.webp">
-  <link rel="stylesheet" href="style.css?v=huata1">
+  <link rel="stylesheet" href="style.css?v=huata-reactions1">
   <script src="data.js?v=huata1" defer></script>
   <script src="engine.js?v=huata2" defer></script>
   <script src="card.js?v=huata1" defer></script>
-  <script src="app.js?v=huata1" defer></script>
+  <script src="reactions.js?v=huata-reactions1" defer></script>
+  <script src="actor.js?v=huata-reactions1" defer></script>
+  <script src="app.js?v=huata-reactions1" defer></script>
 </head>
 <body>
   <main class="game" id="game" data-state="intro">
@@ -32,13 +34,18 @@
         <img class="room" src="assets/huata-room.webp" alt="" fetchpriority="high">
         <img class="wall-logo" src="assets/huata-symbol.webp" alt="">
         <img class="doctor doctor-lower" src="assets/huata-doctor.webp" alt="" fetchpriority="high">
-        <img class="doctor doctor-upper" src="assets/huata-doctor.webp" alt="">
+        <div class="doctor-performance" id="doctor-performance">
+          <div class="doctor-gesture" id="doctor-gesture" data-motion="rest">
+            <img class="doctor doctor-upper" src="assets/huata-doctor.webp" alt="">
+            <div class="doctor-face" id="doctor-face"></div>
+          </div>
+        </div>
         <div class="mirror-window" id="mirror-window"><div class="reflection" id="reflection"></div><div class="mirror-veil"></div><div class="mirror-shine"></div></div>
         <div class="light-motes"><i></i><i></i><i></i><i></i></div>
       </div>
       <div class="scene-vignette" aria-hidden="true"></div>
       <div class="speaker-tag"><span>한의사로 돌아온</span><strong>화타</strong></div>
-      <div class="mutter" id="mutter" aria-hidden="true"></div>
+      <div class="mutter" id="mutter" role="status" aria-live="polite" aria-atomic="true"></div>
       <div class="reveal-caption" id="reveal-caption" role="status"></div>
       <span class="mirror-hint" id="mirror-hint">거울 속에, 아직 모르는 나</span>
     </section>
