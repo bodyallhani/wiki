@@ -41,6 +41,7 @@
   function shareURL(result){
     const person=friend(result.id);if(!person)throw new Error('공유할 수 없는 결과입니다.');
     const url=new URL('result/v2/'+person.id+'/',D.url);
+    url.searchParams.set('share','invite1');
     if(person.id!=='horse'){
       const ids=sentenceIds(person,result.analysis);
       if(ids.length){const params=new URLSearchParams({a:ids.join('.')});if(result.faint)params.set('f','1');url.hash=params.toString();}
@@ -61,14 +62,15 @@
   }
   function shareTitle(result){
     const p=previewResult(result.id);
-    return p.id==='horse'?'나는 전생에 하후돈이 타던 말ㅋㅋ 너는 사람이었어?':'나는 전생에 ‘'+p.name+'’ — '+p.title;
+    return p.id==='horse'?'나는 전생에 하후돈이 타던 말?? 너는 사람이었어?':'나는 전생에 '+p.name+'?? 너는 누구였어?';
   }
   function shareText(result){
-    const p=safeResult(result),hook=p.id==='horse'?'너는 사람이었어? 🪞':'너는 누구였어? 🪞';
-    const last=p.name.charCodeAt(p.name.length-1),hasFinal=last>=44032&&last<=55203&&(last-44032)%28!==0;
-    return '나는 전생에 ‘'+p.name+'’'+(p.family==='fun'||p.kind==='horse'?(hasFinal?'이래ㅋㅋ':'래ㅋㅋ'):(hasFinal?'이었대.':'였대.'))+'\n'+p.title+'\n'+(p.faint?'적은 단서로 비친 전생 · ':'')+p.analysis.join(' ')+'\n\n'+hook+' 화타한테 물어봐!\n화타의 전생 진찰소 · © Bodyall';
+    const p=safeResult(result);
+    return shareTitle(p)+'\n'+p.title+'\n'+(p.faint?'적은 단서로 비친 전생 · ':'')+p.analysis.join(' ')+'\n\n🪞 화타한테 물어봐!\n화타의 전생 진찰소 · © Bodyall';
   }
-  function sharePayload(result){return {title:shareTitle(result),text:shareText(result),url:shareURL(result)};}
+  // Some Android share targets prepend title to text. Keep the complete headline in text once.
+  // The bold link preview title is supplied independently by the static page's og:title.
+  function sharePayload(result){return {text:shareText(result),url:shareURL(result)};}
   const api={valid,getResult,rankAnswers,friend,previewResult,sharedResult,shareURL,shareTitle,shareText,sharePayload};
   root.HuataEngineV2=api;root.HuataEngine=api;
   if(typeof module!=='undefined'&&module.exports)module.exports=api;

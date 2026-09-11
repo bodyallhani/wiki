@@ -38,7 +38,8 @@ async function finishAs(id,navigator={}){
  const VEngine=require('./engine-v2.js');
  const shared=[];const native=await finishAs('sun',{share:payload=>{shared.push(payload);return Promise.resolve();}});
  native.buttons.children[0].click();assert.equal(shared.length,1);await native.flush();
- assert.equal(shared[0].title,VEngine.shareTitle(native.result));assert.equal(shared[0].text,VEngine.shareText(native.result));assert.equal(shared[0].url,VEngine.shareURL(native.result));assert(!('files' in shared[0]));
+ assert(!('title' in shared[0]),'Android share targets must not receive a duplicate headline');assert.equal(shared[0].text,VEngine.shareText(native.result));assert.equal(shared[0].url,VEngine.shareURL(native.result));assert(!('files' in shared[0]));
+ assert.equal(shared[0].text.split('나는 전생에 ').length-1,1);
  for(const t of native.result.analysis)assert(shared[0].text.includes(t));assert(shared[0].text.includes(native.result.title));
  const copied=[];const fallback=await finishAs('lu',{clipboard:{writeText:async text=>copied.push(text)}});fallback.buttons.children[0].click();await fallback.flush();assert.equal(copied[0],VEngine.shareText(fallback.result)+'\n'+VEngine.shareURL(fallback.result));
  const cancelled=await finishAs('sun',{share:()=>Promise.reject(Object.assign(new Error('cancel'),{name:'AbortError'})),clipboard:{writeText:()=>{throw new Error('Cancel must not copy');}}});cancelled.buttons.children[0].click();await cancelled.flush();assert(!cancelled.buttons.children[0].disabled);

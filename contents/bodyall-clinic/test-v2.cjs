@@ -4,7 +4,7 @@ const D=require('./data-v2.js'),E=require('./engine-v2.js'),legacyD=require('./d
 const A=require('./analytics.js'),Stats=require('./stats/report.js'),{boot}=require('./test-startup.cjs');
 function check(a){
  const r=E.getResult(a);assert.deepEqual(r,E.getResult(a));assert.notEqual(r.kind,'fog');
- const u=new URL(E.shareURL(r));assert.equal(u.pathname,'/contents/bodyall-clinic/result/v2/'+r.id+'/');assert.equal(u.search,'');
+ const u=new URL(E.shareURL(r));assert.equal(u.pathname,'/contents/bodyall-clinic/result/v2/'+r.id+'/');assert.equal(u.search,'?share=invite1');
  const read=E.sharedResult(r.id,u.hash);assert.deepEqual(read.analysis,r.analysis);assert.equal(read.faint,r.faint);
  if(r.kind==='person'){assert(r.evidence.length>=1&&r.evidence.length<=2);assert(r.evidence.every(e=>a[e.question]===e.code&&D.analysis[e.question][e.code.charCodeAt(0)-65]===e.text));}
  assert(E.shareText(r).includes(r.name));assert(E.shareText(r).includes(r.title));assert(r.analysis.every(t=>E.shareText(r).includes(t)));

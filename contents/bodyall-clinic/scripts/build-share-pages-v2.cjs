@@ -2,22 +2,25 @@
 // Versioned recipient pages preserve already-shared v1 URLs and sentence dictionaries.
 const fs=require('node:fs'),path=require('node:path');
 const D=require('../data-v2.js'),E=require('../engine-v2.js');
-let canvas;try{canvas=require('@napi-rs/canvas');}catch(error){canvas=require(path.join(process.env.CODEX_PRIMARY_RUNTIME_NODE_MODULES,'@napi-rs/canvas'));}
+const htmlOnly=process.argv.includes('--html-only');
+let canvas;if(!htmlOnly){try{canvas=require('@napi-rs/canvas');}catch(error){canvas=require(path.join(process.env.CODEX_PRIMARY_RUNTIME_NODE_MODULES,'@napi-rs/canvas'));}}
 const ROOT=path.resolve(__dirname,'..');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 (async()=>{
- const atlas=await canvas.loadImage(path.join(ROOT,'assets/huata-portraits.webp'));
- const horse=await canvas.loadImage(path.join(ROOT,'assets/huata-horse.webp'));
- const tile=atlas.width/3,records=[];
- if(!Number.isInteger(tile)||atlas.height!==tile*4)throw Error('Unexpected portrait atlas');
+ const atlas=htmlOnly?null:await canvas.loadImage(path.join(ROOT,'assets/huata-portraits.webp'));
+ const horse=htmlOnly?null:await canvas.loadImage(path.join(ROOT,'assets/huata-horse.webp'));
+ const tile=atlas?.width/3,records=[];
+ if(!htmlOnly&&(!Number.isInteger(tile)||atlas.height!==tile*4))throw Error('Unexpected portrait atlas');
  for(const person of [...D.people,D.horse]){
   const r=E.previewResult(person.id),directory=path.join(ROOT,'result','v2',r.id);fs.mkdirSync(directory,{recursive:true});
+  if(!htmlOnly){
   const portrait=canvas.createCanvas(512,512),ctx=portrait.getContext('2d');ctx.imageSmoothingEnabled=false;
   if(r.id==='horse')ctx.drawImage(horse,0,0,horse.width,horse.height,0,0,512,512);
   else if(r.portrait){const source=await canvas.loadImage(path.join(ROOT,r.portrait));ctx.drawImage(source,0,0,source.width,source.height,0,0,512,512);}
   else ctx.drawImage(atlas,(r.tile%3)*tile,Math.floor(r.tile/3)*tile,tile,tile,0,0,512,512);
   fs.writeFileSync(path.join(directory,'portrait.jpg'),portrait.toBuffer('image/jpeg',92));
-  const url=E.shareURL({id:r.id}),title=E.shareTitle(r),description=r.analysis.join(' ')+' '+(r.kind==='horse'?'너는 사람이었어?':'너는 누구였어?')+' 화타에게 물어봐!',image=new URL('portrait.jpg',url).href;
+  }else if(!fs.existsSync(path.join(directory,'portrait.jpg')))throw Error('Missing existing portrait: '+r.id);
+  const url=E.shareURL({id:r.id}),title=E.shareTitle(r),description=r.title+' · '+r.analysis.join(' ')+' 화타에게 물어봐!',image=new URL('portrait.jpg',url).href;
   const start=new URL(D.url);start.searchParams.set('r',r.id);start.searchParams.set('from','friend');start.searchParams.set('v','huata-v2');
   const html=`<!doctype html>
 <html lang="ko"><head>
@@ -31,7 +34,7 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(description)}"><meta name="twitter:image" content="${esc(image)}">
  <link rel="stylesheet" href="../../../shared-result.css?v=huata-v2"><link rel="stylesheet" href="../../../analytics.css?v=huata-stats1">
  <script src="../../../analytics-config.js?v=huata-v2" defer></script><script src="../../../analytics.js?v=huata-v2" defer></script>
- <script src="../../../data-v2.js?v=huata-v2" defer></script><script src="../../../engine-v2.js?v=huata-v2" defer></script><script src="../../../shared-result-v2.js?v=huata-v2" defer></script>
+ <script src="../../../data-v2.js?v=huata-v2" defer></script><script src="../../../engine-v2.js?v=huata-v2-invite1" defer></script><script src="../../../shared-result-v2.js?v=huata-v2" defer></script>
 </head><body data-result-id="${esc(r.id)}" data-game-version="huata-v2">
  <main class="shared-result"><header class="shared-header">화타의 전생 진찰소</header>
  <section class="shared-main" aria-label="친구가 공유한 전생 결과">
