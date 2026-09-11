@@ -16,13 +16,16 @@
   <link rel="preload" as="image" href="assets/huata-room.webp">
   <link rel="preload" as="image" href="assets/huata-doctor.webp">
   <link rel="stylesheet" href="style.css?v=huata-result-share2">
+  <link rel="stylesheet" href="analytics.css?v=huata-stats1">
+  <script src="analytics-config.js?v=huata-stats1" defer></script>
+  <script src="analytics.js?v=huata-stats1" defer></script>
   <script src="data.js?v=huata-bodyall1" defer></script>
   <script src="engine.js?v=huata-bodyall1" defer></script>
   <script src="card.js?v=huata-bodyall1" defer></script>
   <script src="reactions.js?v=huata-reactions1" defer></script>
   <script src="actor.js?v=huata-loadingfix1" defer></script>
   <script src="sound.js?v=huata-approved1" defer></script>
-  <script src="app.js?v=huata-bodyall1" defer></script>
+  <script src="app.js?v=huata-stats1" defer></script>
 </head>
 <body>
   <main class="game" id="game" data-state="intro">
@@ -75,7 +78,7 @@
         <details class="story" id="story"><summary>이 인물이 궁금하다면</summary><p id="story-copy"></p><a id="story-source" target="_blank" rel="noopener" hreflang="ko">인물 알아보기 (한국어) ↗</a></details>
       </div>
     </section>
-    <footer class="footer"><a href="https://wiki.body-all.co.kr/SART.html" target="_blank" rel="noopener" class="clinic"><img src="assets/huata-symbol.webp" alt="" width="24" height="22"><span>© Bodyall</span></a><p>삼국지연의를 바탕으로 만든 재미용 테스트입니다.</p></footer>
+    <footer class="footer"><a href="https://wiki.body-all.co.kr/SART.html" target="_blank" rel="noopener" class="clinic"><img src="assets/huata-symbol.webp" alt="" width="24" height="22"><span>© Bodyall</span></a><p>삼국지연의를 바탕으로 만든 재미용 테스트입니다.</p><div class="analytics-choice" id="analytics-choice" hidden><p id="analytics-status"></p><button id="analytics-allow" type="button">통계 참여</button><button id="analytics-deny" type="button">건너뛰기</button><a href="privacy.html" target="_blank" rel="noopener">수집 안내</a></div></footer>
   </main>
   <dialog id="dialog"><div class="dialog-heading"><h2 id="dialog-title"></h2><button id="dialog-close" aria-label="창 닫기">×</button></div><div id="dialog-body"></div></dialog>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
