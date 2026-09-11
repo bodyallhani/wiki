@@ -17,13 +17,13 @@ for(let n=0;n<4**7;n++){
  minEvidence=Math.min(minEvidence,r.analysis.length);
  assert(r.evidence.every(e=>answers[e.question]===e.code));assert(r.analysis.every(text=>r.evidence.some(e=>e.text===text)));
  const changed=E.getResult(['B','A','C',...selected]);assert.equal(changed.id,r.id);assert.deepEqual(changed.analysis,r.analysis);
- const url=new URL(E.shareURL(r));assert.deepEqual([...url.searchParams.keys()],['r','from','v']);assert.equal(url.searchParams.get('r'),r.id);
+ const url=new URL(E.shareURL(r));assert.equal(url.pathname,'/contents/bodyall-clinic/result/'+r.id+'/');assert.equal(url.search,'');assert(/^#a=\d+(\.\d+)?$/.test(url.hash));assert.deepEqual(E.sharedResult(r.id,url.hash).analysis,r.analysis);
 }
 assert.equal(minEvidence,2);Object.values(distribution).forEach(count=>assert(count>0));
 const faint=E.getResult(['A','D','E','A','N','N','N','N','N','N']);assert(faint.faint);assert.equal(faint.analysis.length,1);
 assert.equal(E.friend('<script>'),null);assert.throws(()=>E.getResult([]));
-assert(E.shareText(E.friend('cao')).includes('조조였대'));
-assert(E.shareText(E.friend('zhuge')).includes('제갈량이었대'));
+assert(E.shareText(E.friend('cao')).includes('나는 전생에 ‘조조’!'));
+assert(E.shareText(E.friend('zhuge')).includes('나는 전생에 ‘제갈량’!'));
 const source=fs.readFileSync(path.join(__dirname,'app.js'),'utf8');
 assert(!source.includes('localStorage'));assert(!source.includes('fetch('));
 const html=fs.readFileSync(path.join(__dirname,'index.html'),'utf8');

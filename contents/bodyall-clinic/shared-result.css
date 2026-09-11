@@ -1,0 +1,16 @@
+:root{color-scheme:light;font-family:'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;font-size:16px;color:#263f34;background:#17372f}
+*{box-sizing:border-box}body{margin:0;min-height:100svh;padding:24px 16px;background:radial-gradient(ellipse at 50% 15%,#355249,#17372f 75%)}
+.shared-result{max-width:600px;margin:0 auto;border:1px solid #c3a267;box-shadow:0 0 0 4px #142b23,0 16px 60px #071a184d;background:#f1ebdd;text-align:center}
+.shared-header{margin:0;padding:15px 20px;background:#243e32;color:#e9dab8;font-size:.9375rem;letter-spacing:.04em}
+.shared-main{padding:26px 24px 28px}.shared-eyebrow{margin:0 0 17px;color:#607052;font-size:.875rem;font-weight:700}
+.shared-portrait{display:block;width:220px;max-width:65vw;aspect-ratio:1;margin:0 auto 18px;border:4px solid #c3a267;border-radius:50%;background:#063c43;image-rendering:pixelated;object-fit:cover}
+h1{margin:0 0 9px;font-family:'Batang',serif;font-size:2.35rem;line-height:1.35;color:#284c3c;word-break:keep-all}
+.shared-alias{margin:0;color:#58664c;font-weight:700;line-height:1.6;word-break:keep-all}
+.shared-analysis{padding:15px 4px;margin:18px auto 20px;border-block:1px solid #c4c7ad;max-width:440px}
+.shared-analysis p{margin:0;line-height:1.8;word-break:keep-all}
+.shared-hook{margin:0 0 15px;font-size:1.0625rem;font-weight:700;color:#354f3d}
+.shared-start{display:flex;align-items:center;justify-content:center;min-height:54px;max-width:360px;margin:0 auto;padding:13px 20px;background:#2f5343;color:#fff0cf;border:1px solid #18352c;box-shadow:0 3px 0 #18372b;border-radius:3px;text-decoration:none;font-weight:700;font-size:1.0625rem}
+.shared-start:hover{background:#3d6450}.shared-start:focus-visible,.shared-clinic:focus-visible{outline:3px solid #c99139;outline-offset:5px}
+.shared-meta{margin:13px 0 0;font-size:.875rem;color:#69745e}
+.shared-footer{padding:17px 16px;background:#e3e3d3;border-top:1px solid #cec9b7}.shared-clinic{display:inline-flex;gap:9px;align-items:center;justify-content:center;color:#384d3b;text-decoration:none;font-weight:700;font-size:.9375rem}.shared-clinic img{width:25px;height:25px;object-fit:contain}.shared-footer p{margin:10px 0 0;font-size:.8125rem;line-height:1.6;color:#66725c}
+@media(max-width:420px){body{padding:12px 9px}.shared-main{padding:23px 18px}.shared-portrait{width:190px}h1{font-size:2rem}.shared-alias{font-size:.9375rem}}

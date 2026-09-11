@@ -25,14 +25,39 @@
     return {...picked.person, kind:'person', faint:count<=2, analysis:evidence.map(e => e.text), evidence};
   }
   function friend(id) { return D.people.find(p => p.id === id) || (id === 'horse' ? D.horse : null); }
+  function previewResult(id) {
+    const person=friend(id);if(!person)throw new Error('공유할 수 없는 결과입니다.');
+    const analysis=id==='horse' ? ['무슨 질문이 와도 대답은 한결같아요.', '정체는 흐려도 일관성은 확실해요.'] : D.priority.slice(0,2).map(i=>D.analysis[i][person.pattern.charCodeAt(i)-65]);
+    return {...person,kind:id==='horse'?'horse':'person',analysis};
+  }
   function shareURL(result) {
     if (!friend(result.id)) throw new Error('공유할 수 없는 결과입니다.');
-    const url = new URL(D.url); url.searchParams.set('r', result.id); url.searchParams.set('from','friend'); url.searchParams.set('v','1'); return url.href;
+    const url=new URL('result/'+result.id+'/',D.url),person=previewResult(result.id);
+    // Only public personality sentence IDs go into the fragment; never raw answers or health data.
+    if(person.kind==='person'&&Array.isArray(result.analysis)){
+      const ids=result.analysis.slice(0,2).map(text=>D.analysis.flat().indexOf(text)).filter(id=>id>=0&&person.pattern.charCodeAt(Math.floor(id/4))-65===id%4);
+      if(ids.length)url.hash='a='+[...new Set(ids)].join('.');
+    }
+    return url.href;
+  }
+  function sharedResult(id,fragment='') {
+    const result=previewResult(id);if(result.kind!=='person')return result;
+    const value=new URLSearchParams(fragment.replace(/^#/, '')).get('a');
+    if(!value||!/^\d{1,2}(\.\d{1,2})?$/.test(value))return result;
+    const ids=value.split('.').map(Number);
+    if(new Set(ids).size!==ids.length||ids.some(n=>n>27||result.pattern.charCodeAt(Math.floor(n/4))-65!==n%4))return result;
+    return {...result,analysis:ids.map(n=>D.analysis[Math.floor(n/4)][n%4])};
+  }
+  function shareTitle(result) {
+    const person=friend(result.id);if(!person)throw new Error('공유할 수 없는 결과입니다.');
+    return person.id==='horse'?'나는 전생에 이름 모를 말…ㅋㅋ 너는 누구였어?':'나는 전생에 ‘'+person.name+'’! 너는 누구였어?';
   }
   function shareText(result) {
-    const last=result.name.charCodeAt(result.name.length-1),past=(last-0xAC00)%28===0?'였대':'이었대';
-    return (result.id === 'horse' ? '너는 뭐 나왔냐. 나는 말 나옴ㅋㅋ' : '나 전생에 '+result.name+past+'ㅋㅋ 너는 누구냐')+'\n화타의 전생 진찰소 · 바디올한의원';
+    const person=previewResult(result.id),analysis=Array.isArray(result.analysis)&&result.analysis.length?result.analysis:person.analysis;
+    const opening=person.id==='horse'?'나는 전생에 ‘'+person.name+'’…ㅋㅋ':'나는 전생에 ‘'+person.name+'’!';
+    return opening+'\n'+person.title+'\n'+analysis.slice(0,2).join(' ')+'\n\n너는 누구였어? 화타한테 물어봐!\n화타의 전생 진찰소 · 바디올한의원';
   }
-  const api = {getResult, valid, friend, shareURL, shareText}; root.HuataEngine=api;
+  function sharePayload(result) { return {title:shareTitle(result),text:shareText(result),url:shareURL(result)}; }
+  const api = {getResult, valid, friend, previewResult, sharedResult, shareURL, shareTitle, shareText, sharePayload}; root.HuataEngine=api;
   if (typeof module !== 'undefined' && module.exports) module.exports=api;
 })(typeof globalThis !== 'undefined' ? globalThis : window);

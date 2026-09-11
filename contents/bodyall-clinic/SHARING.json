@@ -1,0 +1,125 @@
+{
+  "version": 2,
+  "mode": "static result-specific Open Graph pages + native text/link share",
+  "personalAnalysis": "Up to two public personality sentence IDs in the URL fragment, decoded on the result page. No raw answers or health data.",
+  "kakao": "Uses the OS share sheet or copy/paste. Kakao SDK direct-send is not configured.",
+  "records": [
+    {
+      "id": "zhuge",
+      "name": "제갈량",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/zhuge/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/zhuge/portrait.jpg",
+      "title": "나는 전생에 ‘제갈량’! 너는 누구였어?",
+      "description": "머릿속에 지도가 펼쳐진 책사 · 직접 챙겨야 마음이 놓여요. 충분히 따져본 뒤 결정을 내려요.",
+      "portraitSource": "assets/huata-portraits.webp#tile=0"
+    },
+    {
+      "id": "cao",
+      "name": "조조",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/cao/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/cao/portrait.jpg",
+      "title": "나는 전생에 ‘조조’! 너는 누구였어?",
+      "description": "판을 읽고 먼저 움직이는 승부사 · 믿는 사람에게 맡길 줄 알아요. 마음이 서면 바로 움직여요.",
+      "portraitSource": "assets/huata-portraits.webp#tile=1"
+    },
+    {
+      "id": "liu",
+      "name": "유비",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/liu/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/liu/portrait.jpg",
+      "title": "나는 전생에 ‘유비’! 너는 누구였어?",
+      "description": "사람을 모으는 군주 · 함께하면서 힘을 보태요. 주변 의견을 듣고 결정해요.",
+      "portraitSource": "assets/huata-portraits.webp#tile=2"
+    },
+    {
+      "id": "guan",
+      "name": "관우",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/guan/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/guan/portrait.jpg",
+      "title": "나는 전생에 ‘관우’! 너는 누구였어?",
+      "description": "한 번 한 약속은 지키는 장수 · 맡은 일은 묵묵히 끝내요. 익숙한 원칙을 기준으로 삼아요.",
+      "portraitSource": "assets/huata-portraits.webp#tile=3"
+    },
+    {
+      "id": "zhang",
+      "name": "장비",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/zhang/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/zhang/portrait.jpg",
+      "title": "나는 전생에 ‘장비’! 너는 누구였어?",
+      "description": "속마음이 먼저 튀어나오는 호걸 · 함께하면서 힘을 보태요. 마음이 서면 바로 움직여요.",
+      "portraitSource": "assets/huata-portraits.webp#tile=4"
+    },
+    {
+      "id": "zhao",
+      "name": "조운",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/zhao/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/zhao/portrait.jpg",
+      "title": "나는 전생에 ‘조운’! 너는 누구였어?",
+      "description": "위기에서 더 선명해지는 해결사 · 맡은 일은 묵묵히 끝내요. 익숙한 원칙을 기준으로 삼아요.",
+      "portraitSource": "assets/huata-portraits.webp#tile=5"
+    },
+    {
+      "id": "sun",
+      "name": "손권",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/sun/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/sun/portrait.jpg",
+      "title": "나는 전생에 ‘손권’! 너는 누구였어?",
+      "description": "혼자보다 함께 강해지는 군주 · 믿는 사람에게 맡길 줄 알아요. 주변 의견을 듣고 결정해요.",
+      "portraitSource": "assets/huata-portraits.webp#tile=6"
+    },
+    {
+      "id": "zhou",
+      "name": "주유",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/zhou/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/zhou/portrait.jpg",
+      "title": "나는 전생에 ‘주유’! 너는 누구였어?",
+      "description": "잘하는데, 더 잘하고 싶은 지휘관 · 직접 챙겨야 마음이 놓여요. 충분히 따져본 뒤 결정을 내려요.",
+      "portraitSource": "assets/huata-portraits.webp#tile=7"
+    },
+    {
+      "id": "sima",
+      "name": "사마의",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/sima/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/sima/portrait.jpg",
+      "title": "나는 전생에 ‘사마의’! 너는 누구였어?",
+      "description": "마지막 수를 남겨두는 전략가 · 직접 챙겨야 마음이 놓여요. 충분히 따져본 뒤 결정을 내려요.",
+      "portraitSource": "assets/huata-portraits.webp#tile=8"
+    },
+    {
+      "id": "huang",
+      "name": "황충",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/huang/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/huang/portrait.jpg",
+      "title": "나는 전생에 ‘황충’! 너는 누구였어?",
+      "description": "실력으로 대답하는 노장 · 맡은 일은 묵묵히 끝내요. 익숙한 원칙을 기준으로 삼아요.",
+      "portraitSource": "assets/huata-portraits.webp#tile=9"
+    },
+    {
+      "id": "lu",
+      "name": "여포",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/lu/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/lu/portrait.jpg",
+      "title": "나는 전생에 ‘여포’! 너는 누구였어?",
+      "description": "말보다 실전이 빠른 무장 · 직접 챙겨야 마음이 놓여요. 마음이 서면 바로 움직여요.",
+      "portraitSource": "assets/huata-portraits.webp#tile=10"
+    },
+    {
+      "id": "diao",
+      "name": "초선",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/diao/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/diao/portrait.jpg",
+      "title": "나는 전생에 ‘초선’! 너는 누구였어?",
+      "description": "사람의 마음으로 판을 바꾸는 인물 · 함께하면서 힘을 보태요. 주변 의견을 듣고 결정해요.",
+      "portraitSource": "assets/huata-portraits.webp#tile=11"
+    },
+    {
+      "id": "horse",
+      "name": "하후돈의 이름 모를 말",
+      "url": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/horse/",
+      "image": "https://wiki.body-all.co.kr/contents/bodyall-clinic/result/horse/portrait.jpg",
+      "title": "나는 전생에 이름 모를 말…ㅋㅋ 너는 누구였어?",
+      "description": "주인 이름은 아는데, 내 이름은 모른다. · 무슨 질문이 와도 대답은 한결같아요. 정체는 흐려도 일관성은 확실해요.",
+      "portraitSource": "assets/huata-horse.webp"
+    }
+  ]
+}

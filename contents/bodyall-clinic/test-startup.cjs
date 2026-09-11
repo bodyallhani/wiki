@@ -13,11 +13,12 @@ class Element{
  append(...n){this.children.push(...n);}
  replaceChildren(...n){this.children=[...n];}
  querySelectorAll(tag){return this.children.filter(x=>x.tagName===tag);}
- focus(){} scrollIntoView(){} remove(){}
+ querySelector(tag){return this.children.find(x=>x.tagName===tag)??null;}
+ focus(){} select(){} scrollIntoView(){} remove(){}
  getBoundingClientRect(){return {top:0,left:0,right:800,bottom:500};}
  showModal(){this.open=true;}close(){this.open=false;this.fire('close');}
 }
-async function boot({missingPortraitModule=false,failingActor=false}={}){
+async function boot({missingPortraitModule=false,failingActor=false,shareNavigator={},locationSearch=''}={}){
  const ids=new Map([...html.matchAll(/\bid="([^"]+)"/g)].map(m=>[m[1],new Element()]));
  ids.get('game').dataset.state='intro';ids.get('start').disabled=true;ids.get('start-label').textContent='거울을 닦는 중…';
  const other=new Map(),body=new Element('body');
@@ -25,7 +26,7 @@ async function boot({missingPortraitModule=false,failingActor=false}={}){
  let now=0,serial=0;const timers=new Map(),warnings=[];
  const clock={schedule(fn,delay){const id=++serial;timers.set(id,{at:now+delay,fn});return id;},cancel(id){timers.delete(id);}};
  class Image{set src(value){this._src=value;queueMicrotask(()=>this.onload?.());}}
- const context=vm.createContext({document,Image,URL,URLSearchParams,location:{search:''},navigator:{},innerHeight:900,CustomEvent:class{},console:{warn:(...a)=>warnings.push(a),log(){}},clock});
+ const context=vm.createContext({document,Image,URL,URLSearchParams,location:{search:locationSearch},navigator:shareNavigator,innerHeight:900,CustomEvent:class{},console:{warn:(...a)=>warnings.push(a),log(){}},clock});
  vm.runInContext(`
   window=globalThis;
   function setTimeout(fn,delay){'use strict';if(this!==undefined&&this!==globalThis)throw new TypeError('Illegal invocation');return clock.schedule(fn,delay);}
@@ -43,9 +44,11 @@ async function boot({missingPortraitModule=false,failingActor=false}={}){
  assert.equal(ids.get('start-label').textContent,'손목 맡기기');assert.equal(ids.get('start').disabled,false);
  ids.get('start').click();assert.equal(ids.get('game').dataset.state,'question');assert.equal(ids.get('question').textContent,'성별은 어떻게 되나?');
  const answers=ids.get('answers');assert.equal(answers.children.length,4);answers.children[0].click();assert(answers.children.every(b=>b.disabled));
- const end=now+950;
- for(;;){const next=[...timers].filter(([,v])=>v.at<=end).sort((a,b)=>a[1].at-b[1].at)[0];if(!next)break;timers.delete(next[0]);now=next[1].at;next[1].fn();await flush();}now=end;
+ async function advance(ms){const end=now+ms;for(;;){const next=[...timers].filter(([,v])=>v.at<=end).sort((a,b)=>a[1].at-b[1].at)[0];if(!next)break;timers.delete(next[0]);now=next[1].at;next[1].fn();await flush();}now=end;}
+ await advance(950);
  assert.equal(ids.get('question').textContent,'요즘 몸 상태는 어떤가?');assert.equal(answers.children.length,5);
  if(failingActor)assert.equal(warnings.length,1);else assert.equal(warnings.length,0);
+ return {ids,context,flush,advance,document};
 }
-(async()=>{await boot();await boot({failingActor:true});await boot({missingPortraitModule:true});console.log(JSON.stringify({defaultWindowTimers:true,startButtonUnlocks:true,firstAnswerAdvances:true,portraitFailureDoesNotBlockPlay:true,missingPortraitModuleDoesNotBlockPlay:true,browserTested:false},null,2));})().catch(error=>{console.error(error);process.exitCode=1;});
+if(require.main===module)(async()=>{await boot();await boot({failingActor:true});await boot({missingPortraitModule:true});console.log(JSON.stringify({defaultWindowTimers:true,startButtonUnlocks:true,firstAnswerAdvances:true,portraitFailureDoesNotBlockPlay:true,missingPortraitModuleDoesNotBlockPlay:true,browserTested:false},null,2));})().catch(error=>{console.error(error);process.exitCode=1;});
+module.exports={boot};

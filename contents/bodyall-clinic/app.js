@@ -109,7 +109,7 @@
     }else{
       $('result-eyebrow').textContent=result.faint?'희미하게 보이는 전생':'거울에 비친 당신의 전생';$('result-title').textContent=result.title;
       result.analysis.forEach(text=>{const p=document.createElement('p');p.textContent=text;$('analysis').append(p);});
-      $('result-quote').textContent='“'+result.quote+'”';$('share').textContent='친구에게 공유하기 ↗';$('story').hidden=false;$('story-copy').textContent=result.story;
+      $('result-quote').textContent='“'+result.quote+'”';$('share').textContent='내 결과 공유하기 ↗';$('story').hidden=false;$('story-copy').textContent=result.story;
       $('story-source').hidden=!result.chapter;if(result.chapter)$('story-source').href='https://zh.wikisource.org/wiki/三國演義/第'+result.chapter+'回';
       const snapshot=result;cardPromise=makeCard(snapshot).catch(()=>null);
     }
@@ -130,29 +130,28 @@
   function addButton(parent,text,cls,fn){const b=document.createElement('button');b.type='button';b.textContent=text;b.className=cls;b.addEventListener('click',fn);parent.append(b);return b;}
   async function openShare(){
     if(!result)return;if(result.kind==='fog'){repairAnswers();return;}
-    const snapshot=result,token=generation;showDialog('나의 전생, 친구에게');const session=dialogSession,body=$('dialog-body');const pending=addText(body,'공유 카드를 펼치는 중…','share-help');
-    if(!cardPromise)cardPromise=makeCard(snapshot).catch(()=>null);
-    const card=await cardPromise;if(token!==generation||session!==dialogSession||!dialog.open)return;pending.remove();
-    if(card){if(blobURL)URL.revokeObjectURL(blobURL);blobURL=URL.createObjectURL(card.blob);const img=document.createElement('img');img.className='card-image';img.src=blobURL;img.alt=snapshot.name+' · '+snapshot.title+' · '+snapshot.analysis.join(' ')+' · 바디올한의원';body.append(img);}
-    else addText(body,'카드를 그리지 못했어요. 링크로 전생을 공유할 수 있어요.','share-help');
+    const snapshot=result,token=generation;showDialog('내 전생은 '+snapshot.name+'!');const session=dialogSession,body=$('dialog-body');
+    addText(body,E.shareText(snapshot),'share-message');
     const buttons=document.createElement('div');buttons.className='share-buttons';body.append(buttons);
-    const share=addButton(buttons,'친구에게 공유하기 ↗','primary',async()=>{
-      const payload={title:'화타의 전생 진찰소',text:E.shareText(snapshot),url:E.shareURL(snapshot)};
-      if(card&&typeof File==='function'){
-        const file=new File([card.blob],'bodyall-'+snapshot.id+'.png',{type:'image/png'});
-        try{if(navigator.canShare&&navigator.canShare({files:[file]}))payload.files=[file];}catch(ignore){}
-      }
+    const share=addButton(buttons,'이 결과 친구에게 보내기 ↗','primary',async()=>{
+      // Keep the result URL in the main share. Some apps discard text/URLs when a file is attached.
+      const payload=E.sharePayload(snapshot);
       if(!navigator.share){await copyLink(snapshot,body);return;}
       share.disabled=true;
-      try{await navigator.share(payload);event('share_api_resolved',{result:snapshot.id,withImage:!!payload.files});}
-      catch(error){if(error.name!=='AbortError')announce('아래의 이미지 저장이나 링크 복사를 이용해주세요.');}
+      try{await navigator.share(payload);event('share_api_resolved',{result:snapshot.id,withImage:false});}
+      catch(error){if(error.name!=='AbortError')announce('공유 창을 열지 못했어요. 결과 문구와 링크를 복사해서 보내주세요.');}
       finally{share.disabled=false;}
     });
     const save=addButton(buttons,'이미지 저장','secondary',()=>{
       if(!blobURL)return;const a=document.createElement('a');a.href=blobURL;a.download='바디올_전생_'+snapshot.name.replaceAll(' ','_')+'.png';document.body.append(a);a.click();a.remove();event('result_card_export',{result:snapshot.id});announce('이미지를 열었다면 길게 눌러 저장할 수도 있어요.');
-    });save.disabled=!card;
-    addButton(buttons,'링크 복사','secondary',()=>copyLink(snapshot,body));
-    addText(body,'이미지에는 별칭과 짧은 성향 분석이 함께 담겨요. 저장한 뒤 친구에게 보내보세요.','share-help');event('share_preview_open',{result:snapshot.id});
+    });save.disabled=true;
+    addButton(buttons,'결과 문구·링크 복사','secondary',()=>copyLink(snapshot,body));
+    addText(body,navigator.share?'공유 창에서 카카오톡 등 원하는 앱을 선택하세요.':'결과 문구와 링크를 복사해 카카오톡에 붙여넣으세요.','share-help');
+    const pending=addText(body,'결과 이미지를 준비하는 중…','share-help');event('share_preview_open',{result:snapshot.id});
+    if(!cardPromise)cardPromise=makeCard(snapshot).catch(()=>null);
+    const card=await cardPromise;if(token!==generation||session!==dialogSession||!dialog.open)return;pending.remove();
+    if(card){if(blobURL)URL.revokeObjectURL(blobURL);blobURL=URL.createObjectURL(card.blob);const img=document.createElement('img');img.className='card-image';img.src=blobURL;img.alt=snapshot.name+' · '+snapshot.title+' · '+snapshot.analysis.join(' ')+' · 바디올한의원';body.append(img);save.disabled=false;}
+    else addText(body,'이미지를 준비하지 못했지만, 위 버튼으로 결과를 보낼 수 있어요.','share-help');
   }
   async function copyLink(snapshot,body){
     const text=E.shareText(snapshot)+'\n'+E.shareURL(snapshot);
@@ -173,7 +172,7 @@
   $('help').addEventListener('click',()=>{showDialog('화타의 전생 진찰소');const body=$('dialog-body');addText(body,'앞에 앉은 사람은 한의사로 돌아온 화타. 손목을 맡긴 사람은 지금의 나예요. 거울에는 내 삼국지 전생이 나타나요.');addText(body,'열 가지 물음에 가까운 답을 골라보세요. 고민되면 “잘 모르겠어요”도 괜찮아요.');addText(body,'삼국지연의의 인물을 현대적으로 해석한 재미용 테스트입니다. 실제 진단이나 검증된 심리검사가 아닙니다.','fine');addText(body,'답변은 이 화면 안에서만 계산해요. 공유 카드에는 인물과 짧은 성향 분석이 담기며, 성별·몸 상태·불편한 부위는 공유하지 않아요.','fine');});
   $('dialog-close').addEventListener('click',closeDialog);dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog();}});
   document.querySelector('.clinic').addEventListener('click',()=>event('clinic_link_click'));
-  try{const f=E.friend(new URLSearchParams(location.search).get('r'));if(f){$('friend-note').textContent='친구의 전생은 '+f.name+'. 당신은?';$('friend-note').hidden=false;event('share_landing',{friendResult:f.id});}}catch(ignore){}
+  try{const f=E.friend(new URLSearchParams(location.search).get('r'));if(f){$('friend-note').textContent='친구는 '+f.name+' — '+f.title+'. 이번엔 내 전생을 알아볼 차례!';$('friend-note').hidden=false;event('share_landing',{friendResult:f.id});}}catch(ignore){}
   document.addEventListener('visibilitychange',()=>{syncActor();playSound(document.hidden?'pause':'resume');});
   dialog.addEventListener('close',syncActor);
   if(reduced.addEventListener)reduced.addEventListener('change',()=>{perform('stop');syncActor();});

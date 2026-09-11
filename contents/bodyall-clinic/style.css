@@ -23,3 +23,8 @@
 
 .answer.selected:disabled{opacity:1}.game[data-state="question"] .mutter{background:#faf2e3f5;font-size:.9375rem;max-width:35%;left:4%;top:12%;word-break:keep-all}
 @media(max-width:600px){.game[data-state="question"] .mutter{font-size:.8125rem;max-width:37%;left:2%;top:7%;padding:8px;line-height:1.55}}
+
+
+/* Result sharing keeps the message and actions above the optional image. */
+.share-message{white-space:pre-line;padding:16px;background:#e3e7d7;border:1px solid #bbc4a7;border-radius:3px;text-align:left}
+#dialog-body>.card-image{margin-top:20px}
