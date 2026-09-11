@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#183f43">
+  <title>바디올 클리닉 — 이 환자, 나잖아? | 생활공감 픽셀게임</title>
+  <meta name="description" content="퇴근했지만 종료되지 않은 최대리. 세 번의 선택으로 숨은 사연을 발견하는 바디올 클리닉의 생활공감 픽셀게임.">
+  <link rel="canonical" href="https://wiki.body-all.co.kr/contents/bodyall-clinic/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="이 환자, 나잖아? — 바디올 클리닉">
+  <meta property="og:description" content="픽셀 진료실에서 최대리를 만났는데, 이 환자 좀 우리 같음. 어떤 이야기를 발견할까요?">
+  <meta property="og:url" content="https://wiki.body-all.co.kr/contents/bodyall-clinic/">
+  <link rel="stylesheet" href="style.css">
+  <script src="story.js" defer></script>
+  <script src="engine.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="game-shell" id="game">
+    <header class="window-bar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">B</span><span>바디올 클리닉 <small>BODYALL CLINIC</small></span></div>
+      <div class="top-controls"><button id="sound-button" type="button" aria-pressed="false" title="효과음 켜기">소리 꺼짐</button><button id="help-button" type="button" aria-label="게임 이용 안내">?</button></div>
+    </header>
+    <div class="chapter-bar"><div><span class="chapter-index">첫 번째 이야기</span><h1>퇴근했지만 종료되지 않은 최대리</h1></div><span class="visit-badge">EP.01</span></div>
+    <div class="play-layout">
+      <section class="play-area" aria-label="최대리와 대화하기">
+        <div class="scene" id="scene">
+          <div class="scene-caption"><span class="scene-light" aria-hidden="true"></span>바디올 진료실 <span class="scene-time">늦은 오후</span></div>
+          <div class="portrait" id="portrait" role="img" aria-label="가상의 직장인 최대리"></div>
+          <div id="scene-content" class="scene-content"></div>
+          <span class="patient-name" id="patient-name">오늘의 환자 <strong>최대리</strong></span>
+        </div>
+        <div class="conversation-frame">
+          <div class="conversation-heading"><span id="speaker">진료실 문 앞</span><span id="scene-count">EP.01</span></div>
+          <div id="dialogue" class="dialogue" aria-live="polite" aria-atomic="true"></div>
+          <div id="choices" class="choices"></div>
+        </div>
+      </section>
+      <aside class="journal" aria-label="오늘의 기록">
+        <div class="journal-title"><span>CASE FILE</span><h2>오늘의 기록</h2><span class="file-number">01</span></div>
+        <div class="patient-file"><span class="file-caption">방문자</span><strong>최대리</strong><p>퇴근은 했는데,<br>하루가 끝나지 않은 사람.</p></div>
+        <ol class="step-list" aria-label="게임 진행"><li data-step="1"><span>01</span>물건 살펴보기</li><li data-step="2"><span>02</span>한 가지 물어보기</li><li data-step="3"><span>03</span>이야기 더 들어보기</li></ol>
+        <section class="clue-section"><h3>발견한 생활 단서 <span id="clue-count">0 / 2</span></h3><div id="clue-list"></div></section>
+        <div class="journal-foot"><span aria-hidden="true">✦</span><p>작은 단서 하나에<br>생각보다 긴 이야기가 담겨 있습니다.</p></div>
+      </aside>
+    </div>
+    <footer class="game-footer"><p>가상 인물의 이야기입니다. 실제 진단·치료를 제공하지 않습니다.</p><span>바디올한의원 제작</span></footer>
+  </main>
+  <dialog id="modal" class="modal"><div class="modal-titlebar"><h2 id="modal-title"></h2><button type="button" id="close-modal" aria-label="창 닫기">×</button></div><div id="modal-body" class="modal-body"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">게임을 플레이하려면 브라우저에서 JavaScript를 켜주세요.</div></noscript>
+</body>
+</html>
