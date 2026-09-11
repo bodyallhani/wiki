@@ -1,0 +1,214 @@
+{
+  "method": "Built-in image_gen.imagegen; no CLI or code image edits",
+  "assets": [
+    {
+      "file": "clinic-background.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha": "Opaque",
+      "notes": "Empty clinic; desk front from y≈760; central cream wall blank."
+    },
+    {
+      "file": "huata-doctor.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": "Genuine transparency; alpha range0–254; background sample pixels alpha0",
+      "notes": "Selected production doctor; modern coat. Visible hair begins y148 rather than requested y240; parent can position overall layer lower.",
+      "boundsApprox": {
+        "head": [
+          590,
+          148,
+          910,
+          490
+        ],
+        "face": [
+          620,
+          204,
+          875,
+          491
+        ],
+        "beard": [
+          616,
+          459,
+          838,
+          876
+        ],
+        "contactHand": [
+          178,
+          730,
+          379,
+          892
+        ],
+        "patientWrist": [
+          197,
+          835,
+          422,
+          979
+        ],
+        "mirrorOval": [
+          1045,
+          324,
+          1328,
+          730
+        ],
+        "mirrorInterior": [
+          1070,
+          389,
+          1300,
+          665
+        ],
+        "mirrorInteriorCenter": [
+          1185,
+          527
+        ],
+        "mirrorHand": [
+          1087,
+          706,
+          1238,
+          922
+        ]
+      },
+      "prompt": "A transparent PNG cutout sprite with a genuinely transparent background. Entire backdrop transparent. 1536x1024 landscape. Original detailed nostalgic PC-98 RPG pixel art, crisp pixel clusters, expressive high detail.\nAn elderly kindly funny Hua Tuo doctor seated facing us, front-facing eye contact, bushy white eyebrows, bald head with tiny topknot, long white moustache and long white beard. He wears a MODERN cream medical lab coat with clean lapels over a dark teal scrub shirt. Anatomically his right hand (viewer left) is gently checking the pulse of a patient's left wrist; the patient's forearm comes into view from the bottom-left resting palm-up on a little wrist cushion. Doctor's left hand (viewer right) holds an ornate bronze oval hand mirror facing us. Black mirror interior has a faceless unidentifiable head silhouette.\nComposition: middle of body x770, top of head y240, mirror oval center x1150 y480. Top 200 pixels completely empty transparent, ample transparent space at left and right. Hands are visible near y820, lower coat and patient's sleeve cropped at bottom edge. Doctor has exactly two hands and realistic correct fingers. We need a clean isolated character and arm/mirror sprite layer, actual PNG ALPHA, no environment, no desk, no floor, no decorative background, no shadow or glow, no text/logos. Keep background transparent."
+    },
+    {
+      "file": "three-kingdoms-atlas.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "mode": "RGB",
+      "alpha": "Opaque",
+      "grid": {
+        "columns": 3,
+        "rows": 4,
+        "tile": [
+          362,
+          362
+        ],
+        "gutters": 0
+      },
+      "order": [
+        "Zhuge Liang",
+        "Cao Cao",
+        "Liu Bei",
+        "Guan Yu",
+        "Zhang Fei",
+        "Zhao Yun",
+        "Sun Quan",
+        "Zhou Yu",
+        "Sima Yi",
+        "Huang Zhong",
+        "Lu Bu",
+        "Diao Chan"
+      ],
+      "notes": "Requested1536×2048 but tool returned1086×1448; use equal362px native tiles or relative crop."
+    },
+    {
+      "file": "unknown-horse.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha": "Opaque",
+      "notes": "Requested1024 square; tool returned1254 square."
+    },
+    {
+      "file": "gold-symbol.png",
+      "size": [
+        1449,
+        1085
+      ],
+      "mode": "RGBA",
+      "alpha": "Genuine transparency; all lettering and background removed",
+      "notes": "Imagegen extraction of supplied gold mark; shape and color visually preserved, not claimed pixel-identical."
+    },
+    {
+      "file": "huata-doctor-fallback.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": "Genuine transparency",
+      "notes": "Original candidate only as fallback; coat looks traditional and head starts near top edge."
+    }
+  ],
+  "originalPrompts": [
+    {
+      "name": "clinic-background",
+      "prompt": "Use case: stylized-concept. Asset type: static background plate for a Korean first-person point-and-click reincarnation game. Create an original landscape image exactly 1536x1024. EMPTY modern Korean medicine clinic interior, warm walnut cabinetry, muted cream walls, subtle gold accents, nostalgic detailed PC-98 / 1990s RPG pixel art with crisp visible pixel clusters, rich expressive high detail, no blur and not extremely low-resolution. Eye-level view from a patient seat facing a physician's desk. Symmetrical calm room. Central cream wall above where the physician's head would be must remain totally blank with broad uncluttered negative space for a logo in top central area. Desk surface begins near y=760 and desk front occupies lowest 25% of the frame. Walnut herb drawers and shelves on far left and right; clean believable modern clinic. A doctor character will later overlay center x=770 and a hand mirror at x=1150,y=440, so these central zones should be plain and unobstructed. Warm soft daylight. NO people, NO silhouettes, NO doctor, NO hands, NO text, NO letters, NO signs, NO logos, NO framed typography, NO surgical instruments, NO needles. Render only the empty clinic, edge-to-edge opaque background."
+    },
+    {
+      "name": "huata-doctor",
+      "prompt": "Use case: stylized-concept. Asset type: transparent RGBA character overlay for a first-person Korean medicine game. Create an original PNG exactly 1536x1024 with genuinely transparent alpha background, no background color or scene. Nostalgic detailed PC-98 / 1990s RPG pixel art with crisp visible pixel clusters, rich high detail, warm walnut/cream/gold compatible lighting, no blur, not extremely low-resolution. Humorous elderly Hua Tuo reincarnated as a modern Korean medicine doctor, expressive kindly bushy white brows, bald head with tiny topknot, long white moustache and beard, cream doctor's coat with dark teal collar. Centered seated upper body, body center at x=770. Doctor face looks directly at the player making eye contact. Top of head near y=240, comfortably below the top20% of image. In anatomical RIGHT hand (viewer LEFT) gently palpates patient's LEFT wrist entering from bottom-left on a small cream wrist cushion. Three doctor fingertips rest on the wrist pulse naturally; patient's hand points inward toward center. In anatomical LEFT hand (viewer RIGHT) holds ornate antique oval bronze hand mirror, face angled toward viewer. Mirror oval frame centered at x=1150,y=440, approximate full frame width260 height350, handle downward toward doctor's viewer-right hand. Mirror interior is near-black, flat dark reflection with only an unidentifiable even darker head silhouette without eyes, facial details or identity. All anatomy consistent: doctor has exactly two hands, one at patient wrist, one holding mirror. Hands and forearm clearly visible near bottom. Lower body crop extends to bottom edge. Transparent outside figures, patient's forearm, cushion, mirror. No desk, no clinic, no floor. NO writing, NO logos, NO text, NO surgical tools, NO needles, NO extra fingers. PNG alpha must truly be transparent, never painted checkerboard."
+    },
+    {
+      "name": "three-kingdoms-atlas",
+      "prompt": "Use case: stylized-concept. Asset type: production portrait sprite atlas for a first-person Three Kingdoms reincarnation quiz. Create exactly1536x2048 pixels, ONE continuous atlas divided into exactly3 columns x4 rows of equal512x512 square tiles. NO gutters, NO lines, NO labels, NO typography, NO tile frames, NO decoration between tiles. Bust portraits all directly FRONT FACING, face and torso square to camera, both eyes visible and making EYE CONTACT as the player's mirrored face, consistent face scale and centered in every tile. All have same plain dark teal background. Original nostalgic detailed PC-98 / 1990s RPG pixel art, crisp visible pixel clusters, rich expressive high detail; no blur and not extremely low-res. Do not copy an existing game's sprites. Exact row-major order:\nrow1 left Zhuge Liang (black scholar cap, white feather fan held low, composed beard); center Cao Cao (red/dark gold official hat, short sharp beard, shrewd eyes); right Liu Bei (green/gold noble cap, gentle face).\nrow2 left Guan Yu (red face, long dark beard, green headwrap); center Zhang Fei (large dark beard, fierce round eyes, hearty energetic expression); right Zhao Yun (silver helmet, handsome calm young warrior).\nrow3 left Sun Quan (purple/bronze ruler cap, short beard, poised); center Zhou Yu (red/gold general headwear, handsome young commander); right Sima Yi (dark high scholar cap, narrow observant eyes, greying narrow beard).\nrow4 left Huang Zhong (aged white beard, bronze helmet); center Lu Bu (two long pheasant plumes headwear, strong handsome face); right Diao Chan (adult woman, elegant green/gold hair ornaments, intelligent poised face, modest collar).\nEvery tile is independently centered with headgear contained in its own tile. Faces all point directly at camera, NEVER three-quarter or profile. Enough surrounding space in each tile for oval mirror cropping. No text, no labels, no weapons extending across tiles."
+    },
+    {
+      "name": "unknown-horse",
+      "prompt": "Use case: stylized-concept. Asset type: square portrait game sprite for an all-unknown comedic reincarnation result. Create original square1024x1024 image. Front-facing friendly goofy brown horse bust looking directly at camera as if it is the player's mirrored face. Both eyes healthy, intact, bright and friendly; charming slightly silly curious expression, large soft muzzle, small tousled dark mane, ears upright. Nostalgic detailed PC-98 / 1990s RPG pixel art, crisp visible pixel clusters, warm rich colors, expressive high detail, no blur and not extremely low-res. Plain solid dark teal background. Perfectly centered head and bust, some surrounding space for oval mirror cropping, shoulders cropped at bottom. No costume, no rider, no text, no logos, no frames. Exactly1024x1024."
+    },
+    {
+      "name": "gold-symbol",
+      "prompt": "Use case: background-extraction. Input image1 is the edit target. Extract ONLY the EXISTING GOLD SYMBOL from the supplied Korean clinic logo. Delete ALL lower Korean lettering and ALL English lettering and remove the entire black background. Keep the gold symbol's exact original shape, proportions, gold color, surface, all four curving gold leaves and all nine central gold circular dots exactly unchanged. Do not redraw, restyle, simplify, add detail, add shadow, or invent shapes. Output actual transparent RGBA PNG with transparent holes and transparent background. Tightly frame the symbol with a small even transparent margin. No black pixels in background, no checkerboard pixels, no Korean letters, no English letters, no text whatsoever. Preserve the existing gold symbol precisely.",
+      "reference": "/workspace/scratch/7a742eaaf213/upload/1 갈색바탕 로고.png"
+    }
+  ],
+  "doctorRevisionPrompts": [
+    "Use case: precise-object-edit. Edit the supplied transparent Hua Tuo image into the final production overlay. Preserve the same kind humorous elderly face, pixel-art style, frontal eye contact, correct two hands performing wrist palpation and holding the oval bronze mirror, near-black unidentifiable mirror silhouette, all colors and anatomy. Correct ONLY production layout and modern coat: output canvas exactly1536x1024; keep complete TOP240 PIXELS totally transparent, so the highest visible hair/topknot pixel begins near y240, and body center remains at x770. Scale the doctor upper body down moderately and position it lower to achieve this without cutting off head. Bottom hands/forearms remain naturally visible around y800-950 and patient's forearm enters bottom-left. Mirror oval centered around x1150,y470 and contains flat near-black faceless silhouette. Replace the old-fashioned robe with a recognizable clean modern Korean medicine doctor's cream LAB COAT over a dark teal V-neck scrub top: simple contemporary lapels, straight clean sleeves, pocket, no tassels, no ornamental garment pins, no belts or robe ties. Keep mirror ornate. TRUE TRANSPARENT RGBA background outside the character, patient's forearm, cushion and mirror. No halo, no outer glow, no environment, no desk, no floor, no text, no labels, no checkerboard. The most important correction is leaving the entire top240 pixels blank transparent for a logo.",
+    "Use case: background-extraction. Input image is an edit target containing a doctor over an unwanted grey-white checkered background. REMOVE THE CHECKERBOARD BACKGROUND ENTIRELY, replacing it with genuine transparent alpha=0 pixels. This must be RGBA PNG, actual background transparency, never grey-white checks painted into RGB. Keep the image canvas exactly1536x1024. Preserve the supplied doctor character, head location, modern cream lab coat, dark teal shirt, mirror at right with its black silhouette interior, both hands, patient's forearm, wrist cushion, all anatomy and pixel art EXACTLY unchanged. Retain all interior character colors including white hair/white coat; only delete the backdrop. Background above character and outside figure must have alpha0. No glow, no cast shadow. Output only final transparent cutout asset.",
+    "A transparent PNG cutout sprite with a genuinely transparent background. Entire backdrop transparent. 1536x1024 landscape. Original detailed nostalgic PC-98 RPG pixel art, crisp pixel clusters, expressive high detail.\nAn elderly kindly funny Hua Tuo doctor seated facing us, front-facing eye contact, bushy white eyebrows, bald head with tiny topknot, long white moustache and long white beard. He wears a MODERN cream medical lab coat with clean lapels over a dark teal scrub shirt. Anatomically his right hand (viewer left) is gently checking the pulse of a patient's left wrist; the patient's forearm comes into view from the bottom-left resting palm-up on a little wrist cushion. Doctor's left hand (viewer right) holds an ornate bronze oval hand mirror facing us. Black mirror interior has a faceless unidentifiable head silhouette.\nComposition: middle of body x770, top of head y240, mirror oval center x1150 y480. Top 200 pixels completely empty transparent, ample transparent space at left and right. Hands are visible near y820, lower coat and patient's sleeve cropped at bottom edge. Doctor has exactly two hands and realistic correct fingers. We need a clean isolated character and arm/mirror sprite layer, actual PNG ALPHA, no environment, no desk, no floor, no decorative background, no shadow or glow, no text/logos. Keep background transparent."
+  ],
+  "integration": {
+    "format": "WebP, quality92, original resolution and alpha retained",
+    "portraitAtlas": {
+      "columns": 3,
+      "rows": 4,
+      "tilePixels": 362
+    },
+    "mirrorInterior": {
+      "left": 1070,
+      "top": 389,
+      "width": 230,
+      "height": 276,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024
+    }
+  },
+  "productionAssets": [
+    {
+      "file": "assets/huata-doctor.webp",
+      "bytes": 208932,
+      "sha256": "b68498e2e8c291576c8613cf9634d2b63068cede9f6224f7f4daa861138024b0"
+    },
+    {
+      "file": "assets/huata-horse.webp",
+      "bytes": 140216,
+      "sha256": "5bfa5040ce539d2e4da8011a87939a2c56e2f1f3ce5c5382ba476c6b3fc173c6"
+    },
+    {
+      "file": "assets/huata-portraits.webp",
+      "bytes": 473004,
+      "sha256": "4fe847e851643d0b452e70b96bf0c30cc9cc9de0c27757553cfda4b9f795d224"
+    },
+    {
+      "file": "assets/huata-room.webp",
+      "bytes": 250542,
+      "sha256": "503cc08b20bc9e46f0136ac2b309e5618faa56a54f60451d860fb04835222628"
+    },
+    {
+      "file": "assets/huata-symbol.webp",
+      "bytes": 166744,
+      "sha256": "bf06f76091882562cff0154c1674f013ea2c9d0eb5b8fea35269de75588169a3"
+    }
+  ]
+}

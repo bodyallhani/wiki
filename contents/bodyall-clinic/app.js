@@ -1,184 +1,177 @@
-(function(){
+(function () {
   'use strict';
-  const story=window.ClinicStory;
-  const game=new window.ClinicEngine.ClinicGame();
-  const $=id=>document.getElementById(id);
-  const ui={scene:$('scene'),content:$('scene-content'),portrait:$('portrait'),dialogue:$('dialogue'),choices:$('choices'),speaker:$('speaker'),count:$('scene-count'),modal:$('modal'),modalTitle:$('modal-title'),modalBody:$('modal-body')};
-  const gameURL='https://wiki.body-all.co.kr/contents/bodyall-clinic/';
-  const shareURL=gameURL+'?from=friend';
-  const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const expressionFor={O1:2,O2:1,O3:4,O4:3,O5:4,Q1:4,Q2:2,Q3:5};
-  let sound=false,audioContext=null,toastTimer,modalOpener=null,cardURL=null,shareGeneration=0;
-  const sheet=new Image(); sheet.src='assets/portraits.webp';
-  const background=new Image(); background.src='assets/clinic-room.webp';
-  const cards=new Map();
-  function emit(name,detail={}){document.dispatchEvent(new CustomEvent('bodyall:game-event',{detail:{name,...detail}}));}
-  function tone(type='tap'){
-    if(!sound)return;
+  const D=window.HuataData, E=window.HuataEngine, $=id=>document.getElementById(id);
+  const game=$('game'), dialog=$('dialog'), reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+  const assetPaths={room:'assets/huata-room.webp',doctor:'assets/huata-doctor.webp',atlas:'assets/huata-portraits.webp',horse:'assets/huata-horse.webp',logo:'assets/huata-symbol.webp'};
+  const imageCache=new Map(), assetImages={};
+  let answers=Array(10).fill(null), index=0, result=null, busy=false, soundOn=false, audioContext=null, generation=0;
+  let mutterTimer=0, toastTimer=0, repair=false, repairAt=0, blobURL=null, cardPromise=null, assetsReady=false, dialogSession=0;
+  const repairQuestions=[5,6,8], spoken=new Set();
+  const scheduled=new Set();
+  function later(fn,ms){const id=setTimeout(()=>{scheduled.delete(id);fn();},ms);scheduled.add(id);return id;}
+  function cancelScheduled(){for(const id of scheduled)clearTimeout(id);scheduled.clear();clearTimeout(mutterTimer);}
+  function announce(message){$('toast').textContent=message;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2800);}
+  function event(name, extra={}){window.dispatchEvent(new CustomEvent('bodyall:game-event',{detail:{name,version:D.version,...extra}}));}
+  function tone(frequency=500,duration=.055,delay=0){
+    if(!soundOn||!audioContext)return;
+    const t=audioContext.currentTime+delay, osc=audioContext.createOscillator(),gain=audioContext.createGain();
+    osc.type='triangle';osc.frequency.setValueAtTime(frequency,t);gain.gain.setValueAtTime(0,t);gain.gain.linearRampToValueAtTime(.045,t+.01);gain.gain.exponentialRampToValueAtTime(.0001,t+duration);
+    osc.connect(gain);gain.connect(audioContext.destination);osc.start(t);osc.stop(t+duration+.02);osc.onended=()=>{osc.disconnect();gain.disconnect();};
+  }
+  function loadImage(src){
+    if(imageCache.has(src))return imageCache.get(src);
+    const promise=new Promise((resolve,reject)=>{
+      const img=new Image(),timeout=setTimeout(()=>{img.onload=null;img.onerror=null;imageCache.delete(src);reject(new Error('image-timeout'));},12000);
+      img.onload=()=>{clearTimeout(timeout);resolve(img);};img.onerror=()=>{clearTimeout(timeout);imageCache.delete(src);reject(new Error('image-load'));};img.src=src;
+    });imageCache.set(src,promise);return promise;
+  }
+  async function loadAssets(){
+    $('start').disabled=true;$('start-label').textContent='거울을 닦는 중…';
     try{
-      audioContext??=new (window.AudioContext||window.webkitAudioContext)();
-      if(audioContext.state==='suspended')audioContext.resume();
-      const notes=type==='found'?[523.25,659.25,783.99]:[440];
-      notes.forEach((f,i)=>{const o=audioContext.createOscillator(),g=audioContext.createGain(),t=audioContext.currentTime+i*.065;o.type='sine';o.frequency.value=f;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.045,t+.008);g.gain.exponentialRampToValueAtTime(.001,t+.12);o.connect(g);g.connect(audioContext.destination);o.start(t);o.stop(t+.13);});
-    }catch{sound=false;$('sound-button').textContent='소리 꺼짐';$('sound-button').setAttribute('aria-pressed','false');}
+      await Promise.all(Object.entries(assetPaths).map(async([key,path])=>{assetImages[key]=await loadImage(path);}));
+      assetsReady=true;$('start').disabled=false;$('start-label').textContent='손목 맡기기';$('asset-status').textContent='질문 10개 · 약 1분 · 가입 없이';
+    }catch(err){assetsReady=false;$('start').disabled=false;$('start-label').textContent='그림 다시 불러오기';$('asset-status').textContent='그림을 불러오지 못했어요. 한 번 더 눌러주세요.';}
   }
-  function toast(text){clearTimeout(toastTimer);$('toast').textContent=text;$('toast').classList.add('visible');toastTimer=setTimeout(()=>$('toast').classList.remove('visible'),3000);}
-  function portrait(index){ui.portrait.style.backgroundPosition=`${index%3*50}% ${Math.floor(index/3)*100}%`;}
-  function action(label,callback,{primary=false,subtle=false,html=false,className=''}={}){
-    const b=document.createElement('button');b.type='button';b.className='action '+(primary?'primary ':'')+(subtle?'subtle ':'')+className;
-    if(html)b.innerHTML=label;else b.textContent=label;
-    b.addEventListener('click',()=>{tone();callback();});ui.choices.appendChild(b);return b;
+  function say(text){
+    clearTimeout(mutterTimer);$('mutter').textContent=text;$('mutter').classList.add('visible');mutterTimer=setTimeout(()=>$('mutter').classList.remove('visible'),2400);
   }
-  function updateJournal(){
-    const ids=[game.observation,game.question];
-    $('clue-count').textContent=ids.filter(Boolean).length+' / 2';
-    $('clue-list').innerHTML=ids.map((id,i)=>id?`<div class="clue-card found"><small>최대리의 얘기</small>${esc(story.items[id].clue)}</div>`:`<div class="clue-card empty"><span>${i===0?'I':'II'}</span>${i===0?'먼저 말을 걸어보세요':'한 가지 더 물어보세요'}</div>`).join('');
-    document.querySelectorAll('[data-step]').forEach(li=>{const n=Number(li.dataset.step);li.classList.toggle('current',game.phase!=='start'&&n===game.step()&&game.phase!=='ending');li.classList.toggle('done',n<game.step()||game.phase==='ending');if(li.classList.contains('current'))li.setAttribute('aria-current','step');else li.removeAttribute('aria-current');});
+  function react(q, code){
+    if(spoken.has(q)||repair)return;
+    const phrases={3:'전생에도 이런 버릇이 있었을까…',6:'어디서 본 듯한데…',8:'이제 조금 보이는군.'};
+    if(q===1){const p={A:'요즘 쉽게 지치는구먼.',B:'움직일 기운은 충분하구먼.',C:'날마다 좀 다르구먼.',D:'대체로 괜찮다니 다행이네.',N:'음… 어디 보자.'};say(p[code]);spoken.add(q);}
+    else if(phrases[q]){say(phrases[q]);spoken.add(q);}
   }
-  function start(replay){if(game.start(replay)){emit('game_start',{replay});render(true);}}
-  function choose(id){
-    if(!game.choose(id))return;
-    if(game.phase==='ending'){
-      tone('found');emit('game_complete',{ending:game.result().ending,clue:game.selected});
-      prepareCard(game.result()).catch(()=>{});
-    }
-    render(true);
+  function clearCard(){if(blobURL)URL.revokeObjectURL(blobURL);blobURL=null;cardPromise=null;}
+  function reset(){
+    generation++;cancelScheduled();clearCard();answers=Array(10).fill(null);index=0;result=null;repair=false;repairAt=0;busy=false;spoken.clear();
+    game.classList.remove('mirror-awake','face-visible','horse','fog');$('mutter').classList.remove('visible');$('story').open=false;
+    $('reveal-caption').textContent='';$('stage').setAttribute('aria-label','내 손목을 짚으며 거울을 들고 있는 화타');
   }
-  function render(moveFocus=false){
-    ui.choices.replaceChildren();ui.choices.className='choices';ui.content.innerHTML='';ui.scene.dataset.view=game.phase;updateJournal();
-    $('game').dataset.playing=String(game.phase!=='start');
-    $('my-line').hidden=true;$('my-line').innerHTML='';
-    $('choice-prompt').hidden=true;
-    ui.count.textContent=game.phase==='start'?'EP.01':game.phase==='ending'?'대화 끝':`${game.step()} / 3`;
-    portrait(0);
-    if(game.phase==='start'){
-      portrait(1);ui.speaker.textContent='오늘은 내가 원장님';
-      ui.content.innerHTML='<div class="title-plaque"><p class="eyebrow">바디올 클리닉</p><h2>이 환자,<br>나잖아?</h2><p>퇴근하고도<br>일 생각뿐인 최대리.</p></div>';
-      const friend=new URLSearchParams(location.search).get('from')==='friend';
-      ui.dialogue.innerHTML='<p>'+(friend?'이번엔 내가 원장님이 될 차례!':'최대리에게 무슨 말을 건넬까요?')+'</p><small>정답은 없어요. 하고 싶은 말을 세 번 고르면 됩니다.</small>';
-      action('원장님으로 시작하기',()=>start(false),{primary:true});
-    }else{
-      ui.speaker.textContent='최대리와 나누는 대화';
-      const exchange=game.exchange;
-      if(exchange.player){
-        $('my-line').hidden=false;
-        $('my-line').innerHTML=`<span class="dialogue-name">나 · 원장님</span><p>${esc(exchange.player)}</p>`;
-      }
-      ui.dialogue.innerHTML=`<span class="dialogue-name patient">최대리</span><p>${esc(exchange.patient)}</p>`;
-      const respondingTo=game.phase==='question'?game.observation:game.phase==='connect'?game.question:game.selected;
-      portrait(game.phase==='observe'?1:(expressionFor[respondingTo]??0));
-      if(game.phase==='question'){
-        const [label,title,sub]=story.items[game.observation].detail;
-        ui.content.innerHTML=`<div class="object-detail"><span class="detail-label">${esc(label)}</span><strong>${esc(title)}</strong><p>${esc(sub)}</p></div>`;
-      }
-      if(game.phase==='ending'){
-        const r=game.result();portrait(r.ending==='C'?5:2);
-        ui.content.innerHTML=`<div class="result-panel"><span class="eyebrow">최대리가 붙여준 내 별명</span><h2>${esc(r.nickname)}</h2><span class="nickname">${esc(r.title)}</span><p>${esc(r.description)}</p><span class="stamp">EP.01 · END</span></div>`;
-        action('친구에게 보여주기',openShare,{primary:true});action('다른 말 걸어보기',()=>start(true));action('바디올 진료 안내',openClinic,{subtle:true});
-      }else{
-        $('choice-prompt').hidden=false;
-        $('choice-prompt').textContent=game.phase==='observe'?'내가 먼저 건넬 말':game.phase==='question'?'이어서 물어볼 말':'마지막으로 건넬 말';
-        ui.choices.classList.add(game.phase==='observe'?'opening-choices':'stacked');
-        game.available().forEach((id,i)=>{
-          const previous=(game.phase==='observe'?game.previous?.observation:game.phase==='question'?game.previous?.question:game.previous?.selected)===id;
-          action(`<span class="choice-index">${i+1}</span><span>${esc(game.choiceText(id))}${previous?'<small class="previous-label">지난번 선택</small>':''}</span>`,()=>choose(id),{html:true});
-        });
-      }
-    }
-    if(moveFocus){
-      ui.dialogue.tabIndex=-1;ui.dialogue.focus({preventScroll:true});
-      (game.exchange?.player?$('my-line'):ui.dialogue).scrollIntoView({block:'nearest',behavior:'instant'});
-    }
+  function start(){
+    if(!assetsReady){loadAssets();return;}
+    reset();$('intro').hidden=true;$('result-view').hidden=true;$('question-view').hidden=false;game.dataset.state='question';
+    renderQuestion();say('손목은 편히 두게. 자, 시작해 볼까?');tone(620,.1);event('game_start');
   }
-  function openModal(title,html){
-    modalOpener=document.activeElement;ui.modalTitle.textContent=title;ui.modalBody.innerHTML=html;
-    if(!ui.modal.open)ui.modal.showModal();
-  }
-  function closeModal(){ui.modal.close();}
-  $('close-modal').addEventListener('click',closeModal);
-  ui.modal.addEventListener('click',e=>{if(e.target!==ui.modal)return;const r=ui.modal.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeModal();});
-  ui.modal.addEventListener('close',()=>{shareGeneration++;if(cardURL){URL.revokeObjectURL(cardURL);cardURL=null;}modalOpener?.focus?.({preventScroll:true});});
-  $('help-button').addEventListener('click',()=>openModal('이렇게 플레이해요','<h3>나는 원장님,<br>상대는 직장인 최대리.</h3><p>아래 버튼은 내가 건넬 말입니다. 하나를 고르면 최대리가 바로 대답해요. 세 번 대화하면 끝!</p><p>선택에 정답이나 시간 제한은 없어요. 다시 해보면 다른 대답도 들을 수 있어요.</p><small>마우스·터치 또는 Tab과 Enter로 선택합니다. 가상 인물과 나누는 대화 게임이며 실제 진료나 성격 검사가 아닙니다. 이름·증상·연락처를 입력받지 않고 플레이 기록을 저장하거나 전송하지 않습니다. 새로고침하면 처음부터 시작합니다.</small>'));
-  $('sound-button').addEventListener('click',()=>{sound=!sound;$('sound-button').textContent=sound?'소리 켜짐':'소리 꺼짐';$('sound-button').setAttribute('aria-pressed',String(sound));$('sound-button').title=sound?'효과음 끄기':'효과음 켜기';if(sound)tone('found');});
-  function openClinic(){
-    openModal('바디올의 척추·골반 진료',`<h3>바디올의 척추·골반 진료가 궁금하다면</h3><p>바디올한의원은 수원 인계동에서 척추·골반 진료와 공간척추교정(SART)을 안내하고 있습니다. 나에게 어떤 진료나 치료가 적합한지는 실제 상태를 확인한 뒤 판단합니다.</p><small>게임의 별명과 엔딩은 건강 상태나 치료 필요성을 판정하지 않습니다.</small><div class="modal-actions"><a class="action primary" id="clinic-link" href="https://wiki.body-all.co.kr/SART.html" target="_blank" rel="noopener">바디올 진료 안내·상담 보기</a><button class="action" id="return-game">게임으로 돌아가기</button></div>`);
-    $('return-game').addEventListener('click',closeModal);$('clinic-link').addEventListener('click',()=>emit('clinic_link_click',{destination:'SART'}));
-  }
-  function shareText(r){return `내가 원장님이 되어 최대리랑 얘기해봤어.\n내 별명은 ‘${r.nickname}’. 너라면 뭐라고 할래?\n바디올 클리닉 — 이 환자, 나잖아?\n${shareURL}`;}
-  function loadImage(img){if(img.complete&&img.naturalWidth)return Promise.resolve(img);return new Promise((resolve,reject)=>{img.addEventListener('load',()=>resolve(img),{once:true});img.addEventListener('error',()=>reject(new Error('이미지를 불러오지 못했습니다.')),{once:true});if(img.complete&&!img.naturalWidth)reject(new Error('이미지를 불러오지 못했습니다.'));});}
-  function wrap(ctx,text,x,y,width,lineHeight){
-    let line='',row=0;
-    for(const char of text){if(char==='\n'){ctx.fillText(line,x,y+row++*lineHeight);line='';continue;}const next=line+char;if(ctx.measureText(next).width>width&&line){ctx.fillText(line.trim(),x,y+row++*lineHeight);line=char;}else line=next;}
-    if(line)ctx.fillText(line.trim(),x,y+row++*lineHeight);return y+row*lineHeight;
-  }
-  async function prepareCard(r){
-    if(cards.has(r.id))return cards.get(r.id);
-    const promise=(async()=>{
-      await Promise.all([loadImage(sheet),loadImage(background)]);
-      if(document.fonts?.ready)await document.fonts.ready;
-      const c=document.createElement('canvas');c.width=1080;c.height=1350;const ctx=c.getContext('2d');
-      if(!ctx)throw new Error('이 브라우저에서 이미지 생성을 지원하지 않습니다.');
-      ctx.fillStyle='#173f43';ctx.fillRect(0,0,1080,1350);
-      ctx.strokeStyle='#c8aa67';ctx.lineWidth=3;ctx.strokeRect(27,27,1026,1296);ctx.strokeRect(38,38,1004,1274);
-      ctx.fillStyle='#f5e8c7';ctx.textAlign='center';ctx.font='600 27px "Malgun Gothic", "Apple SD Gothic Neo", sans-serif';ctx.fillText('바디올 클리닉 · 생활공감 픽셀게임',540,98);
-      ctx.save();ctx.beginPath();ctx.rect(72,140,936,620);ctx.clip();ctx.drawImage(background,0,0,background.naturalWidth,background.naturalHeight,72,140,936,624);
-      ctx.fillStyle='#12393933';ctx.fillRect(72,140,936,620);
-      const n=expressionFor[r.id]??0,cw=sheet.naturalWidth/3,ch=sheet.naturalHeight/2;
-      ctx.drawImage(sheet,(n%3)*cw,Math.floor(n/3)*ch,cw,ch,234,149,642,642);ctx.restore();
-      ctx.fillStyle='#f7edd5';ctx.fillRect(72,741,936,455);ctx.strokeStyle='#b2a16e';ctx.lineWidth=2;ctx.strokeRect(82,751,916,435);
-      ctx.fillStyle='#758269';ctx.font='22px "Malgun Gothic", sans-serif';ctx.fillText('퇴근했는데 아직도 일하는 최대리',540,801);
-      ctx.fillStyle='#244d47';ctx.font='700 44px "Malgun Gothic", "Apple SD Gothic Neo", sans-serif';
-      wrap(ctx,r.shareHeadline,540,869,790,62);
-      ctx.fillStyle='#3e6356';ctx.font='600 30px "Malgun Gothic", "Apple SD Gothic Neo", sans-serif';ctx.fillText('내 별명은 ‘'+r.nickname+'’',540,1071);
-      ctx.font='25px "Malgun Gothic", "Apple SD Gothic Neo", sans-serif';ctx.fillText('이 환자, 너랑 좀 비슷한데?',540,1131);
-      ctx.fillStyle='#dcd2ab';ctx.font='23px "Malgun Gothic", "Apple SD Gothic Neo", sans-serif';ctx.fillText('바디올한의원 제작 · 가상 캐릭터 / 오락용 결과',540,1250);
-      return new Promise((resolve,reject)=>c.toBlob(b=>b?resolve(b):reject(new Error('이미지 저장을 준비하지 못했습니다.')),'image/png'));
-    })();cards.set(r.id,promise);promise.catch(()=>cards.delete(r.id));return promise;
-  }
-  async function openShare(){
-    const r=game.result();if(!r||game.phase!=='ending')return;
-    emit('share_preview_open',{ending:r.ending});
-    const generation=++shareGeneration;
-    openModal('친구에게 보여주기',`<div id="card-preview" class="share-status">최대리의 결과 카드를 준비하고 있습니다.</div><textarea id="share-text" class="share-text" aria-label="친구에게 보낼 공유 문구" readonly>${esc(shareText(r))}</textarea><div class="modal-actions"><button class="action primary" id="native-share">공유하기</button><button class="action" id="save-image" disabled>이미지 저장</button><button class="action" id="copy-share">문구·링크 복사</button></div><p class="share-status" id="share-status">보낼 내용과 카드를 확인한 뒤 공유해주세요.</p>`);
-    let card=null;
-    $('copy-share').addEventListener('click',async()=>{try{if(!navigator.clipboard?.writeText)throw new Error('clipboard unavailable');await navigator.clipboard.writeText(shareText(r));toast('문구와 게임 링크를 복사했습니다.');}catch{$('share-text')?.focus();$('share-text')?.select();toast('선택된 문구를 직접 복사해주세요.');}});
-    $('native-share').addEventListener('click',async()=>{
-      if(!navigator.share){$('share-status').textContent='이 브라우저에서는 기본 공유창을 지원하지 않습니다. 이미지를 저장하거나 문구·링크를 복사해주세요.';return;}
-      const text=shareText(r).replace('\n'+shareURL,'');
-      let data={title:'바디올 클리닉 — 이 환자, 나잖아?',text,url:shareURL};
-      if(card&&typeof File!=='undefined'){const file=new File([card],`bodyall-clinic-${r.id}.png`,{type:'image/png'});if(navigator.canShare?.({files:[file]}))data={...data,files:[file]};}
-      try{await navigator.share(data);emit('share_api_resolved',{withImage:!!data.files});}
-      catch(e){if(e.name==='AbortError')return;const status=$('share-status');if(status)status.textContent='공유창을 열지 못했습니다. 이미지를 저장하거나 문구·링크를 복사해주세요.';}
+  function renderQuestion(){
+    busy=false;const q=D.questions[index];$('question').textContent=q.text;
+    $('question-count').replaceChildren(document.createTextNode(String(repair?repairAt+1:index+1).padStart(2,'0')+' '));const total=document.createElement('i');total.textContent=repair?'/ 3':'/ 10';$('question-count').append(total);
+    $('progress').setAttribute('aria-valuemax',repair?'3':'10');$('progress').setAttribute('aria-valuenow',String(repair?repairAt:index));$('progress-fill').style.width=((repair?repairAt/3:index/10)*100)+'%';
+    document.querySelector('.question-meta>span:first-child').textContent=repair?'전생을 조금 더 또렷하게':'화타의 물음';
+    $('answers').replaceChildren();
+    q.answers.forEach((a,n)=>{
+      const button=document.createElement('button');button.type='button';button.className='answer'+(a.code==='N'?' unknown':'')+(answers[index]===a.code?' selected':'');
+      const mark=document.createElement('span');mark.className='answer-mark';mark.setAttribute('aria-hidden','true');const text=document.createElement('span');text.textContent=a.label;button.append(mark,text);
+      button.setAttribute('aria-pressed',String(answers[index]===a.code));const questionIndex=index;
+      button.addEventListener('click',()=>choose(questionIndex,a.code,button));$('answers').append(button);
     });
-    $('save-image').addEventListener('click',()=>{if(!cardURL)return;const a=document.createElement('a');a.href=cardURL;a.download=`bodyall-clinic-${r.id}.png`;document.body.appendChild(a);a.click();a.remove();emit('result_card_export',{clue:r.id});$('share-status').textContent='이미지 저장을 요청했습니다. 모바일에서 저장되지 않으면 위 이미지를 길게 눌러 저장해주세요.';});
-    try{
-      card=await prepareCard(r);
-      if(!ui.modal.open||generation!==shareGeneration)return;
-      if(cardURL)URL.revokeObjectURL(cardURL);cardURL=URL.createObjectURL(card);
-      $('card-preview').innerHTML=`<img class="share-image" src="${cardURL}" alt="${esc(r.shareHeadline+' 내 별명은 '+r.nickname)}">`;
-      $('save-image').disabled=false;
-    }catch{if(generation!==shareGeneration)return;const preview=$('card-preview');if(preview)preview.textContent='이미지를 준비하지 못했습니다. 아래 문구와 게임 링크는 공유할 수 있습니다.';}
+    $('back').disabled=!repair&&index===0;$('back').textContent=repair&&repairAt===0?'← 결과로 돌아가기':'← 이전 질문';$('question').focus({preventScroll:true});
   }
-  function registerGameTools(){
-    const context=document.modelContext;
-    if(!context?.registerTool)return;
-    const lifecycle=new AbortController();
-    const state=()=>({phase:game.phase,playerRole:'원장님',character:'최대리',exchange:game.exchange,choices:game.available().map(id=>({id,text:game.choiceText(id)})),result:game.phase==='ending'?{title:game.result().title,nickname:game.result().nickname}:null});
-    const tools=[
-      {name:'read_clinic_story',title:'Read the current clinic story',description:'Read the current dialogue and choices available in the game.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true,untrustedContentHint:false},execute(){return state();}},
-      {name:'advance_clinic_story',title:'Play the clinic story',description:'Start the conversation or choose one currently available line to say. Does not share, download, or leave the game.',inputSchema:{type:'object',properties:{action:{type:'string',enum:['start','choose','replay']},clueId:{type:'string'}},required:['action'],additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute(input){
-        if(ui.modal.open)throw new Error('Close the current dialog first.');
-        if(!input||typeof input!=='object'||Object.keys(input).some(k=>!['action','clueId'].includes(k)))throw new Error('Invalid input.');
-        if(input.action==='choose'){if(typeof input.clueId!=='string'||!game.available().includes(input.clueId))throw new Error('That clue is not available.');choose(input.clueId);}
-        else if(input.clueId!==undefined)throw new Error('clueId is only accepted for choose.');
-        else if(input.action==='start'&&game.phase==='start')start(false);
-        else if(input.action==='replay'&&game.phase==='ending')start(true);
-        else throw new Error('This action is not available now.');
-        return state();
-      }}
-    ];
-    for(const tool of tools){try{Promise.resolve(context.registerTool(tool,{signal:lifecycle.signal})).catch(()=>{});}catch{}}
-    window.addEventListener('pagehide',e=>{if(!e.persisted)lifecycle.abort();},{once:true});
+  function choose(questionIndex,code,button){
+    if(busy||questionIndex!==index||game.dataset.state!=='question')return;
+    busy=true;answers[index]=code;button.classList.add('selected');$('answers').querySelectorAll('button').forEach(b=>b.disabled=true);$('back').disabled=true;tone();react(index,code);
+    const token=generation;
+    later(()=>{
+      if(token!==generation)return;
+      if(repair){repairAt++;if(repairAt<repairQuestions.length){index=repairQuestions[repairAt];renderQuestion();}else reveal();}
+      else if(index<9){index++;renderQuestion();}else reveal();
+    },170);
   }
-  render();registerGameTools();
+  function setPortrait(person){
+    const face=$('reflection');
+    if(person.id==='horse'){face.style.backgroundImage="url('"+assetPaths.horse+"')";face.style.backgroundSize='100% 100%';face.style.backgroundPosition='50% 50%';}
+    else if(Number.isInteger(person.tile)){face.style.backgroundImage="url('"+assetPaths.atlas+"')";face.style.backgroundSize='300% 400%';face.style.backgroundPosition=((person.tile%3)*50)+'% '+(Math.floor(person.tile/3)*100/3)+'%';}
+  }
+  function reveal(){
+    result=E.getResult(answers);busy=true;repair=false;$('question-view').hidden=true;$('mutter').classList.remove('visible');clearTimeout(mutterTimer);game.dataset.state='revealing';
+    game.classList.toggle('horse',result.kind==='horse');game.classList.toggle('fog',result.kind==='fog');$('reveal-caption').textContent='“자, 직접 보게.”';
+    if(result.kind!=='fog')setPortrait(result);
+    const token=generation, quick=reduced.matches, duration=quick?650:2600;
+    tone(330,.25);tone(440,.35,.15);tone(660,.4,.3);
+    later(()=>{if(token!==generation)return;game.classList.add('mirror-awake');},quick?80:1000);
+    later(()=>{if(token!==generation)return;game.classList.add('face-visible');tone(result.kind==='horse'?190:880,.24);},quick?240:1670);
+    if(result.kind==='horse')later(()=>{if(token===generation)$('reveal-caption').textContent='“……자네, 사람이 아니었구만.”';},quick?370:2110);
+    later(()=>{if(token===generation)renderResult();},result.kind==='horse'?duration+450:duration);
+  }
+  function renderResult(){
+    busy=false;game.dataset.state='result';$('intro').hidden=true;$('question-view').hidden=true;$('result-view').hidden=false;
+    game.classList.toggle('fog',result.kind==='fog');game.classList.toggle('horse',result.kind==='horse');
+    $('result-name').textContent=result.name;$('analysis').replaceChildren();$('story').open=false;
+    if(result.kind==='fog'){
+      $('result-eyebrow').textContent='안개 낀 거울';$('result-title').textContent='아직은 얼굴이 잘 보이지 않아요.';
+      $('result-quote').textContent='“성격 이야기 세 가지만 더 들려주겠나?”';$('share').textContent='답변 보태기';$('story').hidden=true;
+    }else{
+      $('result-eyebrow').textContent=result.faint?'희미하게 보이는 전생':'거울에 비친 당신의 전생';$('result-title').textContent=result.title;
+      result.analysis.forEach(text=>{const p=document.createElement('p');p.textContent=text;$('analysis').append(p);});
+      $('result-quote').textContent='“'+result.quote+'”';$('share').textContent='친구에게 공유하기 ↗';$('story').hidden=false;$('story-copy').textContent=result.story;
+      $('story-source').hidden=!result.chapter;if(result.chapter)$('story-source').href='https://zh.wikisource.org/wiki/三國演義/第'+result.chapter+'回';
+      const snapshot=result;cardPromise=makeCard(snapshot).catch(()=>null);
+    }
+    $('stage').setAttribute('aria-label',result.kind==='fog'?'아직 실루엣이 흐릿한 거울':'거울에 비친 '+result.name+'의 정면 얼굴');
+    $('result-name').focus({preventScroll:true});
+    event('game_complete',{result:result.id});
+    // Keep the mirror in view while bringing the result controls into reach.
+    if($('console').getBoundingClientRect().top>window.innerHeight*.72)$('console').scrollIntoView({block:'center',behavior:reduced.matches?'instant':'smooth'});
+  }
+  function repairAnswers(){
+    generation++;cancelScheduled();clearCard();repair=true;repairAt=0;index=repairQuestions[0];
+    game.dataset.state='question';game.classList.remove('mirror-awake','face-visible','fog');$('result-view').hidden=true;$('question-view').hidden=false;$('reveal-caption').textContent='';renderQuestion();
+    say('떠오르는 것부터 골라보게.');
+  }
+  function showDialog(title){dialogSession++;$('dialog-title').textContent=title;$('dialog-body').replaceChildren();if(!dialog.open)dialog.showModal();}
+  function closeDialog(){dialogSession++;dialog.close();}
+  function addText(parent,text,cls){const p=document.createElement('p');p.textContent=text;if(cls)p.className=cls;parent.append(p);return p;}
+  function addButton(parent,text,cls,fn){const b=document.createElement('button');b.type='button';b.textContent=text;b.className=cls;b.addEventListener('click',fn);parent.append(b);return b;}
+  async function openShare(){
+    if(!result)return;if(result.kind==='fog'){repairAnswers();return;}
+    const snapshot=result,token=generation;showDialog('나의 전생, 친구에게');const session=dialogSession,body=$('dialog-body');const pending=addText(body,'공유 카드를 펼치는 중…','share-help');
+    if(!cardPromise)cardPromise=makeCard(snapshot).catch(()=>null);
+    const card=await cardPromise;if(token!==generation||session!==dialogSession||!dialog.open)return;pending.remove();
+    if(card){if(blobURL)URL.revokeObjectURL(blobURL);blobURL=URL.createObjectURL(card.blob);const img=document.createElement('img');img.className='card-image';img.src=blobURL;img.alt=snapshot.name+' · '+snapshot.title+' · '+snapshot.analysis.join(' ')+' · 바디올한의원';body.append(img);}
+    else addText(body,'카드를 그리지 못했어요. 링크로 전생을 공유할 수 있어요.','share-help');
+    const buttons=document.createElement('div');buttons.className='share-buttons';body.append(buttons);
+    const share=addButton(buttons,'친구에게 공유하기 ↗','primary',async()=>{
+      const payload={title:'화타의 전생 진찰소',text:E.shareText(snapshot),url:E.shareURL(snapshot)};
+      if(card&&typeof File==='function'){
+        const file=new File([card.blob],'bodyall-'+snapshot.id+'.png',{type:'image/png'});
+        try{if(navigator.canShare&&navigator.canShare({files:[file]}))payload.files=[file];}catch(ignore){}
+      }
+      if(!navigator.share){await copyLink(snapshot,body);return;}
+      share.disabled=true;
+      try{await navigator.share(payload);event('share_api_resolved',{result:snapshot.id,withImage:!!payload.files});}
+      catch(error){if(error.name!=='AbortError')announce('아래의 이미지 저장이나 링크 복사를 이용해주세요.');}
+      finally{share.disabled=false;}
+    });
+    const save=addButton(buttons,'이미지 저장','secondary',()=>{
+      if(!blobURL)return;const a=document.createElement('a');a.href=blobURL;a.download='바디올_전생_'+snapshot.name.replaceAll(' ','_')+'.png';document.body.append(a);a.click();a.remove();event('result_card_export',{result:snapshot.id});announce('이미지를 열었다면 길게 눌러 저장할 수도 있어요.');
+    });save.disabled=!card;
+    addButton(buttons,'링크 복사','secondary',()=>copyLink(snapshot,body));
+    addText(body,'이미지에는 별칭과 짧은 성향 분석이 함께 담겨요. 저장한 뒤 친구에게 보내보세요.','share-help');event('share_preview_open',{result:snapshot.id});
+  }
+  async function copyLink(snapshot,body){
+    const text=E.shareText(snapshot)+'\n'+E.shareURL(snapshot);
+    try{if(!navigator.clipboard)throw new Error('clipboard');await navigator.clipboard.writeText(text);announce('공유 문구와 링크를 복사했어요.');event('share_link_copied',{result:snapshot.id});}
+    catch(error){let box=body.querySelector('textarea');if(!box){box=document.createElement('textarea');box.className='copy-fallback';box.readOnly=true;box.setAttribute('aria-label','복사할 공유 문구와 링크');box.rows=4;body.append(box);}box.value=text;box.focus();box.select();announce('선택된 문구를 복사해주세요.');}
+  }
+  async function makeCard(snapshot){
+    const [atlas,horse,logo]=await Promise.all([loadImage(assetPaths.atlas),loadImage(assetPaths.horse),loadImage(assetPaths.logo)]);
+    if(document.fonts&&document.fonts.ready)await document.fonts.ready;
+    const canvas=document.createElement('canvas');canvas.width=1080;canvas.height=1350;const ctx=canvas.getContext('2d');if(!ctx)throw new Error('canvas');
+    window.HuataCard.draw(ctx,snapshot,{atlas,horse,logo});
+    const blob=await new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(new Error('export')),'image/png'));
+    return {blob,width:1080,height:1350};
+  }
+  $('start').addEventListener('click',start);$('retry').addEventListener('click',()=>{closeDialog();start();game.scrollIntoView({block:'start',behavior:reduced.matches?'instant':'smooth'});});$('share').addEventListener('click',openShare);
+  $('back').addEventListener('click',()=>{if(busy)return;if(repair){if(repairAt===0){repair=false;renderResult();return;}repairAt--;index=repairQuestions[repairAt];}else if(index>0)index--;renderQuestion();});
+  $('sound').addEventListener('click',async()=>{
+    soundOn=!soundOn;
+    try{if(soundOn){const Audio=window.AudioContext||window.webkitAudioContext;if(!Audio)throw new Error('audio');if(!audioContext)audioContext=new Audio();await audioContext.resume();}}
+    catch(error){soundOn=false;announce('이 브라우저에서는 소리 없이 진행할게요.');}
+    $('sound').setAttribute('aria-pressed',String(soundOn));$('sound').textContent=soundOn?'소리 켜짐':'소리 꺼짐';$('sound').title=soundOn?'효과음 끄기':'효과음 켜기';if(soundOn)tone(660,.1);
+  });
+  $('help').addEventListener('click',()=>{showDialog('화타의 전생 진찰소');const body=$('dialog-body');addText(body,'앞에 앉은 사람은 한의사로 돌아온 화타. 손목을 맡긴 사람은 지금의 나예요. 거울에는 내 삼국지 전생이 나타나요.');addText(body,'열 가지 물음에 가까운 답을 골라보세요. 고민되면 “잘 모르겠어요”도 괜찮아요.');addText(body,'삼국지연의의 인물을 현대적으로 해석한 재미용 테스트입니다. 실제 진단이나 검증된 심리검사가 아닙니다.','fine');addText(body,'답변은 이 화면 안에서만 계산해요. 공유 카드에는 인물과 짧은 성향 분석이 담기며, 성별·몸 상태·불편한 부위는 공유하지 않아요.','fine');});
+  $('dialog-close').addEventListener('click',closeDialog);dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog();}});
+  document.querySelector('.clinic').addEventListener('click',()=>event('clinic_link_click'));
+  try{const f=E.friend(new URLSearchParams(location.search).get('r'));if(f){$('friend-note').textContent='친구의 전생은 '+f.name+'. 당신은?';$('friend-note').hidden=false;event('share_landing',{friendResult:f.id});}}catch(ignore){}
+  window.addEventListener('pagehide',e=>{if(e.persisted)return;cancelScheduled();if(blobURL)URL.revokeObjectURL(blobURL);});
+  loadAssets();
 })();

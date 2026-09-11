@@ -1,0 +1,40 @@
+{
+  "repository": "bodyallhani/wiki",
+  "baseCommit": "81dbf2d23f77078ddc230c6a802eaa34b2bf7389",
+  "phase": "implementation_complete",
+  "assets": [
+    {
+      "path": "contents/bodyall-clinic/assets/huata-room.webp",
+      "sha": "5d6c85fad6db7a00ffda1437dad93932af45cf72",
+      "size": 250542
+    },
+    {
+      "path": "contents/bodyall-clinic/assets/huata-doctor.webp",
+      "sha": "189471a04d9e5cd2828bd29823f0a7dc016c885e",
+      "size": 208932
+    },
+    {
+      "path": "contents/bodyall-clinic/assets/huata-portraits.webp",
+      "sha": "a22743a5041f447b2ebaf7b1545843243d6b76e3",
+      "size": 473004
+    },
+    {
+      "path": "contents/bodyall-clinic/assets/huata-horse.webp",
+      "sha": "7f1599036da9933cb2f71b85137cdd93cbfaa359",
+      "size": 140216
+    },
+    {
+      "path": "contents/bodyall-clinic/assets/huata-symbol.webp",
+      "sha": "66434a535be71e4769b53d66ad09f9e64c345bf0",
+      "size": 166744
+    }
+  ],
+  "deploymentVerification": "Check the GitHub Pages workflow for the commit containing this file.",
+  "validation": {
+    "knownAnswerCombinations": 16384,
+    "people": 12,
+    "cardPngExport": true,
+    "cardAnalysisText": true,
+    "browserTested": false
+  }
+}

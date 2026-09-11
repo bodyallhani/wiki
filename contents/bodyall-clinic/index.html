@@ -2,55 +2,75 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#183f43">
-  <title>바디올 클리닉 — 이 환자, 나잖아? | 생활공감 픽셀게임</title>
-  <meta name="description" content="오늘은 내가 원장님. 퇴근했는데 아직 일하는 최대리에게 어떤 말을 건넬까요? 세 번의 선택으로 즐기는 생활공감 픽셀게임.">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#172d2b">
+  <title>화타의 전생 진찰소 — 당신의 삼국지 전생은? | 바디올한의원</title>
+  <meta name="description" content="한의사로 돌아온 화타에게 손목을 맡겨보세요. 짧은 질문 열 개 뒤, 거울에 당신의 삼국지 전생이 나타납니다. 친구와 결과를 나눠보세요.">
   <link rel="canonical" href="https://wiki.body-all.co.kr/contents/bodyall-clinic/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="이 환자, 나잖아? — 바디올 클리닉">
-  <meta property="og:description" content="오늘은 내가 원장님. 퇴근하고도 일 생각뿐인 최대리에게 무슨 말을 건넬까요?">
+  <meta property="og:title" content="화타의 전생 진찰소 — 당신은 전생에 누구였을까요?">
+  <meta property="og:description" content="나는 제갈량, 친구는 장비? 화타가 봐주는 삼국지 전생 · 바디올한의원">
   <meta property="og:url" content="https://wiki.body-all.co.kr/contents/bodyall-clinic/">
-  <link rel="stylesheet" href="style.css?v=2">
-  <script src="story.js?v=2" defer></script>
-  <script src="engine.js?v=2" defer></script>
-  <script src="app.js?v=2" defer></script>
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23172d2b'/%3E%3Cellipse cx='32' cy='27' rx='18' ry='21' fill='%23cda565'/%3E%3Cellipse cx='32' cy='27' rx='13' ry='16' fill='%233a5750'/%3E%3Cpath d='M28 46h8v14h-8z' fill='%23cda565'/%3E%3Cpath d='m24 22 10-8' stroke='%23eadab8' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="assets/huata-room.webp">
+  <link rel="preload" as="image" href="assets/huata-doctor.webp">
+  <link rel="stylesheet" href="style.css?v=huata1">
+  <script src="data.js?v=huata1" defer></script>
+  <script src="engine.js?v=huata1" defer></script>
+  <script src="card.js?v=huata1" defer></script>
+  <script src="app.js?v=huata1" defer></script>
 </head>
 <body>
-  <main class="game-shell" id="game">
-    <header class="window-bar">
-      <div class="brand"><span class="brand-mark" aria-hidden="true">B</span><span>바디올 클리닉 <small>BODYALL CLINIC</small></span></div>
-      <div class="top-controls"><button id="sound-button" type="button" aria-pressed="false" title="효과음 켜기">소리 꺼짐</button><button id="help-button" type="button" aria-label="게임 이용 안내">?</button></div>
+  <main class="game" id="game" data-state="intro">
+    <header class="titlebar">
+      <span class="app-title"><span class="tiny-diamond" aria-hidden="true">◆</span> 화타의 전생 진찰소</span>
+      <div class="tools"><button id="sound" aria-pressed="false" title="효과음 켜기">소리 꺼짐</button><button id="help" aria-label="이용 안내">?</button></div>
     </header>
-    <div class="chapter-bar"><div><span class="chapter-index">첫 번째 이야기</span><h1>퇴근했는데 아직도 일하는 최대리</h1></div><span class="visit-badge">EP.01</span></div>
-    <div class="role-bar" aria-label="등장인물과 내 역할"><span class="my-role"><strong>나</strong> 이야기를 듣는 원장님</span><span class="their-role"><strong>상대</strong> 직장인 최대리</span></div>
-    <div class="play-layout">
-      <section class="play-area" aria-label="최대리와 대화하기">
-        <div class="scene" id="scene">
-          <div class="scene-caption"><span class="scene-light" aria-hidden="true"></span>바디올 진료실 <span class="scene-time">늦은 오후</span></div>
-          <div class="portrait" id="portrait" role="img" aria-label="가상의 직장인 최대리"></div>
-          <div id="scene-content" class="scene-content"></div>
-          <span class="patient-name" id="patient-name">지금 내 앞에 앉은 사람 <strong>최대리</strong></span>
-        </div>
-        <div class="conversation-frame">
-          <div class="conversation-heading"><span id="speaker">오늘은 내가 원장님</span><span id="scene-count">EP.01</span></div>
-          <div id="my-line" class="my-line" hidden></div>
-          <div id="dialogue" class="dialogue" aria-live="polite" aria-atomic="true"></div>
-          <h2 id="choice-prompt" class="choice-prompt" hidden></h2>
-          <div id="choices" class="choices"></div>
-        </div>
-      </section>
-      <aside class="journal" aria-label="오늘의 기록">
-        <div class="journal-title"><span>BODYALL CLINIC</span><h2>최대리는 이런 사람</h2><span class="file-number">01</span></div>
-        <div class="patient-file"><span class="file-caption">오늘 만난 사람</span><strong>최대리</strong><p>퇴근하고도<br>일 생각이 떠나지 않아요.</p></div>
-        <ol class="step-list" aria-label="게임 진행"><li data-step="1"><span>01</span>말 걸기</li><li data-step="2"><span>02</span>일상 묻기</li><li data-step="3"><span>03</span>한마디 더</li></ol>
-        <section class="clue-section"><h3>지금까지 들은 얘기 <span id="clue-count">0 / 2</span></h3><div id="clue-list"></div></section>
-      </aside>
-    </div>
-    <footer class="game-footer"><p>가상 인물과 나누는 대화 게임입니다. 실제 진료가 아닙니다.</p><span>바디올한의원 제작</span></footer>
+    <section class="stage" id="stage" aria-label="내 손목을 짚으며 거울을 들고 있는 화타">
+      <div class="world" id="world" aria-hidden="true">
+        <img class="room" src="assets/huata-room.webp" alt="" fetchpriority="high">
+        <img class="wall-logo" src="assets/huata-symbol.webp" alt="">
+        <img class="doctor doctor-lower" src="assets/huata-doctor.webp" alt="" fetchpriority="high">
+        <img class="doctor doctor-upper" src="assets/huata-doctor.webp" alt="">
+        <div class="mirror-window" id="mirror-window"><div class="reflection" id="reflection"></div><div class="mirror-veil"></div><div class="mirror-shine"></div></div>
+        <div class="light-motes"><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="scene-vignette" aria-hidden="true"></div>
+      <div class="speaker-tag"><span>한의사로 돌아온</span><strong>화타</strong></div>
+      <div class="mutter" id="mutter" aria-hidden="true"></div>
+      <div class="reveal-caption" id="reveal-caption" role="status"></div>
+      <span class="mirror-hint" id="mirror-hint">거울 속에, 아직 모르는 나</span>
+    </section>
+    <section class="console" id="console" aria-label="전생 진찰">
+      <div class="intro" id="intro">
+        <p class="eyebrow">화타가 봐주는 삼국지 전생</p>
+        <h1>당신은 전생에<br><em>누구였을까요?</em></h1>
+        <p class="intro-line">“난 전생에 화타였다네. 자네는 누구였을까?”</p>
+        <p class="friend-note" id="friend-note" hidden></p>
+        <button class="primary start" id="start" disabled><span id="start-label">거울을 닦는 중…</span><span aria-hidden="true">→</span></button>
+        <p class="intro-meta" id="asset-status">질문 10개 · 약 1분 · 가입 없이</p>
+      </div>
+      <div class="question-view" id="question-view" hidden>
+        <div class="question-meta"><span>화타의 물음</span><span id="question-count">01 <i>/ 10</i></span></div>
+        <div class="progress" role="progressbar" aria-label="진찰 진행" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" id="progress"><span id="progress-fill"></span></div>
+        <h2 id="question" tabindex="-1"></h2>
+        <div class="answers" id="answers"></div>
+        <button class="back" id="back">← 이전 질문</button>
+      </div>
+      <div class="result-view" id="result-view" hidden>
+        <p class="eyebrow" id="result-eyebrow">거울에 비친 당신의 전생</p>
+        <h2 id="result-name" tabindex="-1"></h2><p class="result-title" id="result-title"></p>
+        <div class="analysis" id="analysis"></div>
+        <p class="result-quote" id="result-quote"></p>
+        <div class="result-actions"><button class="primary" id="share">친구에게 공유하기 <span aria-hidden="true">↗</span></button><button class="secondary" id="retry">다시 해보기</button></div>
+        <details class="story" id="story"><summary>이 인물이 궁금하다면</summary><p id="story-copy"></p><a id="story-source" target="_blank" rel="noopener">삼국지연의 속 이야기 ↗</a></details>
+      </div>
+    </section>
+    <footer class="footer"><a href="https://wiki.body-all.co.kr/SART.html" target="_blank" rel="noopener" class="clinic"><img src="assets/huata-symbol.webp" alt="" width="24" height="22"><span>바디올한의원</span><span class="clinic-more">알아보기 ↗</span></a><p>삼국지연의를 바탕으로 만든 재미용 테스트입니다.</p></footer>
   </main>
-  <dialog id="modal" class="modal"><div class="modal-titlebar"><h2 id="modal-title"></h2><button type="button" id="close-modal" aria-label="창 닫기">×</button></div><div id="modal-body" class="modal-body"></div></dialog>
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <noscript><div class="noscript">게임을 플레이하려면 브라우저에서 JavaScript를 켜주세요.</div></noscript>
+  <dialog id="dialog"><div class="dialog-heading"><h2 id="dialog-title"></h2><button id="dialog-close" aria-label="창 닫기">×</button></div><div id="dialog-body"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">전생을 보려면 브라우저에서 JavaScript를 켜주세요.</p></noscript>
 </body>
 </html>

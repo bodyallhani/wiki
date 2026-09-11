@@ -1,62 +1,31 @@
-/* Run: node test-game.cjs — no dependencies or network. */
 'use strict';
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
-const vm=require('node:vm');
-const story=require('./story.js');
-const {ClinicGame,observations,questions}=require('./engine.js');
-const expected={O1:['A','“잠깐” 단속반'],O2:['B','퇴근 응원단'],O3:['B','내 시간 지킴이'],O4:['A','휴식 알림이'],O5:['C','첫마디 도우미'],Q1:['A','점심시간 수호자'],Q2:['B','저녁시간 지킴이'],Q3:['C','내 편 같은 원장님']};
-let paths=0;
-const endings=new Set(),cards=new Set(),lengths=[];
-for(const o of observations)for(const q of questions)for(const selected of [o,q]){
-  const g=new ClinicGame();
-  assert.equal(g.choose(o),false);assert.equal(g.result(),null);
-  assert.equal(g.start(),true);assert.equal(g.phase,'observe');
-  assert.equal(g.exchange.player,null);assert.equal(g.exchange.patient,story.opening);
-  assert.equal(g.start(),false,'no duplicate starts during a conversation');
-  assert.deepEqual(g.available(),observations);assert.equal(g.choose('Q1'),false);
-  let renderedChars=story.opening.length;
-  const first=g.choiceText(o);
-  assert.equal(first,story.items[o].prompt);assert.equal(g.choose(o),true);
-  assert.equal(g.phase,'question');assert.deepEqual(g.exchange,{player:first,patient:story.items[o].reply});
-  renderedChars+=g.exchange.player.length+g.exchange.patient.length;
-  assert.deepEqual(g.available(),questions);
-  const second=g.choiceText(q);assert.equal(second,story.items[q].prompt);assert.equal(g.choose(q),true);
-  assert.equal(g.phase,'connect');assert.deepEqual(g.exchange,{player:second,patient:story.items[q].reply});
-  renderedChars+=g.exchange.player.length+g.exchange.patient.length;
-  assert.deepEqual(g.available(),[o,q]);
-  const unavailable=Object.keys(expected).find(id=>![o,q].includes(id));
-  assert.equal(g.choiceText(unavailable),null);assert.equal(g.choose(unavailable),false,'unheard topics cannot be selected');
-  if(selected.startsWith('O'))assert.ok(g.choiceText(selected).startsWith('아까'),'returning to an earlier topic must be explicit');
-  const last=g.choiceText(selected);assert.equal(last,story.items[selected].followupPrompt);
-  assert.equal(g.choose(selected),true);assert.equal(g.phase,'ending','third choice goes straight to the ending');
-  assert.deepEqual(g.exchange,{player:last,patient:story.items[selected].lastLine});
-  renderedChars+=g.exchange.player.length+g.exchange.patient.length;
-  assert.deepEqual(g.available(),[]);assert.equal(g.choose(selected),false);
-  const r=g.result();assert.equal(r.id,selected);assert.equal(r.ending,expected[selected][0]);assert.equal(r.nickname,expected[selected][1]);
-  assert.ok(r.description&&r.shareHeadline&&r.lastLine);
-  endings.add(r.ending);cards.add(r.shareHeadline);lengths.push(renderedChars);
-  assert.equal(g.start(true),true);assert.deepEqual(g.previous,{observation:o,question:q,selected});
-  assert.equal(g.observation,null);assert.equal(g.question,null);assert.equal(g.selected,null);assert.equal(g.phase,'observe');
-  assert.deepEqual(g.exchange,{player:null,patient:story.replayOpening});
-  paths++;
+const D=require('./data.js'),E=require('./engine.js');
+assert.equal(D.questions.length,10);assert.equal(D.people.length,12);
+D.questions.forEach(q=>{assert.equal(q.answers.filter(a=>a.code==='N').length,1);assert(q.text.length<35);});
+const allUnknown=Array(10).fill('N');assert.equal(E.getResult(allUnknown).id,'horse');
+assert.equal(E.getResult(['A',...allUnknown.slice(1)]).id,'fog');
+assert.equal(E.getResult(['N','N','E',...allUnknown.slice(3)]).id,'fog');
+for(let i=0;i<10;i++){const answers=[...allUnknown];answers[i]='A';assert.notEqual(E.getResult(answers).id,'horse');}
+for(const p of D.people){assert.equal(E.getResult(['A','D','E',...p.pattern]).id,p.id);}
+const distribution=Object.fromEntries(D.people.map(p=>[p.id,0]));let minEvidence=10;
+for(let n=0;n<4**7;n++){
+ let k=n;const selected=[];for(let i=0;i<7;i++){selected.push('ABCD'[k%4]);k=Math.floor(k/4);}
+ const answers=['A','D','E',...selected],r=E.getResult(answers);distribution[r.id]++;
+ minEvidence=Math.min(minEvidence,r.analysis.length);
+ assert(r.evidence.every(e=>answers[e.question]===e.code));assert(r.analysis.every(text=>r.evidence.some(e=>e.text===text)));
+ const changed=E.getResult(['B','A','C',...selected]);assert.equal(changed.id,r.id);assert.deepEqual(changed.analysis,r.analysis);
+ const url=new URL(E.shareURL(r));assert.deepEqual([...url.searchParams.keys()],['r','from','v']);assert.equal(url.searchParams.get('r'),r.id);
 }
-assert.equal(paths,30);assert.equal(endings.size,3);assert.equal(cards.size,8);
-for(const item of Object.values(story.items)){
-  assert.ok(item.reply.length<=55,'first reply must fit a short exchange');
-  assert.ok(item.lastLine.length<=55,'last reply must fit a short exchange');
-  assert.ok(!/척추|골반|진단|치료|증상|문진/.test([item.prompt,item.reply,item.followupPrompt,item.lastLine].join(' ')),'medical explanations stay out of main dialogue');
-}
+assert.equal(minEvidence,2);Object.values(distribution).forEach(count=>assert(count>0));
+const faint=E.getResult(['A','D','E','A','N','N','N','N','N','N']);assert(faint.faint);assert.equal(faint.analysis.length,1);
+assert.equal(E.friend('<script>'),null);assert.throws(()=>E.getResult([]));
+const source=fs.readFileSync(path.join(__dirname,'app.js'),'utf8');
+assert(!source.includes('localStorage'));assert(!source.includes('fetch('));
 const html=fs.readFileSync(path.join(__dirname,'index.html'),'utf8');
-const css=fs.readFileSync(path.join(__dirname,'style.css'),'utf8');
-const app=fs.readFileSync(path.join(__dirname,'app.js'),'utf8');
-for(const file of ['story.js','engine.js','app.js'])new vm.Script(fs.readFileSync(path.join(__dirname,file),'utf8'),{filename:file});
-for(const m of html.matchAll(/(?:src|href)="(?!https?:|#)([^"?]+)[^"]*"/g))assert.ok(fs.existsSync(path.join(__dirname,m[1])),`missing ${m[1]}`);
-for(const m of css.matchAll(/url\(['"]?([^)'"?]+)['"]?\)/g))assert.ok(fs.existsSync(path.join(__dirname,m[1])),`missing ${m[1]}`);
-for(const m of app.matchAll(/(?:sheet|background)\.src='([^']+)'/g))assert.ok(fs.existsSync(path.join(__dirname,m[1])),`missing ${m[1]}`);
-assert.ok(!/maximum-scale|user-scalable=no/.test(html));
-assert.ok(!/fetch\(|XMLHttpRequest|sendBeacon|localStorage|sessionStorage/.test(app));
-assert.ok(html.includes('id="my-line"')&&html.includes('class="role-bar"'));
-assert.ok(app.includes('나 · 원장님')&&app.includes('class="dialogue-name patient">최대리'));
-console.log(JSON.stringify({pathsVerified:paths,endingTypes:endings.size,distinctShareCards:cards.size,choicesPerRound:3,extraDialogueClicks:0,shownQuestionMatchesSelectedButton:true,earlierTopicTransitionsExplicit:true,replayVerified:true,averageDialogueCharacters:Math.round(lengths.reduce((a,b)=>a+b,0)/lengths.length),syntaxAndAssets:'PASS',browserTesting:'not performed'},null,2));
+const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,new Set(ids).size);
+for(const m of source.matchAll(/\$\('([^']+)'\)/g))assert(ids.includes(m[1]),'Missing DOM id '+m[1]);
+for(const name of ['data.js','engine.js','app.js','style.css'])assert(html.includes(name));
+console.log(JSON.stringify({cases:4**7,people:12,distribution,allUnknownHorse:true,noSymptomsInMatching:true,allEvidenceFromAnswers:true,shareOnlyResult:true,domTargetsValid:true,browserTested:false},null,2));
