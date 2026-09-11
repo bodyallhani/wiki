@@ -1,0 +1,15 @@
+{
+  "status": "blocked_on_age_controllable_voice_generation",
+  "date": "2026-09-11",
+  "repository": "bodyallhani/wiki",
+  "publicMain": "e4f6c0dba687dd1ed3a15d743330e37768e54ff0",
+  "branch": "codex/huata-elderly-voice",
+  "voiceRequirement": "Clearly elderly Korean man age 70-80; nonverbal only; 5 cues; same speaker",
+  "rejectedProvider": "AI Voice Generator deep preset",
+  "rejectionReason": "User auditioned and said it sounds like a young man",
+  "rejectedAssetsPublished": false,
+  "preparedPlayback": "audio-source/elderly-voice-pending/sound.js",
+  "preparedTest": "audio-source/elderly-voice-pending/test-sound.cjs",
+  "next": "Connect Fal; inspect live tools/skills/schema; design one elderly sample before generating the remaining clips",
+  "browserTested": false
+}

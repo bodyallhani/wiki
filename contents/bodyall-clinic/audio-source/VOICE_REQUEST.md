@@ -1,9 +1,38 @@
-# 화타의 동일 목소리 추임새 제작 요청
+# 화타의 노년 남성 비언어 추임새 — 제작 지침
 
-AI Voice Generator는 사용자에 의해 설치/연결 완료되었다. 현재 실행 컨텍스트에 음성 생성 도구가 없어 녹음 제작은 미완료다. 도구가 실제 제공될 때 아래 내용으로 생성하여 sound.js의 Web Speech 재생을 녹음 파일로 교체한다. 재설치 요청 금지.
+## 현재 상태
 
-- 한국어 노년 남성. 낮고 따뜻하며 약간 능청스러운 화타. 과장된 악당·기계 목소리 금지. 기존 특정 배우 목소리 모방 요구 없음.
-- 각 효과음 약0.4~1초. 음악/효과/반향 없는 단독 음성. 모든 파일 같은 화자.
-- 10개: mm=음. / mm-mm=음, 음. / aha=아하. / oh=오오. / ho=호오. / isee=그렇군. / understood=알겠네. / good=좋네. / indeed=그렇구먼. / chuckle=허허.
-- 선택하는 즉시 한 항목만 재생. 이전 소리 중단. 코드의 문맥별 선택/연속 중복 방지 유지. 기기 고유 음성은 녹음 파일 오류 시에만 대체 수단으로 사용.
-- 생성 도구의 실제 응답 경로/파일을 확보한 다음에만 녹음 완성으로 기록할 것.
+2026-09-11: AI Voice Generator 연결 및 생성 도구 사용 가능. 앞선 “도구 미노출” 기록은 과거 상태다. 하지만 실제 도구에는 normal/clear/fancy/deep/crisp/delicate 프리셋만 있고 나이·음색 연출을 지정하는 입력이 없다.
+
+deep 프리셋으로 만든 5종을 사용자가 직접 듣고 “젊은 남자 느낌, 할아버지여야 한다”고 거절했다. 해당 파일은 배포하지 않는다. 피치를 낮추거나 속도를 늦춘 결과를 노년 음색으로 간주하지 않는다.
+
+현재 공개 사이트는 main e4f6c0dba687dd1ed3a15d743330e37768e54ff0의 기기 Web Speech 음성이다. 고정 파일 재생 코드는 준비했지만 적합한 음원 확보 전이므로 아직 공개 사이트에 반영하지 않았다.
+
+## 확정 요구
+
+- 듣자마자 70~80대 할아버지로 느껴지는 한국어 남성 음색. 노화된 성대의 거친 결, 약간 새는 숨, 작고 자연스러운 떨림, 느긋하고 따뜻한 반응.
+- 특정 실존 배우·인물을 모방하지 않는 화타 캐릭터 목소리.
+- 문장 없이 5종만 사용: 음…, 음음, 어…, 아하!, 허허….
+- “그렇군”, “알겠네”, “좋네”, “그렇구먼” 등 실제 언어 문장 금지.
+- 다섯 파일에 동일한 화자. 각 0.4~1.2초 정도, 음악·반향 없는 깨끗한 단독 음성. “허허”는 글자 낭독보다 부드러운 실제 웃음.
+- 답변 즉시 한 파일만 재생, 연속 중복 방지, 앞 소리 중단, BGM 덕킹, 음소거·페이지 가림 유지.
+- 기기 기본 음성으로 돌아가는 대체 경로를 사용하지 않는다. 음원 오류는 게임 진행을 막지 않는다.
+
+## 확인한 제작 경로
+
+Fal의 fal-ai/qwen-3-tts/voice-design/1.7b는 Korean 언어와 별도 prompt 입력을 제공한다.
+https://fal.ai/models/fal-ai/qwen-3-tts/voice-design/1.7b/api
+
+현재 Fal은 미연결. 연결 뒤 실제 도구와 스킬을 확인하고 최신 스키마·가격을 점검한다. 먼저 짧은 샘플 하나로 노년 음색을 평가한다. 모델 설명만으로 성공했다고 단정하지 않는다. 맞는 음색을 얻으면 같은 생성 화자를 유지해서 5종을 만든다.
+
+음색 프롬프트 초안:
+An unmistakably elderly Korean grandfather in his late seventies or eighties. Naturally aged male vocal folds with a dry, weathered, lightly raspy texture, softly audible breath and a subtle irregular tremor. Gentle, unhurried, warm and slightly amused, like a kindly old physician listening closely. Age must be audible in the texture and phrasing. Short spontaneous nonverbal reactions, no spoken sentences. Dry close-mic voice, no music or room echo.
+
+첫 샘플 text: “음… 허허…” / language: “Korean”. 세부 생성값은 연결 후 실제 스키마를 따른다.
+
+## 준비 코드와 배포 게이트
+
+- `elderly-voice-pending/sound.js`, `test-sound.cjs`: 고정 MP3 5종을 재생하는 준비 코드. 실제 적용 시 게임 폴더의 대응 파일로 옮긴다.
+- 준비 코드의 무작위 선택·중복 방지·오디오 중첩·덕킹·음소거·숨김·오류 처리는 VM 테스트 통과. 사용한 임시 음원은 연령 요구를 충족하지 못함. 브라우저 음향 QA는 미실시.
+- 합격 음원만 assets/huata-voice-{mm,mm-mm,uh,aha,chuckle}.mp3에 배치하고 AUDIO.json의 출처·해시·상태를 갱신한다. index.html의 sound.js 캐시 버전도 갱신한다.
+- sound 및 startup 검증 후 최신 main 기반으로 이 게임 폴더만 반영. 정확한 커밋의 GitHub Pages 성공까지 확인한다.
