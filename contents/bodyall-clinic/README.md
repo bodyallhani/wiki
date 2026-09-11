@@ -49,6 +49,8 @@
 
 ### 음악과 목소리
 
-첫 시작 클릭 후 `sound.js`가 1분 오리지널 곡 `assets/huata-courtyard.mp3`를 반복합니다. 소리 버튼은 음악·추임새·효과음을 함께 제어합니다. 추임새는 음·음음·어·아하·허허 5종의 고정 MP3를 재생합니다. 82세 한국인 할아버지의 음색을 지정해 Qwen3-TTS VoiceDesign 공개 모델을 로컬 CPU에서 실행했습니다. 기기 기본 음성 합성과 유료 생성 API는 사용하지 않습니다. 재생 시 생성 비용도 없습니다. 제작 코드·원본·음색 지침은 `audio-source/`와 `AUDIO.json`에 남겼습니다. 음악은 `audio-source/compose.py`의 직접 작곡·합성 출력이며 추가 API 호출이 없습니다.
+첫 시작 클릭 후 `sound.js`가 1분 오리지널 곡 `assets/huata-courtyard.mp3`를 반복합니다. 소리 버튼은 음악·추임새·효과음을 함께 제어합니다. 추임새는 원장님이 직접 듣고 음색을 승인한 샘플에서 음·아하·허허 3종을 잘라 만든 고정 MP3입니다. 새로 생성하지 않고 승인한 녹음의 음높이·속도·볼륨을 유지합니다. 아프거나 잘 모르겠다는 답에는 차분한 ‘음’을, 성향 답변에는 표정에 맞는 추임새를 재생합니다. 여러 후보가 있으면 연속 반복을 피하고, 차분한 후보가 하나뿐일 때는 답변마다 재생합니다.
+
+승인 샘플은 Qwen3-TTS CustomVoice의 고정 화자 `Uncle_Fu`로 로컬 CPU에서 만들었습니다. 기기 기본 음성 합성과 유료 API를 사용하지 않으며 재생 시 생성 비용도 없습니다. 승인 원본·생성 정보·분할 코드는 `audio-source/approved-voice*`, `audio-source/prepare-approved-voice.py`, `AUDIO.json`에 있습니다. 이전 VoiceDesign 5종은 음색 문제로 거절되어 현재 재생 목록에서 제외했습니다. 음악은 `audio-source/compose.py`의 직접 작곡·합성 출력입니다.
 
 `node test-sound.cjs`, `node test-startup.cjs`로 선택 반응/시작 흐름을 검사합니다. `test-card-centering.cjs`는 선택적 검증 도구 `@napi-rs/canvas`가 필요합니다.

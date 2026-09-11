@@ -1,12 +1,10 @@
-/* Original local BGM + five fixed nonverbal Hua Tuo voice clips. Sound never gates gameplay. */
+/* Original local BGM + three excerpts of the user-approved Hua Tuo voice. Sound never gates gameplay. */
 (function(root){
   'use strict';
   const cues=[
-    {id:'mm',text:'음…',src:'assets/huata-voice-mm.mp3',moods:['calm','warm']},
-    {id:'mm-mm',text:'음음',src:'assets/huata-voice-mm-mm.mp3',moods:['calm','warm']},
-    {id:'uh',text:'어…',src:'assets/huata-voice-uh.mp3',moods:['calm','warm','surprised']},
-    {id:'aha',text:'아하!',src:'assets/huata-voice-aha.mp3',moods:['warm','surprised']},
-    {id:'chuckle',text:'허허…',src:'assets/huata-voice-chuckle.mp3',moods:['warm']}
+    {id:'mm',text:'음…',src:'assets/huata-approved-mm.mp3',moods:['calm','warm','surprised']},
+    {id:'aha',text:'아하!',src:'assets/huata-approved-aha.mp3',moods:['warm','surprised']},
+    {id:'chuckle',text:'허허…',src:'assets/huata-approved-chuckle.mp3',moods:['warm']}
   ];
   function eligible({question=0,code='N',expression='neutral'}={}){
     const calm=code==='N'||question===0||(question===1&&code!=='B'&&code!=='D')||(question===2&&code!=='E');
@@ -54,6 +52,8 @@
       if(!enabled||paused)return;
       const options=eligible(details);let pool=options.filter(c=>!used.has(c.id)&&c.id!==lastCue);
       if(!pool.length){options.forEach(c=>used.delete(c.id));pool=options.filter(c=>c.id!==lastCue);}
+      // A calm answer has just one approved cue; acknowledge it even after another calm answer.
+      if(!pool.length)pool=options;
       const cue=pool[Math.min(pool.length-1,Math.floor(random()*pool.length))];if(!cue)return;
       used.add(cue.id);lastCue=cue.id;
       stopVoice();const token=voiceToken;

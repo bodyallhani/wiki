@@ -9,152 +9,75 @@
   "channels": 2,
   "sha256": "cf5fffc41ab3d0c6bcb0c5fcb381450d7f187c8edfee795cace143e9fc6c031f",
   "speech": {
-    "mode": "five fixed local MP3 files",
-    "recordedVoiceStatus": "generated and edited with a locally executed open model; no paid API",
-    "targetVoice": "82-year-old Korean grandfather: weathered rasp, soft breath, slight tremor, warm manner",
+    "mode": "three fixed MP3 excerpts of the user-approved sample",
+    "recordedVoiceStatus": "User approved sample 01; all game voices cut from that same recording.",
     "generator": {
-      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
-      "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+      "speaker": "Uncle_Fu",
+      "seed": 1282,
+      "precision": "float32; no dynamic quantization",
       "modelLicense": "Apache-2.0",
       "execution": "Local CPU; no paid API",
-      "seed": 82,
-      "decoderInt8": true,
-      "speakerMode": "same elderly character description for all five; no real person reference",
-      "instruct": "An 82-year-old Korean grandfather. Clearly elderly male, with a dry weathered rasp, a slightly reedy resonance, softly leaking breath, a gentle uneven tremor and slow relaxed phrasing. Warm, kindly and slightly amused, like a very old physician. One brief natural nonverbal reaction, then stop. Soft intimate voice, no music, no background noise.",
-      "clips": [
-        {
-          "id": "mm",
-          "text": "음.",
-          "sampleRate": 24000,
-          "durationSeconds": 1.2
-        },
-        {
-          "id": "mm-mm",
-          "text": "음, 음.",
-          "sampleRate": 24000,
-          "durationSeconds": 3.76
-        },
-        {
-          "id": "uh",
-          "text": "어.",
-          "sampleRate": 24000,
-          "durationSeconds": 2.64
-        },
-        {
-          "id": "aha",
-          "text": "아하!",
-          "sampleRate": 24000,
-          "durationSeconds": 1.84
-        },
-        {
-          "id": "chuckle",
-          "text": "허허.",
-          "sampleRate": 24000,
-          "durationSeconds": 2.8
-        }
-      ],
-      "elapsedSeconds": 62.96
+      "metadata": "audio-source/approved-voice.json"
+    },
+    "approvedSample": {
+      "file": "audio-source/approved-voice-sample.mp3",
+      "sha256": "307b9fc5461ca90fa35cf7c8c941198c66ece27efd516f980c1480ffdf3df607",
+      "durationSeconds": 3.52,
+      "approvalDate": "2026-09-11"
     },
     "cues": [
       {
         "id": "mm",
-        "file": "assets/huata-voice-mm.mp3",
-        "durationSeconds": 0.885,
+        "text": "음…",
+        "file": "assets/huata-approved-mm.mp3",
         "sourceSegments": [
           [
-            0,
-            0.94
+            0.0,
+            0.5
           ]
         ],
-        "trimFromSeconds": 0.015,
-        "trimToSeconds": 0.9,
-        "peak": 0.7528,
-        "rms": 0.115,
-        "gain": 2.1662,
-        "sha256": "67b8d5a4780b20cb4d2b6793d74cde33b42dc1872fb8122d27ccca49258ddb01",
-        "bytes": 7725
-      },
-      {
-        "id": "mm-mm",
-        "file": "assets/huata-voice-mm-mm.mp3",
-        "durationSeconds": 1.785,
-        "sourceSegments": [
-          [
-            0.28,
-            1.16
-          ],
-          [
-            1.86,
-            2.67
-          ]
-        ],
-        "trimFromSeconds": 0.015,
-        "trimToSeconds": 1.8,
-        "peak": 0.3625,
-        "rms": 0.115,
-        "gain": 0.6099,
-        "sha256": "00487a1836a393de55a6f72cd4d0167bb87ebf58e3fe40d65dd11367a394aeb7",
-        "bytes": 15021
-      },
-      {
-        "id": "uh",
-        "file": "assets/huata-voice-uh.mp3",
-        "durationSeconds": 1.225,
-        "sourceSegments": [
-          [
-            0.36,
-            1.69
-          ]
-        ],
-        "trimFromSeconds": 0.045,
-        "trimToSeconds": 1.27,
-        "peak": 0.7398,
-        "rms": 0.115,
-        "gain": 2.2707,
-        "sha256": "410539984aad7313b211527a7e9046224bacf29541cbca34730abf1e589f515f",
-        "bytes": 10605
+        "durationSeconds": 0.5,
+        "encodedDurationSeconds": 0.552,
+        "bytes": 9261,
+        "sha256": "841eecb768319572df67288fb03ba9d7d558332b88fd305c4158e99c78481325"
       },
       {
         "id": "aha",
-        "file": "assets/huata-voice-aha.mp3",
-        "durationSeconds": 0.685,
+        "text": "아하!",
+        "file": "assets/huata-approved-aha.mp3",
         "sourceSegments": [
           [
-            0.34,
-            1.14
+            0.76,
+            1.78
           ]
         ],
-        "trimFromSeconds": 0.045,
-        "trimToSeconds": 0.73,
-        "peak": 0.686,
-        "rms": 0.115,
-        "gain": 2.2799,
-        "sha256": "c1d22b3bccfe306ee9c902056ff3b7f27d0d4e976a0170c0aa874c11f41e1b4e",
-        "bytes": 6189
+        "durationSeconds": 1.02,
+        "encodedDurationSeconds": 1.08,
+        "bytes": 17709,
+        "sha256": "e088a41f35f8775e31c6d1c20d1ef4a876f3bf239c227f8c6af3178d3ae38717"
       },
       {
         "id": "chuckle",
-        "file": "assets/huata-voice-chuckle.mp3",
-        "durationSeconds": 1.295,
+        "text": "허허…",
+        "file": "assets/huata-approved-chuckle.mp3",
         "sourceSegments": [
           [
-            0.08,
-            1.45
+            1.82,
+            3.52
           ]
         ],
-        "trimFromSeconds": 0.005,
-        "trimToSeconds": 1.3,
-        "peak": 0.5084,
-        "rms": 0.115,
-        "gain": 4.094,
-        "sha256": "151346f85968eec64fc64c2e44219ee9c817eb2656b75b734a843ad9af70f53e",
-        "bytes": 10989
+        "durationSeconds": 1.7,
+        "encodedDurationSeconds": 1.752,
+        "bytes": 28461,
+        "sha256": "ac484b9cc795d203ab8d46978646019c4e6e2d83a731c7f89cbb12197f2ff7bd"
       }
     ],
-    "sourceArchive": "audio-source/elderly-voice-source.zip",
-    "processing": "Select complete short reactions; trim edge silence; balance RMS; fade boundaries. No pitch shifting or time stretching.",
+    "processing": "Cut at pauses, add 5 ms boundary fades and encode MP3. No new generation, pitch shift, time stretch or volume change.",
+    "processingSource": "audio-source/prepare-approved-voice.py",
     "deviceSpeechFallback": false,
-    "audition": "Generated for the specified elderly character; perceived age has not been confirmed by user for this new set."
+    "audition": "User listened to and approved this source recording. Assistant checks decoding and playback logic, not perceived age or gender."
   },
   "playback": {
     "gestureStart": true,

@@ -1,14 +1,14 @@
-# 화타 비언어 추임새 — 현재 제작 기준
+# 화타 비언어 추임새 — 승인 완료 기준
 
-5종: 음…, 음음, 어…, 아하!, 허허…. 실제 의미를 가진 답변 문장을 읽지 않는다. 70~80대 할아버지의 거친 성대 질감과 숨, 느긋한 반응이 목표다. 젊은 남성 deep 프리셋은 사용자가 거절했으므로 재사용하지 않는다.
+2026-09-11 원장님이 채팅의 ‘화타_목소리_샘플01.mp3’를 직접 듣고 음색을 승인했습니다. 현재 기준은 이 녹음이며, 생성 프롬프트만으로 음색이 검증됐다고 판단하지 않습니다.
 
-현재 파일은 무료 공개 Qwen3-TTS-12Hz-1.7B-VoiceDesign 모델을 로컬 CPU에서 실행해 제작했다. 모든 항목에 같은 노년 캐릭터 설명을 사용했다. 피치 저하로 노년 목소리를 대신하지 않는다. 실제 연령 인상은 사용자 청취로 평가한다.
+- 승인 원본: `approved-voice-sample.mp3`. 원본 샘플과 같은 바이트이며 SHA-256은 `approved-voice.json`과 `../AUDIO.json`에 기록합니다. 원본 MP3의 ‘검토용’ 태그는 샘플 제작 당시의 기록입니다.
+- 생성: 무료 로컬 Qwen3-TTS-12Hz-1.7B-CustomVoice, 고정 화자 `Uncle_Fu`, seed 1282, float32. 모델 revision과 지침은 `approved-voice.json`에 있습니다.
+- 재생: 승인한 녹음을 ‘음·아하·허허’ 3종으로 분할. 새 음성 생성, 음높이·속도·볼륨 변경 없음. 5ms 경계 페이드만 적용합니다.
+- 최종 파일: `../assets/huata-approved-{mm,aha,chuckle}.mp3`. 코드: `../sound.js`.
+- 재현: ffmpeg/ffprobe가 있는 환경에서 `python3 prepare-approved-voice.py`. 모델 다운로드나 유료 API가 필요하지 않습니다.
+- 검증: `node test-sound.cjs`, `node test-startup.cjs`. 실제 청취 선택은 원장님이 수행했으며 자동 검사는 재생 동작을 확인합니다.
 
-재생 코드: sound.js. 최종 MP3: assets/huata-voice-{mm,mm-mm,uh,aha,chuckle}.mp3. 생성 지침과 해시: AUDIO.json. 생성 원본 5종과 선택 구간: elderly-voice-source.zip. 제작 코드: generate-elderly-final.py, prepare-elderly-clips.py.
+기존 `generate-elderly-final.py`, `prepare-elderly-clips.py`, `elderly-voice-source.zip`은 **음색이 거절된 이전 실험의 기록**입니다. 동일 설명을 여러 번 쓰는 VoiceDesign 방식은 화자 고정이 아니므로 최종 음원으로 다시 사용하지 않습니다. 기기 Web Speech로 대체하지 않습니다.
 
-설치: 별도 Python 3.12 환경에 torch==2.8.0+cpu 및 torchaudio==2.8.0+cpu를 공식 CPU 인덱스에서 설치하고 qwen-tts==0.1.1을 설치한다. 모델 revision 5ecdb67327fd37bb2e042aab12ff7391903235d3을 내려받아 --model 경로로 넘긴다. 실행 전 ORT_DISABLE_TELEMETRY=1 및 HF_HUB_DISABLE_TELEMETRY=1 적용. 모델과 패키지는 사이트에 포함하지 않는다.
-
-원본 모델: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
-공식 코드: https://github.com/QwenLM/Qwen3-TTS
-
-검증: node test-sound.cjs, node test-startup.cjs. 새 파일을 게시할 때 sound.js 쿼리 버전을 바꾸고 해당 커밋의 GitHub Pages 성공을 확인한다.
+새 음색을 제안할 때는 게임에 먼저 배포하지 말고 채팅에서 샘플을 들려준 뒤 원장님의 선택을 받습니다.
