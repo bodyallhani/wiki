@@ -1,0 +1,23 @@
+name: Check DIET and HERB image conversion
+on:
+  pull_request:
+    paths:
+      - 'scripts/bodyall_family_images.py'
+      - 'scripts/test_bodyall_family_images.py'
+      - '.github/workflows/bodyall-family-images.yml'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow==11.3.0
+      - name: Test conversion using temporary fixtures only
+        run: python scripts/test_bodyall_family_images.py
