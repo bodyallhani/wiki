@@ -1,6 +1,6 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T16:32:26.590Z",
+  "updated_at": "2026-09-14T16:36:56.462537+00:00",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
   "public_commit": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
@@ -1635,21 +1635,21 @@
     ],
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED"
   },
-  "filesystem_sync_status": "PENDING_GUARD_RECONCILIATION",
-  "zip_status": "PENDING_FINAL_ARCHIVE",
+  "filesystem_sync_status": "LOCAL_SYNCED_AND_GUARD_PASS",
+  "zip_status": "BUILT_AND_INTEGRITY_VERIFIED",
   "report_ko": "run_0016_final/REPORT_KO.md",
   "zip_receipt": {
     "integrity": "PASS",
-    "receipt": "run_0017_final/zip_receipt.json",
-    "sha256": "34a8b1d4678b4f581ef425ea9e6119ceeb563a895fc9d6ecacaeb356502a98b1",
-    "bytes": 22746583,
-    "scope": "Prior full recovery archive plus the 0017 source, candidate HTMLs, offline/public/release/guard receipts, report, state and updated 156-row ledger. The archive hash is kept in an external receipt."
+    "receipt": "run_0016_final/zip_receipt.json",
+    "sha256": "8e9aee76e998373a2d605c82d5d60e89dafa798a6e4f0d3b0ef67366d9ea2d18",
+    "bytes": 22880549,
+    "scope": "Prior full recovery archive plus the 0016 source, candidate HTMLs, offline/public/release/guard receipts, report, state and updated 156-row ledger. The archive hash is kept in an external receipt."
   },
   "latest_recovery_persistence": {
     "branch": "recovery/html-20260914",
     "path": "ops/html-recovery/current.json",
-    "first_update_commit": "53fdbcec3ca37acdce85b0278d73df56b93b4a0f",
-    "first_update_blob": "df4926bd38461500d129f12116d58f456fcdef64",
+    "first_update_commit": "ddff5d7ea9cd03ac645fed83af0cc4d4ad930944",
+    "first_update_blob": "c033b111e4ed5d967de15b0d16b87351d2b48b53",
     "first_update_exact_readback": true,
     "note": "This final metadata-only update records guard reconciliation and archive integrity; the public HTML head remains unchanged."
   },
