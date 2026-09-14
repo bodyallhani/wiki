@@ -1,6 +1,6 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V215",
-  "updated_at": "2026-09-14T23:52:59Z",
+  "updated_at": "2026-09-14T23:56:30Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
   "public_commit": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
@@ -1932,17 +1932,30 @@
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED",
     "intervention_resolution": "NO_EXTERNAL_INTERVENTION_REQUIRED"
   },
-  "filesystem_sync_status": "LOCAL_RUN_COMPLETE_LIBRARY_ARCHIVE_PENDING",
-  "zip_status": "PENDING_AFTER_LEDGER_UPDATE",
+  "filesystem_sync_status": "LOCAL_RUN_AND_LIBRARY_ARCHIVE_COMPLETE",
+  "zip_status": "PASS",
   "report_ko": "run_0010_final/REPORT_KO.md",
-  "zip_receipt": null,
+  "zip_receipt": {
+    "path": "run_0010_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
+    "sha256": "63164c59f95f9326ae55d016b32d6b6fc8a565827d4bfeefdfd86c4b2913ec7e",
+    "bytes": 23525764,
+    "integrity": "PASS",
+    "contains_completion_ledger_blob": "c0cd3a070347af24fe5b0a228a4124d02f99169e",
+    "library_file_id": "libfile_033739325d148191beca3b3114facfcc",
+    "library_version": 52
+  },
   "latest_recovery_persistence": {
     "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json",
     "source_blob_before_completion_update": "9eab985cbe0b0a8423f3d8754f5ff1834dd93de0",
     "public_main": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
     "run": "run_0010_final",
     "status": "PUBLISHED_AND_PUBLIC_VERIFIED",
-    "completion_held": false
+    "completion_held": false,
+    "completion_ledger_blob": "c0cd3a070347af24fe5b0a228a4124d02f99169e",
+    "archive_sha256": "63164c59f95f9326ae55d016b32d6b6fc8a565827d4bfeefdfd86c4b2913ec7e",
+    "archive_integrity": "PASS",
+    "library_file_id": "libfile_033739325d148191beca3b3114facfcc",
+    "library_version": 52
   },
   "latest_local_run": "run_0010_final",
   "next_priority": "Review encyclopedia/0009 tailbone pain Korean against the recommendation-first standard, then align English and Chinese."
