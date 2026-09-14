@@ -1,9 +1,9 @@
 {
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V214",
-  "updated_at": "2026-09-14T22:45:00Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V215",
+  "updated_at": "2026-09-14T23:52:59Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
+  "public_commit": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,8 +13,8 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 64,
-    "latest_standard_not_confirmed_or_remaining": 92,
+    "latest_standard_published_confirmed": 67,
+    "latest_standard_not_confirmed_or_remaining": 89,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
@@ -42,6 +42,9 @@
     "cervical-disc.html",
     "cervical-disc_cn.html",
     "cervical-disc_en.html",
+    "encyclopedia/0010.carpal-tunnel.html",
+    "encyclopedia/0010.carpal-tunnel_cn.html",
+    "encyclopedia/0010.carpal-tunnel_en.html",
     "encyclopedia/0011.tmj-disorder.html",
     "encyclopedia/0011.tmj-disorder_cn.html",
     "encyclopedia/0011.tmj-disorder_en.html",
@@ -841,18 +844,57 @@
     },
     {
       "path": "encyclopedia/0010.carpal-tunnel.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "66e8ffa9fb59697d3edf400fb0e3cbdb659e5f371774e91991a461b5c31fe1a2",
+      "git_blob": "20411ba4d4c884f0e3447067092281f95d2b5d5d",
+      "publication_commit": "854de6ee70c48a5435d5ca1f6d4252a2fc91d3ff",
+      "final_repository_head": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0010.carpal-tunnel.html",
+      "verification_receipt": "run_0010_final/public_verification.json",
+      "review_receipt": "run_0010_final/offline_validation.json",
+      "limits": [
+        "Public latest body, schema, two images per page, same-language routes, desktop top and bottom, responsive media rules and zero desktop horizontal overflow were verified after Pages propagation; separate mobile emulation was unavailable.",
+        "The 2025 article studied ultrasound-guided acupotomy combined with corticosteroid injection in a multicenter retrospective design, so it does not isolate acupotomy efficacy or establish Bodyall outcomes.",
+        "The 2012 randomized trial found acupuncture was not superior to placebo acupuncture when both groups used night splints.",
+        "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
+      ]
     },
     {
       "path": "encyclopedia/0010.carpal-tunnel_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "2c6f3f9e6352edbb3f8a3c9795d147de917ef89f2d45eed5fe6fb871be7781e0",
+      "git_blob": "7be4bfb41f7aea4a14703ede72d20ff823bba92c",
+      "publication_commit": "38895bc07d7d74ff7444da3d5c7f7fb32cca03e3",
+      "final_repository_head": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0010.carpal-tunnel_cn.html",
+      "verification_receipt": "run_0010_final/public_verification.json",
+      "review_receipt": "run_0010_final/offline_validation.json",
+      "limits": [
+        "Public latest body, schema, two images per page, same-language routes, desktop top and bottom, responsive media rules and zero desktop horizontal overflow were verified after Pages propagation; separate mobile emulation was unavailable.",
+        "The 2025 article studied ultrasound-guided acupotomy combined with corticosteroid injection in a multicenter retrospective design, so it does not isolate acupotomy efficacy or establish Bodyall outcomes.",
+        "The 2012 randomized trial found acupuncture was not superior to placebo acupuncture when both groups used night splints.",
+        "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
+      ]
     },
     {
       "path": "encyclopedia/0010.carpal-tunnel_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "c1631bbc10162e500acbe3f676072271f5c490425ac1dc065a97d7de1a1c5893",
+      "git_blob": "b37083f9f2d8ebce1cb71715f28ce5d541fa9902",
+      "publication_commit": "5888cb749f2b8d2d717488923c67fc5fa689b603",
+      "final_repository_head": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0010.carpal-tunnel_en.html",
+      "verification_receipt": "run_0010_final/public_verification.json",
+      "review_receipt": "run_0010_final/offline_validation.json",
+      "limits": [
+        "Public latest body, schema, two images per page, same-language routes, desktop top and bottom, responsive media rules and zero desktop horizontal overflow were verified after Pages propagation; separate mobile emulation was unavailable.",
+        "The 2025 article studied ultrasound-guided acupotomy combined with corticosteroid injection in a multicenter retrospective design, so it does not isolate acupotomy efficacy or establish Bodyall outcomes.",
+        "The 2012 randomized trial found acupuncture was not superior to placebo acupuncture when both groups used night splints.",
+        "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
+      ]
     },
     {
       "path": "encyclopedia/0011.tmj-disorder.html",
@@ -1738,32 +1780,33 @@
     }
   ],
   "latest_validation": {
-    "run": "run_0011_final",
+    "run": "run_0010_final",
     "offline_status": "PASS",
     "public_status": "PASS",
     "article_urls": [
-      "https://wiki.body-all.co.kr/encyclopedia/0011.tmj-disorder.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0011.tmj-disorder_en.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0011.tmj-disorder_cn.html"
+      "https://wiki.body-all.co.kr/encyclopedia/0010.carpal-tunnel.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0010.carpal-tunnel_en.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0010.carpal-tunnel_cn.html"
     ],
     "article_checks": {
       "count": 3,
       "github_exact_blob_readback": true,
       "pages_latest_body_and_schema_confirmed": true,
       "patient_condition_bodyall_choice_reason_and_next_action_visible_in_source": true,
-      "tmj_dental_ear_salivary_neurological_differential_and_role_separated_chuna_sart_acupotomy_visible_in_source": true,
+      "median_nerve_thumb_strength_and_wrist_vs_proximal_differential_visible_in_source": true,
+      "role_separated_chuna_sart_acupotomy_visible_in_source": true,
       "urgent_signals_and_acupotomy_risks_visible_in_source": true,
-      "upper_cervical_disc_repositioning_decompression_and_guarantee_overclaims_removed": true,
-      "evidence_scope_aligned_to_guideline_rct_and_pilot": true,
-      "canonical_hreflang_clean_and_index_follow": true,
+      "ligament_release_tunnel_pressure_nerve_regeneration_and_cervical_decompression_overclaims_removed": true,
+      "evidence_scope_aligned_to_meta_analysis_guideline_retrospective_study_and_rct": true,
+      "canonical_hreflang_og_clean_and_index_follow": true,
       "same_language_index_links_and_cards_correct": true,
       "faq_schema_count_each": 1,
       "public_images_http_200": true,
       "image_natural_and_reserved_sizes_each": [
-        "1307x739",
-        "2816x1536"
+        "1154x736",
+        "1380x750"
       ],
-      "public_browser_visual_check": "PASS_KO_DESKTOP_TOP_AND_BOTTOM_EN_CN_TOP",
+      "public_browser_visual_check": "PASS_DESKTOP_TOP_AND_BOTTOM_ALL_LANGUAGES",
       "responsive_media_rule_present_each": true,
       "stale_reviewedBy_or_lastReviewed_absent": true,
       "desktop_horizontal_overflow_px_each": 0,
@@ -1776,38 +1819,39 @@
         "Person",
         "MedicalProcedure",
         "FAQPage"
-      ]
+      ],
+      "mobile_emulation": "NOT_AVAILABLE_IN_SELECTED_PUBLIC_BROWSER"
     }
   },
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "c62ad210e8e2c669daa067289a4310487b325664",
-    "final_head": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
+    "prewrite_head": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
+    "final_head": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
     "files": {
-      "encyclopedia/0011.tmj-disorder.html": {
-        "source_blob": "c92163012fd9cf661a870336eb12bb9188e427da",
-        "final_blob": "877a48881a9191639cc3947f365936c004b6371e",
-        "publication_commit": "9edfa5261771233f55d00c511eb1586ef4cbedd8",
-        "sha256": "2a0c536b003f7e48e9c201d0d9f109841d5adf416b00f08175894c22d40833c2",
+      "encyclopedia/0010.carpal-tunnel.html": {
+        "source_blob": "0d2d9383e1f9d36669a12ac29b46a60032e31bf4",
+        "final_blob": "20411ba4d4c884f0e3447067092281f95d2b5d5d",
+        "publication_commit": "854de6ee70c48a5435d5ca1f6d4252a2fc91d3ff",
+        "sha256": "66e8ffa9fb59697d3edf400fb0e3cbdb659e5f371774e91991a461b5c31fe1a2",
         "github_exact_readback": true,
         "pages_latest_content_confirmed": true,
         "browser_visual_verified": true
       },
-      "encyclopedia/0011.tmj-disorder_en.html": {
-        "source_blob": "a7c3d627da438dcec5a951cafdde076ade7766e3",
-        "final_blob": "5de65264eff4237e4ca95cf6ed3b05b8fb096d13",
-        "publication_commit": "1ad9b662e1fdde87d7848b81fbacb2598d964aba",
-        "sha256": "1a244df776af05e8c3f2f8462da8ffc94cc036d38f25f76d1d581353d8719db5",
+      "encyclopedia/0010.carpal-tunnel_en.html": {
+        "source_blob": "483560ce342e1de7838e7bb38058b5977ff0915b",
+        "final_blob": "b37083f9f2d8ebce1cb71715f28ce5d541fa9902",
+        "publication_commit": "5888cb749f2b8d2d717488923c67fc5fa689b603",
+        "sha256": "c1631bbc10162e500acbe3f676072271f5c490425ac1dc065a97d7de1a1c5893",
         "github_exact_readback": true,
         "pages_latest_content_confirmed": true,
         "browser_visual_verified": true
       },
-      "encyclopedia/0011.tmj-disorder_cn.html": {
-        "source_blob": "2f88f5ba0226db7db54f66bf60375385d8d3c51b",
-        "final_blob": "0bc1e5acfff982796c25988e849c39ddabd3f9c6",
-        "publication_commit": "6c4ac7ae797965fa6f275cea7dfa4aaa99d9c656",
-        "sha256": "50de88efbda45b6c8b20a9056742274a6ee2bcb6f0c4334f68aa625b80e82b66",
+      "encyclopedia/0010.carpal-tunnel_cn.html": {
+        "source_blob": "2891687d4c0ff02cd8a1ceacef88465b1b85196c",
+        "final_blob": "7be4bfb41f7aea4a14703ede72d20ff823bba92c",
+        "publication_commit": "38895bc07d7d74ff7444da3d5c7f7fb32cca03e3",
+        "sha256": "2c6f3f9e6352edbb3f8a3c9795d147de917ef89f2d45eed5fe6fb871be7781e0",
         "github_exact_readback": true,
         "pages_latest_content_confirmed": true,
         "browser_visual_verified": true
@@ -1815,23 +1859,23 @@
     },
     "supporting_files": {
       "encyclopedia/index.html": {
-        "source_blob": "56751eb3831ec488a609433350f6c6ce6ae8a153",
-        "final_blob": "d99ad74ba7e7f549d99c575fde2f9e3e3771ebcb",
-        "publication_commit": "e78399f2e14210be3d3beeb110c13eb99dfc5ecd",
+        "source_blob": "d99ad74ba7e7f549d99c575fde2f9e3e3771ebcb",
+        "final_blob": "1b7d7fef84d60bb3e42eef57bbe50f204a874898",
+        "publication_commit": "2f4fa4095817b34221cca69caf62bfb793a0fba2",
         "github_exact_readback": true,
         "pages_latest_card_confirmed": true
       },
       "encyclopedia/index_en.html": {
-        "source_blob": "8d9dfe2833964ea696984cac0b5a64af78f1065b",
-        "final_blob": "894a2ecca86efaf5b2e6469ed91f2909883a6448",
-        "publication_commit": "26a9ab4b136d844351bc0e7f95f2c097476580d7",
+        "source_blob": "894a2ecca86efaf5b2e6469ed91f2909883a6448",
+        "final_blob": "d34b165aec7e3c46e16f9c53202367a7919b5d01",
+        "publication_commit": "58b66231674379fa16eaaed65846fee9725952a8",
         "github_exact_readback": true,
         "pages_latest_card_confirmed": true
       },
       "encyclopedia/index_cn.html": {
-        "source_blob": "0ef08011a65559eb1b68c190ead345f148d5f541",
-        "final_blob": "550b35cdbedf52e984643dfb5af4f0c88bd86785",
-        "publication_commit": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
+        "source_blob": "550b35cdbedf52e984643dfb5af4f0c88bd86785",
+        "final_blob": "eac67acee3ac572bc36bcaa7abca55f5e311480a",
+        "publication_commit": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
         "github_exact_readback": true,
         "pages_latest_card_confirmed": true
       }
@@ -1840,16 +1884,16 @@
       "ahead_by": 6,
       "behind_by": 0,
       "files": [
-        "encyclopedia/0011.tmj-disorder.html",
-        "encyclopedia/0011.tmj-disorder_en.html",
-        "encyclopedia/0011.tmj-disorder_cn.html",
+        "encyclopedia/0010.carpal-tunnel.html",
+        "encyclopedia/0010.carpal-tunnel_en.html",
+        "encyclopedia/0010.carpal-tunnel_cn.html",
         "encyclopedia/index.html",
         "encyclopedia/index_en.html",
         "encyclopedia/index_cn.html"
       ]
     }
   },
-  "next": "Review encyclopedia/0010 carpal tunnel syndrome Korean against the recommendation-first standard, then align English and Chinese.",
+  "next": "Review encyclopedia/0009 tailbone pain Korean against the recommendation-first standard, then align English and Chinese.",
   "constraints": {
     "make": "OFF_AUTH_BLOCKED_DO_NOT_CALL_OR_REACTIVATE",
     "google_auto_indexing": "STOPPED",
@@ -1874,37 +1918,32 @@
     "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER"
   },
   "latest_debug": {
-    "run": "run_0011_final",
+    "run": "run_0010_final",
     "confirmed_findings": [
-      "The prior page led with upper-cervical alignment and SART instead of the patient's jaw complaint and differential assessment.",
-      "Broad osteopathic studies were generalized into SART-specific space, alignment and outcome claims.",
-      "The prior page described disc compression or repositioning, jaw-axis restoration, acupotomy adhesion release and bee-venom effects beyond the cited evidence."
+      "The prior page led with SART and generalized tunnel expansion instead of differential assessment for the patient's night numbness.",
+      "A retrospective combined acupotomy and corticosteroid study was generalized into acupotomy-specific ligament release and pressure reduction claims.",
+      "The prior page extended a null placebo-controlled acupuncture trial into inflammation and tissue-regeneration claims and treated cervical alignment as a frequent root cause."
     ],
     "resolved": [
-      "Rebuilt the opening around TMJ and masticatory assessment, dental/ear/salivary/neurological differentiation and direct chief-director evaluation.",
-      "Separated acupuncture/pharmacopuncture, myofascial Chuna, conditional corrective Chuna/SART and conditional acupotomy roles with same-task reassessment.",
-      "Aligned evidence limits and urgent signals across Korean, English and Chinese, corrected image size reservations, and updated same-language cards."
+      "Rebuilt the opening around median-nerve distribution, sensation, thumb opposition and strength, wrist provocation and wrist-versus-proximal neurological differentiation.",
+      "Separated wrist load guidance, acupuncture/pharmacopuncture, forearm myofascial Chuna, conditional corrective Chuna/SART and conditional acupotomy with same-function reassessment.",
+      "Aligned evidence and risk limits across Korean, English and Chinese, corrected English/Chinese Open Graph and index routes, reserved natural image sizes and updated same-language cards."
     ],
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED",
     "intervention_resolution": "NO_EXTERNAL_INTERVENTION_REQUIRED"
   },
-  "filesystem_sync_status": "RECOVERY_ZIP_REFRESHED",
-  "zip_status": "PASS",
-  "report_ko": "run_0011_final/REPORT_KO.md",
-  "zip_receipt": {
-    "path": "run_0011_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
-    "sha256": "9388db3ea2a61ecb3c651042aac440f45c3b4af38ebaca28caf89730477ef8f7",
-    "bytes": 23403023,
-    "integrity": "PASS"
-  },
+  "filesystem_sync_status": "LOCAL_RUN_COMPLETE_LIBRARY_ARCHIVE_PENDING",
+  "zip_status": "PENDING_AFTER_LEDGER_UPDATE",
+  "report_ko": "run_0010_final/REPORT_KO.md",
+  "zip_receipt": null,
   "latest_recovery_persistence": {
     "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json",
-    "source_blob_before_completion_update": "6be554dd10d49c8f3976e83ba695263875aa087a",
-    "public_main": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
-    "run": "run_0011_final",
+    "source_blob_before_completion_update": "9eab985cbe0b0a8423f3d8754f5ff1834dd93de0",
+    "public_main": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
+    "run": "run_0010_final",
     "status": "PUBLISHED_AND_PUBLIC_VERIFIED",
     "completion_held": false
   },
-  "latest_local_run": "run_0011_final",
-  "next_priority": "Review encyclopedia/0010 carpal tunnel syndrome Korean against the recommendation-first standard, then align English and Chinese."
+  "latest_local_run": "run_0010_final",
+  "next_priority": "Review encyclopedia/0009 tailbone pain Korean against the recommendation-first standard, then align English and Chinese."
 }
