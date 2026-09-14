@@ -1,6 +1,6 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V214",
-  "updated_at": "2026-09-14T22:42:21Z",
+  "updated_at": "2026-09-14T22:45:00Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
   "public_commit": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
@@ -1888,12 +1888,14 @@
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED",
     "intervention_resolution": "NO_EXTERNAL_INTERVENTION_REQUIRED"
   },
-  "filesystem_sync_status": "RECOVERY_ZIP_PENDING_REFRESH",
-  "zip_status": "PENDING",
+  "filesystem_sync_status": "RECOVERY_ZIP_REFRESHED",
+  "zip_status": "PASS",
   "report_ko": "run_0011_final/REPORT_KO.md",
   "zip_receipt": {
     "path": "run_0011_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
-    "integrity": "PENDING"
+    "sha256": "9388db3ea2a61ecb3c651042aac440f45c3b4af38ebaca28caf89730477ef8f7",
+    "bytes": 23403023,
+    "integrity": "PASS"
   },
   "latest_recovery_persistence": {
     "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json",
