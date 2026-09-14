@@ -1,6 +1,6 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T15:25:00.403Z",
+  "updated_at": "2026-09-14T15:26:22.002Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
   "public_commit": "5ebfb9b3b7a5d668475c91f11da4b91c36abcebb",
@@ -1590,22 +1590,23 @@
     ],
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED"
   },
-  "filesystem_sync_status": "PENDING_GUARD_RECONCILIATION",
-  "zip_status": "PENDING_FINAL_ARCHIVE",
+  "filesystem_sync_status": "LOCAL_SYNCED_AND_GUARD_PASS",
+  "zip_status": "BUILT_AND_INTEGRITY_VERIFIED",
   "report_ko": "run_0017_final/REPORT_KO.md",
   "zip_receipt": {
     "integrity": "PASS",
-    "receipt": "run_0018_final/zip_receipt.json",
-    "sha256": "21aca04ed96b385157490bd084d4c73c34ed547a61c78bebb4aa96fa66e2783c",
-    "scope": "Prior full recovery archive plus the 0018 source, candidate HTMLs, validation, public and release receipts, report, state and updated 156-row ledger. The archive hash is kept in an external receipt."
+    "receipt": "run_0017_final/zip_receipt.json",
+    "sha256": "34a8b1d4678b4f581ef425ea9e6119ceeb563a895fc9d6ecacaeb356502a98b1",
+    "bytes": 22746583,
+    "scope": "Prior full recovery archive plus the 0017 source, candidate HTMLs, offline/public/release/guard receipts, report, state and updated 156-row ledger. The archive hash is kept in an external receipt."
   },
   "latest_recovery_persistence": {
     "branch": "recovery/html-20260914",
     "path": "ops/html-recovery/current.json",
-    "first_update_commit": "aff366e69a5c3e0236465b5a868cbc77cf01de43",
-    "first_update_blob": "52b121d603fca5d46d12c5f88bf3a341205769e7",
+    "first_update_commit": "53fdbcec3ca37acdce85b0278d73df56b93b4a0f",
+    "first_update_blob": "df4926bd38461500d129f12116d58f456fcdef64",
     "first_update_exact_readback": true,
-    "note": "A final metadata-only update records this persistence and archive result; the public HTML head remains unchanged."
+    "note": "This final metadata-only update records guard reconciliation and archive integrity; the public HTML head remains unchanged."
   },
   "latest_local_run": "run_0017_final",
   "next_priority": "Review encyclopedia/0016 piriformis syndrome Korean against the recommendation-first standard, then align English and Chinese."
