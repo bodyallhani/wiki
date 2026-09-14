@@ -1,9 +1,9 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T15:26:22.002Z",
+  "updated_at": "2026-09-14T16:32:26.590Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "5ebfb9b3b7a5d668475c91f11da4b91c36abcebb",
+  "public_commit": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,8 +13,8 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 46,
-    "latest_standard_not_confirmed_or_remaining": 110,
+    "latest_standard_published_confirmed": 49,
+    "latest_standard_not_confirmed_or_remaining": 107,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
@@ -42,6 +42,9 @@
     "cervical-disc.html",
     "cervical-disc_cn.html",
     "cervical-disc_en.html",
+    "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html",
+    "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_cn.html",
+    "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_en.html",
     "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture.html",
     "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture_cn.html",
     "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture_en.html",
@@ -900,18 +903,60 @@
     },
     {
       "path": "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "edc28f66dc94bc2160b8b139cbb2dd1eff9f6b7486fcbeb803f58c30e0fd2e25",
+      "git_blob": "361a54e5b42967b4bc49dc2ee5e45c6c3b7e8b87",
+      "publication_commit": "fb61199763333c166918cea5b6a07c1c48d514ba",
+      "final_repository_head": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_en.html",
+      "verification_receipt": "run_0016_final/public_verification.json",
+      "review_receipt": "run_0016_final/offline_validation.json",
+      "limits": [
+        "The 2020 systematic review supports a combined diagnostic pathway for deep gluteal syndrome; no single maneuver or image is presented as definitive.",
+        "The 2022 paper reports two surgically treated refractory cases with rare sciatic-nerve variation; it is not evidence of Acupotomy efficacy.",
+        "The 2024 paper concerns surgical transgluteal decompression and sacrotuberous-ligament anatomy; it does not establish Acupotomy, SART, or Bodyall outcomes.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public exact HTML, schema, two images per page and desktop overflow were verified; mobile emulation was not run and actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "1e97c31cecbe556deedde523e3b8fafe1f69a530d77bc58665ea44397244321f",
+      "git_blob": "ec722d6ff773f949fe12307b8011481e0e1bc6eb",
+      "publication_commit": "881c2d74224a432b91212714236e3cb226b58903",
+      "final_repository_head": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html",
+      "verification_receipt": "run_0016_final/public_verification.json",
+      "review_receipt": "run_0016_final/offline_validation.json",
+      "limits": [
+        "The 2020 systematic review supports a combined diagnostic pathway for deep gluteal syndrome; no single maneuver or image is presented as definitive.",
+        "The 2022 paper reports two surgically treated refractory cases with rare sciatic-nerve variation; it is not evidence of Acupotomy efficacy.",
+        "The 2024 paper concerns surgical transgluteal decompression and sacrotuberous-ligament anatomy; it does not establish Acupotomy, SART, or Bodyall outcomes.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public exact HTML, schema, two images per page and desktop overflow were verified; mobile emulation was not run and actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "35d932362ec4ca97df044ee23e74e9cf6b7747a66aff86a8b72ea7152e8ce853",
+      "git_blob": "bb6b16bd4b521cb22c2031b9b8524f482260b849",
+      "publication_commit": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
+      "final_repository_head": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_cn.html",
+      "verification_receipt": "run_0016_final/public_verification.json",
+      "review_receipt": "run_0016_final/offline_validation.json",
+      "limits": [
+        "The 2020 systematic review supports a combined diagnostic pathway for deep gluteal syndrome; no single maneuver or image is presented as definitive.",
+        "The 2022 paper reports two surgically treated refractory cases with rare sciatic-nerve variation; it is not evidence of Acupotomy efficacy.",
+        "The 2024 paper concerns surgical transgluteal decompression and sacrotuberous-ligament anatomy; it does not establish Acupotomy, SART, or Bodyall outcomes.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public exact HTML, schema, two images per page and desktop overflow were verified; mobile emulation was not run and actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture_en.html",
@@ -1483,21 +1528,21 @@
     }
   ],
   "latest_validation": {
-    "run": "run_0017_final",
+    "run": "run_0016_final",
     "offline_status": "PASS",
     "public_status": "PASS",
     "article_urls": [
-      "https://wiki.body-all.co.kr/encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture_en.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture_cn.html"
+      "https://wiki.body-all.co.kr/encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_en.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_cn.html"
     ],
     "article_checks": {
       "count": 3,
       "public_html_exact_sha256": true,
       "patient_condition_bodyall_choice_reason_and_next_action_visible": true,
-      "differential_exam_role_separation_and_same_task_reassessment_visible": true,
-      "urgent_trauma_infection_neurologic_and_cardiopulmonary_signals_visible": true,
-      "unsupported_capsule_length_volume_pressure_and_bodyall_outcome_claims_absent": true,
+      "differential_exam_acupotomy_chuna_sart_role_separation_and_same_function_reassessment_visible": true,
+      "urgent_cauda_equina_neurologic_infection_vascular_and_cardiopulmonary_signals_visible": true,
+      "surgical_sources_not_misrepresented_as_acupotomy_or_bodyall_outcomes": true,
       "canonical_clean_and_index_follow": true,
       "faq_schema_count_each": 4,
       "all_six_images_loaded": true,
@@ -1510,30 +1555,30 @@
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "1db678eef9083770b2d48bf69585fd3ae86bb365",
-    "final_head": "5ebfb9b3b7a5d668475c91f11da4b91c36abcebb",
+    "prewrite_head": "5ebfb9b3b7a5d668475c91f11da4b91c36abcebb",
+    "final_head": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
     "files": {
-      "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture.html": {
-        "source_blob": "347de0ff72c890564c71a0aba95611b95baf120a",
-        "final_blob": "46151890c400fe3f09163253a5f43e33ecb773e3",
-        "publication_commit": "6064d46b9b220fc0a5021def4f77a8d5c48c86db",
-        "sha256": "7b10e68c41daf2bb71679cfe8cfdff0632283339d034dafb2c3f6b438fa8ddf9",
+      "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html": {
+        "source_blob": "3bb11043f2c9d87662494fc94b050f9cf5f45b7e",
+        "final_blob": "ec722d6ff773f949fe12307b8011481e0e1bc6eb",
+        "publication_commit": "881c2d74224a432b91212714236e3cb226b58903",
+        "sha256": "1e97c31cecbe556deedde523e3b8fafe1f69a530d77bc58665ea44397244321f",
         "github_exact_readback": true,
         "pages_exact_readback": true
       },
-      "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture_en.html": {
-        "source_blob": "ef75f053454e24bf98e9fc65db9f226f64d26c25",
-        "final_blob": "29dac42e0d722ad024efb3cb0cc8e32a517edfe8",
-        "publication_commit": "74a1c83ab6e175f18f6c1db1972b5e91b137645b",
-        "sha256": "d5b0f9096f57400c347d7c0f6c1c76550c695440fa0de698c0485c41aa5a9e35",
+      "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_en.html": {
+        "source_blob": "add1edd1fdb8dfd468e430e336bcc61d047075fd",
+        "final_blob": "361a54e5b42967b4bc49dc2ee5e45c6c3b7e8b87",
+        "publication_commit": "fb61199763333c166918cea5b6a07c1c48d514ba",
+        "sha256": "edc28f66dc94bc2160b8b139cbb2dd1eff9f6b7486fcbeb803f58c30e0fd2e25",
         "github_exact_readback": true,
         "pages_exact_readback": true
       },
-      "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture_cn.html": {
-        "source_blob": "d7199ab1bc8111c87e0f4ac8affda52e96153988",
-        "final_blob": "ecd6c8730ed70e0451cf799e70a675f0545ae3b1",
-        "publication_commit": "5ebfb9b3b7a5d668475c91f11da4b91c36abcebb",
-        "sha256": "7c67de1ae24effa403a1d853f03427221461eaf1253c0d9a435631f01e93bc53",
+      "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_cn.html": {
+        "source_blob": "4a307398447f2cf6fdc88bc291b5d319bdd5b577",
+        "final_blob": "bb6b16bd4b521cb22c2031b9b8524f482260b849",
+        "publication_commit": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
+        "sha256": "35d932362ec4ca97df044ee23e74e9cf6b7747a66aff86a8b72ea7152e8ce853",
         "github_exact_readback": true,
         "pages_exact_readback": true
       }
@@ -1542,14 +1587,14 @@
       "ahead_by": 3,
       "behind_by": 0,
       "files": [
-        "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture.html",
-        "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture_en.html",
-        "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture_cn.html"
+        "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html",
+        "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_en.html",
+        "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_cn.html"
       ]
     }
   },
   "next": [
-    "Review encyclopedia/0016 piriformis syndrome Korean against the recommendation-first standard, then align English and Chinese.",
+    "Review encyclopedia/0015 sacroiliac joint dysfunction Korean against the recommendation-first standard, then align English and Chinese.",
     "Run resume_guard.py against GitHub current.json, local state and policy before selecting work or reporting counts.",
     "Preserve document-specific holds, Make OFF/AUTH_BLOCKED, stopped Google auto-indexing, models and budgets."
   ],
@@ -1577,22 +1622,22 @@
     "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER"
   },
   "latest_debug": {
-    "run": "run_0017_final",
+    "run": "run_0016_final",
     "confirmed_findings": [
-      "The prior page presented a simple self-check and individual impingement maneuvers too close to a diagnosis.",
-      "SART was described as lengthening the capsule and restoring capsular volume and intra-articular pressure without direct evidence.",
-      "Bodyall accumulated clinical experience was phrased as an outcome claim, and SART was forced into a shoulder-capsule role."
+      "The previous page treated FAIR, Pace and other provocative tests too close to definitive diagnosis.",
+      "Two neurosurgical studies were misrepresented as evidence that Bodyall Acupotomy releases adhesions and restores nerve gliding.",
+      "Acupotomy was described as safely decompressing the nerve, while SART was said to prevent recurrence and ensure long-term structural stability without direct evidence."
     ],
     "resolved": [
-      "Diagnosis language now uses history, active and passive motion and differential examination, with imaging or referral only as needed.",
-      "Shoulder joint-mobilization Chuna, myofascial Chuna and conditional cervical/thoracic SART roles are separated and followed by same-task reassessment.",
-      "Unsupported mechanism and Bodyall outcome claims were removed while trauma, infection, neurologic and cardiopulmonary warning signs were retained."
+      "The page now uses a combined history, neurologic, lumbar, hip, sacroiliac and deep-gluteal examination pathway and treats piriformis syndrome as one possible cause.",
+      "The 2022 two-case surgical report and 2024 surgical paper are explicitly limited to anatomy and refractory surgical entrapment, not Acupotomy or Bodyall outcomes.",
+      "Myofascial Chuna, Acupotomy and conditional SART roles are separated, invasive risks and urgent signals are preserved, and the same function is reassessed."
     ],
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED"
   },
-  "filesystem_sync_status": "LOCAL_SYNCED_AND_GUARD_PASS",
-  "zip_status": "BUILT_AND_INTEGRITY_VERIFIED",
-  "report_ko": "run_0017_final/REPORT_KO.md",
+  "filesystem_sync_status": "PENDING_GUARD_RECONCILIATION",
+  "zip_status": "PENDING_FINAL_ARCHIVE",
+  "report_ko": "run_0016_final/REPORT_KO.md",
   "zip_receipt": {
     "integrity": "PASS",
     "receipt": "run_0017_final/zip_receipt.json",
@@ -1608,6 +1653,6 @@
     "first_update_exact_readback": true,
     "note": "This final metadata-only update records guard reconciliation and archive integrity; the public HTML head remains unchanged."
   },
-  "latest_local_run": "run_0017_final",
-  "next_priority": "Review encyclopedia/0016 piriformis syndrome Korean against the recommendation-first standard, then align English and Chinese."
+  "latest_local_run": "run_0016_final",
+  "next_priority": "Review encyclopedia/0015 sacroiliac joint dysfunction Korean against the recommendation-first standard, then align English and Chinese."
 }
