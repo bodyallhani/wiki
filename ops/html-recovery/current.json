@@ -1,9 +1,9 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T11:32:27.395374Z",
+  "updated_at": "2026-09-14T13:02:57.315401Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "9ba392347a827c24b245c8141e349184408942c9",
+  "public_commit": "6472cfa2fd4f6eea932511caf716c3dec32f729d",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,8 +13,8 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 37,
-    "latest_standard_not_confirmed_or_remaining": 119,
+    "latest_standard_published_confirmed": 40,
+    "latest_standard_not_confirmed_or_remaining": 116,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
@@ -42,6 +42,9 @@
     "cervical-disc.html",
     "cervical-disc_cn.html",
     "cervical-disc_en.html",
+    "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html",
+    "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_cn.html",
+    "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_en.html",
     "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release.html",
     "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_cn.html",
     "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_en.html",
@@ -245,18 +248,57 @@
     },
     {
       "path": "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "438bc04d6eef50ec60190fb58c80ffdc4dd7d7c4db5b26a79b9a665b9842c19a",
+      "git_blob": "b24b9a10b06387b0db944d7b819b91bd9db9d14e",
+      "publication_commit": "6f7cc0d39f33c411da06dd50742d1b8c0381ac4c",
+      "final_repository_head": "6472cfa2fd4f6eea932511caf716c3dec32f729d",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_en.html",
+      "verification_receipt": "run_0019_final/public_verification.json",
+      "review_receipt": "run_0019_final/offline_validation.json",
+      "limits": [
+        "Completed source-identity reviews for the two acupotomy references were reused; the 2025 paper is explicitly limited to one trigger-thumb case and the 2019 paper to a protocol without results.",
+        "A verified randomized trial is cited only to establish that injection, percutaneous release and open surgery are real alternatives; no superiority or Bodyall outcome was claimed.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text, schema, two images per page and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "35e977d55f691700a1f5e40038f0fd88742e16e77cdd8777b3b9b35301462fab",
+      "git_blob": "ff8a387b13580b7f8919643fa0c940043db488e8",
+      "publication_commit": "ce5e227700af1b23fc81cbaebb62fd7e1152207a",
+      "final_repository_head": "6472cfa2fd4f6eea932511caf716c3dec32f729d",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html",
+      "verification_receipt": "run_0019_final/public_verification.json",
+      "review_receipt": "run_0019_final/offline_validation.json",
+      "limits": [
+        "Completed source-identity reviews for the two acupotomy references were reused; the 2025 paper is explicitly limited to one trigger-thumb case and the 2019 paper to a protocol without results.",
+        "A verified randomized trial is cited only to establish that injection, percutaneous release and open surgery are real alternatives; no superiority or Bodyall outcome was claimed.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text, schema, two images per page and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "1bb8c007856602dba69f04f021ee92b2263ce73df067dff3d4491ce5690ea05e",
+      "git_blob": "1b93d53de142c8ba5448eaea5b95e027f2f83800",
+      "publication_commit": "6472cfa2fd4f6eea932511caf716c3dec32f729d",
+      "final_repository_head": "6472cfa2fd4f6eea932511caf716c3dec32f729d",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_cn.html",
+      "verification_receipt": "run_0019_final/public_verification.json",
+      "review_receipt": "run_0019_final/offline_validation.json",
+      "limits": [
+        "Completed source-identity reviews for the two acupotomy references were reused; the 2025 paper is explicitly limited to one trigger-thumb case and the 2019 paper to a protocol without results.",
+        "A verified randomized trial is cited only to establish that injection, percutaneous release and open surgery are real alternatives; no superiority or Bodyall outcome was claimed.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text, schema, two images per page and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_en.html",
@@ -1351,13 +1393,13 @@
     }
   ],
   "latest_validation": {
-    "run": "run_0020_final",
+    "run": "run_0019_final",
     "offline_status": "PASS",
     "public_status": "PASS",
     "article_urls": [
-      "https://wiki.body-all.co.kr/encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_en.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_cn.html"
+      "https://wiki.body-all.co.kr/encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_en.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_cn.html"
     ],
     "article_checks": {
       "count": 3,
@@ -1385,28 +1427,28 @@
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "dda9b41cf01b4076445557f7411069a4cc191413",
-    "final_head": "9ba392347a827c24b245c8141e349184408942c9",
+    "prewrite_head": "9ba392347a827c24b245c8141e349184408942c9",
+    "final_head": "6472cfa2fd4f6eea932511caf716c3dec32f729d",
     "files": {
-      "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release.html": {
-        "source_blob": "d1cdc0a4433413034e41d1e051aaeeaa3eb5df85",
-        "final_blob": "fc5ecb13d9e551d1222650b5ac62f37e67f73b04",
-        "publication_commit": "45958319e87ff4239d3c4f5d0a982905478e81c8",
-        "sha256": "51ac6b22b4cc1e7bfae452c311be996a6e1f8adc6432335156a7ecba8e9d0a80",
+      "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html": {
+        "source_blob": "57d4529776b00fc243798a6dff16d73149d729bb",
+        "final_blob": "ff8a387b13580b7f8919643fa0c940043db488e8",
+        "publication_commit": "ce5e227700af1b23fc81cbaebb62fd7e1152207a",
+        "sha256": "35e977d55f691700a1f5e40038f0fd88742e16e77cdd8777b3b9b35301462fab",
         "exact_readback": true
       },
-      "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_en.html": {
-        "source_blob": "e21597e61728e7247203ca5861cb693bbb6a8b38",
-        "final_blob": "a7a3f4814c79276d4138ba176a876cd66643484e",
-        "publication_commit": "8e724f68c4a511d9a84e4806f6f97dda4cd5a9ae",
-        "sha256": "74bbeb2f0fcbf44882475d99da72e41996ee4c0632306ff98a3a5880cb8910a0",
+      "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_en.html": {
+        "source_blob": "d2eeb0ba99a0d34509a17a0febf1389d97ce697d",
+        "final_blob": "b24b9a10b06387b0db944d7b819b91bd9db9d14e",
+        "publication_commit": "6f7cc0d39f33c411da06dd50742d1b8c0381ac4c",
+        "sha256": "438bc04d6eef50ec60190fb58c80ffdc4dd7d7c4db5b26a79b9a665b9842c19a",
         "exact_readback": true
       },
-      "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_cn.html": {
-        "source_blob": "b8f59c7a26165f5b57ace29bf8a32fb8f44c3f45",
-        "final_blob": "9f97d1edcd76c44c62e390575c01317fa66959ff",
-        "publication_commit": "9ba392347a827c24b245c8141e349184408942c9",
-        "sha256": "8b45a3e4429fc01daddf1a32263103a721e531798de3de214eb79916caf851d6",
+      "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_cn.html": {
+        "source_blob": "5797b632ba19922db1fa899a0abdf55fc79d8609",
+        "final_blob": "1b93d53de142c8ba5448eaea5b95e027f2f83800",
+        "publication_commit": "6472cfa2fd4f6eea932511caf716c3dec32f729d",
+        "sha256": "1bb8c007856602dba69f04f021ee92b2263ce73df067dff3d4491ce5690ea05e",
         "exact_readback": true
       }
     },
@@ -1414,14 +1456,14 @@
       "ahead_by": 3,
       "behind_by": 0,
       "files": [
-        "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release.html",
-        "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_en.html",
-        "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_cn.html"
+        "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html",
+        "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_en.html",
+        "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_cn.html"
       ]
     }
   },
   "next": [
-    "Review encyclopedia/0019 trigger finger Korean against the recommendation-first standard, then align English and Chinese.",
+    "Review encyclopedia/0018 thoracic outlet syndrome Korean against the recommendation-first standard, then align English and Chinese.",
     "Run resume_guard.py against GitHub current.json, local state and policy before selecting work or reporting counts.",
     "Preserve document-specific holds, Make OFF/AUTH_BLOCKED, stopped Google auto-indexing, models and budgets."
   ],
@@ -1467,9 +1509,9 @@
   "report_ko": "run_0020_final/REPORT_KO.md",
   "zip_receipt": {
     "integrity": "PASS",
-    "receipt": "run_0020_final/zip_receipt.json",
-    "sha256": "cc8e624557866e225d81f026232026b224a2a7dd46b7033875652c9a7058ae43",
-    "scope": "Full recovery snapshot containing the 0020 candidate HTMLs, validation and release receipts, the 156-row ledger and preserved prior background resume records. The final archive hash is kept in this external receipt so the archive does not contain its own hash."
+    "receipt": "run_0019_final/zip_receipt.json",
+    "sha256": "eb21404c9fcc480675fba47acb1358c088bc7269e22e9340b2313158fd4f8554",
+    "scope": "Full recovery snapshot containing the 0019 candidate HTMLs, validation and release receipts, the 156-row ledger and preserved prior background resume records. The final archive hash is kept in this external receipt so the archive does not contain its own hash."
   },
   "latest_recovery_persistence": {
     "branch": "recovery/html-20260914",
@@ -1479,6 +1521,6 @@
     "first_update_exact_readback": true,
     "note": "A final metadata-only update records this persistence result; the public HTML head remains unchanged."
   },
-  "latest_local_run": "run_0020_final",
-  "next_priority": "Review encyclopedia/0019 trigger finger Korean against the recommendation-first standard, then align English and Chinese."
+  "latest_local_run": "run_0019_final",
+  "next_priority": "Review encyclopedia/0018 thoracic outlet syndrome Korean against the recommendation-first standard, then align English and Chinese."
 }
