@@ -1,9 +1,9 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T08:25:31.301Z",
+  "updated_at": "2026-09-14T09:10:47.602994Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+  "public_commit": "820dbabb0d84ece5698e618d35326197226110d7",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,8 +13,8 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 25,
-    "latest_standard_not_confirmed_or_remaining": 131,
+    "latest_standard_published_confirmed": 28,
+    "latest_standard_not_confirmed_or_remaining": 128,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
@@ -33,6 +33,9 @@
     "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_cn.html",
     "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_en.html",
     "BodyallFit/encyclopedia/index.html",
+    "bee-venom.html",
+    "bee-venom_cn.html",
+    "bee-venom_en.html",
     "cervical-disc.html",
     "cervical-disc_cn.html",
     "cervical-disc_en.html",
@@ -64,9 +67,21 @@
     },
     {
       "path": "bee-venom.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED",
-      "reason": "Latest local cleanup exists; older publication is excluded from final-standard completion."
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "ea783065d7680bddea228650a023ac5331b018570c2c6bb0f8b2d3c0fe817ba1",
+      "git_blob": "82a220f203858bdf53d44ce8d456e5d6f12f7708",
+      "publication_commit": "58cc8ae75d8a5438217e51903a3c80854cc7c13f",
+      "final_repository_head": "820dbabb0d84ece5698e618d35326197226110d7",
+      "url": "https://wiki.body-all.co.kr/bee-venom.html",
+      "verification_receipt": "run_bee_final/public_verification.json",
+      "review_receipt": "run_bee_final/offline_validation.json",
+      "limits": [
+        "The completed Korean evidence review and unchanged cited sources were reused; no paper re-search or new efficacy claim was added.",
+        "The 2015 review and 2020 retrospective study support the stated safety discussion but do not prove Bodyall outcomes or the combined effect of bee venom acupuncture and SART.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text/schema/images and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -255,13 +270,39 @@
     },
     {
       "path": "bee-venom_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "1d46cd2100d41b0a134e8bc3362cae860ff715366fcb27886c482d84cbb2f9ce",
+      "git_blob": "cae85b39bf0616996a5e01c232766fddcf0b2885",
+      "publication_commit": "bb55a851eb8f4821dcc2845036e5659b53ba7355",
+      "final_repository_head": "820dbabb0d84ece5698e618d35326197226110d7",
+      "url": "https://wiki.body-all.co.kr/bee-venom_en.html",
+      "verification_receipt": "run_bee_final/public_verification.json",
+      "review_receipt": "run_bee_final/offline_validation.json",
+      "limits": [
+        "The completed Korean evidence review and unchanged cited sources were reused; no paper re-search or new efficacy claim was added.",
+        "The 2015 review and 2020 retrospective study support the stated safety discussion but do not prove Bodyall outcomes or the combined effect of bee venom acupuncture and SART.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text/schema/images and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "bee-venom_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "04165243c2377901bef97c015192dd3242e4cfd79372d8fcf5a42817a4e544e0",
+      "git_blob": "575f651a646e4a367787ec9ab9f8cf21c8526824",
+      "publication_commit": "bebac69c9d891b405ad7313bef74aa68cdb1c59e",
+      "final_repository_head": "820dbabb0d84ece5698e618d35326197226110d7",
+      "url": "https://wiki.body-all.co.kr/bee-venom_cn.html",
+      "verification_receipt": "run_bee_final/public_verification.json",
+      "review_receipt": "run_bee_final/offline_validation.json",
+      "limits": [
+        "The completed Korean evidence review and unchanged cited sources were reused; no paper re-search or new efficacy claim was added.",
+        "The 2015 review and 2020 retrospective study support the stated safety discussion but do not prove Bodyall outcomes or the combined effect of bee venom acupuncture and SART.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text/schema/images and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
@@ -1185,24 +1226,28 @@
     }
   ],
   "latest_validation": {
-    "run": "run_shoulder_final",
+    "run": "run_bee_final",
     "offline_status": "PASS",
     "public_status": "PASS",
     "article_urls": [
-      "https://wiki.body-all.co.kr/shoulder-frozen.html",
-      "https://wiki.body-all.co.kr/shoulder-frozen_cn.html",
-      "https://wiki.body-all.co.kr/shoulder-frozen_en.html"
+      "https://wiki.body-all.co.kr/bee-venom.html",
+      "https://wiki.body-all.co.kr/bee-venom_en.html",
+      "https://wiki.body-all.co.kr/bee-venom_cn.html"
     ],
     "article_checks": {
-      "shoulder-frozen.html": {
-        "body_exact": true,
-        "bookingBeforeImage": true,
-        "canonical": "https://wiki.body-all.co.kr/shoulder-frozen.html",
-        "choiceBeforeImage": true,
-        "description": "머리 감기·옷 입기·야간 수면이 불편하다면, 수원 바디올한의원에서 어깨의 능동·수동 가동범위와 목·흉추 움직임을 함께 확인합니다. 진찰에 따라 추나·SART·도침을 선택하고 같은 일상동작을 재평가합니다.",
+      "bee-venom.html": {
+        "title_exact": true,
+        "h1_exact": true,
         "description_exact": true,
-        "faqCount": 3,
-        "h1": "수원 오십견·어깨통증: 어깨·목·흉추를 함께 평가하는 바디올",
+        "canonical_exact": true,
+        "robots": "index, follow",
+        "schema_exact": true,
+        "faq_count": 3,
+        "body_exact": true,
+        "choice_before_hero": true,
+        "cta_before_hero": true,
+        "overflow": false,
+        "review_record": false,
         "images": [
           {
             "complete": true,
@@ -1215,80 +1260,69 @@
               2494,
               1867
             ],
+            "reserved": true,
             "src": "Bodyall Logo.png"
           },
           {
             "complete": true,
             "display": [
               860,
-              647.421875
+              565.734375
             ],
             "loaded": true,
             "natural": [
-              4082,
-              3073
+              1020,
+              671
             ],
-            "src": "shoulder-diagnosis.jpg"
+            "reserved": true,
+            "src": "bee_venom_hero.png"
+          },
+          {
+            "complete": true,
+            "display": [
+              805,
+              1073.328125
+            ],
+            "loaded": true,
+            "natural": [
+              360,
+              480
+            ],
+            "reserved": true,
+            "src": "Space Restoration image2.gif"
           },
           {
             "complete": true,
             "display": [
               860,
-              469.078125
+              566.875
             ],
             "loaded": true,
             "natural": [
-              2816,
-              1536
+              1021,
+              673
             ],
-            "src": "shoulder-tension-metaphor.png"
-          },
-          {
-            "complete": true,
-            "display": [
-              860,
-              647.421875
-            ],
-            "loaded": true,
-            "natural": [
-              4082,
-              3073
-            ],
-            "src": "shoulder-treatment1.jpg"
-          },
-          {
-            "complete": true,
-            "display": [
-              860,
-              647.421875
-            ],
-            "loaded": true,
-            "natural": [
-              4082,
-              3073
-            ],
-            "src": "directors_group.jpg"
+            "reserved": true,
+            "src": "bee_venom_ample.png"
           }
-        ],
-        "overflow": false,
-        "reviewRecord": false,
-        "robots": "index, follow",
-        "schema_exact": true,
-        "title": "수원 오십견·어깨통증: 어깨·목·흉추를 함께 평가하는 바디올 | 바디올 위키",
-        "url": "https://wiki.body-all.co.kr/shoulder-frozen.html",
-        "width": 1348
+        ]
       },
-      "shoulder-frozen_cn.html": {
-        "body_exact": true,
-        "bookingBeforeImage": true,
-        "canonical": "https://wiki.body-all.co.kr/shoulder-frozen_cn.html",
-        "choiceBeforeImage": true,
-        "description": "洗头、穿衣或夜间睡眠受影响时，水原Bodyall会比较肩部主动与被动活动范围，并检查颈部、胸椎动作，根据诊察选择推拿、SART或针刀，再复查相同的日常动作。",
+      "bee-venom_en.html": {
+        "title_exact": true,
+        "h1_exact": true,
         "description_exact": true,
-        "faqCount": 3,
-        "h1": "水原五十肩与肩痛：Bodyall的肩部、颈部与胸椎综合评估",
+        "canonical_exact": true,
+        "robots": "index, follow",
+        "schema_exact": true,
+        "faq_count": 3,
+        "body_exact": true,
+        "choice_before_hero": true,
+        "cta_before_hero": true,
+        "overflow": false,
+        "review_record": false,
         "images": [
           {
+            "complete": true,
             "display": [
               23.5,
               17.59375
@@ -1298,76 +1332,69 @@
               2494,
               1867
             ],
+            "reserved": true,
             "src": "Bodyall Logo.png"
           },
           {
+            "complete": true,
             "display": [
               860,
-              647.421875
+              565.734375
             ],
             "loaded": true,
             "natural": [
-              4082,
-              3073
+              1020,
+              671
             ],
-            "src": "shoulder-diagnosis.jpg"
+            "reserved": true,
+            "src": "bee_venom_hero.png"
           },
           {
+            "complete": true,
             "display": [
-              860,
-              469.078125
+              805,
+              1073.328125
             ],
             "loaded": true,
             "natural": [
-              2816,
-              1536
+              360,
+              480
             ],
-            "src": "shoulder-tension-metaphor.png"
+            "reserved": true,
+            "src": "Space Restoration image2.gif"
           },
           {
+            "complete": true,
             "display": [
               860,
-              647.421875
+              566.875
             ],
             "loaded": true,
             "natural": [
-              4082,
-              3073
+              1021,
+              673
             ],
-            "src": "shoulder-treatment1.jpg"
-          },
-          {
-            "display": [
-              860,
-              647.421875
-            ],
-            "loaded": true,
-            "natural": [
-              4082,
-              3073
-            ],
-            "src": "directors_group.jpg"
+            "reserved": true,
+            "src": "bee_venom_ample.png"
           }
-        ],
-        "overflow": false,
-        "reviewRecord": false,
-        "robots": "index, follow",
-        "schema_exact": true,
-        "title": "水原五十肩与肩痛：Bodyall的肩部、颈部与胸椎综合评估 | Bodyall Wiki",
-        "url": "https://wiki.body-all.co.kr/shoulder-frozen_cn.html",
-        "width": 1348
+        ]
       },
-      "shoulder-frozen_en.html": {
-        "body_exact": true,
-        "bookingBeforeImage": true,
-        "canonical": "https://wiki.body-all.co.kr/shoulder-frozen_en.html",
-        "choiceBeforeImage": true,
-        "description": "For difficulty dressing, washing your hair or sleeping: Bodyall in Suwon compares active and passive shoulder range with neck and thoracic movement, selects Chuna, SART or acupotomy when suitable, and reassesses the same daily tasks.",
+      "bee-venom_cn.html": {
+        "title_exact": true,
+        "h1_exact": true,
         "description_exact": true,
-        "faqCount": 3,
-        "h1": "Suwon Frozen Shoulder and Shoulder Pain: Bodyall Shoulder, Neck and Thoracic Assessment",
+        "canonical_exact": true,
+        "robots": "index, follow",
+        "schema_exact": true,
+        "faq_count": 3,
+        "body_exact": true,
+        "choice_before_hero": true,
+        "cta_before_hero": true,
+        "overflow": false,
+        "review_record": false,
         "images": [
           {
+            "complete": true,
             "display": [
               23.5,
               17.59375
@@ -1377,64 +1404,52 @@
               2494,
               1867
             ],
+            "reserved": true,
             "src": "Bodyall Logo.png"
           },
           {
+            "complete": true,
             "display": [
               860,
-              647.421875
+              565.734375
             ],
             "loaded": true,
             "natural": [
-              4082,
-              3073
+              1020,
+              671
             ],
-            "src": "shoulder-diagnosis.jpg"
+            "reserved": true,
+            "src": "bee_venom_hero.png"
           },
           {
+            "complete": true,
             "display": [
-              860,
-              469.078125
+              805,
+              1073.328125
             ],
             "loaded": true,
             "natural": [
-              2816,
-              1536
+              360,
+              480
             ],
-            "src": "shoulder-tension-metaphor.png"
+            "reserved": true,
+            "src": "Space Restoration image2.gif"
           },
           {
+            "complete": true,
             "display": [
               860,
-              647.421875
+              566.875
             ],
             "loaded": true,
             "natural": [
-              4082,
-              3073
+              1021,
+              673
             ],
-            "src": "shoulder-treatment1.jpg"
-          },
-          {
-            "display": [
-              860,
-              647.421875
-            ],
-            "loaded": true,
-            "natural": [
-              4082,
-              3073
-            ],
-            "src": "directors_group.jpg"
+            "reserved": true,
+            "src": "bee_venom_ample.png"
           }
-        ],
-        "overflow": false,
-        "reviewRecord": false,
-        "robots": "index, follow",
-        "schema_exact": true,
-        "title": "Suwon Frozen Shoulder and Shoulder Pain: Bodyall Shoulder, Neck and Thoracic Assessment | Bodyall Wiki",
-        "url": "https://wiki.body-all.co.kr/shoulder-frozen_en.html",
-        "width": 1348
+        ]
       }
     },
     "same_language_index_card_checks": {
@@ -1443,176 +1458,174 @@
           438,
           328.5
         ],
-        "href": "shoulder-frozen.html",
-        "image": "thumb_shoulder.png",
+        "found": true,
+        "href": "bee-venom.html",
+        "image": "thumb_bee.jpg",
         "loaded": true,
         "natural": [
-          2400,
-          1792
+          4082,
+          3073
         ],
         "overflow": false,
-        "text": "옷 입기·팔 올리기·야간 수면이 불편할 때, 어깨·목·흉추 진찰로 추나·SART·도침의 적합성을 정하고 같은 일상동작을 재평가하는 바디올 진료를 안내합니다.",
-        "url": "https://wiki.body-all.co.kr/index.html"
-      },
-      "index_cn.html": {
-        "display": [
-          438,
-          328.5
-        ],
-        "href": "shoulder-frozen_cn.html",
-        "image": "thumb_shoulder.png",
-        "loaded": true,
-        "natural": [
-          2400,
-          1792
-        ],
-        "overflow": false,
-        "text": "穿衣、抬臂或睡眠困难时，Bodyall通过肩部、颈部与胸椎检查选择适合的推拿、SART或针刀，并随访相同日常动作的变化。",
-        "url": "https://wiki.body-all.co.kr/index_cn.html"
+        "text": "통증 부위만 보지 않고 알레르기·복용약과 척추·관절 움직임을 함께 평가해 봉약침과 추나·SART의 역할을 개별 선택하고, 치료 후 같은 기능을 재평가합니다.",
+        "text_exact": true
       },
       "index_en.html": {
         "display": [
           438,
           328.5
         ],
-        "href": "shoulder-frozen_en.html",
-        "image": "thumb_shoulder.png",
+        "found": true,
+        "href": "bee-venom_en.html",
+        "image": "thumb_bee.jpg",
         "loaded": true,
         "natural": [
-          2400,
-          1792
+          4082,
+          3073
         ],
         "overflow": false,
-        "text": "For difficulty dressing, raising your arm or sleeping: Bodyall assesses shoulder, neck and thoracic movement, selects suitable Chuna, SART or acupotomy, and follows changes in the same daily tasks.",
-        "url": "https://wiki.body-all.co.kr/index_en.html"
+        "text": "Bodyall checks allergies and medicines together with spinal and joint movement, selects bee venom acupuncture and Chuna/SART by role, and reassesses the same function after care.",
+        "text_exact": true
+      },
+      "index_cn.html": {
+        "display": [
+          438,
+          328.5
+        ],
+        "found": true,
+        "href": "bee-venom_cn.html",
+        "image": "thumb_bee.jpg",
+        "loaded": true,
+        "natural": [
+          4082,
+          3073
+        ],
+        "overflow": false,
+        "text": "Bodyall会同时核对过敏史、用药及脊柱关节活动，分别判断蜂毒药针与推拿/SART的作用，并在治疗后复查相同功能。",
+        "text_exact": true
       }
     },
+    "debug_note": "An initial browser text comparison used an over-escaped whitespace regex and falsely reported a mismatch; the corrected normalization produced exact body matches for all three languages.",
     "limits": [
-      "Previously completed Korean evidence review reused; the 2022 study remains abstract-only and evaluates hydrodilatation plus acupotomy, not acupotomy alone or SART.",
-      "No physician review of the rewritten exact version or independent language review asserted.",
-      "Public body/schema/description, 15 images, desktop overflow and three same-language cards verified; mobile emulation and unchanged external-reference recrawl not performed.",
-      "Credible recommendation readiness is editorial; actual AI recommendation lift remains unmeasured."
+      "The completed Korean evidence review and unchanged cited sources were reused; no paper re-search or new efficacy claim was added.",
+      "The 2015 review and 2020 retrospective study support the stated safety discussion but do not prove Bodyall outcomes or the combined effect of bee venom acupuncture and SART.",
+      "No physician review of the rewritten exact version or independent language review was asserted.",
+      "Public text/schema/images and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
     ]
   },
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "18212e929a4c115cee89b11d369c9d0dda8a4141",
-    "final_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+    "prewrite_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+    "final_head": "820dbabb0d84ece5698e618d35326197226110d7",
     "files": {
+      "bee-venom.html": {
+        "exact_readback": true,
+        "final_blob": "82a220f203858bdf53d44ce8d456e5d6f12f7708",
+        "publication_commit": "58cc8ae75d8a5438217e51903a3c80854cc7c13f",
+        "source_blob": "97c41733a56640cec787cbc5682f83cc55411a64",
+        "sha256": "ea783065d7680bddea228650a023ac5331b018570c2c6bb0f8b2d3c0fe817ba1"
+      },
+      "bee-venom_cn.html": {
+        "exact_readback": true,
+        "final_blob": "575f651a646e4a367787ec9ab9f8cf21c8526824",
+        "publication_commit": "bebac69c9d891b405ad7313bef74aa68cdb1c59e",
+        "source_blob": "1111ccea8fc33ef467f98bb7e3d98f77b4cfc57f",
+        "sha256": "04165243c2377901bef97c015192dd3242e4cfd79372d8fcf5a42817a4e544e0"
+      },
+      "bee-venom_en.html": {
+        "exact_readback": true,
+        "final_blob": "cae85b39bf0616996a5e01c232766fddcf0b2885",
+        "publication_commit": "bb55a851eb8f4821dcc2845036e5659b53ba7355",
+        "source_blob": "e69ec6dbb4a4ba5635a08cf5e657e7afa1a12d3d",
+        "sha256": "1d46cd2100d41b0a134e8bc3362cae860ff715366fcb27886c482d84cbb2f9ce"
+      },
       "index.html": {
         "exact_readback": true,
-        "expected_blob": "55b611160ead12b940f59900bfc4aacb10021040",
-        "final_blob": "55b611160ead12b940f59900bfc4aacb10021040",
-        "publication_commit": "88a4747752091eb89ee254831a3b1e8b6f54d52e",
-        "sha256": "378ad022d70801696951095c1fd414a1649782fffc443923774ba6389fd5baf2",
-        "source_blob": "7031d4b341fba86c6da5e4f1c027a7b465727635"
+        "final_blob": "9ccb4728bc7fdf019e6515f175d1f215c40765af",
+        "publication_commit": "c083b099d0a88afbadb82464d68bd81e8a519daf",
+        "source_blob": "55b611160ead12b940f59900bfc4aacb10021040",
+        "sha256": "1bbd2742dc75f8c287663beada31eaceb2b594a93c293b2901de9c779a463e1c"
       },
       "index_cn.html": {
         "exact_readback": true,
-        "expected_blob": "7cbb98e993abd3d82a5b8fd3c8b1a55757629497",
-        "final_blob": "7cbb98e993abd3d82a5b8fd3c8b1a55757629497",
-        "publication_commit": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
-        "sha256": "419c0f13223f211f3f1e08def3011f7b88ab251d329ee4ce95ceceb0a7fe3699",
-        "source_blob": "02bba04108d6bdae4226939afb0e8272f850d54b"
+        "final_blob": "a231889341a76254063a6ee3793fc9ef34ee1016",
+        "publication_commit": "820dbabb0d84ece5698e618d35326197226110d7",
+        "source_blob": "7cbb98e993abd3d82a5b8fd3c8b1a55757629497",
+        "sha256": "5d283bef6aaec1741bb9c922aa05ea9f62abc697dac328e5ab55183a46367218"
       },
       "index_en.html": {
         "exact_readback": true,
-        "expected_blob": "9448357b9b584c03cc4b141c792fc187e1458cde",
-        "final_blob": "9448357b9b584c03cc4b141c792fc187e1458cde",
-        "publication_commit": "a615b535aaa19d663bf6612d5eb870e6c43d4de4",
-        "sha256": "62467cfe476340973c3ec239ecd9a3a3df71a19c050b2c48b478975b934ffe60",
-        "source_blob": "2af818f7c51a2a324d80afcf2ba2b46d1a865416"
-      },
-      "shoulder-frozen.html": {
-        "exact_readback": true,
-        "expected_blob": "de97406b0d7c987194dfe1d89956300f6181b882",
-        "final_blob": "de97406b0d7c987194dfe1d89956300f6181b882",
-        "publication_commit": "71991be49be5f2b27b2e1fe5a92a0ac0d5b1fd1a",
-        "sha256": "b0d854278f70d0e295d767b39d730adbb245345a1fdbb1dbe527e39bf4aba172",
-        "source_blob": "6636a33e284a2bb34ec5215e1b3fcc52ac4475ad"
-      },
-      "shoulder-frozen_cn.html": {
-        "exact_readback": true,
-        "expected_blob": "5066e0b1aec7345460071b744ad9a9ec4b2900c5",
-        "final_blob": "5066e0b1aec7345460071b744ad9a9ec4b2900c5",
-        "publication_commit": "48bb11af1d039bd107b2030ce4cbf802add4af8e",
-        "sha256": "9cf5cc4df852d97d2959ddf25fc8ed4291acecdec77d6e91aedb73c2bd6d9003",
-        "source_blob": "fc8ac32118e09c12e3441a3f6b28ee0d621a23d4"
-      },
-      "shoulder-frozen_en.html": {
-        "exact_readback": true,
-        "expected_blob": "effa7eea11fd0c14b398a9f439c94576fb8c3a98",
-        "final_blob": "effa7eea11fd0c14b398a9f439c94576fb8c3a98",
-        "publication_commit": "801ca6a230073946e3266691d5e4b10dba3bbc54",
-        "sha256": "f1e4497534aea87b9f9d1dcb86e083b38d16d6aee72fd45f4082da8c6a3e7aa0",
-        "source_blob": "6d22dffcc79c7eeb9b882aad675cbc6072a3d53a"
+        "final_blob": "f26bb511de87fae6be4efa5e797f80f2f1ef1b1b",
+        "publication_commit": "a231a55df8ddce33c09447ee901ed8a38a4f48d4",
+        "source_blob": "9448357b9b584c03cc4b141c792fc187e1458cde",
+        "sha256": "3193f60140fa7b2a0dfb5409c7ca26e89ffd0735d1a27b0106b39a29995bab73"
       }
     },
     "compare": {
       "ahead_by": 6,
-      "base": "18212e929a4c115cee89b11d369c9d0dda8a4141",
+      "base": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
       "base_commit": {
-        "html_url": "https://github.com/bodyallhani/wiki/commit/18212e929a4c115cee89b11d369c9d0dda8a4141",
-        "sha": "18212e929a4c115cee89b11d369c9d0dda8a4141",
-        "url": "https://api.github.com/repos/bodyallhani/wiki/commits/18212e929a4c115cee89b11d369c9d0dda8a4141"
+        "html_url": "https://github.com/bodyallhani/wiki/commit/e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+        "sha": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+        "url": "https://api.github.com/repos/bodyallhani/wiki/commits/e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2"
       },
       "behind_by": 0,
       "files": [
         {
-          "additions": 1,
-          "changes": 2,
+          "additions": 52,
+          "changes": 100,
+          "deletions": 48,
+          "filename": "bee-venom.html",
+          "previous_filename": null,
+          "status": "modified"
+        },
+        {
+          "additions": 81,
+          "changes": 264,
+          "deletions": 183,
+          "filename": "bee-venom_cn.html",
+          "previous_filename": null,
+          "status": "modified"
+        },
+        {
+          "additions": 72,
+          "changes": 200,
+          "deletions": 128,
+          "filename": "bee-venom_en.html",
+          "previous_filename": null,
+          "status": "modified"
+        },
+        {
+          "additions": 2,
+          "changes": 3,
           "deletions": 1,
           "filename": "index.html",
           "previous_filename": null,
           "status": "modified"
         },
         {
-          "additions": 1,
-          "changes": 2,
+          "additions": 2,
+          "changes": 3,
           "deletions": 1,
           "filename": "index_cn.html",
           "previous_filename": null,
           "status": "modified"
         },
         {
-          "additions": 1,
-          "changes": 2,
+          "additions": 2,
+          "changes": 3,
           "deletions": 1,
           "filename": "index_en.html",
           "previous_filename": null,
           "status": "modified"
-        },
-        {
-          "additions": 20,
-          "changes": 41,
-          "deletions": 21,
-          "filename": "shoulder-frozen.html",
-          "previous_filename": null,
-          "status": "modified"
-        },
-        {
-          "additions": 19,
-          "changes": 37,
-          "deletions": 18,
-          "filename": "shoulder-frozen_cn.html",
-          "previous_filename": null,
-          "status": "modified"
-        },
-        {
-          "additions": 19,
-          "changes": 37,
-          "deletions": 18,
-          "filename": "shoulder-frozen_en.html",
-          "previous_filename": null,
-          "status": "modified"
         }
       ],
-      "head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+      "head": "820dbabb0d84ece5698e618d35326197226110d7",
       "merge_base_commit": {
-        "html_url": "https://github.com/bodyallhani/wiki/commit/18212e929a4c115cee89b11d369c9d0dda8a4141",
-        "sha": "18212e929a4c115cee89b11d369c9d0dda8a4141",
-        "url": "https://api.github.com/repos/bodyallhani/wiki/commits/18212e929a4c115cee89b11d369c9d0dda8a4141"
+        "html_url": "https://github.com/bodyallhani/wiki/commit/e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+        "sha": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+        "url": "https://api.github.com/repos/bodyallhani/wiki/commits/e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2"
       },
       "repository_full_name": "bodyallhani/wiki",
       "status": "ahead",
@@ -1623,9 +1636,9 @@
     "recommendation_lift": "UNMEASURED_NO_INDEPENDENT_BRAND_BLIND_BASELINE_AFTER_RESPONSES"
   },
   "next": [
-    "Review bee-venom Korean against the recommendation-first standard, then align English and Chinese.",
+    "Review pain-spine-clinic Korean against the recommendation-first standard, then align English and Chinese.",
     "Run resume_guard.py against GitHub current.json, local state and policy before selecting work or reporting counts.",
-    "Preserve all document-specific holds, Make OFF/AUTH_BLOCKED, stopped Google auto-indexing, models and budgets."
+    "Preserve document-specific holds, Make OFF/AUTH_BLOCKED, stopped Google auto-indexing, models and budgets."
   ],
   "constraints": {
     "make": "OFF_AUTH_BLOCKED_DO_NOT_CALL_OR_REACTIVATE",
@@ -1651,33 +1664,22 @@
     "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER"
   },
   "latest_debug": {
-    "run": "run_resume_debug",
+    "run": "run_bee_final",
     "confirmed_findings": [
-      "Local count aliases conflicted (10/146 versus22/134); GitHub canonical22 was internally consistent.",
-      "Resolved cervical error remained as latest_pending_run; completed topics remained in nested next_priority aliases.",
-      "English shoulder title/H1/schema names disagreed.",
-      "Editor filesystem and browser sidecar filesystem were incorrectly assumed shared.",
-      "JSON object key order caused a false schema comparison failure; recursive key sorting resolved it.",
-      "The editor workspace subsequently returned409 environment_offline; no reconnect capability was exposed."
+      "The previous Korean page still repeated defensive caveats; the English and Chinese pages contained unsupported or overbroad claims such as nerve regeneration, safe/effective alternative positioning, destination-center language and mandatory-testing implications.",
+      "The first live body-text comparison falsely failed because the checker over-escaped the whitespace regular expression; this was a verifier bug, not a publication mismatch.",
+      "Root-card images use lazy loading and initially reported zero natural dimensions before the cards were scrolled into view."
     ],
     "resolved": [
-      "Archived and repaired stale local count/pending/priority aliases at22 before publication; guard regression6/6 passed.",
-      "Aligned shoulder title/H1/schema and verified final exact public content for3 languages.",
-      "Passed expected content directly to browser sidecar; canonicalized object keys; waited for images to settle.",
-      "Validated tool content arguments before GitHub retry; a cancelled call had discarded newly cached content.",
-      "Workspace 409 environment_offline recovered on a later probe. Final local synchronization and ZIP rebuild completed after reconnection.",
-      "Persisted corrected resume guard with repository-relative release paths; final 25/131 state and policy validation passed."
+      "Replaced unsupported positioning with patient-fit, allergy/medicine checks, role-separated bee venom acupuncture versus Chuna/SART selection, same-function reassessment and a clear next action.",
+      "Corrected whitespace normalization and obtained exact public body matches for Korean, English and Chinese.",
+      "Scrolled each same-language card into view, then confirmed all thumbnail images loaded and preserved their responsive ratio."
     ],
-    "limits": [
-      "Earlier interruption causal attribution remains unknown; no unavailable execution log was fabricated."
-    ],
-    "workspace_error": "failed to query exec-server capabilities: environment registry request failed (409 Conflict, environment_offline): Environment is not connected.",
-    "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED_BEFORE_WORKSPACE_DISCONNECT",
-    "workspace_status": "RECOVERED_VERIFIED_BY_SUCCESSFUL_SHELL_COMMAND"
+    "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED"
   },
-  "filesystem_sync_status": "SYNCHRONIZED_25_GUARD_PASS",
-  "zip_status": "BUILT_AND_INTEGRITY_VERIFIED",
-  "report_ko": "# 재개 오류 교정 및 오십견 3개 언어 배포\n\n최신 추천 우선 기준 적용·배포·공개검증 완료 **25/156 · 잔여 131**. 이번에는 기존 오십견 URL 3개를 완료에 추가했다. 대문 카드 변경은 전체 대문 완료로 세지 않는다.\n\n## 확인한 문제와 해결\n- 현재 22/134 원장과 달리 로컬 counts에는 10/146이 남아 있었고, policy에는 해결된 목디스크 쓰기 오류가 latest_pending_run으로 남아 있었다. 중첩된 다음 작업도 이미 완료한 바디올핏 페이지를 가리켰다.\n- 이전 finalize.py가 현재 항목 일부만 갱신하던 문제다. 원본 기록을 보존하고 검증 원장에 맞춰 현재 별칭을 동기화했다. 과거 오류를 현재 보류로 읽지 않도록 해결 이력으로 이동했다.\n- resume_guard.py를 GitHub에 저장하고 다시 읽어 일치 확인했다. 원래 충돌 탐지·복구·반복 실행 동일성·완료 수 부풀림 거부·문서 보류 보존·Make 제한 보존 검사 6개가 통과했다.\n- 현재 GitHub 접근과 쓰기는 정상이다. 과거 중단의 내부 원인은 상세 오류가 보존되지 않아 확정하지 않는다.\n\n## 오십견 HTML 교정\n- 환자 조건, 어깨 능동·수동 가동범위와 목·흉추 진찰, 추나·SART·도침의 개별 선택, 같은 일상동작 재평가 및 예약을 첫 이미지 앞으로 옮겼다.\n- 영어 title/H1/스키마 이름 불일치를 해결하고 3개 언어 제목·설명·본문 FAQ·구조화 FAQ를 정렬했다.\n- 반복적인 구조 복원 비보장·필수 병용 부정·동일 연구 해명을 정리했다. 골절·감염·감각변화·흉통 관련 응급 신호, 도침 위험, 봉약침 아나필락시스, 항응고제 임의 중단 주의는 유지했다.\n- 2019년 8개 시험·501명과 연구 한계, 2022년 63명 복합치료 비교·3개월 결과 및 공개 초록만 확인한 범위를 유지했다. 2022년 전문 확인을 완료로 승격하지 않았다.\n- 기존 한국어 근거 검증을 재사용했다. 새 효과 주장을 추가하거나 과거 원장님 직접검수를 새 exact 문안의 직접검수로 표시하지 않았다. 번역본은 한국어 원문 계보를 유지했다.\n\n## 검증 결과\n- 6개 원본 스냅샷과 GitHub blob 일치. 로컬 파일 전달 과정에서 생긴 마지막 줄바꿈 1개를 원본 해시와 대조해 제거했다.\n- 정적검사 오류 0. CSS·이미지 속성·canonical·hreflang·참고문헌 목적지를 보존했고 대문은 대상 카드 문단만 변경했다.\n- GitHub 최종 내용 6/6 exact. 이전 head 대비 의도한 6개 파일만 변경됐다.\n- 공개 전체 본문·스키마·설명 3/3 일치, FAQ 각3개, 예약 및 선택 이유가 첫 이미지보다 앞에 배치됨을 확인했다.\n- 본문 이미지 15/15 및 목록 카드 이미지 3/3 정상 로딩. 3개 언어 데스크톱 상단 화면을 직접 확인했고 가로 넘침은 없었다. 모바일 에뮬레이션과 변경 없는 외부 논문 링크 재크롤링은 실행하지 않았다.\n- 검증 환경은 편집 환경의 로컬 파일을 직접 읽을 수 없어 기대 데이터를 직접 전달했다. JSON 객체 키 순서만 달라 불일치로 보이던 비교기를 순서와 무관한 값 대조로 수정했다. 로딩 중 이미지 결과는 완료 후 재확인했다.\n\n최종 공개 커밋: `e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2`.\n실제 AI 추천 증가: **UNMEASURED**. 독립 baseline/after 답변을 수집하기 전이며 내부 검수·배포 수를 추천 성과로 표현하지 않는다.\n\n다음은 봉약침 한국어 최신 기준 교정 후 영어·중국어 정렬이다. Make·Google 자동색인 중단, 문서별 보류, 기존 모델·예산을 유지한다.\n\n## 추가 실행 오류 처리\n기록 저장 중 편집 작업공간이 409 environment_offline으로 끊겼다. 공개 배포·검증은 이미 끝난 상태였다. GitHub 원장을 먼저 보존한 뒤 재확인에서 작업공간 연결이 복구되어 로컬 별칭 동기화와 ZIP 재생성을 마쳤다. 장기 연결 안정성을 보장하는 영구 인프라 수정은 수행하지 않았다.\n",
+  "filesystem_sync_status": "LOCAL_SYNCED_AND_GUARD_PASS",
+  "zip_status": "BUILD_READY",
+  "report_ko": "run_bee_final/REPORT_KO.md",
   "zip_receipt": {
     "bytes": 21981293,
     "integrity": "PASS",
