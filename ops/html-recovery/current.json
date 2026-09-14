@@ -1,9 +1,9 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T06:39:01.388434+00:00",
+  "updated_at": "2026-09-14T07:28:35.132491+00:00",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+  "public_commit": "18212e929a4c115cee89b11d369c9d0dda8a4141",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,8 +13,8 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 19,
-    "latest_standard_not_confirmed_or_remaining": 137,
+    "latest_standard_published_confirmed": 22,
+    "latest_standard_not_confirmed_or_remaining": 134,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
@@ -36,6 +36,9 @@
     "cervical-disc.html",
     "cervical-disc_cn.html",
     "cervical-disc_en.html",
+    "lumbar-disc.html",
+    "lumbar-disc_cn.html",
+    "lumbar-disc_en.html",
     "traffic-accident.html",
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
@@ -945,8 +948,8 @@
     {
       "path": "index_en.html",
       "latest_standard_completed": false,
-      "status": "SAME_LANGUAGE_CERVICAL_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
-      "reason": "The cervical card, its target image, review attribution and desktop overflow were verified. Whole root page is not counted by this article release.",
+      "status": "SAME_LANGUAGE_LUMBAR_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
+      "reason": "Cervical and lumbar cards, target images, review attribution and desktop overflow were verified. Whole root page is not counted by these article releases.",
       "pending_candidate": {
         "errors": [],
         "sha256": "f419e8176ba5f4f12950a8475a968aaf85fc0991a560a6198a36208302856b93",
@@ -957,16 +960,15 @@
         "status": "STATIC_VERIFIED_NOT_PUBLISHED",
         "receipt": "run_cervical_final/offline_validation.json"
       },
-      "sha256": "82fa7b8c16a92483cb281ba7878ecce009de712c9eb16335b0709aabca9561a8",
-      "git_blob": "2e2a07791c3b2b5cdf13f63dfedbe9a21c56f7d5",
-      "publication_commit": "353964ec6ea1063b2c6744bc31932eb7193a80e0",
-      "verification_receipt": "run_cervical_final/public_verification.json"
+      "git_blob": "2af818f7c51a2a324d80afcf2ba2b46d1a865416",
+      "publication_commit": "dfd024cab39cbda9ecd71f0f0028ac5abca590f1",
+      "verification_receipt": "run_lumbar_final/public_verification.json"
     },
     {
       "path": "index.html",
       "latest_standard_completed": false,
-      "status": "SAME_LANGUAGE_CERVICAL_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
-      "reason": "The cervical card, its target image, review attribution and desktop overflow were verified. Whole root page is not counted by this article release.",
+      "status": "SAME_LANGUAGE_LUMBAR_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
+      "reason": "Cervical and lumbar cards, target images, review attribution and desktop overflow were verified. Whole root page is not counted by these article releases.",
       "pending_candidate": {
         "errors": [],
         "sha256": "e260320bb14e0153826d00eb47bc88d38aebc868b33b0a6bee94790f0e749fe5",
@@ -977,16 +979,15 @@
         "status": "STATIC_VERIFIED_NOT_PUBLISHED",
         "receipt": "run_cervical_final/offline_validation.json"
       },
-      "sha256": "4aad6972fdb4f1ca5aad62cc72dad1cfb2809a1d33acbe1b8fc57591d05f72ea",
-      "git_blob": "a0c22454bb01afe59ae8e5d84e5076aa582f2420",
-      "publication_commit": "d9cbda4b6a455f4b84c91636107c99dffa604be7",
-      "verification_receipt": "run_cervical_final/public_verification.json"
+      "git_blob": "7031d4b341fba86c6da5e4f1c027a7b465727635",
+      "publication_commit": "7af0723a58774a3747733bb427c71f11ef8d254e",
+      "verification_receipt": "run_lumbar_final/public_verification.json"
     },
     {
       "path": "index_cn.html",
       "latest_standard_completed": false,
-      "status": "SAME_LANGUAGE_CERVICAL_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
-      "reason": "The cervical card, its target image, review attribution and desktop overflow were verified. Whole root page is not counted by this article release.",
+      "status": "SAME_LANGUAGE_LUMBAR_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
+      "reason": "Cervical and lumbar cards, target images, review attribution and desktop overflow were verified. Whole root page is not counted by these article releases.",
       "pending_candidate": {
         "errors": [],
         "sha256": "f6ddf68cf4cc83192ef46e7a22e718845ca3aa5b7fc4cf8318bca6a11f38e7b4",
@@ -997,26 +998,60 @@
         "status": "STATIC_VERIFIED_NOT_PUBLISHED",
         "receipt": "run_cervical_final/offline_validation.json"
       },
-      "sha256": "01e8e10dee172576602eb143a1e69480693264f447b9ec403d1fef3990f3790a",
-      "git_blob": "af28aeac6f7f0079eea1ee7edab806f251dca48f",
-      "publication_commit": "d8d6fee9bbbf95f4d7a66e46f9a33d94cc6cb317",
-      "verification_receipt": "run_cervical_final/public_verification.json"
+      "git_blob": "02bba04108d6bdae4226939afb0e8272f850d54b",
+      "publication_commit": "18212e929a4c115cee89b11d369c9d0dda8a4141",
+      "verification_receipt": "run_lumbar_final/public_verification.json"
     },
     {
       "path": "lumbar-disc_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "3b512b0261a217b83825de80578a8734553e3fe52060019771adaa899e60b156",
+      "git_blob": "b062465ecebaa64716a8ca705c7485cdbefe2d21",
+      "publication_commit": "fc1aa4236c207f985dac1b0d9cdc33371045bc6e",
+      "final_repository_head": "18212e929a4c115cee89b11d369c9d0dda8a4141",
+      "url": "https://wiki.body-all.co.kr/lumbar-disc_en.html",
+      "verification_receipt": "run_lumbar_final/public_verification.json",
+      "review_receipt": "run_lumbar_final/offline_validation.json",
+      "limits": [
+        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+        "No direct physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text/schema/images and desktop overflow were verified; mobile emulation and unchanged external-reference recrawl were not claimed."
+      ]
     },
     {
       "path": "lumbar-disc.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED",
-      "reason": "Latest local cleanup exists; older publication is excluded from final-standard completion."
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "224ac359df8588ba179c6835212b733c1c5e039c9b6b5428534963ce6476e14b",
+      "git_blob": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
+      "publication_commit": "0226adfb2a84b6cfbacae4491f4a11ee94acccf3",
+      "final_repository_head": "18212e929a4c115cee89b11d369c9d0dda8a4141",
+      "url": "https://wiki.body-all.co.kr/lumbar-disc.html",
+      "verification_receipt": "run_lumbar_final/public_verification.json",
+      "review_receipt": "run_lumbar_final/offline_validation.json",
+      "limits": [
+        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+        "No direct physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text/schema/images and desktop overflow were verified; mobile emulation and unchanged external-reference recrawl were not claimed."
+      ]
     },
     {
       "path": "lumbar-disc_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "3f1c1ae6c8dc129516d5de265240c2b66e241300b536aa9b32bb5712275ef83c",
+      "git_blob": "d586b2e6ca8c623a0eaecfcd51495be85035e96e",
+      "publication_commit": "8b8725aed3ec0753d49bdbb4b5c6f27ae7f925fb",
+      "final_repository_head": "18212e929a4c115cee89b11d369c9d0dda8a4141",
+      "url": "https://wiki.body-all.co.kr/lumbar-disc_cn.html",
+      "verification_receipt": "run_lumbar_final/public_verification.json",
+      "review_receipt": "run_lumbar_final/offline_validation.json",
+      "limits": [
+        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+        "No direct physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text/schema/images and desktop overflow were verified; mobile emulation and unchanged external-reference recrawl were not claimed."
+      ]
     },
     {
       "path": "pain-spine-clinic_en.html",
@@ -1106,153 +1141,106 @@
     }
   ],
   "latest_validation": {
-    "run": "run_cervical_final",
+    "run": "run_lumbar_final",
     "offline_status": "PASS",
     "public_status": "PASS",
     "article_urls": [
-      "https://wiki.body-all.co.kr/cervical-disc.html",
-      "https://wiki.body-all.co.kr/cervical-disc_en.html",
-      "https://wiki.body-all.co.kr/cervical-disc_cn.html"
+      "https://wiki.body-all.co.kr/lumbar-disc.html",
+      "https://wiki.body-all.co.kr/lumbar-disc_en.html",
+      "https://wiki.body-all.co.kr/lumbar-disc_cn.html"
     ],
     "article_checks": {
-      "ko": {
-        "body_text_exact": true,
-        "schema_semantic_exact": true,
-        "title_h1_og_aligned": true,
-        "description_aligned": true,
-        "canonical": true,
-        "robots_index_follow": true,
-        "faq_visible_schema_aligned": true,
-        "images_loaded": "8/8",
-        "image_dimensions_and_alt": true,
-        "desktop_overflow": false,
-        "booking_above_first_image": true,
-        "stale_review_attribution": false
-      },
-      "en": {
-        "body_text_exact": true,
-        "schema_semantic_exact": true,
-        "title_h1_og_aligned": true,
-        "description_aligned": true,
-        "canonical": true,
-        "robots_index_follow": true,
-        "faq_visible_schema_aligned": true,
-        "images_loaded": "8/8",
-        "image_dimensions_and_alt": true,
-        "desktop_overflow": false,
-        "booking_above_first_image": true,
-        "stale_review_attribution": false
-      },
-      "cn": {
-        "body_text_exact": true,
-        "schema_semantic_exact": true,
-        "title_h1_og_aligned": true,
-        "description_aligned": true,
-        "canonical": true,
-        "robots_index_follow": true,
-        "faq_visible_schema_aligned": true,
-        "images_loaded": "8/8",
-        "image_dimensions_and_alt": true,
-        "desktop_overflow": false,
-        "booking_above_first_image": true,
-        "stale_review_attribution": false
-      }
+      "count": 3,
+      "body_choice_reason": "PASS_3_OF_3",
+      "title_h1_og_schema_alignment": "PASS_3_OF_3",
+      "description_meta_og_schema_alignment": "PASS_3_OF_3",
+      "canonical_and_index_follow": "PASS_3_OF_3",
+      "faq_visible_schema_alignment": "PASS_3_OF_3_TWO_EACH",
+      "article_booking_before_first_image": "PASS_3_OF_3",
+      "images_loaded": "PASS_24_OF_24",
+      "image_dimensions_and_alt_reserved": "PASS_24_OF_24",
+      "desktop_horizontal_overflow": "NONE_3_OF_3",
+      "removed_old_defensive_phrases": "ABSENT_3_OF_3",
+      "stale_review_attribution": "ABSENT_3_OF_3",
+      "date_modified": "2026-09-14_3_OF_3"
     },
     "same_language_index_card_checks": {
-      "ko": {
-        "card_text_exact": true,
-        "href": "cervical-disc.html",
-        "target_image_src": "disease_neck.jpg",
-        "target_image_loaded": true,
-        "desktop_overflow": false,
-        "stale_review_attribution": false
+      "exact_card_text_and_href": "PASS_3_OF_3",
+      "desktop_horizontal_overflow": "NONE_3_OF_3",
+      "stale_review_attribution": "ABSENT_3_OF_3",
+      "shared_image": {
+        "url": "https://wiki.body-all.co.kr/disease_lumbar.jpg",
+        "loaded": true,
+        "natural_width": 4082,
+        "natural_height": 3073,
+        "html_dimensions_and_alt_reserved": true
       },
-      "en": {
-        "card_text_exact": true,
-        "href": "cervical-disc_en.html",
-        "target_image_src": "disease_neck.jpg",
-        "target_image_loaded": true,
-        "desktop_overflow": false,
-        "stale_review_attribution": false
-      },
-      "cn": {
-        "card_text_exact": true,
-        "href": "cervical-disc_cn.html",
-        "target_image_src": "disease_neck.jpg",
-        "target_image_loaded": true,
-        "desktop_overflow": false,
-        "stale_review_attribution": false
-      },
-      "shared_target_image_natural_size": "4082x3073"
+      "root_pages_counted_complete": false
     },
     "limits": [
-      "Previously completed Korean evidence review was reused; external references were not recrawled because no study claim or destination changed.",
-      "No direct physician review of this rewritten exact version or independent English/Chinese clinical-language review is asserted.",
-      "Desktop rendered layout was checked; mobile emulation was not run.",
-      "Root pages were checked only for the cervical card, target image, review attribution and overflow; this does not count the root pages as complete."
+      "No mobile viewport emulation was available in this browser check; responsive CSS and image ratios were unchanged and desktop overflow was absent.",
+      "Unchanged external evidence links were not recrawled.",
+      "No new physician review or independent English/Chinese language review is asserted for these exact revisions."
     ]
   },
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "650ead92622504965e91974e3f8e87dae655d809",
-    "final_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+    "prewrite_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+    "final_head": "18212e929a4c115cee89b11d369c9d0dda8a4141",
     "files": {
-      "cervical-disc.html": {
-        "original_blob": "6a2a38b92900e6fb0016bc3fda3e4e15b7004018",
-        "publication_commit": "e76578fc27901b43239034b98dd70a38edf48c6e",
-        "final_blob": "17bb099b854543fa06f01266ad1ac956871809a9",
-        "sha256": "e7960c659f1079cae3f906a64b517f50d591b5ced3a7bbd94c6409b45262c888"
+      "lumbar-disc.html": {
+        "source_blob": "fc0793d899614c11a4d2283e7bf5e44afb4e78c5",
+        "final_blob": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
+        "sha256": "224ac359df8588ba179c6835212b733c1c5e039c9b6b5428534963ce6476e14b",
+        "publication_commit": "0226adfb2a84b6cfbacae4491f4a11ee94acccf3"
       },
-      "cervical-disc_en.html": {
-        "original_blob": "468556c4e1039cef928d0fb68a2a9deff8f8f907",
-        "publication_commit": "2482347372e4c7b19cf2c4dd367390ecc0e0becc",
-        "final_blob": "c6c7136064bb896000ffecd2c23b8984e058954e",
-        "sha256": "adc302f82bed1c17f564c851d34ecf53e3d317431dccb227849675720d6f63cd"
+      "lumbar-disc_en.html": {
+        "source_blob": "743248f789b8d84cbfa04c026808f3d0e724a874",
+        "final_blob": "b062465ecebaa64716a8ca705c7485cdbefe2d21",
+        "sha256": "3b512b0261a217b83825de80578a8734553e3fe52060019771adaa899e60b156",
+        "publication_commit": "fc1aa4236c207f985dac1b0d9cdc33371045bc6e"
       },
-      "cervical-disc_cn.html": {
-        "original_blob": "2648645442448e64ae6dd60194f036290f51a4cd",
-        "publication_commit": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
-        "final_blob": "4719487c8b5f37e1b5922c80aea6b2a22e3d66f4",
-        "sha256": "da52c8532be6729b20adb35a148d7d05bf2783e0b44e026a45fcd5eec1b23460"
+      "lumbar-disc_cn.html": {
+        "source_blob": "bb5aad1e5518458b42238559bf879ed038db4c39",
+        "final_blob": "d586b2e6ca8c623a0eaecfcd51495be85035e96e",
+        "sha256": "3f1c1ae6c8dc129516d5de265240c2b66e241300b536aa9b32bb5712275ef83c",
+        "publication_commit": "8b8725aed3ec0753d49bdbb4b5c6f27ae7f925fb"
       },
       "index.html": {
-        "original_blob": "ef4621b68c581de825da15856ac0c2192ad500c4",
-        "publication_commit": "d9cbda4b6a455f4b84c91636107c99dffa604be7",
-        "final_blob": "a0c22454bb01afe59ae8e5d84e5076aa582f2420",
-        "sha256": "4aad6972fdb4f1ca5aad62cc72dad1cfb2809a1d33acbe1b8fc57591d05f72ea"
+        "source_blob": "a0c22454bb01afe59ae8e5d84e5076aa582f2420",
+        "final_blob": "7031d4b341fba86c6da5e4f1c027a7b465727635",
+        "publication_commit": "7af0723a58774a3747733bb427c71f11ef8d254e"
       },
       "index_en.html": {
-        "original_blob": "77dbd1f2af4972c43f3d1819955ea23d5e7e7c06",
-        "publication_commit": "353964ec6ea1063b2c6744bc31932eb7193a80e0",
-        "final_blob": "2e2a07791c3b2b5cdf13f63dfedbe9a21c56f7d5",
-        "sha256": "82fa7b8c16a92483cb281ba7878ecce009de712c9eb16335b0709aabca9561a8"
+        "source_blob": "2e2a07791c3b2b5cdf13f63dfedbe9a21c56f7d5",
+        "final_blob": "2af818f7c51a2a324d80afcf2ba2b46d1a865416",
+        "publication_commit": "dfd024cab39cbda9ecd71f0f0028ac5abca590f1"
       },
       "index_cn.html": {
-        "original_blob": "3b59bbc72ea9810105a912fcb0da3de01ae473b1",
-        "publication_commit": "d8d6fee9bbbf95f4d7a66e46f9a33d94cc6cb317",
-        "final_blob": "af28aeac6f7f0079eea1ee7edab806f251dca48f",
-        "sha256": "01e8e10dee172576602eb143a1e69480693264f447b9ec403d1fef3990f3790a"
+        "source_blob": "af28aeac6f7f0079eea1ee7edab806f251dca48f",
+        "final_blob": "02bba04108d6bdae4226939afb0e8272f850d54b",
+        "publication_commit": "18212e929a4c115cee89b11d369c9d0dda8a4141"
       }
     },
     "compare": {
-      "status": "ahead",
-      "ahead_by": 7,
+      "ahead_by": 6,
       "behind_by": 0,
-      "changed_files": [
-        "cervical-disc.html",
-        "cervical-disc_cn.html",
-        "cervical-disc_en.html",
+      "only_intended_files": true,
+      "files": [
         "index.html",
         "index_cn.html",
-        "index_en.html"
+        "index_en.html",
+        "lumbar-disc.html",
+        "lumbar-disc_cn.html",
+        "lumbar-disc_en.html"
       ]
     },
     "same_language_cards_updated": true,
-    "recommendation_lift": "UNMEASURED_NO_INDEPENDENT_BASELINE_AFTER_RESPONSE_CHANNEL"
+    "recommendation_lift": "UNMEASURED_NO_INDEPENDENT_BRAND_BLIND_BASELINE_AFTER_RESPONSES"
   },
   "next": [
-    "Recheck and publish lumbar-disc Korean with the recommendation-first standard, then align English and Chinese.",
+    "Recheck and publish shoulder-frozen Korean with the recommendation-first standard, then align English and Chinese.",
     "Keep held BodyallFit0002/0005/0007 and Herbmed0002 untouched.",
     "Continue strict completion accounting; root card changes do not count whole root pages as complete."
   ],
