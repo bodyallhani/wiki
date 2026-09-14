@@ -1,9 +1,9 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T09:10:47.602994Z",
+  "updated_at": "2026-09-14T09:44:26.500578Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "820dbabb0d84ece5698e618d35326197226110d7",
+  "public_commit": "e6b6b03e5323cc010b5d36cc6f8c26c46009706a",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,8 +13,8 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 28,
-    "latest_standard_not_confirmed_or_remaining": 128,
+    "latest_standard_published_confirmed": 31,
+    "latest_standard_not_confirmed_or_remaining": 125,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
@@ -42,6 +42,9 @@
     "lumbar-disc.html",
     "lumbar-disc_cn.html",
     "lumbar-disc_en.html",
+    "pain-spine-clinic.html",
+    "pain-spine-clinic_cn.html",
+    "pain-spine-clinic_en.html",
     "shoulder-frozen.html",
     "shoulder-frozen_cn.html",
     "shoulder-frozen_en.html",
@@ -1102,19 +1105,57 @@
     },
     {
       "path": "pain-spine-clinic_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "0c1007e2a80bac47ef8ae6fc0b7c05f567f18615b1a9fcac16bcd1d0de5e0185",
+      "git_blob": "3ebf7e89815a17e18a72fa0f0574a5b115e4ee09",
+      "publication_commit": "c9a59da2a147d1f965c72e83b77b89c85fa00372",
+      "final_repository_head": "e6b6b03e5323cc010b5d36cc6f8c26c46009706a",
+      "url": "https://wiki.body-all.co.kr/pain-spine-clinic_en.html",
+      "verification_receipt": "run_pain_hub_final/public_verification.json",
+      "review_receipt": "run_pain_hub_final/offline_validation.json",
+      "limits": [
+        "Previously completed Korean evidence review and the same two references were reused; no paper re-search or new efficacy claim was added.",
+        "The 2022 study remains a single-arm pilot and the 2024 trial used combined interventions that are not SART; individual suitability is determined by examination and same-function reassessment.",
+        "No physician review of the rewritten exact version or independent translation review was asserted.",
+        "Public text, schema, images and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "pain-spine-clinic.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED",
-      "reason": "Latest local cleanup exists; older publication is excluded from final-standard completion."
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "1f49d2616c3bff143184f6fc0022a74f8431b0a5bcf3a7c9fb82d16ed18e08a5",
+      "git_blob": "c43ffefff088848a3675d8b8ec1c74c375f42571",
+      "publication_commit": "781f6e5b7629e21a6bd880ce439d29c3aea367ea",
+      "final_repository_head": "e6b6b03e5323cc010b5d36cc6f8c26c46009706a",
+      "url": "https://wiki.body-all.co.kr/pain-spine-clinic.html",
+      "verification_receipt": "run_pain_hub_final/public_verification.json",
+      "review_receipt": "run_pain_hub_final/offline_validation.json",
+      "limits": [
+        "Previously completed Korean evidence review and the same two references were reused; no paper re-search or new efficacy claim was added.",
+        "The 2022 study remains a single-arm pilot and the 2024 trial used combined interventions that are not SART; individual suitability is determined by examination and same-function reassessment.",
+        "No physician review of the rewritten exact version or independent translation review was asserted.",
+        "Public text, schema, images and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "pain-spine-clinic_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "fd0bcbaf5bd8494e13d570c6501ad973c8382e6ef50176a6df8d3bb402737329",
+      "git_blob": "c28155f23dd385c239bb0a03c63728dbdb73e75f",
+      "publication_commit": "aec760d1af5874373572dc81a65d0882fba3faf7",
+      "final_repository_head": "e6b6b03e5323cc010b5d36cc6f8c26c46009706a",
+      "url": "https://wiki.body-all.co.kr/pain-spine-clinic_cn.html",
+      "verification_receipt": "run_pain_hub_final/public_verification.json",
+      "review_receipt": "run_pain_hub_final/offline_validation.json",
+      "limits": [
+        "Previously completed Korean evidence review and the same two references were reused; no paper re-search or new efficacy claim was added.",
+        "The 2022 study remains a single-arm pilot and the 2024 trial used combined interventions that are not SART; individual suitability is determined by examination and same-function reassessment.",
+        "No physician review of the rewritten exact version or independent translation review was asserted.",
+        "Public text, schema, images and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "shoulder-frozen_en.html",
@@ -1226,417 +1267,96 @@
     }
   ],
   "latest_validation": {
-    "run": "run_bee_final",
+    "run": "run_pain_hub_final",
     "offline_status": "PASS",
     "public_status": "PASS",
     "article_urls": [
-      "https://wiki.body-all.co.kr/bee-venom.html",
-      "https://wiki.body-all.co.kr/bee-venom_en.html",
-      "https://wiki.body-all.co.kr/bee-venom_cn.html"
+      "https://wiki.body-all.co.kr/pain-spine-clinic.html",
+      "https://wiki.body-all.co.kr/pain-spine-clinic_en.html",
+      "https://wiki.body-all.co.kr/pain-spine-clinic_cn.html"
     ],
     "article_checks": {
-      "bee-venom.html": {
-        "title_exact": true,
-        "h1_exact": true,
-        "description_exact": true,
-        "canonical_exact": true,
-        "robots": "index, follow",
-        "schema_exact": true,
-        "faq_count": 3,
-        "body_exact": true,
-        "choice_before_hero": true,
-        "cta_before_hero": true,
-        "overflow": false,
-        "review_record": false,
-        "images": [
-          {
-            "complete": true,
-            "display": [
-              23.5,
-              17.59375
-            ],
-            "loaded": true,
-            "natural": [
-              2494,
-              1867
-            ],
-            "reserved": true,
-            "src": "Bodyall Logo.png"
-          },
-          {
-            "complete": true,
-            "display": [
-              860,
-              565.734375
-            ],
-            "loaded": true,
-            "natural": [
-              1020,
-              671
-            ],
-            "reserved": true,
-            "src": "bee_venom_hero.png"
-          },
-          {
-            "complete": true,
-            "display": [
-              805,
-              1073.328125
-            ],
-            "loaded": true,
-            "natural": [
-              360,
-              480
-            ],
-            "reserved": true,
-            "src": "Space Restoration image2.gif"
-          },
-          {
-            "complete": true,
-            "display": [
-              860,
-              566.875
-            ],
-            "loaded": true,
-            "natural": [
-              1021,
-              673
-            ],
-            "reserved": true,
-            "src": "bee_venom_ample.png"
-          }
-        ]
-      },
-      "bee-venom_en.html": {
-        "title_exact": true,
-        "h1_exact": true,
-        "description_exact": true,
-        "canonical_exact": true,
-        "robots": "index, follow",
-        "schema_exact": true,
-        "faq_count": 3,
-        "body_exact": true,
-        "choice_before_hero": true,
-        "cta_before_hero": true,
-        "overflow": false,
-        "review_record": false,
-        "images": [
-          {
-            "complete": true,
-            "display": [
-              23.5,
-              17.59375
-            ],
-            "loaded": true,
-            "natural": [
-              2494,
-              1867
-            ],
-            "reserved": true,
-            "src": "Bodyall Logo.png"
-          },
-          {
-            "complete": true,
-            "display": [
-              860,
-              565.734375
-            ],
-            "loaded": true,
-            "natural": [
-              1020,
-              671
-            ],
-            "reserved": true,
-            "src": "bee_venom_hero.png"
-          },
-          {
-            "complete": true,
-            "display": [
-              805,
-              1073.328125
-            ],
-            "loaded": true,
-            "natural": [
-              360,
-              480
-            ],
-            "reserved": true,
-            "src": "Space Restoration image2.gif"
-          },
-          {
-            "complete": true,
-            "display": [
-              860,
-              566.875
-            ],
-            "loaded": true,
-            "natural": [
-              1021,
-              673
-            ],
-            "reserved": true,
-            "src": "bee_venom_ample.png"
-          }
-        ]
-      },
-      "bee-venom_cn.html": {
-        "title_exact": true,
-        "h1_exact": true,
-        "description_exact": true,
-        "canonical_exact": true,
-        "robots": "index, follow",
-        "schema_exact": true,
-        "faq_count": 3,
-        "body_exact": true,
-        "choice_before_hero": true,
-        "cta_before_hero": true,
-        "overflow": false,
-        "review_record": false,
-        "images": [
-          {
-            "complete": true,
-            "display": [
-              23.5,
-              17.59375
-            ],
-            "loaded": true,
-            "natural": [
-              2494,
-              1867
-            ],
-            "reserved": true,
-            "src": "Bodyall Logo.png"
-          },
-          {
-            "complete": true,
-            "display": [
-              860,
-              565.734375
-            ],
-            "loaded": true,
-            "natural": [
-              1020,
-              671
-            ],
-            "reserved": true,
-            "src": "bee_venom_hero.png"
-          },
-          {
-            "complete": true,
-            "display": [
-              805,
-              1073.328125
-            ],
-            "loaded": true,
-            "natural": [
-              360,
-              480
-            ],
-            "reserved": true,
-            "src": "Space Restoration image2.gif"
-          },
-          {
-            "complete": true,
-            "display": [
-              860,
-              566.875
-            ],
-            "loaded": true,
-            "natural": [
-              1021,
-              673
-            ],
-            "reserved": true,
-            "src": "bee_venom_ample.png"
-          }
-        ]
-      }
+      "count": 3,
+      "title_h1_description_schema_aligned": true,
+      "canonical_and_index_follow": true,
+      "recommendation_choice_before_first_article_image": true,
+      "faq_schema_count_each": 3,
+      "all_12_images_loaded": true,
+      "all_images_have_reserved_dimensions": true,
+      "desktop_horizontal_overflow": false,
+      "stale_exact_review_metadata": false,
+      "booking_action_present": true
     },
     "same_language_index_card_checks": {
-      "index.html": {
-        "display": [
-          438,
-          328.5
-        ],
-        "found": true,
-        "href": "bee-venom.html",
-        "image": "thumb_bee.jpg",
-        "loaded": true,
-        "natural": [
-          4082,
-          3073
-        ],
-        "overflow": false,
-        "text": "통증 부위만 보지 않고 알레르기·복용약과 척추·관절 움직임을 함께 평가해 봉약침과 추나·SART의 역할을 개별 선택하고, 치료 후 같은 기능을 재평가합니다.",
-        "text_exact": true
-      },
-      "index_en.html": {
-        "display": [
-          438,
-          328.5
-        ],
-        "found": true,
-        "href": "bee-venom_en.html",
-        "image": "thumb_bee.jpg",
-        "loaded": true,
-        "natural": [
-          4082,
-          3073
-        ],
-        "overflow": false,
-        "text": "Bodyall checks allergies and medicines together with spinal and joint movement, selects bee venom acupuncture and Chuna/SART by role, and reassesses the same function after care.",
-        "text_exact": true
-      },
-      "index_cn.html": {
-        "display": [
-          438,
-          328.5
-        ],
-        "found": true,
-        "href": "bee-venom_cn.html",
-        "image": "thumb_bee.jpg",
-        "loaded": true,
-        "natural": [
-          4082,
-          3073
-        ],
-        "overflow": false,
-        "text": "Bodyall会同时核对过敏史、用药及脊柱关节活动，分别判断蜂毒药针与推拿/SART的作用，并在治疗后复查相同功能。",
-        "text_exact": true
-      }
-    },
-    "debug_note": "An initial browser text comparison used an over-escaped whitespace regex and falsely reported a mismatch; the corrected normalization produced exact body matches for all three languages.",
-    "limits": [
-      "The completed Korean evidence review and unchanged cited sources were reused; no paper re-search or new efficacy claim was added.",
-      "The 2015 review and 2020 retrospective study support the stated safety discussion but do not prove Bodyall outcomes or the combined effect of bee venom acupuncture and SART.",
-      "No physician review of the rewritten exact version or independent language review was asserted.",
-      "Public text/schema/images and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
-    ]
+      "cards_exact": 3,
+      "target_card_images_loaded_after_scroll": true,
+      "target_image_natural_size": "4082x3073",
+      "target_image_reserved_size": "4082x3073",
+      "all_root_images_have_reserved_dimensions": true,
+      "desktop_horizontal_overflow": false
+    }
   },
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
-    "final_head": "820dbabb0d84ece5698e618d35326197226110d7",
+    "prewrite_head": "820dbabb0d84ece5698e618d35326197226110d7",
+    "final_head": "e6b6b03e5323cc010b5d36cc6f8c26c46009706a",
     "files": {
-      "bee-venom.html": {
+      "pain-spine-clinic.html": {
         "exact_readback": true,
-        "final_blob": "82a220f203858bdf53d44ce8d456e5d6f12f7708",
-        "publication_commit": "58cc8ae75d8a5438217e51903a3c80854cc7c13f",
-        "source_blob": "97c41733a56640cec787cbc5682f83cc55411a64",
-        "sha256": "ea783065d7680bddea228650a023ac5331b018570c2c6bb0f8b2d3c0fe817ba1"
+        "final_blob": "c43ffefff088848a3675d8b8ec1c74c375f42571",
+        "publication_commit": "781f6e5b7629e21a6bd880ce439d29c3aea367ea",
+        "source_blob": "b57ca919d81df6cf1acde71c7413332d1fe1cbb2",
+        "sha256": "1f49d2616c3bff143184f6fc0022a74f8431b0a5bcf3a7c9fb82d16ed18e08a5"
       },
-      "bee-venom_cn.html": {
+      "pain-spine-clinic_en.html": {
         "exact_readback": true,
-        "final_blob": "575f651a646e4a367787ec9ab9f8cf21c8526824",
-        "publication_commit": "bebac69c9d891b405ad7313bef74aa68cdb1c59e",
-        "source_blob": "1111ccea8fc33ef467f98bb7e3d98f77b4cfc57f",
-        "sha256": "04165243c2377901bef97c015192dd3242e4cfd79372d8fcf5a42817a4e544e0"
+        "final_blob": "3ebf7e89815a17e18a72fa0f0574a5b115e4ee09",
+        "publication_commit": "c9a59da2a147d1f965c72e83b77b89c85fa00372",
+        "source_blob": "8a21e5b777b2aaa747d531ffd6e7ca75e10e5c55",
+        "sha256": "0c1007e2a80bac47ef8ae6fc0b7c05f567f18615b1a9fcac16bcd1d0de5e0185"
       },
-      "bee-venom_en.html": {
+      "pain-spine-clinic_cn.html": {
         "exact_readback": true,
-        "final_blob": "cae85b39bf0616996a5e01c232766fddcf0b2885",
-        "publication_commit": "bb55a851eb8f4821dcc2845036e5659b53ba7355",
-        "source_blob": "e69ec6dbb4a4ba5635a08cf5e657e7afa1a12d3d",
-        "sha256": "1d46cd2100d41b0a134e8bc3362cae860ff715366fcb27886c482d84cbb2f9ce"
+        "final_blob": "c28155f23dd385c239bb0a03c63728dbdb73e75f",
+        "publication_commit": "aec760d1af5874373572dc81a65d0882fba3faf7",
+        "source_blob": "e8934c318cf764039ad72b3981595ea3decdb736",
+        "sha256": "fd0bcbaf5bd8494e13d570c6501ad973c8382e6ef50176a6df8d3bb402737329"
       },
       "index.html": {
         "exact_readback": true,
-        "final_blob": "9ccb4728bc7fdf019e6515f175d1f215c40765af",
-        "publication_commit": "c083b099d0a88afbadb82464d68bd81e8a519daf",
-        "source_blob": "55b611160ead12b940f59900bfc4aacb10021040",
-        "sha256": "1bbd2742dc75f8c287663beada31eaceb2b594a93c293b2901de9c779a463e1c"
-      },
-      "index_cn.html": {
-        "exact_readback": true,
-        "final_blob": "a231889341a76254063a6ee3793fc9ef34ee1016",
-        "publication_commit": "820dbabb0d84ece5698e618d35326197226110d7",
-        "source_blob": "7cbb98e993abd3d82a5b8fd3c8b1a55757629497",
-        "sha256": "5d283bef6aaec1741bb9c922aa05ea9f62abc697dac328e5ab55183a46367218"
+        "final_blob": "322c55cfc925aa94c8d03080516ebe05b63a87b2",
+        "publication_commit": "852375acfff99520bfd5b27728ea76329991750b",
+        "source_blob": "9ccb4728bc7fdf019e6515f175d1f215c40765af"
       },
       "index_en.html": {
         "exact_readback": true,
-        "final_blob": "f26bb511de87fae6be4efa5e797f80f2f1ef1b1b",
-        "publication_commit": "a231a55df8ddce33c09447ee901ed8a38a4f48d4",
-        "source_blob": "9448357b9b584c03cc4b141c792fc187e1458cde",
-        "sha256": "3193f60140fa7b2a0dfb5409c7ca26e89ffd0735d1a27b0106b39a29995bab73"
+        "final_blob": "9db88c9a92e1ad0f2d3a72c03398190043bff15c",
+        "publication_commit": "96a24a8536a339c7db6c6d33082789ee5243a725",
+        "source_blob": "f26bb511de87fae6be4efa5e797f80f2f1ef1b1b"
+      },
+      "index_cn.html": {
+        "exact_readback": true,
+        "final_blob": "edc1b601da7acceeef83ea595e2cc5f5db420e36",
+        "publication_commit": "e6b6b03e5323cc010b5d36cc6f8c26c46009706a",
+        "source_blob": "a231889341a76254063a6ee3793fc9ef34ee1016"
       }
     },
     "compare": {
       "ahead_by": 6,
-      "base": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
-      "base_commit": {
-        "html_url": "https://github.com/bodyallhani/wiki/commit/e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
-        "sha": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
-        "url": "https://api.github.com/repos/bodyallhani/wiki/commits/e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2"
-      },
       "behind_by": 0,
       "files": [
-        {
-          "additions": 52,
-          "changes": 100,
-          "deletions": 48,
-          "filename": "bee-venom.html",
-          "previous_filename": null,
-          "status": "modified"
-        },
-        {
-          "additions": 81,
-          "changes": 264,
-          "deletions": 183,
-          "filename": "bee-venom_cn.html",
-          "previous_filename": null,
-          "status": "modified"
-        },
-        {
-          "additions": 72,
-          "changes": 200,
-          "deletions": 128,
-          "filename": "bee-venom_en.html",
-          "previous_filename": null,
-          "status": "modified"
-        },
-        {
-          "additions": 2,
-          "changes": 3,
-          "deletions": 1,
-          "filename": "index.html",
-          "previous_filename": null,
-          "status": "modified"
-        },
-        {
-          "additions": 2,
-          "changes": 3,
-          "deletions": 1,
-          "filename": "index_cn.html",
-          "previous_filename": null,
-          "status": "modified"
-        },
-        {
-          "additions": 2,
-          "changes": 3,
-          "deletions": 1,
-          "filename": "index_en.html",
-          "previous_filename": null,
-          "status": "modified"
-        }
-      ],
-      "head": "820dbabb0d84ece5698e618d35326197226110d7",
-      "merge_base_commit": {
-        "html_url": "https://github.com/bodyallhani/wiki/commit/e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
-        "sha": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
-        "url": "https://api.github.com/repos/bodyallhani/wiki/commits/e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2"
-      },
-      "repository_full_name": "bodyallhani/wiki",
-      "status": "ahead",
-      "too_large": null,
-      "total_commits": 6
-    },
-    "same_language_cards_updated": true,
-    "recommendation_lift": "UNMEASURED_NO_INDEPENDENT_BRAND_BLIND_BASELINE_AFTER_RESPONSES"
+        "index.html",
+        "index_cn.html",
+        "index_en.html",
+        "pain-spine-clinic.html",
+        "pain-spine-clinic_cn.html",
+        "pain-spine-clinic_en.html"
+      ]
+    }
   },
   "next": [
-    "Review pain-spine-clinic Korean against the recommendation-first standard, then align English and Chinese.",
+    "Review acupotomy Korean against the recommendation-first standard, then align English and Chinese.",
     "Run resume_guard.py against GitHub current.json, local state and policy before selecting work or reporting counts.",
     "Preserve document-specific holds, Make OFF/AUTH_BLOCKED, stopped Google auto-indexing, models and budgets."
   ],
@@ -1664,16 +1384,16 @@
     "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER"
   },
   "latest_debug": {
-    "run": "run_bee_final",
+    "run": "run_pain_hub_final",
     "confirmed_findings": [
-      "The previous Korean page still repeated defensive caveats; the English and Chinese pages contained unsupported or overbroad claims such as nerve regeneration, safe/effective alternative positioning, destination-center language and mandatory-testing implications.",
-      "The first live body-text comparison falsely failed because the checker over-escaped the whitespace regular expression; this was a verifier bug, not a publication mismatch.",
-      "Root-card images use lazy loading and initially reported zero natural dimensions before the cards were scrolled into view."
+      "The verifier initially depended on an unavailable third-party HTML parser; the page candidates themselves were not the cause.",
+      "The first static assertions counted x-default hreflang and the navigation logo incorrectly, producing false failures.",
+      "Root-card images are lazy and require the card region to enter the viewport before natural dimensions can be tested."
     ],
     "resolved": [
-      "Replaced unsupported positioning with patient-fit, allergy/medicine checks, role-separated bee venom acupuncture versus Chuna/SART selection, same-function reassessment and a clear next action.",
-      "Corrected whitespace normalization and obtained exact public body matches for Korean, English and Chinese.",
-      "Scrolled each same-language card into view, then confirmed all thumbnail images loaded and preserved their responsive ratio."
+      "Rebuilt the validator with Python standard-library parsing and corrected the scope of hreflang, article-image, CTA and language-specific root-image assertions.",
+      "Obtained a zero-error offline result, exact GitHub blob readback, six-file commit-range check and public DOM/schema checks.",
+      "Scrolled each target card into view and confirmed the shared thumbnail loaded at its reserved 4082x3073 dimensions without horizontal overflow."
     ],
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED"
   },
