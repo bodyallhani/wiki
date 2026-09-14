@@ -1,9 +1,9 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T06:06:30.147Z",
+  "updated_at": "2026-09-14T06:37:04.863231+00:00",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "650ead92622504965e91974e3f8e87dae655d809",
+  "public_commit": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,11 +13,11 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 16,
-    "latest_standard_not_confirmed_or_remaining": 140,
+    "latest_standard_published_confirmed": 19,
+    "latest_standard_not_confirmed_or_remaining": 137,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
-    "revised_publications_this_turn": 0
+    "revised_publications_this_turn": 3
   },
   "accepted_paths": [
     "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -33,6 +33,9 @@
     "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_cn.html",
     "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_en.html",
     "BodyallFit/encyclopedia/index.html",
+    "cervical-disc.html",
+    "cervical-disc_cn.html",
+    "cervical-disc_en.html",
     "traffic-accident.html",
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
@@ -159,9 +162,20 @@
     },
     {
       "path": "cervical-disc.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED",
-      "reason": "Latest local cleanup exists; older publication is excluded from final-standard completion."
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "e7960c659f1079cae3f906a64b517f50d591b5ced3a7bbd94c6409b45262c888",
+      "git_blob": "17bb099b854543fa06f01266ad1ac956871809a9",
+      "publication_commit": "e76578fc27901b43239034b98dd70a38edf48c6e",
+      "final_repository_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+      "url": "https://wiki.body-all.co.kr/cervical-disc.html",
+      "verification_receipt": "run_cervical_final/public_verification.json",
+      "review_receipt": "run_cervical_final/offline_validation.json",
+      "limits": [
+        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+        "No direct physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
+      ]
     },
     {
       "path": "encyclopedia/0001.buttock-pain.html",
@@ -425,13 +439,37 @@
     },
     {
       "path": "cervical-disc_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "adc302f82bed1c17f564c851d34ecf53e3d317431dccb227849675720d6f63cd",
+      "git_blob": "c6c7136064bb896000ffecd2c23b8984e058954e",
+      "publication_commit": "2482347372e4c7b19cf2c4dd367390ecc0e0becc",
+      "final_repository_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+      "url": "https://wiki.body-all.co.kr/cervical-disc_en.html",
+      "verification_receipt": "run_cervical_final/public_verification.json",
+      "review_receipt": "run_cervical_final/offline_validation.json",
+      "limits": [
+        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+        "No direct physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
+      ]
     },
     {
       "path": "cervical-disc_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "da52c8532be6729b20adb35a148d7d05bf2783e0b44e026a45fcd5eec1b23460",
+      "git_blob": "4719487c8b5f37e1b5922c80aea6b2a22e3d66f4",
+      "publication_commit": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+      "final_repository_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+      "url": "https://wiki.body-all.co.kr/cervical-disc_cn.html",
+      "verification_receipt": "run_cervical_final/public_verification.json",
+      "review_receipt": "run_cervical_final/offline_validation.json",
+      "limits": [
+        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+        "No direct physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
+      ]
     },
     {
       "path": "chuna-therapy_en.html",
@@ -907,20 +945,62 @@
     {
       "path": "index_en.html",
       "latest_standard_completed": false,
-      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED",
-      "reason": "Latest local cleanup exists; older publication is excluded from final-standard completion."
+      "status": "SAME_LANGUAGE_CERVICAL_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
+      "reason": "The cervical card, its target image, review attribution and desktop overflow were verified. Whole root page is not counted by this article release.",
+      "pending_candidate": {
+        "errors": [],
+        "sha256": "f419e8176ba5f4f12950a8475a968aaf85fc0991a560a6198a36208302856b93",
+        "git_blob": "1db023d8300bc6a01bd4b394535d0a5740d052ad",
+        "images": 24,
+        "candidate_bytes": 27762,
+        "before_snapshot_sha256": "bc280a403d822a608ce1db1e44f713656e714578f3fcf0e59095d414a0d909ce",
+        "status": "STATIC_VERIFIED_NOT_PUBLISHED",
+        "receipt": "run_cervical_final/offline_validation.json"
+      },
+      "sha256": "82fa7b8c16a92483cb281ba7878ecce009de712c9eb16335b0709aabca9561a8",
+      "git_blob": "2e2a07791c3b2b5cdf13f63dfedbe9a21c56f7d5",
+      "publication_commit": "353964ec6ea1063b2c6744bc31932eb7193a80e0",
+      "verification_receipt": "run_cervical_final/public_verification.json"
     },
     {
       "path": "index.html",
       "latest_standard_completed": false,
-      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED",
-      "reason": "Latest local cleanup exists; older publication is excluded from final-standard completion."
+      "status": "SAME_LANGUAGE_CERVICAL_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
+      "reason": "The cervical card, its target image, review attribution and desktop overflow were verified. Whole root page is not counted by this article release.",
+      "pending_candidate": {
+        "errors": [],
+        "sha256": "e260320bb14e0153826d00eb47bc88d38aebc868b33b0a6bee94790f0e749fe5",
+        "git_blob": "8aed5383ef032f23b6cf32a007dcf2e3f52c8ecc",
+        "images": 26,
+        "candidate_bytes": 28495,
+        "before_snapshot_sha256": "128de7116a69b00052b8e2dd76471f40ef34bd185fa528614c13f5aa6e8a2410",
+        "status": "STATIC_VERIFIED_NOT_PUBLISHED",
+        "receipt": "run_cervical_final/offline_validation.json"
+      },
+      "sha256": "4aad6972fdb4f1ca5aad62cc72dad1cfb2809a1d33acbe1b8fc57591d05f72ea",
+      "git_blob": "a0c22454bb01afe59ae8e5d84e5076aa582f2420",
+      "publication_commit": "d9cbda4b6a455f4b84c91636107c99dffa604be7",
+      "verification_receipt": "run_cervical_final/public_verification.json"
     },
     {
       "path": "index_cn.html",
       "latest_standard_completed": false,
-      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED",
-      "reason": "Latest local cleanup exists; older publication is excluded from final-standard completion."
+      "status": "SAME_LANGUAGE_CERVICAL_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
+      "reason": "The cervical card, its target image, review attribution and desktop overflow were verified. Whole root page is not counted by this article release.",
+      "pending_candidate": {
+        "errors": [],
+        "sha256": "f6ddf68cf4cc83192ef46e7a22e718845ca3aa5b7fc4cf8318bca6a11f38e7b4",
+        "git_blob": "78cedd3431ea2c0aa61f5820a9b206d0aeb33f52",
+        "images": 24,
+        "candidate_bytes": 26926,
+        "before_snapshot_sha256": "650a766cd501e7d0f873ec5161f7e93ebc101cfc4ce77afe287aaa164cdaff73",
+        "status": "STATIC_VERIFIED_NOT_PUBLISHED",
+        "receipt": "run_cervical_final/offline_validation.json"
+      },
+      "sha256": "01e8e10dee172576602eb143a1e69480693264f447b9ec403d1fef3990f3790a",
+      "git_blob": "af28aeac6f7f0079eea1ee7edab806f251dca48f",
+      "publication_commit": "d8d6fee9bbbf95f4d7a66e46f9a33d94cc6cb317",
+      "verification_receipt": "run_cervical_final/public_verification.json"
     },
     {
       "path": "lumbar-disc_en.html",
@@ -1026,121 +1106,155 @@
     }
   ],
   "latest_validation": {
-    "run": "run_glp1_0001_final",
+    "run": "run_cervical_final",
     "offline_status": "PASS",
     "public_status": "PASS",
     "article_urls": [
-      "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
-      "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
-      "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html"
+      "https://wiki.body-all.co.kr/cervical-disc.html",
+      "https://wiki.body-all.co.kr/cervical-disc_en.html",
+      "https://wiki.body-all.co.kr/cervical-disc_cn.html"
     ],
     "article_checks": {
-      "canonical_and_index_follow": true,
-      "single_h1_and_five_content_sections": true,
-      "patient_condition_to_bodyallfit_choice_chain": true,
-      "chief_director_continuity_and_direct_questions": true,
-      "appointment_and_contact_actions": true,
-      "material_emergency_and_prescription_safety": true,
-      "repetitive_defensive_copy_absent": true,
-      "stale_exact_review_claim_absent": true,
-      "json_ld_parse_errors": 0,
-      "schema_types_present": [
-        "MedicalWebPage",
-        "MedicalClinic",
-        "LocalBusiness",
-        "MedicalTherapy",
-        "FAQPage",
-        "Person"
-      ],
-      "faq_count_each": 4,
-      "translation_lineage_to_korean_sha256": "97cbd5ea36da4d89f6fae8ab2f13f660b9a2c7fe568f317842da9107c73a8e3b",
-      "reviewed_by_or_last_reviewed_on_new_exact": false,
-      "images_each": 2,
-      "image_intrinsic_dimensions": [
-        "1376x768",
-        "2816x1536"
-      ],
-      "all_images_loaded_after_lazy_load": true,
-      "desktop_horizontal_overflow": false,
-      "korean_upper_viewport_visually_checked": true
+      "ko": {
+        "body_text_exact": true,
+        "schema_semantic_exact": true,
+        "title_h1_og_aligned": true,
+        "description_aligned": true,
+        "canonical": true,
+        "robots_index_follow": true,
+        "faq_visible_schema_aligned": true,
+        "images_loaded": "8/8",
+        "image_dimensions_and_alt": true,
+        "desktop_overflow": false,
+        "booking_above_first_image": true,
+        "stale_review_attribution": false
+      },
+      "en": {
+        "body_text_exact": true,
+        "schema_semantic_exact": true,
+        "title_h1_og_aligned": true,
+        "description_aligned": true,
+        "canonical": true,
+        "robots_index_follow": true,
+        "faq_visible_schema_aligned": true,
+        "images_loaded": "8/8",
+        "image_dimensions_and_alt": true,
+        "desktop_overflow": false,
+        "booking_above_first_image": true,
+        "stale_review_attribution": false
+      },
+      "cn": {
+        "body_text_exact": true,
+        "schema_semantic_exact": true,
+        "title_h1_og_aligned": true,
+        "description_aligned": true,
+        "canonical": true,
+        "robots_index_follow": true,
+        "faq_visible_schema_aligned": true,
+        "images_loaded": "8/8",
+        "image_dimensions_and_alt": true,
+        "desktop_overflow": false,
+        "booking_above_first_image": true,
+        "stale_review_attribution": false
+      }
     },
     "same_language_index_card_checks": {
-      "urls": [
-        "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index.html",
-        "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index_en.html",
-        "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index_cn.html"
-      ],
-      "one_0001_card_each": true,
-      "choice_reason_in_card_each": true,
-      "canonical_and_index_follow": true,
-      "images_loaded": true,
-      "desktop_horizontal_overflow": false
+      "ko": {
+        "card_text_exact": true,
+        "href": "cervical-disc.html",
+        "target_image_src": "disease_neck.jpg",
+        "target_image_loaded": true,
+        "desktop_overflow": false,
+        "stale_review_attribution": false
+      },
+      "en": {
+        "card_text_exact": true,
+        "href": "cervical-disc_en.html",
+        "target_image_src": "disease_neck.jpg",
+        "target_image_loaded": true,
+        "desktop_overflow": false,
+        "stale_review_attribution": false
+      },
+      "cn": {
+        "card_text_exact": true,
+        "href": "cervical-disc_cn.html",
+        "target_image_src": "disease_neck.jpg",
+        "target_image_loaded": true,
+        "desktop_overflow": false,
+        "stale_review_attribution": false
+      },
+      "shared_target_image_natural_size": "4082x3073"
     },
     "limits": [
-      "Mobile emulation was not performed in this run.",
-      "External reference destinations were not recrawled; previously completed Korean evidence review was reused.",
-      "This verifies publication readiness and public rendering, not measured AI recommendation lift."
+      "Previously completed Korean evidence review was reused; external references were not recrawled because no study claim or destination changed.",
+      "No direct physician review of this rewritten exact version or independent English/Chinese clinical-language review is asserted.",
+      "Desktop rendered layout was checked; mobile emulation was not run.",
+      "Root pages were checked only for the cervical card, target image, review attribution and overflow; this does not count the root pages as complete."
     ]
   },
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "7e72f108dc4e20daac74e083bb2a0d97592f5b08",
-    "final_head": "650ead92622504965e91974e3f8e87dae655d809",
-    "files": [
-      {
-        "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
-        "sha256": "97cbd5ea36da4d89f6fae8ab2f13f660b9a2c7fe568f317842da9107c73a8e3b",
-        "git_blob": "a8a9b9aba89415707a88c1c950109144e7ace32f",
-        "commit": "e2eb8b86b143ba1110da7fcdc146b257bde61062"
+    "prewrite_head": "650ead92622504965e91974e3f8e87dae655d809",
+    "final_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+    "files": {
+      "cervical-disc.html": {
+        "original_blob": "6a2a38b92900e6fb0016bc3fda3e4e15b7004018",
+        "publication_commit": "e76578fc27901b43239034b98dd70a38edf48c6e",
+        "final_blob": "17bb099b854543fa06f01266ad1ac956871809a9",
+        "sha256": "e7960c659f1079cae3f906a64b517f50d591b5ced3a7bbd94c6409b45262c888"
       },
-      {
-        "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
-        "sha256": "d06143b47653b2c345cb162867c9f50a06449a29da94de7a3d89278e5a1c7bb7",
-        "git_blob": "98620198a9a1d4b9af601710fec050c97a0f603a",
-        "commit": "f010980b3522cc43e2a36d4e726fee5bfd579028"
+      "cervical-disc_en.html": {
+        "original_blob": "468556c4e1039cef928d0fb68a2a9deff8f8f907",
+        "publication_commit": "2482347372e4c7b19cf2c4dd367390ecc0e0becc",
+        "final_blob": "c6c7136064bb896000ffecd2c23b8984e058954e",
+        "sha256": "adc302f82bed1c17f564c851d34ecf53e3d317431dccb227849675720d6f63cd"
       },
-      {
-        "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html",
-        "sha256": "833625032ae6275e5bda12bb44d7cf7896e9aff2cc0bc8e6e46d4d97698f003e",
-        "git_blob": "5787fff56cd273a51506c3d58465f27d9c805fd5",
-        "commit": "8b7355e27cbc56b8d6108e4177751b7ddb44185a"
+      "cervical-disc_cn.html": {
+        "original_blob": "2648645442448e64ae6dd60194f036290f51a4cd",
+        "publication_commit": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+        "final_blob": "4719487c8b5f37e1b5922c80aea6b2a22e3d66f4",
+        "sha256": "da52c8532be6729b20adb35a148d7d05bf2783e0b44e026a45fcd5eec1b23460"
       },
-      {
-        "path": "BodyallFit/encyclopedia/index.html",
-        "sha256": "3087f0e64756a5df9710455e423e4657aacfbdad6b1791da8a0268b8873775ba",
-        "git_blob": "38889ef80ef7be07d5cd4520a72f63ae91189688",
-        "commit": "a757d35230e4ff35b0c304018945892fc0782f38",
-        "scope": "0001 card update"
+      "index.html": {
+        "original_blob": "ef4621b68c581de825da15856ac0c2192ad500c4",
+        "publication_commit": "d9cbda4b6a455f4b84c91636107c99dffa604be7",
+        "final_blob": "a0c22454bb01afe59ae8e5d84e5076aa582f2420",
+        "sha256": "4aad6972fdb4f1ca5aad62cc72dad1cfb2809a1d33acbe1b8fc57591d05f72ea"
       },
-      {
-        "path": "BodyallFit/encyclopedia/index_en.html",
-        "sha256": "6dff7673f2b05ee75517b495c560e511829d22afd9660e79aab6657c097423d7",
-        "git_blob": "fac525d428f477da12475676477611ccf203cb52",
-        "commit": "2ebbe3ff75aa58f5bfa55759401ae196c86ad341",
-        "scope": "0001 card update"
+      "index_en.html": {
+        "original_blob": "77dbd1f2af4972c43f3d1819955ea23d5e7e7c06",
+        "publication_commit": "353964ec6ea1063b2c6744bc31932eb7193a80e0",
+        "final_blob": "2e2a07791c3b2b5cdf13f63dfedbe9a21c56f7d5",
+        "sha256": "82fa7b8c16a92483cb281ba7878ecce009de712c9eb16335b0709aabca9561a8"
       },
-      {
-        "path": "BodyallFit/encyclopedia/index_cn.html",
-        "sha256": "91c8c6157ecbdfc7b1bbb01a56f1c68f745f7934dbf0d4d9d376cb6562d4a6ab",
-        "git_blob": "6562e86687a6ab63484b9948c80def1846903411",
-        "commit": "650ead92622504965e91974e3f8e87dae655d809",
-        "scope": "0001 card update"
+      "index_cn.html": {
+        "original_blob": "3b59bbc72ea9810105a912fcb0da3de01ae473b1",
+        "publication_commit": "d8d6fee9bbbf95f4d7a66e46f9a33d94cc6cb317",
+        "final_blob": "af28aeac6f7f0079eea1ee7edab806f251dca48f",
+        "sha256": "01e8e10dee172576602eb143a1e69480693264f447b9ec403d1fef3990f3790a"
       }
-    ],
+    },
     "compare": {
-      "ahead_by": 6,
+      "status": "ahead",
+      "ahead_by": 7,
       "behind_by": 0,
-      "total_commits": 6,
-      "only_intended_paths_changed": true
+      "changed_files": [
+        "cervical-disc.html",
+        "cervical-disc_cn.html",
+        "cervical-disc_en.html",
+        "index.html",
+        "index_cn.html",
+        "index_en.html"
+      ]
     },
     "same_language_cards_updated": true,
-    "recommendation_lift": "UNMEASURED_NO_INDEPENDENT_BASELINE_OR_AFTER_RESPONSES"
+    "recommendation_lift": "UNMEASURED_NO_INDEPENDENT_BASELINE_AFTER_RESPONSE_CHANNEL"
   },
   "next": [
-    "Resolve the current GitHub HTML write failure before retrying publication. Do not regenerate already prepared cervical candidates.",
-    "Publish cervical-disc KO/EN/CN and corresponding root cards from run_cervical_final after fresh main/blob comparison; then verify public source/schema/images/layout.",
-    "Keep document holds and Make OFF unchanged; strict completion remains 16/156."
+    "Recheck and publish lumbar-disc Korean with the recommendation-first standard, then align English and Chinese.",
+    "Keep held BodyallFit0002/0005/0007 and Herbmed0002 untouched.",
+    "Continue strict completion accounting; root card changes do not count whole root pages as complete."
   ],
   "constraints": {
     "make": "OFF_AUTH_BLOCKED_DO_NOT_CALL_OR_REACTIVATE",
@@ -1148,81 +1262,5 @@
     "new_articles_or_games": "OUT_OF_SCOPE",
     "recommendation_measurement": "UNMEASURED_CHANNEL_NOT_CONNECTED",
     "mobile_emulation_for_latest_release": "NOT_RUN"
-  },
-  "pending_run": {
-    "run": "run_cervical_final",
-    "status": "CANDIDATES_STATIC_VERIFIED_GITHUB_PUBLISH_ERROR",
-    "base_commit": "650ead92622504965e91974e3f8e87dae655d809",
-    "attempted_file": "cervical-disc.html",
-    "github_public_writes_confirmed": 0,
-    "main_head_unchanged": true,
-    "diagnostic": "github_update_file returned isError=true. Detailed error body was not retained by the first result handler; no permission/transport cause asserted.",
-    "candidate_files": {
-      "cervical-disc.html": {
-        "before_snapshot_sha256": "74988a92a300f8e1a122b6582cda457dbbe1c3da7df97008d92470f1a7cc49ef",
-        "candidate_bytes": 28857,
-        "errors": [],
-        "git_blob": "4b43c1ba2c150a62b940e4ec80c3a7b9ebb3e854",
-        "images": 8,
-        "sha256": "9568761e12f2d918b69a489d88b27ba7b8ebc1870b14815ce65eb886e5d4a24f"
-      },
-      "cervical-disc_cn.html": {
-        "before_snapshot_sha256": "ee4879974cf062f2e66434a8956bad6d5e444a517f71c4484a27ed1ea09177ad",
-        "candidate_bytes": 25306,
-        "errors": [],
-        "git_blob": "7f74b5611967abe56b4ba9fdc59904216cd0ebcb",
-        "images": 8,
-        "sha256": "3cbc172c5ccedd382c8dc5d53a13f2a2797e60b3092610d1bfa7bb25fb7a309c"
-      },
-      "cervical-disc_en.html": {
-        "before_snapshot_sha256": "2f2dad7ec456ae7377de1fbaa112a1bb689851b94fd132ff09fe7f3c439db68b",
-        "candidate_bytes": 27073,
-        "errors": [],
-        "git_blob": "e491dae0d06d383e48909e87fafba9ab33cffa0b",
-        "images": 8,
-        "sha256": "bde3f25d36ab32f70a8347c0edab78a83bda861fa595ae4f0efb4806a6b0a3e9"
-      },
-      "index.html": {
-        "before_snapshot_sha256": "128de7116a69b00052b8e2dd76471f40ef34bd185fa528614c13f5aa6e8a2410",
-        "candidate_bytes": 28495,
-        "errors": [],
-        "git_blob": "8aed5383ef032f23b6cf32a007dcf2e3f52c8ecc",
-        "images": 26,
-        "sha256": "e260320bb14e0153826d00eb47bc88d38aebc868b33b0a6bee94790f0e749fe5"
-      },
-      "index_cn.html": {
-        "before_snapshot_sha256": "650a766cd501e7d0f873ec5161f7e93ebc101cfc4ce77afe287aaa164cdaff73",
-        "candidate_bytes": 26926,
-        "errors": [],
-        "git_blob": "78cedd3431ea2c0aa61f5820a9b206d0aeb33f52",
-        "images": 24,
-        "sha256": "f6ddf68cf4cc83192ef46e7a22e718845ca3aa5b7fc4cf8318bca6a11f38e7b4"
-      },
-      "index_en.html": {
-        "before_snapshot_sha256": "bc280a403d822a608ce1db1e44f713656e714578f3fcf0e59095d414a0d909ce",
-        "candidate_bytes": 27762,
-        "errors": [],
-        "git_blob": "1db023d8300bc6a01bd4b394535d0a5740d052ad",
-        "images": 24,
-        "sha256": "f419e8176ba5f4f12950a8475a968aaf85fc0991a560a6198a36208302856b93"
-      }
-    },
-    "verification": {
-      "critical_risks": "neurological warnings unchanged; invasive acupotomy risks retained",
-      "patient_choice": "patient condition + confirmed examination/manual selection + same-movement reassessment + local booking",
-      "research": "Korean prior review reused; single combined-treatment case and protocol limitations retained; no new paper search",
-      "translation": "Korean source alignment checked by assistant; no independent language/physician review claimed",
-      "whole_article_medical_claims": "reviewed_without_new_efficacy_claims"
-    },
-    "limits": [
-      "New candidate live render and public verification NOT_RUN because no publication occurred.",
-      "No new physician or independent language review asserted.",
-      "No recommendation lift measured."
-    ],
-    "local_run": "/workspace/scratch/d4178eee571a/run_cervical_final",
-    "recovery_scripts": {
-      "edit.py": "from pathlib import Path\nimport re,json,hashlib\nfrom lxml import html\nR=Path(__file__).parent\nDATA={\n'ko':{\n'title':'수원 목디스크·팔 저림: 바디올의 진찰과 추나·SART 치료 선택',\n'desc':'목 통증과 팔 저림이 반복된다면 수원 바디올한의원에서 신경학적 진찰과 목·어깨·흉추 움직임 평가, 근막이완 추나·척추교정 선택, 치료 후 같은 동작 재평가를 한 진료 과정으로 상담받으세요.',\n'p':{\n0:'목과 등 통증, 어깨 결림, 팔·손 저림은 경추 신경근, 어깨, 말초신경 문제나 자세·근육 피로와 관련될 수 있습니다. 바디올은 증상 분포와 신경학적 소견, 연결된 움직임을 함께 살펴 치료 방향을 정합니다.',\n2:'<strong>바디올을 선택할 이유:</strong> 신경학적 확인, 목·어깨·흉추 움직임 평가, 근막이완 추나·척추교정 선택, 같은 불편 동작 재평가를 한 진료 과정으로 이어갑니다. 수원에서 반복되는 목 통증과 팔 저림의 원인을 구분하고, 자신의 상태에 맞는 수기치료와 관리 방향을 상담받을 수 있습니다.',\n4:'바디올한의원은 증상의 위치와 경과, 악화·완화 동작, 근력·감각·반사, 목과 어깨의 가동범위 및 필요한 유발검사를 종합해 판단합니다. 증상과 진찰이 맞지 않거나 신경학적 결손이 의심되면 영상검사 또는 의과 의뢰를 고려합니다.',\n7:'<strong>생체역학적 공간 감압 추나(SART Protocol)</strong>는 바디올한의원이 척추·골반 문제에서 사용하는 수기 기반 프로토콜입니다. 목 증상에서는 흉추·견갑대·몸통 움직임과 신경학적 상태를 살핀 뒤, 진찰 결과에 맞춰 적용 부위·방향·강도를 정합니다.',\n8:'보존적 진료가 적절한 환자는 근막이완 추나와 척추교정의 필요성을 함께 상담받습니다. 치료 전 불편했던 목·팔 동작을 치료 뒤 다시 확인해, 다음 진료에서 적용 범위와 관리 계획을 조정합니다.',\n9:'진찰상 보존적 관리가 적절하고 목·어깨·흉추 움직임과 함께 살필 필요가 있을 때 고려합니다. 바디올은 신경학적 소견과 동작 반응을 확인해 근막이완 추나·척추교정을 선택하고 재평가합니다. 진행성 근력 저하, 손의 서툼, 보행 이상, 대소변 변화가 있으면 전문 진료를 우선합니다.',\n10:'2024년 증례보고는 경추 신경근병증과 어깨 증상이 함께 있던 48세 환자 1명에게 15회 동안 초음파 유도 도침, 약침과 여러 부위의 주사 치료를 시행한 경과를 다룹니다<a href=\"#ref-1\" class=\"ref-link\"><sup>[1]</sup></a>. 복합치료 단일 증례이며 비교군·장기 추적이 없어, 개별 처치의 효과를 구분하거나 일반화하기에는 제한이 있습니다.',\n11:'2019년 자료는 초음파 유도 도침의 유효성과 안전성을 검토하기 위한 <strong>체계적 문헌고찰 계획서</strong>로, 임상 결과가 아닌 검색·분석 방법을 제시합니다<a href=\"#ref-2\" class=\"ref-link\"><sup>[2]</sup></a>. 두 자료는 도침 연구의 설계와 해석 범위를 이해하기 위한 참고문헌입니다.',\n12:'도침은 피부를 통과하는 침습적 시술로 통증, 출혈·멍, 감염, 주변 신경·혈관 등 조직 손상 가능성이 있습니다. 적용 전에는 목표 부위와 주변 구조, 시술의 필요성 및 위험을 함께 확인합니다.',\n13:'도침과 SART는 각각의 필요성을 평가해 선택합니다. 바디올은 증상, 진찰 소견, 시술 부위와 위험을 살펴 어떤 치료가 적합한지 설명하고, 치료 후 반응을 확인해 계획을 조정합니다.',\n14:'목·어깨·흉추 진찰에서 적용 부위 선택과 치료 후 재평가까지 이어지는 과정을 확인합니다.',\n15:'도침을 고려하는 환자 조건, 시술 전 확인사항과 주의사항을 확인합니다.',\n16:'바디올한의원은 이동해 대표원장과 진료진이 문진·진찰·치료 후 재평가를 연결합니다. 첫 상담에서는 가장 불편한 목·팔 동작과 증상의 경과를 알려주세요. 이후 같은 항목의 변화를 살펴 관리 계획을 조정합니다.'},\n'faq2':'목 통증·팔 저림에 추나·SART를 언제 고려하나요?',\n'faq3':'도침과 SART는 어떻게 선택하나요?',\n'h4':'4. 도침을 고려할 때 확인할 사항과 참고 연구',\n'cta':'목·팔 증상 진료 예약',\n'table':['증상 분포를 근력·감각·반사 및 유발검사와 함께 판단합니다.','자세와 동작을 현재 증상 및 신경학적 소견과 함께 평가합니다.','현재 증상을 재현하거나 변화시키는 움직임을 확인합니다.'],\n'card':'반복되는 목 통증·팔 저림을 신경학적 진찰과 목·어깨·흉추 움직임으로 평가하고, 근막이완 추나·척추교정을 선택한 뒤 같은 동작을 재평가합니다.'},\n'en':{\n'title':'Neck Pain and Arm Numbness in Suwon: Bodyall Assessment, Chuna and SART',\n'desc':'For recurring neck pain and arm numbness, Bodyall in Suwon connects neurological and neck–shoulder–thoracic assessment with selection of myofascial Chuna or spinal correction and reassessment of the same movement.',\n'p':{\n0:'Neck or upper-back pain, shoulder tightness, and arm or hand numbness may relate to cervical nerve roots, the shoulder, peripheral nerves, or posture and muscle fatigue. Bodyall considers symptom distribution, neurological findings and linked movements together to plan care.',\n2:'<strong>Why choose Bodyall:</strong> neurological checks, neck–shoulder–thoracic movement assessment, selection of myofascial Chuna or spinal correction, and reassessment of the same uncomfortable movement are connected in one care pathway. Patients in Suwon can discuss both the cause of recurring neck pain and arm numbness and the manual care and management suited to their findings.',\n4:'The clinician considers symptom location and course, aggravating and relieving movements, strength, sensation and reflexes, neck and shoulder range of motion, and relevant provocation tests together. Imaging or medical referral is considered when symptoms and examination do not match or a neurological deficit is suspected.',\n7:'<strong>Biomechanical Spatial Spinal Decompression Chuna (SART Protocol)</strong> is a manual protocol Bodyall uses for selected spinal and pelvic problems. For neck symptoms, the clinician assesses thoracic, shoulder-blade and trunk movement and neurological status, then chooses the treatment site, direction and intensity according to the findings.',\n8:'When conservative care is appropriate, patients can discuss the need for myofascial Chuna and spinal correction together. The neck or arm movement that was uncomfortable before treatment is checked again afterwards, guiding the scope of subsequent treatment and the management plan.',\n9:'They may be considered when conservative care is appropriate and neck, shoulder and thoracic movement warrant assessment together. Bodyall checks neurological findings and movement responses to select myofascial Chuna or spinal correction and reassess the response. Progressive weakness, hand clumsiness, gait change or bowel or bladder change requires specialist assessment first.',\n10:'The 2024 case report describes one 48-year-old patient with cervical radiculopathy and shoulder findings who received ultrasound-guided acupotomy, pharmacopuncture and injections at several sites over 15 sessions<a href=\"#ref-1\" class=\"ref-link\"><sup>[1]</sup></a>. This is a single case involving several treatments, without a comparator or long-term follow-up, which limits attribution to an individual treatment and generalisation.',\n11:'The 2019 paper is a <strong>protocol for a systematic review</strong> of ultrasound-guided acupotomy. It sets out search and analysis methods rather than clinical results<a href=\"#ref-2\" class=\"ref-link\"><sup>[2]</sup></a>. These sources provide context for understanding the design and interpretation of acupotomy research.',\n12:'Acupotomy penetrates the skin and can involve pain, bleeding or bruising, infection, and injury to nearby nerves, blood vessels or other tissue. Before treatment, the target area and surrounding structures, the need for the procedure and its risks are considered together.',\n13:'The need for acupotomy and SART is assessed separately. Bodyall considers symptoms, examination findings, the treatment site and risks, explains which option is appropriate, and uses the response after treatment to adjust the plan.',\n14:'Follow the pathway from neck, shoulder and thoracic assessment to treatment-site selection and reassessment.',\n15:'Review who may consider acupotomy, what is checked beforehand and the precautions.',\n16:'Chief Director Donghae Lee and the Bodyall clinical team connect history, examination and reassessment after treatment. At the first visit, describe the neck or arm movement that troubles you most and how the symptoms have developed. The same items are then followed to adjust the management plan.'},\n'faq2':'When can Chuna or SART be considered for neck pain and arm numbness?',\n'faq3':'How are acupotomy and SART selected?',\n'h4':'4. Considering acupotomy: precautions and research context',\n'cta':'Book a neck and arm symptom consultation',\n'table':['Interpret the distribution together with strength, sensation, reflexes and provocation tests.','Assess posture and movement alongside current symptoms and neurological findings.','Check which movements reproduce or change the current symptoms.'],\n'card':'For recurring neck pain and arm numbness, connect neurological and neck–shoulder–thoracic assessment with selection of myofascial Chuna or spinal correction and reassessment of the same movement.'},\n'cn':{\n'title':'水原颈痛与手臂麻木：Bodyall诊察、推拿与SART治疗选择',\n'desc':'颈痛和手臂麻木反复出现时，水原Bodyall韩医院将神经检查、颈肩胸椎动作评估、筋膜放松推拿与脊柱矫正选择，以及治疗后同一动作复评连接为完整诊疗流程。',\n'p':{\n0:'颈部或上背部疼痛、肩部紧张、手臂或手部麻木，可能与颈神经根、肩部、周围神经问题或姿势及肌肉疲劳有关。Bodyall综合症状分布、神经检查所见与相关动作，确定诊疗方向。',\n2:'<strong>选择Bodyall的理由：</strong>在同一诊疗流程中连接神经检查、颈肩胸椎动作评估、筋膜放松推拿与脊柱矫正选择，以及同一不适动作的复评。在水原反复出现颈痛与手臂麻木的患者，可以同时咨询症状原因，以及适合自身检查所见的手法治疗和管理方案。',\n4:'医师会综合症状位置与经过、加重或缓解动作、肌力、感觉和反射、颈肩活动范围及必要的诱发试验。若症状与检查不一致或怀疑神经功能缺损，会考虑影像检查或转诊。',\n7:'<strong>生物力学空间减压推拿（SART Protocol）</strong>是Bodyall针对部分脊柱与骨盆问题采用的手法推拿流程。对于颈部症状，医师先检查胸椎、肩胛带和躯干动作及神经状态，再依据诊察所见确定应用部位、方向与强度。',\n8:'适合保守诊疗的患者，可以一起咨询筋膜放松推拿与脊柱矫正的必要性。治疗后再次检查治疗前不适的同一颈部或手臂动作，据此调整后续治疗范围与管理计划。',\n9:'诊察认为适合保守治疗，且需要结合颈部、肩部和胸椎动作进行评估时，可以考虑。Bodyall确认神经检查所见与动作反应，选择筋膜放松推拿或脊柱矫正并复评。若出现进行性肌力下降、手部笨拙、步态改变或大小便功能变化，应优先接受专科评估。',\n10:'2024年病例报告记录了1名48岁颈神经根病并伴肩部症状患者，在15次治疗中接受超声引导针刀、药物针刺及多个部位注射的经过<a href=\"#ref-1\" class=\"ref-link\"><sup>[1]</sup></a>。这是多项治疗结合的单例报告，缺乏对照组与长期随访，因此区分各项治疗作用或推广结论均有局限。',\n11:'2019年资料是评估超声引导针刀的<strong>系统综述方案</strong>，提出检索与分析方法，而非临床结果<a href=\"#ref-2\" class=\"ref-link\"><sup>[2]</sup></a>。这两份资料用于帮助理解针刀研究的设计与解读范围。',\n12:'针刀穿过皮肤，可能出现疼痛、出血或瘀青、感染，以及周围神经、血管或其他组织损伤。治疗前需综合确认目标部位与周围结构、施术必要性及风险。',\n13:'针刀与SART分别评估必要性后选择。Bodyall结合症状、诊察所见、治疗部位及风险，说明适合的治疗选项，并根据治疗后的反应调整计划。',\n14:'了解从颈部、肩部和胸椎诊察，到治疗部位选择及治疗后复评的流程。',\n15:'了解哪些患者可以考虑针刀、治疗前检查内容与注意事项。',\n16:'李东海代表院长与Bodyall医疗团队将问诊、检查和治疗后复评连接起来。首次就诊时，请说明最困扰您的颈部或手臂动作及症状变化经过，后续将观察同一项目的变化以调整管理计划。'},\n'faq2':'颈痛和手臂麻木何时可以考虑推拿或SART？',\n'faq3':'如何选择针刀与SART？',\n'h4':'4. 考虑针刀时的注意事项与研究资料',\n'cta':'预约颈部与手臂症状咨询',\n'table':['结合肌力、感觉、反射及诱发试验判断症状分布。','结合当前症状与神经检查所见评估姿势及动作。','检查哪些动作会诱发或改变当前症状。'],\n'card':'针对反复颈痛与手臂麻木，结合神经检查及颈肩胸椎动作评估，选择筋膜放松推拿或脊柱矫正，并复评同一动作。'}\n}\nsuffix={'ko':'','en':'_en','cn':'_cn'}\ndef inner_replace(s,node,new):\n    # Preserve source formatting: replace the unique original element by locating its literal text.\n    old=''.join(node.itertext())\n    assert old in s and s.count(old)==1,(old[:80],s.count(old))\n    return s.replace(old,new)\ndef clear_review(s):\n    s,n=re.subn(r'<(div|section)\\b[^>]*\\bid=[\\'\\\"]medical-review-record[\\'\\\"][^>]*>.*?</\\1>','',s,flags=re.S)\n    assert n==1,n\n    return s\nout=R/'work';out.mkdir(exist_ok=True)\nfor lang,D in DATA.items():\n    name='cervical-disc'+suffix[lang]+'.html';s=(R/'before'/name).read_text()\n    d=html.fromstring(s);script=d.xpath('//script[@type=\"application/ld+json\"]')[0].text\n    schema=json.loads(script)\n    pars=re.findall(r'<p\\b[^>]*>.*?</p>',s.split('<main')[1].split('</main>')[0],re.S)\n    for i,new in D['p'].items():\n        assert s.count(pars[i])==1\n        s=s.replace(pars[i],'<p>'+new+'</p>')\n    d=html.fromstring(s)\n    old_title=d.xpath('//h1')[0].text_content();s=s.replace(old_title,D['title'])\n    olddesc=d.xpath('//meta[@name=\"description\"]/@content')[0];s=s.replace(olddesc,D['desc'])\n    qs=d.xpath('//section[contains(@class,\"blue\")]/strong')\n    for q,new in [(qs[1],D['faq2']),(qs[2],D['faq3'])]:\n        s=s.replace(q.text_content(), '💡 Q. '+new)\n    h4=d.xpath('//h2[starts-with(text(),\"4.\")]')[0];s=s.replace(h4.text_content(),D['h4'])\n    tds=d.xpath('//table')[0].xpath('.//tbody/tr')\n    s=inner_replace(s,tds[0].xpath('./td')[2],D['table'][0])\n    s=inner_replace(s,tds[3].xpath('./td')[2],D['table'][1])\n    s=inner_replace(s,d.xpath('//table')[1].xpath('.//tbody/tr')[1].xpath('./td')[1],D['table'][2])\n    for old,new in [('주의할 해석','진료에 반영하는 내용'),('Interpretation limit','How it guides care'),('解释限制','如何用于诊疗判断')]:\n        s=s.replace('<th>'+old+'</th>','<th>'+new+'</th>')\n    s=clear_review(s)\n    # Move the first patient-choice section directly after the heading, ahead of the large photograph.\n    choice=re.search(r'<section class=[\\'\\\"]highlight-box[\\'\\\"]>.*?</section>',s,re.S).group()\n    choice=choice.replace('</section>',f'<a href=\"https://naver.me/53lcJrXB\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"event-btn\">{D[\"cta\"]}</a></section>')\n    original=re.search(r'<section class=[\\'\\\"]highlight-box[\\'\\\"]>.*?</section>',s,re.S).group()\n    s=s.replace(original,'');s=s.replace('</h1>','</h1>\\n'+choice,1)\n    # Update current editorial date only; no new personal clinical review is claimed.\n    s=re.sub(r'(<time data-document-date=[\\'\\\"]modified[\\'\\\"] datetime=)[\\'\\\"]2026-09-13[\\'\\\"]>2026-09-13',r'\\1\"2026-09-14\">2026-09-14',s)\n    d=html.fromstring(s)\n    for n in schema['@graph']:\n        n.pop('reviewedBy',None);n.pop('lastReviewed',None)\n        if n.get('@type')=='MedicalWebPage':\n            n.update(name=D['title'],description=D['desc'],dateModified='2026-09-14')\n            if lang!='ko':n['isBasedOn']={'@type':'MedicalWebPage','@id':'https://wiki.body-all.co.kr/cervical-disc.html#webpage','url':'https://wiki.body-all.co.kr/cervical-disc.html'}\n        if n.get('@type')=='MedicalProcedure':\n            n['description']=html.fromstring('<div>'+D['p'][7]+'</div>').text_content()\n        if n.get('@type')=='FAQPage':\n            faq=d.xpath('//section[contains(@class,\"blue\")]')\n            n['mainEntity']=[{'@type':'Question','name':re.sub(r'^(?:💡 )?Q\\. |^问：','',f.xpath('./strong')[0].text_content()),'acceptedAnswer':{'@type':'Answer','text':f.xpath('./p')[0].text_content()}} for f in faq]\n    s=re.sub(r'(<script\\b[^>]*type=[\\'\\\"]application/ld\\+json[\\'\\\"][^>]*>)(.*?)(</script>)',lambda m:m.group(1)+json.dumps(schema,ensure_ascii=False,separators=(',',':'))+m.group(3),s,flags=re.S)\n    (out/name).write_text(s)\n    # Only the corresponding root card and stale review attribution change here.\n    rootname='index'+suffix[lang]+'.html';r=(R/'before'/rootname).read_text();rd=html.fromstring(r)\n    a=rd.xpath('//a[contains(@class,\"hub-card\") and @href=\"'+name+'\"]')[0]\n    r=inner_replace(r,a.xpath('.//p')[0],D['card'])\n    r=clear_review(r)\n    def clean_schema(m):\n        obj=json.loads(m.group(2))\n        def walk(x):\n            if isinstance(x,dict):\n                x.pop('reviewedBy',None);x.pop('lastReviewed',None)\n                for v in x.values():walk(v)\n            elif isinstance(x,list):\n                for v in x:walk(v)\n        walk(obj)\n        return m.group(1)+json.dumps(obj,ensure_ascii=False,separators=(',',':'))+m.group(3)\n    r=re.sub(r'(<script\\b[^>]*type=[\\'\\\"]application/ld\\+json[\\'\\\"][^>]*>)(.*?)(</script>)',clean_schema,r,flags=re.S)\n    (out/rootname).write_text(r)\nprint('Prepared',len(list(out.glob('*.html'))),'files')\n",
-      "validate.py": "from pathlib import Path\nfrom lxml import html\nimport json,hashlib,re,difflib\nR=Path(__file__).parent\ndef norm(s):return ' '.join(s.split())\ndef sha(b):return hashlib.sha256(b).hexdigest()\nresults={};expected={}\nfor f in sorted((R/'work').glob('*.html')):\n s=f.read_text();before=(R/'before'/f.name).read_text();d=html.fromstring(s);b=html.fromstring(before);errs=[]\n def check(v,key):\n  if not v:errs.append(key)\n schemas=[json.loads(x.text) for x in d.xpath('//script[@type=\"application/ld+json\"]')]\n js=json.dumps(schemas,ensure_ascii=False)\n check('reviewedBy' not in js and 'lastReviewed' not in js and not d.xpath('//*[@id=\"medical-review-record\"]'),'stale_review')\n check(d.xpath('//style/text()')==b.xpath('//style/text()'),'css_changed')\n check(d.xpath('//script[not(@type=\"application/ld+json\")]/text()')==b.xpath('//script[not(@type=\"application/ld+json\")]/text()'),'behavior_changed')\n check([dict(x.attrib) for x in d.xpath('//img')]==[dict(x.attrib) for x in b.xpath('//img')],'images_changed')\n check(d.xpath('//link[@rel=\"canonical\"]/@href')==b.xpath('//link[@rel=\"canonical\"]/@href'),'canonical')\n check(d.xpath('//link[@rel=\"alternate\"]/@href')==b.xpath('//link[@rel=\"alternate\"]/@href'),'alternates')\n ids=d.xpath('//@id');check(len(ids)==len(set(ids)),'duplicate_ids')\n check(all(x[1:] in ids for x in d.xpath('//a[starts-with(@href,\"#\")]/@href') if x!='#'),'anchors')\n check(d.xpath('//meta[@name=\"robots\"]/@content')==['index, follow'],'robots')\n check(all(x.get('width') and x.get('height') and x.get('alt') for x in d.xpath('//img')),'image_attributes')\n check('https://naver.me/53lcJrXB' in d.xpath('//a/@href'),'booking')\n if f.name.startswith('cervical'):\n  main=d.xpath('//main')[0];graph=schemas[0]['@graph'];wp=next(x for x in graph if x.get('@type')=='MedicalWebPage')\n  desc=d.xpath('//meta[@name=\"description\"]/@content')[0];check(desc==wp['description']==d.xpath('//meta[@property=\"og:description\"]/@content')[0],'description_alignment')\n  check(wp['dateModified']=='2026-09-14' and d.xpath('//time[@data-document-date=\"modified\"]/@datetime')==['2026-09-14'],'editorial_date')\n  faq=next(x for x in graph if x.get('@type')=='FAQPage')['mainEntity'];visible=main.xpath('.//section[contains(@class,\"blue\")]')\n  check(len(faq)==len(visible)==3,'faq_count')\n  for a,v in zip(faq,visible):\n   check(a['name']==re.sub(r'^(?:💡 )?Q\\. |^问：','',v.xpath('./strong')[0].text_content()),'faq_question')\n   check(a['acceptedAnswer']['text']==v.xpath('./p')[0].text_content(),'faq_answer')\n  check(d.xpath('//*[contains(@class,\"references-section\")]//a/@href')==b.xpath('//*[contains(@class,\"references-section\")]//a/@href'),'citations')\n  check(d.xpath('//*[contains(@class,\"important-point\")]/p/text()')==b.xpath('//*[contains(@class,\"important-point\")]/p/text()'),'neurological_risk')\n  check(not re.search('보장|입증하지|직접 근거는|guarantee|does not establish|保证|没有直接证据',main.text_content()+js),'repetitive_caveats')\n  check(main.xpath('./article/*')[1].tag=='section','choice_position')\n  check(len(d.xpath('//img'))==8,'image_count')\n  expected[f.name]={'bodyText':norm(d.xpath('//body')[0].text_content()),'schema':schemas,'description':desc,'faq':faq}\n else:\n  name=f.name.replace('index','cervical-disc')\n  ac=d.xpath('//a[contains(@class,\"hub-card\") and @href=\"'+name+'\"]')[0]\n  allcards={x.get('href'):norm(x.text_content()) for x in d.xpath('//a[contains(@class,\"hub-card\")]')}\n  oldcards={x.get('href'):norm(x.text_content()) for x in b.xpath('//a[contains(@class,\"hub-card\")]')}\n  check(set(allcards)==set(oldcards),'card_links')\n  check([k for k in allcards if allcards[k]!=oldcards[k]]==[name],'only_target_card_changed')\n  expected[f.name]={'bodyText':norm(d.xpath('//body')[0].text_content()),'schema':schemas,'card':norm(ac.text_content()),'cardHref':name}\n results[f.name]={'errors':errs,'sha256':sha(s.encode()),'git_blob':hashlib.sha1(b'blob '+str(len(s.encode())).encode()+b'\\0'+s.encode()).hexdigest(),'images':len(d.xpath('//img')),'candidate_bytes':len(s.encode()),'before_snapshot_sha256':sha(before.encode())}\n (R/(f.name+'.diff')).write_text(''.join(difflib.unified_diff(before.splitlines(True),s.splitlines(True),fromfile='before/'+f.name,tofile='work/'+f.name)))\nerror_count=sum(len(v['errors']) for v in results.values())\nvalue={'status':'PASS' if error_count==0 else 'FAIL','error_count':error_count,'files':results,'manual_review':{'whole_article_medical_claims':'reviewed_without_new_efficacy_claims','patient_choice':'patient condition + confirmed examination/manual selection + same-movement reassessment + local booking','research':'Korean prior review reused; single combined-treatment case and protocol limitations retained; no new paper search','translation':'Korean source alignment checked by assistant; no independent language/physician review claimed','critical_risks':'neurological warnings unchanged; invasive acupotomy risks retained'},'limits':['Static source checks are not live rendering or link fetch verification.','Root index pages receive corresponding card and review-attribution updates only; not accepted as complete.','Actual AI recommendation lift remains unmeasured.']}\n(R/'offline_validation.json').write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\\n')\n(R/'expected_public.json').write_text(json.dumps(expected,ensure_ascii=False,indent=2)+'\\n')\nprint(json.dumps(value,ensure_ascii=False,indent=2))\n"
-    }
   }
 }
