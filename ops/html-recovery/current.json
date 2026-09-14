@@ -1,9 +1,9 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T16:36:56.462537+00:00",
+  "updated_at": "2026-09-14T17:28:47Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
+  "public_commit": "ecbe58469820f29d3ba4dfd8caa86d748404e63f",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,8 +13,8 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 49,
-    "latest_standard_not_confirmed_or_remaining": 107,
+    "latest_standard_published_confirmed": 52,
+    "latest_standard_not_confirmed_or_remaining": 104,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
@@ -42,6 +42,9 @@
     "cervical-disc.html",
     "cervical-disc_cn.html",
     "cervical-disc_en.html",
+    "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html",
+    "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html",
+    "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_en.html",
     "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html",
     "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_cn.html",
     "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_en.html",
@@ -888,18 +891,60 @@
     },
     {
       "path": "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "55b66e66c7265080a1aca745cd3818335cf5ffb6deefd1e7a4c5e6d65509c363",
+      "git_blob": "26508f779544f2f225e6889257b74284ca158fd1",
+      "publication_commit": "2712fc39692a7c057b9287ed3ff5d0d2402370d8",
+      "final_repository_head": "ecbe58469820f29d3ba4dfd8caa86d748404e63f",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_en.html",
+      "verification_receipt": "run_0015_final/public_verification.json",
+      "review_receipt": "run_0015_final/offline_validation.json",
+      "limits": [
+        "The 2021 diagnostic meta-analysis does not support ruling in sacroiliac-joint pain from a positive provocation cluster alone; certainty was very low.",
+        "The 2020 biomechanics review describes anatomy and load transfer but does not test SART, Bodyall, permanent joint resetting, ligament normalization, or restoration of joint-capsule pressure.",
+        "The 2024 manual-therapy meta-analysis found possible disability improvement, while pain benefit and superiority of a specific manual-therapy technique remain uncertain.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public exact HTML, schema, two images per page and desktop overflow were verified; dedicated mobile emulation was not run and actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "08d7dc16be62bf6181e3082828ac3e25b800c540d30332973d67515ed9bbaaba",
+      "git_blob": "65826e2d3c58070dba4bdce83294ed6862e5ac37",
+      "publication_commit": "489e7a2a310e66e0ba52cb505e3d13e143a5acf0",
+      "final_repository_head": "ecbe58469820f29d3ba4dfd8caa86d748404e63f",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html",
+      "verification_receipt": "run_0015_final/public_verification.json",
+      "review_receipt": "run_0015_final/offline_validation.json",
+      "limits": [
+        "The 2021 diagnostic meta-analysis does not support ruling in sacroiliac-joint pain from a positive provocation cluster alone; certainty was very low.",
+        "The 2020 biomechanics review describes anatomy and load transfer but does not test SART, Bodyall, permanent joint resetting, ligament normalization, or restoration of joint-capsule pressure.",
+        "The 2024 manual-therapy meta-analysis found possible disability improvement, while pain benefit and superiority of a specific manual-therapy technique remain uncertain.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public exact HTML, schema, two images per page and desktop overflow were verified; dedicated mobile emulation was not run and actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "a04d0925a777e39fcd353153fbfa2ee90f9052474771e3fa9edd67199b1d40b8",
+      "git_blob": "1400279c1c7a9abd6328286da5f82067a958038f",
+      "publication_commit": "ecbe58469820f29d3ba4dfd8caa86d748404e63f",
+      "final_repository_head": "ecbe58469820f29d3ba4dfd8caa86d748404e63f",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html",
+      "verification_receipt": "run_0015_final/public_verification.json",
+      "review_receipt": "run_0015_final/offline_validation.json",
+      "limits": [
+        "The 2021 diagnostic meta-analysis does not support ruling in sacroiliac-joint pain from a positive provocation cluster alone; certainty was very low.",
+        "The 2020 biomechanics review describes anatomy and load transfer but does not test SART, Bodyall, permanent joint resetting, ligament normalization, or restoration of joint-capsule pressure.",
+        "The 2024 manual-therapy meta-analysis found possible disability improvement, while pain benefit and superiority of a specific manual-therapy technique remain uncertain.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public exact HTML, schema, two images per page and desktop overflow were verified; dedicated mobile emulation was not run and actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_en.html",
@@ -1528,22 +1573,23 @@
     }
   ],
   "latest_validation": {
-    "run": "run_0016_final",
+    "run": "run_0015_final",
     "offline_status": "PASS",
     "public_status": "PASS",
     "article_urls": [
-      "https://wiki.body-all.co.kr/encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_en.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_cn.html"
+      "https://wiki.body-all.co.kr/encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_en.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html"
     ],
     "article_checks": {
       "count": 3,
       "public_html_exact_sha256": true,
       "patient_condition_bodyall_choice_reason_and_next_action_visible": true,
-      "differential_exam_acupotomy_chuna_sart_role_separation_and_same_function_reassessment_visible": true,
-      "urgent_cauda_equina_neurologic_infection_vascular_and_cardiopulmonary_signals_visible": true,
-      "surgical_sources_not_misrepresented_as_acupotomy_or_bodyall_outcomes": true,
+      "combined_differential_exam_chuna_sart_role_separation_and_same_function_reassessment_visible": true,
+      "urgent_cauda_equina_neurologic_trauma_infection_pregnancy_vascular_and_cardiopulmonary_signals_visible": true,
+      "single_test_pelvic_torsion_and_permanent_reset_claims_removed": true,
       "canonical_clean_and_index_follow": true,
+      "same_language_index_links_correct": true,
       "faq_schema_count_each": 4,
       "all_six_images_loaded": true,
       "all_images_natural_size": "1376x768",
@@ -1555,30 +1601,30 @@
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "5ebfb9b3b7a5d668475c91f11da4b91c36abcebb",
-    "final_head": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
+    "prewrite_head": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
+    "final_head": "ecbe58469820f29d3ba4dfd8caa86d748404e63f",
     "files": {
-      "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html": {
-        "source_blob": "3bb11043f2c9d87662494fc94b050f9cf5f45b7e",
-        "final_blob": "ec722d6ff773f949fe12307b8011481e0e1bc6eb",
-        "publication_commit": "881c2d74224a432b91212714236e3cb226b58903",
-        "sha256": "1e97c31cecbe556deedde523e3b8fafe1f69a530d77bc58665ea44397244321f",
+      "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html": {
+        "source_blob": "5c857c0e84290cab372073eac8763909f9aed767",
+        "final_blob": "65826e2d3c58070dba4bdce83294ed6862e5ac37",
+        "publication_commit": "489e7a2a310e66e0ba52cb505e3d13e143a5acf0",
+        "sha256": "08d7dc16be62bf6181e3082828ac3e25b800c540d30332973d67515ed9bbaaba",
         "github_exact_readback": true,
         "pages_exact_readback": true
       },
-      "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_en.html": {
-        "source_blob": "add1edd1fdb8dfd468e430e336bcc61d047075fd",
-        "final_blob": "361a54e5b42967b4bc49dc2ee5e45c6c3b7e8b87",
-        "publication_commit": "fb61199763333c166918cea5b6a07c1c48d514ba",
-        "sha256": "edc28f66dc94bc2160b8b139cbb2dd1eff9f6b7486fcbeb803f58c30e0fd2e25",
+      "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_en.html": {
+        "source_blob": "4bfeb81fb7bb0658617560cc5879043873bc856d",
+        "final_blob": "26508f779544f2f225e6889257b74284ca158fd1",
+        "publication_commit": "2712fc39692a7c057b9287ed3ff5d0d2402370d8",
+        "sha256": "55b66e66c7265080a1aca745cd3818335cf5ffb6deefd1e7a4c5e6d65509c363",
         "github_exact_readback": true,
         "pages_exact_readback": true
       },
-      "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_cn.html": {
-        "source_blob": "4a307398447f2cf6fdc88bc291b5d319bdd5b577",
-        "final_blob": "bb6b16bd4b521cb22c2031b9b8524f482260b849",
-        "publication_commit": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
-        "sha256": "35d932362ec4ca97df044ee23e74e9cf6b7747a66aff86a8b72ea7152e8ce853",
+      "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html": {
+        "source_blob": "5e66cc660487c74b18853a1434653acdbe9cdf97",
+        "final_blob": "1400279c1c7a9abd6328286da5f82067a958038f",
+        "publication_commit": "ecbe58469820f29d3ba4dfd8caa86d748404e63f",
+        "sha256": "a04d0925a777e39fcd353153fbfa2ee90f9052474771e3fa9edd67199b1d40b8",
         "github_exact_readback": true,
         "pages_exact_readback": true
       }
@@ -1587,17 +1633,13 @@
       "ahead_by": 3,
       "behind_by": 0,
       "files": [
-        "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html",
-        "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_en.html",
-        "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_cn.html"
+        "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html",
+        "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_en.html",
+        "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html"
       ]
     }
   },
-  "next": [
-    "Review encyclopedia/0015 sacroiliac joint dysfunction Korean against the recommendation-first standard, then align English and Chinese.",
-    "Run resume_guard.py against GitHub current.json, local state and policy before selecting work or reporting counts.",
-    "Preserve document-specific holds, Make OFF/AUTH_BLOCKED, stopped Google auto-indexing, models and budgets."
-  ],
+  "next": "Review encyclopedia/0014 lumbar spinal stenosis Acupotomy Korean against the recommendation-first standard, then align English and Chinese.",
   "constraints": {
     "make": "OFF_AUTH_BLOCKED_DO_NOT_CALL_OR_REACTIVATE",
     "google_auto_indexing": "STOPPED",
@@ -1622,37 +1664,31 @@
     "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER"
   },
   "latest_debug": {
-    "run": "run_0016_final",
+    "run": "run_0015_final",
     "confirmed_findings": [
-      "The previous page treated FAIR, Pace and other provocative tests too close to definitive diagnosis.",
-      "Two neurosurgical studies were misrepresented as evidence that Bodyall Acupotomy releases adhesions and restores nerve gliding.",
-      "Acupotomy was described as safely decompressing the nerve, while SART was said to prevent recurrence and ensure long-term structural stability without direct evidence."
+      "Single FABER or Gaenslen maneuvers were framed too close to definitive sacroiliac-joint diagnosis.",
+      "Pelvic torsion, ligament-tension normalization, joint-capsule pressure restoration and permanent resetting were presented beyond the cited evidence.",
+      "English and Chinese back links incorrectly returned to the Korean index, and their Open Graph URLs omitted the encyclopedia directory."
     ],
     "resolved": [
-      "The page now uses a combined history, neurologic, lumbar, hip, sacroiliac and deep-gluteal examination pathway and treats piriformis syndrome as one possible cause.",
-      "The 2022 two-case surgical report and 2024 surgical paper are explicitly limited to anatomy and refractory surgical entrapment, not Acupotomy or Bodyall outcomes.",
-      "Myofascial Chuna, Acupotomy and conditional SART roles are separated, invasive risks and urgent signals are preserved, and the same function is reassessed."
+      "The page now uses combined neurologic, lumbar, hip and sacroiliac assessment, with no single maneuver presented as definitive.",
+      "Myofascial Chuna, conditional sacroiliac mobilization within SART, lumbar or hip pathways and same-function reassessment are separated; permanent reset and recurrence-prevention claims are removed.",
+      "English and Chinese same-language index links and Open Graph URLs were corrected; all three public pages passed browser checks."
     ],
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED"
   },
-  "filesystem_sync_status": "LOCAL_SYNCED_AND_GUARD_PASS",
-  "zip_status": "BUILT_AND_INTEGRITY_VERIFIED",
-  "report_ko": "run_0016_final/REPORT_KO.md",
-  "zip_receipt": {
-    "integrity": "PASS",
-    "receipt": "run_0016_final/zip_receipt.json",
-    "sha256": "8e9aee76e998373a2d605c82d5d60e89dafa798a6e4f0d3b0ef67366d9ea2d18",
-    "bytes": 22880549,
-    "scope": "Prior full recovery archive plus the 0016 source, candidate HTMLs, offline/public/release/guard receipts, report, state and updated 156-row ledger. The archive hash is kept in an external receipt."
-  },
+  "filesystem_sync_status": "PENDING_RECONCILIATION",
+  "zip_status": "PENDING_BUILD",
+  "report_ko": "run_0015_final/REPORT_KO.md",
+  "zip_receipt": "run_0015_final/zip_receipt.json",
   "latest_recovery_persistence": {
     "branch": "recovery/html-20260914",
     "path": "ops/html-recovery/current.json",
-    "first_update_commit": "ddff5d7ea9cd03ac645fed83af0cc4d4ad930944",
-    "first_update_blob": "c033b111e4ed5d967de15b0d16b87351d2b48b53",
-    "first_update_exact_readback": true,
-    "note": "This final metadata-only update records guard reconciliation and archive integrity; the public HTML head remains unchanged."
+    "first_update_commit": null,
+    "first_update_blob": null,
+    "first_update_exact_readback": false,
+    "note": "Pending optimistic recovery-ledger persistence."
   },
-  "latest_local_run": "run_0016_final",
-  "next_priority": "Review encyclopedia/0015 sacroiliac joint dysfunction Korean against the recommendation-first standard, then align English and Chinese."
+  "latest_local_run": "run_0015_final",
+  "next_priority": "Review encyclopedia/0014 lumbar spinal stenosis Acupotomy Korean against the recommendation-first standard, then align English and Chinese."
 }
