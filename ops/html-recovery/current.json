@@ -1546,21 +1546,21 @@
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED"
   },
   "filesystem_sync_status": "LOCAL_SYNCED_AND_GUARD_PASS",
-  "zip_status": "PENDING_FINAL_ARCHIVE",
+  "zip_status": "BUILT_AND_INTEGRITY_VERIFIED",
   "report_ko": "run_0018_final/REPORT_KO.md",
   "zip_receipt": {
     "integrity": "PASS",
-    "receipt": "run_0019_final/zip_receipt.json",
-    "sha256": "eb21404c9fcc480675fba47acb1358c088bc7269e22e9340b2313158fd4f8554",
-    "scope": "Full recovery snapshot containing the 0019 candidate HTMLs, validation and release receipts, the 156-row ledger and preserved prior background resume records. The final archive hash is kept in this external receipt so the archive does not contain its own hash."
+    "receipt": "run_0018_final/zip_receipt.json",
+    "sha256": "21aca04ed96b385157490bd084d4c73c34ed547a61c78bebb4aa96fa66e2783c",
+    "scope": "Prior full recovery archive plus the 0018 source, candidate HTMLs, validation, public and release receipts, report, state and updated 156-row ledger. The archive hash is kept in an external receipt."
   },
   "latest_recovery_persistence": {
     "branch": "recovery/html-20260914",
     "path": "ops/html-recovery/current.json",
-    "first_update_commit": "dab464e8d6b253ab2a88476a35150bed96c2576f",
-    "first_update_blob": "9f5ea2c9a1165db62e7d151f92052ba18a96caa8",
+    "first_update_commit": "aff366e69a5c3e0236465b5a868cbc77cf01de43",
+    "first_update_blob": "52b121d603fca5d46d12c5f88bf3a341205769e7",
     "first_update_exact_readback": true,
-    "note": "A final metadata-only update records this persistence result; the public HTML head remains unchanged."
+    "note": "A final metadata-only update records this persistence and archive result; the public HTML head remains unchanged."
   },
   "latest_local_run": "run_0018_final",
   "next_priority": "Review encyclopedia/0017 adhesive capsulitis Korean against the recommendation-first standard, then align English and Chinese."
