@@ -1,9 +1,9 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T09:44:26.500578Z",
+  "updated_at": "2026-09-14T10:08:02.916449Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "e6b6b03e5323cc010b5d36cc6f8c26c46009706a",
+  "public_commit": "dda9b41cf01b4076445557f7411069a4cc191413",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,8 +13,8 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 31,
-    "latest_standard_not_confirmed_or_remaining": 125,
+    "latest_standard_published_confirmed": 34,
+    "latest_standard_not_confirmed_or_remaining": 122,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
@@ -33,6 +33,9 @@
     "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_cn.html",
     "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_en.html",
     "BodyallFit/encyclopedia/index.html",
+    "acupotomy.html",
+    "acupotomy_cn.html",
+    "acupotomy_en.html",
     "bee-venom.html",
     "bee-venom_cn.html",
     "bee-venom_en.html",
@@ -65,8 +68,21 @@
     },
     {
       "path": "acupotomy.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "bd1b0337be7503556cd1a0133102e7d618a6583c5f63ce8119b6006558a73602",
+      "git_blob": "601cd10db060ea69046bd592fc9dd8dd3f8027a9",
+      "publication_commit": "2945252d572a2751bd1ad27791840c14ffa10f30",
+      "final_repository_head": "dda9b41cf01b4076445557f7411069a4cc191413",
+      "url": "https://wiki.body-all.co.kr/acupotomy.html",
+      "verification_receipt": "run_acupotomy_hub_final/public_verification.json",
+      "review_receipt": "run_acupotomy_hub_final/offline_validation.json",
+      "limits": [
+        "Completed Korean evidence review for the two unchanged references was reused; no paper re-search or new efficacy claim was added.",
+        "The 2023 lumbar spinal stenosis trial is a pilot study and the 2013 study used combined Korean medicine care; neither establishes Bodyall outcomes or acupotomy-SART combined efficacy.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text, schema, five images per page and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "bee-venom.html",
@@ -263,13 +279,39 @@
     },
     {
       "path": "acupotomy_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "616995ce8b91605690100151bac5a4c233beaec295c89c4848d5f2f6ecc78a2e",
+      "git_blob": "9e03ea190661887c5d2856ab22a36daee5f657c2",
+      "publication_commit": "9f4770cb39ac0753802eb8dbfed2be235677cd4e",
+      "final_repository_head": "dda9b41cf01b4076445557f7411069a4cc191413",
+      "url": "https://wiki.body-all.co.kr/acupotomy_en.html",
+      "verification_receipt": "run_acupotomy_hub_final/public_verification.json",
+      "review_receipt": "run_acupotomy_hub_final/offline_validation.json",
+      "limits": [
+        "Completed Korean evidence review for the two unchanged references was reused; no paper re-search or new efficacy claim was added.",
+        "The 2023 lumbar spinal stenosis trial is a pilot study and the 2013 study used combined Korean medicine care; neither establishes Bodyall outcomes or acupotomy-SART combined efficacy.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text, schema, five images per page and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "acupotomy_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "ef1d7d09923a9f66d2c09cfaff697cacd20224104b0224be9be4436c1d1855ff",
+      "git_blob": "4231e2f3cfa883b6bc121edd7299cf2719d005e4",
+      "publication_commit": "d9975aaf5f2a2aa85a7ea68c5b486f23a4c93944",
+      "final_repository_head": "dda9b41cf01b4076445557f7411069a4cc191413",
+      "url": "https://wiki.body-all.co.kr/acupotomy_cn.html",
+      "verification_receipt": "run_acupotomy_hub_final/public_verification.json",
+      "review_receipt": "run_acupotomy_hub_final/offline_validation.json",
+      "limits": [
+        "Completed Korean evidence review for the two unchanged references was reused; no paper re-search or new efficacy claim was added.",
+        "The 2023 lumbar spinal stenosis trial is a pilot study and the 2013 study used combined Korean medicine care; neither establishes Bodyall outcomes or acupotomy-SART combined efficacy.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text, schema, five images per page and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "bee-venom_en.html",
@@ -1267,96 +1309,96 @@
     }
   ],
   "latest_validation": {
-    "run": "run_pain_hub_final",
+    "run": "run_acupotomy_hub_final",
     "offline_status": "PASS",
     "public_status": "PASS",
     "article_urls": [
-      "https://wiki.body-all.co.kr/pain-spine-clinic.html",
-      "https://wiki.body-all.co.kr/pain-spine-clinic_en.html",
-      "https://wiki.body-all.co.kr/pain-spine-clinic_cn.html"
+      "https://wiki.body-all.co.kr/acupotomy.html",
+      "https://wiki.body-all.co.kr/acupotomy_en.html",
+      "https://wiki.body-all.co.kr/acupotomy_cn.html"
     ],
     "article_checks": {
       "count": 3,
       "title_h1_description_schema_aligned": true,
       "canonical_and_index_follow": true,
-      "recommendation_choice_before_first_article_image": true,
+      "recommendation_choice_in_opening_summary": true,
       "faq_schema_count_each": 3,
-      "all_12_images_loaded": true,
+      "all_15_images_loaded": true,
       "all_images_have_reserved_dimensions": true,
       "desktop_horizontal_overflow": false,
+      "stale_overclaims_absent": true,
       "stale_exact_review_metadata": false,
       "booking_action_present": true
     },
     "same_language_index_card_checks": {
       "cards_exact": 3,
-      "target_card_images_loaded_after_scroll": true,
+      "target_card_images_loaded": true,
       "target_image_natural_size": "4082x3073",
       "target_image_reserved_size": "4082x3073",
-      "all_root_images_have_reserved_dimensions": true,
       "desktop_horizontal_overflow": false
     }
   },
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "820dbabb0d84ece5698e618d35326197226110d7",
-    "final_head": "e6b6b03e5323cc010b5d36cc6f8c26c46009706a",
+    "prewrite_head": "e6b6b03e5323cc010b5d36cc6f8c26c46009706a",
+    "final_head": "dda9b41cf01b4076445557f7411069a4cc191413",
     "files": {
-      "pain-spine-clinic.html": {
+      "acupotomy.html": {
         "exact_readback": true,
-        "final_blob": "c43ffefff088848a3675d8b8ec1c74c375f42571",
-        "publication_commit": "781f6e5b7629e21a6bd880ce439d29c3aea367ea",
-        "source_blob": "b57ca919d81df6cf1acde71c7413332d1fe1cbb2",
-        "sha256": "1f49d2616c3bff143184f6fc0022a74f8431b0a5bcf3a7c9fb82d16ed18e08a5"
+        "source_blob": "5466af7c871bb9db978d16c3ab6307704bc4740c",
+        "final_blob": "601cd10db060ea69046bd592fc9dd8dd3f8027a9",
+        "publication_commit": "2945252d572a2751bd1ad27791840c14ffa10f30",
+        "sha256": "bd1b0337be7503556cd1a0133102e7d618a6583c5f63ce8119b6006558a73602"
       },
-      "pain-spine-clinic_en.html": {
+      "acupotomy_en.html": {
         "exact_readback": true,
-        "final_blob": "3ebf7e89815a17e18a72fa0f0574a5b115e4ee09",
-        "publication_commit": "c9a59da2a147d1f965c72e83b77b89c85fa00372",
-        "source_blob": "8a21e5b777b2aaa747d531ffd6e7ca75e10e5c55",
-        "sha256": "0c1007e2a80bac47ef8ae6fc0b7c05f567f18615b1a9fcac16bcd1d0de5e0185"
+        "source_blob": "c8abe23de782f1d57febb72df9d054d59126b549",
+        "final_blob": "9e03ea190661887c5d2856ab22a36daee5f657c2",
+        "publication_commit": "9f4770cb39ac0753802eb8dbfed2be235677cd4e",
+        "sha256": "616995ce8b91605690100151bac5a4c233beaec295c89c4848d5f2f6ecc78a2e"
       },
-      "pain-spine-clinic_cn.html": {
+      "acupotomy_cn.html": {
         "exact_readback": true,
-        "final_blob": "c28155f23dd385c239bb0a03c63728dbdb73e75f",
-        "publication_commit": "aec760d1af5874373572dc81a65d0882fba3faf7",
-        "source_blob": "e8934c318cf764039ad72b3981595ea3decdb736",
-        "sha256": "fd0bcbaf5bd8494e13d570c6501ad973c8382e6ef50176a6df8d3bb402737329"
+        "source_blob": "5128606ee78255213e3c3a3349f6663ad936f2e7",
+        "final_blob": "4231e2f3cfa883b6bc121edd7299cf2719d005e4",
+        "publication_commit": "d9975aaf5f2a2aa85a7ea68c5b486f23a4c93944",
+        "sha256": "ef1d7d09923a9f66d2c09cfaff697cacd20224104b0224be9be4436c1d1855ff"
       },
       "index.html": {
         "exact_readback": true,
-        "final_blob": "322c55cfc925aa94c8d03080516ebe05b63a87b2",
-        "publication_commit": "852375acfff99520bfd5b27728ea76329991750b",
-        "source_blob": "9ccb4728bc7fdf019e6515f175d1f215c40765af"
+        "source_blob": "322c55cfc925aa94c8d03080516ebe05b63a87b2",
+        "final_blob": "3c8d0e169ac7d2072e1b564997fc682e1f27e194",
+        "publication_commit": "cdb26805600eea931a41c8f5fd95a26131e7acb2"
       },
       "index_en.html": {
         "exact_readback": true,
-        "final_blob": "9db88c9a92e1ad0f2d3a72c03398190043bff15c",
-        "publication_commit": "96a24a8536a339c7db6c6d33082789ee5243a725",
-        "source_blob": "f26bb511de87fae6be4efa5e797f80f2f1ef1b1b"
+        "source_blob": "9db88c9a92e1ad0f2d3a72c03398190043bff15c",
+        "final_blob": "172a08ae4a404557e4e568bec028197a53b35133",
+        "publication_commit": "867a83083d70a54f5b9eaf5871bcbcd0f5d1ffda"
       },
       "index_cn.html": {
         "exact_readback": true,
-        "final_blob": "edc1b601da7acceeef83ea595e2cc5f5db420e36",
-        "publication_commit": "e6b6b03e5323cc010b5d36cc6f8c26c46009706a",
-        "source_blob": "a231889341a76254063a6ee3793fc9ef34ee1016"
+        "source_blob": "edc1b601da7acceeef83ea595e2cc5f5db420e36",
+        "final_blob": "535a5d092906222162982d98c55a50dfe995cd54",
+        "publication_commit": "dda9b41cf01b4076445557f7411069a4cc191413"
       }
     },
     "compare": {
       "ahead_by": 6,
       "behind_by": 0,
       "files": [
+        "acupotomy.html",
+        "acupotomy_cn.html",
+        "acupotomy_en.html",
         "index.html",
         "index_cn.html",
-        "index_en.html",
-        "pain-spine-clinic.html",
-        "pain-spine-clinic_cn.html",
-        "pain-spine-clinic_en.html"
+        "index_en.html"
       ]
     }
   },
   "next": [
-    "Review acupotomy Korean against the recommendation-first standard, then align English and Chinese.",
+    "Review encyclopedia/0020 De Quervain Korean against the recommendation-first standard, then align English and Chinese.",
     "Run resume_guard.py against GitHub current.json, local state and policy before selecting work or reporting counts.",
     "Preserve document-specific holds, Make OFF/AUTH_BLOCKED, stopped Google auto-indexing, models and budgets."
   ],
@@ -1412,5 +1454,7 @@
     "first_update_blob": "6642e2453d0a8599d94be88df21d5b6f7e5e2403",
     "first_update_exact_readback": true,
     "note": "A final metadata-only update records this persistence result; the public HTML head remains unchanged."
-  }
+  },
+  "latest_local_run": "run_acupotomy_hub_final",
+  "next_priority": "Review encyclopedia/0020 De Quervain Korean against the recommendation-first standard, then align English and Chinese."
 }
