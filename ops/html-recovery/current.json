@@ -1464,7 +1464,7 @@
   },
   "filesystem_sync_status": "LOCAL_SYNCED_AND_GUARD_PASS",
   "zip_status": "BUILT_AND_INTEGRITY_VERIFIED",
-  "report_ko": "run_bee_final/REPORT_KO.md",
+  "report_ko": "run_0020_final/REPORT_KO.md",
   "zip_receipt": {
     "integrity": "PASS",
     "receipt": "run_bee_final/zip_receipt.json",
@@ -1473,8 +1473,8 @@
   "latest_recovery_persistence": {
     "branch": "recovery/html-20260914",
     "path": "ops/html-recovery/current.json",
-    "first_update_commit": "d0718186053470d63ced5a83af278f5bbea540db",
-    "first_update_blob": "6980a19f59cb9e57ec466e914b1ff11ee9dc1803",
+    "first_update_commit": "3c77d051dd5a0aa93a9a7c6806f205f93e460b6d",
+    "first_update_blob": "ac86ed9684d75d64025f5e2f09b982389c8c6736",
     "first_update_exact_readback": true,
     "note": "A final metadata-only update records this persistence result; the public HTML head remains unchanged."
   },
