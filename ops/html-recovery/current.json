@@ -1,9 +1,9 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T04:46:03.817561+00:00",
+  "updated_at": "2026-09-14T05:26:29Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "7e72f108dc4e20daac74e083bb2a0d97592f5b08",
+  "public_commit": "650ead92622504965e91974e3f8e87dae655d809",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,13 +13,16 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 13,
-    "latest_standard_not_confirmed_or_remaining": 143,
+    "latest_standard_published_confirmed": 16,
+    "latest_standard_not_confirmed_or_remaining": 140,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
   },
   "accepted_paths": [
+    "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
+    "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html",
+    "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
     "BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau.html",
     "BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_cn.html",
     "BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_en.html",
@@ -58,9 +61,19 @@
     },
     {
       "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_REASSESSMENT_REQUIRED",
-      "reason": "Publication is documented, but inspected release text retains scattered comparison/guarantee commentary and an unrelated US supplement legal-status explanation. A single_evidence_scope_present flag is insufficient to confirm the latest whole-page editorial standard."
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "97cbd5ea36da4d89f6fae8ab2f13f660b9a2c7fe568f317842da9107c73a8e3b",
+      "git_blob": "a8a9b9aba89415707a88c1c950109144e7ace32f",
+      "publication_commit": "e2eb8b86b143ba1110da7fcdc146b257bde61062",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
+      "verification_receipt": "run_glp1_0001_final/public_verification.json",
+      "review_receipt": "run_glp1_0001_final/offline_validation.json",
+      "limits": [
+        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+        "No direct physician review of the rewritten exact version or independent language review was asserted.",
+        "Public DOM/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
+      ]
     },
     {
       "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
@@ -129,17 +142,17 @@
       "path": "BodyallFit/encyclopedia/index.html",
       "latest_standard_completed": true,
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "sha256": "6cafb17c42e070a88ca42de8f5ab2f8dc61abce2df97dff32a8b8afa42d95f44",
-      "git_blob": "d2d4a1ba94c863cd0c792165e21e29c94087bc7c",
-      "publication_commit": "4b63cb6757b46230753885c71e9ba53e751d1279",
+      "sha256": "3087f0e64756a5df9710455e423e4657aacfbdad6b1791da8a0268b8873775ba",
+      "git_blob": "38889ef80ef7be07d5cd4520a72f63ae91189688",
+      "publication_commit": "a757d35230e4ff35b0c304018945892fc0782f38",
       "public_url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index.html",
       "prior_public_verified_at": "2026-09-13T05:36:32.001500+00:00",
       "current_public_dom_rechecked": true,
       "source_and_public_receipt_exact_match": true,
       "review_receipt": "run_hub_ko_choice_cleanup/run_receipt.json",
-      "verification_receipt": "run_maintenance6_final/public_verification.json",
+      "verification_receipt": "run_glp1_0001_final/public_verification.json",
       "limits": [
-        "The 0006 card was updated and the whole public hub was rechecked for DOM, schema, images and overflow.",
+        "The 0001 card was updated and the public hub was rechecked for the card, canonical, robots, images and desktop overflow.",
         "Hub acceptance does not approve its linked articles."
       ],
       "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index.html"
@@ -232,15 +245,35 @@
     },
     {
       "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_REASSESSMENT_REQUIRED",
-      "reason": "Publication is documented, but inspected release text retains scattered comparison/guarantee commentary and an unrelated US supplement legal-status explanation. A single_evidence_scope_present flag is insufficient to confirm the latest whole-page editorial standard."
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "d06143b47653b2c345cb162867c9f50a06449a29da94de7a3d89278e5a1c7bb7",
+      "git_blob": "98620198a9a1d4b9af601710fec050c97a0f603a",
+      "publication_commit": "f010980b3522cc43e2a36d4e726fee5bfd579028",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
+      "verification_receipt": "run_glp1_0001_final/public_verification.json",
+      "review_receipt": "run_glp1_0001_final/offline_validation.json",
+      "limits": [
+        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+        "No direct physician review of the rewritten exact version or independent language review was asserted.",
+        "Public DOM/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
+      ]
     },
     {
       "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_REASSESSMENT_REQUIRED",
-      "reason": "Publication is documented, but inspected release text retains scattered comparison/guarantee commentary and an unrelated US supplement legal-status explanation. A single_evidence_scope_present flag is insufficient to confirm the latest whole-page editorial standard."
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "833625032ae6275e5bda12bb44d7cf7896e9aff2cc0bc8e6e46d4d97698f003e",
+      "git_blob": "5787fff56cd273a51506c3d58465f27d9c805fd5",
+      "publication_commit": "8b7355e27cbc56b8d6108e4177751b7ddb44185a",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html",
+      "verification_receipt": "run_glp1_0001_final/public_verification.json",
+      "review_receipt": "run_glp1_0001_final/offline_validation.json",
+      "limits": [
+        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+        "No direct physician review of the rewritten exact version or independent language review was asserted.",
+        "Public DOM/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
+      ]
     },
     {
       "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
@@ -376,17 +409,19 @@
       "path": "BodyallFit/encyclopedia/index_en.html",
       "latest_standard_completed": false,
       "status": "SAME_LANGUAGE_CARD_UPDATED_HUB_NOT_YET_COUNTED",
-      "reason": "0003 card now states the patient-facing choice reason. Stale exact-review metadata was removed after the card mutation. Whole hub not counted by this article release.",
-      "git_blob": "920747a4c7c86e8caa19b7eca2d1cb30a41b54cc",
-      "publication_commit": "165e75f5d459c8b596faae2f414a34aa5a413128"
+      "reason": "0001 card now states the GLP-1 patient-facing BodyallFit choice reason. Whole hub is not counted by this article release.",
+      "git_blob": "fac525d428f477da12475676477611ccf203cb52",
+      "publication_commit": "2ebbe3ff75aa58f5bfa55759401ae196c86ad341",
+      "sha256": "6dff7673f2b05ee75517b495c560e511829d22afd9660e79aab6657c097423d7"
     },
     {
       "path": "BodyallFit/encyclopedia/index_cn.html",
       "latest_standard_completed": false,
       "status": "SAME_LANGUAGE_CARD_UPDATED_HUB_NOT_YET_COUNTED",
-      "reason": "0003 card now states the patient-facing choice reason. Stale exact-review metadata was removed after the card mutation. Whole hub not counted by this article release.",
-      "git_blob": "e62ad555f8bf5dc6b3454b16ba22cab0339a933c",
-      "publication_commit": "6043144f29c0dda76a83f48ec89544a6bd868696"
+      "reason": "0001 card now states the GLP-1 patient-facing BodyallFit choice reason. Whole hub is not counted by this article release.",
+      "git_blob": "6562e86687a6ab63484b9948c80def1846903411",
+      "publication_commit": "650ead92622504965e91974e3f8e87dae655d809",
+      "sha256": "91c8c6157ecbdfc7b1bbb01a56f1c68f745f7934dbf0d4d9d376cb6562d4a6ab"
     },
     {
       "path": "cervical-disc_en.html",
@@ -991,152 +1026,120 @@
     }
   ],
   "latest_validation": {
-    "run": "run_maintenance6_final",
-    "status": "PASS",
-    "articles": [
-      {
-        "path": "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention.html",
-        "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention.html",
-        "language": "ko",
-        "sha256": "de40715c343d793b003088b23cd343662f6ce16eb4eaae4e2dfac56009f178d3",
-        "git_blob": "b34e0843c46d024a52f8d9a0cfe7af75318288d2",
-        "publication_commit": "e88bde25cec8f458a3454faa6a936f6abe2604c2",
-        "choice_chain": "patient fit -> chief-director continuity -> direct questions -> medicine/herbal/food/exercise plan -> appointment action",
-        "sections": 5,
-        "references": 6,
-        "faq_visible_schema": "4/4",
-        "stale_review_claim": false,
-        "repetitive_defensive_copy": false,
-        "public_verified": true,
-        "errors": []
-      },
-      {
-        "path": "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_en.html",
-        "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_en.html",
-        "language": "en",
-        "sha256": "2dfe29780dd64e8ddb8d7f18706c39a91b57f39ef9373d4b19a3f7048e83e97f",
-        "git_blob": "b5beb6b1aa89b49f5d73f53f291aabe99248dc7e",
-        "publication_commit": "5dff21e4b41618286f8c75044a9d1ef5dbee3dff",
-        "choice_chain": "patient fit -> chief-director continuity -> direct questions -> medicine/herbal/food/exercise plan -> appointment action",
-        "sections": 5,
-        "references": 6,
-        "faq_visible_schema": "4/4",
-        "stale_review_claim": false,
-        "repetitive_defensive_copy": false,
-        "public_verified": true,
-        "korean_source_sha256": "de40715c343d793b003088b23cd343662f6ce16eb4eaae4e2dfac56009f178d3",
-        "errors": []
-      },
-      {
-        "path": "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_cn.html",
-        "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_cn.html",
-        "language": "cn",
-        "sha256": "b35b65e841da7306721a79252eed5762bebdd121114c96555837d2107624c689",
-        "git_blob": "68d938ab97d863d1284a40db3e27352c505a2d5b",
-        "publication_commit": "bc9dcd90d476a10c35387ddbb15caa1dc08afdc6",
-        "choice_chain": "patient fit -> chief-director continuity -> direct questions -> medicine/herbal/food/exercise plan -> appointment action",
-        "sections": 5,
-        "references": 6,
-        "faq_visible_schema": "4/4",
-        "stale_review_claim": false,
-        "repetitive_defensive_copy": false,
-        "public_verified": true,
-        "korean_source_sha256": "de40715c343d793b003088b23cd343662f6ce16eb4eaae4e2dfac56009f178d3",
-        "errors": []
-      }
+    "run": "run_glp1_0001_final",
+    "offline_status": "PASS",
+    "public_status": "PASS",
+    "article_urls": [
+      "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
+      "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
+      "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html"
     ],
-    "offline": {
-      "status": "PASS",
-      "errors": []
+    "article_checks": {
+      "canonical_and_index_follow": true,
+      "single_h1_and_five_content_sections": true,
+      "patient_condition_to_bodyallfit_choice_chain": true,
+      "chief_director_continuity_and_direct_questions": true,
+      "appointment_and_contact_actions": true,
+      "material_emergency_and_prescription_safety": true,
+      "repetitive_defensive_copy_absent": true,
+      "stale_exact_review_claim_absent": true,
+      "json_ld_parse_errors": 0,
+      "schema_types_present": [
+        "MedicalWebPage",
+        "MedicalClinic",
+        "LocalBusiness",
+        "MedicalTherapy",
+        "FAQPage",
+        "Person"
+      ],
+      "faq_count_each": 4,
+      "translation_lineage_to_korean_sha256": "97cbd5ea36da4d89f6fae8ab2f13f660b9a2c7fe568f317842da9107c73a8e3b",
+      "reviewed_by_or_last_reviewed_on_new_exact": false,
+      "images_each": 2,
+      "image_intrinsic_dimensions": [
+        "1376x768",
+        "2816x1536"
+      ],
+      "all_images_loaded_after_lazy_load": true,
+      "desktop_horizontal_overflow": false,
+      "korean_upper_viewport_visually_checked": true
     },
-    "public": {
-      "source_blob_readback": "EXACT_FOR_ALL_SIX_WRITES",
-      "public_dom": "PASS",
-      "public_schema": "PASS",
-      "robots": "index, follow",
-      "article_images": "2_PER_PAGE_LOADED_1376x768",
-      "index_images": "LOADED_1408x768_AND_500x500",
-      "desktop_overflow": false,
-      "upper_viewport_visual_check": "PASS_KO",
-      "mobile_emulation": "NOT_RUN",
-      "external_reference_destinations": "UNCHANGED_PRIOR_VERIFICATION_REUSED"
+    "same_language_index_card_checks": {
+      "urls": [
+        "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index.html",
+        "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index_en.html",
+        "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index_cn.html"
+      ],
+      "one_0001_card_each": true,
+      "choice_reason_in_card_each": true,
+      "canonical_and_index_follow": true,
+      "images_loaded": true,
+      "desktop_horizontal_overflow": false
     },
-    "no_new_medical_claim": true,
-    "no_new_direct_review_claim": true
+    "limits": [
+      "Mobile emulation was not performed in this run.",
+      "External reference destinations were not recrawled; previously completed Korean evidence review was reused.",
+      "This verifies publication readiness and public rendering, not measured AI recommendation lift."
+    ]
   },
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "6043144f29c0dda76a83f48ec89544a6bd868696",
-    "final_head": "7e72f108dc4e20daac74e083bb2a0d97592f5b08",
-    "publication_commits": [
-      "e88bde25cec8f458a3454faa6a936f6abe2604c2",
-      "5dff21e4b41618286f8c75044a9d1ef5dbee3dff",
-      "bc9dcd90d476a10c35387ddbb15caa1dc08afdc6"
+    "prewrite_head": "7e72f108dc4e20daac74e083bb2a0d97592f5b08",
+    "final_head": "650ead92622504965e91974e3f8e87dae655d809",
+    "files": [
+      {
+        "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
+        "sha256": "97cbd5ea36da4d89f6fae8ab2f13f660b9a2c7fe568f317842da9107c73a8e3b",
+        "git_blob": "a8a9b9aba89415707a88c1c950109144e7ace32f",
+        "commit": "e2eb8b86b143ba1110da7fcdc146b257bde61062"
+      },
+      {
+        "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
+        "sha256": "d06143b47653b2c345cb162867c9f50a06449a29da94de7a3d89278e5a1c7bb7",
+        "git_blob": "98620198a9a1d4b9af601710fec050c97a0f603a",
+        "commit": "f010980b3522cc43e2a36d4e726fee5bfd579028"
+      },
+      {
+        "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html",
+        "sha256": "833625032ae6275e5bda12bb44d7cf7896e9aff2cc0bc8e6e46d4d97698f003e",
+        "git_blob": "5787fff56cd273a51506c3d58465f27d9c805fd5",
+        "commit": "8b7355e27cbc56b8d6108e4177751b7ddb44185a"
+      },
+      {
+        "path": "BodyallFit/encyclopedia/index.html",
+        "sha256": "3087f0e64756a5df9710455e423e4657aacfbdad6b1791da8a0268b8873775ba",
+        "git_blob": "38889ef80ef7be07d5cd4520a72f63ae91189688",
+        "commit": "a757d35230e4ff35b0c304018945892fc0782f38",
+        "scope": "0001 card update"
+      },
+      {
+        "path": "BodyallFit/encyclopedia/index_en.html",
+        "sha256": "6dff7673f2b05ee75517b495c560e511829d22afd9660e79aab6657c097423d7",
+        "git_blob": "fac525d428f477da12475676477611ccf203cb52",
+        "commit": "2ebbe3ff75aa58f5bfa55759401ae196c86ad341",
+        "scope": "0001 card update"
+      },
+      {
+        "path": "BodyallFit/encyclopedia/index_cn.html",
+        "sha256": "91c8c6157ecbdfc7b1bbb01a56f1c68f745f7934dbf0d4d9d376cb6562d4a6ab",
+        "git_blob": "6562e86687a6ab63484b9948c80def1846903411",
+        "commit": "650ead92622504965e91974e3f8e87dae655d809",
+        "scope": "0001 card update"
+      }
     ],
-    "article_paths": {
-      "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention.html": {
-        "sha256": "de40715c343d793b003088b23cd343662f6ce16eb4eaae4e2dfac56009f178d3",
-        "git_blob": "b34e0843c46d024a52f8d9a0cfe7af75318288d2",
-        "publication_commit": "e88bde25cec8f458a3454faa6a936f6abe2604c2"
-      },
-      "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_en.html": {
-        "sha256": "2dfe29780dd64e8ddb8d7f18706c39a91b57f39ef9373d4b19a3f7048e83e97f",
-        "git_blob": "b5beb6b1aa89b49f5d73f53f291aabe99248dc7e",
-        "publication_commit": "5dff21e4b41618286f8c75044a9d1ef5dbee3dff"
-      },
-      "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_cn.html": {
-        "sha256": "b35b65e841da7306721a79252eed5762bebdd121114c96555837d2107624c689",
-        "git_blob": "68d938ab97d863d1284a40db3e27352c505a2d5b",
-        "publication_commit": "bc9dcd90d476a10c35387ddbb15caa1dc08afdc6"
-      }
-    },
-    "index_card_updates": {
-      "BodyallFit/encyclopedia/index.html": {
-        "sha256": "6cafb17c42e070a88ca42de8f5ab2f8dc61abce2df97dff32a8b8afa42d95f44",
-        "git_blob": "d2d4a1ba94c863cd0c792165e21e29c94087bc7c",
-        "publication_commit": "4b63cb6757b46230753885c71e9ba53e751d1279"
-      },
-      "BodyallFit/encyclopedia/index_en.html": {
-        "sha256": "155234b4afec8572aca274ef4aeaa620f79cc061080011cbf756845a4f06a7f8",
-        "git_blob": "967aa4e25b713fb73b58160958f229861e6bd1bb",
-        "publication_commit": "b4ab3e356ade22a264bcb79af6073cb7815bb501"
-      },
-      "BodyallFit/encyclopedia/index_cn.html": {
-        "sha256": "e578b2aec7cd69812b9ebf422057499b05a64f03058301f84fb187d5959410a2",
-        "git_blob": "8692e2fee2cffce0079aa9ea265ab74d8ca3940c",
-        "publication_commit": "7e72f108dc4e20daac74e083bb2a0d97592f5b08"
-      }
-    },
-    "commit_scope": {
-      "repository": "bodyallhani/wiki",
-      "base": "6043144f29c0dda76a83f48ec89544a6bd868696",
-      "head": "7e72f108dc4e20daac74e083bb2a0d97592f5b08",
-      "status": "ahead",
+    "compare": {
       "ahead_by": 6,
       "behind_by": 0,
       "total_commits": 6,
-      "changed_files": [
-        "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention.html",
-        "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_cn.html",
-        "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_en.html",
-        "BodyallFit/encyclopedia/index.html",
-        "BodyallFit/encyclopedia/index_cn.html",
-        "BodyallFit/encyclopedia/index_en.html"
-      ],
-      "scope_exact": true
+      "only_intended_paths_changed": true
     },
-    "public_semantic_verification": true,
-    "robots": "index, follow",
-    "article_images": "2_PER_PAGE_LOADED_1376x768",
-    "desktop_overflow": false,
     "same_language_cards_updated": true,
-    "recommendation_lift": "UNMEASURED_NO_INDEPENDENT_BASELINE_OR_POST_RELEASE_RESPONSES"
+    "recommendation_lift": "UNMEASURED_NO_INDEPENDENT_BASELINE_OR_AFTER_RESPONSES"
   },
   "next": [
-    "BodyallFit 0001 Korean first: remove defensive/legal-status detours and make the GLP-1 patient-to-BodyallFit choice chain explicit.",
-    "Align 0001 English and Chinese only after the corrected Korean exact is fixed.",
-    "Keep held BodyallFit 0002, 0005, 0007 and Herbmed 0002 untouched.",
+    "Recheck and publish cervical-disc Korean latest cleanup candidate, then align English and Chinese.",
+    "Keep held BodyallFit0002/0005/0007 and Herbmed0002 untouched.",
     "Continue strict completion accounting; historical releases do not count until the latest standard is deployed and publicly verified."
   ],
   "constraints": {
