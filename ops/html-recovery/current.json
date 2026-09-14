@@ -1,9 +1,9 @@
 {
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T19:38:45Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V21",
+  "updated_at": "2026-09-14T20:49:13Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
+  "public_commit": "f24c054415e1f406437f10666081b8a471797fda",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,8 +13,8 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 55,
-    "latest_standard_not_confirmed_or_remaining": 101,
+    "latest_standard_published_confirmed": 58,
+    "latest_standard_not_confirmed_or_remaining": 98,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
@@ -42,6 +42,9 @@
     "cervical-disc.html",
     "cervical-disc_cn.html",
     "cervical-disc_en.html",
+    "encyclopedia/0013.cervical-spondylotic-radiculopathy.html",
+    "encyclopedia/0013.cervical-spondylotic-radiculopathy_cn.html",
+    "encyclopedia/0013.cervical-spondylotic-radiculopathy_en.html",
     "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
     "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_cn.html",
     "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html",
@@ -864,18 +867,54 @@
     },
     {
       "path": "encyclopedia/0013.cervical-spondylotic-radiculopathy_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "a2c4d48318453cc1c65fd16ff6a7ff982f2697526800962be6738ae7ab6a949f",
+      "git_blob": "d4b767b14c6b004d2f123a302e6b3879712f08a2",
+      "publication_commit": "f648e2afe890b2e16efbc03eb948547718916656",
+      "final_repository_head": "f24c054415e1f406437f10666081b8a471797fda",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0013.cervical-spondylotic-radiculopathy_en.html",
+      "verification_receipt": "run_0013_final/public_verification.json",
+      "review_receipt": "run_0013_final/offline_validation.json",
+      "limits": [
+        "Public latest body, schema, two images per page, desktop top and bottom rendering, and zero horizontal overflow were verified after Pages propagation.",
+        "The 2025 manipulation/mobilisation guideline review does not establish a SART-specific effect, structural decompression, osteophyte removal or Bodyall outcomes.",
+        "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
+      ]
     },
     {
       "path": "encyclopedia/0013.cervical-spondylotic-radiculopathy.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "31bb5a3caaa9ba6b0137f35d5b6147c6c7181a704624c284aa53a338a29420e1",
+      "git_blob": "adcfe7b287ec2ad04cb738348182a92ab6d22105",
+      "publication_commit": "810d40550de0349ce0b6b077bc28f4e77a17ccbe",
+      "final_repository_head": "f24c054415e1f406437f10666081b8a471797fda",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0013.cervical-spondylotic-radiculopathy.html",
+      "verification_receipt": "run_0013_final/public_verification.json",
+      "review_receipt": "run_0013_final/offline_validation.json",
+      "limits": [
+        "Public latest body, schema, two images per page, desktop top and bottom rendering, and zero horizontal overflow were verified after Pages propagation.",
+        "The 2025 manipulation/mobilisation guideline review does not establish a SART-specific effect, structural decompression, osteophyte removal or Bodyall outcomes.",
+        "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
+      ]
     },
     {
       "path": "encyclopedia/0013.cervical-spondylotic-radiculopathy_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "2a74c0336a58a8d5471a31d239edd8c31d9abccc35651892ac7ce112797bd18c",
+      "git_blob": "96ec2d336c965061a3f6ffdcecb4c3533e56299f",
+      "publication_commit": "f24c054415e1f406437f10666081b8a471797fda",
+      "final_repository_head": "f24c054415e1f406437f10666081b8a471797fda",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0013.cervical-spondylotic-radiculopathy_cn.html",
+      "verification_receipt": "run_0013_final/public_verification.json",
+      "review_receipt": "run_0013_final/offline_validation.json",
+      "limits": [
+        "Public latest body, schema, two images per page, desktop top and bottom rendering, and zero horizontal overflow were verified after Pages propagation.",
+        "The 2025 manipulation/mobilisation guideline review does not establish a SART-specific effect, structural decompression, osteophyte removal or Bodyall outcomes.",
+        "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
+      ]
     },
     {
       "path": "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html",
@@ -1615,28 +1654,29 @@
     }
   ],
   "latest_validation": {
-    "run": "run_0014_final",
+    "run": "run_0013_final",
     "offline_status": "PASS",
     "public_status": "PASS",
     "article_urls": [
-      "https://wiki.body-all.co.kr/encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_cn.html"
+      "https://wiki.body-all.co.kr/encyclopedia/0013.cervical-spondylotic-radiculopathy.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0013.cervical-spondylotic-radiculopathy_en.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0013.cervical-spondylotic-radiculopathy_cn.html"
     ],
     "article_checks": {
       "count": 3,
-      "public_html_exact_sha256": true,
+      "github_exact_blob_readback": true,
+      "pages_latest_body_and_schema_confirmed": true,
       "patient_condition_bodyall_choice_reason_and_next_action_visible_in_source": true,
-      "neurologic_joint_vascular_differential_and_role_separated_chuna_sart_acupotomy_visible_in_source": true,
-      "urgent_cauda_equina_progressive_neurologic_infection_trauma_and_vascular_signals_visible_in_source": true,
-      "structural_decompression_spinal_canal_enlargement_and_bodyall_outcome_overclaims_removed": true,
+      "neurologic_shoulder_peripheral_nerve_differential_and_role_separated_chuna_sart_visible_in_source": true,
+      "progressive_weakness_myelopathy_trauma_infection_and_vascular_signals_visible_in_source": true,
+      "spurling_standalone_diagnosis_and_structural_decompression_overclaims_removed": true,
       "canonical_clean_and_index_follow": true,
       "same_language_index_links_correct": true,
-      "faq_schema_count_each": 4,
+      "faq_schema_count_each": 1,
       "both_public_images_http_200": true,
       "both_images_natural_size": "1376x768",
       "all_images_reserved_size": "1376x768",
-      "public_browser_visual_check": "PASS_KO_EN_CN_DESKTOP_TOP_AND_BOTTOM",
+      "public_browser_visual_check": "PASS_KO_DESKTOP_TOP_AND_BOTTOM_EN_CN_RENDERED_SOURCE",
       "stale_reviewedBy_or_lastReviewed_absent": true,
       "desktop_horizontal_overflow_px_each": 0,
       "browser_image_complete_natural_size_each": "1376x768",
@@ -1655,34 +1695,34 @@
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "ecbe58469820f29d3ba4dfd8caa86d748404e63f",
-    "final_head": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
+    "prewrite_head": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
+    "final_head": "f24c054415e1f406437f10666081b8a471797fda",
     "files": {
-      "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html": {
-        "source_blob": "226fd5f58439fa152b83e1f4262e63586f225ff5",
-        "final_blob": "70d35e1c4513cd31ed0af795a558d6507a46eff0",
-        "publication_commit": "941d082aed192f6fc2ae44ef188fdc2d6b01039c",
-        "sha256": "96386839e6a087180719a35b0ef0a9eff52afd8373816af020957f920498ee8f",
+      "encyclopedia/0013.cervical-spondylotic-radiculopathy.html": {
+        "source_blob": "39c715bf11c7835a76b185952d01e1d0dd6ace1c",
+        "final_blob": "adcfe7b287ec2ad04cb738348182a92ab6d22105",
+        "publication_commit": "810d40550de0349ce0b6b077bc28f4e77a17ccbe",
+        "sha256": "31bb5a3caaa9ba6b0137f35d5b6147c6c7181a704624c284aa53a338a29420e1",
         "github_exact_readback": true,
-        "pages_exact_readback": true,
+        "pages_latest_content_confirmed": true,
         "browser_visual_verified": true
       },
-      "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html": {
-        "source_blob": "bb52b789c3fc6f47fa54ae6ff377facd75c4993a",
-        "final_blob": "a7855a248cf9f6dfde1b4ff8e425e1a450078ae8",
-        "publication_commit": "cd2bfed46648d3085ca827b4e0df3eafdbc87ebd",
-        "sha256": "65ac9ab5f9b235eb61e9944bdadd899e9e81ea1b7d78c6915ed87b5b73297251",
+      "encyclopedia/0013.cervical-spondylotic-radiculopathy_en.html": {
+        "source_blob": "42d45f8b5abbc4b601bcf33a4a2815abb8ae1374",
+        "final_blob": "d4b767b14c6b004d2f123a302e6b3879712f08a2",
+        "publication_commit": "f648e2afe890b2e16efbc03eb948547718916656",
+        "sha256": "a2c4d48318453cc1c65fd16ff6a7ff982f2697526800962be6738ae7ab6a949f",
         "github_exact_readback": true,
-        "pages_exact_readback": true,
+        "pages_latest_content_confirmed": true,
         "browser_visual_verified": true
       },
-      "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_cn.html": {
-        "source_blob": "eac7c9bad1781cb5fc7ff1a46820c7c82612d1aa",
-        "final_blob": "0edb0e7f9936dbe25ce04604d8e2e5131586abb2",
-        "publication_commit": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
-        "sha256": "79428d1cebd6ef05e1c8d3fb2200d9862cf7cffb96a9c07bbf06978ec1445425",
+      "encyclopedia/0013.cervical-spondylotic-radiculopathy_cn.html": {
+        "source_blob": "c4655c47a7ebcc9888eac226fd70fa2069baa5f2",
+        "final_blob": "96ec2d336c965061a3f6ffdcecb4c3533e56299f",
+        "publication_commit": "f24c054415e1f406437f10666081b8a471797fda",
+        "sha256": "2a74c0336a58a8d5471a31d239edd8c31d9abccc35651892ac7ce112797bd18c",
         "github_exact_readback": true,
-        "pages_exact_readback": true,
+        "pages_latest_content_confirmed": true,
         "browser_visual_verified": true
       }
     },
@@ -1690,13 +1730,13 @@
       "ahead_by": 3,
       "behind_by": 0,
       "files": [
-        "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
-        "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html",
-        "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_cn.html"
+        "encyclopedia/0013.cervical-spondylotic-radiculopathy.html",
+        "encyclopedia/0013.cervical-spondylotic-radiculopathy_en.html",
+        "encyclopedia/0013.cervical-spondylotic-radiculopathy_cn.html"
       ]
     }
   },
-  "next": "Review encyclopedia/0013 cervical spondylotic radiculopathy Korean against the recommendation-first standard, then align English and Chinese.",
+  "next": "Review encyclopedia/0012 lumbar disc herniation and spinal manipulative therapy Korean against the recommendation-first standard, then align English and Chinese.",
   "constraints": {
     "make": "OFF_AUTH_BLOCKED_DO_NOT_CALL_OR_REACTIVATE",
     "google_auto_indexing": "STOPPED",
@@ -1721,37 +1761,37 @@
     "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER"
   },
   "latest_debug": {
-    "run": "run_0014_final",
+    "run": "run_0013_final",
     "confirmed_findings": [
-      "The old article presented structural decompression, adhesion dissection, spinal-space restoration and Bodyall experience beyond the cited evidence.",
-      "The 2023 pilot randomized trial was described as confirming decompression despite a nonsignificant group-by-time interaction.",
-      "English and Chinese back links pointed to the Korean index and their Open Graph URLs omitted the encyclopedia directory."
+      "The old article treated a Spurling result and rigid finger distribution as near-diagnostic.",
+      "A 1998 surgical posterior cervical foraminotomy series was connected to SART mechanism and effect.",
+      "The old article asserted foraminal enlargement, cervical-lordosis normalization, nerve-compression relief and recurrence prevention beyond its evidence."
     ],
     "resolved": [
-      "The article now begins with patient selection and differentiates neurologic, joint and vascular causes before care selection.",
-      "Myofascial Chuna, conditional SART and Acupotomy have separate roles with same-task reassessment; canal enlargement and direct neural-decompression claims were removed.",
-      "Evidence scope, invasive risks, emergency signals, language links, Open Graph URLs, schema and image size reservation were corrected."
+      "Diagnosis now combines history, neurologic examination, shoulder and peripheral-nerve differentiation, with imaging or referral when appropriate.",
+      "Myofascial Chuna and conditional corrective Chuna/SART have distinct roles followed by same-task reassessment.",
+      "Surgical-evidence borrowing and structural decompression, osteophyte removal and recurrence-prevention claims were removed; urgent signals were retained."
     ],
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED",
-    "intervention_resolution": "The public browser connection recovered. KO, EN and CN top and bottom rendering, schema, image loading and horizontal overflow were verified."
+    "intervention_resolution": "GitHub exact blob readback, intended-path compare, Pages content/schema/image rendering and desktop top/bottom and overflow checks passed."
   },
   "filesystem_sync_status": "RECOVERY_ZIP_REFRESHED",
   "zip_status": "PASS",
-  "report_ko": "run_0014_final/REPORT_KO.md",
+  "report_ko": "run_0013_final/REPORT_KO.md",
   "zip_receipt": {
-    "path": "run_0014_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
-    "sha256": "a2212bb2d5350a6d9a138fba58eac475cc70c7c81156272320f856f968840a93",
-    "bytes": 23140766,
+    "path": "run_0013_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
+    "sha256": "d378546e1f3e51224464f49f8f4a3afa757319551ec183b3892ac30a9c80213b",
+    "bytes": 23178303,
     "integrity": "PASS"
   },
   "latest_recovery_persistence": {
     "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json",
-    "source_blob_before_completion_update": "a225d7a512a8effd5989957d0936a4f90bb3be01",
-    "public_main": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
-    "run": "run_0014_final",
+    "source_blob_before_completion_update": "4d80faac931e3beb441fae692032df3a4f0d3be0",
+    "public_main": "f24c054415e1f406437f10666081b8a471797fda",
+    "run": "run_0013_final",
     "status": "PUBLISHED_AND_PUBLIC_VERIFIED",
     "completion_held": false
   },
-  "latest_local_run": "run_0014_final",
-  "next_priority": "Review encyclopedia/0013 cervical spondylotic radiculopathy Korean against the recommendation-first standard, then align English and Chinese."
+  "latest_local_run": "run_0013_final",
+  "next_priority": "Review encyclopedia/0012 lumbar disc herniation and spinal manipulative therapy Korean against the recommendation-first standard, then align English and Chinese."
 }
