@@ -1408,9 +1408,9 @@
   "latest_recovery_persistence": {
     "branch": "recovery/html-20260914",
     "path": "ops/html-recovery/current.json",
-    "first_update_commit": "bd6e7b8dbd430706b01e0fe1bf1106b5021b9cca",
-    "first_update_blob": "a36a0608cddaa0bb87aefa8a872ae2ffcbad4568",
+    "first_update_commit": "df0ea6b0c0f13468c5842011c28840da62e160dc",
+    "first_update_blob": "6642e2453d0a8599d94be88df21d5b6f7e5e2403",
     "first_update_exact_readback": true,
-    "note": "A final metadata-only update records the completed ZIP state; the public HTML head remains unchanged."
+    "note": "A final metadata-only update records this persistence result; the public HTML head remains unchanged."
   }
 }
