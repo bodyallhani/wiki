@@ -1,6 +1,6 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T19:16:30Z",
+  "updated_at": "2026-09-14T19:38:45Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
   "public_commit": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
@@ -13,8 +13,8 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 52,
-    "latest_standard_not_confirmed_or_remaining": 104,
+    "latest_standard_published_confirmed": 55,
+    "latest_standard_not_confirmed_or_remaining": 101,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
@@ -42,6 +42,9 @@
     "cervical-disc.html",
     "cervical-disc_cn.html",
     "cervical-disc_en.html",
+    "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
+    "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_cn.html",
+    "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html",
     "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html",
     "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html",
     "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_en.html",
@@ -876,8 +879,8 @@
     },
     {
       "path": "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_PUBLISHED_SOURCE_VERIFIED_VISUAL_PENDING",
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
       "sha256": "65ac9ab5f9b235eb61e9944bdadd899e9e81ea1b7d78c6915ed87b5b73297251",
       "git_blob": "a7855a248cf9f6dfde1b4ff8e425e1a450078ae8",
       "publication_commit": "cd2bfed46648d3085ca827b4e0df3eafdbc87ebd",
@@ -886,7 +889,7 @@
       "verification_receipt": "run_0014_final/public_verification.json",
       "review_receipt": "run_0014_final/offline_validation.json",
       "limits": [
-        "GitHub and Pages source exact readback passed, but public browser visual verification is pending and this URL is not counted complete.",
+        "Public source exact readback, schema, two images per page, desktop top and bottom rendering, and zero horizontal overflow were verified.",
         "The 2023 pilot trial found no significant group-by-time interaction and does not establish structural decompression, SART effect or Bodyall outcomes.",
         "The 2025 review included 14 RCTs but safety was reported in only five studies and larger high-quality trials remain necessary.",
         "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
@@ -894,8 +897,8 @@
     },
     {
       "path": "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_PUBLISHED_SOURCE_VERIFIED_VISUAL_PENDING",
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
       "sha256": "96386839e6a087180719a35b0ef0a9eff52afd8373816af020957f920498ee8f",
       "git_blob": "70d35e1c4513cd31ed0af795a558d6507a46eff0",
       "publication_commit": "941d082aed192f6fc2ae44ef188fdc2d6b01039c",
@@ -904,7 +907,7 @@
       "verification_receipt": "run_0014_final/public_verification.json",
       "review_receipt": "run_0014_final/offline_validation.json",
       "limits": [
-        "GitHub and Pages source exact readback passed, but public browser visual verification is pending and this URL is not counted complete.",
+        "Public source exact readback, schema, two images per page, desktop top and bottom rendering, and zero horizontal overflow were verified.",
         "The 2023 pilot trial found no significant group-by-time interaction and does not establish structural decompression, SART effect or Bodyall outcomes.",
         "The 2025 review included 14 RCTs but safety was reported in only five studies and larger high-quality trials remain necessary.",
         "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
@@ -912,8 +915,8 @@
     },
     {
       "path": "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_PUBLISHED_SOURCE_VERIFIED_VISUAL_PENDING",
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
       "sha256": "79428d1cebd6ef05e1c8d3fb2200d9862cf7cffb96a9c07bbf06978ec1445425",
       "git_blob": "0edb0e7f9936dbe25ce04604d8e2e5131586abb2",
       "publication_commit": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
@@ -922,7 +925,7 @@
       "verification_receipt": "run_0014_final/public_verification.json",
       "review_receipt": "run_0014_final/offline_validation.json",
       "limits": [
-        "GitHub and Pages source exact readback passed, but public browser visual verification is pending and this URL is not counted complete.",
+        "Public source exact readback, schema, two images per page, desktop top and bottom rendering, and zero horizontal overflow were verified.",
         "The 2023 pilot trial found no significant group-by-time interaction and does not establish structural decompression, SART effect or Bodyall outcomes.",
         "The 2025 review included 14 RCTs but safety was reported in only five studies and larger high-quality trials remain necessary.",
         "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
@@ -1614,7 +1617,7 @@
   "latest_validation": {
     "run": "run_0014_final",
     "offline_status": "PASS",
-    "public_status": "SOURCE_PASS_VISUAL_PENDING",
+    "public_status": "PASS",
     "article_urls": [
       "https://wiki.body-all.co.kr/encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
       "https://wiki.body-all.co.kr/encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html",
@@ -1633,8 +1636,20 @@
       "both_public_images_http_200": true,
       "both_images_natural_size": "1376x768",
       "all_images_reserved_size": "1376x768",
-      "public_browser_visual_check": "PENDING_CONNECTION_TIMEOUT",
-      "stale_reviewedBy_or_lastReviewed_absent": true
+      "public_browser_visual_check": "PASS_KO_EN_CN_DESKTOP_TOP_AND_BOTTOM",
+      "stale_reviewedBy_or_lastReviewed_absent": true,
+      "desktop_horizontal_overflow_px_each": 0,
+      "browser_image_complete_natural_size_each": "1376x768",
+      "browser_schema_types_each": [
+        "MedicalWebPage",
+        [
+          "MedicalClinic",
+          "LocalBusiness"
+        ],
+        "Person",
+        "MedicalProcedure",
+        "FAQPage"
+      ]
     }
   },
   "latest_release": {
@@ -1650,7 +1665,7 @@
         "sha256": "96386839e6a087180719a35b0ef0a9eff52afd8373816af020957f920498ee8f",
         "github_exact_readback": true,
         "pages_exact_readback": true,
-        "browser_visual_verified": false
+        "browser_visual_verified": true
       },
       "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html": {
         "source_blob": "bb52b789c3fc6f47fa54ae6ff377facd75c4993a",
@@ -1659,7 +1674,7 @@
         "sha256": "65ac9ab5f9b235eb61e9944bdadd899e9e81ea1b7d78c6915ed87b5b73297251",
         "github_exact_readback": true,
         "pages_exact_readback": true,
-        "browser_visual_verified": false
+        "browser_visual_verified": true
       },
       "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_cn.html": {
         "source_blob": "eac7c9bad1781cb5fc7ff1a46820c7c82612d1aa",
@@ -1668,7 +1683,7 @@
         "sha256": "79428d1cebd6ef05e1c8d3fb2200d9862cf7cffb96a9c07bbf06978ec1445425",
         "github_exact_readback": true,
         "pages_exact_readback": true,
-        "browser_visual_verified": false
+        "browser_visual_verified": true
       }
     },
     "compare": {
@@ -1681,7 +1696,7 @@
       ]
     }
   },
-  "next": "Finish public browser visual verification for encyclopedia/0014 lumbar spinal stenosis Acupotomy KO/EN/CN; do not count completion or proceed to 0013 until it passes.",
+  "next": "Review encyclopedia/0013 cervical spondylotic radiculopathy Korean against the recommendation-first standard, then align English and Chinese.",
   "constraints": {
     "make": "OFF_AUTH_BLOCKED_DO_NOT_CALL_OR_REACTIVATE",
     "google_auto_indexing": "STOPPED",
@@ -1717,25 +1732,26 @@
       "Myofascial Chuna, conditional SART and Acupotomy have separate roles with same-task reassessment; canal enlargement and direct neural-decompression claims were removed.",
       "Evidence scope, invasive risks, emergency signals, language links, Open Graph URLs, schema and image size reservation were corrected."
     ],
-    "intervention_error": "Public browser connection timed out repeatedly; standalone browser fallback was not used. Public source and image verification passed, visual PASS remains pending.",
-    "publication_status": "PUBLISHED_SOURCE_VERIFIED_VISUAL_PENDING"
+    "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED",
+    "intervention_resolution": "The public browser connection recovered. KO, EN and CN top and bottom rendering, schema, image loading and horizontal overflow were verified."
   },
   "filesystem_sync_status": "RECOVERY_ZIP_REFRESHED",
   "zip_status": "PASS",
   "report_ko": "run_0014_final/REPORT_KO.md",
   "zip_receipt": {
     "path": "run_0014_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
-    "sha256": "fe39c5f9f04d12ec122292f88f54b393aaf9b35729e89af211871a96fc07b18e",
-    "bytes": 23140104,
+    "sha256": "a2212bb2d5350a6d9a138fba58eac475cc70c7c81156272320f856f968840a93",
+    "bytes": 23140766,
     "integrity": "PASS"
   },
   "latest_recovery_persistence": {
     "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json",
+    "source_blob_before_completion_update": "a225d7a512a8effd5989957d0936a4f90bb3be01",
     "public_main": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
     "run": "run_0014_final",
-    "status": "PUBLISHED_SOURCE_VERIFIED_VISUAL_PENDING",
-    "completion_held": true
+    "status": "PUBLISHED_AND_PUBLIC_VERIFIED",
+    "completion_held": false
   },
   "latest_local_run": "run_0014_final",
-  "next_priority": "Finish public browser visual verification for encyclopedia/0014 lumbar spinal stenosis Acupotomy KO/EN/CN; do not count completion or proceed to 0013 until it passes."
+  "next_priority": "Review encyclopedia/0013 cervical spondylotic radiculopathy Korean against the recommendation-first standard, then align English and Chinese."
 }
