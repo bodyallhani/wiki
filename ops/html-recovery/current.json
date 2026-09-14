@@ -1,6 +1,6 @@
 {
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V212",
-  "updated_at": "2026-09-14T21:31:48Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V213",
+  "updated_at": "2026-09-14T21:36:00Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
   "public_commit": "c62ad210e8e2c669daa067289a4310487b325664",
@@ -1849,8 +1849,8 @@
   "report_ko": "run_0012_final/REPORT_KO.md",
   "zip_receipt": {
     "path": "run_0012_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
-    "sha256": "37e3b8745bc52f330411bc021117bba610a2a6c720046155350031ea885cf5c4",
-    "bytes": 23278613,
+    "sha256": "94474c40b77e60052b47ead4c928c6831089306788b81a6c2ce69f6836686fa1",
+    "bytes": 23340563,
     "integrity": "PASS"
   },
   "latest_recovery_persistence": {
