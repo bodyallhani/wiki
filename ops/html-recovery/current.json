@@ -1491,22 +1491,23 @@
     "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER"
   },
   "latest_debug": {
-    "run": "run_pain_hub_final",
+    "run": "run_0019_final",
     "confirmed_findings": [
-      "The verifier initially depended on an unavailable third-party HTML parser; the page candidates themselves were not the cause.",
-      "The first static assertions counted x-default hreflang and the navigation logo incorrectly, producing false failures.",
-      "Root-card images are lazy and require the card region to enter the viewport before natural dimensions can be tested."
+      "The second same-named automation is read-only publication monitoring and does not write legacy HTML.",
+      "Prior commits from the other thread remain ancestors of main; no overwrite or divergent target-file change was found.",
+      "The mutating automation previously relied on stale local paths and lacked an explicit cross-thread prewrite recheck.",
+      "The first Pages request returned the prior cached version, and one synthesized scroll gesture timed out."
     ],
     "resolved": [
-      "Rebuilt the validator with Python standard-library parsing and corrected the scope of hreflang, article-image, CTA and language-specific root-image assertions.",
-      "Obtained a zero-error offline result, exact GitHub blob readback, six-file commit-range check and public DOM/schema checks.",
-      "Scrolled each target card into view and confirmed the shared thumbnail loaded at its reserved 4082x3073 dimensions without horizontal overflow."
+      "The active mutating automation now treats GitHub recovery current.json as the single source of truth and rechecks main head, target blob and ledger immediately before every write.",
+      "Stale-SHA retries are forbidden; changed targets are discarded or rebased, each file is read back exactly, and one KO/EN/CN topic is handled per run.",
+      "After one controlled wait, a fresh browser tab verified all three published pages, both images per page and zero desktop horizontal overflow."
     ],
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED"
   },
   "filesystem_sync_status": "LOCAL_SYNCED_AND_GUARD_PASS",
   "zip_status": "BUILT_AND_INTEGRITY_VERIFIED",
-  "report_ko": "run_0020_final/REPORT_KO.md",
+  "report_ko": "run_0019_final/REPORT_KO.md",
   "zip_receipt": {
     "integrity": "PASS",
     "receipt": "run_0019_final/zip_receipt.json",
@@ -1516,8 +1517,8 @@
   "latest_recovery_persistence": {
     "branch": "recovery/html-20260914",
     "path": "ops/html-recovery/current.json",
-    "first_update_commit": "3c77d051dd5a0aa93a9a7c6806f205f93e460b6d",
-    "first_update_blob": "ac86ed9684d75d64025f5e2f09b982389c8c6736",
+    "first_update_commit": "dab464e8d6b253ab2a88476a35150bed96c2576f",
+    "first_update_blob": "9f5ea2c9a1165db62e7d151f92052ba18a96caa8",
     "first_update_exact_readback": true,
     "note": "A final metadata-only update records this persistence result; the public HTML head remains unchanged."
   },
