@@ -1,17 +1,17 @@
 {
   "version": "BODYALL_GITHUB_RESTART_V1",
-  "date": "2026-09-14T01:46:24.678867+00:00",
+  "date": "2026-09-14T02:20:21.946274+00:00",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "09768453a5f81c88a5654b50e29de19ac3a49dd4",
+  "public_commit": "7ad0d030eea657e7cffa08b1b9dc7284ad96ee65",
   "recovery_branch": "recovery/html-20260914",
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 5,
-    "latest_standard_not_confirmed_or_remaining": 151,
+    "latest_standard_published_confirmed": 7,
+    "latest_standard_not_confirmed_or_remaining": 149,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
-    "revised_publications_this_turn": 1
+    "revised_publications_this_turn": 2
   },
   "rules": {
     "primary_goal": "AI can credibly recommend Bodyall and the topic-appropriate treatment for eligible patient/local needs. Measured recommendation remains separate from editorial readiness.",
@@ -35,7 +35,8 @@
     "model_changes": "NONE; user says Claude is chosen for humanlike writing; no pipeline/model/budget change",
     "review_attestation": "Only actual physician-approved scope is attributed; editorial inspection is not physician review",
     "completion_rule": "Latest standard applied AND deployed AND public-verified only",
-    "recovery": "Keep compact restart state on GitHub recovery branch; published HTML remains on main. Full historical ZIP remains local until separately saved; do not claim compact checkpoint is full archival backup."
+    "recovery": "Keep compact restart state on GitHub recovery branch; published HTML remains on main. Full historical ZIP remains local until separately saved; do not claim compact checkpoint is full archival backup.",
+    "next_priority": "BodyallFit0003 KO final: patch only known percentage-point/caveat/choice defects, then align EN/CN; reuse existing evidence."
   },
   "measurement": {
     "version": "BODYALL_OBSERVED_RECOMMENDATION_v1",
@@ -117,83 +118,156 @@
     "google_measurement_reference": "https://developers.google.com/search/docs/appearance/ai-features"
   },
   "latest_validation": {
-    "path": "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support.html",
-    "sha256": "46a273ee7ba9ea06f1ff676b284b9bbc656d803f7079d49d5e463b86a12c2d1f",
-    "git_blob": "8298052aebb2486d7a5ccf8f05fe8b6168a83bec",
-    "checks": {
-      "same_css": true,
-      "same_images": true,
-      "same_canonical": true,
-      "same_language_links": true,
-      "same_reference_links": true,
-      "same_footer": true,
-      "safety_box_unchanged": true,
-      "faq_matches_schema": true,
-      "indexed_eligible": true,
-      "no_false_new_review": true,
-      "description_aligned": true,
-      "all_fragment_targets": true,
-      "research_numbers_preserved": true,
-      "no_irrelevant_sart_instruction": true,
-      "one_source_scope": true
+    "en": {
+      "path": "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_en.html",
+      "source_sha256": "f340d5c7287b1c97013fa5a50b88d9f36d7eadac8f23361bafe324eac5ff25ea",
+      "candidate_sha256": "87cb7f49c89ec781ee4dc054b442f10e85c837a0d2ce9d0860b994755aaa5c58",
+      "git_blob": "deffc958e8e9052f829d73b0c156f777a05c6cc7",
+      "korean_source_sha256": "46a273ee7ba9ea06f1ff676b284b9bbc656d803f7079d49d5e463b86a12c2d1f",
+      "checks": {
+        "same_css": true,
+        "same_images": true,
+        "intentional_link_delta": true,
+        "reference_destinations_preserved": true,
+        "same_canonical": true,
+        "same_hreflang": true,
+        "correct_language": true,
+        "index_follow": true,
+        "faq_schema_visible": true,
+        "ko_exact_lineage": true,
+        "no_new_full_review_claim": true,
+        "provider_person_retained": true,
+        "research_numbers_preserved": true,
+        "material_safety_preserved": true,
+        "one_evidence_scope": true,
+        "removed_repetitive_mechanism_denial": true,
+        "no_new_efficacy_or_superiority": true
+      },
+      "errors": [],
+      "images": 2,
+      "faq": 4,
+      "references": 5,
+      "evidence_reused": "run_0004_ko/source_review.json; Berg abstract-only limit unchanged",
+      "new_medical_claims": false,
+      "independent_language_or_physician_review_claimed": false,
+      "stage": "LOCAL_VALIDATED"
     },
-    "errors": [],
-    "images": 2,
-    "faq": 4,
-    "original_evidence_receipt": "run_0004_ko/source_review.json",
-    "full_text_limits": "Berg meta-analysis reviewed at public abstract level only, unchanged limitation retained internally.",
-    "authorization": "Owner explicitly authorizes existing-page choice cleanup and publication; confirmed operating facts only, unchanged medical findings/risks; no new personal physician review claimed.",
-    "new_efficacy_claims": false,
-    "scope": "KO only; new EN/CN final alignment still pending",
-    "stage": "LOCAL_VALIDATED"
+    "cn": {
+      "path": "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_cn.html",
+      "source_sha256": "defa22a11a091cb7e057e07fd289fba86e6a699582ca2ab909c9e937c87a53e6",
+      "candidate_sha256": "1d2bfb40f733d729aaf002d77b19220fe3ed20c5a2b65eed344b67254dd96bc5",
+      "git_blob": "95c7e5ff4800d316bcbd20abe4447c178e7069cf",
+      "korean_source_sha256": "46a273ee7ba9ea06f1ff676b284b9bbc656d803f7079d49d5e463b86a12c2d1f",
+      "checks": {
+        "same_css": true,
+        "same_images": true,
+        "intentional_link_delta": true,
+        "reference_destinations_preserved": true,
+        "same_canonical": true,
+        "same_hreflang": true,
+        "correct_language": true,
+        "index_follow": true,
+        "faq_schema_visible": true,
+        "ko_exact_lineage": true,
+        "no_new_full_review_claim": true,
+        "provider_person_retained": true,
+        "research_numbers_preserved": true,
+        "material_safety_preserved": true,
+        "one_evidence_scope": true,
+        "removed_repetitive_mechanism_denial": true,
+        "no_new_efficacy_or_superiority": true
+      },
+      "errors": [],
+      "images": 2,
+      "faq": 4,
+      "references": 5,
+      "evidence_reused": "run_0004_ko/source_review.json; Berg abstract-only limit unchanged",
+      "new_medical_claims": false,
+      "independent_language_or_physician_review_claimed": false,
+      "stage": "LOCAL_VALIDATED"
+    }
   },
   "latest_release": {
-    "prewrite": {
-      "blob": "ba66c4947ab0bd288e8639dff7f11a78a9b86172",
-      "head": "864deee052510f1c6bedf7cb4d29a7d4c9de167c"
-    },
-    "release": {
-      "commit_sha": "09768453a5f81c88a5654b50e29de19ac3a49dd4",
-      "content_sha": "8298052aebb2486d7a5ccf8f05fe8b6168a83bec"
-    },
-    "public": {
-      "fields": {
-        "body": true,
-        "canonical": true,
-        "css": true,
-        "images": true,
-        "links": true,
-        "schema": true,
-        "title": true
-      },
-      "images": [
-        {
-          "height": 424.171875,
-          "loaded": true,
-          "naturalHeight": 768,
-          "naturalWidth": 1376,
-          "src": "./image/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support-1.webp",
-          "width": 760
+    "checked_at": "2026-09-14T02:20:21.946274+00:00",
+    "public_head_after_article_and_card_updates": "7ad0d030eea657e7cffa08b1b9dc7284ad96ee65",
+    "articles": {
+      "en": {
+        "sha256": "87cb7f49c89ec781ee4dc054b442f10e85c837a0d2ce9d0860b994755aaa5c58",
+        "git_blob": "deffc958e8e9052f829d73b0c156f777a05c6cc7",
+        "publication_commit": "05f6d14ff07bbdba7b099ce7e77c2c7b90d43fa1",
+        "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_en.html",
+        "public_semantic_exact": {
+          "title": true,
+          "body": true,
+          "canonical": true,
+          "links": true,
+          "schema": true,
+          "css": true,
+          "images": true
         },
-        {
-          "height": 424.171875,
-          "loaded": true,
-          "naturalHeight": 768,
-          "naturalWidth": 1376,
-          "src": "./image/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support-2.webp",
-          "width": 760
-        }
-      ],
-      "overflow": false,
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support.html",
-      "viewport": {
-        "height": 936,
-        "width": 1363
+        "robots": "index, follow",
+        "image_count": 2,
+        "images_loaded": true,
+        "natural_dimensions": [
+          [
+            1376,
+            768
+          ],
+          [
+            1376,
+            768
+          ]
+        ],
+        "responsive_ratio_preserved": true,
+        "desktop_overflow": false
+      },
+      "cn": {
+        "sha256": "1d2bfb40f733d729aaf002d77b19220fe3ed20c5a2b65eed344b67254dd96bc5",
+        "git_blob": "95c7e5ff4800d316bcbd20abe4447c178e7069cf",
+        "publication_commit": "3aaf89b8427b1d2956c932ccb9dc6ec88f3458da",
+        "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_cn.html",
+        "public_semantic_exact": {
+          "title": true,
+          "body": true,
+          "canonical": true,
+          "links": true,
+          "schema": true,
+          "css": true,
+          "images": true
+        },
+        "robots": "index, follow",
+        "image_count": 2,
+        "images_loaded": true,
+        "natural_dimensions": [
+          [
+            1376,
+            768
+          ],
+          [
+            1376,
+            768
+          ]
+        ],
+        "responsive_ratio_preserved": true,
+        "desktop_overflow": false
       }
     },
-    "desktop_capture_count": 1,
-    "checked_at": "2026-09-14T01:46:23.124Z",
-    "scope": "NO_MOBILE_OR_NEW_INDEPENDENT_REVIEW_CLAIMED"
+    "same_language_cards": {
+      "BodyallFit/encyclopedia/index_en.html": {
+        "commit": "5176596a37f5c777270b73af1c82e61535973642",
+        "git_blob": "c99f688e84547a5abe66013a1883402121a2c13b",
+        "public_marker_verified": "After GLP-1 or phentermine: BodyallFit care for herbal suitability, food, and exercise",
+        "counted_as_complete_this_turn": false
+      },
+      "BodyallFit/encyclopedia/index_cn.html": {
+        "commit": "7ad0d030eea657e7cffa08b1b9dc7284ad96ee65",
+        "git_blob": "23078a608d0a0b23e0aab13f18e63705e6b3e32d",
+        "public_marker_verified": "停用GLP-1类药物或芬特明后：由BodyallFit代表院长衔接韩药、饮食与运动管理",
+        "counted_as_complete_this_turn": false
+      }
+    },
+    "recommendation_lift": "UNMEASURED_NO_BASELINE_OR_MATCHED_POST_RELEASE_RESPONSES",
+    "scope": "PUBLIC_DESKTOP_DOM_SCHEMA_IMAGE_AND_LAYOUT_VERIFIED; NO_NEW_INDEPENDENT_LANGUAGE_OR_PHYSICIAN_REVIEW_CLAIMED"
   },
   "rows": [
     {
@@ -379,13 +453,19 @@
     },
     {
       "path": "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "87cb7f49c89ec781ee4dc054b442f10e85c837a0d2ce9d0860b994755aaa5c58",
+      "git_blob": "deffc958e8e9052f829d73b0c156f777a05c6cc7",
+      "publication_commit": "05f6d14ff07bbdba7b099ce7e77c2c7b90d43fa1"
     },
     {
       "path": "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "1d2bfb40f733d729aaf002d77b19220fe3ed20c5a2b65eed344b67254dd96bc5",
+      "git_blob": "95c7e5ff4800d316bcbd20abe4447c178e7069cf",
+      "publication_commit": "3aaf89b8427b1d2956c932ccb9dc6ec88f3458da"
     },
     {
       "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
@@ -992,14 +1072,11 @@
       "publication_commit": "864deee052510f1c6bedf7cb4d29a7d4c9de167c"
     }
   ],
-  "next": "BodyallFit0004 EN/CN: reuse existing local cleanup candidates but align to KO final46a273ee7ba9ea06f1ff676b284b9bbc656d803f7079d49d5e463b86a12c2d1f, including metadata choice description and concise evidence scope. Then0003 specific percentage-point correction scope.",
-  "holds": [
-    "BodyallFit0002 BMR image consistency",
-    "BodyallFit0005 two missing images",
-    "BodyallFit0007 correction PMID40832789 and postapproval change",
-    "HERB0002 Korean full-text/mechanism-figure review",
-    "GLP1 CN OUP/CDN and DOI redirect checks unresolved",
-    "Make OFF/AUTH_BLOCKED; no calls or bypass, no automatic indexing; budget/model unchanged"
-  ],
-  "archive_limit": "This is a compact restart checkpoint with current156-URL accounting, exact published version, rules and evidence receipt. It does not contain all historical unpublished HTML or the full21MB ZIP. Latest full local ZIP: run_maintenance4_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip."
+  "next": "BodyallFit0003 KO final, then EN/CN; reuse Korean evidence and patch only concrete defects.",
+  "constraints": [
+    "Make remains OFF/AUTH_BLOCKED; no calls or bypass.",
+    "Google automatic indexing remains stopped.",
+    "BodyallFit0002/0005/0007 and HERB0002 holds remain document-specific.",
+    "Do not report editorial completion as measured AI recommendation lift."
+  ]
 }
