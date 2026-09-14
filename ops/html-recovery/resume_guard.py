@@ -48,7 +48,7 @@ def reconcile(c, s, p):
     s['this_thread_scope'] = 'Continue existing sitemap URLs from the verified current ledger.'
     s['latest_local_cleanup'] = {'run': run, 'status': 'PUBLISHED_PUBLIC_VERIFIED', 'receipt': run + '/release_receipt.json'}
     s['latest_commit_scope_verification'] = c['latest_release']['compare']
-    s['latest_public_release'] = {'run': run, 'commit': head, 'public_verified': True, 'paths': c['latest_validation']['article_urls']}
+    s['latest_public_release'] = {'run': run, 'commit': head, 'public_verified': True, 'paths': [url.removeprefix('https://wiki.body-all.co.kr/') for url in c['latest_validation']['article_urls']]}
     for doc in [s, p]:
         doc['restart_guard'] = {'version': 1, 'canonical': 'GitHub recovery/html-20260914:ops/html-recovery/current.json', 'check': 'python resume_guard.py --current <current.json> --state <continuation_state.json> --policy <topic_review_policy.json>', 'rule': 'Validate before choosing the next URL or reporting counts; retain document-specific holds.'}
     return s, p
