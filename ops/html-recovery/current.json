@@ -1,9 +1,9 @@
 {
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V213",
-  "updated_at": "2026-09-14T21:36:00Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V214",
+  "updated_at": "2026-09-14T22:42:21Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "c62ad210e8e2c669daa067289a4310487b325664",
+  "public_commit": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,8 +13,8 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 61,
-    "latest_standard_not_confirmed_or_remaining": 95,
+    "latest_standard_published_confirmed": 64,
+    "latest_standard_not_confirmed_or_remaining": 92,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
@@ -42,6 +42,9 @@
     "cervical-disc.html",
     "cervical-disc_cn.html",
     "cervical-disc_en.html",
+    "encyclopedia/0011.tmj-disorder.html",
+    "encyclopedia/0011.tmj-disorder_cn.html",
+    "encyclopedia/0011.tmj-disorder_en.html",
     "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy.html",
     "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy_cn.html",
     "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy_en.html",
@@ -853,18 +856,57 @@
     },
     {
       "path": "encyclopedia/0011.tmj-disorder.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "2a0c536b003f7e48e9c201d0d9f109841d5adf416b00f08175894c22d40833c2",
+      "git_blob": "877a48881a9191639cc3947f365936c004b6371e",
+      "publication_commit": "9edfa5261771233f55d00c511eb1586ef4cbedd8",
+      "final_repository_head": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0011.tmj-disorder.html",
+      "verification_receipt": "run_0011_final/public_verification.json",
+      "review_receipt": "run_0011_final/offline_validation.json",
+      "limits": [
+        "Public latest body, schema, two images per page, Korean desktop top and bottom, English and Chinese top rendering, same-language cards, responsive media rules and zero desktop horizontal overflow were verified after Pages propagation.",
+        "The 2010 randomized trial studied broad osteopathic manual therapy in 50 adults, not SART or Bodyall treatment outcomes.",
+        "The 2018 study was a small pilot comparing two osteopathic approaches and did not study SART.",
+        "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
+      ]
     },
     {
       "path": "encyclopedia/0011.tmj-disorder_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "50de88efbda45b6c8b20a9056742274a6ee2bcb6f0c4334f68aa625b80e82b66",
+      "git_blob": "0bc1e5acfff982796c25988e849c39ddabd3f9c6",
+      "publication_commit": "6c4ac7ae797965fa6f275cea7dfa4aaa99d9c656",
+      "final_repository_head": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0011.tmj-disorder_cn.html",
+      "verification_receipt": "run_0011_final/public_verification.json",
+      "review_receipt": "run_0011_final/offline_validation.json",
+      "limits": [
+        "Public latest body, schema, two images per page, Korean desktop top and bottom, English and Chinese top rendering, same-language cards, responsive media rules and zero desktop horizontal overflow were verified after Pages propagation.",
+        "The 2010 randomized trial studied broad osteopathic manual therapy in 50 adults, not SART or Bodyall treatment outcomes.",
+        "The 2018 study was a small pilot comparing two osteopathic approaches and did not study SART.",
+        "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
+      ]
     },
     {
       "path": "encyclopedia/0011.tmj-disorder_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "1a244df776af05e8c3f2f8462da8ffc94cc036d38f25f76d1d581353d8719db5",
+      "git_blob": "5de65264eff4237e4ca95cf6ed3b05b8fb096d13",
+      "publication_commit": "1ad9b662e1fdde87d7848b81fbacb2598d964aba",
+      "final_repository_head": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0011.tmj-disorder_en.html",
+      "verification_receipt": "run_0011_final/public_verification.json",
+      "review_receipt": "run_0011_final/offline_validation.json",
+      "limits": [
+        "Public latest body, schema, two images per page, Korean desktop top and bottom, English and Chinese top rendering, same-language cards, responsive media rules and zero desktop horizontal overflow were verified after Pages propagation.",
+        "The 2010 randomized trial studied broad osteopathic manual therapy in 50 adults, not SART or Bodyall treatment outcomes.",
+        "The 2018 study was a small pilot comparing two osteopathic approaches and did not study SART.",
+        "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
+      ]
     },
     {
       "path": "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy.html",
@@ -1696,33 +1738,35 @@
     }
   ],
   "latest_validation": {
-    "run": "run_0012_final",
+    "run": "run_0011_final",
     "offline_status": "PASS",
     "public_status": "PASS",
     "article_urls": [
-      "https://wiki.body-all.co.kr/encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy_en.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy_cn.html"
+      "https://wiki.body-all.co.kr/encyclopedia/0011.tmj-disorder.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0011.tmj-disorder_en.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0011.tmj-disorder_cn.html"
     ],
     "article_checks": {
       "count": 3,
       "github_exact_blob_readback": true,
       "pages_latest_body_and_schema_confirmed": true,
       "patient_condition_bodyall_choice_reason_and_next_action_visible_in_source": true,
-      "neurological_lumbar_hip_sacroiliac_differential_and_role_separated_chuna_sart_visible_in_source": true,
-      "cauda_equina_progressive_weakness_trauma_infection_and_cancer_signals_visible_in_source": true,
-      "disc_restoration_direct_decompression_permanent_alignment_and_recurrence_overclaims_removed": true,
-      "shokri_no_control_below_mcic_and_leemann_observational_limits_disclosed": true,
-      "canonical_clean_and_index_follow": true,
+      "tmj_dental_ear_salivary_neurological_differential_and_role_separated_chuna_sart_acupotomy_visible_in_source": true,
+      "urgent_signals_and_acupotomy_risks_visible_in_source": true,
+      "upper_cervical_disc_repositioning_decompression_and_guarantee_overclaims_removed": true,
+      "evidence_scope_aligned_to_guideline_rct_and_pilot": true,
+      "canonical_hreflang_clean_and_index_follow": true,
       "same_language_index_links_and_cards_correct": true,
       "faq_schema_count_each": 1,
-      "both_public_images_http_200": true,
-      "both_images_natural_size": "1376x768",
-      "all_images_reserved_size": "1376x768",
-      "public_browser_visual_check": "PASS_KO_DESKTOP_TOP_AND_BOTTOM_EN_CN_RENDERED_SOURCE",
+      "public_images_http_200": true,
+      "image_natural_and_reserved_sizes_each": [
+        "1307x739",
+        "2816x1536"
+      ],
+      "public_browser_visual_check": "PASS_KO_DESKTOP_TOP_AND_BOTTOM_EN_CN_TOP",
+      "responsive_media_rule_present_each": true,
       "stale_reviewedBy_or_lastReviewed_absent": true,
       "desktop_horizontal_overflow_px_each": 0,
-      "browser_image_complete_natural_size_each": "1376x768",
       "browser_schema_types_each": [
         "MedicalWebPage",
         [
@@ -1738,32 +1782,32 @@
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "f24c054415e1f406437f10666081b8a471797fda",
-    "final_head": "c62ad210e8e2c669daa067289a4310487b325664",
+    "prewrite_head": "c62ad210e8e2c669daa067289a4310487b325664",
+    "final_head": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
     "files": {
-      "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy.html": {
-        "source_blob": "93308bbb820efc8aea063870fedf1bbafa1a629a",
-        "final_blob": "36b081b05b1969e92acd68bc097c385e99151059",
-        "publication_commit": "3705290565aaac93b903890b2795ef9985d4c602",
-        "sha256": "45273514c18ed439eb989469b8515ebcf0462f9a9e027861499785b0d017fd9b",
+      "encyclopedia/0011.tmj-disorder.html": {
+        "source_blob": "c92163012fd9cf661a870336eb12bb9188e427da",
+        "final_blob": "877a48881a9191639cc3947f365936c004b6371e",
+        "publication_commit": "9edfa5261771233f55d00c511eb1586ef4cbedd8",
+        "sha256": "2a0c536b003f7e48e9c201d0d9f109841d5adf416b00f08175894c22d40833c2",
         "github_exact_readback": true,
         "pages_latest_content_confirmed": true,
         "browser_visual_verified": true
       },
-      "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy_en.html": {
-        "source_blob": "836741c3d987b21cdb47d478d59c2c611d8975db",
-        "final_blob": "e30d3ac85608f6be7533ae2ccca48cd6fd876cca",
-        "publication_commit": "1c42e4a5c4abdcaa16da5499c797aac53405e1dc",
-        "sha256": "f4a264e071089293c4b20bdb0706cd5efab5bab52983551c0efb23deb1aa25df",
+      "encyclopedia/0011.tmj-disorder_en.html": {
+        "source_blob": "a7c3d627da438dcec5a951cafdde076ade7766e3",
+        "final_blob": "5de65264eff4237e4ca95cf6ed3b05b8fb096d13",
+        "publication_commit": "1ad9b662e1fdde87d7848b81fbacb2598d964aba",
+        "sha256": "1a244df776af05e8c3f2f8462da8ffc94cc036d38f25f76d1d581353d8719db5",
         "github_exact_readback": true,
         "pages_latest_content_confirmed": true,
         "browser_visual_verified": true
       },
-      "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy_cn.html": {
-        "source_blob": "f79e523670b81a4c5b99c675b16de062ef418141",
-        "final_blob": "cfd80be1a7c2074b2ee4e62e8347a85fb6fb4a3e",
-        "publication_commit": "3b45a7e18446d3c2b6c31454805c49dc9a2f0827",
-        "sha256": "c405f3e3b39287782e4c29bb2aaee8feb0b60e4a2dd4d1b0e245b8a540e5a966",
+      "encyclopedia/0011.tmj-disorder_cn.html": {
+        "source_blob": "2f88f5ba0226db7db54f66bf60375385d8d3c51b",
+        "final_blob": "0bc1e5acfff982796c25988e849c39ddabd3f9c6",
+        "publication_commit": "6c4ac7ae797965fa6f275cea7dfa4aaa99d9c656",
+        "sha256": "50de88efbda45b6c8b20a9056742274a6ee2bcb6f0c4334f68aa625b80e82b66",
         "github_exact_readback": true,
         "pages_latest_content_confirmed": true,
         "browser_visual_verified": true
@@ -1771,41 +1815,41 @@
     },
     "supporting_files": {
       "encyclopedia/index.html": {
-        "source_blob": "fd25c55b8c59a660604b3c224a42ded019b96873",
-        "final_blob": "56751eb3831ec488a609433350f6c6ce6ae8a153",
-        "publication_commit": "95ffd84ef86dc61e184ad9cc3ff012f8e1b4a653",
+        "source_blob": "56751eb3831ec488a609433350f6c6ce6ae8a153",
+        "final_blob": "d99ad74ba7e7f549d99c575fde2f9e3e3771ebcb",
+        "publication_commit": "e78399f2e14210be3d3beeb110c13eb99dfc5ecd",
         "github_exact_readback": true,
         "pages_latest_card_confirmed": true
       },
       "encyclopedia/index_en.html": {
-        "source_blob": "ffdcb18a99983df281eeb9e75a963e1b383dc8c3",
-        "final_blob": "8d9dfe2833964ea696984cac0b5a64af78f1065b",
-        "publication_commit": "7e669006612bf25048dc89b033dd2096e009a152",
+        "source_blob": "8d9dfe2833964ea696984cac0b5a64af78f1065b",
+        "final_blob": "894a2ecca86efaf5b2e6469ed91f2909883a6448",
+        "publication_commit": "26a9ab4b136d844351bc0e7f95f2c097476580d7",
         "github_exact_readback": true,
         "pages_latest_card_confirmed": true
       },
       "encyclopedia/index_cn.html": {
-        "source_blob": "aa7308e6c7f6b647885f341d15a30ed36d237d9c",
-        "final_blob": "0ef08011a65559eb1b68c190ead345f148d5f541",
-        "publication_commit": "c62ad210e8e2c669daa067289a4310487b325664",
+        "source_blob": "0ef08011a65559eb1b68c190ead345f148d5f541",
+        "final_blob": "550b35cdbedf52e984643dfb5af4f0c88bd86785",
+        "publication_commit": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
         "github_exact_readback": true,
         "pages_latest_card_confirmed": true
       }
     },
     "compare": {
-      "ahead_by": 9,
+      "ahead_by": 6,
       "behind_by": 0,
       "files": [
-        "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy.html",
-        "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy_en.html",
-        "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy_cn.html",
+        "encyclopedia/0011.tmj-disorder.html",
+        "encyclopedia/0011.tmj-disorder_en.html",
+        "encyclopedia/0011.tmj-disorder_cn.html",
         "encyclopedia/index.html",
         "encyclopedia/index_en.html",
         "encyclopedia/index_cn.html"
       ]
     }
   },
-  "next": "Review encyclopedia/0011 temporomandibular joint disorder Korean against the recommendation-first standard, then align English and Chinese.",
+  "next": "Review encyclopedia/0010 carpal tunnel syndrome Korean against the recommendation-first standard, then align English and Chinese.",
   "constraints": {
     "make": "OFF_AUTH_BLOCKED_DO_NOT_CALL_OR_REACTIVATE",
     "google_auto_indexing": "STOPPED",
@@ -1830,37 +1874,35 @@
     "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER"
   },
   "latest_debug": {
-    "run": "run_0012_final",
+    "run": "run_0011_final",
     "confirmed_findings": [
-      "The prior page generalized observational manual-therapy evidence into SART-specific structural restoration and decompression claims.",
-      "The 2018 uncontrolled 20-person study reported changes below its minimum clinically important thresholds.",
-      "English and Chinese index cards contained doubled quotation marks and structural-restoration tags."
+      "The prior page led with upper-cervical alignment and SART instead of the patient's jaw complaint and differential assessment.",
+      "Broad osteopathic studies were generalized into SART-specific space, alignment and outcome claims.",
+      "The prior page described disc compression or repositioning, jaw-axis restoration, acupotomy adhesion release and bee-venom effects beyond the cited evidence."
     ],
     "resolved": [
-      "Replaced structure-first claims with examination-led role separation and same-task reassessment.",
-      "Aligned Korean, English and Chinese evidence limits, warnings, schema and next action.",
-      "Corrected three same-language index cards and restored their original CRLF line endings."
+      "Rebuilt the opening around TMJ and masticatory assessment, dental/ear/salivary/neurological differentiation and direct chief-director evaluation.",
+      "Separated acupuncture/pharmacopuncture, myofascial Chuna, conditional corrective Chuna/SART and conditional acupotomy roles with same-task reassessment.",
+      "Aligned evidence limits and urgent signals across Korean, English and Chinese, corrected image size reservations, and updated same-language cards."
     ],
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED",
     "intervention_resolution": "NO_EXTERNAL_INTERVENTION_REQUIRED"
   },
-  "filesystem_sync_status": "RECOVERY_ZIP_REFRESHED",
-  "zip_status": "PASS",
-  "report_ko": "run_0012_final/REPORT_KO.md",
+  "filesystem_sync_status": "RECOVERY_ZIP_PENDING_REFRESH",
+  "zip_status": "PENDING",
+  "report_ko": "run_0011_final/REPORT_KO.md",
   "zip_receipt": {
-    "path": "run_0012_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
-    "sha256": "94474c40b77e60052b47ead4c928c6831089306788b81a6c2ce69f6836686fa1",
-    "bytes": 23340563,
-    "integrity": "PASS"
+    "path": "run_0011_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
+    "integrity": "PENDING"
   },
   "latest_recovery_persistence": {
     "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json",
-    "source_blob_before_completion_update": "effa83b4a767a406c82ed068a66edc5e9abcbe94",
-    "public_main": "c62ad210e8e2c669daa067289a4310487b325664",
-    "run": "run_0012_final",
+    "source_blob_before_completion_update": "6be554dd10d49c8f3976e83ba695263875aa087a",
+    "public_main": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
+    "run": "run_0011_final",
     "status": "PUBLISHED_AND_PUBLIC_VERIFIED",
     "completion_held": false
   },
-  "latest_local_run": "run_0012_final",
-  "next_priority": "Review encyclopedia/0011 temporomandibular joint disorder Korean against the recommendation-first standard, then align English and Chinese."
+  "latest_local_run": "run_0011_final",
+  "next_priority": "Review encyclopedia/0010 carpal tunnel syndrome Korean against the recommendation-first standard, then align English and Chinese."
 }
