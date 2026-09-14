@@ -1467,8 +1467,9 @@
   "report_ko": "run_0020_final/REPORT_KO.md",
   "zip_receipt": {
     "integrity": "PASS",
-    "receipt": "run_bee_final/zip_receipt.json",
-    "scope": "Full recovery snapshot containing this run's six HTMLs, release/public-validation receipts, 156-row ledger and preserved prior work. The final archive hash is kept in the external receipt to avoid a self-referential hash."
+    "receipt": "run_0020_final/zip_receipt.json",
+    "sha256": "cc8e624557866e225d81f026232026b224a2a7dd46b7033875652c9a7058ae43",
+    "scope": "Full recovery snapshot containing the 0020 candidate HTMLs, validation and release receipts, the 156-row ledger and preserved prior background resume records. The final archive hash is kept in this external receipt so the archive does not contain its own hash."
   },
   "latest_recovery_persistence": {
     "branch": "recovery/html-20260914",
