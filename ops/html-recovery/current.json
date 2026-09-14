@@ -1,6 +1,6 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T08:19:41.547Z",
+  "updated_at": "2026-09-14T08:25:31.301Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
   "public_commit": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
@@ -1623,10 +1623,9 @@
     "recommendation_lift": "UNMEASURED_NO_INDEPENDENT_BRAND_BLIND_BASELINE_AFTER_RESPONSES"
   },
   "next": [
-    "Use this GitHub current.json as canonical; local state files still at 22 predate this verified 25 ledger because the editor environment disconnected.",
-    "After workspace reconnection, synchronize local counts/commit/next aliases, retire resolved pending errors, run resume_guard.py and rebuild the recovery ZIP before further work.",
-    "Review bee-venom Korean with the recommendation-first standard, then align English and Chinese.",
-    "Preserve document-specific holds, Make OFF/AUTH_BLOCKED, stopped Google auto-indexing, budget and model settings."
+    "Review bee-venom Korean against the recommendation-first standard, then align English and Chinese.",
+    "Run resume_guard.py against GitHub current.json, local state and policy before selecting work or reporting counts.",
+    "Preserve all document-specific holds, Make OFF/AUTH_BLOCKED, stopped Google auto-indexing, models and budgets."
   ],
   "constraints": {
     "make": "OFF_AUTH_BLOCKED_DO_NOT_CALL_OR_REACTIVATE",
@@ -1637,8 +1636,8 @@
   },
   "restart_guard": {
     "path": "ops/html-recovery/resume_guard.py",
-    "persisted_commit": "8e90736214556ab6c3d67f21d452ba7464abe666",
-    "persisted_blob": "141c81338c0286767c7faa71265708b2f59f8122",
+    "persisted_commit": "2ba1e1d72be2ecfdcd7c54996966d42acda172e1",
+    "persisted_blob": "9e718a238fcb4511959dc05fbad117c0e8f4964e",
     "tested_checks": [
       "detect original 10/146 vs 22/134 count conflict",
       "repair aliases from canonical156 ledger",
@@ -1648,7 +1647,8 @@
       "preserve Make restrictions"
     ],
     "tested_results": "PASS_6_OF_6",
-    "pending_minor_patch": "Normalize article URL aliases to repository-relative paths; not needed for canonical current.json integrity."
+    "exact_readback": true,
+    "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER"
   },
   "latest_debug": {
     "run": "run_resume_debug",
@@ -1664,16 +1664,24 @@
       "Archived and repaired stale local count/pending/priority aliases at22 before publication; guard regression6/6 passed.",
       "Aligned shoulder title/H1/schema and verified final exact public content for3 languages.",
       "Passed expected content directly to browser sidecar; canonicalized object keys; waited for images to settle.",
-      "Validated tool content arguments before GitHub retry; a cancelled call had discarded newly cached content."
+      "Validated tool content arguments before GitHub retry; a cancelled call had discarded newly cached content.",
+      "Workspace 409 environment_offline recovered on a later probe. Final local synchronization and ZIP rebuild completed after reconnection.",
+      "Persisted corrected resume guard with repository-relative release paths; final 25/131 state and policy validation passed."
     ],
     "limits": [
-      "Earlier interruption causal attribution remains unknown; no unavailable execution log was fabricated.",
-      "Workspace409 remains unresolved; shell-based final local synchronization and ZIP rebuild could not complete."
+      "Earlier interruption causal attribution remains unknown; no unavailable execution log was fabricated."
     ],
     "workspace_error": "failed to query exec-server capabilities: environment registry request failed (409 Conflict, environment_offline): Environment is not connected.",
-    "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED_BEFORE_WORKSPACE_DISCONNECT"
+    "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED_BEFORE_WORKSPACE_DISCONNECT",
+    "workspace_status": "RECOVERED_VERIFIED_BY_SUCCESSFUL_SHELL_COMMAND"
   },
-  "filesystem_sync_status": "PENDING_ENVIRONMENT_OFFLINE_LOCAL_STATE22_REMOTE_CANONICAL25",
-  "zip_status": "CURRENT_FULL_ZIP_NOT_REBUILT_ENVIRONMENT_OFFLINE",
-  "report_ko": "확인된 문제: 재개기록의 집계·대기오류·다음작업 불일치, 영어 오십견 제목/스키마 불일치, 브라우저와 편집기 파일시스템 혼동. 상태정합성 가드6개 회귀검사와 오십견3개 언어의 공개본문·스키마·이미지15개·언어별 카드3개 검증을 통과했다. 최신 기준25/156 완료,131 잔여. 이후 편집 작업공간409 environment_offline 발생으로 로컬 최종동기화/ZIP 재생성은 미완료다. 이 GitHub 원장이 로컬22 상태보다 최신이다. 실제 AI 추천증가는 미측정이다."
+  "filesystem_sync_status": "SYNCHRONIZED_25_GUARD_PASS",
+  "zip_status": "BUILT_AND_INTEGRITY_VERIFIED",
+  "report_ko": "# 재개 오류 교정 및 오십견 3개 언어 배포\n\n최신 추천 우선 기준 적용·배포·공개검증 완료 **25/156 · 잔여 131**. 이번에는 기존 오십견 URL 3개를 완료에 추가했다. 대문 카드 변경은 전체 대문 완료로 세지 않는다.\n\n## 확인한 문제와 해결\n- 현재 22/134 원장과 달리 로컬 counts에는 10/146이 남아 있었고, policy에는 해결된 목디스크 쓰기 오류가 latest_pending_run으로 남아 있었다. 중첩된 다음 작업도 이미 완료한 바디올핏 페이지를 가리켰다.\n- 이전 finalize.py가 현재 항목 일부만 갱신하던 문제다. 원본 기록을 보존하고 검증 원장에 맞춰 현재 별칭을 동기화했다. 과거 오류를 현재 보류로 읽지 않도록 해결 이력으로 이동했다.\n- resume_guard.py를 GitHub에 저장하고 다시 읽어 일치 확인했다. 원래 충돌 탐지·복구·반복 실행 동일성·완료 수 부풀림 거부·문서 보류 보존·Make 제한 보존 검사 6개가 통과했다.\n- 현재 GitHub 접근과 쓰기는 정상이다. 과거 중단의 내부 원인은 상세 오류가 보존되지 않아 확정하지 않는다.\n\n## 오십견 HTML 교정\n- 환자 조건, 어깨 능동·수동 가동범위와 목·흉추 진찰, 추나·SART·도침의 개별 선택, 같은 일상동작 재평가 및 예약을 첫 이미지 앞으로 옮겼다.\n- 영어 title/H1/스키마 이름 불일치를 해결하고 3개 언어 제목·설명·본문 FAQ·구조화 FAQ를 정렬했다.\n- 반복적인 구조 복원 비보장·필수 병용 부정·동일 연구 해명을 정리했다. 골절·감염·감각변화·흉통 관련 응급 신호, 도침 위험, 봉약침 아나필락시스, 항응고제 임의 중단 주의는 유지했다.\n- 2019년 8개 시험·501명과 연구 한계, 2022년 63명 복합치료 비교·3개월 결과 및 공개 초록만 확인한 범위를 유지했다. 2022년 전문 확인을 완료로 승격하지 않았다.\n- 기존 한국어 근거 검증을 재사용했다. 새 효과 주장을 추가하거나 과거 원장님 직접검수를 새 exact 문안의 직접검수로 표시하지 않았다. 번역본은 한국어 원문 계보를 유지했다.\n\n## 검증 결과\n- 6개 원본 스냅샷과 GitHub blob 일치. 로컬 파일 전달 과정에서 생긴 마지막 줄바꿈 1개를 원본 해시와 대조해 제거했다.\n- 정적검사 오류 0. CSS·이미지 속성·canonical·hreflang·참고문헌 목적지를 보존했고 대문은 대상 카드 문단만 변경했다.\n- GitHub 최종 내용 6/6 exact. 이전 head 대비 의도한 6개 파일만 변경됐다.\n- 공개 전체 본문·스키마·설명 3/3 일치, FAQ 각3개, 예약 및 선택 이유가 첫 이미지보다 앞에 배치됨을 확인했다.\n- 본문 이미지 15/15 및 목록 카드 이미지 3/3 정상 로딩. 3개 언어 데스크톱 상단 화면을 직접 확인했고 가로 넘침은 없었다. 모바일 에뮬레이션과 변경 없는 외부 논문 링크 재크롤링은 실행하지 않았다.\n- 검증 환경은 편집 환경의 로컬 파일을 직접 읽을 수 없어 기대 데이터를 직접 전달했다. JSON 객체 키 순서만 달라 불일치로 보이던 비교기를 순서와 무관한 값 대조로 수정했다. 로딩 중 이미지 결과는 완료 후 재확인했다.\n\n최종 공개 커밋: `e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2`.\n실제 AI 추천 증가: **UNMEASURED**. 독립 baseline/after 답변을 수집하기 전이며 내부 검수·배포 수를 추천 성과로 표현하지 않는다.\n\n다음은 봉약침 한국어 최신 기준 교정 후 영어·중국어 정렬이다. Make·Google 자동색인 중단, 문서별 보류, 기존 모델·예산을 유지한다.\n\n## 추가 실행 오류 처리\n기록 저장 중 편집 작업공간이 409 environment_offline으로 끊겼다. 공개 배포·검증은 이미 끝난 상태였다. GitHub 원장을 먼저 보존한 뒤 재확인에서 작업공간 연결이 복구되어 로컬 별칭 동기화와 ZIP 재생성을 마쳤다. 장기 연결 안정성을 보장하는 영구 인프라 수정은 수행하지 않았다.\n",
+  "zip_receipt": {
+    "bytes": 21981293,
+    "integrity": "PASS",
+    "sha256": "e4bcc6a0423eb99170ed79f776db399b58b0f953182ea5375e1b94e4be4c19a8",
+    "scope": "Full recovery snapshot containing this run's six HTMLs, release/public-validation receipts, 156-row ledger and preserved prior work."
+  }
 }
