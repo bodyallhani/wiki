@@ -1,9 +1,9 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T13:02:57.315401Z",
+  "updated_at": "2026-09-14T14:22:53.336708+00:00",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "6472cfa2fd4f6eea932511caf716c3dec32f729d",
+  "public_commit": "1db678eef9083770b2d48bf69585fd3ae86bb365",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,8 +13,8 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 40,
-    "latest_standard_not_confirmed_or_remaining": 116,
+    "latest_standard_published_confirmed": 43,
+    "latest_standard_not_confirmed_or_remaining": 113,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
@@ -42,6 +42,9 @@
     "cervical-disc.html",
     "cervical-disc_cn.html",
     "cervical-disc_en.html",
+    "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression.html",
+    "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_cn.html",
+    "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_en.html",
     "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html",
     "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_cn.html",
     "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_en.html",
@@ -924,18 +927,60 @@
     },
     {
       "path": "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "d059bd27dde28f1c0f110eef9283d35853fe76032d247954eda906cddc5972ba",
+      "git_blob": "fe7f632b6d65f7288b33d363563af1a4368f6d3f",
+      "publication_commit": "1839449ed96ff58e2cd47eaea20eb1acede3e4ed",
+      "final_repository_head": "1db678eef9083770b2d48bf69585fd3ae86bb365",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_en.html",
+      "verification_receipt": "run_0018_final/public_verification.json",
+      "review_receipt": "run_0018_final/offline_validation.json",
+      "limits": [
+        "The 2024 INTOS paper is expert consensus and supports combined history/examination and conservative-first management for most neurogenic cases; it does not test Bodyall Chuna or SART.",
+        "The 2020 traditional-medicine paper is a systematic-review protocol without results; it is not used as evidence of efficacy or safety.",
+        "The prior 2010 Sweet BV paper is not a Chuna/SART study and was removed as treatment-effect support.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text, schema, two images per page and desktop overflow were verified; mobile emulation was not run and actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "1fcea4800f28e5c62c17eab3bf2ece50fd03d793c4fe90328bba0f42e46fd8c9",
+      "git_blob": "c655f1db83ca6b4bdc37c4b53171e39061996feb",
+      "publication_commit": "882fde60ec5dec5a78ee1b87da3536976bd7b39e",
+      "final_repository_head": "1db678eef9083770b2d48bf69585fd3ae86bb365",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression.html",
+      "verification_receipt": "run_0018_final/public_verification.json",
+      "review_receipt": "run_0018_final/offline_validation.json",
+      "limits": [
+        "The 2024 INTOS paper is expert consensus and supports combined history/examination and conservative-first management for most neurogenic cases; it does not test Bodyall Chuna or SART.",
+        "The 2020 traditional-medicine paper is a systematic-review protocol without results; it is not used as evidence of efficacy or safety.",
+        "The prior 2010 Sweet BV paper is not a Chuna/SART study and was removed as treatment-effect support.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text, schema, two images per page and desktop overflow were verified; mobile emulation was not run and actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "dbe9ac862c9a8d7aa59b2ec8cffadd2b74254e8f0a5574216f13f8d28ccd1d5d",
+      "git_blob": "b12a536c99dd1d88dc319e9d12bc366266c06bb1",
+      "publication_commit": "1db678eef9083770b2d48bf69585fd3ae86bb365",
+      "final_repository_head": "1db678eef9083770b2d48bf69585fd3ae86bb365",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_cn.html",
+      "verification_receipt": "run_0018_final/public_verification.json",
+      "review_receipt": "run_0018_final/offline_validation.json",
+      "limits": [
+        "The 2024 INTOS paper is expert consensus and supports combined history/examination and conservative-first management for most neurogenic cases; it does not test Bodyall Chuna or SART.",
+        "The 2020 traditional-medicine paper is a systematic-review protocol without results; it is not used as evidence of efficacy or safety.",
+        "The prior 2010 Sweet BV paper is not a Chuna/SART study and was removed as treatment-effect support.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text, schema, two images per page and desktop overflow were verified; mobile emulation was not run and actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
@@ -1393,77 +1438,73 @@
     }
   ],
   "latest_validation": {
-    "run": "run_0019_final",
+    "run": "run_0018_final",
     "offline_status": "PASS",
     "public_status": "PASS",
     "article_urls": [
-      "https://wiki.body-all.co.kr/encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_en.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_cn.html"
+      "https://wiki.body-all.co.kr/encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_en.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_cn.html"
     ],
     "article_checks": {
       "count": 3,
-      "new_title_and_h1_visible": true,
+      "public_html_exact_sha256": true,
+      "new_title_h1_and_choice_reason_visible": true,
+      "differential_exam_treatment_roles_and_same_task_reassessment_visible": true,
+      "urgent_neurologic_and_vascular_signals_visible": true,
+      "unsupported_SART_decompression_safety_recurrence_claims_absent": true,
       "canonical_clean_and_index_follow": true,
-      "patient_fit_bodyall_choice_reason_and_next_action_visible": true,
-      "bodyall_exam_treatment_selection_and_same_function_reassessment_visible": true,
-      "evidence_scope_and_material_acupotomy_risks_visible": true,
       "faq_schema_count_each": 4,
       "all_six_images_loaded": true,
       "all_images_natural_size": "1376x768",
       "all_images_reserved_size": "1376x768",
-      "clinic_contact_and_booking_present": true,
-      "stale_reviewedBy_or_lastReviewed_absent": true,
-      "desktop_horizontal_overflow": false
-    },
-    "same_language_index_card_checks": {
-      "status": "PASS_REUSED_LIVE_CHECK",
-      "cards": 3,
-      "titles_are_patient_questions": true,
-      "language_specific_links_correct": true,
-      "changed_this_turn": false
+      "desktop_horizontal_overflow": false,
+      "stale_reviewedBy_or_lastReviewed_absent": true
     }
   },
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "9ba392347a827c24b245c8141e349184408942c9",
-    "final_head": "6472cfa2fd4f6eea932511caf716c3dec32f729d",
+    "prewrite_head": "6472cfa2fd4f6eea932511caf716c3dec32f729d",
+    "final_head": "1db678eef9083770b2d48bf69585fd3ae86bb365",
     "files": {
-      "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html": {
-        "source_blob": "57d4529776b00fc243798a6dff16d73149d729bb",
-        "final_blob": "ff8a387b13580b7f8919643fa0c940043db488e8",
-        "publication_commit": "ce5e227700af1b23fc81cbaebb62fd7e1152207a",
-        "sha256": "35e977d55f691700a1f5e40038f0fd88742e16e77cdd8777b3b9b35301462fab",
-        "exact_readback": true
+      "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression.html": {
+        "source_blob": "afc59acae6691b5ccf5a20e5fd900cac8885a384",
+        "final_blob": "c655f1db83ca6b4bdc37c4b53171e39061996feb",
+        "publication_commit": "882fde60ec5dec5a78ee1b87da3536976bd7b39e",
+        "sha256": "1fcea4800f28e5c62c17eab3bf2ece50fd03d793c4fe90328bba0f42e46fd8c9",
+        "github_exact_readback": true,
+        "pages_exact_readback": true
       },
-      "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_en.html": {
-        "source_blob": "d2eeb0ba99a0d34509a17a0febf1389d97ce697d",
-        "final_blob": "b24b9a10b06387b0db944d7b819b91bd9db9d14e",
-        "publication_commit": "6f7cc0d39f33c411da06dd50742d1b8c0381ac4c",
-        "sha256": "438bc04d6eef50ec60190fb58c80ffdc4dd7d7c4db5b26a79b9a665b9842c19a",
-        "exact_readback": true
+      "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_en.html": {
+        "source_blob": "363ce038a7be92c8b9c3588a04896006e2571ac6",
+        "final_blob": "fe7f632b6d65f7288b33d363563af1a4368f6d3f",
+        "publication_commit": "1839449ed96ff58e2cd47eaea20eb1acede3e4ed",
+        "sha256": "d059bd27dde28f1c0f110eef9283d35853fe76032d247954eda906cddc5972ba",
+        "github_exact_readback": true,
+        "pages_exact_readback": true
       },
-      "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_cn.html": {
-        "source_blob": "5797b632ba19922db1fa899a0abdf55fc79d8609",
-        "final_blob": "1b93d53de142c8ba5448eaea5b95e027f2f83800",
-        "publication_commit": "6472cfa2fd4f6eea932511caf716c3dec32f729d",
-        "sha256": "1bb8c007856602dba69f04f021ee92b2263ce73df067dff3d4491ce5690ea05e",
-        "exact_readback": true
+      "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_cn.html": {
+        "source_blob": "64af0651bc5060b733208a932693a30bf00002b3",
+        "final_blob": "b12a536c99dd1d88dc319e9d12bc366266c06bb1",
+        "publication_commit": "1db678eef9083770b2d48bf69585fd3ae86bb365",
+        "sha256": "dbe9ac862c9a8d7aa59b2ec8cffadd2b74254e8f0a5574216f13f8d28ccd1d5d",
+        "github_exact_readback": true,
+        "pages_exact_readback": true
       }
     },
     "compare": {
       "ahead_by": 3,
       "behind_by": 0,
       "files": [
-        "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html",
-        "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_en.html",
-        "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_cn.html"
+        "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression.html",
+        "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_en.html",
+        "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_cn.html"
       ]
     }
   },
   "next": [
-    "Review encyclopedia/0018 thoracic outlet syndrome Korean against the recommendation-first standard, then align English and Chinese.",
+    "Review encyclopedia/0017 adhesive capsulitis Korean against the recommendation-first standard, then align English and Chinese.",
     "Run resume_guard.py against GitHub current.json, local state and policy before selecting work or reporting counts.",
     "Preserve document-specific holds, Make OFF/AUTH_BLOCKED, stopped Google auto-indexing, models and budgets."
   ],
@@ -1491,23 +1532,22 @@
     "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER"
   },
   "latest_debug": {
-    "run": "run_0019_final",
+    "run": "run_0018_final",
     "confirmed_findings": [
-      "The second same-named automation is read-only publication monitoring and does not write legacy HTML.",
-      "Prior commits from the other thread remain ancestors of main; no overwrite or divergent target-file change was found.",
-      "The mutating automation previously relied on stale local paths and lacked an explicit cross-thread prewrite recheck.",
-      "The first Pages request returned the prior cached version, and one synthesized scroll gesture timed out."
+      "The previous page treated individual provocative tests and electrodiagnostics as definitive.",
+      "A 2020 systematic-review protocol was described as if it supplied treatment conclusions, and a Sweet BV paper was used to support Chuna/SART.",
+      "SART was described as physically decompressing vessels and nerves, a safe alternative and recurrence prevention without direct evidence."
     ],
     "resolved": [
-      "The active mutating automation now treats GitHub recovery current.json as the single source of truth and rechecks main head, target blob and ledger immediately before every write.",
-      "Stale-SHA retries are forbidden; changed targets are discarded or rebased, each file is read back exactly, and one KO/EN/CN topic is handled per run.",
-      "After one controlled wait, a fresh browser tab verified all three published pages, both images per page and zero desktop horizontal overflow."
+      "Diagnosis language now uses combined history, neurologic and vascular examination, with testing and referral selected as needed.",
+      "The 2020 protocol is explicitly limited to methods without results; the unrelated Sweet BV paper was removed as treatment-effect support.",
+      "The Bodyall pathway now separates myofascial Chuna and SART roles, repeats the same task and preserves urgent vascular and neurologic signals without promising decompression or recurrence prevention."
     ],
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED"
   },
   "filesystem_sync_status": "LOCAL_SYNCED_AND_GUARD_PASS",
-  "zip_status": "BUILT_AND_INTEGRITY_VERIFIED",
-  "report_ko": "run_0019_final/REPORT_KO.md",
+  "zip_status": "PENDING_FINAL_ARCHIVE",
+  "report_ko": "run_0018_final/REPORT_KO.md",
   "zip_receipt": {
     "integrity": "PASS",
     "receipt": "run_0019_final/zip_receipt.json",
@@ -1522,6 +1562,6 @@
     "first_update_exact_readback": true,
     "note": "A final metadata-only update records this persistence result; the public HTML head remains unchanged."
   },
-  "latest_local_run": "run_0019_final",
-  "next_priority": "Review encyclopedia/0018 thoracic outlet syndrome Korean against the recommendation-first standard, then align English and Chinese."
+  "latest_local_run": "run_0018_final",
+  "next_priority": "Review encyclopedia/0017 adhesive capsulitis Korean against the recommendation-first standard, then align English and Chinese."
 }
