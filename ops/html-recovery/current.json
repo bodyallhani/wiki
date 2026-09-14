@@ -1678,12 +1678,19 @@
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED"
   },
   "filesystem_sync_status": "LOCAL_SYNCED_AND_GUARD_PASS",
-  "zip_status": "BUILD_READY",
+  "zip_status": "BUILT_AND_INTEGRITY_VERIFIED",
   "report_ko": "run_bee_final/REPORT_KO.md",
   "zip_receipt": {
-    "bytes": 21981293,
     "integrity": "PASS",
-    "sha256": "e4bcc6a0423eb99170ed79f776db399b58b0f953182ea5375e1b94e4be4c19a8",
-    "scope": "Full recovery snapshot containing this run's six HTMLs, release/public-validation receipts, 156-row ledger and preserved prior work."
+    "receipt": "run_bee_final/zip_receipt.json",
+    "scope": "Full recovery snapshot containing this run's six HTMLs, release/public-validation receipts, 156-row ledger and preserved prior work. The final archive hash is kept in the external receipt to avoid a self-referential hash."
+  },
+  "latest_recovery_persistence": {
+    "branch": "recovery/html-20260914",
+    "path": "ops/html-recovery/current.json",
+    "first_update_commit": "bd6e7b8dbd430706b01e0fe1bf1106b5021b9cca",
+    "first_update_blob": "a36a0608cddaa0bb87aefa8a872ae2ffcbad4568",
+    "first_update_exact_readback": true,
+    "note": "A final metadata-only update records the completed ZIP state; the public HTML head remains unchanged."
   }
 }
