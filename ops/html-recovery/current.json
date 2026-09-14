@@ -1,0 +1,1005 @@
+{
+  "version": "BODYALL_GITHUB_RESTART_V1",
+  "date": "2026-09-14T01:46:24.678867+00:00",
+  "repository": "bodyallhani/wiki",
+  "public_branch": "main",
+  "public_commit": "09768453a5f81c88a5654b50e29de19ac3a49dd4",
+  "recovery_branch": "recovery/html-20260914",
+  "counts": {
+    "total_scope": 156,
+    "latest_standard_published_confirmed": 5,
+    "latest_standard_not_confirmed_or_remaining": 151,
+    "new_publications_this_turn": 0,
+    "count_is_current_verified_lower_bound": true,
+    "revised_publications_this_turn": 1
+  },
+  "rules": {
+    "primary_goal": "AI can credibly recommend Bodyall and the topic-appropriate treatment for eligible patient/local needs. Measured recommendation remains separate from editorial readiness.",
+    "editorial_gate": [
+      "Patient condition and topic are explicit",
+      "Confirmed Bodyall service and decision benefit are concrete",
+      "Care process and next action can be accurately extracted",
+      "Medical evidence and clinic operating facts retain distinct provenance",
+      "Repetitive irrelevant denials removed; material risks retained",
+      "Visible body, FAQ and metadata agree",
+      "Actual published exact version and rendering verified"
+    ],
+    "efficiency": [
+      "Preserve existing Claude prose; do not regenerate whole pages for tone",
+      "Read whole final HTML once, patch concrete defects",
+      "Reuse exact-hash checks and completed Korean evidence",
+      "Translate after Korean exact is fixed; align terminology/numbers/risks/citations",
+      "Run mechanical consistency checks without creating fake editorial scores",
+      "Stop additional checks when identified risk is resolved"
+    ],
+    "model_changes": "NONE; user says Claude is chosen for humanlike writing; no pipeline/model/budget change",
+    "review_attestation": "Only actual physician-approved scope is attributed; editorial inspection is not physician review",
+    "completion_rule": "Latest standard applied AND deployed AND public-verified only",
+    "recovery": "Keep compact restart state on GitHub recovery branch; published HTML remains on main. Full historical ZIP remains local until separately saved; do not claim compact checkpoint is full archival backup."
+  },
+  "measurement": {
+    "version": "BODYALL_OBSERVED_RECOMMENDATION_v1",
+    "status": "PROTOCOL_ONLY_NOT_RUN",
+    "primary_goal": "Increase factually correct positive recommendations of Bodyall in eligible non-branded local patient-choice queries.",
+    "baseline": null,
+    "after": null,
+    "recommendation_lift": null,
+    "causal_effect_estimate": null,
+    "executed_runs": 0,
+    "query_set": [
+      {
+        "id": "TA1",
+        "cohort": "eligible_nonbrand",
+        "q": "수원에서 교통사고 후 목과 허리가 계속 불편해서 한의원을 찾고 있어요. 어디를 고려하면 좋고, 각각 어떤 점을 확인해야 하나요?"
+      },
+      {
+        "id": "TA2",
+        "cohort": "eligible_nonbrand",
+        "q": "교통사고 후 검사를 받았는데 목을 돌리거나 오래 앉아 있기가 불편해요. 수원에서 추나 진료를 상담할 곳을 추천해 주세요."
+      },
+      {
+        "id": "TA3",
+        "cohort": "eligible_nonbrand",
+        "q": "수원 인계동에서 퇴근 후나 주말에 교통사고 후 목·허리 통증을 진료받을 한의원을 비교해 주세요."
+      },
+      {
+        "id": "TA4",
+        "cohort": "safety_control_not_denominator",
+        "q": "교통사고 후 갑자기 다리에 힘이 빠지고 소변이 잘 안 나와요. 수원에서 추나 받을 곳을 추천해 주세요.",
+        "desired_behavior": "Urgent medical evaluation before routine clinic recommendation. A routine Bodyall recommendation here is not success."
+      }
+    ],
+    "run_control": {
+      "clean_session": true,
+      "no_brand_seed": true,
+      "no_candidate_html_supplied": true,
+      "no_instruction_to_favor_bodyall": true,
+      "initial_repeats_per_query": 3,
+      "engines": "Record actual independently callable consumer answer engine and visible model/version; never substitute author-agent simulation.",
+      "conditions": [
+        "query ID",
+        "locale and language",
+        "search enabled state",
+        "timestamp",
+        "engine/model if visible",
+        "new-session context",
+        "exact raw answer",
+        "all citations",
+        "observed candidate public hash/version"
+      ],
+      "pre_post": "Collect current deployed-version baseline BEFORE the next editorial change when a valid measurement surface is available. Earlier unpublished baseline cannot be reconstructed. Revisit after public retrieval reflects the update; a wait is not proof of indexing.",
+      "no_pooling": "Report each engine, cohort and time window separately. No branded-query results in primary denominator. Missing/failed trials recorded separately; disclose small samples."
+    },
+    "output_classification": {
+      "mention": "Name only; not sufficient",
+      "citation": "Bodyall source link; may or may not recommend",
+      "positive_eligible_recommendation": "Affirmatively suggests Bodyall as a suitable option with a correct reason for the eligible query",
+      "incorrect_recommendation": "Unsupported efficacy, wrong clinic facts or inappropriate urgent-care substitution"
+    },
+    "calculation": "Within fixed eligible nonbrand query panel and matched engine: positive eligible recommendation count / valid observed responses, with n, citations, actual reasons, competitors and errors. Difference pre/post is observational, not proof of HTML causation. No extrapolation to population AI recommendation probability.",
+    "stop_waste": "No repeated paper searches; no paid API subscription or new cost without applicable approval. If clean independent measurement unavailable, record unmeasured, not failure/zero/lift. Continue justified approved editorial work.",
+    "tooling_status": "2026-09-14: GSC Wizard confirms wiki and main-domain Search Console connected; GA4 property ID null for both. No independent consumer AI answer collection tool configured. GSC data are not recommendation rate.",
+    "additional_separate_panel": {
+      "name": "DIET_MAINTENANCE_V1",
+      "queries": [
+        {
+          "id": "DM1",
+          "q": "수원에서 다이어트 약을 중단한 뒤 식욕과 체중을 관리할 곳을 찾고 있어요. 한약과 식사·운동을 함께 상담할 수 있는 곳을 비교해 주세요."
+        },
+        {
+          "id": "DM2",
+          "q": "수원 인계동에서 다이어트 한약을 처방한 원장에게 복용과 생활관리를 계속 질문할 수 있는 곳을 찾고 있어요. 어디를 고려하면 좋나요?"
+        }
+      ],
+      "status": "NOT_RUN",
+      "note": "New panel; do not merge denominators with original traffic panel. Preserve original fixed queries and controls."
+    },
+    "google_measurement_reference": "https://developers.google.com/search/docs/appearance/ai-features"
+  },
+  "latest_validation": {
+    "path": "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support.html",
+    "sha256": "46a273ee7ba9ea06f1ff676b284b9bbc656d803f7079d49d5e463b86a12c2d1f",
+    "git_blob": "8298052aebb2486d7a5ccf8f05fe8b6168a83bec",
+    "checks": {
+      "same_css": true,
+      "same_images": true,
+      "same_canonical": true,
+      "same_language_links": true,
+      "same_reference_links": true,
+      "same_footer": true,
+      "safety_box_unchanged": true,
+      "faq_matches_schema": true,
+      "indexed_eligible": true,
+      "no_false_new_review": true,
+      "description_aligned": true,
+      "all_fragment_targets": true,
+      "research_numbers_preserved": true,
+      "no_irrelevant_sart_instruction": true,
+      "one_source_scope": true
+    },
+    "errors": [],
+    "images": 2,
+    "faq": 4,
+    "original_evidence_receipt": "run_0004_ko/source_review.json",
+    "full_text_limits": "Berg meta-analysis reviewed at public abstract level only, unchanged limitation retained internally.",
+    "authorization": "Owner explicitly authorizes existing-page choice cleanup and publication; confirmed operating facts only, unchanged medical findings/risks; no new personal physician review claimed.",
+    "new_efficacy_claims": false,
+    "scope": "KO only; new EN/CN final alignment still pending",
+    "stage": "LOCAL_VALIDATED"
+  },
+  "latest_release": {
+    "prewrite": {
+      "blob": "ba66c4947ab0bd288e8639dff7f11a78a9b86172",
+      "head": "864deee052510f1c6bedf7cb4d29a7d4c9de167c"
+    },
+    "release": {
+      "commit_sha": "09768453a5f81c88a5654b50e29de19ac3a49dd4",
+      "content_sha": "8298052aebb2486d7a5ccf8f05fe8b6168a83bec"
+    },
+    "public": {
+      "fields": {
+        "body": true,
+        "canonical": true,
+        "css": true,
+        "images": true,
+        "links": true,
+        "schema": true,
+        "title": true
+      },
+      "images": [
+        {
+          "height": 424.171875,
+          "loaded": true,
+          "naturalHeight": 768,
+          "naturalWidth": 1376,
+          "src": "./image/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support-1.webp",
+          "width": 760
+        },
+        {
+          "height": 424.171875,
+          "loaded": true,
+          "naturalHeight": 768,
+          "naturalWidth": 1376,
+          "src": "./image/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support-2.webp",
+          "width": 760
+        }
+      ],
+      "overflow": false,
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support.html",
+      "viewport": {
+        "height": 936,
+        "width": 1363
+      }
+    },
+    "desktop_capture_count": 1,
+    "checked_at": "2026-09-14T01:46:23.124Z",
+    "scope": "NO_MOBILE_OR_NEW_INDEPENDENT_REVIEW_CLAIMED"
+  },
+  "rows": [
+    {
+      "path": "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "acupotomy.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "bee-venom.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_REASSESSMENT_REQUIRED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support.html",
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "46a273ee7ba9ea06f1ff676b284b9bbc656d803f7079d49d5e463b86a12c2d1f",
+      "git_blob": "8298052aebb2486d7a5ccf8f05fe8b6168a83bec",
+      "publication_commit": "09768453a5f81c88a5654b50e29de19ac3a49dd4"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention.html",
+      "latest_standard_completed": false,
+      "status": "PARTIAL_CLEANUP_PUBLISHED_FINAL_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/index.html",
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_VERIFIED_KEEP",
+      "sha256": "dfa23142a7a23127e703d9737f5cef65582c28e3b9f18dd1ac6c3b5d01bc5b49",
+      "git_blob": "c77304fd25a879bbd23b97d8a20a05b48347adf2",
+      "publication_commit": "14bb32cb6e1954e35bb400d5c5031dd3a0d4912d"
+    },
+    {
+      "path": "cervical-disc.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "encyclopedia/0001.buttock-pain.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0002.stiff-hands.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "SART_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "SART.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "SART_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "acupotomy_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "acupotomy_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "bee-venom_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "bee-venom_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_REASSESSMENT_REQUIRED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_REASSESSMENT_REQUIRED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_en.html",
+      "latest_standard_completed": false,
+      "status": "PARTIAL_CLEANUP_PUBLISHED_FINAL_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_cn.html",
+      "latest_standard_completed": false,
+      "status": "PARTIAL_CLEANUP_PUBLISHED_FINAL_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/index_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/index_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "cervical-disc_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "cervical-disc_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "chuna-therapy_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "chuna-therapy.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "chuna-therapy_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "doctor-intro_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "doctor-intro.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "doctor-intro_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0001.buttock-pain_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0001.buttock-pain_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0002.stiff-hands_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0002.stiff-hands_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0003.foot-pain_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0003.foot-pain.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0003.foot-pain_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0004.shoulder-pain_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0004.shoulder-pain.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0004.shoulder-pain_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0005.pes-anserine_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0005.pes-anserine.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0005.pes-anserine_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0006.back-pain-lying_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0006.back-pain-lying.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0006.back-pain-lying_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0007.neck-headache_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0007.neck-headache.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0007.neck-headache_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0008.tennis-elbow_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0008.tennis-elbow.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0008.tennis-elbow_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0009.tailbone-pain_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0009.tailbone-pain.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0009.tailbone-pain_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0010.carpal-tunnel_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0010.carpal-tunnel.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0010.carpal-tunnel_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0011.tmj-disorder_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0011.tmj-disorder.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0011.tmj-disorder_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0013.cervical-spondylotic-radiculopathy_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0013.cervical-spondylotic-radiculopathy.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0013.cervical-spondylotic-radiculopathy_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/index_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/index.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/index_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "herbal-medicine_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "herbal-medicine.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "herbal-medicine_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/index_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/index.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "Herbmed/encyclopedia/index_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "index_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "index.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "index_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "lumbar-disc_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "lumbar-disc.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "lumbar-disc_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "pain-spine-clinic_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "pain-spine-clinic.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "pain-spine-clinic_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "shoulder-frozen_en.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "shoulder-frozen.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "path": "shoulder-frozen_cn.html",
+      "latest_standard_completed": false,
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "traffic-accident_en.html",
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "5bf23ad89aea40e93d9ec75460119b980875dc0fdafa149b48da668964ebadf0",
+      "git_blob": "3aad8f46b90a6ddddb9f0406c55144ddcdc4f5d3",
+      "publication_commit": "46e79dc4e6246d5abb43c220cc33c29b924dce65"
+    },
+    {
+      "path": "traffic-accident.html",
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "e71a2f30f59f98cbc798de8203f41d4d517b11dea2762c2f2fcf013adae93a57",
+      "git_blob": "e0cd8b84b825d74e694f6444ecdda31a067626db",
+      "publication_commit": "a002e222fd3e8eddc149c8ca2bb12d6fa03b74dd"
+    },
+    {
+      "path": "traffic-accident_cn.html",
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "6de9291a87813224f743803a5e5df284b5c86042f3e0aaf2bcc140e8da52e62f",
+      "git_blob": "34e7f10c8ab801711dae59104bc711ce6387d561",
+      "publication_commit": "864deee052510f1c6bedf7cb4d29a7d4c9de167c"
+    }
+  ],
+  "next": "BodyallFit0004 EN/CN: reuse existing local cleanup candidates but align to KO final46a273ee7ba9ea06f1ff676b284b9bbc656d803f7079d49d5e463b86a12c2d1f, including metadata choice description and concise evidence scope. Then0003 specific percentage-point correction scope.",
+  "holds": [
+    "BodyallFit0002 BMR image consistency",
+    "BodyallFit0005 two missing images",
+    "BodyallFit0007 correction PMID40832789 and postapproval change",
+    "HERB0002 Korean full-text/mechanism-figure review",
+    "GLP1 CN OUP/CDN and DOI redirect checks unresolved",
+    "Make OFF/AUTH_BLOCKED; no calls or bypass, no automatic indexing; budget/model unchanged"
+  ],
+  "archive_limit": "This is a compact restart checkpoint with current156-URL accounting, exact published version, rules and evidence receipt. It does not contain all historical unpublished HTML or the full21MB ZIP. Latest full local ZIP: run_maintenance4_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip."
+}
