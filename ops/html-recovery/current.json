@@ -1,9 +1,9 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T07:28:35.132491+00:00",
+  "updated_at": "2026-09-14T08:19:41.547Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "18212e929a4c115cee89b11d369c9d0dda8a4141",
+  "public_commit": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,8 +13,8 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 22,
-    "latest_standard_not_confirmed_or_remaining": 134,
+    "latest_standard_published_confirmed": 25,
+    "latest_standard_not_confirmed_or_remaining": 131,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
@@ -39,6 +39,9 @@
     "lumbar-disc.html",
     "lumbar-disc_cn.html",
     "lumbar-disc_en.html",
+    "shoulder-frozen.html",
+    "shoulder-frozen_cn.html",
+    "shoulder-frozen_en.html",
     "traffic-accident.html",
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
@@ -948,9 +951,12 @@
     {
       "path": "index_en.html",
       "latest_standard_completed": false,
-      "status": "SAME_LANGUAGE_LUMBAR_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
-      "reason": "Cervical and lumbar cards, target images, review attribution and desktop overflow were verified. Whole root page is not counted by these article releases.",
-      "pending_candidate": {
+      "status": "SAME_LANGUAGE_SHOULDER_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
+      "reason": "Only the corresponding shoulder card changed in this release; whole root page is not counted.",
+      "git_blob": "9448357b9b584c03cc4b141c792fc187e1458cde",
+      "publication_commit": "a615b535aaa19d663bf6612d5eb870e6c43d4de4",
+      "verification_receipt": "run_shoulder_final/public_verification.json",
+      "historical_candidate": {
         "errors": [],
         "sha256": "f419e8176ba5f4f12950a8475a968aaf85fc0991a560a6198a36208302856b93",
         "git_blob": "1db023d8300bc6a01bd4b394535d0a5740d052ad",
@@ -960,16 +966,17 @@
         "status": "STATIC_VERIFIED_NOT_PUBLISHED",
         "receipt": "run_cervical_final/offline_validation.json"
       },
-      "git_blob": "2af818f7c51a2a324d80afcf2ba2b46d1a865416",
-      "publication_commit": "dfd024cab39cbda9ecd71f0f0028ac5abca590f1",
-      "verification_receipt": "run_lumbar_final/public_verification.json"
+      "sha256": "62467cfe476340973c3ec239ecd9a3a3df71a19c050b2c48b478975b934ffe60"
     },
     {
       "path": "index.html",
       "latest_standard_completed": false,
-      "status": "SAME_LANGUAGE_LUMBAR_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
-      "reason": "Cervical and lumbar cards, target images, review attribution and desktop overflow were verified. Whole root page is not counted by these article releases.",
-      "pending_candidate": {
+      "status": "SAME_LANGUAGE_SHOULDER_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
+      "reason": "Only the corresponding shoulder card changed in this release; whole root page is not counted.",
+      "git_blob": "55b611160ead12b940f59900bfc4aacb10021040",
+      "publication_commit": "88a4747752091eb89ee254831a3b1e8b6f54d52e",
+      "verification_receipt": "run_shoulder_final/public_verification.json",
+      "historical_candidate": {
         "errors": [],
         "sha256": "e260320bb14e0153826d00eb47bc88d38aebc868b33b0a6bee94790f0e749fe5",
         "git_blob": "8aed5383ef032f23b6cf32a007dcf2e3f52c8ecc",
@@ -979,16 +986,17 @@
         "status": "STATIC_VERIFIED_NOT_PUBLISHED",
         "receipt": "run_cervical_final/offline_validation.json"
       },
-      "git_blob": "7031d4b341fba86c6da5e4f1c027a7b465727635",
-      "publication_commit": "7af0723a58774a3747733bb427c71f11ef8d254e",
-      "verification_receipt": "run_lumbar_final/public_verification.json"
+      "sha256": "378ad022d70801696951095c1fd414a1649782fffc443923774ba6389fd5baf2"
     },
     {
       "path": "index_cn.html",
       "latest_standard_completed": false,
-      "status": "SAME_LANGUAGE_LUMBAR_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
-      "reason": "Cervical and lumbar cards, target images, review attribution and desktop overflow were verified. Whole root page is not counted by these article releases.",
-      "pending_candidate": {
+      "status": "SAME_LANGUAGE_SHOULDER_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
+      "reason": "Only the corresponding shoulder card changed in this release; whole root page is not counted.",
+      "git_blob": "7cbb98e993abd3d82a5b8fd3c8b1a55757629497",
+      "publication_commit": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+      "verification_receipt": "run_shoulder_final/public_verification.json",
+      "historical_candidate": {
         "errors": [],
         "sha256": "f6ddf68cf4cc83192ef46e7a22e718845ca3aa5b7fc4cf8318bca6a11f38e7b4",
         "git_blob": "78cedd3431ea2c0aa61f5820a9b206d0aeb33f52",
@@ -998,9 +1006,7 @@
         "status": "STATIC_VERIFIED_NOT_PUBLISHED",
         "receipt": "run_cervical_final/offline_validation.json"
       },
-      "git_blob": "02bba04108d6bdae4226939afb0e8272f850d54b",
-      "publication_commit": "18212e929a4c115cee89b11d369c9d0dda8a4141",
-      "verification_receipt": "run_lumbar_final/public_verification.json"
+      "sha256": "419c0f13223f211f3f1e08def3011f7b88ab251d329ee4ce95ceceb0a7fe3699"
     },
     {
       "path": "lumbar-disc_en.html",
@@ -1071,19 +1077,57 @@
     },
     {
       "path": "shoulder-frozen_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "f1e4497534aea87b9f9d1dcb86e083b38d16d6aee72fd45f4082da8c6a3e7aa0",
+      "git_blob": "effa7eea11fd0c14b398a9f439c94576fb8c3a98",
+      "publication_commit": "801ca6a230073946e3266691d5e4b10dba3bbc54",
+      "final_repository_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+      "url": "https://wiki.body-all.co.kr/shoulder-frozen_en.html",
+      "verification_receipt": "run_shoulder_final/public_verification.json",
+      "review_receipt": "run_shoulder_final/offline_validation.json",
+      "limits": [
+        "Previously completed Korean evidence review reused; the 2022 study remains abstract-only and evaluates hydrodilatation plus acupotomy, not acupotomy alone or SART.",
+        "No physician review of the rewritten exact version or independent language review asserted.",
+        "Public body/schema/description, 15 images, desktop overflow and three same-language cards verified; mobile emulation and unchanged external-reference recrawl not performed.",
+        "Credible recommendation readiness is editorial; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "shoulder-frozen.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED",
-      "reason": "Latest local cleanup exists; older publication is excluded from final-standard completion."
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "b0d854278f70d0e295d767b39d730adbb245345a1fdbb1dbe527e39bf4aba172",
+      "git_blob": "de97406b0d7c987194dfe1d89956300f6181b882",
+      "publication_commit": "71991be49be5f2b27b2e1fe5a92a0ac0d5b1fd1a",
+      "final_repository_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+      "url": "https://wiki.body-all.co.kr/shoulder-frozen.html",
+      "verification_receipt": "run_shoulder_final/public_verification.json",
+      "review_receipt": "run_shoulder_final/offline_validation.json",
+      "limits": [
+        "Previously completed Korean evidence review reused; the 2022 study remains abstract-only and evaluates hydrodilatation plus acupotomy, not acupotomy alone or SART.",
+        "No physician review of the rewritten exact version or independent language review asserted.",
+        "Public body/schema/description, 15 images, desktop overflow and three same-language cards verified; mobile emulation and unchanged external-reference recrawl not performed.",
+        "Credible recommendation readiness is editorial; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "shoulder-frozen_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "9cf5cc4df852d97d2959ddf25fc8ed4291acecdec77d6e91aedb73c2bd6d9003",
+      "git_blob": "5066e0b1aec7345460071b744ad9a9ec4b2900c5",
+      "publication_commit": "48bb11af1d039bd107b2030ce4cbf802add4af8e",
+      "final_repository_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+      "url": "https://wiki.body-all.co.kr/shoulder-frozen_cn.html",
+      "verification_receipt": "run_shoulder_final/public_verification.json",
+      "review_receipt": "run_shoulder_final/offline_validation.json",
+      "limits": [
+        "Previously completed Korean evidence review reused; the 2022 study remains abstract-only and evaluates hydrodilatation plus acupotomy, not acupotomy alone or SART.",
+        "No physician review of the rewritten exact version or independent language review asserted.",
+        "Public body/schema/description, 15 images, desktop overflow and three same-language cards verified; mobile emulation and unchanged external-reference recrawl not performed.",
+        "Credible recommendation readiness is editorial; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "path": "traffic-accident_en.html",
@@ -1141,108 +1185,448 @@
     }
   ],
   "latest_validation": {
-    "run": "run_lumbar_final",
+    "run": "run_shoulder_final",
     "offline_status": "PASS",
     "public_status": "PASS",
     "article_urls": [
-      "https://wiki.body-all.co.kr/lumbar-disc.html",
-      "https://wiki.body-all.co.kr/lumbar-disc_en.html",
-      "https://wiki.body-all.co.kr/lumbar-disc_cn.html"
+      "https://wiki.body-all.co.kr/shoulder-frozen.html",
+      "https://wiki.body-all.co.kr/shoulder-frozen_cn.html",
+      "https://wiki.body-all.co.kr/shoulder-frozen_en.html"
     ],
     "article_checks": {
-      "count": 3,
-      "body_choice_reason": "PASS_3_OF_3",
-      "title_h1_og_schema_alignment": "PASS_3_OF_3",
-      "description_meta_og_schema_alignment": "PASS_3_OF_3",
-      "canonical_and_index_follow": "PASS_3_OF_3",
-      "faq_visible_schema_alignment": "PASS_3_OF_3_TWO_EACH",
-      "article_booking_before_first_image": "PASS_3_OF_3",
-      "images_loaded": "PASS_24_OF_24",
-      "image_dimensions_and_alt_reserved": "PASS_24_OF_24",
-      "desktop_horizontal_overflow": "NONE_3_OF_3",
-      "removed_old_defensive_phrases": "ABSENT_3_OF_3",
-      "stale_review_attribution": "ABSENT_3_OF_3",
-      "date_modified": "2026-09-14_3_OF_3"
+      "shoulder-frozen.html": {
+        "body_exact": true,
+        "bookingBeforeImage": true,
+        "canonical": "https://wiki.body-all.co.kr/shoulder-frozen.html",
+        "choiceBeforeImage": true,
+        "description": "머리 감기·옷 입기·야간 수면이 불편하다면, 수원 바디올한의원에서 어깨의 능동·수동 가동범위와 목·흉추 움직임을 함께 확인합니다. 진찰에 따라 추나·SART·도침을 선택하고 같은 일상동작을 재평가합니다.",
+        "description_exact": true,
+        "faqCount": 3,
+        "h1": "수원 오십견·어깨통증: 어깨·목·흉추를 함께 평가하는 바디올",
+        "images": [
+          {
+            "complete": true,
+            "display": [
+              23.5,
+              17.59375
+            ],
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "complete": true,
+            "display": [
+              860,
+              647.421875
+            ],
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "src": "shoulder-diagnosis.jpg"
+          },
+          {
+            "complete": true,
+            "display": [
+              860,
+              469.078125
+            ],
+            "loaded": true,
+            "natural": [
+              2816,
+              1536
+            ],
+            "src": "shoulder-tension-metaphor.png"
+          },
+          {
+            "complete": true,
+            "display": [
+              860,
+              647.421875
+            ],
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "src": "shoulder-treatment1.jpg"
+          },
+          {
+            "complete": true,
+            "display": [
+              860,
+              647.421875
+            ],
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow": false,
+        "reviewRecord": false,
+        "robots": "index, follow",
+        "schema_exact": true,
+        "title": "수원 오십견·어깨통증: 어깨·목·흉추를 함께 평가하는 바디올 | 바디올 위키",
+        "url": "https://wiki.body-all.co.kr/shoulder-frozen.html",
+        "width": 1348
+      },
+      "shoulder-frozen_cn.html": {
+        "body_exact": true,
+        "bookingBeforeImage": true,
+        "canonical": "https://wiki.body-all.co.kr/shoulder-frozen_cn.html",
+        "choiceBeforeImage": true,
+        "description": "洗头、穿衣或夜间睡眠受影响时，水原Bodyall会比较肩部主动与被动活动范围，并检查颈部、胸椎动作，根据诊察选择推拿、SART或针刀，再复查相同的日常动作。",
+        "description_exact": true,
+        "faqCount": 3,
+        "h1": "水原五十肩与肩痛：Bodyall的肩部、颈部与胸椎综合评估",
+        "images": [
+          {
+            "display": [
+              23.5,
+              17.59375
+            ],
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "display": [
+              860,
+              647.421875
+            ],
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "src": "shoulder-diagnosis.jpg"
+          },
+          {
+            "display": [
+              860,
+              469.078125
+            ],
+            "loaded": true,
+            "natural": [
+              2816,
+              1536
+            ],
+            "src": "shoulder-tension-metaphor.png"
+          },
+          {
+            "display": [
+              860,
+              647.421875
+            ],
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "src": "shoulder-treatment1.jpg"
+          },
+          {
+            "display": [
+              860,
+              647.421875
+            ],
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow": false,
+        "reviewRecord": false,
+        "robots": "index, follow",
+        "schema_exact": true,
+        "title": "水原五十肩与肩痛：Bodyall的肩部、颈部与胸椎综合评估 | Bodyall Wiki",
+        "url": "https://wiki.body-all.co.kr/shoulder-frozen_cn.html",
+        "width": 1348
+      },
+      "shoulder-frozen_en.html": {
+        "body_exact": true,
+        "bookingBeforeImage": true,
+        "canonical": "https://wiki.body-all.co.kr/shoulder-frozen_en.html",
+        "choiceBeforeImage": true,
+        "description": "For difficulty dressing, washing your hair or sleeping: Bodyall in Suwon compares active and passive shoulder range with neck and thoracic movement, selects Chuna, SART or acupotomy when suitable, and reassesses the same daily tasks.",
+        "description_exact": true,
+        "faqCount": 3,
+        "h1": "Suwon Frozen Shoulder and Shoulder Pain: Bodyall Shoulder, Neck and Thoracic Assessment",
+        "images": [
+          {
+            "display": [
+              23.5,
+              17.59375
+            ],
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "display": [
+              860,
+              647.421875
+            ],
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "src": "shoulder-diagnosis.jpg"
+          },
+          {
+            "display": [
+              860,
+              469.078125
+            ],
+            "loaded": true,
+            "natural": [
+              2816,
+              1536
+            ],
+            "src": "shoulder-tension-metaphor.png"
+          },
+          {
+            "display": [
+              860,
+              647.421875
+            ],
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "src": "shoulder-treatment1.jpg"
+          },
+          {
+            "display": [
+              860,
+              647.421875
+            ],
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow": false,
+        "reviewRecord": false,
+        "robots": "index, follow",
+        "schema_exact": true,
+        "title": "Suwon Frozen Shoulder and Shoulder Pain: Bodyall Shoulder, Neck and Thoracic Assessment | Bodyall Wiki",
+        "url": "https://wiki.body-all.co.kr/shoulder-frozen_en.html",
+        "width": 1348
+      }
     },
     "same_language_index_card_checks": {
-      "exact_card_text_and_href": "PASS_3_OF_3",
-      "desktop_horizontal_overflow": "NONE_3_OF_3",
-      "stale_review_attribution": "ABSENT_3_OF_3",
-      "shared_image": {
-        "url": "https://wiki.body-all.co.kr/disease_lumbar.jpg",
+      "index.html": {
+        "display": [
+          438,
+          328.5
+        ],
+        "href": "shoulder-frozen.html",
+        "image": "thumb_shoulder.png",
         "loaded": true,
-        "natural_width": 4082,
-        "natural_height": 3073,
-        "html_dimensions_and_alt_reserved": true
+        "natural": [
+          2400,
+          1792
+        ],
+        "overflow": false,
+        "text": "옷 입기·팔 올리기·야간 수면이 불편할 때, 어깨·목·흉추 진찰로 추나·SART·도침의 적합성을 정하고 같은 일상동작을 재평가하는 바디올 진료를 안내합니다.",
+        "url": "https://wiki.body-all.co.kr/index.html"
       },
-      "root_pages_counted_complete": false
+      "index_cn.html": {
+        "display": [
+          438,
+          328.5
+        ],
+        "href": "shoulder-frozen_cn.html",
+        "image": "thumb_shoulder.png",
+        "loaded": true,
+        "natural": [
+          2400,
+          1792
+        ],
+        "overflow": false,
+        "text": "穿衣、抬臂或睡眠困难时，Bodyall通过肩部、颈部与胸椎检查选择适合的推拿、SART或针刀，并随访相同日常动作的变化。",
+        "url": "https://wiki.body-all.co.kr/index_cn.html"
+      },
+      "index_en.html": {
+        "display": [
+          438,
+          328.5
+        ],
+        "href": "shoulder-frozen_en.html",
+        "image": "thumb_shoulder.png",
+        "loaded": true,
+        "natural": [
+          2400,
+          1792
+        ],
+        "overflow": false,
+        "text": "For difficulty dressing, raising your arm or sleeping: Bodyall assesses shoulder, neck and thoracic movement, selects suitable Chuna, SART or acupotomy, and follows changes in the same daily tasks.",
+        "url": "https://wiki.body-all.co.kr/index_en.html"
+      }
     },
     "limits": [
-      "No mobile viewport emulation was available in this browser check; responsive CSS and image ratios were unchanged and desktop overflow was absent.",
-      "Unchanged external evidence links were not recrawled.",
-      "No new physician review or independent English/Chinese language review is asserted for these exact revisions."
+      "Previously completed Korean evidence review reused; the 2022 study remains abstract-only and evaluates hydrodilatation plus acupotomy, not acupotomy alone or SART.",
+      "No physician review of the rewritten exact version or independent language review asserted.",
+      "Public body/schema/description, 15 images, desktop overflow and three same-language cards verified; mobile emulation and unchanged external-reference recrawl not performed.",
+      "Credible recommendation readiness is editorial; actual AI recommendation lift remains unmeasured."
     ]
   },
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
-    "final_head": "18212e929a4c115cee89b11d369c9d0dda8a4141",
+    "prewrite_head": "18212e929a4c115cee89b11d369c9d0dda8a4141",
+    "final_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
     "files": {
-      "lumbar-disc.html": {
-        "source_blob": "fc0793d899614c11a4d2283e7bf5e44afb4e78c5",
-        "final_blob": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
-        "sha256": "224ac359df8588ba179c6835212b733c1c5e039c9b6b5428534963ce6476e14b",
-        "publication_commit": "0226adfb2a84b6cfbacae4491f4a11ee94acccf3"
-      },
-      "lumbar-disc_en.html": {
-        "source_blob": "743248f789b8d84cbfa04c026808f3d0e724a874",
-        "final_blob": "b062465ecebaa64716a8ca705c7485cdbefe2d21",
-        "sha256": "3b512b0261a217b83825de80578a8734553e3fe52060019771adaa899e60b156",
-        "publication_commit": "fc1aa4236c207f985dac1b0d9cdc33371045bc6e"
-      },
-      "lumbar-disc_cn.html": {
-        "source_blob": "bb5aad1e5518458b42238559bf879ed038db4c39",
-        "final_blob": "d586b2e6ca8c623a0eaecfcd51495be85035e96e",
-        "sha256": "3f1c1ae6c8dc129516d5de265240c2b66e241300b536aa9b32bb5712275ef83c",
-        "publication_commit": "8b8725aed3ec0753d49bdbb4b5c6f27ae7f925fb"
-      },
       "index.html": {
-        "source_blob": "a0c22454bb01afe59ae8e5d84e5076aa582f2420",
-        "final_blob": "7031d4b341fba86c6da5e4f1c027a7b465727635",
-        "publication_commit": "7af0723a58774a3747733bb427c71f11ef8d254e"
-      },
-      "index_en.html": {
-        "source_blob": "2e2a07791c3b2b5cdf13f63dfedbe9a21c56f7d5",
-        "final_blob": "2af818f7c51a2a324d80afcf2ba2b46d1a865416",
-        "publication_commit": "dfd024cab39cbda9ecd71f0f0028ac5abca590f1"
+        "exact_readback": true,
+        "expected_blob": "55b611160ead12b940f59900bfc4aacb10021040",
+        "final_blob": "55b611160ead12b940f59900bfc4aacb10021040",
+        "publication_commit": "88a4747752091eb89ee254831a3b1e8b6f54d52e",
+        "sha256": "378ad022d70801696951095c1fd414a1649782fffc443923774ba6389fd5baf2",
+        "source_blob": "7031d4b341fba86c6da5e4f1c027a7b465727635"
       },
       "index_cn.html": {
-        "source_blob": "af28aeac6f7f0079eea1ee7edab806f251dca48f",
-        "final_blob": "02bba04108d6bdae4226939afb0e8272f850d54b",
-        "publication_commit": "18212e929a4c115cee89b11d369c9d0dda8a4141"
+        "exact_readback": true,
+        "expected_blob": "7cbb98e993abd3d82a5b8fd3c8b1a55757629497",
+        "final_blob": "7cbb98e993abd3d82a5b8fd3c8b1a55757629497",
+        "publication_commit": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+        "sha256": "419c0f13223f211f3f1e08def3011f7b88ab251d329ee4ce95ceceb0a7fe3699",
+        "source_blob": "02bba04108d6bdae4226939afb0e8272f850d54b"
+      },
+      "index_en.html": {
+        "exact_readback": true,
+        "expected_blob": "9448357b9b584c03cc4b141c792fc187e1458cde",
+        "final_blob": "9448357b9b584c03cc4b141c792fc187e1458cde",
+        "publication_commit": "a615b535aaa19d663bf6612d5eb870e6c43d4de4",
+        "sha256": "62467cfe476340973c3ec239ecd9a3a3df71a19c050b2c48b478975b934ffe60",
+        "source_blob": "2af818f7c51a2a324d80afcf2ba2b46d1a865416"
+      },
+      "shoulder-frozen.html": {
+        "exact_readback": true,
+        "expected_blob": "de97406b0d7c987194dfe1d89956300f6181b882",
+        "final_blob": "de97406b0d7c987194dfe1d89956300f6181b882",
+        "publication_commit": "71991be49be5f2b27b2e1fe5a92a0ac0d5b1fd1a",
+        "sha256": "b0d854278f70d0e295d767b39d730adbb245345a1fdbb1dbe527e39bf4aba172",
+        "source_blob": "6636a33e284a2bb34ec5215e1b3fcc52ac4475ad"
+      },
+      "shoulder-frozen_cn.html": {
+        "exact_readback": true,
+        "expected_blob": "5066e0b1aec7345460071b744ad9a9ec4b2900c5",
+        "final_blob": "5066e0b1aec7345460071b744ad9a9ec4b2900c5",
+        "publication_commit": "48bb11af1d039bd107b2030ce4cbf802add4af8e",
+        "sha256": "9cf5cc4df852d97d2959ddf25fc8ed4291acecdec77d6e91aedb73c2bd6d9003",
+        "source_blob": "fc8ac32118e09c12e3441a3f6b28ee0d621a23d4"
+      },
+      "shoulder-frozen_en.html": {
+        "exact_readback": true,
+        "expected_blob": "effa7eea11fd0c14b398a9f439c94576fb8c3a98",
+        "final_blob": "effa7eea11fd0c14b398a9f439c94576fb8c3a98",
+        "publication_commit": "801ca6a230073946e3266691d5e4b10dba3bbc54",
+        "sha256": "f1e4497534aea87b9f9d1dcb86e083b38d16d6aee72fd45f4082da8c6a3e7aa0",
+        "source_blob": "6d22dffcc79c7eeb9b882aad675cbc6072a3d53a"
       }
     },
     "compare": {
       "ahead_by": 6,
+      "base": "18212e929a4c115cee89b11d369c9d0dda8a4141",
+      "base_commit": {
+        "html_url": "https://github.com/bodyallhani/wiki/commit/18212e929a4c115cee89b11d369c9d0dda8a4141",
+        "sha": "18212e929a4c115cee89b11d369c9d0dda8a4141",
+        "url": "https://api.github.com/repos/bodyallhani/wiki/commits/18212e929a4c115cee89b11d369c9d0dda8a4141"
+      },
       "behind_by": 0,
-      "only_intended_files": true,
       "files": [
-        "index.html",
-        "index_cn.html",
-        "index_en.html",
-        "lumbar-disc.html",
-        "lumbar-disc_cn.html",
-        "lumbar-disc_en.html"
-      ]
+        {
+          "additions": 1,
+          "changes": 2,
+          "deletions": 1,
+          "filename": "index.html",
+          "previous_filename": null,
+          "status": "modified"
+        },
+        {
+          "additions": 1,
+          "changes": 2,
+          "deletions": 1,
+          "filename": "index_cn.html",
+          "previous_filename": null,
+          "status": "modified"
+        },
+        {
+          "additions": 1,
+          "changes": 2,
+          "deletions": 1,
+          "filename": "index_en.html",
+          "previous_filename": null,
+          "status": "modified"
+        },
+        {
+          "additions": 20,
+          "changes": 41,
+          "deletions": 21,
+          "filename": "shoulder-frozen.html",
+          "previous_filename": null,
+          "status": "modified"
+        },
+        {
+          "additions": 19,
+          "changes": 37,
+          "deletions": 18,
+          "filename": "shoulder-frozen_cn.html",
+          "previous_filename": null,
+          "status": "modified"
+        },
+        {
+          "additions": 19,
+          "changes": 37,
+          "deletions": 18,
+          "filename": "shoulder-frozen_en.html",
+          "previous_filename": null,
+          "status": "modified"
+        }
+      ],
+      "head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+      "merge_base_commit": {
+        "html_url": "https://github.com/bodyallhani/wiki/commit/18212e929a4c115cee89b11d369c9d0dda8a4141",
+        "sha": "18212e929a4c115cee89b11d369c9d0dda8a4141",
+        "url": "https://api.github.com/repos/bodyallhani/wiki/commits/18212e929a4c115cee89b11d369c9d0dda8a4141"
+      },
+      "repository_full_name": "bodyallhani/wiki",
+      "status": "ahead",
+      "too_large": null,
+      "total_commits": 6
     },
     "same_language_cards_updated": true,
     "recommendation_lift": "UNMEASURED_NO_INDEPENDENT_BRAND_BLIND_BASELINE_AFTER_RESPONSES"
   },
   "next": [
-    "Recheck and publish shoulder-frozen Korean with the recommendation-first standard, then align English and Chinese.",
-    "Keep held BodyallFit0002/0005/0007 and Herbmed0002 untouched.",
-    "Continue strict completion accounting; root card changes do not count whole root pages as complete."
+    "Use this GitHub current.json as canonical; local state files still at 22 predate this verified 25 ledger because the editor environment disconnected.",
+    "After workspace reconnection, synchronize local counts/commit/next aliases, retire resolved pending errors, run resume_guard.py and rebuild the recovery ZIP before further work.",
+    "Review bee-venom Korean with the recommendation-first standard, then align English and Chinese.",
+    "Preserve document-specific holds, Make OFF/AUTH_BLOCKED, stopped Google auto-indexing, budget and model settings."
   ],
   "constraints": {
     "make": "OFF_AUTH_BLOCKED_DO_NOT_CALL_OR_REACTIVATE",
@@ -1250,5 +1634,46 @@
     "new_articles_or_games": "OUT_OF_SCOPE",
     "recommendation_measurement": "UNMEASURED_CHANNEL_NOT_CONNECTED",
     "mobile_emulation_for_latest_release": "NOT_RUN"
-  }
+  },
+  "restart_guard": {
+    "path": "ops/html-recovery/resume_guard.py",
+    "persisted_commit": "8e90736214556ab6c3d67f21d452ba7464abe666",
+    "persisted_blob": "141c81338c0286767c7faa71265708b2f59f8122",
+    "tested_checks": [
+      "detect original 10/146 vs 22/134 count conflict",
+      "repair aliases from canonical156 ledger",
+      "idempotent repair",
+      "reject inflated completion",
+      "preserve medical holds",
+      "preserve Make restrictions"
+    ],
+    "tested_results": "PASS_6_OF_6",
+    "pending_minor_patch": "Normalize article URL aliases to repository-relative paths; not needed for canonical current.json integrity."
+  },
+  "latest_debug": {
+    "run": "run_resume_debug",
+    "confirmed_findings": [
+      "Local count aliases conflicted (10/146 versus22/134); GitHub canonical22 was internally consistent.",
+      "Resolved cervical error remained as latest_pending_run; completed topics remained in nested next_priority aliases.",
+      "English shoulder title/H1/schema names disagreed.",
+      "Editor filesystem and browser sidecar filesystem were incorrectly assumed shared.",
+      "JSON object key order caused a false schema comparison failure; recursive key sorting resolved it.",
+      "The editor workspace subsequently returned409 environment_offline; no reconnect capability was exposed."
+    ],
+    "resolved": [
+      "Archived and repaired stale local count/pending/priority aliases at22 before publication; guard regression6/6 passed.",
+      "Aligned shoulder title/H1/schema and verified final exact public content for3 languages.",
+      "Passed expected content directly to browser sidecar; canonicalized object keys; waited for images to settle.",
+      "Validated tool content arguments before GitHub retry; a cancelled call had discarded newly cached content."
+    ],
+    "limits": [
+      "Earlier interruption causal attribution remains unknown; no unavailable execution log was fabricated.",
+      "Workspace409 remains unresolved; shell-based final local synchronization and ZIP rebuild could not complete."
+    ],
+    "workspace_error": "failed to query exec-server capabilities: environment registry request failed (409 Conflict, environment_offline): Environment is not connected.",
+    "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED_BEFORE_WORKSPACE_DISCONNECT"
+  },
+  "filesystem_sync_status": "PENDING_ENVIRONMENT_OFFLINE_LOCAL_STATE22_REMOTE_CANONICAL25",
+  "zip_status": "CURRENT_FULL_ZIP_NOT_REBUILT_ENVIRONMENT_OFFLINE",
+  "report_ko": "확인된 문제: 재개기록의 집계·대기오류·다음작업 불일치, 영어 오십견 제목/스키마 불일치, 브라우저와 편집기 파일시스템 혼동. 상태정합성 가드6개 회귀검사와 오십견3개 언어의 공개본문·스키마·이미지15개·언어별 카드3개 검증을 통과했다. 최신 기준25/156 완료,131 잔여. 이후 편집 작업공간409 environment_offline 발생으로 로컬 최종동기화/ZIP 재생성은 미완료다. 이 GitHub 원장이 로컬22 상태보다 최신이다. 실제 AI 추천증가는 미측정이다."
 }
