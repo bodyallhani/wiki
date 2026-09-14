@@ -1677,17 +1677,17 @@
     ],
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED"
   },
-  "filesystem_sync_status": "PENDING_RECONCILIATION",
-  "zip_status": "PENDING_BUILD",
+  "filesystem_sync_status": "LOCAL_SYNCED_AND_GUARD_PASS",
+  "zip_status": "BUILT_AND_INTEGRITY_VERIFIED",
   "report_ko": "run_0015_final/REPORT_KO.md",
   "zip_receipt": "run_0015_final/zip_receipt.json",
   "latest_recovery_persistence": {
     "branch": "recovery/html-20260914",
     "path": "ops/html-recovery/current.json",
-    "first_update_commit": null,
-    "first_update_blob": null,
-    "first_update_exact_readback": false,
-    "note": "Pending optimistic recovery-ledger persistence."
+    "first_update_commit": "e71389b6e3c27b95231ff4f53d0af69a5e591c0c",
+    "first_update_blob": "cd933e9c2934c053700b37de620469a2052f0086",
+    "first_update_exact_readback": true,
+    "note": "This final metadata-only update records guard v2 reconciliation and archive integrity; the public HTML head remains unchanged."
   },
   "latest_local_run": "run_0015_final",
   "next_priority": "Review encyclopedia/0014 lumbar spinal stenosis Acupotomy Korean against the recommendation-first standard, then align English and Chinese."
