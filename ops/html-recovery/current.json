@@ -1,9 +1,9 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T17:28:47Z",
+  "updated_at": "2026-09-14T19:13:56Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "ecbe58469820f29d3ba4dfd8caa86d748404e63f",
+  "public_commit": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -877,17 +877,56 @@
     {
       "path": "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html",
       "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "status": "LATEST_STANDARD_PUBLISHED_SOURCE_VERIFIED_VISUAL_PENDING",
+      "sha256": "65ac9ab5f9b235eb61e9944bdadd899e9e81ea1b7d78c6915ed87b5b73297251",
+      "git_blob": "a7855a248cf9f6dfde1b4ff8e425e1a450078ae8",
+      "publication_commit": "cd2bfed46648d3085ca827b4e0df3eafdbc87ebd",
+      "final_repository_head": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html",
+      "verification_receipt": "run_0014_final/public_verification.json",
+      "review_receipt": "run_0014_final/offline_validation.json",
+      "limits": [
+        "GitHub and Pages source exact readback passed, but public browser visual verification is pending and this URL is not counted complete.",
+        "The 2023 pilot trial found no significant group-by-time interaction and does not establish structural decompression, SART effect or Bodyall outcomes.",
+        "The 2025 review included 14 RCTs but safety was reported in only five studies and larger high-quality trials remain necessary.",
+        "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
+      ]
     },
     {
       "path": "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
       "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "status": "LATEST_STANDARD_PUBLISHED_SOURCE_VERIFIED_VISUAL_PENDING",
+      "sha256": "96386839e6a087180719a35b0ef0a9eff52afd8373816af020957f920498ee8f",
+      "git_blob": "70d35e1c4513cd31ed0af795a558d6507a46eff0",
+      "publication_commit": "941d082aed192f6fc2ae44ef188fdc2d6b01039c",
+      "final_repository_head": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
+      "verification_receipt": "run_0014_final/public_verification.json",
+      "review_receipt": "run_0014_final/offline_validation.json",
+      "limits": [
+        "GitHub and Pages source exact readback passed, but public browser visual verification is pending and this URL is not counted complete.",
+        "The 2023 pilot trial found no significant group-by-time interaction and does not establish structural decompression, SART effect or Bodyall outcomes.",
+        "The 2025 review included 14 RCTs but safety was reported in only five studies and larger high-quality trials remain necessary.",
+        "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
+      ]
     },
     {
       "path": "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_cn.html",
       "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "status": "LATEST_STANDARD_PUBLISHED_SOURCE_VERIFIED_VISUAL_PENDING",
+      "sha256": "79428d1cebd6ef05e1c8d3fb2200d9862cf7cffb96a9c07bbf06978ec1445425",
+      "git_blob": "0edb0e7f9936dbe25ce04604d8e2e5131586abb2",
+      "publication_commit": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
+      "final_repository_head": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_cn.html",
+      "verification_receipt": "run_0014_final/public_verification.json",
+      "review_receipt": "run_0014_final/offline_validation.json",
+      "limits": [
+        "GitHub and Pages source exact readback passed, but public browser visual verification is pending and this URL is not counted complete.",
+        "The 2023 pilot trial found no significant group-by-time interaction and does not establish structural decompression, SART effect or Bodyall outcomes.",
+        "The 2025 review included 14 RCTs but safety was reported in only five studies and larger high-quality trials remain necessary.",
+        "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
+      ]
     },
     {
       "path": "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_en.html",
@@ -1573,73 +1612,76 @@
     }
   ],
   "latest_validation": {
-    "run": "run_0015_final",
+    "run": "run_0014_final",
     "offline_status": "PASS",
-    "public_status": "PASS",
+    "public_status": "SOURCE_PASS_VISUAL_PENDING",
     "article_urls": [
-      "https://wiki.body-all.co.kr/encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_en.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html"
+      "https://wiki.body-all.co.kr/encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_cn.html"
     ],
     "article_checks": {
       "count": 3,
       "public_html_exact_sha256": true,
-      "patient_condition_bodyall_choice_reason_and_next_action_visible": true,
-      "combined_differential_exam_chuna_sart_role_separation_and_same_function_reassessment_visible": true,
-      "urgent_cauda_equina_neurologic_trauma_infection_pregnancy_vascular_and_cardiopulmonary_signals_visible": true,
-      "single_test_pelvic_torsion_and_permanent_reset_claims_removed": true,
+      "patient_condition_bodyall_choice_reason_and_next_action_visible_in_source": true,
+      "neurologic_joint_vascular_differential_and_role_separated_chuna_sart_acupotomy_visible_in_source": true,
+      "urgent_cauda_equina_progressive_neurologic_infection_trauma_and_vascular_signals_visible_in_source": true,
+      "structural_decompression_spinal_canal_enlargement_and_bodyall_outcome_overclaims_removed": true,
       "canonical_clean_and_index_follow": true,
       "same_language_index_links_correct": true,
       "faq_schema_count_each": 4,
-      "all_six_images_loaded": true,
-      "all_images_natural_size": "1376x768",
+      "both_public_images_http_200": true,
+      "both_images_natural_size": "1376x768",
       "all_images_reserved_size": "1376x768",
-      "desktop_horizontal_overflow": false,
+      "public_browser_visual_check": "PENDING_CONNECTION_TIMEOUT",
       "stale_reviewedBy_or_lastReviewed_absent": true
     }
   },
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
-    "final_head": "ecbe58469820f29d3ba4dfd8caa86d748404e63f",
+    "prewrite_head": "ecbe58469820f29d3ba4dfd8caa86d748404e63f",
+    "final_head": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
     "files": {
-      "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html": {
-        "source_blob": "5c857c0e84290cab372073eac8763909f9aed767",
-        "final_blob": "65826e2d3c58070dba4bdce83294ed6862e5ac37",
-        "publication_commit": "489e7a2a310e66e0ba52cb505e3d13e143a5acf0",
-        "sha256": "08d7dc16be62bf6181e3082828ac3e25b800c540d30332973d67515ed9bbaaba",
+      "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html": {
+        "source_blob": "226fd5f58439fa152b83e1f4262e63586f225ff5",
+        "final_blob": "70d35e1c4513cd31ed0af795a558d6507a46eff0",
+        "publication_commit": "941d082aed192f6fc2ae44ef188fdc2d6b01039c",
+        "sha256": "96386839e6a087180719a35b0ef0a9eff52afd8373816af020957f920498ee8f",
         "github_exact_readback": true,
-        "pages_exact_readback": true
+        "pages_exact_readback": true,
+        "browser_visual_verified": false
       },
-      "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_en.html": {
-        "source_blob": "4bfeb81fb7bb0658617560cc5879043873bc856d",
-        "final_blob": "26508f779544f2f225e6889257b74284ca158fd1",
-        "publication_commit": "2712fc39692a7c057b9287ed3ff5d0d2402370d8",
-        "sha256": "55b66e66c7265080a1aca745cd3818335cf5ffb6deefd1e7a4c5e6d65509c363",
+      "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html": {
+        "source_blob": "bb52b789c3fc6f47fa54ae6ff377facd75c4993a",
+        "final_blob": "a7855a248cf9f6dfde1b4ff8e425e1a450078ae8",
+        "publication_commit": "cd2bfed46648d3085ca827b4e0df3eafdbc87ebd",
+        "sha256": "65ac9ab5f9b235eb61e9944bdadd899e9e81ea1b7d78c6915ed87b5b73297251",
         "github_exact_readback": true,
-        "pages_exact_readback": true
+        "pages_exact_readback": true,
+        "browser_visual_verified": false
       },
-      "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html": {
-        "source_blob": "5e66cc660487c74b18853a1434653acdbe9cdf97",
-        "final_blob": "1400279c1c7a9abd6328286da5f82067a958038f",
-        "publication_commit": "ecbe58469820f29d3ba4dfd8caa86d748404e63f",
-        "sha256": "a04d0925a777e39fcd353153fbfa2ee90f9052474771e3fa9edd67199b1d40b8",
+      "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_cn.html": {
+        "source_blob": "eac7c9bad1781cb5fc7ff1a46820c7c82612d1aa",
+        "final_blob": "0edb0e7f9936dbe25ce04604d8e2e5131586abb2",
+        "publication_commit": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
+        "sha256": "79428d1cebd6ef05e1c8d3fb2200d9862cf7cffb96a9c07bbf06978ec1445425",
         "github_exact_readback": true,
-        "pages_exact_readback": true
+        "pages_exact_readback": true,
+        "browser_visual_verified": false
       }
     },
     "compare": {
       "ahead_by": 3,
       "behind_by": 0,
       "files": [
-        "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html",
-        "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_en.html",
-        "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html"
+        "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
+        "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html",
+        "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_cn.html"
       ]
     }
   },
-  "next": "Review encyclopedia/0014 lumbar spinal stenosis Acupotomy Korean against the recommendation-first standard, then align English and Chinese.",
+  "next": "Finish public browser visual verification for encyclopedia/0014 lumbar spinal stenosis Acupotomy KO/EN/CN; do not count completion or proceed to 0013 until it passes.",
   "constraints": {
     "make": "OFF_AUTH_BLOCKED_DO_NOT_CALL_OR_REACTIVATE",
     "google_auto_indexing": "STOPPED",
@@ -1664,23 +1706,24 @@
     "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER"
   },
   "latest_debug": {
-    "run": "run_0015_final",
+    "run": "run_0014_final",
     "confirmed_findings": [
-      "Single FABER or Gaenslen maneuvers were framed too close to definitive sacroiliac-joint diagnosis.",
-      "Pelvic torsion, ligament-tension normalization, joint-capsule pressure restoration and permanent resetting were presented beyond the cited evidence.",
-      "English and Chinese back links incorrectly returned to the Korean index, and their Open Graph URLs omitted the encyclopedia directory."
+      "The old article presented structural decompression, adhesion dissection, spinal-space restoration and Bodyall experience beyond the cited evidence.",
+      "The 2023 pilot randomized trial was described as confirming decompression despite a nonsignificant group-by-time interaction.",
+      "English and Chinese back links pointed to the Korean index and their Open Graph URLs omitted the encyclopedia directory."
     ],
     "resolved": [
-      "The page now uses combined neurologic, lumbar, hip and sacroiliac assessment, with no single maneuver presented as definitive.",
-      "Myofascial Chuna, conditional sacroiliac mobilization within SART, lumbar or hip pathways and same-function reassessment are separated; permanent reset and recurrence-prevention claims are removed.",
-      "English and Chinese same-language index links and Open Graph URLs were corrected; all three public pages passed browser checks."
+      "The article now begins with patient selection and differentiates neurologic, joint and vascular causes before care selection.",
+      "Myofascial Chuna, conditional SART and Acupotomy have separate roles with same-task reassessment; canal enlargement and direct neural-decompression claims were removed.",
+      "Evidence scope, invasive risks, emergency signals, language links, Open Graph URLs, schema and image size reservation were corrected."
     ],
-    "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED"
+    "intervention_error": "Public browser connection timed out repeatedly; standalone browser fallback was not used. Public source and image verification passed, visual PASS remains pending.",
+    "publication_status": "PUBLISHED_SOURCE_VERIFIED_VISUAL_PENDING"
   },
-  "filesystem_sync_status": "LOCAL_SYNCED_AND_GUARD_PASS",
-  "zip_status": "BUILT_AND_INTEGRITY_VERIFIED",
-  "report_ko": "run_0015_final/REPORT_KO.md",
-  "zip_receipt": "run_0015_final/zip_receipt.json",
+  "filesystem_sync_status": "PENDING_CHECKPOINT_REFRESH",
+  "zip_status": "PENDING_REFRESH",
+  "report_ko": "run_0014_final/REPORT_KO.md",
+  "zip_receipt": null,
   "latest_recovery_persistence": {
     "branch": "recovery/html-20260914",
     "path": "ops/html-recovery/current.json",
@@ -1689,6 +1732,6 @@
     "first_update_exact_readback": true,
     "note": "This final metadata-only update records guard v2 reconciliation and archive integrity; the public HTML head remains unchanged."
   },
-  "latest_local_run": "run_0015_final",
-  "next_priority": "Review encyclopedia/0014 lumbar spinal stenosis Acupotomy Korean against the recommendation-first standard, then align English and Chinese."
+  "latest_local_run": "run_0014_final",
+  "next_priority": "Finish public browser visual verification for encyclopedia/0014 lumbar spinal stenosis Acupotomy KO/EN/CN; do not count completion or proceed to 0013 until it passes."
 }
