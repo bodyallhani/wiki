@@ -1,6 +1,6 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V2",
-  "updated_at": "2026-09-14T19:13:56Z",
+  "updated_at": "2026-09-14T19:16:30Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
   "public_commit": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
@@ -1720,17 +1720,21 @@
     "intervention_error": "Public browser connection timed out repeatedly; standalone browser fallback was not used. Public source and image verification passed, visual PASS remains pending.",
     "publication_status": "PUBLISHED_SOURCE_VERIFIED_VISUAL_PENDING"
   },
-  "filesystem_sync_status": "PENDING_CHECKPOINT_REFRESH",
-  "zip_status": "PENDING_REFRESH",
+  "filesystem_sync_status": "RECOVERY_ZIP_REFRESHED",
+  "zip_status": "PASS",
   "report_ko": "run_0014_final/REPORT_KO.md",
-  "zip_receipt": null,
+  "zip_receipt": {
+    "path": "run_0014_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
+    "sha256": "fe39c5f9f04d12ec122292f88f54b393aaf9b35729e89af211871a96fc07b18e",
+    "bytes": 23140104,
+    "integrity": "PASS"
+  },
   "latest_recovery_persistence": {
-    "branch": "recovery/html-20260914",
-    "path": "ops/html-recovery/current.json",
-    "first_update_commit": "e71389b6e3c27b95231ff4f53d0af69a5e591c0c",
-    "first_update_blob": "cd933e9c2934c053700b37de620469a2052f0086",
-    "first_update_exact_readback": true,
-    "note": "This final metadata-only update records guard v2 reconciliation and archive integrity; the public HTML head remains unchanged."
+    "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json",
+    "public_main": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
+    "run": "run_0014_final",
+    "status": "PUBLISHED_SOURCE_VERIFIED_VISUAL_PENDING",
+    "completion_held": true
   },
   "latest_local_run": "run_0014_final",
   "next_priority": "Finish public browser visual verification for encyclopedia/0014 lumbar spinal stenosis Acupotomy KO/EN/CN; do not count completion or proceed to 0013 until it passes."
