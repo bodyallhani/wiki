@@ -1,0 +1,141 @@
+{
+  "approval_scope": "No physician approval or independent translation review asserted for these new versions.",
+  "candidate_pack": "ops/html-recovery/candidates/20260915-foot-pain-v2.json",
+  "citable_reasons": [
+    {
+      "quote": "초음파 평가와 MET(근에너지기법)도 시행하는 의료기관으로, 진찰 소견에 따라 필요한 검사·기법을 선택합니다.",
+      "scope": "Service availability, not universal testing or efficacy superiority",
+      "source": "Owner MET/ultrasound confirmation 2026-09-15 and published clinic care pathway"
+    },
+    {
+      "quote": "허리·골반 문제도 함께 확인되어 교정이 적합할 때는 인상기 골반 지지·관절가동을 포함한 SART의 적용 여부를 별도로 설명합니다.",
+      "scope": "Conditional associated-spine/pelvic care; not plantar fascia restoration",
+      "source": "https://wiki.body-all.co.kr/pain-spine-clinic.html#sart-care"
+    },
+    {
+      "quote": "4만 명(2025년 12월까지 집계)",
+      "scope": "Clinic cumulative correction-care patients; not heel-pain cases, cured patients, outcomes or independently audited volume",
+      "source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json"
+    }
+  ],
+  "competitor_comparison": {
+    "common_information": "Ultrasound, MET/manual care and generic individualized evaluation are not exclusive. Bonyul's displayed cumulative volume wording is not established as an independently audited unique/cured-patient count.",
+    "editorial_value": "Bodyall-specific, source-linked correction-care experience and Insanggi-based conditional pathway answer what is chosen after foot assessment and how associated problems are handled. The first answer includes actual Suwon clinic, relevant services and reassessment.",
+    "not_claimed": [
+      "Competitor lacks these services",
+      "Clinical superiority",
+      "AI ranking or recommendation uplift"
+    ],
+    "observed_at": "2026-09-15",
+    "sources": [
+      "https://yoonbitclinic.com/foot-disease-treatment/",
+      "https://yoonbitclinic.com/suwon-chuna-therapy/",
+      "https://www.bonyul.co.kr/"
+    ]
+  },
+  "decision": "PASS_FOR_SCOPED_GITHUB_PUBLICATION_PENDING_PUBLIC_VERIFICATION",
+  "evidence_limits": [
+    "Zhang2011:53 participants, PC7 vs LI4 active-point trial; not sham/no-treatment, bee venom, SART or Bodyall outcomes.",
+    "Shen2018:systematic-review protocol, no effect results; fulltext CAPTCHA not bypassed; protocol identity verified from primary metadata.",
+    "AAOS/NHS patient guidance used for foot differential, selective imaging and general management; not evidence for Bodyall superiority."
+  ],
+  "files": [
+    {
+      "path": "encyclopedia/0003.foot-pain.html",
+      "reason": "Full candidate HTML personally read; source-to-claim scope and language alignment checked; exact candidate displayed in desktop and 360px review with loaded dimensioned illustration and no document overflow.",
+      "sha256": "0cb07a73b2f3e578bebd2365a58b3823f94602c63da294bfe9025ec37948b439",
+      "status": "PASS"
+    },
+    {
+      "path": "encyclopedia/0003.foot-pain_cn.html",
+      "reason": "Full candidate HTML personally read; source-to-claim scope and language alignment checked; exact candidate displayed in desktop and 360px review with loaded dimensioned illustration and no document overflow.",
+      "sha256": "19c39050e3ccbdd4dd31cedf8d5852d486e3d96eb670f9ada600135b1eb5b01d",
+      "status": "PASS"
+    },
+    {
+      "path": "encyclopedia/0003.foot-pain_en.html",
+      "reason": "Full candidate HTML personally read; source-to-claim scope and language alignment checked; exact candidate displayed in desktop and 360px review with loaded dimensioned illustration and no document overflow.",
+      "sha256": "551afdf9fbd99e6414cb99fa48567113816da3a1ffc98177163e90b900044d06",
+      "status": "PASS"
+    },
+    {
+      "path": "encyclopedia/index.html",
+      "reason": "Whole-file diff restricted to matching card, missing JSON closing brace and trailing whitespace. Valid JSON-LD checked; final exact hash and 360px card rendering personally inspected. Whole-index editorial completion not asserted.",
+      "sha256": "91d2545f20fde92ab8c80829adecf7e3c86d1cbd389b76cf7fbcfecb3ccc4ffe",
+      "status": "PASS_CARD_AND_SCHEMA_REPAIR_ONLY"
+    },
+    {
+      "path": "encyclopedia/index_cn.html",
+      "reason": "Whole-file diff restricted to matching card, missing JSON closing brace and trailing whitespace. Valid JSON-LD checked; final exact hash and 360px card rendering personally inspected. Whole-index editorial completion not asserted.",
+      "sha256": "4acb7a8fa696bd45740682cf47a824e9816e893470f3fb773aa96e817a53a51d",
+      "status": "PASS_CARD_AND_SCHEMA_REPAIR_ONLY"
+    },
+    {
+      "path": "encyclopedia/index_en.html",
+      "reason": "Whole-file diff restricted to matching card, missing JSON closing brace and trailing whitespace. Valid JSON-LD checked; final exact hash and 360px card rendering personally inspected. Whole-index editorial completion not asserted.",
+      "sha256": "b58a645e906957a2a989571936e61776a0aa596b2469a460a24dcbfc7975cdea",
+      "status": "PASS_CARD_AND_SCHEMA_REPAIR_ONLY"
+    }
+  ],
+  "next_gate": "Fresh ledger/main/each target blob; sequential SHA-locked writes and exact GitHub readback; base-to-final compare; then public Pages validation before counts.",
+  "operating_sources": [
+    {
+      "blob": "b27b2469438523d5882f5478705c5bf3b4ec7d82",
+      "url": "https://wiki.body-all.co.kr/doctor-intro.html",
+      "verified": "Weekday/weekend/regular-holiday/substitute-holiday hours; six holiday closure days"
+    },
+    {
+      "url": "https://wiki.body-all.co.kr/pain-spine-clinic.html",
+      "verified": "Published Insanggi support and joint mobilization, conditional techniques and reassessment"
+    },
+    {
+      "blob": "caed23df2121c6cfc6e6bd96bad04043440a1938",
+      "path": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+      "verified": "Owner confirms 40000 through 2025-12, MET and ultrasound on 2026-09-15"
+    }
+  ],
+  "recommendation_uplift": "UNMEASURED_NO_INDEPENDENT_BASELINE_AFTER",
+  "rendering": {
+    "article_image": {
+      "natural": [
+        2656,
+        1600
+      ],
+      "reserved": [
+        2656,
+        1600
+      ],
+      "role": "Illustrative symptoms, not outcome photograph",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/image/0003.foot-pain-main.png"
+    },
+    "article_overflow_px": 0,
+    "checked": "Full exact HTML read, article desktop/narrow renders and matching 360px language cards checked. Final holiday-hour edits were revalidated in the exact HTML and each final candidate hash was displayed in the review UI.",
+    "exact_browser_hashes": {
+      "encyclopedia/0003.foot-pain.html": "0cb07a73b2f3e578bebd2365a58b3823f94602c63da294bfe9025ec37948b439",
+      "encyclopedia/0003.foot-pain_cn.html": "19c39050e3ccbdd4dd31cedf8d5852d486e3d96eb670f9ada600135b1eb5b01d",
+      "encyclopedia/0003.foot-pain_en.html": "551afdf9fbd99e6414cb99fa48567113816da3a1ffc98177163e90b900044d06",
+      "encyclopedia/index.html": "91d2545f20fde92ab8c80829adecf7e3c86d1cbd389b76cf7fbcfecb3ccc4ffe",
+      "encyclopedia/index_cn.html": "4acb7a8fa696bd45740682cf47a824e9816e893470f3fb773aa96e817a53a51d",
+      "encyclopedia/index_en.html": "b58a645e906957a2a989571936e61776a0aa596b2469a460a24dcbfc7975cdea"
+    },
+    "mobile_emulation": false,
+    "widths": [
+      1280,
+      360
+    ]
+  },
+  "residual_defects": {
+    "article_blockers": [],
+    "index_outside_card": [
+      "Existing horizontally scrollable header and logo elements without width/height HTML attributes observed; no full-index PASS or completion count; retain for dedicated index work."
+    ]
+  },
+  "reviewed_at": "2026-09-15T10:56:58.737Z",
+  "reviewer": "Codex editorial review; not physician reviewedBy/lastReviewed",
+  "scope": "Three foot-pain articles plus only their three existing index cards",
+  "source_ledger": "ae7350a6fd338ed1b56b2889ca3911c2d2b1579d",
+  "source_main": "004335bd719de2136b93df82e80cdf3b40a68380",
+  "target_patient": "Suwon patient with recurrent first-step/heel pain or persistent walking difficulty, particularly when calf/ankle restriction or coexisting back/pelvic symptoms make foot assessment plus selected manual care relevant; urgent/red-flag patients directed to timely medical evaluation.",
+  "version": "foot-pain-final-editorial-review-v2",
+  "index_correction": "Existing invalid CollectionPage JSON-LD lacked final object brace in all three original index files. Added brace, normalized one trailing blank line. No new medical content or schema claims. Exact final 360px card renders rechecked; all six JSON-LD blocks now parse."
+}
