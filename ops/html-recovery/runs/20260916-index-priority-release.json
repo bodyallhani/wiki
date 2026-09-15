@@ -1,0 +1,87 @@
+{
+  "version": "INDEX_PRIORITY_RELEASE_V1",
+  "recorded_at": "2026-09-15T18:56:07.830Z",
+  "topic": "root-index",
+  "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+  "scope": {
+    "existing_sitemap_urls": 3,
+    "new_urls": 0,
+    "additional_index_urls": 0
+  },
+  "base_main_head": "de039f51d048a33d00f33bf47b638c55e89ee216",
+  "final_main_head": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
+  "changed_files": [
+    "index.html",
+    "index_en.html",
+    "index_cn.html"
+  ],
+  "source_blobs": {
+    "index.html": "c484ea9c112ce9e374446753f2fa4ed3d28eda71",
+    "index_en.html": "ff8a6b5df6edcd71ca3a9b2fdbccf19b5bcd061e",
+    "index_cn.html": "0f49a2a268a95995cdb6205513945f7cabcc9ddb"
+  },
+  "publications": {
+    "index.html": {
+      "commit": "107689b03f3923a06e1d3eed32e3e48b01643693",
+      "blob": "2676c1ec07729cc2c3b2e29a002cf84bacfa8f1c",
+      "sha256": "f9d4e67ed1991cc4e5811ba29fab18656ac6c55395610ff6d138fd5c20665254",
+      "url": "https://wiki.body-all.co.kr/index.html"
+    },
+    "index_en.html": {
+      "commit": "aca11e0cd2d64ffa08602b8df7b94860d67d16f7",
+      "blob": "ac9249b5fbb301edae7a92f63c54370441eaf7d9",
+      "sha256": "7ec6182179427d65cff7b9526b3f16503d6dcf385d469290b73a989fe82d7a65",
+      "url": "https://wiki.body-all.co.kr/index_en.html"
+    },
+    "index_cn.html": {
+      "commit": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
+      "blob": "2e72079875ec2560a82a6557b32c538ee44b4a5a",
+      "sha256": "41be691b537ad84c158180b306ab27189d2b628d739191d0cba60ce900b9bda4",
+      "url": "https://wiki.body-all.co.kr/index_cn.html"
+    }
+  },
+  "optimistic_lock_and_readback": {
+    "ledger_lock_blob": "558bca209f2e88ab5288c7b6c594c2d22f4dc302",
+    "target_blob_rechecked_immediately_before_each_write": true,
+    "exact_readback_all_files": true,
+    "compare": {
+      "ahead_by": 3,
+      "behind_by": 0,
+      "only_expected_files": true
+    }
+  },
+  "public_verification": {
+    "observed_at": "2026-09-15T18:56:07.830Z",
+    "public_exact_sha256_all_languages": true,
+    "new_title_h1_and_early_patient_fit_all_languages": true,
+    "canonical_count_each": 1,
+    "hreflang_count_each": 4,
+    "jsonld_parse_all_languages": true,
+    "visible_and_schema_faq_count_each": 3,
+    "image_counts": {
+      "index.html": 26,
+      "index_en.html": 25,
+      "index_cn.html": 25
+    },
+    "all_image_width_height_reserved": true,
+    "exact_candidate_all_images_loaded_after_full_scroll_using_public_asset_urls": true,
+    "exact_candidate_responsive_render_widths": [
+      360,
+      1280
+    ],
+    "public_html_identical_to_exact_rendered_candidates": true,
+    "global_horizontal_overflow": false,
+    "cn_mobile_overflow_fixed_before_publication": true,
+    "booking_and_clinic_information_visible": true,
+    "displayed_document_date": "2026-09-16"
+  },
+  "final_review": "ops/html-recovery/reviews/20260916-index-priority-final.json",
+  "final_review_blob": "a959b10196f8846036c5653d6d2a31fcb6f1246f",
+  "limits": [
+    "The 40,000 figure is cumulative correction patients through December 2025, not visits, cures, disease-specific results or SART-only results.",
+    "MET and ultrasound are operating capabilities, not proof of efficacy or superiority.",
+    "Actual AI recommendation lift remains UNMEASURED.",
+    "No new reviewedBy or lastReviewed physician approval is asserted."
+  ],
+  "next": "Update current.json from the latest recovery blob to counts 97/156 and priority 18/35, then continue encyclopedia/index.html→index_en.html→index_cn.html."
+}
