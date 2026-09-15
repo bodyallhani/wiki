@@ -2550,13 +2550,13 @@
     "phase1_strengthened_completed": 20,
     "phase1_strengthened_remaining": 51,
     "priority_strengthened_total": 35,
-    "priority_strengthened_completed": 34,
-    "priority_strengthened_remaining": 1,
+    "priority_strengthened_completed": 35,
+    "priority_strengthened_remaining": 0,
     "additional_index_total": 8,
-    "additional_index_completed": 7,
-    "additional_index_publications_this_turn": 3
+    "additional_index_completed": 8,
+    "additional_index_publications_this_turn": 1
   },
-  "filesystem_sync_status": "EXACT_PCODE_CANDIDATES_REVIEW_RELEASE_AND_PUBLIC_HARNESSES_VERIFIED_ON_RECOVERY_BRANCH",
+  "filesystem_sync_status": "EXACT_SPINE_CANDIDATE_REVIEW_RELEASE_AND_PUBLIC_HARNESSES_VERIFIED_ON_RECOVERY_BRANCH",
   "latest_debug": [
     "Review iframe navigation could leave a stale selected-file hash; actual loaded URL is now checked separately and mismatches are blocked. The invalid herbal root-card capture was excluded from verification.",
     "Final EN/CN card image candidates remove an unverified GMP badge. Their changed exact versions remain pending final render review.",
@@ -2565,53 +2565,47 @@
   ],
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/herbal",
   "latest_recovery_persistence": {
-    "at": "2026-09-15T23:40:00Z",
-    "status": "CANDIDATES_REVIEW_HARNESSES_RELEASE_STORED_EXACT",
+    "at": "2026-09-16T00:08:00Z",
+    "status": "CANDIDATE_REVIEW_HARNESSES_RELEASE_STORED_EXACT",
     "paths": [
-      "ops/html-recovery/candidates/20260916-pcode-index/index.html",
-      "ops/html-recovery/candidates/20260916-pcode-index/index_en.html",
-      "ops/html-recovery/candidates/20260916-pcode-index/index_cn.html",
-      "ops/html-recovery/reviews/20260916-pcode-index-priority-final.json",
-      "ops/html-recovery/runs/20260916-pcode-index-priority-release.json",
-      "ops/html-recovery/review-harnesses/20260916-pcode-index-360.html",
-      "ops/html-recovery/review-harnesses/20260916-pcode-index-public-360.html"
+      "ops/html-recovery/candidates/20260916-spine-index/index.html",
+      "ops/html-recovery/reviews/20260916-spine-index-priority-final.json",
+      "ops/html-recovery/runs/20260916-spine-index-priority-release.json",
+      "ops/html-recovery/review-harnesses/20260916-spine-index-360.html",
+      "ops/html-recovery/review-harnesses/20260916-spine-index-public-360.html"
     ],
     "exact_readback": true
   },
   "latest_release": {
-    "topic": "P-CODE autonomic and internal symptom existing additional index strengthened priority",
+    "topic": "Spine existing additional index strengthened priority; priority35 complete",
     "changed_files": [
-      "pcode/index.html",
-      "pcode/index_en.html",
-      "pcode/index_cn.html"
+      "spine/index.html"
     ],
     "newly_completed_existing_urls": [
-      "pcode/index.html",
-      "pcode/index_en.html",
-      "pcode/index_cn.html"
+      "spine/index.html"
     ],
     "reworked_existing_urls": [],
     "original156_count_delta": 0,
-    "additional_index_count_delta": 3,
-    "base_commit": "8817ae3fcd6c5aab4c65b9e8a65a11f4a09780f6",
-    "final_commit": "f5a03df2f5b9a0cf2f7cd60b810770bba83630b7",
+    "additional_index_count_delta": 1,
+    "base_commit": "f5a03df2f5b9a0cf2f7cd60b810770bba83630b7",
+    "final_commit": "a7d10f1aabd0ea86fd0d388a77365b338d747938",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-pcode-index-priority-release.json",
-    "review": "ops/html-recovery/reviews/20260916-pcode-index-priority-final.json"
+    "receipt": "ops/html-recovery/runs/20260916-spine-index-priority-release.json",
+    "review": "ops/html-recovery/reviews/20260916-spine-index-priority-final.json"
   },
   "latest_validation": {
     "status": "PASS",
-    "record": "ops/html-recovery/reviews/20260916-pcode-index-priority-final.json",
-    "record_blob": "30c32a46e0811eda49e99e17d3cbd2daacac692b",
+    "record": "ops/html-recovery/reviews/20260916-spine-index-priority-final.json",
+    "record_blob": "d81d8d2eafc98f039699af30b9aac333ac55e69e",
     "candidate_static_content_schema_pass": true,
     "candidate_exact_readback": true,
     "predeployment_render_pass": true,
     "public_verification": true,
-    "public_release_record": "ops/html-recovery/runs/20260916-pcode-index-priority-release.json",
-    "note": "Unsupported spinal-organ causation and unverified operating claims removed; repository and Pages exact SHA256, content/schema/two-image/1348px/360px gates passed."
+    "public_release_record": "ops/html-recovery/runs/20260916-spine-index-priority-release.json",
+    "note": "Unsupported SART decompression and superiority claims removed; owner-confirmed operating fact precisely bounded; repository and Pages exact SHA256, content/schema/two-image/1348px/360px gates passed."
   },
-  "next": "Process spine/index.html as the final additional-index priority item. Keep original156 counts unchanged; review full HTML and 1348px/360px renders, deploy and publicly verify before separate counting. Then resume phase1.",
-  "next_priority": "PRIORITY ADDITIONAL INDEX: spine/index.html. Keep separate from original156. After this final priority URL passes, resume saved phase1 pending order.",
+  "next": "Resume encyclopedia/0002 stiff hands KO→EN→CN from saved phase1 state. Fresh-read current.json, main and target blobs; reuse preserved source review where unchanged, complete exact HTML/render/public gates, and count only after Pages verification.",
+  "next_priority": "RESUME PHASE1: encyclopedia/0002.stiff-hands.html→encyclopedia/0002.stiff-hands_en.html→encyclopedia/0002.stiff-hands_cn.html, then continue resume_phase1_pending_paths. Skip priority URLs already strengthened.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2619,9 +2613,9 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "f5a03df2f5b9a0cf2f7cd60b810770bba83630b7",
+  "public_commit": "a7d10f1aabd0ea86fd0d388a77365b338d747938",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "P-CODE 자율신경·내과 증상 index 3개 언어를 강화 수정·직접 검수·배포·공개 검증했습니다. 원래156개는 105/156, 잔여51로 변동 없으며, 추가 index는 7/8입니다. 우선 목록은 34/35이고 다음은 spine/index.html입니다. 실제 AI 추천률 증가는 미측정입니다.",
+  "report_ko": "최우선 35개(원래156 안의 27개+별도 index 8개)를 모두 강화 수정·직접 검수·배포·공개 검증했습니다. 원래156개는 105/156, 잔여51로 변동 없고 별도 index는 8/8 완료입니다. 다음은 저장된 phase1 순서의 encyclopedia/0002 손가락 뻣뻣함 3개 언어입니다. 실제 AI 추천률 증가는 미측정입니다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2639,8 +2633,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T23:40:00Z",
-  "version": "V256_PCODE_ADDITIONAL_INDEX_PUBLISHED_PUBLIC_VERIFIED",
+  "updated_at": "2026-09-16T00:08:00Z",
+  "version": "V257_ALL_PRIORITY35_COMPLETE_SPINE_ADDITIONAL_INDEX_PUBLIC_VERIFIED",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2669,33 +2663,27 @@
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
   "active_run": {
-    "owner": "pcode-index-priority-release-20260916",
-    "started_at": "2026-09-15T23:05:00Z",
-    "completed_at": "2026-09-15T23:40:00Z",
-    "base_main_head": "8817ae3fcd6c5aab4c65b9e8a65a11f4a09780f6",
-    "final_main_head": "f5a03df2f5b9a0cf2f7cd60b810770bba83630b7",
+    "owner": "spine-index-priority-release-20260916",
+    "started_at": "2026-09-15T23:43:00Z",
+    "completed_at": "2026-09-16T00:08:00Z",
+    "base_main_head": "f5a03df2f5b9a0cf2f7cd60b810770bba83630b7",
+    "final_main_head": "a7d10f1aabd0ea86fd0d388a77365b338d747938",
     "source_blobs": {
-      "pcode/index.html": "313726142f2ec6c7da718d2f07f9251fa3dd4234",
-      "pcode/index_en.html": "3e4b9c498ad141fcc4da034e2a11d365c5331a76",
-      "pcode/index_cn.html": "57de00fec39870158e629ff416bbf47556c0f9a1"
+      "spine/index.html": "66261e3ea31170c5a2fdaa6046f86ebe4cb188f0"
     },
     "exact_candidate_hashes": {
-      "pcode/index.html": "faaf27c9f48492e4a9504cccae53af5431c7375bce556d80e961e7784c7d7176",
-      "pcode/index_en.html": "fda1ca27c73ace84e34f99608f4a633635df332dd0afc47de7c738a29b030ae8",
-      "pcode/index_cn.html": "d0ddedf450a01624648d4051ec7f05c691ba39f9bf1442c25e54cf9b1065e34a"
+      "spine/index.html": "0d535de3e4722338bb2f8c0a42bd7b0941362ff67cc66e1e24b30d9cb463f7ca"
     },
     "candidate_blobs": {
-      "pcode/index.html": "35d2e7e0b8ca747a0e41fef0c8960edb86ef7c8e",
-      "pcode/index_en.html": "8546787f6d49d77903157d3087075d5a39bde3e7",
-      "pcode/index_cn.html": "fec1e2ba2bc1536992eb03b2d8f543ed92c661c0"
+      "spine/index.html": "a1aa3e01d49f420deac941d9e6bb0d94281b1844"
     },
-    "stage": "PUBLISHED_PUBLIC_VERIFIED",
+    "stage": "PUBLISHED_PUBLIC_VERIFIED_PRIORITY35_COMPLETE",
     "single_writer_active": false,
-    "review_record": "ops/html-recovery/reviews/20260916-pcode-index-priority-final.json",
-    "review_record_blob": "30c32a46e0811eda49e99e17d3cbd2daacac692b",
-    "release_record": "ops/html-recovery/runs/20260916-pcode-index-priority-release.json",
-    "release_record_blob": "f1fe8141e7bceb93275b8cdf02a8a589ca27c67a",
-    "required_next": "Fresh-read current.json, main and spine/index.html blob; complete the final priority item with full content, render, deployment and public verification."
+    "review_record": "ops/html-recovery/reviews/20260916-spine-index-priority-final.json",
+    "review_record_blob": "d81d8d2eafc98f039699af30b9aac333ac55e69e",
+    "release_record": "ops/html-recovery/runs/20260916-spine-index-priority-release.json",
+    "release_record_blob": "26d985a877c39998eb82839287abe96d93c5a062",
+    "required_next": "Fresh-read current.json, main and encyclopedia/0002 stiff-hands KO/EN/CN blobs; resume saved phase1 order with full content, render, sequential deployment and public verification."
   },
   "pending_run": null,
   "previous_public_validation": {
@@ -3176,7 +3164,7 @@
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
     "policy": "PRIORITY_HUBS_AND_ALL_MEDICAL_INDICES_THEN_PREVIOUS_ORDER",
-    "phase": "PRIORITY_HUBS_AND_INDICES",
+    "phase": "RESUME_PHASE1_PENDING",
     "phase1_initial_paths": [
       "encyclopedia/0003.foot-pain.html",
       "encyclopedia/0003.foot-pain_en.html",
@@ -3642,9 +3630,7 @@
       "pcode/index_cn.html",
       "spine/index.html"
     ],
-    "priority_pending_paths": [
-      "spine/index.html"
-    ],
+    "priority_pending_paths": [],
     "priority_completed_paths": [
       "cervical-disc.html",
       "cervical-disc_en.html",
@@ -3679,7 +3665,8 @@
       "notice/index_cn.html",
       "pcode/index.html",
       "pcode/index_en.html",
-      "pcode/index_cn.html"
+      "pcode/index_cn.html",
+      "spine/index.html"
     ],
     "priority_original_scope_paths": [
       "cervical-disc.html",
@@ -3860,7 +3847,8 @@
       "notice/index_cn.html",
       "pcode/index.html",
       "pcode/index_en.html",
-      "pcode/index_cn.html"
+      "pcode/index_cn.html",
+      "spine/index.html"
     ]
   },
   "deferred_runs": [
@@ -3941,17 +3929,17 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "at": "2026-09-15T23:40:00Z",
+    "at": "2026-09-16T00:08:00Z",
     "completed_this_run": 0,
     "reworked_this_run": 0,
-    "additional_index_completed_this_run": 3,
-    "candidates_prepared": 3,
+    "additional_index_completed_this_run": 1,
+    "candidates_prepared": 1,
     "public_completed": 105,
     "remaining": 51,
-    "priority_completed": 34,
-    "priority_remaining": 1,
-    "additional_index_completed": 7,
-    "result": "P-CODE autonomic and internal symptom index KO/EN/CN strengthened, directly reviewed, deployed and publicly verified. Original156 counts remain unchanged.",
+    "priority_completed": 35,
+    "priority_remaining": 0,
+    "additional_index_completed": 8,
+    "result": "Final priority item spine/index.html strengthened, directly reviewed, deployed and publicly verified. All 35 priority URLs are complete; original156 counts remain unchanged.",
     "recommendation_measurement": "UNMEASURED"
   },
   "previous_release": {
@@ -4420,6 +4408,24 @@
       "verification_receipt": "ops/html-recovery/runs/20260916-pcode-index-priority-release.json",
       "limits": [
         "Outside original156 and excluded from accepted_paths/completion_rows counts.",
+        "No physician review or treatment outcome claim is asserted.",
+        "Actual AI recommendation lift remains unmeasured."
+      ]
+    },
+    {
+      "path": "spine/index.html",
+      "url": "https://wiki.body-all.co.kr/spine/index.html",
+      "status": "PRIORITY_ADDITIONAL_INDEX_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "a1aa3e01d49f420deac941d9e6bb0d94281b1844",
+      "sha256": "0d535de3e4722338bb2f8c0a42bd7b0941362ff67cc66e1e24b30d9cb463f7ca",
+      "publication_commit": "a7d10f1aabd0ea86fd0d388a77365b338d747938",
+      "final_repository_head": "a7d10f1aabd0ea86fd0d388a77365b338d747938",
+      "review_receipt": "ops/html-recovery/reviews/20260916-spine-index-priority-final.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-spine-index-priority-release.json",
+      "limits": [
+        "Outside original156 and excluded from accepted_paths/completion_rows counts.",
+        "The 40,000 figure is cumulative correction patients through December 2025, not outcomes, visits or SART-only results.",
         "No physician review or treatment outcome claim is asserted.",
         "Actual AI recommendation lift remains unmeasured."
       ]
