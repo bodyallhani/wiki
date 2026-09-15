@@ -2079,7 +2079,9 @@
     "receipt": "ops/html-recovery/reviews/20260915-pain-hub-rework-004335bd.json",
     "receipt_commit": "2f75c2da7afd78b1e79268704c7ff29731b47dde",
     "private_original_preserved": true,
-    "ledger_exact_readback_required": true
+    "ledger_exact_readback_required": true,
+    "ledger_exact_readback": true,
+    "last_next_topic_audit_commit": "d2d98990123c89273bb4ae01da897fbd22faa817"
   },
   "latest_release": {
     "topic": "pain-spine-clinic existing-publication rework",
@@ -2146,7 +2148,7 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T09:10:07.932961+00:00",
+  "updated_at": "2026-09-15T09:14:42.189Z",
   "version": "V231_PAIN_HUB_EXISTING_REWORK_PUBLIC_VERIFIED",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
@@ -2173,7 +2175,19 @@
     "new_wiki_pipeline_review": "AUTHORIZED_20260915_SEPARATE_FROM_EXISTING_156_COUNTS"
   },
   "active_run": null,
-  "pending_run": null,
+  "pending_run": {
+    "topic": "lumbar-disc existing-publication rework KO/EN/CN",
+    "stage": "SOURCE_AUDIT_COMPLETE_CANDIDATE_AND_RENDER_REVIEW_PENDING",
+    "status": "HOLD_NO_MAIN_WRITE_FOR_THIS_TOPIC",
+    "source_main": "004335bd719de2136b93df82e80cdf3b40a68380",
+    "source_blobs": {
+      "lumbar-disc.html": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
+      "lumbar-disc_en.html": "b062465ecebaa64716a8ca705c7485cdbefe2d21",
+      "lumbar-disc_cn.html": "d586b2e6ca8c623a0eaecfcd51495be85035e96e"
+    },
+    "audit": "ops/html-recovery/reviews/20260915-lumbar-hub-rework-source-audit.json",
+    "next_action": "Re-read current.json/main/target blobs, inspect the four original mechanism images, then make targeted KO edits and align EN/CN. Reuse unchanged medical references. All mandatory exact candidate and rendered review remains required before publishing."
+  },
   "previous_public_validation": {
     "article_checks": {
       "browser_schema_types_each": [
