@@ -758,10 +758,10 @@
       "git_blob": "4db5348a8777ffa790e111e66c6d4434d485991f",
       "sha256": "9a1fe10f474524757849711a5af1ed4e6652860c559ee6510ebc882bf2935b2f",
       "publication_commit": "d9de7b816e067d40bc819eb02c26dfc6323a2ca1",
-      "final_repository_head": "c146a228e9490f281060aed78ae651f0accea75b",
+      "final_repository_head": "064bb1bfede82aa961896776f7d462719417f9fc",
       "review_receipt": "ops/html-recovery/runs/20260915-0004/editorial_review.json",
       "verification_receipt": "ops/html-recovery/runs/20260915-0004/release.json#public_pages",
-      "verified_at": "2026-09-15T06:47:02Z",
+      "verified_at": "2026-09-15T07:00:07Z",
       "limits": [
         "No physician review of this rewritten exact version or independent native-language review is asserted.",
         "Shoulder examination and early-imaging guidance varies across clinical guidelines; no single adhesive-capsulitis test is treated as diagnostic.",
@@ -777,10 +777,10 @@
       "git_blob": "47f03d5964607d92b860087ae66f19556a61c383",
       "sha256": "2f19d93216967a7d0f8d9198797d600fa29f5897acc712f48af1913260960520",
       "publication_commit": "e49a1d7aa89042cd74c18a23d30a51d04d68759a",
-      "final_repository_head": "c146a228e9490f281060aed78ae651f0accea75b",
+      "final_repository_head": "064bb1bfede82aa961896776f7d462719417f9fc",
       "review_receipt": "ops/html-recovery/runs/20260915-0004/editorial_review.json",
       "verification_receipt": "ops/html-recovery/runs/20260915-0004/release.json#public_pages",
-      "verified_at": "2026-09-15T06:47:02Z",
+      "verified_at": "2026-09-15T07:00:07Z",
       "limits": [
         "No physician review of this rewritten exact version or independent native-language review is asserted.",
         "Shoulder examination and early-imaging guidance varies across clinical guidelines; no single adhesive-capsulitis test is treated as diagnostic.",
@@ -796,10 +796,10 @@
       "git_blob": "99806774512e584df15a0e11cee987f1cc2b6c16",
       "sha256": "11ae2ac0665eb2271abd7984837f931437bbad5303642c1468ed7f6cfe8d15b8",
       "publication_commit": "6c9256c3aca982a7c540098152ac8fb5306f5477",
-      "final_repository_head": "c146a228e9490f281060aed78ae651f0accea75b",
+      "final_repository_head": "064bb1bfede82aa961896776f7d462719417f9fc",
       "review_receipt": "ops/html-recovery/runs/20260915-0004/editorial_review.json",
       "verification_receipt": "ops/html-recovery/runs/20260915-0004/release.json#public_pages",
-      "verified_at": "2026-09-15T06:47:02Z",
+      "verified_at": "2026-09-15T07:00:07Z",
       "limits": [
         "No physician review of this rewritten exact version or independent native-language review is asserted.",
         "Shoulder examination and early-imaging guidance varies across clinical guidelines; no single adhesive-capsulitis test is treated as diagnostic.",
@@ -2063,13 +2063,15 @@
       "Legacy copy treated thoracic kyphosis and structural imbalance as a root cause of shoulder pain and extended SART into unsupported space widening and alignment restoration.",
       "Legacy copy generalized weak acupotomy evidence into microscopic adhesiolysis, immediate range restoration, regeneration, safety and nonsurgical substitution.",
       "The legacy frozen-shoulder versus rotator-cuff distinction was overly diagnostic and omitted a broader neck, neurologic, traumatic and systemic differential.",
-      "Generic modality lists did not create a credible Bodyall-specific selection reason in a competitive Suwon search context."
+      "Generic modality lists did not create a credible Bodyall-specific selection reason in a competitive Suwon search context.",
+      "A post-deployment public-card check found stale rounded-back correction and physical-therapy tags that did not match the corrected article."
     ],
     "resolved": [
       "Rebuilt the opening around the eligible Suwon patient, urgent signals and a representative-doctor comparison of active/passive range, pain-limited versus true weakness, neck/neurologic and shoulder findings.",
       "Separated local care, myofascial-release Chuna, conditional corrective Chuna/SART and selected acupotomy, with the same arm-raising or behind-the-back task retested.",
       "Removed two misleading or generic images and retained two visually reviewed Bodyall clinical images with exact 4082x3073 reservations.",
-      "Aligned evidence limits, invasive risks, FAQs, schema, cards and booking path across Korean, English and Chinese."
+      "Aligned evidence limits, invasive risks, FAQs, schema, cards and booking path across Korean, English and Chinese.",
+      "Corrected all three card tag sets, reran the exact-hash/static/release gates, personally re-inspected 1280px and 360px cards, and verified the revised tags on all three public indexes."
     ]
   },
   "latest_local_run": "ops/html-recovery/runs/20260915-0004/release.json",
@@ -2078,24 +2080,24 @@
     "exact": true,
     "editorial_review": {
       "path": "ops/html-recovery/runs/20260915-0004/editorial_review.json",
-      "sha": "582011273357cc16457ee8cf6b0358853cf65af8"
+      "sha": "d03c3a13eb9d63743ed45c8767f712f4e76059c7"
     },
     "release": {
       "path": "ops/html-recovery/runs/20260915-0004/release.json",
-      "sha": "d3002c24441698d5049c8f3fbf0a396637be2836"
+      "sha": "19aa0b8fe9974685fd8a306e7cdde5c880d64082"
     }
   },
   "latest_release": {
     "prewrite_head": "a957c01771c1283fe5e32821e3b7e6639b340d38",
-    "final_head": "c146a228e9490f281060aed78ae651f0accea75b",
+    "final_head": "064bb1bfede82aa961896776f7d462719417f9fc",
     "new_urls": 0,
     "revised_existing_urls": 3,
     "review_receipt": "ops/html-recovery/runs/20260915-0004/editorial_review.json",
     "public_verification": "ops/html-recovery/runs/20260915-0004/release.json#public_pages",
     "compare": {
       "base": "a957c01771c1283fe5e32821e3b7e6639b340d38",
-      "head": "c146a228e9490f281060aed78ae651f0accea75b",
-      "ahead_by": 6,
+      "head": "064bb1bfede82aa961896776f7d462719417f9fc",
+      "ahead_by": 9,
       "behind_by": 0,
       "files": [
         "encyclopedia/0004.shoulder-pain.html",
@@ -2132,23 +2134,23 @@
     "supporting_files": {
       "encyclopedia/index.html": {
         "source_blob": "549fae49938ae8507fb51f815d9f4a750d18318b",
-        "final_blob": "cdae2c41a86ba06241adeb876d7349f8f40b2e52",
-        "sha256": "9a7a154ad9a1f29cdc08eae32b7cb1e5bc17b89502459f5fa4861ac58f9e4976",
-        "publication_commit": "661e43bccbb054ac256abb1447dff617787243f9",
+        "final_blob": "9695b978a94d6c181f002c41c5e18bdc4ef26a16",
+        "sha256": "01c2717bf65c55342bdfc1c9b57a9d9a5f187c81799dd4dfa3c2038086f33390",
+        "publication_commit": "216507a83ba274f450310d544db5f3146d53f527",
         "exact_readback": true
       },
       "encyclopedia/index_en.html": {
         "source_blob": "c18ae09cff4ec0696a0fa4bf3388047287f1b3c7",
-        "final_blob": "d00de8b47e8048e27d4ad514e964c6703f66ea6d",
-        "sha256": "17cc34195fd175f09636776dc15cfa6d6f00a6a7e6b7b931c252699eb840ec73",
-        "publication_commit": "faf4d6e1a503b80a2461024422cee033de134909",
+        "final_blob": "f73163d5e5c520a01ef1758fb886e62bf5241b67",
+        "sha256": "0c6ba4488e397e0aad31e5f34134c7381a7fb937590e5650f6add1c33569b177",
+        "publication_commit": "3f9fd4cda974db0a54a88f6455cb1aab1d48053c",
         "exact_readback": true
       },
       "encyclopedia/index_cn.html": {
         "source_blob": "cd0a6e03a50c667451a5a739ec3f3670c55c4a13",
-        "final_blob": "f368fee2cd9dc92f93b5b0103d104790c7b5468f",
-        "sha256": "6f43c286d238c20eaf562b3b66036eb07e50135d7e337a684c464e8fefef3043",
-        "publication_commit": "c146a228e9490f281060aed78ae651f0accea75b",
+        "final_blob": "f5d24a0bed399788aa47c77b074c980012b4e327",
+        "sha256": "6e99b0c535c3f6bcb164491fe9e3b9aac1a22235ccfa52d4dfd741c7a6a9b5a0",
+        "publication_commit": "064bb1bfede82aa961896776f7d462719417f9fc",
         "exact_readback": true
       }
     }
@@ -2169,7 +2171,13 @@
       "4082x3073"
     ],
     "intended_files_only": true,
-    "ai_recommendation_lift": "UNMEASURED"
+    "ai_recommendation_lift": "UNMEASURED",
+    "final_card_tag_correction_reviewed": true,
+    "final_card_tags": {
+      "ko": "#어깨통증 #오십견감별 #회전근개감별 #수원어깨한의원 #바디올한의원",
+      "en": "#ShoulderPain #FrozenShoulderDifferential #RotatorCuffDifferential #SuwonKoreanMedicine #BodyallClinic",
+      "cn": "#肩痛 #肩周炎鉴别 #肩袖问题鉴别 #水原韩医院 #Bodyall韩医院"
+    }
   },
   "next": "Resume existing encyclopedia/0003.foot-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
   "next_priority": "Resume existing encyclopedia/0003.foot-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
@@ -2180,9 +2188,9 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "c146a228e9490f281060aed78ae651f0accea75b",
+  "public_commit": "064bb1bfede82aa961896776f7d462719417f9fc",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "# 0004 어깨통증 — 배포·공개 검증 완료\\n\\n최신 기준 완료 85/156, 잔여 71입니다. 한국어·영어·중국어 기존 URL 3개와 언어별 기존 목록 카드만 수정했습니다.\\n\\n- 수원 환자의 팔 들기·등 뒤로 손 보내기·야간통 조건과 위험신호를 앞부분에 배치했습니다.\\n- 바디올 대표원장 진찰 → 국소 치료·근막이완 추나·조건부 교정 추나/SART·선별 도침 역할 구분 → 같은 동작 재평가 → 예약을 연결했습니다.\\n- 구조적 근본 원인, 공간 확대, 즉각적 유착 박리·재생·안전한 수술 대안 등 근거를 넘는 표현을 제거했습니다.\\n- 실제 진찰·치료 사진 2개를 직접 확인하고 4082x3073 크기를 예약했으며, 오해를 키우는 기전 이미지와 일반 치료 콜라주는 제외했습니다.\\n- exact 후보 전체와 1280px/360px 렌더링을 직접 검수했고, GitHub exact readback과 Pages 공개 스키마·FAQ·canonical/hreflang·robots·이미지·목록 카드·가로 넘침 검사를 통과했습니다.\\n- 기준 main에서 최종 main까지 의도한 6개 파일만 변경됐습니다.\\n- 실제 경쟁사 우월성과 AI 추천 증가율은 독립 실측이 없어 주장하지 않습니다.\\n\\n다음은 encyclopedia/0003.foot-pain.html KO→EN→CN입니다. Make·Google 색인·신규 발행·모델·예산·일정은 변경하지 않았습니다.\\n",
+  "report_ko": "# 0004 어깨통증 — 최종 교정·배포·공개 검증 완료\\n\\n최신 기준 완료 85/156, 잔여 71입니다. 한국어·영어·중국어 기존 URL 3개와 언어별 기존 목록 카드만 수정했습니다.\\n\\n- 수원 환자의 팔 들기·등 뒤로 손 보내기·야간통 조건과 위험신호를 앞부분에 배치했습니다.\\n- 바디올 대표원장 진찰 → 국소 치료·근막이완 추나·조건부 교정 추나/SART·선별 도침 역할 구분 → 같은 동작 재평가 → 예약을 연결했습니다.\\n- 구조적 근본 원인, 공간 확대, 즉각적 유착 박리·재생·안전한 수술 대안 등 근거를 넘는 표현을 제거했습니다.\\n- 실제 진찰·치료 사진 2개를 직접 확인하고 4082x3073 크기를 예약했으며, 오해를 키우는 기전 이미지와 일반 치료 콜라주는 제외했습니다.\\n- 공개 카드 재확인에서 남아 있던 굽은등 교정·물리치료 태그를 발견해 세 언어 모두 감별·수원·바디올 태그로 교정했습니다. 수정 후 exact 해시 검사와 1280px/360px 화면 검수를 다시 수행하고 세 공개 목록에서 최신 태그를 확인했습니다.\\n- GitHub exact readback과 Pages 공개 스키마·FAQ·canonical/hreflang·robots·이미지·목록 카드 검사를 통과했습니다. 기준 main에서 최종 main까지 의도한 6개 파일만 변경됐습니다.\\n- 실제 경쟁사 우월성과 AI 추천 증가율은 독립 실측이 없어 주장하지 않습니다.\\n\\n다음은 encyclopedia/0003.foot-pain.html KO→EN→CN입니다. Make·Google 색인·신규 발행·모델·예산·일정은 변경하지 않았습니다.\\n",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2200,13 +2208,13 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T06:47:02Z",
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V228",
+  "updated_at": "2026-09-15T07:00:07Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V229",
   "zip_receipt": {
     "remote_checkpoint": "ops/html-recovery/runs/20260915-0004/release.json",
     "remote_checkpoint_exact": true,
     "run": "run_0004_final",
-    "status": "NOT_CREATED_FOR_THIS_RELEASE_REMOTE_GIT_CHECKPOINT_AVAILABLE"
+    "status": "FINAL_CARD_CORRECTION_RECORDED_REMOTE_EXACT"
   },
   "zip_status": "NOT_CREATED_FOR_THIS_RELEASE_REMOTE_GIT_RECORDS_AVAILABLE",
   "execution_policy": {
