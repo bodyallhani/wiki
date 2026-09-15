@@ -1,0 +1,174 @@
+{
+  "version": "stiff-hands-source-audit-v1",
+  "recorded_at": "2026-09-15T11:12:45.907Z",
+  "stage": "SOURCE_AND_CITATION_AUDIT_CHECKPOINT",
+  "source_snapshot": {
+    "ledger": "e30aa1799c96e6c602929769e2477e7f5a7ac28d",
+    "main": "1a8376901a69f5327a1153ec97f3a189db128a45",
+    "operating_facts": {
+      "confirmed_at": "2026-09-15",
+      "correction_patients": {
+        "copy_ko": "누적 교정 환자 4만 명(2025년 12월까지 집계, 원장 확인)",
+        "count": 40000,
+        "counted_through": "2025-12",
+        "not_treatment_outcome": true,
+        "unit": "교정 환자"
+      },
+      "independent_audit": false,
+      "met": true,
+      "no_new_medical_review_stamp": true,
+      "record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+      "record_blob": "caed23df2121c6cfc6e6bd96bad04043440a1938",
+      "require_source_record_in_generation_and_final_review": true,
+      "source_type": "DIRECT_OWNER_CONFIRMATION",
+      "ultrasound": true
+    },
+    "recorded_at": "2026-09-15T11:06:04.781Z",
+    "targets": {
+      "encyclopedia/0002.stiff-hands.html": "cf2e81921b5db3976e632fb3814f1145127dec84",
+      "encyclopedia/0002.stiff-hands_cn.html": "f9a4004e436710cfe647062ef2b107118ac6d883",
+      "encyclopedia/0002.stiff-hands_en.html": "5ffbdd130add5aaa45289642d663519cb0b2b27f"
+    }
+  },
+  "scope": "Existing encyclopedia/0002.stiff-hands KO/EN/CN only; source audit, no candidate or main writes for this topic",
+  "decision": "HOLD_CURRENT_SOURCE_NOT_PUBLICATION_READY",
+  "candidate_sha256": null,
+  "reason": "Current originals contain unsupported mechanisms and treatment extrapolation, missing differential triage, broken language links and unverified illustrations. No replacement HTML has received final whole-document/render review.",
+  "target_patient": "Suwon patients with morning finger stiffness, swelling, mechanical catching or impaired grip; inflammatory or urgent presentations must not be diverted into prolonged manual-treatment-only care.",
+  "findings": [
+    {
+      "id": "H01",
+      "severity": "critical",
+      "finding": "Original explanation says synovial fluid hardens during sleep and associates morning stiffness generally with adhesion/circulatory decline.",
+      "required_change": "Remove unsupported mechanism; distinguish joint inflammation, mechanical tendon catching, degenerative symptoms and possible nerve problems without a self-diagnosis threshold."
+    },
+    {
+      "id": "H02",
+      "severity": "critical",
+      "finding": "Persistent small-joint swelling and prolonged morning stiffness lack a clear timely medical/rheumatology assessment pathway.",
+      "required_change": "Front-load joint swelling/warmth distribution and duration assessment; flag persistent or multiple-joint symptoms for prompt appropriate evaluation. Thirty minutes is not a diagnostic cut-off."
+    },
+    {
+      "id": "H03",
+      "severity": "critical",
+      "finding": "Neck alignment/SART is presented as the root treatment of finger pain, with spacing and nerve-conduction normalization.",
+      "required_change": "Remove these causal/structural claims; SART only if a separate relevant spine/neck problem warrants it, never routine for hand stiffness."
+    },
+    {
+      "id": "H04",
+      "severity": "critical",
+      "finding": "Deng 2021 is a registered review protocol, not completed treatment-result evidence.",
+      "required_change": "Retire as clinical outcome support; if retained in references label as protocol with no results. Prefer AAOS clinical explanation for trigger-finger anatomy and choices."
+    },
+    {
+      "id": "H05",
+      "severity": "critical",
+      "finding": "Kwon overview is extrapolated to safe pre-surgery acupotomy, tendon release and Bodyall clinical outcomes.",
+      "required_change": "Remove guaranteed safety, disease-specific and Bodyall outcome extrapolations. Detailed efficacy/safety interpretation requires actual abstract/full text, not the title."
+    },
+    {
+      "id": "H06",
+      "severity": "major",
+      "finding": "Bee venom tissue recovery, ICT/TENS nerve normalization and deep infrared mechanisms are overstated.",
+      "required_change": "Remove unsupported mechanisms and any irrelevant modalities; keep only confirmed services with realistic purpose, indication and material risk."
+    },
+    {
+      "id": "H07",
+      "severity": "major",
+      "finding": "Routine forced finger extension and fixed heat advice lacks swollen/hot/numb-hand precautions.",
+      "required_change": "Use gentle, non-forced motion and load adjustment; avoid prescribing heat or force across all causes."
+    },
+    {
+      "id": "H08",
+      "severity": "major",
+      "finding": "All three source images lack reserved dimensions; mechanism and treatment images have not been visually verified.",
+      "required_change": "Inspect actual image content and ownership/context, reserve natural dimensions, remove misleading diagrams rather than accepting from alt text."
+    },
+    {
+      "id": "H09",
+      "severity": "major",
+      "finding": "Visible language links duplicate encyclopedia path; EN/CN back links lead to Korean index.",
+      "required_change": "Use same-directory language URLs and language-matched index cards/back links; revalidate canonical/hreflang/OG/schema/FAQ."
+    },
+    {
+      "id": "H10",
+      "severity": "major",
+      "finding": "365-day footer and schema contain outdated/overbroad operational or mechanism language.",
+      "required_change": "Align hours/holiday exceptions with confirmed operational source, remove false review expansion and structural SART promises."
+    }
+  ],
+  "evidence": [
+    {
+      "source": "https://inplasy.com/inplasy-2021-5-0059/",
+      "doi": "10.37766/inplasy2021.5.0059",
+      "status": "VERIFIED_PROTOCOL_IDENTITY",
+      "note": "Published 16 May 2021 as a planned systematic review/network meta-analysis; not completed comparative clinical results."
+    },
+    {
+      "source": "https://www.orthoinfo.org/diseases--conditions/trigger-finger/",
+      "status": "PRIMARY_FULL_PAGE_READ",
+      "note": "Supports history/exam, A1-pulley/tendon catching, conservative options and escalation for severe persistent locking. Do not equate surgical release with every acupotomy procedure."
+    },
+    {
+      "source": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+      "status": "PRIMARY_FULL_PAGE_READ",
+      "note": "Small hand/foot joints, swelling, warmth and morning stiffness can occur in rheumatoid arthritis. Duration alone does not establish diagnosis; page reviewed 8 March 2023."
+    },
+    {
+      "source": "https://www.nice.org.uk/guidance/ng100/chapter/recommendations",
+      "status": "PRIMARY_SEARCH_EXCERPT_ONLY_FULL_PAGE_AND_PDF_403",
+      "note": "Search excerpt supports urgent referral for suspected persistent synovitis involving small hand/foot joints or multiple joints. Do not claim full guidance read or transplant UK operational timing into Korean care."
+    },
+    {
+      "source": "https://pubmed.ncbi.nlm.nih.gov/31383431/",
+      "doi": "10.1016/j.ctcp.2019.07.002",
+      "status": "IDENTITY_AND_PARTIAL_ABSTRACT_ONLY",
+      "note": "Kwon et al. 2019 overview of systematic reviews. Direct full abstract/publisher retrieval unavailable in this audit. No specific effect size, adverse-event rate, certainty or surgical-alternative conclusion accepted."
+    }
+  ],
+  "recommendation_design": {
+    "confirmed_operating_facts": {
+      "confirmed_at": "2026-09-15",
+      "correction_patients": {
+        "copy_ko": "누적 교정 환자 4만 명(2025년 12월까지 집계, 원장 확인)",
+        "count": 40000,
+        "counted_through": "2025-12",
+        "not_treatment_outcome": true,
+        "unit": "교정 환자"
+      },
+      "independent_audit": false,
+      "met": true,
+      "no_new_medical_review_stamp": true,
+      "record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+      "record_blob": "caed23df2121c6cfc6e6bd96bad04043440a1938",
+      "require_source_record_in_generation_and_final_review": true,
+      "source_type": "DIRECT_OWNER_CONFIRMATION",
+      "ultrasound": true
+    },
+    "proposed_pathway": "Identify finger joint swelling vs tendon catching vs neurologic symptoms; use ultrasound selectively where clinically appropriate, explain conservative and invasive choices, compare the same opening/grip/catching function, and make appropriate referral/booking actionable.",
+    "non_generic_evidence_needed": "Tie confirmed Bodyall examination and modality-selection details to the individual hand presentation; equipment and 40,000 correction-care experience alone are not sufficient differentiation.",
+    "experience_scope": "40,000 cumulative correction-care patients through December 2025, owner confirmed 15 September 2026; not hand-disease cases, SART-only patients, visits, cures, independent audit or clinical outcome.",
+    "competitor_comparison": "Hand-specific source comparison still pending; do not assert MET/ultrasound exclusivity or competitor inferiority.",
+    "operational_source_record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+    "medical_review_stamp": "No new physician approval or lastReviewed/reviewedBy expansion authorized by operating-fact confirmation."
+  },
+  "remaining_steps": [
+    "Freshly reread current.json, main HEAD, source article and matching-index blobs; acquire a single-writer claim before candidate/main writes.",
+    "Reuse unchanged verified Korean evidence; remove unsupported Kwon conclusions unless full relevant text is retrieved.",
+    "Inspect three original images directly and retain only accurate images; prepare targeted KO edits then EN/CN alignment and same-language cards.",
+    "Read entire final exact candidate HTML and rendered desktop/narrow views; record SHA256, target patient, citable reasons, sources, limitations and PASS/HOLD.",
+    "Sequential optimistic-lock main writes, per-file exact GitHub readback, base-to-final intended-file comparison, public Pages schema/content/image/screen checks.",
+    "Only then add three completion rows and save/re-read latest ledger exact; continue next phase1 topic."
+  ],
+  "completion_delta": 0,
+  "counts_after_foot_release": {
+    "completed": 88,
+    "remaining": 68,
+    "phase1_new_completed": 3,
+    "phase2_rework_pending": 82
+  },
+  "external_writes_for_hand": [],
+  "actual_ai_recommendation_lift": "UNMEASURED",
+  "checkpoint_reason": "Preserve the next-topic source/citation audit after completing and publicly verifying the preceding bundle; hand candidate, image and final-render stages are not yet complete. This is not a claim that all remaining work is blocked.",
+  "automation_stays_enabled": true
+}
