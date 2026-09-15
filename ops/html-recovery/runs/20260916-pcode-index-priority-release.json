@@ -1,0 +1,15 @@
+{
+  "record_type":"priority_group_release",
+  "released_at":"2026-09-16T08:40:00+09:00",
+  "group":"pcode/index KO-EN-CN additional-index priority",
+  "main_base":"8817ae3fcd6c5aab4c65b9e8a65a11f4a09780f6",
+  "main_final":"f5a03df2f5b9a0cf2f7cd60b810770bba83630b7",
+  "commit_compare":{"ahead_by":3,"changed_files":["pcode/index.html","pcode/index_en.html","pcode/index_cn.html"],"only_intended_files_changed":true},
+  "files":[
+    {"path":"pcode/index.html","url":"https://wiki.body-all.co.kr/pcode/index.html","publication_commit":"f41d89ed8f9c99467ed43702e54c5dc06714230c","git_blob":"35d2e7e0b8ca747a0e41fef0c8960edb86ef7c8e","sha256":"faaf27c9f48492e4a9504cccae53af5431c7375bce556d80e961e7784c7d7176","public_sha256":"faaf27c9f48492e4a9504cccae53af5431c7375bce556d80e961e7784c7d7176","status":"LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED"},
+    {"path":"pcode/index_en.html","url":"https://wiki.body-all.co.kr/pcode/index_en.html","publication_commit":"d6bfc14546f30abce7f08c4e6ebd7ad06d8a4c09","git_blob":"8546787f6d49d77903157d3087075d5a39bde3e7","sha256":"fda1ca27c73ace84e34f99608f4a633635df332dd0afc47de7c738a29b030ae8","public_sha256":"fda1ca27c73ace84e34f99608f4a633635df332dd0afc47de7c738a29b030ae8","status":"LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED"},
+    {"path":"pcode/index_cn.html","url":"https://wiki.body-all.co.kr/pcode/index_cn.html","publication_commit":"f5a03df2f5b9a0cf2f7cd60b810770bba83630b7","git_blob":"fec1e2ba2bc1536992eb03b2d8f543ed92c661c0","sha256":"d0ddedf450a01624648d4051ec7f05c691ba39f9bf1442c25e54cf9b1065e34a","public_sha256":"d0ddedf450a01624648d4051ec7f05c691ba39f9bf1442c25e54cf9b1065e34a","status":"LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED"}
+  ],
+  "verification":{"github_readback_exact":true,"pages_source_exact_sha256":true,"public_desktop_width":1348,"public_mobile_width":360,"horizontal_overflow":false,"per_language":{"ko":{"steps":3,"patterns":3,"faq":3,"images_loaded":2,"canonical":1,"hreflang":4,"jsonld":1},"en":{"steps":3,"patterns":3,"faq":3,"images_loaded":2,"canonical":1,"hreflang":4,"jsonld":1},"zh-CN":{"steps":3,"patterns":3,"faq":3,"images_loaded":2,"canonical":1,"hreflang":4,"jsonld":1}},"candidate_harness":"ops/html-recovery/review-harnesses/20260916-pcode-index-360.html","public_harness":"ops/html-recovery/review-harnesses/20260916-pcode-index-public-360.html","review_receipt":"ops/html-recovery/reviews/20260916-pcode-index-priority-final.json"},
+  "limits":["This release does not establish clinical efficacy or superiority.","No physician approval or independent translation review of these exact versions is asserted.","Actual AI recommendation uplift remains unmeasured."]
+}
