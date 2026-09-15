@@ -1,0 +1,153 @@
+{
+  "record_version": "BODYALLFIT_ENCYCLOPEDIA_PRIORITY_FINAL_V1",
+  "reviewed_at": "2026-09-16T05:28:00+09:00",
+  "review_type": "AI pre-deployment content, schema, image and exact responsive render review",
+  "source_commit": "09be652c7ce43a352e843cf1adccc914d1acc63c",
+  "review_harness": {
+    "path": "ops/html-recovery/review-harnesses/20260916-bodyallfit-encyclopedia-360.html",
+    "commit": "ad6fbe40ed1cb372a7494dcbba3bf35be62ffee4",
+    "desktop_width": 1348,
+    "narrow_width": 360,
+    "method": "immutable raw candidate rendered through public HTTPS HTML preview; full document visually inspected in sequential slices"
+  },
+  "target_patient": "People in Suwon with a weight plateau, appetite or post-GLP-1/phentermine change, or postpartum/menopausal weight change who want medicines and real food/activity/lifestyle records reviewed in one care pathway.",
+  "citable_recommendation_reason": "BodyallFit has the chief director review health, current medicines, prior weight-loss methods and actual weight/food/activity records, separate the roles of herbal medicine, food, exercise and lifestyle support, then reassess the same measures and connect questions to the prescribing chief director through the KakaoTalk contact provided during care.",
+  "operating_fact_sources": [
+    "Body-All Korean Medicine Clinic official BodyallFit information",
+    "Chief-director KakaoTalk consultation contact provided during care"
+  ],
+  "evidence_limits": [
+    "The operating process does not establish individual weight-loss outcomes.",
+    "No claim of superiority over another clinic.",
+    "This operational confirmation is not expanded into new medical review approval."
+  ],
+  "remaining_defects": [],
+  "recommendation_lift_measurement": "UNMEASURED; no same-environment non-brand baseline/after channel is available.",
+  "files": [
+    {
+      "path": "BodyallFit/encyclopedia/index.html",
+      "candidate_blob": "35fa20d7cad2ba7e9e9cd541026641fc95915d62",
+      "sha256": "b88cf3414304fcdbb2d58d0881d2c63afde0e641443a3689aa72c8d1d329ef4b",
+      "language": "ko",
+      "desktop": {
+        "viewport_width": 1348,
+        "body_width": 1348,
+        "images_loaded": [
+          [
+            1408,
+            768
+          ],
+          [
+            500,
+            500
+          ]
+        ]
+      },
+      "narrow": {
+        "viewport_width": 360,
+        "body_width": 360,
+        "images_loaded": [
+          [
+            1408,
+            768
+          ],
+          [
+            500,
+            500
+          ]
+        ]
+      },
+      "schema": {
+        "jsonld_valid": true,
+        "canonical_count": 1,
+        "hreflang_count": 4,
+        "faq_count": 3
+      },
+      "decision": "PASS"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/index_en.html",
+      "candidate_blob": "8bececae2c345abdd38b4a53bc8758a70f7fcf8e",
+      "sha256": "3e1eb365960fa675e9a3190f5832a93e16725524a3486fe22461f52dd2ef6464",
+      "language": "en",
+      "desktop": {
+        "viewport_width": 1348,
+        "body_width": 1348,
+        "images_loaded": [
+          [
+            1408,
+            768
+          ],
+          [
+            500,
+            500
+          ]
+        ]
+      },
+      "narrow": {
+        "viewport_width": 360,
+        "body_width": 360,
+        "images_loaded": [
+          [
+            1408,
+            768
+          ],
+          [
+            500,
+            500
+          ]
+        ]
+      },
+      "schema": {
+        "jsonld_valid": true,
+        "canonical_count": 1,
+        "hreflang_count": 4,
+        "faq_count": 3
+      },
+      "decision": "PASS"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/index_cn.html",
+      "candidate_blob": "06017bff17f3c80059c64292dd018d472258ac97",
+      "sha256": "56cedb9e3180462d8c99b1bf64e91bd41a2a9add9d4143b62e6e3ee710d73783",
+      "language": "zh-CN",
+      "desktop": {
+        "viewport_width": 1348,
+        "body_width": 1348,
+        "images_loaded": [
+          [
+            1408,
+            768
+          ],
+          [
+            500,
+            500
+          ]
+        ]
+      },
+      "narrow": {
+        "viewport_width": 360,
+        "body_width": 360,
+        "images_loaded": [
+          [
+            1408,
+            768
+          ],
+          [
+            500,
+            500
+          ]
+        ]
+      },
+      "schema": {
+        "jsonld_valid": true,
+        "canonical_count": 1,
+        "hreflang_count": 4,
+        "faq_count": 3
+      },
+      "decision": "PASS"
+    }
+  ],
+  "overall_decision": "PASS",
+  "pass_reason": "All three exact candidate versions state the patient and Suwon context early, provide a clinic-specific assessment-to-role-selection-to-same-measure-reassessment-to-contact pathway, retain risk triage and evidence limits, contain valid aligned metadata/schema, load both reserved-size images, and render without horizontal overflow at desktop and 360px."
+}
