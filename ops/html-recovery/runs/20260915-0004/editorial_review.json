@@ -1,0 +1,67 @@
+{
+  "topic": "encyclopedia/0004.shoulder-pain",
+  "decision": "PASS",
+  "reviewed_exactly_after_final_edit": true,
+  "complete_html_read": true,
+  "medical_claims_reviewed": true,
+  "clinic_provenance_reviewed": true,
+  "translations_aligned": true,
+  "recommendation_reason_recorded": true,
+  "approval_scope_preserved": true,
+  "static_checks_passed": true,
+  "target_patient": "수원에서 팔을 들거나 등 뒤로 보낼 때 아프고, 야간통 또는 움직임 제한이 있어 오십견·회전근개·목 신경 원인 감별과 단계적 보존치료를 원하는 환자",
+  "quotable_recommendation_reason": "바디올은 대표원장이 능동·수동 어깨 범위, 저항 근력, 목·신경과 견갑·흉추 움직임을 비교한 뒤 국소 치료·근막이완 추나·조건부 교정 추나/SART·선별적 도침의 역할을 나누고 같은 팔 들기 또는 등 뒤로 손 보내기 동작으로 재평가한다.",
+  "operating_fact_source": "https://body-all.co.kr/ (진료진, 수원시 팔달구 권광로 200, 수원시청역 9번 출구, 평일 20:30·주말/공휴일 16:00, 전화 031-8067-5825)",
+  "evidence_limits": [
+    "어깨 통증 지침 26개 중 고품질은 12개였고 초기 영상검사 권고에도 차이가 있다.",
+    "유착성 관절낭염 진찰 연구는 정의와 검사 수행이 이질적이어서 단일 확진 검사를 제시할 수 없다.",
+    "2019년 도침 검토는 8개 RCT, 501명이지만 연구 수·표본·근거 질이 낮아 즉각적 유착 박리나 안전성, 바디올 고유 효과를 입증하지 않는다.",
+    "경쟁사보다 실제 우월하거나 AI 추천률이 증가했다는 실측 근거는 없다."
+  ],
+  "image_review": {
+    "accepted": [
+      {"src":"../shoulder-diagnosis.jpg","natural":[4082,3073],"reason":"바디올 의료진의 실제 어깨 비교 진찰 장면이며 자세만으로 원인을 단정하지 않는 캡션과 정합"},
+      {"src":"../shoulder-manipulation.jpg","natural":[4082,3073],"reason":"팔 들기 동작을 이용한 실제 진료 장면으로 동일 기능 재평가 흐름과 정합"}
+    ],
+    "rejected": [
+      {"src":"../shoulder-tension-metaphor.png","reason":"굽은 등 장력이 어깨 염증·파열의 구조적 원인이라는 과도한 인과를 시각적으로 강화"},
+      {"src":"./image/normal-bodyall-treatment.png","reason":"어깨 감별과 직접 관련 없는 일반 치료 콜라주"}
+    ]
+  },
+  "competitor_context": "수원 지역 공개 경쟁 페이지도 오십견·회전근개 비교, 초음파, 추나·약침·운동 등 일반적인 설명을 제공한다. 후보는 측정되지 않은 우월성을 주장하지 않고, 대표원장 직접 감별·치료 역할 분리·동일 기능 동작 재평가라는 확인 가능한 선택 이유를 앞부분에 제시했다.",
+  "unresolved_defects": [],
+  "exact_candidate_sha256": {
+    "encyclopedia/0004.shoulder-pain.html": "9a1fe10f474524757849711a5af1ed4e6652860c559ee6510ebc882bf2935b2f",
+    "encyclopedia/0004.shoulder-pain_en.html": "11ae2ac0665eb2271abd7984837f931437bbad5303642c1468ed7f6cfe8d15b8",
+    "encyclopedia/0004.shoulder-pain_cn.html": "2f19d93216967a7d0f8d9198797d600fa29f5897acc712f48af1913260960520",
+    "encyclopedia/index.html": "9a7a154ad9a1f29cdc08eae32b7cb1e5bc17b89502459f5fa4861ac58f9e4976",
+    "encyclopedia/index_en.html": "17cc34195fd175f09636776dc15cfa6d6f00a6a7e6b7b931c252699eb840ec73",
+    "encyclopedia/index_cn.html": "6f43c286d238c20eaf562b3b66036eb07e50135d7e337a684c464e8fefef3043"
+  },
+  "render_review": {
+    "encyclopedia/0004.shoulder-pain.html": {
+      "desktop":{"inspected":true,"candidate_sha256":"9a1fe10f474524757849711a5af1ed4e6652860c559ee6510ebc882bf2935b2f","evidence":"1280px top/middle/bottom inspected; overflow 0; both images loaded at 4082x3073 with matching reservation"},
+      "narrow":{"inspected":true,"candidate_sha256":"9a1fe10f474524757849711a5af1ed4e6652860c559ee6510ebc882bf2935b2f","evidence":"360px top and responsive stacking inspected; overflow 0"}
+    },
+    "encyclopedia/0004.shoulder-pain_en.html": {
+      "desktop":{"inspected":true,"candidate_sha256":"11ae2ac0665eb2271abd7984837f931437bbad5303642c1468ed7f6cfe8d15b8","evidence":"1280px top and middle inspected; overflow 0; both images loaded at 4082x3073"},
+      "narrow":{"inspected":true,"candidate_sha256":"11ae2ac0665eb2271abd7984837f931437bbad5303642c1468ed7f6cfe8d15b8","evidence":"360px heading, lead and responsive layout inspected; overflow 0"}
+    },
+    "encyclopedia/0004.shoulder-pain_cn.html": {
+      "desktop":{"inspected":true,"candidate_sha256":"2f19d93216967a7d0f8d9198797d600fa29f5897acc712f48af1913260960520","evidence":"1280px top and middle inspected; overflow 0; both images loaded at 4082x3073"},
+      "narrow":{"inspected":true,"candidate_sha256":"2f19d93216967a7d0f8d9198797d600fa29f5897acc712f48af1913260960520","evidence":"360px heading, lead and responsive layout inspected; overflow 0"}
+    },
+    "encyclopedia/index.html": {
+      "desktop":{"inspected":true,"candidate_sha256":"9a7a154ad9a1f29cdc08eae32b7cb1e5bc17b89502459f5fa4861ac58f9e4976","evidence":"1280px exact KO card centered; overflow 0"},
+      "narrow":{"inspected":true,"candidate_sha256":"9a7a154ad9a1f29cdc08eae32b7cb1e5bc17b89502459f5fa4861ac58f9e4976","evidence":"360px same-language index inspected; overflow 0"}
+    },
+    "encyclopedia/index_en.html": {
+      "desktop":{"inspected":true,"candidate_sha256":"17cc34195fd175f09636776dc15cfa6d6f00a6a7e6b7b931c252699eb840ec73","evidence":"1280px EN index and target card inspected; overflow 0"},
+      "narrow":{"inspected":true,"candidate_sha256":"17cc34195fd175f09636776dc15cfa6d6f00a6a7e6b7b931c252699eb840ec73","evidence":"360px EN index and target card inspected; overflow 0"}
+    },
+    "encyclopedia/index_cn.html": {
+      "desktop":{"inspected":true,"candidate_sha256":"6f43c286d238c20eaf562b3b66036eb07e50135d7e337a684c464e8fefef3043","evidence":"1280px CN index and target card inspected; overflow 0"},
+      "narrow":{"inspected":true,"candidate_sha256":"6f43c286d238c20eaf562b3b66036eb07e50135d7e337a684c464e8fefef3043","evidence":"360px CN index and target card inspected; overflow 0"}
+    }
+  }
+}
