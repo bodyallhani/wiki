@@ -1,0 +1,70 @@
+{
+  "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+  "topic": "encyclopedia/0005.pes-anserine KO/EN/CN",
+  "base_main": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
+  "final_main": "a957c01771c1283fe5e32821e3b7e6639b340d38",
+  "scope_compare": {
+    "ahead_by": 6,
+    "behind_by": 0,
+    "files": [
+      "encyclopedia/0005.pes-anserine.html",
+      "encyclopedia/index.html",
+      "encyclopedia/0005.pes-anserine_en.html",
+      "encyclopedia/index_en.html",
+      "encyclopedia/0005.pes-anserine_cn.html",
+      "encyclopedia/index_cn.html"
+    ]
+  },
+  "articles": [
+    {
+      "path": "encyclopedia/0005.pes-anserine.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0005.pes-anserine.html",
+      "sha256": "e4a46c5e7d7f6bda9841ac3ecfd50229158d740e8a27533224b913b5b9fb3995",
+      "git_blob": "758c7f8c969023f531c8694e5c9ea1fe1861f223",
+      "publication_commit": "42f6b3c8321e38cb28499354c71eb5fd0e9f083c"
+    },
+    {
+      "path": "encyclopedia/0005.pes-anserine_en.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0005.pes-anserine_en.html",
+      "sha256": "ce72cefa8ff3013b7afc3df15c62b1f1af4ebf9dc75e6f40996f6367bcec0053",
+      "git_blob": "e8ca349caaffacd509475d73440a6a73e35a0fe6",
+      "publication_commit": "adfc0dc9b900f5c15fa28b04306795deab4ab2a1"
+    },
+    {
+      "path": "encyclopedia/0005.pes-anserine_cn.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0005.pes-anserine_cn.html",
+      "sha256": "d5cb906150be806214cbbe4f75e0c83ecaacf486a8a16d6d85788c0c26f11479",
+      "git_blob": "91d57bb0ea59a2073af93ea87e6c8cb16643ae7f",
+      "publication_commit": "614b15a305aa91c69673c7f393cfd0ece18ee50c"
+    }
+  ],
+  "index_cards": [
+    {"path":"encyclopedia/index.html","sha256":"10f852d11c72f0750deadb4da3c53cab05379647554e3820617c23504d0bc205","git_blob":"549fae49938ae8507fb51f815d9f4a750d18318b","publication_commit":"a001861d76a01c0d29e99721709e5215e2f5c6c9"},
+    {"path":"encyclopedia/index_en.html","sha256":"e9d971cb1db9a4a917d173817d230ff4b8246c22acadfe0bba5f844cbe0a57be","git_blob":"c18ae09cff4ec0696a0fa4bf3388047287f1b3c7","publication_commit":"781a5cc788c431908b0b5101359fe37059d5952b"},
+    {"path":"encyclopedia/index_cn.html","sha256":"ab2909f979075dd10cfd50c39e3beec2ccfef320e679f2619fc1bf82e930e7e0","git_blob":"cd0a6e03a50c667451a5a739ec3f3670c55c4a13","publication_commit":"a957c01771c1283fe5e32821e3b7e6639b340d38"}
+  ],
+  "github_readback_exact": true,
+  "public_verification": {
+    "completed": true,
+    "articles": 3,
+    "same_language_cards": 3,
+    "checks": [
+      "new title and h1 visible",
+      "canonical and four hreflang entries correct",
+      "robots index, follow",
+      "MedicalWebPage, MedicalClinic, MedicalProcedure and FAQPage schema parsed",
+      "three visible FAQs aligned with schema in each language",
+      "one accepted image loaded at browser-observed and reserved 2656x1600",
+      "rendered overflow 0",
+      "same-language card text and href correct"
+    ]
+  },
+  "recommendation_measurement": "UNMEASURED_NO_INDEPENDENT_NONBRAND_BASELINE_AFTER_CHANNEL",
+  "limits": [
+    "No competitor inferiority or measured Bodyall superiority is asserted.",
+    "No Bodyall-specific outcome or AI recommendation-frequency increase is established by the cited evidence.",
+    "Narrow rendering was directly inspected on the exact candidate before publication; public rendering and structure were then verified after Pages propagation."
+  ],
+  "editorial_review": "ops/html-recovery/runs/20260915-0005/editorial_review.json",
+  "verified_at": "2026-09-15T06:31:00Z"
+}
