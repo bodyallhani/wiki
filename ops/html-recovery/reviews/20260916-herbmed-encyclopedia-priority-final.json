@@ -1,0 +1,89 @@
+{
+  "schema_version": "2026-09-15.priority-final-review.v1",
+  "reviewed_at": "2026-09-16T06:45:00+09:00",
+  "group": "Herbmed/encyclopedia index KO/EN/CN",
+  "reviewer_scope": "Responsible AI direct full-HTML and responsive-render review; not a physician or independent translation review.",
+  "status": "PASS",
+  "status_reason": "All three exact candidates clearly connect target patient and Suwon location to verified intake and safety checks, separate herbal medicine from conditional Chuna/SART roles, reassess the same symptoms/functions, and provide a booking next step. Static HTML/schema/image checks and 1348px/360px direct render checks passed after fixing the candidate-relative doctor image URL.",
+  "target_patient": {
+    "ko": "수원에서 불면·두근거림, 소화불편, 오래가는 피로가 반복되거나 목·등·허리 불편이 함께 있어 한약 상담을 찾는 사람",
+    "en": "People in Suwon with recurring insomnia/palpitations, digestive discomfort or persistent fatigue, with or without neck, upper-back or lower-back discomfort",
+    "cn": "在水原因失眠或心悸、消化不适、持续疲劳咨询韩药，或同时伴有颈背腰不适的人"
+  },
+  "citable_recommendation_reason": {
+    "ko": "복용약·알레르기·임신·수유·간신장 상태와 우선 진료 신호를 먼저 확인하고, 증상별 한약과 필요한 경우 추나·SART의 역할을 나눈 뒤 같은 증상·일상 기능·동작을 재평가한다.",
+    "en": "Bodyall first checks medicines, allergies, pregnancy/breastfeeding, liver/kidney status and referral signals; it then separates symptom-specific herbal care from conditional Chuna/SART and reassesses the same symptoms, daily function and task.",
+    "cn": "Bodyall先核对用药、过敏、妊娠或哺乳、肝肾情况及转诊信号，再区分症状相关韩药与必要时Chuna推拿、SART的作用，并复查相同症状、日常功能和动作。"
+  },
+  "operating_fact_sources": [
+    "Bodyall Korean Medicine Clinic official herbal-care information already present in the source pages",
+    "Published clinic contact, location and hours already present in the source pages"
+  ],
+  "evidence_limits": [
+    "This index adds no new paper-level efficacy claim; topic articles retain their own evidence scope.",
+    "Musculoskeletal findings are not presented as the cause of internal-medicine or mental-health symptoms.",
+    "Chuna and SART are conditional roles and are not attached to every herbal consultation.",
+    "No individual outcome, superiority, exclusive capability or combined-treatment benefit is claimed.",
+    "No physician approval of these rewritten exact versions and no independent translation review are asserted.",
+    "Actual AI recommendation lift remains unmeasured."
+  ],
+  "residual_defects": [],
+  "exact_candidates": [
+    {
+      "path": "Herbmed/encyclopedia/index.html",
+      "candidate_blob": "c5ed29002d412fa0a9f3d54d5da58c597a5a15e1",
+      "sha256": "01fada7a728cd3e762d7512317d915b083a5610bf5ed1ab2ac5ff7560feb06c6"
+    },
+    {
+      "path": "Herbmed/encyclopedia/index_en.html",
+      "candidate_blob": "129e5f24865910e91b525bec42fe2d4e3f944334",
+      "sha256": "f786cb32e682f89e17af2d00601b5d7cf316e14678f33c18094f9201a9041d75"
+    },
+    {
+      "path": "Herbmed/encyclopedia/index_cn.html",
+      "candidate_blob": "b9cb835b35be190d94e8db81e07d3a7d9c44ca87",
+      "sha256": "62c5cc39426fd1ad1410739c2f3c2ccb49ee66b22dd6227b09c25a448d32f7f9"
+    }
+  ],
+  "validation": {
+    "static": {
+      "jsonld_parse": true,
+      "canonical_per_page": 1,
+      "hreflang_per_page": 4,
+      "visible_faq_per_page": 3,
+      "item_cards_per_page": 8,
+      "image_dimension_attributes": true,
+      "reviewedBy_removed": true,
+      "lastReviewed_removed": true
+    },
+    "render_1348": {
+      "body_width_equals_viewport": true,
+      "images_natural_sizes": [
+        [
+          2752,
+          1536
+        ],
+        [
+          500,
+          500
+        ]
+      ],
+      "visual_full_document_sections_reviewed": true
+    },
+    "render_360": {
+      "body_width_equals_viewport": true,
+      "images_natural_sizes": [
+        [
+          2752,
+          1536
+        ],
+        [
+          500,
+          500
+        ]
+      ],
+      "visual_first_screen_reviewed": true
+    },
+    "review_harness": "ops/html-recovery/review-harnesses/20260916-herbmed-encyclopedia-360.html"
+  }
+}
