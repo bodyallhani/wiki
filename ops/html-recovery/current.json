@@ -2148,8 +2148,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T10:25:20.424Z",
-  "version": "V233_FOOT_PAIN_FINAL_RENDER_IN_PROGRESS",
+  "updated_at": "2026-09-15T10:50:30.350Z",
+  "version": "V234_FOOT_PAIN_PUBLIC_VERIFICATION_INDEX_SCHEMA_REPAIR",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2180,7 +2180,7 @@
     "owner": "codex-phase1-0003-20260915",
     "topic": "encyclopedia/0003.foot-pain KO/EN/CN",
     "started_at": "2026-09-15T09:50:17.637Z",
-    "lease_expires_at": "2026-09-15T11:00:20.422Z",
+    "lease_expires_at": "2026-09-15T11:35:30.350Z",
     "single_writer": true,
     "source_main": "004335bd719de2136b93df82e80cdf3b40a68380",
     "source_blobs": {
@@ -2191,8 +2191,8 @@
   },
   "pending_run": {
     "topic": "encyclopedia/0003.foot-pain KO/EN/CN",
-    "stage": "CANDIDATE_STATIC_PASS_FINAL_RENDER_IN_PROGRESS",
-    "status": "IN_PROGRESS_NOT_PUBLISHED",
+    "stage": "ARTICLES_PUBLISHED_PUBLIC_CHECKS_PASS_INDEX_SCHEMA_FIX_REVIEW",
+    "status": "IN_PROGRESS_NOT_COUNTED",
     "source_main": "004335bd719de2136b93df82e80cdf3b40a68380",
     "source_blobs": {
       "encyclopedia/0003.foot-pain.html": "0e6b65e7fbf388f73886d54aea6cba9768897bda",
@@ -2216,6 +2216,64 @@
       "Complete final narrow render and language card checks, then final recommendation-fit receipt.",
       "Fresh main and target blob preflight; sequential writes with exact readbacks.",
       "Pages exact/schema/image/render and compare scope before count."
+    ],
+    "main_head": "d2f371e802bf7bdf89b0a0f6ba0e3bb60ee7392f",
+    "main_writes": [
+      {
+        "commit": "ae00c2bec81b146f6add9cd7ee03de57b3d100bb",
+        "git_blob": "526976fa120885707d1712f30584314fbc14610f",
+        "path": "encyclopedia/0003.foot-pain.html",
+        "readback_exact": true,
+        "sha256": "0cb07a73b2f3e578bebd2365a58b3823f94602c63da294bfe9025ec37948b439",
+        "source_blob": "0e6b65e7fbf388f73886d54aea6cba9768897bda"
+      },
+      {
+        "commit": "dd7bf9137d0dd2749309f6ad9ff1af9279e4e623",
+        "git_blob": "526c5b6c0b079ef47eccae2314aaa5dfe73709b4",
+        "path": "encyclopedia/0003.foot-pain_en.html",
+        "readback_exact": true,
+        "sha256": "551afdf9fbd99e6414cb99fa48567113816da3a1ffc98177163e90b900044d06",
+        "source_blob": "bd0bd3907bd201cce38bc00cbb40f94218b13548"
+      },
+      {
+        "commit": "c5a5e805f4bba03fa47cb6c5324630b4fde4ffeb",
+        "git_blob": "89e2684f7eb954ce1d14c2e3f6f8de47f6e0f6d7",
+        "path": "encyclopedia/0003.foot-pain_cn.html",
+        "readback_exact": true,
+        "sha256": "19c39050e3ccbdd4dd31cedf8d5852d486e3d96eb670f9ada600135b1eb5b01d",
+        "source_blob": "bdc72d9ee805aca837c53c4ca1dbb86c4cc53776"
+      },
+      {
+        "commit": "caf56eaec1b24b910c6cd4bc558552997b6dee8d",
+        "git_blob": "577f760314cea351de88d25660856153bf9b4fff",
+        "path": "encyclopedia/index.html",
+        "readback_exact": true,
+        "sha256": "2b5e593d3bb51bc41096a71327e68059b46f3c8627dc4b6dbca39d8d89482e34",
+        "source_blob": "9695b978a94d6c181f002c41c5e18bdc4ef26a16"
+      },
+      {
+        "commit": "f1c8a395d32c68a8fe332703f596502a2dcd3ae7",
+        "git_blob": "5cd473bd1ac8e5d63b1dbf7bd292b703528a990d",
+        "path": "encyclopedia/index_en.html",
+        "readback_exact": true,
+        "sha256": "a940a92064fab0beaf51fc2f81345941e92ca971790c271d15a406ac341dfba2",
+        "source_blob": "f73163d5e5c520a01ef1758fb886e62bf5241b67"
+      },
+      {
+        "commit": "d2f371e802bf7bdf89b0a0f6ba0e3bb60ee7392f",
+        "git_blob": "e97763d2edb0843fb500c81aa61519111a267c72",
+        "path": "encyclopedia/index_cn.html",
+        "readback_exact": true,
+        "readback_note": "Immediate readback mismatch; fresh read without retrying write matched exact candidate and returned written blob.",
+        "sha256": "7463776d410d783457a29cbf5a6e9f5450ba7bfacf2dbca0a9ee09baa0360d39",
+        "source_blob": "f5d24a0bed399788aa47c77b074c980012b4e327"
+      }
+    ],
+    "remaining": [
+      "Review exact repaired index schema versions and renders",
+      "Publish three schema brace repairs with SHA locks",
+      "Public comparison after repairs",
+      "Final ledger completion update"
     ]
   },
   "previous_public_validation": {
@@ -2873,14 +2931,10 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "type": "FOOT_PAIN_CANDIDATES_PRESERVED_FINAL_RENDER_IN_PROGRESS",
+    "type": "FOOT_PAIN_PUBLIC_VALIDATION_FOUND_PREEXISTING_INDEX_SCHEMA_ERROR",
     "counts_unchanged": true,
-    "main_unchanged": true,
-    "candidate_pack": "ops/html-recovery/candidates/20260915-foot-pain-v1.json",
-    "candidate_pack_exact": true,
-    "operating_facts": "40000 correction-care patients through 2025-12; MET and ultrasound owner confirmed",
-    "image_correction": "Removed anatomy diagram with misplaced talus label; retained dimensioned illustrative symptom image",
-    "static": "PASS",
-    "release_gate": "HOLD_PENDING_FINAL_REVIEW"
+    "articles_public": "DOM and screen/image checked, schema valid",
+    "index_issue": "Three CollectionPage JSON-LD blocks missing final brace in original main; correction in review",
+    "measured_recommendation_uplift": "UNMEASURED"
   }
 }
