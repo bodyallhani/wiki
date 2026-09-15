@@ -1,0 +1,72 @@
+{
+  "version": "HERBAL_PRIORITY_HOLD_CHECKPOINT_20260916",
+  "updated_at": "2026-09-15T15:36:24.754Z",
+  "repository": "bodyallhani/wiki",
+  "public_branch": "main",
+  "public_commit": "386cee216e248ad25588a4504749c0ffea9aabc3",
+  "status": "CANDIDATES_REVIEWED_HOLD_NOT_PUBLISHED",
+  "paths": [
+    "herbal-medicine.html",
+    "herbal-medicine_en.html",
+    "herbal-medicine_cn.html"
+  ],
+  "candidate": {
+    "path": "ops/html-recovery/candidates/20260916-herbal-priority-hold.json",
+    "blob": "22f671869da6f17e4fd8e5d7f71cfc36cc018c34",
+    "exact_readback": true
+  },
+  "review": {
+    "path": "ops/html-recovery/reviews/20260916-herbal-priority-hold.json",
+    "blob": "b5d6b6a2b26936b2c9ee316e0f3dad5b6c21e3b1",
+    "exact_readback": true
+  },
+  "source_blobs": {
+    "herbal-medicine.html": "1780d906af07c8e37ae6f52203fc8f6113664f30",
+    "herbal-medicine_en.html": "15e67ec88e06bacfcd543ee7923d1841ec6ce15f",
+    "herbal-medicine_cn.html": "214b11f4885fa1e4b6499cb5bdbbce933be2e806",
+    "index_en.html": "ff8a6b5df6edcd71ca3a9b2fdbccf19b5bcd061e",
+    "index_cn.html": "0f49a2a268a95995cdb6205513945f7cabcc9ddb"
+  },
+  "herbal_main_writes": 0,
+  "herbal_completion_increment": 0,
+  "counts": {
+    "count_is_current_verified_lower_bound": true,
+    "latest_standard_not_confirmed_or_remaining": 65,
+    "latest_standard_published_confirmed": 91,
+    "new_publications_this_turn": 3,
+    "revised_publications_this_turn": 9,
+    "total_scope": 156,
+    "existing_rework_verified_under_20260915_request": 12,
+    "historically_accepted_not_yet_reworked_under_20260915_request": 73,
+    "phase1_strengthened_completed": 6,
+    "phase1_strengthened_remaining": 65,
+    "priority_strengthened_total": 35,
+    "priority_strengthened_completed": 12,
+    "priority_strengthened_remaining": 23,
+    "additional_index_total": 8,
+    "additional_index_completed": 0
+  },
+  "findings": [
+    "Whole KO/EN/CN candidate text and selected narrow/desktop render regions directly reviewed; static checks pass but publication verdict is HOLD.",
+    "Product-specific recommendation reasons need better operating-source support, and repeated patent limitations need consolidation.",
+    "2024/corrigendum result claims removed. They need verification only if restored, not as a prerequisite for unrelated content.",
+    "Patent certificate is not a quality test. Unsupported comparison graphic removed. Unverified GMP badge in root-card thumbnail replaced in EN/CN candidates; final card render remains pending.",
+    "The review frame previously kept the selected-file hash after link navigation. Added separate actual-URL verification, blocking mismatch display, restore control and topic-matched related-card scroll. Live UI navigation/recovery test passed; source build and all 23 candidate hash checks passed."
+  ],
+  "private_review": {
+    "status": "UPDATED_AND_PRIVATELY_PUBLISHED",
+    "candidate_verdict_display": "HOLD",
+    "source_and_version_ids": "WITHHELD_FROM_PUBLIC_RECOVERY_RECORD",
+    "actual_ai_recommendation_test": false
+  },
+  "constraints": {
+    "ai_recommendation_advantage": "UNMEASURED",
+    "make_called_or_changed": false,
+    "indexing_called": false,
+    "new_wiki_urls": 0,
+    "medical_review_stamp_added": false,
+    "actual_current_bodyall_product_price_or_formula_verified": false
+  },
+  "next_action": "Read fresh ledger/main/source blobs. Resume herbal exact candidates, obtain inspectable product/operating details or strengthen a genuinely supported patient-specific selection reason; remove repeated explanations; complete changed card and narrow-page review. Re-review exact modified versions before any main write. Keep Herbal pending and then proceed to saved main/index priority order.",
+  "ownership_released": true
+}
