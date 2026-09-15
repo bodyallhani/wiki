@@ -1,0 +1,296 @@
+{
+  "version": "foot-pain-release-v2",
+  "verified_at": "2026-09-15T11:02:42.269Z",
+  "scope": "Existing foot-pain KO/EN/CN articles and matching index cards plus JSON-LD brace repair",
+  "base": "004335bd719de2136b93df82e80cdf3b40a68380",
+  "final_main": "1a8376901a69f5327a1153ec97f3a189db128a45",
+  "github": [
+    {
+      "commit": "ae00c2bec81b146f6add9cd7ee03de57b3d100bb",
+      "git_blob": "526976fa120885707d1712f30584314fbc14610f",
+      "path": "encyclopedia/0003.foot-pain.html",
+      "readback_exact": true,
+      "sha256": "0cb07a73b2f3e578bebd2365a58b3823f94602c63da294bfe9025ec37948b439",
+      "source_blob": "0e6b65e7fbf388f73886d54aea6cba9768897bda"
+    },
+    {
+      "commit": "dd7bf9137d0dd2749309f6ad9ff1af9279e4e623",
+      "git_blob": "526c5b6c0b079ef47eccae2314aaa5dfe73709b4",
+      "path": "encyclopedia/0003.foot-pain_en.html",
+      "readback_exact": true,
+      "sha256": "551afdf9fbd99e6414cb99fa48567113816da3a1ffc98177163e90b900044d06",
+      "source_blob": "bd0bd3907bd201cce38bc00cbb40f94218b13548"
+    },
+    {
+      "commit": "c5a5e805f4bba03fa47cb6c5324630b4fde4ffeb",
+      "git_blob": "89e2684f7eb954ce1d14c2e3f6f8de47f6e0f6d7",
+      "path": "encyclopedia/0003.foot-pain_cn.html",
+      "readback_exact": true,
+      "sha256": "19c39050e3ccbdd4dd31cedf8d5852d486e3d96eb670f9ada600135b1eb5b01d",
+      "source_blob": "bdc72d9ee805aca837c53c4ca1dbb86c4cc53776"
+    },
+    {
+      "commit": "a8248fd7d38e6ea51c0a213f4b2df7f47a9d95b4",
+      "git_blob": "6cf4a592b64ec7be1a3dc11e7e5e16e551746309",
+      "path": "encyclopedia/index.html",
+      "previous_publication": {
+        "commit": "caf56eaec1b24b910c6cd4bc558552997b6dee8d",
+        "git_blob": "577f760314cea351de88d25660856153bf9b4fff",
+        "path": "encyclopedia/index.html",
+        "readback_exact": true,
+        "sha256": "2b5e593d3bb51bc41096a71327e68059b46f3c8627dc4b6dbca39d8d89482e34",
+        "source_blob": "9695b978a94d6c181f002c41c5e18bdc4ef26a16"
+      },
+      "readback_exact": true,
+      "sha256": "91d2545f20fde92ab8c80829adecf7e3c86d1cbd389b76cf7fbcfecb3ccc4ffe",
+      "source_blob": "9695b978a94d6c181f002c41c5e18bdc4ef26a16"
+    },
+    {
+      "commit": "fab4b5e2e003497d2f36c24e54590db4ada60d03",
+      "git_blob": "ea952fcddaf41a32b7bffc1c7d25e8713bfc7cef",
+      "path": "encyclopedia/index_en.html",
+      "previous_publication": {
+        "commit": "f1c8a395d32c68a8fe332703f596502a2dcd3ae7",
+        "git_blob": "5cd473bd1ac8e5d63b1dbf7bd292b703528a990d",
+        "path": "encyclopedia/index_en.html",
+        "readback_exact": true,
+        "sha256": "a940a92064fab0beaf51fc2f81345941e92ca971790c271d15a406ac341dfba2",
+        "source_blob": "f73163d5e5c520a01ef1758fb886e62bf5241b67"
+      },
+      "readback_exact": true,
+      "sha256": "b58a645e906957a2a989571936e61776a0aa596b2469a460a24dcbfc7975cdea",
+      "source_blob": "f73163d5e5c520a01ef1758fb886e62bf5241b67"
+    },
+    {
+      "commit": "1a8376901a69f5327a1153ec97f3a189db128a45",
+      "git_blob": "2c591ace032a4e30776974a4818b208090ce44f5",
+      "path": "encyclopedia/index_cn.html",
+      "previous_publication": {
+        "commit": "d2f371e802bf7bdf89b0a0f6ba0e3bb60ee7392f",
+        "git_blob": "e97763d2edb0843fb500c81aa61519111a267c72",
+        "path": "encyclopedia/index_cn.html",
+        "readback_exact": true,
+        "readback_note": "Immediate readback mismatch; fresh read without retrying write matched exact candidate and returned written blob.",
+        "sha256": "7463776d410d783457a29cbf5a6e9f5450ba7bfacf2dbca0a9ee09baa0360d39",
+        "source_blob": "f5d24a0bed399788aa47c77b074c980012b4e327"
+      },
+      "readback_exact": true,
+      "readback_note": "Immediate readback mismatch; fresh read without retrying write matched exact candidate and returned written blob.",
+      "sha256": "4acb7a8fa696bd45740682cf47a824e9816e893470f3fb773aa96e817a53a51d",
+      "source_blob": "f5d24a0bed399788aa47c77b074c980012b4e327"
+    }
+  ],
+  "compare": {
+    "ahead_by": 9,
+    "base": "004335bd719de2136b93df82e80cdf3b40a68380",
+    "base_commit": {
+      "html_url": "https://github.com/bodyallhani/wiki/commit/004335bd719de2136b93df82e80cdf3b40a68380",
+      "sha": "004335bd719de2136b93df82e80cdf3b40a68380",
+      "url": "https://api.github.com/repos/bodyallhani/wiki/commits/004335bd719de2136b93df82e80cdf3b40a68380"
+    },
+    "behind_by": 0,
+    "files": [
+      {
+        "additions": 166,
+        "changes": 223,
+        "deletions": 57,
+        "filename": "encyclopedia/0003.foot-pain.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 136,
+        "changes": 209,
+        "deletions": 73,
+        "filename": "encyclopedia/0003.foot-pain_cn.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 166,
+        "changes": 237,
+        "deletions": 71,
+        "filename": "encyclopedia/0003.foot-pain_en.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 4,
+        "changes": 8,
+        "deletions": 4,
+        "filename": "encyclopedia/index.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 4,
+        "changes": 8,
+        "deletions": 4,
+        "filename": "encyclopedia/index_cn.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 4,
+        "changes": 8,
+        "deletions": 4,
+        "filename": "encyclopedia/index_en.html",
+        "previous_filename": null,
+        "status": "modified"
+      }
+    ],
+    "head": "1a8376901a69f5327a1153ec97f3a189db128a45",
+    "merge_base_commit": {
+      "html_url": "https://github.com/bodyallhani/wiki/commit/004335bd719de2136b93df82e80cdf3b40a68380",
+      "sha": "004335bd719de2136b93df82e80cdf3b40a68380",
+      "url": "https://api.github.com/repos/bodyallhani/wiki/commits/004335bd719de2136b93df82e80cdf3b40a68380"
+    },
+    "repository_full_name": "bodyallhani/wiki",
+    "status": "ahead",
+    "too_large": null,
+    "total_commits": 9
+  },
+  "public_verification": {
+    "checks": [
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "reserved": [
+              "2656",
+              "1600"
+            ],
+            "src": "https://wiki.body-all.co.kr/encyclopedia/image/0003.foot-pain-main.png"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "encyclopedia/0003.foot-pain.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "scope": "article",
+        "sha256": "0cb07a73b2f3e578bebd2365a58b3823f94602c63da294bfe9025ec37948b439",
+        "width": 1363
+      },
+      {
+        "path": "encyclopedia/index.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "scope": "card",
+        "sha256": "91d2545f20fde92ab8c80829adecf7e3c86d1cbd389b76cf7fbcfecb3ccc4ffe",
+        "width": 1363
+      },
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "reserved": [
+              "2656",
+              "1600"
+            ],
+            "src": "https://wiki.body-all.co.kr/encyclopedia/image/0003.foot-pain-main.png"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "encyclopedia/0003.foot-pain_en.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "scope": "article",
+        "sha256": "551afdf9fbd99e6414cb99fa48567113816da3a1ffc98177163e90b900044d06",
+        "width": 1363
+      },
+      {
+        "path": "encyclopedia/index_en.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "scope": "card",
+        "sha256": "b58a645e906957a2a989571936e61776a0aa596b2469a460a24dcbfc7975cdea",
+        "width": 1363
+      },
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "reserved": [
+              "2656",
+              "1600"
+            ],
+            "src": "https://wiki.body-all.co.kr/encyclopedia/image/0003.foot-pain-main.png"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "encyclopedia/0003.foot-pain_cn.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "scope": "article",
+        "sha256": "19c39050e3ccbdd4dd31cedf8d5852d486e3d96eb670f9ada600135b1eb5b01d",
+        "width": 1363
+      },
+      {
+        "path": "encyclopedia/index_cn.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "scope": "card",
+        "sha256": "4acb7a8fa696bd45740682cf47a824e9816e893470f3fb773aa96e817a53a51d",
+        "width": 1363
+      }
+    ],
+    "exactness": "GitHub raw contents exact; public Pages DOM content/schema/CSS/metadata/links/image attributes equal. Public raw HTTP byte equality not measured. Card-only index review, not whole-index acceptance.",
+    "status": "PASS"
+  },
+  "editorial_review": "ops/html-recovery/reviews/20260915-foot-pain-final-v2.json",
+  "editorial_review_blob": "e729545e79892e073bede6fe18082b79cb7f802b",
+  "candidate_pack": "ops/html-recovery/candidates/20260915-foot-pain-v2.json",
+  "render": {
+    "candidate_widths": [
+      1280,
+      360
+    ],
+    "public_width": 1363,
+    "public_article_views": "Three language opening sections and illustration views; Chinese sources/footer; three matching public card screens inspected.",
+    "mobile_emulation": false,
+    "article_overflow_px": 0
+  },
+  "operating_facts": {
+    "record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+    "record_blob": "caed23df2121c6cfc6e6bd96bad04043440a1938",
+    "source_type": "DIRECT_OWNER_CONFIRMATION",
+    "confirmed_at": "2026-09-15",
+    "correction_patients": {
+      "count": 40000,
+      "unit": "교정 환자",
+      "counted_through": "2025-12",
+      "copy_ko": "누적 교정 환자 4만 명(2025년 12월까지 집계, 원장 확인)",
+      "not_treatment_outcome": true
+    },
+    "met": true,
+    "ultrasound": true,
+    "independent_audit": false,
+    "no_new_medical_review_stamp": true,
+    "require_source_record_in_generation_and_final_review": true
+  },
+  "corrections": [
+    "Anatomy figure removed after detecting a misplaced talus label",
+    "Research protocol not presented as treatment outcome",
+    "53-patient active-point acupuncture trial not extrapolated to sham comparison, SART, bee venom or Bodyall outcomes",
+    "Three pre-existing index CollectionPage JSON-LD closing braces repaired and public parsing rechecked"
+  ],
+  "counts_delta": {
+    "newly_completed_existing_urls": 3,
+    "new_sitemap_urls": 0,
+    "card_urls_counted": 0
+  },
+  "limits": [
+    "Actual AI recommendation/competitor superiority UNMEASURED; no independent fixed-query baseline/after channel",
+    "No new physician or independent native-language review asserted",
+    "Index header/mobile nav and logo dimension reservations remain for dedicated full-index work; card/schema repair does not accept whole indices",
+    "Public raw HTTP byte equality not measured; GitHub raw contents exact and public DOM content/schema/CSS/metadata/links/image attributes equal"
+  ],
+  "next_topic": "encyclopedia/0002.stiff-hands KO/EN/CN",
+  "phase2": "Historical85 deferred until phase1 finishes;3 already strengthened,82 pending"
+}
