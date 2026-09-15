@@ -1,0 +1,118 @@
+{
+  "version": "stiff-hands-final-candidate-review-v1",
+  "recorded_at": "2026-09-16T00:31:00Z",
+  "topic": "encyclopedia/0002.stiff-hands KO/EN/CN",
+  "stage": "EXACT_CANDIDATE_WHOLE_SOURCE_STATIC_PASS_RENDER_HOLD",
+  "decision": "HOLD",
+  "reason": "Mandatory predeployment direct 1280px and 360px rendering of the exact candidates could not be completed because the private review harness requires renewed ChatGPT authentication. No main write or completion count is allowed.",
+  "source_snapshot": {
+    "ledger_before_claim": "958e57f4f4034982c7140e0a6a15d14e5a14766f",
+    "ledger_claim_blob": "de93524480f3349ace3d0dac4cfada3a009ad832",
+    "main": "a7d10f1aabd0ea86fd0d388a77365b338d747938",
+    "target_blobs": {
+      "encyclopedia/0002.stiff-hands.html": "cf2e81921b5db3976e632fb3814f1145127dec84",
+      "encyclopedia/0002.stiff-hands_en.html": "5ffbdd130add5aaa45289642d663519cb0b2b27f",
+      "encyclopedia/0002.stiff-hands_cn.html": "f9a4004e436710cfe647062ef2b107118ac6d883"
+    }
+  },
+  "exact_candidates": {
+    "encyclopedia/0002.stiff-hands.html": {
+      "sha256": "0724bf7fdcb587b7366729e75f7551fe40aee38cad92473d1e308b20a7631204",
+      "recovery_path": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands.html",
+      "recovery_blob": "ee3a3c2ac4f3e4c5308c56938a87d8e6368449aa"
+    },
+    "encyclopedia/0002.stiff-hands_en.html": {
+      "sha256": "64957da583ab8d6e8ba032281c693448ba85d3e586060827c114bbc9d60a2edc",
+      "recovery_path": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands_en.html",
+      "recovery_blob": "54305c15f12ddcb4afcf5266d4879ea15f3db339"
+    },
+    "encyclopedia/0002.stiff-hands_cn.html": {
+      "sha256": "a44cd33ff9ed3fd4cc518c7bec40375b4805e7c42f7695db5da28e8333665ae0",
+      "recovery_path": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands_cn.html",
+      "recovery_blob": "e5450a0e7e461236f6c4c7e13bd2f43909423b3a"
+    }
+  },
+  "target_patient": "Suwon patients with morning finger stiffness, a catching or locked digit, persistent small-joint swelling/warmth, or numbness/weakness; inflammatory and urgent presentations must not be diverted into repetitive local or manual care.",
+  "citable_recommendation_reason": {
+    "ko": "바디올은 한 손가락의 힘줄 걸림, 여러 관절의 붓기·열감, 신경 증상을 먼저 나눠 확인하고, 필요할 때만 초음파를 선택해 치료별 역할과 의뢰 기준을 설명한 뒤 같은 손 기능을 재평가한다.",
+    "en": "Bodyall first separates tendon catching, multi-joint swelling/warmth, and neurological symptoms; uses ultrasound only when useful; explains treatment and referral roles; and retests the same hand function.",
+    "cn": "Bodyall先区分肌腱卡顿、多个关节肿胀温热与神经症状，仅在有帮助时使用超声，说明治疗和转诊角色，并复测同一手部功能。"
+  },
+  "operating_facts": {
+    "source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+    "source_blob": "caed23df2121c6cfc6e6bd96bad04043440a1938",
+    "confirmed_at": "2026-09-15",
+    "ultrasound": true,
+    "used_in_candidate": "Selective ultrasound availability only; not effectiveness or superiority.",
+    "correction_patients_40000_not_used": "Avoided because the count covers cumulative correction patients through December 2025 and is not hand-condition experience or outcome evidence.",
+    "no_new_medical_review_stamp": true
+  },
+  "evidence": [
+    {
+      "source": "https://www.orthoinfo.org/diseases--conditions/trigger-finger/",
+      "authority": "American Academy of Orthopaedic Surgeons",
+      "use": "A1 pulley/flexor tendon catching, examination and care-choice framing",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "source": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+      "authority": "NHS",
+      "use": "Small-joint swelling, warmth and morning stiffness differential",
+      "retrieved": "2026-09-16"
+    }
+  ],
+  "image_review": [
+    {
+      "path": "encyclopedia/image/0002.stiff-hands-main.png",
+      "natural_size": "2656x1600",
+      "decision": "RETAIN",
+      "reason": "Directly inspected; depicts a person checking hand pain/stiffness without claiming a mechanism. Exact dimensions reserved."
+    },
+    {
+      "path": "encyclopedia/image/0002.joint-inflammation.png",
+      "natural_size": "2656x1600",
+      "decision": "REMOVE",
+      "reason": "Korean-labelled mixed synovitis/trigger illustration would not align across EN/CN and could overgeneralize mechanisms."
+    },
+    {
+      "path": "encyclopedia/image/normal-bodyall-treatment.png",
+      "natural_size": "4082x3073",
+      "decision": "REMOVE",
+      "reason": "Directly inspected; generic collage with cropped labels and unrelated treatment areas, not a credible hand-specific visual."
+    }
+  ],
+  "content_changes": [
+    "Removed hardened-synovial-fluid and circulation/adhesion generalizations.",
+    "Removed routine SART/neck-alignment/root-cause/nerve-normalization claims for finger symptoms.",
+    "Retired the review protocol and partially retrieved acupotomy overview as outcome support.",
+    "Removed guaranteed pre-surgery safety, tendon release, bee-venom tissue repair, ICT/TENS normalization and fixed heat/forced stretching.",
+    "Front-loaded inflammatory and urgent triage, Bodyall examination, selective ultrasound, distinct treatment roles, same-function reassessment and booking/referral.",
+    "Corrected visible language and language-matched index/related-card links.",
+    "Removed overbroad 365-day operational copy and opening-hours schema; retained current-hours check via booking page.",
+    "Added exact image dimensions and valid MedicalWebPage/MedicalClinic/FAQ schema without reviewedBy or lastReviewed."
+  ],
+  "static_validation": {
+    "all_three_html_complete": true,
+    "json_ld_parses": true,
+    "faq_questions_each": 3,
+    "canonical_hreflang_og_aligned": true,
+    "same_language_cards": true,
+    "one_retained_image_each_with_dimensions": true,
+    "old_unsupported_claim_scan_pass": true,
+    "whole_visible_text_directly_read": true
+  },
+  "evidence_limits": [
+    "AAOS and NHS sources support symptom patterns and general care-choice framing; they do not establish Bodyall outcomes or acupotomy effectiveness.",
+    "Ultrasound availability is owner-confirmed operations, not independent audit or an outcome measure.",
+    "No new physician review or independent translation review is asserted.",
+    "Actual AI recommendation lift is unmeasured."
+  ],
+  "remaining_defects": [
+    "Exact candidates have not been rendered in the authenticated private harness at 1280px and 360px.",
+    "No main deployment, GitHub main readback, commit-range comparison, Pages exact-source check, public schema/image/screen verification, or ledger completion rows exist yet."
+  ],
+  "next_action": "Authenticate to the private review harness; render and directly inspect the exact recovery candidates at desktop and narrow widths. If PASS, fresh-read current ledger, main head and all three target blobs; deploy sequentially with optimistic locking; read back exact; compare intended files; verify Pages; then update counts from 105/156 to 108/156.",
+  "completion_delta": 0,
+  "main_writes": 0,
+  "actual_ai_recommendation_lift": "UNMEASURED"
+}
