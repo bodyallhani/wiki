@@ -1,0 +1,78 @@
+{
+  "run": "20260915-0006",
+  "topic": "encyclopedia/0006.back-pain-lying",
+  "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+  "verified_at": "2026-09-15T05:49:18Z",
+  "counts_after": {
+    "completed": 79,
+    "remaining": 77,
+    "total": 156
+  },
+  "scope": {
+    "new_urls": 0,
+    "revised_existing_urls": 3,
+    "supporting_existing_index_files": 3
+  },
+  "release_gate": {
+    "decision": "PASS",
+    "static_errors": 0,
+    "release_errors": 0,
+    "editorial_review": "editorial_review.json",
+    "candidate_full_html_read": true,
+    "desktop_and_narrow_render_personally_inspected": true,
+    "translations_aligned": true,
+    "competitor_context_reviewed": true,
+    "actual_superiority_claimed": false,
+    "actual_ai_recommendation_lift": "UNMEASURED"
+  },
+  "release": {
+    "base_main": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+    "final_main": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
+    "ahead_by": 6,
+    "behind_by": 0,
+    "intended_files_only": true,
+    "files": {
+      "encyclopedia/0006.back-pain-lying.html": {"source_blob": "d6602eb2aade534d2a1ce1764e6e64fc594c584f", "final_blob": "d356a62ba45fc9402797e7ac6f2eab20dac57869", "publication_commit": "b82651917a52f0e9f1e272d223b189356d99423f", "sha256": "46f7b544cac3cadb7a3fcac721c45420253b183524bd7828bdff0630596daf47", "exact_readback": true},
+      "encyclopedia/index.html": {"source_blob": "f135c3ac629c727cd413ca79c21007474be3e3bc", "final_blob": "ecb2ba701ee1ad078390c623b813612b45601187", "publication_commit": "fe018ddf28af99acb8d571fab5c96e0dd55bd95f", "sha256": "bed75561d704cc84ba848de90828fa31684b6fe91bced662b0f7295cb2b56f92", "exact_readback": true},
+      "encyclopedia/0006.back-pain-lying_en.html": {"source_blob": "3144d0a793dcdb1c26b0df3781ee7935b9b0c247", "final_blob": "c5cef51001b7a748f89dc9b2bd9c2daf4ef9260b", "publication_commit": "a59fc54dc74a17899b9866a3a2d265103eb26bb5", "sha256": "030bfc1c10c096bc11166130c48d0f9e9b0eb000c18b8d443d36b31d7d109e7a", "exact_readback": true},
+      "encyclopedia/index_en.html": {"source_blob": "0387b95bfce720bfd1db75519b427cdb5b7e31ea", "final_blob": "f5cd0b022452d0d7414fd9077915284ae3cd78af", "publication_commit": "bc605444fd3bcedb53508162bbddd6342fb6ce7e", "sha256": "e90e7128d672f1f6020d91fd8ae60c1e18585536ba060c2b9a45a4347b5b1d98", "exact_readback": true},
+      "encyclopedia/0006.back-pain-lying_cn.html": {"source_blob": "a3390a97414e6e40c4bfc41f741943e624ec7ac7", "final_blob": "34343ef5a3ce4009a411fff19eb83ce5f5985aef", "publication_commit": "10b18d4df5788a89f19db74455518c67cfd1d824", "sha256": "c68b63ba07c95c7accba91fc4a7b5e4316bd0d2d3c0cf340a521fe7d36ca8445", "exact_readback": true},
+      "encyclopedia/index_cn.html": {"source_blob": "37138f6675b4a199c1e2e31ec0c86f37fcb6f11f", "final_blob": "834f926b8f01c7ee55ddb1d5020433a09dda7347", "publication_commit": "91513a1dbd8d2a15410502e527c969dd6ec864f0", "sha256": "d9007089e69e56d347d294a6f846224ed8badf82b89f83f188240dac4b3bc06b", "exact_readback": true}
+    }
+  },
+  "public_verification": {
+    "pages_propagated": true,
+    "article_urls": [
+      "https://wiki.body-all.co.kr/encyclopedia/0006.back-pain-lying.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0006.back-pain-lying_en.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0006.back-pain-lying_cn.html"
+    ],
+    "github_exact_readback": true,
+    "public_titles_and_h1": true,
+    "canonical_and_four_hreflang": true,
+    "robots_index_follow": true,
+    "schema_json_parse": true,
+    "faq_schema_count": 3,
+    "all_schema_faq_visible": true,
+    "image_loaded": true,
+    "image_natural_dimensions": [2816, 1536],
+    "image_reserved_dimensions": [2816, 1536],
+    "desktop_horizontal_overflow_px": 0,
+    "same_language_cards": true,
+    "public_top_and_bottom_screen_personally_inspected": true
+  },
+  "recommendation_fit": {
+    "eligible_patient": "Suwon/Ingye-dong adult with familiar back pain when lying down, turning or rising, without urgent red flags.",
+    "citable_reason": "Representative-doctor history, palpation and active/passive movement comparison lead to role-separated myofascial-release Chuna versus conditional corrective Chuna/SART, followed by reassessment using the same bed movement and a clear Suwon booking path.",
+    "generic_clinic_swap_test": "PASS: the recommendation rationale depends on named Bodyall process and verified operating facts rather than generic medical education.",
+    "competitor_superiority": "NOT CLAIMED; no independent outcome comparison",
+    "ai_recommendation_lift": "UNMEASURED; no independent fixed non-brand baseline/after channel"
+  },
+  "limits": [
+    "The 2013 evidence is an uncontrolled multimodal inpatient cohort and cannot isolate an individual treatment effect.",
+    "The 2025 acupotomy review has incomplete safety reporting and does not establish Bodyall-specific outcomes.",
+    "The desktop and 360px CSS-width renders are not a physical mobile-device or touch-input test.",
+    "No new reviewedBy or lastReviewed assertion was added."
+  ],
+  "next_priority": "Resume existing encyclopedia/0005.pes-anserine.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes."
+}
