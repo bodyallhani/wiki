@@ -82,6 +82,9 @@
     "herbal-medicine.html",
     "herbal-medicine_cn.html",
     "herbal-medicine_en.html",
+    "index.html",
+    "index_cn.html",
+    "index_en.html",
     "lumbar-disc.html",
     "lumbar-disc_cn.html",
     "lumbar-disc_en.html",
@@ -96,453 +99,6 @@
     "traffic-accident_en.html"
   ],
   "completion_rows": [
-    {
-      "git_blob": "a8a9b9aba89415707a88c1c950109144e7ace32f",
-      "latest_standard_completed": true,
-      "limits": [
-        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
-        "No direct physician review of the rewritten exact version or independent language review was asserted.",
-        "Public DOM/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
-      ],
-      "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
-      "publication_commit": "e2eb8b86b143ba1110da7fcdc146b257bde61062",
-      "review_receipt": "run_glp1_0001_final/offline_validation.json",
-      "sha256": "97cbd5ea36da4d89f6fae8ab2f13f660b9a2c7fe568f317842da9107c73a8e3b",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
-      "verification_receipt": "run_glp1_0001_final/public_verification.json"
-    },
-    {
-      "git_blob": "5787fff56cd273a51506c3d58465f27d9c805fd5",
-      "latest_standard_completed": true,
-      "limits": [
-        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
-        "No direct physician review of the rewritten exact version or independent language review was asserted.",
-        "Public DOM/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
-      ],
-      "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html",
-      "publication_commit": "8b7355e27cbc56b8d6108e4177751b7ddb44185a",
-      "review_receipt": "run_glp1_0001_final/offline_validation.json",
-      "sha256": "833625032ae6275e5bda12bb44d7cf7896e9aff2cc0bc8e6e46d4d97698f003e",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html",
-      "verification_receipt": "run_glp1_0001_final/public_verification.json"
-    },
-    {
-      "git_blob": "98620198a9a1d4b9af601710fec050c97a0f603a",
-      "latest_standard_completed": true,
-      "limits": [
-        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
-        "No direct physician review of the rewritten exact version or independent language review was asserted.",
-        "Public DOM/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
-      ],
-      "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
-      "publication_commit": "f010980b3522cc43e2a36d4e726fee5bfd579028",
-      "review_receipt": "run_glp1_0001_final/offline_validation.json",
-      "sha256": "d06143b47653b2c345cb162867c9f50a06449a29da94de7a3d89278e5a1c7bb7",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
-      "verification_receipt": "run_glp1_0001_final/public_verification.json"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "git_blob": "04dc4422cf516f8daead983a3ba3085232c30601",
-      "latest_standard_completed": true,
-      "limits": [
-        "Existing Korean evidence review reused; SMARTER difference retained as -0.04 percentage points.",
-        "No new efficacy, comparative superiority or new physician full-version review asserted.",
-        "Desktop DOM/schema/image/render verified; mobile and external-link full recrawl not repeated."
-      ],
-      "medical_source_approved_sha256": "583946aed3e266f261023d53221b7e387083488b884d0dd63ae85a9d74c161ca",
-      "path": "BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau.html",
-      "publication_commit": "3dff09626b2d8f996ebb5f7ef80f02dd27367f98",
-      "review_receipt": "run_maintenance3_ko_final/validation.json",
-      "sha256": "8ea731e7cfd421f87c3400bbf2350129661db2f8beb56234fb62ff82d072c5e4",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau.html",
-      "verification_receipt": "run_maintenance3_ko_final/release_receipt.json"
-    },
-    {
-      "git_blob": "aec205e38107bf3d1cb1af7ff4cc02e36159071b",
-      "korean_source_sha256": "8ea731e7cfd421f87c3400bbf2350129661db2f8beb56234fb62ff82d072c5e4",
-      "latest_standard_completed": true,
-      "limits": [
-        "Existing Korean evidence verification and corrected -0.04 percentage-point SMARTER result reused.",
-        "No independent translation or new physician full-version review asserted; isBasedOn identifies the Korean exact source only.",
-        "Desktop DOM, schema, images, first-screen message and overflow verified; mobile and external-link full recrawl not repeated."
-      ],
-      "path": "BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_cn.html",
-      "publication_commit": "b4bbc361419b27e6eca63aa69532440c097232ed",
-      "review_receipt": "run_maintenance3_en_cn_final/validation.json",
-      "sha256": "a1b03904110ec01f82a3451a5f10e35fe22b95775e2ca93223f30360843f72fa",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_cn.html",
-      "verification_receipt": "run_maintenance3_en_cn_final/public_verification.json"
-    },
-    {
-      "git_blob": "517c6fb4e45afeeeb6f87f7b70addf6ab11c2f0a",
-      "korean_source_sha256": "8ea731e7cfd421f87c3400bbf2350129661db2f8beb56234fb62ff82d072c5e4",
-      "latest_standard_completed": true,
-      "limits": [
-        "Existing Korean evidence verification and corrected -0.04 percentage-point SMARTER result reused.",
-        "No independent translation or new physician full-version review asserted; isBasedOn identifies the Korean exact source only.",
-        "Desktop DOM, schema, images, first-screen message and overflow verified; mobile and external-link full recrawl not repeated."
-      ],
-      "path": "BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_en.html",
-      "publication_commit": "d18e64472aa86691fcc2e26ecb03adeb8e9fb6c7",
-      "review_receipt": "run_maintenance3_en_cn_final/validation.json",
-      "sha256": "78d5aff0f4a046880e1ad3071e2c70cab7581fe82d037ea1ee9ef49058ece8e2",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_en.html",
-      "verification_receipt": "run_maintenance3_en_cn_final/public_verification.json"
-    },
-    {
-      "git_blob": "8298052aebb2486d7a5ccf8f05fe8b6168a83bec",
-      "latest_standard_completed": true,
-      "limits": [
-        "Existing Korean evidence reused, including abstract-only limit on Berg meta-analysis.",
-        "No new physician full-version review asserted.",
-        "Desktop upper viewport observed; mobile not tested."
-      ],
-      "path": "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support.html",
-      "publication_commit": "09768453a5f81c88a5654b50e29de19ac3a49dd4",
-      "review_receipt": "run_maintenance4_final/validation.json",
-      "sha256": "46a273ee7ba9ea06f1ff676b284b9bbc656d803f7079d49d5e463b86a12c2d1f",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "verification_receipt": "run_maintenance4_final/release_receipt.json"
-    },
-    {
-      "git_blob": "95c7e5ff4800d316bcbd20abe4447c178e7069cf",
-      "korean_source_sha256": "46a273ee7ba9ea06f1ff676b284b9bbc656d803f7079d49d5e463b86a12c2d1f",
-      "latest_standard_completed": true,
-      "limits": [
-        "Existing Korean evidence scope reused; no new efficacy or comparative-superiority claim.",
-        "No independent English/Chinese or new physician full-version review asserted.",
-        "Desktop rendering observed; mobile and external-link full recrawl not repeated."
-      ],
-      "path": "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_cn.html",
-      "publication_commit": "3aaf89b8427b1d2956c932ccb9dc6ec88f3458da",
-      "review_receipt": "run_maintenance4_en_cn_final/validation.json",
-      "sha256": "1d2bfb40f733d729aaf002d77b19220fe3ed20c5a2b65eed344b67254dd96bc5",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_cn.html",
-      "verification_receipt": "run_maintenance4_en_cn_final/release_receipt.json"
-    },
-    {
-      "git_blob": "deffc958e8e9052f829d73b0c156f777a05c6cc7",
-      "korean_source_sha256": "46a273ee7ba9ea06f1ff676b284b9bbc656d803f7079d49d5e463b86a12c2d1f",
-      "latest_standard_completed": true,
-      "limits": [
-        "Existing Korean evidence scope reused; no new efficacy or comparative-superiority claim.",
-        "No independent English/Chinese or new physician full-version review asserted.",
-        "Desktop rendering observed; mobile and external-link full recrawl not repeated."
-      ],
-      "path": "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_en.html",
-      "publication_commit": "05f6d14ff07bbdba7b099ce7e77c2c7b90d43fa1",
-      "review_receipt": "run_maintenance4_en_cn_final/validation.json",
-      "sha256": "87cb7f49c89ec781ee4dc054b442f10e85c837a0d2ce9d0860b994755aaa5c58",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_en.html",
-      "verification_receipt": "run_maintenance4_en_cn_final/release_receipt.json"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "git_blob": "b34e0843c46d024a52f8d9a0cfe7af75318288d2",
-      "latest_standard_completed": true,
-      "limits": [
-        "Existing Korean evidence, numbers, reference destinations and material safety information were reused; no paper re-search was needed.",
-        "No new efficacy, comparative superiority, exclusivity or physician review of the rewritten exact version was asserted.",
-        "Public DOM/schema/images and desktop overflow were verified; mobile emulation and independent language review were not claimed."
-      ],
-      "path": "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention.html",
-      "publication_commit": "e88bde25cec8f458a3454faa6a936f6abe2604c2",
-      "review_receipt": "run_maintenance6_final/offline_validation.json",
-      "sha256": "de40715c343d793b003088b23cd343662f6ce16eb4eaae4e2dfac56009f178d3",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention.html",
-      "verification_receipt": "run_maintenance6_final/public_verification.json"
-    },
-    {
-      "git_blob": "68d938ab97d863d1284a40db3e27352c505a2d5b",
-      "latest_standard_completed": true,
-      "limits": [
-        "Existing Korean evidence, numbers, reference destinations and material safety information were reused; no paper re-search was needed.",
-        "No new efficacy, comparative superiority, exclusivity or physician review of the rewritten exact version was asserted.",
-        "Public DOM/schema/images and desktop overflow were verified; mobile emulation and independent language review were not claimed."
-      ],
-      "path": "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_cn.html",
-      "publication_commit": "bc9dcd90d476a10c35387ddbb15caa1dc08afdc6",
-      "review_receipt": "run_maintenance6_final/offline_validation.json",
-      "sha256": "b35b65e841da7306721a79252eed5762bebdd121114c96555837d2107624c689",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_cn.html",
-      "verification_receipt": "run_maintenance6_final/public_verification.json"
-    },
-    {
-      "git_blob": "b5beb6b1aa89b49f5d73f53f291aabe99248dc7e",
-      "latest_standard_completed": true,
-      "limits": [
-        "Existing Korean evidence, numbers, reference destinations and material safety information were reused; no paper re-search was needed.",
-        "No new efficacy, comparative superiority, exclusivity or physician review of the rewritten exact version was asserted.",
-        "Public DOM/schema/images and desktop overflow were verified; mobile emulation and independent language review were not claimed."
-      ],
-      "path": "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_en.html",
-      "publication_commit": "5dff21e4b41618286f8c75044a9d1ef5dbee3dff",
-      "review_receipt": "run_maintenance6_final/offline_validation.json",
-      "sha256": "2dfe29780dd64e8ddb8d7f18706c39a91b57f39ef9373d4b19a3f7048e83e97f",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_en.html",
-      "verification_receipt": "run_maintenance6_final/public_verification.json"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "current_public_dom_rechecked": true,
-      "git_blob": "38889ef80ef7be07d5cd4520a72f63ae91189688",
-      "latest_standard_completed": true,
-      "limits": [
-        "The 0001 card was updated and the public hub was rechecked for the card, canonical, robots, images and desktop overflow.",
-        "Hub acceptance does not approve its linked articles."
-      ],
-      "path": "BodyallFit/encyclopedia/index.html",
-      "prior_public_verified_at": "2026-09-13T05:36:32.001500+00:00",
-      "public_url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index.html",
-      "publication_commit": "a757d35230e4ff35b0c304018945892fc0782f38",
-      "review_receipt": "run_hub_ko_choice_cleanup/run_receipt.json",
-      "sha256": "3087f0e64756a5df9710455e423e4657aacfbdad6b1791da8a0268b8873775ba",
-      "source_and_public_receipt_exact_match": true,
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index.html",
-      "verification_receipt": "run_glp1_0001_final/public_verification.json"
-    },
-    {
-      "git_blob": "6562e86687a6ab63484b9948c80def1846903411",
-      "latest_standard_completed": false,
-      "path": "BodyallFit/encyclopedia/index_cn.html",
-      "publication_commit": "650ead92622504965e91974e3f8e87dae655d809",
-      "reason": "0001 card now states the GLP-1 patient-facing BodyallFit choice reason. Whole hub is not counted by this article release.",
-      "sha256": "91c8c6157ecbdfc7b1bbb01a56f1c68f745f7934dbf0d4d9d376cb6562d4a6ab",
-      "status": "SAME_LANGUAGE_CARD_UPDATED_HUB_NOT_YET_COUNTED"
-    },
-    {
-      "git_blob": "fac525d428f477da12475676477611ccf203cb52",
-      "latest_standard_completed": false,
-      "path": "BodyallFit/encyclopedia/index_en.html",
-      "publication_commit": "2ebbe3ff75aa58f5bfa55759401ae196c86ad341",
-      "reason": "0001 card now states the GLP-1 patient-facing BodyallFit choice reason. Whole hub is not counted by this article release.",
-      "sha256": "6dff7673f2b05ee75517b495c560e511829d22afd9660e79aab6657c097423d7",
-      "status": "SAME_LANGUAGE_CARD_UPDATED_HUB_NOT_YET_COUNTED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/index.html",
-      "reason": "Latest local cleanup exists; older publication is excluded from final-standard completion.",
-      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/index_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "Herbmed/encyclopedia/index_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "SART.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "SART_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "SART_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "final_repository_head": "dda9b41cf01b4076445557f7411069a4cc191413",
-      "git_blob": "601cd10db060ea69046bd592fc9dd8dd3f8027a9",
-      "latest_standard_completed": true,
-      "limits": [
-        "Completed Korean evidence review for the two unchanged references was reused; no paper re-search or new efficacy claim was added.",
-        "The 2023 lumbar spinal stenosis trial is a pilot study and the 2013 study used combined Korean medicine care; neither establishes Bodyall outcomes or acupotomy-SART combined efficacy.",
-        "No physician review of the rewritten exact version or independent language review was asserted.",
-        "Public text, schema, five images per page and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
-      ],
-      "path": "acupotomy.html",
-      "publication_commit": "2945252d572a2751bd1ad27791840c14ffa10f30",
-      "review_receipt": "run_acupotomy_hub_final/offline_validation.json",
-      "sha256": "bd1b0337be7503556cd1a0133102e7d618a6583c5f63ce8119b6006558a73602",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/acupotomy.html",
-      "verification_receipt": "run_acupotomy_hub_final/public_verification.json"
-    },
     {
       "final_repository_head": "dda9b41cf01b4076445557f7411069a4cc191413",
       "git_blob": "4231e2f3cfa883b6bc121edd7299cf2719d005e4",
@@ -580,22 +136,22 @@
       "verification_receipt": "run_acupotomy_hub_final/public_verification.json"
     },
     {
-      "final_repository_head": "820dbabb0d84ece5698e618d35326197226110d7",
-      "git_blob": "82a220f203858bdf53d44ce8d456e5d6f12f7708",
+      "final_repository_head": "dda9b41cf01b4076445557f7411069a4cc191413",
+      "git_blob": "601cd10db060ea69046bd592fc9dd8dd3f8027a9",
       "latest_standard_completed": true,
       "limits": [
-        "The completed Korean evidence review and unchanged cited sources were reused; no paper re-search or new efficacy claim was added.",
-        "The 2015 review and 2020 retrospective study support the stated safety discussion but do not prove Bodyall outcomes or the combined effect of bee venom acupuncture and SART.",
+        "Completed Korean evidence review for the two unchanged references was reused; no paper re-search or new efficacy claim was added.",
+        "The 2023 lumbar spinal stenosis trial is a pilot study and the 2013 study used combined Korean medicine care; neither establishes Bodyall outcomes or acupotomy-SART combined efficacy.",
         "No physician review of the rewritten exact version or independent language review was asserted.",
-        "Public text/schema/images and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+        "Public text, schema, five images per page and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
       ],
-      "path": "bee-venom.html",
-      "publication_commit": "58cc8ae75d8a5438217e51903a3c80854cc7c13f",
-      "review_receipt": "run_bee_final/offline_validation.json",
-      "sha256": "ea783065d7680bddea228650a023ac5331b018570c2c6bb0f8b2d3c0fe817ba1",
+      "path": "acupotomy.html",
+      "publication_commit": "2945252d572a2751bd1ad27791840c14ffa10f30",
+      "review_receipt": "run_acupotomy_hub_final/offline_validation.json",
+      "sha256": "bd1b0337be7503556cd1a0133102e7d618a6583c5f63ce8119b6006558a73602",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/bee-venom.html",
-      "verification_receipt": "run_bee_final/public_verification.json"
+      "url": "https://wiki.body-all.co.kr/acupotomy.html",
+      "verification_receipt": "run_acupotomy_hub_final/public_verification.json"
     },
     {
       "final_repository_head": "820dbabb0d84ece5698e618d35326197226110d7",
@@ -634,41 +190,300 @@
       "verification_receipt": "run_bee_final/public_verification.json"
     },
     {
-      "final_repository_head": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
-      "git_blob": "5328e30ccf3fe929fe7eda9ed8d5f5b5943fc927",
+      "final_repository_head": "820dbabb0d84ece5698e618d35326197226110d7",
+      "git_blob": "82a220f203858bdf53d44ce8d456e5d6f12f7708",
       "latest_standard_completed": true,
       "limits": [
-        "Public raw HTTP byte equality was not measured; GitHub raw contents exact and public semantic signatures equal.",
-        "No new physician exact-version or translation approval was asserted.",
-        "Internal recommendation-fit review does not measure actual AI rankings."
+        "The completed Korean evidence review and unchanged cited sources were reused; no paper re-search or new efficacy claim was added.",
+        "The 2015 review and 2020 retrospective study support the stated safety discussion but do not prove Bodyall outcomes or the combined effect of bee venom acupuncture and SART.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text/schema/images and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
       ],
-      "path": "cervical-disc.html",
-      "publication_commit": "6d473fac3a459bcb4efef76db1f7756ac46744a5",
-      "review_receipt": "ops/html-recovery/reviews/20260915-cervical-priority-final.json",
-      "sha256": "920bc67bc72083eb00e0bc381cdf8a1bd3fa624da2ca61d95bc90eda9c2292c8",
-      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/cervical-disc.html",
-      "verification_receipt": "ops/html-recovery/runs/20260915-cervical-priority-release.json",
-      "previous_versions": [
-        {
-          "final_repository_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
-          "git_blob": "17bb099b854543fa06f01266ad1ac956871809a9",
-          "latest_standard_completed": true,
-          "limits": [
-            "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
-            "No direct physician review of the rewritten exact version or independent language review was asserted.",
-            "Public text/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
-          ],
-          "path": "cervical-disc.html",
-          "publication_commit": "e76578fc27901b43239034b98dd70a38edf48c6e",
-          "review_receipt": "run_cervical_final/offline_validation.json",
-          "sha256": "e7960c659f1079cae3f906a64b517f50d591b5ced3a7bbd94c6409b45262c888",
-          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-          "url": "https://wiki.body-all.co.kr/cervical-disc.html",
-          "verification_receipt": "run_cervical_final/public_verification.json"
-        }
+      "path": "bee-venom.html",
+      "publication_commit": "58cc8ae75d8a5438217e51903a3c80854cc7c13f",
+      "review_receipt": "run_bee_final/offline_validation.json",
+      "sha256": "ea783065d7680bddea228650a023ac5331b018570c2c6bb0f8b2d3c0fe817ba1",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/bee-venom.html",
+      "verification_receipt": "run_bee_final/public_verification.json"
+    },
+    {
+      "git_blob": "5787fff56cd273a51506c3d58465f27d9c805fd5",
+      "latest_standard_completed": true,
+      "limits": [
+        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+        "No direct physician review of the rewritten exact version or independent language review was asserted.",
+        "Public DOM/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
       ],
-      "strengthened_20260915_completed": true
+      "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html",
+      "publication_commit": "8b7355e27cbc56b8d6108e4177751b7ddb44185a",
+      "review_receipt": "run_glp1_0001_final/offline_validation.json",
+      "sha256": "833625032ae6275e5bda12bb44d7cf7896e9aff2cc0bc8e6e46d4d97698f003e",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html",
+      "verification_receipt": "run_glp1_0001_final/public_verification.json"
+    },
+    {
+      "git_blob": "98620198a9a1d4b9af601710fec050c97a0f603a",
+      "latest_standard_completed": true,
+      "limits": [
+        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+        "No direct physician review of the rewritten exact version or independent language review was asserted.",
+        "Public DOM/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
+      ],
+      "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
+      "publication_commit": "f010980b3522cc43e2a36d4e726fee5bfd579028",
+      "review_receipt": "run_glp1_0001_final/offline_validation.json",
+      "sha256": "d06143b47653b2c345cb162867c9f50a06449a29da94de7a3d89278e5a1c7bb7",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
+      "verification_receipt": "run_glp1_0001_final/public_verification.json"
+    },
+    {
+      "git_blob": "a8a9b9aba89415707a88c1c950109144e7ace32f",
+      "latest_standard_completed": true,
+      "limits": [
+        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+        "No direct physician review of the rewritten exact version or independent language review was asserted.",
+        "Public DOM/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
+      ],
+      "path": "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
+      "publication_commit": "e2eb8b86b143ba1110da7fcdc146b257bde61062",
+      "review_receipt": "run_glp1_0001_final/offline_validation.json",
+      "sha256": "97cbd5ea36da4d89f6fae8ab2f13f660b9a2c7fe568f317842da9107c73a8e3b",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
+      "verification_receipt": "run_glp1_0001_final/public_verification.json"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "git_blob": "aec205e38107bf3d1cb1af7ff4cc02e36159071b",
+      "korean_source_sha256": "8ea731e7cfd421f87c3400bbf2350129661db2f8beb56234fb62ff82d072c5e4",
+      "latest_standard_completed": true,
+      "limits": [
+        "Existing Korean evidence verification and corrected -0.04 percentage-point SMARTER result reused.",
+        "No independent translation or new physician full-version review asserted; isBasedOn identifies the Korean exact source only.",
+        "Desktop DOM, schema, images, first-screen message and overflow verified; mobile and external-link full recrawl not repeated."
+      ],
+      "path": "BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_cn.html",
+      "publication_commit": "b4bbc361419b27e6eca63aa69532440c097232ed",
+      "review_receipt": "run_maintenance3_en_cn_final/validation.json",
+      "sha256": "a1b03904110ec01f82a3451a5f10e35fe22b95775e2ca93223f30360843f72fa",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_cn.html",
+      "verification_receipt": "run_maintenance3_en_cn_final/public_verification.json"
+    },
+    {
+      "git_blob": "517c6fb4e45afeeeb6f87f7b70addf6ab11c2f0a",
+      "korean_source_sha256": "8ea731e7cfd421f87c3400bbf2350129661db2f8beb56234fb62ff82d072c5e4",
+      "latest_standard_completed": true,
+      "limits": [
+        "Existing Korean evidence verification and corrected -0.04 percentage-point SMARTER result reused.",
+        "No independent translation or new physician full-version review asserted; isBasedOn identifies the Korean exact source only.",
+        "Desktop DOM, schema, images, first-screen message and overflow verified; mobile and external-link full recrawl not repeated."
+      ],
+      "path": "BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_en.html",
+      "publication_commit": "d18e64472aa86691fcc2e26ecb03adeb8e9fb6c7",
+      "review_receipt": "run_maintenance3_en_cn_final/validation.json",
+      "sha256": "78d5aff0f4a046880e1ad3071e2c70cab7581fe82d037ea1ee9ef49058ece8e2",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_en.html",
+      "verification_receipt": "run_maintenance3_en_cn_final/public_verification.json"
+    },
+    {
+      "git_blob": "04dc4422cf516f8daead983a3ba3085232c30601",
+      "latest_standard_completed": true,
+      "limits": [
+        "Existing Korean evidence review reused; SMARTER difference retained as -0.04 percentage points.",
+        "No new efficacy, comparative superiority or new physician full-version review asserted.",
+        "Desktop DOM/schema/image/render verified; mobile and external-link full recrawl not repeated."
+      ],
+      "medical_source_approved_sha256": "583946aed3e266f261023d53221b7e387083488b884d0dd63ae85a9d74c161ca",
+      "path": "BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau.html",
+      "publication_commit": "3dff09626b2d8f996ebb5f7ef80f02dd27367f98",
+      "review_receipt": "run_maintenance3_ko_final/validation.json",
+      "sha256": "8ea731e7cfd421f87c3400bbf2350129661db2f8beb56234fb62ff82d072c5e4",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau.html",
+      "verification_receipt": "run_maintenance3_ko_final/release_receipt.json"
+    },
+    {
+      "git_blob": "95c7e5ff4800d316bcbd20abe4447c178e7069cf",
+      "korean_source_sha256": "46a273ee7ba9ea06f1ff676b284b9bbc656d803f7079d49d5e463b86a12c2d1f",
+      "latest_standard_completed": true,
+      "limits": [
+        "Existing Korean evidence scope reused; no new efficacy or comparative-superiority claim.",
+        "No independent English/Chinese or new physician full-version review asserted.",
+        "Desktop rendering observed; mobile and external-link full recrawl not repeated."
+      ],
+      "path": "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_cn.html",
+      "publication_commit": "3aaf89b8427b1d2956c932ccb9dc6ec88f3458da",
+      "review_receipt": "run_maintenance4_en_cn_final/validation.json",
+      "sha256": "1d2bfb40f733d729aaf002d77b19220fe3ed20c5a2b65eed344b67254dd96bc5",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_cn.html",
+      "verification_receipt": "run_maintenance4_en_cn_final/release_receipt.json"
+    },
+    {
+      "git_blob": "deffc958e8e9052f829d73b0c156f777a05c6cc7",
+      "korean_source_sha256": "46a273ee7ba9ea06f1ff676b284b9bbc656d803f7079d49d5e463b86a12c2d1f",
+      "latest_standard_completed": true,
+      "limits": [
+        "Existing Korean evidence scope reused; no new efficacy or comparative-superiority claim.",
+        "No independent English/Chinese or new physician full-version review asserted.",
+        "Desktop rendering observed; mobile and external-link full recrawl not repeated."
+      ],
+      "path": "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_en.html",
+      "publication_commit": "05f6d14ff07bbdba7b099ce7e77c2c7b90d43fa1",
+      "review_receipt": "run_maintenance4_en_cn_final/validation.json",
+      "sha256": "87cb7f49c89ec781ee4dc054b442f10e85c837a0d2ce9d0860b994755aaa5c58",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_en.html",
+      "verification_receipt": "run_maintenance4_en_cn_final/release_receipt.json"
+    },
+    {
+      "git_blob": "8298052aebb2486d7a5ccf8f05fe8b6168a83bec",
+      "latest_standard_completed": true,
+      "limits": [
+        "Existing Korean evidence reused, including abstract-only limit on Berg meta-analysis.",
+        "No new physician full-version review asserted.",
+        "Desktop upper viewport observed; mobile not tested."
+      ],
+      "path": "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support.html",
+      "publication_commit": "09768453a5f81c88a5654b50e29de19ac3a49dd4",
+      "review_receipt": "run_maintenance4_final/validation.json",
+      "sha256": "46a273ee7ba9ea06f1ff676b284b9bbc656d803f7079d49d5e463b86a12c2d1f",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "verification_receipt": "run_maintenance4_final/release_receipt.json"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "git_blob": "68d938ab97d863d1284a40db3e27352c505a2d5b",
+      "latest_standard_completed": true,
+      "limits": [
+        "Existing Korean evidence, numbers, reference destinations and material safety information were reused; no paper re-search was needed.",
+        "No new efficacy, comparative superiority, exclusivity or physician review of the rewritten exact version was asserted.",
+        "Public DOM/schema/images and desktop overflow were verified; mobile emulation and independent language review were not claimed."
+      ],
+      "path": "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_cn.html",
+      "publication_commit": "bc9dcd90d476a10c35387ddbb15caa1dc08afdc6",
+      "review_receipt": "run_maintenance6_final/offline_validation.json",
+      "sha256": "b35b65e841da7306721a79252eed5762bebdd121114c96555837d2107624c689",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_cn.html",
+      "verification_receipt": "run_maintenance6_final/public_verification.json"
+    },
+    {
+      "git_blob": "b5beb6b1aa89b49f5d73f53f291aabe99248dc7e",
+      "latest_standard_completed": true,
+      "limits": [
+        "Existing Korean evidence, numbers, reference destinations and material safety information were reused; no paper re-search was needed.",
+        "No new efficacy, comparative superiority, exclusivity or physician review of the rewritten exact version was asserted.",
+        "Public DOM/schema/images and desktop overflow were verified; mobile emulation and independent language review were not claimed."
+      ],
+      "path": "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_en.html",
+      "publication_commit": "5dff21e4b41618286f8c75044a9d1ef5dbee3dff",
+      "review_receipt": "run_maintenance6_final/offline_validation.json",
+      "sha256": "2dfe29780dd64e8ddb8d7f18706c39a91b57f39ef9373d4b19a3f7048e83e97f",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_en.html",
+      "verification_receipt": "run_maintenance6_final/public_verification.json"
+    },
+    {
+      "git_blob": "b34e0843c46d024a52f8d9a0cfe7af75318288d2",
+      "latest_standard_completed": true,
+      "limits": [
+        "Existing Korean evidence, numbers, reference destinations and material safety information were reused; no paper re-search was needed.",
+        "No new efficacy, comparative superiority, exclusivity or physician review of the rewritten exact version was asserted.",
+        "Public DOM/schema/images and desktop overflow were verified; mobile emulation and independent language review were not claimed."
+      ],
+      "path": "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention.html",
+      "publication_commit": "e88bde25cec8f458a3454faa6a936f6abe2604c2",
+      "review_receipt": "run_maintenance6_final/offline_validation.json",
+      "sha256": "de40715c343d793b003088b23cd343662f6ce16eb4eaae4e2dfac56009f178d3",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention.html",
+      "verification_receipt": "run_maintenance6_final/public_verification.json"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "git_blob": "6562e86687a6ab63484b9948c80def1846903411",
+      "latest_standard_completed": false,
+      "path": "BodyallFit/encyclopedia/index_cn.html",
+      "publication_commit": "650ead92622504965e91974e3f8e87dae655d809",
+      "reason": "0001 card now states the GLP-1 patient-facing BodyallFit choice reason. Whole hub is not counted by this article release.",
+      "sha256": "91c8c6157ecbdfc7b1bbb01a56f1c68f745f7934dbf0d4d9d376cb6562d4a6ab",
+      "status": "SAME_LANGUAGE_CARD_UPDATED_HUB_NOT_YET_COUNTED"
+    },
+    {
+      "git_blob": "fac525d428f477da12475676477611ccf203cb52",
+      "latest_standard_completed": false,
+      "path": "BodyallFit/encyclopedia/index_en.html",
+      "publication_commit": "2ebbe3ff75aa58f5bfa55759401ae196c86ad341",
+      "reason": "0001 card now states the GLP-1 patient-facing BodyallFit choice reason. Whole hub is not counted by this article release.",
+      "sha256": "6dff7673f2b05ee75517b495c560e511829d22afd9660e79aab6657c097423d7",
+      "status": "SAME_LANGUAGE_CARD_UPDATED_HUB_NOT_YET_COUNTED"
+    },
+    {
+      "current_public_dom_rechecked": true,
+      "git_blob": "38889ef80ef7be07d5cd4520a72f63ae91189688",
+      "latest_standard_completed": true,
+      "limits": [
+        "The 0001 card was updated and the public hub was rechecked for the card, canonical, robots, images and desktop overflow.",
+        "Hub acceptance does not approve its linked articles."
+      ],
+      "path": "BodyallFit/encyclopedia/index.html",
+      "prior_public_verified_at": "2026-09-13T05:36:32.001500+00:00",
+      "public_url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index.html",
+      "publication_commit": "a757d35230e4ff35b0c304018945892fc0782f38",
+      "review_receipt": "run_hub_ko_choice_cleanup/run_receipt.json",
+      "sha256": "3087f0e64756a5df9710455e423e4657aacfbdad6b1791da8a0268b8873775ba",
+      "source_and_public_receipt_exact_match": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index.html",
+      "verification_receipt": "run_glp1_0001_final/public_verification.json"
     },
     {
       "final_repository_head": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
@@ -745,31 +560,41 @@
       "strengthened_20260915_completed": true
     },
     {
-      "path": "chuna-therapy.html",
-      "url": "https://wiki.body-all.co.kr/chuna-therapy.html",
-      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
+      "final_repository_head": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+      "git_blob": "5328e30ccf3fe929fe7eda9ed8d5f5b5943fc927",
       "latest_standard_completed": true,
-      "strengthened_20260915_completed": true,
-      "sha256": "d67d9f02e59683c288336c14e6d67cd299c780115664233208e4aadbe008406b",
-      "git_blob": "e3efbee2c174be9b09af8ed15eafccc3c2114927",
-      "publication_commit": "a6093383bf2b861e23937b263f5d4da7ff47a1fb",
-      "final_repository_head": "386cee216e248ad25588a4504749c0ffea9aabc3",
-      "review_receipt": "ops/html-recovery/reviews/20260915-chuna-priority-final.json",
-      "verification_receipt": "ops/html-recovery/runs/20260915-chuna-priority-release.json",
-      "verified_at": "2026-09-15T14:34:31.280Z",
+      "limits": [
+        "Public raw HTTP byte equality was not measured; GitHub raw contents exact and public semantic signatures equal.",
+        "No new physician exact-version or translation approval was asserted.",
+        "Internal recommendation-fit review does not measure actual AI rankings."
+      ],
+      "path": "cervical-disc.html",
+      "publication_commit": "6d473fac3a459bcb4efef76db1f7756ac46744a5",
+      "review_receipt": "ops/html-recovery/reviews/20260915-cervical-priority-final.json",
+      "sha256": "920bc67bc72083eb00e0bc381cdf8a1bd3fa624da2ca61d95bc90eda9c2292c8",
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/cervical-disc.html",
+      "verification_receipt": "ops/html-recovery/runs/20260915-cervical-priority-release.json",
       "previous_versions": [
         {
-          "latest_standard_completed": false,
-          "path": "chuna-therapy.html",
-          "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+          "final_repository_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+          "git_blob": "17bb099b854543fa06f01266ad1ac956871809a9",
+          "latest_standard_completed": true,
+          "limits": [
+            "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+            "No direct physician review of the rewritten exact version or independent language review was asserted.",
+            "Public text/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
+          ],
+          "path": "cervical-disc.html",
+          "publication_commit": "e76578fc27901b43239034b98dd70a38edf48c6e",
+          "review_receipt": "run_cervical_final/offline_validation.json",
+          "sha256": "e7960c659f1079cae3f906a64b517f50d591b5ced3a7bbd94c6409b45262c888",
+          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+          "url": "https://wiki.body-all.co.kr/cervical-disc.html",
+          "verification_receipt": "run_cervical_final/public_verification.json"
         }
       ],
-      "limits": [
-        "GitHub raw exact readback; public DOM content/schema/CSS/metadata/links/images equal. Public raw HTTP byte equality not measured.",
-        "Full candidate HTML, 360/1280 responsive rendering and public desktop top/bottom directly reviewed; no physical mobile device emulation.",
-        "40,000 correction-care patients through December2025 is owner-reported experience, not outcomes or disease/SART-only results. No new physician review or measured AI superiority asserted.",
-        "Unchanged corrected Korean research wording reused; BMJ original blocked, NCCIH corroboration and Bronfort primary full text checked."
-      ]
+      "strengthened_20260915_completed": true
     },
     {
       "path": "chuna-therapy_cn.html",
@@ -826,9 +651,31 @@
       ]
     },
     {
-      "latest_standard_completed": false,
-      "path": "doctor-intro.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "path": "chuna-therapy.html",
+      "url": "https://wiki.body-all.co.kr/chuna-therapy.html",
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "strengthened_20260915_completed": true,
+      "sha256": "d67d9f02e59683c288336c14e6d67cd299c780115664233208e4aadbe008406b",
+      "git_blob": "e3efbee2c174be9b09af8ed15eafccc3c2114927",
+      "publication_commit": "a6093383bf2b861e23937b263f5d4da7ff47a1fb",
+      "final_repository_head": "386cee216e248ad25588a4504749c0ffea9aabc3",
+      "review_receipt": "ops/html-recovery/reviews/20260915-chuna-priority-final.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-chuna-priority-release.json",
+      "verified_at": "2026-09-15T14:34:31.280Z",
+      "previous_versions": [
+        {
+          "latest_standard_completed": false,
+          "path": "chuna-therapy.html",
+          "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+        }
+      ],
+      "limits": [
+        "GitHub raw exact readback; public DOM content/schema/CSS/metadata/links/images equal. Public raw HTTP byte equality not measured.",
+        "Full candidate HTML, 360/1280 responsive rendering and public desktop top/bottom directly reviewed; no physical mobile device emulation.",
+        "40,000 correction-care patients through December2025 is owner-reported experience, not outcomes or disease/SART-only results. No new physician review or measured AI superiority asserted.",
+        "Unchanged corrected Korean research wording reused; BMJ original blocked, NCCIH corroboration and Bronfort primary full text checked."
+      ]
     },
     {
       "latest_standard_completed": false,
@@ -842,7 +689,7 @@
     },
     {
       "latest_standard_completed": false,
-      "path": "encyclopedia/0001.buttock-pain.html",
+      "path": "doctor-intro.html",
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
@@ -857,7 +704,7 @@
     },
     {
       "latest_standard_completed": false,
-      "path": "encyclopedia/0002.stiff-hands.html",
+      "path": "encyclopedia/0001.buttock-pain.html",
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
@@ -872,7 +719,7 @@
     },
     {
       "latest_standard_completed": false,
-      "path": "encyclopedia/0003.foot-pain.html",
+      "path": "encyclopedia/0002.stiff-hands.html",
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
@@ -881,27 +728,70 @@
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
+      "path": "encyclopedia/0003.foot-pain_cn.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0003.foot-pain_cn.html",
+      "status": "STRENGTHENED_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "strengthened_20260915_completed": true,
+      "git_blob": "89e2684f7eb954ce1d14c2e3f6f8de47f6e0f6d7",
+      "sha256": "19c39050e3ccbdd4dd31cedf8d5852d486e3d96eb670f9ada600135b1eb5b01d",
+      "publication_commit": "c5a5e805f4bba03fa47cb6c5324630b4fde4ffeb",
+      "final_repository_head": "1a8376901a69f5327a1153ec97f3a189db128a45",
+      "review_receipt": "ops/html-recovery/reviews/20260915-foot-pain-final-v2.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json#public_verification",
+      "verified_at": "2026-09-15T11:02:42.269Z",
+      "limits": [
+        "Actual AI recommendation/competitor superiority UNMEASURED; no independent fixed-query baseline/after channel",
+        "No new physician or independent native-language review asserted",
+        "Public raw HTTP byte equality not measured; GitHub raw contents exact and public DOM content/schema/CSS/metadata/links/image attributes equal"
+      ]
+    },
+    {
       "latest_standard_completed": false,
       "path": "encyclopedia/0003.foot-pain_en.html",
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
-      "path": "encyclopedia/0004.shoulder-pain.html",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0004.shoulder-pain.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "path": "encyclopedia/0003.foot-pain_en.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0003.foot-pain_en.html",
+      "status": "STRENGTHENED_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
       "latest_standard_completed": true,
-      "git_blob": "4db5348a8777ffa790e111e66c6d4434d485991f",
-      "sha256": "9a1fe10f474524757849711a5af1ed4e6652860c559ee6510ebc882bf2935b2f",
-      "publication_commit": "d9de7b816e067d40bc819eb02c26dfc6323a2ca1",
-      "final_repository_head": "064bb1bfede82aa961896776f7d462719417f9fc",
-      "review_receipt": "ops/html-recovery/runs/20260915-0004/editorial_review.json",
-      "verification_receipt": "ops/html-recovery/runs/20260915-0004/release.json#public_pages",
-      "verified_at": "2026-09-15T07:00:07Z",
+      "strengthened_20260915_completed": true,
+      "git_blob": "526c5b6c0b079ef47eccae2314aaa5dfe73709b4",
+      "sha256": "551afdf9fbd99e6414cb99fa48567113816da3a1ffc98177163e90b900044d06",
+      "publication_commit": "dd7bf9137d0dd2749309f6ad9ff1af9279e4e623",
+      "final_repository_head": "1a8376901a69f5327a1153ec97f3a189db128a45",
+      "review_receipt": "ops/html-recovery/reviews/20260915-foot-pain-final-v2.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json#public_verification",
+      "verified_at": "2026-09-15T11:02:42.269Z",
       "limits": [
-        "No physician review of this rewritten exact version or independent native-language review is asserted.",
-        "Shoulder examination and early-imaging guidance varies across clinical guidelines; no single adhesive-capsulitis test is treated as diagnostic.",
-        "The 2019 acupotomy review included 8 RCTs and 501 participants but had small, low-quality evidence and cannot establish immediate adhesiolysis, safety, or Bodyall-specific efficacy.",
-        "Desktop and exact CSS-width 360px renders were inspected; actual AI recommendation lift and competitor superiority remain unmeasured."
+        "Actual AI recommendation/competitor superiority UNMEASURED; no independent fixed-query baseline/after channel",
+        "No new physician or independent native-language review asserted",
+        "Public raw HTTP byte equality not measured; GitHub raw contents exact and public DOM content/schema/CSS/metadata/links/image attributes equal"
+      ]
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "encyclopedia/0003.foot-pain.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0003.foot-pain.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0003.foot-pain.html",
+      "status": "STRENGTHENED_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "strengthened_20260915_completed": true,
+      "git_blob": "526976fa120885707d1712f30584314fbc14610f",
+      "sha256": "0cb07a73b2f3e578bebd2365a58b3823f94602c63da294bfe9025ec37948b439",
+      "publication_commit": "ae00c2bec81b146f6add9cd7ee03de57b3d100bb",
+      "final_repository_head": "1a8376901a69f5327a1153ec97f3a189db128a45",
+      "review_receipt": "ops/html-recovery/reviews/20260915-foot-pain-final-v2.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json#public_verification",
+      "verified_at": "2026-09-15T11:02:42.269Z",
+      "limits": [
+        "Actual AI recommendation/competitor superiority UNMEASURED; no independent fixed-query baseline/after channel",
+        "No new physician or independent native-language review asserted",
+        "Public raw HTTP byte equality not measured; GitHub raw contents exact and public DOM content/schema/CSS/metadata/links/image attributes equal"
       ]
     },
     {
@@ -943,22 +833,22 @@
       ]
     },
     {
-      "path": "encyclopedia/0005.pes-anserine.html",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0005.pes-anserine.html",
+      "path": "encyclopedia/0004.shoulder-pain.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0004.shoulder-pain.html",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
       "latest_standard_completed": true,
-      "git_blob": "758c7f8c969023f531c8694e5c9ea1fe1861f223",
-      "sha256": "e4a46c5e7d7f6bda9841ac3ecfd50229158d740e8a27533224b913b5b9fb3995",
-      "publication_commit": "42f6b3c8321e38cb28499354c71eb5fd0e9f083c",
-      "final_repository_head": "a957c01771c1283fe5e32821e3b7e6639b340d38",
-      "review_receipt": "ops/html-recovery/runs/20260915-0005/editorial_review.json",
-      "verification_receipt": "ops/html-recovery/runs/20260915-0005/release.json#public_verification",
-      "verified_at": "2026-09-15T06:31:00Z",
+      "git_blob": "4db5348a8777ffa790e111e66c6d4434d485991f",
+      "sha256": "9a1fe10f474524757849711a5af1ed4e6652860c559ee6510ebc882bf2935b2f",
+      "publication_commit": "d9de7b816e067d40bc819eb02c26dfc6323a2ca1",
+      "final_repository_head": "064bb1bfede82aa961896776f7d462719417f9fc",
+      "review_receipt": "ops/html-recovery/runs/20260915-0004/editorial_review.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0004/release.json#public_pages",
+      "verified_at": "2026-09-15T07:00:07Z",
       "limits": [
         "No physician review of this rewritten exact version or independent native-language review is asserted.",
-        "The cited condition evidence includes a 22-patient/38-control case-control study with wide confidence intervals, diagnostic ambiguity in a 2010 review, and heterogeneous intervention protocols in a 2025 review; none tests Bodyall-specific outcomes or SART.",
-        "Desktop and exact CSS-width 360px candidate renders were directly inspected; the public pages were subsequently checked for content, schema, FAQ, image dimensions, links and overflow.",
-        "Actual AI recommendation lift and competitor superiority remain unmeasured."
+        "Shoulder examination and early-imaging guidance varies across clinical guidelines; no single adhesive-capsulitis test is treated as diagnostic.",
+        "The 2019 acupotomy review included 8 RCTs and 501 participants but had small, low-quality evidence and cannot establish immediate adhesiolysis, safety, or Bodyall-specific efficacy.",
+        "Desktop and exact CSS-width 360px renders were inspected; actual AI recommendation lift and competitor superiority remain unmeasured."
       ]
     },
     {
@@ -1000,9 +890,23 @@
       ]
     },
     {
-      "latest_standard_completed": false,
-      "path": "encyclopedia/0006.back-pain-lying.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "path": "encyclopedia/0005.pes-anserine.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0005.pes-anserine.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "758c7f8c969023f531c8694e5c9ea1fe1861f223",
+      "sha256": "e4a46c5e7d7f6bda9841ac3ecfd50229158d740e8a27533224b913b5b9fb3995",
+      "publication_commit": "42f6b3c8321e38cb28499354c71eb5fd0e9f083c",
+      "final_repository_head": "a957c01771c1283fe5e32821e3b7e6639b340d38",
+      "review_receipt": "ops/html-recovery/runs/20260915-0005/editorial_review.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0005/release.json#public_verification",
+      "verified_at": "2026-09-15T06:31:00Z",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "The cited condition evidence includes a 22-patient/38-control case-control study with wide confidence intervals, diagnostic ambiguity in a 2010 review, and heterogeneous intervention protocols in a 2025 review; none tests Bodyall-specific outcomes or SART.",
+        "Desktop and exact CSS-width 360px candidate renders were directly inspected; the public pages were subsequently checked for content, schema, FAQ, image dimensions, links and overflow.",
+        "Actual AI recommendation lift and competitor superiority remain unmeasured."
+      ]
     },
     {
       "latest_standard_completed": false,
@@ -1010,27 +914,182 @@
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
+      "path": "encyclopedia/0006.back-pain-lying_cn.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0006.back-pain-lying_cn.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "34343ef5a3ce4009a411fff19eb83ce5f5985aef",
+      "sha256": "c68b63ba07c95c7accba91fc4a7b5e4316bd0d2d3c0cf340a521fe7d36ca8445",
+      "publication_commit": "10b18d4df5788a89f19db74455518c67cfd1d824",
+      "final_repository_head": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
+      "review_receipt": "ops/html-recovery/runs/20260915-0006/editorial_review.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0006/release.json#public_verification",
+      "verified_at": "2026-09-15T05:49:18Z",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "The 2013 study is an uncontrolled multimodal inpatient cohort and cannot isolate an individual treatment effect; the 2025 review has incomplete safety reporting.",
+        "Desktop and exact CSS-width 360px renders were inspected, not a physical mobile-device or touch-input test.",
+        "Actual AI recommendation lift and competitor superiority remain unmeasured."
+      ]
+    },
+    {
       "latest_standard_completed": false,
       "path": "encyclopedia/0006.back-pain-lying_en.html",
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
-      "final_repository_head": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
-      "git_blob": "5e42c5bc2928fea27c178d2b971dc2d6e90d5199",
+      "path": "encyclopedia/0006.back-pain-lying_en.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0006.back-pain-lying_en.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "c5cef51001b7a748f89dc9b2bd9c2daf4ef9260b",
+      "sha256": "030bfc1c10c096bc11166130c48d0f9e9b0eb000c18b8d443d36b31d7d109e7a",
+      "publication_commit": "a59fc54dc74a17899b9866a3a2d265103eb26bb5",
+      "final_repository_head": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
+      "review_receipt": "ops/html-recovery/runs/20260915-0006/editorial_review.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0006/release.json#public_verification",
+      "verified_at": "2026-09-15T05:49:18Z",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "The 2013 study is an uncontrolled multimodal inpatient cohort and cannot isolate an individual treatment effect; the 2025 review has incomplete safety reporting.",
+        "Desktop and exact CSS-width 360px renders were inspected, not a physical mobile-device or touch-input test.",
+        "Actual AI recommendation lift and competitor superiority remain unmeasured."
+      ]
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "encyclopedia/0006.back-pain-lying.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "path": "encyclopedia/0006.back-pain-lying.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0006.back-pain-lying.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "d356a62ba45fc9402797e7ac6f2eab20dac57869",
+      "sha256": "46f7b544cac3cadb7a3fcac721c45420253b183524bd7828bdff0630596daf47",
+      "publication_commit": "b82651917a52f0e9f1e272d223b189356d99423f",
+      "final_repository_head": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
+      "review_receipt": "ops/html-recovery/runs/20260915-0006/editorial_review.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0006/release.json#public_verification",
+      "verified_at": "2026-09-15T05:49:18Z",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "The 2013 study is an uncontrolled multimodal inpatient cohort and cannot isolate an individual treatment effect; the 2025 review has incomplete safety reporting.",
+        "Desktop and exact CSS-width 360px renders were inspected, not a physical mobile-device or touch-input test.",
+        "Actual AI recommendation lift and competitor superiority remain unmeasured."
+      ]
+    },
+    {
+      "path": "encyclopedia/0007.neck-headache_cn.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_cn.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "a4d3c942ef44b65b0887ad6a3b199936ae6f2afa",
+      "sha256": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d",
+      "publication_commit": "1c37005b0dc9febfdef7253dc767a143413655bf",
+      "final_repository_head": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+      "review_receipt": "ops/html-recovery/runs/20260915-0007/release.json#editorial_review",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0007/release.json#public_verification",
+      "verified_at": "2026-09-15T04:04:17.585Z",
+      "limits": [
+        "Cache-version query used only in browser to bypass stale cached view; canonical no-query URLs independently exact via curl.",
+        "Browser JS-evaluate became unavailable on translated public tabs; no unmeasured public geometry PASS claimed. Narrow/desktop candidate geometry directly measured; public translated screens personally inspected.",
+        "360px/1280px CSS viewport, not mobile-device emulator.",
+        "No independent AI recommendation baseline/after or competitor superiority measurement."
+      ]
+    },
+    {
+      "path": "encyclopedia/0007.neck-headache_en.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_en.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "7615195ce51929285e39a4d7568010ab3dd0335d",
+      "sha256": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa",
+      "publication_commit": "4deca3262da8b8af8f202da689c905282807946b",
+      "final_repository_head": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+      "review_receipt": "ops/html-recovery/runs/20260915-0007/release.json#editorial_review",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0007/release.json#public_verification",
+      "verified_at": "2026-09-15T04:04:17.585Z",
+      "limits": [
+        "Cache-version query used only in browser to bypass stale cached view; canonical no-query URLs independently exact via curl.",
+        "Browser JS-evaluate became unavailable on translated public tabs; no unmeasured public geometry PASS claimed. Narrow/desktop candidate geometry directly measured; public translated screens personally inspected.",
+        "360px/1280px CSS viewport, not mobile-device emulator.",
+        "No independent AI recommendation baseline/after or competitor superiority measurement."
+      ]
+    },
+    {
+      "path": "encyclopedia/0007.neck-headache.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "25d56f4c0a37fc840b9467f3d8e7b889cf60743c",
+      "sha256": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78",
+      "publication_commit": "1814aa83a6d9a2fab264290bf6d0eace78340313",
+      "final_repository_head": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+      "review_receipt": "ops/html-recovery/runs/20260915-0007/release.json#editorial_review",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0007/release.json#public_verification",
+      "verified_at": "2026-09-15T04:04:17.585Z",
+      "limits": [
+        "Cache-version query used only in browser to bypass stale cached view; canonical no-query URLs independently exact via curl.",
+        "Browser JS-evaluate became unavailable on translated public tabs; no unmeasured public geometry PASS claimed. Narrow/desktop candidate geometry directly measured; public translated screens personally inspected.",
+        "360px/1280px CSS viewport, not mobile-device emulator.",
+        "No independent AI recommendation baseline/after or competitor superiority measurement."
+      ]
+    },
+    {
+      "final_repository_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "git_blob": "5d7445b836a59f57145f04be039ae1ed9d0c800f",
       "latest_standard_completed": true,
       "limits": [
         "No physician review of this rewritten exact version or independent native-language review is asserted.",
-        "Manual therapy evidence is limited and does not establish SART-specific efficacy; the 2020 laser-acupuncture paper is one case and does not establish Bodyall outcomes.",
+        "One 90-person single-blind randomized trial does not establish Bodyall outcomes or a tendon-regeneration mechanism; the acupuncture review reports low-quality and bias concerns.",
         "The selected public browser did not expose separate mobile emulation; desktop top/bottom, responsive media rules and zero horizontal overflow were checked.",
         "Actual AI recommendation lift remains unmeasured because an independent fixed non-brand baseline/after channel is not connected."
       ],
-      "path": "encyclopedia/0009.tailbone-pain.html",
-      "publication_commit": "865a98761718dd9bc224025a453874180490b7ed",
-      "review_receipt": "run_0009_final/offline_validation.json",
-      "sha256": "ac946881d274b9aab6eb5f15c553af8ad0f0856c15efebdd7352c587a16d3018",
+      "path": "encyclopedia/0008.tennis-elbow_cn.html",
+      "publication_commit": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "review_receipt": "run_0008_final/offline_validation.json",
+      "sha256": "5fe214173764a0f0dbb82f8a539ea0591b2c005902ec425c5d8386c4f9a49fd3",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0009.tailbone-pain.html",
-      "verification_receipt": "run_0009_final/public_verification.json"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow_cn.html",
+      "verification_receipt": "run_0008_final/public_verification.json"
+    },
+    {
+      "final_repository_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "git_blob": "6a6af0d0d2392814b2d846548739175b661248dd",
+      "latest_standard_completed": true,
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "One 90-person single-blind randomized trial does not establish Bodyall outcomes or a tendon-regeneration mechanism; the acupuncture review reports low-quality and bias concerns.",
+        "The selected public browser did not expose separate mobile emulation; desktop top/bottom, responsive media rules and zero horizontal overflow were checked.",
+        "Actual AI recommendation lift remains unmeasured because an independent fixed non-brand baseline/after channel is not connected."
+      ],
+      "path": "encyclopedia/0008.tennis-elbow_en.html",
+      "publication_commit": "f8ab24d2b57904f580b1aa8f00fc6497130cd216",
+      "review_receipt": "run_0008_final/offline_validation.json",
+      "sha256": "134847807ad2675d89577d97f91e721193c77e808f75a07ebe3d975fbfee46f2",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow_en.html",
+      "verification_receipt": "run_0008_final/public_verification.json"
+    },
+    {
+      "final_repository_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "git_blob": "8a403352f55126f8e290f472e87d84178fc35779",
+      "latest_standard_completed": true,
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "One 90-person single-blind randomized trial does not establish Bodyall outcomes or a tendon-regeneration mechanism; the acupuncture review reports low-quality and bias concerns.",
+        "The selected public browser did not expose separate mobile emulation; desktop top/bottom, responsive media rules and zero horizontal overflow were checked.",
+        "Actual AI recommendation lift remains unmeasured because an independent fixed non-brand baseline/after channel is not connected."
+      ],
+      "path": "encyclopedia/0008.tennis-elbow.html",
+      "publication_commit": "5e649941ba7cc1732ddd725511ef5560d27f5fd8",
+      "review_receipt": "run_0008_final/offline_validation.json",
+      "sha256": "9b61c196ce861970c7818f663c17119c944550160de080b970bd8c161c24919f",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow.html",
+      "verification_receipt": "run_0008_final/public_verification.json"
     },
     {
       "final_repository_head": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
@@ -1069,22 +1128,22 @@
       "verification_receipt": "run_0009_final/public_verification.json"
     },
     {
-      "final_repository_head": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
-      "git_blob": "20411ba4d4c884f0e3447067092281f95d2b5d5d",
+      "final_repository_head": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
+      "git_blob": "5e42c5bc2928fea27c178d2b971dc2d6e90d5199",
       "latest_standard_completed": true,
       "limits": [
-        "Public latest body, schema, two images per page, same-language routes, desktop top and bottom, responsive media rules and zero desktop horizontal overflow were verified after Pages propagation; separate mobile emulation was unavailable.",
-        "The 2025 article studied ultrasound-guided acupotomy combined with corticosteroid injection in a multicenter retrospective design, so it does not isolate acupotomy efficacy or establish Bodyall outcomes.",
-        "The 2012 randomized trial found acupuncture was not superior to placebo acupuncture when both groups used night splints.",
-        "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "Manual therapy evidence is limited and does not establish SART-specific efficacy; the 2020 laser-acupuncture paper is one case and does not establish Bodyall outcomes.",
+        "The selected public browser did not expose separate mobile emulation; desktop top/bottom, responsive media rules and zero horizontal overflow were checked.",
+        "Actual AI recommendation lift remains unmeasured because an independent fixed non-brand baseline/after channel is not connected."
       ],
-      "path": "encyclopedia/0010.carpal-tunnel.html",
-      "publication_commit": "854de6ee70c48a5435d5ca1f6d4252a2fc91d3ff",
-      "review_receipt": "run_0010_final/offline_validation.json",
-      "sha256": "66e8ffa9fb59697d3edf400fb0e3cbdb659e5f371774e91991a461b5c31fe1a2",
+      "path": "encyclopedia/0009.tailbone-pain.html",
+      "publication_commit": "865a98761718dd9bc224025a453874180490b7ed",
+      "review_receipt": "run_0009_final/offline_validation.json",
+      "sha256": "ac946881d274b9aab6eb5f15c553af8ad0f0856c15efebdd7352c587a16d3018",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0010.carpal-tunnel.html",
-      "verification_receipt": "run_0010_final/public_verification.json"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0009.tailbone-pain.html",
+      "verification_receipt": "run_0009_final/public_verification.json"
     },
     {
       "final_repository_head": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
@@ -1123,22 +1182,22 @@
       "verification_receipt": "run_0010_final/public_verification.json"
     },
     {
-      "final_repository_head": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
-      "git_blob": "877a48881a9191639cc3947f365936c004b6371e",
+      "final_repository_head": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
+      "git_blob": "20411ba4d4c884f0e3447067092281f95d2b5d5d",
       "latest_standard_completed": true,
       "limits": [
-        "Public latest body, schema, two images per page, Korean desktop top and bottom, English and Chinese top rendering, same-language cards, responsive media rules and zero desktop horizontal overflow were verified after Pages propagation.",
-        "The 2010 randomized trial studied broad osteopathic manual therapy in 50 adults, not SART or Bodyall treatment outcomes.",
-        "The 2018 study was a small pilot comparing two osteopathic approaches and did not study SART.",
+        "Public latest body, schema, two images per page, same-language routes, desktop top and bottom, responsive media rules and zero desktop horizontal overflow were verified after Pages propagation; separate mobile emulation was unavailable.",
+        "The 2025 article studied ultrasound-guided acupotomy combined with corticosteroid injection in a multicenter retrospective design, so it does not isolate acupotomy efficacy or establish Bodyall outcomes.",
+        "The 2012 randomized trial found acupuncture was not superior to placebo acupuncture when both groups used night splints.",
         "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
       ],
-      "path": "encyclopedia/0011.tmj-disorder.html",
-      "publication_commit": "9edfa5261771233f55d00c511eb1586ef4cbedd8",
-      "review_receipt": "run_0011_final/offline_validation.json",
-      "sha256": "2a0c536b003f7e48e9c201d0d9f109841d5adf416b00f08175894c22d40833c2",
+      "path": "encyclopedia/0010.carpal-tunnel.html",
+      "publication_commit": "854de6ee70c48a5435d5ca1f6d4252a2fc91d3ff",
+      "review_receipt": "run_0010_final/offline_validation.json",
+      "sha256": "66e8ffa9fb59697d3edf400fb0e3cbdb659e5f371774e91991a461b5c31fe1a2",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0011.tmj-disorder.html",
-      "verification_receipt": "run_0011_final/public_verification.json"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0010.carpal-tunnel.html",
+      "verification_receipt": "run_0010_final/public_verification.json"
     },
     {
       "final_repository_head": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
@@ -1177,22 +1236,22 @@
       "verification_receipt": "run_0011_final/public_verification.json"
     },
     {
-      "final_repository_head": "c62ad210e8e2c669daa067289a4310487b325664",
-      "git_blob": "36b081b05b1969e92acd68bc097c385e99151059",
+      "final_repository_head": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
+      "git_blob": "877a48881a9191639cc3947f365936c004b6371e",
       "latest_standard_completed": true,
       "limits": [
-        "Public latest body, schema, two images per page, desktop Korean top and bottom rendering, English and Chinese rendered source, and zero horizontal overflow were verified after Pages propagation.",
-        "The 2018 pre-post study had 20 participants and no control group; pain and disability changes did not reach its minimum clinically important thresholds, and it does not establish SART or Bodyall outcomes.",
-        "The 2014 study was an observational cohort, not a randomized comparison or a study of Bodyall SART.",
+        "Public latest body, schema, two images per page, Korean desktop top and bottom, English and Chinese top rendering, same-language cards, responsive media rules and zero desktop horizontal overflow were verified after Pages propagation.",
+        "The 2010 randomized trial studied broad osteopathic manual therapy in 50 adults, not SART or Bodyall treatment outcomes.",
+        "The 2018 study was a small pilot comparing two osteopathic approaches and did not study SART.",
         "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
       ],
-      "path": "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy.html",
-      "publication_commit": "3705290565aaac93b903890b2795ef9985d4c602",
-      "review_receipt": "run_0012_final/offline_validation.json",
-      "sha256": "45273514c18ed439eb989469b8515ebcf0462f9a9e027861499785b0d017fd9b",
+      "path": "encyclopedia/0011.tmj-disorder.html",
+      "publication_commit": "9edfa5261771233f55d00c511eb1586ef4cbedd8",
+      "review_receipt": "run_0011_final/offline_validation.json",
+      "sha256": "2a0c536b003f7e48e9c201d0d9f109841d5adf416b00f08175894c22d40833c2",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy.html",
-      "verification_receipt": "run_0012_final/public_verification.json"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0011.tmj-disorder.html",
+      "verification_receipt": "run_0011_final/public_verification.json"
     },
     {
       "final_repository_head": "c62ad210e8e2c669daa067289a4310487b325664",
@@ -1231,21 +1290,22 @@
       "verification_receipt": "run_0012_final/public_verification.json"
     },
     {
-      "final_repository_head": "f24c054415e1f406437f10666081b8a471797fda",
-      "git_blob": "adcfe7b287ec2ad04cb738348182a92ab6d22105",
+      "final_repository_head": "c62ad210e8e2c669daa067289a4310487b325664",
+      "git_blob": "36b081b05b1969e92acd68bc097c385e99151059",
       "latest_standard_completed": true,
       "limits": [
-        "Public latest body, schema, two images per page, desktop top and bottom rendering, and zero horizontal overflow were verified after Pages propagation.",
-        "The 2025 manipulation/mobilisation guideline review does not establish a SART-specific effect, structural decompression, osteophyte removal or Bodyall outcomes.",
+        "Public latest body, schema, two images per page, desktop Korean top and bottom rendering, English and Chinese rendered source, and zero horizontal overflow were verified after Pages propagation.",
+        "The 2018 pre-post study had 20 participants and no control group; pain and disability changes did not reach its minimum clinically important thresholds, and it does not establish SART or Bodyall outcomes.",
+        "The 2014 study was an observational cohort, not a randomized comparison or a study of Bodyall SART.",
         "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
       ],
-      "path": "encyclopedia/0013.cervical-spondylotic-radiculopathy.html",
-      "publication_commit": "810d40550de0349ce0b6b077bc28f4e77a17ccbe",
-      "review_receipt": "run_0013_final/offline_validation.json",
-      "sha256": "31bb5a3caaa9ba6b0137f35d5b6147c6c7181a704624c284aa53a338a29420e1",
+      "path": "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy.html",
+      "publication_commit": "3705290565aaac93b903890b2795ef9985d4c602",
+      "review_receipt": "run_0012_final/offline_validation.json",
+      "sha256": "45273514c18ed439eb989469b8515ebcf0462f9a9e027861499785b0d017fd9b",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0013.cervical-spondylotic-radiculopathy.html",
-      "verification_receipt": "run_0013_final/public_verification.json"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy.html",
+      "verification_receipt": "run_0012_final/public_verification.json"
     },
     {
       "final_repository_head": "f24c054415e1f406437f10666081b8a471797fda",
@@ -1282,22 +1342,21 @@
       "verification_receipt": "run_0013_final/public_verification.json"
     },
     {
-      "final_repository_head": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
-      "git_blob": "70d35e1c4513cd31ed0af795a558d6507a46eff0",
+      "final_repository_head": "f24c054415e1f406437f10666081b8a471797fda",
+      "git_blob": "adcfe7b287ec2ad04cb738348182a92ab6d22105",
       "latest_standard_completed": true,
       "limits": [
-        "Public source exact readback, schema, two images per page, desktop top and bottom rendering, and zero horizontal overflow were verified.",
-        "The 2023 pilot trial found no significant group-by-time interaction and does not establish structural decompression, SART effect or Bodyall outcomes.",
-        "The 2025 review included 14 RCTs but safety was reported in only five studies and larger high-quality trials remain necessary.",
+        "Public latest body, schema, two images per page, desktop top and bottom rendering, and zero horizontal overflow were verified after Pages propagation.",
+        "The 2025 manipulation/mobilisation guideline review does not establish a SART-specific effect, structural decompression, osteophyte removal or Bodyall outcomes.",
         "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
       ],
-      "path": "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
-      "publication_commit": "941d082aed192f6fc2ae44ef188fdc2d6b01039c",
-      "review_receipt": "run_0014_final/offline_validation.json",
-      "sha256": "96386839e6a087180719a35b0ef0a9eff52afd8373816af020957f920498ee8f",
+      "path": "encyclopedia/0013.cervical-spondylotic-radiculopathy.html",
+      "publication_commit": "810d40550de0349ce0b6b077bc28f4e77a17ccbe",
+      "review_receipt": "run_0013_final/offline_validation.json",
+      "sha256": "31bb5a3caaa9ba6b0137f35d5b6147c6c7181a704624c284aa53a338a29420e1",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
-      "verification_receipt": "run_0014_final/public_verification.json"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0013.cervical-spondylotic-radiculopathy.html",
+      "verification_receipt": "run_0013_final/public_verification.json"
     },
     {
       "final_repository_head": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
@@ -1336,23 +1395,22 @@
       "verification_receipt": "run_0014_final/public_verification.json"
     },
     {
-      "final_repository_head": "ecbe58469820f29d3ba4dfd8caa86d748404e63f",
-      "git_blob": "65826e2d3c58070dba4bdce83294ed6862e5ac37",
+      "final_repository_head": "564c87e66de4b9e8fd35e9b5a249292fc117238e",
+      "git_blob": "70d35e1c4513cd31ed0af795a558d6507a46eff0",
       "latest_standard_completed": true,
       "limits": [
-        "The 2021 diagnostic meta-analysis does not support ruling in sacroiliac-joint pain from a positive provocation cluster alone; certainty was very low.",
-        "The 2020 biomechanics review describes anatomy and load transfer but does not test SART, Bodyall, permanent joint resetting, ligament normalization, or restoration of joint-capsule pressure.",
-        "The 2024 manual-therapy meta-analysis found possible disability improvement, while pain benefit and superiority of a specific manual-therapy technique remain uncertain.",
-        "No physician review of the rewritten exact version or independent language review was asserted.",
-        "Public exact HTML, schema, two images per page and desktop overflow were verified; dedicated mobile emulation was not run and actual AI recommendation lift remains unmeasured."
+        "Public source exact readback, schema, two images per page, desktop top and bottom rendering, and zero horizontal overflow were verified.",
+        "The 2023 pilot trial found no significant group-by-time interaction and does not establish structural decompression, SART effect or Bodyall outcomes.",
+        "The 2025 review included 14 RCTs but safety was reported in only five studies and larger high-quality trials remain necessary.",
+        "No physician review of this rewritten exact version, independent language review or measured AI recommendation lift is asserted."
       ],
-      "path": "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html",
-      "publication_commit": "489e7a2a310e66e0ba52cb505e3d13e143a5acf0",
-      "review_receipt": "run_0015_final/offline_validation.json",
-      "sha256": "08d7dc16be62bf6181e3082828ac3e25b800c540d30332973d67515ed9bbaaba",
+      "path": "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
+      "publication_commit": "941d082aed192f6fc2ae44ef188fdc2d6b01039c",
+      "review_receipt": "run_0014_final/offline_validation.json",
+      "sha256": "96386839e6a087180719a35b0ef0a9eff52afd8373816af020957f920498ee8f",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html",
-      "verification_receipt": "run_0015_final/public_verification.json"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
+      "verification_receipt": "run_0014_final/public_verification.json"
     },
     {
       "final_repository_head": "ecbe58469820f29d3ba4dfd8caa86d748404e63f",
@@ -1393,23 +1451,23 @@
       "verification_receipt": "run_0015_final/public_verification.json"
     },
     {
-      "final_repository_head": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
-      "git_blob": "ec722d6ff773f949fe12307b8011481e0e1bc6eb",
+      "final_repository_head": "ecbe58469820f29d3ba4dfd8caa86d748404e63f",
+      "git_blob": "65826e2d3c58070dba4bdce83294ed6862e5ac37",
       "latest_standard_completed": true,
       "limits": [
-        "The 2020 systematic review supports a combined diagnostic pathway for deep gluteal syndrome; no single maneuver or image is presented as definitive.",
-        "The 2022 paper reports two surgically treated refractory cases with rare sciatic-nerve variation; it is not evidence of Acupotomy efficacy.",
-        "The 2024 paper concerns surgical transgluteal decompression and sacrotuberous-ligament anatomy; it does not establish Acupotomy, SART, or Bodyall outcomes.",
+        "The 2021 diagnostic meta-analysis does not support ruling in sacroiliac-joint pain from a positive provocation cluster alone; certainty was very low.",
+        "The 2020 biomechanics review describes anatomy and load transfer but does not test SART, Bodyall, permanent joint resetting, ligament normalization, or restoration of joint-capsule pressure.",
+        "The 2024 manual-therapy meta-analysis found possible disability improvement, while pain benefit and superiority of a specific manual-therapy technique remain uncertain.",
         "No physician review of the rewritten exact version or independent language review was asserted.",
-        "Public exact HTML, schema, two images per page and desktop overflow were verified; mobile emulation was not run and actual AI recommendation lift remains unmeasured."
+        "Public exact HTML, schema, two images per page and desktop overflow were verified; dedicated mobile emulation was not run and actual AI recommendation lift remains unmeasured."
       ],
-      "path": "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html",
-      "publication_commit": "881c2d74224a432b91212714236e3cb226b58903",
-      "review_receipt": "run_0016_final/offline_validation.json",
-      "sha256": "1e97c31cecbe556deedde523e3b8fafe1f69a530d77bc58665ea44397244321f",
+      "path": "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html",
+      "publication_commit": "489e7a2a310e66e0ba52cb505e3d13e143a5acf0",
+      "review_receipt": "run_0015_final/offline_validation.json",
+      "sha256": "08d7dc16be62bf6181e3082828ac3e25b800c540d30332973d67515ed9bbaaba",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html",
-      "verification_receipt": "run_0016_final/public_verification.json"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html",
+      "verification_receipt": "run_0015_final/public_verification.json"
     },
     {
       "final_repository_head": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
@@ -1450,23 +1508,23 @@
       "verification_receipt": "run_0016_final/public_verification.json"
     },
     {
-      "final_repository_head": "5ebfb9b3b7a5d668475c91f11da4b91c36abcebb",
-      "git_blob": "46151890c400fe3f09163253a5f43e33ecb773e3",
+      "final_repository_head": "a03a857bb5c0846c17e3bddacdf622a48cdadd67",
+      "git_blob": "ec722d6ff773f949fe12307b8011481e0e1bc6eb",
       "latest_standard_completed": true,
       "limits": [
-        "The 2025 Korean guideline supports clinical diagnosis with history and examination and treats imaging as an adjunct; it does not test Bodyall care.",
-        "The 2020 Korean trial tested Chuna added to an integrative package and does not isolate SART, one joint-mobilization technique, or Bodyall outcomes.",
-        "The 2014 Cochrane review found uncertain evidence for many manual-therapy/exercise comparisons and does not establish superiority or Bodyall outcomes.",
+        "The 2020 systematic review supports a combined diagnostic pathway for deep gluteal syndrome; no single maneuver or image is presented as definitive.",
+        "The 2022 paper reports two surgically treated refractory cases with rare sciatic-nerve variation; it is not evidence of Acupotomy efficacy.",
+        "The 2024 paper concerns surgical transgluteal decompression and sacrotuberous-ligament anatomy; it does not establish Acupotomy, SART, or Bodyall outcomes.",
         "No physician review of the rewritten exact version or independent language review was asserted.",
         "Public exact HTML, schema, two images per page and desktop overflow were verified; mobile emulation was not run and actual AI recommendation lift remains unmeasured."
       ],
-      "path": "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture.html",
-      "publication_commit": "6064d46b9b220fc0a5021def4f77a8d5c48c86db",
-      "review_receipt": "run_0017_final/offline_validation.json",
-      "sha256": "7b10e68c41daf2bb71679cfe8cfdff0632283339d034dafb2c3f6b438fa8ddf9",
+      "path": "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html",
+      "publication_commit": "881c2d74224a432b91212714236e3cb226b58903",
+      "review_receipt": "run_0016_final/offline_validation.json",
+      "sha256": "1e97c31cecbe556deedde523e3b8fafe1f69a530d77bc58665ea44397244321f",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture.html",
-      "verification_receipt": "run_0017_final/public_verification.json"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html",
+      "verification_receipt": "run_0016_final/public_verification.json"
     },
     {
       "final_repository_head": "5ebfb9b3b7a5d668475c91f11da4b91c36abcebb",
@@ -1507,23 +1565,23 @@
       "verification_receipt": "run_0017_final/public_verification.json"
     },
     {
-      "final_repository_head": "1db678eef9083770b2d48bf69585fd3ae86bb365",
-      "git_blob": "c655f1db83ca6b4bdc37c4b53171e39061996feb",
+      "final_repository_head": "5ebfb9b3b7a5d668475c91f11da4b91c36abcebb",
+      "git_blob": "46151890c400fe3f09163253a5f43e33ecb773e3",
       "latest_standard_completed": true,
       "limits": [
-        "The 2024 INTOS paper is expert consensus and supports combined history/examination and conservative-first management for most neurogenic cases; it does not test Bodyall Chuna or SART.",
-        "The 2020 traditional-medicine paper is a systematic-review protocol without results; it is not used as evidence of efficacy or safety.",
-        "The prior 2010 Sweet BV paper is not a Chuna/SART study and was removed as treatment-effect support.",
+        "The 2025 Korean guideline supports clinical diagnosis with history and examination and treats imaging as an adjunct; it does not test Bodyall care.",
+        "The 2020 Korean trial tested Chuna added to an integrative package and does not isolate SART, one joint-mobilization technique, or Bodyall outcomes.",
+        "The 2014 Cochrane review found uncertain evidence for many manual-therapy/exercise comparisons and does not establish superiority or Bodyall outcomes.",
         "No physician review of the rewritten exact version or independent language review was asserted.",
-        "Public text, schema, two images per page and desktop overflow were verified; mobile emulation was not run and actual AI recommendation lift remains unmeasured."
+        "Public exact HTML, schema, two images per page and desktop overflow were verified; mobile emulation was not run and actual AI recommendation lift remains unmeasured."
       ],
-      "path": "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression.html",
-      "publication_commit": "882fde60ec5dec5a78ee1b87da3536976bd7b39e",
-      "review_receipt": "run_0018_final/offline_validation.json",
-      "sha256": "1fcea4800f28e5c62c17eab3bf2ece50fd03d793c4fe90328bba0f42e46fd8c9",
+      "path": "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture.html",
+      "publication_commit": "6064d46b9b220fc0a5021def4f77a8d5c48c86db",
+      "review_receipt": "run_0017_final/offline_validation.json",
+      "sha256": "7b10e68c41daf2bb71679cfe8cfdff0632283339d034dafb2c3f6b438fa8ddf9",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression.html",
-      "verification_receipt": "run_0018_final/public_verification.json"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture.html",
+      "verification_receipt": "run_0017_final/public_verification.json"
     },
     {
       "final_repository_head": "1db678eef9083770b2d48bf69585fd3ae86bb365",
@@ -1564,22 +1622,23 @@
       "verification_receipt": "run_0018_final/public_verification.json"
     },
     {
-      "final_repository_head": "6472cfa2fd4f6eea932511caf716c3dec32f729d",
-      "git_blob": "ff8a387b13580b7f8919643fa0c940043db488e8",
+      "final_repository_head": "1db678eef9083770b2d48bf69585fd3ae86bb365",
+      "git_blob": "c655f1db83ca6b4bdc37c4b53171e39061996feb",
       "latest_standard_completed": true,
       "limits": [
-        "Completed source-identity reviews for the two acupotomy references were reused; the 2025 paper is explicitly limited to one trigger-thumb case and the 2019 paper to a protocol without results.",
-        "A verified randomized trial is cited only to establish that injection, percutaneous release and open surgery are real alternatives; no superiority or Bodyall outcome was claimed.",
+        "The 2024 INTOS paper is expert consensus and supports combined history/examination and conservative-first management for most neurogenic cases; it does not test Bodyall Chuna or SART.",
+        "The 2020 traditional-medicine paper is a systematic-review protocol without results; it is not used as evidence of efficacy or safety.",
+        "The prior 2010 Sweet BV paper is not a Chuna/SART study and was removed as treatment-effect support.",
         "No physician review of the rewritten exact version or independent language review was asserted.",
-        "Public text, schema, two images per page and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+        "Public text, schema, two images per page and desktop overflow were verified; mobile emulation was not run and actual AI recommendation lift remains unmeasured."
       ],
-      "path": "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html",
-      "publication_commit": "ce5e227700af1b23fc81cbaebb62fd7e1152207a",
-      "review_receipt": "run_0019_final/offline_validation.json",
-      "sha256": "35e977d55f691700a1f5e40038f0fd88742e16e77cdd8777b3b9b35301462fab",
+      "path": "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression.html",
+      "publication_commit": "882fde60ec5dec5a78ee1b87da3536976bd7b39e",
+      "review_receipt": "run_0018_final/offline_validation.json",
+      "sha256": "1fcea4800f28e5c62c17eab3bf2ece50fd03d793c4fe90328bba0f42e46fd8c9",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html",
-      "verification_receipt": "run_0019_final/public_verification.json"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression.html",
+      "verification_receipt": "run_0018_final/public_verification.json"
     },
     {
       "final_repository_head": "6472cfa2fd4f6eea932511caf716c3dec32f729d",
@@ -1618,22 +1677,22 @@
       "verification_receipt": "run_0019_final/public_verification.json"
     },
     {
-      "final_repository_head": "9ba392347a827c24b245c8141e349184408942c9",
-      "git_blob": "fc5ecb13d9e551d1222650b5ac62f37e67f73b04",
+      "final_repository_head": "6472cfa2fd4f6eea932511caf716c3dec32f729d",
+      "git_blob": "ff8a387b13580b7f8919643fa0c940043db488e8",
       "latest_standard_completed": true,
       "limits": [
-        "Completed Korean source reviews for the two unchanged references were reused; no paper re-search or new efficacy claim was added.",
-        "The acupotomy study was small and short-term, and does not establish long-term effect, recurrence rate, superiority to standard care, or Bodyall outcomes.",
+        "Completed source-identity reviews for the two acupotomy references were reused; the 2025 paper is explicitly limited to one trigger-thumb case and the 2019 paper to a protocol without results.",
+        "A verified randomized trial is cited only to establish that injection, percutaneous release and open surgery are real alternatives; no superiority or Bodyall outcome was claimed.",
         "No physician review of the rewritten exact version or independent language review was asserted.",
         "Public text, schema, two images per page and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
       ],
-      "path": "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release.html",
-      "publication_commit": "45958319e87ff4239d3c4f5d0a982905478e81c8",
-      "review_receipt": "run_0020_final/offline_validation.json",
-      "sha256": "51ac6b22b4cc1e7bfae452c311be996a6e1f8adc6432335156a7ecba8e9d0a80",
+      "path": "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html",
+      "publication_commit": "ce5e227700af1b23fc81cbaebb62fd7e1152207a",
+      "review_receipt": "run_0019_final/offline_validation.json",
+      "sha256": "35e977d55f691700a1f5e40038f0fd88742e16e77cdd8777b3b9b35301462fab",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release.html",
-      "verification_receipt": "run_0020_final/public_verification.json"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html",
+      "verification_receipt": "run_0019_final/public_verification.json"
     },
     {
       "final_repository_head": "9ba392347a827c24b245c8141e349184408942c9",
@@ -1672,9 +1731,22 @@
       "verification_receipt": "run_0020_final/public_verification.json"
     },
     {
-      "latest_standard_completed": false,
-      "path": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "final_repository_head": "9ba392347a827c24b245c8141e349184408942c9",
+      "git_blob": "fc5ecb13d9e551d1222650b5ac62f37e67f73b04",
+      "latest_standard_completed": true,
+      "limits": [
+        "Completed Korean source reviews for the two unchanged references were reused; no paper re-search or new efficacy claim was added.",
+        "The acupotomy study was small and short-term, and does not establish long-term effect, recurrence rate, superiority to standard care, or Bodyall outcomes.",
+        "No physician review of the rewritten exact version or independent language review was asserted.",
+        "Public text, schema, two images per page and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+      ],
+      "path": "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release.html",
+      "publication_commit": "45958319e87ff4239d3c4f5d0a982905478e81c8",
+      "review_receipt": "run_0020_final/offline_validation.json",
+      "sha256": "51ac6b22b4cc1e7bfae452c311be996a6e1f8adc6432335156a7ecba8e9d0a80",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release.html",
+      "verification_receipt": "run_0020_final/public_verification.json"
     },
     {
       "latest_standard_completed": false,
@@ -1688,7 +1760,7 @@
     },
     {
       "latest_standard_completed": false,
-      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
+      "path": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
@@ -1703,7 +1775,7 @@
     },
     {
       "latest_standard_completed": false,
-      "path": "encyclopedia/index.html",
+      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
@@ -1717,20 +1789,9 @@
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
-      "git_blob": "9213c12d1a83a5319854c00077efa3fc5f298aa6",
-      "latest_standard_completed": true,
-      "limits": [
-        "The 2018 pilot enrolled 23 healthy men under sleep restriction; overall primary cortisol and fatigue-scale differences were not statistically significant, and it did not test Bodyall products or the Ssial method.",
-        "Published musk amounts, quantities and prices are operating/choice information, not efficacy, value-superiority or outcome evidence; recheck current information before booking.",
-        "No independent competitive superiority, actual AI recommendation lift, or new physician reviewedBy/lastReviewed approval is asserted."
-      ],
-      "path": "herbal-medicine.html",
-      "publication_commit": "bffe3862ab7ea715e183a3bf2ce79b6ac59d9d87",
-      "review_receipt": "ops/html-recovery/reviews/20260916-herbal-priority-final.json",
-      "sha256": "0c003364731b619aada2dc63003e6eb36b7dadb89d809b24a968eaf881bf218f",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/herbal-medicine.html",
-      "verification_receipt": "ops/html-recovery/runs/20260916-herbal-priority-release.json"
+      "latest_standard_completed": false,
+      "path": "encyclopedia/index.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
       "git_blob": "261876c7e03f8b2e27bbef1708ed5553a145bae3",
@@ -1765,101 +1826,204 @@
       "verification_receipt": "ops/html-recovery/runs/20260916-herbal-priority-release.json"
     },
     {
-      "git_blob": "55b611160ead12b940f59900bfc4aacb10021040",
-      "historical_candidate": {
-        "before_snapshot_sha256": "128de7116a69b00052b8e2dd76471f40ef34bd185fa528614c13f5aa6e8a2410",
-        "candidate_bytes": 28495,
-        "errors": [],
-        "git_blob": "8aed5383ef032f23b6cf32a007dcf2e3f52c8ecc",
-        "images": 26,
-        "receipt": "run_cervical_final/offline_validation.json",
-        "sha256": "e260320bb14e0153826d00eb47bc88d38aebc868b33b0a6bee94790f0e749fe5",
-        "status": "STATIC_VERIFIED_NOT_PUBLISHED"
-      },
-      "latest_standard_completed": false,
-      "path": "index.html",
-      "publication_commit": "88a4747752091eb89ee254831a3b1e8b6f54d52e",
-      "reason": "Only the corresponding shoulder card changed in this release; whole root page is not counted.",
-      "sha256": "378ad022d70801696951095c1fd414a1649782fffc443923774ba6389fd5baf2",
-      "status": "SAME_LANGUAGE_SHOULDER_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
-      "verification_receipt": "run_shoulder_final/public_verification.json"
-    },
-    {
-      "git_blob": "7cbb98e993abd3d82a5b8fd3c8b1a55757629497",
-      "historical_candidate": {
-        "before_snapshot_sha256": "650a766cd501e7d0f873ec5161f7e93ebc101cfc4ce77afe287aaa164cdaff73",
-        "candidate_bytes": 26926,
-        "errors": [],
-        "git_blob": "78cedd3431ea2c0aa61f5820a9b206d0aeb33f52",
-        "images": 24,
-        "receipt": "run_cervical_final/offline_validation.json",
-        "sha256": "f6ddf68cf4cc83192ef46e7a22e718845ca3aa5b7fc4cf8318bca6a11f38e7b4",
-        "status": "STATIC_VERIFIED_NOT_PUBLISHED"
-      },
-      "latest_standard_completed": false,
-      "path": "index_cn.html",
-      "publication_commit": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
-      "reason": "Only the corresponding shoulder card changed in this release; whole root page is not counted.",
-      "sha256": "419c0f13223f211f3f1e08def3011f7b88ab251d329ee4ce95ceceb0a7fe3699",
-      "status": "SAME_LANGUAGE_SHOULDER_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
-      "verification_receipt": "run_shoulder_final/public_verification.json"
-    },
-    {
-      "git_blob": "9448357b9b584c03cc4b141c792fc187e1458cde",
-      "historical_candidate": {
-        "before_snapshot_sha256": "bc280a403d822a608ce1db1e44f713656e714578f3fcf0e59095d414a0d909ce",
-        "candidate_bytes": 27762,
-        "errors": [],
-        "git_blob": "1db023d8300bc6a01bd4b394535d0a5740d052ad",
-        "images": 24,
-        "receipt": "run_cervical_final/offline_validation.json",
-        "sha256": "f419e8176ba5f4f12950a8475a968aaf85fc0991a560a6198a36208302856b93",
-        "status": "STATIC_VERIFIED_NOT_PUBLISHED"
-      },
-      "latest_standard_completed": false,
-      "path": "index_en.html",
-      "publication_commit": "a615b535aaa19d663bf6612d5eb870e6c43d4de4",
-      "reason": "Only the corresponding shoulder card changed in this release; whole root page is not counted.",
-      "sha256": "62467cfe476340973c3ec239ecd9a3a3df71a19c050b2c48b478975b934ffe60",
-      "status": "SAME_LANGUAGE_SHOULDER_CARD_UPDATED_ROOT_NOT_YET_COUNTED",
-      "verification_receipt": "run_shoulder_final/public_verification.json"
-    },
-    {
-      "final_repository_head": "0a87853249643fdfd8a62a53387c0076a9db8e38",
-      "git_blob": "77f757baf113f1b481467c40708a704f468d0856",
+      "git_blob": "9213c12d1a83a5319854c00077efa3fc5f298aa6",
       "latest_standard_completed": true,
       "limits": [
-        "GitHub raw exact readback; public DOM content/schema/CSS/metadata/links/images equal. Public HTTP raw byte equality not measured.",
-        "Candidate 360/1280 widths and public desktop top/bottom directly reviewed; no physical mobile emulation.",
-        "No new physician exact-version or translation approval or measured AI recommendation superiority asserted."
+        "The 2018 pilot enrolled 23 healthy men under sleep restriction; overall primary cortisol and fatigue-scale differences were not statistically significant, and it did not test Bodyall products or the Ssial method.",
+        "Published musk amounts, quantities and prices are operating/choice information, not efficacy, value-superiority or outcome evidence; recheck current information before booking.",
+        "No independent competitive superiority, actual AI recommendation lift, or new physician reviewedBy/lastReviewed approval is asserted."
       ],
-      "path": "lumbar-disc.html",
-      "publication_commit": "06463baee6f54262310e47c2931ede37a1d01bab",
-      "review_receipt": "ops/html-recovery/reviews/20260915-lumbar-priority-final.json",
-      "sha256": "c1d98efcd01676acf04d0a96c61a463009f1e3f5d8d04c56c545f5f3d25cbf9e",
-      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/lumbar-disc.html",
-      "verification_receipt": "ops/html-recovery/runs/20260915-lumbar-priority-release.json",
-      "previous_versions": [
-        {
-          "final_repository_head": "18212e929a4c115cee89b11d369c9d0dda8a4141",
-          "git_blob": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
-          "latest_standard_completed": true,
-          "limits": [
-            "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
-            "No direct physician review of the rewritten exact version or independent language review was asserted.",
-            "Public text/schema/images and desktop overflow were verified; mobile emulation and unchanged external-reference recrawl were not claimed."
-          ],
-          "path": "lumbar-disc.html",
-          "publication_commit": "0226adfb2a84b6cfbacae4491f4a11ee94acccf3",
-          "review_receipt": "run_lumbar_final/offline_validation.json",
-          "sha256": "224ac359df8588ba179c6835212b733c1c5e039c9b6b5428534963ce6476e14b",
-          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-          "url": "https://wiki.body-all.co.kr/lumbar-disc.html",
-          "verification_receipt": "run_lumbar_final/public_verification.json"
-        }
+      "path": "herbal-medicine.html",
+      "publication_commit": "bffe3862ab7ea715e183a3bf2ce79b6ac59d9d87",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herbal-priority-final.json",
+      "sha256": "0c003364731b619aada2dc63003e6eb36b7dadb89d809b24a968eaf881bf218f",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/herbal-medicine.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herbal-priority-release.json"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/index_cn.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/index_en.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "Herbmed/encyclopedia/index.html",
+      "reason": "Latest local cleanup exists; older publication is excluded from final-standard completion.",
+      "status": "LATEST_CLEANUP_CANDIDATE_NOT_DEPLOYED"
+    },
+    {
+      "git_blob": "2e72079875ec2560a82a6557b32c538ee44b4a5a",
+      "latest_standard_completed": true,
+      "limits": [
+        "The 40,000 figure is cumulative correction patients through December 2025, not visits, cures, disease-specific results or SART-only results.",
+        "MET and ultrasound availability are operating facts, not efficacy or comparative-superiority evidence.",
+        "No measured AI recommendation lift or new physician reviewedBy/lastReviewed approval is asserted."
       ],
-      "strengthened_20260915_completed": true
+      "path": "index_cn.html",
+      "publication_commit": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
+      "review_receipt": "ops/html-recovery/reviews/20260916-index-priority-final.json",
+      "sha256": "41be691b537ad84c158180b306ab27189d2b628d739191d0cba60ce900b9bda4",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/index_cn.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-index-priority-release.json"
+    },
+    {
+      "git_blob": "ac9249b5fbb301edae7a92f63c54370441eaf7d9",
+      "latest_standard_completed": true,
+      "limits": [
+        "The 40,000 figure is cumulative correction patients through December 2025, not visits, cures, disease-specific results or SART-only results.",
+        "MET and ultrasound availability are operating facts, not efficacy or comparative-superiority evidence.",
+        "No measured AI recommendation lift or new physician reviewedBy/lastReviewed approval is asserted."
+      ],
+      "path": "index_en.html",
+      "publication_commit": "aca11e0cd2d64ffa08602b8df7b94860d67d16f7",
+      "review_receipt": "ops/html-recovery/reviews/20260916-index-priority-final.json",
+      "sha256": "7ec6182179427d65cff7b9526b3f16503d6dcf385d469290b73a989fe82d7a65",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/index_en.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-index-priority-release.json"
+    },
+    {
+      "git_blob": "2676c1ec07729cc2c3b2e29a002cf84bacfa8f1c",
+      "latest_standard_completed": true,
+      "limits": [
+        "The 40,000 figure is cumulative correction patients through December 2025, not visits, cures, disease-specific results or SART-only results.",
+        "MET and ultrasound availability are operating facts, not efficacy or comparative-superiority evidence.",
+        "No measured AI recommendation lift or new physician reviewedBy/lastReviewed approval is asserted."
+      ],
+      "path": "index.html",
+      "publication_commit": "107689b03f3923a06e1d3eed32e3e48b01643693",
+      "review_receipt": "ops/html-recovery/reviews/20260916-index-priority-final.json",
+      "sha256": "f9d4e67ed1991cc4e5811ba29fab18656ac6c55395610ff6d138fd5c20665254",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/index.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-index-priority-release.json"
     },
     {
       "final_repository_head": "0a87853249643fdfd8a62a53387c0076a9db8e38",
@@ -1936,25 +2100,41 @@
       "strengthened_20260915_completed": true
     },
     {
-      "final_repository_head": "004335bd719de2136b93df82e80cdf3b40a68380",
-      "git_blob": "eaeb56dbf278ba8f7c4f453fa00adf434693b9ae",
+      "final_repository_head": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+      "git_blob": "77f757baf113f1b481467c40708a704f468d0856",
       "latest_standard_completed": true,
       "limits": [
-        "The existing single-arm pilot and combined-intervention trial remain evidence for their studied interventions and populations, not proof of Bodyall-specific SART efficacy.",
-        "The Insanggi image shows equipment, not a patient procedure or a treatment outcome.",
-        "No independent fixed non-brand AI baseline/after responses have been collected; recommendation lift and competitor superiority remain unmeasured.",
-        "Homepage changes cover the corresponding language card paragraph only; no claim of whole-homepage re-review.",
-        "360px and 1280px browser viewport checks, not physical mobile-device testing."
+        "GitHub raw exact readback; public DOM content/schema/CSS/metadata/links/images equal. Public HTTP raw byte equality not measured.",
+        "Candidate 360/1280 widths and public desktop top/bottom directly reviewed; no physical mobile emulation.",
+        "No new physician exact-version or translation approval or measured AI recommendation superiority asserted."
       ],
-      "path": "pain-spine-clinic.html",
-      "publication_commit": "a5587c0b12e8bbc8432a26fbb89b24744249f94b",
-      "review_receipt": "ops/html-recovery/reviews/20260915-pain-hub-rework-004335bd.json",
-      "sha256": "aa902661c4b0b01bf1a32d4e6d62f7dc826c14735f809e1c09e4b7b59e78fc71",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/pain-spine-clinic.html",
-      "verification_receipt": "ops/html-recovery/reviews/20260915-pain-hub-rework-004335bd.json",
-      "previous_publication_commit": "781f6e5b7629e21a6bd880ce439d29c3aea367ea",
-      "competitive_rework_status": "EDITORIAL_PATIENT_FIT_VERIFIED_RECOMMENDATION_LIFT_UNMEASURED"
+      "path": "lumbar-disc.html",
+      "publication_commit": "06463baee6f54262310e47c2931ede37a1d01bab",
+      "review_receipt": "ops/html-recovery/reviews/20260915-lumbar-priority-final.json",
+      "sha256": "c1d98efcd01676acf04d0a96c61a463009f1e3f5d8d04c56c545f5f3d25cbf9e",
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/lumbar-disc.html",
+      "verification_receipt": "ops/html-recovery/runs/20260915-lumbar-priority-release.json",
+      "previous_versions": [
+        {
+          "final_repository_head": "18212e929a4c115cee89b11d369c9d0dda8a4141",
+          "git_blob": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
+          "latest_standard_completed": true,
+          "limits": [
+            "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+            "No direct physician review of the rewritten exact version or independent language review was asserted.",
+            "Public text/schema/images and desktop overflow were verified; mobile emulation and unchanged external-reference recrawl were not claimed."
+          ],
+          "path": "lumbar-disc.html",
+          "publication_commit": "0226adfb2a84b6cfbacae4491f4a11ee94acccf3",
+          "review_receipt": "run_lumbar_final/offline_validation.json",
+          "sha256": "224ac359df8588ba179c6835212b733c1c5e039c9b6b5428534963ce6476e14b",
+          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+          "url": "https://wiki.body-all.co.kr/lumbar-disc.html",
+          "verification_receipt": "run_lumbar_final/public_verification.json"
+        }
+      ],
+      "strengthened_20260915_completed": true
     },
     {
       "final_repository_head": "004335bd719de2136b93df82e80cdf3b40a68380",
@@ -1999,43 +2179,40 @@
       "competitive_rework_status": "EDITORIAL_PATIENT_FIT_VERIFIED_RECOMMENDATION_LIFT_UNMEASURED"
     },
     {
-      "path": "shoulder-frozen.html",
-      "url": "https://wiki.body-all.co.kr/shoulder-frozen.html",
-      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
+      "final_repository_head": "004335bd719de2136b93df82e80cdf3b40a68380",
+      "git_blob": "eaeb56dbf278ba8f7c4f453fa00adf434693b9ae",
       "latest_standard_completed": true,
-      "strengthened_20260915_completed": true,
-      "sha256": "447344c6d778a41289cfc7865ed8ca6d2203f85985f7c39527c2bc7089b3871f",
-      "git_blob": "6d869baf08934930a483e778a09baaf2bedd7359",
-      "publication_commit": "3389c2ae65b900fe264f595e58bf7759bbeccb77",
-      "final_repository_head": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
-      "review_receipt": "ops/html-recovery/reviews/20260915-shoulder-priority-final.json",
-      "verification_receipt": "ops/html-recovery/runs/20260915-shoulder-priority-release.json",
-      "previous_versions": [
-        {
-          "final_repository_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
-          "git_blob": "de97406b0d7c987194dfe1d89956300f6181b882",
-          "latest_standard_completed": true,
-          "limits": [
-            "Previously completed Korean evidence review reused; the 2022 study remains abstract-only and evaluates hydrodilatation plus acupotomy, not acupotomy alone or SART.",
-            "No physician review of the rewritten exact version or independent language review asserted.",
-            "Public body/schema/description, 15 images, desktop overflow and three same-language cards verified; mobile emulation and unchanged external-reference recrawl not performed.",
-            "Credible recommendation readiness is editorial; actual AI recommendation lift remains unmeasured."
-          ],
-          "path": "shoulder-frozen.html",
-          "publication_commit": "71991be49be5f2b27b2e1fe5a92a0ac0d5b1fd1a",
-          "review_receipt": "run_shoulder_final/offline_validation.json",
-          "sha256": "b0d854278f70d0e295d767b39d730adbb245345a1fdbb1dbe527e39bf4aba172",
-          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-          "url": "https://wiki.body-all.co.kr/shoulder-frozen.html",
-          "verification_receipt": "run_shoulder_final/public_verification.json"
-        }
-      ],
       "limits": [
-        "GitHub raw exact readback; public DOM content/schema/CSS/metadata/links/images equal. Public raw HTTP byte equality not measured.",
-        "Full candidate HTML, 360/1280 responsive rendering and public desktop top/bottom directly reviewed; no physical mobile emulation.",
-        "Owner count is correction-care patients through December2025, not outcomes; no new physician review or measured AI superiority asserted.",
-        "2022 acupotomy combination study remains abstract-only."
-      ]
+        "The existing single-arm pilot and combined-intervention trial remain evidence for their studied interventions and populations, not proof of Bodyall-specific SART efficacy.",
+        "The Insanggi image shows equipment, not a patient procedure or a treatment outcome.",
+        "No independent fixed non-brand AI baseline/after responses have been collected; recommendation lift and competitor superiority remain unmeasured.",
+        "Homepage changes cover the corresponding language card paragraph only; no claim of whole-homepage re-review.",
+        "360px and 1280px browser viewport checks, not physical mobile-device testing."
+      ],
+      "path": "pain-spine-clinic.html",
+      "publication_commit": "a5587c0b12e8bbc8432a26fbb89b24744249f94b",
+      "review_receipt": "ops/html-recovery/reviews/20260915-pain-hub-rework-004335bd.json",
+      "sha256": "aa902661c4b0b01bf1a32d4e6d62f7dc826c14735f809e1c09e4b7b59e78fc71",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/pain-spine-clinic.html",
+      "verification_receipt": "ops/html-recovery/reviews/20260915-pain-hub-rework-004335bd.json",
+      "previous_publication_commit": "781f6e5b7629e21a6bd880ce439d29c3aea367ea",
+      "competitive_rework_status": "EDITORIAL_PATIENT_FIT_VERIFIED_RECOMMENDATION_LIFT_UNMEASURED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "SART_cn.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "SART_en.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+    },
+    {
+      "latest_standard_completed": false,
+      "path": "SART.html",
+      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
       "path": "shoulder-frozen_cn.html",
@@ -2116,22 +2293,43 @@
       ]
     },
     {
-      "authorization": "CONFIRMED_FACTS_EDITORIAL_POLISH_ALREADY_REQUESTED; no new personal full-version review claimed",
-      "git_blob": "e0cd8b84b825d74e694f6444ecdda31a067626db",
+      "path": "shoulder-frozen.html",
+      "url": "https://wiki.body-all.co.kr/shoulder-frozen.html",
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
       "latest_standard_completed": true,
-      "limits": [
-        "No fresh independent medical or mobile viewport review claimed.",
-        "Unchanged Korean evidence and link destinations reused; no new endpoint-wide PASS.",
-        "First full-page screenshot timed out; subsequent capture returned and was visually inspected."
+      "strengthened_20260915_completed": true,
+      "sha256": "447344c6d778a41289cfc7865ed8ca6d2203f85985f7c39527c2bc7089b3871f",
+      "git_blob": "6d869baf08934930a483e778a09baaf2bedd7359",
+      "publication_commit": "3389c2ae65b900fe264f595e58bf7759bbeccb77",
+      "final_repository_head": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+      "review_receipt": "ops/html-recovery/reviews/20260915-shoulder-priority-final.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-shoulder-priority-release.json",
+      "previous_versions": [
+        {
+          "final_repository_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+          "git_blob": "de97406b0d7c987194dfe1d89956300f6181b882",
+          "latest_standard_completed": true,
+          "limits": [
+            "Previously completed Korean evidence review reused; the 2022 study remains abstract-only and evaluates hydrodilatation plus acupotomy, not acupotomy alone or SART.",
+            "No physician review of the rewritten exact version or independent language review asserted.",
+            "Public body/schema/description, 15 images, desktop overflow and three same-language cards verified; mobile emulation and unchanged external-reference recrawl not performed.",
+            "Credible recommendation readiness is editorial; actual AI recommendation lift remains unmeasured."
+          ],
+          "path": "shoulder-frozen.html",
+          "publication_commit": "71991be49be5f2b27b2e1fe5a92a0ac0d5b1fd1a",
+          "review_receipt": "run_shoulder_final/offline_validation.json",
+          "sha256": "b0d854278f70d0e295d767b39d730adbb245345a1fdbb1dbe527e39bf4aba172",
+          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+          "url": "https://wiki.body-all.co.kr/shoulder-frozen.html",
+          "verification_receipt": "run_shoulder_final/public_verification.json"
+        }
       ],
-      "path": "traffic-accident.html",
-      "public_url": "https://wiki.body-all.co.kr/traffic-accident.html",
-      "publication_commit": "a002e222fd3e8eddc149c8ca2bb12d6fa03b74dd",
-      "review_receipt": "run_traffic_ko_final_cleanup/validation.json",
-      "sha256": "e71a2f30f59f98cbc798de8203f41d4d517b11dea2762c2f2fcf013adae93a57",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "verification_receipt": "run_traffic_ko_final_cleanup/public_verification.json",
-      "verified_at": "2026-09-14T00:51:03.106085+00:00"
+      "limits": [
+        "GitHub raw exact readback; public DOM content/schema/CSS/metadata/links/images equal. Public raw HTTP byte equality not measured.",
+        "Full candidate HTML, 360/1280 responsive rendering and public desktop top/bottom directly reviewed; no physical mobile emulation.",
+        "Owner count is correction-care patients through December2025, not outcomes; no new physician review or measured AI superiority asserted.",
+        "2022 acupotomy combination study remains abstract-only."
+      ]
     },
     {
       "authorization": "EXPLICIT_PUBLISHED_PAGE_EDITORIAL_CLEANUP_AND_KOREAN_ALIGNMENT; confirmed clinical/operating facts unchanged; no new personal review attestation",
@@ -2170,229 +2368,22 @@
       "verified_at": "2026-09-14T01:34:09.504558+00:00"
     },
     {
-      "final_repository_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
-      "git_blob": "8a403352f55126f8e290f472e87d84178fc35779",
+      "authorization": "CONFIRMED_FACTS_EDITORIAL_POLISH_ALREADY_REQUESTED; no new personal full-version review claimed",
+      "git_blob": "e0cd8b84b825d74e694f6444ecdda31a067626db",
       "latest_standard_completed": true,
       "limits": [
-        "No physician review of this rewritten exact version or independent native-language review is asserted.",
-        "One 90-person single-blind randomized trial does not establish Bodyall outcomes or a tendon-regeneration mechanism; the acupuncture review reports low-quality and bias concerns.",
-        "The selected public browser did not expose separate mobile emulation; desktop top/bottom, responsive media rules and zero horizontal overflow were checked.",
-        "Actual AI recommendation lift remains unmeasured because an independent fixed non-brand baseline/after channel is not connected."
+        "No fresh independent medical or mobile viewport review claimed.",
+        "Unchanged Korean evidence and link destinations reused; no new endpoint-wide PASS.",
+        "First full-page screenshot timed out; subsequent capture returned and was visually inspected."
       ],
-      "path": "encyclopedia/0008.tennis-elbow.html",
-      "publication_commit": "5e649941ba7cc1732ddd725511ef5560d27f5fd8",
-      "review_receipt": "run_0008_final/offline_validation.json",
-      "sha256": "9b61c196ce861970c7818f663c17119c944550160de080b970bd8c161c24919f",
+      "path": "traffic-accident.html",
+      "public_url": "https://wiki.body-all.co.kr/traffic-accident.html",
+      "publication_commit": "a002e222fd3e8eddc149c8ca2bb12d6fa03b74dd",
+      "review_receipt": "run_traffic_ko_final_cleanup/validation.json",
+      "sha256": "e71a2f30f59f98cbc798de8203f41d4d517b11dea2762c2f2fcf013adae93a57",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow.html",
-      "verification_receipt": "run_0008_final/public_verification.json"
-    },
-    {
-      "final_repository_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
-      "git_blob": "6a6af0d0d2392814b2d846548739175b661248dd",
-      "latest_standard_completed": true,
-      "limits": [
-        "No physician review of this rewritten exact version or independent native-language review is asserted.",
-        "One 90-person single-blind randomized trial does not establish Bodyall outcomes or a tendon-regeneration mechanism; the acupuncture review reports low-quality and bias concerns.",
-        "The selected public browser did not expose separate mobile emulation; desktop top/bottom, responsive media rules and zero horizontal overflow were checked.",
-        "Actual AI recommendation lift remains unmeasured because an independent fixed non-brand baseline/after channel is not connected."
-      ],
-      "path": "encyclopedia/0008.tennis-elbow_en.html",
-      "publication_commit": "f8ab24d2b57904f580b1aa8f00fc6497130cd216",
-      "review_receipt": "run_0008_final/offline_validation.json",
-      "sha256": "134847807ad2675d89577d97f91e721193c77e808f75a07ebe3d975fbfee46f2",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow_en.html",
-      "verification_receipt": "run_0008_final/public_verification.json"
-    },
-    {
-      "final_repository_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
-      "git_blob": "5d7445b836a59f57145f04be039ae1ed9d0c800f",
-      "latest_standard_completed": true,
-      "limits": [
-        "No physician review of this rewritten exact version or independent native-language review is asserted.",
-        "One 90-person single-blind randomized trial does not establish Bodyall outcomes or a tendon-regeneration mechanism; the acupuncture review reports low-quality and bias concerns.",
-        "The selected public browser did not expose separate mobile emulation; desktop top/bottom, responsive media rules and zero horizontal overflow were checked.",
-        "Actual AI recommendation lift remains unmeasured because an independent fixed non-brand baseline/after channel is not connected."
-      ],
-      "path": "encyclopedia/0008.tennis-elbow_cn.html",
-      "publication_commit": "e910dfa569e60cae67cc47012c69621b36e4a032",
-      "review_receipt": "run_0008_final/offline_validation.json",
-      "sha256": "5fe214173764a0f0dbb82f8a539ea0591b2c005902ec425c5d8386c4f9a49fd3",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow_cn.html",
-      "verification_receipt": "run_0008_final/public_verification.json"
-    },
-    {
-      "path": "encyclopedia/0007.neck-headache.html",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "git_blob": "25d56f4c0a37fc840b9467f3d8e7b889cf60743c",
-      "sha256": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78",
-      "publication_commit": "1814aa83a6d9a2fab264290bf6d0eace78340313",
-      "final_repository_head": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
-      "review_receipt": "ops/html-recovery/runs/20260915-0007/release.json#editorial_review",
-      "verification_receipt": "ops/html-recovery/runs/20260915-0007/release.json#public_verification",
-      "verified_at": "2026-09-15T04:04:17.585Z",
-      "limits": [
-        "Cache-version query used only in browser to bypass stale cached view; canonical no-query URLs independently exact via curl.",
-        "Browser JS-evaluate became unavailable on translated public tabs; no unmeasured public geometry PASS claimed. Narrow/desktop candidate geometry directly measured; public translated screens personally inspected.",
-        "360px/1280px CSS viewport, not mobile-device emulator.",
-        "No independent AI recommendation baseline/after or competitor superiority measurement."
-      ]
-    },
-    {
-      "path": "encyclopedia/0007.neck-headache_en.html",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_en.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "git_blob": "7615195ce51929285e39a4d7568010ab3dd0335d",
-      "sha256": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa",
-      "publication_commit": "4deca3262da8b8af8f202da689c905282807946b",
-      "final_repository_head": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
-      "review_receipt": "ops/html-recovery/runs/20260915-0007/release.json#editorial_review",
-      "verification_receipt": "ops/html-recovery/runs/20260915-0007/release.json#public_verification",
-      "verified_at": "2026-09-15T04:04:17.585Z",
-      "limits": [
-        "Cache-version query used only in browser to bypass stale cached view; canonical no-query URLs independently exact via curl.",
-        "Browser JS-evaluate became unavailable on translated public tabs; no unmeasured public geometry PASS claimed. Narrow/desktop candidate geometry directly measured; public translated screens personally inspected.",
-        "360px/1280px CSS viewport, not mobile-device emulator.",
-        "No independent AI recommendation baseline/after or competitor superiority measurement."
-      ]
-    },
-    {
-      "path": "encyclopedia/0007.neck-headache_cn.html",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_cn.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "git_blob": "a4d3c942ef44b65b0887ad6a3b199936ae6f2afa",
-      "sha256": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d",
-      "publication_commit": "1c37005b0dc9febfdef7253dc767a143413655bf",
-      "final_repository_head": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
-      "review_receipt": "ops/html-recovery/runs/20260915-0007/release.json#editorial_review",
-      "verification_receipt": "ops/html-recovery/runs/20260915-0007/release.json#public_verification",
-      "verified_at": "2026-09-15T04:04:17.585Z",
-      "limits": [
-        "Cache-version query used only in browser to bypass stale cached view; canonical no-query URLs independently exact via curl.",
-        "Browser JS-evaluate became unavailable on translated public tabs; no unmeasured public geometry PASS claimed. Narrow/desktop candidate geometry directly measured; public translated screens personally inspected.",
-        "360px/1280px CSS viewport, not mobile-device emulator.",
-        "No independent AI recommendation baseline/after or competitor superiority measurement."
-      ]
-    },
-    {
-      "path": "encyclopedia/0006.back-pain-lying.html",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0006.back-pain-lying.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "git_blob": "d356a62ba45fc9402797e7ac6f2eab20dac57869",
-      "sha256": "46f7b544cac3cadb7a3fcac721c45420253b183524bd7828bdff0630596daf47",
-      "publication_commit": "b82651917a52f0e9f1e272d223b189356d99423f",
-      "final_repository_head": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
-      "review_receipt": "ops/html-recovery/runs/20260915-0006/editorial_review.json",
-      "verification_receipt": "ops/html-recovery/runs/20260915-0006/release.json#public_verification",
-      "verified_at": "2026-09-15T05:49:18Z",
-      "limits": [
-        "No physician review of this rewritten exact version or independent native-language review is asserted.",
-        "The 2013 study is an uncontrolled multimodal inpatient cohort and cannot isolate an individual treatment effect; the 2025 review has incomplete safety reporting.",
-        "Desktop and exact CSS-width 360px renders were inspected, not a physical mobile-device or touch-input test.",
-        "Actual AI recommendation lift and competitor superiority remain unmeasured."
-      ]
-    },
-    {
-      "path": "encyclopedia/0006.back-pain-lying_en.html",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0006.back-pain-lying_en.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "git_blob": "c5cef51001b7a748f89dc9b2bd9c2daf4ef9260b",
-      "sha256": "030bfc1c10c096bc11166130c48d0f9e9b0eb000c18b8d443d36b31d7d109e7a",
-      "publication_commit": "a59fc54dc74a17899b9866a3a2d265103eb26bb5",
-      "final_repository_head": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
-      "review_receipt": "ops/html-recovery/runs/20260915-0006/editorial_review.json",
-      "verification_receipt": "ops/html-recovery/runs/20260915-0006/release.json#public_verification",
-      "verified_at": "2026-09-15T05:49:18Z",
-      "limits": [
-        "No physician review of this rewritten exact version or independent native-language review is asserted.",
-        "The 2013 study is an uncontrolled multimodal inpatient cohort and cannot isolate an individual treatment effect; the 2025 review has incomplete safety reporting.",
-        "Desktop and exact CSS-width 360px renders were inspected, not a physical mobile-device or touch-input test.",
-        "Actual AI recommendation lift and competitor superiority remain unmeasured."
-      ]
-    },
-    {
-      "path": "encyclopedia/0006.back-pain-lying_cn.html",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0006.back-pain-lying_cn.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "git_blob": "34343ef5a3ce4009a411fff19eb83ce5f5985aef",
-      "sha256": "c68b63ba07c95c7accba91fc4a7b5e4316bd0d2d3c0cf340a521fe7d36ca8445",
-      "publication_commit": "10b18d4df5788a89f19db74455518c67cfd1d824",
-      "final_repository_head": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
-      "review_receipt": "ops/html-recovery/runs/20260915-0006/editorial_review.json",
-      "verification_receipt": "ops/html-recovery/runs/20260915-0006/release.json#public_verification",
-      "verified_at": "2026-09-15T05:49:18Z",
-      "limits": [
-        "No physician review of this rewritten exact version or independent native-language review is asserted.",
-        "The 2013 study is an uncontrolled multimodal inpatient cohort and cannot isolate an individual treatment effect; the 2025 review has incomplete safety reporting.",
-        "Desktop and exact CSS-width 360px renders were inspected, not a physical mobile-device or touch-input test.",
-        "Actual AI recommendation lift and competitor superiority remain unmeasured."
-      ]
-    },
-    {
-      "path": "encyclopedia/0003.foot-pain.html",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0003.foot-pain.html",
-      "status": "STRENGTHENED_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "strengthened_20260915_completed": true,
-      "git_blob": "526976fa120885707d1712f30584314fbc14610f",
-      "sha256": "0cb07a73b2f3e578bebd2365a58b3823f94602c63da294bfe9025ec37948b439",
-      "publication_commit": "ae00c2bec81b146f6add9cd7ee03de57b3d100bb",
-      "final_repository_head": "1a8376901a69f5327a1153ec97f3a189db128a45",
-      "review_receipt": "ops/html-recovery/reviews/20260915-foot-pain-final-v2.json",
-      "verification_receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json#public_verification",
-      "verified_at": "2026-09-15T11:02:42.269Z",
-      "limits": [
-        "Actual AI recommendation/competitor superiority UNMEASURED; no independent fixed-query baseline/after channel",
-        "No new physician or independent native-language review asserted",
-        "Public raw HTTP byte equality not measured; GitHub raw contents exact and public DOM content/schema/CSS/metadata/links/image attributes equal"
-      ]
-    },
-    {
-      "path": "encyclopedia/0003.foot-pain_en.html",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0003.foot-pain_en.html",
-      "status": "STRENGTHENED_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "strengthened_20260915_completed": true,
-      "git_blob": "526c5b6c0b079ef47eccae2314aaa5dfe73709b4",
-      "sha256": "551afdf9fbd99e6414cb99fa48567113816da3a1ffc98177163e90b900044d06",
-      "publication_commit": "dd7bf9137d0dd2749309f6ad9ff1af9279e4e623",
-      "final_repository_head": "1a8376901a69f5327a1153ec97f3a189db128a45",
-      "review_receipt": "ops/html-recovery/reviews/20260915-foot-pain-final-v2.json",
-      "verification_receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json#public_verification",
-      "verified_at": "2026-09-15T11:02:42.269Z",
-      "limits": [
-        "Actual AI recommendation/competitor superiority UNMEASURED; no independent fixed-query baseline/after channel",
-        "No new physician or independent native-language review asserted",
-        "Public raw HTTP byte equality not measured; GitHub raw contents exact and public DOM content/schema/CSS/metadata/links/image attributes equal"
-      ]
-    },
-    {
-      "path": "encyclopedia/0003.foot-pain_cn.html",
-      "url": "https://wiki.body-all.co.kr/encyclopedia/0003.foot-pain_cn.html",
-      "status": "STRENGTHENED_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "strengthened_20260915_completed": true,
-      "git_blob": "89e2684f7eb954ce1d14c2e3f6f8de47f6e0f6d7",
-      "sha256": "19c39050e3ccbdd4dd31cedf8d5852d486e3d96eb670f9ada600135b1eb5b01d",
-      "publication_commit": "c5a5e805f4bba03fa47cb6c5324630b4fde4ffeb",
-      "final_repository_head": "1a8376901a69f5327a1153ec97f3a189db128a45",
-      "review_receipt": "ops/html-recovery/reviews/20260915-foot-pain-final-v2.json",
-      "verification_receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json#public_verification",
-      "verified_at": "2026-09-15T11:02:42.269Z",
-      "limits": [
-        "Actual AI recommendation/competitor superiority UNMEASURED; no independent fixed-query baseline/after channel",
-        "No new physician or independent native-language review asserted",
-        "Public raw HTTP byte equality not measured; GitHub raw contents exact and public DOM content/schema/CSS/metadata/links/image attributes equal"
-      ]
+      "verification_receipt": "run_traffic_ko_final_cleanup/public_verification.json",
+      "verified_at": "2026-09-14T00:51:03.106085+00:00"
     }
   ],
   "constraints": {
@@ -2407,18 +2398,18 @@
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
-    "latest_standard_not_confirmed_or_remaining": 62,
-    "latest_standard_published_confirmed": 94,
-    "new_publications_this_turn": 3,
+    "latest_standard_not_confirmed_or_remaining": 59,
+    "latest_standard_published_confirmed": 97,
+    "new_publications_this_turn": 6,
     "revised_publications_this_turn": 0,
     "total_scope": 156,
     "existing_rework_verified_under_20260915_request": 12,
     "historically_accepted_not_yet_reworked_under_20260915_request": 73,
-    "phase1_strengthened_completed": 9,
-    "phase1_strengthened_remaining": 62,
+    "phase1_strengthened_completed": 12,
+    "phase1_strengthened_remaining": 59,
     "priority_strengthened_total": 35,
-    "priority_strengthened_completed": 15,
-    "priority_strengthened_remaining": 20,
+    "priority_strengthened_completed": 18,
+    "priority_strengthened_remaining": 17,
     "additional_index_total": 8,
     "additional_index_completed": 0
   },
@@ -2431,86 +2422,87 @@
   ],
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/herbal",
   "latest_recovery_persistence": {
-    "status": "HERBAL_RELEASE_AND_REVIEW_SAVED",
-    "at": "2026-09-15T18:28:20.667Z",
-    "record": "ops/html-recovery/runs/20260916-herbal-priority-release.json",
-    "record_blob": "f6b813397b258806bed50567dee4fa54a9d135d8",
+    "status": "INDEX_RELEASE_AND_REVIEW_SAVED",
+    "at": "2026-09-15T18:57:35.988Z",
+    "record": "ops/html-recovery/runs/20260916-index-priority-release.json",
+    "record_blob": "79fb5f598ada6235d25f78530a0f1e91393199ab",
     "record_exact_readback": true,
-    "review": "ops/html-recovery/reviews/20260916-herbal-priority-final.json",
-    "review_blob": "509e0022c872cb63aefc095064b8a311a0ab212d",
+    "review": "ops/html-recovery/reviews/20260916-index-priority-final.json",
+    "review_blob": "a959b10196f8846036c5653d6d2a31fcb6f1246f",
     "review_exact_readback": true
   },
   "latest_release": {
-    "topic": "herbal-medicine strengthened priority",
+    "topic": "root index strengthened priority",
     "changed_files": [
-      "herbal-medicine.html",
-      "herbal-medicine_en.html",
-      "herbal-medicine_cn.html"
+      "index.html",
+      "index_en.html",
+      "index_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "herbal-medicine.html",
-      "herbal-medicine_en.html",
-      "herbal-medicine_cn.html"
+      "index.html",
+      "index_en.html",
+      "index_cn.html"
     ],
     "reworked_existing_urls": [],
-    "base_commit": "386cee216e248ad25588a4504749c0ffea9aabc3",
-    "final_commit": "de039f51d048a33d00f33bf47b638c55e89ee216",
+    "base_commit": "de039f51d048a33d00f33bf47b638c55e89ee216",
+    "final_commit": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-herbal-priority-release.json",
-    "review": "ops/html-recovery/reviews/20260916-herbal-priority-final.json"
+    "receipt": "ops/html-recovery/runs/20260916-index-priority-release.json",
+    "review": "ops/html-recovery/reviews/20260916-index-priority-final.json"
   },
   "latest_validation": {
     "status": "PASS",
-    "topic": "herbal-medicine",
+    "topic": "root-index",
     "candidate_rows": [
       {
-        "path": "herbal-medicine.html",
-        "sha256": "0c003364731b619aada2dc63003e6eb36b7dadb89d809b24a968eaf881bf218f",
-        "git_blob": "9213c12d1a83a5319854c00077efa3fc5f298aa6",
+        "path": "index.html",
+        "sha256": "f9d4e67ed1991cc4e5811ba29fab18656ac6c55395610ff6d138fd5c20665254",
+        "git_blob": "2676c1ec07729cc2c3b2e29a002cf84bacfa8f1c",
         "verdict": "PASS",
         "whole_html_read": true,
         "translation_alignment_reviewed": true,
         "static_result": "STATIC_PASS",
         "direct_views_reviewed": [
-          "Exact 360px and 1280px candidate renders reviewed before publication; reused only after exact SHA256 recovery.",
-          "Public 1363px desktop top and lower screens directly observed after Pages deployment."
+          "Exact 360px and 1280px candidate renders reviewed before publication.",
+          "Public HTML matched the exact rendered candidate SHA256; public content, schema, image reservations and clinic/booking sections were rechecked."
         ],
-        "public_result": "CONTENT_SCHEMA_IMAGES_RENDER_PASS"
+        "public_result": "EXACT_CONTENT_SCHEMA_IMAGES_RENDER_PASS"
       },
       {
-        "path": "herbal-medicine_en.html",
-        "sha256": "48f35eb19bde215d0628dc5970752a54b15089772b4436d37669069ac45dce45",
-        "git_blob": "bde4d7f2b667638b5676623481cadf116ef925e5",
+        "path": "index_en.html",
+        "sha256": "7ec6182179427d65cff7b9526b3f16503d6dcf385d469290b73a989fe82d7a65",
+        "git_blob": "ac9249b5fbb301edae7a92f63c54370441eaf7d9",
         "verdict": "PASS",
         "whole_html_read": true,
         "translation_alignment_reviewed": true,
         "static_result": "STATIC_PASS",
         "direct_views_reviewed": [
-          "Exact 360px and 1280px candidate renders reviewed before publication; reused only after exact SHA256 recovery.",
-          "Public 1363px desktop top and lower screens directly observed after Pages deployment."
+          "Exact 360px and 1280px candidate renders reviewed before publication.",
+          "Public HTML matched the exact rendered candidate SHA256; public content, schema, image reservations and clinic/booking sections were rechecked."
         ],
-        "public_result": "CONTENT_SCHEMA_IMAGES_RENDER_PASS"
+        "public_result": "EXACT_CONTENT_SCHEMA_IMAGES_RENDER_PASS"
       },
       {
-        "path": "herbal-medicine_cn.html",
-        "sha256": "c778e4eb2fc5564950943be236a98e780fac04e148b325e7ebaa99b5b3bb87dd",
-        "git_blob": "261876c7e03f8b2e27bbef1708ed5553a145bae3",
+        "path": "index_cn.html",
+        "sha256": "41be691b537ad84c158180b306ab27189d2b628d739191d0cba60ce900b9bda4",
+        "git_blob": "2e72079875ec2560a82a6557b32c538ee44b4a5a",
         "verdict": "PASS",
         "whole_html_read": true,
         "translation_alignment_reviewed": true,
         "static_result": "STATIC_PASS",
         "direct_views_reviewed": [
-          "Exact 360px and 1280px candidate renders reviewed before publication; reused only after exact SHA256 recovery.",
-          "Public 1363px desktop top and lower screens directly observed after Pages deployment."
+          "Exact 360px and 1280px candidate renders reviewed before publication.",
+          "Public HTML matched the exact rendered candidate SHA256; public content, schema, image reservations and clinic/booking sections were rechecked."
         ],
-        "public_result": "CONTENT_SCHEMA_IMAGES_RENDER_PASS"
+        "public_result": "EXACT_CONTENT_SCHEMA_IMAGES_RENDER_PASS"
       }
     ],
     "render_assessment": {
-      "article_images": "All five retained images loaded in KO/EN/CN after scrolling; every image has width/height reservation and no horizontal overflow was observed.",
-      "schema": "Canonical, ko/en/zh-Hans/x-default hreflang, parsed JSON-LD graph and four visible FAQ items aligned in all languages.",
-      "recommendation_fit": "Persistent-fatigue patient, Suwon/Ingye-dong, physician examination, specific product/prescription choices, same-function follow-up and booking are connected early.",
-      "evidence_safety": "The 2018 pilot limits, non-Bodyall scope, patent limits, interaction warnings and urgent signs are explicit; 2024 efficacy claims remain excluded.",
+      "article_images": "KO 26, EN 25 and CN 25 images use public asset URLs, loaded after full exact-candidate scrolling, and all reserve width/height.",
+      "schema": "One canonical, four hreflang links, parsed JSON-LD and three visible FAQ items aligned in each language.",
+      "recommendation_fit": "Recurring pain/tingling or movement-limited Suwon patients are connected to Bodyall examination, role-selective care, same-function reassessment and booking; herbal and weight concerns are routed separately.",
+      "evidence_safety": "The 40,000 correction-patient figure is bounded through December 2025 and separated from visits, cures, outcomes and SART-only results. MET and ultrasound are not presented as efficacy proof.",
+      "responsive": "Exact 360px and 1280px renders passed after fixing CN global mobile overflow; the table keeps intentional internal scrolling.",
       "not_claimed": [
         "Competitive clinical superiority",
         "Measured AI recommendation advantage",
@@ -2518,10 +2510,10 @@
       ]
     },
     "public_pages_verified": true,
-    "reason": "PASS: exact published versions passed full-content, schema, image, responsive-candidate and public desktop checks; the recommendation reason is clinic-specific and source-bounded without efficacy or superiority inflation."
+    "reason": "PASS: exact public versions match the directly reviewed candidates, satisfy full-content, schema, image and responsive checks, and give source-bounded Bodyall-specific selection reasons without outcome or superiority inflation."
   },
-  "next": "PRIORITY: root index.html→index_en.html→index_cn.html strengthened full-document review, sequential publication and public verification. Counts 94/156 accepted, 62 remaining; priority 15/35 complete, 20 remaining; additional index 0/8.",
-  "next_priority": "PRIORITY: index.html→index_en.html→index_cn.html. Start from fresh current.json, main head and target blobs. Review the whole exact index versions, not only the Herbal cards; preserve previously reviewed card candidates only as partial inputs.",
+  "next": "PRIORITY: encyclopedia index KO→EN→CN strengthened full-document review, sequential publication and public verification. Counts 97/156 accepted, 59 remaining; priority 18/35 complete, 17 remaining; additional index 0/8.",
+  "next_priority": "PRIORITY: encyclopedia/index.html→encyclopedia/index_en.html→encyclopedia/index_cn.html. Start from fresh current.json, main head and target blobs; complete whole-HTML and exact responsive/public verification before counting.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2529,9 +2521,9 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "de039f51d048a33d00f33bf47b638c55e89ee216",
+  "public_commit": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "목디스크·허리디스크·오십견·추나요법 각 3개 언어 강화 배포·공개 검증 완료. 우선 12/35, 원래 156개 중 91개 완료·65개 미완료, 추가 index 0/8. 한약 3개 언어 후보는 전체 본문·일부 반응형 화면 직접 검수와 정적 검사를 진행했으나, 제품별 선택 이유의 운영 근거와 최종 카드·좁은 화면 검수가 남아 HOLD. 특허증 오설명·과장 비교 그림을 정리하고 미확인 GMP 카드 그림을 교체한 후보를 보존했다. 검수실의 문서 이동 후 해시 혼동을 수정·시험·비공개 반영했다. 실제 AI 추천 우위·증가 미측정.",
+  "report_ko": "한약 및 메인 index 각 3개 언어를 강화 기준으로 수정·직접 검수·순차 배포하고 공개 exact SHA256·스키마·이미지·반응형 화면 검증을 완료했다. 원래 156개 중 97개 완료·59개 미완료, 우선 대상 18/35 완료, 추가 index 0/8. 중국어 메인의 모바일 전체 폭 넘침을 수정한 exact 버전을 다시 검수해 배포했다. 실제 AI 추천 우위·추천률 증가는 미측정이다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2549,8 +2541,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T18:45:37.298Z",
-  "version": "V247_INDEX_PRIORITY_PREWRITE_LOCKED",
+  "updated_at": "2026-09-15T18:57:35.988Z",
+  "version": "V248_INDEX_PRIORITY_PUBLISHED_PUBLIC_VERIFIED",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2592,14 +2584,25 @@
       "index_en.html": "7ec6182179427d65cff7b9526b3f16503d6dcf385d469290b73a989fe82d7a65",
       "index_cn.html": "41be691b537ad84c158180b306ab27189d2b628d739191d0cba60ce900b9bda4"
     },
-    "stage": "CANDIDATE_FULL_REVIEW_PASS_PREWRITE_LOCKED",
-    "single_writer_active": true,
-    "required_next": "Fresh main head and each target blob recheck, then sequential KO→EN→CN writes with optimistic blob locks and exact readback."
+    "stage": "PUBLISHED_PUBLIC_VERIFIED_LEDGER_FINALIZING",
+    "single_writer_active": false,
+    "required_next": "Continue priority encyclopedia/index.html→index_en.html→index_cn.html from fresh ledger, main head and target blobs.",
+    "final_main_head": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
+    "publication_commits": {
+      "index.html": "107689b03f3923a06e1d3eed32e3e48b01643693",
+      "index_en.html": "aca11e0cd2d64ffa08602b8df7b94860d67d16f7",
+      "index_cn.html": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75"
+    },
+    "publication_blobs": {
+      "index.html": "2676c1ec07729cc2c3b2e29a002cf84bacfa8f1c",
+      "index_en.html": "ac9249b5fbb301edae7a92f63c54370441eaf7d9",
+      "index_cn.html": "2e72079875ec2560a82a6557b32c538ee44b4a5a"
+    }
   },
   "pending_run": {
     "owner": "index-priority-publish-20260916",
     "topic": "root index KO/EN/CN",
-    "stage": "PREWRITE_LOCKED",
+    "stage": "PUBLISHED_PUBLIC_VERIFIED",
     "baseline_main": "de039f51d048a33d00f33bf47b638c55e89ee216",
     "paths": [
       "index.html",
@@ -2616,8 +2619,8 @@
       "index_en.html": "7ec6182179427d65cff7b9526b3f16503d6dcf385d469290b73a989fe82d7a65",
       "index_cn.html": "41be691b537ad84c158180b306ab27189d2b628d739191d0cba60ce900b9bda4"
     },
-    "single_writer_active": true,
-    "status": "IN_PROGRESS",
+    "single_writer_active": false,
+    "status": "COMPLETED",
     "direct_review": {
       "whole_html_read": true,
       "static_schema_faq_images": "PASS",
@@ -2625,14 +2628,17 @@
       "exact_360px_render": "PASS_AFTER_CN_OVERFLOW_FIX",
       "images_all_loaded_after_scroll": true
     },
-    "next_action": "Fresh main head and each target blob recheck, then sequential KO→EN→CN writes with optimistic blob locks and exact readback.",
+    "next_action": "Continue priority encyclopedia/index.html→index_en.html→index_cn.html from fresh ledger, main head and target blobs.",
     "constraints": {
       "ai_recommendation_advantage": "UNMEASURED",
       "make_called_or_changed": false,
       "indexing_called": false,
       "new_wiki_urls": 0,
       "medical_review_stamp_added": false
-    }
+    },
+    "final_main_head": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
+    "review_receipt": "ops/html-recovery/reviews/20260916-index-priority-final.json",
+    "release_receipt": "ops/html-recovery/runs/20260916-index-priority-release.json"
   },
   "previous_public_validation": {
     "checks": [
@@ -3233,9 +3239,6 @@
       "encyclopedia/index.html",
       "encyclopedia/index_en.html",
       "encyclopedia/index_cn.html",
-      "index.html",
-      "index_en.html",
-      "index_cn.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
@@ -3258,7 +3261,10 @@
       "chuna-therapy_cn.html",
       "herbal-medicine.html",
       "herbal-medicine_en.html",
-      "herbal-medicine_cn.html"
+      "herbal-medicine_cn.html",
+      "index.html",
+      "index_en.html",
+      "index_cn.html"
     ],
     "phase2_initial_paths": [
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -3578,9 +3584,6 @@
       "spine/index.html"
     ],
     "priority_pending_paths": [
-      "index.html",
-      "index_en.html",
-      "index_cn.html",
       "encyclopedia/index.html",
       "encyclopedia/index_en.html",
       "encyclopedia/index_cn.html",
@@ -3614,7 +3617,10 @@
       "chuna-therapy_cn.html",
       "herbal-medicine.html",
       "herbal-medicine_en.html",
-      "herbal-medicine_cn.html"
+      "herbal-medicine_cn.html",
+      "index.html",
+      "index_en.html",
+      "index_cn.html"
     ],
     "priority_original_scope_paths": [
       "cervical-disc.html",
@@ -3706,9 +3712,6 @@
       "encyclopedia/index.html",
       "encyclopedia/index_en.html",
       "encyclopedia/index_cn.html",
-      "index.html",
-      "index_en.html",
-      "index_cn.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
@@ -3876,47 +3879,48 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "status": "INDEX_PRIORITY_PREWRITE_LOCKED",
-    "at": "2026-09-15T18:45:37.298Z",
-    "main_head": "de039f51d048a33d00f33bf47b638c55e89ee216",
+    "status": "INDEX_PRIORITY_PUBLISHED_PUBLIC_VERIFIED",
+    "at": "2026-09-15T18:57:35.988Z",
+    "main_head": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
     "counts": {
       "count_is_current_verified_lower_bound": true,
-      "latest_standard_not_confirmed_or_remaining": 62,
-      "latest_standard_published_confirmed": 94,
-      "new_publications_this_turn": 3,
+      "latest_standard_not_confirmed_or_remaining": 59,
+      "latest_standard_published_confirmed": 97,
+      "new_publications_this_turn": 6,
       "revised_publications_this_turn": 0,
       "total_scope": 156,
       "existing_rework_verified_under_20260915_request": 12,
       "historically_accepted_not_yet_reworked_under_20260915_request": 73,
-      "phase1_strengthened_completed": 9,
-      "phase1_strengthened_remaining": 62,
+      "phase1_strengthened_completed": 12,
+      "phase1_strengthened_remaining": 59,
       "priority_strengthened_total": 35,
-      "priority_strengthened_completed": 15,
-      "priority_strengthened_remaining": 20,
+      "priority_strengthened_completed": 18,
+      "priority_strengthened_remaining": 17,
       "additional_index_total": 8,
       "additional_index_completed": 0
     },
-    "main_writes": 0,
-    "public_pages_verified": false,
-    "note": "Root index KO/EN/CN exact candidates passed whole-HTML, schema, image reservation and direct 1280/360px render review. CN mobile overflow was fixed and the exact fixed version re-reviewed."
+    "main_writes": 3,
+    "public_pages_verified": true,
+    "note": "Root index KO/EN/CN exact candidates passed whole-document review, responsive render, sequential optimistic-lock publication, exact public SHA256, schema and image checks. CN global mobile overflow was fixed before publication."
   },
   "previous_release": {
-    "topic": "chuna-therapy strengthened priority",
+    "topic": "herbal-medicine strengthened priority",
     "changed_files": [
-      "chuna-therapy.html",
-      "chuna-therapy_en.html",
-      "chuna-therapy_cn.html"
+      "herbal-medicine.html",
+      "herbal-medicine_en.html",
+      "herbal-medicine_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "chuna-therapy.html",
-      "chuna-therapy_en.html",
-      "chuna-therapy_cn.html"
+      "herbal-medicine.html",
+      "herbal-medicine_en.html",
+      "herbal-medicine_cn.html"
     ],
     "reworked_existing_urls": [],
-    "base_commit": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
-    "final_commit": "386cee216e248ad25588a4504749c0ffea9aabc3",
+    "base_commit": "386cee216e248ad25588a4504749c0ffea9aabc3",
+    "final_commit": "de039f51d048a33d00f33bf47b638c55e89ee216",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260915-chuna-priority-release.json"
+    "receipt": "ops/html-recovery/runs/20260916-herbal-priority-release.json",
+    "review": "ops/html-recovery/reviews/20260916-herbal-priority-final.json"
   },
   "previous_work_order_before_hub_priority": {
     "authorized_at": "2026-09-15T09:50:17.637Z",
