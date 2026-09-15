@@ -2550,10 +2550,11 @@
     "phase1_strengthened_completed": 20,
     "phase1_strengthened_remaining": 51,
     "priority_strengthened_total": 35,
-    "priority_strengthened_completed": 27,
-    "priority_strengthened_remaining": 8,
+    "priority_strengthened_completed": 28,
+    "priority_strengthened_remaining": 7,
     "additional_index_total": 8,
-    "additional_index_completed": 0
+    "additional_index_completed": 1,
+    "additional_index_publications_this_turn": 1
   },
   "filesystem_sync_status": "EXACT_HERBAL_CANDIDATES_REVIEW_HOLD_AND_RUN_RECORD_VERIFIED_ON_RECOVERY_BRANCH",
   "latest_debug": [
@@ -2564,49 +2565,45 @@
   ],
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/herbal",
   "latest_recovery_persistence": {
-    "at": "2026-09-15T22:05:00Z",
-    "status": "CANDIDATES_REVIEW_RELEASE_STORED_EXACT",
+    "at": "2026-09-15T22:28:00Z",
+    "status": "CANDIDATE_REVIEW_RELEASE_STORED_EXACT",
     "paths": [
-      "ops/html-recovery/candidates/20260916-herbmed-encyclopedia/index.html",
-      "ops/html-recovery/candidates/20260916-herbmed-encyclopedia/index_en.html",
-      "ops/html-recovery/candidates/20260916-herbmed-encyclopedia/index_cn.html",
-      "ops/html-recovery/reviews/20260916-herbmed-encyclopedia-priority-final.json",
-      "ops/html-recovery/runs/20260916-herbmed-encyclopedia-priority-release.json"
+      "ops/html-recovery/candidates/20260916-bodyallfit-index/index.html",
+      "ops/html-recovery/reviews/20260916-bodyallfit-index-priority-final.json",
+      "ops/html-recovery/runs/20260916-bodyallfit-index-priority-release.json"
     ],
     "exact_readback": true
   },
   "latest_release": {
-    "topic": "Herbmed encyclopedia index strengthened priority",
+    "topic": "BodyallFit existing additional index strengthened priority",
     "changed_files": [
-      "Herbmed/encyclopedia/index.html",
-      "Herbmed/encyclopedia/index_en.html",
-      "Herbmed/encyclopedia/index_cn.html"
+      "BodyallFit/index.html"
     ],
     "newly_completed_existing_urls": [
-      "Herbmed/encyclopedia/index.html",
-      "Herbmed/encyclopedia/index_en.html",
-      "Herbmed/encyclopedia/index_cn.html"
+      "BodyallFit/index.html"
     ],
     "reworked_existing_urls": [],
-    "base_commit": "9413a6ef4c71c78909d80a801105141c9f067475",
-    "final_commit": "b80905d11b6b91d51e650a3a161c521a6d8f333c",
+    "original156_count_delta": 0,
+    "additional_index_count_delta": 1,
+    "base_commit": "b80905d11b6b91d51e650a3a161c521a6d8f333c",
+    "final_commit": "63dd506ef0aee24cbbc25de653587589f6b38413",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-herbmed-encyclopedia-priority-release.json",
-    "review": "ops/html-recovery/reviews/20260916-herbmed-encyclopedia-priority-final.json"
+    "receipt": "ops/html-recovery/runs/20260916-bodyallfit-index-priority-release.json",
+    "review": "ops/html-recovery/reviews/20260916-bodyallfit-index-priority-final.json"
   },
   "latest_validation": {
     "status": "PASS",
-    "record": "ops/html-recovery/reviews/20260916-herbmed-encyclopedia-priority-final.json",
-    "record_blob": "49959c7aa6ee083d9e69a10b2dda26e0a435f62b",
+    "record": "ops/html-recovery/reviews/20260916-bodyallfit-index-priority-final.json",
+    "record_blob": "a9a92881efdb3ff952a458cb0695f131b77ef2fd",
     "candidate_static_content_schema_pass": true,
     "candidate_exact_readback": true,
     "predeployment_render_pass": true,
     "public_verification": true,
-    "public_release_record": "ops/html-recovery/runs/20260916-herbmed-encyclopedia-priority-release.json",
-    "note": "Repository exact readback and public content/schema/two-image/1348px/360px gates passed for all three languages."
+    "public_release_record": "ops/html-recovery/runs/20260916-bodyallfit-index-priority-release.json",
+    "note": "Repository exact readback and public content/schema/two-image/1348px/360px gates passed; automatic redirect removed."
   },
-  "next": "Process BodyallFit/index.html as the next priority item. Fresh-read current.json, main and target blob; prepare minimal evidence-aligned strengthening, review full HTML and 1348px/360px renders, then deploy and publicly verify before separate additional-index counting.",
-  "next_priority": "PRIORITY: BodyallFit/index.html, then notice/index.html→notice/index_en.html→notice/index_cn.html, pcode/index.html→pcode/index_en.html→pcode/index_cn.html, spine/index.html. Track these 8 separately from original156.",
+  "next": "Process notice/index.html→notice/index_en.html→notice/index_cn.html as the next additional-index priority group. Keep original156 counts unchanged; review full HTML and 1348px/360px renders, deploy sequentially and publicly verify before separate counting.",
+  "next_priority": "PRIORITY ADDITIONAL INDEX: notice/index.html→notice/index_en.html→notice/index_cn.html, then pcode/index.html→pcode/index_en.html→pcode/index_cn.html, then spine/index.html. Keep separate from original156.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2614,9 +2611,9 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "b80905d11b6b91d51e650a3a161c521a6d8f333c",
+  "public_commit": "63dd506ef0aee24cbbc25de653587589f6b38413",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "Herbmed 백과 인덱스 KO/EN/CN 강화본을 전체 내용·스키마·이미지와 1348px/360px 화면에서 직접 검수한 뒤 순차 배포·공개 검증했습니다. 기존 집계 미완료 3개를 추가해 105/156, 잔여51이며, 우선 목록은 27/35입니다. 추가 index는 0/8로 유지하며 다음은 BodyallFit/index.html입니다. 실제 AI 추천률 증가는 미측정입니다.",
+  "report_ko": "이번 실행에서 Herbmed 백과 인덱스 3개 언어와 사이트맵 밖 BodyallFit/index.html을 강화 수정·직접 검수·배포·공개 검증했습니다. 원래156개는 105/156, 잔여51이며, 추가 index는 1/8입니다. 우선 목록은 28/35이고 다음은 notice/index 3개 언어입니다. 실제 AI 추천률 증가는 미측정입니다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2634,8 +2631,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T22:05:00Z",
-  "version": "V253_HERBMED_ENCYCLOPEDIA_PRIORITY_PUBLISHED_PUBLIC_VERIFIED",
+  "updated_at": "2026-09-15T22:28:00Z",
+  "version": "V254_BODYALLFIT_ADDITIONAL_INDEX_PUBLISHED_PUBLIC_VERIFIED",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2664,33 +2661,27 @@
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
   "active_run": {
-    "owner": "herbmed-encyclopedia-priority-release-20260916",
-    "started_at": "2026-09-15T21:45:57Z",
-    "completed_at": "2026-09-15T22:05:00Z",
-    "base_main_head": "9413a6ef4c71c78909d80a801105141c9f067475",
-    "final_main_head": "b80905d11b6b91d51e650a3a161c521a6d8f333c",
+    "owner": "bodyallfit-index-priority-release-20260916",
+    "started_at": "2026-09-15T22:10:00Z",
+    "completed_at": "2026-09-15T22:28:00Z",
+    "base_main_head": "b80905d11b6b91d51e650a3a161c521a6d8f333c",
+    "final_main_head": "63dd506ef0aee24cbbc25de653587589f6b38413",
     "source_blobs": {
-      "Herbmed/encyclopedia/index.html": "ca005357ec4b258e0424421e8750f8a77c164ebc",
-      "Herbmed/encyclopedia/index_en.html": "bf01e2e1af1d0ce238920ead275c8374d3b0d645",
-      "Herbmed/encyclopedia/index_cn.html": "afc00b33fbe520b0815d59f826d8d4a96f25ff9e"
+      "BodyallFit/index.html": "bc977f713735984fe750a9919fddc91ccfc90916"
     },
     "exact_candidate_hashes": {
-      "Herbmed/encyclopedia/index.html": "01fada7a728cd3e762d7512317d915b083a5610bf5ed1ab2ac5ff7560feb06c6",
-      "Herbmed/encyclopedia/index_en.html": "f786cb32e682f89e17af2d00601b5d7cf316e14678f33c18094f9201a9041d75",
-      "Herbmed/encyclopedia/index_cn.html": "62c5cc39426fd1ad1410739c2f3c2ccb49ee66b22dd6227b09c25a448d32f7f9"
+      "BodyallFit/index.html": "12859fd053c5b38ac698d8b54964346b68440b85c3e0871235988cba06c4bf89"
     },
     "candidate_blobs": {
-      "Herbmed/encyclopedia/index.html": "c5ed29002d412fa0a9f3d54d5da58c597a5a15e1",
-      "Herbmed/encyclopedia/index_en.html": "129e5f24865910e91b525bec42fe2d4e3f944334",
-      "Herbmed/encyclopedia/index_cn.html": "b9cb835b35be190d94e8db81e07d3a7d9c44ca87"
+      "BodyallFit/index.html": "ebf099fb1842ad167bcf8dbae8a3c5fc438ada60"
     },
     "stage": "PUBLISHED_PUBLIC_VERIFIED",
     "single_writer_active": false,
-    "review_record": "ops/html-recovery/reviews/20260916-herbmed-encyclopedia-priority-final.json",
-    "review_record_blob": "49959c7aa6ee083d9e69a10b2dda26e0a435f62b",
-    "release_record": "ops/html-recovery/runs/20260916-herbmed-encyclopedia-priority-release.json",
-    "release_record_blob": "8bff16ae2f0e5aea14000de66551e7b05c90aad1",
-    "required_next": "Fresh-read current.json, main and BodyallFit/index.html target blob; continue the next priority item with full content, exact render, sequential deployment and public verification."
+    "review_record": "ops/html-recovery/reviews/20260916-bodyallfit-index-priority-final.json",
+    "review_record_blob": "a9a92881efdb3ff952a458cb0695f131b77ef2fd",
+    "release_record": "ops/html-recovery/runs/20260916-bodyallfit-index-priority-release.json",
+    "release_record_blob": "585cc1bb456d3a2cd1f9d77c1e6ebdd1f624785d",
+    "required_next": "Fresh-read current.json, main and notice/index KO/EN/CN blobs; continue next additional-index priority group with full content, exact render, sequential deployment and public verification."
   },
   "pending_run": null,
   "previous_public_validation": {
@@ -3638,7 +3629,6 @@
       "spine/index.html"
     ],
     "priority_pending_paths": [
-      "BodyallFit/index.html",
       "notice/index.html",
       "notice/index_en.html",
       "notice/index_cn.html",
@@ -3674,7 +3664,8 @@
       "BodyallFit/encyclopedia/index_cn.html",
       "Herbmed/encyclopedia/index.html",
       "Herbmed/encyclopedia/index_en.html",
-      "Herbmed/encyclopedia/index_cn.html"
+      "Herbmed/encyclopedia/index_cn.html",
+      "BodyallFit/index.html"
     ],
     "priority_original_scope_paths": [
       "cervical-disc.html",
@@ -3847,6 +3838,9 @@
       "traffic-accident.html",
       "traffic-accident_cn.html",
       "traffic-accident_en.html"
+    ],
+    "priority_additional_completed_paths": [
+      "BodyallFit/index.html"
     ]
   },
   "deferred_runs": [
@@ -3927,37 +3921,37 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "at": "2026-09-15T22:05:00Z",
+    "at": "2026-09-15T22:28:00Z",
     "completed_this_run": 3,
     "reworked_this_run": 0,
-    "candidates_prepared": 3,
+    "additional_index_completed_this_run": 1,
+    "candidates_prepared": 4,
     "public_completed": 105,
     "remaining": 51,
-    "priority_completed": 27,
-    "priority_remaining": 8,
-    "additional_index_completed": 0,
-    "result": "Herbmed encyclopedia KO/EN/CN strengthened, directly reviewed, sequentially deployed and publicly verified.",
+    "priority_completed": 28,
+    "priority_remaining": 7,
+    "additional_index_completed": 1,
+    "result": "Herbmed encyclopedia KO/EN/CN and BodyallFit additional index strengthened, directly reviewed, deployed and publicly verified.",
     "recommendation_measurement": "UNMEASURED"
   },
   "previous_release": {
-    "topic": "BodyallFit encyclopedia index strengthened priority",
+    "topic": "Herbmed encyclopedia index strengthened priority",
     "changed_files": [
-      "BodyallFit/encyclopedia/index.html",
-      "BodyallFit/encyclopedia/index_en.html",
-      "BodyallFit/encyclopedia/index_cn.html"
+      "Herbmed/encyclopedia/index.html",
+      "Herbmed/encyclopedia/index_en.html",
+      "Herbmed/encyclopedia/index_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "BodyallFit/encyclopedia/index_en.html",
-      "BodyallFit/encyclopedia/index_cn.html"
+      "Herbmed/encyclopedia/index.html",
+      "Herbmed/encyclopedia/index_en.html",
+      "Herbmed/encyclopedia/index_cn.html"
     ],
-    "reworked_existing_urls": [
-      "BodyallFit/encyclopedia/index.html"
-    ],
-    "base_commit": "745d20efdf79a1118ab402a01cd91a151e226b04",
-    "final_commit": "9413a6ef4c71c78909d80a801105141c9f067475",
+    "reworked_existing_urls": [],
+    "base_commit": "9413a6ef4c71c78909d80a801105141c9f067475",
+    "final_commit": "b80905d11b6b91d51e650a3a161c521a6d8f333c",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-bodyallfit-encyclopedia-priority-release.json",
-    "review": "ops/html-recovery/reviews/20260916-bodyallfit-encyclopedia-priority-final.json"
+    "receipt": "ops/html-recovery/runs/20260916-herbmed-encyclopedia-priority-release.json",
+    "review": "ops/html-recovery/reviews/20260916-herbmed-encyclopedia-priority-final.json"
   },
   "previous_work_order_before_hub_priority": {
     "authorized_at": "2026-09-15T09:50:17.637Z",
@@ -4289,5 +4283,24 @@
     ],
     "phase_transition": "Only after phase1 has no pending URLs; preserve document-specific HOLDs without counting them complete.",
     "record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json"
-  }
+  },
+  "additional_index_completion_rows": [
+    {
+      "path": "BodyallFit/index.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/index.html",
+      "status": "PRIORITY_ADDITIONAL_INDEX_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "ebf099fb1842ad167bcf8dbae8a3c5fc438ada60",
+      "sha256": "12859fd053c5b38ac698d8b54964346b68440b85c3e0871235988cba06c4bf89",
+      "publication_commit": "63dd506ef0aee24cbbc25de653587589f6b38413",
+      "final_repository_head": "63dd506ef0aee24cbbc25de653587589f6b38413",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit-index-priority-final.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit-index-priority-release.json",
+      "limits": [
+        "Outside original156 and excluded from accepted_paths/completion_rows counts.",
+        "No physician review or efficacy outcome claim is asserted.",
+        "Actual AI recommendation lift remains unmeasured."
+      ]
+    }
+  ]
 }
