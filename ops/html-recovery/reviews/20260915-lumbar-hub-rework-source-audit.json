@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-15",
+  "topic": "Existing lumbar disc / spinal stenosis hub rework",
+  "base_main": "004335bd719de2136b93df82e80cdf3b40a68380",
+  "source_ledger_blob": "96ac68553f6cd3a1b35063933b70857b2d809011",
+  "status": "HOLD_REWORK_AND_EXACT_RENDER_REVIEW_REQUIRED",
+  "candidate_created": false,
+  "publication_changes": 0,
+  "target_files": [
+    {
+      "path": "lumbar-disc.html",
+      "git_blob": "6aa5886a92fd16b4e1161755faa01ceb915fd009"
+    },
+    {
+      "path": "lumbar-disc_en.html",
+      "git_blob": "b062465ecebaa64716a8ca705c7485cdbefe2d21"
+    },
+    {
+      "path": "lumbar-disc_cn.html",
+      "git_blob": "d586b2e6ca8c623a0eaecfcd51495be85035e96e"
+    }
+  ],
+  "findings": [
+    {
+      "location": "first screen and initial selection paragraph",
+      "problem": "The page leads with booking and a large consultation image; the front selection reasons remain mostly general assessment and reassessment language.",
+      "required_change": "Place the patient-specific choice of muscle-focused care and examination-selected pelvic/spinal joint care before the large image; connect it to Bodyall's documented Insanggi and manual-mobilisation sequence."
+    },
+    {
+      "location": "SART card and MedicalProcedure URL",
+      "problem": "The card still describes space acquisition and detailed alignment without showing the actual procedure, and links to SART.html whose structural and recurrence claims are on hold.",
+      "required_change": "Describe actual patient-selected positioning/mobilisation/tool use and functional recheck; use the verified same-language pain hub or a reviewed on-page care anchor."
+    },
+    {
+      "location": "four load/structure illustrations",
+      "problem": "Conceptual load and twisting illustrations need direct visual review against the corrected clinical narrative; their captions alone do not establish medical alignment.",
+      "required_change": "Inspect all original images; retain only illustrations consistent with the actual claim, and do not imply disc restoration or nerve decompression from posture."
+    }
+  ],
+  "evidence_policy": "Reuse existing unchanged Korean references and aligned translations. Re-check sources only for changed, incorrect or corrected claims.",
+  "required_next_steps": [
+    "Read the exact full KO/EN/CN source; inspect the existing mechanism images.",
+    "Create targeted edits and same-language cards grounded in actual service facts.",
+    "Personally inspect each exact full candidate and desktop/narrow rendering; record SHA256 and PASS/HOLD before any main write.",
+    "Freshly re-read ledger, main head and target blobs before sequential publication."
+  ],
+  "counting": "Historical published 85/156 remains unchanged. These three next-topic pages have not passed this rework review."
+}
