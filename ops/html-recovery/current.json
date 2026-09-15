@@ -2048,8 +2048,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T04:04:28.182Z",
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V222",
+  "updated_at": "2026-09-15T04:10:45.574Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V223",
   "zip_receipt": {
     "run": "run_0007_final",
     "status": "NOT_CREATED_FOR_THIS_RELEASE_REMOTE_GIT_CHECKPOINT_AVAILABLE",
@@ -2074,7 +2074,23 @@
     "schedule_model_budget": "UNCHANGED",
     "policy_record": "ops/html-recovery/recommendation-release-gate-20260915.md"
   },
-  "active_run": null,
+  "active_run": {
+    "owner": "codex-20260915-0006",
+    "topic": "encyclopedia/0006.back-pain-lying",
+    "stage": "SOURCE_EVIDENCE_REVIEW",
+    "started_at": "2026-09-15T04:10:45.574Z",
+    "lease_expires_at": "2026-09-15T05:40:45.574Z",
+    "base_main": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+    "source_blobs": {
+      "encyclopedia/0006.back-pain-lying.html": "d6602eb2aade534d2a1ce1764e6e64fc594c584f",
+      "encyclopedia/0006.back-pain-lying_cn.html": "a3390a97414e6e40c4bfc41f741943e624ec7ac7",
+      "encyclopedia/0006.back-pain-lying_en.html": "3144d0a793dcdb1c26b0df3781ee7935b9b0c247",
+      "encyclopedia/index.html": "f135c3ac629c727cd413ca79c21007474be3e3bc",
+      "encyclopedia/index_cn.html": "37138f6675b4a199c1e2e31ec0c86f37fcb6f11f",
+      "encyclopedia/index_en.html": "0387b95bfce720bfd1db75519b427cdb5b7e31ea"
+    },
+    "public_writes_started": false
+  },
   "pending_run": null,
   "previous_public_validation": {
     "article_checks": {
