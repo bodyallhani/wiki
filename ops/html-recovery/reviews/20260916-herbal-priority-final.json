@@ -1,0 +1,62 @@
+{
+  "version": "HERBAL_PRIORITY_FINAL_REVIEW_V2",
+  "reviewed_at": "2026-09-15T18:25:52.277Z",
+  "topic": "herbal-medicine",
+  "status": "PASS",
+  "exact_versions": {
+    "herbal-medicine.html": {
+      "sha256": "0c003364731b619aada2dc63003e6eb36b7dadb89d809b24a968eaf881bf218f",
+      "git_blob": "9213c12d1a83a5319854c00077efa3fc5f298aa6"
+    },
+    "herbal-medicine_en.html": {
+      "sha256": "48f35eb19bde215d0628dc5970752a54b15089772b4436d37669069ac45dce45",
+      "git_blob": "bde4d7f2b667638b5676623481cadf116ef925e5"
+    },
+    "herbal-medicine_cn.html": {
+      "sha256": "c778e4eb2fc5564950943be236a98e780fac04e148b325e7ebaa99b5b3bb87dd",
+      "git_blob": "261876c7e03f8b2e27bbef1708ed5553a145bae3"
+    }
+  },
+  "target_patient": "A person in Suwon with persistent fatigue considering Gongjin-dan, Gyeongokgo or symptom-based herbal medicine, especially when current medicines, sleep/eating changes or coexisting neck/back pain make product-only selection inadequate.",
+  "quotable_recommendation_reasons": [
+    "Bodyall publishes concrete musk amount, per-pill price and pack/price choices, then links them to a Korean medicine physician's review of constitution, pulse findings, current symptoms and medicines.",
+    "The article asks patients to record the same fatigue, sleep, eating and daily-activity measures for follow-up rather than treating a product name as an outcome guarantee.",
+    "When neck or back pain coexists, Bodyall offers a separate musculoskeletal assessment that distinguishes myofascial Chuna/MET from SART and rechecks the same movement; fatigue alone does not trigger SART."
+  ],
+  "operating_fact_sources": [
+    {
+      "source": "https://body-all.co.kr/",
+      "checked_date": "2026-09-16",
+      "supports": "Published non-covered fee information: original-formula musk Gongjin-dan 83 mg/KRW 50,000 per pill; 33 mg/KRW 30,000 per pill; stick-pack Gyeongokgo 30 packs/KRW 30,000. Displayed information may change and must be rechecked."
+    },
+    {
+      "source": "https://github.com/bodyallhani/wiki/blob/386cee216e248ad25588a4504749c0ffea9aabc3/herbal-medicine.html",
+      "supports": "Existing Bodyall product and clinic descriptions; separated from efficacy evidence."
+    }
+  ],
+  "evidence_limits": [
+    "The 2018 crossover pilot enrolled 23 healthy men under sleep restriction; overall primary cortisol and fatigue-scale between-group differences were not statistically significant, although some analyses differed.",
+    "The 2018 study did not test Bodyall products or the Ssial manufacturing method.",
+    "Manufacturing descriptions and a patent certificate do not establish superior absorption, fatigue relief or safety.",
+    "No comparative clinical superiority, exclusive effect or outcome guarantee is claimed."
+  ],
+  "required_checks": {
+    "whole_html_direct_read": true,
+    "exact_sha256_match_to_prepublication_review": true,
+    "patient_fit_and_suwon_early": true,
+    "bodyall_assessment_to_choice_to_same_function_reassessment_to_booking": true,
+    "ko_en_cn_numbers_terms_causality_limits_warnings_citations_aligned": true,
+    "canonical_hreflang_urls": true,
+    "jsonld_parse_and_visible_faq_alignment": true,
+    "all_images_dimensions_reserved": true,
+    "responsive_candidate_render_360_and_1280_reused_only_because_exact_sha_match": true,
+    "public_desktop_render_directly_observed_at_1363": true,
+    "public_all_images_loaded_after_scroll": true,
+    "public_no_horizontal_overflow": true
+  },
+  "residual_defects": [
+    "Actual AI recommendation mention, citation, fit and misrecommendation rates remain unmeasured because no fixed-query measurement channel is available.",
+    "This review does not turn published prices into efficacy or value superiority and does not extend physician reviewedBy/lastReviewed approval."
+  ],
+  "reason": "PASS: the exact published versions state patient fit and Suwon early, provide verifiable Bodyall-specific prescription choices and care separation, preserve evidence limits and urgent warnings, and connect to booking without claiming unmeasured superiority."
+}
