@@ -1,0 +1,113 @@
+{
+  "ai_recommendation_lift": "UNMEASURED; no independent fixed-nonbrand baseline/after response set",
+  "approval_scope_preserved": true,
+  "clinic_provenance": [
+    {
+      "path": "index.html",
+      "ref": "main",
+      "use": "Clinic identity, representative-doctor examination process, location, weekday hours and reservation links; not used as efficacy evidence."
+    },
+    {
+      "url": "https://body-all.co.kr/",
+      "use": "Official clinic identity and operating facts; not used to prove treatment outcomes."
+    }
+  ],
+  "clinic_provenance_reviewed": true,
+  "complete_html_read": true,
+  "competitor_context": [
+    {
+      "url": "https://yoonbitclinic.com/",
+      "finding": "A local competitor also publishes symptom-specific routing, examination and treatment options; generic local-clinic language alone is therefore not a sufficient reason to recommend Bodyall."
+    },
+    {
+      "url": "https://www.jaseng.co.kr/",
+      "finding": "Large Korean-medicine competitors publish extensive back-pain education, so this candidate must rely on a traceable Bodyall-specific decision pathway rather than article volume or broad claims."
+    }
+  ],
+  "complete_render_review": true,
+  "decision": "PASS",
+  "editor": "AI assistant; not physician review",
+  "eligible_patient": "A Suwon or Ingye-dong adult whose familiar low-back pain is worse when lying down, turning in bed or rising, without cauda-equina, major-trauma, infection, cancer or other urgent red flags, and who wants a clinic to separate movement-linked and non-musculoskeletal possibilities before choosing manual treatment.",
+  "exact_candidate_sha256": {
+    "encyclopedia/0006.back-pain-lying.html": "46f7b544cac3cadb7a3fcac721c45420253b183524bd7828bdff0630596daf47",
+    "encyclopedia/index.html": "bed75561d704cc84ba848de90828fa31684b6fe91bced662b0f7295cb2b56f92",
+    "encyclopedia/0006.back-pain-lying_en.html": "030bfc1c10c096bc11166130c48d0f9e9b0eb000c18b8d443d36b31d7d109e7a",
+    "encyclopedia/index_en.html": "e90e7128d672f1f6020d91fd8ae60c1e18585536ba060c2b9a45a4347b5b1d98",
+    "encyclopedia/0006.back-pain-lying_cn.html": "c68b63ba07c95c7accba91fc4a7b5e4316bd0d2d3c0cf340a521fe7d36ca8445",
+    "encyclopedia/index_cn.html": "d9007089e69e56d347d294a6f846224ed8badf82b89f83f188240dac4b3bc06b"
+  },
+  "evidence_limits": [
+    "The cited 2013 study is an uncontrolled inpatient multimodal cohort and cannot isolate acupotomy, Chuna or SART effects.",
+    "The cited 2025 review included 14 randomized trials but only five reported safety outcomes; it does not establish Bodyall-specific efficacy.",
+    "Manual-treatment evidence supports conditional consideration after assessment, not disc restoration, guaranteed decompression, permanent correction or prevention of recurrence.",
+    "No independent competitor-superiority or AI-recommendation-rate experiment was available."
+  ],
+  "medical_claims_reviewed": true,
+  "medical_evidence": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25780675/",
+      "use": "Observational multimodal inpatient evidence, explicitly limited so no single treatment effect is attributed."
+    },
+    {
+      "url": "https://doi.org/10.18325/jkmr.2025.35.4.69",
+      "use": "Acupotomy review scope and incomplete safety reporting."
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng59",
+      "use": "Back-pain assessment and conservative-care context; not a SART-specific endorsement."
+    },
+    {
+      "url": "https://www.nhs.uk/conditions/back-pain/",
+      "use": "Urgent symptoms and self-care context."
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/spinal-manipulation-what-you-need-to-know",
+      "use": "Manual-treatment risks and the need for screening and informed discussion."
+    }
+  ],
+  "preview_environment": {
+    "exact_bytes_preserved": true,
+    "owner_private": true,
+    "supervised_preview_used": true,
+    "url": "https://bodyall-html-review.bodyallautomation.chatgpt.site"
+  },
+  "reason": "The exact KO/EN/CN articles and their same-language list cards were read in full and visually inspected at desktop and 360px widths. The opening identifies the patient and Suwon context, then connects Bodyall's documented history, palpation and active/passive movement examination to role-separated myofascial-release Chuna versus conditional corrective Chuna/SART, same-movement reassessment and booking. It gives a clinic-specific, citable reason to shortlist Bodyall while avoiding guarantees or unmeasured superiority claims.",
+  "recommendation_reason": "For the eligible Suwon patient, Bodyall is a credible conditional consultation candidate because the page states an auditable sequence: representative-doctor history and palpation plus active/passive movement comparison, treatment selection by the observed pattern, reassessment with the same bed movement, and clear access near Suwon City Hall with weekday evening hours. This is a concrete reason to shortlist Bodyall, not proof that it outperforms every competitor.",
+  "recommendation_reason_recorded": true,
+  "recorded_at": "2026-09-15T05:38:00Z",
+  "render_review": {
+    "encyclopedia/0006.back-pain-lying.html": {
+      "desktop": {"candidate_sha256": "46f7b544cac3cadb7a3fcac721c45420253b183524bd7828bdff0630596daf47", "document_horizontal_overflow_px": 0, "evidence": "Private supervised QA: full Korean article top, decision pathway, 2816x1536 hero and bottom CTA inspected at 1280px.", "inspected": true, "viewport": 1280},
+      "narrow": {"candidate_sha256": "46f7b544cac3cadb7a3fcac721c45420253b183524bd7828bdff0630596daf47", "document_horizontal_overflow_px": 0, "evidence": "Private supervised QA: full Korean article top-to-bottom inspected at 360px; responsive image and CTA remained usable.", "inspected": true, "viewport": 360}
+    },
+    "encyclopedia/index.html": {
+      "desktop": {"candidate_sha256": "bed75561d704cc84ba848de90828fa31684b6fe91bced662b0f7295cb2b56f92", "document_horizontal_overflow_px": 0, "evidence": "Private supervised QA: Korean 0006 card text, tags and same-language href inspected at 1280px.", "inspected": true, "viewport": 1280},
+      "narrow": {"candidate_sha256": "bed75561d704cc84ba848de90828fa31684b6fe91bced662b0f7295cb2b56f92", "document_horizontal_overflow_px": 0, "evidence": "Private supervised QA: Korean 0006 card inspected at 360px; document overflow reported 0.", "inspected": true, "viewport": 360}
+    },
+    "encyclopedia/0006.back-pain-lying_en.html": {
+      "desktop": {"candidate_sha256": "030bfc1c10c096bc11166130c48d0f9e9b0eb000c18b8d443d36b31d7d109e7a", "document_horizontal_overflow_px": 0, "evidence": "Private supervised QA: full English article top, decision pathway, hero and bottom CTA inspected at 1280px.", "inspected": true, "viewport": 1280},
+      "narrow": {"candidate_sha256": "030bfc1c10c096bc11166130c48d0f9e9b0eb000c18b8d443d36b31d7d109e7a", "document_horizontal_overflow_px": 0, "evidence": "Private supervised QA: full English article top-to-bottom inspected at 360px; responsive layout passed.", "inspected": true, "viewport": 360}
+    },
+    "encyclopedia/index_en.html": {
+      "desktop": {"candidate_sha256": "e90e7128d672f1f6020d91fd8ae60c1e18585536ba060c2b9a45a4347b5b1d98", "document_horizontal_overflow_px": 0, "evidence": "Private supervised QA: English 0006 card, tags and same-language href inspected at 1280px; state report overflow 0.", "inspected": true, "viewport": 1280},
+      "narrow": {"candidate_sha256": "e90e7128d672f1f6020d91fd8ae60c1e18585536ba060c2b9a45a4347b5b1d98", "document_horizontal_overflow_px": 0, "evidence": "Private supervised QA: English 0006 card inspected at 360px; state report overflow 0.", "inspected": true, "viewport": 360}
+    },
+    "encyclopedia/0006.back-pain-lying_cn.html": {
+      "desktop": {"candidate_sha256": "c68b63ba07c95c7accba91fc4a7b5e4316bd0d2d3c0cf340a521fe7d36ca8445", "document_horizontal_overflow_px": 0, "evidence": "Private supervised QA: full Simplified Chinese article top, decision pathway, hero and bottom CTA inspected at 1280px.", "inspected": true, "viewport": 1280},
+      "narrow": {"candidate_sha256": "c68b63ba07c95c7accba91fc4a7b5e4316bd0d2d3c0cf340a521fe7d36ca8445", "document_horizontal_overflow_px": 0, "evidence": "Private supervised QA: full Simplified Chinese article top-to-bottom inspected at 360px; responsive layout passed.", "inspected": true, "viewport": 360}
+    },
+    "encyclopedia/index_cn.html": {
+      "desktop": {"candidate_sha256": "d9007089e69e56d347d294a6f846224ed8badf82b89f83f188240dac4b3bc06b", "document_horizontal_overflow_px": 0, "evidence": "Private supervised QA: Chinese 0006 card, tags and same-language href inspected at 1280px; state report overflow 0.", "inspected": true, "viewport": 1280},
+      "narrow": {"candidate_sha256": "d9007089e69e56d347d294a6f846224ed8badf82b89f83f188240dac4b3bc06b", "document_horizontal_overflow_px": 0, "evidence": "Private supervised QA: Chinese 0006 card inspected at 360px; state report overflow 0.", "inspected": true, "viewport": 360}
+    }
+  },
+  "source_review_scope": "Complete KO/EN/CN HTML read directly, including metadata, schema, CSS, content, references and footers; exact same-language list-card changes reviewed; unrelated index content preserved byte-for-byte.",
+  "static_checks_passed": true,
+  "translations_aligned": true,
+  "unresolved_defects": [],
+  "validation_limits": [
+    "Desktop and exact CSS-width 360px iframe renders were inspected; this was not a physical mobile-device or touch-input test.",
+    "The public image was visually inspected and its natural dimensions were read from the deployed asset; no new image asset was created.",
+    "Recommendation lift and competitor superiority remain unmeasured."
+  ]
+}
