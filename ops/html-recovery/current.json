@@ -2231,7 +2231,7 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T11:27:47.408Z",
+  "updated_at": "2026-09-15T11:30:47.053Z",
   "version": "V237_PRIORITY_FIVE_HUBS_ALL_MEDICAL_INDICES",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
@@ -2260,7 +2260,19 @@
     "operating_fact_record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
-  "active_run": null,
+  "active_run": {
+    "owner": "cervical-priority-20260915",
+    "topic": "cervical-disc KO/EN/CN",
+    "stage": "CANDIDATE_PREPARATION",
+    "claimed_at": "2026-09-15T11:30:47.053Z",
+    "baseline_main": "1a8376901a69f5327a1153ec97f3a189db128a45",
+    "baseline_ledger": "8b0c86619a7ad60edb52869ed2c47fa4adcb0cad",
+    "paths": [
+      "cervical-disc.html",
+      "cervical-disc_en.html",
+      "cervical-disc_cn.html"
+    ]
+  },
   "pending_run": {
     "topic": "cervical-disc KO/EN/CN",
     "paths": [
