@@ -99,7 +99,9 @@
     "shoulder-frozen_en.html",
     "traffic-accident.html",
     "traffic-accident_cn.html",
-    "traffic-accident_en.html"
+    "traffic-accident_en.html",
+    "BodyallFit/encyclopedia/index_en.html",
+    "BodyallFit/encyclopedia/index_cn.html"
   ],
   "completion_rows": [
     {
@@ -452,41 +454,104 @@
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
-      "git_blob": "6562e86687a6ab63484b9948c80def1846903411",
-      "latest_standard_completed": false,
       "path": "BodyallFit/encyclopedia/index_cn.html",
-      "publication_commit": "650ead92622504965e91974e3f8e87dae655d809",
-      "reason": "0001 card now states the GLP-1 patient-facing BodyallFit choice reason. Whole hub is not counted by this article release.",
-      "sha256": "91c8c6157ecbdfc7b1bbb01a56f1c68f745f7934dbf0d4d9d376cb6562d4a6ab",
-      "status": "SAME_LANGUAGE_CARD_UPDATED_HUB_NOT_YET_COUNTED"
-    },
-    {
-      "git_blob": "fac525d428f477da12475676477611ccf203cb52",
-      "latest_standard_completed": false,
-      "path": "BodyallFit/encyclopedia/index_en.html",
-      "publication_commit": "2ebbe3ff75aa58f5bfa55759401ae196c86ad341",
-      "reason": "0001 card now states the GLP-1 patient-facing BodyallFit choice reason. Whole hub is not counted by this article release.",
-      "sha256": "6dff7673f2b05ee75517b495c560e511829d22afd9660e79aab6657c097423d7",
-      "status": "SAME_LANGUAGE_CARD_UPDATED_HUB_NOT_YET_COUNTED"
-    },
-    {
-      "current_public_dom_rechecked": true,
-      "git_blob": "38889ef80ef7be07d5cd4520a72f63ae91189688",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index_cn.html",
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
       "latest_standard_completed": true,
-      "limits": [
-        "The 0001 card was updated and the public hub was rechecked for the card, canonical, robots, images and desktop overflow.",
-        "Hub acceptance does not approve its linked articles."
+      "strengthened_20260915_completed": true,
+      "sha256": "56cedb9e3180462d8c99b1bf64e91bd41a2a9add9d4143b62e6e3ee710d73783",
+      "git_blob": "06017bff17f3c80059c64292dd018d472258ac97",
+      "publication_commit": "9413a6ef4c71c78909d80a801105141c9f067475",
+      "final_repository_head": "9413a6ef4c71c78909d80a801105141c9f067475",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit-encyclopedia-priority-final.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit-encyclopedia-priority-release.json",
+      "previous_versions": [
+        {
+          "git_blob": "6562e86687a6ab63484b9948c80def1846903411",
+          "latest_standard_completed": false,
+          "path": "BodyallFit/encyclopedia/index_cn.html",
+          "publication_commit": "650ead92622504965e91974e3f8e87dae655d809",
+          "reason": "0001 card now states the GLP-1 patient-facing BodyallFit choice reason. Whole hub is not counted by this article release.",
+          "sha256": "91c8c6157ecbdfc7b1bbb01a56f1c68f745f7934dbf0d4d9d376cb6562d4a6ab",
+          "status": "SAME_LANGUAGE_CARD_UPDATED_HUB_NOT_YET_COUNTED"
+        }
       ],
+      "limits": [
+        "Exact candidate SHA256 and Git blob were recorded; main readback exactly matched the reviewed candidate bytes.",
+        "Public DOM content, title/H1/language, one canonical, four hreflang links, FAQ, JSON-LD presence, both images and 1348px/360px no-overflow rendering passed. Raw public HTTP byte equality was not measured.",
+        "Operational process is a selection reason, not proof of individual weight-loss outcomes or superiority over another clinic.",
+        "No new physician or native-language review attestation was added; actual AI recommendation lift remains unmeasured."
+      ]
+    },
+    {
+      "path": "BodyallFit/encyclopedia/index_en.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index_en.html",
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "strengthened_20260915_completed": true,
+      "sha256": "3e1eb365960fa675e9a3190f5832a93e16725524a3486fe22461f52dd2ef6464",
+      "git_blob": "8bececae2c345abdd38b4a53bc8758a70f7fcf8e",
+      "publication_commit": "e6a2a7d00a958eda8988589c44d4ec1d0fd0fdd4",
+      "final_repository_head": "9413a6ef4c71c78909d80a801105141c9f067475",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit-encyclopedia-priority-final.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit-encyclopedia-priority-release.json",
+      "previous_versions": [
+        {
+          "git_blob": "fac525d428f477da12475676477611ccf203cb52",
+          "latest_standard_completed": false,
+          "path": "BodyallFit/encyclopedia/index_en.html",
+          "publication_commit": "2ebbe3ff75aa58f5bfa55759401ae196c86ad341",
+          "reason": "0001 card now states the GLP-1 patient-facing BodyallFit choice reason. Whole hub is not counted by this article release.",
+          "sha256": "6dff7673f2b05ee75517b495c560e511829d22afd9660e79aab6657c097423d7",
+          "status": "SAME_LANGUAGE_CARD_UPDATED_HUB_NOT_YET_COUNTED"
+        }
+      ],
+      "limits": [
+        "Exact candidate SHA256 and Git blob were recorded; main readback exactly matched the reviewed candidate bytes.",
+        "Public DOM content, title/H1/language, one canonical, four hreflang links, FAQ, JSON-LD presence, both images and 1348px/360px no-overflow rendering passed. Raw public HTTP byte equality was not measured.",
+        "Operational process is a selection reason, not proof of individual weight-loss outcomes or superiority over another clinic.",
+        "No new physician or native-language review attestation was added; actual AI recommendation lift remains unmeasured."
+      ]
+    },
+    {
       "path": "BodyallFit/encyclopedia/index.html",
-      "prior_public_verified_at": "2026-09-13T05:36:32.001500+00:00",
-      "public_url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index.html",
-      "publication_commit": "a757d35230e4ff35b0c304018945892fc0782f38",
-      "review_receipt": "run_hub_ko_choice_cleanup/run_receipt.json",
-      "sha256": "3087f0e64756a5df9710455e423e4657aacfbdad6b1791da8a0268b8873775ba",
-      "source_and_public_receipt_exact_match": true,
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
       "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index.html",
-      "verification_receipt": "run_glp1_0001_final/public_verification.json"
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "strengthened_20260915_completed": true,
+      "sha256": "b88cf3414304fcdbb2d58d0881d2c63afde0e641443a3689aa72c8d1d329ef4b",
+      "git_blob": "35fa20d7cad2ba7e9e9cd541026641fc95915d62",
+      "publication_commit": "c2ff204c44d3a3ef69b17954654449bcca0b7a69",
+      "final_repository_head": "9413a6ef4c71c78909d80a801105141c9f067475",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit-encyclopedia-priority-final.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit-encyclopedia-priority-release.json",
+      "previous_versions": [
+        {
+          "current_public_dom_rechecked": true,
+          "git_blob": "38889ef80ef7be07d5cd4520a72f63ae91189688",
+          "latest_standard_completed": true,
+          "limits": [
+            "The 0001 card was updated and the public hub was rechecked for the card, canonical, robots, images and desktop overflow.",
+            "Hub acceptance does not approve its linked articles."
+          ],
+          "path": "BodyallFit/encyclopedia/index.html",
+          "prior_public_verified_at": "2026-09-13T05:36:32.001500+00:00",
+          "public_url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index.html",
+          "publication_commit": "a757d35230e4ff35b0c304018945892fc0782f38",
+          "review_receipt": "run_hub_ko_choice_cleanup/run_receipt.json",
+          "sha256": "3087f0e64756a5df9710455e423e4657aacfbdad6b1791da8a0268b8873775ba",
+          "source_and_public_receipt_exact_match": true,
+          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+          "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index.html",
+          "verification_receipt": "run_glp1_0001_final/public_verification.json"
+        }
+      ],
+      "limits": [
+        "Exact candidate SHA256 and Git blob were recorded; main readback exactly matched the reviewed candidate bytes.",
+        "Public DOM content, title/H1/language, one canonical, four hreflang links, FAQ, JSON-LD presence, both images and 1348px/360px no-overflow rendering passed. Raw public HTTP byte equality was not measured.",
+        "Operational process is a selection reason, not proof of individual weight-loss outcomes or superiority over another clinic.",
+        "No new physician or native-language review attestation was added; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "final_repository_head": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
@@ -2434,18 +2499,18 @@
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
-    "latest_standard_not_confirmed_or_remaining": 56,
-    "latest_standard_published_confirmed": 100,
-    "new_publications_this_turn": 0,
-    "revised_publications_this_turn": 0,
+    "latest_standard_not_confirmed_or_remaining": 54,
+    "latest_standard_published_confirmed": 102,
+    "new_publications_this_turn": 2,
+    "revised_publications_this_turn": 1,
     "total_scope": 156,
-    "existing_rework_verified_under_20260915_request": 12,
-    "historically_accepted_not_yet_reworked_under_20260915_request": 73,
-    "phase1_strengthened_completed": 15,
-    "phase1_strengthened_remaining": 56,
+    "existing_rework_verified_under_20260915_request": 13,
+    "historically_accepted_not_yet_reworked_under_20260915_request": 72,
+    "phase1_strengthened_completed": 17,
+    "phase1_strengthened_remaining": 54,
     "priority_strengthened_total": 35,
-    "priority_strengthened_completed": 21,
-    "priority_strengthened_remaining": 14,
+    "priority_strengthened_completed": 24,
+    "priority_strengthened_remaining": 11,
     "additional_index_total": 8,
     "additional_index_completed": 0
   },
@@ -2469,36 +2534,38 @@
     "exact_readback": true
   },
   "latest_release": {
-    "topic": "encyclopedia index strengthened priority",
+    "topic": "BodyallFit encyclopedia index strengthened priority",
     "changed_files": [
-      "encyclopedia/index.html",
-      "encyclopedia/index_en.html",
-      "encyclopedia/index_cn.html"
+      "BodyallFit/encyclopedia/index.html",
+      "BodyallFit/encyclopedia/index_en.html",
+      "BodyallFit/encyclopedia/index_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "encyclopedia/index.html",
-      "encyclopedia/index_en.html",
-      "encyclopedia/index_cn.html"
+      "BodyallFit/encyclopedia/index_en.html",
+      "BodyallFit/encyclopedia/index_cn.html"
     ],
-    "reworked_existing_urls": [],
-    "base_commit": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
-    "final_commit": "745d20efdf79a1118ab402a01cd91a151e226b04",
+    "reworked_existing_urls": [
+      "BodyallFit/encyclopedia/index.html"
+    ],
+    "base_commit": "745d20efdf79a1118ab402a01cd91a151e226b04",
+    "final_commit": "9413a6ef4c71c78909d80a801105141c9f067475",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-encyclopedia-index-priority-release.json",
-    "review": "ops/html-recovery/reviews/20260916-encyclopedia-index-priority-final.json"
+    "receipt": "ops/html-recovery/runs/20260916-bodyallfit-encyclopedia-priority-release.json",
+    "review": "ops/html-recovery/reviews/20260916-bodyallfit-encyclopedia-priority-final.json"
   },
   "latest_validation": {
-    "status": "HOLD",
-    "record": "ops/html-recovery/reviews/20260916-bodyallfit-encyclopedia-priority-hold.json",
-    "record_blob": "f1b75f1de02eb5c9ce8ece4b0f461ab08928c3f6",
+    "status": "PASS",
+    "record": "ops/html-recovery/reviews/20260916-bodyallfit-encyclopedia-priority-final.json",
+    "record_blob": "69d2de5306606b5f0e2a5553c2bbf14ab4971c16",
     "candidate_static_content_schema_pass": true,
     "candidate_exact_readback": true,
-    "predeployment_render_pass": false,
-    "public_verification": false,
-    "note": "Counts unchanged. No main deployment was attempted."
+    "predeployment_render_pass": true,
+    "public_verification": true,
+    "public_release_record": "ops/html-recovery/runs/20260916-bodyallfit-encyclopedia-priority-release.json",
+    "note": "Repository exact readback and public content/schema/image/1348px/360px gates passed for all three languages."
   },
-  "next": "Resume the same BodyallFit/encyclopedia/index KO→EN→CN priority group. Fresh-read current.json, main and target blobs; render exact stored candidates at 1280px and 360px, re-read the exact bytes, then sequentially deploy with optimistic blob locking, public SHA/image/schema/viewport verification and ledger update. Do not advance to Herbmed index until this group is complete.",
-  "next_priority": "PRIORITY HOLD: BodyallFit/encyclopedia/index.html→BodyallFit/encyclopedia/index_en.html→BodyallFit/encyclopedia/index_cn.html. Exact candidates are stored on recovery; mandatory pre-deployment exact desktop/360px render review remains. Do not publish or count until that review and all public gates pass.",
+  "next": "Process Herbmed/encyclopedia/index KO→EN→CN as the next priority group. Fresh-read current.json, main and target blobs; prepare minimal evidence-aligned strengthening, review full HTML and 1348px/360px renders, then deploy sequentially and publicly verify before ledger counting.",
+  "next_priority": "PRIORITY: Herbmed/encyclopedia/index.html→Herbmed/encyclopedia/index_en.html→Herbmed/encyclopedia/index_cn.html. Fresh-read ledger/main/blobs and complete full content, exact responsive render, sequential deployment and public verification before counting.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2506,9 +2573,9 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "745d20efdf79a1118ab402a01cd91a151e226b04",
+  "public_commit": "9413a6ef4c71c78909d80a801105141c9f067475",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "BodyallFit 백과 인덱스 KO/EN/CN 강화 후보의 전체 내용·스키마·번역 정렬을 검수하고 exact 후보와 HOLD 기록을 복구 브랜치에 저장했습니다. 비공개 검수실이 새 로그인을 요구해 배포 전 1280px/360px 후보 화면 검수가 완료되지 않았으므로 main 배포와 완료 집계는 하지 않았습니다. 100/156, 잔여56, 우선21/35, 추가 index0/8이며 실제 AI 추천률 증가는 미측정입니다.",
+  "report_ko": "BodyallFit 백과 인덱스 KO/EN/CN 강화본을 전체 내용·스키마·이미지와 1348px/360px 화면에서 직접 검수한 뒤 순차 배포·공개 검증했습니다. 기존 집계 미완료였던 EN/CN 2개를 추가해 102/156, 잔여54이며, 기존 완료 KO는 강화 재작업으로 별도 반영했습니다. 우선 목록은 24/35, 추가 index는 0/8입니다. 다음은 Herbmed 백과 인덱스 3개 언어이며 실제 AI 추천률 증가는 미측정입니다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2526,8 +2593,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T19:44:00Z",
-  "version": "V251_BODYALLFIT_ENCYCLOPEDIA_PRIORITY_CANDIDATES_EXACT_STORED_RENDER_HOLD",
+  "updated_at": "2026-09-15T20:42:00Z",
+  "version": "V252_BODYALLFIT_ENCYCLOPEDIA_PRIORITY_PUBLISHED_PUBLIC_VERIFIED",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2556,67 +2623,35 @@
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
   "active_run": {
-    "owner": "bodyallfit-encyclopedia-priority-render-hold-20260916",
+    "owner": "bodyallfit-encyclopedia-priority-release-20260916",
     "started_at": "2026-09-15T19:18:58Z",
+    "completed_at": "2026-09-15T20:42:00Z",
     "base_main_head": "745d20efdf79a1118ab402a01cd91a151e226b04",
+    "final_main_head": "9413a6ef4c71c78909d80a801105141c9f067475",
     "source_blobs": {
       "BodyallFit/encyclopedia/index.html": "38889ef80ef7be07d5cd4520a72f63ae91189688",
       "BodyallFit/encyclopedia/index_en.html": "fac525d428f477da12475676477611ccf203cb52",
       "BodyallFit/encyclopedia/index_cn.html": "6562e86687a6ab63484b9948c80def1846903411"
     },
     "exact_candidate_hashes": {
-      "BodyallFit/encyclopedia/index.html": "5ab6318cefd0b9c0c5205ff1ded2a4aa5765dca62917f51aca414a70cb271fbf",
-      "BodyallFit/encyclopedia/index_en.html": "a2c2ff83acef5f9f351563518fee4c40dd28e7853bd63d75ca01dd809ce66d3e",
-      "BodyallFit/encyclopedia/index_cn.html": "bca57935a6a17b1d2409b7c3668bc8333ce951c52bfb6428527f52b90b253635"
-    },
-    "candidate_paths": {
-      "BodyallFit/encyclopedia/index.html": "ops/html-recovery/candidates/20260916-bodyallfit-encyclopedia/index.html",
-      "BodyallFit/encyclopedia/index_en.html": "ops/html-recovery/candidates/20260916-bodyallfit-encyclopedia/index_en.html",
-      "BodyallFit/encyclopedia/index_cn.html": "ops/html-recovery/candidates/20260916-bodyallfit-encyclopedia/index_cn.html"
+      "BodyallFit/encyclopedia/index.html": "b88cf3414304fcdbb2d58d0881d2c63afde0e641443a3689aa72c8d1d329ef4b",
+      "BodyallFit/encyclopedia/index_en.html": "3e1eb365960fa675e9a3190f5832a93e16725524a3486fe22461f52dd2ef6464",
+      "BodyallFit/encyclopedia/index_cn.html": "56cedb9e3180462d8c99b1bf64e91bd41a2a9add9d4143b62e6e3ee710d73783"
     },
     "candidate_blobs": {
-      "BodyallFit/encyclopedia/index.html": "a5a93d6278816f5a246c22882dbbf44f1a2756ba",
-      "BodyallFit/encyclopedia/index_en.html": "92692d266eee196eee18bdc7027f4d462f98288d",
-      "BodyallFit/encyclopedia/index_cn.html": "87a04cbf7e1de08c3371bbc63c53206e819384c2"
+      "BodyallFit/encyclopedia/index.html": "35fa20d7cad2ba7e9e9cd541026641fc95915d62",
+      "BodyallFit/encyclopedia/index_en.html": "8bececae2c345abdd38b4a53bc8758a70f7fcf8e",
+      "BodyallFit/encyclopedia/index_cn.html": "06017bff17f3c80059c64292dd018d472258ac97"
     },
-    "stage": "STATIC_CONTENT_SCHEMA_PASS_EXACT_CANDIDATES_STORED_PREDEPLOY_RENDER_HOLD",
+    "stage": "PUBLISHED_PUBLIC_VERIFIED",
     "single_writer_active": false,
-    "required_next": "Authenticate to the approved private review site in an interactive run, render the exact stored KO/EN/CN candidates at desktop and 360px, fix and re-review if needed, then fresh-check main/target blobs and deploy sequentially.",
-    "hold_reason": "The private candidate review site requires a new interactive ChatGPT sign-in, unavailable in this noninteractive run. Mandatory pre-deployment render review cannot be waived.",
-    "review_record": "ops/html-recovery/reviews/20260916-bodyallfit-encyclopedia-priority-hold.json",
-    "review_record_blob": "f1b75f1de02eb5c9ce8ece4b0f461ab08928c3f6"
+    "review_record": "ops/html-recovery/reviews/20260916-bodyallfit-encyclopedia-priority-final.json",
+    "review_record_blob": "69d2de5306606b5f0e2a5553c2bbf14ab4971c16",
+    "release_record": "ops/html-recovery/runs/20260916-bodyallfit-encyclopedia-priority-release.json",
+    "release_record_blob": "663032f2f00f71403bd2f897a31a99eb48bf3d63",
+    "required_next": "Fresh-read current.json, main and Herbmed encyclopedia index KO/EN/CN target blobs; continue the next priority group with full content, exact render, sequential deployment and public verification."
   },
-  "pending_run": {
-    "owner": "bodyallfit-encyclopedia-priority-render-hold-20260916",
-    "started_at": "2026-09-15T19:18:58Z",
-    "base_main_head": "745d20efdf79a1118ab402a01cd91a151e226b04",
-    "source_blobs": {
-      "BodyallFit/encyclopedia/index.html": "38889ef80ef7be07d5cd4520a72f63ae91189688",
-      "BodyallFit/encyclopedia/index_en.html": "fac525d428f477da12475676477611ccf203cb52",
-      "BodyallFit/encyclopedia/index_cn.html": "6562e86687a6ab63484b9948c80def1846903411"
-    },
-    "exact_candidate_hashes": {
-      "BodyallFit/encyclopedia/index.html": "5ab6318cefd0b9c0c5205ff1ded2a4aa5765dca62917f51aca414a70cb271fbf",
-      "BodyallFit/encyclopedia/index_en.html": "a2c2ff83acef5f9f351563518fee4c40dd28e7853bd63d75ca01dd809ce66d3e",
-      "BodyallFit/encyclopedia/index_cn.html": "bca57935a6a17b1d2409b7c3668bc8333ce951c52bfb6428527f52b90b253635"
-    },
-    "candidate_paths": {
-      "BodyallFit/encyclopedia/index.html": "ops/html-recovery/candidates/20260916-bodyallfit-encyclopedia/index.html",
-      "BodyallFit/encyclopedia/index_en.html": "ops/html-recovery/candidates/20260916-bodyallfit-encyclopedia/index_en.html",
-      "BodyallFit/encyclopedia/index_cn.html": "ops/html-recovery/candidates/20260916-bodyallfit-encyclopedia/index_cn.html"
-    },
-    "candidate_blobs": {
-      "BodyallFit/encyclopedia/index.html": "a5a93d6278816f5a246c22882dbbf44f1a2756ba",
-      "BodyallFit/encyclopedia/index_en.html": "92692d266eee196eee18bdc7027f4d462f98288d",
-      "BodyallFit/encyclopedia/index_cn.html": "87a04cbf7e1de08c3371bbc63c53206e819384c2"
-    },
-    "stage": "STATIC_CONTENT_SCHEMA_PASS_EXACT_CANDIDATES_STORED_PREDEPLOY_RENDER_HOLD",
-    "single_writer_active": false,
-    "required_next": "Authenticate to the approved private review site in an interactive run, render the exact stored KO/EN/CN candidates at desktop and 360px, fix and re-review if needed, then fresh-check main/target blobs and deploy sequentially.",
-    "hold_reason": "The private candidate review site requires a new interactive ChatGPT sign-in, unavailable in this noninteractive run. Mandatory pre-deployment render review cannot be waived.",
-    "review_record": "ops/html-recovery/reviews/20260916-bodyallfit-encyclopedia-priority-hold.json",
-    "review_record_blob": "f1b75f1de02eb5c9ce8ece4b0f461ab08928c3f6"
-  },
+  "pending_run": null,
   "previous_public_validation": {
     "checks": [
       {
@@ -3072,7 +3107,8 @@
     "lumbar-disc_cn.html",
     "shoulder-frozen.html",
     "shoulder-frozen_en.html",
-    "shoulder-frozen_cn.html"
+    "shoulder-frozen_cn.html",
+    "BodyallFit/encyclopedia/index.html"
   ],
   "previous_work_order": {
     "next_priority": "Rework already published lumbar-disc.html KO→EN→CN first, then the remaining rework_queue. Freshly read this ledger, main head and target blobs; compare actual competitor service descriptions, strengthen source-supported Bodyall-specific patient-selection reasons, inspect exact full HTML and desktop/narrow renders, then sequentially deploy/readback/public-verify and checkpoint. Historical 85/156 publication count is not proof that all 85 satisfy the new comparative editorial review. Resume legacy uncompleted URLs after the existing-publication rework queue unless the owner changes priority.",
@@ -3208,8 +3244,6 @@
       "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
       "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
       "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
-      "BodyallFit/encyclopedia/index_en.html",
-      "BodyallFit/encyclopedia/index_cn.html",
       "Herbmed/encyclopedia/index.html",
       "Herbmed/encyclopedia/index_en.html",
       "Herbmed/encyclopedia/index_cn.html",
@@ -3241,7 +3275,9 @@
       "index_cn.html",
       "encyclopedia/index.html",
       "encyclopedia/index_en.html",
-      "encyclopedia/index_cn.html"
+      "encyclopedia/index_cn.html",
+      "BodyallFit/encyclopedia/index_en.html",
+      "BodyallFit/encyclopedia/index_cn.html"
     ],
     "phase2_initial_paths": [
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -3342,7 +3378,8 @@
       "lumbar-disc_cn.html",
       "shoulder-frozen.html",
       "shoulder-frozen_en.html",
-      "shoulder-frozen_cn.html"
+      "shoulder-frozen_cn.html",
+      "BodyallFit/encyclopedia/index.html"
     ],
     "phase2_pending_paths": [
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -3357,7 +3394,6 @@
       "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention.html",
       "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_cn.html",
       "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_en.html",
-      "BodyallFit/encyclopedia/index.html",
       "acupotomy.html",
       "acupotomy_cn.html",
       "acupotomy_en.html",
@@ -3561,9 +3597,6 @@
       "spine/index.html"
     ],
     "priority_pending_paths": [
-      "BodyallFit/encyclopedia/index.html",
-      "BodyallFit/encyclopedia/index_en.html",
-      "BodyallFit/encyclopedia/index_cn.html",
       "Herbmed/encyclopedia/index.html",
       "Herbmed/encyclopedia/index_en.html",
       "Herbmed/encyclopedia/index_cn.html",
@@ -3597,7 +3630,10 @@
       "index_cn.html",
       "encyclopedia/index.html",
       "encyclopedia/index_en.html",
-      "encyclopedia/index_cn.html"
+      "encyclopedia/index_cn.html",
+      "BodyallFit/encyclopedia/index.html",
+      "BodyallFit/encyclopedia/index_en.html",
+      "BodyallFit/encyclopedia/index_cn.html"
     ],
     "priority_original_scope_paths": [
       "cervical-disc.html",
@@ -3853,15 +3889,16 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "at": "2026-09-15T19:44:00Z",
-    "completed_this_run": 0,
+    "at": "2026-09-15T20:42:00Z",
+    "completed_this_run": 2,
+    "reworked_this_run": 1,
     "candidates_prepared": 3,
-    "public_completed": 100,
-    "remaining": 56,
-    "priority_completed": 21,
-    "priority_remaining": 14,
+    "public_completed": 102,
+    "remaining": 54,
+    "priority_completed": 24,
+    "priority_remaining": 11,
     "additional_index_completed": 0,
-    "result": "BodyallFit encyclopedia KO/EN/CN strengthened candidates passed full-text/static/schema checks and were exact-stored; held before deployment because mandatory exact responsive render review is incomplete.",
+    "result": "BodyallFit encyclopedia KO/EN/CN strengthened, directly reviewed, sequentially deployed and publicly verified.",
     "recommendation_measurement": "UNMEASURED"
   },
   "previous_release": {
