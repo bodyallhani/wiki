@@ -1849,7 +1849,7 @@
     "mobile_emulation_for_latest_release": "NOT_AVAILABLE_IN_SELECTED_PUBLIC_BROWSER",
     "new_articles_or_games": "OUT_OF_SCOPE",
     "recommendation_measurement": "UNMEASURED_CHANNEL_NOT_CONNECTED",
-    "current_candidate_preview": "PREDEPLOY_RENDER_HOLD; data URL preview policy denied; no bypass; permitted preview environment required."
+    "current_candidate_preview": "RESOLVED: approved owner-private QA site and supervised desktop/narrow exact-candidate renders."
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
@@ -1862,7 +1862,7 @@
   "filesystem_sync_status": "CURRENT_DRAFT_CHECKPOINT_EXACT_VERIFIED_ON_RECOVERY_BRANCH",
   "latest_debug": {
     "run": "run_0007_final",
-    "publication_status": "HOLD_NOT_DEPLOYED",
+    "publication_status": "GITHUB_WRITTEN_PAGES_PENDING",
     "confirmed_findings": [
       "Remove cervicogenic dizziness DOI 10.30581/jkcmm.2018.13.2.11 from headache efficacy argument.",
       "Remove blanket structural-misalignment causation, nerve decompression, C-curve restoration, medication-only dismissal and unsupported clinical-success note.",
@@ -1871,9 +1871,10 @@
       "Remove invalid MedicalProcedure.procedureType TherapeuticProcedure class-as-enum and unsupported medicalSpecialty values; remove unverified area sameAs links.",
       "No new reviewedBy/lastReviewed; earlier owner approval receipt is not extended."
     ],
-    "intervention_resolution": "PERMITTED_PREDEPLOYMENT_PREVIEW_ENVIRONMENT_REQUIRED",
-    "no_browser_policy_bypass": true,
-    "no_main_writes": true
+    "intervention_resolution": "PRIVATE_PREVIEW_PERMISSION_AND_HOSTING_COMPLETED",
+    "preview_card_language_bug": "FIXED_QA_WRAPPER_ONLY; candidate bytes unchanged",
+    "browser_capture_stale_paint": "Discarded ambiguous captures; separate action/capture call boundaries and matching DOM position used",
+    "no_browser_policy_bypass": true
   },
   "latest_local_run": "run_0007_final",
   "latest_recovery_persistence": {
@@ -1958,33 +1959,20 @@
   },
   "latest_validation": {
     "run": "run_0007_final",
-    "offline_status": "PASS_STATIC_CHECKS_ONLY",
-    "public_status": "NOT_ATTEMPTED_NOT_DEPLOYED",
+    "offline_status": "PASS",
+    "final_gate": "PASS_PREDEPLOY",
     "editorial_source_status": "COMPLETE_HTML_DIRECTLY_READ",
-    "final_gate": "HOLD",
-    "static_errors_found": 0,
-    "article_count": 3,
-    "card_count": 3,
-    "known_bad_changes_rejected": true,
-    "desktop_and_narrow_candidate_renders": "MISSING",
-    "image_and_link_live_checks": "PENDING",
-    "main_unchanged_confirmed": "e910dfa569e60cae67cc47012c69621b36e4a032",
+    "desktop_and_narrow_candidate_renders": "PERSONALLY_INSPECTED_1280_AND_360_CSS_PX",
+    "image_and_link_live_checks": "PASS_WITH_ONE_TRANSIENT_NAVER_RETRY",
+    "github_exact_readback": true,
+    "github_main": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+    "changed_paths_exactly_intended": true,
+    "public_status": "WAITING_FOR_PAGES_PROPAGATION",
+    "completion_counted": false,
     "recommendation_measurement": "UNMEASURED"
   },
-  "next": {
-    "order": [
-      "ko",
-      "en",
-      "cn"
-    ],
-    "path_group": [
-      "encyclopedia/0007.neck-headache.html",
-      "encyclopedia/0007.neck-headache_en.html",
-      "encyclopedia/0007.neck-headache_cn.html"
-    ],
-    "priority": "Resume the prepared encyclopedia/0007 neck-headache KO/EN/CN candidates from ops/html-recovery/runs/20260915-0007/checkpoint.json. Do not regenerate or advance to 0006: first obtain a permitted pre-deployment preview environment, re-read current.json/main/target blobs, verify candidate freshness, personally inspect exact desktop and narrow renders, finish live link/image checks, then apply the release gate before any main write. Until then HOLD; do not bypass browser policy."
-  },
-  "next_priority": "Resume the prepared encyclopedia/0007 neck-headache KO/EN/CN candidates from ops/html-recovery/runs/20260915-0007/checkpoint.json. Do not regenerate or advance to 0006: first obtain a permitted pre-deployment preview environment, re-read current.json/main/target blobs, verify candidate freshness, personally inspect exact desktop and narrow renders, finish live link/image checks, then apply the release gate before any main write. Until then HOLD; do not bypass browser policy.",
+  "next": "Finish Pages propagation/exact bytes/public schema-images-screen verification for already GitHub-deployed encyclopedia/0007 neck-headache KO/EN/CN at main 116de772ba8612ec45af7bdf72f0cbd8a4c47dc6. Pre-deploy complete-source and desktop/narrow editorial gate passed via approved private QA preview. Do not regenerate or rewrite these candidates; only after public verification count +3 and save ledger exact, then immediately continue encyclopedia/0006.back-pain-lying KO→EN→CN.",
+  "next_priority": "Finish Pages propagation/exact bytes/public schema-images-screen verification for already GitHub-deployed encyclopedia/0007 neck-headache KO/EN/CN at main 116de772ba8612ec45af7bdf72f0cbd8a4c47dc6. Pre-deploy complete-source and desktop/narrow editorial gate passed via approved private QA preview. Do not regenerate or rewrite these candidates; only after public verification count +3 and save ledger exact, then immediately continue encyclopedia/0006.back-pain-lying KO→EN→CN.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2012,8 +2000,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T03:14:18.185Z",
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V220",
+  "updated_at": "2026-09-15T03:52:28.242Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V221",
   "zip_receipt": {
     "bytes": 23819043,
     "contains_completion_ledger_blob": "09cdd833df8daa26e46ae32247e5bcfaa875027f",
@@ -2043,7 +2031,7 @@
   },
   "active_run": {
     "id": "run_0007_preview_20260915",
-    "stage": "AUTHORIZED_PRIVATE_PREVIEW_SETUP",
+    "stage": "GITHUB_EXACT_DEPLOYED_AWAITING_PAGES",
     "paths": [
       "encyclopedia/0007.neck-headache.html",
       "encyclopedia/0007.neck-headache_en.html",
@@ -2054,43 +2042,27 @@
     "lease_expires_at": "2026-09-15T04:44:18.185Z"
   },
   "pending_run": {
-    "id": "run_0007_final_20260915",
-    "stage": "HOLD_PREDEPLOY_RENDER",
-    "publication_status": "NOT_DEPLOYED",
-    "candidate_paths": [
+    "run": "run_0007_final",
+    "stage": "GITHUB_EXACT_DEPLOYED_AWAITING_PAGES",
+    "prepages_record": "ops/html-recovery/runs/20260915-0007/prepages-20260915T0352.json",
+    "prepages_blob": "1b09e811eec8af48f8c9499419703b5f799d290c",
+    "github_main": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+    "paths": [
       "encyclopedia/0007.neck-headache.html",
-      "encyclopedia/index.html",
       "encyclopedia/0007.neck-headache_en.html",
-      "encyclopedia/index_en.html",
       "encyclopedia/0007.neck-headache_cn.html",
+      "encyclopedia/index.html",
+      "encyclopedia/index_en.html",
       "encyclopedia/index_cn.html"
     ],
-    "candidate_sha256": {
+    "exact_candidate_sha256": {
       "encyclopedia/0007.neck-headache.html": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78",
       "encyclopedia/0007.neck-headache_cn.html": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d",
       "encyclopedia/0007.neck-headache_en.html": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa",
       "encyclopedia/index.html": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c",
       "encyclopedia/index_cn.html": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223",
       "encyclopedia/index_en.html": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411"
-    },
-    "base_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
-    "checkpoint_path": "ops/html-recovery/runs/20260915-0007/checkpoint.json",
-    "checkpoint_blob": "d26443529c715f2c7fc5aff6f6790e17af2bbbf8",
-    "checkpoint_exact_readback": true,
-    "source_review": "COMPLETE_HTML_DIRECTLY_READ_AND_TRANSLATIONS_ALIGNED",
-    "final_editorial_decision": "HOLD",
-    "static_errors_found": 0,
-    "release_gate_self_test": "PASS_ADVERSARIAL_MISSING_CHECK_AND_STALE_HASH_CASES",
-    "predeployment_render": "NOT_COMPLETED_DATA_URL_PREVIEW_DENIED_BY_BROWSER_SECURITY_POLICY",
-    "remaining_checks": [
-      "Pre-deployment complete candidate desktop and narrow render evidence missing: data-URL preview rejected by Cloud browser security policy. No bypass attempted.",
-      "Full live URL/resource and image-in-page validation remains pending.",
-      "Main GitHub write/readback, changed-path comparison and Pages public verification not performed because pre-deployment gate is HOLD."
-    ],
-    "main_writes": 0,
-    "completed_urls_added": 0,
-    "intervention_needed": "A permitted pre-deployment preview environment with desktop and narrow-screen inspection. No policy bypass or public-first review.",
-    "claim_released_at": "2026-09-15T03:02:47.918Z"
+    }
   },
   "previous_public_validation": {
     "article_checks": {
@@ -2168,8 +2140,11 @@
     "user_authorized": true,
     "authorization_scope": "Separate owner-private pre-deployment desktop/narrow preview environment",
     "site_project_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c",
-    "status": "CREATED_NOT_YET_DEPLOYED",
-    "local_checkout": "bodyall-qa-preview",
-    "candidate_bytes_preserved": true
+    "status": "OWNER_PRIVATE_DEPLOYED_AND_USED_FOR_EXACT_CANDIDATE_REVIEW",
+    "url": "https://bodyall-html-review.bodyallautomation.chatgpt.site",
+    "version_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c~appgver_355cc51282588191aa71db17c26258e2",
+    "source_commit": "5748d5f0e5b1104c11dd8b8b39aaf45d9389eb96",
+    "candidate_bytes_preserved": true,
+    "local_checkout": "bodyall-qa-preview"
   }
 }
