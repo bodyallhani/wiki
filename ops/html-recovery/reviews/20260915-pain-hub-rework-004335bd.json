@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-15",
+  "topic": "Previously published pain and spine hub: KO, EN, CN",
+  "base_main": "064bb1bfede82aa961896776f7d462719417f9fc",
+  "verdict": "PASS_FOR_PUBLICATION",
+  "verdict_scope": "Exact candidate content and rendering; not measured clinical superiority or AI recommendation performance.",
+  "reviewer_type": "AI editorial review; no new medical-director review attribution",
+  "target_patient": "Adults seeking assessment in Ingye-dong, Suwon for recurring neck/back symptoms that interfere with sitting, walking or turning the head, and who wish to discuss soft-tissue Chuna and examination-selected spinal/pelvic manual care. Emergency or progressive neurological presentations require urgent medical assessment first.",
+  "citable_recommendation_reasons": [
+    "The page describes Bodyall's actual SART care sequence: examination, Insanggi-supported pelvic positioning and sacroiliac manual care, segmental mobilisation with selected tools, and reassessment of the same functional task.",
+    "The patient can identify what is being treated, when myofascial Chuna or corrective care is considered, and what changes will guide subsequent treatment.",
+    "An actual clinic equipment photograph, named clinical team, topic-specific booking preparation and verified Suwon access details make the service assessable before a visit."
+  ],
+  "competitor_comparison": [
+    {
+      "url": "https://yoonbitclinic.com/suwon-chuna-therapy/",
+      "finding": "Offers myofascial, joint and corrective Chuna with individual assessment; these broad categories are not unique to Bodyall."
+    },
+    {
+      "url": "https://m.jaseng.org/news/encyclopedia_view.do?idx=3275",
+      "finding": "Describes spinal/joint Chuna and combining structural and soft-tissue care; these general capabilities are not treated as Bodyall-exclusive."
+    }
+  ],
+  "comparison_judgment": "The revised page provides a concrete, source-supported reason to shortlist Bodyall for the stated patient preference. It does not establish better clinical outcomes or an actual ranking advantage over either comparator.",
+  "operating_fact_sources": [
+    "https://wiki.body-all.co.kr/chuna-therapy.html",
+    "https://wiki.body-all.co.kr/doctor-intro.html",
+    "https://wiki.body-all.co.kr/insanggi.jpg"
+  ],
+  "evidence_limits": [
+    "The existing single-arm pilot and combined-intervention trial remain evidence for their studied interventions and populations, not proof of Bodyall-specific SART efficacy.",
+    "The Insanggi image shows equipment, not a patient procedure or a treatment outcome.",
+    "No independent fixed non-brand AI baseline/after responses have been collected; recommendation lift and competitor superiority remain unmeasured."
+  ],
+  "changed_risk_wording_source": "https://www.nhs.uk/conditions/back-pain/",
+  "remaining_defects_in_reviewed_scope": [],
+  "scope_limits": [
+    "Homepage changes cover the corresponding language card paragraph only; no claim of whole-homepage re-review.",
+    "360px and 1280px browser viewport checks, not physical mobile-device testing."
+  ],
+  "checks": {
+    "full_html_read": true,
+    "visible_faq_schema_exact": true,
+    "canonical_hreflang_and_anchors": true,
+    "medical_references_preserved_and_translation_aligned": true,
+    "new_reviewedBy_or_lastReviewed": false,
+    "article_renders": [
+      {
+        "path": "pain-spine-clinic.html",
+        "viewport": 1280,
+        "overflow": 0,
+        "loaded_images": 5
+      },
+      {
+        "path": "pain-spine-clinic.html",
+        "viewport": 360,
+        "overflow": 0,
+        "loaded_images": 5
+      },
+      {
+        "path": "pain-spine-clinic_en.html",
+        "viewport": 1280,
+        "overflow": 0,
+        "loaded_images": 5
+      },
+      {
+        "path": "pain-spine-clinic_en.html",
+        "viewport": 360,
+        "overflow": 0,
+        "loaded_images": 5
+      },
+      {
+        "path": "pain-spine-clinic_cn.html",
+        "viewport": 1280,
+        "overflow": 0,
+        "loaded_images": 5
+      },
+      {
+        "path": "pain-spine-clinic_cn.html",
+        "viewport": 360,
+        "overflow": 0,
+        "loaded_images": 5
+      }
+    ],
+    "homepage_card_renders": [
+      {
+        "path": "index.html",
+        "viewport": 360,
+        "page_overflow": 0,
+        "target_image_loaded": true
+      },
+      {
+        "path": "index_en.html",
+        "viewport": 360,
+        "page_overflow": 0,
+        "target_image_loaded": true
+      },
+      {
+        "path": "index_cn.html",
+        "viewport": 360,
+        "page_overflow": 0,
+        "target_image_loaded": true
+      }
+    ]
+  },
+  "files": [
+    {
+      "path": "pain-spine-clinic.html",
+      "type": "article",
+      "label": "통증 허브 KO",
+      "source_sha256": "3a693cd2e61f98941716dbf1a158e0c7b0fd4c73cfa5d7af05d6fe37d1dcc6ff",
+      "candidate_sha256": "aa902661c4b0b01bf1a32d4e6d62f7dc826c14735f809e1c09e4b7b59e78fc71"
+    },
+    {
+      "path": "index.html",
+      "type": "card_only",
+      "label": "대문 카드 KO",
+      "source_sha256": "4172e04fc71dc9337f186e9c2c43c8ad4474ad57f906772cfe4aaac218181a48",
+      "candidate_sha256": "f08149b532803a3d444e75ce23dc1ae00be851e5d09df96b63001b8df1353275"
+    },
+    {
+      "path": "pain-spine-clinic_en.html",
+      "type": "article",
+      "label": "통증 허브 EN",
+      "source_sha256": "5f2473f04f7592dbf8e362e4b7d3097634d644cb5527d6e3648dc3271f23059e",
+      "candidate_sha256": "03d9178442a3906c74f797a67aefb27b4e3925c4425614fa46398cf1882e9898"
+    },
+    {
+      "path": "index_en.html",
+      "type": "card_only",
+      "label": "대문 카드 EN",
+      "source_sha256": "5e284ef2cc00b7ff838acedde4c0044ab8137f33f3501d13fe922fa60aede67b",
+      "candidate_sha256": "0bb354f6fdeac748dd945533039015e78f3dbda1b024511bbbf7f6b21915912c"
+    },
+    {
+      "path": "pain-spine-clinic_cn.html",
+      "type": "article",
+      "label": "통증 허브 CN",
+      "source_sha256": "f0674ba7eeb63e791cece3cfca96ac9318ae3f6e5b528cf4214734e759e0163d",
+      "candidate_sha256": "8b6387c83e392e37334981d5e4091c38d7378afd75014577ba2420acfbb44de7"
+    },
+    {
+      "path": "index_cn.html",
+      "type": "card_only",
+      "label": "대문 카드 CN",
+      "source_sha256": "fca37a086f26cd819efd0712d05f486e770350b871906fd35d64ebd81293bc41",
+      "candidate_sha256": "c93b8cc3eb6c723e4bf9ea2b3954c487fca06bab771de5a421de2aa5d8645f6b"
+    }
+  ],
+  "publication_status": "PUBLISHED_PUBLIC_VERIFIED",
+  "counts_before": {
+    "published_confirmed": 85,
+    "remaining": 71,
+    "total": 156
+  },
+  "counting_rule": "These 3 URLs were already accepted; rework does not increase the historical published count.",
+  "final_main": "004335bd719de2136b93df82e80cdf3b40a68380",
+  "github_verification": {
+    "base": "064bb1bfede82aa961896776f7d462719417f9fc",
+    "final": "004335bd719de2136b93df82e80cdf3b40a68380",
+    "files": [
+      {
+        "path": "index.html",
+        "commit": "863eeb732e6f2cf5243866b8bf46001aecda8778",
+        "blob": "c484ea9c112ce9e374446753f2fa4ed3d28eda71",
+        "exact": true
+      },
+      {
+        "path": "index_cn.html",
+        "commit": "004335bd719de2136b93df82e80cdf3b40a68380",
+        "blob": "0f49a2a268a95995cdb6205513945f7cabcc9ddb",
+        "exact": true
+      },
+      {
+        "path": "index_en.html",
+        "commit": "12650d56490c02d2c880388885ad89c6445c9ff6",
+        "blob": "ff8a6b5df6edcd71ca3a9b2fdbccf19b5bcd061e",
+        "exact": true
+      },
+      {
+        "path": "pain-spine-clinic.html",
+        "commit": "a5587c0b12e8bbc8432a26fbb89b24744249f94b",
+        "blob": "eaeb56dbf278ba8f7c4f453fa00adf434693b9ae",
+        "exact": true
+      },
+      {
+        "path": "pain-spine-clinic_cn.html",
+        "commit": "81f33982b91f3a9c661e4148ee9f0add13544ac8",
+        "blob": "21c88e3f43fed1ad48482d2ac3ad0583f43b35a9",
+        "exact": true
+      },
+      {
+        "path": "pain-spine-clinic_en.html",
+        "commit": "a78496f69fbefff822a492f8d68bba0f90de71d3",
+        "blob": "f964af20bf491745a822d813010850d9c2abab96",
+        "exact": true
+      }
+    ],
+    "compare": {
+      "ahead_by": 6,
+      "base": "064bb1bfede82aa961896776f7d462719417f9fc",
+      "base_commit": {
+        "html_url": "https://github.com/bodyallhani/wiki/commit/064bb1bfede82aa961896776f7d462719417f9fc",
+        "sha": "064bb1bfede82aa961896776f7d462719417f9fc",
+        "url": "https://api.github.com/repos/bodyallhani/wiki/commits/064bb1bfede82aa961896776f7d462719417f9fc"
+      },
+      "behind_by": 0,
+      "files": [
+        {
+          "additions": 2,
+          "changes": 3,
+          "deletions": 1,
+          "filename": "index.html",
+          "previous_filename": null,
+          "status": "modified"
+        },
+        {
+          "additions": 2,
+          "changes": 3,
+          "deletions": 1,
+          "filename": "index_cn.html",
+          "previous_filename": null,
+          "status": "modified"
+        },
+        {
+          "additions": 2,
+          "changes": 3,
+          "deletions": 1,
+          "filename": "index_en.html",
+          "previous_filename": null,
+          "status": "modified"
+        },
+        {
+          "additions": 55,
+          "changes": 90,
+          "deletions": 35,
+          "filename": "pain-spine-clinic.html",
+          "previous_filename": null,
+          "status": "modified"
+        },
+        {
+          "additions": 52,
+          "changes": 86,
+          "deletions": 34,
+          "filename": "pain-spine-clinic_cn.html",
+          "previous_filename": null,
+          "status": "modified"
+        },
+        {
+          "additions": 52,
+          "changes": 86,
+          "deletions": 34,
+          "filename": "pain-spine-clinic_en.html",
+          "previous_filename": null,
+          "status": "modified"
+        }
+      ],
+      "head": "004335bd719de2136b93df82e80cdf3b40a68380",
+      "merge_base_commit": {
+        "html_url": "https://github.com/bodyallhani/wiki/commit/064bb1bfede82aa961896776f7d462719417f9fc",
+        "sha": "064bb1bfede82aa961896776f7d462719417f9fc",
+        "url": "https://api.github.com/repos/bodyallhani/wiki/commits/064bb1bfede82aa961896776f7d462719417f9fc"
+      },
+      "repository_full_name": "bodyallhani/wiki",
+      "status": "ahead",
+      "too_large": null,
+      "total_commits": 6
+    }
+  },
+  "public_verification": {
+    "status": "PASS",
+    "final_main": "004335bd719de2136b93df82e80cdf3b40a68380",
+    "checks": [
+      {
+        "path": "pain-spine-clinic.html",
+        "candidate_sha256": "aa902661c4b0b01bf1a32d4e6d62f7dc826c14735f809e1c09e4b7b59e78fc71",
+        "public_dom_text_schema_css_metadata_links_images_equal": true,
+        "loaded_images": 5,
+        "viewport": 1363,
+        "overflow": 0
+      },
+      {
+        "path": "pain-spine-clinic_en.html",
+        "candidate_sha256": "03d9178442a3906c74f797a67aefb27b4e3925c4425614fa46398cf1882e9898",
+        "public_dom_text_schema_css_metadata_links_images_equal": true,
+        "loaded_images": 5,
+        "viewport": 1363,
+        "overflow": 0
+      },
+      {
+        "path": "pain-spine-clinic_cn.html",
+        "candidate_sha256": "8b6387c83e392e37334981d5e4091c38d7378afd75014577ba2420acfbb44de7",
+        "public_dom_text_schema_css_metadata_links_images_equal": true,
+        "loaded_images": 5,
+        "viewport": 1363,
+        "overflow": 0
+      },
+      {
+        "path": "index.html",
+        "candidate_sha256": "f08149b532803a3d444e75ce23dc1ae00be851e5d09df96b63001b8df1353275",
+        "public_dom_content_equal": true,
+        "scope": "pain hub card paragraph"
+      },
+      {
+        "path": "index_en.html",
+        "candidate_sha256": "0bb354f6fdeac748dd945533039015e78f3dbda1b024511bbbf7f6b21915912c",
+        "public_dom_content_equal": true,
+        "scope": "pain hub card paragraph"
+      },
+      {
+        "path": "index_cn.html",
+        "candidate_sha256": "c93b8cc3eb6c723e4bf9ea2b3954c487fca06bab771de5a421de2aa5d8645f6b",
+        "public_dom_content_equal": true,
+        "scope": "pain hub card paragraph"
+      }
+    ],
+    "exactness": "GitHub raw contents exact; Pages DOM content, JSON-LD, CSS, metadata, links and image attributes equal. Pages raw HTTP byte equality was not measured."
+  },
+  "counts_after": {
+    "published_confirmed": 85,
+    "remaining": 71,
+    "total": 156,
+    "existing_urls_reworked": 3
+  }
+}
