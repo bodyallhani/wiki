@@ -1,0 +1,76 @@
+{
+  "version": "HERBAL_PRIORITY_RELEASE_V2",
+  "recorded_at": "2026-09-15T18:26:33.252Z",
+  "topic": "herbal-medicine",
+  "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+  "scope": {
+    "existing_sitemap_urls": 3,
+    "new_urls": 0,
+    "additional_index_urls": 0
+  },
+  "base_main_head": "386cee216e248ad25588a4504749c0ffea9aabc3",
+  "final_main_head": "de039f51d048a33d00f33bf47b638c55e89ee216",
+  "changed_files": [
+    "herbal-medicine.html",
+    "herbal-medicine_en.html",
+    "herbal-medicine_cn.html"
+  ],
+  "source_blobs": {
+    "herbal-medicine.html": "1780d906af07c8e37ae6f52203fc8f6113664f30",
+    "herbal-medicine_en.html": "15e67ec88e06bacfcd543ee7923d1841ec6ce15f",
+    "herbal-medicine_cn.html": "214b11f4885fa1e4b6499cb5bdbbce933be2e806"
+  },
+  "publications": {
+    "herbal-medicine.html": {
+      "commit": "bffe3862ab7ea715e183a3bf2ce79b6ac59d9d87",
+      "blob": "9213c12d1a83a5319854c00077efa3fc5f298aa6",
+      "sha256": "0c003364731b619aada2dc63003e6eb36b7dadb89d809b24a968eaf881bf218f",
+      "url": "https://wiki.body-all.co.kr/herbal-medicine.html"
+    },
+    "herbal-medicine_en.html": {
+      "commit": "84ba181266f9c79c30743fcffb27d83025635276",
+      "blob": "bde4d7f2b667638b5676623481cadf116ef925e5",
+      "sha256": "48f35eb19bde215d0628dc5970752a54b15089772b4436d37669069ac45dce45",
+      "url": "https://wiki.body-all.co.kr/herbal-medicine_en.html"
+    },
+    "herbal-medicine_cn.html": {
+      "commit": "de039f51d048a33d00f33bf47b638c55e89ee216",
+      "blob": "261876c7e03f8b2e27bbef1708ed5553a145bae3",
+      "sha256": "c778e4eb2fc5564950943be236a98e780fac04e148b325e7ebaa99b5b3bb87dd",
+      "url": "https://wiki.body-all.co.kr/herbal-medicine_cn.html"
+    }
+  },
+  "optimistic_lock_and_readback": {
+    "ledger_lock_blob": "45692e1dff01b63d140781be22a7c67e2bf0ec74",
+    "target_blob_rechecked_immediately_before_each_write": true,
+    "exact_readback_all_files": true,
+    "compare": {
+      "ahead_by": 3,
+      "behind_by": 0,
+      "only_expected_files": true
+    }
+  },
+  "public_verification": {
+    "observed_at": "2026-09-15T18:26:33.252Z",
+    "new_h1_all_languages": true,
+    "canonical_and_hreflang_all_languages": true,
+    "jsonld_parse_all_languages": true,
+    "faq_count_each": 4,
+    "all_five_images_loaded_after_scroll_all_languages": true,
+    "image_width_height_reserved": true,
+    "public_desktop_viewport_width": 1363,
+    "public_horizontal_overflow": false,
+    "booking_links_each": 3,
+    "footer_clinic_information_visible": true,
+    "responsive_360_and_1280_candidate_render_reused_because_exact_sha256": true
+  },
+  "final_review": "ops/html-recovery/reviews/20260916-herbal-priority-final.json",
+  "final_review_blob": "509e0022c872cb63aefc095064b8a311a0ab212d",
+  "limits": [
+    "2018 study limits and non-Bodyall scope are explicit.",
+    "Published fee details are operating facts, not efficacy or superiority evidence.",
+    "Actual AI recommendation lift remains UNMEASURED.",
+    "No new reviewedBy or lastReviewed physician approval is asserted."
+  ],
+  "next": "Update current.json from the latest recovery blob to counts 94/156, priority 15/35, then continue root index KO/EN/CN."
+}
