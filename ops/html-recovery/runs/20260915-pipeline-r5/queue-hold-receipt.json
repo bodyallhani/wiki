@@ -1,0 +1,22 @@
+{
+  "sheet": "시트1(발행전용)",
+  "row": 15,
+  "changed_cells": {
+    "T15": "EDITORIAL_HOLD",
+    "AE15": "REVIEW_DATA_REQUIRES_ATTENTION",
+    "AK15": "EDITORIAL_HOLD_20260915_RECOMMENDATION_AND_SAFETY",
+    "AN15": "EDITORIAL_HOLD:VALUE_DILUTED;SAFETY_OMITTED"
+  },
+  "only_four_cells_changed": true,
+  "original_packets_and_approval_fields_exact_preserved": true,
+  "source_ko_approval_fingerprint": "489508020f9efb479b173619b09f50d5269f94b5981dacc1154118f65167e94d",
+  "readback_verified": true,
+  "publication_status": "EDITORIAL_HOLD",
+  "live_make_version_inspected": false,
+  "archived_publisher_requires_APPROVED": true,
+  "legacy_B15_status": "영어오류",
+  "other_unfinished_rows": {
+    "0023": "논문재시도",
+    "0025": "논문재시도"
+  }
+}
