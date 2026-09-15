@@ -1,0 +1,81 @@
+{
+  "version": "ENCYCLOPEDIA_INDEX_PRIORITY_RELEASE_V1",
+  "recorded_at": "2026-09-15T19:13:19.338Z",
+  "topic": "encyclopedia-index",
+  "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+  "scope": {
+    "existing_sitemap_urls": 3,
+    "new_urls": 0,
+    "additional_index_urls": 0
+  },
+  "base_main_head": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
+  "final_main_head": "745d20efdf79a1118ab402a01cd91a151e226b04",
+  "changed_files": [
+    "encyclopedia/index.html",
+    "encyclopedia/index_en.html",
+    "encyclopedia/index_cn.html"
+  ],
+  "source_blobs": {
+    "encyclopedia/index.html": "6cf4a592b64ec7be1a3dc11e7e5e16e551746309",
+    "encyclopedia/index_en.html": "ea952fcddaf41a32b7bffc1c7d25e8713bfc7cef",
+    "encyclopedia/index_cn.html": "2c591ace032a4e30776974a4818b208090ce44f5"
+  },
+  "publications": {
+    "encyclopedia/index.html": {
+      "commit": "f89368bef3ac14c8a05f5363542351ab8df74318",
+      "blob": "a84c4665177941a353801c7cad2bae8840f87530",
+      "sha256": "b3fdd90122368a34ae481e22842417f22da0e3426414db00209d20cc667f99b9",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/index.html"
+    },
+    "encyclopedia/index_en.html": {
+      "commit": "5804b847a64524fc340b99e66893ff1f5f726cc1",
+      "blob": "cc67b2e4fc2b876d4ae00d2da144bd524f636241",
+      "sha256": "23f12037f72760b9438c061f56a3075aa7211b692372a024aa365197f3e3754d",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/index_en.html"
+    },
+    "encyclopedia/index_cn.html": {
+      "commit": "745d20efdf79a1118ab402a01cd91a151e226b04",
+      "blob": "024d5b7da3fc6429ffedcb656fbd1e876ea3cb06",
+      "sha256": "afdcc0482344e88dfbf83b6a8e51ace94ee3d044f6b33ff258e3d7d9c9f6955a",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/index_cn.html"
+    }
+  },
+  "optimistic_lock_and_readback": {
+    "ledger_lock_blob": "06b6d6dc0dca01ad966dfe5f1dba0a4ff1725ecd",
+    "target_blob_rechecked_immediately_before_each_write": true,
+    "exact_readback_all_files": true,
+    "compare": {
+      "ahead_by": 3,
+      "behind_by": 0,
+      "only_expected_files": true
+    }
+  },
+  "public_verification": {
+    "observed_at": "2026-09-15T19:13:19.338Z",
+    "public_exact_sha256_all_languages": true,
+    "public_desktop_render_directly_observed_all_languages": true,
+    "public_content_schema_faq_and_booking_visible_all_languages": true,
+    "exact_candidate_render_widths": [
+      360,
+      1280
+    ],
+    "public_html_identical_to_exact_rendered_candidates": true,
+    "canonical_count_each": 1,
+    "hreflang_count_each": 4,
+    "jsonld_parse_all_languages": true,
+    "visible_and_schema_faq_count_each": 3,
+    "image_count_each": 2,
+    "all_images_loaded_and_dimensions_reserved": true,
+    "public_global_horizontal_overflow": false,
+    "displayed_document_date": "2026-09-16"
+  },
+  "final_review": "ops/html-recovery/reviews/20260916-encyclopedia-index-priority-final.json",
+  "final_review_blob": "72cb62769333ba4195e96cc5820f75a7f99f13ff",
+  "limits": [
+    "The 40,000 figure is cumulative correction patients through December 2025, not visits, cures, condition-specific results or SART-only results.",
+    "MET and ultrasound are operating capabilities, not evidence of efficacy or superiority.",
+    "Actual AI recommendation lift remains UNMEASURED.",
+    "No new reviewedBy or lastReviewed physician approval is asserted."
+  ],
+  "next": "Update current.json from the latest recovery blob to counts 100/156 and priority 21/35, then continue BodyallFit/encyclopedia/index KO/EN/CN."
+}
