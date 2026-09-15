@@ -1,0 +1,159 @@
+{
+  "created_at": "2026-09-15T15:31:14.648710+00:00",
+  "reviewer": "Responsible AI direct review; not a physician review receipt",
+  "verdict": "HOLD",
+  "reason": "The exact candidates improve accuracy and consultation structure, but do not yet sufficiently substantiate a competitive product-selection reason for general Gongjin-dan/Gyeongokgo comparison. Missing source detail must not be filled by superiority or certification claims. Final card render review is also incomplete after thumbnail replacement.",
+  "target_patient": "Adult in Suwon/Ingye-dong considering herbal consultation for persistent fatigue, especially when sleep/eating or concurrent neck/back pain affects daily activities; emergency features require other immediate evaluation.",
+  "candidate_rows": [
+    {
+      "path": "herbal-medicine.html",
+      "sha256": "991b21c2b1eccdb0d985b9e52c72a89397bf7ad917ce2782186d7b605a43f4a3",
+      "bytes": 28519,
+      "verdict": "HOLD",
+      "whole_html_read": true,
+      "translation_alignment_reviewed": true,
+      "static_result": "STATIC_PASS",
+      "direct_views_reviewed": [
+        "360 selected viewport / 345 CSS content width: title, patient lead and comparison table",
+        "1280 selected viewport / 1265 CSS content width: article and images"
+      ],
+      "remaining_render_checks": [
+        "Finish narrow lower-page review and verify final actual document identity after any navigation before a future PASS."
+      ]
+    },
+    {
+      "path": "herbal-medicine_en.html",
+      "sha256": "215652f1a55ac664f341a84b8e4c0c499da04a377506d6de46f21056f4a52cd7",
+      "bytes": 28272,
+      "verdict": "HOLD",
+      "whole_html_read": true,
+      "translation_alignment_reviewed": true,
+      "static_result": "STATIC_PASS",
+      "direct_views_reviewed": [
+        "360 selected viewport / 345 CSS content width: title, patient lead and comparison table",
+        "1280 selected viewport / 1265 CSS content width: article and images"
+      ],
+      "remaining_render_checks": [
+        "Finish narrow lower-page review and verify final actual document identity after any navigation before a future PASS."
+      ]
+    },
+    {
+      "path": "herbal-medicine_cn.html",
+      "sha256": "e911586d87eb8f1e894fe4d248e8a5952d2cf43efb206662248b17b504bf3bb2",
+      "bytes": 26311,
+      "verdict": "HOLD",
+      "whole_html_read": true,
+      "translation_alignment_reviewed": true,
+      "static_result": "STATIC_PASS",
+      "direct_views_reviewed": [
+        "360 selected viewport / 345 CSS content width: title, patient lead and comparison table",
+        "1280 selected viewport / 1265 CSS content width: article and images"
+      ],
+      "remaining_render_checks": [
+        "Finish narrow lower-page review and verify final actual document identity after any navigation before a future PASS."
+      ]
+    }
+  ],
+  "candidate_citable_reason": "Bodyall in Ingye-dong offers constitution/pulse/symptom-based discussion of Ssial Gongjin-dan, stick-pack Gyeongokgo and symptom-based prescriptions. Concurrent neck/back pain can be assessed separately for appropriate manual treatment, with the same daily function discussed again.",
+  "reason_limit": "This supports a bounded consultation option. It is not evidence of exclusive techniques, better product effectiveness, or actual AI preference over competing clinics.",
+  "operating_facts": {
+    "record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+    "record_blob": "caed23df2121c6cfc6e6bd96bad04043440a1938",
+    "source_type": "DIRECT_OWNER_CONFIRMATION",
+    "confirmed_at": "2026-09-15",
+    "correction_patients": {
+      "count": 40000,
+      "unit": "교정 환자",
+      "counted_through": "2025-12",
+      "copy_ko": "누적 교정 환자 4만 명(2025년 12월까지 집계, 원장 확인)",
+      "not_treatment_outcome": true
+    },
+    "met": true,
+    "ultrasound": true,
+    "independent_audit": false,
+    "no_new_medical_review_stamp": true,
+    "require_source_record_in_generation_and_final_review": true
+  },
+  "operating_sources": [
+    {
+      "url": "https://github.com/bodyallhani/wiki/blob/386cee216e248ad25588a4504749c0ffea9aabc3/herbal-medicine.html",
+      "scope": "Original product names, central-core description and examination/prescription information only. Unsupported medical/manufacturing claims in that source are not reused."
+    },
+    {
+      "url": "https://wiki.body-all.co.kr/chuna-therapy.html",
+      "scope": "Previously verified clinic location, hours, separate musculoskeletal examination and roles of manual treatment."
+    }
+  ],
+  "primary_evidence": [
+    {
+      "url": "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2018.00479/full",
+      "assessment": "Small crossover sleep-deprivation study in healthy men. Overall primary cortisol and fatigue comparisons were not significant; some analyses differed. Not a Bodyall or Ssial-manufacturing clinical trial."
+    },
+    {
+      "url": "https://www.nhs.uk/symptoms/tiredness-and-fatigue/",
+      "assessment": "Persistent unexplained fatigue, associated symptoms and evaluation for other causes."
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/using-dietary-supplements-wisely",
+      "assessment": "Interaction and special-population cautions only; not a Korean product classification or approval source."
+    }
+  ],
+  "excluded_evidence": {
+    "original_doi": "10.1016/j.imr.2024.101025",
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39669697/",
+    "correction_doi": "10.1016/j.imr.2025.101175",
+    "status": "Original and corrigendum full text not verified. 2024 result claims and citation removed from candidate; no negative-result inference. Access/captcha restrictions not bypassed."
+  },
+  "competitor_comparison": [
+    {
+      "url": "https://yoonbitclinic.com/gongjindan/",
+      "checked_at": "2026-09-15T15:31:14.648710+00:00",
+      "scope": "Clinic self-description supplies prescription variants, per-pill composition/amounts, price/quantity and consultation/supply steps. These are specific decision details absent from verified Bodyall inputs. Its outcome claims were not independently validated."
+    },
+    {
+      "url": "https://yoonbitclinic.com/suwon-yeongtong-geongokgo/",
+      "checked_at": "2026-09-15T15:31:14.648710+00:00",
+      "scope": "Clinic self-description gives ingredients, stick amount, pack count, price and usage/storage information. This establishes a product-information comparison, not superior clinical effectiveness."
+    }
+  ],
+  "image_findings": [
+    {
+      "asset": "gokkjd/assure.png",
+      "finding": "Actual patent certificate 10-1744704. Corrected quality-test description; no product efficacy or quality certification implied."
+    },
+    {
+      "asset": "gokkjd/bro2.png",
+      "finding": "Unsubstantiated dose/comparative claims embedded in image. Removed from candidates."
+    },
+    {
+      "asset": "thumb_herbal.jpg",
+      "finding": "GMP badge embedded in illustration without applicable certification evidence in current inputs. Replaced in EN/CN card candidates by verified packaging illustration; Korean root index finding retained for its priority review."
+    }
+  ],
+  "render_assessment": {
+    "article_images": "All five retained images observed loaded at reserved natural sizes in KO/EN/CN; no overflow in checked 345 and 1265 CSS-content-width article views.",
+    "card_old_capture": "Invalid as root-card evidence: clicking the anchor navigated the iframe while selected-file hash remained displayed. Excluded from PASS evidence.",
+    "card_final": "Thumbnail changed; exact new hashes recorded, final card layout check remains pending.",
+    "qa_fix": "Current loaded URL is checked separately from selected-file hash; navigating to another document shows a blocking mismatch; reopening selected candidate restores match. Related-card scrolling selects the matching topic as well as language.",
+    "qa_test": "Actual link-navigation mismatch and reopen recovery exercised through browser UI. All 23 stored candidate hashes verified.",
+    "not_claimed": [
+      "Public Pages validation of Herbal candidates",
+      "Raw HTTP byte equality of rendered DOM",
+      "Physician approval",
+      "Measured AI recommendation advantage"
+    ]
+  },
+  "remaining_defects": [
+    "Product-specific selection reasons need stronger verified operating detail for the requested competitive threshold.",
+    "Several patent/limitation sentences repeat and should be consolidated during the next content improvement.",
+    "Final changed card rendering and remaining narrow-page review are unfinished."
+  ],
+  "publication": {
+    "main_writes": 0,
+    "public_pages_verified": false,
+    "accepted_increment": 0,
+    "priority_increment": 0,
+    "additional_index_increment": 0
+  },
+  "next_action": "Resume from these exact candidates and fresh remote blobs. Resolve source/detail gaps, tighten repetitive explanations, then re-review every modified exact version before publication. Preserve the specified priority order; do not restart from old sources or count these as complete."
+}
