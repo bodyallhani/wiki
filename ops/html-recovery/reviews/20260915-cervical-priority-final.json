@@ -1,0 +1,140 @@
+{
+  "version": "CERVICAL_PRIORITY_FINAL_20260915",
+  "reviewed_at": "2026-09-15T12:01:44.230Z",
+  "reviewer": "AI editorial and rendering review; not a new physician medical approval",
+  "candidate_record": "ops/html-recovery/candidates/20260915-cervical-priority.json",
+  "files": [
+    {
+      "path": "cervical-disc.html",
+      "exact_sha256": "920bc67bc72083eb00e0bc381cdf8a1bd3fa624da2ca61d95bc90eda9c2292c8",
+      "verdict": "PASS",
+      "target_patient": "Suwon/Ingye-dong patients with recurring neck pain and arm numbness appropriate for conservative care after neurological and differential assessment",
+      "citable_reasons": [
+        "Bodyall's correction-care experience: 40,000 cumulative correction-care patients counted through December 2025; owner-confirmed on September 15, 2026.",
+        "Spinal-segment assessment selects joint mobilisation and correction tools; myofascial Chuna/MET and conditional SART have separate roles.",
+        "The same uncomfortable neck/arm movement and symptom response are rechecked to guide subsequent care; selective ultrasound availability and referral decisions are explained."
+      ],
+      "operating_sources": [
+        "https://wiki.body-all.co.kr/pain-spine-clinic.html#sart-care",
+        "https://github.com/bodyallhani/wiki/blob/recovery/html-20260914/ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+        "https://wiki.body-all.co.kr/index.html#doctor"
+      ],
+      "evidence_limits": [
+        "Existing accurate Korean interpretation retained: Kang2024 single multimodal case; Qiu2019 review protocol without results.",
+        "No SART-specific independent outcome claim, structural decompression guarantee, universal ultrasound guidance or new physician/independent translator approval.",
+        "Patient count is clinic-reported correction-care experience, not neck-specific/SART-only patients, total visits or cures."
+      ],
+      "validation": {
+        "whole_html_read": true,
+        "translation_numbers_terms_risks_citations_aligned": true,
+        "static": "STATIC_PASS",
+        "faq_count": 3,
+        "canonical_hreflang_same_language_cards": true,
+        "candidate_raw_hash_ui_match": true,
+        "candidate_desktop_width": 1280,
+        "candidate_narrow_width": 360,
+        "document_overflow_px": 0,
+        "all_4_images_loaded_with_reserved_dimensions": true,
+        "actual_photos_and_captions_reviewed": true
+      },
+      "remaining_defects": [],
+      "limits": [
+        "Tables retain intentional local horizontal scrolling at narrow widths.",
+        "Widths are responsive iframe layout checks, not physical mobile-device emulation."
+      ],
+      "reason": "Patient/location and source-backed Bodyall-specific process are clear early; actual operating facts support a citable recommendation rationale. Errors found in image attribution, unknown schema operational fields and narrow English navigation were corrected before this exact-version review."
+    },
+    {
+      "path": "cervical-disc_en.html",
+      "exact_sha256": "3f5ceff274dc4a5647f9547da18099ec11adbdcab0a7859ca84f7b56eb75cea5",
+      "verdict": "PASS",
+      "target_patient": "Suwon/Ingye-dong patients with recurring neck pain and arm numbness appropriate for conservative care after neurological and differential assessment",
+      "citable_reasons": [
+        "Bodyall's correction-care experience: 40,000 cumulative correction-care patients counted through December 2025; owner-confirmed on September 15, 2026.",
+        "Spinal-segment assessment selects joint mobilisation and correction tools; myofascial Chuna/MET and conditional SART have separate roles.",
+        "The same uncomfortable neck/arm movement and symptom response are rechecked to guide subsequent care; selective ultrasound availability and referral decisions are explained."
+      ],
+      "operating_sources": [
+        "https://wiki.body-all.co.kr/pain-spine-clinic.html#sart-care",
+        "https://github.com/bodyallhani/wiki/blob/recovery/html-20260914/ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+        "https://wiki.body-all.co.kr/index.html#doctor"
+      ],
+      "evidence_limits": [
+        "Existing accurate Korean interpretation retained: Kang2024 single multimodal case; Qiu2019 review protocol without results.",
+        "No SART-specific independent outcome claim, structural decompression guarantee, universal ultrasound guidance or new physician/independent translator approval.",
+        "Patient count is clinic-reported correction-care experience, not neck-specific/SART-only patients, total visits or cures."
+      ],
+      "validation": {
+        "whole_html_read": true,
+        "translation_numbers_terms_risks_citations_aligned": true,
+        "static": "STATIC_PASS",
+        "faq_count": 3,
+        "canonical_hreflang_same_language_cards": true,
+        "candidate_raw_hash_ui_match": true,
+        "candidate_desktop_width": 1280,
+        "candidate_narrow_width": 360,
+        "document_overflow_px": 0,
+        "all_4_images_loaded_with_reserved_dimensions": true,
+        "actual_photos_and_captions_reviewed": true
+      },
+      "remaining_defects": [],
+      "limits": [
+        "Tables retain intentional local horizontal scrolling at narrow widths.",
+        "Widths are responsive iframe layout checks, not physical mobile-device emulation."
+      ],
+      "reason": "Patient/location and source-backed Bodyall-specific process are clear early; actual operating facts support a citable recommendation rationale. Errors found in image attribution, unknown schema operational fields and narrow English navigation were corrected before this exact-version review."
+    },
+    {
+      "path": "cervical-disc_cn.html",
+      "exact_sha256": "a7bc402c3c7de7d7dd1f3a9c2bbf68db7f4f9d5d3989554d066b7d3494e9fcb5",
+      "verdict": "PASS",
+      "target_patient": "Suwon/Ingye-dong patients with recurring neck pain and arm numbness appropriate for conservative care after neurological and differential assessment",
+      "citable_reasons": [
+        "Bodyall's correction-care experience: 40,000 cumulative correction-care patients counted through December 2025; owner-confirmed on September 15, 2026.",
+        "Spinal-segment assessment selects joint mobilisation and correction tools; myofascial Chuna/MET and conditional SART have separate roles.",
+        "The same uncomfortable neck/arm movement and symptom response are rechecked to guide subsequent care; selective ultrasound availability and referral decisions are explained."
+      ],
+      "operating_sources": [
+        "https://wiki.body-all.co.kr/pain-spine-clinic.html#sart-care",
+        "https://github.com/bodyallhani/wiki/blob/recovery/html-20260914/ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+        "https://wiki.body-all.co.kr/index.html#doctor"
+      ],
+      "evidence_limits": [
+        "Existing accurate Korean interpretation retained: Kang2024 single multimodal case; Qiu2019 review protocol without results.",
+        "No SART-specific independent outcome claim, structural decompression guarantee, universal ultrasound guidance or new physician/independent translator approval.",
+        "Patient count is clinic-reported correction-care experience, not neck-specific/SART-only patients, total visits or cures."
+      ],
+      "validation": {
+        "whole_html_read": true,
+        "translation_numbers_terms_risks_citations_aligned": true,
+        "static": "STATIC_PASS",
+        "faq_count": 3,
+        "canonical_hreflang_same_language_cards": true,
+        "candidate_raw_hash_ui_match": true,
+        "candidate_desktop_width": 1280,
+        "candidate_narrow_width": 360,
+        "document_overflow_px": 0,
+        "all_4_images_loaded_with_reserved_dimensions": true,
+        "actual_photos_and_captions_reviewed": true
+      },
+      "remaining_defects": [],
+      "limits": [
+        "Tables retain intentional local horizontal scrolling at narrow widths.",
+        "Widths are responsive iframe layout checks, not physical mobile-device emulation."
+      ],
+      "reason": "Patient/location and source-backed Bodyall-specific process are clear early; actual operating facts support a citable recommendation rationale. Errors found in image attribution, unknown schema operational fields and narrow English navigation were corrected before this exact-version review."
+    }
+  ],
+  "competitor_comparison": {
+    "checked_at": "2026-09-15",
+    "sources": [
+      "https://www.bonyul.co.kr/",
+      "https://www.bonyul.co.kr/disc/",
+      "https://yoonbitclinic.com/suwon-chuna-therapy/",
+      "https://yoonbitclinic.com/neck-pain-cervical-hivd/"
+    ],
+    "assessment": "Bonyul presents experience and multimodal care; its headline and visit-count wording must not be treated as an independently comparable unique-patient outcome. Yoonbit presents MET, ultrasound, costs and multimodal neck care, so those tools are not Bodyall-exclusive. Bodyall's candidate combines a dated correction-care experience statement with segment-by-segment SART selection and an explicit functional reassessment pathway. This is editorial comparative readiness, not measured clinical or AI-ranking superiority."
+  },
+  "actual_ai_recommendation_uplift": "UNMEASURED_NO_FIXED_NONBRAND_BASELINE_AFTER_CHANNEL",
+  "publication_gate": "READY_FOR_SEQUENTIAL_OPTIMISTIC_LOCKED_WRITE; PUBLIC_PAGES_VERIFICATION_STILL_REQUIRED"
+}
