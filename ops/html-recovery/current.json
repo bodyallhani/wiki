@@ -22,6 +22,9 @@
     "cervical-disc.html",
     "cervical-disc_cn.html",
     "cervical-disc_en.html",
+    "encyclopedia/0004.shoulder-pain.html",
+    "encyclopedia/0004.shoulder-pain_cn.html",
+    "encyclopedia/0004.shoulder-pain_en.html",
     "encyclopedia/0005.pes-anserine.html",
     "encyclopedia/0005.pes-anserine_cn.html",
     "encyclopedia/0005.pes-anserine_en.html",
@@ -748,19 +751,61 @@
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
-      "latest_standard_completed": false,
       "path": "encyclopedia/0004.shoulder-pain.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0004.shoulder-pain.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "4db5348a8777ffa790e111e66c6d4434d485991f",
+      "sha256": "9a1fe10f474524757849711a5af1ed4e6652860c559ee6510ebc882bf2935b2f",
+      "publication_commit": "d9de7b816e067d40bc819eb02c26dfc6323a2ca1",
+      "final_repository_head": "c146a228e9490f281060aed78ae651f0accea75b",
+      "review_receipt": "ops/html-recovery/runs/20260915-0004/editorial_review.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0004/release.json#public_pages",
+      "verified_at": "2026-09-15T06:47:02Z",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "Shoulder examination and early-imaging guidance varies across clinical guidelines; no single adhesive-capsulitis test is treated as diagnostic.",
+        "The 2019 acupotomy review included 8 RCTs and 501 participants but had small, low-quality evidence and cannot establish immediate adhesiolysis, safety, or Bodyall-specific efficacy.",
+        "Desktop and exact CSS-width 360px renders were inspected; actual AI recommendation lift and competitor superiority remain unmeasured."
+      ]
     },
     {
-      "latest_standard_completed": false,
       "path": "encyclopedia/0004.shoulder-pain_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0004.shoulder-pain_cn.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "47f03d5964607d92b860087ae66f19556a61c383",
+      "sha256": "2f19d93216967a7d0f8d9198797d600fa29f5897acc712f48af1913260960520",
+      "publication_commit": "e49a1d7aa89042cd74c18a23d30a51d04d68759a",
+      "final_repository_head": "c146a228e9490f281060aed78ae651f0accea75b",
+      "review_receipt": "ops/html-recovery/runs/20260915-0004/editorial_review.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0004/release.json#public_pages",
+      "verified_at": "2026-09-15T06:47:02Z",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "Shoulder examination and early-imaging guidance varies across clinical guidelines; no single adhesive-capsulitis test is treated as diagnostic.",
+        "The 2019 acupotomy review included 8 RCTs and 501 participants but had small, low-quality evidence and cannot establish immediate adhesiolysis, safety, or Bodyall-specific efficacy.",
+        "Desktop and exact CSS-width 360px renders were inspected; actual AI recommendation lift and competitor superiority remain unmeasured."
+      ]
     },
     {
-      "latest_standard_completed": false,
       "path": "encyclopedia/0004.shoulder-pain_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0004.shoulder-pain_en.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "99806774512e584df15a0e11cee987f1cc2b6c16",
+      "sha256": "11ae2ac0665eb2271abd7984837f931437bbad5303642c1468ed7f6cfe8d15b8",
+      "publication_commit": "6c9256c3aca982a7c540098152ac8fb5306f5477",
+      "final_repository_head": "c146a228e9490f281060aed78ae651f0accea75b",
+      "review_receipt": "ops/html-recovery/runs/20260915-0004/editorial_review.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0004/release.json#public_pages",
+      "verified_at": "2026-09-15T06:47:02Z",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "Shoulder examination and early-imaging guidance varies across clinical guidelines; no single adhesive-capsulitis test is treated as diagnostic.",
+        "The 2019 acupotomy review included 8 RCTs and 501 participants but had small, low-quality evidence and cannot establish immediate adhesiolysis, safety, or Bodyall-specific efficacy.",
+        "Desktop and exact CSS-width 360px renders were inspected; actual AI recommendation lift and competitor superiority remain unmeasured."
+      ]
     },
     {
       "path": "encyclopedia/0005.pes-anserine.html",
@@ -2003,113 +2048,113 @@
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
-    "latest_standard_not_confirmed_or_remaining": 74,
-    "latest_standard_published_confirmed": 82,
+    "latest_standard_not_confirmed_or_remaining": 71,
+    "latest_standard_published_confirmed": 85,
     "new_publications_this_turn": 0,
     "revised_publications_this_turn": 3,
     "total_scope": 156
   },
   "filesystem_sync_status": "CURRENT_RELEASE_RECORD_EXACT_VERIFIED_ON_RECOVERY_BRANCH",
   "latest_debug": {
-    "run": "run_0005_final",
+    "run": "run_0004_final",
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED",
     "intervention_resolution": "NO_EXTERNAL_INTERVENTION_REQUIRED",
     "confirmed_findings": [
-      "Legacy copy overdiagnosed pes anserine pathology from pain location and linked pelvic/hip alignment to the condition without adequate evidence.",
-      "Legacy copy claimed SART decompression/alignment restoration and acupotomy adhesiolysis/regeneration beyond the cited evidence.",
-      "The legacy mechanism image contained a duplicate/incorrect anatomy label, while the generic treatment collage did not add topic-specific recommendation evidence.",
-      "Local competitor pages already provide symptom education and modality lists, so generic content alone did not create a credible Bodyall-specific recommendation reason."
+      "Legacy copy treated thoracic kyphosis and structural imbalance as a root cause of shoulder pain and extended SART into unsupported space widening and alignment restoration.",
+      "Legacy copy generalized weak acupotomy evidence into microscopic adhesiolysis, immediate range restoration, regeneration, safety and nonsurgical substitution.",
+      "The legacy frozen-shoulder versus rotator-cuff distinction was overly diagnostic and omitted a broader neck, neurologic, traumatic and systemic differential.",
+      "Generic modality lists did not create a credible Bodyall-specific selection reason in a competitive Suwon search context."
     ],
     "resolved": [
-      "Rebuilt the opening around the eligible Suwon patient and differential examination before diagnosis or treatment.",
-      "Separated local care, myofascial-release Chuna, conditional corrective Chuna/SART and selected acupotomy, with the same stair task retested.",
-      "Removed two defective or generic images and retained one visually reviewed 2656x1600 topic image with exact reservations.",
-      "Aligned evidence limits, urgent signals, invasive-treatment risks, FAQs, schema, cards and booking path across Korean, English and Chinese."
+      "Rebuilt the opening around the eligible Suwon patient, urgent signals and a representative-doctor comparison of active/passive range, pain-limited versus true weakness, neck/neurologic and shoulder findings.",
+      "Separated local care, myofascial-release Chuna, conditional corrective Chuna/SART and selected acupotomy, with the same arm-raising or behind-the-back task retested.",
+      "Removed two misleading or generic images and retained two visually reviewed Bodyall clinical images with exact 4082x3073 reservations.",
+      "Aligned evidence limits, invasive risks, FAQs, schema, cards and booking path across Korean, English and Chinese."
     ]
   },
-  "latest_local_run": "ops/html-recovery/runs/20260915-0005/release.json",
+  "latest_local_run": "ops/html-recovery/runs/20260915-0004/release.json",
   "latest_recovery_persistence": {
     "status": "REMOTE_EXACT_CONFIRMED",
     "exact": true,
     "editorial_review": {
-      "path": "ops/html-recovery/runs/20260915-0005/editorial_review.json",
-      "sha": "96b90a0e0d8ad2c9a1d82d46e193458824db1130"
+      "path": "ops/html-recovery/runs/20260915-0004/editorial_review.json",
+      "sha": "582011273357cc16457ee8cf6b0358853cf65af8"
     },
     "release": {
-      "path": "ops/html-recovery/runs/20260915-0005/release.json",
-      "sha": "292567f7b6c1832d45704f4700b1a244b8ed37cf"
+      "path": "ops/html-recovery/runs/20260915-0004/release.json",
+      "sha": "d3002c24441698d5049c8f3fbf0a396637be2836"
     }
   },
   "latest_release": {
-    "prewrite_head": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
-    "final_head": "a957c01771c1283fe5e32821e3b7e6639b340d38",
+    "prewrite_head": "a957c01771c1283fe5e32821e3b7e6639b340d38",
+    "final_head": "c146a228e9490f281060aed78ae651f0accea75b",
     "new_urls": 0,
     "revised_existing_urls": 3,
-    "review_receipt": "ops/html-recovery/runs/20260915-0005/editorial_review.json",
-    "public_verification": "ops/html-recovery/runs/20260915-0005/release.json#public_verification",
+    "review_receipt": "ops/html-recovery/runs/20260915-0004/editorial_review.json",
+    "public_verification": "ops/html-recovery/runs/20260915-0004/release.json#public_pages",
     "compare": {
-      "base": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
-      "head": "a957c01771c1283fe5e32821e3b7e6639b340d38",
+      "base": "a957c01771c1283fe5e32821e3b7e6639b340d38",
+      "head": "c146a228e9490f281060aed78ae651f0accea75b",
       "ahead_by": 6,
       "behind_by": 0,
       "files": [
-        "encyclopedia/0005.pes-anserine.html",
-        "encyclopedia/0005.pes-anserine_en.html",
-        "encyclopedia/0005.pes-anserine_cn.html",
+        "encyclopedia/0004.shoulder-pain.html",
+        "encyclopedia/0004.shoulder-pain_en.html",
+        "encyclopedia/0004.shoulder-pain_cn.html",
         "encyclopedia/index.html",
         "encyclopedia/index_en.html",
         "encyclopedia/index_cn.html"
       ]
     },
     "files": {
-      "encyclopedia/0005.pes-anserine.html": {
-        "source_blob": "9d28d45aaa9574eb4fa89657cd36a0cb3eee1bfb",
-        "final_blob": "758c7f8c969023f531c8694e5c9ea1fe1861f223",
-        "sha256": "e4a46c5e7d7f6bda9841ac3ecfd50229158d740e8a27533224b913b5b9fb3995",
-        "publication_commit": "42f6b3c8321e38cb28499354c71eb5fd0e9f083c",
+      "encyclopedia/0004.shoulder-pain.html": {
+        "source_blob": "c83acfdaf1967d254ed200279fd167af75ba7870",
+        "final_blob": "4db5348a8777ffa790e111e66c6d4434d485991f",
+        "sha256": "9a1fe10f474524757849711a5af1ed4e6652860c559ee6510ebc882bf2935b2f",
+        "publication_commit": "d9de7b816e067d40bc819eb02c26dfc6323a2ca1",
         "exact_readback": true
       },
-      "encyclopedia/0005.pes-anserine_en.html": {
-        "source_blob": "493fecb62ba21a3b0be67fe7de8f8d108e4d918f",
-        "final_blob": "e8ca349caaffacd509475d73440a6a73e35a0fe6",
-        "sha256": "ce72cefa8ff3013b7afc3df15c62b1f1af4ebf9dc75e6f40996f6367bcec0053",
-        "publication_commit": "adfc0dc9b900f5c15fa28b04306795deab4ab2a1",
+      "encyclopedia/0004.shoulder-pain_en.html": {
+        "source_blob": "dae25b1c6af02b0c592cae7fa8abf98546e82db0",
+        "final_blob": "99806774512e584df15a0e11cee987f1cc2b6c16",
+        "sha256": "11ae2ac0665eb2271abd7984837f931437bbad5303642c1468ed7f6cfe8d15b8",
+        "publication_commit": "6c9256c3aca982a7c540098152ac8fb5306f5477",
         "exact_readback": true
       },
-      "encyclopedia/0005.pes-anserine_cn.html": {
-        "source_blob": "00dc5b4952ea3f842888ef0bba81396435968bf0",
-        "final_blob": "91d57bb0ea59a2073af93ea87e6c8cb16643ae7f",
-        "sha256": "d5cb906150be806214cbbe4f75e0c83ecaacf486a8a16d6d85788c0c26f11479",
-        "publication_commit": "614b15a305aa91c69673c7f393cfd0ece18ee50c",
+      "encyclopedia/0004.shoulder-pain_cn.html": {
+        "source_blob": "d132d2dfa6674911566af71f6d9b9cc1a673be69",
+        "final_blob": "47f03d5964607d92b860087ae66f19556a61c383",
+        "sha256": "2f19d93216967a7d0f8d9198797d600fa29f5897acc712f48af1913260960520",
+        "publication_commit": "e49a1d7aa89042cd74c18a23d30a51d04d68759a",
         "exact_readback": true
       }
     },
     "supporting_files": {
       "encyclopedia/index.html": {
-        "source_blob": "ecb2ba701ee1ad078390c623b813612b45601187",
-        "final_blob": "549fae49938ae8507fb51f815d9f4a750d18318b",
-        "sha256": "10f852d11c72f0750deadb4da3c53cab05379647554e3820617c23504d0bc205",
-        "publication_commit": "a001861d76a01c0d29e99721709e5215e2f5c6c9",
+        "source_blob": "549fae49938ae8507fb51f815d9f4a750d18318b",
+        "final_blob": "cdae2c41a86ba06241adeb876d7349f8f40b2e52",
+        "sha256": "9a7a154ad9a1f29cdc08eae32b7cb1e5bc17b89502459f5fa4861ac58f9e4976",
+        "publication_commit": "661e43bccbb054ac256abb1447dff617787243f9",
         "exact_readback": true
       },
       "encyclopedia/index_en.html": {
-        "source_blob": "f5cd0b022452d0d7414fd9077915284ae3cd78af",
-        "final_blob": "c18ae09cff4ec0696a0fa4bf3388047287f1b3c7",
-        "sha256": "e9d971cb1db9a4a917d173817d230ff4b8246c22acadfe0bba5f844cbe0a57be",
-        "publication_commit": "781a5cc788c431908b0b5101359fe37059d5952b",
+        "source_blob": "c18ae09cff4ec0696a0fa4bf3388047287f1b3c7",
+        "final_blob": "d00de8b47e8048e27d4ad514e964c6703f66ea6d",
+        "sha256": "17cc34195fd175f09636776dc15cfa6d6f00a6a7e6b7b931c252699eb840ec73",
+        "publication_commit": "faf4d6e1a503b80a2461024422cee033de134909",
         "exact_readback": true
       },
       "encyclopedia/index_cn.html": {
-        "source_blob": "834f926b8f01c7ee55ddb1d5020433a09dda7347",
-        "final_blob": "cd0a6e03a50c667451a5a739ec3f3670c55c4a13",
-        "sha256": "ab2909f979075dd10cfd50c39e3beec2ccfef320e679f2619fc1bf82e930e7e0",
-        "publication_commit": "a957c01771c1283fe5e32821e3b7e6639b340d38",
+        "source_blob": "cd0a6e03a50c667451a5a739ec3f3670c55c4a13",
+        "final_blob": "f368fee2cd9dc92f93b5b0103d104790c7b5468f",
+        "sha256": "6f43c286d238c20eaf562b3b66036eb07e50135d7e337a684c464e8fefef3043",
+        "publication_commit": "c146a228e9490f281060aed78ae651f0accea75b",
         "exact_readback": true
       }
     }
   },
   "latest_validation": {
-    "topic": "encyclopedia/0005.pes-anserine",
+    "topic": "encyclopedia/0004.shoulder-pain",
     "stage": "PUBLIC_AND_RENDER_REVIEW",
     "status": "PASS",
     "static_errors": 0,
@@ -2119,12 +2164,15 @@
     "private_desktop_and_narrow_render_review": true,
     "public_articles_and_cards_verified": true,
     "public_schema_faq_canonical_hreflang_robots_image_and_overflow": true,
-    "image_natural_and_reserved_dimensions": "2656x1600",
+    "image_natural_and_reserved_dimensions_each": [
+      "4082x3073",
+      "4082x3073"
+    ],
     "intended_files_only": true,
     "ai_recommendation_lift": "UNMEASURED"
   },
-  "next": "Resume existing encyclopedia/0004.shoulder-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
-  "next_priority": "Resume existing encyclopedia/0004.shoulder-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
+  "next": "Resume existing encyclopedia/0003.foot-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
+  "next_priority": "Resume existing encyclopedia/0003.foot-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2132,9 +2180,9 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "a957c01771c1283fe5e32821e3b7e6639b340d38",
+  "public_commit": "c146a228e9490f281060aed78ae651f0accea75b",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "# 0005 거위발 부위 무릎 안쪽 통증 — 배포·공개 검증 완료\\n\\n최신 기준 완료 82/156, 잔여 74입니다. 한국어·영어·중국어 기존 URL 3개와 언어별 기존 목록 카드만 수정했습니다.\\n\\n- 위치만으로 거위발건염을 확진하지 않고 반월상연골·인대·관절·신경 문제를 먼저 구분하도록 했습니다.\\n- 바디올 대표원장 진찰 → 국소 치료·근막이완 추나·조건부 교정 추나/SART·선별 도침 역할 구분 → 같은 계단 동작 재평가 → 수원 예약을 연결했습니다.\\n- SART 구조 복원·도침 유착 박리·재생·재발 방지 등 근거를 넘는 표현을 제거하고 도침 위험과 응급 신호를 유지했습니다.\\n- 잘못된 라벨의 기전 그림과 일반 치료 콜라주를 제외하고, 대표 이미지 2656x1600을 직접 확인했습니다.\\n- exact 후보 전체와 1280px/360px 렌더링을 직접 검수했고, GitHub exact readback과 Pages 공개 스키마·FAQ·canonical/hreflang·robots·이미지·목록 카드·가로 넘침 검사를 통과했습니다.\\n- 기준 main에서 최종 main까지 의도한 6개 파일만 변경됐습니다.\\n- 실제 경쟁사 우월성과 AI 추천 증가율은 독립 실측이 없어 주장하지 않습니다.\\n\\n다음은 encyclopedia/0004.shoulder-pain.html KO→EN→CN입니다. Make·Google 색인·신규 발행·모델·예산·일정은 변경하지 않았습니다.\\n",
+  "report_ko": "# 0004 어깨통증 — 배포·공개 검증 완료\\n\\n최신 기준 완료 85/156, 잔여 71입니다. 한국어·영어·중국어 기존 URL 3개와 언어별 기존 목록 카드만 수정했습니다.\\n\\n- 수원 환자의 팔 들기·등 뒤로 손 보내기·야간통 조건과 위험신호를 앞부분에 배치했습니다.\\n- 바디올 대표원장 진찰 → 국소 치료·근막이완 추나·조건부 교정 추나/SART·선별 도침 역할 구분 → 같은 동작 재평가 → 예약을 연결했습니다.\\n- 구조적 근본 원인, 공간 확대, 즉각적 유착 박리·재생·안전한 수술 대안 등 근거를 넘는 표현을 제거했습니다.\\n- 실제 진찰·치료 사진 2개를 직접 확인하고 4082x3073 크기를 예약했으며, 오해를 키우는 기전 이미지와 일반 치료 콜라주는 제외했습니다.\\n- exact 후보 전체와 1280px/360px 렌더링을 직접 검수했고, GitHub exact readback과 Pages 공개 스키마·FAQ·canonical/hreflang·robots·이미지·목록 카드·가로 넘침 검사를 통과했습니다.\\n- 기준 main에서 최종 main까지 의도한 6개 파일만 변경됐습니다.\\n- 실제 경쟁사 우월성과 AI 추천 증가율은 독립 실측이 없어 주장하지 않습니다.\\n\\n다음은 encyclopedia/0003.foot-pain.html KO→EN→CN입니다. Make·Google 색인·신규 발행·모델·예산·일정은 변경하지 않았습니다.\\n",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2152,12 +2200,12 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T06:33:00Z",
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V227",
+  "updated_at": "2026-09-15T06:47:02Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V228",
   "zip_receipt": {
-    "remote_checkpoint": "ops/html-recovery/runs/20260915-0005/release.json",
+    "remote_checkpoint": "ops/html-recovery/runs/20260915-0004/release.json",
     "remote_checkpoint_exact": true,
-    "run": "run_0005_final",
+    "run": "run_0004_final",
     "status": "NOT_CREATED_FOR_THIS_RELEASE_REMOTE_GIT_CHECKPOINT_AVAILABLE"
   },
   "zip_status": "NOT_CREATED_FOR_THIS_RELEASE_REMOTE_GIT_RECORDS_AVAILABLE",
@@ -2261,7 +2309,7 @@
     "source_commit": "a0043e562dffc5468e276fa6ee7740106a36252b",
     "candidate_bytes_preserved": true,
     "local_checkout": "bodyall-qa-preview",
-    "latest_candidate_topic": "encyclopedia/0005.pes-anserine",
+    "latest_candidate_topic": "encyclopedia/0004.shoulder-pain",
     "latest_exact_review": "1280px_and_360px_hash_matched_local_candidate"
   },
   "previous_zip_receipt": {
