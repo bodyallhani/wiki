@@ -2530,7 +2530,7 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T12:58:30.166Z",
+  "updated_at": "2026-09-15T13:22:39.162Z",
   "version": "V239_LUMBAR_PRIORITY_STRENGTHENED_PUBLIC_VERIFIED",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
@@ -2562,25 +2562,7 @@
   "active_run": {
     "owner": "shoulder-priority-20260915",
     "topic": "shoulder-frozen KO/EN/CN",
-    "stage": "SOURCE_ASSESSMENT",
-    "claimed_at": "2026-09-15T12:58:30.164Z",
-    "baseline_main": "0a87853249643fdfd8a62a53387c0076a9db8e38",
-    "baseline_ledger": "0ebf9e413783fd49fe12b020a4b0921a7a21326f",
-    "paths": [
-      "shoulder-frozen.html",
-      "shoulder-frozen_en.html",
-      "shoulder-frozen_cn.html"
-    ],
-    "source_blobs": {
-      "shoulder-frozen.html": "de97406b0d7c987194dfe1d89956300f6181b882",
-      "shoulder-frozen_en.html": "effa7eea11fd0c14b398a9f439c94576fb8c3a98",
-      "shoulder-frozen_cn.html": "5066e0b1aec7345460071b744ad9a9ec4b2900c5"
-    }
-  },
-  "pending_run": {
-    "owner": "shoulder-priority-20260915",
-    "topic": "shoulder-frozen KO/EN/CN",
-    "stage": "SOURCE_ASSESSMENT",
+    "stage": "FINAL_REVIEW_PASS_READY_FOR_PUBLICATION",
     "claimed_at": "2026-09-15T12:58:30.164Z",
     "baseline_main": "0a87853249643fdfd8a62a53387c0076a9db8e38",
     "baseline_ledger": "0ebf9e413783fd49fe12b020a4b0921a7a21326f",
@@ -2594,10 +2576,32 @@
       "shoulder-frozen_en.html": "effa7eea11fd0c14b398a9f439c94576fb8c3a98",
       "shoulder-frozen_cn.html": "5066e0b1aec7345460071b744ad9a9ec4b2900c5"
     },
+    "heartbeat_at": "2026-09-15T13:22:39.162Z"
+  },
+  "pending_run": {
+    "owner": "shoulder-priority-20260915",
+    "topic": "shoulder-frozen KO/EN/CN",
+    "stage": "FINAL_REVIEW_PASS_READY_FOR_PUBLICATION",
+    "claimed_at": "2026-09-15T12:58:30.164Z",
+    "baseline_main": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+    "baseline_ledger": "0ebf9e413783fd49fe12b020a4b0921a7a21326f",
+    "paths": [
+      "shoulder-frozen.html",
+      "shoulder-frozen_en.html",
+      "shoulder-frozen_cn.html"
+    ],
+    "source_blobs": {
+      "shoulder-frozen.html": "de97406b0d7c987194dfe1d89956300f6181b882",
+      "shoulder-frozen_en.html": "effa7eea11fd0c14b398a9f439c94576fb8c3a98",
+      "shoulder-frozen_cn.html": "5066e0b1aec7345460071b744ad9a9ec4b2900c5"
+    },
+    "heartbeat_at": "2026-09-15T13:22:39.162Z",
     "status": "IN_PROGRESS",
+    "candidate_record": "ops/html-recovery/candidates/20260915-shoulder-priority.json",
+    "final_review": "ops/html-recovery/reviews/20260915-shoulder-priority-final.json",
     "main_writes": 0,
-    "counted_complete": 0,
-    "next_action": "Read full current HTML; reuse unchanged source verification; inspect images and targeted recommendation-fit changes before final exact render."
+    "completion_increment": 0,
+    "next_action": "Fresh main and target blob locks; sequential 3 writes with exact readbacks; public verification."
   },
   "previous_public_validation": {
     "status": "PASS_IN_REVIEWED_SCOPE",
