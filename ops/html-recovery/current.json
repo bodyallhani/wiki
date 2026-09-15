@@ -2594,18 +2594,18 @@
     "review": "ops/html-recovery/reviews/20260916-spine-index-priority-final.json"
   },
   "latest_validation": {
-    "status": "PASS",
-    "record": "ops/html-recovery/reviews/20260916-spine-index-priority-final.json",
-    "record_blob": "d81d8d2eafc98f039699af30b9aac333ac55e69e",
+    "status": "HOLD",
+    "record": "ops/html-recovery/reviews/20260916-stiff-hands-final-candidate-hold.json",
+    "record_blob": "8bd4c2644189cc58cbf94442941e3a61202e0873",
     "candidate_static_content_schema_pass": true,
     "candidate_exact_readback": true,
-    "predeployment_render_pass": true,
-    "public_verification": true,
-    "public_release_record": "ops/html-recovery/runs/20260916-spine-index-priority-release.json",
-    "note": "Unsupported SART decompression and superiority claims removed; owner-confirmed operating fact precisely bounded; repository and Pages exact SHA256, content/schema/two-image/1348px/360px gates passed."
+    "image_direct_inspection_pass": true,
+    "predeployment_render_pass": false,
+    "public_verification": false,
+    "note": "Exact KO/EN/CN candidates and review record persisted. Mandatory 1280px/360px render remains blocked by renewed private-harness authentication; no main write or count."
   },
   "next": "Resume encyclopedia/0002 stiff hands KO→EN→CN from saved phase1 state. Fresh-read current.json, main and target blobs; reuse preserved source review where unchanged, complete exact HTML/render/public gates, and count only after Pages verification.",
-  "next_priority": "HOLD RESUME PHASE1 encyclopedia/0002.stiff-hands KO/EN/CN exact candidates: complete authenticated 1280px/360px render review, then fresh-read and deploy sequentially if unchanged.",
+  "next_priority": "HOLD RESUME PHASE1 encyclopedia/0002.stiff-hands KO/EN/CN: authenticate private review harness and render the persisted exact candidates at 1280px/360px; then fresh-read and deploy only if PASS.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2633,8 +2633,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-16T00:22:55Z",
-  "version": "V258_STIFF_HANDS_CANDIDATE_STATIC_PASS_RENDER_HOLD",
+  "updated_at": "2026-09-16T00:36:00Z",
+  "version": "V259_STIFF_HANDS_EXACT_CANDIDATES_PERSISTED_RENDER_HOLD",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2677,9 +2677,22 @@
       "encyclopedia/0002.stiff-hands_en.html": "64957da583ab8d6e8ba032281c693448ba85d3e586060827c114bbc9d60a2edc",
       "encyclopedia/0002.stiff-hands_cn.html": "a44cd33ff9ed3fd4cc518c7bec40375b4805e7c42f7695db5da28e8333665ae0"
     },
-    "stage": "CANDIDATE_STATIC_REVIEW_COMPLETE_RENDER_BLOCKED_BY_REVIEW_LOGIN",
-    "single_writer_active": true,
-    "required_next": "Persist exact candidate/review records on recovery, then complete authenticated 1280px/360px render review before any main write."
+    "stage": "EXACT_CANDIDATES_AND_REVIEW_PERSISTED_PREDEPLOYMENT_RENDER_HOLD",
+    "single_writer_active": false,
+    "required_next": "Fresh-read this ledger, main and target blobs; authenticate private review harness and inspect exact candidates at 1280px/360px before any main write.",
+    "completed_at": "2026-09-16T00:36:00Z",
+    "candidate_recovery_paths": {
+      "encyclopedia/0002.stiff-hands.html": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands.html",
+      "encyclopedia/0002.stiff-hands_en.html": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands_en.html",
+      "encyclopedia/0002.stiff-hands_cn.html": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands_cn.html"
+    },
+    "candidate_recovery_blobs": {
+      "encyclopedia/0002.stiff-hands.html": "ee3a3c2ac4f3e4c5308c56938a87d8e6368449aa",
+      "encyclopedia/0002.stiff-hands_en.html": "54305c15f12ddcb4afcf5266d4879ea15f3db339",
+      "encyclopedia/0002.stiff-hands_cn.html": "e5450a0e7e461236f6c4c7e13bd2f43909423b3a"
+    },
+    "review_record": "ops/html-recovery/reviews/20260916-stiff-hands-final-candidate-hold.json",
+    "review_record_blob": "8bd4c2644189cc58cbf94442941e3a61202e0873"
   },
   "pending_run": {
     "topic": "encyclopedia/0002.stiff-hands KO/EN/CN",
@@ -2697,7 +2710,19 @@
       "encyclopedia/0002.stiff-hands_cn.html": "a44cd33ff9ed3fd4cc518c7bec40375b4805e7c42f7695db5da28e8333665ae0"
     },
     "blocker": "Private review harness requires a new authenticated session; data/local preview navigation was unavailable in the approved browser surface.",
-    "next_action": "Open exact recovery candidates in the review harness, inspect full desktop/narrow renders, then fresh-read ledger/main/blobs before sequential deployment."
+    "next_action": "Open exact recovery candidates in the review harness, inspect full desktop/narrow renders, then fresh-read ledger/main/blobs before sequential deployment.",
+    "candidate_recovery_paths": {
+      "encyclopedia/0002.stiff-hands.html": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands.html",
+      "encyclopedia/0002.stiff-hands_en.html": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands_en.html",
+      "encyclopedia/0002.stiff-hands_cn.html": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands_cn.html"
+    },
+    "candidate_recovery_blobs": {
+      "encyclopedia/0002.stiff-hands.html": "ee3a3c2ac4f3e4c5308c56938a87d8e6368449aa",
+      "encyclopedia/0002.stiff-hands_en.html": "54305c15f12ddcb4afcf5266d4879ea15f3db339",
+      "encyclopedia/0002.stiff-hands_cn.html": "e5450a0e7e461236f6c4c7e13bd2f43909423b3a"
+    },
+    "review_record": "ops/html-recovery/reviews/20260916-stiff-hands-final-candidate-hold.json",
+    "review_record_blob": "8bd4c2644189cc58cbf94442941e3a61202e0873"
   },
   "previous_public_validation": {
     "checks": [
@@ -3942,7 +3967,7 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "at": "2026-09-16T00:22:55Z",
+    "at": "2026-09-16T00:36:00Z",
     "completed_this_run": 0,
     "reworked_this_run": 0,
     "additional_index_completed_this_run": 0,
@@ -3952,7 +3977,7 @@
     "priority_completed": 35,
     "priority_remaining": 0,
     "additional_index_completed": 8,
-    "result": "Stiff-hands KO/EN/CN exact candidates passed whole-source/static review and image inspection; predeployment 1280px/360px rendering is HOLD because the private harness requires renewed authentication. No main write or completion count.",
+    "result": "Stiff-hands KO/EN/CN exact candidates and review record were persisted with exact readback. Static/content/schema and direct image review passed; mandatory desktop/narrow render remains HOLD. No main write or completion count.",
     "recommendation_measurement": "UNMEASURED"
   },
   "previous_release": {
