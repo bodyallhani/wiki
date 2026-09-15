@@ -1,0 +1,65 @@
+{
+  "record_type": "priority_group_release",
+  "released_at": "2026-09-16T08:02:00+09:00",
+  "group": "notice/index KO-EN-CN additional-index priority",
+  "main_base": "63dd506ef0aee24cbbc25de653587589f6b38413",
+  "main_final": "8817ae3fcd6c5aab4c65b9e8a65a11f4a09780f6",
+  "commit_compare": {
+    "ahead_by": 3,
+    "changed_files": [
+      "notice/index.html",
+      "notice/index_en.html",
+      "notice/index_cn.html"
+    ],
+    "only_intended_files_changed": true
+  },
+  "files": [
+    {
+      "path": "notice/index.html",
+      "url": "https://wiki.body-all.co.kr/notice/index.html",
+      "publication_commit": "9030dfad049ea63c970fd19ab49001303709afe1",
+      "git_blob": "74f78af80d6fd840d67b9e6f0a93c9b64c410a10",
+      "sha256": "4417b1c8f0d9b9421feda96e93bbe6516465150ed448bbb70b7a23ce60700859",
+      "public_sha256": "4417b1c8f0d9b9421feda96e93bbe6516465150ed448bbb70b7a23ce60700859",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED"
+    },
+    {
+      "path": "notice/index_en.html",
+      "url": "https://wiki.body-all.co.kr/notice/index_en.html",
+      "publication_commit": "0996361426b8c018fc0b5522371f3448730a0412",
+      "git_blob": "f8ec08ece0cafa867b9acf7bdf35666fb0eeb6e0",
+      "sha256": "dc87f742a8f507ce07ed56c5b151149803b74323d56d28f88876036c9d604e97",
+      "public_sha256": "dc87f742a8f507ce07ed56c5b151149803b74323d56d28f88876036c9d604e97",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED"
+    },
+    {
+      "path": "notice/index_cn.html",
+      "url": "https://wiki.body-all.co.kr/notice/index_cn.html",
+      "publication_commit": "8817ae3fcd6c5aab4c65b9e8a65a11f4a09780f6",
+      "git_blob": "e40b36da5eb8ccf7dbab9adf408cdf7e5c42e375",
+      "sha256": "cca4beeb9fd2f7c5261ef013e6ec219887cd7bc3e0618f44494c37c7d1bcb37e",
+      "public_sha256": "cca4beeb9fd2f7c5261ef013e6ec219887cd7bc3e0618f44494c37c7d1bcb37e",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED"
+    }
+  ],
+  "verification": {
+    "github_readback_exact": true,
+    "pages_source_exact_sha256": true,
+    "public_desktop_width": 1348,
+    "public_mobile_width": 360,
+    "horizontal_overflow": false,
+    "per_language": {
+      "ko": {"cards": 6, "faq": 3, "images_loaded": 3, "canonical": 1, "hreflang": 4, "jsonld": 1},
+      "en": {"cards": 6, "faq": 3, "images_loaded": 3, "canonical": 1, "hreflang": 4, "jsonld": 1},
+      "zh-CN": {"cards": 6, "faq": 3, "images_loaded": 3, "canonical": 1, "hreflang": 4, "jsonld": 1}
+    },
+    "candidate_harness": "ops/html-recovery/review-harnesses/20260916-notice-index-360.html",
+    "public_harness": "ops/html-recovery/review-harnesses/20260916-notice-index-public-360.html",
+    "review_receipt": "ops/html-recovery/reviews/20260916-notice-index-priority-final.json"
+  },
+  "limits": [
+    "This release does not establish clinical efficacy or superiority.",
+    "No physician approval or independent translation review of these exact versions is asserted.",
+    "Actual AI recommendation uplift remains unmeasured."
+  ]
+}
