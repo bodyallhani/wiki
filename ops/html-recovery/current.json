@@ -2208,8 +2208,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T07:00:07Z",
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V229",
+  "updated_at": "2026-09-15T07:23:29.993Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V230",
   "zip_receipt": {
     "remote_checkpoint": "ops/html-recovery/runs/20260915-0004/release.json",
     "remote_checkpoint_exact": true,
@@ -2386,7 +2386,27 @@
       "Preserve original approval scope; do not claim new medical review",
       "After confirmed access restoration inspect latest Make version before applying/test-running R5"
     ],
-    "ai_recommendation_lift": "UNMEASURED"
+    "ai_recommendation_lift": "UNMEASURED",
+    "automatic_recommendation_gate": {
+      "version": "6.2",
+      "status": "DESIGN_READY_NOT_APPLIED",
+      "specification_path": "ops/html-recovery/competitive-release-policy-20260915-v6.1.md",
+      "specification_blob": "935a44f36a5822e9f39c0c78f555692dce860574",
+      "specification_exact_readback": true,
+      "independent_review_call": true,
+      "requires_actual_competitor_page_observations": true,
+      "requires_citable_bodyall_specific_choice_reasons": true,
+      "fail_closed_for_missing_evidence_stale_hash_or_unresolved_defects": true,
+      "structured_output_and_server_side_routing": "SPECIFIED_NOT_IMPLEMENTED",
+      "bounded_partial_repair_max_rounds": 2,
+      "auto_pass_is_publish_approval": false,
+      "final_exact_full_html_and_render_review_required": true,
+      "make_applied": false,
+      "actual_model_fixture_tests_run": false,
+      "actual_ai_recommendation_lift": "UNMEASURED",
+      "next_action": "Map contract to freshly retrieved actual R5 reviewer/parser/publication-filter configuration, align 0024 EN/CN, then run documented negative/positive fixture tests privately; Make calls only after confirmed access restoration.",
+      "scope": "Pipeline design only; existing 156 completion counts and public main unchanged."
+    }
   },
   "related_hub_findings": [
     {
