@@ -1,0 +1,1660 @@
+{
+  "run": "run_0007_final",
+  "status": "PUBLISHED_AND_PUBLIC_VERIFIED",
+  "recorded_at": "2026-09-15T04:04:17.585Z",
+  "counts_after": {
+    "completed": 76,
+    "remaining": 80,
+    "total": 156
+  },
+  "base_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
+  "final_head": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+  "writes": [
+    {
+      "blob": "25d56f4c0a37fc840b9467f3d8e7b889cf60743c",
+      "commit": "1814aa83a6d9a2fab264290bf6d0eace78340313",
+      "github_exact": true,
+      "path": "encyclopedia/0007.neck-headache.html",
+      "previous_blob": "153eed6ee17a348f800a52cb0c949c96e8375a3f",
+      "previous_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "sha256": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78"
+    },
+    {
+      "blob": "7615195ce51929285e39a4d7568010ab3dd0335d",
+      "commit": "4deca3262da8b8af8f202da689c905282807946b",
+      "github_exact": true,
+      "path": "encyclopedia/0007.neck-headache_en.html",
+      "previous_blob": "3a7c0de260625ad547f2a25d24ab5cc6213d4822",
+      "previous_head": "1814aa83a6d9a2fab264290bf6d0eace78340313",
+      "sha256": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa"
+    },
+    {
+      "blob": "a4d3c942ef44b65b0887ad6a3b199936ae6f2afa",
+      "commit": "1c37005b0dc9febfdef7253dc767a143413655bf",
+      "github_exact": true,
+      "path": "encyclopedia/0007.neck-headache_cn.html",
+      "previous_blob": "cc957ac8c017b85ddb2860eb628e40eb1748f30a",
+      "previous_head": "4deca3262da8b8af8f202da689c905282807946b",
+      "sha256": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d"
+    },
+    {
+      "blob": "f135c3ac629c727cd413ca79c21007474be3e3bc",
+      "commit": "88b58afb025b132a0883668d8c33a9dd8bd14e6c",
+      "github_exact": true,
+      "path": "encyclopedia/index.html",
+      "previous_blob": "6d975ecdb6e1ce7fed9b3cc601614a684e8a3642",
+      "previous_head": "1c37005b0dc9febfdef7253dc767a143413655bf",
+      "sha256": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c"
+    },
+    {
+      "blob": "0387b95bfce720bfd1db75519b427cdb5b7e31ea",
+      "commit": "610c859ad80d0b6fc25850cc68e436b225c4a4c0",
+      "github_exact": true,
+      "path": "encyclopedia/index_en.html",
+      "previous_blob": "371bdcb06ebe7654a1539da983f8f488084406cd",
+      "previous_head": "88b58afb025b132a0883668d8c33a9dd8bd14e6c",
+      "sha256": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411"
+    },
+    {
+      "blob": "37138f6675b4a199c1e2e31ec0c86f37fcb6f11f",
+      "commit": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+      "github_exact": true,
+      "path": "encyclopedia/index_cn.html",
+      "previous_blob": "46926eed869e6ba65d5c650e7838b5379d0fa381",
+      "previous_head": "610c859ad80d0b6fc25850cc68e436b225c4a4c0",
+      "sha256": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223"
+    }
+  ],
+  "compare": {
+    "ahead_by": 6,
+    "base": "e910dfa569e60cae67cc47012c69621b36e4a032",
+    "base_commit": {
+      "html_url": "https://github.com/bodyallhani/wiki/commit/e910dfa569e60cae67cc47012c69621b36e4a032",
+      "sha": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "url": "https://api.github.com/repos/bodyallhani/wiki/commits/e910dfa569e60cae67cc47012c69621b36e4a032"
+    },
+    "behind_by": 0,
+    "files": [
+      {
+        "additions": 141,
+        "changes": 183,
+        "deletions": 42,
+        "filename": "encyclopedia/0007.neck-headache.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 138,
+        "changes": 181,
+        "deletions": 43,
+        "filename": "encyclopedia/0007.neck-headache_cn.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 139,
+        "changes": 184,
+        "deletions": 45,
+        "filename": "encyclopedia/0007.neck-headache_en.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 3,
+        "changes": 5,
+        "deletions": 2,
+        "filename": "encyclopedia/index.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 3,
+        "changes": 5,
+        "deletions": 2,
+        "filename": "encyclopedia/index_cn.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 3,
+        "changes": 5,
+        "deletions": 2,
+        "filename": "encyclopedia/index_en.html",
+        "previous_filename": null,
+        "status": "modified"
+      }
+    ],
+    "head": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+    "merge_base_commit": {
+      "html_url": "https://github.com/bodyallhani/wiki/commit/e910dfa569e60cae67cc47012c69621b36e4a032",
+      "sha": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "url": "https://api.github.com/repos/bodyallhani/wiki/commits/e910dfa569e60cae67cc47012c69621b36e4a032"
+    },
+    "repository_full_name": "bodyallhani/wiki",
+    "status": "ahead",
+    "too_large": null,
+    "total_commits": 6
+  },
+  "editorial_review": {
+    "ai_recommendation_lift": "UNMEASURED; no independent fixed-nonbrand baseline/after",
+    "approval_scope_preserved": true,
+    "clinic_provenance": [
+      {
+        "blob": "3c8d0e169ac7d2072e1b564997fc682e1f27e194",
+        "path": "index.html",
+        "ref": "main",
+        "use": "Clinic identity, assessment/reassessment, address, hours and holiday closure; read freshly from GitHub."
+      },
+      {
+        "url": "https://body-all.co.kr",
+        "use": "Official clinic identity/site read by HTTP; not used to prove efficacy."
+      }
+    ],
+    "clinic_provenance_reviewed": true,
+    "complete_html_read": true,
+    "decision": "PASS",
+    "editor": "AI assistant; not physician review",
+    "eligible_patient": "Suwon/Ingye-dong adult with recurrent familiar headache related to neck movement or desk work; no emergency red flags; differential assessment before manual treatment.",
+    "exact_candidate_sha256": {
+      "encyclopedia/0007.neck-headache.html": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78",
+      "encyclopedia/0007.neck-headache_cn.html": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d",
+      "encyclopedia/0007.neck-headache_en.html": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa",
+      "encyclopedia/index.html": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c",
+      "encyclopedia/index_cn.html": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223",
+      "encyclopedia/index_en.html": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411"
+    },
+    "independent_competitor_comparison": "NOT_PERFORMED; no superiority claim",
+    "live_links": {
+      "all_http_targets_reachable": true,
+      "medical_claim_source_text_reused_only_if_identical": true,
+      "naver_transient_timeout_resolved": true,
+      "report": "live_link_checks.json"
+    },
+    "medical_claims_reviewed": true,
+    "medical_evidence": [
+      {
+        "url": "https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/",
+        "use": "Cervical causation and differential diagnosis; posture/imaging or provocation alone insufficient."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21649656/",
+        "use": "2011 review: mixed findings, predominantly poor-quality trials, adequate placebo-control trial not positive. No SART-specific efficacy."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36419164/",
+        "use": "2022 systematic review: potential manual/exercise symptom benefits; high risk of bias in many trials; low-risk sensitivity analysis small effects."
+      },
+      {
+        "url": "https://www.nhs.uk/symptoms/headaches/",
+        "use": "Emergency and prompt-assessment headache symptoms; diary."
+      },
+      {
+        "url": "https://www.nccih.nih.gov/health/spinal-manipulation-what-you-need-to-know",
+        "use": "Manual treatment risks: transient symptoms and rare serious neurological/vascular events; screening/informed discussion."
+      }
+    ],
+    "preview_environment": {
+      "exact_bytes_preserved": true,
+      "owner_private": true,
+      "supervised_preview_used": true,
+      "url": "https://bodyall-html-review.bodyallautomation.chatgpt.site"
+    },
+    "reason": "Complete exact source and visible desktop/narrow candidates personally inspected. Appropriate Suwon neck-associated-headache patient, traceable clinical decision pathway, role-separated Chuna/SART and same-movement reassessment support a credible conditional shortlist; no measured superiority asserted. All required pre-release checks complete.",
+    "recommendation_reason": "Bodyall is a credible conditional consultation candidate for this patient based on its traceable palpation/active-passive movement and reassessment process, role-separated Chuna/SART selection, and Suwon City Hall/weekday evening access. This is a reason to shortlist, not proven superiority over competing clinics.",
+    "recommendation_reason_recorded": true,
+    "recorded_at": "2026-09-15T03:47:37.836Z",
+    "render_review": {
+      "encyclopedia/0007.neck-headache.html": {
+        "desktop": {
+          "candidate_sha256": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-ko-1280-bottom-1789443420203.jpg; bodyall-0007-stable-ko-1280-top-1789443458208.jpg; bodyall-0007-stable-ko-1280-treatment-1789443988713.jpg",
+          "inspected": true,
+          "viewport": 1280
+        },
+        "narrow": {
+          "candidate_sha256": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-ko-360-bottom-1789443381327.jpg; bodyall-0007-stable-ko-360-top-1789443475775.jpg",
+          "inspected": true,
+          "viewport": 360
+        }
+      },
+      "encyclopedia/0007.neck-headache_cn.html": {
+        "desktop": {
+          "candidate_sha256": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-cn-1280-top-1789443115402.jpg; bodyall-0007-stable-cn-1280-bottom-1789443129225.jpg",
+          "inspected": true,
+          "viewport": 1280
+        },
+        "narrow": {
+          "candidate_sha256": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-cn-360-top-1789443141742.jpg; bodyall-0007-stable-cn-360-bottom-1789443162898.jpg",
+          "inspected": true,
+          "viewport": 360
+        }
+      },
+      "encyclopedia/0007.neck-headache_en.html": {
+        "desktop": {
+          "candidate_sha256": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-en-1280-bottom-1789443097116.jpg; bodyall-0007-stable-en-1280-top-1789443649172.jpg",
+          "inspected": true,
+          "viewport": 1280
+        },
+        "narrow": {
+          "candidate_sha256": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-en-360-top-1789443662112.jpg; bodyall-0007-stable-en-360-bottom-1789443671053.jpg",
+          "inspected": true,
+          "viewport": 360
+        }
+      },
+      "encyclopedia/index.html": {
+        "desktop": {
+          "candidate_sha256": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-ko-index-1280-1789443529437.jpg",
+          "inspected": true,
+          "viewport": 1280
+        },
+        "narrow": {
+          "candidate_sha256": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-ko-index-360-1789443519538.jpg",
+          "inspected": true,
+          "viewport": 360
+        }
+      },
+      "encyclopedia/index_cn.html": {
+        "desktop": {
+          "candidate_sha256": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-cn-card-1280-1789443844832.jpg",
+          "inspected": true,
+          "viewport": 1280
+        },
+        "narrow": {
+          "candidate_sha256": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-cn-card-360-1789443811606.jpg",
+          "inspected": true,
+          "viewport": 360
+        }
+      },
+      "encyclopedia/index_en.html": {
+        "desktop": {
+          "candidate_sha256": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-en-card-1280-final-1789444773480.jpg",
+          "inspected": true,
+          "viewport": 1280
+        },
+        "narrow": {
+          "candidate_sha256": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-en-card-360-1789443785715.jpg",
+          "inspected": true,
+          "viewport": 360
+        }
+      }
+    },
+    "source_corrections": [
+      "Remove cervicogenic dizziness DOI 10.30581/jkcmm.2018.13.2.11 from headache efficacy argument.",
+      "Remove blanket structural-misalignment causation, nerve decompression, C-curve restoration, medication-only dismissal and unsupported clinical-success note.",
+      "Reject mechanism image after direct visual inspection: malformed anatomy labels including 대흉두신경 and conflation of occipital entrapment with all cervicogenic headache.",
+      "Keep illustrative hero, independently observed 2656x1600 dimensions, remove suggestion that image identifies a treatment candidate.",
+      "Remove invalid MedicalProcedure.procedureType TherapeuticProcedure class-as-enum and unsupported medicalSpecialty values; remove unverified area sameAs links.",
+      "No new reviewedBy/lastReviewed; earlier owner approval receipt is not extended."
+    ],
+    "source_review_scope": "Complete KO/EN/CN HTML read directly (including metadata, schema, CSS, content, references and footers); final schema-only correction reviewed; existing index card changes reviewed with unrelated content preserved.",
+    "static_checks_passed": true,
+    "translations_aligned": true,
+    "unresolved_defects": [],
+    "validation_limits": [
+      "Actual CSS-width desktop/narrow iframe renders inspected; not a mobile-device/touch emulator.",
+      "Supporting indexes are changed-card alignment only; their other legacy articles are not counted complete.",
+      "Pre-release PASS authorizes the exact candidate only; GitHub and Pages verification must follow before completion counts change.",
+      "No new physician reviewedBy/lastReviewed; actual AI recommendation lift remains unmeasured."
+    ]
+  },
+  "release_gate": {
+    "errors": 0,
+    "gate_self_test": "PASS: synthetic positive + stale hash, missing renders, open defect, incomplete translation, absent receipt all blocked",
+    "release_errors": [],
+    "release_permitted": true,
+    "reports": [
+      {
+        "errors": [],
+        "full_html_parsed": true,
+        "images": 1,
+        "path": "encyclopedia/0007.neck-headache.html",
+        "sha256": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78"
+      },
+      {
+        "errors": [],
+        "path": "encyclopedia/index.html",
+        "scope": "one existing card",
+        "sha256": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c"
+      },
+      {
+        "errors": [],
+        "full_html_parsed": true,
+        "images": 1,
+        "path": "encyclopedia/0007.neck-headache_en.html",
+        "sha256": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa"
+      },
+      {
+        "errors": [],
+        "path": "encyclopedia/index_en.html",
+        "scope": "one existing card",
+        "sha256": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411"
+      },
+      {
+        "errors": [],
+        "full_html_parsed": true,
+        "images": 1,
+        "path": "encyclopedia/0007.neck-headache_cn.html",
+        "sha256": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d"
+      },
+      {
+        "errors": [],
+        "path": "encyclopedia/index_cn.html",
+        "scope": "one existing card",
+        "sha256": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223"
+      }
+    ],
+    "stage": "STATIC_ONLY"
+  },
+  "public_verification": {
+    "canonical_url_http_exact": {
+      "all_exact": true,
+      "checked_at": "2026-09-15T03:54:23.494Z",
+      "rows": [
+        {
+          "exact": true,
+          "expected_sha256": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78",
+          "http_success": true,
+          "path": "encyclopedia/0007.neck-headache.html",
+          "sha256": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78",
+          "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html"
+        },
+        {
+          "exact": true,
+          "expected_sha256": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c",
+          "http_success": true,
+          "path": "encyclopedia/index.html",
+          "sha256": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c",
+          "url": "https://wiki.body-all.co.kr/encyclopedia/index.html"
+        },
+        {
+          "exact": true,
+          "expected_sha256": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa",
+          "http_success": true,
+          "path": "encyclopedia/0007.neck-headache_en.html",
+          "sha256": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa",
+          "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_en.html"
+        },
+        {
+          "exact": true,
+          "expected_sha256": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411",
+          "http_success": true,
+          "path": "encyclopedia/index_en.html",
+          "sha256": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411",
+          "url": "https://wiki.body-all.co.kr/encyclopedia/index_en.html"
+        },
+        {
+          "exact": true,
+          "expected_sha256": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d",
+          "http_success": true,
+          "path": "encyclopedia/0007.neck-headache_cn.html",
+          "sha256": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d",
+          "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_cn.html"
+        },
+        {
+          "exact": true,
+          "expected_sha256": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223",
+          "http_success": true,
+          "path": "encyclopedia/index_cn.html",
+          "sha256": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223",
+          "url": "https://wiki.body-all.co.kr/encyclopedia/index_cn.html"
+        }
+      ]
+    },
+    "errors_found": 0,
+    "images": "One reserved 2656×1600 illustrative image per article loaded in private exact candidates and seen in all three public pages.",
+    "limits": [
+      "Cache-version query used only in browser to bypass stale cached view; canonical no-query URLs independently exact via curl.",
+      "Browser JS-evaluate became unavailable on translated public tabs; no unmeasured public geometry PASS claimed. Narrow/desktop candidate geometry directly measured; public translated screens personally inspected.",
+      "360px/1280px CSS viewport, not mobile-device emulator.",
+      "No independent AI recommendation baseline/after or competitor superiority measurement."
+    ],
+    "predeployment_narrow_screens": [
+      {
+        "filename": "bodyall-0007-stable-en-1280-bottom-1789443097116.jpg",
+        "label": "stable-en-1280-bottom",
+        "metrics": {
+          "height": 5817,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache_en.html",
+          "scroll": 5197,
+          "title": "Cervicogenic Headache: Assessment, Chuna and SART | Bodyall Suwon",
+          "viewport": 1280
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-cn-1280-top-1789443115402.jpg",
+        "label": "stable-cn-1280-top",
+        "metrics": {
+          "height": 5126,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache_cn.html",
+          "scroll": 0,
+          "title": "颈源性头痛：先评估，再选择推拿与SART | 水原Bodyall韩医院",
+          "viewport": 1280
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-cn-1280-bottom-1789443129225.jpg",
+        "label": "stable-cn-1280-bottom",
+        "metrics": {
+          "height": 5126,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache_cn.html",
+          "scroll": 4506,
+          "title": "颈源性头痛：先评估，再选择推拿与SART | 水原Bodyall韩医院",
+          "viewport": 1280
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-cn-360-top-1789443141742.jpg",
+        "label": "stable-cn-360-top",
+        "metrics": {
+          "height": 7180,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache_cn.html",
+          "scroll": 0,
+          "title": "颈源性头痛：先评估，再选择推拿与SART | 水原Bodyall韩医院",
+          "viewport": 360
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-cn-360-bottom-1789443162898.jpg",
+        "label": "stable-cn-360-bottom",
+        "metrics": {
+          "height": 7180,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache_cn.html",
+          "scroll": 6560,
+          "title": "颈源性头痛：先评估，再选择推拿与SART | 水原Bodyall韩医院",
+          "viewport": 360
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-ko-360-bottom-1789443381327.jpg",
+        "label": "stable-ko-360-bottom",
+        "metrics": {
+          "height": 7716,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache.html",
+          "scroll": 7096,
+          "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+          "viewport": 360
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-ko-1280-bottom-1789443420203.jpg",
+        "label": "stable-ko-1280-bottom",
+        "metrics": {
+          "height": 5131,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache.html",
+          "scroll": 4511,
+          "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+          "viewport": 1280
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-ko-1280-top-1789443458208.jpg",
+        "label": "stable-ko-1280-top",
+        "metrics": {
+          "height": 5131,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache.html",
+          "scroll": 0,
+          "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+          "viewport": 1280
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-ko-360-top-1789443475775.jpg",
+        "label": "stable-ko-360-top",
+        "metrics": {
+          "height": 7716,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache.html",
+          "scroll": 0,
+          "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+          "viewport": 360
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-ko-index-360-1789443519538.jpg",
+        "label": "stable-ko-index-360",
+        "metrics": {
+          "height": 4544,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "src": "../Bodyall Logo.png"
+            },
+            {
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "src": "../Bodyall Logo.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/index.html",
+          "scroll": 2973,
+          "title": "근골격계 증상별 자가진단 백과 | 바디올 위키",
+          "viewport": 360
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-ko-index-1280-1789443529437.jpg",
+        "label": "stable-ko-index-1280",
+        "metrics": {
+          "height": 3388,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "src": "../Bodyall Logo.png"
+            },
+            {
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "src": "../Bodyall Logo.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/index.html",
+          "scroll": 2097,
+          "title": "근골격계 증상별 자가진단 백과 | 바디올 위키",
+          "viewport": 1280
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-en-1280-top-1789443649172.jpg",
+        "label": "stable-en-1280-top",
+        "metrics": {
+          "height": 5817,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache_en.html",
+          "scroll": 0,
+          "title": "Cervicogenic Headache: Assessment, Chuna and SART | Bodyall Suwon",
+          "viewport": 1280
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-en-360-top-1789443662112.jpg",
+        "label": "stable-en-360-top",
+        "metrics": {
+          "height": 10103,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache_en.html",
+          "scroll": 0,
+          "title": "Cervicogenic Headache: Assessment, Chuna and SART | Bodyall Suwon",
+          "viewport": 360
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-en-360-bottom-1789443671053.jpg",
+        "label": "stable-en-360-bottom",
+        "metrics": {
+          "height": 10103,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache_en.html",
+          "scroll": 9483,
+          "title": "Cervicogenic Headache: Assessment, Chuna and SART | Bodyall Suwon",
+          "viewport": 360
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-ko-768-top-1789443725598.jpg",
+        "label": "stable-ko-768-top",
+        "metrics": {
+          "height": 5213,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache.html",
+          "scroll": 0,
+          "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+          "viewport": 768
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-en-card-360-1789443785715.jpg",
+        "label": "stable-en-card-360",
+        "metrics": {
+          "height": 5457,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "src": "../Bodyall Logo.png"
+            },
+            {
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "src": "../Bodyall Logo.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/index_en.html",
+          "scroll": 3642,
+          "title": "Musculoskeletal Symptom Self-Diagnosis Encyclopedia | Bodyall Wiki",
+          "viewport": 360
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-cn-card-360-1789443811606.jpg",
+        "label": "stable-cn-card-360",
+        "metrics": {
+          "height": 4268,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "src": "../Bodyall Logo.png"
+            },
+            {
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "src": "../Bodyall Logo.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/index_cn.html",
+          "scroll": 2823,
+          "title": "筋骨格系统各症状自我诊断百科 | Bodyall 百科",
+          "viewport": 360
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-cn-card-1280-1789443844832.jpg",
+        "label": "stable-cn-card-1280",
+        "metrics": {
+          "height": 3388,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "src": "../Bodyall Logo.png"
+            },
+            {
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "src": "../Bodyall Logo.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/index_cn.html",
+          "scroll": 2097,
+          "title": "筋骨格系统各症状自我诊断百科 | Bodyall 百科",
+          "viewport": 1280
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-ko-390-top-1789443898331.jpg",
+        "label": "stable-ko-390-top",
+        "metrics": {
+          "height": 7323,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache.html",
+          "scroll": 0,
+          "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+          "viewport": 390
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-ko-390-treatment-1789443933843.jpg",
+        "label": "stable-ko-390-treatment",
+        "metrics": {
+          "height": 7323,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache.html",
+          "scroll": 2320,
+          "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+          "viewport": 390
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-ko-1280-treatment-1789443988713.jpg",
+        "label": "stable-ko-1280-treatment",
+        "metrics": {
+          "height": 5131,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/0007.neck-headache.html",
+          "scroll": 1740,
+          "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+          "viewport": 1280
+        }
+      },
+      {
+        "filename": "bodyall-0007-stable-en-card-1280-final-1789444773480.jpg",
+        "label": "stable-en-card-1280-final",
+        "metrics": {
+          "height": 3557,
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "src": "../Bodyall Logo.png"
+            },
+            {
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "src": "../Bodyall Logo.png"
+            }
+          ],
+          "overflow": 0,
+          "path": "/encyclopedia/index_en.html",
+          "scroll": 2243,
+          "title": "Musculoskeletal Symptom Self-Diagnosis Encyclopedia | Bodyall Wiki",
+          "viewport": 1280
+        }
+      }
+    ],
+    "public_desktop_screens": [
+      {
+        "filename": "bodyall-0007-public-ko-top-1789444480096.jpg",
+        "label": "ko-top",
+        "metrics": {
+          "canonical": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html",
+          "h1": "목이 뻐근할 때 반복되는 두통, 바디올에서는 무엇부터 확인할까요?",
+          "height": 5131,
+          "hreflang": [
+            {
+              "href": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html",
+              "lang": "ko"
+            },
+            {
+              "href": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_en.html",
+              "lang": "en"
+            },
+            {
+              "href": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_cn.html",
+              "lang": "zh-Hans"
+            },
+            {
+              "href": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html",
+              "lang": "x-default"
+            }
+          ],
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "reserved": [
+                "2656",
+                "1600"
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "robots": "index, follow",
+          "schema": [
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@id": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html#webpage",
+                  "@type": "MedicalWebPage",
+                  "about": {
+                    "@type": "MedicalCondition",
+                    "name": "경추성 두통"
+                  },
+                  "description": "목을 돌리거나 오래 앉아 있을 때 반복되는 두통. 수원 바디올한의원의 두통·목 감별, 근막이완 추나와 조건부 SART 선택, 같은 동작 재평가와 예약 안내입니다.",
+                  "inLanguage": "ko",
+                  "name": "목이 뻐근할 때 반복되는 두통, 바디올에서는 무엇부터 확인할까요?",
+                  "provider": {
+                    "@id": "https://wiki.body-all.co.kr/#clinic"
+                  },
+                  "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html"
+                },
+                {
+                  "@id": "https://wiki.body-all.co.kr/#clinic",
+                  "@type": [
+                    "MedicalClinic",
+                    "LocalBusiness"
+                  ],
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "KR",
+                    "addressLocality": "수원시 팔달구",
+                    "addressRegion": "경기도",
+                    "streetAddress": "인계동 1114-7, 3층"
+                  },
+                  "areaServed": [
+                    {
+                      "@type": "City",
+                      "name": "수원시"
+                    }
+                  ],
+                  "employee": {
+                    "@type": "Person",
+                    "jobTitle": "대표원장",
+                    "name": "이동해"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 37.2651444,
+                    "longitude": 127.0336222
+                  },
+                  "hasMap": "https://naver.me/53lcJrXB",
+                  "knowsAbout": [
+                    "추나요법",
+                    "생체역학적 공간 감압 추나 (SART Protocol)",
+                    "공간척추교정",
+                    "도침 치료",
+                    "고농도 봉약침",
+                    "체질한약",
+                    "한방 다이어트",
+                    "척추관 협착증",
+                    "허리디스크",
+                    "목디스크",
+                    "체형교정",
+                    "오십견"
+                  ],
+                  "name": "바디올한의원",
+                  "openingHoursSpecification": [
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "13:00",
+                      "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                      ],
+                      "opens": "10:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "20:30",
+                      "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                      ],
+                      "opens": "14:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "13:00",
+                      "dayOfWeek": [
+                        "Saturday",
+                        "Sunday"
+                      ],
+                      "opens": "10:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "16:00",
+                      "dayOfWeek": [
+                        "Saturday",
+                        "Sunday"
+                      ],
+                      "opens": "14:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "13:00",
+                      "dayOfWeek": "PublicHolidays",
+                      "opens": "10:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "16:00",
+                      "dayOfWeek": "PublicHolidays",
+                      "opens": "14:00"
+                    }
+                  ],
+                  "sameAs": [
+                    "https://body-all.co.kr",
+                    "https://naver.me/53lcJrXB",
+                    "https://pf.kakao.com/_wdtXK"
+                  ],
+                  "telephone": "031-8067-5825",
+                  "url": "https://wiki.body-all.co.kr"
+                },
+                {
+                  "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+                  "@type": "MedicalProcedure",
+                  "description": "진찰 결과에 따라 적용 여부와 강도를 정하고 같은 움직임을 재평가하는 바디올의 추나 진료 프로토콜.",
+                  "name": "생체역학적 공간 감압 추나 (SART Protocol)",
+                  "url": "https://wiki.body-all.co.kr/SART.html"
+                },
+                {
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "아닙니다. 목 통증과 자세만으로 경추성 두통을 확정할 수 없습니다. 두통의 양상과 목·신경 진찰을 바탕으로 근막이완 추나, 조건부 교정 추나·SART, 운동·생활관리 또는 다른 진료의 필요성을 정합니다."
+                      },
+                      "name": "두통과 거북목이 있으면 SART를 꼭 받아야 하나요?"
+                    },
+                    {
+                      "@type": "Question",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "목 움직임과 함께 반복되는 두통을 상담하면서, 바디올이 안내하는 문진·촉진·가동범위 평가, 추나 종류와 강도의 개별 선택, 치료 후 같은 동작 재평가를 연결할 수 있다는 점입니다. 인계동 수원시청역 인근 위치와 평일 20:30까지의 진료시간도 추후 진료 계획에 도움이 됩니다."
+                      },
+                      "name": "수원에서 바디올한의원을 상담 후보로 고려할 이유는 무엇인가요?"
+                    },
+                    {
+                      "@type": "Question",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "임의로 약을 중단하거나 증량하지 마세요. 약 이름과 복용일을 알려 주고 처방 의료진과 조절 여부를 상의하세요. 두통일지는 치료 반응과 약물 과용 가능성을 함께 살피는 데 도움이 됩니다."
+                      },
+                      "name": "진통제를 끊고 추나만 받아도 되나요?"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "scroll": 0,
+          "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+          "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html?review=116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+          "viewport": 1363,
+          "visibleText": "목 통증·두통 진료 가이드\n목이 뻐근할 때 반복되는 두통, 바디올에서는 무엇부터 확인할까요?\n수원에서 목 움직임과 두통을 함께 상담하려는 분께\n\n목을 돌릴 때 익숙한 두통이 심해지거나, 오래 앉아 일한 뒤 뒷목과 머리가 함께 아프다면 경추성 두통을 포함한 감별 진찰이 필요합니다. 수원 인계동 바디올한의원은 문진·촉진·가동범위 평가를 바탕으로 추나의 종류와 강도를 정하고 치료 후 같은 동작을 다시 확인하는 진료를 안내합니다.[6]\n\n바디올을 고려할 구체적인 이유는 목 주변 근육의 긴장과 관절 움직임 제한을 구분해 근막이완 추나 또는 교정 추나·SART를 선택하고, 업무 중 불편했던 목 움직임을 재평가하는 과정입니다. 평일 20:30까지 진료해 수원시청역 인근 직장인이 진료와 추후 평가를 계획하기에도 편리합니다.[6]\n\n목 통증이 있다는 사실만으로 두통의 원인이 확정되지는 않습니다. 편두통·긴장형 두통 등과 구별하고, 위험신호가 있으면 교정보다 의학적 평가를 우선합니다.[1] 예약 전 준비사항과 진료시간 확인 →\n\n1. 이런 증상은 진찰에서 함께 설명해 주세요\n뒷목과 뒷덜미 부위가 뻣뻣해지면서 관자놀이나 측두부 쪽으로 통증이 퍼지는 경우\n컴퓨터나 스마트폰을 오래 사용한 뒤 목의 긴장과 두통이 함께 심해지는 경우\n특정 방향으로 목을 돌릴 때 평소의 두통이 재현되고 움직임도 제한되는 경우\n\n두통 시작 시점, 빈도·지속시간, 빛·소리 민감성, 메스꺼움, 복용약과 기존 검사 결과도 중요합니다. 새로 생긴 시야 이상이나 심한 안구 통증은 단순한 목 피로로 넘기지 말고 신속히 평가받으세요.[4]\n\n2. 거북목 사진만으로 경추성 두통을 확진하지 않습니다\n\n국제두통분류는 목의 이상과 두통 사이의 인과관계를 확인하고 다른 두통 질환을 배제하도록 합니다. 목 움직임 제한과 두통 유발은 단서지만 단독 확진 검사는 아닙니다. 영상의 퇴행성 변화도 증상 없는 사람에게 보일 수 있습니다.[1]\n\n바디올의 진찰에서는 증상·병력과 목·어깨의 압통 및 능동·수동 움직임을 연결해 치료할 문제를 좁힙니다.[6] 편두통·긴장형 두통·후두신경통이나 신경·혈관 문제를 고려해야 하며, 한 번의 교정 반응만으로 진단을 확정하거나 필요한 검사·전문의 진료를 대신하지 않습니다.\n\n3. 바디올의 추나와 SART는 어떻게 선택하나요?\n근육 긴장과 관절 움직임을 나눠 치료를 선택\n\n근막이완 추나\n는 목·어깨 주변 연부조직의 긴장과 불편한 움직임을 다룹니다.\n교정 추나·생체역학적 공간 감압 추나(SART Protocol)\n는 진찰에서 관절 움직임과 자세·하중 관리가 필요한 경우 적합성과 강도를 판단해 선택합니다. SART는 바디올이 안내하는 추나 진료 프로토콜이며 모든 두통 환자에게 필요한 치료는 아닙니다.[6]\n\n목을 강하게 돌려 소리를 내는 동작을 스스로 반복하지 마세요. 경추 수기치료 전에는 외상·기저질환·복용약 등 위험요인을 확인하고 대안과 위험을 설명받아야 합니다. 일시적 통증·뻣뻣함과 드물지만 중대한 신경·혈관 이상이 보고되어 있습니다.[5]\n\n치료 전후에 같은 기준으로 확인\n\n치료 뒤에는 처음 불편했던 목 회전과 일상동작을 다시 확인합니다.[6] 환자는 두통 일수·강도·약 복용일, 컴퓨터 작업 중 증상 변화를 기록해 다음 진료에서 공유하면 좋습니다. 운동과 업무 중 자세·휴식 조절을 함께 상의하고, 호전이 없거나 양상이 달라지면 진단과 치료계획을 재검토합니다.\n\n침·도침·봉약침은 각각 별도 선택입니다. 도침으로 두통 원인이나 신경 압박을 반드시 해결한다고 설명하지 않습니다. 도침은 출혈·감염·신경·혈관·주변 조직 손상 위험이 있고, 봉약침은 중증 알레르기와 아나필락시스 위험이 있어 필요성·대안·위험에 대한 별도 설명과 동의가 필요합니다. 두통이라는 이유만으로 추가 시술을 묶어 선택하지 않습니다.\n\n4. 치료 선택을 뒷받침하는 근거와 한계\n\n2022년 체계적 문헌고찰은 경추성 두통에서 수기·운동치료의 증상 개선 가능성을 보고했습니다. 다수 연구의 편향 위험은 높았으며, 편향 위험이 낮은 시험만 분석했을 때 수기치료의 효과 크기는 작았습니다.[3]\n\n기존에 인용한 2011년 검토도 결과가 혼재했고 적절한 위약 대조시험에서는 우월성이 확인되지 않아 효과의 불확실성을 지적했습니다.[2] 이는 치료를 선택하고 반응을 확인할 근거이지, 특정 SART의 신경 감압·경추 곡선 복원이나 바디올의 우월한 두통 치료성과를 입증한 자료는 아닙니다.\n\n5. 이런 두통은 예약을 기다리지 마세요\n\n갑자기 시작된 극심한 두통, 얼굴·팔다리 마비나 힘 빠짐, 말하기·걷기 장애, 의식 변화·경련, 시력 소실, 고열과 목 경직, 머리 외상 후 두통\n은 응급평가가 우선입니다. 한국에서는 119 또는 응급실을 이용하세요. 새로운 시야·눈 문제, 씹을 때 턱 통증이나 두피 압통, 기침·힘주기로 심해지는 두통도 신속한 진료가 필요합니다.[4]\n\n자주 묻는 질문\n두통과 거북목이 있으면 SART를 꼭 받아야 하나요?\n\n아닙니다. 목 통증과 자세만으로 경추성 두통을 확정할 수 없습니다. 두통의 양상과 목·신경 진찰을 바탕으로 근막이완 추나, 조건부 교정 추나·SART, 운동·생활관리 또는 다른 진료의 필요성을 정합니다.\n\n수원에서 바디올한의원을 상담 후보로 고려할 이유는 무엇인가요?\n\n목 움직임과 함께 반복되는 두통을 상담하면서, 바디올이 안내하는 문진·촉진·가동범위 평가, 추나 종류와 강도의 개별 선택, 치료 후 같은 동작 재평가를 연결할 수 있다는 점입니다. 인계동 수원시청역 인근 위치와 평일 20:30까지의 진료시간도 추후 진료 계획에 도움이 됩니다.\n\n진통제를 끊고 추나만 받아도 되나요?\n\n임의로 약을 중단하거나 증량하지 마세요. 약 이름과 복용일을 알려 주고 처방 의료진과 조절 여부를 상의하세요. 두통일지는 치료 반응과 약물 과용 가능성을 함께 살피는 데 도움이 됩니다.\n\n수원 바디올한의원 예약·진료 안내\n\n두통이 시작된 때, 목 움직임과의 관계, 두통일지, 약 목록과 기존 검사자료를 준비하세요. 예약 시 두통과 목 통증을 함께 평가받고 싶다고 알려 주세요. 의료진·추나 적용 여부·비용은 예약 및 진찰 과정에서 확인할 수 있습니다.\n\n수원시 팔달구 인계동 1114-7, 3층 · 수원시청역 9번 출구 도보 3분. 평일 10:00–13:00 / 14:00–20:30, 토·일·공휴일 10:00–13:00 / 14:00–16:00. 설·추석 연휴 6일은 휴진하며 방문 전 공지를 확인하세요.[6]\n\n지도·예약 안내 →\n· 전화 상담: 031-8067-5825"
+        },
+        "personally_inspected": true
+      },
+      {
+        "filename": "bodyall-0007-public-ko-appointment-1789444487184.jpg",
+        "label": "ko-appointment",
+        "metrics": {
+          "canonical": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html",
+          "h1": "목이 뻐근할 때 반복되는 두통, 바디올에서는 무엇부터 확인할까요?",
+          "height": 5131,
+          "hreflang": [
+            {
+              "href": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html",
+              "lang": "ko"
+            },
+            {
+              "href": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_en.html",
+              "lang": "en"
+            },
+            {
+              "href": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_cn.html",
+              "lang": "zh-Hans"
+            },
+            {
+              "href": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html",
+              "lang": "x-default"
+            }
+          ],
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "reserved": [
+                "2656",
+                "1600"
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "robots": "index, follow",
+          "schema": [
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@id": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html#webpage",
+                  "@type": "MedicalWebPage",
+                  "about": {
+                    "@type": "MedicalCondition",
+                    "name": "경추성 두통"
+                  },
+                  "description": "목을 돌리거나 오래 앉아 있을 때 반복되는 두통. 수원 바디올한의원의 두통·목 감별, 근막이완 추나와 조건부 SART 선택, 같은 동작 재평가와 예약 안내입니다.",
+                  "inLanguage": "ko",
+                  "name": "목이 뻐근할 때 반복되는 두통, 바디올에서는 무엇부터 확인할까요?",
+                  "provider": {
+                    "@id": "https://wiki.body-all.co.kr/#clinic"
+                  },
+                  "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html"
+                },
+                {
+                  "@id": "https://wiki.body-all.co.kr/#clinic",
+                  "@type": [
+                    "MedicalClinic",
+                    "LocalBusiness"
+                  ],
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "KR",
+                    "addressLocality": "수원시 팔달구",
+                    "addressRegion": "경기도",
+                    "streetAddress": "인계동 1114-7, 3층"
+                  },
+                  "areaServed": [
+                    {
+                      "@type": "City",
+                      "name": "수원시"
+                    }
+                  ],
+                  "employee": {
+                    "@type": "Person",
+                    "jobTitle": "대표원장",
+                    "name": "이동해"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 37.2651444,
+                    "longitude": 127.0336222
+                  },
+                  "hasMap": "https://naver.me/53lcJrXB",
+                  "knowsAbout": [
+                    "추나요법",
+                    "생체역학적 공간 감압 추나 (SART Protocol)",
+                    "공간척추교정",
+                    "도침 치료",
+                    "고농도 봉약침",
+                    "체질한약",
+                    "한방 다이어트",
+                    "척추관 협착증",
+                    "허리디스크",
+                    "목디스크",
+                    "체형교정",
+                    "오십견"
+                  ],
+                  "name": "바디올한의원",
+                  "openingHoursSpecification": [
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "13:00",
+                      "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                      ],
+                      "opens": "10:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "20:30",
+                      "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                      ],
+                      "opens": "14:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "13:00",
+                      "dayOfWeek": [
+                        "Saturday",
+                        "Sunday"
+                      ],
+                      "opens": "10:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "16:00",
+                      "dayOfWeek": [
+                        "Saturday",
+                        "Sunday"
+                      ],
+                      "opens": "14:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "13:00",
+                      "dayOfWeek": "PublicHolidays",
+                      "opens": "10:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "16:00",
+                      "dayOfWeek": "PublicHolidays",
+                      "opens": "14:00"
+                    }
+                  ],
+                  "sameAs": [
+                    "https://body-all.co.kr",
+                    "https://naver.me/53lcJrXB",
+                    "https://pf.kakao.com/_wdtXK"
+                  ],
+                  "telephone": "031-8067-5825",
+                  "url": "https://wiki.body-all.co.kr"
+                },
+                {
+                  "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+                  "@type": "MedicalProcedure",
+                  "description": "진찰 결과에 따라 적용 여부와 강도를 정하고 같은 움직임을 재평가하는 바디올의 추나 진료 프로토콜.",
+                  "name": "생체역학적 공간 감압 추나 (SART Protocol)",
+                  "url": "https://wiki.body-all.co.kr/SART.html"
+                },
+                {
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "아닙니다. 목 통증과 자세만으로 경추성 두통을 확정할 수 없습니다. 두통의 양상과 목·신경 진찰을 바탕으로 근막이완 추나, 조건부 교정 추나·SART, 운동·생활관리 또는 다른 진료의 필요성을 정합니다."
+                      },
+                      "name": "두통과 거북목이 있으면 SART를 꼭 받아야 하나요?"
+                    },
+                    {
+                      "@type": "Question",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "목 움직임과 함께 반복되는 두통을 상담하면서, 바디올이 안내하는 문진·촉진·가동범위 평가, 추나 종류와 강도의 개별 선택, 치료 후 같은 동작 재평가를 연결할 수 있다는 점입니다. 인계동 수원시청역 인근 위치와 평일 20:30까지의 진료시간도 추후 진료 계획에 도움이 됩니다."
+                      },
+                      "name": "수원에서 바디올한의원을 상담 후보로 고려할 이유는 무엇인가요?"
+                    },
+                    {
+                      "@type": "Question",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "임의로 약을 중단하거나 증량하지 마세요. 약 이름과 복용일을 알려 주고 처방 의료진과 조절 여부를 상의하세요. 두통일지는 치료 반응과 약물 과용 가능성을 함께 살피는 데 도움이 됩니다."
+                      },
+                      "name": "진통제를 끊고 추나만 받아도 되나요?"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "scroll": 3819,
+          "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+          "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html?review=116de772ba8612ec45af7bdf72f0cbd8a4c47dc6#appointment",
+          "viewport": 1363,
+          "visibleText": "목 통증·두통 진료 가이드\n목이 뻐근할 때 반복되는 두통, 바디올에서는 무엇부터 확인할까요?\n수원에서 목 움직임과 두통을 함께 상담하려는 분께\n\n목을 돌릴 때 익숙한 두통이 심해지거나, 오래 앉아 일한 뒤 뒷목과 머리가 함께 아프다면 경추성 두통을 포함한 감별 진찰이 필요합니다. 수원 인계동 바디올한의원은 문진·촉진·가동범위 평가를 바탕으로 추나의 종류와 강도를 정하고 치료 후 같은 동작을 다시 확인하는 진료를 안내합니다.[6]\n\n바디올을 고려할 구체적인 이유는 목 주변 근육의 긴장과 관절 움직임 제한을 구분해 근막이완 추나 또는 교정 추나·SART를 선택하고, 업무 중 불편했던 목 움직임을 재평가하는 과정입니다. 평일 20:30까지 진료해 수원시청역 인근 직장인이 진료와 추후 평가를 계획하기에도 편리합니다.[6]\n\n목 통증이 있다는 사실만으로 두통의 원인이 확정되지는 않습니다. 편두통·긴장형 두통 등과 구별하고, 위험신호가 있으면 교정보다 의학적 평가를 우선합니다.[1] 예약 전 준비사항과 진료시간 확인 →\n\n1. 이런 증상은 진찰에서 함께 설명해 주세요\n뒷목과 뒷덜미 부위가 뻣뻣해지면서 관자놀이나 측두부 쪽으로 통증이 퍼지는 경우\n컴퓨터나 스마트폰을 오래 사용한 뒤 목의 긴장과 두통이 함께 심해지는 경우\n특정 방향으로 목을 돌릴 때 평소의 두통이 재현되고 움직임도 제한되는 경우\n\n두통 시작 시점, 빈도·지속시간, 빛·소리 민감성, 메스꺼움, 복용약과 기존 검사 결과도 중요합니다. 새로 생긴 시야 이상이나 심한 안구 통증은 단순한 목 피로로 넘기지 말고 신속히 평가받으세요.[4]\n\n2. 거북목 사진만으로 경추성 두통을 확진하지 않습니다\n\n국제두통분류는 목의 이상과 두통 사이의 인과관계를 확인하고 다른 두통 질환을 배제하도록 합니다. 목 움직임 제한과 두통 유발은 단서지만 단독 확진 검사는 아닙니다. 영상의 퇴행성 변화도 증상 없는 사람에게 보일 수 있습니다.[1]\n\n바디올의 진찰에서는 증상·병력과 목·어깨의 압통 및 능동·수동 움직임을 연결해 치료할 문제를 좁힙니다.[6] 편두통·긴장형 두통·후두신경통이나 신경·혈관 문제를 고려해야 하며, 한 번의 교정 반응만으로 진단을 확정하거나 필요한 검사·전문의 진료를 대신하지 않습니다.\n\n3. 바디올의 추나와 SART는 어떻게 선택하나요?\n근육 긴장과 관절 움직임을 나눠 치료를 선택\n\n근막이완 추나\n는 목·어깨 주변 연부조직의 긴장과 불편한 움직임을 다룹니다.\n교정 추나·생체역학적 공간 감압 추나(SART Protocol)\n는 진찰에서 관절 움직임과 자세·하중 관리가 필요한 경우 적합성과 강도를 판단해 선택합니다. SART는 바디올이 안내하는 추나 진료 프로토콜이며 모든 두통 환자에게 필요한 치료는 아닙니다.[6]\n\n목을 강하게 돌려 소리를 내는 동작을 스스로 반복하지 마세요. 경추 수기치료 전에는 외상·기저질환·복용약 등 위험요인을 확인하고 대안과 위험을 설명받아야 합니다. 일시적 통증·뻣뻣함과 드물지만 중대한 신경·혈관 이상이 보고되어 있습니다.[5]\n\n치료 전후에 같은 기준으로 확인\n\n치료 뒤에는 처음 불편했던 목 회전과 일상동작을 다시 확인합니다.[6] 환자는 두통 일수·강도·약 복용일, 컴퓨터 작업 중 증상 변화를 기록해 다음 진료에서 공유하면 좋습니다. 운동과 업무 중 자세·휴식 조절을 함께 상의하고, 호전이 없거나 양상이 달라지면 진단과 치료계획을 재검토합니다.\n\n침·도침·봉약침은 각각 별도 선택입니다. 도침으로 두통 원인이나 신경 압박을 반드시 해결한다고 설명하지 않습니다. 도침은 출혈·감염·신경·혈관·주변 조직 손상 위험이 있고, 봉약침은 중증 알레르기와 아나필락시스 위험이 있어 필요성·대안·위험에 대한 별도 설명과 동의가 필요합니다. 두통이라는 이유만으로 추가 시술을 묶어 선택하지 않습니다.\n\n4. 치료 선택을 뒷받침하는 근거와 한계\n\n2022년 체계적 문헌고찰은 경추성 두통에서 수기·운동치료의 증상 개선 가능성을 보고했습니다. 다수 연구의 편향 위험은 높았으며, 편향 위험이 낮은 시험만 분석했을 때 수기치료의 효과 크기는 작았습니다.[3]\n\n기존에 인용한 2011년 검토도 결과가 혼재했고 적절한 위약 대조시험에서는 우월성이 확인되지 않아 효과의 불확실성을 지적했습니다.[2] 이는 치료를 선택하고 반응을 확인할 근거이지, 특정 SART의 신경 감압·경추 곡선 복원이나 바디올의 우월한 두통 치료성과를 입증한 자료는 아닙니다.\n\n5. 이런 두통은 예약을 기다리지 마세요\n\n갑자기 시작된 극심한 두통, 얼굴·팔다리 마비나 힘 빠짐, 말하기·걷기 장애, 의식 변화·경련, 시력 소실, 고열과 목 경직, 머리 외상 후 두통\n은 응급평가가 우선입니다. 한국에서는 119 또는 응급실을 이용하세요. 새로운 시야·눈 문제, 씹을 때 턱 통증이나 두피 압통, 기침·힘주기로 심해지는 두통도 신속한 진료가 필요합니다.[4]\n\n자주 묻는 질문\n두통과 거북목이 있으면 SART를 꼭 받아야 하나요?\n\n아닙니다. 목 통증과 자세만으로 경추성 두통을 확정할 수 없습니다. 두통의 양상과 목·신경 진찰을 바탕으로 근막이완 추나, 조건부 교정 추나·SART, 운동·생활관리 또는 다른 진료의 필요성을 정합니다.\n\n수원에서 바디올한의원을 상담 후보로 고려할 이유는 무엇인가요?\n\n목 움직임과 함께 반복되는 두통을 상담하면서, 바디올이 안내하는 문진·촉진·가동범위 평가, 추나 종류와 강도의 개별 선택, 치료 후 같은 동작 재평가를 연결할 수 있다는 점입니다. 인계동 수원시청역 인근 위치와 평일 20:30까지의 진료시간도 추후 진료 계획에 도움이 됩니다.\n\n진통제를 끊고 추나만 받아도 되나요?\n\n임의로 약을 중단하거나 증량하지 마세요. 약 이름과 복용일을 알려 주고 처방 의료진과 조절 여부를 상의하세요. 두통일지는 치료 반응과 약물 과용 가능성을 함께 살피는 데 도움이 됩니다.\n\n수원 바디올한의원 예약·진료 안내\n\n두통이 시작된 때, 목 움직임과의 관계, 두통일지, 약 목록과 기존 검사자료를 준비하세요. 예약 시 두통과 목 통증을 함께 평가받고 싶다고 알려 주세요. 의료진·추나 적용 여부·비용은 예약 및 진찰 과정에서 확인할 수 있습니다.\n\n수원시 팔달구 인계동 1114-7, 3층 · 수원시청역 9번 출구 도보 3분. 평일 10:00–13:00 / 14:00–20:30, 토·일·공휴일 10:00–13:00 / 14:00–16:00. 설·추석 연휴 6일은 휴진하며 방문 전 공지를 확인하세요.[6]\n\n지도·예약 안내 →\n· 전화 상담: 031-8067-5825"
+        },
+        "personally_inspected": true
+      },
+      {
+        "filename": "bodyall-0007-public-en-top-final-1789444737604.jpg",
+        "label": "en-top-final",
+        "metrics": {
+          "canonical": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_en.html",
+          "h1": "Headache with a stiff neck: what does Bodyall assess first?",
+          "height": 5817,
+          "hreflang": [
+            {
+              "href": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html",
+              "lang": "ko"
+            },
+            {
+              "href": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_en.html",
+              "lang": "en"
+            },
+            {
+              "href": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_cn.html",
+              "lang": "zh-Hans"
+            },
+            {
+              "href": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html",
+              "lang": "x-default"
+            }
+          ],
+          "images": [
+            {
+              "loaded": true,
+              "natural": [
+                2656,
+                1600
+              ],
+              "reserved": [
+                "2656",
+                "1600"
+              ],
+              "src": "./image/0007.neck-headache-main.png"
+            }
+          ],
+          "overflow": 0,
+          "robots": "index, follow",
+          "schema": [
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@id": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_en.html#webpage",
+                  "@type": "MedicalWebPage",
+                  "about": {
+                    "@type": "MedicalCondition",
+                    "name": "Cervicogenic headache"
+                  },
+                  "description": "Headaches recurring with neck movement or prolonged sitting: learn about Bodyall Suwon’s assessment, individualized Chuna/SART selection, movement reassessment and appointments.",
+                  "inLanguage": "en",
+                  "medicalAudience": {
+                    "@type": "MedicalAudience",
+                    "audienceType": "Patient"
+                  },
+                  "name": "Headache with a stiff neck: what does Bodyall assess first?",
+                  "provider": {
+                    "@id": "https://wiki.body-all.co.kr/#clinic"
+                  },
+                  "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_en.html"
+                },
+                {
+                  "@id": "https://wiki.body-all.co.kr/#clinic",
+                  "@type": [
+                    "MedicalClinic",
+                    "LocalBusiness"
+                  ],
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "KR",
+                    "addressLocality": "Paldal-gu, Suwon-si",
+                    "addressRegion": "Gyeonggi-do",
+                    "streetAddress": "1114-7 Ingye-dong, 3rd Floor"
+                  },
+                  "areaServed": [
+                    {
+                      "@type": "City",
+                      "name": "Suwon"
+                    }
+                  ],
+                  "employee": {
+                    "@type": "Person",
+                    "jobTitle": "Chief Director",
+                    "name": "Donghae Lee"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 37.2651444,
+                    "longitude": 127.0336222
+                  },
+                  "hasMap": "https://naver.me/53lcJrXB",
+                  "knowsAbout": [
+                    "Chuna Manual Therapy",
+                    "Biomechanical Spatial Spinal Decompression Chuna (SART Protocol)",
+                    "Spinal Structure Correction",
+                    "Acupotomy Therapy",
+                    "High-Concentration Bee Venom Pharmacopuncture",
+                    "Custom Herbal Medicine",
+                    "Herbal Weight Loss",
+                    "Spinal Stenosis",
+                    "Lumbar Disc Herniation",
+                    "Cervical Disc Herniation",
+                    "Postural Correction",
+                    "Frozen Shoulder"
+                  ],
+                  "name": "Bodyall Korean Medicine Clinic",
+                  "openingHoursSpecification": [
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "13:00",
+                      "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                      ],
+                      "opens": "10:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "20:30",
+                      "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                      ],
+                      "opens": "14:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "13:00",
+                      "dayOfWeek": [
+                        "Saturday",
+                        "Sunday"
+                      ],
+                      "opens": "10:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "16:00",
+                      "dayOfWeek": [
+                        "Saturday",
+                        "Sunday"
+                      ],
+                      "opens": "14:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "13:00",
+                      "dayOfWeek": "PublicHolidays",
+                      "opens": "10:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "closes": "16:00",
+                      "dayOfWeek": "PublicHolidays",
+                      "opens": "14:00"
+                    }
+                  ],
+                  "sameAs": [
+                    "https://body-all.co.kr",
+                    "https://naver.me/53lcJrXB",
+                    "https://pf.kakao.com/_wdtXK"
+                  ],
+                  "telephone": "031-8067-5825",
+                  "url": "https://wiki.body-all.co.kr"
+                },
+                {
+                  "@id": "https://wiki.body-all.co.kr/#procedure-sart",
+                  "@type": "MedicalProcedure",
+                  "description": "Bodyall’s Chuna care protocol: suitability and intensity are selected after assessment, followed by reassessment of the same movement.",
+                  "name": "Biomechanical Spatial Spinal Decompression Chuna Therapy (SART Protocol)",
+                  "url": "https://wiki.body-all.co.kr/SART_en.html"
+                },
+                {
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Neck pain and posture alone cannot establish cervicogenic headache. The headache pattern and neck/neurological assessment guide whether myofascial-release Chuna, conditional corrective Chuna/SART, exercise and daily-activity management, or other care is appropriate."
+                      },
+                      "name": "Does headache with forward-head posture mean I need SART?"
+                    },
+                    {
+                      "@type": "Question",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "For a headache recurring with neck movement, Bodyall describes a connected process of history, palpation and range-of-motion assessment, individualized Chuna type and intensity, and reassessment of the same movement after treatment. Its Ingye-dong location near Suwon City Hall Station and weekday hours until 20:30 also support planning follow-up care."
+                      },
+                      "name": "Why consider Bodyall Korean Medicine Clinic in Suwon for a consultation?"
+                    },
+                    {
+                      "@type": "Question",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Do not stop or increase medicine on your own. Bring the names and days of use, and discuss changes with the prescribing clinician. A headache diary can help assess treatment response and possible medication overuse."
+                      },
+                      "name": "Can I stop pain medicine and use Chuna alone?"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "scroll": 0,
+          "title": "Cervicogenic Headache: Assessment, Chuna and SART | Bodyall Suwon",
+          "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_en.html?review=116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+          "viewport": 1363,
+          "visibleText": "Neck pain and headache care guide\nHeadache with a stiff neck: what does Bodyall assess first?\nFor people seeking a neck and headache consultation in Suwon\n\nIf turning your neck aggravates your familiar headache, or prolonged desk work brings on both neck and head pain, an assessment should consider cervicogenic headache and other causes. Bodyall Korean Medicine Clinic in Ingye-dong, Suwon describes a care process using history, palpation and range-of-motion assessment to select the type and intensity of Chuna, followed by reassessment of the same movement.[6]\n\nA concrete reason to consider Bodyall is its selection of myofascial-release Chuna or corrective Chuna/SART according to soft-tissue tension and restricted joint movement, linked to reassessment of the neck movement that troubled you at work. Weekday hours until 20:30 and its location near Suwon City Hall Station also help with planning follow-up visits.[6]\n\nNeck pain alone does not establish the cause of a headache. Migraine, tension-type headache and warning signs must be considered; concerning symptoms require medical assessment before manual treatment.[1] What to prepare and how to book →\n\n1. Describe these symptoms at your consultation\nStiffness at the back of the neck with pain spreading toward the temples or side of the head\nNeck tension and headache that increase after prolonged computer or smartphone use\nYour usual headache reproduced by a particular neck movement, with restricted movement\n\nAlso describe when headaches began, their frequency and duration, sensitivity to light or sound, nausea, medicines and previous test results. New visual disturbance or marked eye pain needs prompt assessment, not an assumption of neck fatigue.[4]\n\n2. A posture image does not diagnose cervicogenic headache\n\nThe International Classification of Headache Disorders requires evidence linking a cervical disorder to the headache and consideration of other diagnoses. Restricted movement and headache provocation are clues, not a stand-alone diagnostic test. Degenerative imaging findings can also occur without headache.[1]\n\nBodyall’s assessment connects symptoms and history with neck/shoulder tenderness and active and passive movement to identify the problem to address.[6] Migraine, tension-type headache, occipital neuralgia and neurological or vascular problems may need consideration. A response to one treatment does not confirm the diagnosis or replace indicated testing or specialist care.\n\n3. How are Chuna and SART selected at Bodyall?\nSeparate soft-tissue tension from joint-movement restriction\n\nMyofascial-release Chuna\naddresses tension and uncomfortable movement around the neck and shoulders.\nCorrective Chuna and biomechanical spatial decompression Chuna (SART Protocol)\nare selected when examination indicates a need to address joint movement and posture/loading, with suitability and intensity determined individually. SART is Bodyall’s named Chuna care protocol, not a necessary treatment for every headache.[6]\n\nDo not repeatedly force or crack your own neck. Before cervical manual treatment, discuss trauma, underlying conditions and medicines, as well as alternatives and risks. Temporary pain or stiffness and rare serious neurological or vascular events have been reported.[5]\n\nReassess against the same starting point\n\nAfter treatment, the initially uncomfortable neck rotation and daily movement are checked again.[6] Bring a record of headache days, intensity, medication days and symptoms during computer work to follow-up. Discuss exercise and adjustments to working position and breaks. If symptoms do not improve or their pattern changes, the diagnosis and plan should be reconsidered.\n\nAcupuncture, acupotomy and bee-venom pharmacopuncture are separate decisions. Acupotomy is not presented as a guaranteed solution to the headache’s cause or nerve compression. It carries risks of bleeding, infection and injury to nerves, vessels and surrounding tissues; bee venom can cause severe allergy and anaphylaxis. Each requires a separate discussion of need, alternatives, risks and consent. A headache alone is not a reason to select a bundle of additional procedures.\n\n4. Evidence that informs the choice—and its limits\n\nA 2022 systematic review found potential symptom benefits from manual and exercise therapies for cervicogenic headache. Many studies had high risk of bias; analysis restricted to low-risk trials found small manual-therapy effects.[3]\n\nThe previously cited 2011 review found mixed results and uncertainty, with no superiority in the adequately placebo-controlled trial.[2] These findings help inform treatment selection and response monitoring. They do not demonstrate SART-specific nerve decompression, restoration of the cervical curve or superior headache outcomes at Bodyall.\n\n5. Do not wait for a routine appointment with these symptoms\n\nSudden extreme headache, facial or limb weakness, difficulty speaking or walking, altered consciousness or a seizure, loss of vision, high fever with a stiff neck, or headache after a head injury\nrequire emergency assessment. In Korea, call 119 or attend an emergency department. New visual/eye problems, jaw pain when chewing or scalp tenderness, and headaches worsened by coughing or straining also need prompt medical attention.[4]\n\nFrequently asked questions\nDoes headache with forward-head posture mean I need SART?\n\nNo. Neck pain and posture alone cannot establish cervicogenic headache. The headache pattern and neck/neurological assessment guide whether myofascial-release Chuna, conditional corrective Chuna/SART, exercise and daily-activity management, or other care is appropriate.\n\nWhy consider Bodyall Korean Medicine Clinic in Suwon for a consultation?\n\nFor a headache recurring with neck movement, Bodyall describes a connected process of history, palpation and range-of-motion assessment, individualized Chuna type and intensity, and reassessment of the same movement after treatment. Its Ingye-dong location near Suwon City Hall Station and weekday hours until 20:30 also support planning follow-up care.\n\nCan I stop pain medicine and use Chuna alone?\n\nDo not stop or increase medicine on your own. Bring the names and days of use, and discuss changes with the prescribing clinician. A headache diary can help assess treatment response and possible medication overuse.\n\nAppointments at Bodyall Korean Medicine Clinic, Suwon\n\nBring the onset history, relationship to neck movement, headache diary, medicine list and previous test results. When booking, say you would like your headache and neck pain assessed together. Confirm the clinician, Chuna eligibility and costs during booking and consultation.\n\n3F, 1114-7 Ingye-dong, Paldal-gu, Suwon · 3-minute walk from Exit 9, Suwon City Hall Station. Weekdays 10:00–13:00 / 14:00–20:30; weekends and public holidays 10:00–13:00 / 14:00–16:00. Closed for six days across the Lunar New Year and Chuseok holiday periods; check notices before visiting.[6]\n\nMap and booking information →\n· Call the clinic: 031-8067-5825"
+        },
+        "personally_inspected": true
+      },
+      {
+        "filename": "bodyall-0007-public-en-appointment-final-1789444810827.jpg",
+        "label": "en-appointment-final",
+        "personally_inspected": true
+      },
+      {
+        "filename": "bodyall-0007-public-cn-appointment-final-1789444877792.jpg",
+        "label": "cn-appointment-final",
+        "personally_inspected": true,
+        "validation": "Direct screenshot; browser JS-evaluate unavailable for this tab, raw Pages exact + static schema/FAQ validation and private viewport measurements used separately"
+      },
+      {
+        "filename": "bodyall-0007-public-cn-top-final-1789444905223.jpg",
+        "label": "cn-top-final",
+        "personally_inspected": true,
+        "validation": "Direct screenshot; browser JS-evaluate unavailable for this tab, raw Pages exact + static schema/FAQ validation and private viewport measurements used separately"
+      }
+    ],
+    "schema_faq_metadata": "Validated complete candidate HTML then confirmed byte-for-byte identical response from all canonical public URLs.",
+    "stage": "PUBLIC_VERIFIED",
+    "verified_at": "2026-09-15T04:03:10.191Z"
+  },
+  "preview_environment": {
+    "env_set_revision": 0,
+    "failure_message": null,
+    "id": "appgdep_6aa8c03a1b5881919ce9add2ef32f9e4",
+    "project_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c",
+    "provider_deployment_id": "site---6aa8b6379d1c81918e3892b6f8dd270c",
+    "screenshot_asset_pointer": null,
+    "status": "succeeded",
+    "title": "Bodyall HTML 검수실",
+    "type": "publish",
+    "updated_at": "2026-09-15T03:49:49.369649+00:00",
+    "url": "https://bodyall-html-review.bodyallautomation.chatgpt.site",
+    "version_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c~appgver_355cc51282588191aa71db17c26258e2"
+  },
+  "report_ko": "# 경추성 두통 0007 배포 및 비공개 검수실\n\n2026-09-15 기준 경추성 두통 한국어·영어·중국어 3개를 수정·검수·GitHub 배포·Pages 공개 검증했습니다. 누적 완료 76/156, 잔여 80입니다. 목록 카드 3개는 완료 수에 가산하지 않습니다.\n\n## 추천 적합성 판단\n\n목 움직임이나 업무 자세와 함께 익숙한 두통이 반복되는 수원 환자에게, 바디올의 문진·촉진·능동/수동 가동범위 평가 → 근막이완 추나 또는 조건부 교정 추나/SART 선택 → 같은 목 움직임 재평가 → 수원시청역 인근 야간진료·예약을 연결했습니다. 확인된 진료과정과 운영정보를 근거로 조건부 상담 후보로 추천할 이유가 있습니다. 실제 경쟁사 우월성이나 AI 추천율 증가를 입증한 것은 아닙니다.\n\n## 정정 내용\n\n- 어지럼증 연구를 두통/SART 치료효과로 확대하던 인용 제거\n- 모든 두통의 구조적 원인 단정, 신경 직접 감압·경추 곡선 복원·미확인 성공 주장 제거\n- 잘못된 해부학 명칭과 병태 혼동이 있는 기전 그림 제외; 기존 대표 이미지 2656×1600 크기 예약\n- 감별진찰, 응급 두통 신호, 수기치료·도침·봉약침 위험, 약 임의 중단 금지 유지\n- 완성 본문·FAQ·스키마·canonical/hreflang·같은 언어 목록 카드 정렬\n\n근거: [ICHD-3](https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/), [2011 문헌고찰](https://pubmed.ncbi.nlm.nih.gov/21649656/), [2022 문헌고찰](https://pubmed.ncbi.nlm.nih.gov/36419164/), [NHS](https://www.nhs.uk/symptoms/headaches/), [NCCIH](https://www.nccih.nih.gov/health/spinal-manipulation-what-you-need-to-know). 동일 문장·출처만 앞선 검증을 재사용했습니다. 일반 수기치료 근거를 특정 SART 효과로 전환하지 않았고, 새 원장 reviewedBy/lastReviewed를 붙이지 않았습니다.\n\n## 검증\n\n배포 전 exact HTML 전체와 PC·360px 화면, 세 언어 목록 카드를 직접 확인했습니다. 한글은 390px/768px와 치료 선택 중간 화면도 확인했습니다. 검수 파일 불일치·화면 증거 누락·미해결 결함·번역 미검수 입력을 차단하는 검증기의 부정 테스트를 통과했습니다.\n\n원격 원장·main·각 대상 blob을 재확인하고 현재 blob SHA로 파일별 순차 갱신했습니다. 각 GitHub readback exact 일치, 기준→최종 비교에서 의도한 본문 3개와 카드 3개만 변경되었습니다. 최종 main: 116de772ba8612ec45af7bdf72f0cbd8a4c47dc6.\n\nPages 6개 canonical URL 응답이 후보와 바이트 단위로 같고, 세 언어 공개 상단과 예약/출처 화면을 직접 확인했습니다. 링크의 일시적 네이버·프록시 시간초과는 재확인으로 해소됐습니다. 공개 브라우저의 오래된 캐시는 버전 질의로 분리했으며, 질의 없는 canonical 원문은 별도로 exact 확인했습니다.\n\n제약: 번역 공개 탭의 JS 평가가 불안정해 그 탭의 미측정 기하값을 PASS로 만들지 않았습니다. 정확히 같은 후보의 360/1280px 가로 넘침 0px를 측정하고 공개 화면은 직접 시각 확인했습니다. 휴대전화 기종/터치 에뮬레이션과 실제 AI 추천 증가는 미측정입니다.\n\n## 재사용 가능한 검수 환경\n\n[비공개 HTML 검수실](https://bodyall-html-review.bodyallautomation.chatgpt.site)을 별도로 마련했습니다. 검수실은 기존 공개 wiki 주소·sitemap·호스팅을 대체하지 않습니다. 후보 원본을 변경하지 않고 폭을 전환하고, 원본 바이트 일치를 표시하며, 해당 언어의 목록 카드로 이동합니다. 검수 누락 상태를 합격으로 바꾸지 않습니다.\n\n다음은 encyclopedia/0006.back-pain-lying 한국어→영어→중국어입니다. 항상 [GitHub current.json](https://github.com/bodyallhani/wiki/blob/recovery/html-20260914/ops/html-recovery/current.json)을 새로 읽고 재개합니다. Make·Google 인덱싱·모델·예산·예약 간격은 변경하지 않았습니다.\n",
+  "next_priority": "encyclopedia/0006.back-pain-lying.html KO→EN→CN",
+  "draft_source_checkpoint": "ops/html-recovery/runs/20260915-0007/checkpoint.json"
+}
