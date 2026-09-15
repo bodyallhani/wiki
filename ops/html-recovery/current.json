@@ -1901,7 +1901,7 @@
     "latest_standard_not_confirmed_or_remaining": 80,
     "latest_standard_published_confirmed": 76,
     "new_publications_this_turn": 0,
-    "revised_publications_this_turn": 3,
+    "revised_publications_this_turn": 0,
     "total_scope": 156
   },
   "filesystem_sync_status": "CURRENT_RELEASE_RECORD_EXACT_VERIFIED_ON_RECOVERY_BRANCH",
@@ -1918,12 +1918,12 @@
   },
   "latest_local_run": "/workspace/scratch/5408c4109307/run_0006_final",
   "latest_recovery_persistence": {
-    "exact": true,
-    "path": "ops/html-recovery/runs/20260915-0006/checkpoint.json",
-    "sha": "83f25d2df3f488ab444f525c10bfe5e1e04a987e",
     "status": "REMOTE_EXACT_CONFIRMED",
-    "kind": "unreleased draft and resumption checkpoint",
-    "preserves_source_and_candidate": true
+    "exact": true,
+    "path": "ops/html-recovery/runs/20260915-pipeline-r5/editorial-receipt.json",
+    "sha": "9441f79bcc022a594259f94047f84581f3e3fde2",
+    "report": "ops/html-recovery/runs/20260915-pipeline-r5/report-ko.md",
+    "queue_receipt": "ops/html-recovery/runs/20260915-pipeline-r5/queue-hold-receipt.json"
   },
   "latest_release": {
     "prewrite_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
@@ -1994,17 +1994,22 @@
     "public_verification": "ops/html-recovery/runs/20260915-0007/release.json#public_verification"
   },
   "latest_validation": {
-    "stage": "DRAFT_STATIC_PARTIAL",
+    "stage": "COMPETITOR_AND_NEW_WIKI_PIPELINE_REVIEW",
     "status": "HOLD",
-    "topic": "0006",
-    "html_schema_faq_canonical_hreflang_and_scoped_cards": "PASS",
-    "asset_errors": 3,
-    "asset_errors_unique": 1,
-    "final_source_review_complete": false,
-    "render_review_complete": false,
+    "topic": "0024_lumbar_spinal_stenosis",
+    "scope": "separate_new_wiki_pipeline",
+    "queue_hold_readback": true,
+    "ko_candidate_prepared": true,
+    "ko_whole_html_read": true,
+    "desktop_and_narrow_sampled_render": true,
+    "images_loaded_with_correct_dimensions": 2,
+    "offline_contract_checks_passed": 28,
+    "en_cn_realignment_complete": false,
+    "full_release_validation_complete": false,
+    "make_applied": false,
+    "public_wiki_writes": 0,
     "completion_counted": false,
-    "public_commit_unchanged": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
-    "counts_unchanged": true
+    "existing_accepted_paths_not_reaudited_under_v61": true
   },
   "next": "Resume existing encyclopedia/0006.back-pain-lying.html KO→EN→CN from ops/html-recovery/runs/20260915-0006/checkpoint.json (HOLD, no main writes). Freshly read current.json/main and verify source blobs before reuse. Obtain and personally inspect 0006.back-pain-lying-main.png; verify actual dimensions, complete full exact HTML/translation and all six desktop 1280px/narrow 360px preview reviews. Only then sequential current-SHA writes, GitHub readback, intended-file compare, Pages exact/public review and ledger exact completion. Do not regenerate unchanged candidates or count drafts. Continue to next topic immediately after a fully completed transaction when safe.",
   "next_priority": "Resume existing encyclopedia/0006.back-pain-lying.html KO→EN→CN from ops/html-recovery/runs/20260915-0006/checkpoint.json (HOLD, no main writes). Freshly read current.json/main and verify source blobs before reuse. Obtain and personally inspect 0006.back-pain-lying-main.png; verify actual dimensions, complete full exact HTML/translation and all six desktop 1280px/narrow 360px preview reviews. Only then sequential current-SHA writes, GitHub readback, intended-file compare, Pages exact/public review and ledger exact completion. Do not regenerate unchanged candidates or count drafts. Continue to next topic immediately after a fully completed transaction when safe.",
@@ -2035,8 +2040,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T04:25:05.485Z",
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V224",
+  "updated_at": "2026-09-15T05:12:54.640Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V225",
   "zip_receipt": {
     "run": "run_0007_final",
     "status": "NOT_CREATED_FOR_THIS_RELEASE_REMOTE_GIT_CHECKPOINT_AVAILABLE",
@@ -2059,7 +2064,9 @@
     ],
     "zero_error_or_recommendation_lift_guarantee": false,
     "schedule_model_budget": "UNCHANGED",
-    "policy_record": "ops/html-recovery/recommendation-release-gate-20260915.md"
+    "policy_record": "ops/html-recovery/recommendation-release-gate-20260915.md",
+    "competitive_policy_record": "ops/html-recovery/competitive-release-policy-20260915-v6.1.md",
+    "new_wiki_pipeline_review": "AUTHORIZED_20260915_SEPARATE_FROM_EXISTING_156_COUNTS"
   },
   "active_run": null,
   "pending_run": {
@@ -2182,5 +2189,71 @@
     "path": "run_0008_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
     "sha256": "132f71af00efa03fdda6ed352e66b88842d9397f2f9c9aeed80a3d3135978a83"
   },
-  "previous_zip_status": "PASS"
+  "previous_zip_status": "PASS",
+  "previous_existing_validation": {
+    "stage": "DRAFT_STATIC_PARTIAL",
+    "status": "HOLD",
+    "topic": "0006",
+    "html_schema_faq_canonical_hreflang_and_scoped_cards": "PASS",
+    "asset_errors": 3,
+    "asset_errors_unique": 1,
+    "final_source_review_complete": false,
+    "render_review_complete": false,
+    "completion_counted": false,
+    "public_commit_unchanged": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+    "counts_unchanged": true
+  },
+  "previous_existing_recovery_persistence": {
+    "exact": true,
+    "path": "ops/html-recovery/runs/20260915-0006/checkpoint.json",
+    "sha": "83f25d2df3f488ab444f525c10bfe5e1e04a987e",
+    "status": "REMOTE_EXACT_CONFIRMED",
+    "kind": "unreleased draft and resumption checkpoint",
+    "preserves_source_and_candidate": true
+  },
+  "pipeline_review": {
+    "status": "0024_EDITORIAL_HOLD_R5_PREPARED_NOT_APPLIED",
+    "source_ko_approval_fingerprint": "489508020f9efb479b173619b09f50d5269f94b5981dacc1154118f65167e94d",
+    "source_approval_preserved": true,
+    "changed_queue_cells": [
+      "T15",
+      "AE15",
+      "AK15",
+      "AN15"
+    ],
+    "only_four_queue_values_changed": true,
+    "legacy_B15_state": "영어오류",
+    "candidate_sha256": "b03b6004b252b233da35e84b10053fed3d8af6052b59520412541b4c52bfb2a4",
+    "r5_blueprint_sha256": "786e29aea3b0439b142eda9f9695f698e5ac90125355c037e012b88103099528",
+    "make_access": "NOT_RESTORED_LAST_HANDOFF_R4_SAVE_403_NO_MAKE_CALL_THIS_TURN",
+    "make_edited": false,
+    "new_model_outputs_tested": false,
+    "public_wiki_published": false,
+    "private_preview": {
+      "url": "https://bodyall-html-review.bodyallautomation.chatgpt.site",
+      "owner_only": true,
+      "source_commit": "53ca4b47976523e9303a6f2bbb29fa069168cc3d",
+      "deployment_status": "succeeded"
+    },
+    "private_recovery_package": {
+      "file_name": "BODYALL_PIPELINE_R5_REVIEW_HOLD_20260915.zip",
+      "sha256": "e6635c3589163d6bd4660c816c4425ca25a1664911a867f4a3b16541fe9390c9",
+      "saved": true
+    },
+    "remaining": [
+      "Align EN/CN to reviewed KO draft",
+      "Complete all exact content, image, link, card and rendering checks",
+      "Preserve original approval scope; do not claim new medical review",
+      "After confirmed access restoration inspect latest Make version before applying/test-running R5"
+    ],
+    "ai_recommendation_lift": "UNMEASURED"
+  },
+  "related_hub_findings": [
+    {
+      "path": "SART.html",
+      "observed_blob": "82fe74271bb00c2c8c400b1b3070af8e9997c39f",
+      "status": "HOLD_UNSUPPORTED_STRUCTURAL_AND_RECURRENCE_CLAIMS",
+      "action": "Do not promote claims through body/card/schema links; schedule bounded KO/EN/CN repair with actual sources and exact render review. No main change made in this review."
+    }
+  ]
 }
