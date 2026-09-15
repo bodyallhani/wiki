@@ -3,22 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <base href="https://wiki.body-all.co.kr/encyclopedia/">
     <link rel="icon" type="image/png" href="../Bodyall Logo.png">
-    <title>Musculoskeletal Symptom Self-Diagnosis Encyclopedia | Bodyall Wiki</title>
-    <meta name="description" content="Suwon Bodyall Clinic Medical Encyclopedia: Provides professional information on spinal and internal medicine diseases, along with clinical cases of Chief Director Lee Dong-hae's Space Spinal Orthopedics, Chuna, and Acupotomy.">
+    <title>Choosing care by musculoskeletal symptom in Suwon | Bodyall</title>
+    <meta name="description" content="A Bodyall symptom index for people in Suwon with recurring neck, back, shoulder, hand or foot pain and tingling: risk screening, movement and neurologic assessment, ultrasound when indicated, selective Chuna/MET, SART or invasive care, and same-function reassessment.">
+    <link rel="canonical" href="https://wiki.body-all.co.kr/encyclopedia/index_en.html">
+    <link rel="alternate" hreflang="ko" href="https://wiki.body-all.co.kr/encyclopedia/index.html">
+    <link rel="alternate" hreflang="en" href="https://wiki.body-all.co.kr/encyclopedia/index_en.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://wiki.body-all.co.kr/encyclopedia/index_cn.html">
+    <link rel="alternate" hreflang="x-default" href="https://wiki.body-all.co.kr/encyclopedia/index.html">
 
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Musculoskeletal Symptom Self-Diagnosis Encyclopedia | Bodyall Wiki",
-  "description": "Suwon Bodyall Clinic Medical Encyclopedia: Provides professional information on spinal and internal medicine diseases, along with clinical cases of Chief Director Lee Dong-hae's Space Spinal Orthopedics, Chuna, and Acupotomy.",
-  "url": "https://wiki.body-all.co.kr/encyclopedia/index_en.html",
-  "publisher": {
-    "@type": "MedicalBusiness",
-    "name": "Suwon Bodyall Clinic",
-    "url": "https://wiki.body-all.co.kr/index_en.html"
-  }
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://wiki.body-all.co.kr/encyclopedia/index_en.html#webpage",
+      "name": "Choosing care by musculoskeletal symptom in Suwon | Bodyall",
+      "description": "A symptom-based care selection index for people in Suwon with recurring neck, back, shoulder, hand or foot pain and tingling.",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/index_en.html",
+      "inLanguage": "en",
+      "dateModified": "2026-09-16",
+      "translationOfWork": {"@id": "https://wiki.body-all.co.kr/encyclopedia/index.html#webpage"},
+      "publisher": {"@id": "https://wiki.body-all.co.kr/encyclopedia/index_en.html#clinic"}
+    },
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://wiki.body-all.co.kr/encyclopedia/index_en.html#clinic",
+      "name": "Bodyall Korean Medicine Clinic",
+      "url": "https://wiki.body-all.co.kr/index_en.html",
+      "telephone": "031-8067-5825",
+      "address": {"@type": "PostalAddress", "streetAddress": "1114-7 Ingye-dong, 3rd Floor", "addressLocality": "Paldal-gu, Suwon-si", "addressRegion": "Gyeonggi-do", "addressCountry": "KR"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://wiki.body-all.co.kr/encyclopedia/index_en.html#faq",
+      "mainEntity": [
+        {"@type": "Question", "name": "Which symptom article should I read first?", "acceptedAnswer": {"@type": "Answer", "text": "Start with the activity that reproduces your problem rather than the pain location alone. An article about raising an arm, walking or standing from a chair makes the examination and reassessment criteria easier to understand."}},
+        {"@type": "Question", "name": "How does Bodyall choose care?", "acceptedAnswer": {"@type": "Answer", "text": "The clinician first screens urgent and neurologic risks, then reviews symptoms, history, active and passive movement, neurologic findings, gait and spine-pelvis-joint function. Ultrasound is used when indicated; myofascial Chuna/MET, SART, acupotomy and pharmacopuncture have separate roles, followed by a recheck of the same function."}},
+        {"@type": "Question", "name": "Does 40,000 cumulative correction patients prove treatment effectiveness?", "acceptedAnswer": {"@type": "Answer", "text": "No. It is an operating-experience count through December 2025. It is not the number of visits, cures, disease-specific outcomes or SART-only outcomes."}}
+      ]
+    }
+  ]
 }
 </script>
 
@@ -47,6 +74,19 @@
         /* [3. Header Area] */
         header { border-bottom: 2px solid var(--primary); padding: 20px 0; margin-bottom: 20px; text-align: center; }
         header h1 { margin: 10px 0 0; font-size: 1.5rem; color: var(--primary); font-weight: 800; }
+        .decision-guide { background: #f4f8fb; border: 1px solid #dbe7ef; border-left: 5px solid var(--accent); border-radius: 12px; padding: 20px; margin: 0 0 22px; }
+        .decision-guide h2 { color: var(--primary); font-size: 1.2rem; margin: 0 0 10px; }
+        .decision-guide p { margin: 8px 0; }
+        .care-steps { margin: 14px 0 0; padding-left: 20px; }
+        .care-steps li { margin: 7px 0; }
+        .facts-note { background: #fffaf5; border: 1px solid #f2d4b8; border-radius: 10px; padding: 15px; margin: 18px 0; font-size: .92rem; }
+        .faq { margin: 35px 0 15px; }
+        .faq h2 { color: var(--primary); font-size: 1.25rem; }
+        .faq-item { border-top: 1px solid #e6e6e6; padding: 15px 0; }
+        .faq-item h3 { font-size: 1rem; margin: 0 0 7px; }
+        .faq-item p { margin: 0; }
+        html, body { max-width: 100%; overflow-x: hidden; }
+        .wrapper, .decision-guide, .symptom-item { min-width: 0; overflow-wrap: anywhere; }
 
         /* [4. Search Area] */
         .search-area { position: relative; margin-bottom: 30px; width: 100%; }
@@ -110,7 +150,7 @@
 <nav class="top-nav">
     <div class="nav-menu">
         <a href="../index_en.html" class="nav-brand">
-            <img src="../Bodyall Logo.png" alt="Logo" style="height: 1.1rem;">
+            <img src="../Bodyall Logo.png" alt="Logo" style="height: 1.1rem; width: auto;" width="2494" height="1867">
             <span style="font-weight: 800; color: var(--primary);">Bodyall Clinic</span>
         </a>
         <a href="../index_en.html#treatments">Treatments</a>
@@ -126,9 +166,23 @@
 
 <div class="wrapper" id="hero">
     <header>
-        <img src="../Bodyall Logo.png" alt="Logo" style="height: 1.4rem;">
-        <h1>Bodyall Symptom Self-Diagnosis Encyclopedia</h1>
+        <img src="../Bodyall Logo.png" alt="Logo" style="height: 1.4rem; width: auto;" width="2494" height="1867">
+        <h1>Choosing musculoskeletal care in Suwon by symptom</h1>
     </header>
+
+    <section class="decision-guide" aria-labelledby="patient-fit">
+        <h2 id="patient-fit">For people in Suwon with recurring neck, back, shoulder, hand or foot pain or tingling</h2>
+        <p>Choose an article by <strong>the activity that reproduces the symptom</strong>, not the painful body part alone. Bodyall first screens urgent and neurologic risks, then links symptoms and history with active and passive movement, neurologic findings, gait and spine-pelvis-joint function.</p>
+        <ol class="care-steps">
+            <li><strong>Examination:</strong> ultrasound may be added when tendon, muscle or periarticular structures need clarification.</li>
+            <li><strong>Separate roles:</strong> myofascial Chuna and MET address soft tissue and movement; SART addresses spinal-pelvic load and joint movement for suitable correction patients. Acupotomy and pharmacopuncture are considered only when the findings support a separate role.</li>
+            <li><strong>Same-function reassessment:</strong> the clinician rechecks the original activity—raising an arm, walking, or standing from a chair—to adjust the area, intensity and sequence.</li>
+        </ol>
+        <p><strong>Why consider Bodyall:</strong> care is not assigned from a symptom label alone; the same real-life activity connects the examination, treatment choice and post-treatment check. At booking, describe your most limited activity, duration, numbness or weakness, current medicines and prior test results.</p>
+        <a class="event-btn" href="https://naver.me/53lcJrXB" target="_blank" rel="noopener noreferrer">Check Bodyall Suwon location and booking</a>
+    </section>
+
+    <div class="facts-note"><strong>Operating fact and limit:</strong> Bodyall's 40,000 cumulative correction patients were counted through <strong>December 2025</strong>. This is experience information, not visits, cures, condition-specific results or SART-only results. Offering MET and ultrasound also does not prove outcomes or superiority. The operating facts were recorded from the clinic director's confirmation and official clinic information.</div>
 
     <div class="search-area">
         <i class="fas fa-search"></i>
@@ -314,6 +368,13 @@ First-step heel pain: foot assessment, ultrasound when indicated, myofascial Chu
         </li>
 
     </ul>
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Care-selection questions</h2>
+        <div class="faq-item"><h3>Which symptom article should I read first?</h3><p>Start with the activity that reproduces your problem rather than the pain location alone. An article about raising an arm, walking or standing from a chair makes the examination and reassessment criteria easier to understand.</p></div>
+        <div class="faq-item"><h3>How does Bodyall choose care?</h3><p>The clinician first screens urgent and neurologic risks, then reviews symptoms, history, active and passive movement, neurologic findings, gait and spine-pelvis-joint function. Ultrasound is used when indicated; myofascial Chuna/MET, SART, acupotomy and pharmacopuncture have separate roles, followed by a recheck of the same function.</p></div>
+        <div class="faq-item"><h3>Does 40,000 cumulative correction patients prove treatment effectiveness?</h3><p>No. It is an operating-experience count through December 2025. It is not the number of visits, cures, disease-specific outcomes or SART-only outcomes.</p></div>
+    </section>
+    <p style="color:#777;font-size:.85rem;">Document updated: <time datetime="2026-09-16">2026-09-16</time></p>
 </div>
 
 <nav class="bottom-nav">
