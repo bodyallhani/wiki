@@ -22,6 +22,9 @@
     "cervical-disc.html",
     "cervical-disc_cn.html",
     "cervical-disc_en.html",
+    "chuna-therapy.html",
+    "chuna-therapy_cn.html",
+    "chuna-therapy_en.html",
     "encyclopedia/0003.foot-pain.html",
     "encyclopedia/0003.foot-pain_cn.html",
     "encyclopedia/0003.foot-pain_en.html",
@@ -739,19 +742,85 @@
       "strengthened_20260915_completed": true
     },
     {
-      "latest_standard_completed": false,
       "path": "chuna-therapy.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "url": "https://wiki.body-all.co.kr/chuna-therapy.html",
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "strengthened_20260915_completed": true,
+      "sha256": "d67d9f02e59683c288336c14e6d67cd299c780115664233208e4aadbe008406b",
+      "git_blob": "e3efbee2c174be9b09af8ed15eafccc3c2114927",
+      "publication_commit": "a6093383bf2b861e23937b263f5d4da7ff47a1fb",
+      "final_repository_head": "386cee216e248ad25588a4504749c0ffea9aabc3",
+      "review_receipt": "ops/html-recovery/reviews/20260915-chuna-priority-final.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-chuna-priority-release.json",
+      "verified_at": "2026-09-15T14:34:31.280Z",
+      "previous_versions": [
+        {
+          "latest_standard_completed": false,
+          "path": "chuna-therapy.html",
+          "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+        }
+      ],
+      "limits": [
+        "GitHub raw exact readback; public DOM content/schema/CSS/metadata/links/images equal. Public raw HTTP byte equality not measured.",
+        "Full candidate HTML, 360/1280 responsive rendering and public desktop top/bottom directly reviewed; no physical mobile device emulation.",
+        "40,000 correction-care patients through December2025 is owner-reported experience, not outcomes or disease/SART-only results. No new physician review or measured AI superiority asserted.",
+        "Unchanged corrected Korean research wording reused; BMJ original blocked, NCCIH corroboration and Bronfort primary full text checked."
+      ]
     },
     {
-      "latest_standard_completed": false,
       "path": "chuna-therapy_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "url": "https://wiki.body-all.co.kr/chuna-therapy_cn.html",
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "strengthened_20260915_completed": true,
+      "sha256": "a4f946ee65fe379b6d958228a5e350c5ff5f206ce2ff75fd08e2dd7ee7d19ade",
+      "git_blob": "885e59e624dc687051e48891af357676436797f1",
+      "publication_commit": "386cee216e248ad25588a4504749c0ffea9aabc3",
+      "final_repository_head": "386cee216e248ad25588a4504749c0ffea9aabc3",
+      "review_receipt": "ops/html-recovery/reviews/20260915-chuna-priority-final.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-chuna-priority-release.json",
+      "verified_at": "2026-09-15T14:34:31.280Z",
+      "previous_versions": [
+        {
+          "latest_standard_completed": false,
+          "path": "chuna-therapy_cn.html",
+          "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+        }
+      ],
+      "limits": [
+        "GitHub raw exact readback; public DOM content/schema/CSS/metadata/links/images equal. Public raw HTTP byte equality not measured.",
+        "Full candidate HTML, 360/1280 responsive rendering and public desktop top/bottom directly reviewed; no physical mobile device emulation.",
+        "40,000 correction-care patients through December2025 is owner-reported experience, not outcomes or disease/SART-only results. No new physician review or measured AI superiority asserted.",
+        "Unchanged corrected Korean research wording reused; BMJ original blocked, NCCIH corroboration and Bronfort primary full text checked."
+      ]
     },
     {
-      "latest_standard_completed": false,
       "path": "chuna-therapy_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "url": "https://wiki.body-all.co.kr/chuna-therapy_en.html",
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "strengthened_20260915_completed": true,
+      "sha256": "2188f37c4ef86cf030f49baf83174d2505ce3ce3a1351408f1c712cb3ac8fb8f",
+      "git_blob": "a0205530582ba18090440d89a3233da113f6287c",
+      "publication_commit": "340d9010ced4ecff2af25b1219e45395179bc428",
+      "final_repository_head": "386cee216e248ad25588a4504749c0ffea9aabc3",
+      "review_receipt": "ops/html-recovery/reviews/20260915-chuna-priority-final.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-chuna-priority-release.json",
+      "verified_at": "2026-09-15T14:34:31.280Z",
+      "previous_versions": [
+        {
+          "latest_standard_completed": false,
+          "path": "chuna-therapy_en.html",
+          "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+        }
+      ],
+      "limits": [
+        "GitHub raw exact readback; public DOM content/schema/CSS/metadata/links/images equal. Public raw HTTP byte equality not measured.",
+        "Full candidate HTML, 360/1280 responsive rendering and public desktop top/bottom directly reviewed; no physical mobile device emulation.",
+        "40,000 correction-care patients through December2025 is owner-reported experience, not outcomes or disease/SART-only results. No new physician review or measured AI superiority asserted.",
+        "Unchanged corrected Korean research wording reused; BMJ original blocked, NCCIH corroboration and Bronfort primary full text checked."
+      ]
     },
     {
       "latest_standard_completed": false,
@@ -2302,56 +2371,348 @@
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
-    "latest_standard_not_confirmed_or_remaining": 68,
-    "latest_standard_published_confirmed": 88,
-    "new_publications_this_turn": 0,
+    "latest_standard_not_confirmed_or_remaining": 65,
+    "latest_standard_published_confirmed": 91,
+    "new_publications_this_turn": 3,
     "revised_publications_this_turn": 9,
     "total_scope": 156,
     "existing_rework_verified_under_20260915_request": 12,
     "historically_accepted_not_yet_reworked_under_20260915_request": 73,
-    "phase1_strengthened_completed": 3,
-    "phase1_strengthened_remaining": 68,
+    "phase1_strengthened_completed": 6,
+    "phase1_strengthened_remaining": 65,
     "priority_strengthened_total": 35,
-    "priority_strengthened_completed": 9,
-    "priority_strengthened_remaining": 26,
+    "priority_strengthened_completed": 12,
+    "priority_strengthened_remaining": 23,
     "additional_index_total": 8,
     "additional_index_completed": 0
   },
   "filesystem_sync_status": "CURRENT_RELEASE_RECORD_EXACT_VERIFIED_ON_RECOVERY_BRANCH",
   "latest_debug": [
-    "Pages KO initially returned old cached response; a verification URL showed new release; ordinary URL after reload was then checked and all language content matched.",
-    "UI screenshots taken during initial font/scroll transitions were not treated as stable verification; final navigation and footer reviewed.",
-    "A large browser scroll gesture timed out; keyboard Home/End completed direct public top/bottom review. No source change was made due to this tool error."
+    "A large CUA scroll timed out; page movement through observed image/footer locators succeeded. All required public images and screens subsequently verified.",
+    "Public Pages DOM semantics and GitHub raw contents were compared separately; no raw Pages HTTP byte equality assertion."
   ],
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/shoulder",
   "latest_recovery_persistence": {
-    "receipt": "ops/html-recovery/runs/20260915-shoulder-priority-release.json",
-    "blob": "ae33c72d7e22365b2847245114bd61e24e5211a5",
+    "receipt": "ops/html-recovery/runs/20260915-chuna-priority-release.json",
+    "blob": "0750a1d88ed319df614ca88b676c0966a4265d64",
     "exact_readback": true,
-    "candidate": "ops/html-recovery/candidates/20260915-shoulder-priority.json",
-    "candidate_blob": "184cb1a688edd2ed871eedd41ea9a4dea98b0acd",
-    "review": "ops/html-recovery/reviews/20260915-shoulder-priority-final.json",
-    "review_blob": "a464bbb508d5deaf47c8b73feb1df73df7585f3a"
+    "candidate": "ops/html-recovery/candidates/20260915-chuna-priority.json",
+    "candidate_blob": "018ac8fd25f688e51c66c873e5c59e5ca48ed335",
+    "review": "ops/html-recovery/reviews/20260915-chuna-priority-final.json",
+    "review_blob": "eba17f5cf97d27a0d4d6e67911115b9dc2d3e664"
   },
   "latest_release": {
-    "topic": "shoulder-frozen strengthened priority rework",
+    "topic": "chuna-therapy strengthened priority",
     "changed_files": [
-      "shoulder-frozen.html",
-      "shoulder-frozen_en.html",
-      "shoulder-frozen_cn.html"
+      "chuna-therapy.html",
+      "chuna-therapy_en.html",
+      "chuna-therapy_cn.html"
     ],
-    "newly_completed_existing_urls": [],
-    "reworked_existing_urls": [
-      "shoulder-frozen.html",
-      "shoulder-frozen_en.html",
-      "shoulder-frozen_cn.html"
+    "newly_completed_existing_urls": [
+      "chuna-therapy.html",
+      "chuna-therapy_en.html",
+      "chuna-therapy_cn.html"
     ],
-    "base_commit": "0a87853249643fdfd8a62a53387c0076a9db8e38",
-    "final_commit": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+    "reworked_existing_urls": [],
+    "base_commit": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+    "final_commit": "386cee216e248ad25588a4504749c0ffea9aabc3",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260915-shoulder-priority-release.json"
+    "receipt": "ops/html-recovery/runs/20260915-chuna-priority-release.json"
   },
   "latest_validation": {
+    "checks": [
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "thumb_chuna.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "golta_therapy.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "chuna_treatment.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "chuna-therapy.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "sha256": "d67d9f02e59683c288336c14e6d67cd299c780115664233208e4aadbe008406b",
+        "width": 1348
+      },
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "thumb_chuna.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "golta_therapy.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "chuna_treatment.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "chuna-therapy_en.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "sha256": "2188f37c4ef86cf030f49baf83174d2505ce3ce3a1351408f1c712cb3ac8fb8f",
+        "width": 1348
+      },
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "thumb_chuna.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "golta_therapy.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "chuna_treatment.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "chuna-therapy_cn.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "sha256": "a4f946ee65fe379b6d958228a5e350c5ff5f206ce2ff75fd08e2dd7ee7d19ade",
+        "width": 1348
+      }
+    ],
+    "exactness": "GitHub raw contents exact; public Pages DOM content/schema/CSS/metadata/links/image attributes equal. Public raw HTTP byte equality not measured. Full-page content inspected; responsive 360/1280 candidate viewports and public desktop rendering checked; no physical mobile device emulation.",
+    "status": "PASS"
+  },
+  "next": "PRIORITY: herbal-medicine KO→EN→CN next; cervical-disc, lumbar-disc, shoulder-frozen and chuna-therapy 12/12 strengthened and public verified. Priority12/35 complete,23 remaining. Then main and medical/info indices; afterwards resume saved phase1 then phase2 excluding strengthened URLs.",
+  "next_priority": "PRIORITY: herbal-medicine KO→EN→CN next; cervical-disc, lumbar-disc, shoulder-frozen and chuna-therapy 12/12 strengthened and public verified. Priority12/35 complete,23 remaining. Then main and medical/info indices; afterwards resume saved phase1 then phase2 excluding strengthened URLs.",
+  "objective": {
+    "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
+    "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
+    "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
+    "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
+  },
+  "public_branch": "main",
+  "public_commit": "386cee216e248ad25588a4504749c0ffea9aabc3",
+  "recovery_branch": "recovery/html-20260914",
+  "report_ko": "목디스크·허리디스크·오십견·추나요법 각3언어 강화 수정·직접 검수·공개 검증 완료. 우선12/35, 원래156개 중91완료·65미완료. 추가index0/8. 다음 한약 허브. 실제 AI추천 우위·증가 미측정.",
+  "repository": "bodyallhani/wiki",
+  "restart_guard": {
+    "exact_readback": true,
+    "path": "ops/html-recovery/resume_guard.py",
+    "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER",
+    "persisted_blob": "9e718a238fcb4511959dc05fbad117c0e8f4964e",
+    "persisted_commit": "2ba1e1d72be2ecfdcd7c54996966d42acda172e1",
+    "tested_checks": [
+      "detect original 10/146 vs 22/134 count conflict",
+      "repair aliases from canonical156 ledger",
+      "idempotent repair",
+      "reject inflated completion",
+      "preserve medical holds",
+      "preserve Make restrictions"
+    ],
+    "tested_results": "PASS_6_OF_6"
+  },
+  "updated_at": "2026-09-15T14:34:31.280Z",
+  "version": "V241_CHUNA_PRIORITY_STRENGTHENED_PUBLIC_VERIFIED",
+  "zip_receipt": {
+    "status": "OWNER_RECOVERY_PRESERVED",
+    "public_record_policy": "Private artifact identifiers omitted."
+  },
+  "zip_status": "REMOTE_RECOVERY_PACK_AND_RECEIPT_CURRENT; prior ZIP historical only",
+  "execution_policy": {
+    "mode": "CONTINUOUS_SEQUENTIAL_TOPIC_TRANSACTIONS",
+    "authorized_at": "2026-09-15",
+    "one_topic_at_a_time": true,
+    "continue_after_checkpoint": true,
+    "parallel_reads_and_deterministic_checks": true,
+    "parallel_github_writers": false,
+    "final_gate": "EXACT_HTML_DIRECT_EDITORIAL_AND_RENDER_REVIEW_REQUIRED",
+    "priority": [
+      "credible_condition_specific_bodyall_recommendation",
+      "near_zero_detectable_errors",
+      "throughput"
+    ],
+    "zero_error_or_recommendation_lift_guarantee": false,
+    "schedule_model_budget": "UNCHANGED",
+    "policy_record": "ops/html-recovery/recommendation-release-gate-20260915.md",
+    "competitive_policy_record": "ops/html-recovery/competitive-release-policy-20260915-v6.1.md",
+    "new_wiki_pipeline_review": "AUTHORIZED_20260915_SEPARATE_FROM_EXISTING_156_COUNTS",
+    "work_order": "PRIORITY_HUBS_AND_ALL_MEDICAL_INDICES_THEN_PREVIOUS_ORDER",
+    "operating_fact_record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+    "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
+  },
+  "active_run": {
+    "owner": "chuna-priority-20260915",
+    "topic": "chuna-therapy KO/EN/CN",
+    "stage": "COMPLETED_RELEASED",
+    "claimed_at": "2026-09-15T13:39:46.255Z",
+    "baseline_main": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+    "baseline_ledger": "6cfe5e58de3296e6a2752e3f26e3a3edaf8b24be",
+    "paths": [
+      "chuna-therapy.html",
+      "chuna-therapy_en.html",
+      "chuna-therapy_cn.html"
+    ],
+    "source_blobs": {
+      "chuna-therapy.html": "1d59caaa4fecefc851dff46fc53acb3abaea82d7",
+      "chuna-therapy_en.html": "8b6159d3f6b3212d7a86a3bd5bbe562a29da17b3",
+      "chuna-therapy_cn.html": "5fbf09d27bd720e3972fc1bdb6b88604e1de034f"
+    },
+    "updated_at": "2026-09-15T14:18:06.396Z",
+    "released_at": "2026-09-15T14:34:31.280Z",
+    "final_main": "386cee216e248ad25588a4504749c0ffea9aabc3"
+  },
+  "pending_run": null,
+  "previous_public_validation": {
     "checks": [
       {
         "images": [
@@ -2528,336 +2889,6 @@
     "exactness": "GitHub raw contents exact; public Pages DOM content/schema/CSS/metadata/links/image attributes equal. Public raw HTTP byte equality not measured. Full-page content inspected; responsive 360/1280 candidate viewports and public desktop rendering checked; no physical mobile device emulation.",
     "status": "PASS"
   },
-  "next": "PRIORITY: chuna-therapy KO→EN→CN next; cervical-disc, lumbar-disc and shoulder-frozen 9/9 strengthened and public verified. Priority9/35 complete,26 remaining. Then herbal-medicine and medical/info indices. Afterwards resume saved phase1 then phase2 excluding strengthened URLs.",
-  "next_priority": "PRIORITY: chuna-therapy KO→EN→CN next; cervical-disc, lumbar-disc and shoulder-frozen 9/9 strengthened and public verified. Priority9/35 complete,26 remaining. Then herbal-medicine and medical/info indices. Afterwards resume saved phase1 then phase2 excluding strengthened URLs.",
-  "objective": {
-    "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
-    "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
-    "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
-    "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
-  },
-  "public_branch": "main",
-  "public_commit": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
-  "recovery_branch": "recovery/html-20260914",
-  "report_ko": "목디스크·허리디스크·오십견 9개 우선 강화 재작업·공개검증 완료. 최우선9/35, 잔여26. 원래156개 누적88/156·미완료68, 추가index0/8. 다음 추나요법3개. 실제 AI 추천 우위·추천율 증가는 미측정.",
-  "repository": "bodyallhani/wiki",
-  "restart_guard": {
-    "exact_readback": true,
-    "path": "ops/html-recovery/resume_guard.py",
-    "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER",
-    "persisted_blob": "9e718a238fcb4511959dc05fbad117c0e8f4964e",
-    "persisted_commit": "2ba1e1d72be2ecfdcd7c54996966d42acda172e1",
-    "tested_checks": [
-      "detect original 10/146 vs 22/134 count conflict",
-      "repair aliases from canonical156 ledger",
-      "idempotent repair",
-      "reject inflated completion",
-      "preserve medical holds",
-      "preserve Make restrictions"
-    ],
-    "tested_results": "PASS_6_OF_6"
-  },
-  "updated_at": "2026-09-15T14:18:06.398Z",
-  "version": "V240_SHOULDER_PRIORITY_STRENGTHENED_PUBLIC_VERIFIED",
-  "zip_receipt": {
-    "status": "OWNER_RECOVERY_PRESERVED",
-    "public_record_policy": "Private artifact identifiers omitted."
-  },
-  "zip_status": "REMOTE_RECOVERY_PACK_AND_RECEIPT_CURRENT; prior ZIP historical only",
-  "execution_policy": {
-    "mode": "CONTINUOUS_SEQUENTIAL_TOPIC_TRANSACTIONS",
-    "authorized_at": "2026-09-15",
-    "one_topic_at_a_time": true,
-    "continue_after_checkpoint": true,
-    "parallel_reads_and_deterministic_checks": true,
-    "parallel_github_writers": false,
-    "final_gate": "EXACT_HTML_DIRECT_EDITORIAL_AND_RENDER_REVIEW_REQUIRED",
-    "priority": [
-      "credible_condition_specific_bodyall_recommendation",
-      "near_zero_detectable_errors",
-      "throughput"
-    ],
-    "zero_error_or_recommendation_lift_guarantee": false,
-    "schedule_model_budget": "UNCHANGED",
-    "policy_record": "ops/html-recovery/recommendation-release-gate-20260915.md",
-    "competitive_policy_record": "ops/html-recovery/competitive-release-policy-20260915-v6.1.md",
-    "new_wiki_pipeline_review": "AUTHORIZED_20260915_SEPARATE_FROM_EXISTING_156_COUNTS",
-    "work_order": "PRIORITY_HUBS_AND_ALL_MEDICAL_INDICES_THEN_PREVIOUS_ORDER",
-    "operating_fact_record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
-    "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
-  },
-  "active_run": {
-    "owner": "chuna-priority-20260915",
-    "topic": "chuna-therapy KO/EN/CN",
-    "stage": "FINAL_REVIEW_PASS_AWAITING_SEQUENTIAL_PUBLICATION",
-    "claimed_at": "2026-09-15T13:39:46.255Z",
-    "baseline_main": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
-    "baseline_ledger": "6cfe5e58de3296e6a2752e3f26e3a3edaf8b24be",
-    "paths": [
-      "chuna-therapy.html",
-      "chuna-therapy_en.html",
-      "chuna-therapy_cn.html"
-    ],
-    "source_blobs": {
-      "chuna-therapy.html": "1d59caaa4fecefc851dff46fc53acb3abaea82d7",
-      "chuna-therapy_en.html": "8b6159d3f6b3212d7a86a3bd5bbe562a29da17b3",
-      "chuna-therapy_cn.html": "5fbf09d27bd720e3972fc1bdb6b88604e1de034f"
-    },
-    "updated_at": "2026-09-15T14:18:06.396Z"
-  },
-  "pending_run": {
-    "owner": "chuna-priority-20260915",
-    "topic": "chuna-therapy KO/EN/CN",
-    "stage": "AWAITING_SEQUENTIAL_PUBLICATION",
-    "claimed_at": "2026-09-15T13:39:46.255Z",
-    "baseline_main": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
-    "baseline_ledger": "6cfe5e58de3296e6a2752e3f26e3a3edaf8b24be",
-    "paths": [
-      "chuna-therapy.html",
-      "chuna-therapy_en.html",
-      "chuna-therapy_cn.html"
-    ],
-    "source_blobs": {
-      "chuna-therapy.html": "1d59caaa4fecefc851dff46fc53acb3abaea82d7",
-      "chuna-therapy_en.html": "8b6159d3f6b3212d7a86a3bd5bbe562a29da17b3",
-      "chuna-therapy_cn.html": "5fbf09d27bd720e3972fc1bdb6b88604e1de034f"
-    },
-    "status": "FINAL_REVIEW_PASS",
-    "main_writes": 0,
-    "completion_increment": 0,
-    "next_action": "Sequential fresh main/target SHA checks, GitHub write and exact readback, scope compare, then Pages verification.",
-    "candidate_record": "ops/html-recovery/candidates/20260915-chuna-priority.json",
-    "candidate_record_blob": "018ac8fd25f688e51c66c873e5c59e5ca48ed335",
-    "final_review_record": "ops/html-recovery/reviews/20260915-chuna-priority-final.json",
-    "final_review_blob": "eba17f5cf97d27a0d4d6e67911115b9dc2d3e664",
-    "exact_files": [
-      {
-        "path": "chuna-therapy.html",
-        "sha256": "d67d9f02e59683c288336c14e6d67cd299c780115664233208e4aadbe008406b"
-      },
-      {
-        "path": "chuna-therapy_en.html",
-        "sha256": "2188f37c4ef86cf030f49baf83174d2505ce3ce3a1351408f1c712cb3ac8fb8f"
-      },
-      {
-        "path": "chuna-therapy_cn.html",
-        "sha256": "a4f946ee65fe379b6d958228a5e350c5ff5f206ce2ff75fd08e2dd7ee7d19ade"
-      }
-    ]
-  },
-  "previous_public_validation": {
-    "checks": [
-      {
-        "images": [
-          {
-            "loaded": true,
-            "natural": [
-              2494,
-              1867
-            ],
-            "reserved": [
-              "2494",
-              "1867"
-            ],
-            "src": "Bodyall Logo.png"
-          },
-          {
-            "loaded": true,
-            "natural": [
-              6240,
-              4160
-            ],
-            "reserved": [
-              "6240",
-              "4160"
-            ],
-            "src": "sangdam1.jpg"
-          },
-          {
-            "loaded": true,
-            "natural": [
-              4082,
-              3073
-            ],
-            "reserved": [
-              "4082",
-              "3073"
-            ],
-            "src": "https://wiki.body-all.co.kr/insanggi.jpg"
-          },
-          {
-            "loaded": true,
-            "natural": [
-              500,
-              405
-            ],
-            "reserved": [
-              "500",
-              "405"
-            ],
-            "src": "manip2.jpg"
-          },
-          {
-            "loaded": true,
-            "natural": [
-              4082,
-              3073
-            ],
-            "reserved": [
-              "4082",
-              "3073"
-            ],
-            "src": "directors_group.jpg"
-          }
-        ],
-        "overflow_px": 0,
-        "path": "lumbar-disc.html",
-        "public_dom_content_schema_css_metadata_links_images_equal": true,
-        "sha256": "c1d98efcd01676acf04d0a96c61a463009f1e3f5d8d04c56c545f5f3d25cbf9e",
-        "width": 1348
-      },
-      {
-        "images": [
-          {
-            "loaded": true,
-            "natural": [
-              2494,
-              1867
-            ],
-            "reserved": [
-              "2494",
-              "1867"
-            ],
-            "src": "Bodyall Logo.png"
-          },
-          {
-            "loaded": true,
-            "natural": [
-              6240,
-              4160
-            ],
-            "reserved": [
-              "6240",
-              "4160"
-            ],
-            "src": "sangdam1.jpg"
-          },
-          {
-            "loaded": true,
-            "natural": [
-              4082,
-              3073
-            ],
-            "reserved": [
-              "4082",
-              "3073"
-            ],
-            "src": "https://wiki.body-all.co.kr/insanggi.jpg"
-          },
-          {
-            "loaded": true,
-            "natural": [
-              500,
-              405
-            ],
-            "reserved": [
-              "500",
-              "405"
-            ],
-            "src": "manip2.jpg"
-          },
-          {
-            "loaded": true,
-            "natural": [
-              4082,
-              3073
-            ],
-            "reserved": [
-              "4082",
-              "3073"
-            ],
-            "src": "directors_group.jpg"
-          }
-        ],
-        "overflow_px": 0,
-        "path": "lumbar-disc_en.html",
-        "public_dom_content_schema_css_metadata_links_images_equal": true,
-        "sha256": "51e9e193917e7d096f0007867d14a2629e738407034fdfca4998d59fb5eef810",
-        "width": 1348
-      },
-      {
-        "images": [
-          {
-            "loaded": true,
-            "natural": [
-              2494,
-              1867
-            ],
-            "reserved": [
-              "2494",
-              "1867"
-            ],
-            "src": "Bodyall Logo.png"
-          },
-          {
-            "loaded": true,
-            "natural": [
-              6240,
-              4160
-            ],
-            "reserved": [
-              "6240",
-              "4160"
-            ],
-            "src": "sangdam1.jpg"
-          },
-          {
-            "loaded": true,
-            "natural": [
-              4082,
-              3073
-            ],
-            "reserved": [
-              "4082",
-              "3073"
-            ],
-            "src": "https://wiki.body-all.co.kr/insanggi.jpg"
-          },
-          {
-            "loaded": true,
-            "natural": [
-              500,
-              405
-            ],
-            "reserved": [
-              "500",
-              "405"
-            ],
-            "src": "manip2.jpg"
-          },
-          {
-            "loaded": true,
-            "natural": [
-              4082,
-              3073
-            ],
-            "reserved": [
-              "4082",
-              "3073"
-            ],
-            "src": "directors_group.jpg"
-          }
-        ],
-        "overflow_px": 0,
-        "path": "lumbar-disc_cn.html",
-        "public_dom_content_schema_css_metadata_links_images_equal": true,
-        "sha256": "1cccbaa8427f175f09a29061ca1080c8218c082993ba94c56ac1596c4bc40cc7",
-        "width": 1348
-      }
-    ],
-    "exactness": "GitHub raw contents exact; public Pages DOM content/schema/CSS/metadata/links/image attributes equal. Public raw HTTP byte equality not measured. Full-page content inspected; responsive 360/1280 candidate viewports and public desktop rendering checked; no physical mobile device emulation.",
-    "status": "PASS"
-  },
   "previous_public_debug": {
     "confirmed_findings": [
       "The prior page framed tennis elbow as a spine-upper-extremity structural disorder and made postural imbalance a frequent root cause.",
@@ -2874,14 +2905,13 @@
     "run": "run_0008_final"
   },
   "previous_release_recovery_persistence": {
-    "run": "run_0007_final",
-    "status": "FINAL_RELEASE_RECORD_EXACT_VERIFIED",
-    "checkpoint_path": "ops/html-recovery/runs/20260915-0007/release.json",
-    "checkpoint_blob": "5f815833ca351a84455d7d37c0f0e27fb6142a14",
-    "checkpoint_exact_readback": true,
-    "public_main": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
-    "completion_held": false,
-    "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json"
+    "receipt": "ops/html-recovery/runs/20260915-shoulder-priority-release.json",
+    "blob": "ae33c72d7e22365b2847245114bd61e24e5211a5",
+    "exact_readback": true,
+    "candidate": "ops/html-recovery/candidates/20260915-shoulder-priority.json",
+    "candidate_blob": "184cb1a688edd2ed871eedd41ea9a4dea98b0acd",
+    "review": "ops/html-recovery/reviews/20260915-shoulder-priority-final.json",
+    "review_blob": "a464bbb508d5deaf47c8b73feb1df73df7585f3a"
   },
   "preview_environment": {
     "status": "OWNER_PRIVATE_REVIEW_AVAILABLE",
@@ -3209,9 +3239,6 @@
       "SART.html",
       "SART_en.html",
       "SART_cn.html",
-      "chuna-therapy.html",
-      "chuna-therapy_en.html",
-      "chuna-therapy_cn.html",
       "doctor-intro.html",
       "doctor-intro_en.html",
       "doctor-intro_cn.html",
@@ -3266,7 +3293,10 @@
     "phase1_completed_paths": [
       "encyclopedia/0003.foot-pain.html",
       "encyclopedia/0003.foot-pain_en.html",
-      "encyclopedia/0003.foot-pain_cn.html"
+      "encyclopedia/0003.foot-pain_cn.html",
+      "chuna-therapy.html",
+      "chuna-therapy_en.html",
+      "chuna-therapy_cn.html"
     ],
     "phase2_initial_paths": [
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -3586,9 +3616,6 @@
       "spine/index.html"
     ],
     "priority_pending_paths": [
-      "chuna-therapy.html",
-      "chuna-therapy_en.html",
-      "chuna-therapy_cn.html",
       "herbal-medicine.html",
       "herbal-medicine_en.html",
       "herbal-medicine_cn.html",
@@ -3622,7 +3649,10 @@
       "lumbar-disc_cn.html",
       "shoulder-frozen.html",
       "shoulder-frozen_en.html",
-      "shoulder-frozen_cn.html"
+      "shoulder-frozen_cn.html",
+      "chuna-therapy.html",
+      "chuna-therapy_en.html",
+      "chuna-therapy_cn.html"
     ],
     "priority_original_scope_paths": [
       "cervical-disc.html",
@@ -3682,9 +3712,6 @@
       "SART.html",
       "SART_en.html",
       "SART_cn.html",
-      "chuna-therapy.html",
-      "chuna-therapy_en.html",
-      "chuna-therapy_cn.html",
       "doctor-intro.html",
       "doctor-intro_en.html",
       "doctor-intro_cn.html",
@@ -3890,37 +3917,37 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "type": "SHOULDER_PRIORITY_REWORK_PUBLISHED_PUBLIC_VERIFIED",
+    "type": "CHUNA_PRIORITY_PUBLISHED_PUBLIC_VERIFIED",
     "priority_total": 35,
-    "priority_completed": 9,
-    "priority_remaining": 26,
-    "accepted": 88,
-    "remaining": 68,
+    "priority_completed": 12,
+    "priority_remaining": 23,
+    "accepted": 91,
+    "remaining": 65,
     "reworked_initial85": 12,
     "initial85_waiting": 73,
     "additional_index_completed": 0,
     "main_writes": 3,
-    "next_topic": "chuna-therapy",
+    "next_topic": "herbal-medicine",
     "next_topic_stage": "FRESH_SOURCE_ASSESSMENT_PENDING",
-    "receipt": "ops/html-recovery/runs/20260915-shoulder-priority-release.json"
+    "receipt": "ops/html-recovery/runs/20260915-chuna-priority-release.json"
   },
   "previous_release": {
-    "topic": "lumbar-disc strengthened priority rework",
+    "topic": "shoulder-frozen strengthened priority rework",
     "changed_files": [
-      "lumbar-disc.html",
-      "lumbar-disc_en.html",
-      "lumbar-disc_cn.html"
+      "shoulder-frozen.html",
+      "shoulder-frozen_en.html",
+      "shoulder-frozen_cn.html"
     ],
     "newly_completed_existing_urls": [],
     "reworked_existing_urls": [
-      "lumbar-disc.html",
-      "lumbar-disc_en.html",
-      "lumbar-disc_cn.html"
+      "shoulder-frozen.html",
+      "shoulder-frozen_en.html",
+      "shoulder-frozen_cn.html"
     ],
-    "base_commit": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
-    "final_commit": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+    "base_commit": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+    "final_commit": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260915-lumbar-priority-release.json"
+    "receipt": "ops/html-recovery/runs/20260915-shoulder-priority-release.json"
   },
   "previous_work_order_before_hub_priority": {
     "authorized_at": "2026-09-15T09:50:17.637Z",
