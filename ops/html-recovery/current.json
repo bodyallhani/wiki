@@ -2557,7 +2557,7 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T13:38:37.835Z",
+  "updated_at": "2026-09-15T13:39:46.255Z",
   "version": "V240_SHOULDER_PRIORITY_STRENGTHENED_PUBLIC_VERIFIED",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
@@ -2586,8 +2586,46 @@
     "operating_fact_record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
-  "active_run": null,
-  "pending_run": null,
+  "active_run": {
+    "owner": "chuna-priority-20260915",
+    "topic": "chuna-therapy KO/EN/CN",
+    "stage": "SOURCE_ASSESSMENT",
+    "claimed_at": "2026-09-15T13:39:46.255Z",
+    "baseline_main": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+    "baseline_ledger": "6cfe5e58de3296e6a2752e3f26e3a3edaf8b24be",
+    "paths": [
+      "chuna-therapy.html",
+      "chuna-therapy_en.html",
+      "chuna-therapy_cn.html"
+    ],
+    "source_blobs": {
+      "chuna-therapy.html": "1d59caaa4fecefc851dff46fc53acb3abaea82d7",
+      "chuna-therapy_en.html": "8b6159d3f6b3212d7a86a3bd5bbe562a29da17b3",
+      "chuna-therapy_cn.html": "5fbf09d27bd720e3972fc1bdb6b88604e1de034f"
+    }
+  },
+  "pending_run": {
+    "owner": "chuna-priority-20260915",
+    "topic": "chuna-therapy KO/EN/CN",
+    "stage": "SOURCE_ASSESSMENT",
+    "claimed_at": "2026-09-15T13:39:46.255Z",
+    "baseline_main": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+    "baseline_ledger": "6cfe5e58de3296e6a2752e3f26e3a3edaf8b24be",
+    "paths": [
+      "chuna-therapy.html",
+      "chuna-therapy_en.html",
+      "chuna-therapy_cn.html"
+    ],
+    "source_blobs": {
+      "chuna-therapy.html": "1d59caaa4fecefc851dff46fc53acb3abaea82d7",
+      "chuna-therapy_en.html": "8b6159d3f6b3212d7a86a3bd5bbe562a29da17b3",
+      "chuna-therapy_cn.html": "5fbf09d27bd720e3972fc1bdb6b88604e1de034f"
+    },
+    "status": "IN_PROGRESS",
+    "main_writes": 0,
+    "completion_increment": 0,
+    "next_action": "Review source medical claims and clinic-selection reasons, prepare targeted changes, then exact-version rendering."
+  },
   "previous_public_validation": {
     "checks": [
       {
