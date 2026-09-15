@@ -1708,58 +1708,67 @@
       "verification_receipt": "run_lumbar_final/public_verification.json"
     },
     {
-      "final_repository_head": "e6b6b03e5323cc010b5d36cc6f8c26c46009706a",
-      "git_blob": "c43ffefff088848a3675d8b8ec1c74c375f42571",
+      "final_repository_head": "004335bd719de2136b93df82e80cdf3b40a68380",
+      "git_blob": "eaeb56dbf278ba8f7c4f453fa00adf434693b9ae",
       "latest_standard_completed": true,
       "limits": [
-        "Previously completed Korean evidence review and the same two references were reused; no paper re-search or new efficacy claim was added.",
-        "The 2022 study remains a single-arm pilot and the 2024 trial used combined interventions that are not SART; individual suitability is determined by examination and same-function reassessment.",
-        "No physician review of the rewritten exact version or independent translation review was asserted.",
-        "Public text, schema, images and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+        "The existing single-arm pilot and combined-intervention trial remain evidence for their studied interventions and populations, not proof of Bodyall-specific SART efficacy.",
+        "The Insanggi image shows equipment, not a patient procedure or a treatment outcome.",
+        "No independent fixed non-brand AI baseline/after responses have been collected; recommendation lift and competitor superiority remain unmeasured.",
+        "Homepage changes cover the corresponding language card paragraph only; no claim of whole-homepage re-review.",
+        "360px and 1280px browser viewport checks, not physical mobile-device testing."
       ],
       "path": "pain-spine-clinic.html",
-      "publication_commit": "781f6e5b7629e21a6bd880ce439d29c3aea367ea",
-      "review_receipt": "run_pain_hub_final/offline_validation.json",
-      "sha256": "1f49d2616c3bff143184f6fc0022a74f8431b0a5bcf3a7c9fb82d16ed18e08a5",
+      "publication_commit": "a5587c0b12e8bbc8432a26fbb89b24744249f94b",
+      "review_receipt": "ops/html-recovery/reviews/20260915-pain-hub-rework-004335bd.json",
+      "sha256": "aa902661c4b0b01bf1a32d4e6d62f7dc826c14735f809e1c09e4b7b59e78fc71",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
       "url": "https://wiki.body-all.co.kr/pain-spine-clinic.html",
-      "verification_receipt": "run_pain_hub_final/public_verification.json"
+      "verification_receipt": "ops/html-recovery/reviews/20260915-pain-hub-rework-004335bd.json",
+      "previous_publication_commit": "781f6e5b7629e21a6bd880ce439d29c3aea367ea",
+      "competitive_rework_status": "EDITORIAL_PATIENT_FIT_VERIFIED_RECOMMENDATION_LIFT_UNMEASURED"
     },
     {
-      "final_repository_head": "e6b6b03e5323cc010b5d36cc6f8c26c46009706a",
-      "git_blob": "c28155f23dd385c239bb0a03c63728dbdb73e75f",
+      "final_repository_head": "004335bd719de2136b93df82e80cdf3b40a68380",
+      "git_blob": "21c88e3f43fed1ad48482d2ac3ad0583f43b35a9",
       "latest_standard_completed": true,
       "limits": [
-        "Previously completed Korean evidence review and the same two references were reused; no paper re-search or new efficacy claim was added.",
-        "The 2022 study remains a single-arm pilot and the 2024 trial used combined interventions that are not SART; individual suitability is determined by examination and same-function reassessment.",
-        "No physician review of the rewritten exact version or independent translation review was asserted.",
-        "Public text, schema, images and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+        "The existing single-arm pilot and combined-intervention trial remain evidence for their studied interventions and populations, not proof of Bodyall-specific SART efficacy.",
+        "The Insanggi image shows equipment, not a patient procedure or a treatment outcome.",
+        "No independent fixed non-brand AI baseline/after responses have been collected; recommendation lift and competitor superiority remain unmeasured.",
+        "Homepage changes cover the corresponding language card paragraph only; no claim of whole-homepage re-review.",
+        "360px and 1280px browser viewport checks, not physical mobile-device testing."
       ],
       "path": "pain-spine-clinic_cn.html",
-      "publication_commit": "aec760d1af5874373572dc81a65d0882fba3faf7",
-      "review_receipt": "run_pain_hub_final/offline_validation.json",
-      "sha256": "fd0bcbaf5bd8494e13d570c6501ad973c8382e6ef50176a6df8d3bb402737329",
+      "publication_commit": "81f33982b91f3a9c661e4148ee9f0add13544ac8",
+      "review_receipt": "ops/html-recovery/reviews/20260915-pain-hub-rework-004335bd.json",
+      "sha256": "8b6387c83e392e37334981d5e4091c38d7378afd75014577ba2420acfbb44de7",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
       "url": "https://wiki.body-all.co.kr/pain-spine-clinic_cn.html",
-      "verification_receipt": "run_pain_hub_final/public_verification.json"
+      "verification_receipt": "ops/html-recovery/reviews/20260915-pain-hub-rework-004335bd.json",
+      "previous_publication_commit": "aec760d1af5874373572dc81a65d0882fba3faf7",
+      "competitive_rework_status": "EDITORIAL_PATIENT_FIT_VERIFIED_RECOMMENDATION_LIFT_UNMEASURED"
     },
     {
-      "final_repository_head": "e6b6b03e5323cc010b5d36cc6f8c26c46009706a",
-      "git_blob": "3ebf7e89815a17e18a72fa0f0574a5b115e4ee09",
+      "final_repository_head": "004335bd719de2136b93df82e80cdf3b40a68380",
+      "git_blob": "f964af20bf491745a822d813010850d9c2abab96",
       "latest_standard_completed": true,
       "limits": [
-        "Previously completed Korean evidence review and the same two references were reused; no paper re-search or new efficacy claim was added.",
-        "The 2022 study remains a single-arm pilot and the 2024 trial used combined interventions that are not SART; individual suitability is determined by examination and same-function reassessment.",
-        "No physician review of the rewritten exact version or independent translation review was asserted.",
-        "Public text, schema, images and desktop overflow were verified; actual AI recommendation lift remains unmeasured."
+        "The existing single-arm pilot and combined-intervention trial remain evidence for their studied interventions and populations, not proof of Bodyall-specific SART efficacy.",
+        "The Insanggi image shows equipment, not a patient procedure or a treatment outcome.",
+        "No independent fixed non-brand AI baseline/after responses have been collected; recommendation lift and competitor superiority remain unmeasured.",
+        "Homepage changes cover the corresponding language card paragraph only; no claim of whole-homepage re-review.",
+        "360px and 1280px browser viewport checks, not physical mobile-device testing."
       ],
       "path": "pain-spine-clinic_en.html",
-      "publication_commit": "c9a59da2a147d1f965c72e83b77b89c85fa00372",
-      "review_receipt": "run_pain_hub_final/offline_validation.json",
-      "sha256": "0c1007e2a80bac47ef8ae6fc0b7c05f567f18615b1a9fcac16bcd1d0de5e0185",
+      "publication_commit": "a78496f69fbefff822a492f8d68bba0f90de71d3",
+      "review_receipt": "ops/html-recovery/reviews/20260915-pain-hub-rework-004335bd.json",
+      "sha256": "03d9178442a3906c74f797a67aefb27b4e3925c4425614fa46398cf1882e9898",
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
       "url": "https://wiki.body-all.co.kr/pain-spine-clinic_en.html",
-      "verification_receipt": "run_pain_hub_final/public_verification.json"
+      "verification_receipt": "ops/html-recovery/reviews/20260915-pain-hub-rework-004335bd.json",
+      "previous_publication_commit": "c9a59da2a147d1f965c72e83b77b89c85fa00372",
+      "competitive_rework_status": "EDITORIAL_PATIENT_FIT_VERIFIED_RECOMMENDATION_LIFT_UNMEASURED"
     },
     {
       "final_repository_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
@@ -2052,135 +2061,64 @@
     "latest_standard_published_confirmed": 85,
     "new_publications_this_turn": 0,
     "revised_publications_this_turn": 3,
-    "total_scope": 156
+    "total_scope": 156,
+    "existing_rework_verified_under_20260915_request": 3,
+    "historically_accepted_not_yet_reworked_under_20260915_request": 82
   },
   "filesystem_sync_status": "CURRENT_RELEASE_RECORD_EXACT_VERIFIED_ON_RECOVERY_BRANCH",
   "latest_debug": {
-    "run": "run_0004_final",
-    "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED",
-    "intervention_resolution": "NO_EXTERNAL_INTERVENTION_REQUIRED",
-    "confirmed_findings": [
-      "Legacy copy treated thoracic kyphosis and structural imbalance as a root cause of shoulder pain and extended SART into unsupported space widening and alignment restoration.",
-      "Legacy copy generalized weak acupotomy evidence into microscopic adhesiolysis, immediate range restoration, regeneration, safety and nonsurgical substitution.",
-      "The legacy frozen-shoulder versus rotator-cuff distinction was overly diagnostic and omitted a broader neck, neurologic, traumatic and systemic differential.",
-      "Generic modality lists did not create a credible Bodyall-specific selection reason in a competitive Suwon search context.",
-      "A post-deployment public-card check found stale rounded-back correction and physical-therapy tags that did not match the corrected article."
-    ],
     "resolved": [
-      "Rebuilt the opening around the eligible Suwon patient, urgent signals and a representative-doctor comparison of active/passive range, pain-limited versus true weakness, neck/neurologic and shoulder findings.",
-      "Separated local care, myofascial-release Chuna, conditional corrective Chuna/SART and selected acupotomy, with the same arm-raising or behind-the-back task retested.",
-      "Removed two misleading or generic images and retained two visually reviewed Bodyall clinical images with exact 4082x3073 reservations.",
-      "Aligned evidence limits, invasive risks, FAQs, schema, cards and booking path across Korean, English and Chinese.",
-      "Corrected all three card tag sets, reran the exact-hash/static/release gates, personally re-inspected 1280px and 360px cards, and verified the revised tags on all three public indexes."
-    ]
+      "CN 21px footer heading overflow fixed and exact version re-reviewed",
+      "DOM boolean-attribute serialization normalized for source/public semantic comparison",
+      "Public lazy-loaded images checked after navigation to their actual positions"
+    ],
+    "remaining_blockers_in_reworked_articles": []
   },
-  "latest_local_run": "ops/html-recovery/runs/20260915-0004/release.json",
+  "latest_local_run": "pain-hub-existing-rework-20260915",
   "latest_recovery_persistence": {
-    "status": "REMOTE_EXACT_CONFIRMED",
-    "exact": true,
-    "editorial_review": {
-      "path": "ops/html-recovery/runs/20260915-0004/editorial_review.json",
-      "sha": "d03c3a13eb9d63743ed45c8767f712f4e76059c7"
-    },
-    "release": {
-      "path": "ops/html-recovery/runs/20260915-0004/release.json",
-      "sha": "19aa0b8fe9974685fd8a306e7cdde5c880d64082"
-    }
+    "receipt": "ops/html-recovery/reviews/20260915-pain-hub-rework-004335bd.json",
+    "receipt_commit": "2f75c2da7afd78b1e79268704c7ff29731b47dde",
+    "private_original_preserved": true,
+    "ledger_exact_readback_required": true
   },
   "latest_release": {
-    "prewrite_head": "a957c01771c1283fe5e32821e3b7e6639b340d38",
-    "final_head": "064bb1bfede82aa961896776f7d462719417f9fc",
+    "topic": "pain-spine-clinic existing-publication rework",
+    "changed_files": [
+      "index.html",
+      "index_cn.html",
+      "index_en.html",
+      "pain-spine-clinic.html",
+      "pain-spine-clinic_cn.html",
+      "pain-spine-clinic_en.html"
+    ],
+    "reworked_existing_urls": [
+      "pain-spine-clinic.html",
+      "pain-spine-clinic_en.html",
+      "pain-spine-clinic_cn.html"
+    ],
+    "base_commit": "064bb1bfede82aa961896776f7d462719417f9fc",
+    "final_commit": "004335bd719de2136b93df82e80cdf3b40a68380",
     "new_urls": 0,
-    "revised_existing_urls": 3,
-    "review_receipt": "ops/html-recovery/runs/20260915-0004/editorial_review.json",
-    "public_verification": "ops/html-recovery/runs/20260915-0004/release.json#public_pages",
-    "compare": {
-      "base": "a957c01771c1283fe5e32821e3b7e6639b340d38",
-      "head": "064bb1bfede82aa961896776f7d462719417f9fc",
-      "ahead_by": 9,
-      "behind_by": 0,
-      "files": [
-        "encyclopedia/0004.shoulder-pain.html",
-        "encyclopedia/0004.shoulder-pain_en.html",
-        "encyclopedia/0004.shoulder-pain_cn.html",
-        "encyclopedia/index.html",
-        "encyclopedia/index_en.html",
-        "encyclopedia/index_cn.html"
-      ]
-    },
-    "files": {
-      "encyclopedia/0004.shoulder-pain.html": {
-        "source_blob": "c83acfdaf1967d254ed200279fd167af75ba7870",
-        "final_blob": "4db5348a8777ffa790e111e66c6d4434d485991f",
-        "sha256": "9a1fe10f474524757849711a5af1ed4e6652860c559ee6510ebc882bf2935b2f",
-        "publication_commit": "d9de7b816e067d40bc819eb02c26dfc6323a2ca1",
-        "exact_readback": true
-      },
-      "encyclopedia/0004.shoulder-pain_en.html": {
-        "source_blob": "dae25b1c6af02b0c592cae7fa8abf98546e82db0",
-        "final_blob": "99806774512e584df15a0e11cee987f1cc2b6c16",
-        "sha256": "11ae2ac0665eb2271abd7984837f931437bbad5303642c1468ed7f6cfe8d15b8",
-        "publication_commit": "6c9256c3aca982a7c540098152ac8fb5306f5477",
-        "exact_readback": true
-      },
-      "encyclopedia/0004.shoulder-pain_cn.html": {
-        "source_blob": "d132d2dfa6674911566af71f6d9b9cc1a673be69",
-        "final_blob": "47f03d5964607d92b860087ae66f19556a61c383",
-        "sha256": "2f19d93216967a7d0f8d9198797d600fa29f5897acc712f48af1913260960520",
-        "publication_commit": "e49a1d7aa89042cd74c18a23d30a51d04d68759a",
-        "exact_readback": true
-      }
-    },
-    "supporting_files": {
-      "encyclopedia/index.html": {
-        "source_blob": "549fae49938ae8507fb51f815d9f4a750d18318b",
-        "final_blob": "9695b978a94d6c181f002c41c5e18bdc4ef26a16",
-        "sha256": "01c2717bf65c55342bdfc1c9b57a9d9a5f187c81799dd4dfa3c2038086f33390",
-        "publication_commit": "216507a83ba274f450310d544db5f3146d53f527",
-        "exact_readback": true
-      },
-      "encyclopedia/index_en.html": {
-        "source_blob": "c18ae09cff4ec0696a0fa4bf3388047287f1b3c7",
-        "final_blob": "f73163d5e5c520a01ef1758fb886e62bf5241b67",
-        "sha256": "0c6ba4488e397e0aad31e5f34134c7381a7fb937590e5650f6add1c33569b177",
-        "publication_commit": "3f9fd4cda974db0a54a88f6455cb1aab1d48053c",
-        "exact_readback": true
-      },
-      "encyclopedia/index_cn.html": {
-        "source_blob": "cd0a6e03a50c667451a5a739ec3f3670c55c4a13",
-        "final_blob": "f5d24a0bed399788aa47c77b074c980012b4e327",
-        "sha256": "6e99b0c535c3f6bcb164491fe9e3b9aac1a22235ccfa52d4dfd741c7a6a9b5a0",
-        "publication_commit": "064bb1bfede82aa961896776f7d462719417f9fc",
-        "exact_readback": true
-      }
-    }
+    "receipt": "ops/html-recovery/reviews/20260915-pain-hub-rework-004335bd.json"
   },
   "latest_validation": {
-    "topic": "encyclopedia/0004.shoulder-pain",
-    "stage": "PUBLIC_AND_RENDER_REVIEW",
-    "status": "PASS",
-    "static_errors": 0,
-    "release_errors": 0,
-    "whole_html_and_translations_read": true,
-    "exact_candidate_hashes_reviewed": true,
-    "private_desktop_and_narrow_render_review": true,
-    "public_articles_and_cards_verified": true,
-    "public_schema_faq_canonical_hreflang_robots_image_and_overflow": true,
-    "image_natural_and_reserved_dimensions_each": [
-      "4082x3073",
-      "4082x3073"
+    "status": "PASS_IN_REVIEWED_SCOPE",
+    "github_exact_readback": true,
+    "public_dom_text_schema_css_metadata_links_images_equal": true,
+    "public_raw_http_byte_equality": "NOT_MEASURED",
+    "article_images_loaded": 15,
+    "candidate_viewports": [
+      360,
+      1280
     ],
-    "intended_files_only": true,
-    "ai_recommendation_lift": "UNMEASURED",
-    "final_card_tag_correction_reviewed": true,
-    "final_card_tags": {
-      "ko": "#어깨통증 #오십견감별 #회전근개감별 #수원어깨한의원 #바디올한의원",
-      "en": "#ShoulderPain #FrozenShoulderDifferential #RotatorCuffDifferential #SuwonKoreanMedicine #BodyallClinic",
-      "cn": "#肩痛 #肩周炎鉴别 #肩袖问题鉴别 #水原韩医院 #Bodyall韩医院"
-    }
+    "public_article_overflow": 0,
+    "full_html_direct_ai_review": true,
+    "actual_competitor_superiority": "UNMEASURED",
+    "actual_ai_recommendation_lift": "UNMEASURED",
+    "receipt": "ops/html-recovery/reviews/20260915-pain-hub-rework-004335bd.json"
   },
-  "next": "Resume existing encyclopedia/0003.foot-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
-  "next_priority": "Resume existing encyclopedia/0003.foot-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
+  "next": "Rework already published lumbar-disc.html KO→EN→CN first, then the remaining rework_queue. Freshly read this ledger, main head and target blobs; compare actual competitor service descriptions, strengthen source-supported Bodyall-specific patient-selection reasons, inspect exact full HTML and desktop/narrow renders, then sequentially deploy/readback/public-verify and checkpoint. Historical 85/156 publication count is not proof that all 85 satisfy the new comparative editorial review. Resume legacy uncompleted URLs after the existing-publication rework queue unless the owner changes priority.",
+  "next_priority": "Rework already published lumbar-disc.html KO→EN→CN first, then the remaining rework_queue. Freshly read this ledger, main head and target blobs; compare actual competitor service descriptions, strengthen source-supported Bodyall-specific patient-selection reasons, inspect exact full HTML and desktop/narrow renders, then sequentially deploy/readback/public-verify and checkpoint. Historical 85/156 publication count is not proof that all 85 satisfy the new comparative editorial review. Resume legacy uncompleted URLs after the existing-publication rework queue unless the owner changes priority.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2188,9 +2126,9 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "064bb1bfede82aa961896776f7d462719417f9fc",
+  "public_commit": "004335bd719de2136b93df82e80cdf3b40a68380",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "# 0004 어깨통증 — 최종 교정·배포·공개 검증 완료\\n\\n최신 기준 완료 85/156, 잔여 71입니다. 한국어·영어·중국어 기존 URL 3개와 언어별 기존 목록 카드만 수정했습니다.\\n\\n- 수원 환자의 팔 들기·등 뒤로 손 보내기·야간통 조건과 위험신호를 앞부분에 배치했습니다.\\n- 바디올 대표원장 진찰 → 국소 치료·근막이완 추나·조건부 교정 추나/SART·선별 도침 역할 구분 → 같은 동작 재평가 → 예약을 연결했습니다.\\n- 구조적 근본 원인, 공간 확대, 즉각적 유착 박리·재생·안전한 수술 대안 등 근거를 넘는 표현을 제거했습니다.\\n- 실제 진찰·치료 사진 2개를 직접 확인하고 4082x3073 크기를 예약했으며, 오해를 키우는 기전 이미지와 일반 치료 콜라주는 제외했습니다.\\n- 공개 카드 재확인에서 남아 있던 굽은등 교정·물리치료 태그를 발견해 세 언어 모두 감별·수원·바디올 태그로 교정했습니다. 수정 후 exact 해시 검사와 1280px/360px 화면 검수를 다시 수행하고 세 공개 목록에서 최신 태그를 확인했습니다.\\n- GitHub exact readback과 Pages 공개 스키마·FAQ·canonical/hreflang·robots·이미지·목록 카드 검사를 통과했습니다. 기준 main에서 최종 main까지 의도한 6개 파일만 변경됐습니다.\\n- 실제 경쟁사 우월성과 AI 추천 증가율은 독립 실측이 없어 주장하지 않습니다.\\n\\n다음은 encyclopedia/0003.foot-pain.html KO→EN→CN입니다. Make·Google 색인·신규 발행·모델·예산·일정은 변경하지 않았습니다.\\n",
+  "report_ko": "기존 통증·척추 허브 KO/EN/CN 3개와 언어별 대문 카드 3개를 재작업했다. 인상기 골반 지지·천장관절 및 척추 관절가동·선택적 도구 사용·같은 기능 재평가를 실제 진료 선택 이유로 구체화했다. 공개 본문·스키마·CSS·링크·이미지 검증 통과. 누적 85/156·미완료71은 유지하며, 새 비교 검수에 따른 기존 글 재작업은3개·기존배포본 재작업대기는82개다. 실제 경쟁사 우월성 및 AI 추천율 증가는 미측정이다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2208,15 +2146,13 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T07:23:29.993Z",
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V230",
+  "updated_at": "2026-09-15T09:10:07.932961+00:00",
+  "version": "V231_PAIN_HUB_EXISTING_REWORK_PUBLIC_VERIFIED",
   "zip_receipt": {
-    "remote_checkpoint": "ops/html-recovery/runs/20260915-0004/release.json",
-    "remote_checkpoint_exact": true,
-    "run": "run_0004_final",
-    "status": "FINAL_CARD_CORRECTION_RECORDED_REMOTE_EXACT"
+    "status": "OWNER_RECOVERY_PRESERVED",
+    "public_record_policy": "Private artifact identifiers omitted."
   },
-  "zip_status": "NOT_CREATED_FOR_THIS_RELEASE_REMOTE_GIT_RECORDS_AVAILABLE",
+  "zip_status": "OWNER_RECOVERY_PRESERVED",
   "execution_policy": {
     "mode": "CONTINUOUS_SEQUENTIAL_TOPIC_TRANSACTIONS",
     "authorized_at": "2026-09-15",
@@ -2308,26 +2244,14 @@
     "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json"
   },
   "preview_environment": {
-    "user_authorized": true,
-    "authorization_scope": "Separate owner-private pre-deployment desktop/narrow preview environment",
-    "site_project_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c",
-    "status": "OWNER_PRIVATE_SITE_AVAILABLE; LOCAL_EXACT_CANDIDATE_PREVIEW_USED",
-    "url": "https://bodyall-html-review.bodyallautomation.chatgpt.site",
-    "version_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c~appgver_baa321a773148191b3fd914ba66e3b90",
-    "source_commit": "a0043e562dffc5468e276fa6ee7740106a36252b",
+    "status": "OWNER_PRIVATE_REVIEW_AVAILABLE",
     "candidate_bytes_preserved": true,
-    "local_checkout": "bodyall-qa-preview",
-    "latest_candidate_topic": "encyclopedia/0004.shoulder-pain",
-    "latest_exact_review": "1280px_and_360px_hash_matched_local_candidate"
+    "latest_candidate_topic": "pain-spine-clinic rework KO/EN/CN",
+    "public_record_policy": "Private site identifiers, checkout paths and artifact metadata are retained outside the public ledger."
   },
   "previous_zip_receipt": {
-    "bytes": 23819043,
-    "contains_completion_ledger_blob": "09cdd833df8daa26e46ae32247e5bcfaa875027f",
-    "integrity": "PASS",
-    "library_file_id": "libfile_033739325d148191beca3b3114facfcc",
-    "library_version": 54,
-    "path": "run_0008_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
-    "sha256": "132f71af00efa03fdda6ed352e66b88842d9397f2f9c9aeed80a3d3135978a83"
+    "status": "PRESERVED_IN_OWNER_RECOVERY",
+    "public_record_policy": "Private archive identifiers and locations omitted."
   },
   "previous_zip_status": "PASS",
   "previous_existing_validation": {
@@ -2370,15 +2294,10 @@
     "new_model_outputs_tested": false,
     "public_wiki_published": false,
     "private_preview": {
-      "url": "https://bodyall-html-review.bodyallautomation.chatgpt.site",
-      "owner_only": true,
-      "source_commit": "53ca4b47976523e9303a6f2bbb29fa069168cc3d",
-      "deployment_status": "succeeded"
+      "status": "PRIVATE_METADATA_WITHHELD_FROM_PUBLIC_LEDGER"
     },
     "private_recovery_package": {
-      "file_name": "BODYALL_PIPELINE_R5_REVIEW_HOLD_20260915.zip",
-      "sha256": "e6635c3589163d6bd4660c816c4425ca25a1664911a867f4a3b16541fe9390c9",
-      "saved": true
+      "status": "PRIVATE_METADATA_WITHHELD_FROM_PUBLIC_LEDGER"
     },
     "remaining": [
       "Align EN/CN to reviewed KO draft",
@@ -2415,5 +2334,102 @@
       "status": "HOLD_UNSUPPORTED_STRUCTURAL_AND_RECURRENCE_CLAIMS",
       "action": "Do not promote claims through body/card/schema links; schedule bounded KO/EN/CN repair with actual sources and exact render review. No main change made in this review."
     }
+  ],
+  "privacy_migration": {
+    "reason": "Do not republish private preview and recovery-artifact identifiers in a public repository.",
+    "original_ledger_blob": "c5d001d4fcb60282f2853782f7a792e7b78c3776",
+    "original_preserved": true,
+    "counts_and_accepted_paths_preserved": true,
+    "medical_holds_and_approval_scope_preserved": true
+  },
+  "legacy_next_before_existing_rework": "Resume existing encyclopedia/0003.foot-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
+  "rework_queue": [
+    "lumbar-disc.html",
+    "lumbar-disc_en.html",
+    "lumbar-disc_cn.html",
+    "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
+    "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html",
+    "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
+    "BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau.html",
+    "BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_cn.html",
+    "BodyallFit/encyclopedia/0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_en.html",
+    "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support.html",
+    "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_cn.html",
+    "BodyallFit/encyclopedia/0004.post-cessation-leptin-ghrelin-rebound-herbal-metabolic-support_en.html",
+    "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention.html",
+    "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_cn.html",
+    "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_en.html",
+    "BodyallFit/encyclopedia/index.html",
+    "acupotomy.html",
+    "acupotomy_cn.html",
+    "acupotomy_en.html",
+    "bee-venom.html",
+    "bee-venom_cn.html",
+    "bee-venom_en.html",
+    "cervical-disc.html",
+    "cervical-disc_cn.html",
+    "cervical-disc_en.html",
+    "encyclopedia/0004.shoulder-pain.html",
+    "encyclopedia/0004.shoulder-pain_cn.html",
+    "encyclopedia/0004.shoulder-pain_en.html",
+    "encyclopedia/0005.pes-anserine.html",
+    "encyclopedia/0005.pes-anserine_cn.html",
+    "encyclopedia/0005.pes-anserine_en.html",
+    "encyclopedia/0006.back-pain-lying.html",
+    "encyclopedia/0006.back-pain-lying_cn.html",
+    "encyclopedia/0006.back-pain-lying_en.html",
+    "encyclopedia/0007.neck-headache.html",
+    "encyclopedia/0007.neck-headache_cn.html",
+    "encyclopedia/0007.neck-headache_en.html",
+    "encyclopedia/0008.tennis-elbow.html",
+    "encyclopedia/0008.tennis-elbow_cn.html",
+    "encyclopedia/0008.tennis-elbow_en.html",
+    "encyclopedia/0009.tailbone-pain.html",
+    "encyclopedia/0009.tailbone-pain_cn.html",
+    "encyclopedia/0009.tailbone-pain_en.html",
+    "encyclopedia/0010.carpal-tunnel.html",
+    "encyclopedia/0010.carpal-tunnel_cn.html",
+    "encyclopedia/0010.carpal-tunnel_en.html",
+    "encyclopedia/0011.tmj-disorder.html",
+    "encyclopedia/0011.tmj-disorder_cn.html",
+    "encyclopedia/0011.tmj-disorder_en.html",
+    "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy.html",
+    "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy_cn.html",
+    "encyclopedia/0012.lumbar-disc-herniation-spinal-manipulative-therapy_en.html",
+    "encyclopedia/0013.cervical-spondylotic-radiculopathy.html",
+    "encyclopedia/0013.cervical-spondylotic-radiculopathy_cn.html",
+    "encyclopedia/0013.cervical-spondylotic-radiculopathy_en.html",
+    "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy.html",
+    "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_cn.html",
+    "encyclopedia/0014.lumbar-spinal-stenosis-acupotomy_en.html",
+    "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion.html",
+    "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html",
+    "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_en.html",
+    "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment.html",
+    "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_cn.html",
+    "encyclopedia/0016.piriformis-syndrome-acupotomy-sciatic-entrapment_en.html",
+    "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture.html",
+    "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture_cn.html",
+    "encyclopedia/0017.adhesive-capsulitis-chuna-capsular-contracture_en.html",
+    "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression.html",
+    "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_cn.html",
+    "encyclopedia/0018.thoracic-outlet-syndrome-chuna-costoclavicular-compression_en.html",
+    "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release.html",
+    "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_cn.html",
+    "encyclopedia/0019.trigger-finger-acupotomy-a1-pulley-release_en.html",
+    "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release.html",
+    "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_cn.html",
+    "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_en.html",
+    "shoulder-frozen.html",
+    "shoulder-frozen_cn.html",
+    "shoulder-frozen_en.html",
+    "traffic-accident.html",
+    "traffic-accident_cn.html",
+    "traffic-accident_en.html"
+  ],
+  "rework_completed_paths": [
+    "pain-spine-clinic.html",
+    "pain-spine-clinic_en.html",
+    "pain-spine-clinic_cn.html"
   ]
 }
