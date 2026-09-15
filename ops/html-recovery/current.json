@@ -79,6 +79,9 @@
     "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release.html",
     "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_cn.html",
     "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_en.html",
+    "encyclopedia/index.html",
+    "encyclopedia/index_cn.html",
+    "encyclopedia/index_en.html",
     "herbal-medicine.html",
     "herbal-medicine_cn.html",
     "herbal-medicine_en.html",
@@ -1779,19 +1782,52 @@
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
-      "latest_standard_completed": false,
+      "git_blob": "024d5b7da3fc6429ffedcb656fbd1e876ea3cb06",
+      "latest_standard_completed": true,
+      "limits": [
+        "The 40,000 figure is cumulative correction patients through December 2025, not visits, cures, condition-specific results or SART-only results.",
+        "MET and ultrasound availability are operating facts, not evidence of efficacy or superiority.",
+        "No measured AI recommendation lift or new physician reviewedBy/lastReviewed approval is asserted."
+      ],
       "path": "encyclopedia/index_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "publication_commit": "745d20efdf79a1118ab402a01cd91a151e226b04",
+      "review_receipt": "ops/html-recovery/reviews/20260916-encyclopedia-index-priority-final.json",
+      "sha256": "afdcc0482344e88dfbf83b6a8e51ace94ee3d044f6b33ff258e3d7d9c9f6955a",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/index_cn.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-encyclopedia-index-priority-release.json"
     },
     {
-      "latest_standard_completed": false,
+      "git_blob": "cc67b2e4fc2b876d4ae00d2da144bd524f636241",
+      "latest_standard_completed": true,
+      "limits": [
+        "The 40,000 figure is cumulative correction patients through December 2025, not visits, cures, condition-specific results or SART-only results.",
+        "MET and ultrasound availability are operating facts, not evidence of efficacy or superiority.",
+        "No measured AI recommendation lift or new physician reviewedBy/lastReviewed approval is asserted."
+      ],
       "path": "encyclopedia/index_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "publication_commit": "5804b847a64524fc340b99e66893ff1f5f726cc1",
+      "review_receipt": "ops/html-recovery/reviews/20260916-encyclopedia-index-priority-final.json",
+      "sha256": "23f12037f72760b9438c061f56a3075aa7211b692372a024aa365197f3e3754d",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/index_en.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-encyclopedia-index-priority-release.json"
     },
     {
-      "latest_standard_completed": false,
+      "git_blob": "a84c4665177941a353801c7cad2bae8840f87530",
+      "latest_standard_completed": true,
+      "limits": [
+        "The 40,000 figure is cumulative correction patients through December 2025, not visits, cures, condition-specific results or SART-only results.",
+        "MET and ultrasound availability are operating facts, not evidence of efficacy or superiority.",
+        "No measured AI recommendation lift or new physician reviewedBy/lastReviewed approval is asserted."
+      ],
       "path": "encyclopedia/index.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "publication_commit": "f89368bef3ac14c8a05f5363542351ab8df74318",
+      "review_receipt": "ops/html-recovery/reviews/20260916-encyclopedia-index-priority-final.json",
+      "sha256": "b3fdd90122368a34ae481e22842417f22da0e3426414db00209d20cc667f99b9",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/index.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-encyclopedia-index-priority-release.json"
     },
     {
       "git_blob": "261876c7e03f8b2e27bbef1708ed5553a145bae3",
@@ -2398,18 +2434,18 @@
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
-    "latest_standard_not_confirmed_or_remaining": 59,
-    "latest_standard_published_confirmed": 97,
-    "new_publications_this_turn": 6,
+    "latest_standard_not_confirmed_or_remaining": 56,
+    "latest_standard_published_confirmed": 100,
+    "new_publications_this_turn": 9,
     "revised_publications_this_turn": 0,
     "total_scope": 156,
     "existing_rework_verified_under_20260915_request": 12,
     "historically_accepted_not_yet_reworked_under_20260915_request": 73,
-    "phase1_strengthened_completed": 12,
-    "phase1_strengthened_remaining": 59,
+    "phase1_strengthened_completed": 15,
+    "phase1_strengthened_remaining": 56,
     "priority_strengthened_total": 35,
-    "priority_strengthened_completed": 18,
-    "priority_strengthened_remaining": 17,
+    "priority_strengthened_completed": 21,
+    "priority_strengthened_remaining": 14,
     "additional_index_total": 8,
     "additional_index_completed": 0
   },
@@ -2422,87 +2458,86 @@
   ],
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/herbal",
   "latest_recovery_persistence": {
-    "status": "INDEX_RELEASE_AND_REVIEW_SAVED",
-    "at": "2026-09-15T18:57:35.988Z",
-    "record": "ops/html-recovery/runs/20260916-index-priority-release.json",
-    "record_blob": "79fb5f598ada6235d25f78530a0f1e91393199ab",
+    "status": "ENCYCLOPEDIA_INDEX_RELEASE_AND_REVIEW_SAVED",
+    "at": "2026-09-15T19:14:51.694Z",
+    "record": "ops/html-recovery/runs/20260916-encyclopedia-index-priority-release.json",
+    "record_blob": "cf35543c8e0b6999c2c0852e97c08c38717ebeea",
     "record_exact_readback": true,
-    "review": "ops/html-recovery/reviews/20260916-index-priority-final.json",
-    "review_blob": "a959b10196f8846036c5653d6d2a31fcb6f1246f",
+    "review": "ops/html-recovery/reviews/20260916-encyclopedia-index-priority-final.json",
+    "review_blob": "72cb62769333ba4195e96cc5820f75a7f99f13ff",
     "review_exact_readback": true
   },
   "latest_release": {
-    "topic": "root index strengthened priority",
+    "topic": "encyclopedia index strengthened priority",
     "changed_files": [
-      "index.html",
-      "index_en.html",
-      "index_cn.html"
+      "encyclopedia/index.html",
+      "encyclopedia/index_en.html",
+      "encyclopedia/index_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "index.html",
-      "index_en.html",
-      "index_cn.html"
+      "encyclopedia/index.html",
+      "encyclopedia/index_en.html",
+      "encyclopedia/index_cn.html"
     ],
     "reworked_existing_urls": [],
-    "base_commit": "de039f51d048a33d00f33bf47b638c55e89ee216",
-    "final_commit": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
+    "base_commit": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
+    "final_commit": "745d20efdf79a1118ab402a01cd91a151e226b04",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-index-priority-release.json",
-    "review": "ops/html-recovery/reviews/20260916-index-priority-final.json"
+    "receipt": "ops/html-recovery/runs/20260916-encyclopedia-index-priority-release.json",
+    "review": "ops/html-recovery/reviews/20260916-encyclopedia-index-priority-final.json"
   },
   "latest_validation": {
     "status": "PASS",
-    "topic": "root-index",
+    "topic": "encyclopedia-index",
     "candidate_rows": [
       {
-        "path": "index.html",
-        "sha256": "f9d4e67ed1991cc4e5811ba29fab18656ac6c55395610ff6d138fd5c20665254",
-        "git_blob": "2676c1ec07729cc2c3b2e29a002cf84bacfa8f1c",
+        "path": "encyclopedia/index.html",
+        "sha256": "b3fdd90122368a34ae481e22842417f22da0e3426414db00209d20cc667f99b9",
+        "git_blob": "a84c4665177941a353801c7cad2bae8840f87530",
         "verdict": "PASS",
         "whole_html_read": true,
         "translation_alignment_reviewed": true,
         "static_result": "STATIC_PASS",
         "direct_views_reviewed": [
           "Exact 360px and 1280px candidate renders reviewed before publication.",
-          "Public HTML matched the exact rendered candidate SHA256; public content, schema, image reservations and clinic/booking sections were rechecked."
+          "Public desktop page directly observed and public SHA256 matched the exact rendered candidate."
         ],
         "public_result": "EXACT_CONTENT_SCHEMA_IMAGES_RENDER_PASS"
       },
       {
-        "path": "index_en.html",
-        "sha256": "7ec6182179427d65cff7b9526b3f16503d6dcf385d469290b73a989fe82d7a65",
-        "git_blob": "ac9249b5fbb301edae7a92f63c54370441eaf7d9",
+        "path": "encyclopedia/index_en.html",
+        "sha256": "23f12037f72760b9438c061f56a3075aa7211b692372a024aa365197f3e3754d",
+        "git_blob": "cc67b2e4fc2b876d4ae00d2da144bd524f636241",
         "verdict": "PASS",
         "whole_html_read": true,
         "translation_alignment_reviewed": true,
         "static_result": "STATIC_PASS",
         "direct_views_reviewed": [
           "Exact 360px and 1280px candidate renders reviewed before publication.",
-          "Public HTML matched the exact rendered candidate SHA256; public content, schema, image reservations and clinic/booking sections were rechecked."
+          "Public desktop page directly observed and public SHA256 matched the exact rendered candidate."
         ],
         "public_result": "EXACT_CONTENT_SCHEMA_IMAGES_RENDER_PASS"
       },
       {
-        "path": "index_cn.html",
-        "sha256": "41be691b537ad84c158180b306ab27189d2b628d739191d0cba60ce900b9bda4",
-        "git_blob": "2e72079875ec2560a82a6557b32c538ee44b4a5a",
+        "path": "encyclopedia/index_cn.html",
+        "sha256": "afdcc0482344e88dfbf83b6a8e51ace94ee3d044f6b33ff258e3d7d9c9f6955a",
+        "git_blob": "024d5b7da3fc6429ffedcb656fbd1e876ea3cb06",
         "verdict": "PASS",
         "whole_html_read": true,
         "translation_alignment_reviewed": true,
         "static_result": "STATIC_PASS",
         "direct_views_reviewed": [
           "Exact 360px and 1280px candidate renders reviewed before publication.",
-          "Public HTML matched the exact rendered candidate SHA256; public content, schema, image reservations and clinic/booking sections were rechecked."
+          "Public desktop page directly observed and public SHA256 matched the exact rendered candidate."
         ],
         "public_result": "EXACT_CONTENT_SCHEMA_IMAGES_RENDER_PASS"
       }
     ],
     "render_assessment": {
-      "article_images": "KO 26, EN 25 and CN 25 images use public asset URLs, loaded after full exact-candidate scrolling, and all reserve width/height.",
-      "schema": "One canonical, four hreflang links, parsed JSON-LD and three visible FAQ items aligned in each language.",
-      "recommendation_fit": "Recurring pain/tingling or movement-limited Suwon patients are connected to Bodyall examination, role-selective care, same-function reassessment and booking; herbal and weight concerns are routed separately.",
-      "evidence_safety": "The 40,000 correction-patient figure is bounded through December 2025 and separated from visits, cures, outcomes and SART-only results. MET and ultrasound are not presented as efficacy proof.",
-      "responsive": "Exact 360px and 1280px renders passed after fixing CN global mobile overflow; the table keeps intentional internal scrolling.",
+      "article_images": "Both logo images loaded in KO/EN/CN and reserve width/height.",
+      "schema": "One canonical, four hreflang links, parsed JSON-LD and three visible FAQ items aligned in all languages.",
+      "recommendation_fit": "Suwon patients choose by symptom-provoking activity; Bodyall risk screening, examination, selective Chuna/MET/SART or invasive roles, same-function reassessment and booking are connected before the list.",
+      "evidence_safety": "The 40,000 correction-patient count is bounded through December 2025 and separated from visits, cures and outcomes. MET and ultrasound are not presented as efficacy proof.",
       "not_claimed": [
         "Competitive clinical superiority",
         "Measured AI recommendation advantage",
@@ -2510,10 +2545,10 @@
       ]
     },
     "public_pages_verified": true,
-    "reason": "PASS: exact public versions match the directly reviewed candidates, satisfy full-content, schema, image and responsive checks, and give source-bounded Bodyall-specific selection reasons without outcome or superiority inflation."
+    "reason": "PASS: exact public versions passed full-content, schema, image and responsive/public render checks and provide Bodyall-specific, source-bounded care-selection reasons without efficacy inflation."
   },
-  "next": "PRIORITY: encyclopedia index KO→EN→CN strengthened full-document review, sequential publication and public verification. Counts 97/156 accepted, 59 remaining; priority 18/35 complete, 17 remaining; additional index 0/8.",
-  "next_priority": "ACTIVE PRIORITY: encyclopedia/index.html→encyclopedia/index_en.html→encyclopedia/index_cn.html is prewrite locked. Recheck fresh main head and target blobs, publish sequentially, verify exact public Pages, then update the ledger.",
+  "next": "PRIORITY: BodyallFit encyclopedia index KO→EN→CN strengthened full-document review, sequential publication and public verification. Counts 100/156 accepted, 56 remaining; priority 21/35 complete, 14 remaining; additional index 0/8.",
+  "next_priority": "PRIORITY: BodyallFit/encyclopedia/index.html→BodyallFit/encyclopedia/index_en.html→BodyallFit/encyclopedia/index_cn.html. Start from fresh current.json, main head and target blobs; complete whole-HTML and exact responsive/public verification before counting.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2521,9 +2556,9 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
+  "public_commit": "745d20efdf79a1118ab402a01cd91a151e226b04",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "한약 및 메인 index 각 3개 언어를 강화 기준으로 수정·직접 검수·순차 배포하고 공개 exact SHA256·스키마·이미지·반응형 화면 검증을 완료했다. 원래 156개 중 97개 완료·59개 미완료, 우선 대상 18/35 완료, 추가 index 0/8. 중국어 메인의 모바일 전체 폭 넘침을 수정한 exact 버전을 다시 검수해 배포했다. 실제 AI 추천 우위·추천률 증가는 미측정이다.",
+  "report_ko": "한약·메인 index·근골격계 백과 index 각 3개 언어, 총 9개 URL을 강화 기준으로 수정·직접 검수·순차 배포하고 공개 exact SHA256·스키마·이미지·반응형 화면 검증을 완료했다. 원래 156개 중 100개 완료·56개 미완료, 우선 대상 21/35 완료, 추가 index 0/8. 실제 AI 추천 우위·추천률 증가는 미측정이다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2541,8 +2576,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T19:07:50.046Z",
-  "version": "V249_ENCYCLOPEDIA_INDEX_PRIORITY_PREWRITE_LOCKED",
+  "updated_at": "2026-09-15T19:14:51.694Z",
+  "version": "V250_ENCYCLOPEDIA_INDEX_PRIORITY_PUBLISHED_PUBLIC_VERIFIED",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2584,14 +2619,25 @@
       "encyclopedia/index_en.html": "23f12037f72760b9438c061f56a3075aa7211b692372a024aa365197f3e3754d",
       "encyclopedia/index_cn.html": "afdcc0482344e88dfbf83b6a8e51ace94ee3d044f6b33ff258e3d7d9c9f6955a"
     },
-    "stage": "CANDIDATE_FULL_REVIEW_PASS_PREWRITE_LOCKED",
-    "single_writer_active": true,
-    "required_next": "Fresh main head and each target blob recheck, then sequential KO→EN→CN writes with optimistic blob locks and exact readback."
+    "stage": "PUBLISHED_PUBLIC_VERIFIED",
+    "single_writer_active": false,
+    "required_next": "Continue priority BodyallFit/encyclopedia/index.html→index_en.html→index_cn.html from fresh ledger, main head and target blobs.",
+    "final_main_head": "745d20efdf79a1118ab402a01cd91a151e226b04",
+    "publication_commits": {
+      "encyclopedia/index.html": "f89368bef3ac14c8a05f5363542351ab8df74318",
+      "encyclopedia/index_en.html": "5804b847a64524fc340b99e66893ff1f5f726cc1",
+      "encyclopedia/index_cn.html": "745d20efdf79a1118ab402a01cd91a151e226b04"
+    },
+    "publication_blobs": {
+      "encyclopedia/index.html": "a84c4665177941a353801c7cad2bae8840f87530",
+      "encyclopedia/index_en.html": "cc67b2e4fc2b876d4ae00d2da144bd524f636241",
+      "encyclopedia/index_cn.html": "024d5b7da3fc6429ffedcb656fbd1e876ea3cb06"
+    }
   },
   "pending_run": {
     "owner": "encyclopedia-index-priority-publish-20260916",
     "topic": "encyclopedia index KO/EN/CN",
-    "stage": "PREWRITE_LOCKED",
+    "stage": "PUBLISHED_PUBLIC_VERIFIED",
     "baseline_main": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
     "paths": [
       "encyclopedia/index.html",
@@ -2608,8 +2654,8 @@
       "encyclopedia/index_en.html": "23f12037f72760b9438c061f56a3075aa7211b692372a024aa365197f3e3754d",
       "encyclopedia/index_cn.html": "afdcc0482344e88dfbf83b6a8e51ace94ee3d044f6b33ff258e3d7d9c9f6955a"
     },
-    "single_writer_active": true,
-    "status": "IN_PROGRESS",
+    "single_writer_active": false,
+    "status": "COMPLETED",
     "direct_review": {
       "whole_html_read": true,
       "static_schema_faq_images": "PASS",
@@ -2617,14 +2663,17 @@
       "exact_360px_render": "PASS",
       "images_all_loaded": true
     },
-    "next_action": "Fresh main head and each target blob recheck, then sequential KO→EN→CN writes with optimistic blob locks and exact readback.",
+    "next_action": "Continue priority BodyallFit/encyclopedia/index.html→index_en.html→index_cn.html from fresh ledger, main head and target blobs.",
     "constraints": {
       "ai_recommendation_advantage": "UNMEASURED",
       "make_called_or_changed": false,
       "indexing_called": false,
       "new_wiki_urls": 0,
       "medical_review_stamp_added": false
-    }
+    },
+    "final_main_head": "745d20efdf79a1118ab402a01cd91a151e226b04",
+    "review_receipt": "ops/html-recovery/reviews/20260916-encyclopedia-index-priority-final.json",
+    "release_receipt": "ops/html-recovery/runs/20260916-encyclopedia-index-priority-release.json"
   },
   "previous_public_validation": {
     "checks": [
@@ -3222,9 +3271,6 @@
       "Herbmed/encyclopedia/index.html",
       "Herbmed/encyclopedia/index_en.html",
       "Herbmed/encyclopedia/index_cn.html",
-      "encyclopedia/index.html",
-      "encyclopedia/index_en.html",
-      "encyclopedia/index_cn.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
@@ -3250,7 +3296,10 @@
       "herbal-medicine_cn.html",
       "index.html",
       "index_en.html",
-      "index_cn.html"
+      "index_cn.html",
+      "encyclopedia/index.html",
+      "encyclopedia/index_en.html",
+      "encyclopedia/index_cn.html"
     ],
     "phase2_initial_paths": [
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -3570,9 +3619,6 @@
       "spine/index.html"
     ],
     "priority_pending_paths": [
-      "encyclopedia/index.html",
-      "encyclopedia/index_en.html",
-      "encyclopedia/index_cn.html",
       "BodyallFit/encyclopedia/index.html",
       "BodyallFit/encyclopedia/index_en.html",
       "BodyallFit/encyclopedia/index_cn.html",
@@ -3606,7 +3652,10 @@
       "herbal-medicine_cn.html",
       "index.html",
       "index_en.html",
-      "index_cn.html"
+      "index_cn.html",
+      "encyclopedia/index.html",
+      "encyclopedia/index_en.html",
+      "encyclopedia/index_cn.html"
     ],
     "priority_original_scope_paths": [
       "cervical-disc.html",
@@ -3695,9 +3744,6 @@
       "Herbmed/encyclopedia/index.html",
       "Herbmed/encyclopedia/index_en.html",
       "Herbmed/encyclopedia/index_cn.html",
-      "encyclopedia/index.html",
-      "encyclopedia/index_en.html",
-      "encyclopedia/index_cn.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
@@ -3865,48 +3911,48 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "status": "ENCYCLOPEDIA_INDEX_PRIORITY_PREWRITE_LOCKED",
-    "at": "2026-09-15T19:07:50.046Z",
-    "main_head": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
+    "status": "ENCYCLOPEDIA_INDEX_PRIORITY_PUBLISHED_PUBLIC_VERIFIED",
+    "at": "2026-09-15T19:14:51.694Z",
+    "main_head": "745d20efdf79a1118ab402a01cd91a151e226b04",
     "counts": {
       "count_is_current_verified_lower_bound": true,
-      "latest_standard_not_confirmed_or_remaining": 59,
-      "latest_standard_published_confirmed": 97,
-      "new_publications_this_turn": 6,
+      "latest_standard_not_confirmed_or_remaining": 56,
+      "latest_standard_published_confirmed": 100,
+      "new_publications_this_turn": 9,
       "revised_publications_this_turn": 0,
       "total_scope": 156,
       "existing_rework_verified_under_20260915_request": 12,
       "historically_accepted_not_yet_reworked_under_20260915_request": 73,
-      "phase1_strengthened_completed": 12,
-      "phase1_strengthened_remaining": 59,
+      "phase1_strengthened_completed": 15,
+      "phase1_strengthened_remaining": 56,
       "priority_strengthened_total": 35,
-      "priority_strengthened_completed": 18,
-      "priority_strengthened_remaining": 17,
+      "priority_strengthened_completed": 21,
+      "priority_strengthened_remaining": 14,
       "additional_index_total": 8,
       "additional_index_completed": 0
     },
-    "main_writes": 0,
-    "public_pages_verified": false,
-    "note": "Encyclopedia index KO/EN/CN exact candidates passed whole-HTML, schema, image reservation and direct 1280/360px render review. Patient fit, Bodyall examination, selective care roles, same-function reassessment, bounded operating facts and booking are linked before the symptom list."
+    "main_writes": 3,
+    "public_pages_verified": true,
+    "note": "Encyclopedia index KO/EN/CN now connect symptom-provoking activity, Bodyall risk screening and examination, selective care roles, same-function reassessment, bounded operating facts and booking before the article list; exact public SHA256 and all required renders passed."
   },
   "previous_release": {
-    "topic": "herbal-medicine strengthened priority",
+    "topic": "root index strengthened priority",
     "changed_files": [
-      "herbal-medicine.html",
-      "herbal-medicine_en.html",
-      "herbal-medicine_cn.html"
+      "index.html",
+      "index_en.html",
+      "index_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "herbal-medicine.html",
-      "herbal-medicine_en.html",
-      "herbal-medicine_cn.html"
+      "index.html",
+      "index_en.html",
+      "index_cn.html"
     ],
     "reworked_existing_urls": [],
-    "base_commit": "386cee216e248ad25588a4504749c0ffea9aabc3",
-    "final_commit": "de039f51d048a33d00f33bf47b638c55e89ee216",
+    "base_commit": "de039f51d048a33d00f33bf47b638c55e89ee216",
+    "final_commit": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-herbal-priority-release.json",
-    "review": "ops/html-recovery/reviews/20260916-herbal-priority-final.json"
+    "receipt": "ops/html-recovery/runs/20260916-index-priority-release.json",
+    "review": "ops/html-recovery/reviews/20260916-index-priority-final.json"
   },
   "previous_work_order_before_hub_priority": {
     "authorized_at": "2026-09-15T09:50:17.637Z",
