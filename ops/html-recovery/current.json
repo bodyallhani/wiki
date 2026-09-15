@@ -2012,8 +2012,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T03:02:47.918Z",
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V219",
+  "updated_at": "2026-09-15T03:14:18.185Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V220",
   "zip_receipt": {
     "bytes": 23819043,
     "contains_completion_ledger_blob": "09cdd833df8daa26e46ae32247e5bcfaa875027f",
@@ -2041,7 +2041,18 @@
     "schedule_model_budget": "UNCHANGED",
     "policy_record": "ops/html-recovery/recommendation-release-gate-20260915.md"
   },
-  "active_run": null,
+  "active_run": {
+    "id": "run_0007_preview_20260915",
+    "stage": "AUTHORIZED_PRIVATE_PREVIEW_SETUP",
+    "paths": [
+      "encyclopedia/0007.neck-headache.html",
+      "encyclopedia/0007.neck-headache_en.html",
+      "encyclopedia/0007.neck-headache_cn.html"
+    ],
+    "base_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
+    "claimed_at": "2026-09-15T03:14:18.185Z",
+    "lease_expires_at": "2026-09-15T04:44:18.185Z"
+  },
   "pending_run": {
     "id": "run_0007_final_20260915",
     "stage": "HOLD_PREDEPLOY_RENDER",
@@ -2152,5 +2163,13 @@
     "run": "run_0008_final",
     "source_blob_before_completion_update": "43ae72f49de5d725df5cc004c26a08dd1944aa41",
     "status": "PUBLISHED_AND_PUBLIC_VERIFIED"
+  },
+  "preview_environment": {
+    "user_authorized": true,
+    "authorization_scope": "Separate owner-private pre-deployment desktop/narrow preview environment",
+    "site_project_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c",
+    "status": "CREATED_NOT_YET_DEPLOYED",
+    "local_checkout": "bodyall-qa-preview",
+    "candidate_bytes_preserved": true
   }
 }
