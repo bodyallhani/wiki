@@ -2693,10 +2693,10 @@
   "active_run": {
     "owner": "herbal-priority-20260915",
     "topic": "herbal-medicine KO/EN/CN",
-    "stage": "PAUSED_RELEASED_SOURCE_ASSESSMENT",
-    "released_at": "2026-09-15T14:42:47.568Z",
+    "stage": "CANDIDATE_PREPARATION",
+    "released_at": null,
     "baseline_main": "386cee216e248ad25588a4504749c0ffea9aabc3",
-    "baseline_ledger": "4e4dc8eaa71225679908c18483e2672bf708b362",
+    "baseline_ledger": "65931e2a0ba5c18c7a770a75327d8be5fd91a222",
     "paths": [
       "herbal-medicine.html",
       "herbal-medicine_en.html",
@@ -2707,7 +2707,8 @@
       "herbal-medicine_en.html": "15e67ec88e06bacfcd543ee7923d1841ec6ce15f",
       "herbal-medicine_cn.html": "214b11f4885fa1e4b6499cb5bdbbce933be2e806"
     },
-    "single_writer_active": false
+    "single_writer_active": true,
+    "claimed_at": "2026-09-15T14:56:50.499Z"
   },
   "pending_run": {
     "owner": "herbal-priority-20260915",
@@ -2727,7 +2728,7 @@
       "herbal-medicine_cn.html": "214b11f4885fa1e4b6499cb5bdbbce933be2e806"
     },
     "single_writer_active": false,
-    "status": "HOLD_EVIDENCE_AND_OPERATING_SOURCE_REVIEW",
+    "status": "CANDIDATE_PREPARATION",
     "candidate_created": false,
     "record": "ops/html-recovery/runs/20260915-herbal-priority-assessment.json",
     "record_blob": "1c67830aa85d2d474113f644fbbfd687446009d2",
@@ -2739,7 +2740,8 @@
       "official_site": "Search found official Bodyall product menu, but body-all.co.kr direct browser navigation timed out and web opens failed; actual process/label verification remains pending.",
       "primary_2024": "DOI/Crossref open failed; several search results pointed to root rather than exact article; EuropePMC API web open returned non-retryable safe-open error. No bypass attempted.",
       "safety_sources": "NHS and NCCIH successfully retrieved."
-    }
+    },
+    "notes": "2024 result claims will not be retained without correction/fulltext verification. 2018 checked primary evidence retained with limits. Direct image review found patent certificate mislabeled as quality test and unsupported antler/competitor graphic; remove misleading claims/graphic. No completion increment."
   },
   "previous_public_validation": {
     "checks": [
