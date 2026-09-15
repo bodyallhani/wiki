@@ -1894,58 +1894,121 @@
       "competitive_rework_status": "EDITORIAL_PATIENT_FIT_VERIFIED_RECOMMENDATION_LIFT_UNMEASURED"
     },
     {
-      "final_repository_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
-      "git_blob": "de97406b0d7c987194dfe1d89956300f6181b882",
-      "latest_standard_completed": true,
-      "limits": [
-        "Previously completed Korean evidence review reused; the 2022 study remains abstract-only and evaluates hydrodilatation plus acupotomy, not acupotomy alone or SART.",
-        "No physician review of the rewritten exact version or independent language review asserted.",
-        "Public body/schema/description, 15 images, desktop overflow and three same-language cards verified; mobile emulation and unchanged external-reference recrawl not performed.",
-        "Credible recommendation readiness is editorial; actual AI recommendation lift remains unmeasured."
-      ],
       "path": "shoulder-frozen.html",
-      "publication_commit": "71991be49be5f2b27b2e1fe5a92a0ac0d5b1fd1a",
-      "review_receipt": "run_shoulder_final/offline_validation.json",
-      "sha256": "b0d854278f70d0e295d767b39d730adbb245345a1fdbb1dbe527e39bf4aba172",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
       "url": "https://wiki.body-all.co.kr/shoulder-frozen.html",
-      "verification_receipt": "run_shoulder_final/public_verification.json"
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "strengthened_20260915_completed": true,
+      "sha256": "447344c6d778a41289cfc7865ed8ca6d2203f85985f7c39527c2bc7089b3871f",
+      "git_blob": "6d869baf08934930a483e778a09baaf2bedd7359",
+      "publication_commit": "3389c2ae65b900fe264f595e58bf7759bbeccb77",
+      "final_repository_head": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+      "review_receipt": "ops/html-recovery/reviews/20260915-shoulder-priority-final.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-shoulder-priority-release.json",
+      "previous_versions": [
+        {
+          "final_repository_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+          "git_blob": "de97406b0d7c987194dfe1d89956300f6181b882",
+          "latest_standard_completed": true,
+          "limits": [
+            "Previously completed Korean evidence review reused; the 2022 study remains abstract-only and evaluates hydrodilatation plus acupotomy, not acupotomy alone or SART.",
+            "No physician review of the rewritten exact version or independent language review asserted.",
+            "Public body/schema/description, 15 images, desktop overflow and three same-language cards verified; mobile emulation and unchanged external-reference recrawl not performed.",
+            "Credible recommendation readiness is editorial; actual AI recommendation lift remains unmeasured."
+          ],
+          "path": "shoulder-frozen.html",
+          "publication_commit": "71991be49be5f2b27b2e1fe5a92a0ac0d5b1fd1a",
+          "review_receipt": "run_shoulder_final/offline_validation.json",
+          "sha256": "b0d854278f70d0e295d767b39d730adbb245345a1fdbb1dbe527e39bf4aba172",
+          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+          "url": "https://wiki.body-all.co.kr/shoulder-frozen.html",
+          "verification_receipt": "run_shoulder_final/public_verification.json"
+        }
+      ],
+      "limits": [
+        "GitHub raw exact readback; public DOM content/schema/CSS/metadata/links/images equal. Public raw HTTP byte equality not measured.",
+        "Full candidate HTML, 360/1280 responsive rendering and public desktop top/bottom directly reviewed; no physical mobile emulation.",
+        "Owner count is correction-care patients through December2025, not outcomes; no new physician review or measured AI superiority asserted.",
+        "2022 acupotomy combination study remains abstract-only."
+      ]
     },
     {
-      "final_repository_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
-      "git_blob": "5066e0b1aec7345460071b744ad9a9ec4b2900c5",
-      "latest_standard_completed": true,
-      "limits": [
-        "Previously completed Korean evidence review reused; the 2022 study remains abstract-only and evaluates hydrodilatation plus acupotomy, not acupotomy alone or SART.",
-        "No physician review of the rewritten exact version or independent language review asserted.",
-        "Public body/schema/description, 15 images, desktop overflow and three same-language cards verified; mobile emulation and unchanged external-reference recrawl not performed.",
-        "Credible recommendation readiness is editorial; actual AI recommendation lift remains unmeasured."
-      ],
       "path": "shoulder-frozen_cn.html",
-      "publication_commit": "48bb11af1d039bd107b2030ce4cbf802add4af8e",
-      "review_receipt": "run_shoulder_final/offline_validation.json",
-      "sha256": "9cf5cc4df852d97d2959ddf25fc8ed4291acecdec77d6e91aedb73c2bd6d9003",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
       "url": "https://wiki.body-all.co.kr/shoulder-frozen_cn.html",
-      "verification_receipt": "run_shoulder_final/public_verification.json"
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "strengthened_20260915_completed": true,
+      "sha256": "b531da1e62df61cb5d9e855c2b8e7f6d115646308eafcc8bc398d3e1acd063ce",
+      "git_blob": "8c5e09f6f7d9e9e4496384e3ee24e4fc0060ea59",
+      "publication_commit": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+      "final_repository_head": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+      "review_receipt": "ops/html-recovery/reviews/20260915-shoulder-priority-final.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-shoulder-priority-release.json",
+      "previous_versions": [
+        {
+          "final_repository_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+          "git_blob": "5066e0b1aec7345460071b744ad9a9ec4b2900c5",
+          "latest_standard_completed": true,
+          "limits": [
+            "Previously completed Korean evidence review reused; the 2022 study remains abstract-only and evaluates hydrodilatation plus acupotomy, not acupotomy alone or SART.",
+            "No physician review of the rewritten exact version or independent language review asserted.",
+            "Public body/schema/description, 15 images, desktop overflow and three same-language cards verified; mobile emulation and unchanged external-reference recrawl not performed.",
+            "Credible recommendation readiness is editorial; actual AI recommendation lift remains unmeasured."
+          ],
+          "path": "shoulder-frozen_cn.html",
+          "publication_commit": "48bb11af1d039bd107b2030ce4cbf802add4af8e",
+          "review_receipt": "run_shoulder_final/offline_validation.json",
+          "sha256": "9cf5cc4df852d97d2959ddf25fc8ed4291acecdec77d6e91aedb73c2bd6d9003",
+          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+          "url": "https://wiki.body-all.co.kr/shoulder-frozen_cn.html",
+          "verification_receipt": "run_shoulder_final/public_verification.json"
+        }
+      ],
+      "limits": [
+        "GitHub raw exact readback; public DOM content/schema/CSS/metadata/links/images equal. Public raw HTTP byte equality not measured.",
+        "Full candidate HTML, 360/1280 responsive rendering and public desktop top/bottom directly reviewed; no physical mobile emulation.",
+        "Owner count is correction-care patients through December2025, not outcomes; no new physician review or measured AI superiority asserted.",
+        "2022 acupotomy combination study remains abstract-only."
+      ]
     },
     {
-      "final_repository_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
-      "git_blob": "effa7eea11fd0c14b398a9f439c94576fb8c3a98",
-      "latest_standard_completed": true,
-      "limits": [
-        "Previously completed Korean evidence review reused; the 2022 study remains abstract-only and evaluates hydrodilatation plus acupotomy, not acupotomy alone or SART.",
-        "No physician review of the rewritten exact version or independent language review asserted.",
-        "Public body/schema/description, 15 images, desktop overflow and three same-language cards verified; mobile emulation and unchanged external-reference recrawl not performed.",
-        "Credible recommendation readiness is editorial; actual AI recommendation lift remains unmeasured."
-      ],
       "path": "shoulder-frozen_en.html",
-      "publication_commit": "801ca6a230073946e3266691d5e4b10dba3bbc54",
-      "review_receipt": "run_shoulder_final/offline_validation.json",
-      "sha256": "f1e4497534aea87b9f9d1dcb86e083b38d16d6aee72fd45f4082da8c6a3e7aa0",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
       "url": "https://wiki.body-all.co.kr/shoulder-frozen_en.html",
-      "verification_receipt": "run_shoulder_final/public_verification.json"
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "strengthened_20260915_completed": true,
+      "sha256": "8d8e3edfbc2c511282ae6829adcd48c85bf745023759b0d823fb412e8bbbfe6c",
+      "git_blob": "8c451083906546aa35555ae9221e9caafbe19a74",
+      "publication_commit": "558d5170ac6bf3f4d53cd58581780b18b958a6b8",
+      "final_repository_head": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+      "review_receipt": "ops/html-recovery/reviews/20260915-shoulder-priority-final.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-shoulder-priority-release.json",
+      "previous_versions": [
+        {
+          "final_repository_head": "e49304b6c5a97e35d8a0f30e0f3a63d26d68c9a2",
+          "git_blob": "effa7eea11fd0c14b398a9f439c94576fb8c3a98",
+          "latest_standard_completed": true,
+          "limits": [
+            "Previously completed Korean evidence review reused; the 2022 study remains abstract-only and evaluates hydrodilatation plus acupotomy, not acupotomy alone or SART.",
+            "No physician review of the rewritten exact version or independent language review asserted.",
+            "Public body/schema/description, 15 images, desktop overflow and three same-language cards verified; mobile emulation and unchanged external-reference recrawl not performed.",
+            "Credible recommendation readiness is editorial; actual AI recommendation lift remains unmeasured."
+          ],
+          "path": "shoulder-frozen_en.html",
+          "publication_commit": "801ca6a230073946e3266691d5e4b10dba3bbc54",
+          "review_receipt": "run_shoulder_final/offline_validation.json",
+          "sha256": "f1e4497534aea87b9f9d1dcb86e083b38d16d6aee72fd45f4082da8c6a3e7aa0",
+          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+          "url": "https://wiki.body-all.co.kr/shoulder-frozen_en.html",
+          "verification_receipt": "run_shoulder_final/public_verification.json"
+        }
+      ],
+      "limits": [
+        "GitHub raw exact readback; public DOM content/schema/CSS/metadata/links/images equal. Public raw HTTP byte equality not measured.",
+        "Full candidate HTML, 360/1280 responsive rendering and public desktop top/bottom directly reviewed; no physical mobile emulation.",
+        "Owner count is correction-care patients through December2025, not outcomes; no new physician review or measured AI superiority asserted.",
+        "2022 acupotomy combination study remains abstract-only."
+      ]
     },
     {
       "authorization": "CONFIRMED_FACTS_EDITORIAL_POLISH_ALREADY_REQUESTED; no new personal full-version review claimed",
@@ -2242,53 +2305,290 @@
     "latest_standard_not_confirmed_or_remaining": 68,
     "latest_standard_published_confirmed": 88,
     "new_publications_this_turn": 0,
-    "revised_publications_this_turn": 6,
+    "revised_publications_this_turn": 9,
     "total_scope": 156,
-    "existing_rework_verified_under_20260915_request": 9,
-    "historically_accepted_not_yet_reworked_under_20260915_request": 76,
+    "existing_rework_verified_under_20260915_request": 12,
+    "historically_accepted_not_yet_reworked_under_20260915_request": 73,
     "phase1_strengthened_completed": 3,
     "phase1_strengthened_remaining": 68,
     "priority_strengthened_total": 35,
-    "priority_strengthened_completed": 6,
-    "priority_strengthened_remaining": 29,
+    "priority_strengthened_completed": 9,
+    "priority_strengthened_remaining": 26,
     "additional_index_total": 8,
     "additional_index_completed": 0
   },
   "filesystem_sync_status": "CURRENT_RELEASE_RECORD_EXACT_VERIFIED_ON_RECOVERY_BRANCH",
-  "latest_debug": {
-    "cervical_final_repository_head_metadata": "Corrected strengthened cervical completion rows to verified 310887 head; previous-version rows retained.",
-    "public_cache": "KO standard URL explicit reload resolved stale cached content before acceptance.",
-    "errors_remaining": []
-  },
-  "latest_local_run": "Remote receipt and candidate pack are authoritative; prior scratch/ZIP not a restart baseline",
+  "latest_debug": [
+    "Pages KO initially returned old cached response; a verification URL showed new release; ordinary URL after reload was then checked and all language content matched.",
+    "UI screenshots taken during initial font/scroll transitions were not treated as stable verification; final navigation and footer reviewed.",
+    "A large browser scroll gesture timed out; keyboard Home/End completed direct public top/bottom review. No source change was made due to this tool error."
+  ],
+  "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/shoulder",
   "latest_recovery_persistence": {
-    "receipt": "ops/html-recovery/runs/20260915-lumbar-priority-release.json",
-    "blob": "482ca061de4d59219a1721ccf27ad4af2ead04d3",
+    "receipt": "ops/html-recovery/runs/20260915-shoulder-priority-release.json",
+    "blob": "ae33c72d7e22365b2847245114bd61e24e5211a5",
     "exact_readback": true,
-    "candidate": "ops/html-recovery/candidates/20260915-lumbar-priority.json",
-    "candidate_blob": "8a6f841776f3f9c0f408cbc6d2e917a9afaee58e",
-    "review": "ops/html-recovery/reviews/20260915-lumbar-priority-final.json",
-    "review_blob": "3b41c885e0a2a0ec2f238f3b02fcdbd1ed3252d9"
+    "candidate": "ops/html-recovery/candidates/20260915-shoulder-priority.json",
+    "candidate_blob": "184cb1a688edd2ed871eedd41ea9a4dea98b0acd",
+    "review": "ops/html-recovery/reviews/20260915-shoulder-priority-final.json",
+    "review_blob": "a464bbb508d5deaf47c8b73feb1df73df7585f3a"
   },
   "latest_release": {
-    "topic": "lumbar-disc strengthened priority rework",
+    "topic": "shoulder-frozen strengthened priority rework",
     "changed_files": [
-      "lumbar-disc.html",
-      "lumbar-disc_en.html",
-      "lumbar-disc_cn.html"
+      "shoulder-frozen.html",
+      "shoulder-frozen_en.html",
+      "shoulder-frozen_cn.html"
     ],
     "newly_completed_existing_urls": [],
     "reworked_existing_urls": [
-      "lumbar-disc.html",
-      "lumbar-disc_en.html",
-      "lumbar-disc_cn.html"
+      "shoulder-frozen.html",
+      "shoulder-frozen_en.html",
+      "shoulder-frozen_cn.html"
     ],
-    "base_commit": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
-    "final_commit": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+    "base_commit": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+    "final_commit": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260915-lumbar-priority-release.json"
+    "receipt": "ops/html-recovery/runs/20260915-shoulder-priority-release.json"
   },
   "latest_validation": {
+    "checks": [
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "shoulder-diagnosis.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "shoulder-treatment1.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "shoulder-frozen.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "sha256": "447344c6d778a41289cfc7865ed8ca6d2203f85985f7c39527c2bc7089b3871f",
+        "width": 1348
+      },
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "shoulder-diagnosis.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "shoulder-treatment1.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "shoulder-frozen_en.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "sha256": "8d8e3edfbc2c511282ae6829adcd48c85bf745023759b0d823fb412e8bbbfe6c",
+        "width": 1348
+      },
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "shoulder-diagnosis.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "shoulder-treatment1.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "shoulder-frozen_cn.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "sha256": "b531da1e62df61cb5d9e855c2b8e7f6d115646308eafcc8bc398d3e1acd063ce",
+        "width": 1348
+      }
+    ],
+    "exactness": "GitHub raw contents exact; public Pages DOM content/schema/CSS/metadata/links/image attributes equal. Public raw HTTP byte equality not measured. Full-page content inspected; responsive 360/1280 candidate viewports and public desktop rendering checked; no physical mobile device emulation.",
+    "status": "PASS"
+  },
+  "next": "PRIORITY: chuna-therapy KO→EN→CN next; cervical-disc, lumbar-disc and shoulder-frozen 9/9 strengthened and public verified. Priority9/35 complete,26 remaining. Then herbal-medicine and medical/info indices. Afterwards resume saved phase1 then phase2 excluding strengthened URLs.",
+  "next_priority": "PRIORITY: chuna-therapy KO→EN→CN next; cervical-disc, lumbar-disc and shoulder-frozen 9/9 strengthened and public verified. Priority9/35 complete,26 remaining. Then herbal-medicine and medical/info indices. Afterwards resume saved phase1 then phase2 excluding strengthened URLs.",
+  "objective": {
+    "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
+    "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
+    "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
+    "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
+  },
+  "public_branch": "main",
+  "public_commit": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+  "recovery_branch": "recovery/html-20260914",
+  "report_ko": "목디스크·허리디스크·오십견 9개 우선 강화 재작업·공개검증 완료. 최우선9/35, 잔여26. 원래156개 누적88/156·미완료68, 추가index0/8. 다음 추나요법3개. 실제 AI 추천 우위·추천율 증가는 미측정.",
+  "repository": "bodyallhani/wiki",
+  "restart_guard": {
+    "exact_readback": true,
+    "path": "ops/html-recovery/resume_guard.py",
+    "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER",
+    "persisted_blob": "9e718a238fcb4511959dc05fbad117c0e8f4964e",
+    "persisted_commit": "2ba1e1d72be2ecfdcd7c54996966d42acda172e1",
+    "tested_checks": [
+      "detect original 10/146 vs 22/134 count conflict",
+      "repair aliases from canonical156 ledger",
+      "idempotent repair",
+      "reject inflated completion",
+      "preserve medical holds",
+      "preserve Make restrictions"
+    ],
+    "tested_results": "PASS_6_OF_6"
+  },
+  "updated_at": "2026-09-15T13:38:37.835Z",
+  "version": "V240_SHOULDER_PRIORITY_STRENGTHENED_PUBLIC_VERIFIED",
+  "zip_receipt": {
+    "status": "OWNER_RECOVERY_PRESERVED",
+    "public_record_policy": "Private artifact identifiers omitted."
+  },
+  "zip_status": "REMOTE_RECOVERY_PACK_AND_RECEIPT_CURRENT; prior ZIP historical only",
+  "execution_policy": {
+    "mode": "CONTINUOUS_SEQUENTIAL_TOPIC_TRANSACTIONS",
+    "authorized_at": "2026-09-15",
+    "one_topic_at_a_time": true,
+    "continue_after_checkpoint": true,
+    "parallel_reads_and_deterministic_checks": true,
+    "parallel_github_writers": false,
+    "final_gate": "EXACT_HTML_DIRECT_EDITORIAL_AND_RENDER_REVIEW_REQUIRED",
+    "priority": [
+      "credible_condition_specific_bodyall_recommendation",
+      "near_zero_detectable_errors",
+      "throughput"
+    ],
+    "zero_error_or_recommendation_lift_guarantee": false,
+    "schedule_model_budget": "UNCHANGED",
+    "policy_record": "ops/html-recovery/recommendation-release-gate-20260915.md",
+    "competitive_policy_record": "ops/html-recovery/competitive-release-policy-20260915-v6.1.md",
+    "new_wiki_pipeline_review": "AUTHORIZED_20260915_SEPARATE_FROM_EXISTING_156_COUNTS",
+    "work_order": "PRIORITY_HUBS_AND_ALL_MEDICAL_INDICES_THEN_PREVIOUS_ORDER",
+    "operating_fact_record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+    "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
+  },
+  "active_run": null,
+  "pending_run": null,
+  "previous_public_validation": {
     "checks": [
       {
         "images": [
@@ -2501,125 +2801,6 @@
     "exactness": "GitHub raw contents exact; public Pages DOM content/schema/CSS/metadata/links/image attributes equal. Public raw HTTP byte equality not measured. Full-page content inspected; responsive 360/1280 candidate viewports and public desktop rendering checked; no physical mobile device emulation.",
     "status": "PASS"
   },
-  "next": "PRIORITY: shoulder-frozen KO→EN→CN next; cervical-disc and lumbar-disc 6/6 strengthened and public verified. Priority6/35 complete,29 remaining. Then chuna-therapy, herbal-medicine and medical/info indices. Afterwards resume saved phase1 then phase2 excluding strengthened URLs.",
-  "next_priority": "PRIORITY: shoulder-frozen KO→EN→CN next; cervical-disc and lumbar-disc 6/6 strengthened and public verified. Priority6/35 complete,29 remaining. Then chuna-therapy, herbal-medicine and medical/info indices. Afterwards resume saved phase1 then phase2 excluding strengthened URLs.",
-  "objective": {
-    "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
-    "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
-    "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
-    "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
-  },
-  "public_branch": "main",
-  "public_commit": "0a87853249643fdfd8a62a53387c0076a9db8e38",
-  "recovery_branch": "recovery/html-20260914",
-  "report_ko": "원장님 최신 지시로 목디스크·허리디스크·오십견·추나·한약 허브와 모든 진료·안내 index의 기존 한국어·영어·중국어를 완료 여부와 무관하게 최우선 강화 작업으로 올렸다. 기존156개 안의27개와 사이트맵 밖 기존 진료·안내 index8개, 합계35개다. 게임·결과·통계용 index40개는 위치를 조사하되 기존 게임 별도 범위를 유지한다. 우선35개를 모두 검수·배포·공개확인한 뒤 저장된 기존 미완료 순서와 기존배포 재작업 순서로 복귀한다. 손가락0002 점검과 허리디스크 후보는 보존한다. 첫 목디스크 세 언어의 원문 전체 본문·이미지 속성·근거 설명을 읽고 강화 수정항목을 기록했다. 이번 main 변경0개, 원래156개 완료88·미완료68 유지. 우선35개 중 강화 완료0개이며 신규 후보 최종 검수는 아직 미완료다.",
-  "repository": "bodyallhani/wiki",
-  "restart_guard": {
-    "exact_readback": true,
-    "path": "ops/html-recovery/resume_guard.py",
-    "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER",
-    "persisted_blob": "9e718a238fcb4511959dc05fbad117c0e8f4964e",
-    "persisted_commit": "2ba1e1d72be2ecfdcd7c54996966d42acda172e1",
-    "tested_checks": [
-      "detect original 10/146 vs 22/134 count conflict",
-      "repair aliases from canonical156 ledger",
-      "idempotent repair",
-      "reject inflated completion",
-      "preserve medical holds",
-      "preserve Make restrictions"
-    ],
-    "tested_results": "PASS_6_OF_6"
-  },
-  "updated_at": "2026-09-15T13:22:39.162Z",
-  "version": "V239_LUMBAR_PRIORITY_STRENGTHENED_PUBLIC_VERIFIED",
-  "zip_receipt": {
-    "status": "OWNER_RECOVERY_PRESERVED",
-    "public_record_policy": "Private artifact identifiers omitted."
-  },
-  "zip_status": "REMOTE_RECOVERY_PACK_AND_RECEIPT_CURRENT; prior ZIP historical only",
-  "execution_policy": {
-    "mode": "CONTINUOUS_SEQUENTIAL_TOPIC_TRANSACTIONS",
-    "authorized_at": "2026-09-15",
-    "one_topic_at_a_time": true,
-    "continue_after_checkpoint": true,
-    "parallel_reads_and_deterministic_checks": true,
-    "parallel_github_writers": false,
-    "final_gate": "EXACT_HTML_DIRECT_EDITORIAL_AND_RENDER_REVIEW_REQUIRED",
-    "priority": [
-      "credible_condition_specific_bodyall_recommendation",
-      "near_zero_detectable_errors",
-      "throughput"
-    ],
-    "zero_error_or_recommendation_lift_guarantee": false,
-    "schedule_model_budget": "UNCHANGED",
-    "policy_record": "ops/html-recovery/recommendation-release-gate-20260915.md",
-    "competitive_policy_record": "ops/html-recovery/competitive-release-policy-20260915-v6.1.md",
-    "new_wiki_pipeline_review": "AUTHORIZED_20260915_SEPARATE_FROM_EXISTING_156_COUNTS",
-    "work_order": "PRIORITY_HUBS_AND_ALL_MEDICAL_INDICES_THEN_PREVIOUS_ORDER",
-    "operating_fact_record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
-    "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
-  },
-  "active_run": {
-    "owner": "shoulder-priority-20260915",
-    "topic": "shoulder-frozen KO/EN/CN",
-    "stage": "FINAL_REVIEW_PASS_READY_FOR_PUBLICATION",
-    "claimed_at": "2026-09-15T12:58:30.164Z",
-    "baseline_main": "0a87853249643fdfd8a62a53387c0076a9db8e38",
-    "baseline_ledger": "0ebf9e413783fd49fe12b020a4b0921a7a21326f",
-    "paths": [
-      "shoulder-frozen.html",
-      "shoulder-frozen_en.html",
-      "shoulder-frozen_cn.html"
-    ],
-    "source_blobs": {
-      "shoulder-frozen.html": "de97406b0d7c987194dfe1d89956300f6181b882",
-      "shoulder-frozen_en.html": "effa7eea11fd0c14b398a9f439c94576fb8c3a98",
-      "shoulder-frozen_cn.html": "5066e0b1aec7345460071b744ad9a9ec4b2900c5"
-    },
-    "heartbeat_at": "2026-09-15T13:22:39.162Z"
-  },
-  "pending_run": {
-    "owner": "shoulder-priority-20260915",
-    "topic": "shoulder-frozen KO/EN/CN",
-    "stage": "FINAL_REVIEW_PASS_READY_FOR_PUBLICATION",
-    "claimed_at": "2026-09-15T12:58:30.164Z",
-    "baseline_main": "0a87853249643fdfd8a62a53387c0076a9db8e38",
-    "baseline_ledger": "0ebf9e413783fd49fe12b020a4b0921a7a21326f",
-    "paths": [
-      "shoulder-frozen.html",
-      "shoulder-frozen_en.html",
-      "shoulder-frozen_cn.html"
-    ],
-    "source_blobs": {
-      "shoulder-frozen.html": "de97406b0d7c987194dfe1d89956300f6181b882",
-      "shoulder-frozen_en.html": "effa7eea11fd0c14b398a9f439c94576fb8c3a98",
-      "shoulder-frozen_cn.html": "5066e0b1aec7345460071b744ad9a9ec4b2900c5"
-    },
-    "heartbeat_at": "2026-09-15T13:22:39.162Z",
-    "status": "IN_PROGRESS",
-    "candidate_record": "ops/html-recovery/candidates/20260915-shoulder-priority.json",
-    "final_review": "ops/html-recovery/reviews/20260915-shoulder-priority-final.json",
-    "main_writes": 0,
-    "completion_increment": 0,
-    "next_action": "Fresh main and target blob locks; sequential 3 writes with exact readbacks; public verification."
-  },
-  "previous_public_validation": {
-    "status": "PASS_IN_REVIEWED_SCOPE",
-    "github_exact_readback": true,
-    "public_dom_text_schema_css_metadata_links_images_equal": true,
-    "public_raw_http_byte_equality": "NOT_MEASURED",
-    "article_images_loaded": 3,
-    "candidate_viewports": [
-      360,
-      1280
-    ],
-    "public_article_overflow": 0,
-    "full_html_direct_ai_review": true,
-    "all_six_jsonld_valid": true,
-    "actual_competitor_superiority": "UNMEASURED",
-    "actual_ai_recommendation_lift": "UNMEASURED",
-    "receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json"
-  },
   "previous_public_debug": {
     "confirmed_findings": [
       "The prior page framed tennis elbow as a spine-upper-extremity structural disorder and made postural imbalance a frequent root cause.",
@@ -2649,7 +2830,24 @@
     "status": "OWNER_PRIVATE_REVIEW_AVAILABLE",
     "candidate_bytes_preserved": true,
     "latest_candidate_topic": "Foot-pain strengthened KO/EN/CN and repaired language cards",
-    "public_record_policy": "Private site identifiers, checkout paths and artifact metadata are retained outside the public ledger."
+    "public_record_policy": "Private site identifiers, checkout paths and artifact metadata are retained outside the public ledger.",
+    "latest_url": "https://bodyall-html-review.bodyallautomation.chatgpt.site",
+    "latest_version": 11,
+    "latest_source_commit": "1b1dfe548f10f466493fa795440ccb800c03c676",
+    "latest_deployment": {
+      "env_set_revision": 0,
+      "failure_message": null,
+      "id": "appgdep_6aa948ac4b9c8191822b17be7c22f6ef",
+      "project_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c",
+      "provider_deployment_id": "site---6aa8b6379d1c81918e3892b6f8dd270c",
+      "screenshot_asset_pointer": null,
+      "status": "succeeded",
+      "title": "Bodyall HTML 검수실",
+      "type": "publish",
+      "updated_at": "2026-09-15T13:31:47.363431+00:00",
+      "url": "https://bodyall-html-review.bodyallautomation.chatgpt.site",
+      "version_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c~appgver_c88f6c22dc388191ad7ce7ed4e974ab7"
+    }
   },
   "previous_zip_receipt": {
     "status": "PRESERVED_IN_OWNER_RECOVERY",
@@ -2826,9 +3024,6 @@
     "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release.html",
     "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_cn.html",
     "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_en.html",
-    "shoulder-frozen.html",
-    "shoulder-frozen_cn.html",
-    "shoulder-frozen_en.html",
     "traffic-accident.html",
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
@@ -2842,7 +3037,10 @@
     "cervical-disc_cn.html",
     "lumbar-disc.html",
     "lumbar-disc_en.html",
-    "lumbar-disc_cn.html"
+    "lumbar-disc_cn.html",
+    "shoulder-frozen.html",
+    "shoulder-frozen_en.html",
+    "shoulder-frozen_cn.html"
   ],
   "previous_work_order": {
     "next_priority": "Rework already published lumbar-disc.html KO→EN→CN first, then the remaining rework_queue. Freshly read this ledger, main head and target blobs; compare actual competitor service descriptions, strengthen source-supported Bodyall-specific patient-selection reasons, inspect exact full HTML and desktop/narrow renders, then sequentially deploy/readback/public-verify and checkpoint. Historical 85/156 publication count is not proof that all 85 satisfy the new comparative editorial review. Resume legacy uncompleted URLs after the existing-publication rework queue unless the owner changes priority.",
@@ -3109,7 +3307,10 @@
       "cervical-disc_cn.html",
       "lumbar-disc.html",
       "lumbar-disc_en.html",
-      "lumbar-disc_cn.html"
+      "lumbar-disc_cn.html",
+      "shoulder-frozen.html",
+      "shoulder-frozen_en.html",
+      "shoulder-frozen_cn.html"
     ],
     "phase2_pending_paths": [
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -3182,9 +3383,6 @@
       "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release.html",
       "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_cn.html",
       "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_en.html",
-      "shoulder-frozen.html",
-      "shoulder-frozen_cn.html",
-      "shoulder-frozen_en.html",
       "traffic-accident.html",
       "traffic-accident_cn.html",
       "traffic-accident_en.html"
@@ -3331,9 +3529,6 @@
       "spine/index.html"
     ],
     "priority_pending_paths": [
-      "shoulder-frozen.html",
-      "shoulder-frozen_en.html",
-      "shoulder-frozen_cn.html",
       "chuna-therapy.html",
       "chuna-therapy_en.html",
       "chuna-therapy_cn.html",
@@ -3367,7 +3562,10 @@
       "cervical-disc_cn.html",
       "lumbar-disc.html",
       "lumbar-disc_en.html",
-      "lumbar-disc_cn.html"
+      "lumbar-disc_cn.html",
+      "shoulder-frozen.html",
+      "shoulder-frozen_en.html",
+      "shoulder-frozen_cn.html"
     ],
     "priority_original_scope_paths": [
       "cervical-disc.html",
@@ -3552,9 +3750,6 @@
       "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release.html",
       "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_cn.html",
       "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_en.html",
-      "shoulder-frozen.html",
-      "shoulder-frozen_cn.html",
-      "shoulder-frozen_en.html",
       "traffic-accident.html",
       "traffic-accident_cn.html",
       "traffic-accident_en.html"
@@ -3638,37 +3833,37 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "type": "LUMBAR_PRIORITY_REWORK_PUBLISHED_PUBLIC_VERIFIED",
+    "type": "SHOULDER_PRIORITY_REWORK_PUBLISHED_PUBLIC_VERIFIED",
     "priority_total": 35,
-    "priority_completed": 6,
-    "priority_remaining": 29,
+    "priority_completed": 9,
+    "priority_remaining": 26,
     "accepted": 88,
     "remaining": 68,
-    "reworked_initial85": 9,
-    "initial85_waiting": 76,
+    "reworked_initial85": 12,
+    "initial85_waiting": 73,
     "additional_index_completed": 0,
     "main_writes": 3,
-    "next_topic": "shoulder-frozen",
+    "next_topic": "chuna-therapy",
     "next_topic_stage": "FRESH_SOURCE_ASSESSMENT_PENDING",
-    "receipt": "ops/html-recovery/runs/20260915-lumbar-priority-release.json"
+    "receipt": "ops/html-recovery/runs/20260915-shoulder-priority-release.json"
   },
   "previous_release": {
-    "topic": "cervical-disc strengthened priority rework",
+    "topic": "lumbar-disc strengthened priority rework",
     "changed_files": [
-      "cervical-disc.html",
-      "cervical-disc_en.html",
-      "cervical-disc_cn.html"
+      "lumbar-disc.html",
+      "lumbar-disc_en.html",
+      "lumbar-disc_cn.html"
     ],
     "newly_completed_existing_urls": [],
     "reworked_existing_urls": [
-      "cervical-disc.html",
-      "cervical-disc_en.html",
-      "cervical-disc_cn.html"
+      "lumbar-disc.html",
+      "lumbar-disc_en.html",
+      "lumbar-disc_cn.html"
     ],
-    "base_commit": "1a8376901a69f5327a1153ec97f3a189db128a45",
-    "final_commit": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+    "base_commit": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+    "final_commit": "0a87853249643fdfd8a62a53387c0076a9db8e38",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260915-cervical-priority-release.json"
+    "receipt": "ops/html-recovery/runs/20260915-lumbar-priority-release.json"
   },
   "previous_work_order_before_hub_priority": {
     "authorized_at": "2026-09-15T09:50:17.637Z",
