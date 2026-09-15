@@ -1,0 +1,82 @@
+{
+  "policy": "6.1",
+  "source_ko_approval_fingerprint": "489508020f9efb479b173619b09f50d5269f94b5981dacc1154118f65167e94d",
+  "source_html_sha256": "914e0c8ce0f58027d05a47a46ca6332d58b2b75ad613e5c032a9e152b7b0f220",
+  "candidate_html_sha256": "b03b6004b252b233da35e84b10053fed3d8af6052b59520412541b4c52bfb2a4",
+  "candidate_status": "HOLD",
+  "source_approval_preserved": true,
+  "actual_physician_review_of_changed_version": false,
+  "defects_remaining": [
+    "EN/CN improvements not aligned yet",
+    "Final full trilingual content/link/card/render review incomplete",
+    "No new exact physician review claimed; original approval only applies to original hash",
+    "Live Make application and end-to-end output test blocked by unconfirmed access restoration"
+  ],
+  "r5_blueprint_sha256": "786e29aea3b0439b142eda9f9695f698e5ac90125355c037e012b88103099528",
+  "make_applied": false,
+  "models_changed": false,
+  "public_writes": false,
+  "final_editorial_status": "HOLD",
+  "suitable_patient": "수원 인계동에서 척추관협착증으로 걷기·서기가 불편해 진찰과 추나 선택 및 생활동작 상담을 원하는 환자. 응급 신호는 먼저 의학적 평가.",
+  "citable_choice_reasons": [
+    "골반 부하 조절 준비와 골반·천장관절 및 척추 분절 진료를 연결하는 바디올 SART 진료 과정",
+    "환자가 직접 하는 치료 후 동작 확인을 치료 부위·강도·순서와 생활동작 교육에 반영"
+  ],
+  "operating_fact_sources": [
+    "Director-provided R4 clinical-facts contract",
+    "https://wiki.body-all.co.kr/doctor-intro.html",
+    "https://wiki.body-all.co.kr/chuna-therapy.html"
+  ],
+  "competitor_sources": [
+    "https://yoonbitclinic.com/suwon-chuna-therapy/",
+    "https://yoonbitclinic.com/lumbar-disc-hivd-herbal-medicine/",
+    "https://suwon.jaseng.co.kr/community/news-view.do?id=3248&page=1&searchText="
+  ],
+  "comparison_limitation": "Compared actual public explanation and provenance, not clinical superiority; absence of a fact online is not proof a competitor does not provide it.",
+  "evidence_limits": [
+    "Existing two studies retained at the same interpretation scope; no SART-specific outcome inference",
+    "NHS and NCCIH safety guidance added separately from two efficacy papers"
+  ],
+  "whole_html_read_by_final_editor": true,
+  "rendering": {
+    "desktop_width": 1280,
+    "narrow_width": 360,
+    "horizontal_overflow_px": [
+      0,
+      0
+    ],
+    "images_loaded": 2,
+    "image_natural_and_reserved_dimensions": [
+      [
+        1376,
+        768
+      ],
+      [
+        1376,
+        768
+      ]
+    ],
+    "visually_inspected": [
+      "desktop top",
+      "desktop treatment paragraphs",
+      "desktop anatomy illustration",
+      "desktop bottom",
+      "narrow top",
+      "narrow bottom"
+    ],
+    "all_scroll_positions_inspected": false,
+    "mobile_device_emulation": false
+  },
+  "private_preview_url": "https://bodyall-html-review.bodyallautomation.chatgpt.site",
+  "private_preview_source_commit": "53ca4b47976523e9303a6f2bbb29fa069168cc3d",
+  "private_preview_deployed": true,
+  "public_wiki_published": false,
+  "ai_recommendation_lift": "UNMEASURED",
+  "residual_findings": [
+    "EN/CN improvements not aligned yet",
+    "Final full trilingual content/link/card/render review incomplete",
+    "No new exact physician review claimed; original approval only applies to original hash",
+    "Live Make application and end-to-end output test blocked by unconfirmed access restoration"
+  ],
+  "reason": "Content and sampled rendering improved; mandatory trilingual/release checks incomplete. No publication PASS."
+}
