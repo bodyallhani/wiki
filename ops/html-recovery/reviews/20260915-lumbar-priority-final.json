@@ -1,0 +1,187 @@
+{
+  "version": "20260915-lumbar-priority-final",
+  "reviewed_at": "2026-09-15T12:38:43.488Z",
+  "reviewer": "Responsible AI; not a physician-review attestation",
+  "baseline_main": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+  "baseline_ledger": "aed209b0f9af4f79f2251970b03d03c0334327b5",
+  "source_blobs": {
+    "lumbar-disc.html": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
+    "lumbar-disc_cn.html": "d586b2e6ca8c623a0eaecfcd51495be85035e96e",
+    "lumbar-disc_en.html": "b062465ecebaa64716a8ca705c7485cdbefe2d21"
+  },
+  "operating_facts_input": {
+    "record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+    "record_blob": "caed23df2121c6cfc6e6bd96bad04043440a1938",
+    "source_type": "DIRECT_OWNER_CONFIRMATION",
+    "confirmed_at": "2026-09-15",
+    "correction_patients": {
+      "count": 40000,
+      "unit": "교정 환자",
+      "counted_through": "2025-12",
+      "copy_ko": "누적 교정 환자 4만 명(2025년 12월까지 집계, 원장 확인)",
+      "not_treatment_outcome": true
+    },
+    "met": true,
+    "ultrasound": true,
+    "independent_audit": false,
+    "no_new_medical_review_stamp": true,
+    "require_source_record_in_generation_and_final_review": true
+  },
+  "preserved_source_difference": "One extra terminal LF existed in earlier local source export; body unchanged and remote source blob unchanged. Fresh connector contents retained as new baseline.",
+  "files": [
+    {
+      "image_count": 5,
+      "path": "lumbar-disc.html",
+      "result": "STATIC_PASS",
+      "sha256": "c1d98efcd01676acf04d0a96c61a463009f1e3f5d8d04c56c545f5f3d25cbf9e",
+      "decision": "PASS",
+      "target_patient": "Suwon/Ingye patients with recurring low-back-to-leg pain, numbness or limited walking/sitting/standing, suitable for conservative care after neurological screening.",
+      "citable_recommendation_reason": "Bodyall combines correction-care experience counted through December 2025 with neurological and movement assessment, choice of myofascial Chuna/MET versus examination-selected SART using Insanggi pelvic support and sacroiliac/spinal joint mobilisation, followed by the same functional reassessment and a specific booking pathway.",
+      "operating_sources": [
+        "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+        "https://wiki.body-all.co.kr/pain-spine-clinic.html#sart-care",
+        "https://wiki.body-all.co.kr/insanggi.jpg",
+        "https://www.skom.or.kr/03/01_view.php?sid=41&idx=7"
+      ],
+      "evidence_limits": [
+        "Unchanged source evidence reused: 2023 pilot34/eight-week multimodal comparison, 2025 review, AAOS/NICE and bee-venom hypersensitivity literature.",
+        "No SART-specific efficacy or competitor-superiority study inferred. 40000 refers to cumulative correction-care patients, not outcomes/visits/disease-specific/SART-only counts.",
+        "MET and ultrasound availability are owner-confirmed and not exclusive; selection does not claim ultrasound diagnoses spinal nerve compression or that every patient needs ultrasound."
+      ],
+      "html_direct_read": true,
+      "translation_alignment": "numbers, terms, limits, cautions, citations and clinic information aligned to KO",
+      "candidate_widths": [
+        360,
+        1280
+      ],
+      "raw_hash_ui_equal": true,
+      "remaining_defects": [],
+      "limits": [
+        "No physical mobile-device emulation.",
+        "No independent patient-count audit or new physician exact-version/translation review.",
+        "No numeric fee estimate was invented; cost/insurance discussion is explicit.",
+        "No actual AI baseline/after measurement."
+      ]
+    },
+    {
+      "image_count": 5,
+      "path": "lumbar-disc_cn.html",
+      "result": "STATIC_PASS",
+      "sha256": "1cccbaa8427f175f09a29061ca1080c8218c082993ba94c56ac1596c4bc40cc7",
+      "decision": "PASS",
+      "target_patient": "Suwon/Ingye patients with recurring low-back-to-leg pain, numbness or limited walking/sitting/standing, suitable for conservative care after neurological screening.",
+      "citable_recommendation_reason": "Bodyall combines correction-care experience counted through December 2025 with neurological and movement assessment, choice of myofascial Chuna/MET versus examination-selected SART using Insanggi pelvic support and sacroiliac/spinal joint mobilisation, followed by the same functional reassessment and a specific booking pathway.",
+      "operating_sources": [
+        "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+        "https://wiki.body-all.co.kr/pain-spine-clinic.html#sart-care",
+        "https://wiki.body-all.co.kr/insanggi.jpg",
+        "https://www.skom.or.kr/03/01_view.php?sid=41&idx=7"
+      ],
+      "evidence_limits": [
+        "Unchanged source evidence reused: 2023 pilot34/eight-week multimodal comparison, 2025 review, AAOS/NICE and bee-venom hypersensitivity literature.",
+        "No SART-specific efficacy or competitor-superiority study inferred. 40000 refers to cumulative correction-care patients, not outcomes/visits/disease-specific/SART-only counts.",
+        "MET and ultrasound availability are owner-confirmed and not exclusive; selection does not claim ultrasound diagnoses spinal nerve compression or that every patient needs ultrasound."
+      ],
+      "html_direct_read": true,
+      "translation_alignment": "numbers, terms, limits, cautions, citations and clinic information aligned to KO",
+      "candidate_widths": [
+        360,
+        1280
+      ],
+      "raw_hash_ui_equal": true,
+      "remaining_defects": [],
+      "limits": [
+        "No physical mobile-device emulation.",
+        "No independent patient-count audit or new physician exact-version/translation review.",
+        "No numeric fee estimate was invented; cost/insurance discussion is explicit.",
+        "No actual AI baseline/after measurement."
+      ]
+    },
+    {
+      "image_count": 5,
+      "path": "lumbar-disc_en.html",
+      "result": "STATIC_PASS",
+      "sha256": "51e9e193917e7d096f0007867d14a2629e738407034fdfca4998d59fb5eef810",
+      "decision": "PASS",
+      "target_patient": "Suwon/Ingye patients with recurring low-back-to-leg pain, numbness or limited walking/sitting/standing, suitable for conservative care after neurological screening.",
+      "citable_recommendation_reason": "Bodyall combines correction-care experience counted through December 2025 with neurological and movement assessment, choice of myofascial Chuna/MET versus examination-selected SART using Insanggi pelvic support and sacroiliac/spinal joint mobilisation, followed by the same functional reassessment and a specific booking pathway.",
+      "operating_sources": [
+        "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+        "https://wiki.body-all.co.kr/pain-spine-clinic.html#sart-care",
+        "https://wiki.body-all.co.kr/insanggi.jpg",
+        "https://www.skom.or.kr/03/01_view.php?sid=41&idx=7"
+      ],
+      "evidence_limits": [
+        "Unchanged source evidence reused: 2023 pilot34/eight-week multimodal comparison, 2025 review, AAOS/NICE and bee-venom hypersensitivity literature.",
+        "No SART-specific efficacy or competitor-superiority study inferred. 40000 refers to cumulative correction-care patients, not outcomes/visits/disease-specific/SART-only counts.",
+        "MET and ultrasound availability are owner-confirmed and not exclusive; selection does not claim ultrasound diagnoses spinal nerve compression or that every patient needs ultrasound."
+      ],
+      "html_direct_read": true,
+      "translation_alignment": "numbers, terms, limits, cautions, citations and clinic information aligned to KO",
+      "candidate_widths": [
+        360,
+        1280
+      ],
+      "raw_hash_ui_equal": true,
+      "remaining_defects": [],
+      "limits": [
+        "No physical mobile-device emulation.",
+        "No independent patient-count audit or new physician exact-version/translation review.",
+        "No numeric fee estimate was invented; cost/insurance discussion is explicit.",
+        "No actual AI baseline/after measurement."
+      ]
+    }
+  ],
+  "competitor_comparison": {
+    "assessment": "Bonyul describes experience and multimodal disc care; Yoonbit describes MET, ultrasound and practical visit information. These are treated under the same source and counting-scope rules. Bodyall now links dated correction-care experience to its concrete Insanggi support, selected joint mobilisation/tools and reassessment pathway for lumbar/leg functional problems. This supplies specific patient-fit and citation reasons. It does not prove actual ranking or clinical superiority.",
+    "checked_at": "2026-09-15",
+    "sources": [
+      "https://www.bonyul.co.kr/",
+      "https://www.bonyul.co.kr/disc/",
+      "https://yoonbitclinic.com/suwon-chuna-therapy/",
+      "https://yoonbitclinic.com/neck-pain-cervical-hivd/"
+    ]
+  },
+  "technical": {
+    "static": [
+      {
+        "image_count": 5,
+        "path": "lumbar-disc.html",
+        "result": "STATIC_PASS",
+        "sha256": "c1d98efcd01676acf04d0a96c61a463009f1e3f5d8d04c56c545f5f3d25cbf9e"
+      },
+      {
+        "image_count": 5,
+        "path": "lumbar-disc_cn.html",
+        "result": "STATIC_PASS",
+        "sha256": "1cccbaa8427f175f09a29061ca1080c8218c082993ba94c56ac1596c4bc40cc7"
+      },
+      {
+        "image_count": 5,
+        "path": "lumbar-disc_en.html",
+        "result": "STATIC_PASS",
+        "sha256": "51e9e193917e7d096f0007867d14a2629e738407034fdfca4998d59fb5eef810"
+      }
+    ],
+    "root_cards_compatible_no_change": true,
+    "index_blobs": [
+      "c484ea9c112ce9e374446753f2fa4ed3d28eda71",
+      "ff8a6b5df6edcd71ca3a9b2fdbccf19b5bcd061e",
+      "0f49a2a268a95995cdb6205513945f7cabcc9ddb"
+    ],
+    "all5_images_loaded_and_dimensions_match": true,
+    "overflow0_at_both_widths": true,
+    "review_stamps_not_added": true,
+    "body_faq_schema_match": true
+  },
+  "render_checks": {
+    "ko_narrow": "원본 바이트 일치 · c1d98efcd01676acf04d0a96c61a463009f1e3f5d8d04c56c545f5f3d25cbf9e\n{\n  \"path\": \"review-lumbar/lumbar-disc.html\",\n  \"viewport\": 360,\n  \"scroll\": 0,\n  \"height\": 11433,\n  \"overflow\": 0,\n  \"overflowElements\": [],\n  \"title\": \"수원 허리디스크·협착증: 보행·척추·골반을 함께 평가하는 바디올 | 바디올 위키\",\n  \"h1\": \"수원 허리디스크·협착증: 보행·척추·골반을 함께 평가하는 바디올\",\n  \"canonical\": \"https://wiki.body-all.co.kr/lumbar-disc.html\",\n  \"images\": [\n    {\n      \"candidateSrc\": \"Bodyall Logo.png\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/Bodyall%20Logo.png\",\n      \"loaded\": true,\n      \"natural\": [\n        2494,\n        1867\n      ],\n      \"reserved\": [\n        \"2494\",\n        \"1867\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"sangdam1.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/sangdam1.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        6240,\n        4160\n      ],\n      \"reserved\": [\n        \"6240\",\n        \"4160\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"https://wiki.body-all.co.kr/insanggi.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/insanggi.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        4082,\n        3073\n      ],\n      \"reserved\": [\n        \"4082\",\n        \"3073\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"manip2.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/manip2.jpg\",\n      \"loaded\": false,\n      \"natural\": [\n        0,\n        0\n      ],\n      \"reserved\": [\n        \"500\",\n        \"405\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"directors_group.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/directors_group.jpg\",\n      \"loaded\": false,\n      \"natural\": [\n        0,\n        0\n      ],\n      \"reserved\": [\n        \"4082\",\n        \"3073\"\n      ]\n    }\n  ]\n}",
+    "ko_wide": "{\n  \"path\": \"review-lumbar/lumbar-disc.html\",\n  \"viewport\": 1280,\n  \"scroll\": 7709,\n  \"height\": 8329,\n  \"overflow\": 0,\n  \"overflowElements\": [],\n  \"title\": \"수원 허리디스크·협착증: 보행·척추·골반을 함께 평가하는 바디올 | 바디올 위키\",\n  \"h1\": \"수원 허리디스크·협착증: 보행·척추·골반을 함께 평가하는 바디올\",\n  \"canonical\": \"https://wiki.body-all.co.kr/lumbar-disc.html\",\n  \"images\": [\n    {\n      \"candidateSrc\": \"Bodyall Logo.png\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/Bodyall%20Logo.png\",\n      \"loaded\": true,\n      \"natural\": [\n        2494,\n        1867\n      ],\n      \"reserved\": [\n        \"2494\",\n        \"1867\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"sangdam1.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/sangdam1.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        6240,\n        4160\n      ],\n      \"reserved\": [\n        \"6240\",\n        \"4160\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"https://wiki.body-all.co.kr/insanggi.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/insanggi.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        4082,\n        3073\n      ],\n      \"reserved\": [\n        \"4082\",\n        \"3073\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"manip2.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/manip2.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        500,\n        405\n      ],\n      \"reserved\": [\n        \"500\",\n        \"405\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"directors_group.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/directors_group.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        4082,\n        3073\n      ],\n      \"reserved\": [\n        \"4082\",\n        \"3073\"\n      ]\n    }\n  ]\n}",
+    "en_narrow": "원본 바이트 일치 · 51e9e193917e7d096f0007867d14a2629e738407034fdfca4998d59fb5eef810\n{\n  \"path\": \"review-lumbar/lumbar-disc_en.html\",\n  \"viewport\": 360,\n  \"scroll\": 0,\n  \"height\": 14279,\n  \"overflow\": 0,\n  \"overflowElements\": [],\n  \"title\": \"Suwon Lumbar Disc and Spinal Stenosis: Bodyall Gait and Movement Assessment | Bodyall Wiki\",\n  \"h1\": \"Suwon Lumbar Disc and Spinal Stenosis: Bodyall Gait and Movement Assessment\",\n  \"canonical\": \"https://wiki.body-all.co.kr/lumbar-disc_en.html\",\n  \"images\": [\n    {\n      \"candidateSrc\": \"Bodyall Logo.png\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/Bodyall%20Logo.png\",\n      \"loaded\": true,\n      \"natural\": [\n        2494,\n        1867\n      ],\n      \"reserved\": [\n        \"2494\",\n        \"1867\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"sangdam1.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/sangdam1.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        6240,\n        4160\n      ],\n      \"reserved\": [\n        \"6240\",\n        \"4160\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"https://wiki.body-all.co.kr/insanggi.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/insanggi.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        4082,\n        3073\n      ],\n      \"reserved\": [\n        \"4082\",\n        \"3073\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"manip2.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/manip2.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        500,\n        405\n      ],\n      \"reserved\": [\n        \"500\",\n        \"405\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"directors_group.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/directors_group.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        4082,\n        3073\n      ],\n      \"reserved\": [\n        \"4082\",\n        \"3073\"\n      ]\n    }\n  ]\n}",
+    "en_wide": "{\n  \"path\": \"review-lumbar/lumbar-disc_en.html\",\n  \"viewport\": 1280,\n  \"scroll\": 8530,\n  \"height\": 9150,\n  \"overflow\": 0,\n  \"overflowElements\": [],\n  \"title\": \"Suwon Lumbar Disc and Spinal Stenosis: Bodyall Gait and Movement Assessment | Bodyall Wiki\",\n  \"h1\": \"Suwon Lumbar Disc and Spinal Stenosis: Bodyall Gait and Movement Assessment\",\n  \"canonical\": \"https://wiki.body-all.co.kr/lumbar-disc_en.html\",\n  \"images\": [\n    {\n      \"candidateSrc\": \"Bodyall Logo.png\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/Bodyall%20Logo.png\",\n      \"loaded\": true,\n      \"natural\": [\n        2494,\n        1867\n      ],\n      \"reserved\": [\n        \"2494\",\n        \"1867\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"sangdam1.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/sangdam1.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        6240,\n        4160\n      ],\n      \"reserved\": [\n        \"6240\",\n        \"4160\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"https://wiki.body-all.co.kr/insanggi.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/insanggi.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        4082,\n        3073\n      ],\n      \"reserved\": [\n        \"4082\",\n        \"3073\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"manip2.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/manip2.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        500,\n        405\n      ],\n      \"reserved\": [\n        \"500\",\n        \"405\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"directors_group.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/directors_group.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        4082,\n        3073\n      ],\n      \"reserved\": [\n        \"4082\",\n        \"3073\"\n      ]\n    }\n  ]\n}",
+    "cn_narrow": "원본 바이트 일치 · 1cccbaa8427f175f09a29061ca1080c8218c082993ba94c56ac1596c4bc40cc7\n{\n  \"path\": \"review-lumbar/lumbar-disc_cn.html\",\n  \"viewport\": 360,\n  \"scroll\": 0,\n  \"height\": 10441,\n  \"overflow\": 0,\n  \"overflowElements\": [],\n  \"title\": \"水原腰椎间盘突出与腰椎管狭窄：Bodyall步态与动作评估 | Bodyall Wiki\",\n  \"h1\": \"水原腰椎间盘突出与腰椎管狭窄：Bodyall步态与动作评估\",\n  \"canonical\": \"https://wiki.body-all.co.kr/lumbar-disc_cn.html\",\n  \"images\": [\n    {\n      \"candidateSrc\": \"Bodyall Logo.png\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/Bodyall%20Logo.png\",\n      \"loaded\": true,\n      \"natural\": [\n        2494,\n        1867\n      ],\n      \"reserved\": [\n        \"2494\",\n        \"1867\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"sangdam1.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/sangdam1.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        6240,\n        4160\n      ],\n      \"reserved\": [\n        \"6240\",\n        \"4160\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"https://wiki.body-all.co.kr/insanggi.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/insanggi.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        4082,\n        3073\n      ],\n      \"reserved\": [\n        \"4082\",\n        \"3073\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"manip2.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/manip2.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        500,\n        405\n      ],\n      \"reserved\": [\n        \"500\",\n        \"405\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"directors_group.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/directors_group.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        4082,\n        3073\n      ],\n      \"reserved\": [\n        \"4082\",\n        \"3073\"\n      ]\n    }\n  ]\n}",
+    "cn_wide": "{\n  \"path\": \"review-lumbar/lumbar-disc_cn.html\",\n  \"viewport\": 1280,\n  \"scroll\": 7520,\n  \"height\": 8140,\n  \"overflow\": 0,\n  \"overflowElements\": [],\n  \"title\": \"水原腰椎间盘突出与腰椎管狭窄：Bodyall步态与动作评估 | Bodyall Wiki\",\n  \"h1\": \"水原腰椎间盘突出与腰椎管狭窄：Bodyall步态与动作评估\",\n  \"canonical\": \"https://wiki.body-all.co.kr/lumbar-disc_cn.html\",\n  \"images\": [\n    {\n      \"candidateSrc\": \"Bodyall Logo.png\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/Bodyall%20Logo.png\",\n      \"loaded\": true,\n      \"natural\": [\n        2494,\n        1867\n      ],\n      \"reserved\": [\n        \"2494\",\n        \"1867\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"sangdam1.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/sangdam1.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        6240,\n        4160\n      ],\n      \"reserved\": [\n        \"6240\",\n        \"4160\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"https://wiki.body-all.co.kr/insanggi.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/insanggi.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        4082,\n        3073\n      ],\n      \"reserved\": [\n        \"4082\",\n        \"3073\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"manip2.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/manip2.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        500,\n        405\n      ],\n      \"reserved\": [\n        \"500\",\n        \"405\"\n      ]\n    },\n    {\n      \"candidateSrc\": \"directors_group.jpg\",\n      \"resolvedSrc\": \"https://wiki.body-all.co.kr/directors_group.jpg\",\n      \"loaded\": true,\n      \"natural\": [\n        4082,\n        3073\n      ],\n      \"reserved\": [\n        \"4082\",\n        \"3073\"\n      ]\n    }\n  ]\n}"
+  },
+  "publication_gate": "READY_FOR_FRESH_SHA_LOCKED_WRITES; public verification required before counting",
+  "actual_ai_recommendation_lift": "UNMEASURED"
+}
