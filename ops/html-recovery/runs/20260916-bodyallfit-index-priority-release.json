@@ -1,0 +1,57 @@
+{
+  "schema_version": "2026-09-15.priority-release.v1",
+  "released_at": "2026-09-16T07:28:00+09:00",
+  "topic": "BodyallFit existing additional index strengthened priority",
+  "scope_tracking": "Additional existing index outside original 156; do not add to accepted_paths or original completion count.",
+  "base_main_head": "b80905d11b6b91d51e650a3a161c521a6d8f333c",
+  "final_main_head": "63dd506ef0aee24cbbc25de653587589f6b38413",
+  "changed_files": [
+    "BodyallFit/index.html"
+  ],
+  "compare": {
+    "ahead_by": 1,
+    "behind_by": 0,
+    "intended_files_only": true
+  },
+  "deployment": {
+    "path": "BodyallFit/index.html",
+    "old_blob": "bc977f713735984fe750a9919fddc91ccfc90916",
+    "new_blob": "ebf099fb1842ad167bcf8dbae8a3c5fc438ada60",
+    "sha256": "12859fd053c5b38ac698d8b54964346b68440b85c3e0871235988cba06c4bf89",
+    "commit": "63dd506ef0aee24cbbc25de653587589f6b38413",
+    "url": "https://wiki.body-all.co.kr/BodyallFit/index.html"
+  },
+  "review": {
+    "path": "ops/html-recovery/reviews/20260916-bodyallfit-index-priority-final.json",
+    "blob": "a9a92881efdb3ff952a458cb0695f131b77ef2fd",
+    "status": "PASS"
+  },
+  "public_verification": {
+    "repository_readback_exact": true,
+    "desktop_width": 1348,
+    "mobile_css_width": 360,
+    "body_width_equals_viewport": true,
+    "images_loaded": [
+      [
+        1080,
+        1080
+      ],
+      [
+        1024,
+        1024
+      ]
+    ],
+    "canonical": 1,
+    "hreflang": 2,
+    "visible_faq": 3,
+    "jsonld": 1,
+    "automatic_redirect_removed": true,
+    "harness": "ops/html-recovery/review-harnesses/20260916-bodyallfit-index-public-360.html"
+  },
+  "limits": [
+    "No new efficacy or expected-weight-loss claim was added.",
+    "No physician review of the rewritten exact version is asserted.",
+    "Actual AI recommendation lift remains unmeasured."
+  ],
+  "next": "notice/index.html→notice/index_en.html→notice/index_cn.html as the next additional-index priority group."
+}
