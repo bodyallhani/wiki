@@ -1,0 +1,312 @@
+{
+  "version": "CHUNA_PRIORITY_STRENGTHENED_PUBLIC_VERIFIED",
+  "topic": "chuna-therapy KO/EN/CN",
+  "finished_at": "2026-09-15T14:33:28.862Z",
+  "baseline_main": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+  "final_main": "386cee216e248ad25588a4504749c0ffea9aabc3",
+  "candidate_record": "ops/html-recovery/candidates/20260915-chuna-priority.json",
+  "candidate_record_blob": "018ac8fd25f688e51c66c873e5c59e5ca48ed335",
+  "final_review": "ops/html-recovery/reviews/20260915-chuna-priority-final.json",
+  "final_review_blob": "eba17f5cf97d27a0d4d6e67911115b9dc2d3e664",
+  "writes": [
+    {
+      "blob": "e3efbee2c174be9b09af8ed15eafccc3c2114927",
+      "commit": "a6093383bf2b861e23937b263f5d4da7ff47a1fb",
+      "exact_readback": true,
+      "ledger_blob": "8f025413f05a4d070d674b2f9a28297e068e5bb6",
+      "path": "chuna-therapy.html",
+      "prewrite_blob": "1d59caaa4fecefc851dff46fc53acb3abaea82d7",
+      "prewrite_main": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+      "sha256": "d67d9f02e59683c288336c14e6d67cd299c780115664233208e4aadbe008406b",
+      "written_at": "2026-09-15T14:20:38.411Z"
+    },
+    {
+      "blob": "a0205530582ba18090440d89a3233da113f6287c",
+      "commit": "340d9010ced4ecff2af25b1219e45395179bc428",
+      "exact_readback": true,
+      "ledger_blob": "8f025413f05a4d070d674b2f9a28297e068e5bb6",
+      "path": "chuna-therapy_en.html",
+      "prewrite_blob": "8b6159d3f6b3212d7a86a3bd5bbe562a29da17b3",
+      "prewrite_main": "a6093383bf2b861e23937b263f5d4da7ff47a1fb",
+      "sha256": "2188f37c4ef86cf030f49baf83174d2505ce3ce3a1351408f1c712cb3ac8fb8f",
+      "written_at": "2026-09-15T14:20:58.907Z"
+    },
+    {
+      "blob": "885e59e624dc687051e48891af357676436797f1",
+      "commit": "386cee216e248ad25588a4504749c0ffea9aabc3",
+      "exact_readback": true,
+      "ledger_blob": "8f025413f05a4d070d674b2f9a28297e068e5bb6",
+      "path": "chuna-therapy_cn.html",
+      "prewrite_blob": "5fbf09d27bd720e3972fc1bdb6b88604e1de034f",
+      "prewrite_main": "340d9010ced4ecff2af25b1219e45395179bc428",
+      "sha256": "a4f946ee65fe379b6d958228a5e350c5ff5f206ce2ff75fd08e2dd7ee7d19ade",
+      "written_at": "2026-09-15T14:21:15.306Z"
+    }
+  ],
+  "compare": {
+    "files": [
+      "chuna-therapy.html",
+      "chuna-therapy_cn.html",
+      "chuna-therapy_en.html"
+    ],
+    "ahead_by": 3,
+    "scope_pass": true
+  },
+  "public_verification": {
+    "checks": [
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "thumb_chuna.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "golta_therapy.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "chuna_treatment.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "chuna-therapy.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "sha256": "d67d9f02e59683c288336c14e6d67cd299c780115664233208e4aadbe008406b",
+        "width": 1348
+      },
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "thumb_chuna.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "golta_therapy.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "chuna_treatment.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "chuna-therapy_en.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "sha256": "2188f37c4ef86cf030f49baf83174d2505ce3ce3a1351408f1c712cb3ac8fb8f",
+        "width": 1348
+      },
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "thumb_chuna.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "golta_therapy.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "chuna_treatment.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "chuna-therapy_cn.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "sha256": "a4f946ee65fe379b6d958228a5e350c5ff5f206ce2ff75fd08e2dd7ee7d19ade",
+        "width": 1348
+      }
+    ],
+    "exactness": "GitHub raw contents exact; public Pages DOM content/schema/CSS/metadata/links/image attributes equal. Public raw HTTP byte equality not measured. Full-page content inspected; responsive 360/1280 candidate viewports and public desktop rendering checked; no physical mobile device emulation.",
+    "status": "PASS"
+  },
+  "public_render_direct": {
+    "reviewer": "Responsible AI",
+    "languages": [
+      "KO",
+      "EN",
+      "CN"
+    ],
+    "normal_public_urls": true,
+    "desktop_top_and_bottom": true,
+    "candidate_360_and_1280_pass": true,
+    "all_five_images_per_language_loaded": true,
+    "remaining_defects": [],
+    "status": "PASS"
+  },
+  "preview": {
+    "env_set_revision": 0,
+    "failure_message": null,
+    "id": "appgdep_6aa9554fb1c48191ad6c8751ce4da561",
+    "project_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c",
+    "provider_deployment_id": "site---6aa8b6379d1c81918e3892b6f8dd270c",
+    "screenshot_asset_pointer": null,
+    "status": "succeeded",
+    "title": "Bodyall HTML 검수실",
+    "type": "publish",
+    "updated_at": "2026-09-15T14:26:03.102513+00:00",
+    "url": "https://bodyall-html-review.bodyallautomation.chatgpt.site",
+    "version_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c~appgver_8a21d7e89f908191a89cad9d03c146b5"
+  },
+  "counts_effect": {
+    "original_scope_new_completions": 3,
+    "original_scope_total_after": 91,
+    "original_scope_remaining_after": 65,
+    "priority_completed_after": 12,
+    "priority_remaining_after": 23,
+    "phase1_strengthened_completed_after": 6,
+    "initial85_rework_unchanged": 12,
+    "extra_indices_completed": 0
+  },
+  "debug": [
+    "A large CUA scroll timed out; page movement through observed image/footer locators succeeded. All required public images and screens subsequently verified.",
+    "Public Pages DOM semantics and GitHub raw contents were compared separately; no raw Pages HTTP byte equality assertion."
+  ],
+  "actual_ai_recommendation_lift": "UNMEASURED; no independent fixed non-brand baseline/after responses.",
+  "next_action": "Read latest current.json and main, then herbal-medicine KO/EN/CN strengthened priority group."
+}
