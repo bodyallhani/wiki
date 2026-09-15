@@ -79,6 +79,9 @@
     "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release.html",
     "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_cn.html",
     "encyclopedia/0020.de-quervains-tenosynovitis-acupotomy-first-compartment-release_en.html",
+    "herbal-medicine.html",
+    "herbal-medicine_cn.html",
+    "herbal-medicine_en.html",
     "lumbar-disc.html",
     "lumbar-disc_cn.html",
     "lumbar-disc_en.html",
@@ -1714,19 +1717,52 @@
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
-      "latest_standard_completed": false,
+      "git_blob": "9213c12d1a83a5319854c00077efa3fc5f298aa6",
+      "latest_standard_completed": true,
+      "limits": [
+        "The 2018 pilot enrolled 23 healthy men under sleep restriction; overall primary cortisol and fatigue-scale differences were not statistically significant, and it did not test Bodyall products or the Ssial method.",
+        "Published musk amounts, quantities and prices are operating/choice information, not efficacy, value-superiority or outcome evidence; recheck current information before booking.",
+        "No independent competitive superiority, actual AI recommendation lift, or new physician reviewedBy/lastReviewed approval is asserted."
+      ],
       "path": "herbal-medicine.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "publication_commit": "bffe3862ab7ea715e183a3bf2ce79b6ac59d9d87",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herbal-priority-final.json",
+      "sha256": "0c003364731b619aada2dc63003e6eb36b7dadb89d809b24a968eaf881bf218f",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/herbal-medicine.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herbal-priority-release.json"
     },
     {
-      "latest_standard_completed": false,
+      "git_blob": "261876c7e03f8b2e27bbef1708ed5553a145bae3",
+      "latest_standard_completed": true,
+      "limits": [
+        "The 2018 pilot enrolled 23 healthy men under sleep restriction; overall primary cortisol and fatigue-scale differences were not statistically significant, and it did not test Bodyall products or the Ssial method.",
+        "Published musk amounts, quantities and prices are operating/choice information, not efficacy, value-superiority or outcome evidence; recheck current information before booking.",
+        "No independent competitive superiority, actual AI recommendation lift, or new physician reviewedBy/lastReviewed approval is asserted."
+      ],
       "path": "herbal-medicine_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "publication_commit": "de039f51d048a33d00f33bf47b638c55e89ee216",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herbal-priority-final.json",
+      "sha256": "c778e4eb2fc5564950943be236a98e780fac04e148b325e7ebaa99b5b3bb87dd",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/herbal-medicine_cn.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herbal-priority-release.json"
     },
     {
-      "latest_standard_completed": false,
+      "git_blob": "bde4d7f2b667638b5676623481cadf116ef925e5",
+      "latest_standard_completed": true,
+      "limits": [
+        "The 2018 pilot enrolled 23 healthy men under sleep restriction; overall primary cortisol and fatigue-scale differences were not statistically significant, and it did not test Bodyall products or the Ssial method.",
+        "Published musk amounts, quantities and prices are operating/choice information, not efficacy, value-superiority or outcome evidence; recheck current information before booking.",
+        "No independent competitive superiority, actual AI recommendation lift, or new physician reviewedBy/lastReviewed approval is asserted."
+      ],
       "path": "herbal-medicine_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "publication_commit": "84ba181266f9c79c30743fcffb27d83025635276",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herbal-priority-final.json",
+      "sha256": "48f35eb19bde215d0628dc5970752a54b15089772b4436d37669069ac45dce45",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/herbal-medicine_en.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herbal-priority-release.json"
     },
     {
       "git_blob": "55b611160ead12b940f59900bfc4aacb10021040",
@@ -2371,18 +2407,18 @@
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
-    "latest_standard_not_confirmed_or_remaining": 65,
-    "latest_standard_published_confirmed": 91,
+    "latest_standard_not_confirmed_or_remaining": 62,
+    "latest_standard_published_confirmed": 94,
     "new_publications_this_turn": 3,
-    "revised_publications_this_turn": 9,
+    "revised_publications_this_turn": 0,
     "total_scope": 156,
     "existing_rework_verified_under_20260915_request": 12,
     "historically_accepted_not_yet_reworked_under_20260915_request": 73,
-    "phase1_strengthened_completed": 6,
-    "phase1_strengthened_remaining": 65,
+    "phase1_strengthened_completed": 9,
+    "phase1_strengthened_remaining": 62,
     "priority_strengthened_total": 35,
-    "priority_strengthened_completed": 12,
-    "priority_strengthened_remaining": 23,
+    "priority_strengthened_completed": 15,
+    "priority_strengthened_remaining": 20,
     "additional_index_total": 8,
     "additional_index_completed": 0
   },
@@ -2395,104 +2431,97 @@
   ],
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/herbal",
   "latest_recovery_persistence": {
-    "status": "PARTIAL_EXACT_RECOVERY_SAVED",
-    "at": "2026-09-15T17:06:33Z",
-    "record": "ops/html-recovery/runs/20260916-herbal-final-recovery-partial.json",
-    "record_blob": "edb7a66a7435a30e720f492ddd8917f31d396756",
+    "status": "HERBAL_RELEASE_AND_REVIEW_SAVED",
+    "at": "2026-09-15T18:28:20.667Z",
+    "record": "ops/html-recovery/runs/20260916-herbal-priority-release.json",
+    "record_blob": "f6b813397b258806bed50567dee4fa54a9d135d8",
     "record_exact_readback": true,
-    "candidate_record": "ops/html-recovery/candidates/20260916-herbal-ko-final-recovered.json",
-    "candidate_blob": "ac16a60575e65a9581ced20947d866990f963195",
-    "candidate_exact_readback": true
+    "review": "ops/html-recovery/reviews/20260916-herbal-priority-final.json",
+    "review_blob": "509e0022c872cb63aefc095064b8a311a0ab212d",
+    "review_exact_readback": true
   },
   "latest_release": {
-    "topic": "chuna-therapy strengthened priority",
+    "topic": "herbal-medicine strengthened priority",
     "changed_files": [
-      "chuna-therapy.html",
-      "chuna-therapy_en.html",
-      "chuna-therapy_cn.html"
+      "herbal-medicine.html",
+      "herbal-medicine_en.html",
+      "herbal-medicine_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "chuna-therapy.html",
-      "chuna-therapy_en.html",
-      "chuna-therapy_cn.html"
+      "herbal-medicine.html",
+      "herbal-medicine_en.html",
+      "herbal-medicine_cn.html"
     ],
     "reworked_existing_urls": [],
-    "base_commit": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
-    "final_commit": "386cee216e248ad25588a4504749c0ffea9aabc3",
+    "base_commit": "386cee216e248ad25588a4504749c0ffea9aabc3",
+    "final_commit": "de039f51d048a33d00f33bf47b638c55e89ee216",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260915-chuna-priority-release.json"
+    "receipt": "ops/html-recovery/runs/20260916-herbal-priority-release.json",
+    "review": "ops/html-recovery/reviews/20260916-herbal-priority-final.json"
   },
   "latest_validation": {
-    "status": "HOLD",
+    "status": "PASS",
     "topic": "herbal-medicine",
     "candidate_rows": [
       {
         "path": "herbal-medicine.html",
-        "sha256": "991b21c2b1eccdb0d985b9e52c72a89397bf7ad917ce2782186d7b605a43f4a3",
-        "bytes": 28519,
-        "verdict": "HOLD",
+        "sha256": "0c003364731b619aada2dc63003e6eb36b7dadb89d809b24a968eaf881bf218f",
+        "git_blob": "9213c12d1a83a5319854c00077efa3fc5f298aa6",
+        "verdict": "PASS",
         "whole_html_read": true,
         "translation_alignment_reviewed": true,
         "static_result": "STATIC_PASS",
         "direct_views_reviewed": [
-          "360 selected viewport / 345 CSS content width: title, patient lead and comparison table",
-          "1280 selected viewport / 1265 CSS content width: article and images"
+          "Exact 360px and 1280px candidate renders reviewed before publication; reused only after exact SHA256 recovery.",
+          "Public 1363px desktop top and lower screens directly observed after Pages deployment."
         ],
-        "remaining_render_checks": [
-          "Finish narrow lower-page review and verify final actual document identity after any navigation before a future PASS."
-        ]
+        "public_result": "CONTENT_SCHEMA_IMAGES_RENDER_PASS"
       },
       {
         "path": "herbal-medicine_en.html",
-        "sha256": "215652f1a55ac664f341a84b8e4c0c499da04a377506d6de46f21056f4a52cd7",
-        "bytes": 28272,
-        "verdict": "HOLD",
+        "sha256": "48f35eb19bde215d0628dc5970752a54b15089772b4436d37669069ac45dce45",
+        "git_blob": "bde4d7f2b667638b5676623481cadf116ef925e5",
+        "verdict": "PASS",
         "whole_html_read": true,
         "translation_alignment_reviewed": true,
         "static_result": "STATIC_PASS",
         "direct_views_reviewed": [
-          "360 selected viewport / 345 CSS content width: title, patient lead and comparison table",
-          "1280 selected viewport / 1265 CSS content width: article and images"
+          "Exact 360px and 1280px candidate renders reviewed before publication; reused only after exact SHA256 recovery.",
+          "Public 1363px desktop top and lower screens directly observed after Pages deployment."
         ],
-        "remaining_render_checks": [
-          "Finish narrow lower-page review and verify final actual document identity after any navigation before a future PASS."
-        ]
+        "public_result": "CONTENT_SCHEMA_IMAGES_RENDER_PASS"
       },
       {
         "path": "herbal-medicine_cn.html",
-        "sha256": "e911586d87eb8f1e894fe4d248e8a5952d2cf43efb206662248b17b504bf3bb2",
-        "bytes": 26311,
-        "verdict": "HOLD",
+        "sha256": "c778e4eb2fc5564950943be236a98e780fac04e148b325e7ebaa99b5b3bb87dd",
+        "git_blob": "261876c7e03f8b2e27bbef1708ed5553a145bae3",
+        "verdict": "PASS",
         "whole_html_read": true,
         "translation_alignment_reviewed": true,
         "static_result": "STATIC_PASS",
         "direct_views_reviewed": [
-          "360 selected viewport / 345 CSS content width: title, patient lead and comparison table",
-          "1280 selected viewport / 1265 CSS content width: article and images"
+          "Exact 360px and 1280px candidate renders reviewed before publication; reused only after exact SHA256 recovery.",
+          "Public 1363px desktop top and lower screens directly observed after Pages deployment."
         ],
-        "remaining_render_checks": [
-          "Finish narrow lower-page review and verify final actual document identity after any navigation before a future PASS."
-        ]
+        "public_result": "CONTENT_SCHEMA_IMAGES_RENDER_PASS"
       }
     ],
     "render_assessment": {
-      "article_images": "All five retained images observed loaded at reserved natural sizes in KO/EN/CN; no overflow in checked 345 and 1265 CSS-content-width article views.",
-      "card_old_capture": "Invalid as root-card evidence: clicking the anchor navigated the iframe while selected-file hash remained displayed. Excluded from PASS evidence.",
-      "card_final": "Thumbnail changed; exact new hashes recorded, final card layout check remains pending.",
-      "qa_fix": "Current loaded URL is checked separately from selected-file hash; navigating to another document shows a blocking mismatch; reopening selected candidate restores match. Related-card scrolling selects the matching topic as well as language.",
-      "qa_test": "Actual link-navigation mismatch and reopen recovery exercised through browser UI. All 23 stored candidate hashes verified.",
+      "article_images": "All five retained images loaded in KO/EN/CN after scrolling; every image has width/height reservation and no horizontal overflow was observed.",
+      "schema": "Canonical, ko/en/zh-Hans/x-default hreflang, parsed JSON-LD graph and four visible FAQ items aligned in all languages.",
+      "recommendation_fit": "Persistent-fatigue patient, Suwon/Ingye-dong, physician examination, specific product/prescription choices, same-function follow-up and booking are connected early.",
+      "evidence_safety": "The 2018 pilot limits, non-Bodyall scope, patent limits, interaction warnings and urgent signs are explicit; 2024 efficacy claims remain excluded.",
       "not_claimed": [
-        "Public Pages validation of Herbal candidates",
-        "Raw HTTP byte equality of rendered DOM",
-        "Physician approval",
-        "Measured AI recommendation advantage"
+        "Competitive clinical superiority",
+        "Measured AI recommendation advantage",
+        "Physician review of the rewritten exact version"
       ]
     },
-    "public_pages_verified": false,
-    "reason": "The exact candidates improve accuracy and consultation structure, but do not yet sufficiently substantiate a competitive product-selection reason for general Gongjin-dan/Gyeongokgo comparison. Missing source detail must not be filled by superiority or certification claims. Final card render review is also incomplete after thumbnail replacement."
+    "public_pages_verified": true,
+    "reason": "PASS: exact published versions passed full-content, schema, image, responsive-candidate and public desktop checks; the recommendation reason is clinic-specific and source-bounded without efficacy or superiority inflation."
   },
-  "next": "PRIORITY: herbal-medicine KO→EN→CN remains HOLD. Resume exact candidates/review from ops/html-recovery/runs/20260916-herbal-priority-hold.json. Strengthen verified product/operating choice reasons, consolidate repeated limitations, finish final card and narrow-page checks; re-review modified exact versions. 2024 claims were removed, so fulltext/corrigendum verification is required only if those claims are restored. Then main and medical/info indices in saved priority order. Priority 12/35 complete, 23 remaining; original 91/156 accepted, 65 remaining; additional index 0/8.",
-  "next_priority": "PRIORITY LOCKED: exact reviewed Herbal KO/EN/CN hashes recovered and rechecked. Re-read main head and each target blob immediately before sequential KO→EN→CN writes; exact readback, compare scope, Pages content/schema/images/screen verification, then finalize ledger. Counts remain 91/156 until public gates pass.",
+  "next": "PRIORITY: root index.html→index_en.html→index_cn.html strengthened full-document review, sequential publication and public verification. Counts 94/156 accepted, 62 remaining; priority 15/35 complete, 20 remaining; additional index 0/8.",
+  "next_priority": "PRIORITY: index.html→index_en.html→index_cn.html. Start from fresh current.json, main head and target blobs. Review the whole exact index versions, not only the Herbal cards; preserve previously reviewed card candidates only as partial inputs.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2500,7 +2529,7 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "386cee216e248ad25588a4504749c0ffea9aabc3",
+  "public_commit": "de039f51d048a33d00f33bf47b638c55e89ee216",
   "recovery_branch": "recovery/html-20260914",
   "report_ko": "목디스크·허리디스크·오십견·추나요법 각 3개 언어 강화 배포·공개 검증 완료. 우선 12/35, 원래 156개 중 91개 완료·65개 미완료, 추가 index 0/8. 한약 3개 언어 후보는 전체 본문·일부 반응형 화면 직접 검수와 정적 검사를 진행했으나, 제품별 선택 이유의 운영 근거와 최종 카드·좁은 화면 검수가 남아 HOLD. 특허증 오설명·과장 비교 그림을 정리하고 미확인 GMP 카드 그림을 교체한 후보를 보존했다. 검수실의 문서 이동 후 해시 혼동을 수정·시험·비공개 반영했다. 실제 AI 추천 우위·증가 미측정.",
   "repository": "bodyallhani/wiki",
@@ -2520,8 +2549,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T18:20:13.444Z",
-  "version": "V245_HERBAL_EXACT_RECOVERED_PREWRITE_LOCKED",
+  "updated_at": "2026-09-15T18:28:20.667Z",
+  "version": "V246_HERBAL_PRIORITY_PUBLISHED_PUBLIC_VERIFIED",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2563,17 +2592,21 @@
       "herbal-medicine_en.html": "48f35eb19bde215d0628dc5970752a54b15089772b4436d37669069ac45dce45",
       "herbal-medicine_cn.html": "c778e4eb2fc5564950943be236a98e780fac04e148b325e7ebaa99b5b3bb87dd"
     },
-    "stage": "LOCKED_AFTER_EXACT_HASH_AND_DIRECT_FULL_CONTENT_REVIEW",
-    "single_writer_active": true,
-    "required_next": "Fresh main head and target blob recheck, then sequential KO→EN→CN writes with optimistic blob locks and exact readback."
+    "stage": "PUBLISHED_PUBLIC_VERIFIED_LEDGER_FINALIZED",
+    "single_writer_active": false,
+    "required_next": "Fresh main head and target blob recheck, then sequential KO→EN→CN writes with optimistic blob locks and exact readback.",
+    "final_main_head": "de039f51d048a33d00f33bf47b638c55e89ee216",
+    "released_at": "2026-09-15T18:28:20.667Z",
+    "run_record": "ops/html-recovery/runs/20260916-herbal-priority-release.json",
+    "review_record": "ops/html-recovery/reviews/20260916-herbal-priority-final.json"
   },
   "pending_run": {
-    "owner": "herbal-priority-recovery-20260916",
+    "owner": "herbal-priority-publish-20260916",
     "topic": "herbal-medicine KO/EN/CN",
-    "stage": "PAUSED_RELEASED_PARTIAL_EXACT_RECOVERY",
-    "released_at": "2026-09-15T17:06:33Z",
+    "stage": "COMPLETED_RELEASED",
+    "released_at": "2026-09-15T18:28:20.667Z",
     "baseline_main": "386cee216e248ad25588a4504749c0ffea9aabc3",
-    "baseline_ledger": "cd8dd6d82774f54e092a6c058cc48bb193e7cc9b",
+    "final_main": "de039f51d048a33d00f33bf47b638c55e89ee216",
     "paths": [
       "herbal-medicine.html",
       "herbal-medicine_en.html",
@@ -2584,34 +2617,34 @@
       "herbal-medicine_en.html": "15e67ec88e06bacfcd543ee7923d1841ec6ce15f",
       "herbal-medicine_cn.html": "214b11f4885fa1e4b6499cb5bdbbce933be2e806"
     },
-    "single_writer_active": false,
-    "status": "HOLD",
     "exact_final_candidate_hashes": {
       "herbal-medicine.html": "0c003364731b619aada2dc63003e6eb36b7dadb89d809b24a968eaf881bf218f",
       "herbal-medicine_en.html": "48f35eb19bde215d0628dc5970752a54b15089772b4436d37669069ac45dce45",
       "herbal-medicine_cn.html": "c778e4eb2fc5564950943be236a98e780fac04e148b325e7ebaa99b5b3bb87dd"
     },
-    "recovered_exact_candidate": "ops/html-recovery/candidates/20260916-herbal-ko-final-recovered.json",
-    "recovered_exact_candidate_blob": "ac16a60575e65a9581ced20947d866990f963195",
-    "run_record": "ops/html-recovery/runs/20260916-herbal-final-recovery-partial.json",
-    "run_record_blob": "edb7a66a7435a30e720f492ddd8917f31d396756",
+    "publication_blobs": {
+      "herbal-medicine.html": "9213c12d1a83a5319854c00077efa3fc5f298aa6",
+      "herbal-medicine_en.html": "bde4d7f2b667638b5676623481cadf116ef925e5",
+      "herbal-medicine_cn.html": "261876c7e03f8b2e27bbef1708ed5553a145bae3"
+    },
+    "single_writer_active": false,
+    "status": "PASS",
+    "run_record": "ops/html-recovery/runs/20260916-herbal-priority-release.json",
+    "run_record_blob": "f6b813397b258806bed50567dee4fa54a9d135d8",
+    "review_record": "ops/html-recovery/reviews/20260916-herbal-priority-final.json",
+    "review_record_blob": "509e0022c872cb63aefc095064b8a311a0ab212d",
     "exact_readback": true,
-    "main_writes": 0,
-    "completion_increment": 0,
-    "next_action": "Recover EN/CN exact bytes only if they match their recorded SHA256; otherwise rebuild and directly re-review exact versions. Then fresh-lock and publish KO→EN→CN as one topic batch, verify Pages, update the ledger, and continue to root indices.",
+    "main_writes": 3,
+    "completion_increment": 3,
+    "public_pages_verified": true,
+    "next_action": "Continue priority group index.html→index_en.html→index_cn.html; do not count root card-only changes as full index completion unless the entire exact index versions pass all strengthened gates.",
     "constraints": {
       "ai_recommendation_advantage": "UNMEASURED",
       "make_called_or_changed": false,
       "indexing_called": false,
       "new_wiki_urls": 0,
-      "medical_review_stamp_added": false,
-      "current_product_fee_details_verified": true,
-      "execution_environment_available": false
-    },
-    "remaining_defects": [
-      "Exact final EN/CN candidate bytes are not currently accessible in the unavailable execution environment.",
-      "No main write or public Pages validation has occurred; counts remain unchanged."
-    ]
+      "medical_review_stamp_added": false
+    }
   },
   "previous_public_validation": {
     "checks": [
@@ -2853,10 +2886,10 @@
   "preview_environment": {
     "status": "OWNER_PRIVATE_REVIEW_AVAILABLE",
     "candidate_bytes_preserved": true,
-    "latest_candidate_topic": "Herbal KO/EN/CN and EN/CN card candidates, explicitly HOLD; frame navigation identity guard updated",
+    "latest_candidate_topic": "Herbal KO/EN/CN exact reviewed versions published; root index KO/EN/CN is next priority.",
     "public_record_policy": "Private site identifiers, checkout paths and artifact metadata are retained outside the public ledger.",
     "private_publication_confirmed": true,
-    "herbal_public_wiki_published": false
+    "herbal_public_wiki_published": true
   },
   "previous_zip_receipt": {
     "status": "PRESERVED_IN_OWNER_RECOVERY",
@@ -3183,9 +3216,6 @@
       "doctor-intro.html",
       "doctor-intro_en.html",
       "doctor-intro_cn.html",
-      "herbal-medicine.html",
-      "herbal-medicine_en.html",
-      "herbal-medicine_cn.html",
       "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
       "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
       "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
@@ -3237,7 +3267,10 @@
       "encyclopedia/0003.foot-pain_cn.html",
       "chuna-therapy.html",
       "chuna-therapy_en.html",
-      "chuna-therapy_cn.html"
+      "chuna-therapy_cn.html",
+      "herbal-medicine.html",
+      "herbal-medicine_en.html",
+      "herbal-medicine_cn.html"
     ],
     "phase2_initial_paths": [
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -3557,9 +3590,6 @@
       "spine/index.html"
     ],
     "priority_pending_paths": [
-      "herbal-medicine.html",
-      "herbal-medicine_en.html",
-      "herbal-medicine_cn.html",
       "index.html",
       "index_en.html",
       "index_cn.html",
@@ -3593,7 +3623,10 @@
       "shoulder-frozen_cn.html",
       "chuna-therapy.html",
       "chuna-therapy_en.html",
-      "chuna-therapy_cn.html"
+      "chuna-therapy_cn.html",
+      "herbal-medicine.html",
+      "herbal-medicine_en.html",
+      "herbal-medicine_cn.html"
     ],
     "priority_original_scope_paths": [
       "cervical-disc.html",
@@ -3656,9 +3689,6 @@
       "doctor-intro.html",
       "doctor-intro_en.html",
       "doctor-intro_cn.html",
-      "herbal-medicine.html",
-      "herbal-medicine_en.html",
-      "herbal-medicine_cn.html",
       "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
       "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
       "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
@@ -3858,47 +3888,47 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "status": "HERBAL_FINAL_KO_EXACT_RECOVERED_EN_CN_ENV_BLOCKED",
-    "at": "2026-09-15T17:06:33Z",
-    "main_head": "386cee216e248ad25588a4504749c0ffea9aabc3",
+    "status": "HERBAL_PRIORITY_PUBLISHED_PUBLIC_VERIFIED",
+    "at": "2026-09-15T18:28:20.667Z",
+    "main_head": "de039f51d048a33d00f33bf47b638c55e89ee216",
     "counts": {
       "count_is_current_verified_lower_bound": true,
-      "latest_standard_not_confirmed_or_remaining": 65,
-      "latest_standard_published_confirmed": 91,
+      "latest_standard_not_confirmed_or_remaining": 62,
+      "latest_standard_published_confirmed": 94,
       "new_publications_this_turn": 3,
-      "revised_publications_this_turn": 9,
+      "revised_publications_this_turn": 0,
       "total_scope": 156,
       "existing_rework_verified_under_20260915_request": 12,
       "historically_accepted_not_yet_reworked_under_20260915_request": 73,
-      "phase1_strengthened_completed": 6,
-      "phase1_strengthened_remaining": 65,
+      "phase1_strengthened_completed": 9,
+      "phase1_strengthened_remaining": 62,
       "priority_strengthened_total": 35,
-      "priority_strengthened_completed": 12,
-      "priority_strengthened_remaining": 23,
+      "priority_strengthened_completed": 15,
+      "priority_strengthened_remaining": 20,
       "additional_index_total": 8,
       "additional_index_completed": 0
     },
-    "main_writes": 0,
-    "public_pages_verified": false,
-    "note": "Final KO candidate exactly reconstructed to its previously reviewed SHA256 and saved on recovery. EN/CN exact bytes unavailable in this execution environment; deployment correctly withheld."
+    "main_writes": 3,
+    "public_pages_verified": true,
+    "note": "Herbal KO/EN/CN exact reviewed versions were published sequentially with fresh blob locks, exact readback, three-file-only compare and public Pages verification."
   },
   "previous_release": {
-    "topic": "shoulder-frozen strengthened priority rework",
+    "topic": "chuna-therapy strengthened priority",
     "changed_files": [
-      "shoulder-frozen.html",
-      "shoulder-frozen_en.html",
-      "shoulder-frozen_cn.html"
+      "chuna-therapy.html",
+      "chuna-therapy_en.html",
+      "chuna-therapy_cn.html"
     ],
-    "newly_completed_existing_urls": [],
-    "reworked_existing_urls": [
-      "shoulder-frozen.html",
-      "shoulder-frozen_en.html",
-      "shoulder-frozen_cn.html"
+    "newly_completed_existing_urls": [
+      "chuna-therapy.html",
+      "chuna-therapy_en.html",
+      "chuna-therapy_cn.html"
     ],
-    "base_commit": "0a87853249643fdfd8a62a53387c0076a9db8e38",
-    "final_commit": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+    "reworked_existing_urls": [],
+    "base_commit": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+    "final_commit": "386cee216e248ad25588a4504749c0ffea9aabc3",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260915-shoulder-priority-release.json"
+    "receipt": "ops/html-recovery/runs/20260915-chuna-priority-release.json"
   },
   "previous_work_order_before_hub_priority": {
     "authorized_at": "2026-09-15T09:50:17.637Z",
