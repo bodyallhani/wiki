@@ -2513,7 +2513,7 @@
     "reason": "PASS: exact public versions match the directly reviewed candidates, satisfy full-content, schema, image and responsive checks, and give source-bounded Bodyall-specific selection reasons without outcome or superiority inflation."
   },
   "next": "PRIORITY: encyclopedia index KO→EN→CN strengthened full-document review, sequential publication and public verification. Counts 97/156 accepted, 59 remaining; priority 18/35 complete, 17 remaining; additional index 0/8.",
-  "next_priority": "PRIORITY: encyclopedia/index.html→encyclopedia/index_en.html→encyclopedia/index_cn.html. Start from fresh current.json, main head and target blobs; complete whole-HTML and exact responsive/public verification before counting.",
+  "next_priority": "ACTIVE PRIORITY: encyclopedia/index.html→encyclopedia/index_en.html→encyclopedia/index_cn.html is prewrite locked. Recheck fresh main head and target blobs, publish sequentially, verify exact public Pages, then update the ledger.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2541,8 +2541,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T18:57:35.988Z",
-  "version": "V248_INDEX_PRIORITY_PUBLISHED_PUBLIC_VERIFIED",
+  "updated_at": "2026-09-15T19:07:50.046Z",
+  "version": "V249_ENCYCLOPEDIA_INDEX_PRIORITY_PREWRITE_LOCKED",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2571,74 +2571,60 @@
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
   "active_run": {
-    "owner": "index-priority-publish-20260916",
-    "started_at": "2026-09-15T18:45:37.298Z",
-    "base_main_head": "de039f51d048a33d00f33bf47b638c55e89ee216",
+    "owner": "encyclopedia-index-priority-publish-20260916",
+    "started_at": "2026-09-15T19:07:50.046Z",
+    "base_main_head": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
     "source_blobs": {
-      "index.html": "c484ea9c112ce9e374446753f2fa4ed3d28eda71",
-      "index_en.html": "ff8a6b5df6edcd71ca3a9b2fdbccf19b5bcd061e",
-      "index_cn.html": "0f49a2a268a95995cdb6205513945f7cabcc9ddb"
+      "encyclopedia/index.html": "6cf4a592b64ec7be1a3dc11e7e5e16e551746309",
+      "encyclopedia/index_en.html": "ea952fcddaf41a32b7bffc1c7d25e8713bfc7cef",
+      "encyclopedia/index_cn.html": "2c591ace032a4e30776974a4818b208090ce44f5"
     },
     "exact_candidate_hashes": {
-      "index.html": "f9d4e67ed1991cc4e5811ba29fab18656ac6c55395610ff6d138fd5c20665254",
-      "index_en.html": "7ec6182179427d65cff7b9526b3f16503d6dcf385d469290b73a989fe82d7a65",
-      "index_cn.html": "41be691b537ad84c158180b306ab27189d2b628d739191d0cba60ce900b9bda4"
+      "encyclopedia/index.html": "b3fdd90122368a34ae481e22842417f22da0e3426414db00209d20cc667f99b9",
+      "encyclopedia/index_en.html": "23f12037f72760b9438c061f56a3075aa7211b692372a024aa365197f3e3754d",
+      "encyclopedia/index_cn.html": "afdcc0482344e88dfbf83b6a8e51ace94ee3d044f6b33ff258e3d7d9c9f6955a"
     },
-    "stage": "PUBLISHED_PUBLIC_VERIFIED_LEDGER_FINALIZING",
-    "single_writer_active": false,
-    "required_next": "Continue priority encyclopedia/index.html→index_en.html→index_cn.html from fresh ledger, main head and target blobs.",
-    "final_main_head": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
-    "publication_commits": {
-      "index.html": "107689b03f3923a06e1d3eed32e3e48b01643693",
-      "index_en.html": "aca11e0cd2d64ffa08602b8df7b94860d67d16f7",
-      "index_cn.html": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75"
-    },
-    "publication_blobs": {
-      "index.html": "2676c1ec07729cc2c3b2e29a002cf84bacfa8f1c",
-      "index_en.html": "ac9249b5fbb301edae7a92f63c54370441eaf7d9",
-      "index_cn.html": "2e72079875ec2560a82a6557b32c538ee44b4a5a"
-    }
+    "stage": "CANDIDATE_FULL_REVIEW_PASS_PREWRITE_LOCKED",
+    "single_writer_active": true,
+    "required_next": "Fresh main head and each target blob recheck, then sequential KO→EN→CN writes with optimistic blob locks and exact readback."
   },
   "pending_run": {
-    "owner": "index-priority-publish-20260916",
-    "topic": "root index KO/EN/CN",
-    "stage": "PUBLISHED_PUBLIC_VERIFIED",
-    "baseline_main": "de039f51d048a33d00f33bf47b638c55e89ee216",
+    "owner": "encyclopedia-index-priority-publish-20260916",
+    "topic": "encyclopedia index KO/EN/CN",
+    "stage": "PREWRITE_LOCKED",
+    "baseline_main": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
     "paths": [
-      "index.html",
-      "index_en.html",
-      "index_cn.html"
+      "encyclopedia/index.html",
+      "encyclopedia/index_en.html",
+      "encyclopedia/index_cn.html"
     ],
     "source_blobs": {
-      "index.html": "c484ea9c112ce9e374446753f2fa4ed3d28eda71",
-      "index_en.html": "ff8a6b5df6edcd71ca3a9b2fdbccf19b5bcd061e",
-      "index_cn.html": "0f49a2a268a95995cdb6205513945f7cabcc9ddb"
+      "encyclopedia/index.html": "6cf4a592b64ec7be1a3dc11e7e5e16e551746309",
+      "encyclopedia/index_en.html": "ea952fcddaf41a32b7bffc1c7d25e8713bfc7cef",
+      "encyclopedia/index_cn.html": "2c591ace032a4e30776974a4818b208090ce44f5"
     },
     "exact_final_candidate_hashes": {
-      "index.html": "f9d4e67ed1991cc4e5811ba29fab18656ac6c55395610ff6d138fd5c20665254",
-      "index_en.html": "7ec6182179427d65cff7b9526b3f16503d6dcf385d469290b73a989fe82d7a65",
-      "index_cn.html": "41be691b537ad84c158180b306ab27189d2b628d739191d0cba60ce900b9bda4"
+      "encyclopedia/index.html": "b3fdd90122368a34ae481e22842417f22da0e3426414db00209d20cc667f99b9",
+      "encyclopedia/index_en.html": "23f12037f72760b9438c061f56a3075aa7211b692372a024aa365197f3e3754d",
+      "encyclopedia/index_cn.html": "afdcc0482344e88dfbf83b6a8e51ace94ee3d044f6b33ff258e3d7d9c9f6955a"
     },
-    "single_writer_active": false,
-    "status": "COMPLETED",
+    "single_writer_active": true,
+    "status": "IN_PROGRESS",
     "direct_review": {
       "whole_html_read": true,
       "static_schema_faq_images": "PASS",
       "exact_1280px_render": "PASS",
-      "exact_360px_render": "PASS_AFTER_CN_OVERFLOW_FIX",
-      "images_all_loaded_after_scroll": true
+      "exact_360px_render": "PASS",
+      "images_all_loaded": true
     },
-    "next_action": "Continue priority encyclopedia/index.html→index_en.html→index_cn.html from fresh ledger, main head and target blobs.",
+    "next_action": "Fresh main head and each target blob recheck, then sequential KO→EN→CN writes with optimistic blob locks and exact readback.",
     "constraints": {
       "ai_recommendation_advantage": "UNMEASURED",
       "make_called_or_changed": false,
       "indexing_called": false,
       "new_wiki_urls": 0,
       "medical_review_stamp_added": false
-    },
-    "final_main_head": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
-    "review_receipt": "ops/html-recovery/reviews/20260916-index-priority-final.json",
-    "release_receipt": "ops/html-recovery/runs/20260916-index-priority-release.json"
+    }
   },
   "previous_public_validation": {
     "checks": [
@@ -3879,8 +3865,8 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "status": "INDEX_PRIORITY_PUBLISHED_PUBLIC_VERIFIED",
-    "at": "2026-09-15T18:57:35.988Z",
+    "status": "ENCYCLOPEDIA_INDEX_PRIORITY_PREWRITE_LOCKED",
+    "at": "2026-09-15T19:07:50.046Z",
     "main_head": "9c8bee6d150c8637b8a55f5c3df87117afa3fa75",
     "counts": {
       "count_is_current_verified_lower_bound": true,
@@ -3899,9 +3885,9 @@
       "additional_index_total": 8,
       "additional_index_completed": 0
     },
-    "main_writes": 3,
-    "public_pages_verified": true,
-    "note": "Root index KO/EN/CN exact candidates passed whole-document review, responsive render, sequential optimistic-lock publication, exact public SHA256, schema and image checks. CN global mobile overflow was fixed before publication."
+    "main_writes": 0,
+    "public_pages_verified": false,
+    "note": "Encyclopedia index KO/EN/CN exact candidates passed whole-HTML, schema, image reservation and direct 1280/360px render review. Patient fit, Bodyall examination, selective care roles, same-function reassessment, bounded operating facts and booking are linked before the symptom list."
   },
   "previous_release": {
     "topic": "herbal-medicine strengthened priority",
