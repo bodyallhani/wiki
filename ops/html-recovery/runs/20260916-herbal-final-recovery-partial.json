@@ -1,0 +1,61 @@
+{
+  "version": "HERBAL_FINAL_EXACT_RECOVERY_PARTIAL_20260916",
+  "updated_at": "2026-09-15T17:06:33Z",
+  "repository": "bodyallhani/wiki",
+  "public_branch": "main",
+  "baseline_main": "386cee216e248ad25588a4504749c0ffea9aabc3",
+  "baseline_ledger_blob": "cd8dd6d82774f54e092a6c058cc48bb193e7cc9b",
+  "status": "PARTIAL_EXACT_RECOVERY_NOT_PUBLISHED",
+  "paths": [
+    "herbal-medicine.html",
+    "herbal-medicine_en.html",
+    "herbal-medicine_cn.html"
+  ],
+  "source_blobs": {
+    "herbal-medicine.html": "1780d906af07c8e37ae6f52203fc8f6113664f30",
+    "herbal-medicine_en.html": "15e67ec88e06bacfcd543ee7923d1841ec6ce15f",
+    "herbal-medicine_cn.html": "214b11f4885fa1e4b6499cb5bdbbce933be2e806"
+  },
+  "final_candidate_hashes": {
+    "herbal-medicine.html": "0c003364731b619aada2dc63003e6eb36b7dadb89d809b24a968eaf881bf218f",
+    "herbal-medicine_en.html": "48f35eb19bde215d0628dc5970752a54b15089772b4436d37669069ac45dce45",
+    "herbal-medicine_cn.html": "c778e4eb2fc5564950943be236a98e780fac04e148b325e7ebaa99b5b3bb87dd"
+  },
+  "recovered_exact": {
+    "path": "herbal-medicine.html",
+    "candidate_record": "ops/html-recovery/candidates/20260916-herbal-ko-final-recovered.json",
+    "candidate_blob": "ac16a60575e65a9581ced20947d866990f963195",
+    "exact_readback": true
+  },
+  "pending_exact_recovery": [
+    "herbal-medicine_en.html",
+    "herbal-medicine_cn.html"
+  ],
+  "prior_direct_review": {
+    "exact_versions_reviewed": true,
+    "whole_html": true,
+    "widths": [
+      360,
+      1280
+    ],
+    "image_count": 5,
+    "all_images_loaded": true,
+    "no_page_overflow": true,
+    "verdict": "CONTENT_AND_RENDER_PASS"
+  },
+  "publication": {
+    "main_writes": 0,
+    "public_pages_verified": false,
+    "accepted_increment": 0,
+    "priority_increment": 0
+  },
+  "constraints": {
+    "reason": "Selected execution environment unavailable; exact EN/CN candidate bytes were not accessible. Older HOLD candidates were not substituted.",
+    "ai_recommendation_advantage": "UNMEASURED",
+    "make_called_or_changed": false,
+    "indexing_called": false,
+    "new_wiki_urls": 0,
+    "medical_review_stamp_added": false
+  },
+  "next_action": "Read fresh ledger/main/source blobs. Recover EN and CN only if their bytes match the recorded SHA256 values; otherwise rebuild and directly re-review the exact versions. Publish the three language files sequentially only as one topic batch, verify Pages, then update counts and proceed to root indices."
+}
