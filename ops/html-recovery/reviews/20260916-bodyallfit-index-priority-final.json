@@ -1,0 +1,49 @@
+{
+  "schema_version": "2026-09-15.priority-final-review.v1",
+  "reviewed_at": "2026-09-16T07:18:00+09:00",
+  "path": "BodyallFit/index.html",
+  "reviewer_scope": "Responsible AI direct full-HTML and 1348px/360px render review; not a physician review.",
+  "status": "PASS",
+  "status_reason": "The exact candidate replaces the automatic redirect splash with a readable Suwon BodyallFit guide. It connects patient condition to health/medicine/weight/meal/activity review, separates herbal medicine, meal, exercise and lifestyle roles, reassesses the same measures, preserves urgent-care cautions and offers explicit next actions without making efficacy or superiority claims.",
+  "exact_candidate": {
+    "path": "ops/html-recovery/candidates/20260916-bodyallfit-index/index.html",
+    "blob": "ebf099fb1842ad167bcf8dbae8a3c5fc438ada60",
+    "sha256": "12859fd053c5b38ac698d8b54964346b68440b85c3e0871235988cba06c4bf89"
+  },
+  "target_patient": "수원에서 체중 정체·반복되는 식욕 변화·식사 및 활동 습관을 함께 점검하고 싶은 사람",
+  "citable_recommendation_reason": "바디올핏은 건강상태와 복용약, 체중 변화, 식사·수면·활동 기록을 먼저 확인하고, 적합한 경우의 한약과 식사·운동·생활관리 역할을 나눈 뒤 처음 정한 같은 지표로 재평가한다.",
+  "operating_fact_sources": [
+    "BodyallFit official service page linked at https://body-all.co.kr/Body-Allfit",
+    "Published Bodyall clinic location and contact information"
+  ],
+  "evidence_limits": [
+    "No new efficacy claim, expected weight-loss amount or superiority claim was added.",
+    "Herbal medicine is conditional on individual assessment and does not guarantee weight-loss results.",
+    "No physician review of this rewritten exact version is asserted.",
+    "Actual AI recommendation lift remains unmeasured."
+  ],
+  "residual_defects": [],
+  "validation": {
+    "jsonld_parse": true,
+    "canonical": 1,
+    "hreflang": 2,
+    "faq": 3,
+    "images_with_dimensions": 2,
+    "images_loaded": [
+      [
+        1080,
+        1080
+      ],
+      [
+        1024,
+        1024
+      ]
+    ],
+    "auto_redirect_removed": true,
+    "desktop_width": 1348,
+    "desktop_body_equals_viewport": true,
+    "mobile_width": 360,
+    "mobile_body_equals_viewport": true,
+    "review_harness": "ops/html-recovery/review-harnesses/20260916-bodyallfit-index-360.html"
+  }
+}
