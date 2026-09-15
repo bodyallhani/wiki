@@ -22,6 +22,9 @@
     "cervical-disc.html",
     "cervical-disc_cn.html",
     "cervical-disc_en.html",
+    "encyclopedia/0005.pes-anserine.html",
+    "encyclopedia/0005.pes-anserine_cn.html",
+    "encyclopedia/0005.pes-anserine_en.html",
     "encyclopedia/0006.back-pain-lying.html",
     "encyclopedia/0006.back-pain-lying_cn.html",
     "encyclopedia/0006.back-pain-lying_en.html",
@@ -760,19 +763,61 @@
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
-      "latest_standard_completed": false,
       "path": "encyclopedia/0005.pes-anserine.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0005.pes-anserine.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "758c7f8c969023f531c8694e5c9ea1fe1861f223",
+      "sha256": "e4a46c5e7d7f6bda9841ac3ecfd50229158d740e8a27533224b913b5b9fb3995",
+      "publication_commit": "42f6b3c8321e38cb28499354c71eb5fd0e9f083c",
+      "final_repository_head": "a957c01771c1283fe5e32821e3b7e6639b340d38",
+      "review_receipt": "ops/html-recovery/runs/20260915-0005/editorial_review.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0005/release.json#public_verification",
+      "verified_at": "2026-09-15T06:31:00Z",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "The cited condition evidence includes a 22-patient/38-control case-control study with wide confidence intervals, diagnostic ambiguity in a 2010 review, and heterogeneous intervention protocols in a 2025 review; none tests Bodyall-specific outcomes or SART.",
+        "Desktop and exact CSS-width 360px candidate renders were directly inspected; the public pages were subsequently checked for content, schema, FAQ, image dimensions, links and overflow.",
+        "Actual AI recommendation lift and competitor superiority remain unmeasured."
+      ]
     },
     {
-      "latest_standard_completed": false,
       "path": "encyclopedia/0005.pes-anserine_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0005.pes-anserine_cn.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "91d57bb0ea59a2073af93ea87e6c8cb16643ae7f",
+      "sha256": "d5cb906150be806214cbbe4f75e0c83ecaacf486a8a16d6d85788c0c26f11479",
+      "publication_commit": "614b15a305aa91c69673c7f393cfd0ece18ee50c",
+      "final_repository_head": "a957c01771c1283fe5e32821e3b7e6639b340d38",
+      "review_receipt": "ops/html-recovery/runs/20260915-0005/editorial_review.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0005/release.json#public_verification",
+      "verified_at": "2026-09-15T06:31:00Z",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "The cited condition evidence includes a 22-patient/38-control case-control study with wide confidence intervals, diagnostic ambiguity in a 2010 review, and heterogeneous intervention protocols in a 2025 review; none tests Bodyall-specific outcomes or SART.",
+        "Desktop and exact CSS-width 360px candidate renders were directly inspected; the public pages were subsequently checked for content, schema, FAQ, image dimensions, links and overflow.",
+        "Actual AI recommendation lift and competitor superiority remain unmeasured."
+      ]
     },
     {
-      "latest_standard_completed": false,
       "path": "encyclopedia/0005.pes-anserine_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0005.pes-anserine_en.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "e8ca349caaffacd509475d73440a6a73e35a0fe6",
+      "sha256": "ce72cefa8ff3013b7afc3df15c62b1f1af4ebf9dc75e6f40996f6367bcec0053",
+      "publication_commit": "adfc0dc9b900f5c15fa28b04306795deab4ab2a1",
+      "final_repository_head": "a957c01771c1283fe5e32821e3b7e6639b340d38",
+      "review_receipt": "ops/html-recovery/runs/20260915-0005/editorial_review.json",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0005/release.json#public_verification",
+      "verified_at": "2026-09-15T06:31:00Z",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "The cited condition evidence includes a 22-patient/38-control case-control study with wide confidence intervals, diagnostic ambiguity in a 2010 review, and heterogeneous intervention protocols in a 2025 review; none tests Bodyall-specific outcomes or SART.",
+        "Desktop and exact CSS-width 360px candidate renders were directly inspected; the public pages were subsequently checked for content, schema, FAQ, image dimensions, links and overflow.",
+        "Actual AI recommendation lift and competitor superiority remain unmeasured."
+      ]
     },
     {
       "latest_standard_completed": false,
@@ -1958,127 +2003,128 @@
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
-    "latest_standard_not_confirmed_or_remaining": 77,
-    "latest_standard_published_confirmed": 79,
+    "latest_standard_not_confirmed_or_remaining": 74,
+    "latest_standard_published_confirmed": 82,
     "new_publications_this_turn": 0,
     "revised_publications_this_turn": 3,
     "total_scope": 156
   },
   "filesystem_sync_status": "CURRENT_RELEASE_RECORD_EXACT_VERIFIED_ON_RECOVERY_BRANCH",
   "latest_debug": {
-    "run": "run_0006_final",
+    "run": "run_0005_final",
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED",
+    "intervention_resolution": "NO_EXTERNAL_INTERVENTION_REQUIRED",
     "confirmed_findings": [
-      "Legacy copy overdiagnosed stenosis/psoas shortening from pain while lying and claimed structural decompression, adhesiolysis and restorative outcomes.",
-      "The existing image reservation 2656x1600 did not match the deployed PNG's directly observed natural size 2816x1536.",
-      "Generic back-pain education alone was not a sufficient clinic-specific recommendation reason in the reviewed local competitive context."
+      "Legacy copy overdiagnosed pes anserine pathology from pain location and linked pelvic/hip alignment to the condition without adequate evidence.",
+      "Legacy copy claimed SART decompression/alignment restoration and acupotomy adhesiolysis/regeneration beyond the cited evidence.",
+      "The legacy mechanism image contained a duplicate/incorrect anatomy label, while the generic treatment collage did not add topic-specific recommendation evidence.",
+      "Local competitor pages already provide symptom education and modality lists, so generic content alone did not create a credible Bodyall-specific recommendation reason."
     ],
     "resolved": [
-      "Rebuilt the opening around the eligible Suwon patient, urgent differential and Bodyall's verified examination sequence.",
-      "Separated myofascial-release Chuna from conditional corrective Chuna/SART and required same-bed-movement reassessment; did not force acupotomy.",
-      "Corrected image reservations in all languages and verified loaded natural dimensions.",
-      "Aligned evidence limitations, FAQs, schema, same-language cards and booking path across Korean, English and Chinese."
-    ],
-    "intervention_resolution": "NO_EXTERNAL_INTERVENTION_REQUIRED"
+      "Rebuilt the opening around the eligible Suwon patient and differential examination before diagnosis or treatment.",
+      "Separated local care, myofascial-release Chuna, conditional corrective Chuna/SART and selected acupotomy, with the same stair task retested.",
+      "Removed two defective or generic images and retained one visually reviewed 2656x1600 topic image with exact reservations.",
+      "Aligned evidence limits, urgent signals, invasive-treatment risks, FAQs, schema, cards and booking path across Korean, English and Chinese."
+    ]
   },
-  "latest_local_run": "ops/html-recovery/runs/20260915-0006/release.json",
+  "latest_local_run": "ops/html-recovery/runs/20260915-0005/release.json",
   "latest_recovery_persistence": {
     "status": "REMOTE_EXACT_CONFIRMED",
     "exact": true,
     "editorial_review": {
-      "path": "ops/html-recovery/runs/20260915-0006/editorial_review.json",
-      "sha": "32c3410e7a6eb0347d7d2f6012f6249292b2c4c4"
+      "path": "ops/html-recovery/runs/20260915-0005/editorial_review.json",
+      "sha": "96b90a0e0d8ad2c9a1d82d46e193458824db1130"
     },
     "release": {
-      "path": "ops/html-recovery/runs/20260915-0006/release.json",
-      "sha": "479dc174936c037fc4c2d11d81f2bda367c24252"
+      "path": "ops/html-recovery/runs/20260915-0005/release.json",
+      "sha": "292567f7b6c1832d45704f4700b1a244b8ed37cf"
     }
   },
   "latest_release": {
-    "prewrite_head": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
-    "final_head": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
-    "revised_existing_urls": 3,
+    "prewrite_head": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
+    "final_head": "a957c01771c1283fe5e32821e3b7e6639b340d38",
     "new_urls": 0,
-    "files": {
-      "encyclopedia/0006.back-pain-lying.html": {
-        "source_blob": "d6602eb2aade534d2a1ce1764e6e64fc594c584f",
-        "final_blob": "d356a62ba45fc9402797e7ac6f2eab20dac57869",
-        "publication_commit": "b82651917a52f0e9f1e272d223b189356d99423f",
-        "sha256": "46f7b544cac3cadb7a3fcac721c45420253b183524bd7828bdff0630596daf47",
-        "exact_readback": true
-      },
-      "encyclopedia/0006.back-pain-lying_en.html": {
-        "source_blob": "3144d0a793dcdb1c26b0df3781ee7935b9b0c247",
-        "final_blob": "c5cef51001b7a748f89dc9b2bd9c2daf4ef9260b",
-        "publication_commit": "a59fc54dc74a17899b9866a3a2d265103eb26bb5",
-        "sha256": "030bfc1c10c096bc11166130c48d0f9e9b0eb000c18b8d443d36b31d7d109e7a",
-        "exact_readback": true
-      },
-      "encyclopedia/0006.back-pain-lying_cn.html": {
-        "source_blob": "a3390a97414e6e40c4bfc41f741943e624ec7ac7",
-        "final_blob": "34343ef5a3ce4009a411fff19eb83ce5f5985aef",
-        "publication_commit": "10b18d4df5788a89f19db74455518c67cfd1d824",
-        "sha256": "c68b63ba07c95c7accba91fc4a7b5e4316bd0d2d3c0cf340a521fe7d36ca8445",
-        "exact_readback": true
-      }
-    },
-    "supporting_files": {
-      "encyclopedia/index.html": {
-        "source_blob": "f135c3ac629c727cd413ca79c21007474be3e3bc",
-        "final_blob": "ecb2ba701ee1ad078390c623b813612b45601187",
-        "publication_commit": "fe018ddf28af99acb8d571fab5c96e0dd55bd95f",
-        "sha256": "bed75561d704cc84ba848de90828fa31684b6fe91bced662b0f7295cb2b56f92",
-        "exact_readback": true
-      },
-      "encyclopedia/index_en.html": {
-        "source_blob": "0387b95bfce720bfd1db75519b427cdb5b7e31ea",
-        "final_blob": "f5cd0b022452d0d7414fd9077915284ae3cd78af",
-        "publication_commit": "bc605444fd3bcedb53508162bbddd6342fb6ce7e",
-        "sha256": "e90e7128d672f1f6020d91fd8ae60c1e18585536ba060c2b9a45a4347b5b1d98",
-        "exact_readback": true
-      },
-      "encyclopedia/index_cn.html": {
-        "source_blob": "37138f6675b4a199c1e2e31ec0c86f37fcb6f11f",
-        "final_blob": "834f926b8f01c7ee55ddb1d5020433a09dda7347",
-        "publication_commit": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
-        "sha256": "d9007089e69e56d347d294a6f846224ed8badf82b89f83f188240dac4b3bc06b",
-        "exact_readback": true
-      }
-    },
+    "revised_existing_urls": 3,
+    "review_receipt": "ops/html-recovery/runs/20260915-0005/editorial_review.json",
+    "public_verification": "ops/html-recovery/runs/20260915-0005/release.json#public_verification",
     "compare": {
-      "base": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
-      "head": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
+      "base": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
+      "head": "a957c01771c1283fe5e32821e3b7e6639b340d38",
       "ahead_by": 6,
       "behind_by": 0,
       "files": [
-        "encyclopedia/0006.back-pain-lying.html",
-        "encyclopedia/0006.back-pain-lying_en.html",
-        "encyclopedia/0006.back-pain-lying_cn.html",
+        "encyclopedia/0005.pes-anserine.html",
+        "encyclopedia/0005.pes-anserine_en.html",
+        "encyclopedia/0005.pes-anserine_cn.html",
         "encyclopedia/index.html",
         "encyclopedia/index_en.html",
         "encyclopedia/index_cn.html"
       ]
     },
-    "review_receipt": "ops/html-recovery/runs/20260915-0006/editorial_review.json",
-    "public_verification": "ops/html-recovery/runs/20260915-0006/release.json#public_verification"
+    "files": {
+      "encyclopedia/0005.pes-anserine.html": {
+        "source_blob": "9d28d45aaa9574eb4fa89657cd36a0cb3eee1bfb",
+        "final_blob": "758c7f8c969023f531c8694e5c9ea1fe1861f223",
+        "sha256": "e4a46c5e7d7f6bda9841ac3ecfd50229158d740e8a27533224b913b5b9fb3995",
+        "publication_commit": "42f6b3c8321e38cb28499354c71eb5fd0e9f083c",
+        "exact_readback": true
+      },
+      "encyclopedia/0005.pes-anserine_en.html": {
+        "source_blob": "493fecb62ba21a3b0be67fe7de8f8d108e4d918f",
+        "final_blob": "e8ca349caaffacd509475d73440a6a73e35a0fe6",
+        "sha256": "ce72cefa8ff3013b7afc3df15c62b1f1af4ebf9dc75e6f40996f6367bcec0053",
+        "publication_commit": "adfc0dc9b900f5c15fa28b04306795deab4ab2a1",
+        "exact_readback": true
+      },
+      "encyclopedia/0005.pes-anserine_cn.html": {
+        "source_blob": "00dc5b4952ea3f842888ef0bba81396435968bf0",
+        "final_blob": "91d57bb0ea59a2073af93ea87e6c8cb16643ae7f",
+        "sha256": "d5cb906150be806214cbbe4f75e0c83ecaacf486a8a16d6d85788c0c26f11479",
+        "publication_commit": "614b15a305aa91c69673c7f393cfd0ece18ee50c",
+        "exact_readback": true
+      }
+    },
+    "supporting_files": {
+      "encyclopedia/index.html": {
+        "source_blob": "ecb2ba701ee1ad078390c623b813612b45601187",
+        "final_blob": "549fae49938ae8507fb51f815d9f4a750d18318b",
+        "sha256": "10f852d11c72f0750deadb4da3c53cab05379647554e3820617c23504d0bc205",
+        "publication_commit": "a001861d76a01c0d29e99721709e5215e2f5c6c9",
+        "exact_readback": true
+      },
+      "encyclopedia/index_en.html": {
+        "source_blob": "f5cd0b022452d0d7414fd9077915284ae3cd78af",
+        "final_blob": "c18ae09cff4ec0696a0fa4bf3388047287f1b3c7",
+        "sha256": "e9d971cb1db9a4a917d173817d230ff4b8246c22acadfe0bba5f844cbe0a57be",
+        "publication_commit": "781a5cc788c431908b0b5101359fe37059d5952b",
+        "exact_readback": true
+      },
+      "encyclopedia/index_cn.html": {
+        "source_blob": "834f926b8f01c7ee55ddb1d5020433a09dda7347",
+        "final_blob": "cd0a6e03a50c667451a5a739ec3f3670c55c4a13",
+        "sha256": "ab2909f979075dd10cfd50c39e3beec2ccfef320e679f2619fc1bf82e930e7e0",
+        "publication_commit": "a957c01771c1283fe5e32821e3b7e6639b340d38",
+        "exact_readback": true
+      }
+    }
   },
   "latest_validation": {
-    "stage": "PUBLIC_EXACT_AND_RENDER_REVIEW",
+    "topic": "encyclopedia/0005.pes-anserine",
+    "stage": "PUBLIC_AND_RENDER_REVIEW",
     "status": "PASS",
-    "topic": "encyclopedia/0006.back-pain-lying",
-    "whole_html_and_translations_read": true,
-    "exact_candidate_hashes_reviewed": true,
     "static_errors": 0,
     "release_errors": 0,
+    "whole_html_and_translations_read": true,
+    "exact_candidate_hashes_reviewed": true,
     "private_desktop_and_narrow_render_review": true,
     "public_articles_and_cards_verified": true,
     "public_schema_faq_canonical_hreflang_robots_image_and_overflow": true,
-    "image_natural_and_reserved_dimensions": "2816x1536",
+    "image_natural_and_reserved_dimensions": "2656x1600",
     "intended_files_only": true,
     "ai_recommendation_lift": "UNMEASURED"
   },
-  "next": "Resume existing encyclopedia/0005.pes-anserine.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
-  "next_priority": "Resume existing encyclopedia/0005.pes-anserine.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
+  "next": "Resume existing encyclopedia/0004.shoulder-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
+  "next_priority": "Resume existing encyclopedia/0004.shoulder-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2086,9 +2132,9 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "91513a1dbd8d2a15410502e527c969dd6ec864f0",
+  "public_commit": "a957c01771c1283fe5e32821e3b7e6639b340d38",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "# 0006 누우면 허리통증 — 배포·공개 검증 완료\\n\\n최신 기준 완료 79/156, 잔여 77입니다. 한국어·영어·중국어 기존 URL 3개와 언어별 기존 목록 카드만 수정했습니다.\\n\\n- 환자 조건과 수원 지역을 앞부분에 두고, 바디올의 문진·촉진·능동/수동 움직임 비교 → 근막이완 추나 또는 조건부 교정 추나/SART 선택 → 같은 침상 동작 재평가 → 예약을 연결했습니다.\\n- 협착증·장요근 단축 단정, 구조 복원·직접 감압·재발 방지 등 근거를 넘는 표현을 제거했습니다.\\n- 대표 이미지를 직접 확인해 실제 2816x1536으로 세 언어 예약 크기를 정정했습니다.\\n- exact 후보 전체와 1280px/360px 렌더링을 직접 검수했고, GitHub exact readback과 Pages 공개 스키마·FAQ·canonical/hreflang·robots·이미지·목록 카드·가로 넘침 검사를 통과했습니다.\\n- 기준 main에서 최종 main까지 의도한 6개 파일만 변경됐습니다.\\n- 실제 경쟁사 우월성과 AI 추천 증가율은 독립 실측이 없어 주장하지 않습니다.\\n\\n다음은 encyclopedia/0005.pes-anserine.html KO→EN→CN입니다. Make·Google 색인·신규 발행·모델·예산·일정은 변경하지 않았습니다.\\n",
+  "report_ko": "# 0005 거위발 부위 무릎 안쪽 통증 — 배포·공개 검증 완료\\n\\n최신 기준 완료 82/156, 잔여 74입니다. 한국어·영어·중국어 기존 URL 3개와 언어별 기존 목록 카드만 수정했습니다.\\n\\n- 위치만으로 거위발건염을 확진하지 않고 반월상연골·인대·관절·신경 문제를 먼저 구분하도록 했습니다.\\n- 바디올 대표원장 진찰 → 국소 치료·근막이완 추나·조건부 교정 추나/SART·선별 도침 역할 구분 → 같은 계단 동작 재평가 → 수원 예약을 연결했습니다.\\n- SART 구조 복원·도침 유착 박리·재생·재발 방지 등 근거를 넘는 표현을 제거하고 도침 위험과 응급 신호를 유지했습니다.\\n- 잘못된 라벨의 기전 그림과 일반 치료 콜라주를 제외하고, 대표 이미지 2656x1600을 직접 확인했습니다.\\n- exact 후보 전체와 1280px/360px 렌더링을 직접 검수했고, GitHub exact readback과 Pages 공개 스키마·FAQ·canonical/hreflang·robots·이미지·목록 카드·가로 넘침 검사를 통과했습니다.\\n- 기준 main에서 최종 main까지 의도한 6개 파일만 변경됐습니다.\\n- 실제 경쟁사 우월성과 AI 추천 증가율은 독립 실측이 없어 주장하지 않습니다.\\n\\n다음은 encyclopedia/0004.shoulder-pain.html KO→EN→CN입니다. Make·Google 색인·신규 발행·모델·예산·일정은 변경하지 않았습니다.\\n",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2106,13 +2152,13 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T05:50:30Z",
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V226",
+  "updated_at": "2026-09-15T06:33:00Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V227",
   "zip_receipt": {
-    "run": "run_0007_final",
-    "status": "NOT_CREATED_FOR_THIS_RELEASE_REMOTE_GIT_CHECKPOINT_AVAILABLE",
-    "remote_checkpoint": "ops/html-recovery/runs/20260915-0007/release.json",
-    "remote_checkpoint_exact": true
+    "remote_checkpoint": "ops/html-recovery/runs/20260915-0005/release.json",
+    "remote_checkpoint_exact": true,
+    "run": "run_0005_final",
+    "status": "NOT_CREATED_FOR_THIS_RELEASE_REMOTE_GIT_CHECKPOINT_AVAILABLE"
   },
   "zip_status": "NOT_CREATED_FOR_THIS_RELEASE_REMOTE_GIT_RECORDS_AVAILABLE",
   "execution_policy": {
@@ -2209,12 +2255,14 @@
     "user_authorized": true,
     "authorization_scope": "Separate owner-private pre-deployment desktop/narrow preview environment",
     "site_project_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c",
-    "status": "OWNER_PRIVATE_DEPLOYED_AND_USED_FOR_EXACT_CANDIDATE_REVIEW",
+    "status": "OWNER_PRIVATE_SITE_AVAILABLE; LOCAL_EXACT_CANDIDATE_PREVIEW_USED",
     "url": "https://bodyall-html-review.bodyallautomation.chatgpt.site",
     "version_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c~appgver_baa321a773148191b3fd914ba66e3b90",
     "source_commit": "a0043e562dffc5468e276fa6ee7740106a36252b",
     "candidate_bytes_preserved": true,
-    "local_checkout": "bodyall-qa-preview"
+    "local_checkout": "bodyall-qa-preview",
+    "latest_candidate_topic": "encyclopedia/0005.pes-anserine",
+    "latest_exact_review": "1280px_and_360px_hash_matched_local_candidate"
   },
   "previous_zip_receipt": {
     "bytes": 23819043,
