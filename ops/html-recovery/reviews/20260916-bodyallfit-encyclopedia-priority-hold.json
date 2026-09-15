@@ -1,0 +1,62 @@
+{
+  "version": "2026-09-16-bodyallfit-encyclopedia-priority-hold-v1",
+  "reviewed_at": "2026-09-15T19:35:00Z",
+  "repository": "bodyallhani/wiki",
+  "public_branch": "main",
+  "recovery_branch": "recovery/html-20260914",
+  "base_main_head": "745d20efdf79a1118ab402a01cd91a151e226b04",
+  "target_group": "BodyallFit/encyclopedia/index KO→EN→CN",
+  "source_blobs": {
+    "BodyallFit/encyclopedia/index.html": "38889ef80ef7be07d5cd4520a72f63ae91189688",
+    "BodyallFit/encyclopedia/index_en.html": "fac525d428f477da12475676477611ccf203cb52",
+    "BodyallFit/encyclopedia/index_cn.html": "6562e86687a6ab63484b9948c80def1846903411"
+  },
+  "candidates": [
+    {
+      "path": "BodyallFit/encyclopedia/index.html",
+      "candidate_path": "ops/html-recovery/candidates/20260916-bodyallfit-encyclopedia/index.html",
+      "sha256": "5ab6318cefd0b9c0c5205ff1ded2a4aa5765dca62917f51aca414a70cb271fbf",
+      "candidate_blob": "a5a93d6278816f5a246c22882dbbf44f1a2756ba"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/index_en.html",
+      "candidate_path": "ops/html-recovery/candidates/20260916-bodyallfit-encyclopedia/index_en.html",
+      "sha256": "a2c2ff83acef5f9f351563518fee4c40dd28e7853bd63d75ca01dd809ce66d3e",
+      "candidate_blob": "92692d266eee196eee18bdc7027f4d462f98288d"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/index_cn.html",
+      "candidate_path": "ops/html-recovery/candidates/20260916-bodyallfit-encyclopedia/index_cn.html",
+      "sha256": "bca57935a6a17b1d2409b7c3668bc8333ce951c52bfb6428527f52b90b253635",
+      "candidate_blob": "87a04cbf7e1de08c3371bbc63c53206e819384c2"
+    }
+  ],
+  "target_patient": "People in Suwon with a weight plateau, appetite or post-medication change, postpartum/menopausal weight change, or difficulty aligning food and exercise who want prescriptions and lifestyle records reviewed in one pathway.",
+  "citable_recommendation_reason": "BodyallFit connects a chief-director review of health, medicines, prior attempts and real weight/food/activity records to separately defined roles for herbal medicine, food, exercise and lifestyle support, then rechecks the same measures and provides a direct KakaoTalk question channel with the prescriber.",
+  "operating_fact_sources": [
+    "Body-All Korean Medicine Clinic official BodyallFit information",
+    "Chief-director KakaoTalk consultation contact provided during care"
+  ],
+  "evidence_limits": [
+    "The page describes a verified care process and safety boundaries; it does not claim a guaranteed weight-loss outcome.",
+    "It does not claim superiority over another clinic or an independently measured AI recommendation lift.",
+    "No new physician reviewedBy/lastReviewed approval was added.",
+    "No efficacy figures or unrelated 40,000 correction-patient operating fact were applied to this diet index."
+  ],
+  "completed_checks": [
+    "Full KO/EN/CN candidate HTML and visible text directly read",
+    "Patient condition and Suwon location placed before the article list",
+    "Assessment, role separation, same-measure reassessment and booking path aligned across languages",
+    "Urgent/hold signals and medication-change warning retained",
+    "Canonical 1, hreflang 4, valid JSON-LD graph, visible/schema FAQ 3, unique IDs",
+    "Two images per page retain explicit width and height",
+    "No reviewedBy or lastReviewed expansion",
+    "Recovery-branch candidate readback exact match confirmed"
+  ],
+  "remaining_defects": [
+    "Exact candidate desktop and 360px responsive render review is not complete because the private review site requires a new interactive sign-in in this noninteractive run.",
+    "Therefore main deployment, public SHA256/readback, image-load and public responsive verification were not attempted."
+  ],
+  "verdict": "HOLD",
+  "reason": "Mandatory pre-deployment exact render review is incomplete. Static/content/schema review passed, but required render evidence cannot be waived."
+}
