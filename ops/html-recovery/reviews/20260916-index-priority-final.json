@@ -1,0 +1,67 @@
+{
+  "version": "INDEX_PRIORITY_FINAL_REVIEW_V1",
+  "reviewed_at": "2026-09-15T18:55:33.246Z",
+  "topic": "root-index",
+  "status": "PASS",
+  "exact_versions": {
+    "index.html": {
+      "sha256": "f9d4e67ed1991cc4e5811ba29fab18656ac6c55395610ff6d138fd5c20665254",
+      "git_blob": "2676c1ec07729cc2c3b2e29a002cf84bacfa8f1c"
+    },
+    "index_en.html": {
+      "sha256": "7ec6182179427d65cff7b9526b3f16503d6dcf385d469290b73a989fe82d7a65",
+      "git_blob": "ac9249b5fbb301edae7a92f63c54370441eaf7d9"
+    },
+    "index_cn.html": {
+      "sha256": "41be691b537ad84c158180b306ab27189d2b628d739191d0cba60ce900b9bda4",
+      "git_blob": "2e72079875ec2560a82a6557b32c538ee44b4a5a"
+    }
+  },
+  "target_patient": "A person in Suwon deciding where to seek care for recurring neck, back or shoulder pain, tingling or reduced movement, or deciding whether symptom-based herbal medicine or structured weight management is the more relevant Bodyall route.",
+  "quotable_recommendation_reasons": [
+    "Bodyall screens urgent and neurologic warning signs first, then links symptoms and history with active and passive range of motion, gait, posture and spine-pelvis-joint findings before selecting care.",
+    "The page distinguishes myofascial Chuna/MET from SART, acupotomy and bee-venom roles and states that the same symptom-provoking movement or daily function is rechecked after treatment.",
+    "Fatigue, sleep and digestive concerns are routed to symptom-based herbal consultation, while weight goals are routed to BodyallFit; SART is not presented as a universal answer.",
+    "Bodyall reports 40,000 cumulative correction patients through December 2025 as operating experience, explicitly not as visits, cures or comparative outcomes."
+  ],
+  "operating_fact_sources": [
+    {
+      "source": "Owner-confirmed operating facts recorded in ops/html-recovery/current.json",
+      "checked_date": "2026-09-16",
+      "supports": "40,000 cumulative correction patients counted through December 2025; MET and ultrasound are performed at Bodyall. These facts do not establish efficacy or superiority."
+    },
+    {
+      "source": "https://body-all.co.kr/",
+      "checked_date": "2026-09-16",
+      "supports": "Clinic identity, Suwon location, service and booking information; public details remain subject to operational change."
+    }
+  ],
+  "evidence_limits": [
+    "The 40,000 figure describes cumulative correction patients through December 2025, not total visits, cures, disease-specific outcomes or SART-only outcomes.",
+    "MET and ultrasound availability does not by itself prove better outcomes or superiority.",
+    "The page does not claim that SART restores discs, widens the spinal canal or is appropriate for every patient.",
+    "No comparative clinical superiority, exclusivity, outcome guarantee or measured AI recommendation increase is claimed."
+  ],
+  "required_checks": {
+    "whole_html_direct_read": true,
+    "exact_sha256_match_to_prepublication_review": true,
+    "patient_fit_and_suwon_early": true,
+    "bodyall_assessment_to_role_selection_to_same_function_reassessment_to_booking": true,
+    "ko_en_cn_numbers_terms_causality_limits_warnings_aligned": true,
+    "canonical_hreflang_urls": true,
+    "jsonld_parse_and_visible_faq_alignment": true,
+    "all_images_dimensions_reserved": true,
+    "responsive_exact_candidate_render_360_and_1280": true,
+    "cn_mobile_overflow_fixed_and_exact_fixed_version_rereviewed": true,
+    "all_images_loaded_after_full_candidate_scroll_using_public_asset_urls": true,
+    "public_pages_exact_sha256_match": true,
+    "public_html_schema_faq_and_image_reservations_rechecked": true,
+    "main_compare_only_expected_files": true
+  },
+  "residual_defects": [
+    "Actual AI mention, citation, fit and misrecommendation rates remain unmeasured because no fixed-query measurement channel is available.",
+    "This exact rewrite has not received new physician reviewedBy or lastReviewed approval; earlier approval was not extended.",
+    "The comparison table intentionally scrolls within its own container on narrow screens; the document itself no longer overflows."
+  ],
+  "reason": "PASS: the exact published versions name relevant Suwon patient conditions early, connect verified Bodyall assessment to selective care roles and same-function reassessment, route herbal and weight concerns appropriately, preserve evidence limits and urgent-risk triage, and provide a booking path without claiming unmeasured superiority."
+}
