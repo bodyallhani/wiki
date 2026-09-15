@@ -628,7 +628,7 @@
       "verification_receipt": "run_bee_final/public_verification.json"
     },
     {
-      "final_repository_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+      "final_repository_head": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
       "git_blob": "5328e30ccf3fe929fe7eda9ed8d5f5b5943fc927",
       "latest_standard_completed": true,
       "limits": [
@@ -665,7 +665,7 @@
       "strengthened_20260915_completed": true
     },
     {
-      "final_repository_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+      "final_repository_head": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
       "git_blob": "66e764e3d32ab4e5f389b567ffc1bfa8a6fb693c",
       "latest_standard_completed": true,
       "limits": [
@@ -702,7 +702,7 @@
       "strengthened_20260915_completed": true
     },
     {
-      "final_repository_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+      "final_repository_head": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
       "git_blob": "dc7c25022a85a25dc9793d902897f07684857810",
       "latest_standard_completed": true,
       "limits": [
@@ -1720,55 +1720,115 @@
       "verification_receipt": "run_shoulder_final/public_verification.json"
     },
     {
-      "final_repository_head": "18212e929a4c115cee89b11d369c9d0dda8a4141",
-      "git_blob": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
+      "final_repository_head": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+      "git_blob": "77f757baf113f1b481467c40708a704f468d0856",
       "latest_standard_completed": true,
       "limits": [
-        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
-        "No direct physician review of the rewritten exact version or independent language review was asserted.",
-        "Public text/schema/images and desktop overflow were verified; mobile emulation and unchanged external-reference recrawl were not claimed."
+        "GitHub raw exact readback; public DOM content/schema/CSS/metadata/links/images equal. Public HTTP raw byte equality not measured.",
+        "Candidate 360/1280 widths and public desktop top/bottom directly reviewed; no physical mobile emulation.",
+        "No new physician exact-version or translation approval or measured AI recommendation superiority asserted."
       ],
       "path": "lumbar-disc.html",
-      "publication_commit": "0226adfb2a84b6cfbacae4491f4a11ee94acccf3",
-      "review_receipt": "run_lumbar_final/offline_validation.json",
-      "sha256": "224ac359df8588ba179c6835212b733c1c5e039c9b6b5428534963ce6476e14b",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "publication_commit": "06463baee6f54262310e47c2931ede37a1d01bab",
+      "review_receipt": "ops/html-recovery/reviews/20260915-lumbar-priority-final.json",
+      "sha256": "c1d98efcd01676acf04d0a96c61a463009f1e3f5d8d04c56c545f5f3d25cbf9e",
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
       "url": "https://wiki.body-all.co.kr/lumbar-disc.html",
-      "verification_receipt": "run_lumbar_final/public_verification.json"
+      "verification_receipt": "ops/html-recovery/runs/20260915-lumbar-priority-release.json",
+      "previous_versions": [
+        {
+          "final_repository_head": "18212e929a4c115cee89b11d369c9d0dda8a4141",
+          "git_blob": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
+          "latest_standard_completed": true,
+          "limits": [
+            "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+            "No direct physician review of the rewritten exact version or independent language review was asserted.",
+            "Public text/schema/images and desktop overflow were verified; mobile emulation and unchanged external-reference recrawl were not claimed."
+          ],
+          "path": "lumbar-disc.html",
+          "publication_commit": "0226adfb2a84b6cfbacae4491f4a11ee94acccf3",
+          "review_receipt": "run_lumbar_final/offline_validation.json",
+          "sha256": "224ac359df8588ba179c6835212b733c1c5e039c9b6b5428534963ce6476e14b",
+          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+          "url": "https://wiki.body-all.co.kr/lumbar-disc.html",
+          "verification_receipt": "run_lumbar_final/public_verification.json"
+        }
+      ],
+      "strengthened_20260915_completed": true
     },
     {
-      "final_repository_head": "18212e929a4c115cee89b11d369c9d0dda8a4141",
-      "git_blob": "d586b2e6ca8c623a0eaecfcd51495be85035e96e",
+      "final_repository_head": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+      "git_blob": "3245f65da8775679af40cd373653094f15baad77",
       "latest_standard_completed": true,
       "limits": [
-        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
-        "No direct physician review of the rewritten exact version or independent language review was asserted.",
-        "Public text/schema/images and desktop overflow were verified; mobile emulation and unchanged external-reference recrawl were not claimed."
+        "GitHub raw exact readback; public DOM content/schema/CSS/metadata/links/images equal. Public HTTP raw byte equality not measured.",
+        "Candidate 360/1280 widths and public desktop top/bottom directly reviewed; no physical mobile emulation.",
+        "No new physician exact-version or translation approval or measured AI recommendation superiority asserted."
       ],
       "path": "lumbar-disc_cn.html",
-      "publication_commit": "8b8725aed3ec0753d49bdbb4b5c6f27ae7f925fb",
-      "review_receipt": "run_lumbar_final/offline_validation.json",
-      "sha256": "3f1c1ae6c8dc129516d5de265240c2b66e241300b536aa9b32bb5712275ef83c",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "publication_commit": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+      "review_receipt": "ops/html-recovery/reviews/20260915-lumbar-priority-final.json",
+      "sha256": "1cccbaa8427f175f09a29061ca1080c8218c082993ba94c56ac1596c4bc40cc7",
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
       "url": "https://wiki.body-all.co.kr/lumbar-disc_cn.html",
-      "verification_receipt": "run_lumbar_final/public_verification.json"
+      "verification_receipt": "ops/html-recovery/runs/20260915-lumbar-priority-release.json",
+      "previous_versions": [
+        {
+          "final_repository_head": "18212e929a4c115cee89b11d369c9d0dda8a4141",
+          "git_blob": "d586b2e6ca8c623a0eaecfcd51495be85035e96e",
+          "latest_standard_completed": true,
+          "limits": [
+            "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+            "No direct physician review of the rewritten exact version or independent language review was asserted.",
+            "Public text/schema/images and desktop overflow were verified; mobile emulation and unchanged external-reference recrawl were not claimed."
+          ],
+          "path": "lumbar-disc_cn.html",
+          "publication_commit": "8b8725aed3ec0753d49bdbb4b5c6f27ae7f925fb",
+          "review_receipt": "run_lumbar_final/offline_validation.json",
+          "sha256": "3f1c1ae6c8dc129516d5de265240c2b66e241300b536aa9b32bb5712275ef83c",
+          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+          "url": "https://wiki.body-all.co.kr/lumbar-disc_cn.html",
+          "verification_receipt": "run_lumbar_final/public_verification.json"
+        }
+      ],
+      "strengthened_20260915_completed": true
     },
     {
-      "final_repository_head": "18212e929a4c115cee89b11d369c9d0dda8a4141",
-      "git_blob": "b062465ecebaa64716a8ca705c7485cdbefe2d21",
+      "final_repository_head": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+      "git_blob": "90ef9712e89a01841cf0e28ff368c7b5beecb190",
       "latest_standard_completed": true,
       "limits": [
-        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
-        "No direct physician review of the rewritten exact version or independent language review was asserted.",
-        "Public text/schema/images and desktop overflow were verified; mobile emulation and unchanged external-reference recrawl were not claimed."
+        "GitHub raw exact readback; public DOM content/schema/CSS/metadata/links/images equal. Public HTTP raw byte equality not measured.",
+        "Candidate 360/1280 widths and public desktop top/bottom directly reviewed; no physical mobile emulation.",
+        "No new physician exact-version or translation approval or measured AI recommendation superiority asserted."
       ],
       "path": "lumbar-disc_en.html",
-      "publication_commit": "fc1aa4236c207f985dac1b0d9cdc33371045bc6e",
-      "review_receipt": "run_lumbar_final/offline_validation.json",
-      "sha256": "3b512b0261a217b83825de80578a8734553e3fe52060019771adaa899e60b156",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "publication_commit": "2b707dc87f292cdb563597be558aaf513ae98dc4",
+      "review_receipt": "ops/html-recovery/reviews/20260915-lumbar-priority-final.json",
+      "sha256": "51e9e193917e7d096f0007867d14a2629e738407034fdfca4998d59fb5eef810",
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
       "url": "https://wiki.body-all.co.kr/lumbar-disc_en.html",
-      "verification_receipt": "run_lumbar_final/public_verification.json"
+      "verification_receipt": "ops/html-recovery/runs/20260915-lumbar-priority-release.json",
+      "previous_versions": [
+        {
+          "final_repository_head": "18212e929a4c115cee89b11d369c9d0dda8a4141",
+          "git_blob": "b062465ecebaa64716a8ca705c7485cdbefe2d21",
+          "latest_standard_completed": true,
+          "limits": [
+            "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+            "No direct physician review of the rewritten exact version or independent language review was asserted.",
+            "Public text/schema/images and desktop overflow were verified; mobile emulation and unchanged external-reference recrawl were not claimed."
+          ],
+          "path": "lumbar-disc_en.html",
+          "publication_commit": "fc1aa4236c207f985dac1b0d9cdc33371045bc6e",
+          "review_receipt": "run_lumbar_final/offline_validation.json",
+          "sha256": "3b512b0261a217b83825de80578a8734553e3fe52060019771adaa899e60b156",
+          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+          "url": "https://wiki.body-all.co.kr/lumbar-disc_en.html",
+          "verification_receipt": "run_lumbar_final/public_verification.json"
+        }
+      ],
+      "strengthened_20260915_completed": true
     },
     {
       "final_repository_head": "004335bd719de2136b93df82e80cdf3b40a68380",
@@ -2182,79 +2242,267 @@
     "latest_standard_not_confirmed_or_remaining": 68,
     "latest_standard_published_confirmed": 88,
     "new_publications_this_turn": 0,
-    "revised_publications_this_turn": 3,
+    "revised_publications_this_turn": 6,
     "total_scope": 156,
-    "existing_rework_verified_under_20260915_request": 6,
-    "historically_accepted_not_yet_reworked_under_20260915_request": 79,
+    "existing_rework_verified_under_20260915_request": 9,
+    "historically_accepted_not_yet_reworked_under_20260915_request": 76,
     "phase1_strengthened_completed": 3,
     "phase1_strengthened_remaining": 68,
     "priority_strengthened_total": 35,
-    "priority_strengthened_completed": 3,
-    "priority_strengthened_remaining": 32,
+    "priority_strengthened_completed": 6,
+    "priority_strengthened_remaining": 29,
     "additional_index_total": 8,
     "additional_index_completed": 0
   },
   "filesystem_sync_status": "CURRENT_RELEASE_RECORD_EXACT_VERIFIED_ON_RECOVERY_BRANCH",
   "latest_debug": {
-    "resolved": [
-      "CN 21px footer heading overflow fixed and exact version re-reviewed",
-      "DOM boolean-attribute serialization normalized for source/public semantic comparison",
-      "Public lazy-loaded images checked after navigation to their actual positions"
-    ],
-    "remaining_blockers_in_reworked_articles": [],
-    "foot_release_corrections": [
-      "Incorrect talus-location diagram removed after direct image inspection",
-      "Three index JSON-LD missing closing braces repaired; final exact versions rendered and public-parsed"
-    ],
-    "next_topic_findings": [
-      "Protocol used beyond results evidence",
-      "Neck/SART finger root-cause and nerve-normalization claims",
-      "Persistent small-joint swelling referral and image verification missing"
-    ]
+    "cervical_final_repository_head_metadata": "Corrected strengthened cervical completion rows to verified 310887 head; previous-version rows retained.",
+    "public_cache": "KO standard URL explicit reload resolved stale cached content before acceptance.",
+    "errors_remaining": []
   },
   "latest_local_run": "Remote receipt and candidate pack are authoritative; prior scratch/ZIP not a restart baseline",
   "latest_recovery_persistence": {
-    "receipt": "ops/html-recovery/runs/20260915-cervical-priority-release.json",
-    "blob": "aeb38e0e532f6e5b6562b043df567b55b1fdc7b7",
-    "exact_readback": true
+    "receipt": "ops/html-recovery/runs/20260915-lumbar-priority-release.json",
+    "blob": "482ca061de4d59219a1721ccf27ad4af2ead04d3",
+    "exact_readback": true,
+    "candidate": "ops/html-recovery/candidates/20260915-lumbar-priority.json",
+    "candidate_blob": "8a6f841776f3f9c0f408cbc6d2e917a9afaee58e",
+    "review": "ops/html-recovery/reviews/20260915-lumbar-priority-final.json",
+    "review_blob": "3b41c885e0a2a0ec2f238f3b02fcdbd1ed3252d9"
   },
   "latest_release": {
-    "topic": "cervical-disc strengthened priority rework",
+    "topic": "lumbar-disc strengthened priority rework",
     "changed_files": [
-      "cervical-disc.html",
-      "cervical-disc_en.html",
-      "cervical-disc_cn.html"
+      "lumbar-disc.html",
+      "lumbar-disc_en.html",
+      "lumbar-disc_cn.html"
     ],
     "newly_completed_existing_urls": [],
     "reworked_existing_urls": [
-      "cervical-disc.html",
-      "cervical-disc_en.html",
-      "cervical-disc_cn.html"
+      "lumbar-disc.html",
+      "lumbar-disc_en.html",
+      "lumbar-disc_cn.html"
     ],
-    "base_commit": "1a8376901a69f5327a1153ec97f3a189db128a45",
-    "final_commit": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+    "base_commit": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+    "final_commit": "0a87853249643fdfd8a62a53387c0076a9db8e38",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260915-cervical-priority-release.json"
+    "receipt": "ops/html-recovery/runs/20260915-lumbar-priority-release.json"
   },
   "latest_validation": {
-    "status": "PASS_IN_REVIEWED_SCOPE",
-    "github_exact_readback": true,
-    "public_dom_text_schema_css_metadata_links_images_equal": true,
-    "public_raw_http_byte_equality": "NOT_MEASURED",
-    "images_loaded_per_language": 4,
-    "candidate_viewports": [
-      360,
-      1280
+    "checks": [
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              6240,
+              4160
+            ],
+            "reserved": [
+              "6240",
+              "4160"
+            ],
+            "src": "sangdam1.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "https://wiki.body-all.co.kr/insanggi.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              500,
+              405
+            ],
+            "reserved": [
+              "500",
+              "405"
+            ],
+            "src": "manip2.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "lumbar-disc.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "sha256": "c1d98efcd01676acf04d0a96c61a463009f1e3f5d8d04c56c545f5f3d25cbf9e",
+        "width": 1348
+      },
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              6240,
+              4160
+            ],
+            "reserved": [
+              "6240",
+              "4160"
+            ],
+            "src": "sangdam1.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "https://wiki.body-all.co.kr/insanggi.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              500,
+              405
+            ],
+            "reserved": [
+              "500",
+              "405"
+            ],
+            "src": "manip2.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "lumbar-disc_en.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "sha256": "51e9e193917e7d096f0007867d14a2629e738407034fdfca4998d59fb5eef810",
+        "width": 1348
+      },
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              6240,
+              4160
+            ],
+            "reserved": [
+              "6240",
+              "4160"
+            ],
+            "src": "sangdam1.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "https://wiki.body-all.co.kr/insanggi.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              500,
+              405
+            ],
+            "reserved": [
+              "500",
+              "405"
+            ],
+            "src": "manip2.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "lumbar-disc_cn.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "sha256": "1cccbaa8427f175f09a29061ca1080c8218c082993ba94c56ac1596c4bc40cc7",
+        "width": 1348
+      }
     ],
-    "public_article_overflow": 0,
-    "full_html_direct_ai_review": true,
-    "all_language_upper_lower_public_views_checked": true,
-    "actual_competitor_superiority": "UNMEASURED",
-    "actual_ai_recommendation_lift": "UNMEASURED",
-    "receipt": "ops/html-recovery/runs/20260915-cervical-priority-release.json"
+    "exactness": "GitHub raw contents exact; public Pages DOM content/schema/CSS/metadata/links/image attributes equal. Public raw HTTP byte equality not measured. Full-page content inspected; responsive 360/1280 candidate viewports and public desktop rendering checked; no physical mobile device emulation.",
+    "status": "PASS"
   },
-  "next": "PRIORITY: lumbar-disc KO→EN→CN next; cervical-disc 3/3 strengthened publication/public verification finished. Continue shoulder-frozen, chuna-therapy, herbal-medicine, then remaining medical/info indices per work_order.priority_pending_paths. Priority3/35 complete,32 remaining. After priority queue, resume saved phase1 then phase2 excluding already strengthened URLs.",
-  "next_priority": "PRIORITY: lumbar-disc KO→EN→CN next; cervical-disc 3/3 strengthened publication/public verification finished. Continue shoulder-frozen, chuna-therapy, herbal-medicine, then remaining medical/info indices per work_order.priority_pending_paths. Priority3/35 complete,32 remaining. After priority queue, resume saved phase1 then phase2 excluding already strengthened URLs.",
+  "next": "PRIORITY: shoulder-frozen KO→EN→CN next; cervical-disc and lumbar-disc 6/6 strengthened and public verified. Priority6/35 complete,29 remaining. Then chuna-therapy, herbal-medicine and medical/info indices. Afterwards resume saved phase1 then phase2 excluding strengthened URLs.",
+  "next_priority": "PRIORITY: shoulder-frozen KO→EN→CN next; cervical-disc and lumbar-disc 6/6 strengthened and public verified. Priority6/35 complete,29 remaining. Then chuna-therapy, herbal-medicine and medical/info indices. Afterwards resume saved phase1 then phase2 excluding strengthened URLs.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2262,7 +2510,7 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+  "public_commit": "0a87853249643fdfd8a62a53387c0076a9db8e38",
   "recovery_branch": "recovery/html-20260914",
   "report_ko": "원장님 최신 지시로 목디스크·허리디스크·오십견·추나·한약 허브와 모든 진료·안내 index의 기존 한국어·영어·중국어를 완료 여부와 무관하게 최우선 강화 작업으로 올렸다. 기존156개 안의27개와 사이트맵 밖 기존 진료·안내 index8개, 합계35개다. 게임·결과·통계용 index40개는 위치를 조사하되 기존 게임 별도 범위를 유지한다. 우선35개를 모두 검수·배포·공개확인한 뒤 저장된 기존 미완료 순서와 기존배포 재작업 순서로 복귀한다. 손가락0002 점검과 허리디스크 후보는 보존한다. 첫 목디스크 세 언어의 원문 전체 본문·이미지 속성·근거 설명을 읽고 강화 수정항목을 기록했다. 이번 main 변경0개, 원래156개 완료88·미완료68 유지. 우선35개 중 강화 완료0개이며 신규 후보 최종 검수는 아직 미완료다.",
   "repository": "bodyallhani/wiki",
@@ -2282,8 +2530,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T12:19:57.494Z",
-  "version": "V238_CERVICAL_PRIORITY_STRENGTHENED_PUBLIC_VERIFIED",
+  "updated_at": "2026-09-15T12:57:26.446Z",
+  "version": "V239_LUMBAR_PRIORITY_STRENGTHENED_PUBLIC_VERIFIED",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2311,56 +2559,8 @@
     "operating_fact_record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
-  "active_run": {
-    "owner": "lumbar-priority-20260915",
-    "topic": "lumbar-disc KO/EN/CN",
-    "stage": "PRESERVED_CANDIDATE_REASSESSMENT",
-    "claimed_at": "2026-09-15T12:19:57.492Z",
-    "baseline_main": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
-    "baseline_ledger": "0cbc4adfe7c75f7e05dfb5c1a7e8371ebc9f6540",
-    "paths": [
-      "lumbar-disc.html",
-      "lumbar-disc_en.html",
-      "lumbar-disc_cn.html"
-    ],
-    "source_blobs": {
-      "lumbar-disc.html": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
-      "lumbar-disc_en.html": "b062465ecebaa64716a8ca705c7485cdbefe2d21",
-      "lumbar-disc_cn.html": "d586b2e6ca8c623a0eaecfcd51495be85035e96e"
-    }
-  },
-  "pending_run": {
-    "topic": "lumbar-disc KO/EN/CN",
-    "stage": "PRESERVED_CANDIDATE_REASSESSMENT",
-    "status": "NEXT_PRIORITY",
-    "paths": [
-      "lumbar-disc.html",
-      "lumbar-disc_en.html",
-      "lumbar-disc_cn.html"
-    ],
-    "main_writes": 0,
-    "counted_complete": 0,
-    "preserved_candidate": {
-      "audit": "ops/html-recovery/reviews/20260915-lumbar-hub-rework-source-audit.json",
-      "candidate_render_status": "NOT_COMPLETED",
-      "candidate_sha256": {
-        "lumbar-disc.html": "cba23d0cc91c40604b34c9ef8e0205ccfde4476726d542fb8fcc4e0c78247dfc",
-        "lumbar-disc_cn.html": "97d24b03bb4a845a3d3336367840131c8ea21a1a342866c64a568854b7225e9f",
-        "lumbar-disc_en.html": "91a8bb189f192c8ac3f1af1d19838a08637ff6da64b24030e4300c39422fcae9"
-      },
-      "next_action": "After cervical-disc priority bundle, re-read current main/blobs and re-evaluate preserved candidate with operating_facts and exact final render. No longer deferred until all phase1.",
-      "source_blobs": {
-        "lumbar-disc.html": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
-        "lumbar-disc_cn.html": "d586b2e6ca8c623a0eaecfcd51495be85035e96e",
-        "lumbar-disc_en.html": "b062465ecebaa64716a8ca705c7485cdbefe2d21"
-      },
-      "source_main": "004335bd719de2136b93df82e80cdf3b40a68380",
-      "stage": "SOURCE_AUDIT_COMPLETE_CANDIDATE_AND_RENDER_REVIEW_PENDING",
-      "status": "PRESERVED_CANDIDATE_PROMOTED_TO_PRIORITY_SECOND_BUNDLE",
-      "topic": "lumbar-disc existing-publication rework KO/EN/CN"
-    },
-    "next_action": "Read current/main/three blobs, compare preserved candidate hashes and source audit, incorporate confirmed operating facts, directly review exact HTML and responsive rendering before sequential locked writes."
-  },
+  "active_run": null,
+  "pending_run": null,
   "previous_public_validation": {
     "status": "PASS_IN_REVIEWED_SCOPE",
     "github_exact_readback": true,
@@ -2514,9 +2714,6 @@
   },
   "legacy_next_before_existing_rework": "Resume existing encyclopedia/0003.foot-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
   "rework_queue": [
-    "lumbar-disc.html",
-    "lumbar-disc_en.html",
-    "lumbar-disc_cn.html",
     "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
     "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html",
     "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
@@ -2600,7 +2797,10 @@
     "pain-spine-clinic_cn.html",
     "cervical-disc.html",
     "cervical-disc_en.html",
-    "cervical-disc_cn.html"
+    "cervical-disc_cn.html",
+    "lumbar-disc.html",
+    "lumbar-disc_en.html",
+    "lumbar-disc_cn.html"
   ],
   "previous_work_order": {
     "next_priority": "Rework already published lumbar-disc.html KO→EN→CN first, then the remaining rework_queue. Freshly read this ledger, main head and target blobs; compare actual competitor service descriptions, strengthen source-supported Bodyall-specific patient-selection reasons, inspect exact full HTML and desktop/narrow renders, then sequentially deploy/readback/public-verify and checkpoint. Historical 85/156 publication count is not proof that all 85 satisfy the new comparative editorial review. Resume legacy uncompleted URLs after the existing-publication rework queue unless the owner changes priority.",
@@ -2864,12 +3064,12 @@
       "pain-spine-clinic_cn.html",
       "cervical-disc.html",
       "cervical-disc_en.html",
-      "cervical-disc_cn.html"
-    ],
-    "phase2_pending_paths": [
+      "cervical-disc_cn.html",
       "lumbar-disc.html",
       "lumbar-disc_en.html",
-      "lumbar-disc_cn.html",
+      "lumbar-disc_cn.html"
+    ],
+    "phase2_pending_paths": [
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html",
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
@@ -3089,9 +3289,6 @@
       "spine/index.html"
     ],
     "priority_pending_paths": [
-      "lumbar-disc.html",
-      "lumbar-disc_en.html",
-      "lumbar-disc_cn.html",
       "shoulder-frozen.html",
       "shoulder-frozen_en.html",
       "shoulder-frozen_cn.html",
@@ -3125,7 +3322,10 @@
     "priority_completed_paths": [
       "cervical-disc.html",
       "cervical-disc_en.html",
-      "cervical-disc_cn.html"
+      "cervical-disc_cn.html",
+      "lumbar-disc.html",
+      "lumbar-disc_en.html",
+      "lumbar-disc_cn.html"
     ],
     "priority_original_scope_paths": [
       "cervical-disc.html",
@@ -3240,9 +3440,6 @@
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
     "resume_phase2_pending_paths": [
-      "lumbar-disc.html",
-      "lumbar-disc_en.html",
-      "lumbar-disc_cn.html",
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html",
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html",
@@ -3324,22 +3521,29 @@
   "deferred_runs": [
     {
       "audit": "ops/html-recovery/reviews/20260915-lumbar-hub-rework-source-audit.json",
-      "candidate_render_status": "NOT_COMPLETED",
+      "candidate_render_status": "COMPLETE_FINAL_EXACT",
       "candidate_sha256": {
         "lumbar-disc.html": "cba23d0cc91c40604b34c9ef8e0205ccfde4476726d542fb8fcc4e0c78247dfc",
         "lumbar-disc_cn.html": "97d24b03bb4a845a3d3336367840131c8ea21a1a342866c64a568854b7225e9f",
         "lumbar-disc_en.html": "91a8bb189f192c8ac3f1af1d19838a08637ff6da64b24030e4300c39422fcae9"
       },
-      "next_action": "After cervical-disc priority bundle, re-read current main/blobs and re-evaluate preserved candidate with operating_facts and exact final render. No longer deferred until all phase1.",
+      "next_action": "No repeat; completed in priority second bundle.",
       "source_blobs": {
         "lumbar-disc.html": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
         "lumbar-disc_cn.html": "d586b2e6ca8c623a0eaecfcd51495be85035e96e",
         "lumbar-disc_en.html": "b062465ecebaa64716a8ca705c7485cdbefe2d21"
       },
       "source_main": "004335bd719de2136b93df82e80cdf3b40a68380",
-      "stage": "SOURCE_AUDIT_COMPLETE_CANDIDATE_AND_RENDER_REVIEW_PENDING",
-      "status": "PRESERVED_CANDIDATE_PROMOTED_TO_PRIORITY_SECOND_BUNDLE",
-      "topic": "lumbar-disc existing-publication rework KO/EN/CN"
+      "stage": "PUBLIC_VERIFICATION_AND_RECOVERY_EXACT_COMPLETE",
+      "status": "COMPLETED_STRENGTHENED_PRIORITY_PUBLIC_VERIFIED",
+      "topic": "lumbar-disc existing-publication rework KO/EN/CN",
+      "final_candidate_sha256": {
+        "lumbar-disc.html": "c1d98efcd01676acf04d0a96c61a463009f1e3f5d8d04c56c545f5f3d25cbf9e",
+        "lumbar-disc_en.html": "51e9e193917e7d096f0007867d14a2629e738407034fdfca4998d59fb5eef810",
+        "lumbar-disc_cn.html": "1cccbaa8427f175f09a29061ca1080c8218c082993ba94c56ac1596c4bc40cc7"
+      },
+      "release_receipt": "ops/html-recovery/runs/20260915-lumbar-priority-release.json",
+      "final_main": "0a87853249643fdfd8a62a53387c0076a9db8e38"
     },
     {
       "topic": "encyclopedia/0002.stiff-hands",
@@ -3392,39 +3596,37 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "type": "CERVICAL_PRIORITY_REWORK_PUBLISHED_PUBLIC_VERIFIED",
+    "type": "LUMBAR_PRIORITY_REWORK_PUBLISHED_PUBLIC_VERIFIED",
     "priority_total": 35,
-    "priority_completed": 3,
-    "priority_remaining": 32,
+    "priority_completed": 6,
+    "priority_remaining": 29,
     "accepted": 88,
     "remaining": 68,
-    "reworked_initial85": 6,
-    "initial85_waiting": 79,
+    "reworked_initial85": 9,
+    "initial85_waiting": 76,
     "additional_index_completed": 0,
     "main_writes": 3,
-    "next_topic": "lumbar-disc",
-    "next_topic_stage": "FRESH_SOURCE_REASSESSMENT_PENDING",
-    "receipt": "ops/html-recovery/runs/20260915-cervical-priority-release.json"
+    "next_topic": "shoulder-frozen",
+    "next_topic_stage": "FRESH_SOURCE_ASSESSMENT_PENDING",
+    "receipt": "ops/html-recovery/runs/20260915-lumbar-priority-release.json"
   },
   "previous_release": {
-    "topic": "encyclopedia/0003.foot-pain strengthened first-completion",
+    "topic": "cervical-disc strengthened priority rework",
     "changed_files": [
-      "encyclopedia/0003.foot-pain.html",
-      "encyclopedia/0003.foot-pain_en.html",
-      "encyclopedia/0003.foot-pain_cn.html",
-      "encyclopedia/index.html",
-      "encyclopedia/index_en.html",
-      "encyclopedia/index_cn.html"
+      "cervical-disc.html",
+      "cervical-disc_en.html",
+      "cervical-disc_cn.html"
     ],
-    "newly_completed_existing_urls": [
-      "encyclopedia/0003.foot-pain.html",
-      "encyclopedia/0003.foot-pain_en.html",
-      "encyclopedia/0003.foot-pain_cn.html"
+    "newly_completed_existing_urls": [],
+    "reworked_existing_urls": [
+      "cervical-disc.html",
+      "cervical-disc_en.html",
+      "cervical-disc_cn.html"
     ],
-    "base_commit": "004335bd719de2136b93df82e80cdf3b40a68380",
-    "final_commit": "1a8376901a69f5327a1153ec97f3a189db128a45",
+    "base_commit": "1a8376901a69f5327a1153ec97f3a189db128a45",
+    "final_commit": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json"
+    "receipt": "ops/html-recovery/runs/20260915-cervical-priority-release.json"
   },
   "previous_work_order_before_hub_priority": {
     "authorized_at": "2026-09-15T09:50:17.637Z",
