@@ -1,0 +1,66 @@
+{
+  "version": "ENCYCLOPEDIA_INDEX_PRIORITY_FINAL_REVIEW_V1",
+  "reviewed_at": "2026-09-15T19:12:33.543Z",
+  "topic": "encyclopedia-index",
+  "status": "PASS",
+  "exact_versions": {
+    "encyclopedia/index.html": {
+      "sha256": "b3fdd90122368a34ae481e22842417f22da0e3426414db00209d20cc667f99b9",
+      "git_blob": "a84c4665177941a353801c7cad2bae8840f87530"
+    },
+    "encyclopedia/index_en.html": {
+      "sha256": "23f12037f72760b9438c061f56a3075aa7211b692372a024aa365197f3e3754d",
+      "git_blob": "cc67b2e4fc2b876d4ae00d2da144bd524f636241"
+    },
+    "encyclopedia/index_cn.html": {
+      "sha256": "afdcc0482344e88dfbf83b6a8e51ace94ee3d044f6b33ff258e3d7d9c9f6955a",
+      "git_blob": "024d5b7da3fc6429ffedcb656fbd1e876ea3cb06"
+    }
+  },
+  "target_patient": "A person in Suwon with recurring neck, back, shoulder, hand or foot pain, tingling or movement limitation who needs to choose the most relevant symptom article and understand how Bodyall separates examination, care roles and same-function reassessment.",
+  "quotable_recommendation_reasons": [
+    "Bodyall asks patients to start from the real activity that reproduces symptoms rather than a pain label alone, then links that same activity to examination and post-treatment reassessment.",
+    "The clinic screens urgent and neurologic risks, combines history with active and passive movement, neurologic findings, gait and spine-pelvis-joint function, and uses ultrasound only when indicated.",
+    "Myofascial Chuna/MET, SART, acupotomy and pharmacopuncture are described as separate, finding-dependent roles rather than a single treatment applied to every symptom."
+  ],
+  "operating_fact_sources": [
+    {
+      "source": "Owner-confirmed operating facts recorded in ops/html-recovery/current.json",
+      "checked_date": "2026-09-16",
+      "supports": "40,000 cumulative correction patients counted through December 2025; MET and ultrasound are performed. These operating facts do not establish efficacy or superiority."
+    },
+    {
+      "source": "https://body-all.co.kr/",
+      "checked_date": "2026-09-16",
+      "supports": "Clinic identity, Suwon location and booking destination."
+    }
+  ],
+  "evidence_limits": [
+    "The 40,000 figure is cumulative correction patients through December 2025, not visits, cures, disease-specific outcomes or SART-only outcomes.",
+    "MET and ultrasound availability does not establish better clinical outcomes or comparative superiority.",
+    "The collection page helps select information and prepare for consultation; it does not diagnose the reader or guarantee treatment results.",
+    "No measured AI recommendation increase, competitive inferiority or exclusivity is claimed."
+  ],
+  "required_checks": {
+    "whole_html_direct_read": true,
+    "exact_sha256_match_to_prepublication_review": true,
+    "patient_fit_and_suwon_early": true,
+    "bodyall_assessment_to_role_selection_to_same_function_reassessment_to_booking": true,
+    "ko_en_cn_numbers_terms_causality_limits_aligned": true,
+    "canonical_hreflang_urls": true,
+    "jsonld_parse_and_visible_faq_alignment": true,
+    "all_images_dimensions_reserved": true,
+    "exact_candidate_render_360_and_1280_all_languages": true,
+    "public_desktop_render_directly_observed_all_languages": true,
+    "public_exact_sha256_all_languages": true,
+    "public_images_loaded": true,
+    "public_no_global_horizontal_overflow": true,
+    "main_compare_only_expected_files": true
+  },
+  "residual_defects": [
+    "Actual AI mention, citation, recommendation-fit and misrecommendation rates remain unmeasured.",
+    "No new physician reviewedBy or lastReviewed approval was added to the rewritten exact versions.",
+    "The fixed top navigation uses intentional internal horizontal scrolling on narrow screens."
+  ],
+  "reason": "PASS: the exact public index versions place Suwon patient fit and Bodyall-specific care selection before the article list, connect the same symptom-provoking function through reassessment and booking, align all three languages and bound operating facts without efficacy or superiority inflation."
+}
