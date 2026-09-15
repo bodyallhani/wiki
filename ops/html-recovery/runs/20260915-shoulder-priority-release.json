@@ -1,0 +1,308 @@
+{
+  "version": "20260915-shoulder-priority-release",
+  "finished_at": "2026-09-15T13:37:35.064Z",
+  "topic": "shoulder-frozen strengthened priority rework",
+  "baseline_main": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+  "final_main": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+  "writes": [
+    {
+      "baseline_head": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+      "blob": "6d869baf08934930a483e778a09baaf2bedd7359",
+      "commit": "3389c2ae65b900fe264f595e58bf7759bbeccb77",
+      "exact_readback": true,
+      "path": "shoulder-frozen.html",
+      "sha256": "447344c6d778a41289cfc7865ed8ca6d2203f85985f7c39527c2bc7089b3871f",
+      "source_blob": "de97406b0d7c987194dfe1d89956300f6181b882"
+    },
+    {
+      "baseline_head": "3389c2ae65b900fe264f595e58bf7759bbeccb77",
+      "blob": "8c451083906546aa35555ae9221e9caafbe19a74",
+      "commit": "558d5170ac6bf3f4d53cd58581780b18b958a6b8",
+      "exact_readback": true,
+      "path": "shoulder-frozen_en.html",
+      "sha256": "8d8e3edfbc2c511282ae6829adcd48c85bf745023759b0d823fb412e8bbbfe6c",
+      "source_blob": "effa7eea11fd0c14b398a9f439c94576fb8c3a98"
+    },
+    {
+      "baseline_head": "558d5170ac6bf3f4d53cd58581780b18b958a6b8",
+      "blob": "8c5e09f6f7d9e9e4496384e3ee24e4fc0060ea59",
+      "commit": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+      "exact_readback": true,
+      "path": "shoulder-frozen_cn.html",
+      "sha256": "b531da1e62df61cb5d9e855c2b8e7f6d115646308eafcc8bc398d3e1acd063ce",
+      "source_blob": "5066e0b1aec7345460071b744ad9a9ec4b2900c5"
+    }
+  ],
+  "compare": {
+    "ahead_by": 3,
+    "base": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+    "base_commit": {
+      "html_url": "https://github.com/bodyallhani/wiki/commit/0a87853249643fdfd8a62a53387c0076a9db8e38",
+      "sha": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+      "url": "https://api.github.com/repos/bodyallhani/wiki/commits/0a87853249643fdfd8a62a53387c0076a9db8e38"
+    },
+    "behind_by": 0,
+    "files": [
+      {
+        "additions": 34,
+        "changes": 50,
+        "deletions": 16,
+        "filename": "shoulder-frozen.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 23,
+        "changes": 42,
+        "deletions": 19,
+        "filename": "shoulder-frozen_cn.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 23,
+        "changes": 42,
+        "deletions": 19,
+        "filename": "shoulder-frozen_en.html",
+        "previous_filename": null,
+        "status": "modified"
+      }
+    ],
+    "head": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+    "merge_base_commit": {
+      "html_url": "https://github.com/bodyallhani/wiki/commit/0a87853249643fdfd8a62a53387c0076a9db8e38",
+      "sha": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+      "url": "https://api.github.com/repos/bodyallhani/wiki/commits/0a87853249643fdfd8a62a53387c0076a9db8e38"
+    },
+    "repository_full_name": "bodyallhani/wiki",
+    "status": "ahead",
+    "too_large": null,
+    "total_commits": 3
+  },
+  "public_verification": {
+    "checks": [
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "shoulder-diagnosis.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "shoulder-treatment1.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "shoulder-frozen.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "sha256": "447344c6d778a41289cfc7865ed8ca6d2203f85985f7c39527c2bc7089b3871f",
+        "width": 1348
+      },
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "shoulder-diagnosis.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "shoulder-treatment1.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "shoulder-frozen_en.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "sha256": "8d8e3edfbc2c511282ae6829adcd48c85bf745023759b0d823fb412e8bbbfe6c",
+        "width": 1348
+      },
+      {
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "shoulder-diagnosis.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "shoulder-treatment1.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ],
+        "overflow_px": 0,
+        "path": "shoulder-frozen_cn.html",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "sha256": "b531da1e62df61cb5d9e855c2b8e7f6d115646308eafcc8bc398d3e1acd063ce",
+        "width": 1348
+      }
+    ],
+    "exactness": "GitHub raw contents exact; public Pages DOM content/schema/CSS/metadata/links/image attributes equal. Public raw HTTP byte equality not measured. Full-page content inspected; responsive 360/1280 candidate viewports and public desktop rendering checked; no physical mobile device emulation.",
+    "status": "PASS"
+  },
+  "candidate_record": "ops/html-recovery/candidates/20260915-shoulder-priority.json",
+  "candidate_record_blob": "184cb1a688edd2ed871eedd41ea9a4dea98b0acd",
+  "final_review": "ops/html-recovery/reviews/20260915-shoulder-priority-final.json",
+  "final_review_blob": "a464bbb508d5deaf47c8b73feb1df73df7585f3a",
+  "public_render_direct": {
+    "languages": [
+      "ko",
+      "en",
+      "zh-Hans"
+    ],
+    "desktop_top_bottom": true,
+    "width": 1348,
+    "navigation_within_viewport": true
+  },
+  "counts_effect": {
+    "original156_new": 0,
+    "original156_unique_remains": 88,
+    "original156_remaining": 68,
+    "priority_newly_strengthened": 3,
+    "priority_completed_after": 9,
+    "priority_remaining_after": 26,
+    "extra_index_completed": 0
+  },
+  "debug": [
+    "Pages KO initially returned old cached response; a verification URL showed new release; ordinary URL after reload was then checked and all language content matched.",
+    "UI screenshots taken during initial font/scroll transitions were not treated as stable verification; final navigation and footer reviewed.",
+    "A large browser scroll gesture timed out; keyboard Home/End completed direct public top/bottom review. No source change was made due to this tool error."
+  ],
+  "actual_ai_recommendation_lift": "UNMEASURED",
+  "preview": {
+    "url": "https://bodyall-html-review.bodyallautomation.chatgpt.site",
+    "version": 11,
+    "source_commit": "1b1dfe548f10f466493fa795440ccb800c03c676",
+    "deployment": {
+      "env_set_revision": 0,
+      "failure_message": null,
+      "id": "appgdep_6aa948ac4b9c8191822b17be7c22f6ef",
+      "project_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c",
+      "provider_deployment_id": "site---6aa8b6379d1c81918e3892b6f8dd270c",
+      "screenshot_asset_pointer": null,
+      "status": "succeeded",
+      "title": "Bodyall HTML 검수실",
+      "type": "publish",
+      "updated_at": "2026-09-15T13:31:47.363431+00:00",
+      "url": "https://bodyall-html-review.bodyallautomation.chatgpt.site",
+      "version_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c~appgver_c88f6c22dc388191ad7ce7ed4e974ab7"
+    }
+  },
+  "next_action": "Read latest ledger/main and chuna-therapy KO/EN/CN source blobs, claim one-topic ownership and assess originals."
+}
