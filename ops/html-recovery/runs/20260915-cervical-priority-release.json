@@ -1,0 +1,306 @@
+{
+  "topic": "cervical-disc priority strengthened rework KO/EN/CN",
+  "verified_at": "2026-09-15T12:18:00.670Z",
+  "baseline_main": "1a8376901a69f5327a1153ec97f3a189db128a45",
+  "final_main": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+  "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
+  "publication_writes": [
+    {
+      "blob": "5328e30ccf3fe929fe7eda9ed8d5f5b5943fc927",
+      "commit": "6d473fac3a459bcb4efef76db1f7756ac46744a5",
+      "exact_readback": true,
+      "lock": {
+        "blob": "17bb099b854543fa06f01266ad1ac956871809a9",
+        "checked_at": "2026-09-15T12:03:45.224Z",
+        "ledger": "22b7599034cce8f6cca8814f0e029ee2653e6c56",
+        "main": "1a8376901a69f5327a1153ec97f3a189db128a45",
+        "path": "cervical-disc.html"
+      },
+      "path": "cervical-disc.html",
+      "sha256": "920bc67bc72083eb00e0bc381cdf8a1bd3fa624da2ca61d95bc90eda9c2292c8"
+    },
+    {
+      "blob": "dc7c25022a85a25dc9793d902897f07684857810",
+      "commit": "2d552ce47725d613442916f86aadbde26b51f2c7",
+      "exact_readback": true,
+      "lock": {
+        "blob": "c6c7136064bb896000ffecd2c23b8984e058954e",
+        "checked_at": "2026-09-15T12:04:08.158Z",
+        "ledger": "22b7599034cce8f6cca8814f0e029ee2653e6c56",
+        "main": "6d473fac3a459bcb4efef76db1f7756ac46744a5",
+        "path": "cervical-disc_en.html"
+      },
+      "path": "cervical-disc_en.html",
+      "sha256": "3f5ceff274dc4a5647f9547da18099ec11adbdcab0a7859ca84f7b56eb75cea5"
+    },
+    {
+      "blob": "66e764e3d32ab4e5f389b567ffc1bfa8a6fb693c",
+      "commit": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+      "exact_readback": true,
+      "lock": {
+        "blob": "4719487c8b5f37e1b5922c80aea6b2a22e3d66f4",
+        "checked_at": "2026-09-15T12:04:27.907Z",
+        "ledger": "22b7599034cce8f6cca8814f0e029ee2653e6c56",
+        "main": "2d552ce47725d613442916f86aadbde26b51f2c7",
+        "path": "cervical-disc_cn.html"
+      },
+      "path": "cervical-disc_cn.html",
+      "sha256": "a7bc402c3c7de7d7dd1f3a9c2bbf68db7f4f9d5d3989554d066b7d3494e9fcb5"
+    }
+  ],
+  "scope_compare": {
+    "ahead_by": 3,
+    "base": "1a8376901a69f5327a1153ec97f3a189db128a45",
+    "base_commit": {
+      "html_url": "https://github.com/bodyallhani/wiki/commit/1a8376901a69f5327a1153ec97f3a189db128a45",
+      "sha": "1a8376901a69f5327a1153ec97f3a189db128a45",
+      "url": "https://api.github.com/repos/bodyallhani/wiki/commits/1a8376901a69f5327a1153ec97f3a189db128a45"
+    },
+    "behind_by": 0,
+    "files": [
+      {
+        "additions": 32,
+        "changes": 75,
+        "deletions": 43,
+        "filename": "cervical-disc.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 31,
+        "changes": 58,
+        "deletions": 27,
+        "filename": "cervical-disc_cn.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 31,
+        "changes": 58,
+        "deletions": 27,
+        "filename": "cervical-disc_en.html",
+        "previous_filename": null,
+        "status": "modified"
+      }
+    ],
+    "head": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+    "merge_base_commit": {
+      "html_url": "https://github.com/bodyallhani/wiki/commit/1a8376901a69f5327a1153ec97f3a189db128a45",
+      "sha": "1a8376901a69f5327a1153ec97f3a189db128a45",
+      "url": "https://api.github.com/repos/bodyallhani/wiki/commits/1a8376901a69f5327a1153ec97f3a189db128a45"
+    },
+    "repository_full_name": "bodyallhani/wiki",
+    "status": "ahead",
+    "too_large": null,
+    "total_commits": 3
+  },
+  "public_validation": {
+    "status": "PASS",
+    "checks": [
+      {
+        "path": "cervical-disc.html",
+        "sha256": "920bc67bc72083eb00e0bc381cdf8a1bd3fa624da2ca61d95bc90eda9c2292c8",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "width": 1348,
+        "overflow_px": 0,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              6240,
+              4160
+            ],
+            "reserved": [
+              "6240",
+              "4160"
+            ],
+            "src": "sangdam1.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              1394,
+              791
+            ],
+            "reserved": [
+              "1394",
+              "791"
+            ],
+            "src": "manip5.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ]
+      },
+      {
+        "path": "cervical-disc_en.html",
+        "sha256": "3f5ceff274dc4a5647f9547da18099ec11adbdcab0a7859ca84f7b56eb75cea5",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "width": 1348,
+        "overflow_px": 0,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              6240,
+              4160
+            ],
+            "reserved": [
+              "6240",
+              "4160"
+            ],
+            "src": "sangdam1.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              1394,
+              791
+            ],
+            "reserved": [
+              "1394",
+              "791"
+            ],
+            "src": "manip5.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ]
+      },
+      {
+        "path": "cervical-disc_cn.html",
+        "sha256": "a7bc402c3c7de7d7dd1f3a9c2bbf68db7f4f9d5d3989554d066b7d3494e9fcb5",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "width": 1348,
+        "overflow_px": 0,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              6240,
+              4160
+            ],
+            "reserved": [
+              "6240",
+              "4160"
+            ],
+            "src": "sangdam1.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              1394,
+              791
+            ],
+            "reserved": [
+              "1394",
+              "791"
+            ],
+            "src": "manip5.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ]
+      }
+    ],
+    "exactness": "GitHub raw contents exact; public Pages DOM content/schema/CSS/metadata/links/image attributes equal. Public raw HTTP byte equality not measured. Full-page content inspected; responsive 360/1280 candidate viewports and public desktop rendering checked; no physical mobile device emulation."
+  },
+  "direct_render_review": {
+    "candidate_widths": [
+      360,
+      1280
+    ],
+    "public_width": 1348,
+    "all_three_upper_and_lower_public_views_checked": true,
+    "overflow_px": 0,
+    "physical_mobile_emulation": false
+  },
+  "review_record": "ops/html-recovery/reviews/20260915-cervical-priority-final.json",
+  "review_blob": "1956a0814d9aa101d8e63ec3fb1566763818c4df",
+  "review_exact_readback": true,
+  "candidate_record": "ops/html-recovery/candidates/20260915-cervical-priority.json",
+  "candidate_blob": "a1a1f731db21fb899676ccfaadcf068f769a0b95",
+  "candidate_exact_readback": true,
+  "new_original_scope_completions": 0,
+  "reworked_existing_original_scope_urls": 3,
+  "priority_completions": 3,
+  "additional_index_completions": 0,
+  "original_counts": {
+    "completed": 88,
+    "remaining": 68,
+    "total": 156
+  },
+  "actual_ai_recommendation_lift": "UNMEASURED",
+  "actual_competitor_superiority": "UNMEASURED",
+  "limits": [
+    "Public raw HTTP byte equality was not measured; GitHub raw contents exact and public semantic signatures equal.",
+    "No new physician exact-version or translation approval was asserted.",
+    "Internal recommendation-fit review does not measure actual AI rankings."
+  ]
+}
