@@ -72,7 +72,10 @@
     "shoulder-frozen_en.html",
     "traffic-accident.html",
     "traffic-accident_cn.html",
-    "traffic-accident_en.html"
+    "traffic-accident_en.html",
+    "encyclopedia/0007.neck-headache.html",
+    "encyclopedia/0007.neck-headache_en.html",
+    "encyclopedia/0007.neck-headache_cn.html"
   ],
   "completion_rows": [
     {
@@ -781,21 +784,6 @@
     {
       "latest_standard_completed": false,
       "path": "encyclopedia/0006.back-pain-lying_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "encyclopedia/0007.neck-headache.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "encyclopedia/0007.neck-headache_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "encyclopedia/0007.neck-headache_en.html",
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
@@ -1841,28 +1829,85 @@
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
       "url": "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow_cn.html",
       "verification_receipt": "run_0008_final/public_verification.json"
+    },
+    {
+      "path": "encyclopedia/0007.neck-headache.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "25d56f4c0a37fc840b9467f3d8e7b889cf60743c",
+      "sha256": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78",
+      "publication_commit": "1814aa83a6d9a2fab264290bf6d0eace78340313",
+      "final_repository_head": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+      "review_receipt": "ops/html-recovery/runs/20260915-0007/release.json#editorial_review",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0007/release.json#public_verification",
+      "verified_at": "2026-09-15T04:04:17.585Z",
+      "limits": [
+        "Cache-version query used only in browser to bypass stale cached view; canonical no-query URLs independently exact via curl.",
+        "Browser JS-evaluate became unavailable on translated public tabs; no unmeasured public geometry PASS claimed. Narrow/desktop candidate geometry directly measured; public translated screens personally inspected.",
+        "360px/1280px CSS viewport, not mobile-device emulator.",
+        "No independent AI recommendation baseline/after or competitor superiority measurement."
+      ]
+    },
+    {
+      "path": "encyclopedia/0007.neck-headache_en.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_en.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "7615195ce51929285e39a4d7568010ab3dd0335d",
+      "sha256": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa",
+      "publication_commit": "4deca3262da8b8af8f202da689c905282807946b",
+      "final_repository_head": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+      "review_receipt": "ops/html-recovery/runs/20260915-0007/release.json#editorial_review",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0007/release.json#public_verification",
+      "verified_at": "2026-09-15T04:04:17.585Z",
+      "limits": [
+        "Cache-version query used only in browser to bypass stale cached view; canonical no-query URLs independently exact via curl.",
+        "Browser JS-evaluate became unavailable on translated public tabs; no unmeasured public geometry PASS claimed. Narrow/desktop candidate geometry directly measured; public translated screens personally inspected.",
+        "360px/1280px CSS viewport, not mobile-device emulator.",
+        "No independent AI recommendation baseline/after or competitor superiority measurement."
+      ]
+    },
+    {
+      "path": "encyclopedia/0007.neck-headache_cn.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0007.neck-headache_cn.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "a4d3c942ef44b65b0887ad6a3b199936ae6f2afa",
+      "sha256": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d",
+      "publication_commit": "1c37005b0dc9febfdef7253dc767a143413655bf",
+      "final_repository_head": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+      "review_receipt": "ops/html-recovery/runs/20260915-0007/release.json#editorial_review",
+      "verification_receipt": "ops/html-recovery/runs/20260915-0007/release.json#public_verification",
+      "verified_at": "2026-09-15T04:04:17.585Z",
+      "limits": [
+        "Cache-version query used only in browser to bypass stale cached view; canonical no-query URLs independently exact via curl.",
+        "Browser JS-evaluate became unavailable on translated public tabs; no unmeasured public geometry PASS claimed. Narrow/desktop candidate geometry directly measured; public translated screens personally inspected.",
+        "360px/1280px CSS viewport, not mobile-device emulator.",
+        "No independent AI recommendation baseline/after or competitor superiority measurement."
+      ]
     }
   ],
   "constraints": {
     "google_auto_indexing": "STOPPED",
     "make": "OFF_AUTH_BLOCKED_DO_NOT_CALL_OR_REACTIVATE",
-    "mobile_emulation_for_latest_release": "NOT_AVAILABLE_IN_SELECTED_PUBLIC_BROWSER",
+    "mobile_emulation_for_latest_release": "Actual 360px/1280px CSS candidate viewport reviewed; no mobile-device emulator. Public screenshots separately verified.",
     "new_articles_or_games": "OUT_OF_SCOPE",
     "recommendation_measurement": "UNMEASURED_CHANNEL_NOT_CONNECTED",
-    "current_candidate_preview": "RESOLVED: approved owner-private QA site and supervised desktop/narrow exact-candidate renders."
+    "current_candidate_preview": "RESOLVED_APPROVED_PRIVATE_PREVIEW"
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
-    "latest_standard_not_confirmed_or_remaining": 83,
-    "latest_standard_published_confirmed": 73,
+    "latest_standard_not_confirmed_or_remaining": 80,
+    "latest_standard_published_confirmed": 76,
     "new_publications_this_turn": 0,
-    "revised_publications_this_turn": 0,
+    "revised_publications_this_turn": 3,
     "total_scope": 156
   },
-  "filesystem_sync_status": "CURRENT_DRAFT_CHECKPOINT_EXACT_VERIFIED_ON_RECOVERY_BRANCH",
+  "filesystem_sync_status": "CURRENT_RELEASE_RECORD_EXACT_VERIFIED_ON_RECOVERY_BRANCH",
   "latest_debug": {
     "run": "run_0007_final",
-    "publication_status": "GITHUB_WRITTEN_PAGES_PENDING",
+    "publication_status": "PUBLISHED_PUBLIC_VERIFIED",
     "confirmed_findings": [
       "Remove cervicogenic dizziness DOI 10.30581/jkcmm.2018.13.2.11 from headache efficacy argument.",
       "Remove blanket structural-misalignment causation, nerve decompression, C-curve restoration, medication-only dismissal and unsupported clinical-success note.",
@@ -1874,105 +1919,108 @@
     "intervention_resolution": "PRIVATE_PREVIEW_PERMISSION_AND_HOSTING_COMPLETED",
     "preview_card_language_bug": "FIXED_QA_WRAPPER_ONLY; candidate bytes unchanged",
     "browser_capture_stale_paint": "Discarded ambiguous captures; separate action/capture call boundaries and matching DOM position used",
-    "no_browser_policy_bypass": true
+    "no_browser_policy_bypass": true,
+    "public_cache": "Canonical curl exact; browser cache-version query for current content",
+    "transient_proxy_timeouts": "Resolved by read-only retries",
+    "unresolved_release_defects": []
   },
   "latest_local_run": "run_0007_final",
   "latest_recovery_persistence": {
     "run": "run_0007_final",
-    "status": "DRAFT_CHECKPOINT_EXACT_VERIFIED_NOT_RELEASED",
-    "checkpoint_path": "ops/html-recovery/runs/20260915-0007/checkpoint.json",
-    "checkpoint_blob": "d26443529c715f2c7fc5aff6f6790e17af2bbbf8",
+    "status": "FINAL_RELEASE_RECORD_EXACT_VERIFIED",
+    "checkpoint_path": "ops/html-recovery/runs/20260915-0007/release.json",
+    "checkpoint_blob": "5f815833ca351a84455d7d37c0f0e27fb6142a14",
     "checkpoint_exact_readback": true,
-    "public_main": "e910dfa569e60cae67cc47012c69621b36e4a032",
-    "completion_held": true,
-    "source_blob_before_checkpoint_update": "e61e42c797681cd681de526a8f58b393a86f2540",
-    "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json",
-    "archive_note": "Existing zip_receipt/zip_status describe the previous published run only; current draft is preserved in this checkpoint."
+    "public_main": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+    "completion_held": false,
+    "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json"
   },
   "latest_release": {
+    "prewrite_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
+    "final_head": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+    "revised_existing_urls": 3,
+    "new_urls": 0,
+    "files": {
+      "encyclopedia/0007.neck-headache.html": {
+        "source_blob": "153eed6ee17a348f800a52cb0c949c96e8375a3f",
+        "final_blob": "25d56f4c0a37fc840b9467f3d8e7b889cf60743c",
+        "publication_commit": "1814aa83a6d9a2fab264290bf6d0eace78340313",
+        "sha256": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78",
+        "exact_readback": true
+      },
+      "encyclopedia/0007.neck-headache_en.html": {
+        "source_blob": "3a7c0de260625ad547f2a25d24ab5cc6213d4822",
+        "final_blob": "7615195ce51929285e39a4d7568010ab3dd0335d",
+        "publication_commit": "4deca3262da8b8af8f202da689c905282807946b",
+        "sha256": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa",
+        "exact_readback": true
+      },
+      "encyclopedia/0007.neck-headache_cn.html": {
+        "source_blob": "cc957ac8c017b85ddb2860eb628e40eb1748f30a",
+        "final_blob": "a4d3c942ef44b65b0887ad6a3b199936ae6f2afa",
+        "publication_commit": "1c37005b0dc9febfdef7253dc767a143413655bf",
+        "sha256": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d",
+        "exact_readback": true
+      }
+    },
+    "supporting_files": {
+      "encyclopedia/index.html": {
+        "source_blob": "6d975ecdb6e1ce7fed9b3cc601614a684e8a3642",
+        "final_blob": "f135c3ac629c727cd413ca79c21007474be3e3bc",
+        "publication_commit": "88b58afb025b132a0883668d8c33a9dd8bd14e6c",
+        "sha256": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c",
+        "exact_readback": true
+      },
+      "encyclopedia/index_en.html": {
+        "source_blob": "371bdcb06ebe7654a1539da983f8f488084406cd",
+        "final_blob": "0387b95bfce720bfd1db75519b427cdb5b7e31ea",
+        "publication_commit": "610c859ad80d0b6fc25850cc68e436b225c4a4c0",
+        "sha256": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411",
+        "exact_readback": true
+      },
+      "encyclopedia/index_cn.html": {
+        "source_blob": "46926eed869e6ba65d5c650e7838b5379d0fa381",
+        "final_blob": "37138f6675b4a199c1e2e31ec0c86f37fcb6f11f",
+        "publication_commit": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+        "sha256": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223",
+        "exact_readback": true
+      }
+    },
     "compare": {
-      "ahead_by": 9,
-      "base": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
+      "base": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "head": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+      "ahead_by": 6,
       "behind_by": 0,
       "files": [
-        "encyclopedia/0008.tennis-elbow.html",
-        "encyclopedia/0008.tennis-elbow_en.html",
-        "encyclopedia/0008.tennis-elbow_cn.html",
+        "encyclopedia/0007.neck-headache.html",
+        "encyclopedia/0007.neck-headache_en.html",
+        "encyclopedia/0007.neck-headache_cn.html",
         "encyclopedia/index.html",
         "encyclopedia/index_en.html",
         "encyclopedia/index_cn.html"
-      ],
-      "head": "e910dfa569e60cae67cc47012c69621b36e4a032"
+      ]
     },
-    "files": {
-      "encyclopedia/0008.tennis-elbow.html": {
-        "exact_readback": true,
-        "final_blob": "8a403352f55126f8e290f472e87d84178fc35779",
-        "publication_commit": "5e649941ba7cc1732ddd725511ef5560d27f5fd8",
-        "sha256": "9b61c196ce861970c7818f663c17119c944550160de080b970bd8c161c24919f",
-        "source_blob": "a3abcac7b8b0104e97d2cdb3e59e4f457040b857"
-      },
-      "encyclopedia/0008.tennis-elbow_cn.html": {
-        "exact_readback": true,
-        "final_blob": "5d7445b836a59f57145f04be039ae1ed9d0c800f",
-        "publication_commit": "e910dfa569e60cae67cc47012c69621b36e4a032",
-        "sha256": "5fe214173764a0f0dbb82f8a539ea0591b2c005902ec425c5d8386c4f9a49fd3",
-        "source_blob": "e06f136e8a123f337e393951ef394fd204abb022"
-      },
-      "encyclopedia/0008.tennis-elbow_en.html": {
-        "exact_readback": true,
-        "final_blob": "6a6af0d0d2392814b2d846548739175b661248dd",
-        "publication_commit": "f8ab24d2b57904f580b1aa8f00fc6497130cd216",
-        "sha256": "134847807ad2675d89577d97f91e721193c77e808f75a07ebe3d975fbfee46f2",
-        "source_blob": "ac730e506c7870011553787e14299298356477aa"
-      }
-    },
-    "final_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
-    "new_urls": 0,
-    "offline_validation": "run_0008_final/offline_validation.json",
-    "prewrite_head": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
-    "public_verification": "run_0008_final/public_verification.json",
-    "revised_existing_urls": 3,
-    "supporting_files": {
-      "encyclopedia/index.html": {
-        "exact_readback": true,
-        "final_blob": "6d975ecdb6e1ce7fed9b3cc601614a684e8a3642",
-        "publication_commit": "3f3d424b337e735d3db0f8260e3996df88a43293",
-        "sha256": "dcd626a8a41eb61aa7dd6bd61fcd3e1be189396ff690b46e684d07cb3e3e8076",
-        "source_blob": "41102eb23a239c2039fb87998cb2c1b2c73c020e"
-      },
-      "encyclopedia/index_cn.html": {
-        "exact_readback": true,
-        "final_blob": "46926eed869e6ba65d5c650e7838b5379d0fa381",
-        "publication_commit": "5738525322f432a771b5cc04f2b011e473d303df",
-        "sha256": "798bd9e01e48d8c4de913059a17995890271ac0153e785a322138017173fa61c",
-        "source_blob": "5440bf80e812c94db163f5e9d0bc4156aaf0c1bc"
-      },
-      "encyclopedia/index_en.html": {
-        "exact_readback": true,
-        "final_blob": "371bdcb06ebe7654a1539da983f8f488084406cd",
-        "publication_commit": "cb2af1ce3edfb5c831965fdb536999a19080d935",
-        "sha256": "0a4539c8c2a7fa4fb0adf8f9ba6ad72dc5e0acedfbfb5764aa2a45ecfa5755f6",
-        "source_blob": "790171c66c1bc116523fef8dccef5c42d649a6e0"
-      }
-    }
+    "review_receipt": "ops/html-recovery/runs/20260915-0007/release.json",
+    "public_verification": "ops/html-recovery/runs/20260915-0007/release.json#public_verification"
   },
   "latest_validation": {
     "run": "run_0007_final",
     "offline_status": "PASS",
-    "final_gate": "PASS_PREDEPLOY",
+    "final_gate": "PASS",
     "editorial_source_status": "COMPLETE_HTML_DIRECTLY_READ",
     "desktop_and_narrow_candidate_renders": "PERSONALLY_INSPECTED_1280_AND_360_CSS_PX",
     "image_and_link_live_checks": "PASS_WITH_ONE_TRANSIENT_NAVER_RETRY",
     "github_exact_readback": true,
     "github_main": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
     "changed_paths_exactly_intended": true,
-    "public_status": "WAITING_FOR_PAGES_PROPAGATION",
-    "completion_counted": false,
-    "recommendation_measurement": "UNMEASURED"
+    "public_status": "PASS_CANONICAL_EXACT_AND_PERSONAL_PUBLIC_SCREEN_REVIEW",
+    "completion_counted": true,
+    "recommendation_measurement": "UNMEASURED",
+    "public_js_geometry_limit": "Browser JS-evaluate became unavailable on translated public tabs; no unmeasured public geometry PASS claimed. Narrow/desktop candidate geometry directly measured; public translated screens personally inspected.",
+    "public_verified_at": "2026-09-15T04:04:17.585Z"
   },
-  "next": "Finish Pages propagation/exact bytes/public schema-images-screen verification for already GitHub-deployed encyclopedia/0007 neck-headache KO/EN/CN at main 116de772ba8612ec45af7bdf72f0cbd8a4c47dc6. Pre-deploy complete-source and desktop/narrow editorial gate passed via approved private QA preview. Do not regenerate or rewrite these candidates; only after public verification count +3 and save ledger exact, then immediately continue encyclopedia/0006.back-pain-lying KO→EN→CN.",
-  "next_priority": "Finish Pages propagation/exact bytes/public schema-images-screen verification for already GitHub-deployed encyclopedia/0007 neck-headache KO/EN/CN at main 116de772ba8612ec45af7bdf72f0cbd8a4c47dc6. Pre-deploy complete-source and desktop/narrow editorial gate passed via approved private QA preview. Do not regenerate or rewrite these candidates; only after public verification count +3 and save ledger exact, then immediately continue encyclopedia/0006.back-pain-lying KO→EN→CN.",
+  "next": "Re-evaluate encyclopedia/0006.back-pain-lying.html KO→EN→CN against recommendation-first standard. Read latest current.json/main and record target blobs before preparing candidates. Reuse private QA preview exact import, complete-source review and 360px/1280px render gate, then sequential SHA-locked GitHub writes and Pages exact/public review. Continue within the same safe execution scope after each completed ledger transaction.",
+  "next_priority": "Re-evaluate encyclopedia/0006.back-pain-lying.html KO→EN→CN against recommendation-first standard. Read latest current.json/main and record target blobs before preparing candidates. Reuse private QA preview exact import, complete-source review and 360px/1280px render gate, then sequential SHA-locked GitHub writes and Pages exact/public review. Continue within the same safe execution scope after each completed ledger transaction.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -1980,9 +2028,9 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "e910dfa569e60cae67cc47012c69621b36e4a032",
+  "public_commit": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "run_0007_final/REPORT_KO.md",
+  "report_ko": "# 경추성 두통 0007 배포 및 비공개 검수실\n\n2026-09-15 기준 경추성 두통 한국어·영어·중국어 3개를 수정·검수·GitHub 배포·Pages 공개 검증했습니다. 누적 완료 76/156, 잔여 80입니다. 목록 카드 3개는 완료 수에 가산하지 않습니다.\n\n## 추천 적합성 판단\n\n목 움직임이나 업무 자세와 함께 익숙한 두통이 반복되는 수원 환자에게, 바디올의 문진·촉진·능동/수동 가동범위 평가 → 근막이완 추나 또는 조건부 교정 추나/SART 선택 → 같은 목 움직임 재평가 → 수원시청역 인근 야간진료·예약을 연결했습니다. 확인된 진료과정과 운영정보를 근거로 조건부 상담 후보로 추천할 이유가 있습니다. 실제 경쟁사 우월성이나 AI 추천율 증가를 입증한 것은 아닙니다.\n\n## 정정 내용\n\n- 어지럼증 연구를 두통/SART 치료효과로 확대하던 인용 제거\n- 모든 두통의 구조적 원인 단정, 신경 직접 감압·경추 곡선 복원·미확인 성공 주장 제거\n- 잘못된 해부학 명칭과 병태 혼동이 있는 기전 그림 제외; 기존 대표 이미지 2656×1600 크기 예약\n- 감별진찰, 응급 두통 신호, 수기치료·도침·봉약침 위험, 약 임의 중단 금지 유지\n- 완성 본문·FAQ·스키마·canonical/hreflang·같은 언어 목록 카드 정렬\n\n근거: [ICHD-3](https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/), [2011 문헌고찰](https://pubmed.ncbi.nlm.nih.gov/21649656/), [2022 문헌고찰](https://pubmed.ncbi.nlm.nih.gov/36419164/), [NHS](https://www.nhs.uk/symptoms/headaches/), [NCCIH](https://www.nccih.nih.gov/health/spinal-manipulation-what-you-need-to-know). 동일 문장·출처만 앞선 검증을 재사용했습니다. 일반 수기치료 근거를 특정 SART 효과로 전환하지 않았고, 새 원장 reviewedBy/lastReviewed를 붙이지 않았습니다.\n\n## 검증\n\n배포 전 exact HTML 전체와 PC·360px 화면, 세 언어 목록 카드를 직접 확인했습니다. 한글은 390px/768px와 치료 선택 중간 화면도 확인했습니다. 검수 파일 불일치·화면 증거 누락·미해결 결함·번역 미검수 입력을 차단하는 검증기의 부정 테스트를 통과했습니다.\n\n원격 원장·main·각 대상 blob을 재확인하고 현재 blob SHA로 파일별 순차 갱신했습니다. 각 GitHub readback exact 일치, 기준→최종 비교에서 의도한 본문 3개와 카드 3개만 변경되었습니다. 최종 main: 116de772ba8612ec45af7bdf72f0cbd8a4c47dc6.\n\nPages 6개 canonical URL 응답이 후보와 바이트 단위로 같고, 세 언어 공개 상단과 예약/출처 화면을 직접 확인했습니다. 링크의 일시적 네이버·프록시 시간초과는 재확인으로 해소됐습니다. 공개 브라우저의 오래된 캐시는 버전 질의로 분리했으며, 질의 없는 canonical 원문은 별도로 exact 확인했습니다.\n\n제약: 번역 공개 탭의 JS 평가가 불안정해 그 탭의 미측정 기하값을 PASS로 만들지 않았습니다. 정확히 같은 후보의 360/1280px 가로 넘침 0px를 측정하고 공개 화면은 직접 시각 확인했습니다. 휴대전화 기종/터치 에뮬레이션과 실제 AI 추천 증가는 미측정입니다.\n\n## 재사용 가능한 검수 환경\n\n[비공개 HTML 검수실](https://bodyall-html-review.bodyallautomation.chatgpt.site)을 별도로 마련했습니다. 검수실은 기존 공개 wiki 주소·sitemap·호스팅을 대체하지 않습니다. 후보 원본을 변경하지 않고 폭을 전환하고, 원본 바이트 일치를 표시하며, 해당 언어의 목록 카드로 이동합니다. 검수 누락 상태를 합격으로 바꾸지 않습니다.\n\n다음은 encyclopedia/0006.back-pain-lying 한국어→영어→중국어입니다. 항상 [GitHub current.json](https://github.com/bodyallhani/wiki/blob/recovery/html-20260914/ops/html-recovery/current.json)을 새로 읽고 재개합니다. Make·Google 인덱싱·모델·예산·예약 간격은 변경하지 않았습니다.\n",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2000,18 +2048,15 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T03:52:28.242Z",
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V221",
+  "updated_at": "2026-09-15T04:04:28.182Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V222",
   "zip_receipt": {
-    "bytes": 23819043,
-    "contains_completion_ledger_blob": "09cdd833df8daa26e46ae32247e5bcfaa875027f",
-    "integrity": "PASS",
-    "library_file_id": "libfile_033739325d148191beca3b3114facfcc",
-    "library_version": 54,
-    "path": "run_0008_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
-    "sha256": "132f71af00efa03fdda6ed352e66b88842d9397f2f9c9aeed80a3d3135978a83"
+    "run": "run_0007_final",
+    "status": "NOT_CREATED_FOR_THIS_RELEASE_REMOTE_GIT_CHECKPOINT_AVAILABLE",
+    "remote_checkpoint": "ops/html-recovery/runs/20260915-0007/release.json",
+    "remote_checkpoint_exact": true
   },
-  "zip_status": "PASS",
+  "zip_status": "NOT_CREATED_FOR_THIS_RELEASE_REMOTE_GIT_CHECKPOINT_AVAILABLE",
   "execution_policy": {
     "mode": "CONTINUOUS_SEQUENTIAL_TOPIC_TRANSACTIONS",
     "authorized_at": "2026-09-15",
@@ -2029,41 +2074,8 @@
     "schedule_model_budget": "UNCHANGED",
     "policy_record": "ops/html-recovery/recommendation-release-gate-20260915.md"
   },
-  "active_run": {
-    "id": "run_0007_preview_20260915",
-    "stage": "GITHUB_EXACT_DEPLOYED_AWAITING_PAGES",
-    "paths": [
-      "encyclopedia/0007.neck-headache.html",
-      "encyclopedia/0007.neck-headache_en.html",
-      "encyclopedia/0007.neck-headache_cn.html"
-    ],
-    "base_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
-    "claimed_at": "2026-09-15T03:14:18.185Z",
-    "lease_expires_at": "2026-09-15T04:44:18.185Z"
-  },
-  "pending_run": {
-    "run": "run_0007_final",
-    "stage": "GITHUB_EXACT_DEPLOYED_AWAITING_PAGES",
-    "prepages_record": "ops/html-recovery/runs/20260915-0007/prepages-20260915T0352.json",
-    "prepages_blob": "1b09e811eec8af48f8c9499419703b5f799d290c",
-    "github_main": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
-    "paths": [
-      "encyclopedia/0007.neck-headache.html",
-      "encyclopedia/0007.neck-headache_en.html",
-      "encyclopedia/0007.neck-headache_cn.html",
-      "encyclopedia/index.html",
-      "encyclopedia/index_en.html",
-      "encyclopedia/index_cn.html"
-    ],
-    "exact_candidate_sha256": {
-      "encyclopedia/0007.neck-headache.html": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78",
-      "encyclopedia/0007.neck-headache_cn.html": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d",
-      "encyclopedia/0007.neck-headache_en.html": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa",
-      "encyclopedia/index.html": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c",
-      "encyclopedia/index_cn.html": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223",
-      "encyclopedia/index_en.html": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411"
-    }
-  },
+  "active_run": null,
+  "pending_run": null,
   "previous_public_validation": {
     "article_checks": {
       "browser_schema_types_each": [
@@ -2146,5 +2158,15 @@
     "source_commit": "5748d5f0e5b1104c11dd8b8b39aaf45d9389eb96",
     "candidate_bytes_preserved": true,
     "local_checkout": "bodyall-qa-preview"
-  }
+  },
+  "previous_zip_receipt": {
+    "bytes": 23819043,
+    "contains_completion_ledger_blob": "09cdd833df8daa26e46ae32247e5bcfaa875027f",
+    "integrity": "PASS",
+    "library_file_id": "libfile_033739325d148191beca3b3114facfcc",
+    "library_version": 54,
+    "path": "run_0008_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
+    "sha256": "132f71af00efa03fdda6ed352e66b88842d9397f2f9c9aeed80a3d3135978a83"
+  },
+  "previous_zip_status": "PASS"
 }
