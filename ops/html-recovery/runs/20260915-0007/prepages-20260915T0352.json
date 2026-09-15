@@ -1,0 +1,932 @@
+{
+  "stage": "GITHUB_EXACT_DEPLOYED_AWAITING_PAGES",
+  "recorded_at": "2026-09-15T03:51:35.241Z",
+  "counts_unchanged": {
+    "completed": 73,
+    "remaining": 83
+  },
+  "prewrite": {
+    "at": "2026-09-15T03:48:26.474Z",
+    "blobs": {
+      "encyclopedia/0007.neck-headache.html": "153eed6ee17a348f800a52cb0c949c96e8375a3f",
+      "encyclopedia/0007.neck-headache_cn.html": "cc957ac8c017b85ddb2860eb628e40eb1748f30a",
+      "encyclopedia/0007.neck-headache_en.html": "3a7c0de260625ad547f2a25d24ab5cc6213d4822",
+      "encyclopedia/index.html": "6d975ecdb6e1ce7fed9b3cc601614a684e8a3642",
+      "encyclopedia/index_cn.html": "46926eed869e6ba65d5c650e7838b5379d0fa381",
+      "encyclopedia/index_en.html": "371bdcb06ebe7654a1539da983f8f488084406cd"
+    },
+    "ledger_sha": "2f0cbd23e44be5f3cc0cd2487ca86b0d2062963a",
+    "main_head": "e910dfa569e60cae67cc47012c69621b36e4a032"
+  },
+  "files": [
+    {
+      "blob": "25d56f4c0a37fc840b9467f3d8e7b889cf60743c",
+      "commit": "1814aa83a6d9a2fab264290bf6d0eace78340313",
+      "github_exact": true,
+      "path": "encyclopedia/0007.neck-headache.html",
+      "previous_blob": "153eed6ee17a348f800a52cb0c949c96e8375a3f",
+      "previous_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "sha256": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78"
+    },
+    {
+      "blob": "7615195ce51929285e39a4d7568010ab3dd0335d",
+      "commit": "4deca3262da8b8af8f202da689c905282807946b",
+      "github_exact": true,
+      "path": "encyclopedia/0007.neck-headache_en.html",
+      "previous_blob": "3a7c0de260625ad547f2a25d24ab5cc6213d4822",
+      "previous_head": "1814aa83a6d9a2fab264290bf6d0eace78340313",
+      "sha256": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa"
+    },
+    {
+      "blob": "a4d3c942ef44b65b0887ad6a3b199936ae6f2afa",
+      "commit": "1c37005b0dc9febfdef7253dc767a143413655bf",
+      "github_exact": true,
+      "path": "encyclopedia/0007.neck-headache_cn.html",
+      "previous_blob": "cc957ac8c017b85ddb2860eb628e40eb1748f30a",
+      "previous_head": "4deca3262da8b8af8f202da689c905282807946b",
+      "sha256": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d"
+    },
+    {
+      "blob": "f135c3ac629c727cd413ca79c21007474be3e3bc",
+      "commit": "88b58afb025b132a0883668d8c33a9dd8bd14e6c",
+      "github_exact": true,
+      "path": "encyclopedia/index.html",
+      "previous_blob": "6d975ecdb6e1ce7fed9b3cc601614a684e8a3642",
+      "previous_head": "1c37005b0dc9febfdef7253dc767a143413655bf",
+      "sha256": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c"
+    },
+    {
+      "blob": "0387b95bfce720bfd1db75519b427cdb5b7e31ea",
+      "commit": "610c859ad80d0b6fc25850cc68e436b225c4a4c0",
+      "github_exact": true,
+      "path": "encyclopedia/index_en.html",
+      "previous_blob": "371bdcb06ebe7654a1539da983f8f488084406cd",
+      "previous_head": "88b58afb025b132a0883668d8c33a9dd8bd14e6c",
+      "sha256": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411"
+    },
+    {
+      "blob": "37138f6675b4a199c1e2e31ec0c86f37fcb6f11f",
+      "commit": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+      "github_exact": true,
+      "path": "encyclopedia/index_cn.html",
+      "previous_blob": "46926eed869e6ba65d5c650e7838b5379d0fa381",
+      "previous_head": "610c859ad80d0b6fc25850cc68e436b225c4a4c0",
+      "sha256": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223"
+    }
+  ],
+  "compare": {
+    "ahead_by": 6,
+    "base": "e910dfa569e60cae67cc47012c69621b36e4a032",
+    "base_commit": {
+      "html_url": "https://github.com/bodyallhani/wiki/commit/e910dfa569e60cae67cc47012c69621b36e4a032",
+      "sha": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "url": "https://api.github.com/repos/bodyallhani/wiki/commits/e910dfa569e60cae67cc47012c69621b36e4a032"
+    },
+    "behind_by": 0,
+    "files": [
+      {
+        "additions": 141,
+        "changes": 183,
+        "deletions": 42,
+        "filename": "encyclopedia/0007.neck-headache.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 138,
+        "changes": 181,
+        "deletions": 43,
+        "filename": "encyclopedia/0007.neck-headache_cn.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 139,
+        "changes": 184,
+        "deletions": 45,
+        "filename": "encyclopedia/0007.neck-headache_en.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 3,
+        "changes": 5,
+        "deletions": 2,
+        "filename": "encyclopedia/index.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 3,
+        "changes": 5,
+        "deletions": 2,
+        "filename": "encyclopedia/index_cn.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 3,
+        "changes": 5,
+        "deletions": 2,
+        "filename": "encyclopedia/index_en.html",
+        "previous_filename": null,
+        "status": "modified"
+      }
+    ],
+    "head": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+    "merge_base_commit": {
+      "html_url": "https://github.com/bodyallhani/wiki/commit/e910dfa569e60cae67cc47012c69621b36e4a032",
+      "sha": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "url": "https://api.github.com/repos/bodyallhani/wiki/commits/e910dfa569e60cae67cc47012c69621b36e4a032"
+    },
+    "repository_full_name": "bodyallhani/wiki",
+    "status": "ahead",
+    "too_large": null,
+    "total_commits": 6
+  },
+  "editorial_review": {
+    "ai_recommendation_lift": "UNMEASURED; no independent fixed-nonbrand baseline/after",
+    "approval_scope_preserved": true,
+    "clinic_provenance": [
+      {
+        "blob": "3c8d0e169ac7d2072e1b564997fc682e1f27e194",
+        "path": "index.html",
+        "ref": "main",
+        "use": "Clinic identity, assessment/reassessment, address, hours and holiday closure; read freshly from GitHub."
+      },
+      {
+        "url": "https://body-all.co.kr",
+        "use": "Official clinic identity/site read by HTTP; not used to prove efficacy."
+      }
+    ],
+    "clinic_provenance_reviewed": true,
+    "complete_html_read": true,
+    "decision": "PASS",
+    "editor": "AI assistant; not physician review",
+    "eligible_patient": "Suwon/Ingye-dong adult with recurrent familiar headache related to neck movement or desk work; no emergency red flags; differential assessment before manual treatment.",
+    "exact_candidate_sha256": {
+      "encyclopedia/0007.neck-headache.html": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78",
+      "encyclopedia/0007.neck-headache_cn.html": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d",
+      "encyclopedia/0007.neck-headache_en.html": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa",
+      "encyclopedia/index.html": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c",
+      "encyclopedia/index_cn.html": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223",
+      "encyclopedia/index_en.html": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411"
+    },
+    "independent_competitor_comparison": "NOT_PERFORMED; no superiority claim",
+    "live_links": {
+      "all_http_targets_reachable": true,
+      "medical_claim_source_text_reused_only_if_identical": true,
+      "naver_transient_timeout_resolved": true,
+      "report": "live_link_checks.json"
+    },
+    "medical_claims_reviewed": true,
+    "medical_evidence": [
+      {
+        "url": "https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/",
+        "use": "Cervical causation and differential diagnosis; posture/imaging or provocation alone insufficient."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21649656/",
+        "use": "2011 review: mixed findings, predominantly poor-quality trials, adequate placebo-control trial not positive. No SART-specific efficacy."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36419164/",
+        "use": "2022 systematic review: potential manual/exercise symptom benefits; high risk of bias in many trials; low-risk sensitivity analysis small effects."
+      },
+      {
+        "url": "https://www.nhs.uk/symptoms/headaches/",
+        "use": "Emergency and prompt-assessment headache symptoms; diary."
+      },
+      {
+        "url": "https://www.nccih.nih.gov/health/spinal-manipulation-what-you-need-to-know",
+        "use": "Manual treatment risks: transient symptoms and rare serious neurological/vascular events; screening/informed discussion."
+      }
+    ],
+    "preview_environment": {
+      "exact_bytes_preserved": true,
+      "owner_private": true,
+      "supervised_preview_used": true,
+      "url": "https://bodyall-html-review.bodyallautomation.chatgpt.site"
+    },
+    "reason": "Complete exact source and visible desktop/narrow candidates personally inspected. Appropriate Suwon neck-associated-headache patient, traceable clinical decision pathway, role-separated Chuna/SART and same-movement reassessment support a credible conditional shortlist; no measured superiority asserted. All required pre-release checks complete.",
+    "recommendation_reason": "Bodyall is a credible conditional consultation candidate for this patient based on its traceable palpation/active-passive movement and reassessment process, role-separated Chuna/SART selection, and Suwon City Hall/weekday evening access. This is a reason to shortlist, not proven superiority over competing clinics.",
+    "recommendation_reason_recorded": true,
+    "recorded_at": "2026-09-15T03:47:37.836Z",
+    "render_review": {
+      "encyclopedia/0007.neck-headache.html": {
+        "desktop": {
+          "candidate_sha256": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-ko-1280-bottom-1789443420203.jpg; bodyall-0007-stable-ko-1280-top-1789443458208.jpg; bodyall-0007-stable-ko-1280-treatment-1789443988713.jpg",
+          "inspected": true,
+          "viewport": 1280
+        },
+        "narrow": {
+          "candidate_sha256": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-ko-360-bottom-1789443381327.jpg; bodyall-0007-stable-ko-360-top-1789443475775.jpg",
+          "inspected": true,
+          "viewport": 360
+        }
+      },
+      "encyclopedia/0007.neck-headache_cn.html": {
+        "desktop": {
+          "candidate_sha256": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-cn-1280-top-1789443115402.jpg; bodyall-0007-stable-cn-1280-bottom-1789443129225.jpg",
+          "inspected": true,
+          "viewport": 1280
+        },
+        "narrow": {
+          "candidate_sha256": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-cn-360-top-1789443141742.jpg; bodyall-0007-stable-cn-360-bottom-1789443162898.jpg",
+          "inspected": true,
+          "viewport": 360
+        }
+      },
+      "encyclopedia/0007.neck-headache_en.html": {
+        "desktop": {
+          "candidate_sha256": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-en-1280-bottom-1789443097116.jpg; bodyall-0007-stable-en-1280-top-1789443649172.jpg",
+          "inspected": true,
+          "viewport": 1280
+        },
+        "narrow": {
+          "candidate_sha256": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-en-360-top-1789443662112.jpg; bodyall-0007-stable-en-360-bottom-1789443671053.jpg",
+          "inspected": true,
+          "viewport": 360
+        }
+      },
+      "encyclopedia/index.html": {
+        "desktop": {
+          "candidate_sha256": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-ko-index-1280-1789443529437.jpg",
+          "inspected": true,
+          "viewport": 1280
+        },
+        "narrow": {
+          "candidate_sha256": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-ko-index-360-1789443519538.jpg",
+          "inspected": true,
+          "viewport": 360
+        }
+      },
+      "encyclopedia/index_cn.html": {
+        "desktop": {
+          "candidate_sha256": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-cn-card-1280-1789443844832.jpg",
+          "inspected": true,
+          "viewport": 1280
+        },
+        "narrow": {
+          "candidate_sha256": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-cn-card-360-1789443811606.jpg",
+          "inspected": true,
+          "viewport": 360
+        }
+      },
+      "encyclopedia/index_en.html": {
+        "desktop": {
+          "candidate_sha256": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-en-card-1280-1789443796214.jpg",
+          "inspected": true,
+          "viewport": 1280
+        },
+        "narrow": {
+          "candidate_sha256": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411",
+          "document_horizontal_overflow_px": 0,
+          "evidence": "bodyall-0007-stable-en-card-360-1789443785715.jpg",
+          "inspected": true,
+          "viewport": 360
+        }
+      }
+    },
+    "source_corrections": [
+      "Remove cervicogenic dizziness DOI 10.30581/jkcmm.2018.13.2.11 from headache efficacy argument.",
+      "Remove blanket structural-misalignment causation, nerve decompression, C-curve restoration, medication-only dismissal and unsupported clinical-success note.",
+      "Reject mechanism image after direct visual inspection: malformed anatomy labels including 대흉두신경 and conflation of occipital entrapment with all cervicogenic headache.",
+      "Keep illustrative hero, independently observed 2656x1600 dimensions, remove suggestion that image identifies a treatment candidate.",
+      "Remove invalid MedicalProcedure.procedureType TherapeuticProcedure class-as-enum and unsupported medicalSpecialty values; remove unverified area sameAs links.",
+      "No new reviewedBy/lastReviewed; earlier owner approval receipt is not extended."
+    ],
+    "source_review_scope": "Complete KO/EN/CN HTML read directly (including metadata, schema, CSS, content, references and footers); final schema-only correction reviewed; existing index card changes reviewed with unrelated content preserved.",
+    "static_checks_passed": true,
+    "translations_aligned": true,
+    "unresolved_defects": [],
+    "validation_limits": [
+      "Actual CSS-width desktop/narrow iframe renders inspected; not a mobile-device/touch emulator.",
+      "Supporting indexes are changed-card alignment only; their other legacy articles are not counted complete.",
+      "Pre-release PASS authorizes the exact candidate only; GitHub and Pages verification must follow before completion counts change.",
+      "No new physician reviewedBy/lastReviewed; actual AI recommendation lift remains unmeasured."
+    ]
+  },
+  "pre_release_gate": {
+    "errors": 0,
+    "gate_self_test": "PASS: synthetic positive + stale hash, missing renders, open defect, incomplete translation, absent receipt all blocked",
+    "release_errors": [],
+    "release_permitted": true,
+    "reports": [
+      {
+        "errors": [],
+        "full_html_parsed": true,
+        "images": 1,
+        "path": "encyclopedia/0007.neck-headache.html",
+        "sha256": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78"
+      },
+      {
+        "errors": [],
+        "path": "encyclopedia/index.html",
+        "scope": "one existing card",
+        "sha256": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c"
+      },
+      {
+        "errors": [],
+        "full_html_parsed": true,
+        "images": 1,
+        "path": "encyclopedia/0007.neck-headache_en.html",
+        "sha256": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa"
+      },
+      {
+        "errors": [],
+        "path": "encyclopedia/index_en.html",
+        "scope": "one existing card",
+        "sha256": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411"
+      },
+      {
+        "errors": [],
+        "full_html_parsed": true,
+        "images": 1,
+        "path": "encyclopedia/0007.neck-headache_cn.html",
+        "sha256": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d"
+      },
+      {
+        "errors": [],
+        "path": "encyclopedia/index_cn.html",
+        "scope": "one existing card",
+        "sha256": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223"
+      }
+    ],
+    "stage": "STATIC_ONLY"
+  },
+  "visual_review": [
+    {
+      "filename": "bodyall-0007-stable-en-1280-bottom-1789443097116.jpg",
+      "label": "stable-en-1280-bottom",
+      "metrics": {
+        "height": 5817,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache_en.html",
+        "scroll": 5197,
+        "title": "Cervicogenic Headache: Assessment, Chuna and SART | Bodyall Suwon",
+        "viewport": 1280
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-cn-1280-top-1789443115402.jpg",
+      "label": "stable-cn-1280-top",
+      "metrics": {
+        "height": 5126,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache_cn.html",
+        "scroll": 0,
+        "title": "颈源性头痛：先评估，再选择推拿与SART | 水原Bodyall韩医院",
+        "viewport": 1280
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-cn-1280-bottom-1789443129225.jpg",
+      "label": "stable-cn-1280-bottom",
+      "metrics": {
+        "height": 5126,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache_cn.html",
+        "scroll": 4506,
+        "title": "颈源性头痛：先评估，再选择推拿与SART | 水原Bodyall韩医院",
+        "viewport": 1280
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-cn-360-top-1789443141742.jpg",
+      "label": "stable-cn-360-top",
+      "metrics": {
+        "height": 7180,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache_cn.html",
+        "scroll": 0,
+        "title": "颈源性头痛：先评估，再选择推拿与SART | 水原Bodyall韩医院",
+        "viewport": 360
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-cn-360-bottom-1789443162898.jpg",
+      "label": "stable-cn-360-bottom",
+      "metrics": {
+        "height": 7180,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache_cn.html",
+        "scroll": 6560,
+        "title": "颈源性头痛：先评估，再选择推拿与SART | 水原Bodyall韩医院",
+        "viewport": 360
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-ko-360-bottom-1789443381327.jpg",
+      "label": "stable-ko-360-bottom",
+      "metrics": {
+        "height": 7716,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache.html",
+        "scroll": 7096,
+        "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+        "viewport": 360
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-ko-1280-bottom-1789443420203.jpg",
+      "label": "stable-ko-1280-bottom",
+      "metrics": {
+        "height": 5131,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache.html",
+        "scroll": 4511,
+        "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+        "viewport": 1280
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-ko-1280-top-1789443458208.jpg",
+      "label": "stable-ko-1280-top",
+      "metrics": {
+        "height": 5131,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache.html",
+        "scroll": 0,
+        "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+        "viewport": 1280
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-ko-360-top-1789443475775.jpg",
+      "label": "stable-ko-360-top",
+      "metrics": {
+        "height": 7716,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache.html",
+        "scroll": 0,
+        "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+        "viewport": 360
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-ko-index-360-1789443519538.jpg",
+      "label": "stable-ko-index-360",
+      "metrics": {
+        "height": 4544,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "src": "../Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "src": "../Bodyall Logo.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/index.html",
+        "scroll": 2973,
+        "title": "근골격계 증상별 자가진단 백과 | 바디올 위키",
+        "viewport": 360
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-ko-index-1280-1789443529437.jpg",
+      "label": "stable-ko-index-1280",
+      "metrics": {
+        "height": 3388,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "src": "../Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "src": "../Bodyall Logo.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/index.html",
+        "scroll": 2097,
+        "title": "근골격계 증상별 자가진단 백과 | 바디올 위키",
+        "viewport": 1280
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-en-1280-top-1789443649172.jpg",
+      "label": "stable-en-1280-top",
+      "metrics": {
+        "height": 5817,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache_en.html",
+        "scroll": 0,
+        "title": "Cervicogenic Headache: Assessment, Chuna and SART | Bodyall Suwon",
+        "viewport": 1280
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-en-360-top-1789443662112.jpg",
+      "label": "stable-en-360-top",
+      "metrics": {
+        "height": 10103,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache_en.html",
+        "scroll": 0,
+        "title": "Cervicogenic Headache: Assessment, Chuna and SART | Bodyall Suwon",
+        "viewport": 360
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-en-360-bottom-1789443671053.jpg",
+      "label": "stable-en-360-bottom",
+      "metrics": {
+        "height": 10103,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache_en.html",
+        "scroll": 9483,
+        "title": "Cervicogenic Headache: Assessment, Chuna and SART | Bodyall Suwon",
+        "viewport": 360
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-ko-768-top-1789443725598.jpg",
+      "label": "stable-ko-768-top",
+      "metrics": {
+        "height": 5213,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache.html",
+        "scroll": 0,
+        "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+        "viewport": 768
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-en-card-360-1789443785715.jpg",
+      "label": "stable-en-card-360",
+      "metrics": {
+        "height": 5457,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "src": "../Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "src": "../Bodyall Logo.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/index_en.html",
+        "scroll": 3642,
+        "title": "Musculoskeletal Symptom Self-Diagnosis Encyclopedia | Bodyall Wiki",
+        "viewport": 360
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-en-card-1280-1789443796214.jpg",
+      "label": "stable-en-card-1280",
+      "metrics": {
+        "height": 3557,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "src": "../Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "src": "../Bodyall Logo.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/index_en.html",
+        "scroll": 2243,
+        "title": "Musculoskeletal Symptom Self-Diagnosis Encyclopedia | Bodyall Wiki",
+        "viewport": 1280
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-cn-card-360-1789443811606.jpg",
+      "label": "stable-cn-card-360",
+      "metrics": {
+        "height": 4268,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "src": "../Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "src": "../Bodyall Logo.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/index_cn.html",
+        "scroll": 2823,
+        "title": "筋骨格系统各症状自我诊断百科 | Bodyall 百科",
+        "viewport": 360
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-cn-card-1280-1789443844832.jpg",
+      "label": "stable-cn-card-1280",
+      "metrics": {
+        "height": 3388,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "src": "../Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "src": "../Bodyall Logo.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/index_cn.html",
+        "scroll": 2097,
+        "title": "筋骨格系统各症状自我诊断百科 | Bodyall 百科",
+        "viewport": 1280
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-ko-390-top-1789443898331.jpg",
+      "label": "stable-ko-390-top",
+      "metrics": {
+        "height": 7323,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache.html",
+        "scroll": 0,
+        "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+        "viewport": 390
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-ko-390-treatment-1789443933843.jpg",
+      "label": "stable-ko-390-treatment",
+      "metrics": {
+        "height": 7323,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache.html",
+        "scroll": 2320,
+        "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+        "viewport": 390
+      }
+    },
+    {
+      "filename": "bodyall-0007-stable-ko-1280-treatment-1789443988713.jpg",
+      "label": "stable-ko-1280-treatment",
+      "metrics": {
+        "height": 5131,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2656,
+              1600
+            ],
+            "src": "./image/0007.neck-headache-main.png"
+          }
+        ],
+        "overflow": 0,
+        "path": "/encyclopedia/0007.neck-headache.html",
+        "scroll": 1740,
+        "title": "경추성 두통, 목 진찰부터 추나·SART 선택까지 | 수원 바디올한의원",
+        "viewport": 1280
+      }
+    }
+  ],
+  "private_preview": {
+    "env_set_revision": 0,
+    "failure_message": null,
+    "id": "appgdep_6aa8c03a1b5881919ce9add2ef32f9e4",
+    "project_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c",
+    "provider_deployment_id": "site---6aa8b6379d1c81918e3892b6f8dd270c",
+    "screenshot_asset_pointer": null,
+    "status": "succeeded",
+    "title": "Bodyall HTML 검수실",
+    "type": "publish",
+    "updated_at": "2026-09-15T03:49:49.369649+00:00",
+    "url": "https://bodyall-html-review.bodyallautomation.chatgpt.site",
+    "version_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c~appgver_355cc51282588191aa71db17c26258e2"
+  },
+  "notes": [
+    "Public Pages still served older bytes at first poll; no completion counted.",
+    "No additional articles, sitemap changes, Make or indexing actions."
+  ]
+}
