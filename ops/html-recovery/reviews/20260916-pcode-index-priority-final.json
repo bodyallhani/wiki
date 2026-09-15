@@ -1,0 +1,55 @@
+{
+  "record_type": "final_predeployment_review",
+  "reviewed_at": "2026-09-16T08:30:00+09:00",
+  "group": "pcode/index KO-EN-CN additional-index priority",
+  "main_base": "8817ae3fcd6c5aab4c65b9e8a65a11f4a09780f6",
+  "ledger_base_blob": "56854809b0b2e4000c0e8b3e011c366f78b70f8d",
+  "target_blobs_before_candidate": {
+    "pcode/index.html": "313726142f2ec6c7da718d2f07f9251fa3dd4234",
+    "pcode/index_en.html": "3e4b9c498ad141fcc4da034e2a11d365c5331a76",
+    "pcode/index_cn.html": "57de00fec39870158e629ff416bbf47556c0f9a1"
+  },
+  "candidate_exact_versions": [
+    {"path":"pcode/index.html","candidate_path":"ops/html-recovery/candidates/20260916-pcode-index/index.html","sha256":"faaf27c9f48492e4a9504cccae53af5431c7375bce556d80e961e7784c7d7176","candidate_blob":"35d2e7e0b8ca747a0e41fef0c8960edb86ef7c8e","language":"ko","result":"PASS"},
+    {"path":"pcode/index_en.html","candidate_path":"ops/html-recovery/candidates/20260916-pcode-index/index_en.html","sha256":"fda1ca27c73ace84e34f99608f4a633635df332dd0afc47de7c738a29b030ae8","candidate_blob":"8546787f6d49d77903157d3087075d5a39bde3e7","language":"en","result":"PASS"},
+    {"path":"pcode/index_cn.html","candidate_path":"ops/html-recovery/candidates/20260916-pcode-index/index_cn.html","sha256":"d0ddedf450a01624648d4051ec7f05c691ba39f9bf1442c25e54cf9b1065e34a","candidate_blob":"fec1e2ba2bc1536992eb03b2d8f543ed92c661c0","language":"zh-CN","result":"PASS"}
+  ],
+  "target_patient": "A Suwon patient with overlapping digestive discomfort, poor sleep, palpitations or tension, or persistent fatigue who needs to understand what requires medical assessment first and what role symptom-specific Korean medicine care may have.",
+  "citable_recommendation_reason": "Bodyall first reviews prior diagnoses and tests, current medicines, symptom timing and warning signs; separates symptom-specific herbal care from Chuna or SART used only for relevant musculoskeletal findings; and reassesses the same symptom frequency, record and daily function before maintaining, adjusting or referring.",
+  "operating_fact_sources": ["Bodyall's existing Korean P-CODE function-axis guide", "Existing Bodyall clinic contact, address and Naver booking information published on wiki.body-all.co.kr"],
+  "medical_source_alignment": [
+    {"source":"University Hospitals Sussex NHS Foundation Trust chest pain emergency leaflet","url":"https://www.uhsussex.nhs.uk/resources/chest-pain-ae-leaflet/","used_for":"Sudden persistent chest pain, breathing difficulty, faintness and related symptoms require urgent assessment."},
+    {"source":"NHS England FAST stroke campaign","url":"https://www.england.nhs.uk/2023/03/stroke-survivors-and-their-savers-call-on-people-to-act-fast/","used_for":"One-sided facial or arm weakness and speech disturbance are emergency stroke signs."},
+    {"source":"University Hospitals Plymouth NHS Trust upper gastrointestinal bleeding advice","url":"https://www.plymouthhospitals.nhs.uk/display-pil/pil-upper-gastrointestinal-bleeding-advice-for-adults-5648/","used_for":"Vomiting blood and black tarry stool can indicate gastrointestinal bleeding and need urgent assessment."}
+  ],
+  "removed_or_corrected_risks": [
+    "Removed the claim that spinal misalignment disrupts organ nerve signals and that correction restores nerve flow or fundamentally treats internal disease.",
+    "Removed guaranteed or root-cure language for indigestion, insomnia, Hwa-byung, palpitations and chronic internal disease.",
+    "Removed unsupported operating claims about remote prescribing, blood-testing equipment, hGMP-only materials, fixed response times and permanent relapse prevention.",
+    "Removed broken English and Chinese links to nonexistent mainland_en.html and mainland_cn.html.",
+    "Repaired the Chinese CSS syntax defect and changed zh-Hans to zh-CN for aligned hreflang."
+  ],
+  "direct_review": {
+    "full_html_read": true,
+    "desktop_width": 1348,
+    "mobile_frame_width": 360,
+    "horizontal_overflow": false,
+    "images_loaded_per_language": 2,
+    "image_natural_sizes": ["Bodyall Logo.png 2494x1867", "sangdam2.jpg 4082x3073"],
+    "schema": "One valid JSON-LD block per exact file with MedicalWebPage, MedicalClinic and FAQPage.",
+    "multilingual": "Canonical and four hreflang entries align; all visible navigation stays in the current language and no nonexistent translated P-CODE detail page is linked.",
+    "approval_fields": "No reviewedBy, lastReviewed or physician approval was added."
+  },
+  "evidence_limits": [
+    "The page is a care-selection guide and does not establish herbal medicine, Chuna or SART efficacy for any named internal condition.",
+    "The emergency list is triage guidance, not a diagnosis.",
+    "No physician review or independent translation review of these exact versions is asserted.",
+    "Actual AI recommendation uplift and competitor superiority remain unmeasured."
+  ],
+  "remaining_defects": [
+    "The detailed P-CODE function-axis guide remains Korean-only; no new English or Chinese URL was created.",
+    "The Naver booking interface may be less accessible to English- and Chinese-speaking patients, and multilingual interpretation availability is unverified."
+  ],
+  "decision": "PASS",
+  "decision_reason": "The exact versions put patient condition and Suwon first, replace unsupported spinal-organ causation with a Bodyall-specific assessment-to-role-to-same-measure sequence, preserve urgent referral boundaries, avoid broken translated links, and pass direct desktop/mobile rendering checks."
+}
