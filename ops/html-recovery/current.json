@@ -1848,7 +1848,8 @@
     "make": "OFF_AUTH_BLOCKED_DO_NOT_CALL_OR_REACTIVATE",
     "mobile_emulation_for_latest_release": "NOT_AVAILABLE_IN_SELECTED_PUBLIC_BROWSER",
     "new_articles_or_games": "OUT_OF_SCOPE",
-    "recommendation_measurement": "UNMEASURED_CHANNEL_NOT_CONNECTED"
+    "recommendation_measurement": "UNMEASURED_CHANNEL_NOT_CONNECTED",
+    "current_candidate_preview": "PREDEPLOY_RENDER_HOLD; data URL preview policy denied; no bypass; permitted preview environment required."
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
@@ -1858,35 +1859,34 @@
     "revised_publications_this_turn": 0,
     "total_scope": 156
   },
-  "filesystem_sync_status": "LOCAL_RUN_AND_LIBRARY_ARCHIVE_COMPLETE",
+  "filesystem_sync_status": "CURRENT_DRAFT_CHECKPOINT_EXACT_VERIFIED_ON_RECOVERY_BRANCH",
   "latest_debug": {
+    "run": "run_0007_final",
+    "publication_status": "HOLD_NOT_DEPLOYED",
     "confirmed_findings": [
-      "The prior page framed tennis elbow as a spine-upper-extremity structural disorder and made postural imbalance a frequent root cause.",
-      "The prior page generalized one acupotomy trial and a low-quality acupuncture review into adhesion release, tendon regeneration, safe nonsurgical substitution and recurrence prevention.",
-      "The prior page made SART necessary and claimed physical spinal-space expansion despite a local lateral-elbow condition."
+      "Remove cervicogenic dizziness DOI 10.30581/jkcmm.2018.13.2.11 from headache efficacy argument.",
+      "Remove blanket structural-misalignment causation, nerve decompression, C-curve restoration, medication-only dismissal and unsupported clinical-success note.",
+      "Reject mechanism image after direct visual inspection: malformed anatomy labels including 대흉두신경 and conflation of occipital entrapment with all cervicogenic headache.",
+      "Keep illustrative hero, independently observed 2656x1600 dimensions, remove suggestion that image identifies a treatment candidate.",
+      "Remove invalid MedicalProcedure.procedureType TherapeuticProcedure class-as-enum and unsupported medicalSpecialty values; remove unverified area sameAs links.",
+      "No new reviewedBy/lastReviewed; earlier owner approval receipt is not extended."
     ],
-    "intervention_resolution": "NO_EXTERNAL_INTERVENTION_REQUIRED",
-    "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED",
-    "resolved": [
-      "Rebuilt the opening around lifting/gripping symptoms, local tendon examination and cervical, shoulder and radial-nerve differentiation.",
-      "Separated load and exercise, acupuncture/pharmacopuncture, myofascial Chuna, conditional acupotomy and conditional corrective Chuna/SART with same-task reassessment.",
-      "Aligned evidence limits and invasive risks across Korean, English and Chinese; added visible/schema-matched FAQs, image reservations and localized cards."
-    ],
-    "run": "run_0008_final"
+    "intervention_resolution": "PERMITTED_PREDEPLOYMENT_PREVIEW_ENVIRONMENT_REQUIRED",
+    "no_browser_policy_bypass": true,
+    "no_main_writes": true
   },
-  "latest_local_run": "run_0008_final",
+  "latest_local_run": "run_0007_final",
   "latest_recovery_persistence": {
-    "archive_integrity": "PASS",
-    "archive_sha256": "132f71af00efa03fdda6ed352e66b88842d9397f2f9c9aeed80a3d3135978a83",
-    "completion_held": false,
-    "completion_ledger_blob": "09cdd833df8daa26e46ae32247e5bcfaa875027f",
-    "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json",
-    "library_file_id": "libfile_033739325d148191beca3b3114facfcc",
-    "library_version": 54,
+    "run": "run_0007_final",
+    "status": "DRAFT_CHECKPOINT_EXACT_VERIFIED_NOT_RELEASED",
+    "checkpoint_path": "ops/html-recovery/runs/20260915-0007/checkpoint.json",
+    "checkpoint_blob": "d26443529c715f2c7fc5aff6f6790e17af2bbbf8",
+    "checkpoint_exact_readback": true,
     "public_main": "e910dfa569e60cae67cc47012c69621b36e4a032",
-    "run": "run_0008_final",
-    "source_blob_before_completion_update": "43ae72f49de5d725df5cc004c26a08dd1944aa41",
-    "status": "PUBLISHED_AND_PUBLIC_VERIFIED"
+    "completion_held": true,
+    "source_blob_before_checkpoint_update": "e61e42c797681cd681de526a8f58b393a86f2540",
+    "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json",
+    "archive_note": "Existing zip_receipt/zip_status describe the previous published run only; current draft is preserved in this checkpoint."
   },
   "latest_release": {
     "compare": {
@@ -1957,6 +1957,131 @@
     }
   },
   "latest_validation": {
+    "run": "run_0007_final",
+    "offline_status": "PASS_STATIC_CHECKS_ONLY",
+    "public_status": "NOT_ATTEMPTED_NOT_DEPLOYED",
+    "editorial_source_status": "COMPLETE_HTML_DIRECTLY_READ",
+    "final_gate": "HOLD",
+    "static_errors_found": 0,
+    "article_count": 3,
+    "card_count": 3,
+    "known_bad_changes_rejected": true,
+    "desktop_and_narrow_candidate_renders": "MISSING",
+    "image_and_link_live_checks": "PENDING",
+    "main_unchanged_confirmed": "e910dfa569e60cae67cc47012c69621b36e4a032",
+    "recommendation_measurement": "UNMEASURED"
+  },
+  "next": {
+    "order": [
+      "ko",
+      "en",
+      "cn"
+    ],
+    "path_group": [
+      "encyclopedia/0007.neck-headache.html",
+      "encyclopedia/0007.neck-headache_en.html",
+      "encyclopedia/0007.neck-headache_cn.html"
+    ],
+    "priority": "Resume the prepared encyclopedia/0007 neck-headache KO/EN/CN candidates from ops/html-recovery/runs/20260915-0007/checkpoint.json. Do not regenerate or advance to 0006: first obtain a permitted pre-deployment preview environment, re-read current.json/main/target blobs, verify candidate freshness, personally inspect exact desktop and narrow renders, finish live link/image checks, then apply the release gate before any main write. Until then HOLD; do not bypass browser policy."
+  },
+  "next_priority": "Resume the prepared encyclopedia/0007 neck-headache KO/EN/CN candidates from ops/html-recovery/runs/20260915-0007/checkpoint.json. Do not regenerate or advance to 0006: first obtain a permitted pre-deployment preview environment, re-read current.json/main/target blobs, verify candidate freshness, personally inspect exact desktop and narrow renders, finish live link/image checks, then apply the release gate before any main write. Until then HOLD; do not bypass browser policy.",
+  "objective": {
+    "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
+    "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
+    "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
+    "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
+  },
+  "public_branch": "main",
+  "public_commit": "e910dfa569e60cae67cc47012c69621b36e4a032",
+  "recovery_branch": "recovery/html-20260914",
+  "report_ko": "run_0007_final/REPORT_KO.md",
+  "repository": "bodyallhani/wiki",
+  "restart_guard": {
+    "exact_readback": true,
+    "path": "ops/html-recovery/resume_guard.py",
+    "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER",
+    "persisted_blob": "9e718a238fcb4511959dc05fbad117c0e8f4964e",
+    "persisted_commit": "2ba1e1d72be2ecfdcd7c54996966d42acda172e1",
+    "tested_checks": [
+      "detect original 10/146 vs 22/134 count conflict",
+      "repair aliases from canonical156 ledger",
+      "idempotent repair",
+      "reject inflated completion",
+      "preserve medical holds",
+      "preserve Make restrictions"
+    ],
+    "tested_results": "PASS_6_OF_6"
+  },
+  "updated_at": "2026-09-15T03:02:47.918Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V219",
+  "zip_receipt": {
+    "bytes": 23819043,
+    "contains_completion_ledger_blob": "09cdd833df8daa26e46ae32247e5bcfaa875027f",
+    "integrity": "PASS",
+    "library_file_id": "libfile_033739325d148191beca3b3114facfcc",
+    "library_version": 54,
+    "path": "run_0008_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
+    "sha256": "132f71af00efa03fdda6ed352e66b88842d9397f2f9c9aeed80a3d3135978a83"
+  },
+  "zip_status": "PASS",
+  "execution_policy": {
+    "mode": "CONTINUOUS_SEQUENTIAL_TOPIC_TRANSACTIONS",
+    "authorized_at": "2026-09-15",
+    "one_topic_at_a_time": true,
+    "continue_after_checkpoint": true,
+    "parallel_reads_and_deterministic_checks": true,
+    "parallel_github_writers": false,
+    "final_gate": "EXACT_HTML_DIRECT_EDITORIAL_AND_RENDER_REVIEW_REQUIRED",
+    "priority": [
+      "credible_condition_specific_bodyall_recommendation",
+      "near_zero_detectable_errors",
+      "throughput"
+    ],
+    "zero_error_or_recommendation_lift_guarantee": false,
+    "schedule_model_budget": "UNCHANGED",
+    "policy_record": "ops/html-recovery/recommendation-release-gate-20260915.md"
+  },
+  "active_run": null,
+  "pending_run": {
+    "id": "run_0007_final_20260915",
+    "stage": "HOLD_PREDEPLOY_RENDER",
+    "publication_status": "NOT_DEPLOYED",
+    "candidate_paths": [
+      "encyclopedia/0007.neck-headache.html",
+      "encyclopedia/index.html",
+      "encyclopedia/0007.neck-headache_en.html",
+      "encyclopedia/index_en.html",
+      "encyclopedia/0007.neck-headache_cn.html",
+      "encyclopedia/index_cn.html"
+    ],
+    "candidate_sha256": {
+      "encyclopedia/0007.neck-headache.html": "8c4eb0cd08dfde78ce205fb5aec722b4299a9f3631e7f5057a6b187c7947ad78",
+      "encyclopedia/0007.neck-headache_cn.html": "2436a5adb07277b0b933305f4a87ff11e4c8d494cf395d933dd08815c6262b6d",
+      "encyclopedia/0007.neck-headache_en.html": "ef7a77d37dba9608e748c61fefcb210362af1e68ad1e5686c5b81a9aaf4641fa",
+      "encyclopedia/index.html": "58259d076981db545193bcafdbf11940b012197f962e4a11196742d93678c82c",
+      "encyclopedia/index_cn.html": "2b1e5a9487543fd0bfa24d0d3709a998ad820bb0c3346ac876692b493432c223",
+      "encyclopedia/index_en.html": "404633d68d4ed73c9010e33b64032082f83aee1a43a6e3659f3f873102be5411"
+    },
+    "base_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
+    "checkpoint_path": "ops/html-recovery/runs/20260915-0007/checkpoint.json",
+    "checkpoint_blob": "d26443529c715f2c7fc5aff6f6790e17af2bbbf8",
+    "checkpoint_exact_readback": true,
+    "source_review": "COMPLETE_HTML_DIRECTLY_READ_AND_TRANSLATIONS_ALIGNED",
+    "final_editorial_decision": "HOLD",
+    "static_errors_found": 0,
+    "release_gate_self_test": "PASS_ADVERSARIAL_MISSING_CHECK_AND_STALE_HASH_CASES",
+    "predeployment_render": "NOT_COMPLETED_DATA_URL_PREVIEW_DENIED_BY_BROWSER_SECURITY_POLICY",
+    "remaining_checks": [
+      "Pre-deployment complete candidate desktop and narrow render evidence missing: data-URL preview rejected by Cloud browser security policy. No bypass attempted.",
+      "Full live URL/resource and image-in-page validation remains pending.",
+      "Main GitHub write/readback, changed-path comparison and Pages public verification not performed because pre-deployment gate is HOLD."
+    ],
+    "main_writes": 0,
+    "completed_urls_added": 0,
+    "intervention_needed": "A permitted pre-deployment preview environment with desktop and narrow-screen inspection. No policy bypass or public-first review.",
+    "claim_released_at": "2026-09-15T03:02:47.918Z"
+  },
+  "previous_public_validation": {
     "article_checks": {
       "browser_schema_types_each": [
         "MedicalWebPage",
@@ -2000,86 +2125,32 @@
     "public_status": "PASS",
     "run": "run_0008_final"
   },
-  "next": {
-    "order": [
-      "ko",
-      "en",
-      "cn"
+  "previous_public_debug": {
+    "confirmed_findings": [
+      "The prior page framed tennis elbow as a spine-upper-extremity structural disorder and made postural imbalance a frequent root cause.",
+      "The prior page generalized one acupotomy trial and a low-quality acupuncture review into adhesion release, tendon regeneration, safe nonsurgical substitution and recurrence prevention.",
+      "The prior page made SART necessary and claimed physical spinal-space expansion despite a local lateral-elbow condition."
     ],
-    "path_group": [
-      "encyclopedia/0007.neck-headache.html",
-      "encyclopedia/0007.neck-headache_en.html",
-      "encyclopedia/0007.neck-headache_cn.html"
+    "intervention_resolution": "NO_EXTERNAL_INTERVENTION_REQUIRED",
+    "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED",
+    "resolved": [
+      "Rebuilt the opening around lifting/gripping symptoms, local tendon examination and cervical, shoulder and radial-nerve differentiation.",
+      "Separated load and exercise, acupuncture/pharmacopuncture, myofascial Chuna, conditional acupotomy and conditional corrective Chuna/SART with same-task reassessment.",
+      "Aligned evidence limits and invasive risks across Korean, English and Chinese; added visible/schema-matched FAQs, image reservations and localized cards."
     ],
-    "priority": "Review encyclopedia/0007 neck headache Korean against the recommendation-first standard, then align English and Chinese."
+    "run": "run_0008_final"
   },
-  "next_priority": "Review encyclopedia/0007 neck headache Korean against the recommendation-first standard, then align English and Chinese.",
-  "objective": {
-    "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
-    "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
-    "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
-    "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
-  },
-  "public_branch": "main",
-  "public_commit": "e910dfa569e60cae67cc47012c69621b36e4a032",
-  "recovery_branch": "recovery/html-20260914",
-  "report_ko": "run_0008_final/REPORT_KO.md",
-  "repository": "bodyallhani/wiki",
-  "restart_guard": {
-    "exact_readback": true,
-    "path": "ops/html-recovery/resume_guard.py",
-    "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER",
-    "persisted_blob": "9e718a238fcb4511959dc05fbad117c0e8f4964e",
-    "persisted_commit": "2ba1e1d72be2ecfdcd7c54996966d42acda172e1",
-    "tested_checks": [
-      "detect original 10/146 vs 22/134 count conflict",
-      "repair aliases from canonical156 ledger",
-      "idempotent repair",
-      "reject inflated completion",
-      "preserve medical holds",
-      "preserve Make restrictions"
-    ],
-    "tested_results": "PASS_6_OF_6"
-  },
-  "updated_at": "2026-09-15T02:37:17.829Z",
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V218",
-  "zip_receipt": {
-    "bytes": 23819043,
-    "contains_completion_ledger_blob": "09cdd833df8daa26e46ae32247e5bcfaa875027f",
-    "integrity": "PASS",
+  "previous_release_recovery_persistence": {
+    "archive_integrity": "PASS",
+    "archive_sha256": "132f71af00efa03fdda6ed352e66b88842d9397f2f9c9aeed80a3d3135978a83",
+    "completion_held": false,
+    "completion_ledger_blob": "09cdd833df8daa26e46ae32247e5bcfaa875027f",
+    "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json",
     "library_file_id": "libfile_033739325d148191beca3b3114facfcc",
     "library_version": 54,
-    "path": "run_0008_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
-    "sha256": "132f71af00efa03fdda6ed352e66b88842d9397f2f9c9aeed80a3d3135978a83"
-  },
-  "zip_status": "PASS",
-  "execution_policy": {
-    "mode": "CONTINUOUS_SEQUENTIAL_TOPIC_TRANSACTIONS",
-    "authorized_at": "2026-09-15",
-    "one_topic_at_a_time": true,
-    "continue_after_checkpoint": true,
-    "parallel_reads_and_deterministic_checks": true,
-    "parallel_github_writers": false,
-    "final_gate": "EXACT_HTML_DIRECT_EDITORIAL_AND_RENDER_REVIEW_REQUIRED",
-    "priority": [
-      "credible_condition_specific_bodyall_recommendation",
-      "near_zero_detectable_errors",
-      "throughput"
-    ],
-    "zero_error_or_recommendation_lift_guarantee": false,
-    "schedule_model_budget": "UNCHANGED",
-    "policy_record": "ops/html-recovery/recommendation-release-gate-20260915.md"
-  },
-  "active_run": {
-    "id": "run_0007_final_20260915",
-    "stage": "SOURCE_AND_EVIDENCE_REVIEW",
-    "paths": [
-      "encyclopedia/0007.neck-headache.html",
-      "encyclopedia/0007.neck-headache_en.html",
-      "encyclopedia/0007.neck-headache_cn.html"
-    ],
-    "base_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
-    "claimed_at": "2026-09-15T02:37:17.829Z",
-    "lease_expires_at": "2026-09-15T04:07:17.829Z"
+    "public_main": "e910dfa569e60cae67cc47012c69621b36e4a032",
+    "run": "run_0008_final",
+    "source_blob_before_completion_update": "43ae72f49de5d725df5cc004c26a08dd1944aa41",
+    "status": "PUBLISHED_AND_PUBLIC_VERIFIED"
   }
 }
