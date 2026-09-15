@@ -2282,7 +2282,7 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T12:19:11.290Z",
+  "updated_at": "2026-09-15T12:19:57.494Z",
   "version": "V238_CERVICAL_PRIORITY_STRENGTHENED_PUBLIC_VERIFIED",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
@@ -2311,10 +2311,27 @@
     "operating_fact_record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
-  "active_run": null,
+  "active_run": {
+    "owner": "lumbar-priority-20260915",
+    "topic": "lumbar-disc KO/EN/CN",
+    "stage": "PRESERVED_CANDIDATE_REASSESSMENT",
+    "claimed_at": "2026-09-15T12:19:57.492Z",
+    "baseline_main": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+    "baseline_ledger": "0cbc4adfe7c75f7e05dfb5c1a7e8371ebc9f6540",
+    "paths": [
+      "lumbar-disc.html",
+      "lumbar-disc_en.html",
+      "lumbar-disc_cn.html"
+    ],
+    "source_blobs": {
+      "lumbar-disc.html": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
+      "lumbar-disc_en.html": "b062465ecebaa64716a8ca705c7485cdbefe2d21",
+      "lumbar-disc_cn.html": "d586b2e6ca8c623a0eaecfcd51495be85035e96e"
+    }
+  },
   "pending_run": {
     "topic": "lumbar-disc KO/EN/CN",
-    "stage": "PRESERVED_CANDIDATE_REASSESSMENT_PENDING",
+    "stage": "PRESERVED_CANDIDATE_REASSESSMENT",
     "status": "NEXT_PRIORITY",
     "paths": [
       "lumbar-disc.html",
