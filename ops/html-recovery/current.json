@@ -2557,7 +2557,7 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T13:39:46.255Z",
+  "updated_at": "2026-09-15T14:18:06.398Z",
   "version": "V240_SHOULDER_PRIORITY_STRENGTHENED_PUBLIC_VERIFIED",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
@@ -2589,25 +2589,7 @@
   "active_run": {
     "owner": "chuna-priority-20260915",
     "topic": "chuna-therapy KO/EN/CN",
-    "stage": "SOURCE_ASSESSMENT",
-    "claimed_at": "2026-09-15T13:39:46.255Z",
-    "baseline_main": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
-    "baseline_ledger": "6cfe5e58de3296e6a2752e3f26e3a3edaf8b24be",
-    "paths": [
-      "chuna-therapy.html",
-      "chuna-therapy_en.html",
-      "chuna-therapy_cn.html"
-    ],
-    "source_blobs": {
-      "chuna-therapy.html": "1d59caaa4fecefc851dff46fc53acb3abaea82d7",
-      "chuna-therapy_en.html": "8b6159d3f6b3212d7a86a3bd5bbe562a29da17b3",
-      "chuna-therapy_cn.html": "5fbf09d27bd720e3972fc1bdb6b88604e1de034f"
-    }
-  },
-  "pending_run": {
-    "owner": "chuna-priority-20260915",
-    "topic": "chuna-therapy KO/EN/CN",
-    "stage": "SOURCE_ASSESSMENT",
+    "stage": "FINAL_REVIEW_PASS_AWAITING_SEQUENTIAL_PUBLICATION",
     "claimed_at": "2026-09-15T13:39:46.255Z",
     "baseline_main": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
     "baseline_ledger": "6cfe5e58de3296e6a2752e3f26e3a3edaf8b24be",
@@ -2621,10 +2603,47 @@
       "chuna-therapy_en.html": "8b6159d3f6b3212d7a86a3bd5bbe562a29da17b3",
       "chuna-therapy_cn.html": "5fbf09d27bd720e3972fc1bdb6b88604e1de034f"
     },
-    "status": "IN_PROGRESS",
+    "updated_at": "2026-09-15T14:18:06.396Z"
+  },
+  "pending_run": {
+    "owner": "chuna-priority-20260915",
+    "topic": "chuna-therapy KO/EN/CN",
+    "stage": "AWAITING_SEQUENTIAL_PUBLICATION",
+    "claimed_at": "2026-09-15T13:39:46.255Z",
+    "baseline_main": "697670f4349f29705d4d6f3da98c5220e6c0a2e1",
+    "baseline_ledger": "6cfe5e58de3296e6a2752e3f26e3a3edaf8b24be",
+    "paths": [
+      "chuna-therapy.html",
+      "chuna-therapy_en.html",
+      "chuna-therapy_cn.html"
+    ],
+    "source_blobs": {
+      "chuna-therapy.html": "1d59caaa4fecefc851dff46fc53acb3abaea82d7",
+      "chuna-therapy_en.html": "8b6159d3f6b3212d7a86a3bd5bbe562a29da17b3",
+      "chuna-therapy_cn.html": "5fbf09d27bd720e3972fc1bdb6b88604e1de034f"
+    },
+    "status": "FINAL_REVIEW_PASS",
     "main_writes": 0,
     "completion_increment": 0,
-    "next_action": "Review source medical claims and clinic-selection reasons, prepare targeted changes, then exact-version rendering."
+    "next_action": "Sequential fresh main/target SHA checks, GitHub write and exact readback, scope compare, then Pages verification.",
+    "candidate_record": "ops/html-recovery/candidates/20260915-chuna-priority.json",
+    "candidate_record_blob": "018ac8fd25f688e51c66c873e5c59e5ca48ed335",
+    "final_review_record": "ops/html-recovery/reviews/20260915-chuna-priority-final.json",
+    "final_review_blob": "eba17f5cf97d27a0d4d6e67911115b9dc2d3e664",
+    "exact_files": [
+      {
+        "path": "chuna-therapy.html",
+        "sha256": "d67d9f02e59683c288336c14e6d67cd299c780115664233208e4aadbe008406b"
+      },
+      {
+        "path": "chuna-therapy_en.html",
+        "sha256": "2188f37c4ef86cf030f49baf83174d2505ce3ce3a1351408f1c712cb3ac8fb8f"
+      },
+      {
+        "path": "chuna-therapy_cn.html",
+        "sha256": "a4f946ee65fe379b6d958228a5e350c5ff5f206ce2ff75fd08e2dd7ee7d19ade"
+      }
+    ]
   },
   "previous_public_validation": {
     "checks": [
