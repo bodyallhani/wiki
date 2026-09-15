@@ -1,0 +1,11 @@
+{
+  "record_type":"priority_group_release",
+  "released_at":"2026-09-16T09:08:00+09:00",
+  "group":"spine/index.html additional-index priority",
+  "main_base":"f5a03df2f5b9a0cf2f7cd60b810770bba83630b7",
+  "main_final":"a7d10f1aabd0ea86fd0d388a77365b338d747938",
+  "commit_compare":{"ahead_by":1,"changed_files":["spine/index.html"],"only_intended_files_changed":true},
+  "files":[{"path":"spine/index.html","url":"https://wiki.body-all.co.kr/spine/index.html","publication_commit":"a7d10f1aabd0ea86fd0d388a77365b338d747938","git_blob":"a1aa3e01d49f420deac941d9e6bb0d94281b1844","sha256":"0d535de3e4722338bb2f8c0a42bd7b0941362ff67cc66e1e24b30d9cb463f7ca","public_sha256":"0d535de3e4722338bb2f8c0a42bd7b0941362ff67cc66e1e24b30d9cb463f7ca","status":"LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED"}],
+  "verification":{"github_readback_exact":true,"pages_source_exact_sha256":true,"public_desktop_width":1348,"public_mobile_width":360,"horizontal_overflow":false,"steps":4,"cards":4,"faq":3,"images_loaded":2,"canonical":1,"hreflang":2,"jsonld":1,"candidate_harness":"ops/html-recovery/review-harnesses/20260916-spine-index-360.html","public_harness":"ops/html-recovery/review-harnesses/20260916-spine-index-public-360.html","review_receipt":"ops/html-recovery/reviews/20260916-spine-index-priority-final.json"},
+  "limits":["This release does not establish clinical efficacy or superiority.","The 40,000 figure is cumulative correction patients through December 2025, not outcomes, visits or SART-only results.","No physician approval of this exact version is asserted.","Actual AI recommendation uplift remains unmeasured."]
+}
