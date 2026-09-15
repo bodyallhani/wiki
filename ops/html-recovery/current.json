@@ -2134,14 +2134,26 @@
       "DOM boolean-attribute serialization normalized for source/public semantic comparison",
       "Public lazy-loaded images checked after navigation to their actual positions"
     ],
-    "remaining_blockers_in_reworked_articles": []
+    "remaining_blockers_in_reworked_articles": [],
+    "foot_release_corrections": [
+      "Incorrect talus-location diagram removed after direct image inspection",
+      "Three index JSON-LD missing closing braces repaired; final exact versions rendered and public-parsed"
+    ],
+    "next_topic_findings": [
+      "Protocol used beyond results evidence",
+      "Neck/SART finger root-cause and nerve-normalization claims",
+      "Persistent small-joint swelling referral and image verification missing"
+    ]
   },
   "latest_local_run": "Remote receipt and candidate pack are authoritative; prior scratch/ZIP not a restart baseline",
   "latest_recovery_persistence": {
     "receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json",
     "receipt_blob": "25e362c1be60bccdc2aa3fe8f6ce83dbf57048dd",
     "receipt_exact_readback": true,
-    "ledger_exact_readback_required": true
+    "ledger_exact_readback_required": true,
+    "audit_record": "ops/html-recovery/reviews/20260915-stiff-hands-source-audit.json",
+    "audit_blob": "ed50d33857501a175350837b5f84fb8a3138ffad",
+    "audit_exact_readback": true
   },
   "latest_release": {
     "topic": "encyclopedia/0003.foot-pain strengthened first-completion",
@@ -2180,8 +2192,8 @@
     "actual_ai_recommendation_lift": "UNMEASURED",
     "receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json"
   },
-  "next": "Continue phase1 initially uncompleted URLs: encyclopedia/0002.stiff-hands.html KO→EN→CN, then0001 buttock pain. Remaining68 first; historical85 rework deferred,3 already reworked82 pending. Use current operating_facts (40000 correction-care patients through December2025, MET/ultrasound); no clinical-outcome or exclusivity extrapolation. Fresh ledger/main/blob, full exact HTML+render editorial review, sequential SHA-locked writes, GitHub/public verification, exact ledger checkpoint; continue next subject when safe.",
-  "next_priority": "Continue phase1 initially uncompleted URLs: encyclopedia/0002.stiff-hands.html KO→EN→CN, then0001 buttock pain. Remaining68 first; historical85 rework deferred,3 already reworked82 pending. Use current operating_facts (40000 correction-care patients through December2025, MET/ultrasound); no clinical-outcome or exclusivity extrapolation. Fresh ledger/main/blob, full exact HTML+render editorial review, sequential SHA-locked writes, GitHub/public verification, exact ledger checkpoint; continue next subject when safe.",
+  "next": "Resume phase1 encyclopedia/0002.stiff-hands.html KO→EN→CN from source/citation audit ops/html-recovery/reviews/20260915-stiff-hands-source-audit.json. Fresh current.json/main/article+index blobs and single-writer ownership before candidates. Remove unsupported synovial-fluid hardening, universal neck/SART cause and protocol-as-results claims; put swollen-joint differential/referral and confirmed Bodyall selection/reassessment first. Inspect images, align language cards/schema, full exact HTML+desktop/narrow final review before sequential SHA-locked publication and Pages checks. Then0001 buttock pain and remaining68 first; historical82 rework stays deferred. Use operating_facts with exact December2025 cutoff; actual AI superiority unmeasured.",
+  "next_priority": "Resume phase1 encyclopedia/0002.stiff-hands.html KO→EN→CN from source/citation audit ops/html-recovery/reviews/20260915-stiff-hands-source-audit.json. Fresh current.json/main/article+index blobs and single-writer ownership before candidates. Remove unsupported synovial-fluid hardening, universal neck/SART cause and protocol-as-results claims; put swollen-joint differential/referral and confirmed Bodyall selection/reassessment first. Inspect images, align language cards/schema, full exact HTML+desktop/narrow final review before sequential SHA-locked publication and Pages checks. Then0001 buttock pain and remaining68 first; historical82 rework stays deferred. Use operating_facts with exact December2025 cutoff; actual AI superiority unmeasured.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2191,7 +2203,7 @@
   "public_branch": "main",
   "public_commit": "1a8376901a69f5327a1153ec97f3a189db128a45",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "작업 순서를 미완료71개 우선→기존배포85개 강화 재작업으로 변경했다. 기존 강화재작업3개와 대기82개는 보존한다. 원장 확인 운영사실은 '2025년12월까지 누적 교정 환자4만명', MET·초음파 시행이다. 진료경험 정보이며 치료성과/추천율의 증거로 사용하지 않는다. 첫 대상 족저근막염0003 세 언어의 원문·주장/번역 오류 점검을 시작했다. 이번 main 배포0개, 누적85/156·미완료71 유지. 필수 그림·화면·exact 검수가 끝나기 전 배포하지 않는다.",
+  "report_ko": "발뒤꿈치 통증 0003 한국어·영어·중국어 3개를 강화 기준으로 수정·직접 검수·배포하고 공개 본문·스키마·이미지·화면을 검증했다. GitHub 원문 exact 일치와 공개 DOM 정합성을 확인했으며 공개 HTTP 원문 바이트 일치는 미측정이다. 같은 언어 목록 카드와 기존 JSON-LD 닫는 괄호 오류를 수정했으나 목록 전체는 완료로 가산하지 않았다. 누적 88/156·미완료68, 우선 단계 완료3/71이며 기존85개 중 강화 재작업3개·대기82개는 보존한다. 누적 교정 환자4만명은 2025년12월까지 집계·원장 확인 범위로만 사용했다. 다음 손가락 뻣뻣함 0002의 세 언어 원문과 근거 점검을 이어서 수행하고 오류·수정방향을 원격 기록했다. 0002 후보 작성·그림·최종 화면검수·배포는 아직 미완료이며 완료수에 포함하지 않았다. 실제 AI 추천 증가와 경쟁사 우위는 미측정이다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2209,8 +2221,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T11:03:53.171Z",
-  "version": "V235_FOOT_PAIN_STRENGTHENED_PUBLIC_VERIFIED_88_68",
+  "updated_at": "2026-09-15T11:14:40.154Z",
+  "version": "V236_FOOT_88_68_STIFF_HANDS_SOURCE_AUDIT_CHECKPOINT",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2238,7 +2250,37 @@
     "operating_fact_record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json"
   },
   "active_run": null,
-  "pending_run": null,
+  "pending_run": {
+    "topic": "encyclopedia/0002.stiff-hands",
+    "paths": [
+      "encyclopedia/0002.stiff-hands.html",
+      "encyclopedia/0002.stiff-hands_cn.html",
+      "encyclopedia/0002.stiff-hands_en.html"
+    ],
+    "status": "HOLD_PENDING_CANDIDATE_AND_REQUIRED_REVIEW",
+    "stage": "SOURCE_AND_CITATION_AUDIT_CHECKPOINT",
+    "baseline_main": "1a8376901a69f5327a1153ec97f3a189db128a45",
+    "baseline_ledger": "e30aa1799c96e6c602929769e2477e7f5a7ac28d",
+    "source_blobs": {
+      "encyclopedia/0002.stiff-hands.html": "cf2e81921b5db3976e632fb3814f1145127dec84",
+      "encyclopedia/0002.stiff-hands_cn.html": "f9a4004e436710cfe647062ef2b107118ac6d883",
+      "encyclopedia/0002.stiff-hands_en.html": "5ffbdd130add5aaa45289642d663519cb0b2b27f"
+    },
+    "candidate_sha256": null,
+    "main_writes": 0,
+    "counted_complete": 0,
+    "audit_record": "ops/html-recovery/reviews/20260915-stiff-hands-source-audit.json",
+    "audit_blob": "ed50d33857501a175350837b5f84fb8a3138ffad",
+    "audit_exact_readback": true,
+    "missing": [
+      "Targeted KO/EN/CN candidate edits and matching cards",
+      "Actual image inspection and dimensions",
+      "Hand-topic specific comparator assessment",
+      "Whole exact HTML and desktop/narrow render final review",
+      "GitHub/public deployment validation"
+    ],
+    "next_action": "Fresh ledger/main/target and index blobs, single-writer claim, then targeted KO edits with verified evidence and operating_facts. Do not reuse source mechanism/outcome claims. No need to wait for Kwon full text if unsupported efficacy conclusions are removed."
+  },
   "previous_public_validation": {
     "article_checks": {
       "browser_schema_types_each": [
@@ -2902,7 +2944,12 @@
     "phase2_pending": 82,
     "receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json",
     "release_gate": "PASS_IN_REVIEWED_SCOPE",
-    "measured_ai_uplift": "UNMEASURED"
+    "measured_ai_uplift": "UNMEASURED",
+    "next_topic": "encyclopedia/0002.stiff-hands",
+    "next_topic_stage": "SOURCE_AND_CITATION_AUDIT_CHECKPOINT",
+    "next_topic_main_writes": 0,
+    "next_topic_completion_delta": 0,
+    "audit_record": "ops/html-recovery/reviews/20260915-stiff-hands-source-audit.json"
   },
   "previous_release": {
     "topic": "pain-spine-clinic existing-publication rework",
