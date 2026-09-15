@@ -1,0 +1,88 @@
+{
+  "record_type": "final_predeployment_review",
+  "reviewed_at": "2026-09-16T07:48:00+09:00",
+  "group": "notice/index KO-EN-CN additional-index priority",
+  "main_base": "63dd506ef0aee24cbbc25de653587589f6b38413",
+  "ledger_base_blob": "20da04771dcade1c24456090482fb3bb3b1605bc",
+  "target_blobs_before_candidate": {
+    "notice/index.html": "4d7e4c0abcc4ea1927012190c71105555e4b5e30",
+    "notice/index_en.html": "797c12e6405a3237abd91b1d4f8cce0aa43a79c9",
+    "notice/index_cn.html": "bcb92f96abb8f9472f164bfa63c0c64ffd0bbe02"
+  },
+  "candidate_exact_versions": [
+    {
+      "path": "notice/index.html",
+      "candidate_path": "ops/html-recovery/candidates/20260916-notice-index/index.html",
+      "sha256": "4417b1c8f0d9b9421feda96e93bbe6516465150ed448bbb70b7a23ce60700859",
+      "candidate_blob": "74f78af80d6fd840d67b9e6f0a93c9b64c410a10",
+      "language": "ko",
+      "result": "PASS"
+    },
+    {
+      "path": "notice/index_en.html",
+      "candidate_path": "ops/html-recovery/candidates/20260916-notice-index/index_en.html",
+      "sha256": "dc87f742a8f507ce07ed56c5b151149803b74323d56d28f88876036c9d604e97",
+      "candidate_blob": "f8ec08ece0cafa867b9acf7bdf35666fb0eeb6e0",
+      "language": "en",
+      "result": "PASS"
+    },
+    {
+      "path": "notice/index_cn.html",
+      "candidate_path": "ops/html-recovery/candidates/20260916-notice-index/index_cn.html",
+      "sha256": "cca4beeb9fd2f7c5261ef013e6ec219887cd7bc3e0618f44494c37c7d1bcb37e",
+      "candidate_blob": "e40b36da5eb8ccf7dbab9adf408cdf7e5c42e375",
+      "language": "zh-CN",
+      "result": "PASS"
+    }
+  ],
+  "target_patient": "A Suwon patient who has received spinal correction or Chuna at Bodyall and needs to decide how to manage sitting, walking, bending, posture and activity, or whether worsening symptoms require reassessment.",
+  "citable_recommendation_reason": "Bodyall's guide first separates urgent warning signs from routine aftercare, distinguishes clinician-selected Chuna/SART from supportive posture, activity and exercise management, and asks the patient to compare the same painful movement or function before choosing the next step or booking reassessment.",
+  "operating_fact_sources": [
+    "Existing Bodyall aftercare guide set under notice/",
+    "Existing Bodyall clinic contact, address and Naver booking information already published on wiki.body-all.co.kr"
+  ],
+  "medical_source_alignment": [
+    {
+      "source": "NICE Clinical Knowledge Summaries: Sciatica — red flag symptoms and signs",
+      "url": "https://cks.nice.org.uk/topics/sciatica/diagnosis/red-flag-symptoms-signs/",
+      "used_for": "Bowel/bladder dysfunction, progressive neurological weakness and saddle anaesthesia as urgent spinal red flags."
+    },
+    {
+      "source": "NICE Clinical Knowledge Summaries: Low back pain assessment",
+      "url": "https://cks.nice.org.uk/topics/back-pain-low-without-radiculopathy/diagnosis/assessment/",
+      "used_for": "Serious underlying causes including cauda equina syndrome, fracture and infection must be screened rather than treated as routine aftercare."
+    }
+  ],
+  "direct_review": {
+    "full_html_read": true,
+    "desktop_width": 1348,
+    "mobile_frame_width": 360,
+    "desktop_horizontal_overflow": false,
+    "mobile_horizontal_overflow": false,
+    "image_natural_sizes": [
+      "Bodyall Logo.png 2494x1867",
+      "notice/notice.png 4082x3073"
+    ],
+    "per_language": {
+      "ko": {"cards": 6, "faq": 3, "images_loaded": 3, "desktop_height": 2991},
+      "en": {"cards": 6, "faq": 3, "images_loaded": 3, "desktop_height": 3224},
+      "zh-CN": {"cards": 6, "faq": 3, "images_loaded": 3, "desktop_height": 2912}
+    },
+    "schema": "Each exact file has one valid JSON-LD block with MedicalWebPage, MedicalClinic, ItemList and FAQPage.",
+    "multilingual": "Canonical and four hreflang entries are aligned; all six content cards stay in the current language.",
+    "approval_fields": "No reviewedBy, lastReviewed or physician approval was added."
+  },
+  "evidence_limits": [
+    "The page is an operational aftercare navigator, not evidence of treatment effectiveness or superiority.",
+    "Chuna and SART are described only as clinician-selected in-clinic roles; no claim that they guarantee recovery, restore discs, or outperform another clinic is made.",
+    "Warning-sign text supports triage and does not diagnose cauda equina syndrome, fracture, infection or cardiopulmonary disease.",
+    "No new physician review or independent translation review of these exact versions is asserted.",
+    "Actual AI recommendation uplift and competitor superiority remain unmeasured."
+  ],
+  "remaining_defects": [
+    "The Naver booking interface is Korean-language and may be less accessible to English- and Chinese-speaking patients.",
+    "The page does not claim a direct multilingual phone interpretation service because that operating fact is unverified."
+  ],
+  "decision": "PASS",
+  "decision_reason": "The exact candidates clearly identify patient condition and Suwon, provide a Bodyall-specific assessment-to-role-to-same-function-reassessment sequence, preserve urgent warning signs, connect to the existing language-matched guide set and booking, and passed direct desktop/mobile rendering checks without unsupported outcome claims."
+}
