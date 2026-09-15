@@ -1906,34 +1906,24 @@
   },
   "filesystem_sync_status": "CURRENT_RELEASE_RECORD_EXACT_VERIFIED_ON_RECOVERY_BRANCH",
   "latest_debug": {
-    "run": "run_0007_final",
-    "publication_status": "PUBLISHED_PUBLIC_VERIFIED",
-    "confirmed_findings": [
-      "Remove cervicogenic dizziness DOI 10.30581/jkcmm.2018.13.2.11 from headache efficacy argument.",
-      "Remove blanket structural-misalignment causation, nerve decompression, C-curve restoration, medication-only dismissal and unsupported clinical-success note.",
-      "Reject mechanism image after direct visual inspection: malformed anatomy labels including 대흉두신경 and conflation of occipital entrapment with all cervicogenic headache.",
-      "Keep illustrative hero, independently observed 2656x1600 dimensions, remove suggestion that image identifies a treatment candidate.",
-      "Remove invalid MedicalProcedure.procedureType TherapeuticProcedure class-as-enum and unsupported medicalSpecialty values; remove unverified area sameAs links.",
-      "No new reviewedBy/lastReviewed; earlier owner approval receipt is not extended."
+    "fixed": [
+      "Preserved original mixed CRLF and EOF whitespace by exact source snapshot restoration, verified six Git blob SHAs.",
+      "Changed validator to read raw bytes before UTF-8 decode; stopped universal-newline hash false positives.",
+      "Added actual PNG availability/dimension gate; missing image cannot pass."
     ],
-    "intervention_resolution": "PRIVATE_PREVIEW_PERMISSION_AND_HOSTING_COMPLETED",
-    "preview_card_language_bug": "FIXED_QA_WRAPPER_ONLY; candidate bytes unchanged",
-    "browser_capture_stale_paint": "Discarded ambiguous captures; separate action/capture call boundaries and matching DOM position used",
-    "no_browser_policy_bypass": true,
-    "public_cache": "Canonical curl exact; browser cache-version query for current content",
-    "transient_proxy_timeouts": "Resolved by read-only retries",
-    "unresolved_release_defects": []
+    "remaining": [
+      "Representative 0006 image HTTP proxy CONNECT timeouts after repeated attempts; binary unsupported by current GitHub text tools.",
+      "Final exact source and render release gate still required."
+    ]
   },
-  "latest_local_run": "run_0007_final",
+  "latest_local_run": "/workspace/scratch/5408c4109307/run_0006_final",
   "latest_recovery_persistence": {
-    "run": "run_0007_final",
-    "status": "FINAL_RELEASE_RECORD_EXACT_VERIFIED",
-    "checkpoint_path": "ops/html-recovery/runs/20260915-0007/release.json",
-    "checkpoint_blob": "5f815833ca351a84455d7d37c0f0e27fb6142a14",
-    "checkpoint_exact_readback": true,
-    "public_main": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
-    "completion_held": false,
-    "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json"
+    "exact": true,
+    "path": "ops/html-recovery/runs/20260915-0006/checkpoint.json",
+    "sha": "83f25d2df3f488ab444f525c10bfe5e1e04a987e",
+    "status": "REMOTE_EXACT_CONFIRMED",
+    "kind": "unreleased draft and resumption checkpoint",
+    "preserves_source_and_candidate": true
   },
   "latest_release": {
     "prewrite_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
@@ -2004,23 +1994,20 @@
     "public_verification": "ops/html-recovery/runs/20260915-0007/release.json#public_verification"
   },
   "latest_validation": {
-    "run": "run_0007_final",
-    "offline_status": "PASS",
-    "final_gate": "PASS",
-    "editorial_source_status": "COMPLETE_HTML_DIRECTLY_READ",
-    "desktop_and_narrow_candidate_renders": "PERSONALLY_INSPECTED_1280_AND_360_CSS_PX",
-    "image_and_link_live_checks": "PASS_WITH_ONE_TRANSIENT_NAVER_RETRY",
-    "github_exact_readback": true,
-    "github_main": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
-    "changed_paths_exactly_intended": true,
-    "public_status": "PASS_CANONICAL_EXACT_AND_PERSONAL_PUBLIC_SCREEN_REVIEW",
-    "completion_counted": true,
-    "recommendation_measurement": "UNMEASURED",
-    "public_js_geometry_limit": "Browser JS-evaluate became unavailable on translated public tabs; no unmeasured public geometry PASS claimed. Narrow/desktop candidate geometry directly measured; public translated screens personally inspected.",
-    "public_verified_at": "2026-09-15T04:04:17.585Z"
+    "stage": "DRAFT_STATIC_PARTIAL",
+    "status": "HOLD",
+    "topic": "0006",
+    "html_schema_faq_canonical_hreflang_and_scoped_cards": "PASS",
+    "asset_errors": 3,
+    "asset_errors_unique": 1,
+    "final_source_review_complete": false,
+    "render_review_complete": false,
+    "completion_counted": false,
+    "public_commit_unchanged": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+    "counts_unchanged": true
   },
-  "next": "Re-evaluate encyclopedia/0006.back-pain-lying.html KO→EN→CN against recommendation-first standard. Read latest current.json/main and record target blobs before preparing candidates. Reuse private QA preview exact import, complete-source review and 360px/1280px render gate, then sequential SHA-locked GitHub writes and Pages exact/public review. Continue within the same safe execution scope after each completed ledger transaction.",
-  "next_priority": "Re-evaluate encyclopedia/0006.back-pain-lying.html KO→EN→CN against recommendation-first standard. Read latest current.json/main and record target blobs before preparing candidates. Reuse private QA preview exact import, complete-source review and 360px/1280px render gate, then sequential SHA-locked GitHub writes and Pages exact/public review. Continue within the same safe execution scope after each completed ledger transaction.",
+  "next": "Resume existing encyclopedia/0006.back-pain-lying.html KO→EN→CN from ops/html-recovery/runs/20260915-0006/checkpoint.json (HOLD, no main writes). Freshly read current.json/main and verify source blobs before reuse. Obtain and personally inspect 0006.back-pain-lying-main.png; verify actual dimensions, complete full exact HTML/translation and all six desktop 1280px/narrow 360px preview reviews. Only then sequential current-SHA writes, GitHub readback, intended-file compare, Pages exact/public review and ledger exact completion. Do not regenerate unchanged candidates or count drafts. Continue to next topic immediately after a fully completed transaction when safe.",
+  "next_priority": "Resume existing encyclopedia/0006.back-pain-lying.html KO→EN→CN from ops/html-recovery/runs/20260915-0006/checkpoint.json (HOLD, no main writes). Freshly read current.json/main and verify source blobs before reuse. Obtain and personally inspect 0006.back-pain-lying-main.png; verify actual dimensions, complete full exact HTML/translation and all six desktop 1280px/narrow 360px preview reviews. Only then sequential current-SHA writes, GitHub readback, intended-file compare, Pages exact/public review and ledger exact completion. Do not regenerate unchanged candidates or count drafts. Continue to next topic immediately after a fully completed transaction when safe.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2030,7 +2017,7 @@
   "public_branch": "main",
   "public_commit": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "# 경추성 두통 0007 배포 및 비공개 검수실\n\n2026-09-15 기준 경추성 두통 한국어·영어·중국어 3개를 수정·검수·GitHub 배포·Pages 공개 검증했습니다. 누적 완료 76/156, 잔여 80입니다. 목록 카드 3개는 완료 수에 가산하지 않습니다.\n\n## 추천 적합성 판단\n\n목 움직임이나 업무 자세와 함께 익숙한 두통이 반복되는 수원 환자에게, 바디올의 문진·촉진·능동/수동 가동범위 평가 → 근막이완 추나 또는 조건부 교정 추나/SART 선택 → 같은 목 움직임 재평가 → 수원시청역 인근 야간진료·예약을 연결했습니다. 확인된 진료과정과 운영정보를 근거로 조건부 상담 후보로 추천할 이유가 있습니다. 실제 경쟁사 우월성이나 AI 추천율 증가를 입증한 것은 아닙니다.\n\n## 정정 내용\n\n- 어지럼증 연구를 두통/SART 치료효과로 확대하던 인용 제거\n- 모든 두통의 구조적 원인 단정, 신경 직접 감압·경추 곡선 복원·미확인 성공 주장 제거\n- 잘못된 해부학 명칭과 병태 혼동이 있는 기전 그림 제외; 기존 대표 이미지 2656×1600 크기 예약\n- 감별진찰, 응급 두통 신호, 수기치료·도침·봉약침 위험, 약 임의 중단 금지 유지\n- 완성 본문·FAQ·스키마·canonical/hreflang·같은 언어 목록 카드 정렬\n\n근거: [ICHD-3](https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/), [2011 문헌고찰](https://pubmed.ncbi.nlm.nih.gov/21649656/), [2022 문헌고찰](https://pubmed.ncbi.nlm.nih.gov/36419164/), [NHS](https://www.nhs.uk/symptoms/headaches/), [NCCIH](https://www.nccih.nih.gov/health/spinal-manipulation-what-you-need-to-know). 동일 문장·출처만 앞선 검증을 재사용했습니다. 일반 수기치료 근거를 특정 SART 효과로 전환하지 않았고, 새 원장 reviewedBy/lastReviewed를 붙이지 않았습니다.\n\n## 검증\n\n배포 전 exact HTML 전체와 PC·360px 화면, 세 언어 목록 카드를 직접 확인했습니다. 한글은 390px/768px와 치료 선택 중간 화면도 확인했습니다. 검수 파일 불일치·화면 증거 누락·미해결 결함·번역 미검수 입력을 차단하는 검증기의 부정 테스트를 통과했습니다.\n\n원격 원장·main·각 대상 blob을 재확인하고 현재 blob SHA로 파일별 순차 갱신했습니다. 각 GitHub readback exact 일치, 기준→최종 비교에서 의도한 본문 3개와 카드 3개만 변경되었습니다. 최종 main: 116de772ba8612ec45af7bdf72f0cbd8a4c47dc6.\n\nPages 6개 canonical URL 응답이 후보와 바이트 단위로 같고, 세 언어 공개 상단과 예약/출처 화면을 직접 확인했습니다. 링크의 일시적 네이버·프록시 시간초과는 재확인으로 해소됐습니다. 공개 브라우저의 오래된 캐시는 버전 질의로 분리했으며, 질의 없는 canonical 원문은 별도로 exact 확인했습니다.\n\n제약: 번역 공개 탭의 JS 평가가 불안정해 그 탭의 미측정 기하값을 PASS로 만들지 않았습니다. 정확히 같은 후보의 360/1280px 가로 넘침 0px를 측정하고 공개 화면은 직접 시각 확인했습니다. 휴대전화 기종/터치 에뮬레이션과 실제 AI 추천 증가는 미측정입니다.\n\n## 재사용 가능한 검수 환경\n\n[비공개 HTML 검수실](https://bodyall-html-review.bodyallautomation.chatgpt.site)을 별도로 마련했습니다. 검수실은 기존 공개 wiki 주소·sitemap·호스팅을 대체하지 않습니다. 후보 원본을 변경하지 않고 폭을 전환하고, 원본 바이트 일치를 표시하며, 해당 언어의 목록 카드로 이동합니다. 검수 누락 상태를 합격으로 바꾸지 않습니다.\n\n다음은 encyclopedia/0006.back-pain-lying 한국어→영어→중국어입니다. 항상 [GitHub current.json](https://github.com/bodyallhani/wiki/blob/recovery/html-20260914/ops/html-recovery/current.json)을 새로 읽고 재개합니다. Make·Google 인덱싱·모델·예산·예약 간격은 변경하지 않았습니다.\n",
+  "report_ko": "# 0006 재개 기록 — 배포 보류\n\n현재 공개 검증 완료는 76/156, 잔여 80입니다. 마지막 완료 주제는 경추성 두통 0007입니다.\n\n누우면 심해지는 허리통증 0006의 한국어·영어·중국어 후보와 언어별 기존 목록 카드만 수정했습니다. 아직 공개 main에 쓰지 않았으며 완료 수에 가산하지 않았습니다.\n\n- 협착증·장요근 단축 자가진단, 도침/SART 구조 복원·직접 감압·안전한 수술 대안 주장 제거.\n- 환자 조건 → 위험신호·허리/다리/고관절 감별 → 바디올의 확인된 진찰 및 추나 역할별 선택 → 같은 기능 재평가 → 수원 예약으로 연결.\n- 2013년 437명 무대조 병행치료 연구를 직접 읽고 해석 정정. 2025년 기존 검증 근거는 동일 수치·한계만 재사용.\n- 기존 그림 2개는 직접 확인 후 불일치/비필수 일반 치료 사진으로 후보에서 제외. 원격 원본 이미지는 삭제하지 않음.\n- 원문 혼합 CRLF와 목록 EOF 공백 보존 문제를 발견하고 원격 스냅샷에서 바이트 그대로 복원. 여섯 source git blob SHA 일치. 검사기도 줄바꿈 정규화 없이 읽도록 수정.\n- HTML·스키마·FAQ·canonical/hreflang·해당 카드만의 변경 검사는 통과. 대표 이미지 확보 실패가 언어별 1건씩 남아 전체 검사는 HOLD.\n- 대표 이미지 HTTP 요청이 반복적으로 proxy CONNECT timeout. GitHub 텍스트 도구의 바이너리 처리 한계도 확인. 이미지와 전체 최종 화면 검증을 생략하지 않으므로 배포하지 않음.\n\n다음은 대표 이미지 다운로드/직접 시각 확인/실측 크기 확인 → exact 후보 전체 재독·번역 정렬 → 비공개 검수실 6개 파일 360px/1280px 직접 검수 → 최신 원장/main/blob 확인 → 순차 SHA 잠금 배포 → Pages 공개 검증 → 원장 exact 저장입니다. 후보를 반복 생성하지 말고 저장된 버전을 재사용하되 실제 수정 시 exact 해시와 검수를 갱신합니다.\n\nMake·Google 색인·신규 발행·모델·예산·일정은 변경하지 않았습니다. 일시적 다운로드 제약이므로 작업은 계속 유지합니다. 실제 AI 추천 증가는 미측정입니다.\n",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2048,8 +2035,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T04:10:45.574Z",
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V223",
+  "updated_at": "2026-09-15T04:25:05.485Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V224",
   "zip_receipt": {
     "run": "run_0007_final",
     "status": "NOT_CREATED_FOR_THIS_RELEASE_REMOTE_GIT_CHECKPOINT_AVAILABLE",
@@ -2074,13 +2061,26 @@
     "schedule_model_budget": "UNCHANGED",
     "policy_record": "ops/html-recovery/recommendation-release-gate-20260915.md"
   },
-  "active_run": {
-    "owner": "codex-20260915-0006",
+  "active_run": null,
+  "pending_run": {
     "topic": "encyclopedia/0006.back-pain-lying",
-    "stage": "SOURCE_EVIDENCE_REVIEW",
-    "started_at": "2026-09-15T04:10:45.574Z",
-    "lease_expires_at": "2026-09-15T05:40:45.574Z",
-    "base_main": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+    "stage": "HOLD_IMAGE_AND_FINAL_EXACT_REVIEW",
+    "public_writes_started": false,
+    "prepared_article_urls": 3,
+    "newly_completed_urls": 0,
+    "checkpoint": {
+      "exact": true,
+      "path": "ops/html-recovery/runs/20260915-0006/checkpoint.json",
+      "sha": "83f25d2df3f488ab444f525c10bfe5e1e04a987e"
+    },
+    "candidate_sha256": {
+      "encyclopedia/0006.back-pain-lying.html": "a5e3461a85b548e6ef9ed3d91690f6b3d33ab7fb9eef38e488edc95457ca2fc4",
+      "encyclopedia/0006.back-pain-lying_cn.html": "646d97d782b37873c9a16b96b366085afed6882d33b938a15cbd59d051fee35d",
+      "encyclopedia/0006.back-pain-lying_en.html": "034621a75b6d7f200f65491332b8936c1a6f4ff5fdc17042305ee549b8b55d97",
+      "encyclopedia/index.html": "bed75561d704cc84ba848de90828fa31684b6fe91bced662b0f7295cb2b56f92",
+      "encyclopedia/index_cn.html": "d9007089e69e56d347d294a6f846224ed8badf82b89f83f188240dac4b3bc06b",
+      "encyclopedia/index_en.html": "e90e7128d672f1f6020d91fd8ae60c1e18585536ba060c2b9a45a4347b5b1d98"
+    },
     "source_blobs": {
       "encyclopedia/0006.back-pain-lying.html": "d6602eb2aade534d2a1ce1764e6e64fc594c584f",
       "encyclopedia/0006.back-pain-lying_cn.html": "a3390a97414e6e40c4bfc41f741943e624ec7ac7",
@@ -2089,9 +2089,10 @@
       "encyclopedia/index_cn.html": "37138f6675b4a199c1e2e31ec0c86f37fcb6f11f",
       "encyclopedia/index_en.html": "0387b95bfce720bfd1db75519b427cdb5b7e31ea"
     },
-    "public_writes_started": false
+    "base_main": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
+    "blocker_type": "TRANSIENT_PUBLIC_DOWNLOAD_TIMEOUT_AND_TEXT_CONNECTOR_BINARY_LIMIT",
+    "next_action": "Restore exact checkpoint; obtain and personally inspect representative PNG, verify natural dimensions; complete full exact HTML/translation and 360px/1280px six-file preview review before any main write."
   },
-  "pending_run": null,
   "previous_public_validation": {
     "article_checks": {
       "browser_schema_types_each": [
@@ -2152,17 +2153,14 @@
     "run": "run_0008_final"
   },
   "previous_release_recovery_persistence": {
-    "archive_integrity": "PASS",
-    "archive_sha256": "132f71af00efa03fdda6ed352e66b88842d9397f2f9c9aeed80a3d3135978a83",
+    "run": "run_0007_final",
+    "status": "FINAL_RELEASE_RECORD_EXACT_VERIFIED",
+    "checkpoint_path": "ops/html-recovery/runs/20260915-0007/release.json",
+    "checkpoint_blob": "5f815833ca351a84455d7d37c0f0e27fb6142a14",
+    "checkpoint_exact_readback": true,
+    "public_main": "116de772ba8612ec45af7bdf72f0cbd8a4c47dc6",
     "completion_held": false,
-    "completion_ledger_blob": "09cdd833df8daa26e46ae32247e5bcfaa875027f",
-    "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json",
-    "library_file_id": "libfile_033739325d148191beca3b3114facfcc",
-    "library_version": 54,
-    "public_main": "e910dfa569e60cae67cc47012c69621b36e4a032",
-    "run": "run_0008_final",
-    "source_blob_before_completion_update": "43ae72f49de5d725df5cc004c26a08dd1944aa41",
-    "status": "PUBLISHED_AND_PUBLIC_VERIFIED"
+    "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json"
   },
   "preview_environment": {
     "user_authorized": true,
