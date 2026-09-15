@@ -1,0 +1,358 @@
+{
+  "version": "LUMBAR_PRIORITY_STRENGTHENED_RELEASE_20260915",
+  "verified_at": "2026-09-15T12:56:12.225Z",
+  "baseline_main": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+  "final_main": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+  "baseline_ledger": "aed209b0f9af4f79f2251970b03d03c0334327b5",
+  "paths": [
+    "lumbar-disc.html",
+    "lumbar-disc_en.html",
+    "lumbar-disc_cn.html"
+  ],
+  "writes": [
+    {
+      "blob": "77f757baf113f1b481467c40708a704f468d0856",
+      "commit": "06463baee6f54262310e47c2931ede37a1d01bab",
+      "exact_readback": true,
+      "lock": {
+        "at": "2026-09-15T12:40:33.206Z",
+        "blob": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
+        "ledger": "aed209b0f9af4f79f2251970b03d03c0334327b5",
+        "main": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+        "path": "lumbar-disc.html"
+      },
+      "path": "lumbar-disc.html",
+      "sha256": "c1d98efcd01676acf04d0a96c61a463009f1e3f5d8d04c56c545f5f3d25cbf9e"
+    },
+    {
+      "blob": "90ef9712e89a01841cf0e28ff368c7b5beecb190",
+      "commit": "2b707dc87f292cdb563597be558aaf513ae98dc4",
+      "exact_readback": true,
+      "lock": {
+        "at": "2026-09-15T12:40:54.161Z",
+        "blob": "b062465ecebaa64716a8ca705c7485cdbefe2d21",
+        "ledger": "aed209b0f9af4f79f2251970b03d03c0334327b5",
+        "main": "06463baee6f54262310e47c2931ede37a1d01bab",
+        "path": "lumbar-disc_en.html"
+      },
+      "path": "lumbar-disc_en.html",
+      "sha256": "51e9e193917e7d096f0007867d14a2629e738407034fdfca4998d59fb5eef810"
+    },
+    {
+      "blob": "3245f65da8775679af40cd373653094f15baad77",
+      "commit": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+      "exact_readback": true,
+      "lock": {
+        "at": "2026-09-15T12:41:12.606Z",
+        "blob": "d586b2e6ca8c623a0eaecfcd51495be85035e96e",
+        "ledger": "aed209b0f9af4f79f2251970b03d03c0334327b5",
+        "main": "2b707dc87f292cdb563597be558aaf513ae98dc4",
+        "path": "lumbar-disc_cn.html"
+      },
+      "path": "lumbar-disc_cn.html",
+      "sha256": "1cccbaa8427f175f09a29061ca1080c8218c082993ba94c56ac1596c4bc40cc7"
+    }
+  ],
+  "compare": {
+    "ahead_by": 3,
+    "base": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+    "base_commit": {
+      "html_url": "https://github.com/bodyallhani/wiki/commit/310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+      "sha": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+      "url": "https://api.github.com/repos/bodyallhani/wiki/commits/310887d2161fd4b3fb39922a9f4b6faf8753ea5e"
+    },
+    "behind_by": 0,
+    "files": [
+      {
+        "additions": 31,
+        "changes": 74,
+        "deletions": 43,
+        "filename": "lumbar-disc.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 33,
+        "changes": 70,
+        "deletions": 37,
+        "filename": "lumbar-disc_cn.html",
+        "previous_filename": null,
+        "status": "modified"
+      },
+      {
+        "additions": 33,
+        "changes": 70,
+        "deletions": 37,
+        "filename": "lumbar-disc_en.html",
+        "previous_filename": null,
+        "status": "modified"
+      }
+    ],
+    "head": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+    "merge_base_commit": {
+      "html_url": "https://github.com/bodyallhani/wiki/commit/310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+      "sha": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+      "url": "https://api.github.com/repos/bodyallhani/wiki/commits/310887d2161fd4b3fb39922a9f4b6faf8753ea5e"
+    },
+    "repository_full_name": "bodyallhani/wiki",
+    "status": "ahead",
+    "too_large": null,
+    "total_commits": 3
+  },
+  "final_review": {
+    "path": "ops/html-recovery/reviews/20260915-lumbar-priority-final.json",
+    "blob": "3b41c885e0a2a0ec2f238f3b02fcdbd1ed3252d9"
+  },
+  "candidate": {
+    "path": "ops/html-recovery/candidates/20260915-lumbar-priority.json",
+    "blob": "8a6f841776f3f9c0f408cbc6d2e917a9afaee58e"
+  },
+  "public_verification": {
+    "status": "PASS",
+    "checks": [
+      {
+        "path": "lumbar-disc.html",
+        "sha256": "c1d98efcd01676acf04d0a96c61a463009f1e3f5d8d04c56c545f5f3d25cbf9e",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "width": 1348,
+        "overflow_px": 0,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              6240,
+              4160
+            ],
+            "reserved": [
+              "6240",
+              "4160"
+            ],
+            "src": "sangdam1.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "https://wiki.body-all.co.kr/insanggi.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              500,
+              405
+            ],
+            "reserved": [
+              "500",
+              "405"
+            ],
+            "src": "manip2.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ]
+      },
+      {
+        "path": "lumbar-disc_en.html",
+        "sha256": "51e9e193917e7d096f0007867d14a2629e738407034fdfca4998d59fb5eef810",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "width": 1348,
+        "overflow_px": 0,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              6240,
+              4160
+            ],
+            "reserved": [
+              "6240",
+              "4160"
+            ],
+            "src": "sangdam1.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "https://wiki.body-all.co.kr/insanggi.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              500,
+              405
+            ],
+            "reserved": [
+              "500",
+              "405"
+            ],
+            "src": "manip2.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ]
+      },
+      {
+        "path": "lumbar-disc_cn.html",
+        "sha256": "1cccbaa8427f175f09a29061ca1080c8218c082993ba94c56ac1596c4bc40cc7",
+        "public_dom_content_schema_css_metadata_links_images_equal": true,
+        "width": 1348,
+        "overflow_px": 0,
+        "images": [
+          {
+            "loaded": true,
+            "natural": [
+              2494,
+              1867
+            ],
+            "reserved": [
+              "2494",
+              "1867"
+            ],
+            "src": "Bodyall Logo.png"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              6240,
+              4160
+            ],
+            "reserved": [
+              "6240",
+              "4160"
+            ],
+            "src": "sangdam1.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "https://wiki.body-all.co.kr/insanggi.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              500,
+              405
+            ],
+            "reserved": [
+              "500",
+              "405"
+            ],
+            "src": "manip2.jpg"
+          },
+          {
+            "loaded": true,
+            "natural": [
+              4082,
+              3073
+            ],
+            "reserved": [
+              "4082",
+              "3073"
+            ],
+            "src": "directors_group.jpg"
+          }
+        ]
+      }
+    ],
+    "exactness": "GitHub raw contents exact; public Pages DOM content/schema/CSS/metadata/links/image attributes equal. Public raw HTTP byte equality not measured. Full-page content inspected; responsive 360/1280 candidate viewports and public desktop rendering checked; no physical mobile device emulation."
+  },
+  "render_review": {
+    "candidate_viewport_widths": [
+      360,
+      1280
+    ],
+    "candidate_whole_html_and_render_directly_reviewed": true,
+    "public_width": 1348,
+    "public_top_bottom_directly_reviewed": [
+      "ko",
+      "en",
+      "cn"
+    ],
+    "public_standard_urls_verified": true,
+    "cache_note": "Initial standard KO navigation returned previous cached version; explicit reload returned reviewed final version and full semantic comparison then passed.",
+    "physical_mobile_emulation": false
+  },
+  "preview_deployment": {
+    "env_set_revision": 0,
+    "failure_message": null,
+    "id": "appgdep_6aa93cac2e9c819192429a9d097a304d",
+    "project_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c",
+    "provider_deployment_id": "site---6aa8b6379d1c81918e3892b6f8dd270c",
+    "screenshot_asset_pointer": null,
+    "status": "succeeded",
+    "title": "Bodyall HTML 검수실",
+    "type": "publish",
+    "updated_at": "2026-09-15T12:40:37.769887+00:00",
+    "url": "https://bodyall-html-review.bodyallautomation.chatgpt.site",
+    "version_id": "appgprj_6aa8b6379d1c81918e3892b6f8dd270c~appgver_fa2f8caa510081919dc308d771597202"
+  },
+  "actual_ai_recommendation_lift": "UNMEASURED",
+  "physician_approval": "No extension of prior physician approval to this exact revision or translation",
+  "newly_completed_original_scope_urls": 0,
+  "reworked_original_scope_urls": 3,
+  "additional_index_urls": 0
+}
