@@ -1,11 +1,11 @@
 {
   "topic": "encyclopedia/0004.shoulder-pain",
   "decision": "PASS",
-  "completed_at": "2026-09-15T06:47:02Z",
+  "completed_at": "2026-09-15T07:00:07Z",
   "main_base": "a957c01771c1283fe5e32821e3b7e6639b340d38",
-  "main_final": "c146a228e9490f281060aed78ae651f0accea75b",
+  "main_final": "064bb1bfede82aa961896776f7d462719417f9fc",
   "scope_check": {
-    "ahead_by": 6,
+    "ahead_by": 9,
     "behind_by": 0,
     "only_intended_files_changed": true,
     "paths": [
@@ -26,9 +26,9 @@
     "encyclopedia/0004.shoulder-pain.html": "9a1fe10f474524757849711a5af1ed4e6652860c559ee6510ebc882bf2935b2f",
     "encyclopedia/0004.shoulder-pain_en.html": "11ae2ac0665eb2271abd7984837f931437bbad5303642c1468ed7f6cfe8d15b8",
     "encyclopedia/0004.shoulder-pain_cn.html": "2f19d93216967a7d0f8d9198797d600fa29f5897acc712f48af1913260960520",
-    "encyclopedia/index.html": "9a7a154ad9a1f29cdc08eae32b7cb1e5bc17b89502459f5fa4861ac58f9e4976",
-    "encyclopedia/index_en.html": "17cc34195fd175f09636776dc15cfa6d6f00a6a7e6b7b931c252699eb840ec73",
-    "encyclopedia/index_cn.html": "6f43c286d238c20eaf562b3b66036eb07e50135d7e337a684c464e8fefef3043"
+    "encyclopedia/index.html": "01c2717bf65c55342bdfc1c9b57a9d9a5f187c81799dd4dfa3c2038086f33390",
+    "encyclopedia/index_en.html": "0c6ba4488e397e0aad31e5f34134c7381a7fb937590e5650f6add1c33569b177",
+    "encyclopedia/index_cn.html": "6e99b0c535c3f6bcb164491fe9e3b9aac1a22235ccfa52d4dfd741c7a6a9b5a0"
   },
   "github_readback_exact": true,
   "public_pages": {
@@ -43,7 +43,7 @@
       "medical_clinic_procedure_faq_schema": "PASS",
       "faq_count": 3,
       "images": "2 per article; loaded and dimensions reserved at 4082x3073",
-      "same_language_index_cards": "PASS",
+      "same_language_index_cards": "PASS after removing stale rounded-back/physical-therapy tags and rechecking exact 1280px/360px candidates plus all three public cards",
       "desktop_render": "PASS",
       "narrow_exact_candidate_render": "PASS",
       "horizontal_overflow": 0
