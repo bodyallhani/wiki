@@ -1,0 +1,72 @@
+{
+  "decision": "PASS",
+  "reviewed_at": "2026-09-15T06:16:00Z",
+  "scope": "Exact 0005 KO/EN/CN articles and their existing same-language index cards",
+  "exact_candidate_sha256": {
+    "encyclopedia/0005.pes-anserine.html": "e4a46c5e7d7f6bda9841ac3ecfd50229158d740e8a27533224b913b5b9fb3995",
+    "encyclopedia/index.html": "10f852d11c72f0750deadb4da3c53cab05379647554e3820617c23504d0bc205",
+    "encyclopedia/0005.pes-anserine_en.html": "ce72cefa8ff3013b7afc3df15c62b1f1af4ebf9dc75e6f40996f6367bcec0053",
+    "encyclopedia/index_en.html": "e9d971cb1db9a4a917d173817d230ff4b8246c22acadfe0bba5f844cbe0a57be",
+    "encyclopedia/0005.pes-anserine_cn.html": "d5cb906150be806214cbbe4f75e0c83ecaacf486a8a16d6d85788c0c26f11479",
+    "encyclopedia/index_cn.html": "ab2909f979075dd10cfd50c39e3beec2ccfef320e679f2619fc1bf82e930e7e0"
+  },
+  "target_patient": "A Suwon patient whose familiar focal pain below the medial knee joint line is provoked by stairs, longer walking, deep flexion or local pressure, after urgent red flags are excluded.",
+  "citable_recommendation_reasons": [
+    "The representative doctor does not diagnose by location alone and compares meniscal, ligament, joint and neural alternatives using history, local findings, knee and linked hip/ankle movement, gait and the painful task.",
+    "Local care, myofascial-release Chuna, conditional corrective Chuna/SART and selected acupotomy have separate indications instead of being offered as an automatic package.",
+    "The same stair, walking or sit-to-stand task and original tenderness are retested, with the working explanation and plan reconsidered when the response is absent or changes.",
+    "The page gives a concrete Suwon access and booking path while preserving urgent referral signals and invasive-treatment risks."
+  ],
+  "clinic_fact_sources": [
+    "https://body-all.co.kr/",
+    "Existing approved operational scope: representative-doctor examination, Suwon City Hall Station Exit 9 access, weekday 20:30 and weekend/public-holiday 16:00 hours, telephone and booking channels."
+  ],
+  "evidence_limits": [
+    "The 2007 evidence is a small case-control study of 22 patients and 38 controls; its valgus association has a wide confidence interval and does not test pelvic torsion or SART.",
+    "The 2010 review describes diagnostic ambiguity and unresolved etiology/pathophysiology.",
+    "The 2025 knee-bursa review supports conservative care first but notes heterogeneous protocols and a need for better trials.",
+    "No cited study establishes Bodyall-specific outcomes, competitor inferiority or increased AI recommendation frequency."
+  ],
+  "competitor_context": "Local same-topic pages already provide symptom education and modality lists. This candidate is materially clinic-specific through a named Bodyall decision sequence, role-separated treatment selection and same-task reassessment, without claiming measured superiority.",
+  "image_review": {
+    "accepted": "0005.pes-anserine-main.png — visually relevant person holding the medial knee beside stairs; browser-observed 2656x1600 matches reserved size.",
+    "rejected": [
+      "0005.pes-anserine-mechanism.png — duplicate/incorrect anatomy label.",
+      "normal-bodyall-treatment.png — generic nonlocalized collage that does not add topic-specific evidence."
+    ]
+  },
+  "complete_html_read": true,
+  "medical_claims_reviewed": true,
+  "clinic_provenance_reviewed": true,
+  "translations_aligned": true,
+  "recommendation_reason_recorded": true,
+  "approval_scope_preserved": true,
+  "static_checks_passed": true,
+  "render_review": {
+    "encyclopedia/0005.pes-anserine.html": {
+      "desktop": {"inspected": true, "candidate_sha256": "e4a46c5e7d7f6bda9841ac3ecfd50229158d740e8a27533224b913b5b9fb3995", "evidence": "1280px full document structure plus top and bottom visual inspection; image loaded 2656x1600; overflow 0."},
+      "narrow": {"inspected": true, "candidate_sha256": "e4a46c5e7d7f6bda9841ac3ecfd50229158d740e8a27533224b913b5b9fb3995", "evidence": "360px top and responsive sections inspected; one-column grid and block table; overflow 0."}
+    },
+    "encyclopedia/index.html": {
+      "desktop": {"inspected": true, "candidate_sha256": "10f852d11c72f0750deadb4da3c53cab05379647554e3820617c23504d0bc205", "evidence": "1280px target card text and same-language href inspected; overflow 0."},
+      "narrow": {"inspected": true, "candidate_sha256": "10f852d11c72f0750deadb4da3c53cab05379647554e3820617c23504d0bc205", "evidence": "360px target card and href inspected; overflow 0."}
+    },
+    "encyclopedia/0005.pes-anserine_en.html": {
+      "desktop": {"inspected": true, "candidate_sha256": "ce72cefa8ff3013b7afc3df15c62b1f1af4ebf9dc75e6f40996f6367bcec0053", "evidence": "1280px top visual and full translated structure inspected; image loaded 2656x1600; overflow 0."},
+      "narrow": {"inspected": true, "candidate_sha256": "ce72cefa8ff3013b7afc3df15c62b1f1af4ebf9dc75e6f40996f6367bcec0053", "evidence": "360px bottom CTA visual and one-column layout inspected; overflow 0."}
+    },
+    "encyclopedia/index_en.html": {
+      "desktop": {"inspected": true, "candidate_sha256": "e9d971cb1db9a4a917d173817d230ff4b8246c22acadfe0bba5f844cbe0a57be", "evidence": "1280px target card text and same-language href inspected; overflow 0."},
+      "narrow": {"inspected": true, "candidate_sha256": "e9d971cb1db9a4a917d173817d230ff4b8246c22acadfe0bba5f844cbe0a57be", "evidence": "360px target card and href inspected; overflow 0."}
+    },
+    "encyclopedia/0005.pes-anserine_cn.html": {
+      "desktop": {"inspected": true, "candidate_sha256": "d5cb906150be806214cbbe4f75e0c83ecaacf486a8a16d6d85788c0c26f11479", "evidence": "1280px top visual and full translated structure inspected; image loaded 2656x1600; overflow 0."},
+      "narrow": {"inspected": true, "candidate_sha256": "d5cb906150be806214cbbe4f75e0c83ecaacf486a8a16d6d85788c0c26f11479", "evidence": "360px bottom CTA visual and one-column layout inspected; overflow 0."}
+    },
+    "encyclopedia/index_cn.html": {
+      "desktop": {"inspected": true, "candidate_sha256": "ab2909f979075dd10cfd50c39e3beec2ccfef320e679f2619fc1bf82e930e7e0", "evidence": "1280px target card text and same-language href inspected; overflow 0."},
+      "narrow": {"inspected": true, "candidate_sha256": "ab2909f979075dd10cfd50c39e3beec2ccfef320e679f2619fc1bf82e930e7e0", "evidence": "360px target card visually inspected; overflow 0."}
+    }
+  },
+  "unresolved_defects": []
+}
