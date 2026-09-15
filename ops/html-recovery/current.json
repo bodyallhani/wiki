@@ -629,54 +629,114 @@
     },
     {
       "final_repository_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
-      "git_blob": "17bb099b854543fa06f01266ad1ac956871809a9",
+      "git_blob": "5328e30ccf3fe929fe7eda9ed8d5f5b5943fc927",
       "latest_standard_completed": true,
       "limits": [
-        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
-        "No direct physician review of the rewritten exact version or independent language review was asserted.",
-        "Public text/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
+        "Public raw HTTP byte equality was not measured; GitHub raw contents exact and public semantic signatures equal.",
+        "No new physician exact-version or translation approval was asserted.",
+        "Internal recommendation-fit review does not measure actual AI rankings."
       ],
       "path": "cervical-disc.html",
-      "publication_commit": "e76578fc27901b43239034b98dd70a38edf48c6e",
-      "review_receipt": "run_cervical_final/offline_validation.json",
-      "sha256": "e7960c659f1079cae3f906a64b517f50d591b5ced3a7bbd94c6409b45262c888",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "publication_commit": "6d473fac3a459bcb4efef76db1f7756ac46744a5",
+      "review_receipt": "ops/html-recovery/reviews/20260915-cervical-priority-final.json",
+      "sha256": "920bc67bc72083eb00e0bc381cdf8a1bd3fa624da2ca61d95bc90eda9c2292c8",
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
       "url": "https://wiki.body-all.co.kr/cervical-disc.html",
-      "verification_receipt": "run_cervical_final/public_verification.json"
+      "verification_receipt": "ops/html-recovery/runs/20260915-cervical-priority-release.json",
+      "previous_versions": [
+        {
+          "final_repository_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+          "git_blob": "17bb099b854543fa06f01266ad1ac956871809a9",
+          "latest_standard_completed": true,
+          "limits": [
+            "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+            "No direct physician review of the rewritten exact version or independent language review was asserted.",
+            "Public text/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
+          ],
+          "path": "cervical-disc.html",
+          "publication_commit": "e76578fc27901b43239034b98dd70a38edf48c6e",
+          "review_receipt": "run_cervical_final/offline_validation.json",
+          "sha256": "e7960c659f1079cae3f906a64b517f50d591b5ced3a7bbd94c6409b45262c888",
+          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+          "url": "https://wiki.body-all.co.kr/cervical-disc.html",
+          "verification_receipt": "run_cervical_final/public_verification.json"
+        }
+      ],
+      "strengthened_20260915_completed": true
     },
     {
       "final_repository_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
-      "git_blob": "4719487c8b5f37e1b5922c80aea6b2a22e3d66f4",
+      "git_blob": "66e764e3d32ab4e5f389b567ffc1bfa8a6fb693c",
       "latest_standard_completed": true,
       "limits": [
-        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
-        "No direct physician review of the rewritten exact version or independent language review was asserted.",
-        "Public text/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
+        "Public raw HTTP byte equality was not measured; GitHub raw contents exact and public semantic signatures equal.",
+        "No new physician exact-version or translation approval was asserted.",
+        "Internal recommendation-fit review does not measure actual AI rankings."
       ],
       "path": "cervical-disc_cn.html",
-      "publication_commit": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
-      "review_receipt": "run_cervical_final/offline_validation.json",
-      "sha256": "da52c8532be6729b20adb35a148d7d05bf2783e0b44e026a45fcd5eec1b23460",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "publication_commit": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
+      "review_receipt": "ops/html-recovery/reviews/20260915-cervical-priority-final.json",
+      "sha256": "a7bc402c3c7de7d7dd1f3a9c2bbf68db7f4f9d5d3989554d066b7d3494e9fcb5",
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
       "url": "https://wiki.body-all.co.kr/cervical-disc_cn.html",
-      "verification_receipt": "run_cervical_final/public_verification.json"
+      "verification_receipt": "ops/html-recovery/runs/20260915-cervical-priority-release.json",
+      "previous_versions": [
+        {
+          "final_repository_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+          "git_blob": "4719487c8b5f37e1b5922c80aea6b2a22e3d66f4",
+          "latest_standard_completed": true,
+          "limits": [
+            "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+            "No direct physician review of the rewritten exact version or independent language review was asserted.",
+            "Public text/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
+          ],
+          "path": "cervical-disc_cn.html",
+          "publication_commit": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+          "review_receipt": "run_cervical_final/offline_validation.json",
+          "sha256": "da52c8532be6729b20adb35a148d7d05bf2783e0b44e026a45fcd5eec1b23460",
+          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+          "url": "https://wiki.body-all.co.kr/cervical-disc_cn.html",
+          "verification_receipt": "run_cervical_final/public_verification.json"
+        }
+      ],
+      "strengthened_20260915_completed": true
     },
     {
       "final_repository_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
-      "git_blob": "c6c7136064bb896000ffecd2c23b8984e058954e",
+      "git_blob": "dc7c25022a85a25dc9793d902897f07684857810",
       "latest_standard_completed": true,
       "limits": [
-        "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
-        "No direct physician review of the rewritten exact version or independent language review was asserted.",
-        "Public text/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
+        "Public raw HTTP byte equality was not measured; GitHub raw contents exact and public semantic signatures equal.",
+        "No new physician exact-version or translation approval was asserted.",
+        "Internal recommendation-fit review does not measure actual AI rankings."
       ],
       "path": "cervical-disc_en.html",
-      "publication_commit": "2482347372e4c7b19cf2c4dd367390ecc0e0becc",
-      "review_receipt": "run_cervical_final/offline_validation.json",
-      "sha256": "adc302f82bed1c17f564c851d34ecf53e3d317431dccb227849675720d6f63cd",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "publication_commit": "2d552ce47725d613442916f86aadbde26b51f2c7",
+      "review_receipt": "ops/html-recovery/reviews/20260915-cervical-priority-final.json",
+      "sha256": "3f5ceff274dc4a5647f9547da18099ec11adbdcab0a7859ca84f7b56eb75cea5",
+      "status": "STRENGTHENED_PUBLISHED_PUBLIC_VERIFIED",
       "url": "https://wiki.body-all.co.kr/cervical-disc_en.html",
-      "verification_receipt": "run_cervical_final/public_verification.json"
+      "verification_receipt": "ops/html-recovery/runs/20260915-cervical-priority-release.json",
+      "previous_versions": [
+        {
+          "final_repository_head": "d8b9783b6e3c48f33037e8f22ca2054b6514ac47",
+          "git_blob": "c6c7136064bb896000ffecd2c23b8984e058954e",
+          "latest_standard_completed": true,
+          "limits": [
+            "Previously completed Korean evidence review was reused; no paper re-search or new efficacy claim was added.",
+            "No direct physician review of the rewritten exact version or independent language review was asserted.",
+            "Public text/schema/images and desktop overflow were verified; mobile emulation and external-reference recrawl were not claimed."
+          ],
+          "path": "cervical-disc_en.html",
+          "publication_commit": "2482347372e4c7b19cf2c4dd367390ecc0e0becc",
+          "review_receipt": "run_cervical_final/offline_validation.json",
+          "sha256": "adc302f82bed1c17f564c851d34ecf53e3d317431dccb227849675720d6f63cd",
+          "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+          "url": "https://wiki.body-all.co.kr/cervical-disc_en.html",
+          "verification_receipt": "run_cervical_final/public_verification.json"
+        }
+      ],
+      "strengthened_20260915_completed": true
     },
     {
       "latest_standard_completed": false,
@@ -2122,15 +2182,15 @@
     "latest_standard_not_confirmed_or_remaining": 68,
     "latest_standard_published_confirmed": 88,
     "new_publications_this_turn": 0,
-    "revised_publications_this_turn": 0,
+    "revised_publications_this_turn": 3,
     "total_scope": 156,
-    "existing_rework_verified_under_20260915_request": 3,
-    "historically_accepted_not_yet_reworked_under_20260915_request": 82,
+    "existing_rework_verified_under_20260915_request": 6,
+    "historically_accepted_not_yet_reworked_under_20260915_request": 79,
     "phase1_strengthened_completed": 3,
     "phase1_strengthened_remaining": 68,
     "priority_strengthened_total": 35,
-    "priority_strengthened_completed": 0,
-    "priority_strengthened_remaining": 35,
+    "priority_strengthened_completed": 3,
+    "priority_strengthened_remaining": 32,
     "additional_index_total": 8,
     "additional_index_completed": 0
   },
@@ -2154,56 +2214,47 @@
   },
   "latest_local_run": "Remote receipt and candidate pack are authoritative; prior scratch/ZIP not a restart baseline",
   "latest_recovery_persistence": {
-    "receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json",
-    "receipt_blob": "25e362c1be60bccdc2aa3fe8f6ce83dbf57048dd",
-    "receipt_exact_readback": true,
-    "ledger_exact_readback_required": true,
-    "audit_record": "ops/html-recovery/reviews/20260915-stiff-hands-source-audit.json",
-    "audit_blob": "ed50d33857501a175350837b5f84fb8a3138ffad",
-    "audit_exact_readback": true,
-    "priority_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json",
-    "priority_blob": "88ebc0892358d9d0da14e8ca649942bca7d3c6c6",
-    "priority_exact_readback": true
+    "receipt": "ops/html-recovery/runs/20260915-cervical-priority-release.json",
+    "blob": "aeb38e0e532f6e5b6562b043df567b55b1fdc7b7",
+    "exact_readback": true
   },
   "latest_release": {
-    "topic": "encyclopedia/0003.foot-pain strengthened first-completion",
+    "topic": "cervical-disc strengthened priority rework",
     "changed_files": [
-      "encyclopedia/0003.foot-pain.html",
-      "encyclopedia/0003.foot-pain_en.html",
-      "encyclopedia/0003.foot-pain_cn.html",
-      "encyclopedia/index.html",
-      "encyclopedia/index_en.html",
-      "encyclopedia/index_cn.html"
+      "cervical-disc.html",
+      "cervical-disc_en.html",
+      "cervical-disc_cn.html"
     ],
-    "newly_completed_existing_urls": [
-      "encyclopedia/0003.foot-pain.html",
-      "encyclopedia/0003.foot-pain_en.html",
-      "encyclopedia/0003.foot-pain_cn.html"
+    "newly_completed_existing_urls": [],
+    "reworked_existing_urls": [
+      "cervical-disc.html",
+      "cervical-disc_en.html",
+      "cervical-disc_cn.html"
     ],
-    "base_commit": "004335bd719de2136b93df82e80cdf3b40a68380",
-    "final_commit": "1a8376901a69f5327a1153ec97f3a189db128a45",
+    "base_commit": "1a8376901a69f5327a1153ec97f3a189db128a45",
+    "final_commit": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json"
+    "receipt": "ops/html-recovery/runs/20260915-cervical-priority-release.json"
   },
   "latest_validation": {
     "status": "PASS_IN_REVIEWED_SCOPE",
     "github_exact_readback": true,
     "public_dom_text_schema_css_metadata_links_images_equal": true,
     "public_raw_http_byte_equality": "NOT_MEASURED",
-    "article_images_loaded": 3,
+    "images_loaded_per_language": 4,
     "candidate_viewports": [
       360,
       1280
     ],
     "public_article_overflow": 0,
     "full_html_direct_ai_review": true,
-    "all_six_jsonld_valid": true,
+    "all_language_upper_lower_public_views_checked": true,
     "actual_competitor_superiority": "UNMEASURED",
     "actual_ai_recommendation_lift": "UNMEASURED",
-    "receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json"
+    "receipt": "ops/html-recovery/runs/20260915-cervical-priority-release.json"
   },
-  "next": "PRIORITY OVERRIDE: cervical-disc KO→EN→CN, lumbar-disc KO→EN→CN, shoulder-frozen KO→EN→CN, chuna-therapy KO→EN→CN, herbal-medicine KO→EN→CN, then root/encyclopedia/BodyallFit-encyclopedia/Herbmed-encyclopedia indices and all additional existing medical/info indices as work_order.priority_groups. Process all35 regardless of prior completion. Source audit ready for cervical-disc; no strengthened candidate PASS yet. After priority_pending_paths empty, resume saved phase1 from0002 stiff-hands then prior order, skipping verified priority URLs; phase2 follows. Original88/156 and68 uncompleted retained, extra8 tracked separately.",
-  "next_priority": "PRIORITY OVERRIDE: cervical-disc KO→EN→CN, lumbar-disc KO→EN→CN, shoulder-frozen KO→EN→CN, chuna-therapy KO→EN→CN, herbal-medicine KO→EN→CN, then root/encyclopedia/BodyallFit-encyclopedia/Herbmed-encyclopedia indices and all additional existing medical/info indices as work_order.priority_groups. Process all35 regardless of prior completion. Source audit ready for cervical-disc; no strengthened candidate PASS yet. After priority_pending_paths empty, resume saved phase1 from0002 stiff-hands then prior order, skipping verified priority URLs; phase2 follows. Original88/156 and68 uncompleted retained, extra8 tracked separately.",
+  "next": "PRIORITY: lumbar-disc KO→EN→CN next; cervical-disc 3/3 strengthened publication/public verification finished. Continue shoulder-frozen, chuna-therapy, herbal-medicine, then remaining medical/info indices per work_order.priority_pending_paths. Priority3/35 complete,32 remaining. After priority queue, resume saved phase1 then phase2 excluding already strengthened URLs.",
+  "next_priority": "PRIORITY: lumbar-disc KO→EN→CN next; cervical-disc 3/3 strengthened publication/public verification finished. Continue shoulder-frozen, chuna-therapy, herbal-medicine, then remaining medical/info indices per work_order.priority_pending_paths. Priority3/35 complete,32 remaining. After priority queue, resume saved phase1 then phase2 excluding already strengthened URLs.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2211,7 +2262,7 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "1a8376901a69f5327a1153ec97f3a189db128a45",
+  "public_commit": "310887d2161fd4b3fb39922a9f4b6faf8753ea5e",
   "recovery_branch": "recovery/html-20260914",
   "report_ko": "원장님 최신 지시로 목디스크·허리디스크·오십견·추나·한약 허브와 모든 진료·안내 index의 기존 한국어·영어·중국어를 완료 여부와 무관하게 최우선 강화 작업으로 올렸다. 기존156개 안의27개와 사이트맵 밖 기존 진료·안내 index8개, 합계35개다. 게임·결과·통계용 index40개는 위치를 조사하되 기존 게임 별도 범위를 유지한다. 우선35개를 모두 검수·배포·공개확인한 뒤 저장된 기존 미완료 순서와 기존배포 재작업 순서로 복귀한다. 손가락0002 점검과 허리디스크 후보는 보존한다. 첫 목디스크 세 언어의 원문 전체 본문·이미지 속성·근거 설명을 읽고 강화 수정항목을 기록했다. 이번 main 변경0개, 원래156개 완료88·미완료68 유지. 우선35개 중 강화 완료0개이며 신규 후보 최종 검수는 아직 미완료다.",
   "repository": "bodyallhani/wiki",
@@ -2231,8 +2282,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-15T11:30:47.053Z",
-  "version": "V237_PRIORITY_FIVE_HUBS_ALL_MEDICAL_INDICES",
+  "updated_at": "2026-09-15T12:19:11.290Z",
+  "version": "V238_CERVICAL_PRIORITY_STRENGTHENED_PUBLIC_VERIFIED",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2260,82 +2311,55 @@
     "operating_fact_record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
-  "active_run": {
-    "owner": "cervical-priority-20260915",
-    "topic": "cervical-disc KO/EN/CN",
-    "stage": "CANDIDATE_PREPARATION",
-    "claimed_at": "2026-09-15T11:30:47.053Z",
-    "baseline_main": "1a8376901a69f5327a1153ec97f3a189db128a45",
-    "baseline_ledger": "8b0c86619a7ad60edb52869ed2c47fa4adcb0cad",
-    "paths": [
-      "cervical-disc.html",
-      "cervical-disc_en.html",
-      "cervical-disc_cn.html"
-    ]
-  },
+  "active_run": null,
   "pending_run": {
-    "topic": "cervical-disc KO/EN/CN",
+    "topic": "lumbar-disc KO/EN/CN",
+    "stage": "PRESERVED_CANDIDATE_REASSESSMENT_PENDING",
+    "status": "NEXT_PRIORITY",
     "paths": [
-      "cervical-disc.html",
-      "cervical-disc_en.html",
-      "cervical-disc_cn.html"
+      "lumbar-disc.html",
+      "lumbar-disc_en.html",
+      "lumbar-disc_cn.html"
     ],
-    "stage": "SOURCE_TEXT_AND_STRUCTURE_READ",
-    "status": "STRENGTHENED_REWORK_PENDING_CANDIDATE",
-    "source_main": "1a8376901a69f5327a1153ec97f3a189db128a45",
-    "source_blobs": {
-      "cervical-disc.html": "17bb099b854543fa06f01266ad1ac956871809a9",
-      "cervical-disc_en.html": "c6c7136064bb896000ffecd2c23b8984e058954e",
-      "cervical-disc_cn.html": "4719487c8b5f37e1b5922c80aea6b2a22e3d66f4"
-    },
-    "candidate_sha256": null,
     "main_writes": 0,
-    "source_audit_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json",
-    "next_action": "Prepare targeted strengthened revisions using current operating_facts; directly inspect images and all exact HTML/render versions before publication. Previous accepted status is not strengthened PASS."
+    "counted_complete": 0,
+    "preserved_candidate": {
+      "audit": "ops/html-recovery/reviews/20260915-lumbar-hub-rework-source-audit.json",
+      "candidate_render_status": "NOT_COMPLETED",
+      "candidate_sha256": {
+        "lumbar-disc.html": "cba23d0cc91c40604b34c9ef8e0205ccfde4476726d542fb8fcc4e0c78247dfc",
+        "lumbar-disc_cn.html": "97d24b03bb4a845a3d3336367840131c8ea21a1a342866c64a568854b7225e9f",
+        "lumbar-disc_en.html": "91a8bb189f192c8ac3f1af1d19838a08637ff6da64b24030e4300c39422fcae9"
+      },
+      "next_action": "After cervical-disc priority bundle, re-read current main/blobs and re-evaluate preserved candidate with operating_facts and exact final render. No longer deferred until all phase1.",
+      "source_blobs": {
+        "lumbar-disc.html": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
+        "lumbar-disc_cn.html": "d586b2e6ca8c623a0eaecfcd51495be85035e96e",
+        "lumbar-disc_en.html": "b062465ecebaa64716a8ca705c7485cdbefe2d21"
+      },
+      "source_main": "004335bd719de2136b93df82e80cdf3b40a68380",
+      "stage": "SOURCE_AUDIT_COMPLETE_CANDIDATE_AND_RENDER_REVIEW_PENDING",
+      "status": "PRESERVED_CANDIDATE_PROMOTED_TO_PRIORITY_SECOND_BUNDLE",
+      "topic": "lumbar-disc existing-publication rework KO/EN/CN"
+    },
+    "next_action": "Read current/main/three blobs, compare preserved candidate hashes and source audit, incorporate confirmed operating facts, directly review exact HTML and responsive rendering before sequential locked writes."
   },
   "previous_public_validation": {
-    "article_checks": {
-      "browser_schema_types_each": [
-        "MedicalWebPage",
-        [
-          "MedicalClinic",
-          "LocalBusiness"
-        ],
-        "FAQPage"
-      ],
-      "canonical_hreflang_og_clean_and_index_follow": true,
-      "count": 3,
-      "desktop_horizontal_overflow_px_each": 0,
-      "evidence_scope_aligned_to_guideline_single_rct_and_low_quality_review": true,
-      "faq_schema_count_each": 3,
-      "faq_schema_matches_visible_body_each": true,
-      "github_exact_blob_readback": true,
-      "image_natural_and_reserved_sizes_each": [
-        "1184x754",
-        "1272x662"
-      ],
-      "mobile_emulation": "NOT_AVAILABLE_IN_SELECTED_PUBLIC_BROWSER",
-      "pages_latest_body_and_schema_confirmed": true,
-      "patient_condition_bodyall_choice_reason_and_next_action_visible_in_source": true,
-      "public_browser_visual_check": "PASS_DESKTOP_TOP_AND_BOTTOM_ALL_LANGUAGES",
-      "public_images_http_200": true,
-      "regeneration_adhesion_spinal_space_and_recurrence_overclaims_removed": true,
-      "responsive_media_rule_present_each": true,
-      "role_separated_load_exercise_acupuncture_chuna_sart_acupotomy_visible_in_source": true,
-      "same_language_index_links_and_cards_correct": true,
-      "same_task_reassessment_visible_in_source": true,
-      "stale_reviewedBy_or_lastReviewed_absent": true,
-      "tendon_cervical_shoulder_radial_nerve_differential_visible_in_source": true,
-      "urgent_signals_and_acupotomy_risks_visible_in_source": true
-    },
-    "article_urls": [
-      "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow_en.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow_cn.html"
+    "status": "PASS_IN_REVIEWED_SCOPE",
+    "github_exact_readback": true,
+    "public_dom_text_schema_css_metadata_links_images_equal": true,
+    "public_raw_http_byte_equality": "NOT_MEASURED",
+    "article_images_loaded": 3,
+    "candidate_viewports": [
+      360,
+      1280
     ],
-    "offline_status": "PASS",
-    "public_status": "PASS",
-    "run": "run_0008_final"
+    "public_article_overflow": 0,
+    "full_html_direct_ai_review": true,
+    "all_six_jsonld_valid": true,
+    "actual_competitor_superiority": "UNMEASURED",
+    "actual_ai_recommendation_lift": "UNMEASURED",
+    "receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json"
   },
   "previous_public_debug": {
     "confirmed_findings": [
@@ -2495,9 +2519,6 @@
     "bee-venom.html",
     "bee-venom_cn.html",
     "bee-venom_en.html",
-    "cervical-disc.html",
-    "cervical-disc_cn.html",
-    "cervical-disc_en.html",
     "encyclopedia/0004.shoulder-pain.html",
     "encyclopedia/0004.shoulder-pain_cn.html",
     "encyclopedia/0004.shoulder-pain_en.html",
@@ -2559,7 +2580,10 @@
   "rework_completed_paths": [
     "pain-spine-clinic.html",
     "pain-spine-clinic_en.html",
-    "pain-spine-clinic_cn.html"
+    "pain-spine-clinic_cn.html",
+    "cervical-disc.html",
+    "cervical-disc_en.html",
+    "cervical-disc_cn.html"
   ],
   "previous_work_order": {
     "next_priority": "Rework already published lumbar-disc.html KO→EN→CN first, then the remaining rework_queue. Freshly read this ledger, main head and target blobs; compare actual competitor service descriptions, strengthen source-supported Bodyall-specific patient-selection reasons, inspect exact full HTML and desktop/narrow renders, then sequentially deploy/readback/public-verify and checkpoint. Historical 85/156 publication count is not proof that all 85 satisfy the new comparative editorial review. Resume legacy uncompleted URLs after the existing-publication rework queue unless the owner changes priority.",
@@ -2820,7 +2844,10 @@
     "phase2_already_reworked_paths": [
       "pain-spine-clinic.html",
       "pain-spine-clinic_en.html",
-      "pain-spine-clinic_cn.html"
+      "pain-spine-clinic_cn.html",
+      "cervical-disc.html",
+      "cervical-disc_en.html",
+      "cervical-disc_cn.html"
     ],
     "phase2_pending_paths": [
       "lumbar-disc.html",
@@ -2845,9 +2872,6 @@
       "bee-venom.html",
       "bee-venom_cn.html",
       "bee-venom_en.html",
-      "cervical-disc.html",
-      "cervical-disc_cn.html",
-      "cervical-disc_en.html",
       "encyclopedia/0004.shoulder-pain.html",
       "encyclopedia/0004.shoulder-pain_cn.html",
       "encyclopedia/0004.shoulder-pain_en.html",
@@ -3048,9 +3072,6 @@
       "spine/index.html"
     ],
     "priority_pending_paths": [
-      "cervical-disc.html",
-      "cervical-disc_en.html",
-      "cervical-disc_cn.html",
       "lumbar-disc.html",
       "lumbar-disc_en.html",
       "lumbar-disc_cn.html",
@@ -3084,7 +3105,11 @@
       "pcode/index_cn.html",
       "spine/index.html"
     ],
-    "priority_completed_paths": [],
+    "priority_completed_paths": [
+      "cervical-disc.html",
+      "cervical-disc_en.html",
+      "cervical-disc_cn.html"
+    ],
     "priority_original_scope_paths": [
       "cervical-disc.html",
       "cervical-disc_en.html",
@@ -3220,9 +3245,6 @@
       "bee-venom.html",
       "bee-venom_cn.html",
       "bee-venom_en.html",
-      "cervical-disc.html",
-      "cervical-disc_cn.html",
-      "cervical-disc_en.html",
       "encyclopedia/0004.shoulder-pain.html",
       "encyclopedia/0004.shoulder-pain_cn.html",
       "encyclopedia/0004.shoulder-pain_en.html",
@@ -3353,35 +3375,39 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "type": "OWNER_HUB_INDEX_PRIORITY_SAVED_AND_FIRST_SOURCE_AUDITED",
+    "type": "CERVICAL_PRIORITY_REWORK_PUBLISHED_PUBLIC_VERIFIED",
     "priority_total": 35,
-    "priority_completed": 0,
+    "priority_completed": 3,
+    "priority_remaining": 32,
     "accepted": 88,
     "remaining": 68,
-    "main_writes": 0,
-    "next_topic": "cervical-disc",
-    "next_topic_stage": "SOURCE_TEXT_AND_STRUCTURE_READ",
-    "receipt": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
+    "reworked_initial85": 6,
+    "initial85_waiting": 79,
+    "additional_index_completed": 0,
+    "main_writes": 3,
+    "next_topic": "lumbar-disc",
+    "next_topic_stage": "FRESH_SOURCE_REASSESSMENT_PENDING",
+    "receipt": "ops/html-recovery/runs/20260915-cervical-priority-release.json"
   },
   "previous_release": {
-    "topic": "pain-spine-clinic existing-publication rework",
+    "topic": "encyclopedia/0003.foot-pain strengthened first-completion",
     "changed_files": [
-      "index.html",
-      "index_cn.html",
-      "index_en.html",
-      "pain-spine-clinic.html",
-      "pain-spine-clinic_cn.html",
-      "pain-spine-clinic_en.html"
+      "encyclopedia/0003.foot-pain.html",
+      "encyclopedia/0003.foot-pain_en.html",
+      "encyclopedia/0003.foot-pain_cn.html",
+      "encyclopedia/index.html",
+      "encyclopedia/index_en.html",
+      "encyclopedia/index_cn.html"
     ],
-    "reworked_existing_urls": [
-      "pain-spine-clinic.html",
-      "pain-spine-clinic_en.html",
-      "pain-spine-clinic_cn.html"
+    "newly_completed_existing_urls": [
+      "encyclopedia/0003.foot-pain.html",
+      "encyclopedia/0003.foot-pain_en.html",
+      "encyclopedia/0003.foot-pain_cn.html"
     ],
-    "base_commit": "064bb1bfede82aa961896776f7d462719417f9fc",
-    "final_commit": "004335bd719de2136b93df82e80cdf3b40a68380",
+    "base_commit": "004335bd719de2136b93df82e80cdf3b40a68380",
+    "final_commit": "1a8376901a69f5327a1153ec97f3a189db128a45",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/reviews/20260915-pain-hub-rework-004335bd.json"
+    "receipt": "ops/html-recovery/runs/20260915-foot-pain-release.json"
   },
   "previous_work_order_before_hub_priority": {
     "authorized_at": "2026-09-15T09:50:17.637Z",
