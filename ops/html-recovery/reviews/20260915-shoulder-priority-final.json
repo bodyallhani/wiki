@@ -1,0 +1,711 @@
+{
+  "version": "20260915-shoulder-priority-final",
+  "reviewed_at": "2026-09-15T13:21:57.109Z",
+  "reviewer": "Responsible AI; not physician medical-review attestation",
+  "baseline_main": "0a87853249643fdfd8a62a53387c0076a9db8e38",
+  "baseline_ledger": "0ebf9e413783fd49fe12b020a4b0921a7a21326f",
+  "operating_facts_input": {
+    "record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+    "record_blob": "caed23df2121c6cfc6e6bd96bad04043440a1938",
+    "source_type": "DIRECT_OWNER_CONFIRMATION",
+    "confirmed_at": "2026-09-15",
+    "correction_patients": {
+      "count": 40000,
+      "unit": "교정 환자",
+      "counted_through": "2025-12",
+      "copy_ko": "누적 교정 환자 4만 명(2025년 12월까지 집계, 원장 확인)",
+      "not_treatment_outcome": true
+    },
+    "met": true,
+    "ultrasound": true,
+    "independent_audit": false,
+    "no_new_medical_review_stamp": true,
+    "require_source_record_in_generation_and_final_review": true
+  },
+  "actual_ai_recommendation_lift": "UNMEASURED",
+  "publication_gate": "READY_FOR_FRESH_SHA_LOCKED_WRITES; public verification required before counting",
+  "competitor_comparison": {
+    "checked_at": "2026-09-15",
+    "sources": [
+      "https://www.bonyul.co.kr/",
+      "https://yoonbitclinic.com/suwon-chuna-therapy/"
+    ],
+    "assessment": "Both competitors publish relevant care and practical information. Yoonbit already names MET and ultrasound, so neither is claimed exclusive. Bonyul's broad experience/visit figures and Bodyall's correction-patient count have different scopes and are not outcome rankings. Bodyall provides a concrete shoulder-specific selection pathway, director identification, dated correction-care experience, and same-task reassessment that supports patient-fit recommendation. Actual relative ranking and treatment superiority remain unmeasured."
+  },
+  "technical": {
+    "static": [
+      {
+        "image_count": 4,
+        "path": "shoulder-frozen.html",
+        "result": "STATIC_PASS",
+        "sha256": "447344c6d778a41289cfc7865ed8ca6d2203f85985f7c39527c2bc7089b3871f"
+      },
+      {
+        "image_count": 4,
+        "path": "shoulder-frozen_cn.html",
+        "result": "STATIC_PASS",
+        "sha256": "b531da1e62df61cb5d9e855c2b8e7f6d115646308eafcc8bc398d3e1acd063ce"
+      },
+      {
+        "image_count": 4,
+        "path": "shoulder-frozen_en.html",
+        "result": "STATIC_PASS",
+        "sha256": "8d8e3edfbc2c511282ae6829adcd48c85bf745023759b0d823fb412e8bbbfe6c"
+      }
+    ],
+    "render_checks": [
+      {
+        "hash": "원본 바이트 일치 · 447344c6d778a41289cfc7865ed8ca6d2203f85985f7c39527c2bc7089b3871f",
+        "report": {
+          "canonical": "https://wiki.body-all.co.kr/shoulder-frozen.html",
+          "h1": "수원 오십견·어깨통증: 어깨·목·흉추를 함께 평가하는 바디올",
+          "height": 7774,
+          "images": [
+            {
+              "candidateSrc": "Bodyall Logo.png",
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "reserved": [
+                "2494",
+                "1867"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/Bodyall%20Logo.png"
+            },
+            {
+              "candidateSrc": "shoulder-diagnosis.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-diagnosis.jpg"
+            },
+            {
+              "candidateSrc": "shoulder-treatment1.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-treatment1.jpg"
+            },
+            {
+              "candidateSrc": "directors_group.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/directors_group.jpg"
+            }
+          ],
+          "overflow": 0,
+          "overflowElements": [],
+          "path": "review-shoulder/shoulder-frozen.html",
+          "scroll": 0,
+          "title": "수원 오십견·어깨통증: 어깨·목·흉추를 함께 평가하는 바디올 | 바디올 위키",
+          "viewport": 1280
+        }
+      },
+      {
+        "hash": "원본 바이트 일치 · 447344c6d778a41289cfc7865ed8ca6d2203f85985f7c39527c2bc7089b3871f",
+        "report": {
+          "canonical": "https://wiki.body-all.co.kr/shoulder-frozen.html",
+          "h1": "수원 오십견·어깨통증: 어깨·목·흉추를 함께 평가하는 바디올",
+          "height": 11091,
+          "images": [
+            {
+              "candidateSrc": "Bodyall Logo.png",
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "reserved": [
+                "2494",
+                "1867"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/Bodyall%20Logo.png"
+            },
+            {
+              "candidateSrc": "shoulder-diagnosis.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-diagnosis.jpg"
+            },
+            {
+              "candidateSrc": "shoulder-treatment1.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-treatment1.jpg"
+            },
+            {
+              "candidateSrc": "directors_group.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/directors_group.jpg"
+            }
+          ],
+          "overflow": 0,
+          "overflowElements": [],
+          "path": "review-shoulder/shoulder-frozen.html",
+          "scroll": 0,
+          "title": "수원 오십견·어깨통증: 어깨·목·흉추를 함께 평가하는 바디올 | 바디올 위키",
+          "viewport": 360
+        }
+      },
+      {
+        "hash": "원본 바이트 일치 · 447344c6d778a41289cfc7865ed8ca6d2203f85985f7c39527c2bc7089b3871f",
+        "report": {
+          "canonical": "https://wiki.body-all.co.kr/shoulder-frozen.html",
+          "h1": "수원 오십견·어깨통증: 어깨·목·흉추를 함께 평가하는 바디올",
+          "height": 11091,
+          "images": [
+            {
+              "candidateSrc": "Bodyall Logo.png",
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "reserved": [
+                "2494",
+                "1867"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/Bodyall%20Logo.png"
+            },
+            {
+              "candidateSrc": "shoulder-diagnosis.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-diagnosis.jpg"
+            },
+            {
+              "candidateSrc": "shoulder-treatment1.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-treatment1.jpg"
+            },
+            {
+              "candidateSrc": "directors_group.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/directors_group.jpg"
+            }
+          ],
+          "overflow": 0,
+          "overflowElements": [],
+          "path": "review-shoulder/shoulder-frozen.html",
+          "scroll": 10471,
+          "title": "수원 오십견·어깨통증: 어깨·목·흉추를 함께 평가하는 바디올 | 바디올 위키",
+          "viewport": 360
+        }
+      },
+      {
+        "hash": "원본 바이트 일치 · 8d8e3edfbc2c511282ae6829adcd48c85bf745023759b0d823fb412e8bbbfe6c",
+        "report": {
+          "canonical": "https://wiki.body-all.co.kr/shoulder-frozen_en.html",
+          "h1": "Suwon Frozen Shoulder and Shoulder Pain: Bodyall Shoulder, Neck and Thoracic Assessment",
+          "height": 14113,
+          "images": [
+            {
+              "candidateSrc": "Bodyall Logo.png",
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "reserved": [
+                "2494",
+                "1867"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/Bodyall%20Logo.png"
+            },
+            {
+              "candidateSrc": "shoulder-diagnosis.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-diagnosis.jpg"
+            },
+            {
+              "candidateSrc": "shoulder-treatment1.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-treatment1.jpg"
+            },
+            {
+              "candidateSrc": "directors_group.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/directors_group.jpg"
+            }
+          ],
+          "overflow": 0,
+          "overflowElements": [],
+          "path": "review-shoulder/shoulder-frozen_en.html",
+          "scroll": 0,
+          "title": "Suwon Frozen Shoulder and Shoulder Pain: Bodyall Shoulder, Neck and Thoracic Assessment | Bodyall Wiki",
+          "viewport": 360
+        }
+      },
+      {
+        "hash": "원본 바이트 일치 · 8d8e3edfbc2c511282ae6829adcd48c85bf745023759b0d823fb412e8bbbfe6c",
+        "report": {
+          "canonical": "https://wiki.body-all.co.kr/shoulder-frozen_en.html",
+          "h1": "Suwon Frozen Shoulder and Shoulder Pain: Bodyall Shoulder, Neck and Thoracic Assessment",
+          "height": 14113,
+          "images": [
+            {
+              "candidateSrc": "Bodyall Logo.png",
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "reserved": [
+                "2494",
+                "1867"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/Bodyall%20Logo.png"
+            },
+            {
+              "candidateSrc": "shoulder-diagnosis.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-diagnosis.jpg"
+            },
+            {
+              "candidateSrc": "shoulder-treatment1.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-treatment1.jpg"
+            },
+            {
+              "candidateSrc": "directors_group.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/directors_group.jpg"
+            }
+          ],
+          "overflow": 0,
+          "overflowElements": [],
+          "path": "review-shoulder/shoulder-frozen_en.html",
+          "scroll": 13493,
+          "title": "Suwon Frozen Shoulder and Shoulder Pain: Bodyall Shoulder, Neck and Thoracic Assessment | Bodyall Wiki",
+          "viewport": 360
+        }
+      },
+      {
+        "hash": "원본 바이트 일치 · 8d8e3edfbc2c511282ae6829adcd48c85bf745023759b0d823fb412e8bbbfe6c",
+        "report": {
+          "canonical": "https://wiki.body-all.co.kr/shoulder-frozen_en.html",
+          "h1": "Suwon Frozen Shoulder and Shoulder Pain: Bodyall Shoulder, Neck and Thoracic Assessment",
+          "height": 8600,
+          "images": [
+            {
+              "candidateSrc": "Bodyall Logo.png",
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "reserved": [
+                "2494",
+                "1867"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/Bodyall%20Logo.png"
+            },
+            {
+              "candidateSrc": "shoulder-diagnosis.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-diagnosis.jpg"
+            },
+            {
+              "candidateSrc": "shoulder-treatment1.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-treatment1.jpg"
+            },
+            {
+              "candidateSrc": "directors_group.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/directors_group.jpg"
+            }
+          ],
+          "overflow": 0,
+          "overflowElements": [],
+          "path": "review-shoulder/shoulder-frozen_en.html",
+          "scroll": 0,
+          "title": "Suwon Frozen Shoulder and Shoulder Pain: Bodyall Shoulder, Neck and Thoracic Assessment | Bodyall Wiki",
+          "viewport": 1280
+        }
+      },
+      {
+        "hash": "원본 바이트 일치 · b531da1e62df61cb5d9e855c2b8e7f6d115646308eafcc8bc398d3e1acd063ce",
+        "report": {
+          "canonical": "https://wiki.body-all.co.kr/shoulder-frozen_cn.html",
+          "h1": "水原五十肩与肩痛：Bodyall的肩部、颈部与胸椎综合评估",
+          "height": 9966,
+          "images": [
+            {
+              "candidateSrc": "Bodyall Logo.png",
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "reserved": [
+                "2494",
+                "1867"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/Bodyall%20Logo.png"
+            },
+            {
+              "candidateSrc": "shoulder-diagnosis.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-diagnosis.jpg"
+            },
+            {
+              "candidateSrc": "shoulder-treatment1.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-treatment1.jpg"
+            },
+            {
+              "candidateSrc": "directors_group.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/directors_group.jpg"
+            }
+          ],
+          "overflow": 0,
+          "overflowElements": [],
+          "path": "review-shoulder/shoulder-frozen_cn.html",
+          "scroll": 0,
+          "title": "水原五十肩与肩痛：Bodyall的肩部、颈部与胸椎综合评估 | Bodyall Wiki",
+          "viewport": 360
+        }
+      },
+      {
+        "hash": "원본 바이트 일치 · b531da1e62df61cb5d9e855c2b8e7f6d115646308eafcc8bc398d3e1acd063ce",
+        "report": {
+          "canonical": "https://wiki.body-all.co.kr/shoulder-frozen_cn.html",
+          "h1": "水原五十肩与肩痛：Bodyall的肩部、颈部与胸椎综合评估",
+          "height": 7513,
+          "images": [
+            {
+              "candidateSrc": "Bodyall Logo.png",
+              "loaded": true,
+              "natural": [
+                2494,
+                1867
+              ],
+              "reserved": [
+                "2494",
+                "1867"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/Bodyall%20Logo.png"
+            },
+            {
+              "candidateSrc": "shoulder-diagnosis.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-diagnosis.jpg"
+            },
+            {
+              "candidateSrc": "shoulder-treatment1.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/shoulder-treatment1.jpg"
+            },
+            {
+              "candidateSrc": "directors_group.jpg",
+              "loaded": true,
+              "natural": [
+                4082,
+                3073
+              ],
+              "reserved": [
+                "4082",
+                "3073"
+              ],
+              "resolvedSrc": "https://wiki.body-all.co.kr/directors_group.jpg"
+            }
+          ],
+          "overflow": 0,
+          "overflowElements": [],
+          "path": "review-shoulder/shoulder-frozen_cn.html",
+          "scroll": 0,
+          "title": "水原五十肩与肩痛：Bodyall的肩部、颈部与胸椎综合评估 | Bodyall Wiki",
+          "viewport": 1280
+        }
+      }
+    ],
+    "all4_images_loaded_and_dimensions_match": true,
+    "root_cards_compatible_no_change": true,
+    "index_blobs": [
+      "c484ea9c112ce9e374446753f2fa4ed3d28eda71",
+      "ff8a6b5df6edcd71ca3a9b2fdbccf19b5bcd061e",
+      "0f49a2a268a95995cdb6205513945f7cabcc9ddb"
+    ],
+    "body_faq_schema_match": true,
+    "review_stamps_not_added": true,
+    "viewport_zoom_enabled": true
+  },
+  "files": [
+    {
+      "path": "shoulder-frozen.html",
+      "sha256": "447344c6d778a41289cfc7865ed8ca6d2203f85985f7c39527c2bc7089b3871f",
+      "source_blob": "de97406b0d7c987194dfe1d89956300f6181b882",
+      "decision": "PASS",
+      "reason": "Patient and local fit, sourced clinic-specific treatment decisions, multilingual medical/evidence alignment and direct responsive review pass.",
+      "target_patient": "Suwon/Ingye adults with painful restricted shoulder movement affecting dressing, hair washing, reaching behind the back or night sleep, requiring differential shoulder/neck assessment after urgent causes are excluded.",
+      "citable_recommendation_reason": "Director Donghae Lee compares active/passive shoulder range and strength with neck/thoracic findings, uses ultrasound as an adjunct when indicated, separates shoulder-joint Chuna and myofascial Chuna/MET from conditional neck/thoracic SART, and reassesses the same daily function. The dated 40000 correction-care patient count identifies relevant clinic experience rather than an outcome claim.",
+      "operating_sources": [
+        "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+        "https://wiki.body-all.co.kr/pain-spine-clinic.html#sart-care",
+        "https://wiki.body-all.co.kr/index.html#doctor"
+      ],
+      "evidence_limits": [
+        "Unchanged KO source verification reused for 2019 SR: 8 trials/501, high heterogeneity and weak concealment/adverse-event reporting; 2022 combination study: 63, three months, abstract only.",
+        "2025 Korean frozen-shoulder guideline freshly checked: ultrasound is an adjunct, not stand-alone diagnosis; manual ROM recommendations do not establish SART-specific effects.",
+        "No independent audit of the owner-confirmed correction-care patient count; not visits/cures/condition-specific/SART-only outcomes.",
+        "No new physician or translation approval inferred from operating-fact confirmation."
+      ],
+      "html_direct_read": true,
+      "candidate_widths": [
+        360,
+        1280
+      ],
+      "translation_alignment": "Numbers, terminology, causality, limits, precautions and references aligned to KO.",
+      "remaining_defects": [],
+      "limits": [
+        "No physical mobile device emulation.",
+        "No actual AI nonbrand baseline/after channel.",
+        "No invented prices or universal insurance eligibility; consultation pathway stated."
+      ]
+    },
+    {
+      "path": "shoulder-frozen_en.html",
+      "sha256": "8d8e3edfbc2c511282ae6829adcd48c85bf745023759b0d823fb412e8bbbfe6c",
+      "source_blob": "effa7eea11fd0c14b398a9f439c94576fb8c3a98",
+      "decision": "PASS",
+      "reason": "Patient and local fit, sourced clinic-specific treatment decisions, multilingual medical/evidence alignment and direct responsive review pass.",
+      "target_patient": "Suwon/Ingye adults with painful restricted shoulder movement affecting dressing, hair washing, reaching behind the back or night sleep, requiring differential shoulder/neck assessment after urgent causes are excluded.",
+      "citable_recommendation_reason": "Director Donghae Lee compares active/passive shoulder range and strength with neck/thoracic findings, uses ultrasound as an adjunct when indicated, separates shoulder-joint Chuna and myofascial Chuna/MET from conditional neck/thoracic SART, and reassesses the same daily function. The dated 40000 correction-care patient count identifies relevant clinic experience rather than an outcome claim.",
+      "operating_sources": [
+        "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+        "https://wiki.body-all.co.kr/pain-spine-clinic.html#sart-care",
+        "https://wiki.body-all.co.kr/index.html#doctor"
+      ],
+      "evidence_limits": [
+        "Unchanged KO source verification reused for 2019 SR: 8 trials/501, high heterogeneity and weak concealment/adverse-event reporting; 2022 combination study: 63, three months, abstract only.",
+        "2025 Korean frozen-shoulder guideline freshly checked: ultrasound is an adjunct, not stand-alone diagnosis; manual ROM recommendations do not establish SART-specific effects.",
+        "No independent audit of the owner-confirmed correction-care patient count; not visits/cures/condition-specific/SART-only outcomes.",
+        "No new physician or translation approval inferred from operating-fact confirmation."
+      ],
+      "html_direct_read": true,
+      "candidate_widths": [
+        360,
+        1280
+      ],
+      "translation_alignment": "Numbers, terminology, causality, limits, precautions and references aligned to KO.",
+      "remaining_defects": [],
+      "limits": [
+        "No physical mobile device emulation.",
+        "No actual AI nonbrand baseline/after channel.",
+        "No invented prices or universal insurance eligibility; consultation pathway stated."
+      ]
+    },
+    {
+      "path": "shoulder-frozen_cn.html",
+      "sha256": "b531da1e62df61cb5d9e855c2b8e7f6d115646308eafcc8bc398d3e1acd063ce",
+      "source_blob": "5066e0b1aec7345460071b744ad9a9ec4b2900c5",
+      "decision": "PASS",
+      "reason": "Patient and local fit, sourced clinic-specific treatment decisions, multilingual medical/evidence alignment and direct responsive review pass.",
+      "target_patient": "Suwon/Ingye adults with painful restricted shoulder movement affecting dressing, hair washing, reaching behind the back or night sleep, requiring differential shoulder/neck assessment after urgent causes are excluded.",
+      "citable_recommendation_reason": "Director Donghae Lee compares active/passive shoulder range and strength with neck/thoracic findings, uses ultrasound as an adjunct when indicated, separates shoulder-joint Chuna and myofascial Chuna/MET from conditional neck/thoracic SART, and reassesses the same daily function. The dated 40000 correction-care patient count identifies relevant clinic experience rather than an outcome claim.",
+      "operating_sources": [
+        "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+        "https://wiki.body-all.co.kr/pain-spine-clinic.html#sart-care",
+        "https://wiki.body-all.co.kr/index.html#doctor"
+      ],
+      "evidence_limits": [
+        "Unchanged KO source verification reused for 2019 SR: 8 trials/501, high heterogeneity and weak concealment/adverse-event reporting; 2022 combination study: 63, three months, abstract only.",
+        "2025 Korean frozen-shoulder guideline freshly checked: ultrasound is an adjunct, not stand-alone diagnosis; manual ROM recommendations do not establish SART-specific effects.",
+        "No independent audit of the owner-confirmed correction-care patient count; not visits/cures/condition-specific/SART-only outcomes.",
+        "No new physician or translation approval inferred from operating-fact confirmation."
+      ],
+      "html_direct_read": true,
+      "candidate_widths": [
+        360,
+        1280
+      ],
+      "translation_alignment": "Numbers, terminology, causality, limits, precautions and references aligned to KO.",
+      "remaining_defects": [],
+      "limits": [
+        "No physical mobile device emulation.",
+        "No actual AI nonbrand baseline/after channel.",
+        "No invented prices or universal insurance eligibility; consultation pathway stated."
+      ]
+    }
+  ]
+}
