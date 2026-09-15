@@ -1,0 +1,655 @@
+{
+  "version": "hub-and-index-priority-20260915-v1",
+  "authorized_at": "2026-09-15T11:25:52.169Z",
+  "user_request": "Prioritize root cervical-disc, lumbar-disc, shoulder-frozen, chuna-therapy, herbal-medicine and all medical/information index pages, including existing English and Chinese versions, regardless of earlier completion; then resume previous order.",
+  "repository": "bodyallhani/wiki",
+  "source_main": "1a8376901a69f5327a1153ec97f3a189db128a45",
+  "source_ledger": "1f789775627fc354a47299290785f1128256875e",
+  "source_sitemap_blob": "fe693ba43fe9b666224467f5112ffa894c718be3",
+  "inventory_method": "Fresh main recursive git tree (not truncated) and sitemap156 reconciled with accepted_paths.",
+  "priority_groups": [
+    {
+      "paths": [
+        "cervical-disc.html",
+        "cervical-disc_en.html",
+        "cervical-disc_cn.html"
+      ],
+      "topic": "cervical-disc"
+    },
+    {
+      "paths": [
+        "lumbar-disc.html",
+        "lumbar-disc_en.html",
+        "lumbar-disc_cn.html"
+      ],
+      "topic": "lumbar-disc"
+    },
+    {
+      "paths": [
+        "shoulder-frozen.html",
+        "shoulder-frozen_en.html",
+        "shoulder-frozen_cn.html"
+      ],
+      "topic": "shoulder-frozen"
+    },
+    {
+      "paths": [
+        "chuna-therapy.html",
+        "chuna-therapy_en.html",
+        "chuna-therapy_cn.html"
+      ],
+      "topic": "chuna-therapy"
+    },
+    {
+      "paths": [
+        "herbal-medicine.html",
+        "herbal-medicine_en.html",
+        "herbal-medicine_cn.html"
+      ],
+      "topic": "herbal-medicine"
+    },
+    {
+      "paths": [
+        "index.html",
+        "index_en.html",
+        "index_cn.html"
+      ],
+      "topic": "index"
+    },
+    {
+      "paths": [
+        "encyclopedia/index.html",
+        "encyclopedia/index_en.html",
+        "encyclopedia/index_cn.html"
+      ],
+      "topic": "encyclopedia/index"
+    },
+    {
+      "paths": [
+        "BodyallFit/encyclopedia/index.html",
+        "BodyallFit/encyclopedia/index_en.html",
+        "BodyallFit/encyclopedia/index_cn.html"
+      ],
+      "topic": "BodyallFit/encyclopedia/index"
+    },
+    {
+      "paths": [
+        "Herbmed/encyclopedia/index.html",
+        "Herbmed/encyclopedia/index_en.html",
+        "Herbmed/encyclopedia/index_cn.html"
+      ],
+      "topic": "Herbmed/encyclopedia/index"
+    },
+    {
+      "paths": [
+        "BodyallFit/index.html"
+      ],
+      "topic": "BodyallFit/index"
+    },
+    {
+      "paths": [
+        "notice/index.html",
+        "notice/index_en.html",
+        "notice/index_cn.html"
+      ],
+      "topic": "notice/index"
+    },
+    {
+      "paths": [
+        "pcode/index.html",
+        "pcode/index_en.html",
+        "pcode/index_cn.html"
+      ],
+      "topic": "pcode/index"
+    },
+    {
+      "paths": [
+        "spine/index.html"
+      ],
+      "topic": "spine/index"
+    }
+  ],
+  "priority_paths": [
+    "cervical-disc.html",
+    "cervical-disc_en.html",
+    "cervical-disc_cn.html",
+    "lumbar-disc.html",
+    "lumbar-disc_en.html",
+    "lumbar-disc_cn.html",
+    "shoulder-frozen.html",
+    "shoulder-frozen_en.html",
+    "shoulder-frozen_cn.html",
+    "chuna-therapy.html",
+    "chuna-therapy_en.html",
+    "chuna-therapy_cn.html",
+    "herbal-medicine.html",
+    "herbal-medicine_en.html",
+    "herbal-medicine_cn.html",
+    "index.html",
+    "index_en.html",
+    "index_cn.html",
+    "encyclopedia/index.html",
+    "encyclopedia/index_en.html",
+    "encyclopedia/index_cn.html",
+    "BodyallFit/encyclopedia/index.html",
+    "BodyallFit/encyclopedia/index_en.html",
+    "BodyallFit/encyclopedia/index_cn.html",
+    "Herbmed/encyclopedia/index.html",
+    "Herbmed/encyclopedia/index_en.html",
+    "Herbmed/encyclopedia/index_cn.html",
+    "BodyallFit/index.html",
+    "notice/index.html",
+    "notice/index_en.html",
+    "notice/index_cn.html",
+    "pcode/index.html",
+    "pcode/index_en.html",
+    "pcode/index_cn.html",
+    "spine/index.html"
+  ],
+  "original_scope_paths": [
+    "cervical-disc.html",
+    "cervical-disc_en.html",
+    "cervical-disc_cn.html",
+    "lumbar-disc.html",
+    "lumbar-disc_en.html",
+    "lumbar-disc_cn.html",
+    "shoulder-frozen.html",
+    "shoulder-frozen_en.html",
+    "shoulder-frozen_cn.html",
+    "chuna-therapy.html",
+    "chuna-therapy_en.html",
+    "chuna-therapy_cn.html",
+    "herbal-medicine.html",
+    "herbal-medicine_en.html",
+    "herbal-medicine_cn.html",
+    "index.html",
+    "index_en.html",
+    "index_cn.html",
+    "encyclopedia/index.html",
+    "encyclopedia/index_en.html",
+    "encyclopedia/index_cn.html",
+    "BodyallFit/encyclopedia/index.html",
+    "BodyallFit/encyclopedia/index_en.html",
+    "BodyallFit/encyclopedia/index_cn.html",
+    "Herbmed/encyclopedia/index.html",
+    "Herbmed/encyclopedia/index_en.html",
+    "Herbmed/encyclopedia/index_cn.html"
+  ],
+  "additional_existing_index_paths": [
+    "BodyallFit/index.html",
+    "notice/index.html",
+    "notice/index_cn.html",
+    "notice/index_en.html",
+    "pcode/index.html",
+    "pcode/index_cn.html",
+    "pcode/index_en.html",
+    "spine/index.html"
+  ],
+  "counts": {
+    "priority_total": 35,
+    "original_156_priority": 27,
+    "additional_existing_medical_indices": 8,
+    "previously_accepted_in_priority": 10,
+    "original_156_unaccepted_in_priority": 17,
+    "priority_strengthened_completed": 0
+  },
+  "additional_scope_rule": "Latest explicit request for all subdirectory indices authorizes these eight existing medical/information index pages outside the historical sitemap156. Track separately, do not inflate or silently change the original156 denominator. Do not create missing language versions or new sitemap URLs.",
+  "entertainment_index_inventory": [
+    {
+      "path": "contents/bodyall-clinic/index.html",
+      "sha": "f5ed0b2c282c08fd7af7e12db6c7b849d636c186"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/cao/index.html",
+      "sha": "c1e7142ddbed732960dba2d18fe11af2d12b7bb7"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/diao/index.html",
+      "sha": "ae28a807d57e405c992be0dcb9a7bbd3bb15f9c3"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/guan/index.html",
+      "sha": "98c18dd178b0b7dbf546671dd74965b28ada79a4"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/horse/index.html",
+      "sha": "85e87d85bebfefd34d463e7245e0e41f64cde1f6"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/huang/index.html",
+      "sha": "20bb07f64095a23c597bc38fbda91cb8b4a49cb1"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/liu/index.html",
+      "sha": "e3b9a471869af1611ff2a21e8a39ba864dc16a9b"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/lu/index.html",
+      "sha": "ca7d8c39c2d8fa01988b35e374e1b61d1e725d7e"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/sima/index.html",
+      "sha": "28c29831ec3f283a25c566af35d292985e226c2f"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/sun/index.html",
+      "sha": "247f111700a4d9bfd9afaf2baab9b590a767c823"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/cao/index.html",
+      "sha": "7b461e9bb0e1ee602e8d27d9dee7971e6d602282"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/diao/index.html",
+      "sha": "674595057e9bc7bde85a42aa6ed812246f665238"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/dong/index.html",
+      "sha": "13c09b9fb2f29c2324a2981a088aaf289b4dbbc5"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/guan/index.html",
+      "sha": "e6a9b1a2ee344b7b312ac1dc6377230b8c42a80d"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/horse/index.html",
+      "sha": "ef14cd3a5a9f9631ac1be622e503e05d0d1151ae"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/huang/index.html",
+      "sha": "aed807b93dea2965ec7fb48fcf0add793b2a2b72"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/jiao/index.html",
+      "sha": "31a4e16686caa3d468f529232599ce600b54d41c"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/li/index.html",
+      "sha": "e489d2becd951353536b5ee1633ddd5b6b2631eb"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/liu/index.html",
+      "sha": "527ee05e3018ea155584a11fc47dbc9b2ede86df"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/liushan/index.html",
+      "sha": "41b2d4849395a1553b24ac9032395ea45a0d0b8e"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/lu/index.html",
+      "sha": "d48dd4fa27b8fbb67c6b1c51cc8b25593e7c809f"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/meng/index.html",
+      "sha": "45d0e7a799e0381d5ccd28a2f2a319eb51bfd456"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/mi/index.html",
+      "sha": "524613eab047faa9bb3e897b77157ab96f2b1298"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/sima/index.html",
+      "sha": "a0dbb592c65f9e3cc5ce2798c2cf097700a80b83"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/sun/index.html",
+      "sha": "8c03dedcc5559925896cfc95e482accc87d4c2a4"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/xing/index.html",
+      "sha": "c33e64e06ae35b12b3e851578d8c5ed41eb59883"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/xu/index.html",
+      "sha": "6cf1a2dd7168cb92747928d49aed4369804dcfd8"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/yuan/index.html",
+      "sha": "4e77e71229f3698684e6b3103aff3c553730d343"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/zhang/index.html",
+      "sha": "10d3cd7c63efc7b8891d6594a2a492894ce7e898"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/zhao/index.html",
+      "sha": "247cb4b5826cfbee4f6010c2635597bba075db35"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/zhou/index.html",
+      "sha": "207ea1e57a5052c45fe2e86d38796c7f37c80fd9"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/zhuge/index.html",
+      "sha": "3da0e7bcd906063ffb1c5de90ff3db861b86bfa5"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/v2/zuo/index.html",
+      "sha": "6f582dc7796c1586e90950d45be32604f4cea976"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/zhang/index.html",
+      "sha": "58faabe1b2a11865e756a461085f8a55121cb724"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/zhao/index.html",
+      "sha": "4599404b5e341d4db8856d2f4adc64b61837590b"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/zhou/index.html",
+      "sha": "59504882ded67caca24949b7158e6eb9964b1848"
+    },
+    {
+      "path": "contents/bodyall-clinic/result/zhuge/index.html",
+      "sha": "efcb7755e9141b29c412ffd2e45c324db357a489"
+    },
+    {
+      "path": "contents/bodyall-clinic/stats/index.html",
+      "sha": "871fe7c1e484abc0b534f5e4122f4a3413544887"
+    },
+    {
+      "path": "contents/index.html",
+      "sha": "041f0589f5c795ac44353e07d3960805f9be0e7c"
+    },
+    {
+      "path": "contents/spine-off-duty/index.html",
+      "sha": "fe44f2a6db17438e022767a0b89c42027f609dfe"
+    }
+  ],
+  "entertainment_boundary": "40 existing game/results/statistics/entertainment indices were identified. Preserve the standing separate-game-task exclusion; do not turn game/result pages into medical recommendation articles.",
+  "snapshot_by_path": [
+    {
+      "path": "cervical-disc.html",
+      "blob": "17bb099b854543fa06f01266ad1ac956871809a9",
+      "previously_accepted": true
+    },
+    {
+      "path": "cervical-disc_en.html",
+      "blob": "c6c7136064bb896000ffecd2c23b8984e058954e",
+      "previously_accepted": true
+    },
+    {
+      "path": "cervical-disc_cn.html",
+      "blob": "4719487c8b5f37e1b5922c80aea6b2a22e3d66f4",
+      "previously_accepted": true
+    },
+    {
+      "path": "lumbar-disc.html",
+      "blob": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
+      "previously_accepted": true
+    },
+    {
+      "path": "lumbar-disc_en.html",
+      "blob": "b062465ecebaa64716a8ca705c7485cdbefe2d21",
+      "previously_accepted": true
+    },
+    {
+      "path": "lumbar-disc_cn.html",
+      "blob": "d586b2e6ca8c623a0eaecfcd51495be85035e96e",
+      "previously_accepted": true
+    },
+    {
+      "path": "shoulder-frozen.html",
+      "blob": "de97406b0d7c987194dfe1d89956300f6181b882",
+      "previously_accepted": true
+    },
+    {
+      "path": "shoulder-frozen_en.html",
+      "blob": "effa7eea11fd0c14b398a9f439c94576fb8c3a98",
+      "previously_accepted": true
+    },
+    {
+      "path": "shoulder-frozen_cn.html",
+      "blob": "5066e0b1aec7345460071b744ad9a9ec4b2900c5",
+      "previously_accepted": true
+    },
+    {
+      "path": "chuna-therapy.html",
+      "blob": "1d59caaa4fecefc851dff46fc53acb3abaea82d7",
+      "previously_accepted": false
+    },
+    {
+      "path": "chuna-therapy_en.html",
+      "blob": "8b6159d3f6b3212d7a86a3bd5bbe562a29da17b3",
+      "previously_accepted": false
+    },
+    {
+      "path": "chuna-therapy_cn.html",
+      "blob": "5fbf09d27bd720e3972fc1bdb6b88604e1de034f",
+      "previously_accepted": false
+    },
+    {
+      "path": "herbal-medicine.html",
+      "blob": "1780d906af07c8e37ae6f52203fc8f6113664f30",
+      "previously_accepted": false
+    },
+    {
+      "path": "herbal-medicine_en.html",
+      "blob": "15e67ec88e06bacfcd543ee7923d1841ec6ce15f",
+      "previously_accepted": false
+    },
+    {
+      "path": "herbal-medicine_cn.html",
+      "blob": "214b11f4885fa1e4b6499cb5bdbbce933be2e806",
+      "previously_accepted": false
+    },
+    {
+      "path": "index.html",
+      "blob": "c484ea9c112ce9e374446753f2fa4ed3d28eda71",
+      "previously_accepted": false
+    },
+    {
+      "path": "index_en.html",
+      "blob": "ff8a6b5df6edcd71ca3a9b2fdbccf19b5bcd061e",
+      "previously_accepted": false
+    },
+    {
+      "path": "index_cn.html",
+      "blob": "0f49a2a268a95995cdb6205513945f7cabcc9ddb",
+      "previously_accepted": false
+    },
+    {
+      "path": "encyclopedia/index.html",
+      "blob": "6cf4a592b64ec7be1a3dc11e7e5e16e551746309",
+      "previously_accepted": false
+    },
+    {
+      "path": "encyclopedia/index_en.html",
+      "blob": "ea952fcddaf41a32b7bffc1c7d25e8713bfc7cef",
+      "previously_accepted": false
+    },
+    {
+      "path": "encyclopedia/index_cn.html",
+      "blob": "2c591ace032a4e30776974a4818b208090ce44f5",
+      "previously_accepted": false
+    },
+    {
+      "path": "BodyallFit/encyclopedia/index.html",
+      "blob": "38889ef80ef7be07d5cd4520a72f63ae91189688",
+      "previously_accepted": true
+    },
+    {
+      "path": "BodyallFit/encyclopedia/index_en.html",
+      "blob": "fac525d428f477da12475676477611ccf203cb52",
+      "previously_accepted": false
+    },
+    {
+      "path": "BodyallFit/encyclopedia/index_cn.html",
+      "blob": "6562e86687a6ab63484b9948c80def1846903411",
+      "previously_accepted": false
+    },
+    {
+      "path": "Herbmed/encyclopedia/index.html",
+      "blob": "ca005357ec4b258e0424421e8750f8a77c164ebc",
+      "previously_accepted": false
+    },
+    {
+      "path": "Herbmed/encyclopedia/index_en.html",
+      "blob": "bf01e2e1af1d0ce238920ead275c8374d3b0d645",
+      "previously_accepted": false
+    },
+    {
+      "path": "Herbmed/encyclopedia/index_cn.html",
+      "blob": "afc00b33fbe520b0815d59f826d8d4a96f25ff9e",
+      "previously_accepted": false
+    },
+    {
+      "path": "BodyallFit/index.html",
+      "blob": "bc977f713735984fe750a9919fddc91ccfc90916",
+      "previously_accepted": false
+    },
+    {
+      "path": "notice/index.html",
+      "blob": "4d7e4c0abcc4ea1927012190c71105555e4b5e30",
+      "previously_accepted": false
+    },
+    {
+      "path": "notice/index_en.html",
+      "blob": "797c12e6405a3237abd91b1d4f8cce0aa43a79c9",
+      "previously_accepted": false
+    },
+    {
+      "path": "notice/index_cn.html",
+      "blob": "bcb92f96abb8f9472f164bfa63c0c64ffd0bbe02",
+      "previously_accepted": false
+    },
+    {
+      "path": "pcode/index.html",
+      "blob": "313726142f2ec6c7da718d2f07f9251fa3dd4234",
+      "previously_accepted": false
+    },
+    {
+      "path": "pcode/index_en.html",
+      "blob": "3e4b9c498ad141fcc4da034e2a11d365c5331a76",
+      "previously_accepted": false
+    },
+    {
+      "path": "pcode/index_cn.html",
+      "blob": "57de00fec39870158e629ff416bbf47556c0f9a1",
+      "previously_accepted": false
+    },
+    {
+      "path": "spine/index.html",
+      "blob": "66261e3ea31170c5a2fdaa6046f86ebe4cb188f0",
+      "previously_accepted": false
+    }
+  ],
+  "resume_policy": "After priority_pending_paths is empty, resume the saved phase1 pending order (stiff-hands first), skipping priority URLs that have actually passed all strengthened gates. Once phase1 finishes, resume phase2 remaining historical rework, skipping priority reworks already verified. No duplicate completion rows or inflated new-publication counts.",
+  "preserved_pending_hand": {
+    "audit_blob": "ed50d33857501a175350837b5f84fb8a3138ffad",
+    "audit_exact_readback": true,
+    "audit_record": "ops/html-recovery/reviews/20260915-stiff-hands-source-audit.json",
+    "baseline_ledger": "e30aa1799c96e6c602929769e2477e7f5a7ac28d",
+    "baseline_main": "1a8376901a69f5327a1153ec97f3a189db128a45",
+    "candidate_sha256": null,
+    "counted_complete": 0,
+    "main_writes": 0,
+    "missing": [
+      "Targeted KO/EN/CN candidate edits and matching cards",
+      "Actual image inspection and dimensions",
+      "Hand-topic specific comparator assessment",
+      "Whole exact HTML and desktop/narrow render final review",
+      "GitHub/public deployment validation"
+    ],
+    "next_action": "Fresh ledger/main/target and index blobs, single-writer claim, then targeted KO edits with verified evidence and operating_facts. Do not reuse source mechanism/outcome claims. No need to wait for Kwon full text if unsupported efficacy conclusions are removed.",
+    "paths": [
+      "encyclopedia/0002.stiff-hands.html",
+      "encyclopedia/0002.stiff-hands_cn.html",
+      "encyclopedia/0002.stiff-hands_en.html"
+    ],
+    "source_blobs": {
+      "encyclopedia/0002.stiff-hands.html": "cf2e81921b5db3976e632fb3814f1145127dec84",
+      "encyclopedia/0002.stiff-hands_cn.html": "f9a4004e436710cfe647062ef2b107118ac6d883",
+      "encyclopedia/0002.stiff-hands_en.html": "5ffbdd130add5aaa45289642d663519cb0b2b27f"
+    },
+    "stage": "SOURCE_AND_CITATION_AUDIT_CHECKPOINT",
+    "status": "HOLD_PENDING_CANDIDATE_AND_REQUIRED_REVIEW",
+    "topic": "encyclopedia/0002.stiff-hands"
+  },
+  "preserved_lumbar_candidate": {
+    "audit": "ops/html-recovery/reviews/20260915-lumbar-hub-rework-source-audit.json",
+    "candidate_render_status": "NOT_COMPLETED",
+    "candidate_sha256": {
+      "lumbar-disc.html": "cba23d0cc91c40604b34c9ef8e0205ccfde4476726d542fb8fcc4e0c78247dfc",
+      "lumbar-disc_cn.html": "97d24b03bb4a845a3d3336367840131c8ea21a1a342866c64a568854b7225e9f",
+      "lumbar-disc_en.html": "91a8bb189f192c8ac3f1af1d19838a08637ff6da64b24030e4300c39422fcae9"
+    },
+    "next_action": "After phase1 completion, re-read main/target blobs and re-evaluate preserved candidates including new owner facts; no previous editorial score substitutes for exact render review.",
+    "source_blobs": {
+      "lumbar-disc.html": "6aa5886a92fd16b4e1161755faa01ceb915fd009",
+      "lumbar-disc_cn.html": "d586b2e6ca8c623a0eaecfcd51495be85035e96e",
+      "lumbar-disc_en.html": "b062465ecebaa64716a8ca705c7485cdbefe2d21"
+    },
+    "source_main": "004335bd719de2136b93df82e80cdf3b40a68380",
+    "stage": "SOURCE_AUDIT_COMPLETE_CANDIDATE_AND_RENDER_REVIEW_PENDING",
+    "status": "DEFERRED_BY_OWNER_PRIORITY_NO_MAIN_WRITE",
+    "topic": "lumbar-disc existing-publication rework KO/EN/CN"
+  },
+  "first_topic_audit": {
+    "topic": "cervical-disc KO/EN/CN",
+    "stage": "SOURCE_TEXT_AND_STRUCTURE_READ",
+    "main_writes": 0,
+    "candidate_created": false,
+    "source_blobs": [
+      {
+        "path": "cervical-disc.html",
+        "sha": "17bb099b854543fa06f01266ad1ac956871809a9"
+      },
+      {
+        "path": "cervical-disc_en.html",
+        "sha": "c6c7136064bb896000ffecd2c23b8984e058954e"
+      },
+      {
+        "path": "cervical-disc_cn.html",
+        "sha": "4719487c8b5f37e1b5922c80aea6b2a22e3d66f4"
+      }
+    ],
+    "read_scope": "All three visible bodies read; headings, image attributes and evidence descriptions inspected from fresh main source.",
+    "retain": [
+      "Differential neck/shoulder/peripheral-nerve examination",
+      "Progressive neurological warning signs",
+      "Same-movement reassessment",
+      "2024 single-case and2019 protocol limitations already explicit; reuse identical validated claims instead of repeated full research"
+    ],
+    "improve": [
+      "Opening currently repeats generic examination/choice language; connect confirmed clinic correction-care experience, MET and selective ultrasound to this patient group and actual treatment choices.",
+      "Specify relevant Bodyall manual-care process with sourced indication limits; no compulsory pelvic procedures for every neck patient.",
+      "Re-evaluate conceptual twisting/spacing and analogy images directly before deciding whether to retain; alt labels and dimensions are not proof of accuracy.",
+      "Reduce repeated research-method explanations while preserving useful evidence and material invasive risks.",
+      "Reserve a final exact whole-HTML and desktop/narrow render review with patient-specific citable reasons and operational sources; this source audit is not a publication PASS."
+    ],
+    "remaining": [
+      "Candidate edits/translation alignment",
+      "Direct image review",
+      "Topic-relevant comparator observations",
+      "Full exact final HTML/render review",
+      "Sequential SHA-locked main writes and public verification"
+    ]
+  },
+  "operating_facts": {
+    "confirmed_at": "2026-09-15",
+    "correction_patients": {
+      "copy_ko": "누적 교정 환자 4만 명(2025년 12월까지 집계, 원장 확인)",
+      "count": 40000,
+      "counted_through": "2025-12",
+      "not_treatment_outcome": true,
+      "unit": "교정 환자"
+    },
+    "independent_audit": false,
+    "met": true,
+    "no_new_medical_review_stamp": true,
+    "record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+    "record_blob": "caed23df2121c6cfc6e6bd96bad04043440a1938",
+    "require_source_record_in_generation_and_final_review": true,
+    "source_type": "DIRECT_OWNER_CONFIRMATION",
+    "ultrasound": true
+  },
+  "publication_gate": "Unchanged strengthened exact HTML, patient-specific recommendation suitability, factual/medical/translation alignment, actual image/desktop/narrow render review, sequential optimistic locking, GitHub exact and public validation.",
+  "actual_ai_recommendation_gain": "UNMEASURED",
+  "no_new_review_stamp": true,
+  "main_changed": false,
+  "original_counts_preserved": {
+    "completed": 88,
+    "remaining": 68
+  }
+}
