@@ -1,0 +1,94 @@
+{
+  "record_version": "BODYALLFIT_ENCYCLOPEDIA_PRIORITY_RELEASE_V1",
+  "released_at": "2026-09-16T05:38:00+09:00",
+  "base_main_head": "745d20efdf79a1118ab402a01cd91a151e226b04",
+  "final_main_head": "9413a6ef4c71c78909d80a801105141c9f067475",
+  "changed_paths": [
+    "BodyallFit/encyclopedia/index.html",
+    "BodyallFit/encyclopedia/index_en.html",
+    "BodyallFit/encyclopedia/index_cn.html"
+  ],
+  "scope_compare": {
+    "ahead_by": 3,
+    "only_intended_paths_changed": true
+  },
+  "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit-encyclopedia-priority-final.json",
+  "review_receipt_blob": "69d2de5306606b5f0e2a5553c2bbf14ab4971c16",
+  "public_review_harness": {
+    "path": "ops/html-recovery/review-harnesses/20260916-bodyallfit-encyclopedia-public-360.html",
+    "commit": "f5bceac07fad49124014d7c5aab992df9e313df1"
+  },
+  "files": [
+    {
+      "path": "BodyallFit/encyclopedia/index.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index.html",
+      "sha256": "b88cf3414304fcdbb2d58d0881d2c63afde0e641443a3689aa72c8d1d329ef4b",
+      "git_blob": "35fa20d7cad2ba7e9e9cd541026641fc95915d62",
+      "publication_commit": "c2ff204c44d3a3ef69b17954654449bcca0b7a69"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/index_en.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index_en.html",
+      "sha256": "3e1eb365960fa675e9a3190f5832a93e16725524a3486fe22461f52dd2ef6464",
+      "git_blob": "8bececae2c345abdd38b4a53bc8758a70f7fcf8e",
+      "publication_commit": "e6a2a7d00a958eda8988589c44d4ec1d0fd0fdd4"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/index_cn.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/index_cn.html",
+      "sha256": "56cedb9e3180462d8c99b1bf64e91bd41a2a9add9d4143b62e6e3ee710d73783",
+      "git_blob": "06017bff17f3c80059c64292dd018d472258ac97",
+      "publication_commit": "9413a6ef4c71c78909d80a801105141c9f067475"
+    }
+  ],
+  "repository_readback": {
+    "all_three_exact_candidate_bytes": true
+  },
+  "public_verification": {
+    "pages_reflected_at": "2026-09-16T05:36:00+09:00",
+    "desktop": {
+      "viewport_width": 1348,
+      "all_body_widths": 1348,
+      "all_titles_h1_languages_match": true,
+      "all_images_loaded": [
+        [
+          1408,
+          768
+        ],
+        [
+          500,
+          500
+        ]
+      ],
+      "canonical_each": 1,
+      "hreflang_each": 4,
+      "faq_each": 3,
+      "jsonld_scripts_each": 1
+    },
+    "narrow": {
+      "viewport_width": 360,
+      "all_body_widths": 360,
+      "all_titles_h1_languages_match": true,
+      "all_images_loaded": [
+        [
+          1408,
+          768
+        ],
+        [
+          500,
+          500
+        ]
+      ],
+      "canonical_each": 1,
+      "hreflang_each": 4,
+      "faq_each": 3,
+      "jsonld_scripts_each": 1
+    },
+    "public_content_matches_release_markers": true,
+    "public_http_byte_hash_note": "Exact SHA256 is the deployed repository file hash. Public DOM, metadata, schema presence, images and responsive rendering were independently verified; raw public HTTP byte equality was not measured."
+  },
+  "recommendation_lift_measurement": "UNMEASURED",
+  "make_touched": false,
+  "google_indexing_touched": false,
+  "decision": "PUBLISHED_PUBLIC_VERIFIED"
+}
