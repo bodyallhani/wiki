@@ -1,9 +1,9 @@
 {
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V215",
-  "updated_at": "2026-09-14T23:56:30Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V216",
+  "updated_at": "2026-09-15T00:59:43.317549Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
+  "public_commit": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,8 +13,8 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 67,
-    "latest_standard_not_confirmed_or_remaining": 89,
+    "latest_standard_published_confirmed": 70,
+    "latest_standard_not_confirmed_or_remaining": 86,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
@@ -42,6 +42,9 @@
     "cervical-disc.html",
     "cervical-disc_cn.html",
     "cervical-disc_en.html",
+    "encyclopedia/0009.tailbone-pain.html",
+    "encyclopedia/0009.tailbone-pain_cn.html",
+    "encyclopedia/0009.tailbone-pain_en.html",
     "encyclopedia/0010.carpal-tunnel.html",
     "encyclopedia/0010.carpal-tunnel_cn.html",
     "encyclopedia/0010.carpal-tunnel_en.html",
@@ -829,18 +832,57 @@
     },
     {
       "path": "encyclopedia/0009.tailbone-pain.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "ac946881d274b9aab6eb5f15c553af8ad0f0856c15efebdd7352c587a16d3018",
+      "git_blob": "5e42c5bc2928fea27c178d2b971dc2d6e90d5199",
+      "publication_commit": "865a98761718dd9bc224025a453874180490b7ed",
+      "final_repository_head": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0009.tailbone-pain.html",
+      "verification_receipt": "run_0009_final/public_verification.json",
+      "review_receipt": "run_0009_final/offline_validation.json",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "Manual therapy evidence is limited and does not establish SART-specific efficacy; the 2020 laser-acupuncture paper is one case and does not establish Bodyall outcomes.",
+        "The selected public browser did not expose separate mobile emulation; desktop top/bottom, responsive media rules and zero horizontal overflow were checked.",
+        "Actual AI recommendation lift remains unmeasured because an independent fixed non-brand baseline/after channel is not connected."
+      ]
     },
     {
       "path": "encyclopedia/0009.tailbone-pain_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "865c0d5b43c9803a6b5ead0ff4c125cf70cf94deecc7e209b6fbfa97f7d8b66f",
+      "git_blob": "9f33c2e637e857fa7782ebdced75bba9d4aa7af4",
+      "publication_commit": "02b08505486d98fc0c9392e45e2f7487a6011d1a",
+      "final_repository_head": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0009.tailbone-pain_cn.html",
+      "verification_receipt": "run_0009_final/public_verification.json",
+      "review_receipt": "run_0009_final/offline_validation.json",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "Manual therapy evidence is limited and does not establish SART-specific efficacy; the 2020 laser-acupuncture paper is one case and does not establish Bodyall outcomes.",
+        "The selected public browser did not expose separate mobile emulation; desktop top/bottom, responsive media rules and zero horizontal overflow were checked.",
+        "Actual AI recommendation lift remains unmeasured because an independent fixed non-brand baseline/after channel is not connected."
+      ]
     },
     {
       "path": "encyclopedia/0009.tailbone-pain_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "c588079340ea00e6263b62b8726e6e68e9f53bf1306336cb06efb4348b64142d",
+      "git_blob": "1580ecadceaf5a9107f6058dafe0878e74d72aff",
+      "publication_commit": "6b51991c7a280bf92177167562449ae2214d958d",
+      "final_repository_head": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0009.tailbone-pain_en.html",
+      "verification_receipt": "run_0009_final/public_verification.json",
+      "review_receipt": "run_0009_final/offline_validation.json",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "Manual therapy evidence is limited and does not establish SART-specific efficacy; the 2020 laser-acupuncture paper is one case and does not establish Bodyall outcomes.",
+        "The selected public browser did not expose separate mobile emulation; desktop top/bottom, responsive media rules and zero horizontal overflow were checked.",
+        "Actual AI recommendation lift remains unmeasured because an independent fixed non-brand baseline/after channel is not connected."
+      ]
     },
     {
       "path": "encyclopedia/0010.carpal-tunnel.html",
@@ -1780,31 +1822,31 @@
     }
   ],
   "latest_validation": {
-    "run": "run_0010_final",
+    "run": "run_0009_final",
     "offline_status": "PASS",
     "public_status": "PASS",
     "article_urls": [
-      "https://wiki.body-all.co.kr/encyclopedia/0010.carpal-tunnel.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0010.carpal-tunnel_en.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0010.carpal-tunnel_cn.html"
+      "https://wiki.body-all.co.kr/encyclopedia/0009.tailbone-pain.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0009.tailbone-pain_en.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0009.tailbone-pain_cn.html"
     ],
     "article_checks": {
       "count": 3,
       "github_exact_blob_readback": true,
       "pages_latest_body_and_schema_confirmed": true,
       "patient_condition_bodyall_choice_reason_and_next_action_visible_in_source": true,
-      "median_nerve_thumb_strength_and_wrist_vs_proximal_differential_visible_in_source": true,
+      "focal_coccygeal_lumbar_si_hip_pelvic_floor_and_neurological_differential_visible_in_source": true,
       "role_separated_chuna_sart_acupotomy_visible_in_source": true,
       "urgent_signals_and_acupotomy_risks_visible_in_source": true,
-      "ligament_release_tunnel_pressure_nerve_regeneration_and_cervical_decompression_overclaims_removed": true,
-      "evidence_scope_aligned_to_meta_analysis_guideline_retrospective_study_and_rct": true,
+      "pelvic_alignment_coccyx_repositioning_adhesion_release_and_recurrence_overclaims_removed": true,
+      "evidence_scope_aligned_to_review_systematic_review_and_single_case": true,
       "canonical_hreflang_og_clean_and_index_follow": true,
       "same_language_index_links_and_cards_correct": true,
       "faq_schema_count_each": 1,
       "public_images_http_200": true,
       "image_natural_and_reserved_sizes_each": [
-        "1154x736",
-        "1380x750"
+        "1197x757",
+        "1256x708"
       ],
       "public_browser_visual_check": "PASS_DESKTOP_TOP_AND_BOTTOM_ALL_LANGUAGES",
       "responsive_media_rule_present_each": true,
@@ -1826,32 +1868,32 @@
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "16a65e53fccbeb28fa5338dd23c56ee77287e387",
-    "final_head": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
+    "prewrite_head": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
+    "final_head": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
     "files": {
-      "encyclopedia/0010.carpal-tunnel.html": {
-        "source_blob": "0d2d9383e1f9d36669a12ac29b46a60032e31bf4",
-        "final_blob": "20411ba4d4c884f0e3447067092281f95d2b5d5d",
-        "publication_commit": "854de6ee70c48a5435d5ca1f6d4252a2fc91d3ff",
-        "sha256": "66e8ffa9fb59697d3edf400fb0e3cbdb659e5f371774e91991a461b5c31fe1a2",
+      "encyclopedia/0009.tailbone-pain.html": {
+        "source_blob": "5d8844c5551286d53dd7c116d934eb12bae56455",
+        "final_blob": "5e42c5bc2928fea27c178d2b971dc2d6e90d5199",
+        "publication_commit": "865a98761718dd9bc224025a453874180490b7ed",
+        "sha256": "ac946881d274b9aab6eb5f15c553af8ad0f0856c15efebdd7352c587a16d3018",
         "github_exact_readback": true,
         "pages_latest_content_confirmed": true,
         "browser_visual_verified": true
       },
-      "encyclopedia/0010.carpal-tunnel_en.html": {
-        "source_blob": "483560ce342e1de7838e7bb38058b5977ff0915b",
-        "final_blob": "b37083f9f2d8ebce1cb71715f28ce5d541fa9902",
-        "publication_commit": "5888cb749f2b8d2d717488923c67fc5fa689b603",
-        "sha256": "c1631bbc10162e500acbe3f676072271f5c490425ac1dc065a97d7de1a1c5893",
+      "encyclopedia/0009.tailbone-pain_en.html": {
+        "source_blob": "0e48cdb87b7cb6f368c28009a3540aa30cd8282a",
+        "final_blob": "1580ecadceaf5a9107f6058dafe0878e74d72aff",
+        "publication_commit": "6b51991c7a280bf92177167562449ae2214d958d",
+        "sha256": "c588079340ea00e6263b62b8726e6e68e9f53bf1306336cb06efb4348b64142d",
         "github_exact_readback": true,
         "pages_latest_content_confirmed": true,
         "browser_visual_verified": true
       },
-      "encyclopedia/0010.carpal-tunnel_cn.html": {
-        "source_blob": "2891687d4c0ff02cd8a1ceacef88465b1b85196c",
-        "final_blob": "7be4bfb41f7aea4a14703ede72d20ff823bba92c",
-        "publication_commit": "38895bc07d7d74ff7444da3d5c7f7fb32cca03e3",
-        "sha256": "2c6f3f9e6352edbb3f8a3c9795d147de917ef89f2d45eed5fe6fb871be7781e0",
+      "encyclopedia/0009.tailbone-pain_cn.html": {
+        "source_blob": "2533a387fff1dc8320f8b145312ecfb4347e0ea4",
+        "final_blob": "9f33c2e637e857fa7782ebdced75bba9d4aa7af4",
+        "publication_commit": "02b08505486d98fc0c9392e45e2f7487a6011d1a",
+        "sha256": "865c0d5b43c9803a6b5ead0ff4c125cf70cf94deecc7e209b6fbfa97f7d8b66f",
         "github_exact_readback": true,
         "pages_latest_content_confirmed": true,
         "browser_visual_verified": true
@@ -1859,47 +1901,51 @@
     },
     "supporting_files": {
       "encyclopedia/index.html": {
-        "source_blob": "d99ad74ba7e7f549d99c575fde2f9e3e3771ebcb",
-        "final_blob": "1b7d7fef84d60bb3e42eef57bbe50f204a874898",
-        "publication_commit": "2f4fa4095817b34221cca69caf62bfb793a0fba2",
+        "source_blob": "1b7d7fef84d60bb3e42eef57bbe50f204a874898",
+        "final_blob": "41102eb23a239c2039fb87998cb2c1b2c73c020e",
+        "publication_commit": "c3d2a46944f824f30d8ce06350758c522a222fba",
         "github_exact_readback": true,
         "pages_latest_card_confirmed": true
       },
       "encyclopedia/index_en.html": {
-        "source_blob": "894a2ecca86efaf5b2e6469ed91f2909883a6448",
-        "final_blob": "d34b165aec7e3c46e16f9c53202367a7919b5d01",
-        "publication_commit": "58b66231674379fa16eaaed65846fee9725952a8",
+        "source_blob": "d34b165aec7e3c46e16f9c53202367a7919b5d01",
+        "final_blob": "790171c66c1bc116523fef8dccef5c42d649a6e0",
+        "publication_commit": "23f4194d76d0ab9da91b9d8213d2e7472fcee2f4",
         "github_exact_readback": true,
         "pages_latest_card_confirmed": true
       },
       "encyclopedia/index_cn.html": {
-        "source_blob": "550b35cdbedf52e984643dfb5af4f0c88bd86785",
-        "final_blob": "eac67acee3ac572bc36bcaa7abca55f5e311480a",
-        "publication_commit": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
+        "source_blob": "eac67acee3ac572bc36bcaa7abca55f5e311480a",
+        "final_blob": "5440bf80e812c94db163f5e9d0bc4156aaf0c1bc",
+        "publication_commit": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
         "github_exact_readback": true,
         "pages_latest_card_confirmed": true
       }
     },
     "compare": {
+      "base": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
+      "head": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
       "ahead_by": 6,
       "behind_by": 0,
       "files": [
-        "encyclopedia/0010.carpal-tunnel.html",
-        "encyclopedia/0010.carpal-tunnel_en.html",
-        "encyclopedia/0010.carpal-tunnel_cn.html",
+        "encyclopedia/0009.tailbone-pain.html",
+        "encyclopedia/0009.tailbone-pain_en.html",
+        "encyclopedia/0009.tailbone-pain_cn.html",
         "encyclopedia/index.html",
         "encyclopedia/index_en.html",
         "encyclopedia/index_cn.html"
       ]
-    }
+    },
+    "public_verification": "run_0009_final/public_verification.json",
+    "offline_validation": "run_0009_final/offline_validation.json"
   },
-  "next": "Review encyclopedia/0009 tailbone pain Korean against the recommendation-first standard, then align English and Chinese.",
+  "next": "Review encyclopedia/0008 tennis elbow Korean against the recommendation-first standard, then align English and Chinese.",
   "constraints": {
     "make": "OFF_AUTH_BLOCKED_DO_NOT_CALL_OR_REACTIVATE",
     "google_auto_indexing": "STOPPED",
     "new_articles_or_games": "OUT_OF_SCOPE",
     "recommendation_measurement": "UNMEASURED_CHANNEL_NOT_CONNECTED",
-    "mobile_emulation_for_latest_release": "NOT_RUN"
+    "mobile_emulation_for_latest_release": "NOT_AVAILABLE_IN_SELECTED_PUBLIC_BROWSER"
   },
   "restart_guard": {
     "path": "ops/html-recovery/resume_guard.py",
@@ -1918,45 +1964,35 @@
     "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER"
   },
   "latest_debug": {
-    "run": "run_0010_final",
+    "run": "run_0009_final",
     "confirmed_findings": [
-      "The prior page led with SART and generalized tunnel expansion instead of differential assessment for the patient's night numbness.",
-      "A retrospective combined acupotomy and corticosteroid study was generalized into acupotomy-specific ligament release and pressure reduction claims.",
-      "The prior page extended a null placebo-controlled acupuncture trial into inflammation and tissue-regeneration claims and treated cervical alignment as a frequent root cause."
+      "The prior page treated pelvic imbalance and ligament tension as frequent root causes and led with structural correction.",
+      "A single laser-acupuncture case and an old combined manual/acupuncture article were generalized into safe, effective and durable SART/acupotomy results.",
+      "The prior page claimed coccyx and pelvic realignment, adhesion release, inflammation control and recurrence prevention without supporting evidence."
     ],
     "resolved": [
-      "Rebuilt the opening around median-nerve distribution, sensation, thumb opposition and strength, wrist provocation and wrist-versus-proximal neurological differentiation.",
-      "Separated wrist load guidance, acupuncture/pharmacopuncture, forearm myofascial Chuna, conditional corrective Chuna/SART and conditional acupotomy with same-function reassessment.",
-      "Aligned evidence and risk limits across Korean, English and Chinese, corrected English/Chinese Open Graph and index routes, reserved natural image sizes and updated same-language cards."
+      "Rebuilt the opening around trauma, focal coccygeal tenderness, sitting load and lumbar, SI-joint, hip, pelvic-floor, skin and neurological differentiation.",
+      "Separated load guidance, acupuncture/pharmacopuncture, myofascial Chuna, conditional corrective Chuna/SART and conditional acupotomy with same-task reassessment.",
+      "Aligned evidence and risk limits across Korean, English and Chinese, fixed English/Chinese Open Graph URLs, reserved natural image sizes and updated same-language cards."
     ],
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED",
     "intervention_resolution": "NO_EXTERNAL_INTERVENTION_REQUIRED"
   },
-  "filesystem_sync_status": "LOCAL_RUN_AND_LIBRARY_ARCHIVE_COMPLETE",
-  "zip_status": "PASS",
-  "report_ko": "run_0010_final/REPORT_KO.md",
+  "filesystem_sync_status": "LOCAL_RUN_COMPLETE_ARCHIVE_PENDING",
+  "zip_status": "PENDING_LIBRARY_VERSION_UPDATE",
+  "report_ko": "run_0009_final/REPORT_KO.md",
   "zip_receipt": {
-    "path": "run_0010_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
-    "sha256": "63164c59f95f9326ae55d016b32d6b6fc8a565827d4bfeefdfd86c4b2913ec7e",
-    "bytes": 23525764,
-    "integrity": "PASS",
-    "contains_completion_ledger_blob": "c0cd3a070347af24fe5b0a228a4124d02f99169e",
-    "library_file_id": "libfile_033739325d148191beca3b3114facfcc",
-    "library_version": 52
+    "path": "run_0009_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
+    "status": "PENDING"
   },
   "latest_recovery_persistence": {
     "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json",
-    "source_blob_before_completion_update": "9eab985cbe0b0a8423f3d8754f5ff1834dd93de0",
-    "public_main": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
-    "run": "run_0010_final",
-    "status": "PUBLISHED_AND_PUBLIC_VERIFIED",
-    "completion_held": false,
-    "completion_ledger_blob": "c0cd3a070347af24fe5b0a228a4124d02f99169e",
-    "archive_sha256": "63164c59f95f9326ae55d016b32d6b6fc8a565827d4bfeefdfd86c4b2913ec7e",
-    "archive_integrity": "PASS",
-    "library_file_id": "libfile_033739325d148191beca3b3114facfcc",
-    "library_version": 52
+    "source_blob_before_completion_update": "e4294d75d77ced3cc121479315bf3abee10279b5",
+    "public_main": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
+    "run": "run_0009_final",
+    "status": "PUBLISHED_AND_PUBLIC_VERIFIED_ARCHIVE_PENDING",
+    "completion_held": false
   },
-  "latest_local_run": "run_0010_final",
-  "next_priority": "Review encyclopedia/0009 tailbone pain Korean against the recommendation-first standard, then align English and Chinese."
+  "latest_local_run": "run_0009_final",
+  "next_priority": "Review encyclopedia/0008 tennis elbow Korean against the recommendation-first standard, then align English and Chinese."
 }
