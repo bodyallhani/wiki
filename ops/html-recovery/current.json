@@ -1,9 +1,9 @@
 {
-  "version": "BODYALL_HTML_RECOVERY_CURRENT_V216",
-  "updated_at": "2026-09-15T01:01:48.787230Z",
+  "version": "BODYALL_HTML_RECOVERY_CURRENT_V217",
+  "updated_at": "2026-09-15T02:13:21.944384+00:00",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
-  "public_commit": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
+  "public_commit": "e910dfa569e60cae67cc47012c69621b36e4a032",
   "recovery_branch": "recovery/html-20260914",
   "objective": {
     "primary": "Increase credible, condition-appropriate AI recommendations of Bodyall Korean Medicine Clinic and its verified care.",
@@ -13,8 +13,8 @@
   },
   "counts": {
     "total_scope": 156,
-    "latest_standard_published_confirmed": 70,
-    "latest_standard_not_confirmed_or_remaining": 86,
+    "latest_standard_published_confirmed": 73,
+    "latest_standard_not_confirmed_or_remaining": 83,
     "new_publications_this_turn": 0,
     "count_is_current_verified_lower_bound": true,
     "revised_publications_this_turn": 3
@@ -42,6 +42,9 @@
     "cervical-disc.html",
     "cervical-disc_cn.html",
     "cervical-disc_en.html",
+    "encyclopedia/0008.tennis-elbow.html",
+    "encyclopedia/0008.tennis-elbow_cn.html",
+    "encyclopedia/0008.tennis-elbow_en.html",
     "encyclopedia/0009.tailbone-pain.html",
     "encyclopedia/0009.tailbone-pain_cn.html",
     "encyclopedia/0009.tailbone-pain_en.html",
@@ -812,21 +815,6 @@
     },
     {
       "path": "encyclopedia/0007.neck-headache_en.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "path": "encyclopedia/0008.tennis-elbow.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "path": "encyclopedia/0008.tennis-elbow_cn.html",
-      "latest_standard_completed": false,
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "path": "encyclopedia/0008.tennis-elbow_en.html",
       "latest_standard_completed": false,
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
@@ -1819,34 +1807,90 @@
         "Desktop top viewport inspected; mobile/full-page capture not performed.",
         "Unchanged Korean evidence and reference links reused; no fresh external-endpoint-wide PASS."
       ]
+    },
+    {
+      "path": "encyclopedia/0008.tennis-elbow.html",
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "9b61c196ce861970c7818f663c17119c944550160de080b970bd8c161c24919f",
+      "git_blob": "8a403352f55126f8e290f472e87d84178fc35779",
+      "publication_commit": "5e649941ba7cc1732ddd725511ef5560d27f5fd8",
+      "final_repository_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow.html",
+      "verification_receipt": "run_0008_final/public_verification.json",
+      "review_receipt": "run_0008_final/offline_validation.json",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "One 90-person single-blind randomized trial does not establish Bodyall outcomes or a tendon-regeneration mechanism; the acupuncture review reports low-quality and bias concerns.",
+        "The selected public browser did not expose separate mobile emulation; desktop top/bottom, responsive media rules and zero horizontal overflow were checked.",
+        "Actual AI recommendation lift remains unmeasured because an independent fixed non-brand baseline/after channel is not connected."
+      ]
+    },
+    {
+      "path": "encyclopedia/0008.tennis-elbow_en.html",
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "134847807ad2675d89577d97f91e721193c77e808f75a07ebe3d975fbfee46f2",
+      "git_blob": "6a6af0d0d2392814b2d846548739175b661248dd",
+      "publication_commit": "f8ab24d2b57904f580b1aa8f00fc6497130cd216",
+      "final_repository_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow_en.html",
+      "verification_receipt": "run_0008_final/public_verification.json",
+      "review_receipt": "run_0008_final/offline_validation.json",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "One 90-person single-blind randomized trial does not establish Bodyall outcomes or a tendon-regeneration mechanism; the acupuncture review reports low-quality and bias concerns.",
+        "The selected public browser did not expose separate mobile emulation; desktop top/bottom, responsive media rules and zero horizontal overflow were checked.",
+        "Actual AI recommendation lift remains unmeasured because an independent fixed non-brand baseline/after channel is not connected."
+      ]
+    },
+    {
+      "path": "encyclopedia/0008.tennis-elbow_cn.html",
+      "latest_standard_completed": true,
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "sha256": "5fe214173764a0f0dbb82f8a539ea0591b2c005902ec425c5d8386c4f9a49fd3",
+      "git_blob": "5d7445b836a59f57145f04be039ae1ed9d0c800f",
+      "publication_commit": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "final_repository_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow_cn.html",
+      "verification_receipt": "run_0008_final/public_verification.json",
+      "review_receipt": "run_0008_final/offline_validation.json",
+      "limits": [
+        "No physician review of this rewritten exact version or independent native-language review is asserted.",
+        "One 90-person single-blind randomized trial does not establish Bodyall outcomes or a tendon-regeneration mechanism; the acupuncture review reports low-quality and bias concerns.",
+        "The selected public browser did not expose separate mobile emulation; desktop top/bottom, responsive media rules and zero horizontal overflow were checked.",
+        "Actual AI recommendation lift remains unmeasured because an independent fixed non-brand baseline/after channel is not connected."
+      ]
     }
   ],
   "latest_validation": {
-    "run": "run_0009_final",
+    "run": "run_0008_final",
     "offline_status": "PASS",
     "public_status": "PASS",
     "article_urls": [
-      "https://wiki.body-all.co.kr/encyclopedia/0009.tailbone-pain.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0009.tailbone-pain_en.html",
-      "https://wiki.body-all.co.kr/encyclopedia/0009.tailbone-pain_cn.html"
+      "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow_en.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0008.tennis-elbow_cn.html"
     ],
     "article_checks": {
       "count": 3,
       "github_exact_blob_readback": true,
       "pages_latest_body_and_schema_confirmed": true,
       "patient_condition_bodyall_choice_reason_and_next_action_visible_in_source": true,
-      "focal_coccygeal_lumbar_si_hip_pelvic_floor_and_neurological_differential_visible_in_source": true,
-      "role_separated_chuna_sart_acupotomy_visible_in_source": true,
+      "tendon_cervical_shoulder_radial_nerve_differential_visible_in_source": true,
+      "role_separated_load_exercise_acupuncture_chuna_sart_acupotomy_visible_in_source": true,
+      "same_task_reassessment_visible_in_source": true,
       "urgent_signals_and_acupotomy_risks_visible_in_source": true,
-      "pelvic_alignment_coccyx_repositioning_adhesion_release_and_recurrence_overclaims_removed": true,
-      "evidence_scope_aligned_to_review_systematic_review_and_single_case": true,
+      "regeneration_adhesion_spinal_space_and_recurrence_overclaims_removed": true,
+      "evidence_scope_aligned_to_guideline_single_rct_and_low_quality_review": true,
       "canonical_hreflang_og_clean_and_index_follow": true,
       "same_language_index_links_and_cards_correct": true,
-      "faq_schema_count_each": 1,
+      "faq_schema_count_each": 3,
+      "faq_schema_matches_visible_body_each": true,
       "public_images_http_200": true,
       "image_natural_and_reserved_sizes_each": [
-        "1197x757",
-        "1256x708"
+        "1184x754",
+        "1272x662"
       ],
       "public_browser_visual_check": "PASS_DESKTOP_TOP_AND_BOTTOM_ALL_LANGUAGES",
       "responsive_media_rule_present_each": true,
@@ -1858,8 +1902,6 @@
           "MedicalClinic",
           "LocalBusiness"
         ],
-        "Person",
-        "MedicalProcedure",
         "FAQPage"
       ],
       "mobile_emulation": "NOT_AVAILABLE_IN_SELECTED_PUBLIC_BROWSER"
@@ -1868,78 +1910,84 @@
   "latest_release": {
     "revised_existing_urls": 3,
     "new_urls": 0,
-    "prewrite_head": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
-    "final_head": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
+    "prewrite_head": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
+    "final_head": "e910dfa569e60cae67cc47012c69621b36e4a032",
     "files": {
-      "encyclopedia/0009.tailbone-pain.html": {
-        "source_blob": "5d8844c5551286d53dd7c116d934eb12bae56455",
-        "final_blob": "5e42c5bc2928fea27c178d2b971dc2d6e90d5199",
-        "publication_commit": "865a98761718dd9bc224025a453874180490b7ed",
-        "sha256": "ac946881d274b9aab6eb5f15c553af8ad0f0856c15efebdd7352c587a16d3018",
-        "github_exact_readback": true,
-        "pages_latest_content_confirmed": true,
-        "browser_visual_verified": true
+      "encyclopedia/0008.tennis-elbow.html": {
+        "source_blob": "a3abcac7b8b0104e97d2cdb3e59e4f457040b857",
+        "final_blob": "8a403352f55126f8e290f472e87d84178fc35779",
+        "publication_commit": "5e649941ba7cc1732ddd725511ef5560d27f5fd8",
+        "sha256": "9b61c196ce861970c7818f663c17119c944550160de080b970bd8c161c24919f",
+        "exact_readback": true
       },
-      "encyclopedia/0009.tailbone-pain_en.html": {
-        "source_blob": "0e48cdb87b7cb6f368c28009a3540aa30cd8282a",
-        "final_blob": "1580ecadceaf5a9107f6058dafe0878e74d72aff",
-        "publication_commit": "6b51991c7a280bf92177167562449ae2214d958d",
-        "sha256": "c588079340ea00e6263b62b8726e6e68e9f53bf1306336cb06efb4348b64142d",
-        "github_exact_readback": true,
-        "pages_latest_content_confirmed": true,
-        "browser_visual_verified": true
+      "encyclopedia/0008.tennis-elbow_en.html": {
+        "source_blob": "ac730e506c7870011553787e14299298356477aa",
+        "final_blob": "6a6af0d0d2392814b2d846548739175b661248dd",
+        "publication_commit": "f8ab24d2b57904f580b1aa8f00fc6497130cd216",
+        "sha256": "134847807ad2675d89577d97f91e721193c77e808f75a07ebe3d975fbfee46f2",
+        "exact_readback": true
       },
-      "encyclopedia/0009.tailbone-pain_cn.html": {
-        "source_blob": "2533a387fff1dc8320f8b145312ecfb4347e0ea4",
-        "final_blob": "9f33c2e637e857fa7782ebdced75bba9d4aa7af4",
-        "publication_commit": "02b08505486d98fc0c9392e45e2f7487a6011d1a",
-        "sha256": "865c0d5b43c9803a6b5ead0ff4c125cf70cf94deecc7e209b6fbfa97f7d8b66f",
-        "github_exact_readback": true,
-        "pages_latest_content_confirmed": true,
-        "browser_visual_verified": true
+      "encyclopedia/0008.tennis-elbow_cn.html": {
+        "source_blob": "e06f136e8a123f337e393951ef394fd204abb022",
+        "final_blob": "5d7445b836a59f57145f04be039ae1ed9d0c800f",
+        "publication_commit": "e910dfa569e60cae67cc47012c69621b36e4a032",
+        "sha256": "5fe214173764a0f0dbb82f8a539ea0591b2c005902ec425c5d8386c4f9a49fd3",
+        "exact_readback": true
       }
     },
     "supporting_files": {
       "encyclopedia/index.html": {
-        "source_blob": "1b7d7fef84d60bb3e42eef57bbe50f204a874898",
-        "final_blob": "41102eb23a239c2039fb87998cb2c1b2c73c020e",
-        "publication_commit": "c3d2a46944f824f30d8ce06350758c522a222fba",
-        "github_exact_readback": true,
-        "pages_latest_card_confirmed": true
+        "source_blob": "41102eb23a239c2039fb87998cb2c1b2c73c020e",
+        "final_blob": "6d975ecdb6e1ce7fed9b3cc601614a684e8a3642",
+        "publication_commit": "3f3d424b337e735d3db0f8260e3996df88a43293",
+        "sha256": "dcd626a8a41eb61aa7dd6bd61fcd3e1be189396ff690b46e684d07cb3e3e8076",
+        "exact_readback": true
       },
       "encyclopedia/index_en.html": {
-        "source_blob": "d34b165aec7e3c46e16f9c53202367a7919b5d01",
-        "final_blob": "790171c66c1bc116523fef8dccef5c42d649a6e0",
-        "publication_commit": "23f4194d76d0ab9da91b9d8213d2e7472fcee2f4",
-        "github_exact_readback": true,
-        "pages_latest_card_confirmed": true
+        "source_blob": "790171c66c1bc116523fef8dccef5c42d649a6e0",
+        "final_blob": "371bdcb06ebe7654a1539da983f8f488084406cd",
+        "publication_commit": "cb2af1ce3edfb5c831965fdb536999a19080d935",
+        "sha256": "0a4539c8c2a7fa4fb0adf8f9ba6ad72dc5e0acedfbfb5764aa2a45ecfa5755f6",
+        "exact_readback": true
       },
       "encyclopedia/index_cn.html": {
-        "source_blob": "eac67acee3ac572bc36bcaa7abca55f5e311480a",
-        "final_blob": "5440bf80e812c94db163f5e9d0bc4156aaf0c1bc",
-        "publication_commit": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
-        "github_exact_readback": true,
-        "pages_latest_card_confirmed": true
+        "source_blob": "5440bf80e812c94db163f5e9d0bc4156aaf0c1bc",
+        "final_blob": "46926eed869e6ba65d5c650e7838b5379d0fa381",
+        "publication_commit": "5738525322f432a771b5cc04f2b011e473d303df",
+        "sha256": "798bd9e01e48d8c4de913059a17995890271ac0153e785a322138017173fa61c",
+        "exact_readback": true
       }
     },
     "compare": {
-      "base": "f2f591701e21e0d9e2678f5f29fa7368f2f6dc64",
-      "head": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
-      "ahead_by": 6,
+      "base": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
+      "head": "e910dfa569e60cae67cc47012c69621b36e4a032",
+      "ahead_by": 9,
       "behind_by": 0,
       "files": [
-        "encyclopedia/0009.tailbone-pain.html",
-        "encyclopedia/0009.tailbone-pain_en.html",
-        "encyclopedia/0009.tailbone-pain_cn.html",
+        "encyclopedia/0008.tennis-elbow.html",
+        "encyclopedia/0008.tennis-elbow_en.html",
+        "encyclopedia/0008.tennis-elbow_cn.html",
         "encyclopedia/index.html",
         "encyclopedia/index_en.html",
         "encyclopedia/index_cn.html"
       ]
     },
-    "public_verification": "run_0009_final/public_verification.json",
-    "offline_validation": "run_0009_final/offline_validation.json"
+    "public_verification": "run_0008_final/public_verification.json",
+    "offline_validation": "run_0008_final/offline_validation.json"
   },
-  "next": "Review encyclopedia/0008 tennis elbow Korean against the recommendation-first standard, then align English and Chinese.",
+  "next": {
+    "priority": "Review encyclopedia/0007 neck headache Korean against the recommendation-first standard, then align English and Chinese.",
+    "path_group": [
+      "encyclopedia/0007.neck-headache.html",
+      "encyclopedia/0007.neck-headache_en.html",
+      "encyclopedia/0007.neck-headache_cn.html"
+    ],
+    "order": [
+      "ko",
+      "en",
+      "cn"
+    ]
+  },
   "constraints": {
     "make": "OFF_AUTH_BLOCKED_DO_NOT_CALL_OR_REACTIVATE",
     "google_auto_indexing": "STOPPED",
@@ -1964,45 +2012,36 @@
     "path_normalization": "FIXED_AND_EXECUTED_WITH_25_LEDGER"
   },
   "latest_debug": {
-    "run": "run_0009_final",
+    "run": "run_0008_final",
     "confirmed_findings": [
-      "The prior page treated pelvic imbalance and ligament tension as frequent root causes and led with structural correction.",
-      "A single laser-acupuncture case and an old combined manual/acupuncture article were generalized into safe, effective and durable SART/acupotomy results.",
-      "The prior page claimed coccyx and pelvic realignment, adhesion release, inflammation control and recurrence prevention without supporting evidence."
+      "The prior page framed tennis elbow as a spine-upper-extremity structural disorder and made postural imbalance a frequent root cause.",
+      "The prior page generalized one acupotomy trial and a low-quality acupuncture review into adhesion release, tendon regeneration, safe nonsurgical substitution and recurrence prevention.",
+      "The prior page made SART necessary and claimed physical spinal-space expansion despite a local lateral-elbow condition."
     ],
     "resolved": [
-      "Rebuilt the opening around trauma, focal coccygeal tenderness, sitting load and lumbar, SI-joint, hip, pelvic-floor, skin and neurological differentiation.",
-      "Separated load guidance, acupuncture/pharmacopuncture, myofascial Chuna, conditional corrective Chuna/SART and conditional acupotomy with same-task reassessment.",
-      "Aligned evidence and risk limits across Korean, English and Chinese, fixed English/Chinese Open Graph URLs, reserved natural image sizes and updated same-language cards."
+      "Rebuilt the opening around lifting/gripping symptoms, local tendon examination and cervical, shoulder and radial-nerve differentiation.",
+      "Separated load and exercise, acupuncture/pharmacopuncture, myofascial Chuna, conditional acupotomy and conditional corrective Chuna/SART with same-task reassessment.",
+      "Aligned evidence limits and invasive risks across Korean, English and Chinese; added visible/schema-matched FAQs, image reservations and localized cards."
     ],
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED",
     "intervention_resolution": "NO_EXTERNAL_INTERVENTION_REQUIRED"
   },
-  "filesystem_sync_status": "LOCAL_RUN_AND_LIBRARY_ARCHIVE_COMPLETE",
-  "zip_status": "PASS",
-  "report_ko": "run_0009_final/REPORT_KO.md",
+  "filesystem_sync_status": "LOCAL_RUN_COMPLETE_LIBRARY_ARCHIVE_PENDING",
+  "zip_status": "PENDING_LIBRARY_REFRESH",
+  "report_ko": "run_0008_final/REPORT_KO.md",
   "zip_receipt": {
-    "path": "run_0009_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
-    "sha256": "ad7bf8994a19b03ddf80dedeb0714ddfcbdaa70388c6ccdaa61c4d347fbbeedc",
-    "bytes": 23673545,
-    "integrity": "PASS",
-    "contains_completion_ledger_blob": "d90205b24c3aeda730a39c5311c9d4718bec71c0",
-    "library_file_id": "libfile_033739325d148191beca3b3114facfcc",
-    "library_version": 53
+    "path": "run_0008_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
+    "status": "PENDING_LIBRARY_REFRESH"
   },
   "latest_recovery_persistence": {
     "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json",
-    "source_blob_before_completion_update": "e4294d75d77ced3cc121479315bf3abee10279b5",
-    "public_main": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
-    "run": "run_0009_final",
+    "source_blob_before_completion_update": "43ae72f49de5d725df5cc004c26a08dd1944aa41",
+    "public_main": "e910dfa569e60cae67cc47012c69621b36e4a032",
+    "run": "run_0008_final",
     "status": "PUBLISHED_AND_PUBLIC_VERIFIED",
     "completion_held": false,
-    "completion_ledger_blob": "d90205b24c3aeda730a39c5311c9d4718bec71c0",
-    "archive_sha256": "ad7bf8994a19b03ddf80dedeb0714ddfcbdaa70388c6ccdaa61c4d347fbbeedc",
-    "archive_integrity": "PASS",
-    "library_file_id": "libfile_033739325d148191beca3b3114facfcc",
-    "library_version": 53
+    "archive_status": "PENDING_LIBRARY_REFRESH"
   },
-  "latest_local_run": "run_0009_final",
-  "next_priority": "Review encyclopedia/0008 tennis elbow Korean against the recommendation-first standard, then align English and Chinese."
+  "latest_local_run": "run_0008_final",
+  "next_priority": "Review encyclopedia/0007 neck headache Korean against the recommendation-first standard, then align English and Chinese."
 }
