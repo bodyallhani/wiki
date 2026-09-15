@@ -1,6 +1,6 @@
 {
   "version": "BODYALL_HTML_RECOVERY_CURRENT_V216",
-  "updated_at": "2026-09-15T00:59:43.317549Z",
+  "updated_at": "2026-09-15T01:01:48.787230Z",
   "repository": "bodyallhani/wiki",
   "public_branch": "main",
   "public_commit": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
@@ -1978,20 +1978,30 @@
     "publication_status": "PUBLISHED_AND_PUBLIC_VERIFIED",
     "intervention_resolution": "NO_EXTERNAL_INTERVENTION_REQUIRED"
   },
-  "filesystem_sync_status": "LOCAL_RUN_COMPLETE_ARCHIVE_PENDING",
-  "zip_status": "PENDING_LIBRARY_VERSION_UPDATE",
+  "filesystem_sync_status": "LOCAL_RUN_AND_LIBRARY_ARCHIVE_COMPLETE",
+  "zip_status": "PASS",
   "report_ko": "run_0009_final/REPORT_KO.md",
   "zip_receipt": {
     "path": "run_0009_final/latest/Bodyall_HTML_Background_Resume_2026-09-11.zip",
-    "status": "PENDING"
+    "sha256": "ad7bf8994a19b03ddf80dedeb0714ddfcbdaa70388c6ccdaa61c4d347fbbeedc",
+    "bytes": 23673545,
+    "integrity": "PASS",
+    "contains_completion_ledger_blob": "d90205b24c3aeda730a39c5311c9d4718bec71c0",
+    "library_file_id": "libfile_033739325d148191beca3b3114facfcc",
+    "library_version": 53
   },
   "latest_recovery_persistence": {
     "current_json_source": "recovery/html-20260914:ops/html-recovery/current.json",
     "source_blob_before_completion_update": "e4294d75d77ced3cc121479315bf3abee10279b5",
     "public_main": "85876cd746ab2723aa1b66c139d1b25aa6a8e307",
     "run": "run_0009_final",
-    "status": "PUBLISHED_AND_PUBLIC_VERIFIED_ARCHIVE_PENDING",
-    "completion_held": false
+    "status": "PUBLISHED_AND_PUBLIC_VERIFIED",
+    "completion_held": false,
+    "completion_ledger_blob": "d90205b24c3aeda730a39c5311c9d4718bec71c0",
+    "archive_sha256": "ad7bf8994a19b03ddf80dedeb0714ddfcbdaa70388c6ccdaa61c4d347fbbeedc",
+    "archive_integrity": "PASS",
+    "library_file_id": "libfile_033739325d148191beca3b3114facfcc",
+    "library_version": 53
   },
   "latest_local_run": "run_0009_final",
   "next_priority": "Review encyclopedia/0008 tennis elbow Korean against the recommendation-first standard, then align English and Chinese."
