@@ -149,31 +149,23 @@
     "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html"
   ],
   "active_run": {
-    "owner": "bodyallfit0002-phase1-release-20260916",
-    "single_writer_active": false,
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
-    "base_main_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
-    "final_main_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
+    "owner": "bodyallfit0005-phase1-release-20260916",
+    "single_writer_active": true,
+    "stage": "CANDIDATE_READY_PREDEPLOY_RECHECK",
+    "base_main_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
     "source_blobs": {
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html": "2672e900cfa65fdbb50ad97a569e3bf7eb66bed1",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html": "9ac86525e8c56307001e9af845614064c9ea789d",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html": "cbb2aebb6095c9c481a6601dc8aa009f9afa6919"
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html": "f5ddf137ff445ddfb29b9aee5fa454c337a7d36b",
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html": "ff563dbb91880efa61d5151c24c1807b16a3eeaa",
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html": "499da61ba7b8e00b5198d749ace139c4e086bc10"
     },
     "exact_candidate_hashes": {
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html": "ee786e3ceba2cdd7ea0cc72d0cc01547cc1b4a19eae3bf1d202363a27a6cd4ed",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html": "2bddcac480670675aa8961fbdbd6faa5b055c4bd61adbfdefd584ba9739a74a2",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html": "cb436d2263d699c307ea0e7627a27fef7ca45152b80e819db2e4214a078cb15a"
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html": "17f536dbdeb5c3caff55244ec01ecb9d69e5e052c58e75a438c3e67da502b26f",
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html": "4d92a5f696d2d1744ed199c777a32e765757dbfc890375e08576fa5f6becec52",
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html": "3eaa09a1aafe741a6697d2596c8892655763afb58303a5628a64f2dc29ea56aa"
     },
-    "published_blobs": {
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html": "ce0aa8e5ebee3a13ef0a4b0c821c866793be30fa",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html": "480c060d55fb0d39e51d1eba161397f01f963dd8",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html": "9dd67ffff02b62d0c8384ea2c28ec5280f1fc53f"
-    },
-    "review_record": "ops/html-recovery/reviews/20260916-bodyallfit0002-final-candidate.json",
-    "release_record": "ops/html-recovery/runs/20260916-bodyallfit0002-release.json",
-    "completed_at": "2026-09-16T05:59:27.019Z",
-    "ledger_exact_readback": true,
-    "required_next": "Resume BodyallFit encyclopedia 0005 KO/EN/CN from the freshly read ledger; preserve the missing-two-images hold unless resolved by removing broken references or using already-existing verified assets without creating new images."
+    "image_hold_resolution": "Both referenced 0005 images are absent from the main image directory. Removed both broken references; no new asset or substitute image created.",
+    "required_next_action": "Re-read main head and all three target blobs; if exact, deploy KO→EN→CN sequentially, verify public Pages content/schema/layout, then update counts.",
+    "updated_at": "2026-09-16T06:08:22.486Z"
   },
   "additional_index_completion_rows": [
     {
@@ -4509,8 +4501,8 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T06:01:37.694Z",
-  "version": "V279_BODYALLFIT0002_PUBLIC_PASS_LEDGER_EXACT_NEXT_BODYALLFIT0005",
+  "updated_at": "2026-09-16T06:08:22.486Z",
+  "version": "V280_BODYALLFIT0005_CANDIDATE_READY_SINGLE_WRITER",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
     "phase": "RESUME_PHASE1_PENDING",
