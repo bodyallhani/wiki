@@ -3267,9 +3267,9 @@
     "next_record": "ops/html-recovery/runs/20260916-herb0006-source-review.json"
   },
   "latest_recovery_persistence": {
-    "at": "2026-09-16T04:34:28.442Z",
-    "status": "PENDING_EXACT_READBACK_AFTER_HERB0006_SOURCE_CHECKPOINT",
-    "current_json_blob_before_confirmation": "53fa2226612052e498a02776fb11686a96b1a65a",
+    "at": "2026-09-16T04:35:08.707Z",
+    "status": "EXACT_READBACK_CONFIRMED_AFTER_HERB0006_SOURCE_CHECKPOINT",
+    "current_json_blob_before_confirmation": "5c2c59cf6a77c3fd73282089004224983fec23bc",
     "candidate_files_exact": true,
     "review_record_exact": true,
     "release_record_exact": true,
@@ -4203,7 +4203,7 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T04:34:28.442Z",
+  "updated_at": "2026-09-16T04:35:08.707Z",
   "version": "V271_HERB0006_SOURCE_REVIEWED_CANDIDATE_PENDING",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
