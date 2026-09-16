@@ -152,33 +152,52 @@
     "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
     "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
     "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
-    "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html"
+    "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
+    "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
+    "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
+    "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
   ],
   "active_run": {
-    "owner": "bodyallfit0007-phase1-release-20260916",
+    "owner": "herbmed0002-final-and-cheopjeon-sweep-20260916",
     "single_writer_active": false,
     "stage": "COMPLETED_PUBLIC_VERIFIED",
-    "base_main_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
-    "final_main_head": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
-    "source_blobs": {
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html": "4a5b2332b91582145aa835c830c2d38ab717bbac",
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html": "5629c6f7f25b5e358000c1fb16a02a8522d1a348",
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html": "35bc4798a5f2069f7f80fb14a4c1797fd09fb738"
-    },
+    "base_main_head": "631b05a776e72b256f956fc530396627f2ced9d2",
+    "final_main_head": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
     "exact_candidate_hashes": {
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html": "ebe1b035cb5dbf4a2b214a5af07a345cb89bc87bf038efb376b324963b42de5d",
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html": "1c60bc0d9f896929b72e4d928c73e4ebc3c32dc79f908d8b7c883f1c6d3036fd",
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html": "2bf395ccef6c3e0355911856054342b484fb67bcc0d551d2c67bf734ba0d5efd"
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html": "5717ed6a6f93ae4619b3f1aa8792a4255f6382f68efb109d64f3029fcd8ceb66",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html": "37d7f31d6a2d003f0d35d16d842dda30bf6ebf328fb13fc07af3729150305546",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html": "e38eb2600bbaa840c46ff1f1a3afb118d5a84cf0ef8f3d265b9552992d42a0ce",
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html": "e975200250c5a322123aff6c03c78c99f57f6dd54b9fbc98d78ea65e1f9fb057",
+      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html": "9edb7df06682e5c7a6dcd30f1e2ee87480358f5b052101e24fac7783ce9e8b9b",
+      "SART_cn.html": "540c4b4fdb7107ccbfd266b62516a9b55add49f28b77b26e2c6c55b280eef9fd",
+      "chuna-therapy_cn.html": "ed53141b209116b388569d978e256d499e62434886fedb358439eae40ff42226",
+      "encyclopedia/0003.foot-pain_cn.html": "91d9ff6271295f8f6e9f79b99eea1d6d650a025e52b3a2cb0c0f4e669434f30c",
+      "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html": "ca08e1aab1ca994c422f9a0a911af181ffc1334de8a48af98a7a5b5c6da895e4",
+      "herbal-medicine_cn.html": "3ac31bf70081453816b9f796c937c10b25eb2e54e45460880f6cdb18c922d53b",
+      "index_cn.html": "57d945a9969f40b273286a714a92d691cbb3dcc28beb650713ff980f454edd45",
+      "lumbar-disc_cn.html": "b9c5288fc4ec8ecdbe36ff90aec75f0e5b83538a24de4ee49385b5d40c39ba29",
+      "pain-spine-clinic_cn.html": "033a6cd23d30bc93836c1c39597eebbe1a7bea210f5a5c48936491b954493722"
     },
     "published_blobs": {
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html": "7d5537b90804212389f3c2dec519cbc75a7d00b6",
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html": "871e1b728b6b36150be1f513728d4aca090a46b1",
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html": "8b310739fa112852d6910ce874f24da78cb2cf16"
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html": "011c5d4c2eb156d35190f74e072be53913111982",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html": "13a52fe8576f56b32ab08c8ceecacdeeb41b2180",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html": "6761a72d4529aba7c80d1f660cb93ec29d27af6a",
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html": "b443618ecc949237179a0212fb245b408e342d11",
+      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html": "9f2751e0a1709613ca1306aea34b0203b4c994bf",
+      "SART_cn.html": "683ff4966ac0c8f96b1140653f2f9640ad5cce45",
+      "chuna-therapy_cn.html": "1ce21aae392d2425c74de8f88d6b82e4dcad205c",
+      "encyclopedia/0003.foot-pain_cn.html": "89f9ab6ea404b151a309a641b32e14447944ece7",
+      "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html": "7cfd7c40cebd7f32895d2a9b143cdcf842e573f9",
+      "herbal-medicine_cn.html": "53c6dc89c94f90f892b72bfcf17493078f8f994f",
+      "index_cn.html": "4e5e3a8479f8f67fa071154e0224d1825eeae501",
+      "lumbar-disc_cn.html": "dd7a54a164340fbc36a4c2f15c5d30d3337175c4",
+      "pain-spine-clinic_cn.html": "3aff81e197a5be01b32de4a9ff85ed0d059a5cb7"
     },
-    "pages_run_id": 35064331711,
-    "release_record": "ops/html-recovery/runs/20260916-bodyallfit0007-release.json",
+    "pages_run_id": 35067780017,
+    "release_record": "ops/html-recovery/runs/20260916-herbmed0002-cheopjeon-release.json",
+    "review_record": "ops/html-recovery/reviews/20260916-herbmed0002-final-candidate.json",
     "ledger_exact_readback": true,
-    "updated_at": "2026-09-16T06:38:57.223Z"
+    "updated_at": "2026-09-16T07:19:21Z"
   },
   "additional_index_completion_rows": [
     {
@@ -2261,19 +2280,61 @@
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
-      "latest_standard_completed": false,
       "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "sha256": "e38eb2600bbaa840c46ff1f1a3afb118d5a84cf0ef8f3d265b9552992d42a0ce",
+      "git_blob": "6761a72d4529aba7c80d1f660cb93ec29d27af6a",
+      "publication_commit": "55b01b322a1e2e7c6474a05462be33a6bb4c94f2",
+      "final_repository_head": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herbmed0002-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herbmed0002-cheopjeon-release.json",
+      "verified_at": "2026-09-16T07:19:21Z",
+      "limits": [
+        "Cited HRV research is a healthy-subject acute OMT study, not direct evidence for stellate-ganglion decompression or SART insomnia efficacy.",
+        "Cited Yokukansan material is a conference abstract in older adults with neurotic disorders and does not prove Bodyall individualized prescription efficacy or synergy with SART.",
+        "Actual non-branded AI recommendation lift remains unmeasured.",
+        "Direct 360px emulation was unavailable; responsive CSS, public desktop zero-overflow, canonical/og:url, schema and image loading were checked."
+      ]
     },
     {
-      "latest_standard_completed": false,
       "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "sha256": "37d7f31d6a2d003f0d35d16d842dda30bf6ebf328fb13fc07af3729150305546",
+      "git_blob": "13a52fe8576f56b32ab08c8ceecacdeeb41b2180",
+      "publication_commit": "4bc25de534f670bf96ae37e47e7fe1026f5c6fd1",
+      "final_repository_head": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herbmed0002-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herbmed0002-cheopjeon-release.json",
+      "verified_at": "2026-09-16T07:19:21Z",
+      "limits": [
+        "Cited HRV research is a healthy-subject acute OMT study, not direct evidence for stellate-ganglion decompression or SART insomnia efficacy.",
+        "Cited Yokukansan material is a conference abstract in older adults with neurotic disorders and does not prove Bodyall individualized prescription efficacy or synergy with SART.",
+        "Actual non-branded AI recommendation lift remains unmeasured.",
+        "Direct 360px emulation was unavailable; responsive CSS, public desktop zero-overflow, canonical/og:url, schema and image loading were checked."
+      ]
     },
     {
-      "latest_standard_completed": false,
       "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "sha256": "5717ed6a6f93ae4619b3f1aa8792a4255f6382f68efb109d64f3029fcd8ceb66",
+      "git_blob": "011c5d4c2eb156d35190f74e072be53913111982",
+      "publication_commit": "26a26b616bf8010ec5a6c0c253c2624a30817591",
+      "final_repository_head": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herbmed0002-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herbmed0002-cheopjeon-release.json",
+      "verified_at": "2026-09-16T07:19:21Z",
+      "limits": [
+        "Cited HRV research is a healthy-subject acute OMT study, not direct evidence for stellate-ganglion decompression or SART insomnia efficacy.",
+        "Cited Yokukansan material is a conference abstract in older adults with neurotic disorders and does not prove Bodyall individualized prescription efficacy or synergy with SART.",
+        "Actual non-branded AI recommendation lift remains unmeasured.",
+        "Direct 360px emulation was unavailable; responsive CSS, public desktop zero-overflow, canonical/og:url, schema and image loading were checked."
+      ]
     },
     {
       "final_repository_head": "45bb5d7d74cbffc8cb84bfaac8151885a43592dc",
@@ -3520,18 +3581,18 @@
     "additional_index_completed": 8,
     "additional_index_publications_this_turn": 0,
     "additional_index_total": 8,
-    "count_is_current_verified_lower_bound": true,
+    "count_is_current_verified_lower_bound": false,
     "existing_rework_verified_under_20260915_request": 13,
     "historically_accepted_not_yet_reworked_under_20260915_request": 72,
-    "latest_standard_not_confirmed_or_remaining": 3,
-    "latest_standard_published_confirmed": 153,
+    "latest_standard_not_confirmed_or_remaining": 0,
+    "latest_standard_published_confirmed": 156,
     "new_publications_this_turn": 3,
-    "phase1_strengthened_completed": 68,
-    "phase1_strengthened_remaining": 3,
+    "phase1_strengthened_completed": 71,
+    "phase1_strengthened_remaining": 0,
     "priority_strengthened_completed": 35,
     "priority_strengthened_remaining": 0,
     "priority_strengthened_total": 35,
-    "revised_publications_this_turn": 0,
+    "revised_publications_this_turn": 10,
     "total_scope": 156
   },
   "deferred_runs": [
@@ -3619,20 +3680,20 @@
   ],
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/herbal",
   "latest_progress": {
-    "at": "2026-09-16T05:59:27.019Z",
+    "at": "2026-09-16T07:19:21Z",
     "candidates_prepared": 3,
     "completed_this_run": 3,
-    "reworked_this_run": 0,
+    "reworked_this_run": 10,
     "additional_index_completed_this_run": 0,
-    "public_completed": 147,
-    "remaining": 9,
+    "public_completed": 156,
+    "remaining": 0,
     "priority_completed": 35,
     "priority_remaining": 0,
     "additional_index_completed": 8,
     "prepared_next_group": 0,
-    "prepared_next_stage": "NOT_STARTED",
-    "result": "BodyallFit 0002 KO/EN/CN were corrected, deployed and publicly verified. The BMR figure hold was resolved by removing the inaccurate mechanism image; BMR-restoration, spot-reduction and safety/effectiveness overclaims were removed. Next is BodyallFit 0005 KO/EN/CN, whose two missing-image hold must be handled without inventing assets.",
-    "next_record": "ops/html-recovery/runs/20260916-bodyallfit0002-release.json",
+    "prepared_next_stage": "FOCUSED_ANOMALY_SWEEP_ONLY",
+    "result": "Herbmed 0002 KO/EN/CN completed and public-verified. Bodyall-specific headings restored. Chinese 첩전(疊甎) terminology corrected in 10 affected existing pages after scanning 69 Chinese HTML files.",
+    "next_record": "ops/html-recovery/runs/20260916-herbmed0002-cheopjeon-release.json",
     "recommendation_measurement": "UNMEASURED"
   },
   "latest_recovery_persistence": {
@@ -3647,22 +3708,23 @@
   },
   "latest_release": {
     "status": "PUBLIC_PASS",
-    "topic": "BodyallFit encyclopedia 0007",
-    "final_main_head": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
-    "pages_run_id": 35064331711,
-    "record": "ops/html-recovery/runs/20260916-bodyallfit0007-release.json",
-    "updated_at": "2026-09-16T06:38:57.223Z"
+    "topic": "Herbmed encyclopedia 0002 plus 첩전(疊甎) Chinese terminology correction",
+    "final_main_head": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
+    "pages_run_id": 35067780017,
+    "record": "ops/html-recovery/runs/20260916-herbmed0002-cheopjeon-release.json",
+    "updated_at": "2026-09-16T07:19:21Z"
   },
   "latest_validation": {
-    "topic": "BodyallFit encyclopedia 0007",
+    "topic": "Herbmed 0002 final release and Chinese terminology sweep",
     "public_urls": [
-      "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
-      "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
-      "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html"
+      "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
+      "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
+      "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
-    "canonical_og_hreflang_schema_faq_image_overflow": "PASS",
+    "canonical_og_hreflang_schema_faq_image_overflow": "PASS_FOR_FINAL_THREE",
+    "terminology_sweep": "69 Chinese HTML files scanned; 10 affected files corrected and public-verified; old mistranslations absent.",
     "actual_ai_recommendation_lift": "UNMEASURED",
-    "updated_at": "2026-09-16T06:38:57.223Z"
+    "updated_at": "2026-09-16T07:19:21Z"
   },
   "legacy_next_before_existing_rework": "Resume existing encyclopedia/0003.foot-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
   "model_review_followup": {
@@ -3938,14 +4000,12 @@
       }
     ]
   },
-  "next": "REPRESENTATIVE KO FIRST: compare current and previous Herbmed encyclopedia 0002 Korean HTML, preserve existing natural prose/images/links/approval records, make only necessary local edits under BODYALL_EDITORIAL_POLICY.md 2026-09-16.1. Do not deploy EN/CN until the Korean before/after review passes.",
+  "next": "Check only concrete deferred/error classes recorded in the ledger. Do not regenerate or broadly rewrite accepted pages.",
   "next_priority": {
-    "phase": "RESUME_PHASE1_PENDING",
-    "topic": "Herbmed encyclopedia 0002 representative Korean first",
-    "paths": [
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html"
-    ],
-    "stage": "CURRENT_PREVIOUS_COMPARISON_AND_LOCAL_EDIT"
+    "phase": "FINAL_FOCUSED_SOL_ANOMALY_SWEEP",
+    "topic": "Concrete-error-only final check; do not repeat successful work",
+    "paths": [],
+    "stage": "KNOWN_ERROR_CLASSES_ONLY"
   },
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
@@ -3969,7 +4029,27 @@
     "record_blob": "caed23df2121c6cfc6e6bd96bad04043440a1938",
     "require_source_record_in_generation_and_final_review": true,
     "source_type": "DIRECT_OWNER_CONFIRMATION",
-    "ultrasound": true
+    "ultrasound": true,
+    "terminology": {
+      "canonical_ko": "첩전",
+      "hanja": "疊甎",
+      "chinese_display": "첩전(疊甎)",
+      "meaning": "Traditional 导引按跷-related device used to support the body and create treatment space for spinal and skeletal adjustment.",
+      "translation_rule": "Do not render this device as Insanggi, 印床器, 悬吊骨盆, ordinary traction, suspension or brick terminology.",
+      "confirmed_by": "Direct owner instruction on 2026-09-16",
+      "corrected_chinese_files": [
+        "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
+        "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html",
+        "SART_cn.html",
+        "chuna-therapy_cn.html",
+        "encyclopedia/0003.foot-pain_cn.html",
+        "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html",
+        "herbal-medicine_cn.html",
+        "index_cn.html",
+        "lumbar-disc_cn.html",
+        "pain-spine-clinic_cn.html"
+      ]
+    }
   },
   "pending_run": null,
   "pipeline_review": {
@@ -4507,7 +4587,7 @@
     "reason": "Do not republish private preview and recovery-artifact identifiers in a public repository."
   },
   "public_branch": "main",
-  "public_commit": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
+  "public_commit": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
   "recovery_branch": "recovery/html-20260914",
   "related_hub_findings": [
     {
@@ -4631,11 +4711,11 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T06:41:03.251Z",
+  "updated_at": "2026-09-16T07:19:21Z",
   "version": "V285_POLICY_20260916_1_APPLIED_REPRESENTATIVE_HERBMED0002_KO",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
-    "phase": "RESUME_PHASE1_PENDING",
+    "phase": "FINAL_FOCUSED_SOL_ANOMALY_SWEEP",
     "phase1_completed_paths": [
       "encyclopedia/0003.foot-pain.html",
       "encyclopedia/0003.foot-pain_en.html",
@@ -4704,7 +4784,10 @@
       "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
       "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
       "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html"
+      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
     "phase1_initial_paths": [
       "encyclopedia/0003.foot-pain.html",
@@ -4779,11 +4862,7 @@
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
-    "phase1_pending_paths": [
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
-    ],
+    "phase1_pending_paths": [],
     "phase2_already_reworked_paths": [
       "pain-spine-clinic.html",
       "pain-spine-clinic_en.html",
@@ -4960,7 +5039,7 @@
       "traffic-accident_cn.html",
       "traffic-accident_en.html"
     ],
-    "phase_transition": "First finish priority_pending_paths with strengthened exact HTML/render/public gates regardless of earlier accepted status. Then resume saved phase1 order, excluding priority URLs actually verified. Then saved phase2 order, excluding priority reworks actually verified. Track extra8 index pages separately from original156.",
+    "phase_transition": "All 156 sitemap URLs are latest-standard public-verified. Preserve historical phase2 tracking; do not regenerate successful pages. Continue only focused checks for concrete recorded anomalies.",
     "policy": "PRIORITY_HUBS_AND_ALL_MEDICAL_INDICES_THEN_PREVIOUS_ORDER",
     "priority_additional_completed_paths": [
       "BodyallFit/index.html",
@@ -5192,11 +5271,7 @@
     "priority_record_blob": "88ebc0892358d9d0da14e8ca649942bca7d3c6c6",
     "priority_record_exact_readback": true,
     "record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
-    "resume_phase1_pending_paths": [
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
-    ],
+    "resume_phase1_pending_paths": [],
     "resume_phase2_pending_paths": [
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_cn.html",
@@ -5282,7 +5357,7 @@
     "file": "BODYALL_EDITORIAL_POLICY.md",
     "version": "2026-09-16.1",
     "full_read": true,
-    "applied_at": "2026-09-16T06:41:03.251Z",
+    "applied_at": "2026-09-16T07:19:21Z",
     "priority": [
       "Bodyall-specific verifiable recommendation reason",
       "patient trust and visit intent",
@@ -5291,7 +5366,7 @@
     "writer_preference": "Claude first",
     "claude_writer_available_in_current_runtime": false,
     "actual_editing_model": "Sol medium",
-    "fallback_scope": "No full rewrite; preserve existing prose and make only necessary local corrections.",
+    "fallback_scope": "No full rewrite; existing natural prose preserved and only local corrections made.",
     "representative_ko": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
     "make_settings_unchanged": true
   }
