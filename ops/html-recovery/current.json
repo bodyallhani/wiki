@@ -128,7 +128,10 @@
     "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
     "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html",
     "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html",
-    "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html"
+    "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html",
+    "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html",
+    "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html",
+    "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html"
   ],
   "completion_rows": [
     {
@@ -2858,15 +2861,15 @@
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
-    "latest_standard_not_confirmed_or_remaining": 27,
-    "latest_standard_published_confirmed": 129,
+    "latest_standard_not_confirmed_or_remaining": 24,
+    "latest_standard_published_confirmed": 132,
     "new_publications_this_turn": 3,
     "revised_publications_this_turn": 0,
     "total_scope": 156,
     "existing_rework_verified_under_20260915_request": 13,
     "historically_accepted_not_yet_reworked_under_20260915_request": 72,
-    "phase1_strengthened_completed": 44,
-    "phase1_strengthened_remaining": 27,
+    "phase1_strengthened_completed": 47,
+    "phase1_strengthened_remaining": 24,
     "priority_strengthened_total": 35,
     "priority_strengthened_completed": 35,
     "priority_strengthened_remaining": 0,
@@ -2891,29 +2894,29 @@
     "release_record_exact": true
   },
   "latest_release": {
-    "topic": "Herbmed encyclopedia 0003 functional dyspepsia and thoracolumbar symptoms KO/EN/CN",
+    "topic": "Herbmed encyclopedia 0004 persistent fatigue and Gyeongok-go suitability KO/EN/CN",
     "changed_files": [
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html",
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html",
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html"
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html",
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html",
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html",
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html",
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html"
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html",
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html",
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html"
     ],
     "reworked_existing_urls": [],
     "original156_count_delta": 3,
     "additional_index_count_delta": 0,
-    "base_commit": "148ce1dc237940f8fda3f2109c303b5f26ed37cf",
-    "final_commit": "45bb5d7d74cbffc8cb84bfaac8151885a43592dc",
+    "base_commit": "45bb5d7d74cbffc8cb84bfaac8151885a43592dc",
+    "final_commit": "20a99679cb6b087d058fb88f8ce2279bc4a0c9bf",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-herb0003-release.json",
-    "review": "ops/html-recovery/reviews/20260916-herb0003-final-candidate.json"
+    "receipt": "ops/html-recovery/runs/20260916-herb0004-release.json",
+    "review": "ops/html-recovery/reviews/20260916-herb0004-final-candidate.json"
   },
   "latest_validation": {
     "status": "PASS_PUBLIC_USER_APPROVED_IMMEDIATE_DEPLOYMENT",
-    "record": "ops/html-recovery/reviews/20260916-herb0003-final-candidate.json",
+    "record": "ops/html-recovery/reviews/20260916-herb0004-final-candidate.json",
     "candidate_static_content_schema_pass": true,
     "candidate_exact_recovery_readback": true,
     "main_readback_exact": true,
@@ -2927,10 +2930,10 @@
     "public_overflow_zero": true,
     "public_images_loaded_with_reserved_dimensions": true,
     "responsive_static_guard_pass": true,
-    "note": "Exact KO/EN/CN candidates passed full-source medical, evidence, translation, schema and responsive-CSS review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare and direct public desktop/content/schema/image verification passed. Direct 360px recheck is retained in the final Sol anomaly sweep."
+    "note": "Exact candidates passed full-source medical, evidence, translation, schema and responsive-CSS review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare and direct public desktop/content/schema/image verification passed. Direct 360px recheck is retained in the final Sol anomaly sweep."
   },
-  "next": "RESUME PHASE1 Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html KO→EN→CN: fresh-read main and target blobs, preserve verified evidence while strengthening patient fit and Bodyall-specific treatment selection, directly review exact full HTML, deploy immediately under user approval, then publicly verify.",
-  "next_priority": "RESUME PHASE1 Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html KO→EN→CN: fresh-read main and target blobs, preserve verified evidence while strengthening patient fit and Bodyall-specific treatment selection, directly review exact full HTML, deploy immediately under user approval, then publicly verify.",
+  "next": "RESUME PHASE1 Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html KO→EN→CN: fresh-read main and target blobs, preserve verified evidence while strengthening patient fit and Bodyall-specific treatment selection, directly review exact full HTML, deploy immediately under user approval, then publicly verify.",
+  "next_priority": "RESUME PHASE1 Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html KO→EN→CN: fresh-read main and target blobs, preserve verified evidence while strengthening patient fit and Bodyall-specific treatment selection, directly review exact full HTML, deploy immediately under user approval, then publicly verify.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2938,7 +2941,7 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "45bb5d7d74cbffc8cb84bfaac8151885a43592dc",
+  "public_commit": "20a99679cb6b087d058fb88f8ce2279bc4a0c9bf",
   "recovery_branch": "recovery/html-20260914",
   "report_ko": "한약 백과 0001 KO/EN/CN을 전체 검수 후 즉시 순차 배포하고 공개 내용·스키마·이미지·화면을 확인했습니다. 피로와 허리·골반 증상을 구분해 한약 적합성, 추나·SART 역할, 같은 기능 재평가와 의뢰를 연결했고, 공진단 시험의 1차 피로지표 유의차 없음과 2025년 정오표 한계를 유지했습니다. 이전 검수표시와 미확인 진료시간은 제거했습니다. 현재 126/156 완료, 잔여30개이며 다음은 HERB 0003 KO→EN→CN입니다.",
   "repository": "bodyallhani/wiki",
@@ -2958,8 +2961,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-16T04:03:55.738Z",
-  "version": "V268_HERB0003_PUBLIC_PASS_NEXT_HERB0004",
+  "updated_at": "2026-09-16T04:15:50.158Z",
+  "version": "V269_HERB0004_PUBLIC_PASS_NEXT_HERB0005",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2988,33 +2991,33 @@
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
   "active_run": {
-    "owner": "herb0003-phase1-release-20260916",
-    "started_at": "2026-09-16T04:03:55.738Z",
-    "completed_at": "2026-09-16T04:03:55.738Z",
-    "base_main_head": "148ce1dc237940f8fda3f2109c303b5f26ed37cf",
-    "final_main_head": "45bb5d7d74cbffc8cb84bfaac8151885a43592dc",
-    "source_ledger_blob": "4c289cad5ee77978c0d5d8d9466db97f61f1a7c2",
+    "owner": "herb0004-phase1-release-20260916",
+    "started_at": "2026-09-16T04:15:50.158Z",
+    "completed_at": "2026-09-16T04:15:50.158Z",
+    "base_main_head": "45bb5d7d74cbffc8cb84bfaac8151885a43592dc",
+    "final_main_head": "20a99679cb6b087d058fb88f8ce2279bc4a0c9bf",
+    "source_ledger_blob": "58711cbe66776685803c8038d7b758a465bef6d9",
     "source_blobs": {
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html": "243554b28fdebf26953cf93f0d962aaff9353e16",
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html": "257df2fcd3028bd7e7e08c5c2b23ba9f0a60ae5e",
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html": "aa19fa6e65ec4d261d1e85c92849538c5c7c262f"
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html": "4f4cd1bb026e7d7e3f66dde21bd6607f510c6166",
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html": "3fbc1b5bb340d0d947c113e945bc90e1a5b435d8",
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html": "9a088ac0db9b777c7f1205177f3300978964e35f"
     },
     "exact_candidate_hashes": {
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html": "af290c712b42eb9208397b1f29d5481c5ef31524c6bef655e97dced1ad63eb0a",
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html": "697c4fcd127464d54070c89853e5320cd53495d93e8cff87248cf34725ffe105",
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html": "99f65968d5d8b0efb02f7157848c28872e60c046badd2081de59f6d57f2bd1e0"
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html": "428db74a426fa74934e30b61369102f4d3ae6a9e55f3886924b2bc1b823542d8",
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html": "ee9bc3225a2a1ce45af96d0db71b8c85600af365e8c2eabd2fa289bfe76f5c0e",
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html": "aace75568a95cdb1970bbd45f51d10fa922aff119e96eb048f37ec69686e6770"
     },
     "published_blobs": {
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html": "8ca1383a26f38a6b54880bc2c2a6e2e87952d01c",
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html": "d224497ebd4146994e6c1cb25314aed990954e89",
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html": "9fab81a107277a697a2d85de78134fa4bd575818"
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html": "181ae75ebcfef74da0cc330a7cce3ff190016b82",
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html": "e6a564e1be1186ee3deac8d7ca6623de5e13318a",
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html": "26ff2cb9c4c9cfc753fe435aada974360a4e659c"
     },
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_PENDING",
     "single_writer_active": false,
-    "required_next": "Resume Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html KO/EN/CN from the freshly read ledger.",
-    "review_record": "ops/html-recovery/reviews/20260916-herb0003-final-candidate.json",
-    "release_record": "ops/html-recovery/runs/20260916-herb0003-release.json",
-    "ledger_exact_readback": true
+    "required_next": "Resume Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html KO/EN/CN from the freshly read ledger.",
+    "review_record": "ops/html-recovery/reviews/20260916-herb0004-final-candidate.json",
+    "release_record": "ops/html-recovery/runs/20260916-herb0004-release.json",
+    "ledger_exact_readback": false
   },
   "pending_run": {
     "topic": "Herbmed/encyclopedia/0001 KO/EN/CN",
@@ -3393,9 +3396,6 @@
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
     "phase1_pending_paths": [
-      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html",
-      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html",
-      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html",
       "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html",
       "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html",
       "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html",
@@ -3465,7 +3465,10 @@
       "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
       "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html",
       "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html",
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html"
+      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html",
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html",
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html",
+      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html"
     ],
     "phase2_initial_paths": [
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -3865,9 +3868,6 @@
     "priority_record_blob": "88ebc0892358d9d0da14e8ca649942bca7d3c6c6",
     "priority_record_exact_readback": true,
     "resume_phase1_pending_paths": [
-      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html",
-      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html",
-      "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html",
       "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html",
       "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html",
       "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html",
@@ -4052,39 +4052,39 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "at": "2026-09-16T04:03:55.738Z",
+    "at": "2026-09-16T04:15:50.158Z",
     "completed_this_run": 3,
     "reworked_this_run": 0,
     "additional_index_completed_this_run": 0,
     "candidates_prepared": 3,
-    "public_completed": 129,
-    "remaining": 27,
+    "public_completed": 132,
+    "remaining": 24,
     "priority_completed": 35,
     "priority_remaining": 0,
     "additional_index_completed": 8,
-    "result": "Herbmed 0003 KO/EN/CN were strengthened, sequentially deployed and publicly verified. The page now separates digestive and herbal suitability from accompanying movement-related thoracolumbar symptoms, removes deterministic nerve-compression and combined-treatment claims, retains red flags and evidence limits, and connects Bodyall assessment to selective treatment, same-function retesting and referral.",
+    "result": "Herbmed 0004 KO/EN/CN were strengthened, sequentially deployed and publicly verified. Persistent fatigue is no longer attributed to spinal compression or adrenal/HPA recovery claims; herbal suitability and movement-dependent musculoskeletal care are separated, with red flags, evidence type and same-function reassessment made explicit.",
     "recommendation_measurement": "UNMEASURED"
   },
   "previous_release": {
-    "topic": "Herbmed encyclopedia 0001 persistent fatigue with lumbopelvic symptoms KO/EN/CN",
+    "topic": "Herbmed encyclopedia 0003 functional dyspepsia and thoracolumbar symptoms KO/EN/CN",
     "changed_files": [
-      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
-      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
-      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html"
+      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html",
+      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html",
+      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
-      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
-      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html"
+      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html",
+      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html",
+      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html"
     ],
     "reworked_existing_urls": [],
     "original156_count_delta": 3,
     "additional_index_count_delta": 0,
-    "base_commit": "1e646dfeb46eef69c458589d764c2f74ea42b35c",
-    "final_commit": "148ce1dc237940f8fda3f2109c303b5f26ed37cf",
+    "base_commit": "148ce1dc237940f8fda3f2109c303b5f26ed37cf",
+    "final_commit": "45bb5d7d74cbffc8cb84bfaac8151885a43592dc",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-herb0001-release.json",
-    "review": "ops/html-recovery/reviews/20260916-herb0001-final-candidate.json"
+    "receipt": "ops/html-recovery/runs/20260916-herb0003-release.json",
+    "review": "ops/html-recovery/reviews/20260916-herb0003-final-candidate.json"
   },
   "previous_work_order_before_hub_priority": {
     "authorized_at": "2026-09-15T09:50:17.637Z",
@@ -4678,6 +4678,26 @@
         "topic": "Herbmed encyclopedia 0003 image and narrow render",
         "issue": "Broken/inaccurate mechanism image was removed. Direct 360px browser emulation was unavailable; responsive guards passed static review and public desktop overflow was zero.",
         "status": "DEFERRED_FINAL_SOL_RECHECK"
+      },
+      {
+        "topic": "Herbmed encyclopedia 0004 source claims",
+        "issue": "Source asserted spinal microcirculatory impairment as burnout pathogenesis, HPA-axis damage, ATP restoration, improved herbal delivery after decompression and combined-treatment rationale beyond evidence.",
+        "status": "CORRECTED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "Herbmed encyclopedia 0004 evidence type",
+        "issue": "Source treated a joint-manipulation autonomic-marker review and a long-COVID herbal trial protocol as proof of chronic-fatigue treatment mechanisms.",
+        "status": "CORRECTED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "Herbmed encyclopedia 0004 mechanism image",
+        "issue": "Source mechanism image visually reinforced unproven decompression/HPA/ATP causality.",
+        "status": "REMOVED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "Herbmed encyclopedia 0004 narrow render",
+        "issue": "Direct 360px browser emulation was unavailable; one-column responsive guards passed static review and public desktop overflow was zero.",
+        "status": "DEFERRED_FINAL_SOL_RECHECK"
       }
     ],
     "final_escalation_queue": [
@@ -4685,7 +4705,8 @@
       "Recheck all citations classified as protocol/review/trial in Sol-reviewed pages for evidence-type mismatches.",
       "Escalate only unresolved medical-claim, translation-causality, or rendered-layout anomalies; do not repeat full review of clean unchanged files.",
       "Recheck Herbmed encyclopedia 0001 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found.",
-      "Recheck Herbmed encyclopedia 0003 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found."
+      "Recheck Herbmed encyclopedia 0003 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found.",
+      "Recheck Herbmed encyclopedia 0004 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found."
     ]
   }
 }
