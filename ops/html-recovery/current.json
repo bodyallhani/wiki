@@ -140,36 +140,37 @@
     "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html",
     "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
     "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
-    "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html"
+    "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html",
+    "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
+    "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
+    "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html"
   ],
   "active_run": {
-    "base_main_head": "37db877200073183564c89df7e53101cf7f9c1c2",
-    "completed_at": "2026-09-16T05:03:51.522Z",
-    "exact_candidate_hashes": {
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html": "4eba88144ac2d1e504b8e9cca9579191ed0d538fa58b8dd1dd916d1772aed7a5",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html": "e2b927c44fb1e08fa34f1505dd6d5e77995bb0b3e558a0fb636e13b0512cd98a",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html": "b154126bffb889e61f9b229b66303766d6b503e279cb0b16362286068ef7989e"
-    },
-    "final_main_head": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
-    "ledger_exact_readback": true,
-    "owner": "herb0007-phase1-release-20260916",
-    "published_blobs": {
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html": "7120d2e813174e813f3da3bebfeb559f14c64d95",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html": "c3845699a32a8ef8440ec1d603103c376a1348d7",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html": "b99fb4d11abbeb7bdf3502f1ee4d8d43c7c4364e"
-    },
-    "release_record": "ops/html-recovery/runs/20260916-herb0007-release.json",
-    "required_next": "Resume Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html, Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html, Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html from the freshly read ledger.",
-    "review_record": "ops/html-recovery/reviews/20260916-herb0007-final-candidate.json",
+    "owner": "herb0008-phase1-release-20260916",
     "single_writer_active": false,
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_CONFIRMATION_PENDING",
+    "base_main_head": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
+    "final_main_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
     "source_blobs": {
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html": "d4f4a4609a8d4003828fff6e2fa8be223635a2d2",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html": "a15bc9f812f1b01bcc23a9022293f36f72ac4f6b",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html": "fec7c8948902b50c724f4071e7097f543e0296dd"
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html": "f0c49f575b523aef52e69f7a515d0950fdf7cf9f",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html": "f0abe0584dc9f2710937219f075959a1453642f4",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html": "b54125f85ab3aa4806acee9caa079520e67053e0"
     },
-    "source_ledger_blob": "bdd8fbb9503265e11278a36155b97da8965f6971",
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
-    "started_at": "2026-09-16T04:51:00.000Z"
+    "exact_candidate_hashes": {
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html": "3032f8c67aaef75687110f8ae2ace1af649537c7d549f5456de5f4c7fa51dd4f",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html": "7f126e1b1bb6c816d1336efb09c39d2df5ca9fc5fe6dec164b8c211085cca9f6",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html": "01fc068756d96da42612e7bf6d61bb388336a8fc375a3d64ec2125d6b1d72f66"
+    },
+    "published_blobs": {
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html": "13409e328ca78181f23bef414d422f56d143cbc7",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html": "eb27868c89d69ba1f0535d345ec47a6de5db3c2c",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html": "49d42f72397d1b3dc3b5d914560c36c47949f3d9"
+    },
+    "review_record": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
+    "release_record": "ops/html-recovery/runs/20260916-herb0008-release.json",
+    "completed_at": "2026-09-16T05:42:44.468Z",
+    "ledger_exact_readback": false,
+    "required_next": "Resume BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html, _en.html and _cn.html from the freshly read ledger; preserve its BMR-image consistency hold unless actually resolved."
   },
   "additional_index_completion_rows": [
     {
@@ -3243,6 +3244,69 @@
       "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html",
       "verification_receipt": "ops/html-recovery/runs/20260916-herb0007-release.json",
       "verified_at": "2026-09-16T05:03:51.522Z"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "sha256": "3032f8c67aaef75687110f8ae2ace1af649537c7d549f5456de5f4c7fa51dd4f",
+      "git_blob": "13409e328ca78181f23bef414d422f56d143cbc7",
+      "publication_commit": "b2ffb55de5e5634aab4431dd629c060c7105f0da",
+      "final_repository_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herb0008-release.json",
+      "verified_at": "2026-09-16T05:42:44.468Z",
+      "limits": [
+        "The 2015 cervical manipulation study involved only 10 healthy volunteers and 10 acute-neck-pain patients and measured immediate HRV, blood pressure and pain; it did not test insomnia, slow-wave sleep, vagus compression, cerebral perfusion, Bodyall SART or herbal combination care.",
+        "The 2019 Tian Wang Bu Xin Dan review included 14 studies and 1,256 participants but reported low methodological quality and insufficient adverse-event reporting; it does not establish direct 5-HT/GABA mechanisms, slow-wave sleep extension or synergy with cervical correction.",
+        "The 40,000 figure is cumulative correction patients through December 2025; MET and ultrasound are available processes, not insomnia outcomes, cure rates or superiority evidence.",
+        "No independent clinical outcome evidence establishes Bodyall SART or the exact combined care pathway for insomnia or palpitations.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; responsive CSS and reserved image dimensions passed static review and public desktop overflow was zero."
+      ]
+    },
+    {
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "sha256": "7f126e1b1bb6c816d1336efb09c39d2df5ca9fc5fe6dec164b8c211085cca9f6",
+      "git_blob": "eb27868c89d69ba1f0535d345ec47a6de5db3c2c",
+      "publication_commit": "c2fd942138bd8e5b2a005ddf72b5b0f75c2661ae",
+      "final_repository_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herb0008-release.json",
+      "verified_at": "2026-09-16T05:42:44.468Z",
+      "limits": [
+        "The 2015 cervical manipulation study involved only 10 healthy volunteers and 10 acute-neck-pain patients and measured immediate HRV, blood pressure and pain; it did not test insomnia, slow-wave sleep, vagus compression, cerebral perfusion, Bodyall SART or herbal combination care.",
+        "The 2019 Tian Wang Bu Xin Dan review included 14 studies and 1,256 participants but reported low methodological quality and insufficient adverse-event reporting; it does not establish direct 5-HT/GABA mechanisms, slow-wave sleep extension or synergy with cervical correction.",
+        "The 40,000 figure is cumulative correction patients through December 2025; MET and ultrasound are available processes, not insomnia outcomes, cure rates or superiority evidence.",
+        "No independent clinical outcome evidence establishes Bodyall SART or the exact combined care pathway for insomnia or palpitations.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; responsive CSS and reserved image dimensions passed static review and public desktop overflow was zero."
+      ]
+    },
+    {
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "sha256": "01fc068756d96da42612e7bf6d61bb388336a8fc375a3d64ec2125d6b1d72f66",
+      "git_blob": "49d42f72397d1b3dc3b5d914560c36c47949f3d9",
+      "publication_commit": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
+      "final_repository_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herb0008-release.json",
+      "verified_at": "2026-09-16T05:42:44.468Z",
+      "limits": [
+        "The 2015 cervical manipulation study involved only 10 healthy volunteers and 10 acute-neck-pain patients and measured immediate HRV, blood pressure and pain; it did not test insomnia, slow-wave sleep, vagus compression, cerebral perfusion, Bodyall SART or herbal combination care.",
+        "The 2019 Tian Wang Bu Xin Dan review included 14 studies and 1,256 participants but reported low methodological quality and insufficient adverse-event reporting; it does not establish direct 5-HT/GABA mechanisms, slow-wave sleep extension or synergy with cervical correction.",
+        "The 40,000 figure is cumulative correction patients through December 2025; MET and ultrasound are available processes, not insomnia outcomes, cure rates or superiority evidence.",
+        "No independent clinical outcome evidence establishes Bodyall SART or the exact combined care pathway for insomnia or palpitations.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; responsive CSS and reserved image dimensions passed static review and public desktop overflow was zero."
+      ]
     }
   ],
   "constraints": {
@@ -3262,11 +3326,11 @@
     "count_is_current_verified_lower_bound": true,
     "existing_rework_verified_under_20260915_request": 13,
     "historically_accepted_not_yet_reworked_under_20260915_request": 72,
-    "latest_standard_not_confirmed_or_remaining": 15,
-    "latest_standard_published_confirmed": 141,
+    "latest_standard_not_confirmed_or_remaining": 12,
+    "latest_standard_published_confirmed": 144,
     "new_publications_this_turn": 3,
-    "phase1_strengthened_completed": 56,
-    "phase1_strengthened_remaining": 15,
+    "phase1_strengthened_completed": 59,
+    "phase1_strengthened_remaining": 12,
     "priority_strengthened_completed": 35,
     "priority_strengthened_remaining": 0,
     "priority_strengthened_total": 35,
@@ -3358,69 +3422,69 @@
   ],
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/herbal",
   "latest_progress": {
-    "additional_index_completed": 8,
-    "additional_index_completed_this_run": 0,
-    "at": "2026-09-16T05:03:51.522Z",
+    "at": "2026-09-16T05:42:44.468Z",
     "candidates_prepared": 3,
     "completed_this_run": 3,
-    "next_record": "ops/html-recovery/runs/20260916-herb0007-release.json",
-    "prepared_next_group": 0,
-    "prepared_next_stage": "NOT_STARTED",
+    "reworked_this_run": 0,
+    "additional_index_completed_this_run": 0,
+    "public_completed": 144,
+    "remaining": 12,
     "priority_completed": 35,
     "priority_remaining": 0,
-    "public_completed": 141,
-    "recommendation_measurement": "UNMEASURED",
-    "remaining": 15,
-    "result": "Herbmed 0007 KO/EN/CN were corrected, deployed and publicly verified. Unsupported deterministic thoracolumbar/microcirculation/ATP/immune-axis/SART and combined-superiority claims were removed; fatigue differential and post-exertional worsening, separate treatment roles and same-function reassessment are explicit. Next is Herbmed 0008 KO/EN/CN.",
-    "reworked_this_run": 0
+    "additional_index_completed": 8,
+    "prepared_next_group": 0,
+    "prepared_next_stage": "NOT_STARTED",
+    "result": "Herbmed 0008 KO/EN/CN were corrected, deployed and publicly verified. Unsupported deterministic craniocervical/vagus/baroreflex/slow-wave-sleep, cerebral-delivery and combined-care claims were removed; insomnia/palpitation triage, separate treatment roles and same-measure reassessment are explicit. Next is BodyallFit 0002 KO/EN/CN.",
+    "next_record": "ops/html-recovery/runs/20260916-herb0008-release.json",
+    "recommendation_measurement": "UNMEASURED"
   },
   "latest_recovery_persistence": {
-    "at": "2026-09-16T05:09:25.399Z",
+    "at": "2026-09-16T05:42:44.468Z",
+    "status": "PENDING_EXACT_READBACK_AFTER_HERB0008_PUBLIC_RELEASE",
     "candidate_files_exact": true,
-    "current_json_blob_before_confirmation": "dd0d65b7f8e44b364efbd3f4dfd79581656f3e3f",
-    "herb0007_source_record_exact": true,
-    "release_record_exact": true,
+    "herb0008_source_record_exact": true,
     "review_record_exact": true,
-    "status": "EXACT_READBACK_CONFIRMED_AFTER_HERB0007_PUBLIC_RELEASE"
+    "release_record_exact": true,
+    "current_json_blob_before_confirmation": null
   },
   "latest_release": {
-    "additional_index_count_delta": 0,
-    "base_commit": "37db877200073183564c89df7e53101cf7f9c1c2",
+    "topic": "Herbmed encyclopedia 0008 shallow sleep/night palpitations triage and separated Tian Wang Bu Xin Dan/neck-function care KO/EN/CN",
+    "base_commit": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
+    "final_commit": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
     "changed_files": [
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html"
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html"
     ],
-    "final_commit": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
-    "new_urls": 0,
     "newly_completed_existing_urls": [
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html"
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html"
     ],
-    "original156_count_delta": 3,
-    "receipt": "ops/html-recovery/runs/20260916-herb0007-release.json",
-    "review": "ops/html-recovery/reviews/20260916-herb0007-final-candidate.json",
     "reworked_existing_urls": [],
-    "topic": "Herbmed encyclopedia 0007 persistent fatigue triage and separated Bojungikgi-tang/trunk care KO/EN/CN"
+    "original156_count_delta": 3,
+    "additional_index_count_delta": 0,
+    "new_urls": 0,
+    "receipt": "ops/html-recovery/runs/20260916-herb0008-release.json",
+    "review": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json"
   },
   "latest_validation": {
+    "status": "PASS_PUBLIC_USER_APPROVED_IMMEDIATE_DEPLOYMENT",
+    "record": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
     "candidate_exact_recovery_readback": true,
     "candidate_static_content_schema_pass": true,
-    "intended_files_only_compare": true,
-    "main_readback_exact": true,
-    "note": "Exact candidates passed full-source medical, evidence, translation, schema and responsive-CSS review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare, successful Pages workflow and direct public desktop/content/schema/image verification passed. KO hero required one explicit reload and then loaded at 1376x768. Direct 360px recheck is retained in the final Sol anomaly sweep.",
+    "responsive_static_guard_pass": true,
     "predeployment_desktop_render_pass": false,
     "predeployment_narrow_render_pass": false,
+    "user_approved_immediate_deployment_override": true,
+    "main_readback_exact": true,
+    "intended_files_only_compare": true,
+    "public_verification": true,
     "public_desktop_visual_pass": true,
+    "public_schema_faq_pass": true,
     "public_images_loaded_with_reserved_dimensions": true,
     "public_overflow_zero": true,
-    "public_schema_faq_pass": true,
-    "public_verification": true,
-    "record": "ops/html-recovery/reviews/20260916-herb0007-final-candidate.json",
-    "responsive_static_guard_pass": true,
-    "status": "PASS_PUBLIC_USER_APPROVED_IMMEDIATE_DEPLOYMENT",
-    "user_approved_immediate_deployment_override": true
+    "note": "Exact candidates passed full-source medical, evidence, translation, schema and responsive-CSS review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare, successful Pages workflow and direct public content/schema/image/desktop zero-overflow verification passed. Direct 360px recheck is retained in the final Sol anomaly sweep."
   },
   "legacy_next_before_existing_rework": "Resume existing encyclopedia/0003.foot-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
   "model_review_followup": {
@@ -3434,7 +3498,8 @@
       "Recheck Herbmed encyclopedia 0004 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found.",
       "Recheck Herbmed encyclopedia 0005 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found.",
       "Recheck Herbmed encyclopedia 0006 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found.",
-      "Recheck Herbmed encyclopedia 0007 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found."
+      "Recheck Herbmed encyclopedia 0007 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found.",
+      "Recheck Herbmed encyclopedia 0008 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found."
     ],
     "issues": [
       {
@@ -3651,11 +3716,31 @@
         "issue": "KO hero was incomplete on the first immediate public read and loaded at 1376x768 after explicit reload.",
         "status": "PUBLIC_IMAGE_RELOADED_AND_VERIFIED",
         "topic": "Herbmed encyclopedia 0007 Pages image cache"
+      },
+      {
+        "topic": "Herbmed encyclopedia 0008 source claims",
+        "issue": "Source asserted deterministic craniocervical misalignment, vagus compression, baroreflex impairment, slow-wave-sleep suppression and SART restoration/herbal-delivery mechanisms beyond evidence.",
+        "status": "CORRECTED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "Herbmed encyclopedia 0008 evidence type",
+        "issue": "Source overextended a 20-person immediate cervical-manipulation study and a low-quality 14-study Tian Wang Bu Xin Dan review to insomnia mechanisms and combined-care outcomes.",
+        "status": "CORRECTED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "Herbmed encyclopedia 0008 mechanism image",
+        "issue": "Source mechanism image visually reinforced unproven vagus/baroreflex/slow-wave-sleep and cerebral-delivery causality.",
+        "status": "REMOVED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "Herbmed encyclopedia 0008 narrow render",
+        "issue": "Direct 360px browser emulation was unavailable; responsive guards passed static review and public desktop overflow was zero.",
+        "status": "DEFERRED_FINAL_SOL_RECHECK"
       }
     ]
   },
-  "next": "RESUME PHASE1 Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html KO→EN→CN: freshly read source/main/ledger, verify evidence type and medical claims, build exact candidates, deploy immediately under user approval, then publicly verify.",
-  "next_priority": "RESUME PHASE1 Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html KO→EN→CN: freshly read source/main/ledger, verify evidence type and medical claims, build exact candidates, deploy immediately under user approval, then publicly verify.",
+  "next": "RESUME PHASE1 BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html KO→EN→CN: preserve the document-specific BMR image-consistency hold, verify evidence and full HTML, deploy immediately only after the defect is actually resolved or safely removed, then publicly verify.",
+  "next_priority": "RESUME PHASE1 BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html KO→EN→CN: preserve the document-specific BMR image-consistency hold, verify evidence and full HTML, deploy immediately only after the defect is actually resolved or safely removed, then publicly verify.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -3771,12 +3856,13 @@
     "status": "OWNER_PRIVATE_REVIEW_AVAILABLE"
   },
   "previous_existing_recovery_persistence": {
-    "exact": true,
-    "kind": "unreleased draft and resumption checkpoint",
-    "path": "ops/html-recovery/runs/20260915-0006/checkpoint.json",
-    "preserves_source_and_candidate": true,
-    "sha": "83f25d2df3f488ab444f525c10bfe5e1e04a987e",
-    "status": "REMOTE_EXACT_CONFIRMED"
+    "at": "2026-09-16T05:09:25.399Z",
+    "candidate_files_exact": true,
+    "current_json_blob_before_confirmation": "dd0d65b7f8e44b364efbd3f4dfd79581656f3e3f",
+    "herb0007_source_record_exact": true,
+    "release_record_exact": true,
+    "review_record_exact": true,
+    "status": "EXACT_READBACK_CONFIRMED_AFTER_HERB0007_PUBLIC_RELEASE"
   },
   "previous_existing_validation": {
     "asset_errors": 3,
@@ -3811,7 +3897,7 @@
     "candidate_static_content_schema_pass": true,
     "intended_files_only_compare": true,
     "main_readback_exact": true,
-    "note": "Exact candidates passed full-source medical, evidence, translation, schema and responsive-CSS review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare, successful Pages workflow and direct public desktop/content/schema/image verification passed. Initial cached KO/EN pages were explicitly reloaded and then matched the new public marker and structure. Direct 360px recheck is retained in the final Sol anomaly sweep.",
+    "note": "Exact candidates passed full-source medical, evidence, translation, schema and responsive-CSS review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare, successful Pages workflow and direct public desktop/content/schema/image verification passed. KO hero required one explicit reload and then loaded at 1376x768. Direct 360px recheck is retained in the final Sol anomaly sweep.",
     "predeployment_desktop_render_pass": false,
     "predeployment_narrow_render_pass": false,
     "public_desktop_visual_pass": true,
@@ -3819,31 +3905,31 @@
     "public_overflow_zero": true,
     "public_schema_faq_pass": true,
     "public_verification": true,
-    "record": "ops/html-recovery/reviews/20260916-herb0006-final-candidate.json",
+    "record": "ops/html-recovery/reviews/20260916-herb0007-final-candidate.json",
     "responsive_static_guard_pass": true,
     "status": "PASS_PUBLIC_USER_APPROVED_IMMEDIATE_DEPLOYMENT",
     "user_approved_immediate_deployment_override": true
   },
   "previous_release": {
     "additional_index_count_delta": 0,
-    "base_commit": "93d71ba80bda8fe692a3ac9e7bd2ab8180575ce7",
+    "base_commit": "37db877200073183564c89df7e53101cf7f9c1c2",
     "changed_files": [
-      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
-      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
-      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html"
+      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
+      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
+      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html"
     ],
-    "final_commit": "37db877200073183564c89df7e53101cf7f9c1c2",
+    "final_commit": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
     "new_urls": 0,
     "newly_completed_existing_urls": [
-      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
-      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
-      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html"
+      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
+      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
+      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html"
     ],
     "original156_count_delta": 3,
-    "receipt": "ops/html-recovery/runs/20260916-herb0006-release.json",
-    "review": "ops/html-recovery/reviews/20260916-herb0006-final-candidate.json",
+    "receipt": "ops/html-recovery/runs/20260916-herb0007-release.json",
+    "review": "ops/html-recovery/reviews/20260916-herb0007-final-candidate.json",
     "reworked_existing_urls": [],
-    "topic": "Herbmed encyclopedia 0006 recurrent reflux/epigastric fullness triage and separated herbal/thoracic care KO/EN/CN"
+    "topic": "Herbmed encyclopedia 0007 persistent fatigue triage and separated Bojungikgi-tang/trunk care KO/EN/CN"
   },
   "previous_release_recovery_persistence": {
     "at": "2026-09-16T04:50:10.512Z",
@@ -4215,7 +4301,7 @@
     "reason": "Do not republish private preview and recovery-artifact identifiers in a public repository."
   },
   "public_branch": "main",
-  "public_commit": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
+  "public_commit": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
   "recovery_branch": "recovery/html-20260914",
   "related_hub_findings": [
     {
@@ -4225,7 +4311,7 @@
       "status": "HOLD_UNSUPPORTED_STRUCTURAL_AND_RECURRENCE_CLAIMS"
     }
   ],
-  "report_ko": "한약 백과 0007 KO/EN/CN을 수정·순차 배포하고 공개 내용·스키마·이미지·화면을 확인했습니다. 지속 피로를 흉요추 불안정·미세순환·ATP·면역축 문제로 단정하거나 SART와 한약 병행의 우월성을 주장한 내용을 제거하고, 다른 원인 및 활동 후 악화 확인·한약과 동반 몸통 증상 치료의 역할 분리·동일 기능 재평가를 명확히 했습니다. 현재 141/156 완료, 잔여 15개이며 다음은 한약 백과 0008 KO→EN→CN입니다.",
+  "report_ko": "한약 백과 0008 KO/EN/CN을 수정·순차 배포하고 공개 내용·스키마·이미지·화면을 확인했습니다. 불면을 두개경추 배열·미주신경 압박·서파수면 억제로 단정하거나 SART가 미주신경 신호·뇌 미세순환·한약 전달을 회복한다는 주장을 제거하고, 불면·야간 두근거림 선별, 천왕보심단 등 한약 적합성, 동작과 연동된 목 기능 진료의 역할 분리 및 동일 지표 재평가를 명확히 했습니다. 현재 144/156 완료, 잔여 12개이며 다음은 BodyallFit 0002 KO→EN→CN입니다. 해당 문서의 BMR 그림 정합성 보류는 실제 해결 전까지 유지합니다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -4336,8 +4422,8 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T05:09:25.399Z",
-  "version": "V275_HERB0007_PUBLIC_PASS_LEDGER_EXACT_NEXT_HERB0008",
+  "updated_at": "2026-09-16T05:42:44.468Z",
+  "version": "V276_HERB0008_PUBLIC_PASS_NEXT_BODYALLFIT0002",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
     "phase": "RESUME_PHASE1_PENDING",
@@ -4397,7 +4483,10 @@
       "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html",
       "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
       "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html"
+      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html"
     ],
     "phase1_initial_paths": [
       "encyclopedia/0003.foot-pain.html",
@@ -4473,9 +4562,6 @@
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
     "phase1_pending_paths": [
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
