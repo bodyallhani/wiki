@@ -1,0 +1,63 @@
+{
+  "version": "V284_BODYALLFIT0007_PUBLIC_PASS",
+  "completed_at": "2026-09-16T06:37:55.495Z",
+  "base_main_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
+  "final_main_head": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
+  "pages_run": {
+    "id": 35064331711,
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "055c0d663d8e351db871f53a4c8e27f16f5bdc39"
+  },
+  "comparison": {
+    "ahead_by": 3,
+    "behind_by": 0,
+    "intended_files_only": true
+  },
+  "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0007-final-candidate.json",
+  "files": [
+    {
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
+      "sha256": "ebe1b035cb5dbf4a2b214a5af07a345cb89bc87bf038efb376b324963b42de5d",
+      "git_blob": "7d5537b90804212389f3c2dec519cbc75a7d00b6",
+      "publication_commit": "8ef1a181cd6476bbde7ee47b9a9f57643c9d0cf9"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
+      "sha256": "1c60bc0d9f896929b72e4d928c73e4ebc3c32dc79f908d8b7c883f1c6d3036fd",
+      "git_blob": "871e1b728b6b36150be1f513728d4aca090a46b1",
+      "publication_commit": "f2e8178506677e1069bbd102ed170426afcc60d8"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
+      "sha256": "2bf395ccef6c3e0355911856054342b484fb67bcc0d551d2c67bf734ba0d5efd",
+      "git_blob": "8b310739fa112852d6910ce874f24da78cb2cf16",
+      "publication_commit": "055c0d663d8e351db871f53a4c8e27f16f5bdc39"
+    }
+  ],
+  "public_validation": {
+    "title_h1_marker": "PASS",
+    "canonical_og_hreflang": "PASS",
+    "schema_types_and_faq": "PASS",
+    "image_loaded_and_reserved_1376x768": "PASS",
+    "image_count_one_and_synthetic_diagram_removed": "PASS",
+    "desktop_render_direct_review": "PASS",
+    "public_overflow_zero": "PASS",
+    "responsive_css_static_review": "PASS",
+    "direct_360px_browser_emulation": "DEFERRED_FINAL_SOL_ANOMALY_SWEEP"
+  },
+  "evidence_alignment": {
+    "original_surmout1": "PMID 39996356; DOI 10.1111/dom.16275",
+    "correction": "PMID 40832789; DOI 10.1111/dom.70050",
+    "lean_mass_not_equated_with_muscle_or_sarcopenia": true
+  },
+  "limits": [
+    "The SURMOUNT-1 body-composition result does not establish sarcopenia, BMR decline, or Bodyall herbal efficacy.",
+    "Herbal medicine is presented only as an optional safety-screened component; no muscle-preservation or BMR-restoration guarantee is made.",
+    "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+    "Direct 360px browser emulation is queued for the final focused Sol anomaly sweep; responsive CSS and public desktop overflow were checked."
+  ]
+}
