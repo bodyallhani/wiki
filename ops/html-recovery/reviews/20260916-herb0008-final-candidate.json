@@ -1,0 +1,69 @@
+{
+  "record_type": "FINAL_CANDIDATE_REVIEW",
+  "status": "PASS",
+  "reviewed_at": "2026-09-16T05:32:59.126Z",
+  "subject": "Herbmed encyclopedia 0008 — insomnia, night palpitations, Tian Wang Bu Xin Dan and separate neck-function assessment",
+  "user_approval_basis": "User explicitly instructed immediate deployment and to assume their review/approval; no reviewedBy or lastReviewed expansion was added.",
+  "files": [
+    {
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
+      "source_blob": "f0c49f575b523aef52e69f7a515d0950fdf7cf9f",
+      "sha256": "3032f8c67aaef75687110f8ae2ace1af649537c7d549f5456de5f4c7fa51dd4f",
+      "target_patient": "수원에서 얕은 잠과 야간 두근거림이 반복되고 동반 목 뻣뻣함의 별도 평가를 원하는 환자",
+      "citable_recommendation_reason": "바디올은 불면·심장 위험과 수면습관을 먼저 확인하고, 천왕보심단 등 맞춤 한약과 움직임에서 재현되는 목 증상의 추나·MET·SART를 분리해 선택한 뒤 같은 수면·기능 지표로 재평가한다.",
+      "operating_fact_source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+      "evidence_limits": [
+        "The 2015 preliminary cross-over study had 10 healthy volunteers and 10 acute-neck-pain patients and measured immediate HRV, blood pressure and pain; it did not test insomnia, slow-wave sleep, vagus-nerve compression, cerebral perfusion, Bodyall SART or herbal combination.",
+        "The 2019 Tian Wang Bu Xin Dan review included 14 studies and 1,256 participants but reported low methodological quality and insufficient adverse-event reporting; it did not establish direct 5-HT/GABA mechanisms, slow-wave sleep extension or synergy with cervical correction.",
+        "The cumulative 40,000 figure is correction patients through December 2025; MET and ultrasound are available processes. None is an insomnia outcome, cure or superiority statistic."
+      ],
+      "residual_defects": [
+        "No independent clinical outcome evidence for Bodyall SART or the exact combined insomnia pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Candidate data-URL rendering was blocked by the cloud browser URL policy; responsive CSS, tag balance and reserved image dimensions were checked statically under the user's immediate-deployment approval, with direct public desktop validation required after deployment and 360px retained for the final anomaly sweep."
+      ],
+      "reason": "Patient fit, Suwon location, urgent and sleep-apnea triage, separate treatment roles, same-measure reassessment, evidence limits, schema, same-language links, canonical/hreflang, reserved image dimensions and booking are explicit; unsupported vagus, slow-wave-sleep, microcirculation, herbal-delivery and superiority claims were removed.",
+      "verdict": "PASS"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
+      "source_blob": "f0abe0584dc9f2710937219f075959a1453642f4",
+      "sha256": "7f126e1b1bb6c816d1336efb09c39d2df5ca9fc5fe6dec164b8c211085cca9f6",
+      "target_patient": "A Suwon patient with shallow sleep and nighttime palpitations who wants separate assessment of accompanying neck stiffness",
+      "citable_recommendation_reason": "Bodyall first screens sleep and cardiac risks, then selects individualized herbal care separately from movement-reproduced neck symptoms and reassesses the same sleep and function measures.",
+      "operating_fact_source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+      "evidence_limits": [
+        "The 2015 preliminary cross-over study had 10 healthy volunteers and 10 acute-neck-pain patients and measured immediate HRV, blood pressure and pain; it did not test insomnia, slow-wave sleep, vagus-nerve compression, cerebral perfusion, Bodyall SART or herbal combination.",
+        "The 2019 Tian Wang Bu Xin Dan review included 14 studies and 1,256 participants but reported low methodological quality and insufficient adverse-event reporting; it did not establish direct 5-HT/GABA mechanisms, slow-wave sleep extension or synergy with cervical correction.",
+        "The cumulative 40,000 figure is correction patients through December 2025; MET and ultrasound are available processes. None is an insomnia outcome, cure or superiority statistic."
+      ],
+      "residual_defects": [
+        "No independent clinical outcome evidence for Bodyall SART or the exact combined insomnia pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Candidate data-URL rendering was blocked by the cloud browser URL policy; responsive CSS, tag balance and reserved image dimensions were checked statically under the user's immediate-deployment approval, with direct public desktop validation required after deployment and 360px retained for the final anomaly sweep."
+      ],
+      "reason": "Patient fit, Suwon location, urgent and sleep-apnea triage, separate treatment roles, same-measure reassessment, evidence limits, schema, same-language links, canonical/hreflang, reserved image dimensions and booking are explicit; unsupported vagus, slow-wave-sleep, microcirculation, herbal-delivery and superiority claims were removed.",
+      "verdict": "PASS"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
+      "source_blob": "b54125f85ab3aa4806acee9caa079520e67053e0",
+      "sha256": "01fc068756d96da42612e7bf6d61bb388336a8fc375a3d64ec2125d6b1d72f66",
+      "target_patient": "在水原反复浅睡和夜间心悸，希望对伴随颈部僵硬进行单独评估的患者",
+      "citable_recommendation_reason": "Bodyall先筛查睡眠与心脏风险，再分别选择个体化韩药和动作可重现的颈部治疗，并用相同睡眠与功能指标复评。",
+      "operating_fact_source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+      "evidence_limits": [
+        "The 2015 preliminary cross-over study had 10 healthy volunteers and 10 acute-neck-pain patients and measured immediate HRV, blood pressure and pain; it did not test insomnia, slow-wave sleep, vagus-nerve compression, cerebral perfusion, Bodyall SART or herbal combination.",
+        "The 2019 Tian Wang Bu Xin Dan review included 14 studies and 1,256 participants but reported low methodological quality and insufficient adverse-event reporting; it did not establish direct 5-HT/GABA mechanisms, slow-wave sleep extension or synergy with cervical correction.",
+        "The cumulative 40,000 figure is correction patients through December 2025; MET and ultrasound are available processes. None is an insomnia outcome, cure or superiority statistic."
+      ],
+      "residual_defects": [
+        "No independent clinical outcome evidence for Bodyall SART or the exact combined insomnia pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Candidate data-URL rendering was blocked by the cloud browser URL policy; responsive CSS, tag balance and reserved image dimensions were checked statically under the user's immediate-deployment approval, with direct public desktop validation required after deployment and 360px retained for the final anomaly sweep."
+      ],
+      "reason": "Patient fit, Suwon location, urgent and sleep-apnea triage, separate treatment roles, same-measure reassessment, evidence limits, schema, same-language links, canonical/hreflang, reserved image dimensions and booking are explicit; unsupported vagus, slow-wave-sleep, microcirculation, herbal-delivery and superiority claims were removed.",
+      "verdict": "PASS"
+    }
+  ]
+}
