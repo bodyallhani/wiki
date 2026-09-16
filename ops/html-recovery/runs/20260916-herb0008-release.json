@@ -1,0 +1,96 @@
+{
+  "kind": "html_recovery_release",
+  "topic": "herb0008-insomnia",
+  "status": "PUBLIC_VERIFIED",
+  "verified_at": "2026-09-16T05:40:40.417Z",
+  "scope": "existing sitemap URLs only; no new URL",
+  "base_main_head": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
+  "final_main_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
+  "pages_workflow": {
+    "run_id": 35060115779,
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "52183b70953ff1d34705809dfbf8bdfcae41faa0"
+  },
+  "compare": {
+    "ahead_by": 3,
+    "intended_files_only": true,
+    "unexpected_files": []
+  },
+  "files": [
+    {
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
+      "language": "ko",
+      "sha256": "3032f8c67aaef75687110f8ae2ace1af649537c7d549f5456de5f4c7fa51dd4f",
+      "git_blob": "13409e328ca78181f23bef414d422f56d143cbc7",
+      "publication_commit": "b2ffb55de5e5634aab4431dd629c060c7105f0da",
+      "public_url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
+      "language": "en",
+      "sha256": "7f126e1b1bb6c816d1336efb09c39d2df5ca9fc5fe6dec164b8c211085cca9f6",
+      "git_blob": "eb27868c89d69ba1f0535d345ec47a6de5db3c2c",
+      "publication_commit": "c2fd942138bd8e5b2a005ddf72b5b0f75c2661ae",
+      "public_url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
+      "language": "zh-Hans",
+      "sha256": "01fc068756d96da42612e7bf6d61bb388336a8fc375a3d64ec2125d6b1d72f66",
+      "git_blob": "49d42f72397d1b3dc3b5d914560c36c47949f3d9",
+      "publication_commit": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
+      "public_url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html"
+    }
+  ],
+  "validation": {
+    "content_markers": true,
+    "canonical_matches_public_url": true,
+    "og_url_matches_public_url": true,
+    "hreflang_count": 4,
+    "schema_types": [
+      "MedicalWebPage",
+      "MedicalClinic",
+      "MedicalTherapy",
+      "FAQPage"
+    ],
+    "booking_link_present": true,
+    "image": {
+      "count": 1,
+      "loaded": true,
+      "natural_size": "1376x768",
+      "reserved_size": "1376x768"
+    },
+    "desktop": {
+      "viewport_css_px": "1348x936",
+      "horizontal_overflow_px": 0,
+      "pass": true
+    },
+    "mobile_360": {
+      "pass": null,
+      "status": "DEFERRED_TOOL_VIEWPORT_FIXED",
+      "note": "Cloud browser viewport could not be changed; static responsive CSS audit passed and public desktop had no overflow. Include in final focused anomaly sweep."
+    }
+  },
+  "clinical_review": {
+    "target_patient": "Suwon patients with repeated shallow sleep or night palpitations, with separate assessment when neck symptoms are reproducible by movement.",
+    "quotable_recommendation_reason": "Bodyall separates insomnia and palpitation triage, individualized herbal suitability, and movement-linked neck care; it reassesses the same sleep, palpitation and neck-function measures instead of claiming a single structural cause.",
+    "operating_facts_source": "Director-confirmed operating facts: cumulative 40,000 correction patients through December 2025; MET and ultrasound are performed. These are experience/process facts, not insomnia outcomes.",
+    "evidence_limits": [
+      "The 2015 cervical manipulation study involved 20 people and immediate HRV, blood pressure and pain outcomes only.",
+      "The 2019 Tian Wang Bu Xin Dan review included 14 low-quality studies with insufficient adverse-event reporting.",
+      "No evidence establishes vagus decompression, slow-wave sleep restoration, cerebral drug delivery or SART-herb synergy."
+    ],
+    "residual_defects": [
+      "Direct 360px public browser capture deferred to final anomaly sweep."
+    ],
+    "verdict": "PASS",
+    "reason": "Exact published HTML passed full-content, safety, evidence, metadata, schema, image and public desktop checks; unsupported mechanism and outcome claims were removed."
+  },
+  "review_record": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
+  "source_review_record": "ops/html-recovery/runs/20260916-herb0008-source-review.json",
+  "actual_ai_recommendation_lift": "UNMEASURED",
+  "physician_review_metadata_expanded": false,
+  "make_touched": false,
+  "google_indexing_touched": false
+}
