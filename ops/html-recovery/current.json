@@ -2640,18 +2640,18 @@
     "review": "ops/html-recovery/reviews/20260916-stiff-hands-final-candidate-hold.json"
   },
   "latest_validation": {
-    "status": "PASS",
-    "record": "ops/html-recovery/reviews/20260916-stiff-hands-final-candidate-hold.json",
-    "record_blob": "2af5d48848f88ec14969c260a1f852bc9b6287c2",
+    "status": "HOLD",
+    "record": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json",
     "candidate_static_content_schema_pass": true,
     "candidate_exact_readback": true,
     "image_direct_inspection_pass": true,
-    "predeployment_render_pass": true,
-    "public_verification": true,
-    "note": "Corrected exact KO/EN/CN versions passed whole-source and direct desktop/360px review, sequential deployment/readback, intended-file compare, and public Pages DOM/schema/image/screen checks."
+    "predeployment_desktop_render_pass": true,
+    "predeployment_narrow_render_pass": false,
+    "public_verification": false,
+    "note": "Exact KO/EN/CN candidates passed whole-source, schema, image-loading and desktop overflow review. Direct 360px visual inspection remains required; no main write or count."
   },
-  "next": "Resume encyclopedia/0001 buttock pain KO→EN→CN from saved phase1 order. Fresh-read current.json, main and target blobs before candidate work.",
-  "next_priority": "RESUME PHASE1 encyclopedia/0001.buttock-pain KO→EN→CN: fresh-read ledger, main and target blobs; reuse unchanged verified evidence, complete exact HTML/render/public gates, then count only after Pages verification.",
+  "next": "Resume the persisted encyclopedia/0001 buttock-pain exact candidates at the 360px render gate; do not regenerate or deploy before fresh conflict checks.",
+  "next_priority": "HOLD RESUME PHASE1 encyclopedia/0001.buttock-pain KO/EN/CN: directly inspect the persisted exact candidates at 360px; then fresh-read ledger, main and target blobs and deploy only if PASS.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2661,7 +2661,7 @@
   "public_branch": "main",
   "public_commit": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "우선 35개와 별도 index 8개는 모두 완료 상태를 유지합니다. 손가락 뻣뻣함 3개 언어를 강화 수정·직접 검수·배포·공개 검증하여 원래156개는 108/156, 잔여48입니다. 다음은 encyclopedia/0001 둔부통증 3개 언어입니다. 실제 AI 추천률 증가는 미측정입니다.",
+  "report_ko": "손가락 뻣뻣함 3개 언어를 배포·공개 검증하여 원래156개는 108/156, 잔여48입니다. 다음 둔부통증 3개 언어는 과장·진단·이미지·og:url 문제를 수정한 exact 후보를 저장했고 데스크톱 검수는 통과했지만, 360px 직접 화면 검수가 남아 배포와 집계는 HOLD했습니다. 실제 AI 추천률 증가는 미측정입니다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2679,8 +2679,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-16T00:58:00Z",
-  "version": "V260_STIFF_HANDS_PUBLISHED_PUBLIC_VERIFIED",
+  "updated_at": "2026-09-16T01:18:00Z",
+  "version": "V261_BUTTOCK_PAIN_EXACT_CANDIDATES_DESKTOP_PASS_NARROW_HOLD",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2709,29 +2709,65 @@
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
   "active_run": {
-    "owner": "stiff-hands-phase1-release-20260916T0048Z",
-    "started_at": "2026-09-16T00:48:57Z",
-    "base_main_head": "a7d10f1aabd0ea86fd0d388a77365b338d747938",
-    "source_ledger_blob": "9274600367f4e0b8dae55a6b228b40b7718c810c",
+    "owner": "buttock-pain-phase1-candidate-20260916T0100Z",
+    "started_at": "2026-09-16T01:00:00Z",
+    "base_main_head": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+    "source_ledger_blob": "816ccad97f49d4159106303d3600a72cc2a9ef6a",
     "source_blobs": {
-      "encyclopedia/0002.stiff-hands.html": "cf2e81921b5db3976e632fb3814f1145127dec84",
-      "encyclopedia/0002.stiff-hands_en.html": "5ffbdd130add5aaa45289642d663519cb0b2b27f",
-      "encyclopedia/0002.stiff-hands_cn.html": "f9a4004e436710cfe647062ef2b107118ac6d883"
+      "encyclopedia/0001.buttock-pain.html": "3caa92e440e27259699ab3e694503a32fd0b9341",
+      "encyclopedia/0001.buttock-pain_en.html": "5bafcae750b67f82f653361a054c2f5130088ebe",
+      "encyclopedia/0001.buttock-pain_cn.html": "b69c11e82046203d359139e31b0b6822df8b01d7"
     },
     "exact_candidate_hashes": {
-      "encyclopedia/0002.stiff-hands.html": "0724bf7fdcb587b7366729e75f7551fe40aee38cad92473d1e308b20a7631204",
-      "encyclopedia/0002.stiff-hands_en.html": "cf6033628be93995a3b94f40bb9a3476eb8728940f1b80e986c6d8ac7c9db0f5",
-      "encyclopedia/0002.stiff-hands_cn.html": "ddee7f973a0905934df1b7d50fc0d7fe0a9d3f5ebb5405055fef26958e2dec84"
+      "encyclopedia/0001.buttock-pain.html": "6499cc4654ac6810a9b2186dba84e92c31121aee2f6eb1f7812443892872c26f",
+      "encyclopedia/0001.buttock-pain_en.html": "877a1d877793511effa2477dbb2661997d0cf33ad69524a18bf242f7b7ed6baf",
+      "encyclopedia/0001.buttock-pain_cn.html": "894848c16757d0d12aa107fa399243f8697dfb153f0a08d6a3b3ebac36116241"
     },
-    "stage": "PUBLIC_VERIFICATION_AND_LEDGER_WRITE_COMPLETE",
+    "stage": "EXACT_CANDIDATES_DESKTOP_PASS_NARROW_HOLD",
     "single_writer_active": false,
-    "completed_at": "2026-09-16T00:58:00Z",
-    "final_main_head": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
-    "required_next": "Fresh-read ledger, main and encyclopedia/0001.buttock-pain target blobs; continue KO/EN/CN as the next phase1 group.",
-    "review_record": "ops/html-recovery/reviews/20260916-stiff-hands-final-candidate-hold.json",
-    "verification_receipt": "ops/html-recovery/runs/20260916-stiff-hands-release.json"
+    "completed_at": "2026-09-16T01:18:00Z",
+    "required_next": "Directly inspect exact KO/EN/CN candidates at 360px; then fresh-read ledger, main and target blobs before sequential deployment.",
+    "candidate_recovery_paths": {
+      "encyclopedia/0001.buttock-pain.html": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain.html",
+      "encyclopedia/0001.buttock-pain_en.html": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_en.html",
+      "encyclopedia/0001.buttock-pain_cn.html": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_cn.html"
+    },
+    "candidate_recovery_blobs": {
+      "encyclopedia/0001.buttock-pain.html": "3f550a47c74be48439df12ef7e297b28c8b62ab6",
+      "encyclopedia/0001.buttock-pain_en.html": "30be9220bda99e649d621c69747a37a111347907",
+      "encyclopedia/0001.buttock-pain_cn.html": "862eeb271a73e80719855d4b63f922b33334c2d2"
+    },
+    "review_record": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json"
   },
-  "pending_run": null,
+  "pending_run": {
+    "topic": "encyclopedia/0001.buttock-pain KO/EN/CN",
+    "paths": [
+      "encyclopedia/0001.buttock-pain.html",
+      "encyclopedia/0001.buttock-pain_en.html",
+      "encyclopedia/0001.buttock-pain_cn.html"
+    ],
+    "stage": "PREDEPLOYMENT_NARROW_RENDER_HOLD",
+    "main_writes": 0,
+    "counted_complete": 0,
+    "candidate_sha256": {
+      "encyclopedia/0001.buttock-pain.html": "6499cc4654ac6810a9b2186dba84e92c31121aee2f6eb1f7812443892872c26f",
+      "encyclopedia/0001.buttock-pain_en.html": "877a1d877793511effa2477dbb2661997d0cf33ad69524a18bf242f7b7ed6baf",
+      "encyclopedia/0001.buttock-pain_cn.html": "894848c16757d0d12aa107fa399243f8697dfb153f0a08d6a3b3ebac36116241"
+    },
+    "blocker": "Direct 360px visual inspection of the exact candidates is not yet complete.",
+    "next_action": "Inspect full exact 360px renders, then fresh-read ledger/main/blobs before sequential deployment.",
+    "candidate_recovery_paths": {
+      "encyclopedia/0001.buttock-pain.html": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain.html",
+      "encyclopedia/0001.buttock-pain_en.html": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_en.html",
+      "encyclopedia/0001.buttock-pain_cn.html": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_cn.html"
+    },
+    "candidate_recovery_blobs": {
+      "encyclopedia/0001.buttock-pain.html": "3f550a47c74be48439df12ef7e297b28c8b62ab6",
+      "encyclopedia/0001.buttock-pain_en.html": "30be9220bda99e649d621c69747a37a111347907",
+      "encyclopedia/0001.buttock-pain_cn.html": "862eeb271a73e80719855d4b63f922b33334c2d2"
+    },
+    "review_record": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json"
+  },
   "previous_public_validation": {
     "checks": [
       {
@@ -3970,7 +4006,7 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "at": "2026-09-16T00:58:00Z",
+    "at": "2026-09-16T01:18:00Z",
     "completed_this_run": 3,
     "reworked_this_run": 0,
     "additional_index_completed_this_run": 0,
@@ -3980,7 +4016,7 @@
     "priority_completed": 35,
     "priority_remaining": 0,
     "additional_index_completed": 8,
-    "result": "Stiff-hands KO/EN/CN corrected, directly reviewed, sequentially deployed and publicly verified.",
+    "result": "Stiff-hands KO/EN/CN were publicly completed. Buttock-pain KO/EN/CN exact candidates were corrected and persisted; narrow render remains HOLD.",
     "recommendation_measurement": "UNMEASURED"
   },
   "previous_release": {
@@ -4479,6 +4515,21 @@
         "topic": "encyclopedia/0002.stiff-hands EN/CN",
         "issue": "Prior static PASS missed malformed og:url suffixes.",
         "status": "CORRECTED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "encyclopedia/0001.buttock-pain EN/CN",
+        "issue": "Source og:url suffixes were malformed.",
+        "status": "CORRECTED_IN_CANDIDATE"
+      },
+      {
+        "topic": "encyclopedia/0001.buttock-pain image",
+        "issue": "Source hero image failed public loading.",
+        "status": "REMOVED_IN_CANDIDATE"
+      },
+      {
+        "topic": "encyclopedia/0001.buttock-pain claims",
+        "issue": "Source included deterministic diagnosis, direct decompression, root-cause, safe/effective and nerve-protection overclaims.",
+        "status": "CORRECTED_IN_CANDIDATE"
       }
     ],
     "final_escalation_queue": [
