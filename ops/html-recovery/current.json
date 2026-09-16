@@ -107,7 +107,10 @@
     "shoulder-frozen_en.html",
     "traffic-accident.html",
     "traffic-accident_cn.html",
-    "traffic-accident_en.html"
+    "traffic-accident_en.html",
+    "encyclopedia/0001.buttock-pain.html",
+    "encyclopedia/0001.buttock-pain_en.html",
+    "encyclopedia/0001.buttock-pain_cn.html"
   ],
   "completion_rows": [
     {
@@ -764,21 +767,6 @@
     {
       "latest_standard_completed": false,
       "path": "doctor-intro.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "encyclopedia/0001.buttock-pain_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "encyclopedia/0001.buttock-pain_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "encyclopedia/0001.buttock-pain.html",
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
@@ -2568,6 +2556,63 @@
       "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
       "verification_receipt": "run_traffic_ko_final_cleanup/public_verification.json",
       "verified_at": "2026-09-14T00:51:03.106085+00:00"
+    },
+    {
+      "path": "encyclopedia/0001.buttock-pain.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0001.buttock-pain.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "9da1ff441a7c5fc4d490894eb16e17e6a0d6e51d",
+      "sha256": "dbeb498ce479ddd777965dbba3de6c9f3b2b10ea16fd59433a560725c922a815",
+      "publication_commit": "5ea4998f06e71ae448c2dd720d4171e451ec6fd0",
+      "final_repository_head": "304ca75f2300952d99da1e893578b1d60ecfe80d",
+      "review_receipt": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-buttock-pain-release.json",
+      "verified_at": "2026-09-16T01:36:03.170Z",
+      "limits": [
+        "The diagnostic-accuracy study is small and supports tests only as aids; it does not establish a single-test diagnosis or Bodyall outcome.",
+        "The NHS page supports emergency triage, not Bodyall treatment efficacy.",
+        "No new physician review or independent translation review is asserted.",
+        "Public title/H1, schema graph and FAQ, canonical/og/hreflang, language links, image loading and desktop overflow were verified after propagation; exact deployed candidates passed direct desktop and full-section 360px visual review; actual AI recommendation lift remains unmeasured."
+      ]
+    },
+    {
+      "path": "encyclopedia/0001.buttock-pain_en.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0001.buttock-pain_en.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "c38c4526b3c41b8793d64e60720fbff20315356c",
+      "sha256": "76117bf77cd7e4d2b884176399b047d085519ce437fd3f28e09b1bbc2fcfd081",
+      "publication_commit": "5c8ed947b716cfffd42e1ea4bca1d89756c55c77",
+      "final_repository_head": "304ca75f2300952d99da1e893578b1d60ecfe80d",
+      "review_receipt": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-buttock-pain-release.json",
+      "verified_at": "2026-09-16T01:36:03.170Z",
+      "limits": [
+        "The diagnostic-accuracy study is small and supports tests only as aids; it does not establish a single-test diagnosis or Bodyall outcome.",
+        "The NHS page supports emergency triage, not Bodyall treatment efficacy.",
+        "No new physician review or independent translation review is asserted.",
+        "Public title/H1, schema graph and FAQ, canonical/og/hreflang, language links, image loading and desktop overflow were verified after propagation; exact deployed candidates passed direct desktop and full-section 360px visual review; actual AI recommendation lift remains unmeasured."
+      ]
+    },
+    {
+      "path": "encyclopedia/0001.buttock-pain_cn.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0001.buttock-pain_cn.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "f168c35fa9fa671112d873138d780502be542e35",
+      "sha256": "d950a57c4b06453a632f280a9343cbe1900dc1eb362f0edea499955d949bdfea",
+      "publication_commit": "304ca75f2300952d99da1e893578b1d60ecfe80d",
+      "final_repository_head": "304ca75f2300952d99da1e893578b1d60ecfe80d",
+      "review_receipt": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-buttock-pain-release.json",
+      "verified_at": "2026-09-16T01:36:03.170Z",
+      "limits": [
+        "The diagnostic-accuracy study is small and supports tests only as aids; it does not establish a single-test diagnosis or Bodyall outcome.",
+        "The NHS page supports emergency triage, not Bodyall treatment efficacy.",
+        "No new physician review or independent translation review is asserted.",
+        "Public title/H1, schema graph and FAQ, canonical/og/hreflang, language links, image loading and desktop overflow were verified after propagation; exact deployed candidates passed direct desktop and full-section 360px visual review; actual AI recommendation lift remains unmeasured."
+      ]
     }
   ],
   "constraints": {
@@ -2582,15 +2627,15 @@
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
-    "latest_standard_not_confirmed_or_remaining": 48,
-    "latest_standard_published_confirmed": 108,
+    "latest_standard_not_confirmed_or_remaining": 45,
+    "latest_standard_published_confirmed": 111,
     "new_publications_this_turn": 3,
     "revised_publications_this_turn": 0,
     "total_scope": 156,
     "existing_rework_verified_under_20260915_request": 13,
     "historically_accepted_not_yet_reworked_under_20260915_request": 72,
-    "phase1_strengthened_completed": 23,
-    "phase1_strengthened_remaining": 48,
+    "phase1_strengthened_completed": 26,
+    "phase1_strengthened_remaining": 45,
     "priority_strengthened_total": 35,
     "priority_strengthened_completed": 35,
     "priority_strengthened_remaining": 0,
@@ -2607,51 +2652,55 @@
   ],
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/herbal",
   "latest_recovery_persistence": {
-    "at": "2026-09-16T00:08:00Z",
-    "status": "CANDIDATE_REVIEW_HARNESSES_RELEASE_STORED_EXACT",
+    "at": "2026-09-16T01:36:03.170Z",
+    "status": "BUTTOCK_PAIN_CANDIDATES_REVIEW_RELEASE_STORED_EXACT",
     "paths": [
-      "ops/html-recovery/candidates/20260916-spine-index/index.html",
-      "ops/html-recovery/reviews/20260916-spine-index-priority-final.json",
-      "ops/html-recovery/runs/20260916-spine-index-priority-release.json",
-      "ops/html-recovery/review-harnesses/20260916-spine-index-360.html",
-      "ops/html-recovery/review-harnesses/20260916-spine-index-public-360.html"
+      "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain.html",
+      "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_en.html",
+      "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_cn.html",
+      "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json",
+      "ops/html-recovery/runs/20260916-buttock-pain-release.json",
+      "ops/html-recovery/review-harnesses/20260916-buttock-pain-360.html"
     ],
     "exact_readback": true
   },
   "latest_release": {
-    "topic": "Stiff-hands phase1 KO/EN/CN",
+    "topic": "Buttock-pain phase1 KO/EN/CN",
     "changed_files": [
-      "encyclopedia/0002.stiff-hands.html",
-      "encyclopedia/0002.stiff-hands_en.html",
-      "encyclopedia/0002.stiff-hands_cn.html"
+      "encyclopedia/0001.buttock-pain.html",
+      "encyclopedia/0001.buttock-pain_en.html",
+      "encyclopedia/0001.buttock-pain_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "encyclopedia/0002.stiff-hands.html",
-      "encyclopedia/0002.stiff-hands_en.html",
-      "encyclopedia/0002.stiff-hands_cn.html"
+      "encyclopedia/0001.buttock-pain.html",
+      "encyclopedia/0001.buttock-pain_en.html",
+      "encyclopedia/0001.buttock-pain_cn.html"
     ],
     "reworked_existing_urls": [],
     "original156_count_delta": 3,
     "additional_index_count_delta": 0,
-    "base_commit": "a7d10f1aabd0ea86fd0d388a77365b338d747938",
-    "final_commit": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+    "base_commit": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+    "final_commit": "304ca75f2300952d99da1e893578b1d60ecfe80d",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-stiff-hands-release.json",
-    "review": "ops/html-recovery/reviews/20260916-stiff-hands-final-candidate-hold.json"
+    "receipt": "ops/html-recovery/runs/20260916-buttock-pain-release.json",
+    "review": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json"
   },
   "latest_validation": {
-    "status": "HOLD",
+    "status": "PASS_PUBLIC",
     "record": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json",
     "candidate_static_content_schema_pass": true,
     "candidate_exact_readback": true,
     "image_direct_inspection_pass": true,
     "predeployment_desktop_render_pass": true,
-    "predeployment_narrow_render_pass": false,
-    "public_verification": false,
-    "note": "Exact KO/EN/CN candidates passed whole-source, schema, image-loading and desktop overflow review. Direct 360px visual inspection remains required; no main write or count."
+    "predeployment_narrow_render_pass": true,
+    "public_verification": true,
+    "public_schema_faq_pass": true,
+    "public_desktop_visual_pass": true,
+    "public_overflow_zero": true,
+    "note": "Corrected exact KO/EN/CN candidates passed direct desktop and full-section 360px review. Sequential optimistic-lock deployment, exact GitHub readback, intended-files-only compare and public Pages content/schema/image/desktop verification passed."
   },
-  "next": "Resume the persisted encyclopedia/0001 buttock-pain exact candidates at the 360px render gate; do not regenerate or deploy before fresh conflict checks.",
-  "next_priority": "HOLD RESUME PHASE1 encyclopedia/0001.buttock-pain KO/EN/CN: directly inspect the persisted exact candidates at 360px; then fresh-read ledger, main and target blobs and deploy only if PASS.",
+  "next": "Resume phase1 with encyclopedia/0021 tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release KO/EN/CN from the latest source files; create no new URLs.",
+  "next_priority": "RESUME PHASE1 encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release KO→EN→CN: fresh-read main and target blobs, directly review exact full HTML and renders, then deploy only after PASS.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2659,9 +2708,9 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+  "public_commit": "304ca75f2300952d99da1e893578b1d60ecfe80d",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "손가락 뻣뻣함 3개 언어를 배포·공개 검증하여 원래156개는 108/156, 잔여48입니다. 다음 둔부통증 3개 언어는 과장·진단·이미지·og:url 문제를 수정한 exact 후보를 저장했고 데스크톱 검수는 통과했지만, 360px 직접 화면 검수가 남아 배포와 집계는 HOLD했습니다. 실제 AI 추천률 증가는 미측정입니다.",
+  "report_ko": "둔부통증 0001의 KO/EN/CN을 직접 전체·데스크톱·360px 검수했습니다. 모바일에서 이전 문서 언어 링크가 남은 오류를 발견해 수정·재검수한 뒤 순차 배포했고, 공개 내용·스키마·이미지·화면까지 확인했습니다. 현재 원래156개는 111/156 완료, 잔여45개이며 다음은 족근관증후군 0021 KO→EN→CN입니다. 실제 AI 추천률 증가는 미측정입니다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2679,8 +2728,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-16T01:18:00Z",
-  "version": "V261_BUTTOCK_PAIN_EXACT_CANDIDATES_DESKTOP_PASS_NARROW_HOLD",
+  "updated_at": "2026-09-16T01:36:03.170Z",
+  "version": "V262_BUTTOCK_PAIN_PUBLIC_PASS_NEXT_TARSAL_TUNNEL",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2709,64 +2758,45 @@
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
   "active_run": {
-    "owner": "buttock-pain-phase1-candidate-20260916T0100Z",
-    "started_at": "2026-09-16T01:00:00Z",
+    "owner": "buttock-pain-phase1-release-20260916",
+    "started_at": "2026-09-16T01:20:00Z",
+    "completed_at": "2026-09-16T01:36:03.170Z",
     "base_main_head": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
-    "source_ledger_blob": "816ccad97f49d4159106303d3600a72cc2a9ef6a",
+    "final_main_head": "304ca75f2300952d99da1e893578b1d60ecfe80d",
+    "source_ledger_blob": "55d991f14a2ea1a8ba584681b4b764377093359d",
     "source_blobs": {
       "encyclopedia/0001.buttock-pain.html": "3caa92e440e27259699ab3e694503a32fd0b9341",
       "encyclopedia/0001.buttock-pain_en.html": "5bafcae750b67f82f653361a054c2f5130088ebe",
       "encyclopedia/0001.buttock-pain_cn.html": "b69c11e82046203d359139e31b0b6822df8b01d7"
     },
     "exact_candidate_hashes": {
-      "encyclopedia/0001.buttock-pain.html": "6499cc4654ac6810a9b2186dba84e92c31121aee2f6eb1f7812443892872c26f",
-      "encyclopedia/0001.buttock-pain_en.html": "877a1d877793511effa2477dbb2661997d0cf33ad69524a18bf242f7b7ed6baf",
-      "encyclopedia/0001.buttock-pain_cn.html": "894848c16757d0d12aa107fa399243f8697dfb153f0a08d6a3b3ebac36116241"
+      "encyclopedia/0001.buttock-pain.html": "dbeb498ce479ddd777965dbba3de6c9f3b2b10ea16fd59433a560725c922a815",
+      "encyclopedia/0001.buttock-pain_en.html": "76117bf77cd7e4d2b884176399b047d085519ce437fd3f28e09b1bbc2fcfd081",
+      "encyclopedia/0001.buttock-pain_cn.html": "d950a57c4b06453a632f280a9343cbe1900dc1eb362f0edea499955d949bdfea"
     },
-    "stage": "EXACT_CANDIDATES_DESKTOP_PASS_NARROW_HOLD",
+    "published_blobs": {
+      "encyclopedia/0001.buttock-pain.html": "9da1ff441a7c5fc4d490894eb16e17e6a0d6e51d",
+      "encyclopedia/0001.buttock-pain_en.html": "c38c4526b3c41b8793d64e60720fbff20315356c",
+      "encyclopedia/0001.buttock-pain_cn.html": "f168c35fa9fa671112d873138d780502be542e35"
+    },
+    "stage": "DEPLOYED_PUBLIC_VERIFIED_LEDGER_SAVE_PENDING",
     "single_writer_active": false,
-    "completed_at": "2026-09-16T01:18:00Z",
-    "required_next": "Directly inspect exact KO/EN/CN candidates at 360px; then fresh-read ledger, main and target blobs before sequential deployment.",
-    "candidate_recovery_paths": {
-      "encyclopedia/0001.buttock-pain.html": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain.html",
-      "encyclopedia/0001.buttock-pain_en.html": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_en.html",
-      "encyclopedia/0001.buttock-pain_cn.html": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_cn.html"
-    },
-    "candidate_recovery_blobs": {
-      "encyclopedia/0001.buttock-pain.html": "3f550a47c74be48439df12ef7e297b28c8b62ab6",
-      "encyclopedia/0001.buttock-pain_en.html": "30be9220bda99e649d621c69747a37a111347907",
-      "encyclopedia/0001.buttock-pain_cn.html": "862eeb271a73e80719855d4b63f922b33334c2d2"
-    },
-    "review_record": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json"
+    "required_next": "Resume encyclopedia/0021 KO/EN/CN from the freshly read ledger.",
+    "review_record": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json",
+    "release_record": "ops/html-recovery/runs/20260916-buttock-pain-release.json"
   },
   "pending_run": {
-    "topic": "encyclopedia/0001.buttock-pain KO/EN/CN",
+    "topic": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release KO/EN/CN",
     "paths": [
-      "encyclopedia/0001.buttock-pain.html",
-      "encyclopedia/0001.buttock-pain_en.html",
-      "encyclopedia/0001.buttock-pain_cn.html"
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html"
     ],
-    "stage": "PREDEPLOYMENT_NARROW_RENDER_HOLD",
+    "stage": "NOT_STARTED_FRESH_SOURCE_REQUIRED",
     "main_writes": 0,
     "counted_complete": 0,
-    "candidate_sha256": {
-      "encyclopedia/0001.buttock-pain.html": "6499cc4654ac6810a9b2186dba84e92c31121aee2f6eb1f7812443892872c26f",
-      "encyclopedia/0001.buttock-pain_en.html": "877a1d877793511effa2477dbb2661997d0cf33ad69524a18bf242f7b7ed6baf",
-      "encyclopedia/0001.buttock-pain_cn.html": "894848c16757d0d12aa107fa399243f8697dfb153f0a08d6a3b3ebac36116241"
-    },
-    "blocker": "Direct 360px visual inspection of the exact candidates is not yet complete.",
-    "next_action": "Inspect full exact 360px renders, then fresh-read ledger/main/blobs before sequential deployment.",
-    "candidate_recovery_paths": {
-      "encyclopedia/0001.buttock-pain.html": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain.html",
-      "encyclopedia/0001.buttock-pain_en.html": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_en.html",
-      "encyclopedia/0001.buttock-pain_cn.html": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_cn.html"
-    },
-    "candidate_recovery_blobs": {
-      "encyclopedia/0001.buttock-pain.html": "3f550a47c74be48439df12ef7e297b28c8b62ab6",
-      "encyclopedia/0001.buttock-pain_en.html": "30be9220bda99e649d621c69747a37a111347907",
-      "encyclopedia/0001.buttock-pain_cn.html": "862eeb271a73e80719855d4b63f922b33334c2d2"
-    },
-    "review_record": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json"
+    "blocker": null,
+    "next_action": "Fresh-read ledger, main head and target blobs; audit exact current files before preparing any candidate."
   },
   "previous_public_validation": {
     "checks": [
@@ -3324,9 +3354,6 @@
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
     "phase1_pending_paths": [
-      "encyclopedia/0001.buttock-pain.html",
-      "encyclopedia/0001.buttock-pain_en.html",
-      "encyclopedia/0001.buttock-pain_cn.html",
       "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
       "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
       "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html",
@@ -3396,7 +3423,10 @@
       "Herbmed/encyclopedia/index_cn.html",
       "encyclopedia/0002.stiff-hands.html",
       "encyclopedia/0002.stiff-hands_en.html",
-      "encyclopedia/0002.stiff-hands_cn.html"
+      "encyclopedia/0002.stiff-hands_cn.html",
+      "encyclopedia/0001.buttock-pain.html",
+      "encyclopedia/0001.buttock-pain_en.html",
+      "encyclopedia/0001.buttock-pain_cn.html"
     ],
     "phase2_initial_paths": [
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -3796,9 +3826,6 @@
     "priority_record_blob": "88ebc0892358d9d0da14e8ca649942bca7d3c6c6",
     "priority_record_exact_readback": true,
     "resume_phase1_pending_paths": [
-      "encyclopedia/0001.buttock-pain.html",
-      "encyclopedia/0001.buttock-pain_en.html",
-      "encyclopedia/0001.buttock-pain_cn.html",
       "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
       "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
       "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html",
@@ -4006,37 +4033,39 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "at": "2026-09-16T01:18:00Z",
+    "at": "2026-09-16T01:36:03.170Z",
     "completed_this_run": 3,
     "reworked_this_run": 0,
     "additional_index_completed_this_run": 0,
     "candidates_prepared": 3,
-    "public_completed": 108,
-    "remaining": 48,
+    "public_completed": 111,
+    "remaining": 45,
     "priority_completed": 35,
     "priority_remaining": 0,
     "additional_index_completed": 8,
-    "result": "Stiff-hands KO/EN/CN were publicly completed. Buttock-pain KO/EN/CN exact candidates were corrected and persisted; narrow render remains HOLD.",
+    "result": "Buttock-pain KO/EN/CN were corrected, directly reviewed, deployed and publicly verified. Direct 360px review caught and corrected stale language links before publication.",
     "recommendation_measurement": "UNMEASURED"
   },
   "previous_release": {
-    "topic": "Herbmed encyclopedia index strengthened priority",
+    "topic": "Stiff-hands phase1 KO/EN/CN",
     "changed_files": [
-      "Herbmed/encyclopedia/index.html",
-      "Herbmed/encyclopedia/index_en.html",
-      "Herbmed/encyclopedia/index_cn.html"
+      "encyclopedia/0002.stiff-hands.html",
+      "encyclopedia/0002.stiff-hands_en.html",
+      "encyclopedia/0002.stiff-hands_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "Herbmed/encyclopedia/index.html",
-      "Herbmed/encyclopedia/index_en.html",
-      "Herbmed/encyclopedia/index_cn.html"
+      "encyclopedia/0002.stiff-hands.html",
+      "encyclopedia/0002.stiff-hands_en.html",
+      "encyclopedia/0002.stiff-hands_cn.html"
     ],
     "reworked_existing_urls": [],
-    "base_commit": "9413a6ef4c71c78909d80a801105141c9f067475",
-    "final_commit": "b80905d11b6b91d51e650a3a161c521a6d8f333c",
+    "original156_count_delta": 3,
+    "additional_index_count_delta": 0,
+    "base_commit": "a7d10f1aabd0ea86fd0d388a77365b338d747938",
+    "final_commit": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-herbmed-encyclopedia-priority-release.json",
-    "review": "ops/html-recovery/reviews/20260916-herbmed-encyclopedia-priority-final.json"
+    "receipt": "ops/html-recovery/runs/20260916-stiff-hands-release.json",
+    "review": "ops/html-recovery/reviews/20260916-stiff-hands-final-candidate-hold.json"
   },
   "previous_work_order_before_hub_priority": {
     "authorized_at": "2026-09-15T09:50:17.637Z",
@@ -4530,6 +4559,11 @@
         "topic": "encyclopedia/0001.buttock-pain claims",
         "issue": "Source included deterministic diagnosis, direct decompression, root-cause, safe/effective and nerve-protection overclaims.",
         "status": "CORRECTED_IN_CANDIDATE"
+      },
+      {
+        "topic": "encyclopedia/0001.buttock-pain language links",
+        "issue": "Direct 360px review exposed KO/EN/CN links copied from the prior stiff-hands page.",
+        "status": "CORRECTED_AND_REREVIEWED_BEFORE_PUBLICATION"
       }
     ],
     "final_escalation_queue": [
