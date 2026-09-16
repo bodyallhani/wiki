@@ -2883,18 +2883,12 @@
   ],
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/herbal",
   "latest_recovery_persistence": {
-    "at": "2026-09-16T03:47:49.850Z",
-    "status": "HERB0001_CANDIDATES_REVIEW_AND_RELEASE_STORED",
-    "paths": [
-      "ops/html-recovery/candidates/20260916-herb0001-ko.html",
-      "ops/html-recovery/candidates/20260916-herb0001-en.html",
-      "ops/html-recovery/candidates/20260916-herb0001-cn.html",
-      "ops/html-recovery/reviews/20260916-herb0001-final-candidate.json",
-      "ops/html-recovery/runs/20260916-herb0001-release.json"
-    ],
-    "exact_readback": true,
-    "ledger_blob_before_exact_confirmation": "1a5995968d66abd26c7f9a58f4138fbae273e2c5",
-    "ledger_exact_readback": true
+    "at": "2026-09-16T04:06:52.952Z",
+    "status": "EXACT_READBACK_CONFIRMED",
+    "current_json_blob_before_confirmation": "dfe279f62dc0e698844076a3e8a4fd599f4f5e86",
+    "candidate_files_exact": true,
+    "review_record_exact": true,
+    "release_record_exact": true
   },
   "latest_release": {
     "topic": "Herbmed encyclopedia 0003 functional dyspepsia and thoracolumbar symptoms KO/EN/CN",
@@ -3015,12 +3009,12 @@
       "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html": "d224497ebd4146994e6c1cb25314aed990954e89",
       "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html": "9fab81a107277a697a2d85de78134fa4bd575818"
     },
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_PENDING",
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
     "single_writer_active": false,
     "required_next": "Resume Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html KO/EN/CN from the freshly read ledger.",
     "review_record": "ops/html-recovery/reviews/20260916-herb0003-final-candidate.json",
     "release_record": "ops/html-recovery/runs/20260916-herb0003-release.json",
-    "ledger_exact_readback": false
+    "ledger_exact_readback": true
   },
   "pending_run": {
     "topic": "Herbmed/encyclopedia/0001 KO/EN/CN",
