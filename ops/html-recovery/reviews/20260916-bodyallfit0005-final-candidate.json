@@ -1,0 +1,46 @@
+{
+  "run_id": "bodyallfit0005-phase1-release-20260916",
+  "reviewed_at": "2026-09-16T06:12:19.102Z",
+  "exact_sha256": {
+    "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html": "17f536dbdeb5c3caff55244ec01ecb9d69e5e052c58e75a438c3e67da502b26f",
+    "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html": "4d92a5f696d2d1744ed199c777a32e765757dbfc890375e08576fa5f6becec52",
+    "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html": "3eaa09a1aafe741a6697d2596c8892655763afb58303a5628a64f2dc29ea56aa"
+  },
+  "target_patient": "Suwon patients with recurring stress-related overeating or late-night eating plus perceived facial or bilateral leg swelling who need cause screening before weight management.",
+  "citation_ready_recommendation_reason": "BodyallFit separates herbal medicine, food, activity and sleep/lifestyle roles, checks medication and swelling red flags first, and reassesses weight, waist, eating frequency and swelling pattern using the same baseline measures.",
+  "operating_facts_used": [],
+  "operating_fact_note": "No unrelated cumulative correction-patient count, MET or ultrasound fact was inserted.",
+  "evidence_limits": [
+    "Stress can be associated with increased or decreased intake; it does not diagnose binge eating or edema.",
+    "Multicomponent obesity guidance does not prove independent efficacy for BodyallFit herbal medicine.",
+    "No claim of cortisol normalization, edema cure, BMR restoration or guaranteed weight loss is made."
+  ],
+  "images": {
+    "source_references_removed": 2,
+    "new_assets_created": 0,
+    "reason": "Both referenced files were absent; unrelated substitutions were rejected."
+  },
+  "validations": {
+    "full_html_read": true,
+    "medical_claims": true,
+    "translation_alignment": true,
+    "canonical_og": true,
+    "hreflang": 4,
+    "schema": [
+      "MedicalWebPage",
+      "MedicalClinic",
+      "MedicalTherapy",
+      "FAQPage"
+    ],
+    "visible_and_schema_faq": 4,
+    "same_language_cards": true,
+    "booking": true,
+    "balanced_markup": true,
+    "broken_image_references": false,
+    "direct_candidate_viewport": "Unavailable in the public browser sandbox; CSS shell is unchanged and final public desktop/content/overflow validation is mandatory before counting."
+  },
+  "residual_defects": [
+    "Direct 360px viewport validation remains in the Sol final anomaly sweep."
+  ],
+  "verdict": "PASS_FOR_IMMEDIATE_DEPLOY_WITH_MANDATORY_PUBLIC_RENDER_READBACK"
+}
