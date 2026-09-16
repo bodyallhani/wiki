@@ -1,10 +1,10 @@
 {
-  "version": "buttock-pain-final-candidate-review-v2",
-  "recorded_at": "2026-09-16T01:27:06.642Z",
+  "version": "buttock-pain-final-candidate-review-v3-public-pass",
+  "recorded_at": "2026-09-16T01:33:04.481Z",
   "topic": "encyclopedia/0001.buttock-pain KO/EN/CN",
-  "stage": "EXACT_CANDIDATES_WHOLE_SOURCE_DESKTOP_AND_360_RENDER_PASS_READY_TO_DEPLOY",
+  "stage": "DEPLOYED_AND_PUBLICLY_VERIFIED",
   "decision": "PASS",
-  "reason": "The corrected exact KO/EN/CN candidates passed direct whole-source, metadata/schema, evidence-limit, image-loading, desktop and 360px full-section rendering review with zero horizontal overflow. Direct narrow review caught stale language links from the prior document; all six links were corrected and the corrected bytes were re-reviewed.",
+  "reason": "Corrected exact KO/EN/CN candidates passed whole-source, desktop and 360px direct review, were written sequentially with optimistic locking and exact GitHub readback, and the public Pages deployment passed visible content, schema, canonical/hreflang/og, image and desktop rendering checks. The exact candidate bytes had already passed 360px full-section rendering with zero overflow.",
   "source_snapshot": {
     "ledger": "55d991f14a2ea1a8ba584681b4b764377093359d",
     "main": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
@@ -97,9 +97,9 @@
     "Actual AI recommendation lift is unmeasured."
   ],
   "remaining_defects": [],
-  "next_action": "Fresh-read ledger, main head, all three target blobs and all three candidate blobs; deploy sequentially with optimistic locking only if unchanged, then verify public Pages before counting completion.",
-  "completion_delta": 0,
-  "main_writes": 0,
+  "next_action": "Update the latest ledger from its current blob, count these three only after this public verification, and resume encyclopedia/0021 KO/EN/CN unless a newer ledger changes priority.",
+  "completion_delta": 3,
+  "main_writes": 3,
   "actual_ai_recommendation_lift": "UNMEASURED",
   "model_review_followup": {
     "default_model": "GPT-5.6 Sol Medium",
@@ -109,9 +109,57 @@
       "Source content contained deterministic diagnosis, direct decompression, root-cause, safe/effective and nerve-protection overclaims.",
       "Direct 360px rendering exposed stale KO/EN/CN language links copied from the prior stiff-hands document; corrected in all three exact candidates."
     ],
-    "status": "All identified content and narrow-render issues are corrected in the exact candidates; ready for conflict-safe deployment.",
+    "status": "The mobile-render language-link carryover and all prior candidate issues were corrected before publication. Public deployment passed; retain closeout canonical/og deterministic audit.",
     "final_escalation_queue": [
       "Recheck canonical/og equality and public image loading across all Sol-reviewed files at project close."
     ]
+  },
+  "deployment": {
+    "base_main_commit": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+    "commits": {
+      "encyclopedia/0001.buttock-pain.html": "5ea4998f06e71ae448c2dd720d4171e451ec6fd0",
+      "encyclopedia/0001.buttock-pain_en.html": "5c8ed947b716cfffd42e1ea4bca1d89756c55c77",
+      "encyclopedia/0001.buttock-pain_cn.html": "304ca75f2300952d99da1e893578b1d60ecfe80d"
+    },
+    "final_main_commit": "304ca75f2300952d99da1e893578b1d60ecfe80d",
+    "changed_files_only": [
+      "encyclopedia/0001.buttock-pain.html",
+      "encyclopedia/0001.buttock-pain_en.html",
+      "encyclopedia/0001.buttock-pain_cn.html"
+    ],
+    "exact_main_blobs": {
+      "encyclopedia/0001.buttock-pain.html": "9da1ff441a7c5fc4d490894eb16e17e6a0d6e51d",
+      "encyclopedia/0001.buttock-pain_en.html": "c38c4526b3c41b8793d64e60720fbff20315356c",
+      "encyclopedia/0001.buttock-pain_cn.html": "f168c35fa9fa671112d873138d780502be542e35"
+    }
+  },
+  "public_verification": {
+    "at": "2026-09-16T01:33:04.481Z",
+    "urls": [
+      "https://wiki.body-all.co.kr/encyclopedia/0001.buttock-pain.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0001.buttock-pain_en.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0001.buttock-pain_cn.html"
+    ],
+    "updated_titles_and_h1": true,
+    "whole_visible_content_markers": true,
+    "canonical_equals_og": true,
+    "hreflang_ko_en_zh_hans_x_default": true,
+    "json_ld_parse": true,
+    "graph_types": [
+      "MedicalWebPage",
+      "MedicalClinic/LocalBusiness",
+      "FAQPage"
+    ],
+    "faq_questions_each": 3,
+    "language_links_correct_and_active": true,
+    "image": {
+      "path": "manip2.jpg",
+      "loaded_each": true,
+      "natural_size": "500x405"
+    },
+    "desktop_overflow_zero_each": true,
+    "desktop_direct_visual_pass": true,
+    "narrow_360_exact_candidate_direct_visual_pass": true,
+    "narrow_360_overflow_zero_each": true
   }
 }
