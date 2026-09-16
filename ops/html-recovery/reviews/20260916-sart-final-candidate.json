@@ -77,5 +77,51 @@
     "direct_render_review": "PASS at desktop and 360-class widths"
   },
   "residual_defects": [],
-  "pass_reason": "Exact candidates connect patient conditions and Suwon location to Bodyall's verified assessment, treatment-role choice, same-function retest and booking/referral; they retain red flags and avoid unsupported efficacy or exclusivity claims."
+  "pass_reason": "Exact candidates connect patient conditions and Suwon location to Bodyall's verified assessment, treatment-role choice, same-function retest and booking/referral; they retain red flags and avoid unsupported efficacy or exclusivity claims.",
+  "deployment": {
+    "status": "PUBLIC_VERIFIED",
+    "base_main_head": "f96f02279daab5133564e5ec1b2bdc86c6623861",
+    "final_main_head": "08abf6a149b8e4f54168f4383bea8a481d50d4b5",
+    "publication_commits": {
+      "SART.html": "e2704d574171cc4b7a4532f8a9dc565ad179f6db",
+      "SART_en.html": "37b90bbfd120ab8f3bc0d3d990daf18d5be81265",
+      "SART_cn.html": "08abf6a149b8e4f54168f4383bea8a481d50d4b5"
+    },
+    "main_blobs": {
+      "SART.html": "58a2d886985b95a88bd259abd3434a2f95ba4735",
+      "SART_en.html": "6c21f25d473aac889e38ea02c00adedd349f7f39",
+      "SART_cn.html": "4063340ef61b7dd2271d52a4cfd2269947a00d0e"
+    },
+    "compare_scope": [
+      "SART.html",
+      "SART_en.html",
+      "SART_cn.html"
+    ],
+    "public_checks": {
+      "new_content": true,
+      "old_stale_references_absent": true,
+      "faq_schema_items": [
+        3,
+        3,
+        3
+      ],
+      "canonical_equals_og_url": [
+        true,
+        true,
+        true
+      ],
+      "desktop_overflow_px": [
+        0,
+        0,
+        0
+      ],
+      "mobile_candidate_overflow_px": [
+        0,
+        0,
+        0
+      ],
+      "all_images_loaded_and_dimensions_reserved": true,
+      "language_links_aligned": true
+    }
+  }
 }
