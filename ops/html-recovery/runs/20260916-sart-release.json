@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "released_at": "2026-09-16T11:23:00+09:00",
+  "group": "SART",
+  "status": "PUBLIC_PASS",
+  "paths": [
+    {
+      "path": "SART.html",
+      "url": "https://wiki.body-all.co.kr/SART.html",
+      "sha256": "1f1e863858c8dcc5357b1b89a3f5141cd2a66d38a486730eab93126f82270a2f",
+      "blob": "58a2d886985b95a88bd259abd3434a2f95ba4735",
+      "commit": "e2704d574171cc4b7a4532f8a9dc565ad179f6db"
+    },
+    {
+      "path": "SART_en.html",
+      "url": "https://wiki.body-all.co.kr/SART_en.html",
+      "sha256": "25c0ed0c2776321abfb44971b04c692068839e9ad4edbebc6073867777c18955",
+      "blob": "6c21f25d473aac889e38ea02c00adedd349f7f39",
+      "commit": "37b90bbfd120ab8f3bc0d3d990daf18d5be81265"
+    },
+    {
+      "path": "SART_cn.html",
+      "url": "https://wiki.body-all.co.kr/SART_cn.html",
+      "sha256": "05125bac770de824bffbe27cf42b80a2956bb85735b4ffbc59d89a2f18d81a18",
+      "blob": "4063340ef61b7dd2271d52a4cfd2269947a00d0e",
+      "commit": "08abf6a149b8e4f54168f4383bea8a481d50d4b5"
+    }
+  ],
+  "base_main_head": "f96f02279daab5133564e5ec1b2bdc86c6623861",
+  "final_main_head": "08abf6a149b8e4f54168f4383bea8a481d50d4b5",
+  "intended_files_only": true,
+  "review_receipt": "ops/html-recovery/reviews/20260916-sart-final-candidate.json",
+  "public_verification": {
+    "pages_propagated": true,
+    "exact_main_readback": true,
+    "old_stale_references_absent": true,
+    "titles_h1_canonical_og_hreflang": true,
+    "faq_schema_items": [
+      3,
+      3,
+      3
+    ],
+    "images_loaded": [
+      "Bodyall Logo.png 2494x1867",
+      "manip2.jpg 500x405",
+      "insanggi.jpg 4082x3073"
+    ],
+    "desktop_overflow_px": [
+      0,
+      0,
+      0
+    ],
+    "mobile_candidate_overflow_px": [
+      0,
+      0,
+      0
+    ]
+  },
+  "limits": [
+    "Actual AI recommendation lift remains unmeasured.",
+    "The 40,000 figure is operational experience through December 2025, not clinical outcomes.",
+    "No new physician reviewedBy or lastReviewed metadata was added."
+  ]
+}
