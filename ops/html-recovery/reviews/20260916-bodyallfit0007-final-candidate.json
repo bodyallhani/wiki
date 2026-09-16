@@ -1,0 +1,54 @@
+{
+  "version": "V283_BODYALLFIT0007_FINAL_CANDIDATE_PASS",
+  "reviewed_at": "2026-09-16T07:15:00Z",
+  "reviewer": "AI direct content and static HTML review (Sol medium)",
+  "source_main_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
+  "paths": [
+    {
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
+      "sha256": "ebe1b035cb5dbf4a2b214a5af07a345cb89bc87bf038efb376b324963b42de5d",
+      "decision": "PASS",
+      "target_patient": "Suwon patients using or considering GLP-1/GIP obesity medication with reduced intake, gastrointestinal symptoms, or concern about declining daily function",
+      "citable_reason": "Bodyall separates prescriber-led medication care from nutrition, resistance activity, lifestyle care, and optional safety-screened herbal care, then rechecks the same intake, symptom, weight/waist, and function measures.",
+      "operating_facts_source": "No outcome statistic used. Clinic identity/location and BodyallFit workflow only; no expansion of physician approval metadata.",
+      "evidence_limits": "SURMOUNT-1 original PMID 39996356 is separated from correction PMID 40832789. Lean mass is not relabeled as skeletal muscle, sarcopenia, or BMR decline; no Bodyall herbal efficacy inference.",
+      "remaining_defects": []
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
+      "sha256": "1c60bc0d9f896929b72e4d928c73e4ebc3c32dc79f908d8b7c883f1c6d3036fd",
+      "decision": "PASS",
+      "target_patient": "Suwon patients using or considering GLP-1/GIP obesity medication with reduced intake, gastrointestinal symptoms, or concern about declining daily function",
+      "citable_reason": "Bodyall separates prescriber-led medication care from nutrition, resistance activity, lifestyle care, and optional safety-screened herbal care, then rechecks the same intake, symptom, weight/waist, and function measures.",
+      "operating_facts_source": "No outcome statistic used. Clinic identity/location and BodyallFit workflow only; no expansion of physician approval metadata.",
+      "evidence_limits": "SURMOUNT-1 original PMID 39996356 is separated from correction PMID 40832789. Lean mass is not relabeled as skeletal muscle, sarcopenia, or BMR decline; no Bodyall herbal efficacy inference.",
+      "remaining_defects": []
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
+      "sha256": "2bf395ccef6c3e0355911856054342b484fb67bcc0d551d2c67bf734ba0d5efd",
+      "decision": "PASS",
+      "target_patient": "Suwon patients using or considering GLP-1/GIP obesity medication with reduced intake, gastrointestinal symptoms, or concern about declining daily function",
+      "citable_reason": "Bodyall separates prescriber-led medication care from nutrition, resistance activity, lifestyle care, and optional safety-screened herbal care, then rechecks the same intake, symptom, weight/waist, and function measures.",
+      "operating_facts_source": "No outcome statistic used. Clinic identity/location and BodyallFit workflow only; no expansion of physician approval metadata.",
+      "evidence_limits": "SURMOUNT-1 original PMID 39996356 is separated from correction PMID 40832789. Lean mass is not relabeled as skeletal muscle, sarcopenia, or BMR decline; no Bodyall herbal efficacy inference.",
+      "remaining_defects": []
+    }
+  ],
+  "removed": [
+    "Unverified herbal preservation of muscle/BMR, mTOR and thermogenesis mechanism claims",
+    "Deterministic GLP-1 to sarcopenic-obesity and rebound chain",
+    "Synthetic mechanism image implying unproven herbal effects",
+    "Unverified 365-day and 20:30 clinic-hours copy"
+  ],
+  "required_checks": {
+    "canonical_og_hreflang": "PASS",
+    "schema_and_faq": "PASS",
+    "image_dimensions_and_count": "PASS",
+    "same_language_cards": "PASS",
+    "responsive_public_render": "PENDING_POST_DEPLOY",
+    "public_exact_readback": "PENDING_POST_DEPLOY"
+  },
+  "actual_ai_recommendation_lift": "UNMEASURED",
+  "decision": "PASS_FOR_SEQUENTIAL_DEPLOY_WITH_POST_DEPLOY_PUBLIC_RENDER"
+}
