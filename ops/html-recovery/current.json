@@ -2790,7 +2790,8 @@
       "ops/html-recovery/review-harnesses/20260916-sart-360.html"
     ],
     "exact_readback": true,
-    "ledger_blob_before_exact_confirmation": "fa1c785541909a3029705c6f1241d761c216afbe"
+    "ledger_blob_before_exact_confirmation": "fa1c785541909a3029705c6f1241d761c216afbe",
+    "ledger_exact_readback": true
   },
   "latest_release": {
     "topic": "SART phase1 KO/EN/CN",
@@ -2856,7 +2857,7 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-16T02:35:00Z",
+  "updated_at": "2026-09-16T02:36:00Z",
   "version": "V265_SART_PUBLIC_PASS_NEXT_DOCTOR_INTRO",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
@@ -2907,12 +2908,12 @@
       "SART_en.html": "6c21f25d473aac889e38ea02c00adedd349f7f39",
       "SART_cn.html": "4063340ef61b7dd2271d52a4cfd2269947a00d0e"
     },
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_PENDING_EXACT",
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
     "single_writer_active": false,
     "required_next": "Resume doctor-intro.html KO/EN/CN from the freshly read ledger.",
     "review_record": "ops/html-recovery/reviews/20260916-sart-final-candidate.json",
     "release_record": "ops/html-recovery/runs/20260916-sart-release.json",
-    "ledger_exact_readback": false
+    "ledger_exact_readback": true
   },
   "pending_run": {
     "topic": "doctor-intro.html KO/EN/CN",
