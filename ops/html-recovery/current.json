@@ -113,7 +113,10 @@
     "encyclopedia/0001.buttock-pain_cn.html",
     "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
     "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
-    "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html"
+    "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html",
+    "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
+    "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
+    "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html"
   ],
   "completion_rows": [
     {
@@ -1907,21 +1910,6 @@
       "verification_receipt": "ops/html-recovery/runs/20260916-tarsal-tunnel-release.json"
     },
     {
-      "latest_standard_completed": false,
-      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
-      "latest_standard_completed": false,
-      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
-    },
-    {
       "git_blob": "024d5b7da3fc6429ffedcb656fbd1e876ea3cb06",
       "latest_standard_completed": true,
       "limits": [
@@ -2655,6 +2643,60 @@
         "No new physician review or independent translation review is asserted.",
         "Public title/H1, schema graph and FAQ, canonical/og/hreflang, language links, image loading and desktop overflow were verified after propagation; exact deployed candidates passed direct desktop and full-section 360px visual review; actual AI recommendation lift remains unmeasured."
       ]
+    },
+    {
+      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "publication_commit": "c9d524d306ecb4faa717e7d47c8e55fa92cc7b32",
+      "final_repository_head": "f96f02279daab5133564e5ec1b2bdc86c6623861",
+      "git_blob": "a721938605d4419e939b765682c688ee5f62fe76",
+      "sha256": "061efc9478df4ab72a65d12e2de36007945f4e997918638be4e371f37e23c33d",
+      "review_receipt": "ops/html-recovery/reviews/20260916-thoracic-facet-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-thoracic-facet-release.json",
+      "limits": [
+        "PMID 11514816 is a 30-person pilot with limited power and is not conclusive.",
+        "PMID 37152585 found an end-of-treatment difference but no between-group pain or quality-of-life difference at 12 weeks.",
+        "Neither source proves T4–T8 fibrosis/locking, SART or Bodyall outcomes.",
+        "No new physician or independent translation review is asserted; actual AI recommendation lift remains unmeasured."
+      ]
+    },
+    {
+      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "publication_commit": "8f2cdc6bf869dfd55ecfcd988862ab36413855ad",
+      "final_repository_head": "f96f02279daab5133564e5ec1b2bdc86c6623861",
+      "git_blob": "b17fd99516e8ffd86a909dda562fe1e729c0e9dd",
+      "sha256": "c78a152b997e9fdde8c5456a10fdf1fa98a3171705822637bd4e423872bbdcb4",
+      "review_receipt": "ops/html-recovery/reviews/20260916-thoracic-facet-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-thoracic-facet-release.json",
+      "limits": [
+        "PMID 11514816 is a 30-person pilot with limited power and is not conclusive.",
+        "PMID 37152585 found an end-of-treatment difference but no between-group pain or quality-of-life difference at 12 weeks.",
+        "Neither source proves T4–T8 fibrosis/locking, SART or Bodyall outcomes.",
+        "No new physician or independent translation review is asserted; actual AI recommendation lift remains unmeasured."
+      ]
+    },
+    {
+      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "publication_commit": "f96f02279daab5133564e5ec1b2bdc86c6623861",
+      "final_repository_head": "f96f02279daab5133564e5ec1b2bdc86c6623861",
+      "git_blob": "7b0396dc7f90b5e2dde1843abf232d7f47ecf2e4",
+      "sha256": "0c9fba19724b9b7aef27b242086ccd9bea81763449e110e7cb878c5c47cee817",
+      "review_receipt": "ops/html-recovery/reviews/20260916-thoracic-facet-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-thoracic-facet-release.json",
+      "limits": [
+        "PMID 11514816 is a 30-person pilot with limited power and is not conclusive.",
+        "PMID 37152585 found an end-of-treatment difference but no between-group pain or quality-of-life difference at 12 weeks.",
+        "Neither source proves T4–T8 fibrosis/locking, SART or Bodyall outcomes.",
+        "No new physician or independent translation review is asserted; actual AI recommendation lift remains unmeasured."
+      ]
     }
   ],
   "constraints": {
@@ -2669,21 +2711,21 @@
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
-    "latest_standard_not_confirmed_or_remaining": 42,
-    "latest_standard_published_confirmed": 114,
+    "latest_standard_not_confirmed_or_remaining": 39,
+    "latest_standard_published_confirmed": 117,
     "new_publications_this_turn": 3,
     "revised_publications_this_turn": 0,
     "total_scope": 156,
     "existing_rework_verified_under_20260915_request": 13,
     "historically_accepted_not_yet_reworked_under_20260915_request": 72,
-    "phase1_strengthened_completed": 29,
-    "phase1_strengthened_remaining": 42,
+    "phase1_strengthened_completed": 32,
+    "phase1_strengthened_remaining": 39,
     "priority_strengthened_total": 35,
     "priority_strengthened_completed": 35,
     "priority_strengthened_remaining": 0,
     "additional_index_total": 8,
     "additional_index_completed": 8,
-    "additional_index_publications_this_turn": 1
+    "additional_index_publications_this_turn": 0
   },
   "filesystem_sync_status": "EXACT_SPINE_CANDIDATE_REVIEW_RELEASE_AND_PUBLIC_HARNESSES_VERIFIED_ON_RECOVERY_BRANCH",
   "latest_debug": [
@@ -2694,43 +2736,43 @@
   ],
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/herbal",
   "latest_recovery_persistence": {
-    "at": "2026-09-16T02:06:59.631Z",
-    "status": "TARSAL_TUNNEL_CANDIDATES_REVIEW_RELEASE_AND_HARNESSES_STORED_EXACT",
+    "at": "2026-09-16T02:23:44Z",
+    "status": "THORACIC_FACET_CANDIDATES_REVIEW_RELEASE_AND_HARNESSES_STORED_EXACT",
     "paths": [
-      "ops/html-recovery/candidates/20260916-tarsal-tunnel/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
-      "ops/html-recovery/candidates/20260916-tarsal-tunnel/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
-      "ops/html-recovery/candidates/20260916-tarsal-tunnel/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html",
-      "ops/html-recovery/reviews/20260916-tarsal-tunnel-final-candidate.json",
-      "ops/html-recovery/runs/20260916-tarsal-tunnel-release.json",
-      "ops/html-recovery/review-harnesses/20260916-tarsal-tunnel-desktop.html",
-      "ops/html-recovery/review-harnesses/20260916-tarsal-tunnel-360.html"
+      "ops/html-recovery/candidates/20260916-thoracic-facet/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
+      "ops/html-recovery/candidates/20260916-thoracic-facet/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
+      "ops/html-recovery/candidates/20260916-thoracic-facet/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html",
+      "ops/html-recovery/reviews/20260916-thoracic-facet-final-candidate.json",
+      "ops/html-recovery/runs/20260916-thoracic-facet-release.json",
+      "ops/html-recovery/review-harnesses/20260916-thoracic-facet-desktop.html",
+      "ops/html-recovery/review-harnesses/20260916-thoracic-facet-360.html"
     ],
     "exact_readback": true
   },
   "latest_release": {
-    "topic": "Tarsal-tunnel phase1 KO/EN/CN",
+    "topic": "Thoracic facet 0022 phase1 KO/EN/CN",
     "changed_files": [
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html"
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html"
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html"
     ],
     "reworked_existing_urls": [],
     "original156_count_delta": 3,
     "additional_index_count_delta": 0,
-    "base_commit": "304ca75f2300952d99da1e893578b1d60ecfe80d",
-    "final_commit": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
+    "base_commit": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
+    "final_commit": "f96f02279daab5133564e5ec1b2bdc86c6623861",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-tarsal-tunnel-release.json",
-    "review": "ops/html-recovery/reviews/20260916-tarsal-tunnel-final-candidate.json"
+    "receipt": "ops/html-recovery/runs/20260916-thoracic-facet-release.json",
+    "review": "ops/html-recovery/reviews/20260916-thoracic-facet-final-candidate.json"
   },
   "latest_validation": {
     "status": "PASS_PUBLIC",
-    "record": "ops/html-recovery/reviews/20260916-tarsal-tunnel-final-candidate.json",
+    "record": "ops/html-recovery/reviews/20260916-thoracic-facet-final-candidate.json",
     "candidate_static_content_schema_pass": true,
     "candidate_exact_readback": true,
     "image_direct_inspection_pass": true,
@@ -2742,8 +2784,8 @@
     "public_overflow_zero": true,
     "note": "Exact KO/EN/CN candidates passed full-document, 1180px and 354px review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare, and public Pages content/schema/image/desktop verification passed."
   },
-  "next": "RESUME PHASE1 encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization KO→EN→CN: fresh-read main and target blobs, directly review exact full HTML and renders, then deploy only after PASS.",
-  "next_priority": "RESUME PHASE1 encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization KO→EN→CN: fresh-read main and target blobs, directly review exact full HTML and renders, then deploy only after PASS.",
+  "next": "RESUME PHASE1 SART.html KO→EN→CN: fresh-read main and target blobs, directly review exact full HTML and renders, then deploy only after PASS.",
+  "next_priority": "RESUME PHASE1 SART.html KO→EN→CN: fresh-read main and target blobs, directly review exact full HTML and renders, then deploy only after PASS.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2751,9 +2793,9 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
+  "public_commit": "f96f02279daab5133564e5ec1b2bdc86c6623861",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "족근관증후군 0021의 KO/EN/CN을 전체 문서와 1180px·360px 화면으로 직접 검수한 뒤 순차 배포했습니다. 체계적 문헌고찰 프로토콜을 효능 결과처럼 사용한 오류와 도침 감압·신경전도 정상화·SART 재발예방 과장을 제거했고, 공개 내용·스키마·이미지·화면까지 확인했습니다. 현재 원래156개는 114/156 완료, 잔여42개이며 다음은 흉추 후관절 0022 KO→EN→CN입니다. 실제 AI 추천률 증가는 미측정입니다.",
+  "report_ko": "흉추 후관절 0022의 KO/EN/CN을 직접 검수·순차 배포하고 공개 내용·스키마·이미지·화면을 확인했습니다. T4–T8 섬유화·잠김 확진, SART의 유착 박리·관절면 이격·후만 정상화 보장을 제거하고 소표본·12주 한계를 명시했습니다. 현재 원래156개는 117/156 완료, 잔여39개이며 다음은 SART 허브 KO→EN→CN입니다. 실제 AI 추천률 증가는 미측정입니다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2771,8 +2813,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-16T02:06:59.631Z",
-  "version": "V263_TARSAL_TUNNEL_PUBLIC_PASS_NEXT_THORACIC_FACET",
+  "updated_at": "2026-09-16T02:23:44Z",
+  "version": "V264_THORACIC_FACET_PUBLIC_PASS_NEXT_SART",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2801,40 +2843,40 @@
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
   "active_run": {
-    "owner": "tarsal-tunnel-phase1-release-20260916",
-    "started_at": "2026-09-16T01:49:00Z",
-    "completed_at": "2026-09-16T02:06:59.631Z",
-    "base_main_head": "304ca75f2300952d99da1e893578b1d60ecfe80d",
-    "final_main_head": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
-    "source_ledger_blob": "519ef6874bfe064183a813b989422cb49c0bce1d",
+    "owner": "thoracic-facet-phase1-release-20260916",
+    "started_at": "2026-09-16T02:08:00Z",
+    "completed_at": "2026-09-16T02:23:44Z",
+    "base_main_head": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
+    "final_main_head": "f96f02279daab5133564e5ec1b2bdc86c6623861",
+    "source_ledger_blob": "8d57c11f5521b0705c18bfc5fb3ee73b33da4c49",
     "source_blobs": {
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html": "f4974ce9341dd11f551bccf94f94dd9dafbb9e06",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html": "a3fa55a4ab07bddc91d9ac20f70c4018610f8a48",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html": "dd18f1e648c88b86521cbfbc9286c8b66abb1013"
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html": "0cae158c989495e3c3835223f2feaa58e99a1d41",
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html": "f3bc6885356d1836c06ed7aa9ee2c2b024ae85a1",
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html": "2cde50944e2d8c11b337b27e071506f474e0bf74"
     },
     "exact_candidate_hashes": {
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html": "42ca0ce681a9f6ee18f3ec26a988399141659dc9a693d99b924317dbf588ab4b",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html": "23925fc9f102cdadee249444dee259b03a8934f6e80b639a1400fd94de7a63cc",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html": "693cc1b6cb4a65addbecc0707e2b4b618a83e5705313b55dfc498f4b405ea5e1"
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html": "061efc9478df4ab72a65d12e2de36007945f4e997918638be4e371f37e23c33d",
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html": "c78a152b997e9fdde8c5456a10fdf1fa98a3171705822637bd4e423872bbdcb4",
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html": "0c9fba19724b9b7aef27b242086ccd9bea81763449e110e7cb878c5c47cee817"
     },
     "published_blobs": {
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html": "3c565e33443d387a4c67a31841d37ccb079f9df1",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html": "768d505b44429a76df509caf0b9f68702ff1caf6",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html": "9bc3fe8cdc68b85b6a5b639eb0b71001171b42c1"
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html": "a721938605d4419e939b765682c688ee5f62fe76",
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html": "b17fd99516e8ffd86a909dda562fe1e729c0e9dd",
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html": "7b0396dc7f90b5e2dde1843abf232d7f47ecf2e4"
     },
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_WRITE_PENDING",
     "single_writer_active": false,
-    "required_next": "Resume encyclopedia/0022 KO/EN/CN from the freshly read ledger.",
-    "review_record": "ops/html-recovery/reviews/20260916-tarsal-tunnel-final-candidate.json",
-    "release_record": "ops/html-recovery/runs/20260916-tarsal-tunnel-release.json",
-    "ledger_exact_readback": true
+    "required_next": "Resume SART.html KO/EN/CN from the freshly read ledger.",
+    "review_record": "ops/html-recovery/reviews/20260916-thoracic-facet-final-candidate.json",
+    "release_record": "ops/html-recovery/runs/20260916-thoracic-facet-release.json",
+    "ledger_exact_readback": false
   },
   "pending_run": {
-    "topic": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization KO/EN/CN",
+    "topic": "SART.html KO/EN/CN",
     "paths": [
-      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
-      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
-      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html"
+      "SART.html",
+      "SART_en.html",
+      "SART_cn.html"
     ],
     "stage": "NOT_STARTED_FRESH_SOURCE_REQUIRED",
     "main_writes": 0,
@@ -3398,9 +3440,6 @@
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
     "phase1_pending_paths": [
-      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
-      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
-      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html",
       "SART.html",
       "SART_en.html",
       "SART_cn.html",
@@ -3470,7 +3509,10 @@
       "encyclopedia/0001.buttock-pain_cn.html",
       "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
       "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html"
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html",
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html"
     ],
     "phase2_initial_paths": [
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -3870,9 +3912,6 @@
     "priority_record_blob": "88ebc0892358d9d0da14e8ca649942bca7d3c6c6",
     "priority_record_exact_readback": true,
     "resume_phase1_pending_paths": [
-      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
-      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
-      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html",
       "SART.html",
       "SART_en.html",
       "SART_cn.html",
@@ -4072,17 +4111,17 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "at": "2026-09-16T02:06:59.631Z",
+    "at": "2026-09-16T02:23:44Z",
     "completed_this_run": 3,
     "reworked_this_run": 0,
     "additional_index_completed_this_run": 0,
     "candidates_prepared": 3,
-    "public_completed": 114,
-    "remaining": 42,
+    "public_completed": 117,
+    "remaining": 39,
     "priority_completed": 35,
     "priority_remaining": 0,
     "additional_index_completed": 8,
-    "result": "Tarsal-tunnel KO/EN/CN were medically corrected, directly reviewed at desktop and 360px, sequentially deployed and publicly verified. A protocol had been misused as efficacy evidence in the source; deterministic decompression, nerve-conduction normalization and recurrence-prevention claims were removed.",
+    "result": "Thoracic facet KO/EN/CN were medically corrected, directly reviewed at desktop and 360px, sequentially deployed and publicly verified. Deterministic T4–T8 fibrosis/locking and SART structural-correction claims were removed, and study limits were aligned.",
     "recommendation_measurement": "UNMEASURED"
   },
   "previous_release": {
@@ -4612,6 +4651,16 @@
       {
         "topic": "encyclopedia/0021.tarsal-tunnel claims",
         "issue": "Source asserted direct retinacular release, nerve decompression/conduction normalization and SART recurrence prevention beyond evidence.",
+        "status": "CORRECTED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "encyclopedia/0022 thoracic facet claims",
+        "issue": "Source asserted deterministic T4–T8 fibrosis/locking and SART joint-gapping, adhesion-release, kyphosis-normalization and adjacent-hypermobility correction beyond evidence.",
+        "status": "CORRECTED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "encyclopedia/0022 thoracic facet evidence and image",
+        "issue": "Source overextended small/short-term manipulation studies and used a low-back image for interscapular pain.",
         "status": "CORRECTED_BEFORE_PUBLICATION"
       }
     ],
