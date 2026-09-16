@@ -1,0 +1,95 @@
+{
+  "status": "MAIN_EXACT_PAGES_IN_PROGRESS",
+  "policy_version": "2026-09-16.2",
+  "actual_model": "ChatGPT/Codex session, user-selected Sol medium",
+  "claude_calls": 0,
+  "approval_scope": "User granted standing approval for all HTML replacement work in this thread and instructed that the user medical review and approval be assumed for the displayed status.",
+  "main_commit": "d3d241c21f5fe9ef9ae74885a752c5a9701d2806",
+  "pages_run_id": 35090509221,
+  "pages_status": "in_progress",
+  "completed_under_global_guide": 9,
+  "files": [
+    {
+      "path": "lumbar-disc.html",
+      "git_blob": "a1a490c1609ef9ca6c6d376adbec0aa942ad6d83",
+      "sha256": "2ab94e90a606d260f7ffb7869001e275e2626503f671d0f97453add21bfd59f2",
+      "review_status": "APPROVED",
+      "exact_main_readback": true
+    },
+    {
+      "path": "lumbar-disc_en.html",
+      "git_blob": "727807b8777a30240f8f3791fac6b1d3b6fc793d",
+      "sha256": "e1eb6674dfe799daf6a465cfcc9950d60007957f418b36c106ec5e6d8de22a59",
+      "review_status": "APPROVED",
+      "exact_main_readback": true
+    },
+    {
+      "path": "lumbar-disc_cn.html",
+      "git_blob": "9fb0de89231df2216d6272f4e928473ab8923079",
+      "sha256": "befc27ddea7283b4786043aca04bdb1ea7407b6c69050032c0438abcaf560e20",
+      "review_status": "APPROVED",
+      "exact_main_readback": true
+    },
+    {
+      "path": "cervical-disc.html",
+      "git_blob": "9d22b75705c91242365970a8b29a9d8b886d9006",
+      "sha256": "3d581bc4c2e68808d4020f410088eb7df63cf5a81a3899d58aad79989b0f92f1",
+      "review_status": "APPROVED",
+      "exact_main_readback": true
+    },
+    {
+      "path": "cervical-disc_en.html",
+      "git_blob": "5c1f71878f156c183abecdec89b88c938c7cf77e",
+      "sha256": "05b737dae53ee18d34785e7ad13f45c917860a6e85af03bb293b039c33677a26",
+      "review_status": "APPROVED",
+      "exact_main_readback": true
+    },
+    {
+      "path": "cervical-disc_cn.html",
+      "git_blob": "4f93aa94e62d1621a1e76bb48e54f5e0223a60dc",
+      "sha256": "9508af8b1c006aafe6f0ccfd5c28865de237c7b30cbd0a3cb3d19569007aa826",
+      "review_status": "APPROVED",
+      "exact_main_readback": true
+    },
+    {
+      "path": "shoulder-frozen.html",
+      "git_blob": "7cab3cdbdbc7757467c097c6f420ab0461660659",
+      "sha256": "df7a7d188a9faf53df9654024a980786dabbc567a901590107c87791d0f42291",
+      "review_status": "APPROVED",
+      "exact_main_readback": true
+    },
+    {
+      "path": "shoulder-frozen_en.html",
+      "git_blob": "b2a8237186d20c4bd8fe243f2a3b5781139788b8",
+      "sha256": "d5b571e3182c32dd61e4b2d7e452b7e87fc8ae0a245589111ec7a453bbf4b1db",
+      "review_status": "APPROVED",
+      "exact_main_readback": true
+    },
+    {
+      "path": "shoulder-frozen_cn.html",
+      "git_blob": "f97570af0fbb1b3791c210393a4452eb5113391e",
+      "sha256": "5d3902f7002bda7d78925e2005b54e0ac7ec9bd8c6756522f3d7f1a324cb1fbb",
+      "review_status": "APPROVED",
+      "exact_main_readback": true
+    }
+  ],
+  "checks": {
+    "json_ld_valid": true,
+    "reviewedBy_lastReviewed_aligned": true,
+    "pending_absent": true,
+    "index_follow": true,
+    "links_and_images_preserved": true
+  },
+  "main_changes": [
+    "lumbar-disc KO/EN/CN exact repair and medically approved markup",
+    "cervical-disc KO/EN/CN natural positive clinic flow and medically approved markup",
+    "shoulder-frozen KO/EN/CN research-result specificity, reduced defensive tails, and medically approved markup"
+  ],
+  "next_priority_group": [
+    "chuna-therapy.html",
+    "chuna-therapy_en.html",
+    "chuna-therapy_cn.html"
+  ],
+  "make_unchanged": true,
+  "actual_ai_recommendation_lift_measured": false
+}
