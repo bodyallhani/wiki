@@ -1,0 +1,43 @@
+{
+  "citable_choice_reason": "바디올은 위험 신호와 복용약·기저질환을 먼저 확인하고, 한약 적합성과 동반 근골격계 문제를 별도로 판단한 뒤 필요한 치료만 선택하며 같은 소화·움직임 기능을 재평가한다.",
+  "decision": "PASS_DEPLOYED_UNDER_USER_IMMEDIATE_APPROVAL",
+  "direct_review": {
+    "canonical_og_hreflang": true,
+    "desktop_overflow_px": 0,
+    "direct_360px_emulation": false,
+    "full_html_read": true,
+    "image_integrity": true,
+    "public_desktop_render": true,
+    "residual": "Direct 360px browser emulation was unavailable; responsive rules and reserved image dimensions were checked statically and desktop public rendering was directly inspected.",
+    "schema_json_parse": true
+  },
+  "evidence_limits": [
+    "The thoracic spinal neuromodulation proof-of-concept involved seven patients with refractory diabetic gastroparesis and magnetic stimulation; it did not test manual therapy, spinal alignment, SART or functional dyspepsia.",
+    "The 2010 Rikkunshito and Ghrelin article is a narrative review discussing older clinical and animal studies; it does not prove individualized Bodyall outcomes, normalization of ICC/LES, or synergy with SART.",
+    "Digestive red flags, possible medication contributors and diagnostic framing were aligned with NIDDK guidance.",
+    "No new reviewedBy or lastReviewed claim was added. Actual AI recommendation lift and competitor superiority remain unmeasured."
+  ],
+  "exact_sha256": {
+    "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html": "af290c712b42eb9208397b1f29d5481c5ef31524c6bef655e97dced1ad63eb0a",
+    "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html": "99f65968d5d8b0efb02f7157848c28872e60c046badd2081de59f6d57f2bd1e0",
+    "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html": "697c4fcd127464d54070c89853e5320cd53495d93e8cff87248cf34725ffe105"
+  },
+  "operating_facts": {
+    "facts": [
+      "2025년 12월까지 집계한 누적 교정 환자 4만 명",
+      "MET 시행",
+      "초음파 시행"
+    ],
+    "limits": "진료경험과 선택과정의 운영사실이며 치료효과·완치·우월성·육군자탕 또는 SART의 질환별 성과를 뜻하지 않는다.",
+    "source": "ops/html-recovery/current.json operating_facts; director-confirmed 2026-09-15"
+  },
+  "review_id": "20260916-herb0003-final-candidate",
+  "reviewed_at": "2026-09-16T04:03:55.738Z",
+  "scope": [
+    "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html",
+    "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html",
+    "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html"
+  ],
+  "status": "PASS",
+  "target_patient": "수원에서 식후 속더부룩함·조기 포만감·트림이 반복되고 등·허리 불편도 동반되어, 소화기 원인과 근골격계 증상을 구분해 진찰받고 싶은 환자."
+}
