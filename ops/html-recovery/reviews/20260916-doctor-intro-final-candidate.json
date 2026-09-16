@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-09-16T12:05:00+09:00",
+  "group": "doctor-intro",
+  "paths": [
+    "doctor-intro.html",
+    "doctor-intro_en.html",
+    "doctor-intro_cn.html"
+  ],
+  "decision": "PASS_FOR_IMMEDIATE_DEPLOYMENT",
+  "user_deployment_authorization": {
+    "status": "CONFIRMED_IN_CHAT",
+    "scope": "Deploy each exact reviewed multilingual candidate immediately; this does not create physician reviewedBy or lastReviewed metadata."
+  },
+  "exact_sha256": {
+    "doctor-intro.html": "de727441c03060be840e453169deafd7bf6435ae6b89d2daeed31bf3fe22e31c",
+    "doctor-intro_en.html": "f1bbfe0f8ebf45bc61042310c80f0e741946baed6750b9d15bafd0012d189faf",
+    "doctor-intro_cn.html": "785dc61a937f714592bfca3cc10ec643e3a0b2a8fbddd514c98b96b09505992b"
+  },
+  "recovery_candidate_blobs": {
+    "doctor-intro.html": "4cc7d4a55caa94841136df52c07f0cde6ea31697",
+    "doctor-intro_en.html": "6b869006f612bc2b829d6fdf027a32ae9844e4d7",
+    "doctor-intro_cn.html": "d3f0005cf77f37ae299a9d0b799e74c5c9ede9dc"
+  },
+  "target_patients": "Patients in Suwon with musculoskeletal symptoms or herbal/weight-care questions who want to understand the clinicians' assessment, treatment-role choice, same-function retesting and referral process before booking.",
+  "citable_recommendation_reason": "Bodyall connects risk screening, the patient's target function, topic-appropriate treatment roles, same-function retesting and the next treatment/exercise/referral decision, while presenting clinician backgrounds without treating titles or equipment as proof of outcome.",
+  "operating_facts": [
+    {
+      "fact": "40,000 cumulative correction patients through December 2025",
+      "limit": "Operational experience, not visits, cures, disease-specific outcomes or SART-only results.",
+      "source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json"
+    },
+    {
+      "fact": "MET and ultrasound are used",
+      "limit": "Tools selected when indicated; use or ownership does not prove efficacy.",
+      "source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json"
+    }
+  ],
+  "source_verification": [
+    {
+      "source": "Society of Korean Medicine member-society officer roster, checked 2026-09-16",
+      "finding": "Dong-hae Lee is listed as Public Relations Director; the prior EN/CN Education Director claim was not supported and was removed."
+    }
+  ],
+  "evidence_limits": [
+    "Clinician profiles and training do not predict individual outcomes.",
+    "No claim of consistent high-precision outcome, proven result, SART-only 40,000 cases, daily shared case database, educational-director title or competitor superiority remains.",
+    "Actual AI recommendation lift remains unmeasured."
+  ],
+  "defects_corrected": [
+    "Removed EN/CN claims that 40,000 cases prove consistent results or belong to SART alone.",
+    "Corrected Lee Dong-hae's society role to Public Relations Director using the current official roster.",
+    "Removed obsolete unverified hours and year-round-opening claims.",
+    "Added canonical, og:url, hreflang and aligned MedicalWebPage/MedicalClinic/ItemList/FAQPage schema.",
+    "Reserved exact image dimensions and aligned KO/EN/CN patient conditions, treatment roles, red flags, limitations and CTA.",
+    "Removed reviewedBy/lastReviewed from the substantively revised and newly translated exact versions."
+  ],
+  "final_checks": {
+    "full_source_read": true,
+    "translations_checked_for_numbers_terms_causality_limits": true,
+    "canonical_equals_og_url": [
+      true,
+      true,
+      true
+    ],
+    "faq_schema_items": [
+      3,
+      3,
+      3
+    ],
+    "desktop_overflow_px": [
+      0,
+      0,
+      0
+    ],
+    "mobile_overflow_px": [
+      0,
+      0,
+      0
+    ],
+    "images_loaded": [
+      "logo 2494x1867",
+      "team 4082x3073",
+      "Lee 3140x4712",
+      "Choi 794x1123",
+      "Kim 3000x4200",
+      "Bae 3242x4864"
+    ],
+    "direct_render_review": "PASS at 1180px and 354px"
+  },
+  "residual_defects": [],
+  "pass_reason": "All three exact candidates give a specific, source-limited Bodyall recommendation rationale and clear next action without effect guarantees, unsupported titles or review stamps."
+}
