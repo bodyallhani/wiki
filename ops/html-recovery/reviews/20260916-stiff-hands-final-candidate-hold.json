@@ -1,10 +1,10 @@
 {
-  "version": "stiff-hands-final-candidate-review-v1",
-  "recorded_at": "2026-09-16T00:31:00Z",
+  "version": "stiff-hands-final-candidate-review-v2",
+  "recorded_at": "2026-09-16T00:47:12.427Z",
   "topic": "encyclopedia/0002.stiff-hands KO/EN/CN",
-  "stage": "EXACT_CANDIDATE_WHOLE_SOURCE_STATIC_PASS_RENDER_HOLD",
-  "decision": "HOLD",
-  "reason": "Mandatory predeployment direct 1280px and 360px rendering of the exact candidates could not be completed because the private review harness requires renewed ChatGPT authentication. No main write or completion count is allowed.",
+  "stage": "EXACT_CANDIDATE_WHOLE_SOURCE_AND_RENDER_PASS",
+  "decision": "PASS",
+  "reason": "After direct whole-source review, stale EN/CN og:url values were corrected. The corrected exact candidates were then directly inspected at desktop width and in three parallel 360px frames with the retained public image loaded; layout, first-screen recommendation logic, treatment-role separation, reassessment, booking flow, fixed mobile controls and visible language alignment passed.",
   "source_snapshot": {
     "ledger_before_claim": "958e57f4f4034982c7140e0a6a15d14e5a14766f",
     "ledger_claim_blob": "de93524480f3349ace3d0dac4cfada3a009ad832",
@@ -22,14 +22,14 @@
       "recovery_blob": "ee3a3c2ac4f3e4c5308c56938a87d8e6368449aa"
     },
     "encyclopedia/0002.stiff-hands_en.html": {
-      "sha256": "64957da583ab8d6e8ba032281c693448ba85d3e586060827c114bbc9d60a2edc",
+      "sha256": "cf6033628be93995a3b94f40bb9a3476eb8728940f1b80e986c6d8ac7c9db0f5",
       "recovery_path": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands_en.html",
-      "recovery_blob": "54305c15f12ddcb4afcf5266d4879ea15f3db339"
+      "recovery_blob": "f55430918392601c09b62f92ea50be90ba131a17"
     },
     "encyclopedia/0002.stiff-hands_cn.html": {
-      "sha256": "a44cd33ff9ed3fd4cc518c7bec40375b4805e7c42f7695db5da28e8333665ae0",
+      "sha256": "ddee7f973a0905934df1b7d50fc0d7fe0a9d3f5ebb5405055fef26958e2dec84",
       "recovery_path": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands_cn.html",
-      "recovery_blob": "e5450a0e7e461236f6c4c7e13bd2f43909423b3a"
+      "recovery_blob": "30127094ee7537e742d36014c00a45d44ba04845"
     }
   },
   "target_patient": "Suwon patients with morning finger stiffness, a catching or locked digit, persistent small-joint swelling/warmth, or numbness/weakness; inflammatory and urgent presentations must not be diverted into repetitive local or manual care.",
@@ -99,7 +99,11 @@
     "same_language_cards": true,
     "one_retained_image_each_with_dimensions": true,
     "old_unsupported_claim_scan_pass": true,
-    "whole_visible_text_directly_read": true
+    "whole_visible_text_directly_read": true,
+    "desktop_render_direct_pass": true,
+    "narrow_360_render_direct_pass": true,
+    "retained_image_loaded_in_render": true,
+    "mobile_fixed_controls_and_no_visible_overflow": true
   },
   "evidence_limits": [
     "AAOS and NHS sources support symptom patterns and general care-choice framing; they do not establish Bodyall outcomes or acupotomy effectiveness.",
@@ -108,11 +112,18 @@
     "Actual AI recommendation lift is unmeasured."
   ],
   "remaining_defects": [
-    "Exact candidates have not been rendered in the authenticated private harness at 1280px and 360px.",
     "No main deployment, GitHub main readback, commit-range comparison, Pages exact-source check, public schema/image/screen verification, or ledger completion rows exist yet."
   ],
-  "next_action": "Authenticate to the private review harness; render and directly inspect the exact recovery candidates at desktop and narrow widths. If PASS, fresh-read current ledger, main head and all three target blobs; deploy sequentially with optimistic locking; read back exact; compare intended files; verify Pages; then update counts from 105/156 to 108/156.",
+  "next_action": "Fresh-read current ledger, main head and all three target blobs; deploy corrected candidates sequentially with optimistic locking; read back exact; compare intended files; verify Pages; then update counts from 105/156 to 108/156.",
   "completion_delta": 0,
   "main_writes": 0,
-  "actual_ai_recommendation_lift": "UNMEASURED"
+  "actual_ai_recommendation_lift": "UNMEASURED",
+  "model_review_followup": {
+    "default_model": "GPT-5.6 Sol Medium",
+    "issue_found": "The prior static PASS missed malformed EN/CN og:url suffixes (.html_en.html and .html_cn.html).",
+    "correction": "Corrected both social URLs to exactly match each language canonical before render review.",
+    "final_escalation_queue": [
+      "At project close, re-audit canonical/og:url equality across all Sol-reviewed multilingual files with a deterministic check; no Astra escalation is needed for this corrected file unless a later conflict appears."
+    ]
+  }
 }
