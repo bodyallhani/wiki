@@ -1,0 +1,58 @@
+{
+  "run_id": "20260916-thoracic-facet-release",
+  "status": "DEPLOYED_PUBLIC_VERIFIED",
+  "topic": "0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization",
+  "baseline_main_head": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
+  "final_main_head": "f96f02279daab5133564e5ec1b2bdc86c6623861",
+  "publications": [
+    {
+      "language": "ko",
+      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
+      "commit": "c9d524d306ecb4faa717e7d47c8e55fa92cc7b32",
+      "git_blob": "a721938605d4419e939b765682c688ee5f62fe76",
+      "sha256": "061efc9478df4ab72a65d12e2de36007945f4e997918638be4e371f37e23c33d"
+    },
+    {
+      "language": "en",
+      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
+      "commit": "8f2cdc6bf869dfd55ecfcd988862ab36413855ad",
+      "git_blob": "b17fd99516e8ffd86a909dda562fe1e729c0e9dd",
+      "sha256": "c78a152b997e9fdde8c5456a10fdf1fa98a3171705822637bd4e423872bbdcb4"
+    },
+    {
+      "language": "zh-Hans",
+      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html",
+      "commit": "f96f02279daab5133564e5ec1b2bdc86c6623861",
+      "git_blob": "7b0396dc7f90b5e2dde1843abf232d7f47ecf2e4",
+      "sha256": "0c9fba19724b9b7aef27b242086ccd9bea81763449e110e7cb878c5c47cee817"
+    }
+  ],
+  "change_scope_check": "PASS: exactly three intended 0022 files changed from baseline to final head.",
+  "exact_readback": "PASS: main blobs exactly equal reviewed recovery candidates in all three languages.",
+  "review_record": "ops/html-recovery/reviews/20260916-thoracic-facet-final-candidate.json",
+  "public_checks": {
+    "content_and_schema": "PASS",
+    "image": "PASS: manip2.jpg 500x405 loaded and dimensions reserved",
+    "desktop_overflow_px": [
+      0,
+      0,
+      0
+    ],
+    "candidate_render": "PASS at 1180px and 354px, overflow 0 in all languages",
+    "canonical_hreflang_language_links": "PASS"
+  },
+  "evidence_limits": [
+    "PMID 11514816 is a 30-person pilot with limited power and is not conclusive.",
+    "PMID 37152585 found an end-of-treatment difference but no between-group pain or quality-of-life difference at 12 weeks.",
+    "Neither study proves T4–T8 fibrosis/locking, SART or Bodyall outcomes."
+  ],
+  "remaining_limits": [
+    "No Bodyall-specific thoracic/SART outcome evidence.",
+    "No new physician or independent translation review asserted.",
+    "Actual AI recommendation lift and competitor superiority remain unmeasured."
+  ],
+  "next_action": "Resume SART.html, SART_en.html, SART_cn.html from the freshest ledger."
+}
