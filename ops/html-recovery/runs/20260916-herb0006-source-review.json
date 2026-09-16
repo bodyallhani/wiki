@@ -1,0 +1,41 @@
+{
+  "counts_unchanged": {
+    "completed": 135,
+    "remaining": 21,
+    "total": 156
+  },
+  "files": [
+    {
+      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
+      "source_blob": "1404878c6d818667de51b9ffbb543e88e2e58a06"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
+      "source_blob": "e90828584ef1410f42c48f6dc60eb618dda2d61c"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html",
+      "source_blob": "a77f95911788bd9db004d8d319fdc54eb18513a1"
+    }
+  ],
+  "findings": [
+    "Source deterministically attributes GERD to thoracic/costovertebral malalignment, diaphragmatic restriction, vagal compression and pressure-gradient failure, then claims SART restores these pathways and improves herbal delivery. These claims exceed the cited evidence.",
+    "DOI 10.15344/2456-3501/2016/116 was an open, single-centre, one-arm study of 22 GERD patients from one OMT practice receiving 3–12 sessions. It cannot establish causation, comparative efficacy, Bodyall SART mechanisms or neural/microcirculatory restoration.",
+    "DOI 10.1155/2017/9591319 was a systematic review/meta-analysis of 12 randomized trials of modified Banxia Xiexin Decoction. The authors report generally poor methodological quality, small samples, publication bias risk and insufficient safety reporting; it does not prove ingredient-level mechanisms or synergy with manual care.",
+    "GERD alarm symptoms to preserve: chest pain, dysphagia/odynophagia, persistent vomiting, GI bleeding and unexplained weight loss. Source for final candidate: NIDDK and 2022 ACG guideline."
+  ],
+  "image_decision": "Retain only the clinical hero with 1376x768 reservation; remove the mechanism image that visually reinforces unsupported decompression-vagus-herbal-delivery causality.",
+  "next_action": "Build exact KO/EN/CN candidates, complete full-source/schema/translation/static-responsive review, preserve to recovery, then fresh-read main and target blobs for sequential immediate deployment.",
+  "record_type": "SOURCE_EVIDENCE_REVIEW",
+  "required_candidate_logic": [
+    "Patient condition and Suwon location first.",
+    "Alarm-symptom and medical/medication evaluation before herbal or musculoskeletal care.",
+    "Banhasasim-tang or individualized herbal fit assessed separately from movement-dependent thoracic/rib symptoms.",
+    "Chuna/MET/SART only for reproducible musculoskeletal findings; retest the same breathing, rotation or posture function.",
+    "No claim that SART treats GERD, restores LES/vagus function or improves herbal bioavailability."
+  ],
+  "reviewed_at": "2026-09-16T04:33:15.243Z",
+  "source_ledger_blob": "53fa2226612052e498a02776fb11686a96b1a65a",
+  "source_main_head": "93d71ba80bda8fe692a3ac9e7bd2ab8180575ce7",
+  "status": "CANDIDATE_PENDING"
+}
