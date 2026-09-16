@@ -1,0 +1,43 @@
+{
+  "record_type": "SOURCE_REVIEW",
+  "reviewed_at": "2026-09-16T05:32:59.126Z",
+  "subject": "Herbmed encyclopedia 0008 — insomnia, night palpitations, Tian Wang Bu Xin Dan and separate neck-function assessment",
+  "source_snapshot": {
+    "ledger_blob": "0f63945b930eccc848eea23ac549ce4d681c02e5",
+    "main_head": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
+    "target_blobs": {
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html": "f0c49f575b523aef52e69f7a515d0950fdf7cf9f",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html": "f0abe0584dc9f2710937219f075959a1453642f4",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html": "b54125f85ab3aa4806acee9caa079520e67053e0"
+    }
+  },
+  "findings": [
+    "Source deterministically attributed insomnia and nocturnal palpitations to craniocervical misalignment, vagus-nerve compression, impaired baroreflex and suppressed slow-wave sleep.",
+    "Source claimed SART restores vagal signaling and cerebral microcirculation and improves delivery of herbal constituents to the brain.",
+    "Source asserted unverified Bodyall HRV improvement and compared combined care favorably with conventional hypnotics.",
+    "The cited 2015 preliminary cross-over study included 10 healthy volunteers and 10 acute-neck-pain patients and measured immediate HRV, blood pressure and pain; it did not test insomnia, vagus compression, slow-wave sleep, SART or herbal combination.",
+    "The 2019 review included 14 studies and 1,256 participants but reported low methodological quality and insufficient adverse-event reporting; it did not establish direct 5-HT/GABA mechanisms, slow-wave sleep extension or synergy with cervical correction.",
+    "AASM's 2021 guideline strongly recommends multicomponent CBT-I for chronic insomnia."
+  ],
+  "evidence": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33164742/",
+      "use": "AASM behavioral and psychological treatments guideline for chronic insomnia"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26693212/",
+      "use": "2015 preliminary cervical manipulation study and its 20-person scope"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31019540/",
+      "use": "2019 Tian Wang Bu Xin Dan systematic review and limitations"
+    }
+  ],
+  "corrections": [
+    "Front-load Suwon patient fit, insomnia and palpitation screening, treatment-role separation, same-measure reassessment and booking.",
+    "Limit Chuna, MET and SART to movement-reproduced musculoskeletal neck findings.",
+    "Remove the mechanism image and retain only the hero with reserved 1376x768 dimensions.",
+    "Remove unverified hours, comparative superiority, HRV outcome and inherited review metadata."
+  ],
+  "status": "SOURCE_ERRORS_CORRECTED_IN_EXACT_CANDIDATES"
+}
