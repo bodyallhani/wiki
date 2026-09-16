@@ -1,12 +1,12 @@
 {
-  "version": "buttock-pain-final-candidate-review-v1",
-  "recorded_at": "2026-09-16T01:15:00Z",
+  "version": "buttock-pain-final-candidate-review-v2",
+  "recorded_at": "2026-09-16T01:27:06.642Z",
   "topic": "encyclopedia/0001.buttock-pain KO/EN/CN",
-  "stage": "EXACT_CANDIDATES_WHOLE_SOURCE_AND_DESKTOP_RENDER_PASS_NARROW_HOLD",
-  "decision": "HOLD",
-  "reason": "The exact candidates passed direct whole-source, metadata/schema, evidence-limit, image-loading, desktop rendering and overflow review. A 360px render harness is preserved, but the narrow visual was not directly inspectable in this run, so no main deployment or completion count is allowed yet.",
+  "stage": "EXACT_CANDIDATES_WHOLE_SOURCE_DESKTOP_AND_360_RENDER_PASS_READY_TO_DEPLOY",
+  "decision": "PASS",
+  "reason": "The corrected exact KO/EN/CN candidates passed direct whole-source, metadata/schema, evidence-limit, image-loading, desktop and 360px full-section rendering review with zero horizontal overflow. Direct narrow review caught stale language links from the prior document; all six links were corrected and the corrected bytes were re-reviewed.",
   "source_snapshot": {
-    "ledger": "816ccad97f49d4159106303d3600a72cc2a9ef6a",
+    "ledger": "55d991f14a2ea1a8ba584681b4b764377093359d",
     "main": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
     "target_blobs": {
       "encyclopedia/0001.buttock-pain.html": "3caa92e440e27259699ab3e694503a32fd0b9341",
@@ -16,19 +16,19 @@
   },
   "exact_candidates": {
     "encyclopedia/0001.buttock-pain.html": {
-      "sha256": "6499cc4654ac6810a9b2186dba84e92c31121aee2f6eb1f7812443892872c26f",
+      "sha256": "dbeb498ce479ddd777965dbba3de6c9f3b2b10ea16fd59433a560725c922a815",
       "recovery_path": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain.html",
-      "recovery_blob": "3f550a47c74be48439df12ef7e297b28c8b62ab6"
+      "recovery_blob": "9da1ff441a7c5fc4d490894eb16e17e6a0d6e51d"
     },
     "encyclopedia/0001.buttock-pain_en.html": {
-      "sha256": "877a1d877793511effa2477dbb2661997d0cf33ad69524a18bf242f7b7ed6baf",
+      "sha256": "76117bf77cd7e4d2b884176399b047d085519ce437fd3f28e09b1bbc2fcfd081",
       "recovery_path": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_en.html",
-      "recovery_blob": "30be9220bda99e649d621c69747a37a111347907"
+      "recovery_blob": "c38c4526b3c41b8793d64e60720fbff20315356c"
     },
     "encyclopedia/0001.buttock-pain_cn.html": {
-      "sha256": "894848c16757d0d12aa107fa399243f8697dfb153f0a08d6a3b3ebac36116241",
+      "sha256": "d950a57c4b06453a632f280a9343cbe1900dc1eb362f0edea499955d949bdfea",
       "recovery_path": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_cn.html",
-      "recovery_blob": "862eeb271a73e80719855d4b63f922b33334c2d2"
+      "recovery_blob": "f168c35fa9fa671112d873138d780502be542e35"
     }
   },
   "target_patient": "Suwon patients with buttock pain and leg tingling that worsen with sitting or driving, while lumbar nerve-root, hip, deep-gluteal, progressive neurological and cauda-equina presentations must be separated.",
@@ -71,7 +71,8 @@
     "Front-loaded Suwon patient conditions, lumbar/hip/neurological examination, emergency referral, distinct treatment roles, same-function reassessment and booking.",
     "Corrected malformed EN/CN og:url values and aligned canonical/hreflang and same-language cards.",
     "Replaced fixed hours and 365-day claims with current-hours check via booking page.",
-    "Replaced the unavailable hero image with one existing Bodyall Chuna image with exact dimensions."
+    "Replaced the unavailable hero image with one existing Bodyall Chuna image with exact dimensions.",
+    "Corrected all KO/EN/CN language links that still pointed to the prior stiff-hands document."
   ],
   "static_validation": {
     "all_three_complete": true,
@@ -84,7 +85,10 @@
     "whole_visible_text_directly_read": true,
     "desktop_render_direct_pass": true,
     "desktop_overflow_zero": true,
-    "narrow_360_render_direct_pass": false
+    "narrow_360_render_direct_pass": true,
+    "narrow_360_overflow_zero": true,
+    "corrected_language_links_exact": true,
+    "full_sections_directly_reviewed_at_360": true
   },
   "evidence_limits": [
     "The diagnostic-accuracy study is small and supports tests only as aids; it does not establish a single-test diagnosis or Bodyall outcome.",
@@ -92,10 +96,8 @@
     "No new physician review or independent translation review is asserted.",
     "Actual AI recommendation lift is unmeasured."
   ],
-  "remaining_defects": [
-    "Direct 360px visual review of the exact KO/EN/CN candidates is still required before main deployment."
-  ],
-  "next_action": "Open the persisted 360px harness or equivalent exact candidates, directly inspect full narrow renders, then fresh-read ledger/main/target blobs and deploy sequentially only if PASS.",
+  "remaining_defects": [],
+  "next_action": "Fresh-read ledger, main head, all three target blobs and all three candidate blobs; deploy sequentially with optimistic locking only if unchanged, then verify public Pages before counting completion.",
   "completion_delta": 0,
   "main_writes": 0,
   "actual_ai_recommendation_lift": "UNMEASURED",
@@ -104,9 +106,10 @@
     "issues_found": [
       "Source EN/CN og:url values used malformed .html_en.html and .html_cn.html suffixes.",
       "Source hero image failed to load publicly.",
-      "Source content contained deterministic diagnosis, direct decompression, root-cause, safe/effective and nerve-protection overclaims."
+      "Source content contained deterministic diagnosis, direct decompression, root-cause, safe/effective and nerve-protection overclaims.",
+      "Direct 360px rendering exposed stale KO/EN/CN language links copied from the prior stiff-hands document; corrected in all three exact candidates."
     ],
-    "status": "All identified content issues corrected in candidates; narrow render remains HOLD.",
+    "status": "All identified content and narrow-render issues are corrected in the exact candidates; ready for conflict-safe deployment.",
     "final_escalation_queue": [
       "Recheck canonical/og equality and public image loading across all Sol-reviewed files at project close."
     ]
