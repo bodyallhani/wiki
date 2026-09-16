@@ -1,0 +1,47 @@
+{
+  "checks": {
+    "img_attributes_preserved": true,
+    "a_attributes_preserved": true,
+    "link_attributes_preserved": true,
+    "css_preserved": true,
+    "paragraph_text_preserved": true,
+    "schema_only_document_date_changed": true,
+    "visible_date_matches_schema": true,
+    "direct_answer_immediately_after_heading": true,
+    "no_new_clinician_review_stamp": true,
+    "single_h1": true,
+    "all_28_global_sections_recorded": true
+  },
+  "all_checks_passed": true,
+  "draft": {
+    "path": "lumbar-disc.html",
+    "previous_sha256": "63e38ca932089d7c27885347053b075558049dd3ca1cbdd4df3e772db9eef232",
+    "sha256": "e6539dd3e19ab8a92ced4e7d080c717ce3a42f2d1360b25817790130aa5e3a85",
+    "images": 5,
+    "links": 41
+  },
+  "source_files": {
+    "editorial-policy-attached.md": {
+      "sha256": "31dbf800fff2f315fe950c54e7a85df354e692f0be2ed256d9df11166cbce5ec",
+      "bytes": 11755,
+      "lines": 102
+    },
+    "story-framework.md": {
+      "sha256": "ac481594ecf9e329964a23db40e2069e20642315b6f5814d6cc075b820727f4d",
+      "bytes": 24203,
+      "lines": 847
+    },
+    "astra-page-instructions.md": {
+      "sha256": "1c43d700d5f605f68b3caa7e46e1bc47ed26ab41f18ff67e612b7b986cd25112",
+      "bytes": 5926,
+      "lines": 76
+    },
+    "global-guide.md": {
+      "sha256": "75ba44ac547ff449082c6cd8e2c771230e30b2d54025d6a7a91ed7db892f4790",
+      "bytes": 21726,
+      "lines": 784
+    }
+  },
+  "visual_review": "PENDING",
+  "full_editorial_pass": false
+}

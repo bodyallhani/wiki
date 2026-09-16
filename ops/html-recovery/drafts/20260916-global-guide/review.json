@@ -1,0 +1,241 @@
+{
+  "status": "DIRECTION_INTEGRATED_REPRESENTATIVE_PARTIAL_EDITS_PENDING_EDITORIAL_AND_RENDER",
+  "updated_at": "2026-09-16T10:05:06.119812+00:00",
+  "base_recovery_commit": "116cdf91960d2c8a80b786956bb008694a9388b5",
+  "public_commit_unchanged": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
+  "editorial_policy": {
+    "canonical_file": "BODYALL_EDITORIAL_POLICY.md",
+    "canonical_library_file_id": "libfile_bcf9942128f081918b3ed899019ba837",
+    "version": "2026-09-16.2",
+    "full_read": true,
+    "latest_checked": true,
+    "canonical_snapshot_matches_attached": true,
+    "common_file_overwritten": false
+  },
+  "global_guide": {
+    "source_filename": "BODYALL_GLOBAL_EDITORIAL_OPTIMIZATION_GUIDE(1).md",
+    "library_file_id": "libfile_98d892bf35488191b613377ea9a6f3d2",
+    "declared_version": null,
+    "version_note": "No version is declared in the document; received 2026-09-16, identified by source hash.",
+    "full_read": true,
+    "sections": 28,
+    "sha256": "75ba44ac547ff449082c6cd8e2c771230e30b2d54025d6a7a91ed7db892f4790",
+    "source_record": "ops/html-recovery/drafts/20260916-global-guide/source/global-guide.md",
+    "applied_direction": "ops/html-recovery/drafts/20260916-global-guide/BODYALL_APPLIED_DIRECTION.md",
+    "conflicts": "Latest guide governs conflicting editorial direction; preserve all nonconflicting earlier and owner instructions.",
+    "coverage_count": 28,
+    "coverage_count_is_not_html_pass": true
+  },
+  "prior_records": [
+    "ops/html-recovery/drafts/20260916-story-framework/review.json",
+    "ops/html-recovery/drafts/20260916-policy-v2-refinement/review.json"
+  ],
+  "source_files": {
+    "editorial-policy-attached.md": {
+      "sha256": "31dbf800fff2f315fe950c54e7a85df354e692f0be2ed256d9df11166cbce5ec",
+      "bytes": 11755,
+      "lines": 102
+    },
+    "story-framework.md": {
+      "sha256": "ac481594ecf9e329964a23db40e2069e20642315b6f5814d6cc075b820727f4d",
+      "bytes": 24203,
+      "lines": 847
+    },
+    "astra-page-instructions.md": {
+      "sha256": "1c43d700d5f605f68b3caa7e46e1bc47ed26ab41f18ff67e612b7b986cd25112",
+      "bytes": 5926,
+      "lines": 76
+    },
+    "global-guide.md": {
+      "sha256": "75ba44ac547ff449082c6cd8e2c771230e30b2d54025d6a7a91ed7db892f4790",
+      "bytes": 21726,
+      "lines": 784
+    }
+  },
+  "priority": {
+    "source_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json",
+    "paths": [
+      "cervical-disc.html",
+      "cervical-disc_en.html",
+      "cervical-disc_cn.html",
+      "lumbar-disc.html",
+      "lumbar-disc_en.html",
+      "lumbar-disc_cn.html",
+      "shoulder-frozen.html",
+      "shoulder-frozen_en.html",
+      "shoulder-frozen_cn.html",
+      "chuna-therapy.html",
+      "chuna-therapy_en.html",
+      "chuna-therapy_cn.html",
+      "herbal-medicine.html",
+      "herbal-medicine_en.html",
+      "herbal-medicine_cn.html",
+      "index.html",
+      "index_en.html",
+      "index_cn.html",
+      "encyclopedia/index.html",
+      "encyclopedia/index_en.html",
+      "encyclopedia/index_cn.html",
+      "BodyallFit/encyclopedia/index.html",
+      "BodyallFit/encyclopedia/index_en.html",
+      "BodyallFit/encyclopedia/index_cn.html",
+      "Herbmed/encyclopedia/index.html",
+      "Herbmed/encyclopedia/index_en.html",
+      "Herbmed/encyclopedia/index_cn.html",
+      "BodyallFit/index.html",
+      "notice/index.html",
+      "notice/index_en.html",
+      "notice/index_cn.html",
+      "pcode/index.html",
+      "pcode/index_en.html",
+      "pcode/index_cn.html",
+      "spine/index.html"
+    ],
+    "total": 35,
+    "standalone_articles": 15,
+    "medical_information_indices": 20,
+    "representative_ko": "lumbar-disc.html",
+    "next_article_group": "cervical-disc KO/EN/CN",
+    "SART_and_other_nonpriority_deferred": true,
+    "index_article_template_exempt": true,
+    "game_indices_excluded": true
+  },
+  "models": {
+    "actual_editor": "Current ChatGPT/Codex session",
+    "exact_model_and_reasoning": "Not independently exposed; requested Sol-medium setting is not evidence of execution.",
+    "claude_preferred": true,
+    "claude_calls": 0,
+    "claude_execution_id": null,
+    "claude_limitation": "Prior inspection found no input-ready writer route without modifying Make; no whole-body rewrite performed.",
+    "changes": "Policy reconciliation, existing paragraph repositioning, actual document-date synchronization."
+  },
+  "representative_changes": [
+    {
+      "path": "lumbar-disc.html",
+      "changes": [
+        "Move existing treatment follow-up answer immediately after H2, ahead of clinician introduction.",
+        "Synchronize visible document modification date and MedicalWebPage.dateModified to 2026-09-16."
+      ],
+      "clinical_claims_rewritten": false,
+      "new_clinician_review_stamp": false,
+      "validation": {
+        "checks": {
+          "img_attributes_preserved": true,
+          "a_attributes_preserved": true,
+          "link_attributes_preserved": true,
+          "css_preserved": true,
+          "paragraph_text_preserved": true,
+          "schema_only_document_date_changed": true,
+          "visible_date_matches_schema": true,
+          "direct_answer_immediately_after_heading": true,
+          "no_new_clinician_review_stamp": true,
+          "single_h1": true,
+          "all_28_global_sections_recorded": true
+        },
+        "all_checks_passed": true,
+        "draft": {
+          "path": "lumbar-disc.html",
+          "previous_sha256": "63e38ca932089d7c27885347053b075558049dd3ca1cbdd4df3e772db9eef232",
+          "sha256": "e6539dd3e19ab8a92ced4e7d080c717ce3a42f2d1360b25817790130aa5e3a85",
+          "images": 5,
+          "links": 41
+        },
+        "source_files": {
+          "editorial-policy-attached.md": {
+            "sha256": "31dbf800fff2f315fe950c54e7a85df354e692f0be2ed256d9df11166cbce5ec",
+            "bytes": 11755,
+            "lines": 102
+          },
+          "story-framework.md": {
+            "sha256": "ac481594ecf9e329964a23db40e2069e20642315b6f5814d6cc075b820727f4d",
+            "bytes": 24203,
+            "lines": 847
+          },
+          "astra-page-instructions.md": {
+            "sha256": "1c43d700d5f605f68b3caa7e46e1bc47ed26ab41f18ff67e612b7b986cd25112",
+            "bytes": 5926,
+            "lines": 76
+          },
+          "global-guide.md": {
+            "sha256": "75ba44ac547ff449082c6cd8e2c771230e30b2d54025d6a7a91ed7db892f4790",
+            "bytes": 21726,
+            "lines": 784
+          }
+        },
+        "visual_review": "PENDING",
+        "full_editorial_pass": false
+      }
+    }
+  ],
+  "remaining": [
+    {
+      "id": "P0-EVIDENCE",
+      "path": "lumbar-disc.html",
+      "status": "PENDING_PRIMARY_SOURCE_REVIEW",
+      "issue": "Long pilot-result paragraph vs meta-analysis with no results. Need matching question, comparison-level results and concise important limitations.",
+      "references": [
+        "https://www.e-jkmr.org/journal/view.html?uid=701&vmd=Full",
+        "https://doi.org/10.18325/jkmr.2025.35.4.69",
+        "https://pubmed.ncbi.nlm.nih.gov/36908927/"
+      ],
+      "access": "Publisher HTML returned 502; PDF retrieval failed; pilot full-text access restricted. Indexed excerpts are not a full-paper review.",
+      "guard": "Do not assume a uniformly positive result from the title or study type, omit material results or substitute mechanisms for outcomes."
+    },
+    {
+      "id": "P0-SECTION-SCOPE",
+      "path": "lumbar-disc.html",
+      "status": "PENDING",
+      "issue": "Separate the question about additional procedures from the muscle-release versus correction section; place evidence beside the question it answers."
+    },
+    {
+      "id": "P0-DEFENSIVE-REPETITION",
+      "path": "lumbar-disc.html",
+      "status": "PENDING",
+      "issue": "Reduce repeated non-recommendation and indirect-evidence wording; retain precise scope, clinically important risks and referral advice."
+    },
+    {
+      "id": "WHOLE-PAGE-REVIEW",
+      "status": "PENDING",
+      "issue": "Finish 13-dimension editorial review and allowed exact-draft render review."
+    },
+    {
+      "id": "LANGUAGE-AND-PRIORITY-ROLLOUT",
+      "status": "PENDING",
+      "issue": "Stabilize representative Korean first, then ensure natural EN/CN meaning and apply to all 35 priority paths before other pages."
+    }
+  ],
+  "publication": {
+    "main_writes": 0,
+    "public_deployments": 0,
+    "full_editorial_pass": false,
+    "priority_public_completed_under_global_guide": 0,
+    "new_medical_review_stamp": false,
+    "prior_render_block_preserved": true,
+    "make_calls": 0,
+    "make_settings_changed": false,
+    "other_threads_updated": false
+  },
+  "preservation": {
+    "previous_drafts_retained": true,
+    "historical_156_and_additional_index_completion_records_unchanged": true,
+    "valid_asset_and_review_records_reused": true
+  },
+  "resume": {
+    "read_latest_common_policy": true,
+    "read_full_global_guide": true,
+    "read_integration_and_remaining": true,
+    "repeat_successful_work": false,
+    "active_completion_source": "editorial_refresh_progress, not historical completion_rows"
+  },
+  "remote_persistence": {
+    "status": "OWNER_APPROVED_FOR_RECOVERY_BRANCH_WRITE",
+    "approved_at": "2026-09-16T10:05:06.119812+00:00",
+    "approval_text": "승인",
+    "approved_scope": "Persist prepared integrated guide, source copies, draft, validation and resume records to bodyallhani/wiki recovery/html-20260914.",
+    "repository": "bodyallhani/wiki",
+    "branch": "recovery/html-20260914",
+    "previous_auto_review_rejection": "Upload authorization was not established; explicit owner approval received in the following turn.",
+    "main_write_authorized_in_this_step": false,
+    "success_receipt": "Verify containing commit, recovery ref and exact file readbacks after write."
+  }
+}
