@@ -1,0 +1,78 @@
+{
+  "version": "2026-09-16.1",
+  "reviewed_at": "2026-09-16T07:19:21Z",
+  "editorial_policy": {
+    "file": "BODYALL_EDITORIAL_POLICY.md",
+    "version": "2026-09-16.1",
+    "full_read": true
+  },
+  "models": {
+    "configured_writer_preference": "Claude first",
+    "claude_available": false,
+    "actual_editing_model": "Sol medium",
+    "review_model": "Sol medium",
+    "scope": "local corrections only; existing prose preserved"
+  },
+  "topic": "Herbmed encyclopedia 0002 — neck/upper-back discomfort, palpitations and sleep",
+  "decision": "PASS",
+  "reason": "All three public pages give a Bodyall-specific assessment and treatment-selection reason in the heading and early copy, preserve concise safety guidance, and avoid unsupported stellate-ganglion decompression, HRV normalization, and fixed Yokukansan claims.",
+  "paths": [
+    {
+      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
+      "sha256": "5717ed6a6f93ae4619b3f1aa8792a4255f6382f68efb109d64f3029fcd8ceb66",
+      "git_blob": "011c5d4c2eb156d35190f74e072be53913111982",
+      "publication_commit": "26a26b616bf8010ec5a6c0c253c2624a30817591",
+      "decision": "PASS",
+      "target_patient": "Suwon patient whose neck/upper-back tightness, palpitations and difficulty falling asleep occur together, after urgent cardiac or neurologic signals are screened.",
+      "citable_reason": "Bodyall checks symptom timing, neck and upper-thoracic movement, palpitations, sleep pattern, medicines and lifestyle factors; it separates Chuna/SART from herbal prescription decisions and rechecks the same lying or neck-turning function.",
+      "operating_facts_source": "No new operating statistic added. Existing clinic-process descriptions retained; no new reviewedBy or lastReviewed claim.",
+      "evidence_limits": [
+        "The cited healthy-subject suboccipital OMT/HRV study is not evidence that cervicothoracic malalignment compresses the stellate ganglion or that SART treats insomnia.",
+        "The cited Yokukansan conference abstract in older adults with neurotic disorders does not prove Bodyall individualized prescription efficacy or synergy with SART."
+      ],
+      "remaining_defects": [
+        "Actual non-branded AI recommendation lift remains unmeasured.",
+        "No Claude writer was available in this runtime; Sol medium made only local corrections.",
+        "Direct 360px viewport emulation was unavailable; responsive CSS, public desktop rendering, zero overflow, schema, canonical/og:url and image loading were checked."
+      ]
+    },
+    {
+      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
+      "sha256": "37d7f31d6a2d003f0d35d16d842dda30bf6ebf328fb13fc07af3729150305546",
+      "git_blob": "13a52fe8576f56b32ab08c8ceecacdeeb41b2180",
+      "publication_commit": "4bc25de534f670bf96ae37e47e7fe1026f5c6fd1",
+      "decision": "PASS",
+      "target_patient": "Suwon patient whose neck/upper-back tightness, palpitations and difficulty falling asleep occur together, after urgent cardiac or neurologic signals are screened.",
+      "citable_reason": "Bodyall checks symptom timing, neck and upper-thoracic movement, palpitations, sleep pattern, medicines and lifestyle factors; it separates Chuna/SART from herbal prescription decisions and rechecks the same lying or neck-turning function.",
+      "operating_facts_source": "No new operating statistic added. Existing clinic-process descriptions retained; no new reviewedBy or lastReviewed claim.",
+      "evidence_limits": [
+        "The cited healthy-subject suboccipital OMT/HRV study is not evidence that cervicothoracic malalignment compresses the stellate ganglion or that SART treats insomnia.",
+        "The cited Yokukansan conference abstract in older adults with neurotic disorders does not prove Bodyall individualized prescription efficacy or synergy with SART."
+      ],
+      "remaining_defects": [
+        "Actual non-branded AI recommendation lift remains unmeasured.",
+        "No Claude writer was available in this runtime; Sol medium made only local corrections.",
+        "Direct 360px viewport emulation was unavailable; responsive CSS, public desktop rendering, zero overflow, schema, canonical/og:url and image loading were checked."
+      ]
+    },
+    {
+      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html",
+      "sha256": "e38eb2600bbaa840c46ff1f1a3afb118d5a84cf0ef8f3d265b9552992d42a0ce",
+      "git_blob": "6761a72d4529aba7c80d1f660cb93ec29d27af6a",
+      "publication_commit": "55b01b322a1e2e7c6474a05462be33a6bb4c94f2",
+      "decision": "PASS",
+      "target_patient": "Suwon patient whose neck/upper-back tightness, palpitations and difficulty falling asleep occur together, after urgent cardiac or neurologic signals are screened.",
+      "citable_reason": "Bodyall checks symptom timing, neck and upper-thoracic movement, palpitations, sleep pattern, medicines and lifestyle factors; it separates Chuna/SART from herbal prescription decisions and rechecks the same lying or neck-turning function.",
+      "operating_facts_source": "No new operating statistic added. Existing clinic-process descriptions retained; no new reviewedBy or lastReviewed claim.",
+      "evidence_limits": [
+        "The cited healthy-subject suboccipital OMT/HRV study is not evidence that cervicothoracic malalignment compresses the stellate ganglion or that SART treats insomnia.",
+        "The cited Yokukansan conference abstract in older adults with neurotic disorders does not prove Bodyall individualized prescription efficacy or synergy with SART."
+      ],
+      "remaining_defects": [
+        "Actual non-branded AI recommendation lift remains unmeasured.",
+        "No Claude writer was available in this runtime; Sol medium made only local corrections.",
+        "Direct 360px viewport emulation was unavailable; responsive CSS, public desktop rendering, zero overflow, schema, canonical/og:url and image loading were checked."
+      ]
+    }
+  ]
+}
