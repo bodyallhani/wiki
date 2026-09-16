@@ -177,7 +177,7 @@
     },
     "pages_run_id": 35064331711,
     "release_record": "ops/html-recovery/runs/20260916-bodyallfit0007-release.json",
-    "ledger_exact_readback": false,
+    "ledger_exact_readback": true,
     "updated_at": "2026-09-16T06:38:57.223Z"
   },
   "additional_index_completion_rows": [
@@ -3938,16 +3938,14 @@
       }
     ]
   },
-  "next": "RESUME PHASE1 Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html KO→EN→CN: review Korean evidence full text and mechanism image, apply immediate-deployment approval assumption, deploy sequentially, publicly verify, then finish 156/156 and run the focused Sol anomaly sweep.",
+  "next": "REPRESENTATIVE KO FIRST: compare current and previous Herbmed encyclopedia 0002 Korean HTML, preserve existing natural prose/images/links/approval records, make only necessary local edits under BODYALL_EDITORIAL_POLICY.md 2026-09-16.1. Do not deploy EN/CN until the Korean before/after review passes.",
   "next_priority": {
     "phase": "RESUME_PHASE1_PENDING",
-    "topic": "Herbmed encyclopedia 0002",
+    "topic": "Herbmed encyclopedia 0002 representative Korean first",
     "paths": [
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html"
     ],
-    "stage": "SOURCE_REVIEW_AND_CANDIDATE"
+    "stage": "CURRENT_PREVIOUS_COMPARISON_AND_LOCAL_EDIT"
   },
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
@@ -4633,8 +4631,8 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T06:38:57.223Z",
-  "version": "V284_BODYALLFIT0007_PUBLIC_PASS_NEXT_HERBMED0002",
+  "updated_at": "2026-09-16T06:41:03.251Z",
+  "version": "V285_POLICY_20260916_1_APPLIED_REPRESENTATIVE_HERBMED0002_KO",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
     "phase": "RESUME_PHASE1_PENDING",
@@ -5279,5 +5277,22 @@
     "public_record_policy": "Private artifact identifiers omitted.",
     "status": "OWNER_RECOVERY_PRESERVED"
   },
-  "zip_status": "REMOTE_RECOVERY_PACK_AND_RECEIPT_CURRENT; prior ZIP historical only"
+  "zip_status": "REMOTE_RECOVERY_PACK_AND_RECEIPT_CURRENT; prior ZIP historical only",
+  "editorial_policy": {
+    "file": "BODYALL_EDITORIAL_POLICY.md",
+    "version": "2026-09-16.1",
+    "full_read": true,
+    "applied_at": "2026-09-16T06:41:03.251Z",
+    "priority": [
+      "Bodyall-specific verifiable recommendation reason",
+      "patient trust and visit intent",
+      "AEO/GEO/SEO"
+    ],
+    "writer_preference": "Claude first",
+    "claude_writer_available_in_current_runtime": false,
+    "actual_editing_model": "Sol medium",
+    "fallback_scope": "No full rewrite; preserve existing prose and make only necessary local corrections.",
+    "representative_ko": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
+    "make_settings_unchanged": true
+  }
 }
