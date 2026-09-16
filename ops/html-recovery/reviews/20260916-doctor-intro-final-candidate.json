@@ -89,5 +89,52 @@
     "direct_render_review": "PASS at 1180px and 354px"
   },
   "residual_defects": [],
-  "pass_reason": "All three exact candidates give a specific, source-limited Bodyall recommendation rationale and clear next action without effect guarantees, unsupported titles or review stamps."
+  "pass_reason": "All three exact candidates give a specific, source-limited Bodyall recommendation rationale and clear next action without effect guarantees, unsupported titles or review stamps.",
+  "deployment": {
+    "status": "PUBLIC_VERIFIED",
+    "base_main_head": "08abf6a149b8e4f54168f4383bea8a481d50d4b5",
+    "final_main_head": "1e646dfeb46eef69c458589d764c2f74ea42b35c",
+    "publication_commits": {
+      "doctor-intro.html": "85d139841da293e7820650fc66e717b57d80934a",
+      "doctor-intro_en.html": "bb966bf78ea2e0f2e54b4ac31ec9d295b78e2ec0",
+      "doctor-intro_cn.html": "1e646dfeb46eef69c458589d764c2f74ea42b35c"
+    },
+    "main_blobs": {
+      "doctor-intro.html": "4cc7d4a55caa94841136df52c07f0cde6ea31697",
+      "doctor-intro_en.html": "6b869006f612bc2b829d6fdf027a32ae9844e4d7",
+      "doctor-intro_cn.html": "d3f0005cf77f37ae299a9d0b799e74c5c9ede9dc"
+    },
+    "compare_scope": [
+      "doctor-intro.html",
+      "doctor-intro_en.html",
+      "doctor-intro_cn.html"
+    ],
+    "public_checks": {
+      "new_content": true,
+      "old_overclaims_absent": true,
+      "review_stamps_absent": true,
+      "faq_schema_items": [
+        3,
+        3,
+        3
+      ],
+      "canonical_equals_og_url": [
+        true,
+        true,
+        true
+      ],
+      "desktop_overflow_px": [
+        0,
+        0,
+        0
+      ],
+      "mobile_candidate_overflow_px": [
+        0,
+        0,
+        0
+      ],
+      "all_images_loaded_and_dimensions_reserved": true,
+      "language_links_aligned": true
+    }
+  }
 }
