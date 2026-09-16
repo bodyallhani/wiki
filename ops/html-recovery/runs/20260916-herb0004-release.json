@@ -1,0 +1,92 @@
+{
+  "base_main_head": "45bb5d7d74cbffc8cb84bfaac8151885a43592dc",
+  "compare_ahead_by": 3,
+  "constraints": [
+    "Make and Google indexing were not touched.",
+    "No new URL or language file was created.",
+    "Direct 360px browser emulation remains for the final focused anomaly sweep."
+  ],
+  "files": [
+    {
+      "git_blob": "181ae75ebcfef74da0cc330a7cce3ff190016b82",
+      "github_readback_exact": true,
+      "path": "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html",
+      "public_booking_cta": true,
+      "public_canonical_og_hreflang": true,
+      "public_desktop_overflow_px": 0,
+      "public_image": {
+        "count": 1,
+        "dimensions_reserved": true,
+        "loaded": true,
+        "natural": "1376x768"
+      },
+      "public_marker_verified": true,
+      "public_schema_parse": true,
+      "public_title_h1_verified": true,
+      "publication_commit": "e57a27e2166599e562e2a28ba586b0020f48be34",
+      "sha256": "428db74a426fa74934e30b61369102f4d3ae6a9e55f3886924b2bc1b823542d8",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html"
+    },
+    {
+      "git_blob": "e6a564e1be1186ee3deac8d7ca6623de5e13318a",
+      "github_readback_exact": true,
+      "path": "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html",
+      "public_booking_cta": true,
+      "public_canonical_og_hreflang": true,
+      "public_desktop_overflow_px": 0,
+      "public_image": {
+        "count": 1,
+        "dimensions_reserved": true,
+        "loaded": true,
+        "natural": "1376x768"
+      },
+      "public_marker_verified": true,
+      "public_schema_parse": true,
+      "public_title_h1_verified": true,
+      "publication_commit": "4726c694929eeec972576e3fcdd0714783159009",
+      "sha256": "ee9bc3225a2a1ce45af96d0db71b8c85600af365e8c2eabd2fa289bfe76f5c0e",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html"
+    },
+    {
+      "git_blob": "26ff2cb9c4c9cfc753fe435aada974360a4e659c",
+      "github_readback_exact": true,
+      "path": "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html",
+      "public_booking_cta": true,
+      "public_canonical_og_hreflang": true,
+      "public_desktop_overflow_px": 0,
+      "public_image": {
+        "count": 1,
+        "dimensions_reserved": true,
+        "loaded": true,
+        "natural": "1376x768"
+      },
+      "public_marker_verified": true,
+      "public_schema_parse": true,
+      "public_title_h1_verified": true,
+      "publication_commit": "20a99679cb6b087d058fb88f8ce2279bc4a0c9bf",
+      "sha256": "aace75568a95cdb1970bbd45f51d10fa922aff119e96eb048f37ec69686e6770",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html"
+    }
+  ],
+  "final_main_head": "20a99679cb6b087d058fb88f8ce2279bc4a0c9bf",
+  "intended_files_only": true,
+  "public_validation": {
+    "DOI_links_present": true,
+    "FAQ_body_cards": 5,
+    "JSONLD_types": [
+      "MedicalWebPage",
+      "MedicalClinic",
+      "LocalBusiness",
+      "MedicalTherapy",
+      "FAQPage"
+    ],
+    "actual_ai_recommendation_lift": "UNMEASURED",
+    "inaccurate_mechanism_image_removed": true,
+    "old_HPA_microcirculation_ATP_overclaims_removed": true,
+    "old_hours_removed": true,
+    "pages_propagated": true,
+    "primary_care_fatigue_source_present": true
+  },
+  "release_id": "20260916-herb0004-release",
+  "released_at": "2026-09-16T04:15:50.158Z"
+}
