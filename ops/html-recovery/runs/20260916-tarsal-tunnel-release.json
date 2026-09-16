@@ -1,0 +1,64 @@
+{
+  "release_id": "20260916-tarsal-tunnel-release",
+  "status": "DEPLOYED_AND_PUBLICLY_VERIFIED",
+  "scope": "existing sitemap URLs only; KO/EN/CN one topic group",
+  "paths": [
+    {
+      "path": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
+      "commit": "1e63a509d3eaf8d6644c651a89e2cdf496daf1a8",
+      "blob": "3c565e33443d387a4c67a31841d37ccb079f9df1",
+      "sha256": "42ca0ce681a9f6ee18f3ec26a988399141659dc9a693d99b924317dbf588ab4b"
+    },
+    {
+      "path": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
+      "commit": "82103a5b9c8dda01bf1d61c8ca0d5698b081dfe6",
+      "blob": "768d505b44429a76df509caf0b9f68702ff1caf6",
+      "sha256": "23925fc9f102cdadee249444dee259b03a8934f6e80b639a1400fd94de7a63cc"
+    },
+    {
+      "path": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html",
+      "commit": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
+      "blob": "9bc3fe8cdc68b85b6a5b639eb0b71001171b42c1",
+      "sha256": "693cc1b6cb4a65addbecc0707e2b4b618a83e5705313b55dfc498f4b405ea5e1"
+    }
+  ],
+  "base_main_head": "304ca75f2300952d99da1e893578b1d60ecfe80d",
+  "final_main_head": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
+  "compare": {
+    "ahead_by": 3,
+    "changed_files": [
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html"
+    ],
+    "intended_only": true
+  },
+  "review_record": "ops/html-recovery/reviews/20260916-tarsal-tunnel-final-candidate.json",
+  "public_verification": {
+    "title_h1": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ],
+    "schema_faq3": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ],
+    "image_1376x768": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ],
+    "desktop_overflow_px": [
+      0,
+      0,
+      0
+    ],
+    "canonical_og_hreflang": "PASS",
+    "language_links": "PASS",
+    "candidate_exact_360_render": "PASS"
+  },
+  "recommendation_measurement": "UNMEASURED; no claim of actual AI recommendation lift or competitor superiority.",
+  "make_and_google_indexing": "NOT_TOUCHED"
+}
