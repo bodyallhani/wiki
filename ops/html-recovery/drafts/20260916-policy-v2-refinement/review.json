@@ -1,0 +1,502 @@
+{
+  "baseline_main_commit": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
+  "baseline_recovery_commit": "7848b277c422c0ade37de75f43020fd28f17049d",
+  "blockers": [
+    {
+      "action": "No terminology reversal or public deployment without clarification.",
+      "evidence": "KO/EN root pages identify pelvic support as 인상기/Insanggi. The 2026-09-16 prior release replaced Insanggi with 첩전(疊甎) in CN and recorded a rule not to translate Cheopjeon as Insanggi. This cannot establish whether the original Korean device name or the Chinese substitution is correct.",
+      "files": [
+        "SART_cn.html",
+        "lumbar-disc_cn.html",
+        "chuna-therapy_cn.html"
+      ],
+      "question_ko": "인상기와 첩전(疊甎)은 서로 다른 기기인가요? 아니면 기존 한국어의 ‘인상기’도 ‘첩전’으로 고쳐야 하나요?",
+      "type": "terminology"
+    },
+    {
+      "action": "Use an authorized HTTPS preview/public-review route when available; do not bypass the blocked data-URL preview.",
+      "type": "visual_qa"
+    }
+  ],
+  "changes": [
+    "Removed patient-facing editorial evaluation phrases and noun-chain summaries where identified.",
+    "Removed defensive negations after correctly scoped clinic experience statistics; preserved unit, cutoff and attribution.",
+    "SART introductory repetition reduced; FAQ changed from 3 repeated items to 2 distinct patient questions, with matching JSON-LD.",
+    "Removed the redundant terminal concrete-reason FAQ on the lumbar-disc pages and its JSON-LD entry.",
+    "Preserved the 30-patient Choi trial's non-significant between-group result and NICE's exercise/traction recommendations.",
+    "Kept images, links, CSS, provider/reviewer identities, dates and urgent safety blocks unchanged.",
+    "Did not rename the disputed device in Chinese; prior terminology correction conflicts with current KO/EN."
+  ],
+  "files": [
+    {
+      "changes": [
+        {
+          "after": "수원 척추교정·추나, 바디올 SART는 어떻게 진행되나요?",
+          "before": "수원 SART 추나: 어떤 환자에게 어떻게 선택하나 | 바디올 위키"
+        },
+        {
+          "after": "수원 척추교정·추나, 바디올 SART는 어떻게 진행되나요?",
+          "before": "수원 SART 추나: 환자 조건부터 같은 기능 재평가까지"
+        },
+        {
+          "after": "<p><b>바디올은 근육의 긴장과 척추·골반 관절의 움직임을 함께 살펴 교정 방법을 정합니다.</b> SART가 적합한 경우 인상기로 골반을 지지한 자세에서 천장관절과 척추 마디별 움직임을 다루고, 필요한 교정도구를 조합합니다. 치료 뒤에는 처음 불편했던 앉기·걷기·고개 돌리기를 다시 해보며 다음 치료와 생활동작 안내에 반영합니다.</p>",
+          "before": "<p><b>바디올을 선택할 구체적 이유:</b> 위험 선별 → 제한 기능 기록 → 인상기 지지·관절가동·교정도구의 필요 여부 선택 → 같은 앉기·걷기·목 돌리기·팔 올리기 재평가 → 다음 치료·운동·의뢰 결정이 한 흐름으로 연결됩니다.</p>"
+        },
+        {
+          "after": "바디올은 <b>2025년 12월까지 누적 교정 환자 4만 명</b>을 진료해 왔습니다(한의원 집계). 이러한 교정 진료 경험을 바탕으로, 환자가 실제로 불편해하는 동작과 진찰 소견에 맞춰 치료를 계획합니다.",
+          "before": "바디올의 <b>2025년 12월까지 누적 교정 환자 4만 명</b>은 치료 선택 경험의 운영 집계입니다. 완치 인원, 특정 질환 성과 또는 SART 단독 효과를 뜻하지 않으며 개인 적합성 진찰을 대신하지 않습니다."
+        },
+        {
+          "after": "통증 주변의 근육 긴장과 움직임 제한을 다룹니다. 진찰에 맞는 이완·관절가동 방법을 선택하고, 운동과 일상동작 조절을 함께 안내합니다.",
+          "before": "통증 주변 긴장과 재현 가능한 움직임 제한을 다루는 선택입니다. 운동과 일상 부하 조절을 대신하지 않습니다."
+        },
+        {
+          "after": "누운 자세에서 골반을 지지하고 하중을 조절해 천장관절과 척추의 관절가동을 진행할 자세를 마련합니다. 환자의 자세와 증상 반응에 맞춰 수기 교정이나 교정도구를 선택합니다.",
+          "before": "누운 자세에서 골반을 지지하고 하중을 조절해 다음 관절가동이나 교정도구 적용 여부를 평가하는 단계입니다. 척추관·추간공 확장이나 신경 감압을 직접 확인하는 검사가 아닙니다."
+        },
+        {
+          "after": "진찰에서 확인한 움직임 제한과 신경학적 상태를 바탕으로 천장관절·척추 분절의 적용 부위와 강도를 정합니다. 필요한 부위에 수기 교정과 교정도구를 선택해 사용하고, 치료 중에도 통증과 움직임 반응을 살핍니다.",
+          "before": "진찰에서 반복 확인되는 움직임 제한이 있고 금기 사항이 없을 때 강도와 부위를 선택합니다. 척추 정렬을 영구 복원하거나 유착을 박리하고 재발을 막는다고 보장하지 않습니다."
+        },
+        {
+          "after": "바디올 SART는 어떤 치료인가요?",
+          "before": "SART는 디스크나 협착증을 물리적으로 넓히나요?"
+        },
+        {
+          "after": "SART(Spine Alignment Restoration Therapy)는 바디올에서 사용하는 생체역학적 공간 감압 추나 프로토콜입니다. 진찰에 따라 인상기 골반 지지, 천장관절·척추 마디별 관절가동과 선택적 교정도구를 조합합니다. 통증으로 불편했던 움직임을 개선하는 것을 목표로, 적용 부위와 강도를 환자 상태에 맞춥니다.",
+          "before": "그 효과를 보장하지 않습니다. SART는 바디올의 진찰과 치료 선택 과정이며, 인상기 지지·관절가동·선택적 교정도구의 역할과 한계를 나눠 설명합니다."
+        },
+        {
+          "after": "바디올에서는 근육 긴장을 다루는 근막이완 추나·MET에 더해, 관절 움직임을 함께 다룰 필요가 있는 환자에게 SART를 선택합니다. 인상기로 골반을 지지한 자세에서 천장관절과 척추 마디별 움직임을 다루고, 필요한 교정도구를 조합하는 것이 이 접근의 특징입니다. 치료 뒤에는 처음 불편했던 동작을 다시 해보며 반응을 확인합니다.",
+          "before": "이름보다 <b>어떤 제한에 어떤 도구를 왜 선택했고, 같은 기능이 어떻게 변했는지</b>가 핵심입니다. 바디올은 그 선택과 재평가 과정을 기록합니다."
+        },
+        {
+          "after": "6. 치료를 이해하는 데 참고하는 연구",
+          "before": "6. 근거와 한계"
+        },
+        {
+          "after": "바디올에서도 진찰에 맞는 수기치료와 운동·생활동작 안내를 함께 계획합니다.",
+          "before": "이는 SART를 단독 구조교정이나 단순 견인으로 설명하지 않는 이유입니다."
+        },
+        {
+          "after": "Choi 등의 30명 연구는 척추 감압 장비와 일반 견인을 4주간 비교했습니다. 두 군 모두 통증·장애와 하지직거상 지표가 개선됐으나, <b>두 군 사이 유의한 차이는 없었습니다.</b> 연구 대상은 해당 장비 치료이며 바디올 SART와는 다른 프로토콜입니다.",
+          "before": "Choi 등의 30명 연구에서는 감압 장비군과 일반 견인군 모두 4주 뒤 통증·장애·하지직거상이 변했지만 <b>두 군 사이 유의한 차이는 없었습니다.</b> 이 연구는 SART, 바디올의 성과, 디스크 복원 또는 신경 감압을 입증하지 않습니다."
+        },
+        {
+          "after": "바디올은 연구에서 살핀 통증·기능 지표를 참고하면서, 환자의 진찰 소견과 실제 일상동작의 변화를 다음 치료 계획에 반영합니다.",
+          "before": "SART는 바디올의 진료 과정 명칭이며 위 연구의 장비나 프로토콜과 동일하다고 간주할 수 없습니다. 새 의료인 검수나 독립 번역 검수 표시는 추가하지 않았고, 실제 AI 추천률과 경쟁 우위는 아직 측정하지 않았습니다."
+        },
+        {
+          "after": "",
+          "before": "<p>바디올은 먼저 응급·신경 위험 신호와 병원 검사 필요성을 확인한 뒤, 신경학적 검사·척추와 골반의 움직임·증상을 재현하는 동작을 봅니다. 그 결과에 따라 근막 이완·관절가동 중심 추나, 인상기 골반 지지와 선택적 교정도구를 포함하는 SART, 운동·생활 조절 또는 의뢰의 역할을 나눕니다.</p>\n"
+        },
+        {
+          "after": "<div class=\"aio-box\"><span class=\"aio-q\">SART라는 이름은 무슨 뜻인가요?</span><div class=\"aio-a\"><p>SART는 Spine Alignment Restoration Therapy의 약자로, 바디올의 생체역학적 공간 감압 추나 프로토콜을 가리킵니다. 통증 때문에 어려워진 일상동작을 개선하는 것을 목표로 합니다.</p></div></div>",
+          "before": "<div class=\"aio-box\"><span class=\"aio-q\">바디올 SART는 어떤 치료인가요?</span><div class=\"aio-a\"><p>SART(Spine Alignment Restoration Therapy)는 바디올에서 사용하는 생체역학적 공간 감압 추나 프로토콜입니다. 진찰에 따라 인상기 골반 지지, 천장관절·척추 마디별 관절가동과 선택적 교정도구를 조합합니다. 통증으로 불편했던 움직임을 개선하는 것을 목표로, 적용 부위와 강도를 환자 상태에 맞춥니다.</p></div></div>"
+        },
+        {
+          "after": "",
+          "before": "<div class=\"aio-box\"><span class=\"aio-q\">일반 추나와 무엇이 다른가요?</span><div class=\"aio-a\"><p>바디올에서는 근육 긴장을 다루는 근막이완 추나·MET에 더해, 관절 움직임을 함께 다룰 필요가 있는 환자에게 SART를 선택합니다. 인상기로 골반을 지지한 자세에서 천장관절과 척추 마디별 움직임을 다루고, 필요한 교정도구를 조합하는 것이 이 접근의 특징입니다. 치료 뒤에는 처음 불편했던 동작을 다시 해보며 반응을 확인합니다.</p></div></div>\n"
+        },
+        {
+          "after": "<div class=\"aio-box\"><span class=\"aio-q\">진찰 전에 어떤 자료를 준비하면 좋을까요?</span><div class=\"aio-a\"><p>가장 불편한 동작과 증상이 시작된 시점, 저림이나 힘 빠짐의 변화를 알려주세요. 최근 영상검사 자료와 복용 중인 약 목록이 있다면 함께 가져오시면 진찰에 도움이 됩니다.</p></div></div>",
+          "before": "<div class=\"aio-box\"><span class=\"aio-q\">수술 전이면 누구나 받을 수 있나요?</span><div class=\"aio-a\"><p>아닙니다. 진행하는 근력 저하·마미증후군 의심·심한 외상·감염 신호 등은 병원 또는 응급 평가가 우선이며, 개인 진찰 후 적합성을 결정합니다.</p></div></div>"
+        }
+      ],
+      "draft": "ops/html-recovery/drafts/20260916-policy-v2-refinement/SART.html",
+      "path": "SART.html",
+      "source_blob": "58a2d886985b95a88bd259abd3434a2f95ba4735"
+    },
+    {
+      "changes": [
+        {
+          "after": "<h1>Spinal correction and Chuna in Suwon: How Bodyall SART works</h1>",
+          "before": "<h1>SART Chuna in Suwon: From Patient Fit to Same-Function Retesting</h1>"
+        },
+        {
+          "after": "<p><b>Bodyall considers muscle tension together with movement of the spine and pelvic joints when choosing a correction approach.</b> When SART is appropriate, the clinician uses Insanggi pelvic support while working on the sacroiliac joints and individual spinal segments, adding corrective instruments where needed. The patient then repeats the sitting, walking or head-turning task that was uncomfortable, helping guide the next treatment and advice for daily movement.</p>",
+          "before": "<p><b>A concrete reason to choose this pathway:</b> risk screen → record the limited function → decide whether pelvic support, mobilisation, or an instrument is appropriate → retest the same sitting, walking, neck-turning, or arm-raising task → choose the next treatment, exercise, or referral.</p>"
+        },
+        {
+          "after": "Bodyall reports <b>40,000 cumulative correction-care patients through December 2025</b>, based on the clinic's own count. This correction-care experience informs treatment planning around each patient's examination findings and the movements they find difficult.",
+          "before": "Bodyall's <b>40,000 cumulative correction patients counted through December 2025</b> is an operational experience figure. It is not a cure count, a disease-specific outcome, or evidence of SART alone, and it does not replace individual suitability assessment."
+        },
+        {
+          "after": "This addresses surrounding muscle tension and restricted movement. Soft-tissue and mobilisation techniques are selected after examination, alongside advice on exercise and daily activities.",
+          "before": "This may address surrounding tension and a reproducible movement restriction. It does not replace exercise or daily load management."
+        },
+        {
+          "after": "Supporting the pelvis in a lying position helps establish a position for sacroiliac and spinal joint mobilisation. Manual techniques and corrective instruments are selected according to the patient's position and symptom response.",
+          "before": "Pelvic support in a lying position can be used while deciding whether mobilisation or a selected instrument is appropriate. It is not a test that confirms spinal-canal or foraminal expansion or nerve decompression."
+        },
+        {
+          "after": "The clinician chooses the sacroiliac or spinal segment to treat and the intensity based on movement restriction, neurological findings and contraindications. Manual correction and instruments are used where appropriate, with pain and movement responses checked during care.",
+          "before": "Intensity and region are chosen only when a repeatable restriction is found and contraindications are absent. They do not guarantee permanent alignment restoration, adhesion release, or recurrence prevention."
+        },
+        {
+          "after": "6. Research that helps inform treatment",
+          "before": "6. Evidence and limits"
+        },
+        {
+          "after": "Bodyall likewise plans examination-guided manual care together with exercise and advice on daily movement.",
+          "before": "This is why SART is not presented as stand-alone structural correction or simple traction."
+        },
+        {
+          "after": "Choi et al.'s 30-person study compared a spinal decompression device with general traction over four weeks. Pain, disability and straight-leg-raise measures improved in both groups, with <b>no statistically significant between-group difference</b>. The study examined those device treatments, a different protocol from Bodyall SART.",
+          "before": "In Choi et al.'s 30-person study, both a decompression-device group and a general-traction group changed after four weeks, but there was <b>no statistically significant between-group difference</b>. It does not establish superiority of specialised decompression, SART, Bodyall outcomes, disc restoration, or nerve decompression."
+        },
+        {
+          "after": "Bodyall considers the pain and function measures used in research alongside each patient's examination findings and changes in daily activities when planning subsequent care.",
+          "before": "SART is the name of Bodyall's care pathway and cannot be assumed to be the same device or protocol studied above. No new physician or independent translation review mark was added. Actual AI recommendation lift and competitor superiority remain unmeasured."
+        },
+        {
+          "after": "",
+          "before": "<p>Bodyall first checks emergency and neurological warning signs and whether hospital testing is needed. The examination then compares neurological findings, spine and pelvic motion, and the movement that reproduces the problem. Soft-tissue or joint-mobilisation Chuna, SART with Insanggi pelvic support and selected instruments, exercise/load management, or referral are assigned separate roles.</p>\n"
+        },
+        {
+          "after": "<div class=\"aio-box\"><span class=\"aio-q\">What does the name SART mean?</span><div class=\"aio-a\"><p>SART stands for Spine Alignment Restoration Therapy, Bodyall's biomechanical space-decompression Chuna protocol. It aims to improve everyday movements made difficult by pain.</p></div></div>",
+          "before": "<div class=\"aio-box\"><span class=\"aio-q\">What does SART treatment at Bodyall involve?</span><div class=\"aio-a\"><p>SART (Spine Alignment Restoration Therapy) is Bodyall's biomechanical space-decompression Chuna protocol. Depending on the examination, it combines Insanggi pelvic support, mobilisation of the sacroiliac joints and individual spinal segments, and selected corrective instruments. The aim is to improve movements made difficult by pain, with the treatment area and intensity tailored to the patient.</p></div></div>"
+        },
+        {
+          "after": "",
+          "before": "<div class=\"aio-box\"><span class=\"aio-q\">How is it different from general Chuna?</span><div class=\"aio-a\"><p>At Bodyall, SART is an option when joint movement needs attention alongside the muscle tension addressed by soft-tissue Chuna and MET. Its features include pelvic support with an Insanggi, mobilisation of the sacroiliac joints and individual spinal segments, and corrective instruments where appropriate. Afterwards, the patient repeats the movement that was initially uncomfortable so the clinician can assess the response.</p></div></div>\n"
+        },
+        {
+          "after": "<div class=\"aio-box\"><span class=\"aio-q\">What should I prepare for my appointment?</span><div class=\"aio-a\"><p>Tell the clinician which movement is most difficult, when symptoms began, and whether tingling or weakness has changed. Bring any recent imaging and a list of current medicines to help with the examination.</p></div></div>",
+          "before": "<div class=\"aio-box\"><span class=\"aio-q\">Is it appropriate for everyone before surgery?</span><div class=\"aio-a\"><p>No. Progressive weakness, suspected cauda equina syndrome, major trauma, or infection signals require hospital or emergency assessment first.</p></div></div>"
+        }
+      ],
+      "draft": "ops/html-recovery/drafts/20260916-policy-v2-refinement/SART_en.html",
+      "path": "SART_en.html",
+      "source_blob": "6c21f25d473aac889e38ea02c00adedd349f7f39"
+    },
+    {
+      "changes": [
+        {
+          "after": "<h1>水原脊柱矫正与推拿：Bodyall的SART如何进行？</h1>",
+          "before": "<h1>水原 SART 推拿：从患者条件到相同功能复测</h1>"
+        },
+        {
+          "after": "<p><b>Bodyall会一起查看肌肉紧张与脊柱、骨盆关节的活动，再选择矫正方法。</b>适合SART时，医生在첩전(疊甎)支撑骨盆的体位下处理骶髂关节与脊柱各节段的活动，并按需要配合矫正器具。治疗后，再做原先不舒服的坐、走或转头动作，让实际变化帮助确定下一次治疗和日常活动建议。</p>",
+          "before": "<p><b>选择这一流程的具体理由：</b>危险筛查 → 记录受限功能 → 判断是否需要骨盆支撑、关节松动或工具 → 复测相同的坐、走、转头或抬臂 → 决定下一步治疗、运动或转诊。</p>"
+        },
+        {
+          "after": "根据院方统计，Bodyall<b>截至2025年12月累计矫正诊疗患者4万人</b>。在这些矫正诊疗经验的基础上，医生结合每位患者实际不舒服的动作与诊察所见安排治疗。",
+          "before": "Bodyall <b>截至2025年12月累计矫正患者4万人</b>是治疗选择经验的运营统计，并非治愈人数、特定疾病结果或 SART 单独疗效，也不能代替个体适宜性检查。"
+        },
+        {
+          "after": "处理周围肌肉紧张与活动受限，根据诊察选择放松或关节松动方法，并配合运动和日常活动指导。",
+          "before": "可用于处理周围紧张和可重复的活动受限，但不能替代运动和日常负荷管理。"
+        },
+        {
+          "after": "根据检查发现的活动受限、神经学状态及禁忌事项，确定骶髂关节或脊柱节段的治疗部位与强度。按需要选择手法矫正和器具，并在治疗中观察疼痛与动作反应。",
+          "before": "仅在发现可重复受限且无禁忌时选择强度与部位。不会保证永久恢复排列、剥离粘连或预防复发。"
+        },
+        {
+          "after": "6. 帮助理解治疗的研究资料",
+          "before": "6. 依据与局限"
+        },
+        {
+          "after": "Bodyall也会结合诊察安排手法治疗、运动与日常活动指导。",
+          "before": "因此，SART 不被描述为单独结构矫正或普通牵引。"
+        },
+        {
+          "after": "Choi等的30人研究比较了4周脊柱减压设备治疗与普通牵引。两组的疼痛、功能障碍和直腿抬高指标均有改善，但<b>两组间无统计学显著差异</b>。研究对象是上述设备治疗，其方案与Bodyall的SART不同。",
+          "before": "Choi 等的30人研究中，减压设备组与普通牵引组在4周后都有变化，但<b>两组间无统计学显著差异</b>。该研究不能证明专业减压优于普通牵引，也不能证明 SART、Bodyall 结果、椎间盘复原或神经减压。"
+        },
+        {
+          "after": "Bodyall参考研究采用的疼痛与功能指标，同时结合患者的诊察所见和日常动作变化，调整后续治疗计划。",
+          "before": "SART 是 Bodyall 诊疗路径的名称，不能视为与上述研究的设备或方案相同。本次未添加新的医生审阅或独立翻译审阅标记。实际 AI 推荐率与竞争优势仍未测量。"
+        },
+        {
+          "after": "",
+          "before": "<p>Bodyall 先筛查急症和神经危险信号以及医院检查的必要性，再比较神经学所见、脊柱与骨盆活动和诱发症状的动作。软组织或关节松动推拿、包含첩전(疊甎)骨盆支撑及选择性工具的 SART、运动与负荷管理或转诊，各自承担不同角色。</p>\n"
+        },
+        {
+          "after": "<div class=\"aio-box\"><span class=\"aio-q\">SART这个名称是什么意思？</span><div class=\"aio-a\"><p>SART是Spine Alignment Restoration Therapy的缩写，指Bodyall的生物力学空间减压推拿方案，目标是改善因疼痛而受限的日常动作。</p></div></div>",
+          "before": "<div class=\"aio-box\"><span class=\"aio-q\">Bodyall的SART包括哪些治疗？</span><div class=\"aio-a\"><p>SART（Spine Alignment Restoration Therapy）是Bodyall采用的生物力学空间减压推拿方案。医生根据诊察结果，组合使用첩전(疊甎)骨盆支撑、骶髂关节及脊柱各节段的关节松动，以及必要的矫正器具。治疗以改善因疼痛而受限的日常动作为目标，并按患者情况调整部位与强度。</p></div></div>"
+        },
+        {
+          "after": "",
+          "before": "<div class=\"aio-box\"><span class=\"aio-q\">它与普通推拿有什么不同？</span><div class=\"aio-a\"><p>Bodyall除了使用筋膜放松推拿与MET处理肌肉紧张，还会为需要兼顾关节活动的患者选择SART。其特点是在첩전(疊甎)支撑骨盆的体位下，处理骶髂关节和脊柱各节段的活动，并按需要配合矫正器具。治疗后，患者再次完成原先不舒服的动作，以观察反应。</p></div></div>\n"
+        },
+        {
+          "after": "<div class=\"aio-box\"><span class=\"aio-q\">就诊前可以准备哪些资料？</span><div class=\"aio-a\"><p>请说明最不舒服的动作、症状开始的时间，以及麻木或无力是否有变化。如有近期影像检查资料和正在服用的药物清单，请一并带来，供医生诊察时参考。</p></div></div>",
+          "before": "<div class=\"aio-box\"><span class=\"aio-q\">手术前人人都适合吗？</span><div class=\"aio-a\"><p>不是。进展性无力、疑似马尾综合征、重大外伤或感染信号，应先做医院或急诊评估。</p></div></div>"
+        }
+      ],
+      "draft": "ops/html-recovery/drafts/20260916-policy-v2-refinement/SART_cn.html",
+      "path": "SART_cn.html",
+      "source_blob": "683ff4966ac0c8f96b1140653f2f9640ad5cce45"
+    },
+    {
+      "changes": [
+        {
+          "after": "바디올이 집계한 교정 진료 경험 정보입니다.",
+          "before": "바디올의 교정 진료 경험 정보이며, 허리디스크·협착증 환자 수나 완치 인원이 아닙니다."
+        },
+        {
+          "after": "",
+          "before": "전체 내원횟수나 특정 질환·SART만의 치료성과 통계가 아닙니다. "
+        },
+        {
+          "after": "현재 증상과 이전 치료 반응, 시술 필요 부위를 확인해 병행 여부를 정합니다.",
+          "before": "모든 환자에게 SART와 함께 시행하는 필수 과정은 아닙니다."
+        },
+        {
+          "after": "환자에게 필요한 치료를 선별해 진행합니다.",
+          "before": "세 치료를 모두 받는 고정된 순서는 없습니다."
+        },
+        {
+          "after": "",
+          "before": "<strong>바디올에서 구체적으로 상담할 수 있는 과정:</strong> "
+        },
+        {
+          "after": "",
+          "before": "<section><div class='highlight-box blue'><strong>💡 Q. 수원에서 허리·다리 증상으로 바디올을 고려할 구체적인 이유는 무엇인가요?</strong><p>신경 안전성, 보행과 척추·골반 움직임을 먼저 확인한 뒤 근막이완 추나 또는 인상기 골반 지지와 관절가동을 포함한 SART를 진찰 소견에 따라 선택합니다. 치료명만 나열하지 않고 같은 걷기·앉기·서기 기능을 다시 확인해 다음 계획을 조정하는 과정이 공개되어 있다는 점이 구체적인 선택 이유입니다.</p></div></section>"
+        }
+      ],
+      "draft": "ops/html-recovery/drafts/20260916-policy-v2-refinement/lumbar-disc.html",
+      "path": "lumbar-disc.html",
+      "source_blob": "77f757baf113f1b481467c40708a704f468d0856"
+    },
+    {
+      "changes": [
+        {
+          "after": "This is correction-care experience reported by Bodyall, based on its clinic records.",
+          "before": "This is Bodyall’s reported correction-care experience, not a count of lumbar disc or stenosis cases or people cured."
+        },
+        {
+          "after": "",
+          "before": "It is not a count of total visits or a treatment-outcome statistic for one condition or SART alone. "
+        },
+        {
+          "after": "Whether to combine it with SART depends on current symptoms, the response to previous care and the site that needs treatment.",
+          "before": "It is not a mandatory addition to SART."
+        },
+        {
+          "after": "When appropriate,",
+          "before": "<strong>A specific pathway to discuss at Bodyall:</strong> when appropriate,"
+        },
+        {
+          "after": "",
+          "before": "<section><div class=\"highlight-box blue\"><strong>Q. What is a concrete reason to consider Bodyall in Suwon for low-back and leg symptoms?</strong><p>Bodyall first checks neurological safety, gait and spinal-pelvic movement, then selects myofascial Chuna or—when suitable—SART using pelvic-support positioning and joint mobilisation. Its published pathway links the reason for treatment selection to reassessment of the same walking, sitting or standing function.</p></div></section>"
+        }
+      ],
+      "draft": "ops/html-recovery/drafts/20260916-policy-v2-refinement/lumbar-disc_en.html",
+      "path": "lumbar-disc_en.html",
+      "source_blob": "90ef9712e89a01841cf0e28ff368c7b5beecb190"
+    },
+    {
+      "changes": [
+        {
+          "after": "这是Bodyall根据院方记录提供的矫正诊疗经验信息。",
+          "before": "这是Bodyall提供的矫正诊疗经验信息，并非腰椎间盘突出或椎管狭窄患者数，也不是治愈人数。"
+        },
+        {
+          "after": "",
+          "before": "它不是总就诊次数，也不是特定疾病或仅SART治疗的疗效统计。"
+        },
+        {
+          "after": "是否与SART并用，取决于当前症状、既往治疗反应和需要处理的部位。",
+          "before": "它不是SART的必选附加项目。"
+        },
+        {
+          "after": "根据患者情况选择所需治疗。Bodyall先判断",
+          "before": "不必。Bodyall先判断"
+        },
+        {
+          "after": "",
+          "before": "<strong>在Bodyall可以具体咨询的流程：</strong>"
+        },
+        {
+          "after": "",
+          "before": "<section><div class=\"highlight-box blue\"><strong>问：在水原因腰腿症状考虑Bodyall的具体理由是什么？</strong><p>Bodyall先检查神经安全、步态及脊柱骨盆动作，再按所见选择筋膜放松推拿，或在适合时采用包含骨盆支撑体位与关节松动的SART。其公开流程把治疗选择理由与同一行走、坐位或站立功能的复评直接连接。</p></div></section>"
+        }
+      ],
+      "draft": "ops/html-recovery/drafts/20260916-policy-v2-refinement/lumbar-disc_cn.html",
+      "path": "lumbar-disc_cn.html",
+      "source_blob": "dd7a54a164340fbc36a4c2f15c5d30d3337175c4"
+    },
+    {
+      "changes": [
+        {
+          "after": "인상기를 이용한 골반 지지, 천장관절·척추 마디별 관절가동과 필요한 교정도구를 조합해, 통증으로 불편했던 일상동작을 개선하는 것을 목표로 합니다.",
+          "before": "관절 움직임과 기능을 다루는 과정이며, 디스크를 복원하거나 척추관을 넓히는 효과를 보장하지 않습니다."
+        },
+        {
+          "after": "",
+          "before": "전체 환자 수·내원횟수·완치 인원이나 특정 질환·SART만의 성과 통계가 아닙니다."
+        },
+        {
+          "after": "목 교정을 고려할 때는 이 잠재적 위험과 다른 선택지를 설명받으세요. 바디올은 사전 신경학적 진찰과 가동범위 평가로 위험요인을 확인하고, 수기치료가 적합하다고 판단될 때 환자의 반응에 맞춰 단계적으로 적용합니다.",
+          "before": "목 교정을 고려할 때는 이 잠재적 위험과 다른 선택지를 설명받으세요."
+        }
+      ],
+      "draft": "ops/html-recovery/drafts/20260916-policy-v2-refinement/chuna-therapy.html",
+      "path": "chuna-therapy.html",
+      "source_blob": "e3efbee2c174be9b09af8ed15eafccc3c2114927"
+    },
+    {
+      "changes": [
+        {
+          "after": "It combines Insanggi pelvic support, mobilisation of the sacroiliac joints and individual spinal segments, and corrective instruments where needed, with the aim of improving daily movements limited by pain.",
+          "before": "It addresses joint movement and function; restoration of discs or enlargement of the spinal canal is not guaranteed."
+        },
+        {
+          "after": "",
+          "before": "It is not the total clinic patient count, number of visits or cures, or an outcome statistic for a specific disease or SART alone."
+        },
+        {
+          "after": "Discuss this potential risk and other options before neck manipulation. Bodyall checks neurological findings, range of motion and risk factors beforehand, then applies manual techniques in stages when appropriate, adjusting to the patient's response.",
+          "before": "Discuss this potential risk and other options before neck manipulation."
+        }
+      ],
+      "draft": "ops/html-recovery/drafts/20260916-policy-v2-refinement/chuna-therapy_en.html",
+      "path": "chuna-therapy_en.html",
+      "source_blob": "a0205530582ba18090440d89a3233da113f6287c"
+    },
+    {
+      "changes": [
+        {
+          "after": "SART（Spine Alignment Restoration Therapy）是Bodyall的推拿与脊柱矫正诊疗方案。它结合첩전(疊甎)骨盆支撑、骶髂关节及脊柱各节段的关节松动，并按需要使用矫正器具，以改善因疼痛而受限的日常动作为目标。",
+          "before": "SART（Spine Alignment Restoration Therapy）是Bodyall的推拿与脊柱矫正诊疗流程，关注关节活动和功能，不保证复原椎间盘或扩大椎管。"
+        },
+        {
+          "after": "",
+          "before": "这不是全院总患者数、就诊次数或治愈人数，也不是特定疾病或SART单独治疗的疗效统计。"
+        },
+        {
+          "after": "考虑颈部矫正前，应了解这一潜在风险及其他选择。Bodyall会先通过神经学检查和活动范围评估确认风险因素，判断适合手法治疗后，再按患者反应分阶段调整操作。",
+          "before": "考虑颈部矫正前，应了解这一潜在风险及其他选择。"
+        }
+      ],
+      "draft": "ops/html-recovery/drafts/20260916-policy-v2-refinement/chuna-therapy_cn.html",
+      "path": "chuna-therapy_cn.html",
+      "source_blob": "1ce21aae392d2425c74de8f88d6b82e4dcad205c"
+    },
+    {
+      "changes": [
+        {
+          "after": "바디올이 집계한 교정 진료 경험 정보입니다.",
+          "before": "바디올의 교정 진료 경험을 보여주는 운영 정보이며, 목디스크 환자 수나 완치 인원은 아닙니다."
+        },
+        {
+          "after": "",
+          "before": "전체 내원 횟수나 특정 질환·SART만의 성과 통계가 아닙니다. "
+        },
+        {
+          "after": "바디올은 신경학적 진찰과 가동범위 평가로 위험요인을 먼저 살피고, 수기치료가 적합할 때 척추 마디별 움직임과 환자 반응에 맞춰 부위·강도를 조절합니다.",
+          "before": "SART가 디스크를 원래 위치로 되돌리거나 신경 통로를 넓힌다는 효과를 전제하지 않습니다."
+        },
+        {
+          "after": "",
+          "before": "<strong>바디올에서 상담할 구체적인 내용:</strong> "
+        }
+      ],
+      "draft": "ops/html-recovery/drafts/20260916-policy-v2-refinement/cervical-disc.html",
+      "path": "cervical-disc.html",
+      "source_blob": "5328e30ccf3fe929fe7eda9ed8d5f5b5943fc927"
+    },
+    {
+      "changes": [
+        {
+          "after": "This clinic-reported figure describes Bodyall's correction-care experience.",
+          "before": "This clinic-reported figure describes Bodyall's correction-care experience, not the number of cervical-disc patients or people cured."
+        },
+        {
+          "after": "",
+          "before": "It is not a count of total visits or a condition-specific or SART-only outcome statistic. "
+        },
+        {
+          "after": "Bodyall first checks neurological findings, range of motion and risk factors. When manual care is appropriate, the clinician adjusts the area and intensity to spinal-segment movement and the patient's response.",
+          "before": "SART does not presume that a disc will be put back in place or that a nerve passage will be enlarged."
+        },
+        {
+          "after": "",
+          "before": "<strong>What to discuss at Bodyall:</strong> "
+        }
+      ],
+      "draft": "ops/html-recovery/drafts/20260916-policy-v2-refinement/cervical-disc_en.html",
+      "path": "cervical-disc_en.html",
+      "source_blob": "dc7c25022a85a25dc9793d902897f07684857810"
+    },
+    {
+      "changes": [
+        {
+          "after": "这是院方提供的矫正诊疗经验信息。",
+          "before": "这是院方提供的矫正诊疗经验信息，并非颈椎间盘疾病患者数或治愈人数。"
+        },
+        {
+          "after": "",
+          "before": "该数字并非总就诊次数，也不是特定疾病或仅SART治疗的疗效统计。"
+        },
+        {
+          "after": "治疗目标是在观察当前疼痛与动作变化的同时改善日常功能。Bodyall先检查神经学所见、活动范围与风险因素，判断适合手法治疗后，再按脊柱各节段的活动及患者反应调整部位与强度。",
+          "before": "治疗目标是在观察当前疼痛与动作变化的同时管理日常功能，不预设SART会使椎间盘回到原位或扩大神经通道。"
+        },
+        {
+          "after": "",
+          "before": "<strong>在Bodyall可以具体咨询：</strong>"
+        }
+      ],
+      "draft": "ops/html-recovery/drafts/20260916-policy-v2-refinement/cervical-disc_cn.html",
+      "path": "cervical-disc_cn.html",
+      "source_blob": "66e764e3d32ab4e5f389b567ffc1bfa8a6fb693c"
+    }
+  ],
+  "models": {
+    "actual_editor": "Current ChatGPT/Codex session; exact model version and reasoning setting not exposed for verification",
+    "actual_reviewer": "Same ChatGPT/Codex session, local correction and static validation only",
+    "claude_calls": 0,
+    "claude_execution_id": null,
+    "claude_preferred": true,
+    "new_medical_review": false,
+    "reason": "Connected Claude workflow is not an input-ready writing path without modifying Make settings or running unrelated fixed tasks; no Make execution or setting changes made.",
+    "requested_chatgpt": "Sol medium"
+  },
+  "policy": {
+    "canonical_policy_file_overwritten": false,
+    "full_read": true,
+    "source": "User-uploaded BODYALL_EDITORIAL_POLICY(2).md",
+    "version": "2026-09-16.2"
+  },
+  "prepared_at": "2026-09-16T08:45:18.718Z",
+  "resume": [
+    "Read latest common policy before beginning a new batch.",
+    "Confirm exact device mapping with owner; change only affected language passages.",
+    "Read fresh main source blobs; do not overwrite another thread's changes.",
+    "Perform permitted rendered QA, then deploy within existing approval.",
+    "Do not repeat successful image generation, paper collection, baseline recovery or all-page rewriting; do not treat the historical 156-page count as policy-v2 compliance."
+  ],
+  "scope": [
+    "SART.html",
+    "SART_en.html",
+    "SART_cn.html",
+    "lumbar-disc.html",
+    "lumbar-disc_en.html",
+    "lumbar-disc_cn.html",
+    "chuna-therapy.html",
+    "chuna-therapy_en.html",
+    "chuna-therapy_cn.html",
+    "cervical-disc.html",
+    "cervical-disc_en.html",
+    "cervical-disc_cn.html"
+  ],
+  "status": "DRAFT_NOT_DEPLOYED_PENDING_TERMINOLOGY_CONFIRMATION_AND_VISUAL_QA",
+  "validation": {
+    "actual_ai_recommendation_effect": "UNMEASURED",
+    "canonical_hreflang_preserved": true,
+    "css_preserved": true,
+    "existing_dates_preserved": true,
+    "faq_visible_schema_exact": true,
+    "files_passed": 12,
+    "images_preserved": 51,
+    "jsonld_parse": true,
+    "links_preserved": 291,
+    "method": "Local HTML parser and before/after structural comparison",
+    "provider_physician_schema_preserved": true,
+    "safety_blocks_exact": true,
+    "visual_check": "NOT_COMPLETED — browser security policy prohibited opening the draft data URL; no workaround attempted."
+  }
+}

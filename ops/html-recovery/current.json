@@ -158,16 +158,12 @@
     "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
   ],
   "active_run": {
-    "owner": "herbmed0002-final-and-cheopjeon-sweep-20260916",
-    "single_writer_active": false,
-    "stage": "COMPLETED_PUBLIC_VERIFIED",
     "base_main_head": "631b05a776e72b256f956fc530396627f2ced9d2",
-    "final_main_head": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
     "exact_candidate_hashes": {
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html": "5717ed6a6f93ae4619b3f1aa8792a4255f6382f68efb109d64f3029fcd8ceb66",
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html": "37d7f31d6a2d003f0d35d16d842dda30bf6ebf328fb13fc07af3729150305546",
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html": "e38eb2600bbaa840c46ff1f1a3afb118d5a84cf0ef8f3d265b9552992d42a0ce",
       "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html": "e975200250c5a322123aff6c03c78c99f57f6dd54b9fbc98d78ea65e1f9fb057",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html": "5717ed6a6f93ae4619b3f1aa8792a4255f6382f68efb109d64f3029fcd8ceb66",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html": "e38eb2600bbaa840c46ff1f1a3afb118d5a84cf0ef8f3d265b9552992d42a0ce",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html": "37d7f31d6a2d003f0d35d16d842dda30bf6ebf328fb13fc07af3729150305546",
       "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html": "9edb7df06682e5c7a6dcd30f1e2ee87480358f5b052101e24fac7783ce9e8b9b",
       "SART_cn.html": "540c4b4fdb7107ccbfd266b62516a9b55add49f28b77b26e2c6c55b280eef9fd",
       "chuna-therapy_cn.html": "ed53141b209116b388569d978e256d499e62434886fedb358439eae40ff42226",
@@ -178,11 +174,15 @@
       "lumbar-disc_cn.html": "b9c5288fc4ec8ecdbe36ff90aec75f0e5b83538a24de4ee49385b5d40c39ba29",
       "pain-spine-clinic_cn.html": "033a6cd23d30bc93836c1c39597eebbe1a7bea210f5a5c48936491b954493722"
     },
+    "final_main_head": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
+    "ledger_exact_readback": true,
+    "owner": "herbmed0002-final-and-cheopjeon-sweep-20260916",
+    "pages_run_id": 35067780017,
     "published_blobs": {
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html": "011c5d4c2eb156d35190f74e072be53913111982",
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html": "13a52fe8576f56b32ab08c8ceecacdeeb41b2180",
-      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html": "6761a72d4529aba7c80d1f660cb93ec29d27af6a",
       "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html": "b443618ecc949237179a0212fb245b408e342d11",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html": "011c5d4c2eb156d35190f74e072be53913111982",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html": "6761a72d4529aba7c80d1f660cb93ec29d27af6a",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html": "13a52fe8576f56b32ab08c8ceecacdeeb41b2180",
       "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html": "9f2751e0a1709613ca1306aea34b0203b4c994bf",
       "SART_cn.html": "683ff4966ac0c8f96b1140653f2f9640ad5cce45",
       "chuna-therapy_cn.html": "1ce21aae392d2425c74de8f88d6b82e4dcad205c",
@@ -193,10 +193,10 @@
       "lumbar-disc_cn.html": "dd7a54a164340fbc36a4c2f15c5d30d3337175c4",
       "pain-spine-clinic_cn.html": "3aff81e197a5be01b32de4a9ff85ed0d059a5cb7"
     },
-    "pages_run_id": 35067780017,
     "release_record": "ops/html-recovery/runs/20260916-herbmed0002-cheopjeon-release.json",
     "review_record": "ops/html-recovery/reviews/20260916-herbmed0002-final-candidate.json",
-    "ledger_exact_readback": true,
+    "single_writer_active": false,
+    "stage": "COMPLETED_PUBLIC_VERIFIED",
     "updated_at": "2026-09-16T07:19:21Z"
   },
   "additional_index_completion_rows": [
@@ -496,38 +496,30 @@
       "verification_receipt": "run_glp1_0001_final/public_verification.json"
     },
     {
-      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "sha256": "cb436d2263d699c307ea0e7627a27fef7ca45152b80e819db2e4214a078cb15a",
+      "final_repository_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
       "git_blob": "9dd67ffff02b62d0c8384ea2c28ec5280f1fc53f",
+      "latest_standard_completed": true,
+      "limits": [
+        "ACOG postpartum activity guidance does not establish BodyallFit or herbal efficacy.",
+        "The Menopause Society distinguishes aging/lifestyle weight gain from menopause-related abdominal redistribution.",
+        "NICE obesity guidance supports multicomponent assessment and management but not the exact BodyallFit combination.",
+        "No independent outcome evidence establishes BMR restoration, spot reduction or superiority for this pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; responsive CSS and public desktop overflow were checked."
+      ],
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
       "publication_commit": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
-      "final_repository_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
       "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0002-final-candidate.json",
+      "sha256": "cb436d2263d699c307ea0e7627a27fef7ca45152b80e819db2e4214a078cb15a",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
       "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0002-release.json",
-      "verified_at": "2026-09-16T05:59:27.019Z",
-      "limits": [
-        "ACOG postpartum activity guidance does not establish BodyallFit or herbal efficacy.",
-        "The Menopause Society distinguishes aging/lifestyle weight gain from menopause-related abdominal redistribution.",
-        "NICE obesity guidance supports multicomponent assessment and management but not the exact BodyallFit combination.",
-        "No independent outcome evidence establishes BMR restoration, spot reduction or superiority for this pathway.",
-        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
-        "Direct 360px browser emulation was unavailable; responsive CSS and public desktop overflow were checked."
-      ]
+      "verified_at": "2026-09-16T05:59:27.019Z"
     },
     {
-      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "sha256": "2bddcac480670675aa8961fbdbd6faa5b055c4bd61adbfdefd584ba9739a74a2",
+      "final_repository_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
       "git_blob": "480c060d55fb0d39e51d1eba161397f01f963dd8",
-      "publication_commit": "1fdc5baf610f79ce4e98b0173c4f2cfa805078c2",
-      "final_repository_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
-      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0002-final-candidate.json",
-      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0002-release.json",
-      "verified_at": "2026-09-16T05:59:27.019Z",
+      "latest_standard_completed": true,
       "limits": [
         "ACOG postpartum activity guidance does not establish BodyallFit or herbal efficacy.",
         "The Menopause Society distinguishes aging/lifestyle weight gain from menopause-related abdominal redistribution.",
@@ -535,20 +527,20 @@
         "No independent outcome evidence establishes BMR restoration, spot reduction or superiority for this pathway.",
         "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
         "Direct 360px browser emulation was unavailable; responsive CSS and public desktop overflow were checked."
-      ]
+      ],
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
+      "publication_commit": "1fdc5baf610f79ce4e98b0173c4f2cfa805078c2",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0002-final-candidate.json",
+      "sha256": "2bddcac480670675aa8961fbdbd6faa5b055c4bd61adbfdefd584ba9739a74a2",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0002-release.json",
+      "verified_at": "2026-09-16T05:59:27.019Z"
     },
     {
-      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "sha256": "ee786e3ceba2cdd7ea0cc72d0cc01547cc1b4a19eae3bf1d202363a27a6cd4ed",
-      "git_blob": "ce0aa8e5ebee3a13ef0a4b0c821c866793be30fa",
-      "publication_commit": "8f2a52c528fe258b2e4b614210e79bbb2f53e2a5",
       "final_repository_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
-      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0002-final-candidate.json",
-      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0002-release.json",
-      "verified_at": "2026-09-16T05:59:27.019Z",
+      "git_blob": "ce0aa8e5ebee3a13ef0a4b0c821c866793be30fa",
+      "latest_standard_completed": true,
       "limits": [
         "ACOG postpartum activity guidance does not establish BodyallFit or herbal efficacy.",
         "The Menopause Society distinguishes aging/lifestyle weight gain from menopause-related abdominal redistribution.",
@@ -556,7 +548,15 @@
         "No independent outcome evidence establishes BMR restoration, spot reduction or superiority for this pathway.",
         "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
         "Direct 360px browser emulation was unavailable; responsive CSS and public desktop overflow were checked."
-      ]
+      ],
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
+      "publication_commit": "8f2a52c528fe258b2e4b614210e79bbb2f53e2a5",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0002-final-candidate.json",
+      "sha256": "ee786e3ceba2cdd7ea0cc72d0cc01547cc1b4a19eae3bf1d202363a27a6cd4ed",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0002-release.json",
+      "verified_at": "2026-09-16T05:59:27.019Z"
     },
     {
       "git_blob": "aec205e38107bf3d1cb1af7ff4cc02e36159071b",
@@ -659,39 +659,31 @@
       "verification_receipt": "run_maintenance4_final/release_receipt.json"
     },
     {
-      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "sha256": "3eaa09a1aafe741a6697d2596c8892655763afb58303a5628a64f2dc29ea56aa",
+      "final_repository_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
       "git_blob": "3929bd2ae51018f7def89856ed18892576fbac3a",
+      "latest_standard_completed": true,
+      "limits": [
+        "Stress may increase or decrease intake; it does not establish a deterministic stress-to-binge-eating diagnosis.",
+        "Multicomponent obesity guidance supports diet, physical activity and behavior change but does not establish independent BodyallFit herbal efficacy.",
+        "Swelling has multiple possible causes and requires separate assessment; urgent signals are preserved.",
+        "No claim of cortisol normalization, edema cure, BMR restoration, guaranteed weight loss or superiority is made.",
+        "Both referenced 0005 images were absent and were removed without creating or substituting assets.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px viewport validation remains in the final Sol anomaly sweep; public desktop overflow was zero."
+      ],
+      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
       "publication_commit": "cc4e95a98b80be47a9745c94e730a5089296d17a",
-      "final_repository_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
       "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0005-final-candidate.json",
+      "sha256": "3eaa09a1aafe741a6697d2596c8892655763afb58303a5628a64f2dc29ea56aa",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
       "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0005-release.json",
-      "verified_at": "2026-09-16T06:18:28.888Z",
-      "limits": [
-        "Stress may increase or decrease intake; it does not establish a deterministic stress-to-binge-eating diagnosis.",
-        "Multicomponent obesity guidance supports diet, physical activity and behavior change but does not establish independent BodyallFit herbal efficacy.",
-        "Swelling has multiple possible causes and requires separate assessment; urgent signals are preserved.",
-        "No claim of cortisol normalization, edema cure, BMR restoration, guaranteed weight loss or superiority is made.",
-        "Both referenced 0005 images were absent and were removed without creating or substituting assets.",
-        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
-        "Direct 360px viewport validation remains in the final Sol anomaly sweep; public desktop overflow was zero."
-      ]
+      "verified_at": "2026-09-16T06:18:28.888Z"
     },
     {
-      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "sha256": "4d92a5f696d2d1744ed199c777a32e765757dbfc890375e08576fa5f6becec52",
+      "final_repository_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
       "git_blob": "c865a6f519719e85072a1520662fbaf696df2c89",
-      "publication_commit": "20b60e63b6a6a796300130723b681d0a3b9aa014",
-      "final_repository_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
-      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0005-final-candidate.json",
-      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0005-release.json",
-      "verified_at": "2026-09-16T06:18:28.888Z",
+      "latest_standard_completed": true,
       "limits": [
         "Stress may increase or decrease intake; it does not establish a deterministic stress-to-binge-eating diagnosis.",
         "Multicomponent obesity guidance supports diet, physical activity and behavior change but does not establish independent BodyallFit herbal efficacy.",
@@ -700,20 +692,20 @@
         "Both referenced 0005 images were absent and were removed without creating or substituting assets.",
         "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
         "Direct 360px viewport validation remains in the final Sol anomaly sweep; public desktop overflow was zero."
-      ]
+      ],
+      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
+      "publication_commit": "20b60e63b6a6a796300130723b681d0a3b9aa014",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0005-final-candidate.json",
+      "sha256": "4d92a5f696d2d1744ed199c777a32e765757dbfc890375e08576fa5f6becec52",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0005-release.json",
+      "verified_at": "2026-09-16T06:18:28.888Z"
     },
     {
-      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "sha256": "17f536dbdeb5c3caff55244ec01ecb9d69e5e052c58e75a438c3e67da502b26f",
-      "git_blob": "3c45f379dffb51493ea3c5e85adf3bf459d0d82a",
-      "publication_commit": "7cf9706d6e456376f99e86da385d3be5910fbc0f",
       "final_repository_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
-      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0005-final-candidate.json",
-      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0005-release.json",
-      "verified_at": "2026-09-16T06:18:28.888Z",
+      "git_blob": "3c45f379dffb51493ea3c5e85adf3bf459d0d82a",
+      "latest_standard_completed": true,
       "limits": [
         "Stress may increase or decrease intake; it does not establish a deterministic stress-to-binge-eating diagnosis.",
         "Multicomponent obesity guidance supports diet, physical activity and behavior change but does not establish independent BodyallFit herbal efficacy.",
@@ -722,7 +714,15 @@
         "Both referenced 0005 images were absent and were removed without creating or substituting assets.",
         "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
         "Direct 360px viewport validation remains in the final Sol anomaly sweep; public desktop overflow was zero."
-      ]
+      ],
+      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
+      "publication_commit": "7cf9706d6e456376f99e86da385d3be5910fbc0f",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0005-final-candidate.json",
+      "sha256": "17f536dbdeb5c3caff55244ec01ecb9d69e5e052c58e75a438c3e67da502b26f",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0005-release.json",
+      "verified_at": "2026-09-16T06:18:28.888Z"
     },
     {
       "git_blob": "68d938ab97d863d1284a40db3e27352c505a2d5b",
@@ -773,64 +773,64 @@
       "verification_receipt": "run_maintenance6_final/public_verification.json"
     },
     {
-      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "sha256": "2bf395ccef6c3e0355911856054342b484fb67bcc0d551d2c67bf734ba0d5efd",
+      "final_repository_head": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
       "git_blob": "8b310739fa112852d6910ce874f24da78cb2cf16",
+      "latest_standard_completed": true,
+      "limits": [
+        "SURMOUNT-1 original PMID 39996356 is distinct from correction PMID 40832789.",
+        "Lean mass is not equated with skeletal muscle, sarcopenia or BMR decline.",
+        "No Bodyall herbal muscle-preservation or BMR-restoration efficacy claim is made.",
+        "Actual non-branded AI recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation remains in the final Sol anomaly sweep; responsive CSS and public desktop overflow were checked."
+      ],
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
       "publication_commit": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
-      "final_repository_head": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
       "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0007-final-candidate.json",
+      "sha256": "2bf395ccef6c3e0355911856054342b484fb67bcc0d551d2c67bf734ba0d5efd",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
       "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0007-release.json",
-      "verified_at": "2026-09-16T06:38:57.223Z",
-      "limits": [
-        "SURMOUNT-1 original PMID 39996356 is distinct from correction PMID 40832789.",
-        "Lean mass is not equated with skeletal muscle, sarcopenia or BMR decline.",
-        "No Bodyall herbal muscle-preservation or BMR-restoration efficacy claim is made.",
-        "Actual non-branded AI recommendation lift remains unmeasured.",
-        "Direct 360px browser emulation remains in the final Sol anomaly sweep; responsive CSS and public desktop overflow were checked."
-      ]
+      "verified_at": "2026-09-16T06:38:57.223Z"
     },
     {
-      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "sha256": "1c60bc0d9f896929b72e4d928c73e4ebc3c32dc79f908d8b7c883f1c6d3036fd",
+      "final_repository_head": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
       "git_blob": "871e1b728b6b36150be1f513728d4aca090a46b1",
-      "publication_commit": "f2e8178506677e1069bbd102ed170426afcc60d8",
-      "final_repository_head": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
-      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0007-final-candidate.json",
-      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0007-release.json",
-      "verified_at": "2026-09-16T06:38:57.223Z",
+      "latest_standard_completed": true,
       "limits": [
         "SURMOUNT-1 original PMID 39996356 is distinct from correction PMID 40832789.",
         "Lean mass is not equated with skeletal muscle, sarcopenia or BMR decline.",
         "No Bodyall herbal muscle-preservation or BMR-restoration efficacy claim is made.",
         "Actual non-branded AI recommendation lift remains unmeasured.",
         "Direct 360px browser emulation remains in the final Sol anomaly sweep; responsive CSS and public desktop overflow were checked."
-      ]
+      ],
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
+      "publication_commit": "f2e8178506677e1069bbd102ed170426afcc60d8",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0007-final-candidate.json",
+      "sha256": "1c60bc0d9f896929b72e4d928c73e4ebc3c32dc79f908d8b7c883f1c6d3036fd",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0007-release.json",
+      "verified_at": "2026-09-16T06:38:57.223Z"
     },
     {
-      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
-      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "sha256": "ebe1b035cb5dbf4a2b214a5af07a345cb89bc87bf038efb376b324963b42de5d",
-      "git_blob": "7d5537b90804212389f3c2dec519cbc75a7d00b6",
-      "publication_commit": "8ef1a181cd6476bbde7ee47b9a9f57643c9d0cf9",
       "final_repository_head": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
-      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0007-final-candidate.json",
-      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0007-release.json",
-      "verified_at": "2026-09-16T06:38:57.223Z",
+      "git_blob": "7d5537b90804212389f3c2dec519cbc75a7d00b6",
+      "latest_standard_completed": true,
       "limits": [
         "SURMOUNT-1 original PMID 39996356 is distinct from correction PMID 40832789.",
         "Lean mass is not equated with skeletal muscle, sarcopenia or BMR decline.",
         "No Bodyall herbal muscle-preservation or BMR-restoration efficacy claim is made.",
         "Actual non-branded AI recommendation lift remains unmeasured.",
         "Direct 360px browser emulation remains in the final Sol anomaly sweep; responsive CSS and public desktop overflow were checked."
-      ]
+      ],
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
+      "publication_commit": "8ef1a181cd6476bbde7ee47b9a9f57643c9d0cf9",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0007-final-candidate.json",
+      "sha256": "ebe1b035cb5dbf4a2b214a5af07a345cb89bc87bf038efb376b324963b42de5d",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0007-release.json",
+      "verified_at": "2026-09-16T06:38:57.223Z"
     },
     {
       "final_repository_head": "9413a6ef4c71c78909d80a801105141c9f067475",
@@ -2436,61 +2436,61 @@
       "verified_at": "2026-09-16T03:47:49.850Z"
     },
     {
-      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html",
-      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "sha256": "e38eb2600bbaa840c46ff1f1a3afb118d5a84cf0ef8f3d265b9552992d42a0ce",
+      "final_repository_head": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
       "git_blob": "6761a72d4529aba7c80d1f660cb93ec29d27af6a",
+      "latest_standard_completed": true,
+      "limits": [
+        "Cited HRV research is a healthy-subject acute OMT study, not direct evidence for stellate-ganglion decompression or SART insomnia efficacy.",
+        "Cited Yokukansan material is a conference abstract in older adults with neurotic disorders and does not prove Bodyall individualized prescription efficacy or synergy with SART.",
+        "Actual non-branded AI recommendation lift remains unmeasured.",
+        "Direct 360px emulation was unavailable; responsive CSS, public desktop zero-overflow, canonical/og:url, schema and image loading were checked."
+      ],
+      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html",
       "publication_commit": "55b01b322a1e2e7c6474a05462be33a6bb4c94f2",
-      "final_repository_head": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
       "review_receipt": "ops/html-recovery/reviews/20260916-herbmed0002-final-candidate.json",
+      "sha256": "e38eb2600bbaa840c46ff1f1a3afb118d5a84cf0ef8f3d265b9552992d42a0ce",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html",
       "verification_receipt": "ops/html-recovery/runs/20260916-herbmed0002-cheopjeon-release.json",
-      "verified_at": "2026-09-16T07:19:21Z",
-      "limits": [
-        "Cited HRV research is a healthy-subject acute OMT study, not direct evidence for stellate-ganglion decompression or SART insomnia efficacy.",
-        "Cited Yokukansan material is a conference abstract in older adults with neurotic disorders and does not prove Bodyall individualized prescription efficacy or synergy with SART.",
-        "Actual non-branded AI recommendation lift remains unmeasured.",
-        "Direct 360px emulation was unavailable; responsive CSS, public desktop zero-overflow, canonical/og:url, schema and image loading were checked."
-      ]
+      "verified_at": "2026-09-16T07:19:21Z"
     },
     {
-      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
-      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "sha256": "37d7f31d6a2d003f0d35d16d842dda30bf6ebf328fb13fc07af3729150305546",
+      "final_repository_head": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
       "git_blob": "13a52fe8576f56b32ab08c8ceecacdeeb41b2180",
-      "publication_commit": "4bc25de534f670bf96ae37e47e7fe1026f5c6fd1",
-      "final_repository_head": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
-      "review_receipt": "ops/html-recovery/reviews/20260916-herbmed0002-final-candidate.json",
-      "verification_receipt": "ops/html-recovery/runs/20260916-herbmed0002-cheopjeon-release.json",
-      "verified_at": "2026-09-16T07:19:21Z",
+      "latest_standard_completed": true,
       "limits": [
         "Cited HRV research is a healthy-subject acute OMT study, not direct evidence for stellate-ganglion decompression or SART insomnia efficacy.",
         "Cited Yokukansan material is a conference abstract in older adults with neurotic disorders and does not prove Bodyall individualized prescription efficacy or synergy with SART.",
         "Actual non-branded AI recommendation lift remains unmeasured.",
         "Direct 360px emulation was unavailable; responsive CSS, public desktop zero-overflow, canonical/og:url, schema and image loading were checked."
-      ]
+      ],
+      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
+      "publication_commit": "4bc25de534f670bf96ae37e47e7fe1026f5c6fd1",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herbmed0002-final-candidate.json",
+      "sha256": "37d7f31d6a2d003f0d35d16d842dda30bf6ebf328fb13fc07af3729150305546",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herbmed0002-cheopjeon-release.json",
+      "verified_at": "2026-09-16T07:19:21Z"
     },
     {
-      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
-      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "sha256": "5717ed6a6f93ae4619b3f1aa8792a4255f6382f68efb109d64f3029fcd8ceb66",
-      "git_blob": "011c5d4c2eb156d35190f74e072be53913111982",
-      "publication_commit": "26a26b616bf8010ec5a6c0c253c2624a30817591",
       "final_repository_head": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
-      "review_receipt": "ops/html-recovery/reviews/20260916-herbmed0002-final-candidate.json",
-      "verification_receipt": "ops/html-recovery/runs/20260916-herbmed0002-cheopjeon-release.json",
-      "verified_at": "2026-09-16T07:19:21Z",
+      "git_blob": "011c5d4c2eb156d35190f74e072be53913111982",
+      "latest_standard_completed": true,
       "limits": [
         "Cited HRV research is a healthy-subject acute OMT study, not direct evidence for stellate-ganglion decompression or SART insomnia efficacy.",
         "Cited Yokukansan material is a conference abstract in older adults with neurotic disorders and does not prove Bodyall individualized prescription efficacy or synergy with SART.",
         "Actual non-branded AI recommendation lift remains unmeasured.",
         "Direct 360px emulation was unavailable; responsive CSS, public desktop zero-overflow, canonical/og:url, schema and image loading were checked."
-      ]
+      ],
+      "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
+      "publication_commit": "26a26b616bf8010ec5a6c0c253c2624a30817591",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herbmed0002-final-candidate.json",
+      "sha256": "5717ed6a6f93ae4619b3f1aa8792a4255f6382f68efb109d64f3029fcd8ceb66",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herbmed0002-cheopjeon-release.json",
+      "verified_at": "2026-09-16T07:19:21Z"
     },
     {
       "final_repository_head": "45bb5d7d74cbffc8cb84bfaac8151885a43592dc",
@@ -2772,38 +2772,30 @@
       "verified_at": "2026-09-16T05:03:51.522Z"
     },
     {
-      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
-      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "sha256": "01fc068756d96da42612e7bf6d61bb388336a8fc375a3d64ec2125d6b1d72f66",
+      "final_repository_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
       "git_blob": "49d42f72397d1b3dc3b5d914560c36c47949f3d9",
+      "latest_standard_completed": true,
+      "limits": [
+        "The 2015 cervical manipulation study involved only 10 healthy volunteers and 10 acute-neck-pain patients and measured immediate HRV, blood pressure and pain; it did not test insomnia, slow-wave sleep, vagus compression, cerebral perfusion, Bodyall SART or herbal combination care.",
+        "The 2019 Tian Wang Bu Xin Dan review included 14 studies and 1,256 participants but reported low methodological quality and insufficient adverse-event reporting; it does not establish direct 5-HT/GABA mechanisms, slow-wave sleep extension or synergy with cervical correction.",
+        "The 40,000 figure is cumulative correction patients through December 2025; MET and ultrasound are available processes, not insomnia outcomes, cure rates or superiority evidence.",
+        "No independent clinical outcome evidence establishes Bodyall SART or the exact combined care pathway for insomnia or palpitations.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; responsive CSS and reserved image dimensions passed static review and public desktop overflow was zero."
+      ],
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
       "publication_commit": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
-      "final_repository_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
       "review_receipt": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
+      "sha256": "01fc068756d96da42612e7bf6d61bb388336a8fc375a3d64ec2125d6b1d72f66",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
       "verification_receipt": "ops/html-recovery/runs/20260916-herb0008-release.json",
-      "verified_at": "2026-09-16T05:42:44.468Z",
-      "limits": [
-        "The 2015 cervical manipulation study involved only 10 healthy volunteers and 10 acute-neck-pain patients and measured immediate HRV, blood pressure and pain; it did not test insomnia, slow-wave sleep, vagus compression, cerebral perfusion, Bodyall SART or herbal combination care.",
-        "The 2019 Tian Wang Bu Xin Dan review included 14 studies and 1,256 participants but reported low methodological quality and insufficient adverse-event reporting; it does not establish direct 5-HT/GABA mechanisms, slow-wave sleep extension or synergy with cervical correction.",
-        "The 40,000 figure is cumulative correction patients through December 2025; MET and ultrasound are available processes, not insomnia outcomes, cure rates or superiority evidence.",
-        "No independent clinical outcome evidence establishes Bodyall SART or the exact combined care pathway for insomnia or palpitations.",
-        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
-        "Direct 360px browser emulation was unavailable; responsive CSS and reserved image dimensions passed static review and public desktop overflow was zero."
-      ]
+      "verified_at": "2026-09-16T05:42:44.468Z"
     },
     {
-      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
-      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "sha256": "7f126e1b1bb6c816d1336efb09c39d2df5ca9fc5fe6dec164b8c211085cca9f6",
+      "final_repository_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
       "git_blob": "eb27868c89d69ba1f0535d345ec47a6de5db3c2c",
-      "publication_commit": "c2fd942138bd8e5b2a005ddf72b5b0f75c2661ae",
-      "final_repository_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
-      "review_receipt": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
-      "verification_receipt": "ops/html-recovery/runs/20260916-herb0008-release.json",
-      "verified_at": "2026-09-16T05:42:44.468Z",
+      "latest_standard_completed": true,
       "limits": [
         "The 2015 cervical manipulation study involved only 10 healthy volunteers and 10 acute-neck-pain patients and measured immediate HRV, blood pressure and pain; it did not test insomnia, slow-wave sleep, vagus compression, cerebral perfusion, Bodyall SART or herbal combination care.",
         "The 2019 Tian Wang Bu Xin Dan review included 14 studies and 1,256 participants but reported low methodological quality and insufficient adverse-event reporting; it does not establish direct 5-HT/GABA mechanisms, slow-wave sleep extension or synergy with cervical correction.",
@@ -2811,20 +2803,20 @@
         "No independent clinical outcome evidence establishes Bodyall SART or the exact combined care pathway for insomnia or palpitations.",
         "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
         "Direct 360px browser emulation was unavailable; responsive CSS and reserved image dimensions passed static review and public desktop overflow was zero."
-      ]
+      ],
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
+      "publication_commit": "c2fd942138bd8e5b2a005ddf72b5b0f75c2661ae",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
+      "sha256": "7f126e1b1bb6c816d1336efb09c39d2df5ca9fc5fe6dec164b8c211085cca9f6",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herb0008-release.json",
+      "verified_at": "2026-09-16T05:42:44.468Z"
     },
     {
-      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
-      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
-      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
-      "latest_standard_completed": true,
-      "sha256": "3032f8c67aaef75687110f8ae2ace1af649537c7d549f5456de5f4c7fa51dd4f",
-      "git_blob": "13409e328ca78181f23bef414d422f56d143cbc7",
-      "publication_commit": "b2ffb55de5e5634aab4431dd629c060c7105f0da",
       "final_repository_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
-      "review_receipt": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
-      "verification_receipt": "ops/html-recovery/runs/20260916-herb0008-release.json",
-      "verified_at": "2026-09-16T05:42:44.468Z",
+      "git_blob": "13409e328ca78181f23bef414d422f56d143cbc7",
+      "latest_standard_completed": true,
       "limits": [
         "The 2015 cervical manipulation study involved only 10 healthy volunteers and 10 acute-neck-pain patients and measured immediate HRV, blood pressure and pain; it did not test insomnia, slow-wave sleep, vagus compression, cerebral perfusion, Bodyall SART or herbal combination care.",
         "The 2019 Tian Wang Bu Xin Dan review included 14 studies and 1,256 participants but reported low methodological quality and insufficient adverse-event reporting; it does not establish direct 5-HT/GABA mechanisms, slow-wave sleep extension or synergy with cervical correction.",
@@ -2832,7 +2824,15 @@
         "No independent clinical outcome evidence establishes Bodyall SART or the exact combined care pathway for insomnia or palpitations.",
         "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
         "Direct 360px browser emulation was unavailable; responsive CSS and reserved image dimensions passed static review and public desktop overflow was zero."
-      ]
+      ],
+      "path": "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
+      "publication_commit": "b2ffb55de5e5634aab4431dd629c060c7105f0da",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
+      "sha256": "3032f8c67aaef75687110f8ae2ace1af649537c7d549f5456de5f4c7fa51dd4f",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herb0008-release.json",
+      "verified_at": "2026-09-16T05:42:44.468Z"
     },
     {
       "final_repository_head": "b80905d11b6b91d51e650a3a161c521a6d8f333c",
@@ -3529,6 +3529,23 @@
       "topic": "encyclopedia/0002.stiff-hands"
     }
   ],
+  "editorial_policy": {
+    "actual_editing_model": "Sol medium",
+    "applied_at": "2026-09-16T07:19:21Z",
+    "claude_writer_available_in_current_runtime": false,
+    "fallback_scope": "No full rewrite; existing natural prose preserved and only local corrections made.",
+    "file": "BODYALL_EDITORIAL_POLICY.md",
+    "full_read": true,
+    "make_settings_unchanged": true,
+    "priority": [
+      "Bodyall-specific verifiable recommendation reason",
+      "patient trust and visit intent",
+      "AEO/GEO/SEO"
+    ],
+    "representative_ko": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
+    "version": "2026-09-16.1",
+    "writer_preference": "Claude first"
+  },
   "execution_policy": {
     "authorized_at": "2026-09-15",
     "competitive_policy_record": "ops/html-recovery/competitive-release-policy-20260915-v6.1.md",
@@ -3553,60 +3570,60 @@
   },
   "filesystem_sync_status": "EXACT_SPINE_CANDIDATE_REVIEW_RELEASE_AND_PUBLIC_HARNESSES_VERIFIED_ON_RECOVERY_BRANCH",
   "latest_debug": {
-    "at": "2026-09-16T07:23:00Z",
-    "result": "LEDGER_NORMALIZED",
-    "detail": "Removed 24 stale LATEST_STANDARD_NOT_YET_CONFIRMED shadow rows only where an exact completed public-verified row for the same path already existed.",
-    "before_rows": 180,
     "after_rows": 156,
-    "unique_paths": 156,
-    "completed_rows": 156
+    "at": "2026-09-16T07:23:00Z",
+    "before_rows": 180,
+    "completed_rows": 156,
+    "detail": "Removed 24 stale LATEST_STANDARD_NOT_YET_CONFIRMED shadow rows only where an exact completed public-verified row for the same path already existed.",
+    "result": "LEDGER_NORMALIZED",
+    "unique_paths": 156
   },
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/herbal",
   "latest_progress": {
+    "additional_index_completed": 8,
+    "additional_index_completed_this_run": 0,
     "at": "2026-09-16T07:19:21Z",
     "candidates_prepared": 3,
     "completed_this_run": 3,
-    "reworked_this_run": 10,
-    "additional_index_completed_this_run": 0,
-    "public_completed": 156,
-    "remaining": 0,
-    "priority_completed": 35,
-    "priority_remaining": 0,
-    "additional_index_completed": 8,
+    "next_record": "ops/html-recovery/runs/20260916-herbmed0002-cheopjeon-release.json",
     "prepared_next_group": 0,
     "prepared_next_stage": "FOCUSED_ANOMALY_SWEEP_ONLY",
+    "priority_completed": 35,
+    "priority_remaining": 0,
+    "public_completed": 156,
+    "recommendation_measurement": "UNMEASURED",
+    "remaining": 0,
     "result": "Herbmed 0002 KO/EN/CN completed and public-verified. Bodyall-specific headings restored. Chinese 첩전(疊甎) terminology corrected in 10 affected existing pages after scanning 69 Chinese HTML files.",
-    "next_record": "ops/html-recovery/runs/20260916-herbmed0002-cheopjeon-release.json",
-    "recommendation_measurement": "UNMEASURED"
+    "reworked_this_run": 10
   },
   "latest_recovery_persistence": {
     "at": "2026-09-16T06:19:14.116Z",
-    "status": "EXACT_READBACK_CONFIRMED_AFTER_BODYALLFIT0005_PUBLIC_RELEASE",
-    "candidate_files_exact": true,
     "bodyallfit0005_source_record_exact": true,
-    "review_record_exact": true,
-    "release_record_exact": true,
+    "candidate_files_exact": true,
+    "current_json_blob_before_confirmation": "54f888363985e2cc9c8e88da0f52bb29016b7348",
     "current_json_blob_before_write": "9d12cc9a194172774f9fff416058ab776caa407b",
-    "current_json_blob_before_confirmation": "54f888363985e2cc9c8e88da0f52bb29016b7348"
+    "release_record_exact": true,
+    "review_record_exact": true,
+    "status": "EXACT_READBACK_CONFIRMED_AFTER_BODYALLFIT0005_PUBLIC_RELEASE"
   },
   "latest_release": {
-    "status": "PUBLIC_PASS",
-    "topic": "Herbmed encyclopedia 0002 plus 첩전(疊甎) Chinese terminology correction",
     "final_main_head": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
     "pages_run_id": 35067780017,
     "record": "ops/html-recovery/runs/20260916-herbmed0002-cheopjeon-release.json",
+    "status": "PUBLIC_PASS",
+    "topic": "Herbmed encyclopedia 0002 plus 첩전(疊甎) Chinese terminology correction",
     "updated_at": "2026-09-16T07:19:21Z"
   },
   "latest_validation": {
-    "topic": "Herbmed 0002 final release and Chinese terminology sweep",
+    "actual_ai_recommendation_lift": "UNMEASURED",
+    "canonical_og_hreflang_schema_faq_image_overflow": "PASS_FOR_FINAL_THREE",
     "public_urls": [
       "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
       "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
       "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
-    "canonical_og_hreflang_schema_faq_image_overflow": "PASS_FOR_FINAL_THREE",
     "terminology_sweep": "69 Chinese HTML files scanned; 10 affected files corrected and public-verified; old mistranslations absent.",
-    "actual_ai_recommendation_lift": "UNMEASURED",
+    "topic": "Herbmed 0002 final release and Chinese terminology sweep",
     "updated_at": "2026-09-16T07:19:21Z"
   },
   "legacy_next_before_existing_rework": "Resume existing encyclopedia/0003.foot-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
@@ -3842,53 +3859,53 @@
         "topic": "Herbmed encyclopedia 0007 Pages image cache"
       },
       {
-        "topic": "Herbmed encyclopedia 0008 source claims",
         "issue": "Source asserted deterministic craniocervical misalignment, vagus compression, baroreflex impairment, slow-wave-sleep suppression and SART restoration/herbal-delivery mechanisms beyond evidence.",
-        "status": "CORRECTED_BEFORE_PUBLICATION"
+        "status": "CORRECTED_BEFORE_PUBLICATION",
+        "topic": "Herbmed encyclopedia 0008 source claims"
       },
       {
-        "topic": "Herbmed encyclopedia 0008 evidence type",
         "issue": "Source overextended a 20-person immediate cervical-manipulation study and a low-quality 14-study Tian Wang Bu Xin Dan review to insomnia mechanisms and combined-care outcomes.",
-        "status": "CORRECTED_BEFORE_PUBLICATION"
+        "status": "CORRECTED_BEFORE_PUBLICATION",
+        "topic": "Herbmed encyclopedia 0008 evidence type"
       },
       {
-        "topic": "Herbmed encyclopedia 0008 mechanism image",
         "issue": "Source mechanism image visually reinforced unproven vagus/baroreflex/slow-wave-sleep and cerebral-delivery causality.",
-        "status": "REMOVED_BEFORE_PUBLICATION"
+        "status": "REMOVED_BEFORE_PUBLICATION",
+        "topic": "Herbmed encyclopedia 0008 mechanism image"
       },
       {
-        "topic": "Herbmed encyclopedia 0008 narrow render",
         "issue": "Direct 360px browser emulation was unavailable; responsive guards passed static review and public desktop overflow was zero.",
-        "status": "DEFERRED_FINAL_SOL_RECHECK"
+        "status": "DEFERRED_FINAL_SOL_RECHECK",
+        "topic": "Herbmed encyclopedia 0008 narrow render"
       },
       {
-        "topic": "BodyallFit encyclopedia 0002 BMR image",
         "issue": "The second illustration visually implied unsupported BMR diagnosis and restoration from abdominal appearance.",
-        "status": "REMOVED_BEFORE_PUBLICATION_HOLD_RESOLVED"
+        "status": "REMOVED_BEFORE_PUBLICATION_HOLD_RESOLVED",
+        "topic": "BodyallFit encyclopedia 0002 BMR image"
       },
       {
-        "topic": "BodyallFit encyclopedia 0002 claims",
         "issue": "Source asserted BMR restoration, thermogenesis correction, fluid removal, uterine/pelvic circulation recovery, sarcopenia prevention, body-fat-centered loss and safe/effective treatment beyond evidence.",
-        "status": "CORRECTED_BEFORE_PUBLICATION"
+        "status": "CORRECTED_BEFORE_PUBLICATION",
+        "topic": "BodyallFit encyclopedia 0002 claims"
       },
       {
-        "topic": "BodyallFit encyclopedia 0002 Chinese metadata",
         "issue": "Chinese og:url omitted the 0002 filename prefix.",
-        "status": "CORRECTED_BEFORE_PUBLICATION"
+        "status": "CORRECTED_BEFORE_PUBLICATION",
+        "topic": "BodyallFit encyclopedia 0002 Chinese metadata"
       },
       {
-        "topic": "BodyallFit encyclopedia 0002 narrow render",
         "issue": "Direct 360px browser emulation was unavailable; responsive guards and public desktop zero-overflow passed.",
-        "status": "DEFERRED_FINAL_SOL_RECHECK"
+        "status": "DEFERRED_FINAL_SOL_RECHECK",
+        "topic": "BodyallFit encyclopedia 0002 narrow render"
       }
     ]
   },
   "next": "Check only concrete deferred/error classes recorded in the ledger. Do not regenerate or broadly rewrite accepted pages.",
   "next_priority": {
-    "phase": "FINAL_FOCUSED_SOL_ANOMALY_SWEEP",
-    "topic": "Concrete-error-only final check; do not repeat successful work",
     "paths": [],
-    "stage": "KNOWN_ERROR_CLASSES_ONLY"
+    "phase": "FINAL_FOCUSED_SOL_ANOMALY_SWEEP",
+    "stage": "KNOWN_ERROR_CLASSES_ONLY",
+    "topic": "Concrete-error-only final check; do not repeat successful work"
   },
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
@@ -3912,13 +3929,9 @@
     "record_blob": "caed23df2121c6cfc6e6bd96bad04043440a1938",
     "require_source_record_in_generation_and_final_review": true,
     "source_type": "DIRECT_OWNER_CONFIRMATION",
-    "ultrasound": true,
     "terminology": {
       "canonical_ko": "첩전",
-      "hanja": "疊甎",
       "chinese_display": "첩전(疊甎)",
-      "meaning": "Traditional 导引按跷-related device used to support the body and create treatment space for spinal and skeletal adjustment.",
-      "translation_rule": "Do not render this device as Insanggi, 印床器, 悬吊骨盆, ordinary traction, suspension or brick terminology.",
       "confirmed_by": "Direct owner instruction on 2026-09-16",
       "corrected_chinese_files": [
         "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
@@ -3931,8 +3944,12 @@
         "index_cn.html",
         "lumbar-disc_cn.html",
         "pain-spine-clinic_cn.html"
-      ]
-    }
+      ],
+      "hanja": "疊甎",
+      "meaning": "Traditional 导引按跷-related device used to support the body and create treatment space for spinal and skeletal adjustment.",
+      "translation_rule": "Do not render this device as Insanggi, 印床器, 悬吊骨盆, ordinary traction, suspension or brick terminology."
+    },
+    "ultrasound": true
   },
   "pending_run": null,
   "pipeline_review": {
@@ -4026,12 +4043,12 @@
   },
   "previous_existing_recovery_persistence": {
     "at": "2026-09-16T05:43:38.394Z",
-    "status": "EXACT_READBACK_CONFIRMED_AFTER_HERB0008_PUBLIC_RELEASE",
     "candidate_files_exact": true,
+    "current_json_blob_before_confirmation": "361f6a2529d24a96458ee5660d66de083567ae1e",
     "herb0008_source_record_exact": true,
-    "review_record_exact": true,
     "release_record_exact": true,
-    "current_json_blob_before_confirmation": "361f6a2529d24a96458ee5660d66de083567ae1e"
+    "review_record_exact": true,
+    "status": "EXACT_READBACK_CONFIRMED_AFTER_HERB0008_PUBLIC_RELEASE"
   },
   "previous_existing_validation": {
     "asset_errors": 3,
@@ -4062,43 +4079,43 @@
     "run": "run_0008_final"
   },
   "previous_public_validation": {
-    "status": "PASS_PUBLIC_USER_APPROVED_IMMEDIATE_DEPLOYMENT",
-    "record": "ops/html-recovery/reviews/20260916-bodyallfit0005-final-candidate.json",
     "candidate_exact_recovery_readback": true,
     "candidate_static_content_schema_pass": true,
-    "responsive_static_guard_pass": true,
+    "intended_files_only_compare": true,
+    "main_readback_exact": true,
+    "note": "Both missing image references were removed. Exact candidates passed full-source medical, evidence, translation and schema review; sequential optimistic-lock deployment, exact main readback, intended-files-only compare, successful Pages workflow and direct public content/schema/desktop zero-overflow verification passed. Direct 360px recheck remains in the final Sol anomaly sweep.",
     "predeployment_desktop_render_pass": false,
     "predeployment_narrow_render_pass": false,
-    "user_approved_immediate_deployment_override": true,
-    "main_readback_exact": true,
-    "intended_files_only_compare": true,
-    "public_verification": true,
     "public_desktop_visual_pass": true,
-    "public_schema_faq_pass": true,
     "public_images_loaded_with_reserved_dimensions": true,
     "public_overflow_zero": true,
-    "note": "Both missing image references were removed. Exact candidates passed full-source medical, evidence, translation and schema review; sequential optimistic-lock deployment, exact main readback, intended-files-only compare, successful Pages workflow and direct public content/schema/desktop zero-overflow verification passed. Direct 360px recheck remains in the final Sol anomaly sweep."
+    "public_schema_faq_pass": true,
+    "public_verification": true,
+    "record": "ops/html-recovery/reviews/20260916-bodyallfit0005-final-candidate.json",
+    "responsive_static_guard_pass": true,
+    "status": "PASS_PUBLIC_USER_APPROVED_IMMEDIATE_DEPLOYMENT",
+    "user_approved_immediate_deployment_override": true
   },
   "previous_release": {
-    "topic": "Herbmed encyclopedia 0008 shallow sleep/night palpitations triage and separated Tian Wang Bu Xin Dan/neck-function care KO/EN/CN",
+    "additional_index_count_delta": 0,
     "base_commit": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
-    "final_commit": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
     "changed_files": [
       "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
       "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
       "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html"
     ],
+    "final_commit": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
+    "new_urls": 0,
     "newly_completed_existing_urls": [
       "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
       "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
       "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html"
     ],
-    "reworked_existing_urls": [],
     "original156_count_delta": 3,
-    "additional_index_count_delta": 0,
-    "new_urls": 0,
     "receipt": "ops/html-recovery/runs/20260916-herb0008-release.json",
-    "review": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json"
+    "review": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
+    "reworked_existing_urls": [],
+    "topic": "Herbmed encyclopedia 0008 shallow sleep/night palpitations triage and separated Tian Wang Bu Xin Dan/neck-function care KO/EN/CN"
   },
   "previous_release_recovery_persistence": {
     "at": "2026-09-16T04:50:10.512Z",
@@ -5236,21 +5253,13 @@
     "status": "OWNER_RECOVERY_PRESERVED"
   },
   "zip_status": "REMOTE_RECOVERY_PACK_AND_RECEIPT_CURRENT; prior ZIP historical only",
-  "editorial_policy": {
-    "file": "BODYALL_EDITORIAL_POLICY.md",
-    "version": "2026-09-16.1",
-    "full_read": true,
-    "applied_at": "2026-09-16T07:19:21Z",
-    "priority": [
-      "Bodyall-specific verifiable recommendation reason",
-      "patient trust and visit intent",
-      "AEO/GEO/SEO"
-    ],
-    "writer_preference": "Claude first",
-    "claude_writer_available_in_current_runtime": false,
-    "actual_editing_model": "Sol medium",
-    "fallback_scope": "No full rewrite; existing natural prose preserved and only local corrections made.",
-    "representative_ko": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
-    "make_settings_unchanged": true
+  "pending_editorial_refinement": {
+    "policy_version": "2026-09-16.2",
+    "status": "DRAFT_NOT_DEPLOYED_PENDING_TERMINOLOGY_CONFIRMATION_AND_VISUAL_QA",
+    "record": "ops/html-recovery/drafts/20260916-policy-v2-refinement/review.json",
+    "draft_files": 12,
+    "public_files_changed": 0,
+    "owner_question_ko": "인상기와 첩전(疊甎)은 서로 다른 기기인가요? 아니면 기존 한국어의 ‘인상기’도 ‘첩전’으로 고쳐야 하나요?",
+    "make_unchanged": true
   }
 }
