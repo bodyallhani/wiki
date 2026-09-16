@@ -152,30 +152,22 @@
     "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html"
   ],
   "active_run": {
-    "owner": "bodyallfit0005-phase1-release-20260916",
-    "single_writer_active": false,
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
-    "base_main_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
-    "final_main_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
+    "owner": "bodyallfit0007-phase1-release-20260916",
+    "single_writer_active": true,
+    "stage": "CANDIDATE_PASS_DEPLOYING",
+    "base_main_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
     "source_blobs": {
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html": "f5ddf137ff445ddfb29b9aee5fa454c337a7d36b",
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html": "ff563dbb91880efa61d5151c24c1807b16a3eeaa",
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html": "499da61ba7b8e00b5198d749ace139c4e086bc10"
+      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html": "4a5b2332b91582145aa835c830c2d38ab717bbac",
+      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html": "5629c6f7f25b5e358000c1fb16a02a8522d1a348",
+      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html": "35bc4798a5f2069f7f80fb14a4c1797fd09fb738"
     },
     "exact_candidate_hashes": {
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html": "17f536dbdeb5c3caff55244ec01ecb9d69e5e052c58e75a438c3e67da502b26f",
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html": "4d92a5f696d2d1744ed199c777a32e765757dbfc890375e08576fa5f6becec52",
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html": "3eaa09a1aafe741a6697d2596c8892655763afb58303a5628a64f2dc29ea56aa"
+      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html": "ebe1b035cb5dbf4a2b214a5af07a345cb89bc87bf038efb376b324963b42de5d",
+      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html": "1c60bc0d9f896929b72e4d928c73e4ebc3c32dc79f908d8b7c883f1c6d3036fd",
+      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html": "2bf395ccef6c3e0355911856054342b484fb67bcc0d551d2c67bf734ba0d5efd"
     },
-    "published_blobs": {
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html": "3c45f379dffb51493ea3c5e85adf3bf459d0d82a",
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html": "c865a6f519719e85072a1520662fbaf696df2c89",
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html": "3929bd2ae51018f7def89856ed18892576fbac3a"
-    },
-    "pages_run_id": 35062801594,
-    "release_record": "ops/html-recovery/runs/20260916-bodyallfit0005-release.json",
-    "ledger_exact_readback": true,
-    "updated_at": "2026-09-16T06:18:28.888Z"
+    "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0007-final-candidate.json",
+    "updated_at": "2026-09-16T06:32:56.256Z"
   },
   "additional_index_completion_rows": [
     {
@@ -3895,7 +3887,7 @@
       }
     ]
   },
-  "next": "RESUME PHASE1 BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html KO→EN→CN: resolve the document-specific two-missing-images hold without creating new assets, verify stress/edema/craving claims and the full HTML, then deploy immediately and publicly verify.",
+  "next": "DEPLOY BodyallFit encyclopedia 0007 KO→EN→CN sequentially, exact readback, then Pages public render/content verification.",
   "next_priority": "RESUME PHASE1 BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html KO→EN→CN: correct SURMOUNT/PMID 40832789 alignment and GLP-1 muscle/BMR claims, apply the user-authorized immediate-deployment approval assumption, directly review the full HTML, deploy sequentially, and publicly verify.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
@@ -4579,7 +4571,7 @@
     "traffic-accident_en.html"
   ],
   "updated_at": "2026-09-16T06:19:14.116Z",
-  "version": "V282_BODYALLFIT0005_PUBLIC_PASS_LEDGER_EXACT_NEXT_BODYALLFIT0007",
+  "version": "V283_BODYALLFIT0007_CANDIDATE_PASS_DEPLOYING",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
     "phase": "RESUME_PHASE1_PENDING",
