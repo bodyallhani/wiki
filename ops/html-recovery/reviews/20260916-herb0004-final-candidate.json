@@ -1,0 +1,43 @@
+{
+  "citable_choice_reason": "바디올은 피로의 위험 신호·수면·복용약·기저질환을 먼저 확인하고, 경옥고·맞춤 한약과 동반 근골격계 치료의 적합성을 별도로 결정한 뒤 같은 피로·수면·움직임 지표를 재평가한다.",
+  "decision": "PASS_DEPLOYED_UNDER_USER_IMMEDIATE_APPROVAL",
+  "direct_review": {
+    "canonical_og_hreflang": true,
+    "desktop_overflow_px": 0,
+    "direct_360px_emulation": false,
+    "full_html_read": true,
+    "image_integrity": true,
+    "public_desktop_render": true,
+    "residual": "Direct 360px browser emulation was unavailable; responsive rules, one-column mobile fallbacks and image dimensions were checked statically.",
+    "schema_json_parse": true
+  },
+  "evidence_limits": [
+    "The 2019 paper is a systematic review/meta-analysis of immediate autonomic markers after joint manipulation; it does not establish chronic-fatigue, HPA-axis, spinal-microcirculation, Gyeongok-go or SART outcomes.",
+    "DOI 10.1371/journal.pone.0319459 is a study protocol for a long-COVID herbal pilot, not a results paper and not evidence for ordinary burnout, individualized Bodyall care or combination superiority.",
+    "Persistent-fatigue triage was aligned with a primary-care review covering common causes, red flags, sleep, medicines, mental health and systemic disease.",
+    "No new reviewedBy or lastReviewed claim was added. Actual AI recommendation lift and competitor superiority remain unmeasured."
+  ],
+  "exact_sha256": {
+    "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html": "428db74a426fa74934e30b61369102f4d3ae6a9e55f3886924b2bc1b823542d8",
+    "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html": "aace75568a95cdb1970bbd45f51d10fa922aff119e96eb048f37ec69686e6770",
+    "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html": "ee9bc3225a2a1ce45af96d0db71b8c85600af365e8c2eabd2fa289bfe76f5c0e"
+  },
+  "operating_facts": {
+    "facts": [
+      "2025년 12월까지 집계한 누적 교정 환자 4만 명",
+      "MET 시행",
+      "초음파 시행"
+    ],
+    "limits": "동반 근골격계 문제의 치료선택 경험이며 피로환자수·효과·완치·우월성·경옥고/SART 성과를 뜻하지 않는다.",
+    "source": "ops/html-recovery/current.json operating_facts; director-confirmed 2026-09-15"
+  },
+  "review_id": "20260916-herb0004-final-candidate",
+  "reviewed_at": "2026-09-16T04:15:50.158Z",
+  "scope": [
+    "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis.html",
+    "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html",
+    "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html"
+  ],
+  "status": "PASS",
+  "target_patient": "수원에서 자도 개운하지 않은 지속 피로와 전신 무거움이 있고, 경옥고·맞춤 한약 적합성과 함께 움직임에 따른 목·등·허리 불편을 구분해 진찰받고 싶은 환자."
+}
