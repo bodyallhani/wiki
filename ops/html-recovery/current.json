@@ -148,7 +148,7 @@
       "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html": "07199a7f60d2fc2c1e38970ee83a30f0baaeed8286f0b7b0d397cc7d0c6cc259"
     },
     "final_main_head": "37db877200073183564c89df7e53101cf7f9c1c2",
-    "ledger_exact_readback": false,
+    "ledger_exact_readback": true,
     "owner": "herb0006-phase1-release-20260916",
     "published_blobs": {
       "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html": "b0ce6cd4017697cabfb47bf69e6136d600161ed4",
@@ -165,7 +165,7 @@
       "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html": "a77f95911788bd9db004d8d319fdc54eb18513a1"
     },
     "source_ledger_blob": "8138d748f64435f2cd40bd84303ae58539b70675",
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_PENDING_EXACT",
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
     "started_at": "2026-09-16T04:34:28.442Z"
   },
   "additional_index_completion_rows": [
@@ -3309,13 +3309,13 @@
     "reworked_this_run": 0
   },
   "latest_recovery_persistence": {
-    "at": "2026-09-16T04:49:19.474Z",
+    "at": "2026-09-16T04:50:10.512Z",
     "candidate_files_exact": true,
-    "current_json_blob_before_confirmation": "8138d748f64435f2cd40bd84303ae58539b70675",
+    "current_json_blob_before_confirmation": "a81d9fba36b1c275dcdca50cda9c070575e1b676",
     "herb0006_source_record_exact": true,
     "release_record_exact": true,
     "review_record_exact": true,
-    "status": "PENDING_CURRENT_JSON_EXACT_CONFIRMATION"
+    "status": "EXACT_READBACK_CONFIRMED_AFTER_HERB0006_PUBLIC_RELEASE"
   },
   "latest_release": {
     "additional_index_count_delta": 0,
@@ -4251,8 +4251,8 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T04:49:19.474Z",
-  "version": "V272_HERB0006_PUBLIC_PASS_NEXT_HERB0007",
+  "updated_at": "2026-09-16T04:50:10.512Z",
+  "version": "V273_HERB0006_PUBLIC_PASS_LEDGER_EXACT_NEXT_HERB0007",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
     "phase": "RESUME_PHASE1_PENDING",
