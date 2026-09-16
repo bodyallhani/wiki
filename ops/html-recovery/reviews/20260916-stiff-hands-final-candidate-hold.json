@@ -2,9 +2,9 @@
   "version": "stiff-hands-final-candidate-review-v2",
   "recorded_at": "2026-09-16T00:47:12.427Z",
   "topic": "encyclopedia/0002.stiff-hands KO/EN/CN",
-  "stage": "EXACT_CANDIDATE_WHOLE_SOURCE_AND_RENDER_PASS",
+  "stage": "PUBLISHED_PUBLIC_VERIFIED",
   "decision": "PASS",
-  "reason": "After direct whole-source review, stale EN/CN og:url values were corrected. The corrected exact candidates were then directly inspected at desktop width and in three parallel 360px frames with the retained public image loaded; layout, first-screen recommendation logic, treatment-role separation, reassessment, booking flow, fixed mobile controls and visible language alignment passed.",
+  "reason": "Corrected exact candidates passed whole-source and direct desktop/360px review, were deployed sequentially with optimistic locking and exact GitHub readback, the base-to-final range changed only the three intended files, and cache-busted public Pages DOM/schema/image/desktop-screen checks passed.",
   "source_snapshot": {
     "ledger_before_claim": "958e57f4f4034982c7140e0a6a15d14e5a14766f",
     "ledger_claim_blob": "de93524480f3349ace3d0dac4cfada3a009ad832",
@@ -111,12 +111,10 @@
     "No new physician review or independent translation review is asserted.",
     "Actual AI recommendation lift is unmeasured."
   ],
-  "remaining_defects": [
-    "No main deployment, GitHub main readback, commit-range comparison, Pages exact-source check, public schema/image/screen verification, or ledger completion rows exist yet."
-  ],
-  "next_action": "Fresh-read current ledger, main head and all three target blobs; deploy corrected candidates sequentially with optimistic locking; read back exact; compare intended files; verify Pages; then update counts from 105/156 to 108/156.",
-  "completion_delta": 0,
-  "main_writes": 0,
+  "remaining_defects": [],
+  "next_action": "Continue with encyclopedia/0001.buttock-pain KO/EN/CN after fresh-reading the latest ledger, main head and target blobs.",
+  "completion_delta": 3,
+  "main_writes": 3,
   "actual_ai_recommendation_lift": "UNMEASURED",
   "model_review_followup": {
     "default_model": "GPT-5.6 Sol Medium",
@@ -125,5 +123,17 @@
     "final_escalation_queue": [
       "At project close, re-audit canonical/og:url equality across all Sol-reviewed multilingual files with a deterministic check; no Astra escalation is needed for this corrected file unless a later conflict appears."
     ]
+  },
+  "publication": {
+    "final_main_head": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+    "commits": {
+      "encyclopedia/0002.stiff-hands.html": "0249c2afff19c531be7e30585994b89c7b997901",
+      "encyclopedia/0002.stiff-hands_en.html": "e9bf349b7dc57df7a718115c6da5169d93b39f6a",
+      "encyclopedia/0002.stiff-hands_cn.html": "69739fee3dcc84f0387b3151a91c3c042c6a0b47"
+    },
+    "exact_readback": true,
+    "compare_only_intended_files": true,
+    "public_content_schema_image_screen_verified": true,
+    "verification_receipt": "ops/html-recovery/runs/20260916-stiff-hands-release.json"
   }
 }
