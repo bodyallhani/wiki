@@ -1,0 +1,101 @@
+{
+  "kind": "html_recovery_release",
+  "topic": "bodyallfit0002-postpartum-menopause-weight",
+  "status": "PUBLIC_VERIFIED",
+  "verified_at": "2026-09-16T05:57:59.524Z",
+  "scope": "existing sitemap URLs only; no new URL",
+  "base_main_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
+  "final_main_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
+  "pages_workflow": {
+    "run_id": 35061417750,
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306"
+  },
+  "compare": {
+    "ahead_by": 3,
+    "intended_files_only": true,
+    "unexpected_files": []
+  },
+  "files": [
+    {
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
+      "language": "ko",
+      "sha256": "ee786e3ceba2cdd7ea0cc72d0cc01547cc1b4a19eae3bf1d202363a27a6cd4ed",
+      "git_blob": "ce0aa8e5ebee3a13ef0a4b0c821c866793be30fa",
+      "publication_commit": "8f2a52c528fe258b2e4b614210e79bbb2f53e2a5",
+      "public_url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
+      "language": "en",
+      "sha256": "2bddcac480670675aa8961fbdbd6faa5b055c4bd61adbfdefd584ba9739a74a2",
+      "git_blob": "480c060d55fb0d39e51d1eba161397f01f963dd8",
+      "publication_commit": "1fdc5baf610f79ce4e98b0173c4f2cfa805078c2",
+      "public_url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
+      "language": "zh-Hans",
+      "sha256": "cb436d2263d699c307ea0e7627a27fef7ca45152b80e819db2e4214a078cb15a",
+      "git_blob": "9dd67ffff02b62d0c8384ea2c28ec5280f1fc53f",
+      "publication_commit": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
+      "public_url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html"
+    }
+  ],
+  "validation": {
+    "content_markers": true,
+    "canonical_matches_public_url": true,
+    "og_url_matches_public_url": true,
+    "hreflang_count": 4,
+    "schema_types": [
+      "MedicalWebPage",
+      "MedicalClinic",
+      "MedicalTherapy",
+      "FAQPage"
+    ],
+    "visible_faq_count": 4,
+    "booking_link_present": true,
+    "image": {
+      "count": 1,
+      "loaded": true,
+      "natural_size": "1376x768",
+      "reserved_size": "1376x768",
+      "removed_inaccurate_bmr_figure": true
+    },
+    "desktop": {
+      "horizontal_overflow_px": 0,
+      "visual_pass": true
+    },
+    "mobile_360": {
+      "pass": null,
+      "status": "DEFERRED_TOOL_VIEWPORT_FIXED",
+      "note": "Static responsive CSS passed; include in final focused Sol anomaly sweep."
+    },
+    "reviewed_metadata_absent": true,
+    "unverified_hours_absent": true
+  },
+  "clinical_review": {
+    "target_patient": "Suwon patients with postpartum weight retention or menopause-related waist gain who need breastfeeding, medicines, symptoms, food, activity, sleep and stress reviewed together.",
+    "quotable_recommendation_reason": "BodyallFit separates postpartum recovery and menopause, checks herbal fit and safety, assigns distinct roles to herbal care, food, exercise and lifestyle, and repeats the same weight, waist and behavior measures.",
+    "operating_facts_source": "Previously publicly verified BodyallFit index and clinic service description for integrated herbal, food, exercise and lifestyle management.",
+    "evidence_limits": [
+      "ACOG postpartum activity guidance is not BodyallFit or herbal efficacy evidence.",
+      "The Menopause Society separates aging/lifestyle weight gain from menopause-related abdominal redistribution.",
+      "NICE obesity guidance supports multicomponent management but not the exact BodyallFit combination.",
+      "No independent outcomes establish BMR restoration, spot reduction or superiority.",
+      "Actual non-branded AI recommendation lift is unmeasured."
+    ],
+    "residual_defects": [
+      "Direct 360px public-browser capture deferred to final focused Sol anomaly sweep."
+    ],
+    "verdict": "PASS",
+    "reason": "The exact public HTML resolves the BMR-figure hold, front-loads patient fit and Suwon, states Bodyall-specific selection and reassessment, preserves referral signals and avoids unsupported mechanisms and outcomes."
+  },
+  "review_record": "ops/html-recovery/reviews/20260916-bodyallfit0002-final-candidate.json",
+  "source_review_record": "ops/html-recovery/runs/20260916-bodyallfit0002-source-review.json",
+  "actual_ai_recommendation_lift": "UNMEASURED",
+  "physician_review_metadata_expanded": false,
+  "make_touched": false,
+  "google_indexing_touched": false
+}
