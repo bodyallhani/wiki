@@ -13,6 +13,11 @@
     "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_cn.html",
     "BodyallFit/encyclopedia/0006.therapeutic-alliance-self-efficacy-doctor-led-relapse-prevention_en.html",
     "BodyallFit/encyclopedia/index.html",
+    "BodyallFit/encyclopedia/index_cn.html",
+    "BodyallFit/encyclopedia/index_en.html",
+    "Herbmed/encyclopedia/index.html",
+    "Herbmed/encyclopedia/index_cn.html",
+    "Herbmed/encyclopedia/index_en.html",
     "acupotomy.html",
     "acupotomy_cn.html",
     "acupotomy_en.html",
@@ -25,6 +30,9 @@
     "chuna-therapy.html",
     "chuna-therapy_cn.html",
     "chuna-therapy_en.html",
+    "encyclopedia/0002.stiff-hands.html",
+    "encyclopedia/0002.stiff-hands_cn.html",
+    "encyclopedia/0002.stiff-hands_en.html",
     "encyclopedia/0003.foot-pain.html",
     "encyclopedia/0003.foot-pain_cn.html",
     "encyclopedia/0003.foot-pain_en.html",
@@ -99,12 +107,7 @@
     "shoulder-frozen_en.html",
     "traffic-accident.html",
     "traffic-accident_cn.html",
-    "traffic-accident_en.html",
-    "BodyallFit/encyclopedia/index_en.html",
-    "BodyallFit/encyclopedia/index_cn.html",
-    "Herbmed/encyclopedia/index.html",
-    "Herbmed/encyclopedia/index_en.html",
-    "Herbmed/encyclopedia/index_cn.html"
+    "traffic-accident_en.html"
   ],
   "completion_rows": [
     {
@@ -779,19 +782,58 @@
       "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
     },
     {
-      "latest_standard_completed": false,
       "path": "encyclopedia/0002.stiff-hands_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0002.stiff-hands_cn.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "30127094ee7537e742d36014c00a45d44ba04845",
+      "sha256": "ddee7f973a0905934df1b7d50fc0d7fe0a9d3f5ebb5405055fef26958e2dec84",
+      "publication_commit": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+      "final_repository_head": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+      "review_receipt": "ops/html-recovery/reviews/20260916-stiff-hands-final-candidate-hold.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-stiff-hands-release.json",
+      "limits": [
+        "AAOS and NHS sources support symptom patterns and general care-choice framing; they do not establish Bodyall outcomes or acupotomy effectiveness.",
+        "Ultrasound availability is owner-confirmed operations, not an independent outcome measure.",
+        "No new physician review or independent translation review is asserted.",
+        "Public DOM, schema, image loading, canonical/og/hreflang alignment and desktop overflow were verified after propagation; exact candidates passed direct desktop and 360px render review before deployment; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
-      "latest_standard_completed": false,
       "path": "encyclopedia/0002.stiff-hands_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0002.stiff-hands_en.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "f55430918392601c09b62f92ea50be90ba131a17",
+      "sha256": "cf6033628be93995a3b94f40bb9a3476eb8728940f1b80e986c6d8ac7c9db0f5",
+      "publication_commit": "e9bf349b7dc57df7a718115c6da5169d93b39f6a",
+      "final_repository_head": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+      "review_receipt": "ops/html-recovery/reviews/20260916-stiff-hands-final-candidate-hold.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-stiff-hands-release.json",
+      "limits": [
+        "AAOS and NHS sources support symptom patterns and general care-choice framing; they do not establish Bodyall outcomes or acupotomy effectiveness.",
+        "Ultrasound availability is owner-confirmed operations, not an independent outcome measure.",
+        "No new physician review or independent translation review is asserted.",
+        "Public DOM, schema, image loading, canonical/og/hreflang alignment and desktop overflow were verified after propagation; exact candidates passed direct desktop and 360px render review before deployment; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
-      "latest_standard_completed": false,
       "path": "encyclopedia/0002.stiff-hands.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0002.stiff-hands.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "git_blob": "ee3a3c2ac4f3e4c5308c56938a87d8e6368449aa",
+      "sha256": "0724bf7fdcb587b7366729e75f7551fe40aee38cad92473d1e308b20a7631204",
+      "publication_commit": "0249c2afff19c531be7e30585994b89c7b997901",
+      "final_repository_head": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+      "review_receipt": "ops/html-recovery/reviews/20260916-stiff-hands-final-candidate-hold.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-stiff-hands-release.json",
+      "limits": [
+        "AAOS and NHS sources support symptom patterns and general care-choice framing; they do not establish Bodyall outcomes or acupotomy effectiveness.",
+        "Ultrasound availability is owner-confirmed operations, not an independent outcome measure.",
+        "No new physician review or independent translation review is asserted.",
+        "Public DOM, schema, image loading, canonical/og/hreflang alignment and desktop overflow were verified after propagation; exact candidates passed direct desktop and 360px render review before deployment; actual AI recommendation lift remains unmeasured."
+      ]
     },
     {
       "latest_standard_completed": false,
@@ -2540,15 +2582,15 @@
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
-    "latest_standard_not_confirmed_or_remaining": 51,
-    "latest_standard_published_confirmed": 105,
-    "new_publications_this_turn": 0,
+    "latest_standard_not_confirmed_or_remaining": 48,
+    "latest_standard_published_confirmed": 108,
+    "new_publications_this_turn": 3,
     "revised_publications_this_turn": 0,
     "total_scope": 156,
     "existing_rework_verified_under_20260915_request": 13,
     "historically_accepted_not_yet_reworked_under_20260915_request": 72,
-    "phase1_strengthened_completed": 20,
-    "phase1_strengthened_remaining": 51,
+    "phase1_strengthened_completed": 23,
+    "phase1_strengthened_remaining": 48,
     "priority_strengthened_total": 35,
     "priority_strengthened_completed": 35,
     "priority_strengthened_remaining": 0,
@@ -2577,35 +2619,39 @@
     "exact_readback": true
   },
   "latest_release": {
-    "topic": "Spine existing additional index strengthened priority; priority35 complete",
+    "topic": "Stiff-hands phase1 KO/EN/CN",
     "changed_files": [
-      "spine/index.html"
+      "encyclopedia/0002.stiff-hands.html",
+      "encyclopedia/0002.stiff-hands_en.html",
+      "encyclopedia/0002.stiff-hands_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "spine/index.html"
+      "encyclopedia/0002.stiff-hands.html",
+      "encyclopedia/0002.stiff-hands_en.html",
+      "encyclopedia/0002.stiff-hands_cn.html"
     ],
     "reworked_existing_urls": [],
-    "original156_count_delta": 0,
-    "additional_index_count_delta": 1,
-    "base_commit": "f5a03df2f5b9a0cf2f7cd60b810770bba83630b7",
-    "final_commit": "a7d10f1aabd0ea86fd0d388a77365b338d747938",
+    "original156_count_delta": 3,
+    "additional_index_count_delta": 0,
+    "base_commit": "a7d10f1aabd0ea86fd0d388a77365b338d747938",
+    "final_commit": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-spine-index-priority-release.json",
-    "review": "ops/html-recovery/reviews/20260916-spine-index-priority-final.json"
+    "receipt": "ops/html-recovery/runs/20260916-stiff-hands-release.json",
+    "review": "ops/html-recovery/reviews/20260916-stiff-hands-final-candidate-hold.json"
   },
   "latest_validation": {
-    "status": "HOLD",
+    "status": "PASS",
     "record": "ops/html-recovery/reviews/20260916-stiff-hands-final-candidate-hold.json",
-    "record_blob": "8bd4c2644189cc58cbf94442941e3a61202e0873",
+    "record_blob": "2af5d48848f88ec14969c260a1f852bc9b6287c2",
     "candidate_static_content_schema_pass": true,
     "candidate_exact_readback": true,
     "image_direct_inspection_pass": true,
-    "predeployment_render_pass": false,
-    "public_verification": false,
-    "note": "Exact KO/EN/CN candidates and review record persisted. Mandatory 1280px/360px render remains blocked by renewed private-harness authentication; no main write or count."
+    "predeployment_render_pass": true,
+    "public_verification": true,
+    "note": "Corrected exact KO/EN/CN versions passed whole-source and direct desktop/360px review, sequential deployment/readback, intended-file compare, and public Pages DOM/schema/image/screen checks."
   },
-  "next": "Resume encyclopedia/0002 stiff hands KO→EN→CN from saved phase1 state. Fresh-read current.json, main and target blobs; reuse preserved source review where unchanged, complete exact HTML/render/public gates, and count only after Pages verification.",
-  "next_priority": "HOLD RESUME PHASE1 encyclopedia/0002.stiff-hands KO/EN/CN: authenticate private review harness and render the persisted exact candidates at 1280px/360px; then fresh-read and deploy only if PASS.",
+  "next": "Resume encyclopedia/0001 buttock pain KO→EN→CN from saved phase1 order. Fresh-read current.json, main and target blobs before candidate work.",
+  "next_priority": "RESUME PHASE1 encyclopedia/0001.buttock-pain KO→EN→CN: fresh-read ledger, main and target blobs; reuse unchanged verified evidence, complete exact HTML/render/public gates, then count only after Pages verification.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2613,9 +2659,9 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "a7d10f1aabd0ea86fd0d388a77365b338d747938",
+  "public_commit": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "최우선 35개(원래156 안의 27개+별도 index 8개)를 모두 강화 수정·직접 검수·배포·공개 검증했습니다. 원래156개는 105/156, 잔여51로 변동 없고 별도 index는 8/8 완료입니다. 다음은 저장된 phase1 순서의 encyclopedia/0002 손가락 뻣뻣함 3개 언어입니다. 실제 AI 추천률 증가는 미측정입니다.",
+  "report_ko": "우선 35개와 별도 index 8개는 모두 완료 상태를 유지합니다. 손가락 뻣뻣함 3개 언어를 강화 수정·직접 검수·배포·공개 검증하여 원래156개는 108/156, 잔여48입니다. 다음은 encyclopedia/0001 둔부통증 3개 언어입니다. 실제 AI 추천률 증가는 미측정입니다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2633,8 +2679,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-16T00:36:00Z",
-  "version": "V259_STIFF_HANDS_EXACT_CANDIDATES_PERSISTED_RENDER_HOLD",
+  "updated_at": "2026-09-16T00:58:00Z",
+  "version": "V260_STIFF_HANDS_PUBLISHED_PUBLIC_VERIFIED",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2663,10 +2709,10 @@
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
   "active_run": {
-    "owner": "stiff-hands-phase1-candidate-20260916T0022Z",
-    "started_at": "2026-09-16T00:22:55Z",
+    "owner": "stiff-hands-phase1-release-20260916T0048Z",
+    "started_at": "2026-09-16T00:48:57Z",
     "base_main_head": "a7d10f1aabd0ea86fd0d388a77365b338d747938",
-    "source_ledger_blob": "958e57f4f4034982c7140e0a6a15d14e5a14766f",
+    "source_ledger_blob": "9274600367f4e0b8dae55a6b228b40b7718c810c",
     "source_blobs": {
       "encyclopedia/0002.stiff-hands.html": "cf2e81921b5db3976e632fb3814f1145127dec84",
       "encyclopedia/0002.stiff-hands_en.html": "5ffbdd130add5aaa45289642d663519cb0b2b27f",
@@ -2674,56 +2720,18 @@
     },
     "exact_candidate_hashes": {
       "encyclopedia/0002.stiff-hands.html": "0724bf7fdcb587b7366729e75f7551fe40aee38cad92473d1e308b20a7631204",
-      "encyclopedia/0002.stiff-hands_en.html": "64957da583ab8d6e8ba032281c693448ba85d3e586060827c114bbc9d60a2edc",
-      "encyclopedia/0002.stiff-hands_cn.html": "a44cd33ff9ed3fd4cc518c7bec40375b4805e7c42f7695db5da28e8333665ae0"
+      "encyclopedia/0002.stiff-hands_en.html": "cf6033628be93995a3b94f40bb9a3476eb8728940f1b80e986c6d8ac7c9db0f5",
+      "encyclopedia/0002.stiff-hands_cn.html": "ddee7f973a0905934df1b7d50fc0d7fe0a9d3f5ebb5405055fef26958e2dec84"
     },
-    "stage": "EXACT_CANDIDATES_AND_REVIEW_PERSISTED_PREDEPLOYMENT_RENDER_HOLD",
+    "stage": "PUBLIC_VERIFICATION_AND_LEDGER_WRITE_COMPLETE",
     "single_writer_active": false,
-    "required_next": "Fresh-read this ledger, main and target blobs; authenticate private review harness and inspect exact candidates at 1280px/360px before any main write.",
-    "completed_at": "2026-09-16T00:36:00Z",
-    "candidate_recovery_paths": {
-      "encyclopedia/0002.stiff-hands.html": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands.html",
-      "encyclopedia/0002.stiff-hands_en.html": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands_en.html",
-      "encyclopedia/0002.stiff-hands_cn.html": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands_cn.html"
-    },
-    "candidate_recovery_blobs": {
-      "encyclopedia/0002.stiff-hands.html": "ee3a3c2ac4f3e4c5308c56938a87d8e6368449aa",
-      "encyclopedia/0002.stiff-hands_en.html": "54305c15f12ddcb4afcf5266d4879ea15f3db339",
-      "encyclopedia/0002.stiff-hands_cn.html": "e5450a0e7e461236f6c4c7e13bd2f43909423b3a"
-    },
+    "completed_at": "2026-09-16T00:58:00Z",
+    "final_main_head": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+    "required_next": "Fresh-read ledger, main and encyclopedia/0001.buttock-pain target blobs; continue KO/EN/CN as the next phase1 group.",
     "review_record": "ops/html-recovery/reviews/20260916-stiff-hands-final-candidate-hold.json",
-    "review_record_blob": "8bd4c2644189cc58cbf94442941e3a61202e0873"
+    "verification_receipt": "ops/html-recovery/runs/20260916-stiff-hands-release.json"
   },
-  "pending_run": {
-    "topic": "encyclopedia/0002.stiff-hands KO/EN/CN",
-    "paths": [
-      "encyclopedia/0002.stiff-hands.html",
-      "encyclopedia/0002.stiff-hands_en.html",
-      "encyclopedia/0002.stiff-hands_cn.html"
-    ],
-    "stage": "PREDEPLOYMENT_RENDER_HOLD",
-    "main_writes": 0,
-    "counted_complete": 0,
-    "candidate_sha256": {
-      "encyclopedia/0002.stiff-hands.html": "0724bf7fdcb587b7366729e75f7551fe40aee38cad92473d1e308b20a7631204",
-      "encyclopedia/0002.stiff-hands_en.html": "64957da583ab8d6e8ba032281c693448ba85d3e586060827c114bbc9d60a2edc",
-      "encyclopedia/0002.stiff-hands_cn.html": "a44cd33ff9ed3fd4cc518c7bec40375b4805e7c42f7695db5da28e8333665ae0"
-    },
-    "blocker": "Private review harness requires a new authenticated session; data/local preview navigation was unavailable in the approved browser surface.",
-    "next_action": "Open exact recovery candidates in the review harness, inspect full desktop/narrow renders, then fresh-read ledger/main/blobs before sequential deployment.",
-    "candidate_recovery_paths": {
-      "encyclopedia/0002.stiff-hands.html": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands.html",
-      "encyclopedia/0002.stiff-hands_en.html": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands_en.html",
-      "encyclopedia/0002.stiff-hands_cn.html": "ops/html-recovery/candidates/20260916-stiff-hands/0002.stiff-hands_cn.html"
-    },
-    "candidate_recovery_blobs": {
-      "encyclopedia/0002.stiff-hands.html": "ee3a3c2ac4f3e4c5308c56938a87d8e6368449aa",
-      "encyclopedia/0002.stiff-hands_en.html": "54305c15f12ddcb4afcf5266d4879ea15f3db339",
-      "encyclopedia/0002.stiff-hands_cn.html": "e5450a0e7e461236f6c4c7e13bd2f43909423b3a"
-    },
-    "review_record": "ops/html-recovery/reviews/20260916-stiff-hands-final-candidate-hold.json",
-    "review_record_blob": "8bd4c2644189cc58cbf94442941e3a61202e0873"
-  },
+  "pending_run": null,
   "previous_public_validation": {
     "checks": [
       {
@@ -3180,7 +3188,10 @@
     "shoulder-frozen.html",
     "shoulder-frozen_en.html",
     "shoulder-frozen_cn.html",
-    "BodyallFit/encyclopedia/index.html"
+    "BodyallFit/encyclopedia/index.html",
+    "encyclopedia/0002.stiff-hands.html",
+    "encyclopedia/0002.stiff-hands_en.html",
+    "encyclopedia/0002.stiff-hands_cn.html"
   ],
   "previous_work_order": {
     "next_priority": "Rework already published lumbar-disc.html KO→EN→CN first, then the remaining rework_queue. Freshly read this ledger, main head and target blobs; compare actual competitor service descriptions, strengthen source-supported Bodyall-specific patient-selection reasons, inspect exact full HTML and desktop/narrow renders, then sequentially deploy/readback/public-verify and checkpoint. Historical 85/156 publication count is not proof that all 85 satisfy the new comparative editorial review. Resume legacy uncompleted URLs after the existing-publication rework queue unless the owner changes priority.",
@@ -3277,9 +3288,6 @@
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
     "phase1_pending_paths": [
-      "encyclopedia/0002.stiff-hands.html",
-      "encyclopedia/0002.stiff-hands_en.html",
-      "encyclopedia/0002.stiff-hands_cn.html",
       "encyclopedia/0001.buttock-pain.html",
       "encyclopedia/0001.buttock-pain_en.html",
       "encyclopedia/0001.buttock-pain_cn.html",
@@ -3349,7 +3357,10 @@
       "BodyallFit/encyclopedia/index_cn.html",
       "Herbmed/encyclopedia/index.html",
       "Herbmed/encyclopedia/index_en.html",
-      "Herbmed/encyclopedia/index_cn.html"
+      "Herbmed/encyclopedia/index_cn.html",
+      "encyclopedia/0002.stiff-hands.html",
+      "encyclopedia/0002.stiff-hands_en.html",
+      "encyclopedia/0002.stiff-hands_cn.html"
     ],
     "phase2_initial_paths": [
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -3749,9 +3760,6 @@
     "priority_record_blob": "88ebc0892358d9d0da14e8ca649942bca7d3c6c6",
     "priority_record_exact_readback": true,
     "resume_phase1_pending_paths": [
-      "encyclopedia/0002.stiff-hands.html",
-      "encyclopedia/0002.stiff-hands_en.html",
-      "encyclopedia/0002.stiff-hands_cn.html",
       "encyclopedia/0001.buttock-pain.html",
       "encyclopedia/0001.buttock-pain_en.html",
       "encyclopedia/0001.buttock-pain_cn.html",
@@ -3923,8 +3931,8 @@
         "encyclopedia/0002.stiff-hands_cn.html",
         "encyclopedia/0002.stiff-hands_en.html"
       ],
-      "status": "DEFERRED_BY_OWNER_HUB_INDEX_PRIORITY",
-      "stage": "SOURCE_AND_CITATION_AUDIT_CHECKPOINT",
+      "status": "COMPLETED_LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "stage": "PUBLIC_VERIFICATION_AND_RECOVERY_EXACT_COMPLETE",
       "baseline_main": "1a8376901a69f5327a1153ec97f3a189db128a45",
       "baseline_ledger": "e30aa1799c96e6c602929769e2477e7f5a7ac28d",
       "source_blobs": {
@@ -3933,19 +3941,14 @@
         "encyclopedia/0002.stiff-hands_en.html": "5ffbdd130add5aaa45289642d663519cb0b2b27f"
       },
       "candidate_sha256": null,
-      "main_writes": 0,
-      "counted_complete": 0,
+      "main_writes": 3,
+      "counted_complete": 3,
       "audit_record": "ops/html-recovery/reviews/20260915-stiff-hands-source-audit.json",
       "audit_blob": "ed50d33857501a175350837b5f84fb8a3138ffad",
       "audit_exact_readback": true,
-      "missing": [
-        "Targeted KO/EN/CN candidate edits and matching cards",
-        "Actual image inspection and dimensions",
-        "Hand-topic specific comparator assessment",
-        "Whole exact HTML and desktop/narrow render final review",
-        "GitHub/public deployment validation"
-      ],
-      "next_action": "Resume after priority35 fully verified and persisted; preserve source audit."
+      "next_action": "No repeat; continue phase1.",
+      "final_main": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+      "release_receipt": "ops/html-recovery/runs/20260916-stiff-hands-release.json"
     }
   ],
   "operating_facts": {
@@ -3967,17 +3970,17 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "at": "2026-09-16T00:36:00Z",
-    "completed_this_run": 0,
+    "at": "2026-09-16T00:58:00Z",
+    "completed_this_run": 3,
     "reworked_this_run": 0,
     "additional_index_completed_this_run": 0,
     "candidates_prepared": 3,
-    "public_completed": 105,
-    "remaining": 51,
+    "public_completed": 108,
+    "remaining": 48,
     "priority_completed": 35,
     "priority_remaining": 0,
     "additional_index_completed": 8,
-    "result": "Stiff-hands KO/EN/CN exact candidates and review record were persisted with exact readback. Static/content/schema and direct image review passed; mandatory desktop/narrow render remains HOLD. No main write or completion count.",
+    "result": "Stiff-hands KO/EN/CN corrected, directly reviewed, sequentially deployed and publicly verified.",
     "recommendation_measurement": "UNMEASURED"
   },
   "previous_release": {
@@ -4468,5 +4471,19 @@
         "Actual AI recommendation lift remains unmeasured."
       ]
     }
-  ]
+  ],
+  "model_review_followup": {
+    "default_model": "GPT-5.6 Sol Medium",
+    "issues": [
+      {
+        "topic": "encyclopedia/0002.stiff-hands EN/CN",
+        "issue": "Prior static PASS missed malformed og:url suffixes.",
+        "status": "CORRECTED_BEFORE_PUBLICATION"
+      }
+    ],
+    "final_escalation_queue": [
+      "At project close, deterministically re-audit canonical/og:url equality across all Sol-reviewed multilingual files.",
+      "Escalate only unresolved medical-claim, translation-causality, or rendered-layout anomalies; do not repeat full review of clean unchanged files."
+    ]
+  }
 }
