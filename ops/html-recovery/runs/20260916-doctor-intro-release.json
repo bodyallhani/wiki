@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "released_at": "2026-09-16T12:18:00+09:00",
+  "group": "doctor-intro",
+  "status": "PUBLIC_PASS",
+  "paths": [
+    {
+      "path": "doctor-intro.html",
+      "url": "https://wiki.body-all.co.kr/doctor-intro.html",
+      "sha256": "de727441c03060be840e453169deafd7bf6435ae6b89d2daeed31bf3fe22e31c",
+      "blob": "4cc7d4a55caa94841136df52c07f0cde6ea31697",
+      "commit": "85d139841da293e7820650fc66e717b57d80934a"
+    },
+    {
+      "path": "doctor-intro_en.html",
+      "url": "https://wiki.body-all.co.kr/doctor-intro_en.html",
+      "sha256": "f1bbfe0f8ebf45bc61042310c80f0e741946baed6750b9d15bafd0012d189faf",
+      "blob": "6b869006f612bc2b829d6fdf027a32ae9844e4d7",
+      "commit": "bb966bf78ea2e0f2e54b4ac31ec9d295b78e2ec0"
+    },
+    {
+      "path": "doctor-intro_cn.html",
+      "url": "https://wiki.body-all.co.kr/doctor-intro_cn.html",
+      "sha256": "785dc61a937f714592bfca3cc10ec643e3a0b2a8fbddd514c98b96b09505992b",
+      "blob": "d3f0005cf77f37ae299a9d0b799e74c5c9ede9dc",
+      "commit": "1e646dfeb46eef69c458589d764c2f74ea42b35c"
+    }
+  ],
+  "base_main_head": "08abf6a149b8e4f54168f4383bea8a481d50d4b5",
+  "final_main_head": "1e646dfeb46eef69c458589d764c2f74ea42b35c",
+  "intended_files_only": true,
+  "review_receipt": "ops/html-recovery/reviews/20260916-doctor-intro-final-candidate.json",
+  "public_verification": {
+    "pages_propagated": true,
+    "exact_main_readback": true,
+    "unsupported_education_director_and_outcome_claims_absent": true,
+    "review_stamps_absent": true,
+    "titles_h1_canonical_og_hreflang": true,
+    "faq_schema_items": [
+      3,
+      3,
+      3
+    ],
+    "images_loaded_with_reserved_dimensions": true,
+    "desktop_overflow_px": [
+      0,
+      0,
+      0
+    ],
+    "mobile_candidate_overflow_px": [
+      0,
+      0,
+      0
+    ]
+  },
+  "limits": [
+    "Clinician backgrounds do not predict individual outcomes.",
+    "The 40,000 figure is operational experience through December 2025, not clinical outcomes.",
+    "Actual AI recommendation lift remains unmeasured."
+  ]
+}
