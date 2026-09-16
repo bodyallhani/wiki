@@ -1,0 +1,73 @@
+{
+  "kind": "html_final_candidate_review",
+  "topic": "bodyallfit0002-postpartum-menopause-weight",
+  "reviewed_at": "2026-09-16T05:53:22.027Z",
+  "reviewer": "GPT-5.6 Sol Medium",
+  "user_approval_basis": "User instructed immediate deployment and to assume approval after agent review.",
+  "source_main_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
+  "source_ledger_blob": "24c252da816319eacaf562c746c234faa70344eb",
+  "candidates": [
+    {
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
+      "source_blob": "2672e900cfa65fdbb50ad97a569e3bf7eb66bed1",
+      "sha256": "ee786e3ceba2cdd7ea0cc72d0cc01547cc1b4a19eae3bf1d202363a27a6cd4ed",
+      "recovery_path": "ops/html-recovery/candidates/20260916-bodyallfit0002-ko.html"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
+      "source_blob": "9ac86525e8c56307001e9af845614064c9ea789d",
+      "sha256": "2bddcac480670675aa8961fbdbd6faa5b055c4bd61adbfdefd584ba9739a74a2",
+      "recovery_path": "ops/html-recovery/candidates/20260916-bodyallfit0002-en.html"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
+      "source_blob": "cbb2aebb6095c9c481a6601dc8aa009f9afa6919",
+      "sha256": "cb436d2263d699c307ea0e7627a27fef7ca45152b80e819db2e4214a078cb15a",
+      "recovery_path": "ops/html-recovery/candidates/20260916-bodyallfit0002-cn.html"
+    }
+  ],
+  "target_patient": "Suwon patients with postpartum weight retention or menopause-related waist gain who need breastfeeding, medicines, associated symptoms, food, activity, sleep and stress reviewed together.",
+  "quotable_recommendation_reason": "BodyallFit separates postpartum recovery and menopause, checks herbal fit and safety, assigns distinct roles to herbal care, food, exercise and lifestyle, then repeats the same weight, waist and behavior measures instead of promising BMR restoration or spot reduction.",
+  "operating_facts_source": "Previously publicly verified BodyallFit index and clinic service description for integrated herbal, food, exercise and lifestyle management. Correction-patient counts, MET and ultrasound are not used because they are not weight-outcome evidence.",
+  "evidence_limits": [
+    "ACOG postpartum activity guidance does not establish BodyallFit or herbal efficacy.",
+    "The Menopause Society distinguishes aging/lifestyle weight gain from menopause-related abdominal redistribution; menopause is not the single cause of all weight gain.",
+    "NICE obesity guidance supports multicomponent assessment and management but not the exact BodyallFit combination.",
+    "No independent outcome evidence establishes BMR restoration, spot reduction or superiority for this pathway.",
+    "Actual non-branded AI baseline/after recommendation lift remains unmeasured."
+  ],
+  "resolved_defects": [
+    "Removed the second BMR mechanism image that implied unsupported causal diagnosis/restoration.",
+    "Removed BMR-restoration, thermogenesis-correction, fluid-removal, pelvic-circulation, sarcopenia-prevention, body-fat-centered-loss and safe/effective overclaims.",
+    "Corrected Chinese og:url.",
+    "Removed unverified 365-day/opening-hours claims and did not add inherited physician-review metadata."
+  ],
+  "validation": {
+    "full_html_read": true,
+    "medical_claims": true,
+    "translation_alignment": true,
+    "canonical_og_exact": true,
+    "hreflang_count": 4,
+    "schema_types": [
+      "MedicalWebPage",
+      "MedicalClinic",
+      "MedicalTherapy",
+      "FAQPage"
+    ],
+    "schema_faq_count": 4,
+    "visible_faq_count": 4,
+    "same_language_related_cards": true,
+    "booking_link": true,
+    "image_count": 1,
+    "image_reserved_size": "1376x768",
+    "responsive_css_static_pass": true,
+    "balanced_markup": true,
+    "direct_predeployment_render": false,
+    "direct_predeployment_render_reason": "Cloud-browser candidate data URL is blocked; user authorized immediate deployment after agent review. Public render will be checked after Pages deployment."
+  },
+  "residual_defects": [
+    "Direct 360px public-browser capture may require the final focused Sol anomaly sweep if the cloud viewport remains fixed."
+  ],
+  "verdict": "PASS_TO_SEQUENTIAL_DEPLOYMENT",
+  "reason": "The exact candidates front-load patient fit and Suwon, provide a clinic-specific selection and reassessment process, preserve urgent/referral signals, resolve the BMR image hold, and avoid unsupported outcome, superiority or mechanism claims."
+}
