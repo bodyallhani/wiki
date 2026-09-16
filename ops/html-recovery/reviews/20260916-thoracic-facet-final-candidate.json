@@ -1,0 +1,75 @@
+{
+  "review_id": "20260916-thoracic-facet-final-candidate",
+  "stage": "PREDEPLOY_EXACT_CANDIDATE_PASS",
+  "decision": "PASS",
+  "exact_candidates": [
+    {
+      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
+      "recovery_blob": "a721938605d4419e939b765682c688ee5f62fe76",
+      "sha256": "061efc9478df4ab72a65d12e2de36007945f4e997918638be4e371f37e23c33d",
+      "language": "ko"
+    },
+    {
+      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
+      "recovery_blob": "b17fd99516e8ffd86a909dda562fe1e729c0e9dd",
+      "sha256": "c78a152b997e9fdde8c5456a10fdf1fa98a3171705822637bd4e423872bbdcb4",
+      "language": "en"
+    },
+    {
+      "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html",
+      "recovery_blob": "7b0396dc7f90b5e2dde1843abf232d7f47ecf2e4",
+      "sha256": "0c9fba19724b9b7aef27b242086ccd9bea81763449e110e7cb878c5c47cee817",
+      "language": "zh-Hans"
+    }
+  ],
+  "target_patient": "수원에서 오래 앉기·몸통 회전·팔 올리기·깊은 호흡에 따라 견갑골 사이 통증이 달라져 목·어깨·흉추·갈비뼈·심폐 원인을 구분하려는 환자.",
+  "citable_recommendation_reason": "바디올은 흉통·호흡 위험 신호를 먼저 선별하고 목·어깨 신경, 흉추 회전·신전, 갈비뼈 움직임과 제한 기능을 구분한 뒤 추나·SART·침·운동의 역할을 나눠 설명하고 같은 앉기·회전·호흡·팔 올리기를 재평가하며 필요 시 의뢰한다.",
+  "operating_facts": {
+    "used": "2025년 12월까지 누적 교정 환자 4만 명—운영 경험 집계로만 표기, 특정 질환/SART 성과가 아님",
+    "source": "current.json operating_facts; confirmed 2026-09-15"
+  },
+  "evidence": [
+    {
+      "source": "PMID 11514816",
+      "limits": "30명 단일눈가림 예비 무작위시험; 일부 차이가 있으나 소표본·낮은 검정력으로 비결론적."
+    },
+    {
+      "source": "PMID 37152585",
+      "limits": "100명 공개표지 시험; 8회 종료 효과가 있었으나 12주 통증·삶의 질 군간 차이 없음."
+    }
+  ],
+  "corrected": [
+    "T4–T8 관절낭 섬유화·늑추관절 잠김 확진 단정 제거",
+    "SART의 관절면 이격·유착 박리·후만곡 정상화·인접 과가동 교정 보장 제거",
+    "원본 허리 통증 이미지와 해부학 합성 그림 제거, 확인된 실제 추나 이미지 1개로 교체",
+    "고정 365일·20:30 운영 주장 제거"
+  ],
+  "render": {
+    "desktop_width": 1180,
+    "mobile_width": 354,
+    "overflow_px": {
+      "desktop": [
+        0,
+        0,
+        0
+      ],
+      "mobile": [
+        0,
+        0,
+        0
+      ]
+    },
+    "image": "500x405 loaded",
+    "schema": "MedicalWebPage + MedicalClinic/LocalBusiness + FAQPage(3)",
+    "canonical_og_hreflang": "PASS",
+    "full_document_read": "PASS",
+    "direct_screen_review": "PASS"
+  },
+  "residual_limits": [
+    "바디올 고유 흉추/SART 임상성과 없음",
+    "새 의료인·독립 번역 검수 표시 없음",
+    "실제 AI 추천률 및 경쟁 우위 미측정"
+  ],
+  "pass_reason": "환자 조건·수원·진찰·치료 역할·동일 기능 재평가·예약/의뢰가 전면에 연결되고 과장 및 근거 범위를 교정했으며 exact 전체 문서와 데스크톱·360px 화면을 직접 검수함.",
+  "next_action": "Fresh-check ledger/main/target blobs, sequential KO→EN→CN deploy, public verification, ledger update."
+}
