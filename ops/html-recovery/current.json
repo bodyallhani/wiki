@@ -2833,7 +2833,7 @@
     ],
     "exact_readback": true,
     "ledger_blob_before_exact_confirmation": "5c1f91dbaae7683221294ed372bd36c86ded360e",
-    "ledger_exact_readback": false
+    "ledger_exact_readback": true
   },
   "latest_release": {
     "topic": "Doctor intro phase1 KO/EN/CN",
@@ -2899,7 +2899,7 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-16T03:20:00Z",
+  "updated_at": "2026-09-16T03:22:00Z",
   "version": "V266_DOCTOR_INTRO_PUBLIC_PASS_NEXT_HERB0001",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
@@ -2950,12 +2950,12 @@
       "doctor-intro_en.html": "6b869006f612bc2b829d6fdf027a32ae9844e4d7",
       "doctor-intro_cn.html": "d3f0005cf77f37ae299a9d0b799e74c5c9ede9dc"
     },
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_PENDING_EXACT",
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
     "single_writer_active": false,
     "required_next": "Resume Herbmed/encyclopedia/0001 KO/EN/CN from the freshly read ledger.",
     "review_record": "ops/html-recovery/reviews/20260916-doctor-intro-final-candidate.json",
     "release_record": "ops/html-recovery/runs/20260916-doctor-intro-release.json",
-    "ledger_exact_readback": false
+    "ledger_exact_readback": true
   },
   "pending_run": {
     "topic": "Herbmed/encyclopedia/0001 KO/EN/CN",
