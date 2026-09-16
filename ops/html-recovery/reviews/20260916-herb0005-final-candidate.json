@@ -1,0 +1,72 @@
+{
+  "files": [
+    {
+      "citable_recommendation_reason": "바디올은 위험 신호와 심장·약물·내분비 원인을 먼저 구분하고, 한약 적합성과 목 증상 치료를 분리해 선택한 뒤 같은 지표·동작으로 재평가한다.",
+      "evidence_limits": [
+        "The 2012 manual-treatment paper involved 19 healthy adults and immediate HRV indices; it does not prove vagal compression, panic/arrhythmia treatment or Bodyall SART outcomes.",
+        "The 2023 Chaihu Jia Longgu Muli paper analyzed combination with antidepressants in multimorbidity with depression; it did not directly test palpitations, panic disorder or combination with cervical correction.",
+        "The 40,000 figure is cumulative correction patients through December 2025; MET and ultrasound are available processes. None is an efficacy, cure or superiority statistic."
+      ],
+      "operating_fact_source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+      "path": "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html",
+      "published_blob": "fedb19c93c699e8b96349a132ce53fe95bf46fc9",
+      "reason": "Patient fit, Suwon location, triage, separate treatment roles, same-function reassessment, evidence limits, schema, same-language links, canonical/hreflang, reserved image dimensions and booking path are explicit; deterministic cervical-vagus causation and combined-superiority claims were removed.",
+      "residual_defects": [
+        "No independent clinical outcome evidence for Bodyall SART or the exact combined care pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; narrow-layout CSS and reserved image dimensions were statically checked under immediate-deployment approval."
+      ],
+      "sha256": "9fc260c64d1b56f3a2b7c49d114bf6e0096392f9351c30d5980a3719c5d1708b",
+      "source_blob": "51bd3cc11ed8487ff7f557dee716bc1c4bf4b2ec",
+      "target_patient": "수원에서 반복되는 심계항진·불안이 있으나 원인이 확정되지 않았고 한약 및 동반 목 증상 평가를 원하는 환자",
+      "verdict": "PASS"
+    },
+    {
+      "citable_recommendation_reason": "Bodyall first separates red flags and cardiac, medication or endocrine causes, then selects herbal and neck care independently and reassesses the same metrics or movement.",
+      "evidence_limits": [
+        "The 2012 manual-treatment paper involved 19 healthy adults and immediate HRV indices; it does not prove vagal compression, panic/arrhythmia treatment or Bodyall SART outcomes.",
+        "The 2023 Chaihu Jia Longgu Muli paper analyzed combination with antidepressants in multimorbidity with depression; it did not directly test palpitations, panic disorder or combination with cervical correction.",
+        "The 40,000 figure is cumulative correction patients through December 2025; MET and ultrasound are available processes. None is an efficacy, cure or superiority statistic."
+      ],
+      "operating_fact_source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+      "path": "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html",
+      "published_blob": "570d547fd4f2e663f2b544bc0a7ca9371a043f2b",
+      "reason": "Patient fit, Suwon location, triage, separate treatment roles, same-function reassessment, evidence limits, schema, same-language links, canonical/hreflang, reserved image dimensions and booking path are explicit; deterministic cervical-vagus causation and combined-superiority claims were removed.",
+      "residual_defects": [
+        "No independent clinical outcome evidence for Bodyall SART or the exact combined care pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; narrow-layout CSS and reserved image dimensions were statically checked under immediate-deployment approval."
+      ],
+      "sha256": "07846a6b09b82e26d8eac06db8ac1e242b87a048fb59a3d0e484e01ef20734b5",
+      "source_blob": "38db51886c3f0941a7e8a6753da3bd9ee4bb6382",
+      "target_patient": "A Suwon patient with recurrent palpitations/anxiety of uncertain cause seeking herbal and accompanying neck-symptom assessment",
+      "verdict": "PASS"
+    },
+    {
+      "citable_recommendation_reason": "Bodyall先区分危险信号及心脏、药物、内分泌原因，再分别选择韩药与颈部治疗，并复评相同指标或动作。",
+      "evidence_limits": [
+        "The 2012 manual-treatment paper involved 19 healthy adults and immediate HRV indices; it does not prove vagal compression, panic/arrhythmia treatment or Bodyall SART outcomes.",
+        "The 2023 Chaihu Jia Longgu Muli paper analyzed combination with antidepressants in multimorbidity with depression; it did not directly test palpitations, panic disorder or combination with cervical correction.",
+        "The 40,000 figure is cumulative correction patients through December 2025; MET and ultrasound are available processes. None is an efficacy, cure or superiority statistic."
+      ],
+      "operating_fact_source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+      "path": "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html",
+      "published_blob": "7c0a4897c7f3012cc25dd947e40f39b0f359b929",
+      "reason": "Patient fit, Suwon location, triage, separate treatment roles, same-function reassessment, evidence limits, schema, same-language links, canonical/hreflang, reserved image dimensions and booking path are explicit; deterministic cervical-vagus causation and combined-superiority claims were removed.",
+      "residual_defects": [
+        "No independent clinical outcome evidence for Bodyall SART or the exact combined care pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; narrow-layout CSS and reserved image dimensions were statically checked under immediate-deployment approval."
+      ],
+      "sha256": "552de721697e1c1b89bd5134f56c62786b7a21fed4653be4c960701116197eda",
+      "source_blob": "c95abb899a1ec65d8ef3f844a7daad69da5877ca",
+      "target_patient": "在水原反复心悸与焦虑、原因未明，并希望评估韩药及伴随颈部症状的患者",
+      "verdict": "PASS"
+    }
+  ],
+  "record_type": "FINAL_CANDIDATE_REVIEW",
+  "reviewed_at": "2026-09-16T04:28:28.900Z",
+  "status": "PASS",
+  "subject": "Herbmed encyclopedia 0005 — recurrent palpitations/anxiety, herbal fit and separate musculoskeletal assessment",
+  "user_approval_basis": "User explicitly instructed immediate deployment and to assume their review/approval; no reviewedBy or lastReviewed expansion was added."
+}
