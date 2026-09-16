@@ -2728,7 +2728,7 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-16T01:36:03.170Z",
+  "updated_at": "2026-09-16T01:36:43.932Z",
   "version": "V262_BUTTOCK_PAIN_PUBLIC_PASS_NEXT_TARSAL_TUNNEL",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
@@ -2779,11 +2779,12 @@
       "encyclopedia/0001.buttock-pain_en.html": "c38c4526b3c41b8793d64e60720fbff20315356c",
       "encyclopedia/0001.buttock-pain_cn.html": "f168c35fa9fa671112d873138d780502be542e35"
     },
-    "stage": "DEPLOYED_PUBLIC_VERIFIED_LEDGER_SAVE_PENDING",
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
     "single_writer_active": false,
     "required_next": "Resume encyclopedia/0021 KO/EN/CN from the freshly read ledger.",
     "review_record": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json",
-    "release_record": "ops/html-recovery/runs/20260916-buttock-pain-release.json"
+    "release_record": "ops/html-recovery/runs/20260916-buttock-pain-release.json",
+    "ledger_exact_readback": true
   },
   "pending_run": {
     "topic": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release KO/EN/CN",
