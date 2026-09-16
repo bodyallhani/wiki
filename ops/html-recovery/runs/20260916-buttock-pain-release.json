@@ -1,0 +1,90 @@
+{
+  "version": "buttock-pain-release-v1",
+  "recorded_at": "2026-09-16T01:34:00.338Z",
+  "topic": "encyclopedia/0001.buttock-pain KO/EN/CN",
+  "decision": "PASS_PUBLIC",
+  "scope": {
+    "original156_count_delta": 3,
+    "additional_index_count_delta": 0,
+    "new_urls": 0
+  },
+  "source": {
+    "ledger_blob": "55d991f14a2ea1a8ba584681b4b764377093359d",
+    "base_main_commit": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+    "source_target_blobs": {
+      "encyclopedia/0001.buttock-pain.html": "3caa92e440e27259699ab3e694503a32fd0b9341",
+      "encyclopedia/0001.buttock-pain_en.html": "5bafcae750b67f82f653361a054c2f5130088ebe",
+      "encyclopedia/0001.buttock-pain_cn.html": "b69c11e82046203d359139e31b0b6822df8b01d7"
+    }
+  },
+  "exact_published": {
+    "encyclopedia/0001.buttock-pain.html": {
+      "blob": "9da1ff441a7c5fc4d490894eb16e17e6a0d6e51d",
+      "sha256": "dbeb498ce479ddd777965dbba3de6c9f3b2b10ea16fd59433a560725c922a815",
+      "commit": "5ea4998f06e71ae448c2dd720d4171e451ec6fd0",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0001.buttock-pain.html"
+    },
+    "encyclopedia/0001.buttock-pain_en.html": {
+      "blob": "c38c4526b3c41b8793d64e60720fbff20315356c",
+      "sha256": "76117bf77cd7e4d2b884176399b047d085519ce437fd3f28e09b1bbc2fcfd081",
+      "commit": "5c8ed947b716cfffd42e1ea4bca1d89756c55c77",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0001.buttock-pain_en.html"
+    },
+    "encyclopedia/0001.buttock-pain_cn.html": {
+      "blob": "f168c35fa9fa671112d873138d780502be542e35",
+      "sha256": "d950a57c4b06453a632f280a9343cbe1900dc1eb362f0edea499955d949bdfea",
+      "commit": "304ca75f2300952d99da1e893578b1d60ecfe80d",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0001.buttock-pain_cn.html"
+    }
+  },
+  "final_main_commit": "304ca75f2300952d99da1e893578b1d60ecfe80d",
+  "compare": {
+    "ahead_by": 3,
+    "unexpected_files": [],
+    "changed_files": [
+      "encyclopedia/0001.buttock-pain.html",
+      "encyclopedia/0001.buttock-pain_en.html",
+      "encyclopedia/0001.buttock-pain_cn.html"
+    ]
+  },
+  "review": {
+    "target_patient": "Suwon patients with buttock pain or leg tingling worsened by sitting/driving, while separating lumbar root, hip, deep-gluteal and emergency presentations.",
+    "citable_reason": "Bodyall separates lumbar, hip and deep-gluteal causes, explains distinct Chuna/SART/acupuncture/acupotomy roles, and retests the same sitting and walking tasks.",
+    "evidence": [
+      "Martin et al. 2014, PMID 24217716 (small diagnostic-aid study, not outcome evidence)",
+      "Royal Orthopaedic Hospital NHS cauda equina red flags"
+    ],
+    "operating_fact_source": "No numeric operating claim; verified service roles only.",
+    "evidence_limits": [
+      "No Bodyall-specific outcome evidence",
+      "No new physician or independent translation review asserted",
+      "Actual AI recommendation lift unmeasured"
+    ],
+    "residual_defects": [],
+    "exact_review_record": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json"
+  },
+  "validation": {
+    "github_exact_readback_each": true,
+    "public_updated_titles_h1": true,
+    "public_schema_graph_types": [
+      "MedicalWebPage",
+      "MedicalClinic/LocalBusiness",
+      "FAQPage"
+    ],
+    "public_faq_questions_each": 3,
+    "public_canonical_og_hreflang": true,
+    "public_language_links": true,
+    "public_image_loaded_each": "manip2.jpg 500x405",
+    "public_desktop_visual_pass": true,
+    "public_desktop_overflow_zero_each": true,
+    "exact_candidate_360_full_section_visual_pass": true,
+    "exact_candidate_360_overflow_zero_each": true
+  },
+  "caught_and_corrected": [
+    "Malformed EN/CN og:url suffixes",
+    "Unavailable source hero image",
+    "Unsupported diagnosis/decompression/root-cause/safety/outcome claims",
+    "Stale KO/EN/CN language links copied from the prior stiff-hands page, caught during direct 360px review"
+  ],
+  "actual_ai_recommendation_lift": "UNMEASURED"
+}
