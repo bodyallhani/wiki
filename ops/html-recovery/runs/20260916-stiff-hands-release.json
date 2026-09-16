@@ -1,0 +1,60 @@
+{
+  "version": "stiff-hands-release-v1",
+  "recorded_at": "2026-09-16T00:55:00Z",
+  "topic": "encyclopedia/0002.stiff-hands KO/EN/CN",
+  "decision": "PUBLISHED_PUBLIC_VERIFIED",
+  "base_main_head": "a7d10f1aabd0ea86fd0d388a77365b338d747938",
+  "final_main_head": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+  "compare": {
+    "ahead_by": 3,
+    "only_intended_files": true,
+    "files": [
+      "encyclopedia/0002.stiff-hands.html",
+      "encyclopedia/0002.stiff-hands_en.html",
+      "encyclopedia/0002.stiff-hands_cn.html"
+    ]
+  },
+  "files": {
+    "encyclopedia/0002.stiff-hands.html": {
+      "blob": "ee3a3c2ac4f3e4c5308c56938a87d8e6368449aa",
+      "sha256": "0724bf7fdcb587b7366729e75f7551fe40aee38cad92473d1e308b20a7631204",
+      "commit": "0249c2afff19c531be7e30585994b89c7b997901",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0002.stiff-hands.html"
+    },
+    "encyclopedia/0002.stiff-hands_en.html": {
+      "blob": "f55430918392601c09b62f92ea50be90ba131a17",
+      "sha256": "cf6033628be93995a3b94f40bb9a3476eb8728940f1b80e986c6d8ac7c9db0f5",
+      "commit": "e9bf349b7dc57df7a718115c6da5169d93b39f6a",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0002.stiff-hands_en.html"
+    },
+    "encyclopedia/0002.stiff-hands_cn.html": {
+      "blob": "30127094ee7537e742d36014c00a45d44ba04845",
+      "sha256": "ddee7f973a0905934df1b7d50fc0d7fe0a9d3f5ebb5405055fef26958e2dec84",
+      "commit": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0002.stiff-hands_cn.html"
+    }
+  },
+  "public_verification": {
+    "cache_busted_browser_read": true,
+    "titles_h1_and_first_screen_match_candidates": true,
+    "canonical_og_equal_per_language": true,
+    "hreflang_aligned": true,
+    "json_ld_parses": true,
+    "image_loaded": true,
+    "image_natural_size": "2656x1600",
+    "desktop_overflow_px": 0,
+    "narrow_360_candidate_render_direct_pass": true,
+    "note": "Public DOM and desktop screen were checked after propagation; the exact candidates had already passed direct 1280px and 360px render review before deployment."
+  },
+  "limits": [
+    "AAOS and NHS support symptom patterns and care-choice framing; they do not establish Bodyall outcomes or acupotomy effectiveness.",
+    "Ultrasound availability is owner-confirmed operations, not an outcome measure.",
+    "No new physician review or independent translation review is asserted.",
+    "Actual AI recommendation lift remains unmeasured."
+  ],
+  "model_review_followup": {
+    "issue": "Earlier static PASS missed malformed EN/CN og:url suffixes.",
+    "corrected_before_publication": true,
+    "final_audit": "Deterministically recheck canonical/og:url equality across all Sol-reviewed multilingual files at project close."
+  }
+}
