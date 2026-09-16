@@ -1,0 +1,128 @@
+{
+  "review_id": "20260916-tarsal-tunnel-final-candidate",
+  "reviewed_at": "2026-09-16T10:49:40+09:00",
+  "stage": "PREDEPLOY_EXACT_CANDIDATE_PASS",
+  "decision": "PASS",
+  "exact_candidates": [
+    {
+      "path": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
+      "recovery_path": "ops/html-recovery/candidates/20260916-tarsal-tunnel/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
+      "recovery_blob": "3c565e33443d387a4c67a31841d37ccb079f9df1",
+      "sha256": "42ca0ce681a9f6ee18f3ec26a988399141659dc9a693d99b924317dbf588ab4b",
+      "language": "ko"
+    },
+    {
+      "path": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
+      "recovery_path": "ops/html-recovery/candidates/20260916-tarsal-tunnel/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
+      "recovery_blob": "768d505b44429a76df509caf0b9f68702ff1caf6",
+      "sha256": "23925fc9f102cdadee249444dee259b03a8934f6e80b639a1400fd94de7a63cc",
+      "language": "en"
+    },
+    {
+      "path": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html",
+      "recovery_path": "ops/html-recovery/candidates/20260916-tarsal-tunnel/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html",
+      "recovery_blob": "9bc3fe8cdc68b85b6a5b639eb0b71001171b42c1",
+      "sha256": "693cc1b6cb4a65addbecc0707e2b4b618a83e5705313b55dfc498f4b405ea5e1",
+      "language": "zh-Hans"
+    }
+  ],
+  "target_patient": "수원에서 내측 발목 아래부터 발바닥까지 저림·화끈거림이 서기·걷기·신발 압박에 따라 달라지고, 족근관·족저근막·허리 또는 전신 신경 원인을 구분하려는 환자.",
+  "citable_recommendation_reason": "바디올은 위험 신호를 먼저 확인하고 발목·발 감각과 근력, 내측 복사뼈 유발 반응, 발목 가동성·부하, 허리 신경 징후를 함께 구분한 뒤 침·도침·추나/SART의 역할과 한계를 나눠 설명하고 동일한 서기·걷기·저림 범위를 재평가하며 필요 시 전기진단·영상·수술 평가로 의뢰한다.",
+  "operating_facts": {
+    "used": [
+      "초음파 시행 가능 — 2026-09-15 원장 직접 확인"
+    ],
+    "not_used": [
+      "2025년 12월까지 누적 교정 환자 4만 명 — 본 문서의 족근관/도침 성과로 오인될 수 있어 미기재",
+      "MET 시행 — 주제상 선택 이유에 직접 필요하지 않아 미기재"
+    ],
+    "source": "ops/html-recovery/current.json operating_facts; confirmation date 2026-09-15"
+  },
+  "evidence": [
+    {
+      "source": "PMID 32991456",
+      "finding": "침도 효과·안전성 체계적 문헌고찰 프로토콜로 결과 논문이 아님.",
+      "use": "효과 입증 자료로 오분류하지 않고 연구계획이라는 한계를 명시."
+    },
+    {
+      "source": "DOI 10.13045/jar.2020.00073",
+      "finding": "80명 무작위배정, 군별 39명 분석, 유효율 87.18% 대 61.53% 보고.",
+      "limits": "단일 소규모 연구, 주관적 평가 기준, 장기추적·이상반응 보고 한계; 바디올 성과·일반적 우월성으로 외삽 금지."
+    },
+    {
+      "source": "AAOS OrthoInfo plantar fasciitis and bone spurs",
+      "finding": "족저근막 통증의 발뒤꿈치·첫걸음 패턴과 다른 원인 감별 필요.",
+      "use": "족저근막과 신경 증상 구분 프레임에만 사용."
+    }
+  ],
+  "removed_or_corrected": [
+    "도침이 굴근지대를 정밀 절개하고 신경을 직접 감압하며 신경전도와 발바닥 기능을 정상화한다는 단정 제거",
+    "SART가 족근관 공간을 만들고 압박을 직접 해소하거나 재발을 구조적으로 예방한다는 단정 제거",
+    "87.18% 대 61.53% 결과를 바디올 또는 보편적 우월성으로 제시하지 않도록 한계 명시",
+    "프로토콜 논문을 효능 결과로 취급한 오류 수정",
+    "미확인 바디올 도침 누적경험·효과, 고정 진료시간·365일 진료 주장 제거"
+  ],
+  "render_validation": {
+    "desktop_harness": {
+      "commit": "7920c8960ac63e5ef87b84ced84222870f0d93aa",
+      "blob": "306f61f8d0fc55749d2069f194f3d3b88996b993",
+      "width": 1180,
+      "overflow_px": [
+        0,
+        0,
+        0
+      ],
+      "direct_review": "PASS"
+    },
+    "mobile_harness": {
+      "commit": "7920c8960ac63e5ef87b84ced84222870f0d93aa",
+      "blob": "2fb8970e7f617d296a5f24455078f2bbb433663b",
+      "width": 354,
+      "content_width": 339,
+      "overflow_px": [
+        0,
+        0,
+        0
+      ],
+      "direct_review": "PASS"
+    },
+    "images": {
+      "count_per_page": 1,
+      "natural_size": "1376x768",
+      "complete": [
+        true,
+        true,
+        true
+      ],
+      "dimensions_reserved": true
+    },
+    "schema": {
+      "jsonld_parse": true,
+      "types": [
+        "MedicalWebPage",
+        "MedicalClinic/LocalBusiness",
+        "FAQPage"
+      ],
+      "faq_questions_each": 3
+    },
+    "multilingual": {
+      "canonical_og_aligned": true,
+      "hreflang": [
+        "ko",
+        "en",
+        "zh-Hans",
+        "x-default"
+      ],
+      "language_links_correct": true
+    },
+    "full_document_direct_read": true
+  },
+  "residual_limits": [
+    "바디올 고유 족근관·도침 임상성과를 입증하지 않음.",
+    "새 exact 버전에 대한 원장 의료검수 또는 독립 번역검수 표시를 추가하지 않음.",
+    "진단검사 성능은 환경과 연구에 따라 달라 단일 양성 소견을 확진으로 사용하지 않음.",
+    "실제 AI baseline/after 추천률 및 경쟁사 대비 추천 우위는 미측정."
+  ],
+  "pass_reason": "세 언어 exact 후보가 환자 조건·수원·바디올 진찰·치료 역할·동일 기능 재평가·예약/의뢰를 전면에 연결하며, 과장·근거 오분류를 제거했고 전체 문서·스키마·이미지·1180px/354px 렌더링을 직접 검수해 필수 항목을 충족함.",
+  "next_action": "Fresh-check ledger, main head and target blobs; sequential KO→EN→CN deploy with optimistic locks; exact readback; intended-file compare; public Pages verification; only then ledger completion."
+}
