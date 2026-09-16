@@ -148,7 +148,7 @@
   "active_run": {
     "owner": "herb0008-phase1-release-20260916",
     "single_writer_active": false,
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_CONFIRMATION_PENDING",
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
     "base_main_head": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
     "final_main_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
     "source_blobs": {
@@ -169,7 +169,7 @@
     "review_record": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
     "release_record": "ops/html-recovery/runs/20260916-herb0008-release.json",
     "completed_at": "2026-09-16T05:42:44.468Z",
-    "ledger_exact_readback": false,
+    "ledger_exact_readback": true,
     "required_next": "Resume BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html, _en.html and _cn.html from the freshly read ledger; preserve its BMR-image consistency hold unless actually resolved."
   },
   "additional_index_completion_rows": [
@@ -3439,13 +3439,13 @@
     "recommendation_measurement": "UNMEASURED"
   },
   "latest_recovery_persistence": {
-    "at": "2026-09-16T05:42:44.468Z",
-    "status": "PENDING_EXACT_READBACK_AFTER_HERB0008_PUBLIC_RELEASE",
+    "at": "2026-09-16T05:43:38.394Z",
+    "status": "EXACT_READBACK_CONFIRMED_AFTER_HERB0008_PUBLIC_RELEASE",
     "candidate_files_exact": true,
     "herb0008_source_record_exact": true,
     "review_record_exact": true,
     "release_record_exact": true,
-    "current_json_blob_before_confirmation": null
+    "current_json_blob_before_confirmation": "361f6a2529d24a96458ee5660d66de083567ae1e"
   },
   "latest_release": {
     "topic": "Herbmed encyclopedia 0008 shallow sleep/night palpitations triage and separated Tian Wang Bu Xin Dan/neck-function care KO/EN/CN",
@@ -4422,8 +4422,8 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T05:42:44.468Z",
-  "version": "V276_HERB0008_PUBLIC_PASS_NEXT_BODYALLFIT0002",
+  "updated_at": "2026-09-16T05:43:38.394Z",
+  "version": "V277_HERB0008_PUBLIC_PASS_LEDGER_EXACT_NEXT_BODYALLFIT0002",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
     "phase": "RESUME_PHASE1_PENDING",
