@@ -134,36 +134,39 @@
     "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html",
     "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html",
     "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html",
-    "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html"
+    "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html",
+    "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
+    "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
+    "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html"
   ],
   "active_run": {
-    "base_main_head": "20a99679cb6b087d058fb88f8ce2279bc4a0c9bf",
-    "completed_at": "2026-09-16T04:30:56.234Z",
+    "base_main_head": "93d71ba80bda8fe692a3ac9e7bd2ab8180575ce7",
+    "completed_at": "2026-09-16T04:49:19.474Z",
     "exact_candidate_hashes": {
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html": "9fc260c64d1b56f3a2b7c49d114bf6e0096392f9351c30d5980a3719c5d1708b",
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html": "552de721697e1c1b89bd5134f56c62786b7a21fed4653be4c960701116197eda",
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html": "07846a6b09b82e26d8eac06db8ac1e242b87a048fb59a3d0e484e01ef20734b5"
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html": "d3ef29c8ded9a314273988cda3018de08844da6b5cc8c4947048d694916c39af",
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html": "c95f10dce3b39b8ace2732d386f810a54e3f5ede593e68ee38005bfabdaab396",
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html": "07199a7f60d2fc2c1e38970ee83a30f0baaeed8286f0b7b0d397cc7d0c6cc259"
     },
-    "final_main_head": "93d71ba80bda8fe692a3ac9e7bd2ab8180575ce7",
-    "ledger_exact_readback": true,
-    "owner": "herb0005-phase1-release-20260916",
+    "final_main_head": "37db877200073183564c89df7e53101cf7f9c1c2",
+    "ledger_exact_readback": false,
+    "owner": "herb0006-phase1-release-20260916",
     "published_blobs": {
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html": "fedb19c93c699e8b96349a132ce53fe95bf46fc9",
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html": "7c0a4897c7f3012cc25dd947e40f39b0f359b929",
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html": "570d547fd4f2e663f2b544bc0a7ca9371a043f2b"
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html": "b0ce6cd4017697cabfb47bf69e6136d600161ed4",
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html": "9927e2ba1d7a2b0bec042a8d5eda57eee037376b",
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html": "703c1a0b79589aa160b871b8bf2c35df34cc9182"
     },
-    "release_record": "ops/html-recovery/runs/20260916-herb0005-release.json",
-    "required_next": "Resume Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html, Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html, Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html from the freshly read ledger.",
-    "review_record": "ops/html-recovery/reviews/20260916-herb0005-final-candidate.json",
+    "release_record": "ops/html-recovery/runs/20260916-herb0006-release.json",
+    "required_next": "Resume Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html, Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html, Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html from the freshly read ledger.",
+    "review_record": "ops/html-recovery/reviews/20260916-herb0006-final-candidate.json",
     "single_writer_active": false,
     "source_blobs": {
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html": "51bd3cc11ed8487ff7f557dee716bc1c4bf4b2ec",
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html": "c95abb899a1ec65d8ef3f844a7daad69da5877ca",
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html": "38db51886c3f0941a7e8a6753da3bd9ee4bb6382"
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html": "1404878c6d818667de51b9ffbb543e88e2e58a06",
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html": "e90828584ef1410f42c48f6dc60eb618dda2d61c",
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html": "a77f95911788bd9db004d8d319fdc54eb18513a1"
     },
-    "source_ledger_blob": "0254630c5ab2306a8caf03f71186fdf146e5c63c",
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
-    "started_at": "2026-09-16T04:30:56.234Z"
+    "source_ledger_blob": "8138d748f64435f2cd40bd84303ae58539b70675",
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_PENDING_EXACT",
+    "started_at": "2026-09-16T04:34:28.442Z"
   },
   "additional_index_completion_rows": [
     {
@@ -2423,19 +2426,58 @@
       "verified_at": "2026-09-16T04:28:28.900Z"
     },
     {
-      "latest_standard_completed": false,
+      "final_repository_head": "37db877200073183564c89df7e53101cf7f9c1c2",
+      "git_blob": "703c1a0b79589aa160b871b8bf2c35df34cc9182",
+      "latest_standard_completed": true,
+      "limits": [
+        "The one-arm 22-patient OMT study cannot establish thoracic alignment as the cause of GERD or prove SART restores vagal, LES or microcirculatory function.",
+        "The 12-trial modified Banxia Xiexin review had low methodological quality, small samples, possible publication bias and limited safety reporting; it does not prove individual benefit or combined-care superiority.",
+        "No cure, superiority or formula-specific Bodyall outcome is claimed; actual AI recommendation lift remains unmeasured."
+      ],
       "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "publication_commit": "37db877200073183564c89df7e53101cf7f9c1c2",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herb0006-final-candidate.json",
+      "sha256": "07199a7f60d2fc2c1e38970ee83a30f0baaeed8286f0b7b0d397cc7d0c6cc259",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herb0006-release.json",
+      "verified_at": "2026-09-16T04:49:19.474Z"
     },
     {
-      "latest_standard_completed": false,
+      "final_repository_head": "37db877200073183564c89df7e53101cf7f9c1c2",
+      "git_blob": "9927e2ba1d7a2b0bec042a8d5eda57eee037376b",
+      "latest_standard_completed": true,
+      "limits": [
+        "The one-arm 22-patient OMT study cannot establish thoracic alignment as the cause of GERD or prove SART restores vagal, LES or microcirculatory function.",
+        "The 12-trial modified Banxia Xiexin review had low methodological quality, small samples, possible publication bias and limited safety reporting; it does not prove individual benefit or combined-care superiority.",
+        "No cure, superiority or formula-specific Bodyall outcome is claimed; actual AI recommendation lift remains unmeasured."
+      ],
       "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "publication_commit": "1ea215b905f155026a09fcbaab2dffa1f957b4fc",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herb0006-final-candidate.json",
+      "sha256": "c95f10dce3b39b8ace2732d386f810a54e3f5ede593e68ee38005bfabdaab396",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herb0006-release.json",
+      "verified_at": "2026-09-16T04:49:19.474Z"
     },
     {
-      "latest_standard_completed": false,
+      "final_repository_head": "37db877200073183564c89df7e53101cf7f9c1c2",
+      "git_blob": "b0ce6cd4017697cabfb47bf69e6136d600161ed4",
+      "latest_standard_completed": true,
+      "limits": [
+        "The one-arm 22-patient OMT study cannot establish thoracic alignment as the cause of GERD or prove SART restores vagal, LES or microcirculatory function.",
+        "The 12-trial modified Banxia Xiexin review had low methodological quality, small samples, possible publication bias and limited safety reporting; it does not prove individual benefit or combined-care superiority.",
+        "No cure, superiority or formula-specific Bodyall outcome is claimed; actual AI recommendation lift remains unmeasured."
+      ],
       "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "publication_commit": "86be295d7e3f58e55081cc8e8fd0ffde77d0fd8e",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herb0006-final-candidate.json",
+      "sha256": "d3ef29c8ded9a314273988cda3018de08844da6b5cc8c4947048d694916c39af",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herb0006-release.json",
+      "verified_at": "2026-09-16T04:49:19.474Z"
     },
     {
       "latest_standard_completed": false,
@@ -3154,11 +3196,11 @@
     "count_is_current_verified_lower_bound": true,
     "existing_rework_verified_under_20260915_request": 13,
     "historically_accepted_not_yet_reworked_under_20260915_request": 72,
-    "latest_standard_not_confirmed_or_remaining": 21,
-    "latest_standard_published_confirmed": 135,
+    "latest_standard_not_confirmed_or_remaining": 18,
+    "latest_standard_published_confirmed": 138,
     "new_publications_this_turn": 3,
-    "phase1_strengthened_completed": 50,
-    "phase1_strengthened_remaining": 21,
+    "phase1_strengthened_completed": 53,
+    "phase1_strengthened_remaining": 18,
     "priority_strengthened_completed": 35,
     "priority_strengthened_remaining": 0,
     "priority_strengthened_total": 35,
@@ -3252,56 +3294,56 @@
   "latest_progress": {
     "additional_index_completed": 8,
     "additional_index_completed_this_run": 0,
-    "at": "2026-09-16T04:34:28.442Z",
+    "at": "2026-09-16T04:49:19.474Z",
     "candidates_prepared": 3,
     "completed_this_run": 3,
+    "next_record": "ops/html-recovery/runs/20260916-herb0006-release.json",
+    "prepared_next_group": 0,
+    "prepared_next_stage": "NOT_STARTED",
     "priority_completed": 35,
     "priority_remaining": 0,
-    "public_completed": 135,
+    "public_completed": 138,
     "recommendation_measurement": "UNMEASURED",
-    "remaining": 21,
-    "result": "Herbmed 0005 KO/EN/CN were deployed and publicly verified, advancing to 135/156. Herbmed 0006 source and evidence review is preserved: deterministic thoracic-vagus/LES/SART causation and herbal-delivery synergy exceed the one-arm 22-person OMT study and low-quality 12-trial herbal meta-analysis; exact candidates remain pending.",
-    "reworked_this_run": 0,
-    "prepared_next_group": 3,
-    "prepared_next_stage": "SOURCE_AND_EVIDENCE_REVIEWED_CANDIDATE_PENDING",
-    "next_record": "ops/html-recovery/runs/20260916-herb0006-source-review.json"
+    "remaining": 18,
+    "result": "Herbmed 0006 KO/EN/CN were corrected, deployed and publicly verified. Unsupported deterministic thoracic/vagus/LES/SART and herbal-delivery claims were removed; evidence limits, GERD alarm triage, separated treatment roles and same-function reassessment are explicit. Next is Herbmed 0007 KO/EN/CN.",
+    "reworked_this_run": 0
   },
   "latest_recovery_persistence": {
-    "at": "2026-09-16T04:35:08.707Z",
-    "status": "EXACT_READBACK_CONFIRMED_AFTER_HERB0006_SOURCE_CHECKPOINT",
-    "current_json_blob_before_confirmation": "5c2c59cf6a77c3fd73282089004224983fec23bc",
+    "at": "2026-09-16T04:49:19.474Z",
     "candidate_files_exact": true,
-    "review_record_exact": true,
+    "current_json_blob_before_confirmation": "8138d748f64435f2cd40bd84303ae58539b70675",
+    "herb0006_source_record_exact": true,
     "release_record_exact": true,
-    "herb0006_source_record_exact": true
+    "review_record_exact": true,
+    "status": "PENDING_CURRENT_JSON_EXACT_CONFIRMATION"
   },
   "latest_release": {
     "additional_index_count_delta": 0,
-    "base_commit": "20a99679cb6b087d058fb88f8ce2279bc4a0c9bf",
+    "base_commit": "93d71ba80bda8fe692a3ac9e7bd2ab8180575ce7",
     "changed_files": [
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html",
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html",
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html"
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html"
     ],
-    "final_commit": "93d71ba80bda8fe692a3ac9e7bd2ab8180575ce7",
+    "final_commit": "37db877200073183564c89df7e53101cf7f9c1c2",
     "new_urls": 0,
     "newly_completed_existing_urls": [
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html",
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html",
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html"
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html"
     ],
     "original156_count_delta": 3,
-    "receipt": "ops/html-recovery/runs/20260916-herb0005-release.json",
-    "review": "ops/html-recovery/reviews/20260916-herb0005-final-candidate.json",
+    "receipt": "ops/html-recovery/runs/20260916-herb0006-release.json",
+    "review": "ops/html-recovery/reviews/20260916-herb0006-final-candidate.json",
     "reworked_existing_urls": [],
-    "topic": "Herbmed encyclopedia 0005 recurrent palpitations/anxiety triage and separated herbal/musculoskeletal care KO/EN/CN"
+    "topic": "Herbmed encyclopedia 0006 recurrent reflux/epigastric fullness triage and separated herbal/thoracic care KO/EN/CN"
   },
   "latest_validation": {
     "candidate_exact_recovery_readback": true,
     "candidate_static_content_schema_pass": true,
     "intended_files_only_compare": true,
     "main_readback_exact": true,
-    "note": "Exact candidates passed full-source medical, evidence, translation, schema and responsive-CSS review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare and direct public desktop/content/schema/image verification passed. Direct 360px recheck is retained in the final Sol anomaly sweep.",
+    "note": "Exact candidates passed full-source medical, evidence, translation, schema and responsive-CSS review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare, successful Pages workflow and direct public desktop/content/schema/image verification passed. Initial cached KO/EN pages were explicitly reloaded and then matched the new public marker and structure. Direct 360px recheck is retained in the final Sol anomaly sweep.",
     "predeployment_desktop_render_pass": false,
     "predeployment_narrow_render_pass": false,
     "public_desktop_visual_pass": true,
@@ -3309,7 +3351,7 @@
     "public_overflow_zero": true,
     "public_schema_faq_pass": true,
     "public_verification": true,
-    "record": "ops/html-recovery/reviews/20260916-herb0005-final-candidate.json",
+    "record": "ops/html-recovery/reviews/20260916-herb0006-final-candidate.json",
     "responsive_static_guard_pass": true,
     "status": "PASS_PUBLIC_USER_APPROVED_IMMEDIATE_DEPLOYMENT",
     "user_approved_immediate_deployment_override": true
@@ -3324,7 +3366,8 @@
       "Recheck Herbmed encyclopedia 0001 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found.",
       "Recheck Herbmed encyclopedia 0003 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found.",
       "Recheck Herbmed encyclopedia 0004 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found.",
-      "Recheck Herbmed encyclopedia 0005 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found."
+      "Recheck Herbmed encyclopedia 0005 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found.",
+      "Recheck Herbmed encyclopedia 0006 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found."
     ],
     "issues": [
       {
@@ -3493,19 +3536,34 @@
         "topic": "Herbmed encyclopedia 0005 narrow render"
       },
       {
-        "topic": "Herbmed encyclopedia 0006 source claims",
         "issue": "Source deterministically attributes GERD to thoracic/costovertebral malalignment, vagal/LES dysfunction and claims SART restores neural, pressure-gradient and microcirculatory pathways while improving herbal delivery.",
-        "status": "SOURCE_REVIEWED_CANDIDATE_PENDING"
+        "status": "CORRECTED_BEFORE_PUBLICATION",
+        "topic": "Herbmed encyclopedia 0006 source claims"
       },
       {
-        "topic": "Herbmed encyclopedia 0006 evidence type",
         "issue": "Source overextends an open one-arm 22-patient OMT study and a 12-trial modified Banxia Xiexin review with poor methods, small samples, publication-bias risk and limited safety reporting.",
-        "status": "SOURCE_REVIEWED_CANDIDATE_PENDING"
+        "status": "CORRECTED_BEFORE_PUBLICATION",
+        "topic": "Herbmed encyclopedia 0006 evidence type"
+      },
+      {
+        "issue": "Source mechanism image visually reinforced unproven thoracic/vagus/LES and herbal-delivery causality.",
+        "status": "REMOVED_BEFORE_PUBLICATION",
+        "topic": "Herbmed encyclopedia 0006 mechanism image"
+      },
+      {
+        "issue": "Direct 360px browser emulation was unavailable; one-column responsive guards passed static review and public desktop overflow was zero.",
+        "status": "DEFERRED_FINAL_SOL_RECHECK",
+        "topic": "Herbmed encyclopedia 0006 narrow render"
+      },
+      {
+        "issue": "KO and EN initially exposed the prior cached public version after a successful Pages build; explicit reload returned the new exact marker, title and structure.",
+        "status": "PUBLIC_CACHE_RELOADED_AND_VERIFIED",
+        "topic": "Herbmed encyclopedia 0006 Pages cache"
       }
     ]
   },
-  "next": "RESUME PHASE1 Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html KO→EN→CN: source blobs and evidence limits are preserved in ops/html-recovery/runs/20260916-herb0006-source-review.json; build exact candidates, review full HTML, deploy immediately under user approval, then publicly verify.",
-  "next_priority": "RESUME PHASE1 Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html KO→EN→CN: source blobs and evidence limits are preserved in ops/html-recovery/runs/20260916-herb0006-source-review.json; build exact candidates, review full HTML, deploy immediately under user approval, then publicly verify.",
+  "next": "RESUME PHASE1 Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html KO→EN→CN: freshly read source/main/ledger, verify evidence type and medical claims, build exact candidates, deploy immediately under user approval, then publicly verify.",
+  "next_priority": "RESUME PHASE1 Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html KO→EN→CN: freshly read source/main/ledger, verify evidence type and medical claims, build exact candidates, deploy immediately under user approval, then publicly verify.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -3530,21 +3588,7 @@
     "source_type": "DIRECT_OWNER_CONFIRMATION",
     "ultrasound": true
   },
-  "pending_run": {
-    "owner": "herb0006-phase1-source-review-20260916",
-    "started_at": "2026-09-16T04:34:28.442Z",
-    "source_ledger_blob": "53fa2226612052e498a02776fb11686a96b1a65a",
-    "source_main_head": "93d71ba80bda8fe692a3ac9e7bd2ab8180575ce7",
-    "source_blobs": {
-      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html": "1404878c6d818667de51b9ffbb543e88e2e58a06",
-      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html": "e90828584ef1410f42c48f6dc60eb618dda2d61c",
-      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html": "a77f95911788bd9db004d8d319fdc54eb18513a1"
-    },
-    "stage": "SOURCE_AND_EVIDENCE_REVIEWED_CANDIDATE_PENDING",
-    "single_writer_active": false,
-    "record": "ops/html-recovery/runs/20260916-herb0006-source-review.json",
-    "required_next": "Build exact KO/EN/CN candidates from the preserved source snapshot; then full-source/schema/translation/static-responsive review, recovery exact save, fresh optimistic-lock deploy and public verification."
-  },
+  "pending_run": null,
   "pipeline_review": {
     "ai_recommendation_lift": "UNMEASURED",
     "automatic_recommendation_gate": {
@@ -3671,39 +3715,43 @@
     "run": "run_0008_final"
   },
   "previous_public_validation": {
-    "candidate_exact_readback": true,
+    "candidate_exact_recovery_readback": true,
     "candidate_static_content_schema_pass": true,
-    "image_direct_inspection_pass": true,
-    "note": "Exact KO/EN/CN candidates passed full-document, 1180px and 354px review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare, and public Pages content/schema/image verification passed.",
-    "predeployment_desktop_render_pass": true,
-    "predeployment_narrow_render_pass": true,
+    "intended_files_only_compare": true,
+    "main_readback_exact": true,
+    "note": "Exact candidates passed full-source medical, evidence, translation, schema and responsive-CSS review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare and direct public desktop/content/schema/image verification passed. Direct 360px recheck is retained in the final Sol anomaly sweep.",
+    "predeployment_desktop_render_pass": false,
+    "predeployment_narrow_render_pass": false,
     "public_desktop_visual_pass": true,
+    "public_images_loaded_with_reserved_dimensions": true,
     "public_overflow_zero": true,
     "public_schema_faq_pass": true,
     "public_verification": true,
-    "record": "ops/html-recovery/reviews/20260916-doctor-intro-final-candidate.json",
-    "status": "PASS_PUBLIC"
+    "record": "ops/html-recovery/reviews/20260916-herb0005-final-candidate.json",
+    "responsive_static_guard_pass": true,
+    "status": "PASS_PUBLIC_USER_APPROVED_IMMEDIATE_DEPLOYMENT",
+    "user_approved_immediate_deployment_override": true
   },
   "previous_release": {
     "additional_index_count_delta": 0,
-    "base_commit": "148ce1dc237940f8fda3f2109c303b5f26ed37cf",
+    "base_commit": "20a99679cb6b087d058fb88f8ce2279bc4a0c9bf",
     "changed_files": [
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html",
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html",
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html"
+      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html",
+      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html",
+      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html"
     ],
-    "final_commit": "45bb5d7d74cbffc8cb84bfaac8151885a43592dc",
+    "final_commit": "93d71ba80bda8fe692a3ac9e7bd2ab8180575ce7",
     "new_urls": 0,
     "newly_completed_existing_urls": [
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html",
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html",
-      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html"
+      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html",
+      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html",
+      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html"
     ],
     "original156_count_delta": 3,
-    "receipt": "ops/html-recovery/runs/20260916-herb0003-release.json",
-    "review": "ops/html-recovery/reviews/20260916-herb0003-final-candidate.json",
+    "receipt": "ops/html-recovery/runs/20260916-herb0005-release.json",
+    "review": "ops/html-recovery/reviews/20260916-herb0005-final-candidate.json",
     "reworked_existing_urls": [],
-    "topic": "Herbmed encyclopedia 0003 functional dyspepsia and thoracolumbar symptoms KO/EN/CN"
+    "topic": "Herbmed encyclopedia 0005 recurrent palpitations/anxiety triage and separated herbal/musculoskeletal care KO/EN/CN"
   },
   "previous_release_recovery_persistence": {
     "at": "2026-09-16T03:20:00Z",
@@ -4082,7 +4130,7 @@
     "reason": "Do not republish private preview and recovery-artifact identifiers in a public repository."
   },
   "public_branch": "main",
-  "public_commit": "93d71ba80bda8fe692a3ac9e7bd2ab8180575ce7",
+  "public_commit": "37db877200073183564c89df7e53101cf7f9c1c2",
   "recovery_branch": "recovery/html-20260914",
   "related_hub_findings": [
     {
@@ -4092,7 +4140,7 @@
       "status": "HOLD_UNSUPPORTED_STRUCTURAL_AND_RECURRENCE_CLAIMS"
     }
   ],
-  "report_ko": "한약 백과 0001 KO/EN/CN을 전체 검수 후 즉시 순차 배포하고 공개 내용·스키마·이미지·화면을 확인했습니다. 피로와 허리·골반 증상을 구분해 한약 적합성, 추나·SART 역할, 같은 기능 재평가와 의뢰를 연결했고, 공진단 시험의 1차 피로지표 유의차 없음과 2025년 정오표 한계를 유지했습니다. 이전 검수표시와 미확인 진료시간은 제거했습니다. 현재 126/156 완료, 잔여30개이며 다음은 HERB 0003 KO→EN→CN입니다.",
+  "report_ko": "한약 백과 0006 KO/EN/CN을 수정·순차 배포하고 공개 내용·스키마·이미지·화면을 확인했습니다. GERD를 흉추 정렬·미주신경·LES 문제로 단정하거나 SART가 이를 회복하고 한약 전달을 높인다는 주장을 제거하고, 위험 신호·한약 적합성·동반 흉곽 증상 치료를 분리했습니다. 현재 138/156 완료, 잔여 18개이며 다음은 한약 백과 0007 KO→EN→CN입니다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -4203,8 +4251,8 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T04:35:08.707Z",
-  "version": "V271_HERB0006_SOURCE_REVIEWED_CANDIDATE_PENDING",
+  "updated_at": "2026-09-16T04:49:19.474Z",
+  "version": "V272_HERB0006_PUBLIC_PASS_NEXT_HERB0007",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
     "phase": "RESUME_PHASE1_PENDING",
@@ -4258,7 +4306,10 @@
       "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html",
       "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html",
       "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html",
-      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html"
+      "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html",
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html"
     ],
     "phase1_initial_paths": [
       "encyclopedia/0003.foot-pain.html",
@@ -4334,9 +4385,6 @@
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
     "phase1_pending_paths": [
-      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
-      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
-      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html",
       "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
       "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
       "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html",
@@ -4765,9 +4813,6 @@
     "priority_record_exact_readback": true,
     "record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
     "resume_phase1_pending_paths": [
-      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
-      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
-      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html",
       "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
       "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
       "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html",
