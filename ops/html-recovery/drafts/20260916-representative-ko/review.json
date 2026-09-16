@@ -1,0 +1,122 @@
+{
+  "status": "KO_EDITORIAL_STATIC_AND_RESPONSIVE_RENDER_PASS_LANGUAGE_ROLLOUT_PENDING",
+  "policy_version": "2026-09-16.2",
+  "policy_latest_full_read_this_turn": true,
+  "global_guide_sha256": "75ba44ac547ff449082c6cd8e2c771230e30b2d54025d6a7a91ed7db892f4790",
+  "global_guide_declared_version": null,
+  "prior_integration_record": "ops/html-recovery/drafts/20260916-global-guide/review.json",
+  "path": "lumbar-disc.html",
+  "candidate_sha256": "50c74dae1e8c5313c89b136207a669dbcc46d856a0613e446a1b4665bfb3f761",
+  "source_sha256": "e6539dd3e19ab8a92ced4e7d080c717ce3a42f2d1360b25817790130aa5e3a85",
+  "editorial_13_dimensions": [
+    {
+      "dimension": "search_intent",
+      "status": "PASS_KO",
+      "finding": "Walking-related leg pain, lumbar disc and stenosis assessment, and treatment choice stay central."
+    },
+    {
+      "dimension": "H1_body_alignment",
+      "status": "PASS_KO",
+      "finding": "The opening and first question explain which symptoms and movements to assess."
+    },
+    {
+      "dimension": "patient_question",
+      "status": "PASS_KO",
+      "finding": "Main questions have direct answers; adjunct procedures now have their own section."
+    },
+    {
+      "dimension": "general_content",
+      "status": "PASS_KO",
+      "finding": "Keep necessary differential diagnosis, comparison and red flags; remove redundant diagnostic caveats."
+    },
+    {
+      "dimension": "Bodyall_specifics",
+      "status": "PASS_KO",
+      "finding": "Preserve MET/SART selection, gravity-opposing pelvic support, sacroiliac/spinal joint approach, direction/intensity and functional retesting, verified clinician activity and cumulative experience."
+    },
+    {
+      "dimension": "defensive_wording",
+      "status": "PASS_KO",
+      "finding": "Remove negative tails after credentials and unrelated NICE non-recommendation list; retain material research limitations and patient safety guidance in context."
+    },
+    {
+      "dimension": "treatment_list_structure",
+      "status": "PASS_KO",
+      "finding": "Separate correction selection from adjunct procedures; preserve assessment-to-choice-to-reassessment flow."
+    },
+    {
+      "dimension": "research_quality_placement",
+      "status": "PASS_WITH_ABSTRACT_SCOPE",
+      "finding": "The 14-trial meta-analysis now explains comparison-level outcomes first; the small pilot is a short contextual sentence. No full-text appraisal or universal efficacy claim."
+    },
+    {
+      "dimension": "FAQ",
+      "status": "PASS_KO",
+      "finding": "Two relevant questions retained without quota changes or invented clinic outcomes."
+    },
+    {
+      "dimension": "structured_data",
+      "status": "PASS_REUSED",
+      "finding": "Head metadata and JSON-LD unchanged from validated draft; FAQ remains aligned and no false medical review stamp added."
+    },
+    {
+      "dimension": "internal_links",
+      "status": "PASS_REUSED",
+      "finding": "All existing link attributes and internal anchors retained; only a primary abstract link added."
+    },
+    {
+      "dimension": "CTA",
+      "status": "PASS_REUSED",
+      "finding": "Keep symptom-specific booking and practical preparation instructions."
+    },
+    {
+      "dimension": "KO_EN_ZH_consistency",
+      "status": "PENDING_ROLLOUT",
+      "finding": "Representative KO stabilized first as instructed. EN/ZH still require these topic-specific changes and terminology review; no trilingual completion claimed."
+    }
+  ],
+  "evidence": {
+    "meta_analysis_2025": {
+      "doi": "10.18325/jkmr.2025.35.4.69",
+      "primary_abstract_url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12741394",
+      "read_scope": "Complete author abstract, not the DBpia AI summary; publisher full text remained unavailable.",
+      "included_trials": 14,
+      "interpretation": "Comparison-specific improvements for acupotomy alone; most adjunct comparisons were not significant, with an exception for the stated combined regimen. Need larger high-quality trials. No safety guarantee or Bodyall success-rate inference.",
+      "selection_gate": "Matches stenosis/adjunct question and population; relevant systematic review prioritized over pilot; actual comparator results summarized with a clear role beside the procedure-selection question. Trial-level risk-of-bias details were not independently read."
+    },
+    "pilot_2023": {
+      "doi": "10.2147/JPR.S399132",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/36908927/",
+      "result_scope": "Retained previously verified null between-group result; shortened and removed unnecessary duration detail; not treated as mechanistic proof."
+    },
+    "NICE": "Exercise plus manual-therapy package recommendation retained with its general low-back-pain/sciatica scope. The reference states it is not direct SART evidence, once."
+  },
+  "models": {
+    "actual_editor": "Current ChatGPT/Codex session; targeted edits, no full-body rewrite",
+    "requested_setting": "Astra very high",
+    "exact_runtime_model_independently_exposed": false,
+    "claude_calls": 0,
+    "claude_status": "No callable writing route established without changing Make; existing natural prose retained.",
+    "sol_medium_ready": true,
+    "sol_medium_ready_reason": "The representative research interpretation and editorial conflicts are resolved. Apply recorded choices to the remaining priority pages; escalate only a new substantive conflict."
+  },
+  "publication": {
+    "public_html_changes": 0,
+    "priority_public_completed_under_global_guide": 0,
+    "medical_review_stamp_added": false,
+    "ai_recommendation_lift": "UNMEASURED",
+    "make_changes": 0,
+    "historical_completion_records_preserved": true
+  },
+  "resume": {
+    "latest_common_policy_check_required": true,
+    "do_not_repeat": "Do not re-run the successful source-result interpretation, identical asset checks or policy reconciliation without a relevant change.",
+    "scope": "Existing 35 owner-priority paths first; root indices retain the hub exception; preserve the stored topic order and valid previous work.",
+    "next": "Use this KO candidate and its changes as the representative. Continue EN/ZH meaning checks and stored priority batches; preserve Claude preference and Make settings."
+  },
+  "render_fix": "Opening paragraph inline emphasis no longer breaks the sentence into three blocks; other CSS unchanged.",
+  "updated_at": "2026-09-16T10:39:28.640336+00:00",
+  "render_record": "render.json",
+  "private_preview_published": false,
+  "temporary_preview_input_restored": true
+}

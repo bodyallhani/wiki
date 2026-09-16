@@ -1,0 +1,52 @@
+[
+  {
+    "reason": "Keep the diagnostic process without a repeated defensive lead-in.",
+    "before": "하지만 그 단서 하나로 결론을 내리지는 않습니다. 진찰에서 감각이나 힘의 변화가 확인되면",
+    "after": "진찰에서 감각이나 힘의 변화가 확인되면"
+  },
+  {
+    "reason": "State how assessment informs care positively and accurately.",
+    "before": "나이, 외상, 반복되는 부하 등 여러 요인이 관련되므로 골반 모양이나 자세 하나로 원인을 확정하지 않습니다.",
+    "after": "나이, 외상, 반복되는 부하 등 여러 요인이 관련되며, 증상과 진찰·검사 소견을 종합해 치료 방향을 정합니다."
+  },
+  {
+    "reason": "Give adjunct procedures their own direct-answer section; explain actual meta-analysis results before the shorter pilot and relevant procedure risks.",
+    "before": "<a href='acupotomy.html' class='link-card'><i class='fas fa-cut'></i> <strong>도침의 적합성과 위험 상담</strong><p>도침은 날이 있는 침을 사용하는 침습적 처치로, 통증·출혈·감염과 신경·혈관·주변 조직 손상이 생길 수 있습니다. 시술 부위와 깊이, 복용약·출혈 위험·감염 여부 등을 검토하고 필요성을 설명한 뒤 선택해야 합니다. 현재 증상과 이전 치료 반응, 시술 필요 부위를 확인해 병행 여부를 정합니다.</p></a>\n<p>2023년 예비 무작위시험은 요추관협착증 환자 34명을 두 군으로 나누어 8주간 침·간섭파 치료에 도침을 추가해 통증·기능 변화를 비교했습니다. 두 군 모두 일부 지표가 좋아졌지만 뚜렷한 군간 차이는 확인되지 않았습니다. 바디올에서는 이 결과를 일괄적인 도침 권고가 아니라, 기존 치료 반응과 현재 보행 제한을 함께 보고 필요성을 판단할 자료로 사용합니다.<a href='#ref-1' class='ref-link'><sup>[1]</sup></a></p>\n<p>2025년 요추관협착증 도침 체계적 문헌고찰·메타분석은 관련 임상연구를 종합했습니다.<a href='#ref-2' class='ref-link'><sup>[2]</sup></a> 바디올에서는 이를 진찰을 대신하는 성공률로 제시하지 않고, 협착증 여부·시술 필요 부위·출혈과 감염 위험을 확인해 도침 적합성을 판단하는 참고자료로 사용합니다.</p>\n",
+    "after": "</section>\n<section>\n<h2>5. 도침이나 봉약침은 어떤 경우에 함께 고려하나요?</h2>\n<p><strong>현재 증상과 이전 치료 반응, 시술이 필요한 부위를 확인해 병행 여부를 정합니다.</strong> 바디올은 걷기·앉기 등 불편한 동작과 진찰 소견을 살피고, 복용약과 알레르기 이력까지 확인해 치료를 선택합니다.</p>\n<p>요추관협착증의 도침 치료를 살핀 2025년 체계적 문헌고찰·메타분석은 14개 무작위시험을 종합했습니다. 침 치료와 비교한 연구에서는 도침군의 통증과 허리 기능 지표가 더 좋아졌고, 미추 경막외 주사와 비교한 연구에서도 통증 개선이 보고됐습니다. 다만 다른 치료에 도침을 추가한 연구에서는 병행 방법에 따라 결과가 달랐습니다. 대부분은 뚜렷한 군간 차이가 없었으나, 도침·전침·수기치료를 함께 시행한 연구에서는 통증·기능 개선이 나타났습니다. 특히 병행 치료의 효과를 더 분명히 하려면 규모가 크고 질 높은 연구가 필요합니다.<a href='#ref-2' class='ref-link'><sup>[2]</sup></a></p>\n<p>2023년의 34명 대상 예비 무작위시험에서도 침·간섭파 치료에 도침을 추가했을 때 뚜렷한 군간 차이는 확인되지 않았습니다.<a href='#ref-1' class='ref-link'><sup>[1]</sup></a></p>\n<a href='acupotomy.html' class='link-card'><i class='fas fa-cut'></i> <strong>도침: 시술 부위와 복용약을 먼저 확인합니다</strong><p>도침은 날이 있는 침을 사용하는 침습적 처치입니다. 시술 부위와 깊이, 복용약·출혈 위험·감염 여부 등을 검토하고 필요성을 설명한 뒤 선택합니다. 통증·출혈·감염과 신경·혈관·주변 조직 손상이 생길 수 있습니다.</p></a>\n"
+  },
+  {
+    "reason": "Renumber after the new procedure section.",
+    "before": "<h2>5. 운동·약물·주사·수술 상담은 언제 필요할까요?</h2>",
+    "after": "<h2>6. 운동·약물·주사·수술 상담은 언제 필요할까요?</h2>"
+  },
+  {
+    "reason": "Renumber follow-up section while retaining its direct answer.",
+    "before": "<h2>6. 치료 뒤에는 어떤 변화를 확인하나요?</h2>",
+    "after": "<h2>7. 치료 뒤에는 어떤 변화를 확인하나요?</h2>"
+  },
+  {
+    "reason": "Keep the relevant exercise/manual-therapy recommendation; retain its general scope in the reference instead of an unrelated negative list.",
+    "before": "영국 NICE 지침은 수기치료를 고려할 때 운동을 포함한 치료의 일부로 시행하도록 합니다. 이 지침은 요통·좌골신경통에 견인과 침을 권하지 않으며, 일반 수기치료 권고를 SART·도침·봉약침 모두에 대한 권고로 해석해서는 안 됩니다.",
+    "after": "영국 NICE의 요통·좌골신경통 지침은 수기치료를 운동을 포함한 치료의 일부로 고려하도록 합니다. 진료실에서의 치료와 함께 일상에서 이어갈 활동·운동을 계획하는 이유입니다."
+  },
+  {
+    "reason": "Remove a redundant negative tail after a verified credential; no clinician review stamp added.",
+    "before": "이동해 홍보이사 직함 확인 자료이며 이 문서의 의료진 검수 기록은 아닙니다.",
+    "after": "이동해 홍보이사 직함 확인 자료."
+  },
+  {
+    "reason": "Link the primary author abstract actually used for the new comparison-level summary.",
+    "before": "DOI: 10.18325/jkmr.2025.35.4.69</a></li>",
+    "after": "DOI: 10.18325/jkmr.2025.35.4.69</a> · <a href='https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12741394' target='_blank' rel='noopener noreferrer'>저자 초록</a></li>"
+  },
+  {
+    "reason": "Repair the skipped reference heading level.",
+    "before": "<div class='references-section'><h4>참고문헌</h4>",
+    "after": "<div class='references-section'><h2>참고문헌</h2>"
+  },
+  {
+    "reason": "Keep the opening sentence readable: inline emphasis should not split 그런데 and 에 따라 into separate blocks.",
+    "before": "#why-bodyall p{margin:12px 0}",
+    "after": "#why-bodyall p{margin:12px 0}#why-bodyall p:nth-of-type(2) strong{display:inline;font-size:inherit;margin:0}"
+  }
+]

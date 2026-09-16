@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "images_unchanged": true,
+    "all_previous_link_attributes_retained": true,
+    "one_new_primary_abstract_link": true,
+    "head_metadata_schema_and_other_css_unchanged": true,
+    "emergency_guidance_unchanged": true,
+    "one_h1": true,
+    "local_fragments_resolve": true,
+    "unique_ids": true,
+    "faq_unchanged": true,
+    "equipment_and_experience_retained": true,
+    "no_false_medical_review_stamp": true,
+    "valid_json_ld": true
+  },
+  "all_checks_passed": true,
+  "source_sha256": "e6539dd3e19ab8a92ced4e7d080c717ce3a42f2d1360b25817790130aa5e3a85",
+  "candidate_sha256": "50c74dae1e8c5313c89b136207a669dbcc46d856a0613e446a1b4665bfb3f761",
+  "images": 5,
+  "links": 42
+}

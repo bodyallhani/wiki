@@ -3630,7 +3630,15 @@
       "spine/index.html"
     ],
     "priority_public_completed": 0,
-    "priority_total": 35
+    "priority_total": 35,
+    "representative_ko_editorial_pass_paths": [
+      "lumbar-disc.html"
+    ],
+    "representative_ko_render_pass_paths": [
+      "lumbar-disc.html"
+    ],
+    "representative_record": "ops/html-recovery/drafts/20260916-representative-ko/review.json",
+    "sol_medium_ready": true
   },
   "execution_policy": {
     "active_editorial_direction": "ops/html-recovery/drafts/20260916-global-guide/BODYALL_APPLIED_DIRECTION.md",
@@ -3994,7 +4002,7 @@
       }
     ]
   },
-  "next": "Read latest common policy and full global guide/integration record. Resolve recorded representative evidence, section scope, defensive repetition and allowed render review; then continue stored 35 priority URLs. Reuse valid prior work; historical completion is not global-guide compliance.",
+  "next": "Check latest common policy. Read representative-ko review and exact candidate; KO evidence/section/wording/render work is complete, so reuse it. Continue EN/ZH alignment and existing stored 35-priority group order, retaining index hub exception. Sol medium is suitable; Claude preferred for substantive body writing. Do not modify Make or repeat completed work.",
   "next_priority": {
     "next_article_group": "cervical-disc KO/EN/CN",
     "nonpriority_rule": "Do not resume SART or other nonpriority articles until priority set is verified.",
@@ -4005,8 +4013,8 @@
       "index_cn.html"
     ],
     "phase": "OWNER_PRIORITY_GLOBAL_GUIDE_REFRESH",
-    "record": "ops/html-recovery/drafts/20260916-global-guide/review.json",
-    "stage": "REPRESENTATIVE_EVIDENCE_STRUCTURE_AND_RENDER_REVIEW_PENDING",
+    "record": "ops/html-recovery/drafts/20260916-representative-ko/review.json",
+    "stage": "REPRESENTATIVE_KO_READY_CONTINUE_STORED_PRIORITY_GROUPS",
     "topic": "lumbar-disc representative KO and root index language set; then continue stored35-priority order"
   },
   "objective": {
@@ -4055,34 +4063,30 @@
     "latest_draft_files": 1,
     "make_unchanged": true,
     "pending_items": [
-      "P0-EVIDENCE",
-      "P0-SECTION-SCOPE",
-      "P0-DEFENSIVE-REPETITION",
-      "WHOLE-PAGE-REVIEW",
       "LANGUAGE-AND-PRIORITY-ROLLOUT"
     ],
+    "persistence_authorization": {
+      "approval_text": "승인",
+      "approved_at": "2026-09-16T10:05:06.119812+00:00",
+      "approved_scope": "Persist prepared integrated guide, source copies, draft, validation and resume records to bodyallhani/wiki recovery/html-20260914.",
+      "branch": "recovery/html-20260914",
+      "main_write_authorized_in_this_step": false,
+      "previous_auto_review_rejection": "Upload authorization was not established; explicit owner approval received in the following turn.",
+      "repository": "bodyallhani/wiki",
+      "status": "OWNER_APPROVED_FOR_RECOVERY_BRANCH_WRITE",
+      "success_receipt": "Verify containing commit, recovery ref and exact file readbacks after write."
+    },
     "policy_version": "2026-09-16.2",
-    "previous_record": "ops/html-recovery/drafts/20260916-story-framework/review.json",
+    "previous_record": "ops/html-recovery/drafts/20260916-global-guide/review.json",
     "public_files_changed": 0,
-    "publication_blocker": "Evidence/structure editorial corrections and allowed exact-draft render review remain incomplete.",
-    "record": "ops/html-recovery/drafts/20260916-global-guide/review.json",
+    "publication_blocker": "Representative KO is ready; complete language/group review and the retained release gates before publication.",
+    "record": "ops/html-recovery/drafts/20260916-representative-ko/review.json",
     "retained_prior_drafts": 15,
-    "status": "DIRECTION_INTEGRATED_REPRESENTATIVE_PARTIAL_EDITS_PENDING_EDITORIAL_AND_RENDER",
+    "status": "KO_EDITORIAL_STATIC_AND_RESPONSIVE_RENDER_PASS_LANGUAGE_ROLLOUT_PENDING",
     "story_framework_version": "2026-09-16.1",
     "terminology_hold": "RESOLVED_BY_OWNER_20260916",
     "unique_draft_paths": 15,
-    "updated_at": "2026-09-16T09:59:06.968Z",
-    "persistence_authorization": {
-      "status": "OWNER_APPROVED_FOR_RECOVERY_BRANCH_WRITE",
-      "approved_at": "2026-09-16T10:05:06.119812+00:00",
-      "approval_text": "승인",
-      "approved_scope": "Persist prepared integrated guide, source copies, draft, validation and resume records to bodyallhani/wiki recovery/html-20260914.",
-      "repository": "bodyallhani/wiki",
-      "branch": "recovery/html-20260914",
-      "previous_auto_review_rejection": "Upload authorization was not established; explicit owner approval received in the following turn.",
-      "main_write_authorized_in_this_step": false,
-      "success_receipt": "Verify containing commit, recovery ref and exact file readbacks after write."
-    }
+    "updated_at": "2026-09-16T10:39:28.640336+00:00"
   },
   "pending_run": null,
   "pipeline_review": {
@@ -4647,7 +4651,7 @@
       "status": "HOLD_UNSUPPORTED_STRUCTURAL_AND_RECURRENCE_CLAIMS"
     }
   ],
-  "report_ko": "새 전역 지침 28개 절을 기존 기준과 통합하고 충돌·보존 사항을 기록했습니다. 대표 허리 초안의 직접 답변 위치와 문서 수정일을 정리했으며 근거·구조·렌더 검수는 미완료입니다. 공개 HTML 및 Make 변경은 없습니다.",
+  "report_ko": "대표 허리 한국어 초안의 논문 결과·섹션 범위·방어 문구를 부분 수정하고 1280/360px 렌더 검수를 마쳤습니다. Sol 중간으로 전환 가능합니다. 새 기준 공개 적용 완료는 0개이며 기존 완료 이력과 Make를 보존합니다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -4761,7 +4765,7 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T10:05:06.119812+00:00",
+  "updated_at": "2026-09-16T10:39:28.640336+00:00",
   "version": "V285_POLICY_20260916_1_APPLIED_REPRESENTATIVE_HERBMED0002_KO",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
@@ -5402,5 +5406,12 @@
     "public_record_policy": "Private artifact identifiers omitted.",
     "status": "OWNER_RECOVERY_PRESERVED"
   },
-  "zip_status": "REMOTE_RECOVERY_PACK_AND_RECEIPT_CURRENT; prior ZIP historical only"
+  "zip_status": "REMOTE_RECOVERY_PACK_AND_RECEIPT_CURRENT; prior ZIP historical only",
+  "latest_editorial_validation": {
+    "record": "ops/html-recovery/drafts/20260916-representative-ko/validation.json",
+    "render_record": "ops/html-recovery/drafts/20260916-representative-ko/render.json",
+    "candidate_sha256": "50c74dae1e8c5313c89b136207a669dbcc46d856a0613e446a1b4665bfb3f761",
+    "policy_version": "2026-09-16.2",
+    "public_completed_under_global_guide": 0
+  }
 }

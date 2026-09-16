@@ -1,0 +1,327 @@
+{
+  "candidate_sha256": "50c74dae1e8c5313c89b136207a669dbcc46d856a0613e446a1b4665bfb3f761",
+  "method": "Supported managed preview; exact HTML bytes; existing harness resolves relative images against public origin without editing the candidate.",
+  "reports": [
+    {
+      "render_document_matches_selected": true,
+      "viewport": 1280,
+      "scroll": 0,
+      "height": 8595,
+      "overflow": 0,
+      "overflowElements": [],
+      "title": "수원 허리디스크·협착증, 걷다가 다리가 아프면 무엇부터 봐야 할까요? | 바디올한의원",
+      "h1": "수원 허리디스크·협착증, 걷다가 다리가 아프면 무엇부터 봐야 할까요?",
+      "canonical": "https://wiki.body-all.co.kr/lumbar-disc.html",
+      "images": [
+        {
+          "candidateSrc": "Bodyall Logo.png",
+          "resolvedSrc": "https://wiki.body-all.co.kr/Bodyall%20Logo.png",
+          "loaded": true,
+          "natural": [
+            2494,
+            1867
+          ],
+          "reserved": [
+            "2494",
+            "1867"
+          ]
+        },
+        {
+          "candidateSrc": "sangdam1.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/sangdam1.jpg",
+          "loaded": true,
+          "natural": [
+            6240,
+            4160
+          ],
+          "reserved": [
+            "6240",
+            "4160"
+          ]
+        },
+        {
+          "candidateSrc": "https://wiki.body-all.co.kr/insanggi.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/insanggi.jpg",
+          "loaded": false,
+          "natural": [
+            0,
+            0
+          ],
+          "reserved": [
+            "4082",
+            "3073"
+          ]
+        },
+        {
+          "candidateSrc": "manip2.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/manip2.jpg",
+          "loaded": false,
+          "natural": [
+            0,
+            0
+          ],
+          "reserved": [
+            "500",
+            "405"
+          ]
+        },
+        {
+          "candidateSrc": "directors_group.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/directors_group.jpg",
+          "loaded": false,
+          "natural": [
+            0,
+            0
+          ],
+          "reserved": [
+            "4082",
+            "3073"
+          ]
+        }
+      ]
+    },
+    {
+      "render_document_matches_selected": true,
+      "viewport": 360,
+      "scroll": 0,
+      "height": 11871,
+      "overflow": 0,
+      "overflowElements": [],
+      "title": "수원 허리디스크·협착증, 걷다가 다리가 아프면 무엇부터 봐야 할까요? | 바디올한의원",
+      "h1": "수원 허리디스크·협착증, 걷다가 다리가 아프면 무엇부터 봐야 할까요?",
+      "canonical": "https://wiki.body-all.co.kr/lumbar-disc.html",
+      "images": [
+        {
+          "candidateSrc": "Bodyall Logo.png",
+          "resolvedSrc": "https://wiki.body-all.co.kr/Bodyall%20Logo.png",
+          "loaded": true,
+          "natural": [
+            2494,
+            1867
+          ],
+          "reserved": [
+            "2494",
+            "1867"
+          ]
+        },
+        {
+          "candidateSrc": "sangdam1.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/sangdam1.jpg",
+          "loaded": true,
+          "natural": [
+            6240,
+            4160
+          ],
+          "reserved": [
+            "6240",
+            "4160"
+          ]
+        },
+        {
+          "candidateSrc": "https://wiki.body-all.co.kr/insanggi.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/insanggi.jpg",
+          "loaded": false,
+          "natural": [
+            0,
+            0
+          ],
+          "reserved": [
+            "4082",
+            "3073"
+          ]
+        },
+        {
+          "candidateSrc": "manip2.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/manip2.jpg",
+          "loaded": false,
+          "natural": [
+            0,
+            0
+          ],
+          "reserved": [
+            "500",
+            "405"
+          ]
+        },
+        {
+          "candidateSrc": "directors_group.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/directors_group.jpg",
+          "loaded": false,
+          "natural": [
+            0,
+            0
+          ],
+          "reserved": [
+            "4082",
+            "3073"
+          ]
+        }
+      ]
+    },
+    {
+      "render_document_matches_selected": true,
+      "viewport": 360,
+      "scroll": 4200,
+      "height": 11871,
+      "overflow": 0,
+      "overflowElements": [],
+      "title": "수원 허리디스크·협착증, 걷다가 다리가 아프면 무엇부터 봐야 할까요? | 바디올한의원",
+      "h1": "수원 허리디스크·협착증, 걷다가 다리가 아프면 무엇부터 봐야 할까요?",
+      "canonical": "https://wiki.body-all.co.kr/lumbar-disc.html",
+      "images": [
+        {
+          "candidateSrc": "Bodyall Logo.png",
+          "resolvedSrc": "https://wiki.body-all.co.kr/Bodyall%20Logo.png",
+          "loaded": true,
+          "natural": [
+            2494,
+            1867
+          ],
+          "reserved": [
+            "2494",
+            "1867"
+          ]
+        },
+        {
+          "candidateSrc": "sangdam1.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/sangdam1.jpg",
+          "loaded": true,
+          "natural": [
+            6240,
+            4160
+          ],
+          "reserved": [
+            "6240",
+            "4160"
+          ]
+        },
+        {
+          "candidateSrc": "https://wiki.body-all.co.kr/insanggi.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/insanggi.jpg",
+          "loaded": true,
+          "natural": [
+            4082,
+            3073
+          ],
+          "reserved": [
+            "4082",
+            "3073"
+          ]
+        },
+        {
+          "candidateSrc": "manip2.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/manip2.jpg",
+          "loaded": true,
+          "natural": [
+            500,
+            405
+          ],
+          "reserved": [
+            "500",
+            "405"
+          ]
+        },
+        {
+          "candidateSrc": "directors_group.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/directors_group.jpg",
+          "loaded": false,
+          "natural": [
+            0,
+            0
+          ],
+          "reserved": [
+            "4082",
+            "3073"
+          ]
+        }
+      ]
+    },
+    {
+      "render_document_matches_selected": true,
+      "viewport": 360,
+      "scroll": 7951,
+      "height": 11871,
+      "overflow": 0,
+      "overflowElements": [],
+      "title": "수원 허리디스크·협착증, 걷다가 다리가 아프면 무엇부터 봐야 할까요? | 바디올한의원",
+      "h1": "수원 허리디스크·협착증, 걷다가 다리가 아프면 무엇부터 봐야 할까요?",
+      "canonical": "https://wiki.body-all.co.kr/lumbar-disc.html",
+      "images": [
+        {
+          "candidateSrc": "Bodyall Logo.png",
+          "resolvedSrc": "https://wiki.body-all.co.kr/Bodyall%20Logo.png",
+          "loaded": true,
+          "natural": [
+            2494,
+            1867
+          ],
+          "reserved": [
+            "2494",
+            "1867"
+          ]
+        },
+        {
+          "candidateSrc": "sangdam1.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/sangdam1.jpg",
+          "loaded": true,
+          "natural": [
+            6240,
+            4160
+          ],
+          "reserved": [
+            "6240",
+            "4160"
+          ]
+        },
+        {
+          "candidateSrc": "https://wiki.body-all.co.kr/insanggi.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/insanggi.jpg",
+          "loaded": true,
+          "natural": [
+            4082,
+            3073
+          ],
+          "reserved": [
+            "4082",
+            "3073"
+          ]
+        },
+        {
+          "candidateSrc": "manip2.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/manip2.jpg",
+          "loaded": true,
+          "natural": [
+            500,
+            405
+          ],
+          "reserved": [
+            "500",
+            "405"
+          ]
+        },
+        {
+          "candidateSrc": "directors_group.jpg",
+          "resolvedSrc": "https://wiki.body-all.co.kr/directors_group.jpg",
+          "loaded": true,
+          "natural": [
+            4082,
+            3073
+          ],
+          "reserved": [
+            "4082",
+            "3073"
+          ]
+        }
+      ]
+    }
+  ],
+  "visual_observations": [
+    "Desktop opening sentence emphasis stays inline after focused CSS fix.",
+    "Narrow 360px body text and SART card remain readable; no document horizontal overflow.",
+    "All five images loaded after visiting their sections."
+  ],
+  "limitations": [
+    "Widths are responsive layout checks, not physical mobile-device emulation.",
+    "Full-page screenshot request timed out; viewport screenshots and DOM/harness measurements succeeded."
+  ]
+}
