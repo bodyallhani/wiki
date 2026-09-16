@@ -151,7 +151,7 @@
       "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html": "b154126bffb889e61f9b229b66303766d6b503e279cb0b16362286068ef7989e"
     },
     "final_main_head": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
-    "ledger_exact_readback": false,
+    "ledger_exact_readback": true,
     "owner": "herb0007-phase1-release-20260916",
     "published_blobs": {
       "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html": "7120d2e813174e813f3da3bebfeb559f14c64d95",
@@ -168,7 +168,7 @@
       "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html": "fec7c8948902b50c724f4071e7097f543e0296dd"
     },
     "source_ledger_blob": "bdd8fbb9503265e11278a36155b97da8965f6971",
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_PENDING_EXACT",
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
     "started_at": "2026-09-16T04:51:00.000Z"
   },
   "additional_index_completion_rows": [
@@ -3375,13 +3375,13 @@
     "reworked_this_run": 0
   },
   "latest_recovery_persistence": {
-    "at": "2026-09-16T05:03:51.522Z",
+    "at": "2026-09-16T05:09:25.399Z",
     "candidate_files_exact": true,
-    "current_json_blob_before_confirmation": "bdd8fbb9503265e11278a36155b97da8965f6971",
+    "current_json_blob_before_confirmation": "dd0d65b7f8e44b364efbd3f4dfd79581656f3e3f",
     "herb0007_source_record_exact": true,
     "release_record_exact": true,
     "review_record_exact": true,
-    "status": "PENDING_EXACT_READBACK_AFTER_HERB0007_PUBLIC_RELEASE"
+    "status": "EXACT_READBACK_CONFIRMED_AFTER_HERB0007_PUBLIC_RELEASE"
   },
   "latest_release": {
     "additional_index_count_delta": 0,
@@ -4336,8 +4336,8 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T05:03:51.522Z",
-  "version": "V274_HERB0007_PUBLIC_PASS_NEXT_HERB0008",
+  "updated_at": "2026-09-16T05:09:25.399Z",
+  "version": "V275_HERB0007_PUBLIC_PASS_LEDGER_EXACT_NEXT_HERB0008",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
     "phase": "RESUME_PHASE1_PENDING",
