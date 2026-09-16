@@ -3252,7 +3252,7 @@
   "latest_progress": {
     "additional_index_completed": 8,
     "additional_index_completed_this_run": 0,
-    "at": "2026-09-16T04:30:56.234Z",
+    "at": "2026-09-16T04:34:28.442Z",
     "candidates_prepared": 3,
     "completed_this_run": 3,
     "priority_completed": 35,
@@ -3260,16 +3260,20 @@
     "public_completed": 135,
     "recommendation_measurement": "UNMEASURED",
     "remaining": 21,
-    "result": "Herbmed 0005 KO/EN/CN were strengthened, sequentially deployed and publicly verified. Palpitations are no longer attributed to upper-cervical vagal compression; urgent/cardiac evaluation, individualized herbal fit and separate movement-dependent neck care are explicit. Stale completion_rows for already verified Herbmed 0003/0004 were reconciled from their exact release receipts without changing counts.",
-    "reworked_this_run": 0
+    "result": "Herbmed 0005 KO/EN/CN were deployed and publicly verified, advancing to 135/156. Herbmed 0006 source and evidence review is preserved: deterministic thoracic-vagus/LES/SART causation and herbal-delivery synergy exceed the one-arm 22-person OMT study and low-quality 12-trial herbal meta-analysis; exact candidates remain pending.",
+    "reworked_this_run": 0,
+    "prepared_next_group": 3,
+    "prepared_next_stage": "SOURCE_AND_EVIDENCE_REVIEWED_CANDIDATE_PENDING",
+    "next_record": "ops/html-recovery/runs/20260916-herb0006-source-review.json"
   },
   "latest_recovery_persistence": {
-    "at": "2026-09-16T04:31:28.770Z",
-    "status": "EXACT_READBACK_CONFIRMED",
-    "current_json_blob_before_confirmation": "8d5c5de3a053c951aefbdc46d79de8d4bf62672c",
+    "at": "2026-09-16T04:34:28.442Z",
+    "status": "PENDING_EXACT_READBACK_AFTER_HERB0006_SOURCE_CHECKPOINT",
+    "current_json_blob_before_confirmation": "53fa2226612052e498a02776fb11686a96b1a65a",
     "candidate_files_exact": true,
     "review_record_exact": true,
-    "release_record_exact": true
+    "release_record_exact": true,
+    "herb0006_source_record_exact": true
   },
   "latest_release": {
     "additional_index_count_delta": 0,
@@ -3487,11 +3491,21 @@
         "issue": "Direct 360px browser emulation was unavailable; responsive guards passed static review and public desktop overflow was zero.",
         "status": "DEFERRED_FINAL_SOL_RECHECK",
         "topic": "Herbmed encyclopedia 0005 narrow render"
+      },
+      {
+        "topic": "Herbmed encyclopedia 0006 source claims",
+        "issue": "Source deterministically attributes GERD to thoracic/costovertebral malalignment, vagal/LES dysfunction and claims SART restores neural, pressure-gradient and microcirculatory pathways while improving herbal delivery.",
+        "status": "SOURCE_REVIEWED_CANDIDATE_PENDING"
+      },
+      {
+        "topic": "Herbmed encyclopedia 0006 evidence type",
+        "issue": "Source overextends an open one-arm 22-patient OMT study and a 12-trial modified Banxia Xiexin review with poor methods, small samples, publication-bias risk and limited safety reporting.",
+        "status": "SOURCE_REVIEWED_CANDIDATE_PENDING"
       }
     ]
   },
-  "next": "RESUME PHASE1 Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html KO→EN→CN: fresh-read main and target blobs, preserve verified evidence while strengthening patient fit and Bodyall-specific treatment selection, directly review exact full HTML, deploy immediately under user approval, then publicly verify.",
-  "next_priority": "RESUME PHASE1 Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html KO→EN→CN: fresh-read main and target blobs, preserve verified evidence while strengthening patient fit and Bodyall-specific treatment selection, directly review exact full HTML, deploy immediately under user approval, then publicly verify.",
+  "next": "RESUME PHASE1 Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html KO→EN→CN: source blobs and evidence limits are preserved in ops/html-recovery/runs/20260916-herb0006-source-review.json; build exact candidates, review full HTML, deploy immediately under user approval, then publicly verify.",
+  "next_priority": "RESUME PHASE1 Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html KO→EN→CN: source blobs and evidence limits are preserved in ops/html-recovery/runs/20260916-herb0006-source-review.json; build exact candidates, review full HTML, deploy immediately under user approval, then publicly verify.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -3517,17 +3531,19 @@
     "ultrasound": true
   },
   "pending_run": {
-    "blocker": null,
-    "counted_complete": 0,
-    "main_writes": 0,
-    "next_action": "Fresh-read ledger, main head and target blobs; audit exact current files before preparing any candidate.",
-    "paths": [
-      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
-      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
-      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html"
-    ],
-    "stage": "NOT_STARTED_FRESH_SOURCE_REQUIRED",
-    "topic": "Herbmed/encyclopedia/0001 KO/EN/CN"
+    "owner": "herb0006-phase1-source-review-20260916",
+    "started_at": "2026-09-16T04:34:28.442Z",
+    "source_ledger_blob": "53fa2226612052e498a02776fb11686a96b1a65a",
+    "source_main_head": "93d71ba80bda8fe692a3ac9e7bd2ab8180575ce7",
+    "source_blobs": {
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html": "1404878c6d818667de51b9ffbb543e88e2e58a06",
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html": "e90828584ef1410f42c48f6dc60eb618dda2d61c",
+      "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html": "a77f95911788bd9db004d8d319fdc54eb18513a1"
+    },
+    "stage": "SOURCE_AND_EVIDENCE_REVIEWED_CANDIDATE_PENDING",
+    "single_writer_active": false,
+    "record": "ops/html-recovery/runs/20260916-herb0006-source-review.json",
+    "required_next": "Build exact KO/EN/CN candidates from the preserved source snapshot; then full-source/schema/translation/static-responsive review, recovery exact save, fresh optimistic-lock deploy and public verification."
   },
   "pipeline_review": {
     "ai_recommendation_lift": "UNMEASURED",
@@ -4187,8 +4203,8 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T04:31:28.770Z",
-  "version": "V270_HERB0005_PUBLIC_PASS_NEXT_HERB0006",
+  "updated_at": "2026-09-16T04:34:28.442Z",
+  "version": "V271_HERB0006_SOURCE_REVIEWED_CANDIDATE_PENDING",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
     "phase": "RESUME_PHASE1_PENDING",
