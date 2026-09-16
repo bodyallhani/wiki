@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-09-16T11:00:00+09:00",
+  "group": "SART",
+  "paths": [
+    "SART.html",
+    "SART_en.html",
+    "SART_cn.html"
+  ],
+  "decision": "PASS_FOR_IMMEDIATE_DEPLOYMENT",
+  "user_deployment_authorization": {
+    "status": "CONFIRMED_IN_CHAT",
+    "scope": "Deploy the exact reviewed KO/EN/CN candidates immediately; does not add physician reviewedBy or lastReviewed metadata."
+  },
+  "exact_sha256": {
+    "SART.html": "1f1e863858c8dcc5357b1b89a3f5141cd2a66d38a486730eab93126f82270a2f",
+    "SART_en.html": "25c0ed0c2776321abfb44971b04c692068839e9ad4edbebc6073867777c18955",
+    "SART_cn.html": "05125bac770de824bffbe27cf42b80a2956bb85735b4ffbc59d89a2f18d81a18"
+  },
+  "recovery_candidate_blobs": {
+    "SART.html": "58a2d886985b95a88bd259abd3434a2f95ba4735",
+    "SART_en.html": "6c21f25d473aac889e38ea02c00adedd349f7f39",
+    "SART_cn.html": "4063340ef61b7dd2271d52a4cfd2269947a00d0e"
+  },
+  "target_patients": {
+    "ko": "수원에서 반복되는 허리·목 통증 또는 팔·다리 방사 증상과 명확한 기능 제한이 있는 환자",
+    "en": "Patients in Suwon with recurring neck or low-back pain or radiating symptoms and a clear functional limitation",
+    "cn": "在水原反复出现颈腰痛或上下肢放射症状，并有明确功能受限的患者"
+  },
+  "citable_recommendation_reason": "Bodyall screens urgent and neurological risks, records the limited function, chooses among myofascial/joint-mobilisation Chuna, Insanggi pelvic support and selected corrective instruments, then retests the same sitting, walking, neck-turning or arm-raising function and decides treatment, exercise or referral.",
+  "operating_facts": [
+    {
+      "fact": "Cumulative correction patients: 40,000 through December 2025",
+      "use_limit": "Operational experience only; not cures, visits, disease-specific outcomes or SART-only results."
+    }
+  ],
+  "evidence_limits": [
+    "The 30-patient decompression-versus-general-traction study reported no significant between-group difference and does not establish SART or Bodyall superiority.",
+    "NICE NG59 does not support traction for low-back pain/sciatica and places manual therapy only within a package including exercise.",
+    "No claim of disc restoration, foraminal widening, direct nerve decompression, permanent alignment, adhesion release, recurrence prevention, presurgical safety or superiority is made.",
+    "Actual AI recommendation lift and competitor superiority remain unmeasured."
+  ],
+  "defects_corrected": [
+    "Removed deterministic anatomical and outcome claims.",
+    "Removed duplicated stale reference block and low-quality conference abstract.",
+    "Removed obsolete operating-hours claims and misleading mechanism GIFs.",
+    "Reserved all image dimensions and corrected responsive logo, hero and footer wrapping."
+  ],
+  "final_checks": {
+    "full_source_read": true,
+    "translations_checked_for_numbers_terms_causality_limits": true,
+    "canonical_equals_og_url": [
+      true,
+      true,
+      true
+    ],
+    "faq_schema_items": [
+      3,
+      3,
+      3
+    ],
+    "desktop_overflow_px": [
+      0,
+      0,
+      0
+    ],
+    "mobile_overflow_px": [
+      0,
+      0,
+      0
+    ],
+    "image_loads": {
+      "logo": "2494x1867",
+      "hero": "500x405",
+      "insanggi": "4082x3073"
+    },
+    "direct_render_review": "PASS at desktop and 360-class widths"
+  },
+  "residual_defects": [],
+  "pass_reason": "Exact candidates connect patient conditions and Suwon location to Bodyall's verified assessment, treatment-role choice, same-function retest and booking/referral; they retain red flags and avoid unsupported efficacy or exclusivity claims."
+}
