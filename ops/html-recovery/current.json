@@ -2886,9 +2886,9 @@
   ],
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/herbal",
   "latest_recovery_persistence": {
-    "at": "2026-09-16T04:06:52.952Z",
+    "at": "2026-09-16T04:17:44.533Z",
     "status": "EXACT_READBACK_CONFIRMED",
-    "current_json_blob_before_confirmation": "dfe279f62dc0e698844076a3e8a4fd599f4f5e86",
+    "current_json_blob_before_confirmation": "0946f74153ac3b42d3b314a7c8ae38a7ff2dfc91",
     "candidate_files_exact": true,
     "review_record_exact": true,
     "release_record_exact": true
@@ -3012,12 +3012,12 @@
       "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_en.html": "e6a564e1be1186ee3deac8d7ca6623de5e13318a",
       "Herbmed/encyclopedia/0004.axial-spinal-elongation-myofascial-gyeongokgo-adrenal-exhaustion-hpa-axis_cn.html": "26ff2cb9c4c9cfc753fe435aada974360a4e659c"
     },
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_PENDING",
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
     "single_writer_active": false,
     "required_next": "Resume Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html KO/EN/CN from the freshly read ledger.",
     "review_record": "ops/html-recovery/reviews/20260916-herb0004-final-candidate.json",
     "release_record": "ops/html-recovery/runs/20260916-herb0004-release.json",
-    "ledger_exact_readback": false
+    "ledger_exact_readback": true
   },
   "pending_run": {
     "topic": "Herbmed/encyclopedia/0001 KO/EN/CN",
