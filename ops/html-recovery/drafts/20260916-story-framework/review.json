@@ -1,0 +1,296 @@
+{
+  "base_main_commit": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
+  "base_recovery_commit": "c892f1e8e1dc3744e60138bc5e9754eb0cb4f9a1",
+  "current_edits": {
+    "index_changes": [
+      "Kept service and symptom navigation, cards, hours, directions and clinician identity.",
+      "Removed internal comparison language and defensive negations after correctly scoped clinic counts.",
+      "Removed the redundant count FAQ and synchronised JSON-LD.",
+      "Used the modern device name in three languages without adding an article-style story."
+    ],
+    "old_ko_compared_at": "9ded5f189707fd00103270176da36650e1b5ec27",
+    "paths": [
+      "lumbar-disc.html",
+      "index.html",
+      "index_en.html",
+      "index_cn.html"
+    ],
+    "representative_changes": [
+      "Situation-first opening about having to stop walking because of leg symptoms.",
+      "Clues and reasons for examination now precede treatment names.",
+      "Preserved disease comparison and clinical references; moved the existing pilot-trial paragraph beside the related acupotomy discussion.",
+      "Moved existing consultation and device/treatment images to their corresponding narrative sections, without changing image attributes.",
+      "Explained modern 역중력치료기(인상기) and its historical 疊甎 basis.",
+      "Described what is checked after treatment without inventing a successful patient case."
+    ],
+    "representative_ko": "lumbar-disc.html"
+  },
+  "device_owner_clarification": {
+    "canonical_ko": "역중력치료기",
+    "chinese_historical_term": "疊甎（첩전）",
+    "chinese_rendering": "反重力治疗器（Insanggi）",
+    "confirmed_at": "2026-09-16",
+    "english_rendering": "anti-gravity therapy device (Insanggi)",
+    "historical_basis": "의서의 첩전(疊甎)을 고증·분석하여 현대적으로 개발한 장치",
+    "meaning": "중력에 역으로 작용한다는 의미",
+    "permitted_alias_ko": "인상기",
+    "previous_terminology_hold": "RESOLVED",
+    "rendering_rule": "Use the modern device name for current treatment. Explain the historical basis in Cheopjeon only where relevant; do not substitute the historical name as the sole modern device name or describe bricks/ordinary traction.",
+    "repository_wide_application": "Pending priority-first edits; no global replacement or public change performed.",
+    "source_type": "DIRECT_OWNER_MESSAGE"
+  },
+  "editorial_policy": {
+    "canonical_file": "BODYALL_EDITORIAL_POLICY.md",
+    "common_file_not_overwritten": true,
+    "full_read": true,
+    "latest_checked": true,
+    "version": "2026-09-16.2"
+  },
+  "models": {
+    "actual_editor": "Current ChatGPT/Codex session",
+    "claude_calls": 0,
+    "claude_execution_id": null,
+    "claude_limitation": "No input-ready writer route available without changing Make settings; prior discovery reused, not rerun.",
+    "exact_model_and_reasoning": "Not exposed for independent verification; do not claim confirmed Sol-medium execution",
+    "make_settings_or_executions_changed": false,
+    "writing_scope": "Local introduction, transitions, placement and terminology edits; no whole-page rewrite"
+  },
+  "next_steps": [
+    "Read latest common editorial policy and this user framework at resume; do not modify the common policy file.",
+    "Complete representative whole-page editorial/render review through a permitted route.",
+    "Continue all 35 priority paths, preserving existing successful checks; adapt article structure case-by-case and exempt index pages.",
+    "Then resume nonpriority items, including retained SART drafts. Do not inflate the historical156 completion count."
+  ],
+  "priority": {
+    "SART": "Existing SART drafts retained but deferred until the priority set passes.",
+    "exception": "Game/result/statistics content stays in its separate project; preserve game-related index pages.",
+    "groups": [
+      {
+        "paths": [
+          "cervical-disc.html",
+          "cervical-disc_en.html",
+          "cervical-disc_cn.html"
+        ],
+        "topic": "cervical-disc"
+      },
+      {
+        "paths": [
+          "lumbar-disc.html",
+          "lumbar-disc_en.html",
+          "lumbar-disc_cn.html"
+        ],
+        "topic": "lumbar-disc"
+      },
+      {
+        "paths": [
+          "shoulder-frozen.html",
+          "shoulder-frozen_en.html",
+          "shoulder-frozen_cn.html"
+        ],
+        "topic": "shoulder-frozen"
+      },
+      {
+        "paths": [
+          "chuna-therapy.html",
+          "chuna-therapy_en.html",
+          "chuna-therapy_cn.html"
+        ],
+        "topic": "chuna-therapy"
+      },
+      {
+        "paths": [
+          "herbal-medicine.html",
+          "herbal-medicine_en.html",
+          "herbal-medicine_cn.html"
+        ],
+        "topic": "herbal-medicine"
+      },
+      {
+        "paths": [
+          "index.html",
+          "index_en.html",
+          "index_cn.html"
+        ],
+        "topic": "index"
+      },
+      {
+        "paths": [
+          "encyclopedia/index.html",
+          "encyclopedia/index_en.html",
+          "encyclopedia/index_cn.html"
+        ],
+        "topic": "encyclopedia/index"
+      },
+      {
+        "paths": [
+          "BodyallFit/encyclopedia/index.html",
+          "BodyallFit/encyclopedia/index_en.html",
+          "BodyallFit/encyclopedia/index_cn.html"
+        ],
+        "topic": "BodyallFit/encyclopedia/index"
+      },
+      {
+        "paths": [
+          "Herbmed/encyclopedia/index.html",
+          "Herbmed/encyclopedia/index_en.html",
+          "Herbmed/encyclopedia/index_cn.html"
+        ],
+        "topic": "Herbmed/encyclopedia/index"
+      },
+      {
+        "paths": [
+          "BodyallFit/index.html"
+        ],
+        "topic": "BodyallFit/index"
+      },
+      {
+        "paths": [
+          "notice/index.html",
+          "notice/index_en.html",
+          "notice/index_cn.html"
+        ],
+        "topic": "notice/index"
+      },
+      {
+        "paths": [
+          "pcode/index.html",
+          "pcode/index_en.html",
+          "pcode/index_cn.html"
+        ],
+        "topic": "pcode/index"
+      },
+      {
+        "paths": [
+          "spine/index.html"
+        ],
+        "topic": "spine/index"
+      }
+    ],
+    "historical_completion_not_new_compliance": true,
+    "medical_information_indices": 20,
+    "paths": [
+      "cervical-disc.html",
+      "cervical-disc_en.html",
+      "cervical-disc_cn.html",
+      "lumbar-disc.html",
+      "lumbar-disc_en.html",
+      "lumbar-disc_cn.html",
+      "shoulder-frozen.html",
+      "shoulder-frozen_en.html",
+      "shoulder-frozen_cn.html",
+      "chuna-therapy.html",
+      "chuna-therapy_en.html",
+      "chuna-therapy_cn.html",
+      "herbal-medicine.html",
+      "herbal-medicine_en.html",
+      "herbal-medicine_cn.html",
+      "index.html",
+      "index_en.html",
+      "index_cn.html",
+      "encyclopedia/index.html",
+      "encyclopedia/index_en.html",
+      "encyclopedia/index_cn.html",
+      "BodyallFit/encyclopedia/index.html",
+      "BodyallFit/encyclopedia/index_en.html",
+      "BodyallFit/encyclopedia/index_cn.html",
+      "Herbmed/encyclopedia/index.html",
+      "Herbmed/encyclopedia/index_en.html",
+      "Herbmed/encyclopedia/index_cn.html",
+      "BodyallFit/index.html",
+      "notice/index.html",
+      "notice/index_en.html",
+      "notice/index_cn.html",
+      "pcode/index.html",
+      "pcode/index_en.html",
+      "pcode/index_cn.html",
+      "spine/index.html"
+    ],
+    "reaffirmed_by_owner": true,
+    "source_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json",
+    "standalone_articles": 15,
+    "strict_priority_before_other_pages": true,
+    "total": 35
+  },
+  "publication": {
+    "blocker": "Rendered draft QA remains incomplete; the prior data-URL preview was blocked by browser security policy. No bypass attempted.",
+    "full_editorial_pass_claimed": false,
+    "main_writes": 0,
+    "new_medical_review_stamp": false,
+    "public_deployments": 0,
+    "required_next": "Use an authorized permitted HTTPS draft preview or another explicitly approved review route before public deployment. Finish KO representative review before treating its translations as framework-complete."
+  },
+  "status": "PRIORITY_DRAFTS_UPDATED_PUBLIC_RELEASE_PENDING",
+  "story_framework": {
+    "full_read": true,
+    "index_exemption": "Index pages remain care-navigation and clinic-trust hubs. Do not impose a patient-case mystery, paper quota, FAQ quota or fixed paragraph count.",
+    "library_file_id": "libfile_518f9be0c0048191ab29cccc4bb6e43f",
+    "no_fabricated_cases": "Use a clearly general patient concern or hypothetical situation unless actual case records are supplied; do not invent patients, dialogue presented as a real encounter, clinical findings or treatment outcomes.",
+    "scope": "Non-index patient articles",
+    "source_filename": "핵심 구조짜기(1).md",
+    "version": "2026-09-16.1"
+  },
+  "updated_at": "2026-09-16T09:07:38.490Z",
+  "validation": {
+    "all_checks_passed": true,
+    "files": [
+      {
+        "bytes": 35561,
+        "faq_count_after": 2,
+        "faq_count_before": 3,
+        "faq_mismatches": [],
+        "images": 5,
+        "links": 41,
+        "path": "lumbar-disc.html",
+        "preexisting_faq_mismatches": [],
+        "problems": [],
+        "safety_blocks_exact": true,
+        "sha256": "63e38ca932089d7c27885347053b075558049dd3ca1cbdd4df3e772db9eef232",
+        "source_blob": "77f757baf113f1b481467c40708a704f468d0856"
+      },
+      {
+        "bytes": 31711,
+        "faq_count_after": 2,
+        "faq_count_before": 3,
+        "faq_mismatches": [],
+        "images": 26,
+        "links": 33,
+        "path": "index.html",
+        "preexisting_faq_mismatches": [],
+        "problems": [],
+        "safety_blocks_exact": true,
+        "sha256": "b00fbe48ced3df660dd33acb91107b008e675d2bb1559d757d63c2beb4d1fb5b",
+        "source_blob": "2676c1ec07729cc2c3b2e29a002cf84bacfa8f1c"
+      },
+      {
+        "bytes": 30739,
+        "faq_count_after": 2,
+        "faq_count_before": 3,
+        "faq_mismatches": [],
+        "images": 25,
+        "links": 33,
+        "path": "index_en.html",
+        "preexisting_faq_mismatches": [],
+        "problems": [],
+        "safety_blocks_exact": true,
+        "sha256": "50a7c19c0b5bed0d64227baf0b5f3ca488a12456da72a93100b8bedcd4016341",
+        "source_blob": "ac9249b5fbb301edae7a92f63c54370441eaf7d9"
+      },
+      {
+        "bytes": 29778,
+        "faq_count_after": 2,
+        "faq_count_before": 3,
+        "faq_mismatches": [],
+        "images": 25,
+        "links": 33,
+        "path": "index_cn.html",
+        "preexisting_faq_mismatches": [],
+        "problems": [],
+        "safety_blocks_exact": true,
+        "sha256": "9ebfffde8880edae3cad9e6871e33d5fe2fed124126d46ce90c3cbd9ee0acbb2",
+        "source_blob": "4e5e3a8479f8f67fa071154e0224d1825eeae501"
+      }
+    ],
+    "terminology_status": "RESOLVED: modern device is 역중력치료기/인상기, developed from study of historical 疊甎; confirmed directly by owner on 2026-09-16",
+    "visual_check": "NOT_COMPLETED: no permitted draft-preview route used; prior data-URL attempt was blocked"
+  }
+}

@@ -3564,9 +3564,10 @@
       "throughput"
     ],
     "schedule_model_budget": "UNCHANGED",
-    "work_order": "PRIORITY_HUBS_AND_ALL_MEDICAL_INDICES_THEN_PREVIOUS_ORDER",
-    "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json",
-    "zero_error_or_recommendation_lift_guarantee": false
+    "work_order": "OWNER_NAMED_FIVE_HUBS_AND_ALL_MEDICAL_INFORMATION_INDICES_FIRST",
+    "work_order_record": "ops/html-recovery/drafts/20260916-story-framework/review.json",
+    "zero_error_or_recommendation_lift_guarantee": false,
+    "story_framework_index_exemption": true
   },
   "filesystem_sync_status": "EXACT_SPINE_CANDIDATE_REVIEW_RELEASE_AND_PUBLIC_HARNESSES_VERIFIED_ON_RECOVERY_BRANCH",
   "latest_debug": {
@@ -3902,10 +3903,17 @@
   },
   "next": "Check only concrete deferred/error classes recorded in the ledger. Do not regenerate or broadly rewrite accepted pages.",
   "next_priority": {
-    "paths": [],
-    "phase": "FINAL_FOCUSED_SOL_ANOMALY_SWEEP",
-    "stage": "KNOWN_ERROR_CLASSES_ONLY",
-    "topic": "Concrete-error-only final check; do not repeat successful work"
+    "phase": "OWNER_PRIORITY_STORY_FRAMEWORK_REFRESH",
+    "stage": "REPRESENTATIVE_AND_MAIN_INDEX_DRAFT_RENDER_REVIEW_PENDING",
+    "topic": "lumbar-disc representative KO and root index language set; then continue stored35-priority order",
+    "paths": [
+      "lumbar-disc.html",
+      "index.html",
+      "index_en.html",
+      "index_cn.html"
+    ],
+    "next_article_group": "cervical-disc KO/EN/CN",
+    "nonpriority_rule": "Do not resume SART or other nonpriority articles until priority set is verified."
   },
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
@@ -3930,26 +3938,35 @@
     "require_source_record_in_generation_and_final_review": true,
     "source_type": "DIRECT_OWNER_CONFIRMATION",
     "terminology": {
-      "canonical_ko": "첩전",
-      "chinese_display": "첩전(疊甎)",
-      "confirmed_by": "Direct owner instruction on 2026-09-16",
-      "corrected_chinese_files": [
-        "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
-        "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html",
-        "SART_cn.html",
-        "chuna-therapy_cn.html",
-        "encyclopedia/0003.foot-pain_cn.html",
-        "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html",
-        "herbal-medicine_cn.html",
-        "index_cn.html",
-        "lumbar-disc_cn.html",
-        "pain-spine-clinic_cn.html"
-      ],
+      "canonical_ko": "역중력치료기",
+      "allowed_alias_ko": "인상기",
+      "historical_basis_ko": "의서의 첩전(疊甎)을 고증·분석하여 현대적으로 개발한 장치",
       "hanja": "疊甎",
-      "meaning": "Traditional 导引按跷-related device used to support the body and create treatment space for spinal and skeletal adjustment.",
-      "translation_rule": "Do not render this device as Insanggi, 印床器, 悬吊骨盆, ordinary traction, suspension or brick terminology."
+      "english_display": "anti-gravity therapy device (Insanggi)",
+      "chinese_display": "反重力治疗器（Insanggi）",
+      "chinese_historical_display": "疊甎（첩전）",
+      "meaning": "Acts opposite to gravity",
+      "confirmed_by": "Direct owner clarification in current conversation on 2026-09-16",
+      "source_record": "ops/html-recovery/drafts/20260916-story-framework/review.json",
+      "supersedes": "Earlier rule replacing every Insanggi mention with 첩전(疊甎) in Chinese is superseded.",
+      "apply_rule": "Use modern device name for current treatment; explain historical device as its development basis only where useful. Apply to priority pages first; other terminology fixes follow.",
+      "public_application": "NOT_YET_DEPLOYED_IN_THIS_ROUND"
     },
     "ultrasound": true
+  },
+  "pending_editorial_refinement": {
+    "policy_version": "2026-09-16.2",
+    "story_framework_version": "2026-09-16.1",
+    "status": "PRIORITY_DRAFTS_UPDATED_RENDER_QA_PENDING",
+    "record": "ops/html-recovery/drafts/20260916-story-framework/review.json",
+    "previous_record": "ops/html-recovery/drafts/20260916-policy-v2-refinement/review.json",
+    "latest_draft_files": 4,
+    "retained_prior_drafts": 12,
+    "unique_draft_paths": 15,
+    "public_files_changed": 0,
+    "terminology_hold": "RESOLVED_BY_OWNER_20260916",
+    "make_unchanged": true,
+    "publication_blocker": "Permitted exact draft render review incomplete; no bypass of browser URL policy."
   },
   "pending_run": null,
   "pipeline_review": {
@@ -5253,13 +5270,49 @@
     "status": "OWNER_RECOVERY_PRESERVED"
   },
   "zip_status": "REMOTE_RECOVERY_PACK_AND_RECEIPT_CURRENT; prior ZIP historical only",
-  "pending_editorial_refinement": {
-    "policy_version": "2026-09-16.2",
-    "status": "DRAFT_NOT_DEPLOYED_PENDING_TERMINOLOGY_CONFIRMATION_AND_VISUAL_QA",
-    "record": "ops/html-recovery/drafts/20260916-policy-v2-refinement/review.json",
-    "draft_files": 12,
-    "public_files_changed": 0,
-    "owner_question_ko": "인상기와 첩전(疊甎)은 서로 다른 기기인가요? 아니면 기존 한국어의 ‘인상기’도 ‘첩전’으로 고쳐야 하나요?",
-    "make_unchanged": true
+  "editorial_refresh_progress": {
+    "criterion": "POLICY_20260916_2_PLUS_STORY_20260916_1_AND_OWNER_DEVICE_CLARIFICATION",
+    "priority_total": 35,
+    "priority_public_completed": 0,
+    "priority_drafts_updated_this_round": 4,
+    "priority_paths": [
+      "cervical-disc.html",
+      "cervical-disc_en.html",
+      "cervical-disc_cn.html",
+      "lumbar-disc.html",
+      "lumbar-disc_en.html",
+      "lumbar-disc_cn.html",
+      "shoulder-frozen.html",
+      "shoulder-frozen_en.html",
+      "shoulder-frozen_cn.html",
+      "chuna-therapy.html",
+      "chuna-therapy_en.html",
+      "chuna-therapy_cn.html",
+      "herbal-medicine.html",
+      "herbal-medicine_en.html",
+      "herbal-medicine_cn.html",
+      "index.html",
+      "index_en.html",
+      "index_cn.html",
+      "encyclopedia/index.html",
+      "encyclopedia/index_en.html",
+      "encyclopedia/index_cn.html",
+      "BodyallFit/encyclopedia/index.html",
+      "BodyallFit/encyclopedia/index_en.html",
+      "BodyallFit/encyclopedia/index_cn.html",
+      "Herbmed/encyclopedia/index.html",
+      "Herbmed/encyclopedia/index_en.html",
+      "Herbmed/encyclopedia/index_cn.html",
+      "BodyallFit/index.html",
+      "notice/index.html",
+      "notice/index_en.html",
+      "notice/index_cn.html",
+      "pcode/index.html",
+      "pcode/index_en.html",
+      "pcode/index_cn.html",
+      "spine/index.html"
+    ],
+    "other_pages_deferred": true,
+    "historical_original_156_counts_unchanged": true
   }
 }
