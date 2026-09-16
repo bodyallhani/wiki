@@ -110,7 +110,10 @@
     "traffic-accident_en.html",
     "encyclopedia/0001.buttock-pain.html",
     "encyclopedia/0001.buttock-pain_en.html",
-    "encyclopedia/0001.buttock-pain_cn.html"
+    "encyclopedia/0001.buttock-pain_cn.html",
+    "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
+    "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
+    "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html"
   ],
   "completion_rows": [
     {
@@ -1850,19 +1853,58 @@
       "verification_receipt": "run_0020_final/public_verification.json"
     },
     {
-      "latest_standard_completed": false,
+      "final_repository_head": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
+      "git_blob": "9bc3fe8cdc68b85b6a5b639eb0b71001171b42c1",
+      "latest_standard_completed": true,
+      "limits": [
+        "PMID 32991456 is a systematic-review protocol, not an efficacy result.",
+        "The cited 80-person randomized study is single-center and small, uses a subjective effective-rate outcome, and has limited long-term/adverse-event reporting; it does not establish Bodyall outcomes or general superiority.",
+        "No new physician review or independent translation review of this exact version was asserted.",
+        "Public content, schema, image and desktop overflow plus exact 360px candidate rendering were verified; actual AI recommendation lift remains unmeasured."
+      ],
       "path": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "publication_commit": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
+      "review_receipt": "ops/html-recovery/reviews/20260916-tarsal-tunnel-final-candidate.json",
+      "sha256": "693cc1b6cb4a65addbecc0707e2b4b618a83e5705313b55dfc498f4b405ea5e1",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-tarsal-tunnel-release.json"
     },
     {
-      "latest_standard_completed": false,
+      "final_repository_head": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
+      "git_blob": "768d505b44429a76df509caf0b9f68702ff1caf6",
+      "latest_standard_completed": true,
+      "limits": [
+        "PMID 32991456 is a systematic-review protocol, not an efficacy result.",
+        "The cited 80-person randomized study is single-center and small, uses a subjective effective-rate outcome, and has limited long-term/adverse-event reporting; it does not establish Bodyall outcomes or general superiority.",
+        "No new physician review or independent translation review of this exact version was asserted.",
+        "Public content, schema, image and desktop overflow plus exact 360px candidate rendering were verified; actual AI recommendation lift remains unmeasured."
+      ],
       "path": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "publication_commit": "82103a5b9c8dda01bf1d61c8ca0d5698b081dfe6",
+      "review_receipt": "ops/html-recovery/reviews/20260916-tarsal-tunnel-final-candidate.json",
+      "sha256": "23925fc9f102cdadee249444dee259b03a8934f6e80b639a1400fd94de7a63cc",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-tarsal-tunnel-release.json"
     },
     {
-      "latest_standard_completed": false,
+      "final_repository_head": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
+      "git_blob": "3c565e33443d387a4c67a31841d37ccb079f9df1",
+      "latest_standard_completed": true,
+      "limits": [
+        "PMID 32991456 is a systematic-review protocol, not an efficacy result.",
+        "The cited 80-person randomized study is single-center and small, uses a subjective effective-rate outcome, and has limited long-term/adverse-event reporting; it does not establish Bodyall outcomes or general superiority.",
+        "No new physician review or independent translation review of this exact version was asserted.",
+        "Public content, schema, image and desktop overflow plus exact 360px candidate rendering were verified; actual AI recommendation lift remains unmeasured."
+      ],
       "path": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
-      "status": "LATEST_STANDARD_NOT_YET_CONFIRMED"
+      "publication_commit": "1e63a509d3eaf8d6644c651a89e2cdf496daf1a8",
+      "review_receipt": "ops/html-recovery/reviews/20260916-tarsal-tunnel-final-candidate.json",
+      "sha256": "42ca0ce681a9f6ee18f3ec26a988399141659dc9a693d99b924317dbf588ab4b",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "url": "https://wiki.body-all.co.kr/encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
+      "verification_receipt": "ops/html-recovery/runs/20260916-tarsal-tunnel-release.json"
     },
     {
       "latest_standard_completed": false,
@@ -2627,15 +2669,15 @@
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
-    "latest_standard_not_confirmed_or_remaining": 45,
-    "latest_standard_published_confirmed": 111,
+    "latest_standard_not_confirmed_or_remaining": 42,
+    "latest_standard_published_confirmed": 114,
     "new_publications_this_turn": 3,
     "revised_publications_this_turn": 0,
     "total_scope": 156,
     "existing_rework_verified_under_20260915_request": 13,
     "historically_accepted_not_yet_reworked_under_20260915_request": 72,
-    "phase1_strengthened_completed": 26,
-    "phase1_strengthened_remaining": 45,
+    "phase1_strengthened_completed": 29,
+    "phase1_strengthened_remaining": 42,
     "priority_strengthened_total": 35,
     "priority_strengthened_completed": 35,
     "priority_strengthened_remaining": 0,
@@ -2652,42 +2694,43 @@
   ],
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/herbal",
   "latest_recovery_persistence": {
-    "at": "2026-09-16T01:36:03.170Z",
-    "status": "BUTTOCK_PAIN_CANDIDATES_REVIEW_RELEASE_STORED_EXACT",
+    "at": "2026-09-16T02:06:59.631Z",
+    "status": "TARSAL_TUNNEL_CANDIDATES_REVIEW_RELEASE_AND_HARNESSES_STORED_EXACT",
     "paths": [
-      "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain.html",
-      "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_en.html",
-      "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_cn.html",
-      "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json",
-      "ops/html-recovery/runs/20260916-buttock-pain-release.json",
-      "ops/html-recovery/review-harnesses/20260916-buttock-pain-360.html"
+      "ops/html-recovery/candidates/20260916-tarsal-tunnel/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
+      "ops/html-recovery/candidates/20260916-tarsal-tunnel/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
+      "ops/html-recovery/candidates/20260916-tarsal-tunnel/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html",
+      "ops/html-recovery/reviews/20260916-tarsal-tunnel-final-candidate.json",
+      "ops/html-recovery/runs/20260916-tarsal-tunnel-release.json",
+      "ops/html-recovery/review-harnesses/20260916-tarsal-tunnel-desktop.html",
+      "ops/html-recovery/review-harnesses/20260916-tarsal-tunnel-360.html"
     ],
     "exact_readback": true
   },
   "latest_release": {
-    "topic": "Buttock-pain phase1 KO/EN/CN",
+    "topic": "Tarsal-tunnel phase1 KO/EN/CN",
     "changed_files": [
-      "encyclopedia/0001.buttock-pain.html",
-      "encyclopedia/0001.buttock-pain_en.html",
-      "encyclopedia/0001.buttock-pain_cn.html"
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "encyclopedia/0001.buttock-pain.html",
-      "encyclopedia/0001.buttock-pain_en.html",
-      "encyclopedia/0001.buttock-pain_cn.html"
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html"
     ],
     "reworked_existing_urls": [],
     "original156_count_delta": 3,
     "additional_index_count_delta": 0,
-    "base_commit": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
-    "final_commit": "304ca75f2300952d99da1e893578b1d60ecfe80d",
+    "base_commit": "304ca75f2300952d99da1e893578b1d60ecfe80d",
+    "final_commit": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-buttock-pain-release.json",
-    "review": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json"
+    "receipt": "ops/html-recovery/runs/20260916-tarsal-tunnel-release.json",
+    "review": "ops/html-recovery/reviews/20260916-tarsal-tunnel-final-candidate.json"
   },
   "latest_validation": {
     "status": "PASS_PUBLIC",
-    "record": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json",
+    "record": "ops/html-recovery/reviews/20260916-tarsal-tunnel-final-candidate.json",
     "candidate_static_content_schema_pass": true,
     "candidate_exact_readback": true,
     "image_direct_inspection_pass": true,
@@ -2697,10 +2740,10 @@
     "public_schema_faq_pass": true,
     "public_desktop_visual_pass": true,
     "public_overflow_zero": true,
-    "note": "Corrected exact KO/EN/CN candidates passed direct desktop and full-section 360px review. Sequential optimistic-lock deployment, exact GitHub readback, intended-files-only compare and public Pages content/schema/image/desktop verification passed."
+    "note": "Exact KO/EN/CN candidates passed full-document, 1180px and 354px review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare, and public Pages content/schema/image/desktop verification passed."
   },
-  "next": "Resume phase1 with encyclopedia/0021 tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release KO/EN/CN from the latest source files; create no new URLs.",
-  "next_priority": "RESUME PHASE1 encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release KO→EN→CN: fresh-read main and target blobs, directly review exact full HTML and renders, then deploy only after PASS.",
+  "next": "RESUME PHASE1 encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization KO→EN→CN: fresh-read main and target blobs, directly review exact full HTML and renders, then deploy only after PASS.",
+  "next_priority": "RESUME PHASE1 encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization KO→EN→CN: fresh-read main and target blobs, directly review exact full HTML and renders, then deploy only after PASS.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2708,9 +2751,9 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "304ca75f2300952d99da1e893578b1d60ecfe80d",
+  "public_commit": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "둔부통증 0001의 KO/EN/CN을 직접 전체·데스크톱·360px 검수했습니다. 모바일에서 이전 문서 언어 링크가 남은 오류를 발견해 수정·재검수한 뒤 순차 배포했고, 공개 내용·스키마·이미지·화면까지 확인했습니다. 현재 원래156개는 111/156 완료, 잔여45개이며 다음은 족근관증후군 0021 KO→EN→CN입니다. 실제 AI 추천률 증가는 미측정입니다.",
+  "report_ko": "족근관증후군 0021의 KO/EN/CN을 전체 문서와 1180px·360px 화면으로 직접 검수한 뒤 순차 배포했습니다. 체계적 문헌고찰 프로토콜을 효능 결과처럼 사용한 오류와 도침 감압·신경전도 정상화·SART 재발예방 과장을 제거했고, 공개 내용·스키마·이미지·화면까지 확인했습니다. 현재 원래156개는 114/156 완료, 잔여42개이며 다음은 흉추 후관절 0022 KO→EN→CN입니다. 실제 AI 추천률 증가는 미측정입니다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2728,8 +2771,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-16T01:36:43.932Z",
-  "version": "V262_BUTTOCK_PAIN_PUBLIC_PASS_NEXT_TARSAL_TUNNEL",
+  "updated_at": "2026-09-16T02:06:59.631Z",
+  "version": "V263_TARSAL_TUNNEL_PUBLIC_PASS_NEXT_THORACIC_FACET",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2758,40 +2801,40 @@
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
   "active_run": {
-    "owner": "buttock-pain-phase1-release-20260916",
-    "started_at": "2026-09-16T01:20:00Z",
-    "completed_at": "2026-09-16T01:36:03.170Z",
-    "base_main_head": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
-    "final_main_head": "304ca75f2300952d99da1e893578b1d60ecfe80d",
-    "source_ledger_blob": "55d991f14a2ea1a8ba584681b4b764377093359d",
+    "owner": "tarsal-tunnel-phase1-release-20260916",
+    "started_at": "2026-09-16T01:49:00Z",
+    "completed_at": "2026-09-16T02:06:59.631Z",
+    "base_main_head": "304ca75f2300952d99da1e893578b1d60ecfe80d",
+    "final_main_head": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
+    "source_ledger_blob": "519ef6874bfe064183a813b989422cb49c0bce1d",
     "source_blobs": {
-      "encyclopedia/0001.buttock-pain.html": "3caa92e440e27259699ab3e694503a32fd0b9341",
-      "encyclopedia/0001.buttock-pain_en.html": "5bafcae750b67f82f653361a054c2f5130088ebe",
-      "encyclopedia/0001.buttock-pain_cn.html": "b69c11e82046203d359139e31b0b6822df8b01d7"
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html": "f4974ce9341dd11f551bccf94f94dd9dafbb9e06",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html": "a3fa55a4ab07bddc91d9ac20f70c4018610f8a48",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html": "dd18f1e648c88b86521cbfbc9286c8b66abb1013"
     },
     "exact_candidate_hashes": {
-      "encyclopedia/0001.buttock-pain.html": "dbeb498ce479ddd777965dbba3de6c9f3b2b10ea16fd59433a560725c922a815",
-      "encyclopedia/0001.buttock-pain_en.html": "76117bf77cd7e4d2b884176399b047d085519ce437fd3f28e09b1bbc2fcfd081",
-      "encyclopedia/0001.buttock-pain_cn.html": "d950a57c4b06453a632f280a9343cbe1900dc1eb362f0edea499955d949bdfea"
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html": "42ca0ce681a9f6ee18f3ec26a988399141659dc9a693d99b924317dbf588ab4b",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html": "23925fc9f102cdadee249444dee259b03a8934f6e80b639a1400fd94de7a63cc",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html": "693cc1b6cb4a65addbecc0707e2b4b618a83e5705313b55dfc498f4b405ea5e1"
     },
     "published_blobs": {
-      "encyclopedia/0001.buttock-pain.html": "9da1ff441a7c5fc4d490894eb16e17e6a0d6e51d",
-      "encyclopedia/0001.buttock-pain_en.html": "c38c4526b3c41b8793d64e60720fbff20315356c",
-      "encyclopedia/0001.buttock-pain_cn.html": "f168c35fa9fa671112d873138d780502be542e35"
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html": "3c565e33443d387a4c67a31841d37ccb079f9df1",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html": "768d505b44429a76df509caf0b9f68702ff1caf6",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html": "9bc3fe8cdc68b85b6a5b639eb0b71001171b42c1"
     },
     "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
     "single_writer_active": false,
-    "required_next": "Resume encyclopedia/0021 KO/EN/CN from the freshly read ledger.",
-    "review_record": "ops/html-recovery/reviews/20260916-buttock-pain-final-candidate-hold.json",
-    "release_record": "ops/html-recovery/runs/20260916-buttock-pain-release.json",
+    "required_next": "Resume encyclopedia/0022 KO/EN/CN from the freshly read ledger.",
+    "review_record": "ops/html-recovery/reviews/20260916-tarsal-tunnel-final-candidate.json",
+    "release_record": "ops/html-recovery/runs/20260916-tarsal-tunnel-release.json",
     "ledger_exact_readback": true
   },
   "pending_run": {
-    "topic": "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release KO/EN/CN",
+    "topic": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization KO/EN/CN",
     "paths": [
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html"
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
+      "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html"
     ],
     "stage": "NOT_STARTED_FRESH_SOURCE_REQUIRED",
     "main_writes": 0,
@@ -3355,9 +3398,6 @@
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
     "phase1_pending_paths": [
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html",
       "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
       "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
       "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html",
@@ -3427,7 +3467,10 @@
       "encyclopedia/0002.stiff-hands_cn.html",
       "encyclopedia/0001.buttock-pain.html",
       "encyclopedia/0001.buttock-pain_en.html",
-      "encyclopedia/0001.buttock-pain_cn.html"
+      "encyclopedia/0001.buttock-pain_cn.html",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
+      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html"
     ],
     "phase2_initial_paths": [
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -3827,9 +3870,6 @@
     "priority_record_blob": "88ebc0892358d9d0da14e8ca649942bca7d3c6c6",
     "priority_record_exact_readback": true,
     "resume_phase1_pending_paths": [
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release.html",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_en.html",
-      "encyclopedia/0021.tarsal-tunnel-syndrome-acupotomy-flexor-retinaculum-release_cn.html",
       "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
       "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
       "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html",
@@ -3860,8 +3900,6 @@
       "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
       "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
       "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
-      "BodyallFit/encyclopedia/index_en.html",
-      "BodyallFit/encyclopedia/index_cn.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
@@ -4034,17 +4072,17 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "at": "2026-09-16T01:36:03.170Z",
+    "at": "2026-09-16T02:06:59.631Z",
     "completed_this_run": 3,
     "reworked_this_run": 0,
     "additional_index_completed_this_run": 0,
     "candidates_prepared": 3,
-    "public_completed": 111,
-    "remaining": 45,
+    "public_completed": 114,
+    "remaining": 42,
     "priority_completed": 35,
     "priority_remaining": 0,
     "additional_index_completed": 8,
-    "result": "Buttock-pain KO/EN/CN were corrected, directly reviewed, deployed and publicly verified. Direct 360px review caught and corrected stale language links before publication.",
+    "result": "Tarsal-tunnel KO/EN/CN were medically corrected, directly reviewed at desktop and 360px, sequentially deployed and publicly verified. A protocol had been misused as efficacy evidence in the source; deterministic decompression, nerve-conduction normalization and recurrence-prevention claims were removed.",
     "recommendation_measurement": "UNMEASURED"
   },
   "previous_release": {
@@ -4565,10 +4603,21 @@
         "topic": "encyclopedia/0001.buttock-pain language links",
         "issue": "Direct 360px review exposed KO/EN/CN links copied from the prior stiff-hands page.",
         "status": "CORRECTED_AND_REREVIEWED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "encyclopedia/0021.tarsal-tunnel evidence",
+        "issue": "Source treated PMID 32991456, a systematic-review protocol, as efficacy evidence.",
+        "status": "CORRECTED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "encyclopedia/0021.tarsal-tunnel claims",
+        "issue": "Source asserted direct retinacular release, nerve decompression/conduction normalization and SART recurrence prevention beyond evidence.",
+        "status": "CORRECTED_BEFORE_PUBLICATION"
       }
     ],
     "final_escalation_queue": [
       "At project close, deterministically re-audit canonical/og:url equality across all Sol-reviewed multilingual files.",
+      "Recheck all citations classified as protocol/review/trial in Sol-reviewed pages for evidence-type mismatches.",
       "Escalate only unresolved medical-claim, translation-causality, or rendered-layout anomalies; do not repeat full review of clean unchanged files."
     ]
   }
