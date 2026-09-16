@@ -1,0 +1,61 @@
+{
+  "base_main_head": "20a99679cb6b087d058fb88f8ce2279bc4a0c9bf",
+  "change_scope_verified": true,
+  "compare_ahead_by": 3,
+  "files": [
+    {
+      "git_blob": "fedb19c93c699e8b96349a132ce53fe95bf46fc9",
+      "path": "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html",
+      "publication_commit": "091e299f253e587bde04699108237397f443f995",
+      "sha256": "9fc260c64d1b56f3a2b7c49d114bf6e0096392f9351c30d5980a3719c5d1708b",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html"
+    },
+    {
+      "git_blob": "570d547fd4f2e663f2b544bc0a7ca9371a043f2b",
+      "path": "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html",
+      "publication_commit": "16cff292e060b30f6da42c8f829d8abc8cfd2255",
+      "sha256": "07846a6b09b82e26d8eac06db8ac1e242b87a048fb59a3d0e484e01ef20734b5",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html"
+    },
+    {
+      "git_blob": "7c0a4897c7f3012cc25dd947e40f39b0f359b929",
+      "path": "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html",
+      "publication_commit": "93d71ba80bda8fe692a3ac9e7bd2ab8180575ce7",
+      "sha256": "552de721697e1c1b89bd5134f56c62786b7a21fed4653be4c960701116197eda",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_cn.html"
+    }
+  ],
+  "final_main_head": "93d71ba80bda8fe692a3ac9e7bd2ab8180575ce7",
+  "limitations": [
+    "Direct 360px browser emulation was unavailable; responsive CSS safeguards were checked statically under the user's immediate-deployment approval.",
+    "Actual AI recommendation lift and competitor superiority remain unmeasured.",
+    "No new physician review stamp or independent translation approval is asserted."
+  ],
+  "public_validation": {
+    "all_three_markers": true,
+    "booking_link": true,
+    "canonical_equals_og_url": true,
+    "desktop_overflow_px": 0,
+    "desktop_screenshots_directly_reviewed": true,
+    "hero_intrinsic": "1376x768",
+    "hero_loaded": true,
+    "hreflang": [
+      "ko",
+      "en",
+      "zh-Hans",
+      "x-default"
+    ],
+    "reserved_dimensions": true,
+    "schema_types": [
+      "MedicalWebPage",
+      "MedicalClinic",
+      "MedicalTherapy",
+      "FAQPage"
+    ],
+    "visible_faq_count": 4
+  },
+  "record_type": "PUBLIC_RELEASE",
+  "status": "PUBLIC_VERIFIED",
+  "unexpected_files": [],
+  "verified_at": "2026-09-16T04:28:28.900Z"
+}
