@@ -1,0 +1,38 @@
+{
+  "record_type": "SOURCE_AND_EVIDENCE_REVIEW",
+  "status": "PASS_TO_CANDIDATE",
+  "reviewed_at": "2026-09-16T04:58:46.886Z",
+  "source_ledger_blob": "bdd8fbb9503265e11278a36155b97da8965f6971",
+  "source_main_head": "37db877200073183564c89df7e53101cf7f9c1c2",
+  "files": [
+    {
+      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
+      "source_blob": "d4f4a4609a8d4003828fff6e2fa8be223635a2d2"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
+      "source_blob": "a15bc9f812f1b01bcc23a9022293f36f72ac4f6b"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html",
+      "source_blob": "fec7c8948902b50c724f4071e7097f543e0296dd"
+    }
+  ],
+  "findings": [
+    "Source deterministically attributed persistent fatigue to thoracolumbar alignment, neurovascular compression, microcirculation, ATP and immune-neuroendocrine dysfunction, then extended these claims to SART and herbal delivery.",
+    "The 2024 spinal-manipulation systematic review included 14 trials and 618 participants; overall low-quality evidence found no change in autonomic measures and did not test chronic fatigue, microcirculation, immunity, ATP or Bodyall SART.",
+    "The 2021 Hochuekkito/Bojungikgi-tang paper reviewed basic pharmacology and heterogeneous infectious, inflammatory and frailty contexts; it does not establish ME/CFS efficacy, ATP restoration or synergy with thoracolumbar correction.",
+    "CDC states there is no single confirmatory ME/CFS test and diagnosis requires history, examination, targeted tests and exclusion of other fatiguing illnesses.",
+    "The mechanism image was removed; the hero image remains with reserved 1376x768 dimensions."
+  ],
+  "sources": [
+    "https://www.cdc.gov/me-cfs/hcp/diagnosis/index.html",
+    "https://pubmed.ncbi.nlm.nih.gov/38044657/",
+    "https://doi.org/10.1002/tkm2.1264"
+  ],
+  "candidate_hashes": {
+    "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html": "4eba88144ac2d1e504b8e9cca9579191ed0d538fa58b8dd1dd916d1772aed7a5",
+    "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html": "e2b927c44fb1e08fa34f1505dd6d5e77995bb0b3e558a0fb636e13b0512cd98a",
+    "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html": "b154126bffb889e61f9b229b66303766d6b503e279cb0b16362286068ef7989e"
+  }
+}
