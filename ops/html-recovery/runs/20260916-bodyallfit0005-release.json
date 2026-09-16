@@ -1,0 +1,126 @@
+{
+  "run_id": "bodyallfit0005-phase1-release-20260916",
+  "released_at": "2026-09-16T06:17:31.971Z",
+  "base_main_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
+  "final_main_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
+  "commits": [
+    {
+      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
+      "commit": "7cf9706d6e456376f99e86da385d3be5910fbc0f",
+      "blob": "3c45f379dffb51493ea3c5e85adf3bf459d0d82a"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
+      "commit": "20b60e63b6a6a796300130723b681d0a3b9aa014",
+      "blob": "c865a6f519719e85072a1520662fbaf696df2c89"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
+      "commit": "cc4e95a98b80be47a9745c94e730a5089296d17a",
+      "blob": "3929bd2ae51018f7def89856ed18892576fbac3a"
+    }
+  ],
+  "exact_sha256": {
+    "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html": "17f536dbdeb5c3caff55244ec01ecb9d69e5e052c58e75a438c3e67da502b26f",
+    "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html": "4d92a5f696d2d1744ed199c777a32e765757dbfc890375e08576fa5f6becec52",
+    "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html": "3eaa09a1aafe741a6697d2596c8892655763afb58303a5628a64f2dc29ea56aa"
+  },
+  "compare": {
+    "ahead_by": 3,
+    "files": [
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html"
+    ],
+    "unexpected_files": []
+  },
+  "pages": {
+    "run_id": 35062801594,
+    "conclusion": "success",
+    "head_sha": "cc4e95a98b80be47a9745c94e730a5089296d17a"
+  },
+  "public_validation": [
+    {
+      "booking": true,
+      "broken": 0,
+      "canon": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "h1": "스트레스 때 과식과 붓기가 반복된다면: 수원 BodyallFit의 확인·선택·재평가",
+      "hreflang": 4,
+      "imgs": 0,
+      "og": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
+      "overflow": 0,
+      "path": "/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
+      "schemas": [
+        "MedicalWebPage",
+        [
+          "MedicalClinic",
+          "LocalBusiness"
+        ],
+        "MedicalTherapy",
+        "FAQPage"
+      ],
+      "title": "수원 스트레스성 과식·붓기 상담: BodyallFit 평가와 관리 선택 | 바디올 위키",
+      "unverifiedHours": false
+    },
+    {
+      "booking": true,
+      "broken": 0,
+      "canon": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "h1": "When stress eating and swelling recur: how Suwon BodyallFit assesses, selects and reassesses",
+      "hreflang": 4,
+      "imgs": 0,
+      "og": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
+      "overflow": 0,
+      "path": "/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
+      "schemas": [
+        "MedicalWebPage",
+        [
+          "MedicalClinic",
+          "LocalBusiness"
+        ],
+        "MedicalTherapy",
+        "FAQPage"
+      ],
+      "title": "Suwon Stress Eating & Swelling Consultation: BodyallFit Assessment and Choices | Bodyall Wiki",
+      "unverifiedHours": false
+    },
+    {
+      "booking": true,
+      "broken": 0,
+      "canon": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "h1": "压力性进食与肿胀反复出现时：水原BodyallFit如何评估、选择并复评",
+      "hreflang": 4,
+      "imgs": 0,
+      "og": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
+      "overflow": 0,
+      "path": "/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
+      "schemas": [
+        "MedicalWebPage",
+        [
+          "MedicalClinic",
+          "LocalBusiness"
+        ],
+        "MedicalTherapy",
+        "FAQPage"
+      ],
+      "title": "水原压力性进食与肿胀咨询：BodyallFit评估和管理选择 | Bodyall Wiki",
+      "unverifiedHours": false
+    }
+  ],
+  "images": {
+    "referenced_missing_images_removed": 2,
+    "new_assets_created": 0,
+    "public_broken_images": 0
+  },
+  "verdict": "PUBLIC_PASS",
+  "limitations": [
+    "Direct 360px viewport remains scheduled for the final Sol anomaly sweep.",
+    "Actual AI recommendation lift remains unmeasured."
+  ]
+}
