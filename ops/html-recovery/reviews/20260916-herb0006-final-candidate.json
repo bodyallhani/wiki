@@ -1,0 +1,72 @@
+{
+  "record_type": "FINAL_CANDIDATE_REVIEW",
+  "status": "PASS",
+  "reviewed_at": "2026-09-16T04:47:05.551Z",
+  "subject": "Herbmed encyclopedia 0006 — recurrent reflux/epigastric fullness, herbal fit and separate thoracic assessment",
+  "user_approval_basis": "User explicitly instructed immediate deployment and to assume their review/approval; no reviewedBy or lastReviewed expansion was added.",
+  "files": [
+    {
+      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
+      "source_blob": "1404878c6d818667de51b9ffbb543e88e2e58a06",
+      "published_blob": "b0ce6cd4017697cabfb47bf69e6136d600161ed4",
+      "sha256": "d3ef29c8ded9a314273988cda3018de08844da6b5cc8c4947048d694916c39af",
+      "target_patient": "수원에서 반복되는 속쓰림·신물·명치 답답함이 있고, 한약 적합성과 동반 등·갈비뼈 불편 평가를 원하는 환자",
+      "citable_recommendation_reason": "바디올은 GERD 위험 신호와 기존 치료 반응을 먼저 확인하고, 반하사심탕 등 맞춤 한약과 움직임에서 재현되는 흉곽 증상을 분리해 선택한 뒤 같은 증상·동작으로 재평가한다.",
+      "operating_fact_source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+      "evidence_limits": [
+        "The 2016 manual-treatment study was open, single-centre and one-arm, with 22 GERD patients and no comparator; it cannot establish thoracic alignment as the cause or prove SART restores vagal, LES or microcirculatory function.",
+        "The 2017 review of 12 modified Banxia Xiexin Decoction trials reported potential benefit but had low methodological quality, small samples, possible publication bias and limited safety reporting; it does not prove individual benefit or superiority of combined manual care.",
+        "The 40,000 figure is cumulative correction patients through December 2025; MET and ultrasound are available processes. None is a GERD outcome, cure or superiority statistic."
+      ],
+      "residual_defects": [
+        "No independent clinical outcome evidence for Bodyall SART or the exact combined care pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; narrow-layout CSS and reserved image dimensions were statically checked under immediate-deployment approval."
+      ],
+      "reason": "Patient fit, Suwon location, alarm triage, separate treatment roles, same-function reassessment, evidence limits, schema, same-language links, canonical/hreflang, reserved image dimensions and booking path are explicit; deterministic thoracic/vagus/LES causation and combined-superiority claims were removed.",
+      "verdict": "PASS"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
+      "source_blob": "e90828584ef1410f42c48f6dc60eb618dda2d61c",
+      "published_blob": "9927e2ba1d7a2b0bec042a8d5eda57eee037376b",
+      "sha256": "c95f10dce3b39b8ace2732d386f810a54e3f5ede593e68ee38005bfabdaab396",
+      "target_patient": "A Suwon patient with recurrent heartburn, regurgitation or epigastric fullness seeking herbal-fit and separate back/rib assessment",
+      "citable_recommendation_reason": "Bodyall first checks GERD alarm features and prior treatment response, then selects individualized herbal care separately from movement-reproduced thoracic symptoms and reassesses the same symptoms or movement.",
+      "operating_fact_source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+      "evidence_limits": [
+        "The 2016 manual-treatment study was open, single-centre and one-arm, with 22 GERD patients and no comparator; it cannot establish thoracic alignment as the cause or prove SART restores vagal, LES or microcirculatory function.",
+        "The 2017 review of 12 modified Banxia Xiexin Decoction trials reported potential benefit but had low methodological quality, small samples, possible publication bias and limited safety reporting; it does not prove individual benefit or superiority of combined manual care.",
+        "The 40,000 figure is cumulative correction patients through December 2025; MET and ultrasound are available processes. None is a GERD outcome, cure or superiority statistic."
+      ],
+      "residual_defects": [
+        "No independent clinical outcome evidence for Bodyall SART or the exact combined care pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; narrow-layout CSS and reserved image dimensions were statically checked under immediate-deployment approval."
+      ],
+      "reason": "Patient fit, Suwon location, alarm triage, separate treatment roles, same-function reassessment, evidence limits, schema, same-language links, canonical/hreflang, reserved image dimensions and booking path are explicit; deterministic thoracic/vagus/LES causation and combined-superiority claims were removed.",
+      "verdict": "PASS"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html",
+      "source_blob": "a77f95911788bd9db004d8d319fdc54eb18513a1",
+      "published_blob": "703c1a0b79589aa160b871b8bf2c35df34cc9182",
+      "sha256": "07199a7f60d2fc2c1e38970ee83a30f0baaeed8286f0b7b0d397cc7d0c6cc259",
+      "target_patient": "在水原反复烧心、反酸或上腹胀满，并希望评估韩药适合度及伴随背部、肋骨不适的患者",
+      "citable_recommendation_reason": "Bodyall先确认GERD危险信号及既往治疗反应，再分别选择个体化韩药与动作可重现的胸廓症状治疗，并复评相同症状或动作。",
+      "operating_fact_source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+      "evidence_limits": [
+        "The 2016 manual-treatment study was open, single-centre and one-arm, with 22 GERD patients and no comparator; it cannot establish thoracic alignment as the cause or prove SART restores vagal, LES or microcirculatory function.",
+        "The 2017 review of 12 modified Banxia Xiexin Decoction trials reported potential benefit but had low methodological quality, small samples, possible publication bias and limited safety reporting; it does not prove individual benefit or superiority of combined manual care.",
+        "The 40,000 figure is cumulative correction patients through December 2025; MET and ultrasound are available processes. None is a GERD outcome, cure or superiority statistic."
+      ],
+      "residual_defects": [
+        "No independent clinical outcome evidence for Bodyall SART or the exact combined care pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; narrow-layout CSS and reserved image dimensions were statically checked under immediate-deployment approval."
+      ],
+      "reason": "Patient fit, Suwon location, alarm triage, separate treatment roles, same-function reassessment, evidence limits, schema, same-language links, canonical/hreflang, reserved image dimensions and booking path are explicit; deterministic thoracic/vagus/LES causation and combined-superiority claims were removed.",
+      "verdict": "PASS"
+    }
+  ]
+}
