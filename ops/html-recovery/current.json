@@ -146,13 +146,17 @@
     "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
     "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
     "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
-    "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html"
+    "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
+    "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
+    "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
+    "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html"
   ],
   "active_run": {
     "owner": "bodyallfit0005-phase1-release-20260916",
-    "single_writer_active": true,
-    "stage": "CANDIDATE_READY_PREDEPLOY_RECHECK",
+    "single_writer_active": false,
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_CONFIRMATION_PENDING",
     "base_main_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
+    "final_main_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
     "source_blobs": {
       "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html": "f5ddf137ff445ddfb29b9aee5fa454c337a7d36b",
       "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html": "ff563dbb91880efa61d5151c24c1807b16a3eeaa",
@@ -163,9 +167,15 @@
       "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html": "4d92a5f696d2d1744ed199c777a32e765757dbfc890375e08576fa5f6becec52",
       "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html": "3eaa09a1aafe741a6697d2596c8892655763afb58303a5628a64f2dc29ea56aa"
     },
-    "image_hold_resolution": "Both referenced 0005 images are absent from the main image directory. Removed both broken references; no new asset or substitute image created.",
-    "required_next_action": "Re-read main head and all three target blobs; if exact, deploy KO→EN→CN sequentially, verify public Pages content/schema/layout, then update counts.",
-    "updated_at": "2026-09-16T06:08:22.486Z"
+    "published_blobs": {
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html": "3c45f379dffb51493ea3c5e85adf3bf459d0d82a",
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html": "c865a6f519719e85072a1520662fbaf696df2c89",
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html": "3929bd2ae51018f7def89856ed18892576fbac3a"
+    },
+    "pages_run_id": 35062801594,
+    "release_record": "ops/html-recovery/runs/20260916-bodyallfit0005-release.json",
+    "ledger_exact_readback": false,
+    "updated_at": "2026-09-16T06:18:28.888Z"
   },
   "additional_index_completion_rows": [
     {
@@ -3365,6 +3375,72 @@
         "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
         "Direct 360px browser emulation was unavailable; responsive CSS and public desktop overflow were checked."
       ]
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "sha256": "17f536dbdeb5c3caff55244ec01ecb9d69e5e052c58e75a438c3e67da502b26f",
+      "git_blob": "3c45f379dffb51493ea3c5e85adf3bf459d0d82a",
+      "publication_commit": "7cf9706d6e456376f99e86da385d3be5910fbc0f",
+      "final_repository_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0005-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0005-release.json",
+      "verified_at": "2026-09-16T06:18:28.888Z",
+      "limits": [
+        "Stress may increase or decrease intake; it does not establish a deterministic stress-to-binge-eating diagnosis.",
+        "Multicomponent obesity guidance supports diet, physical activity and behavior change but does not establish independent BodyallFit herbal efficacy.",
+        "Swelling has multiple possible causes and requires separate assessment; urgent signals are preserved.",
+        "No claim of cortisol normalization, edema cure, BMR restoration, guaranteed weight loss or superiority is made.",
+        "Both referenced 0005 images were absent and were removed without creating or substituting assets.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px viewport validation remains in the final Sol anomaly sweep; public desktop overflow was zero."
+      ]
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "sha256": "4d92a5f696d2d1744ed199c777a32e765757dbfc890375e08576fa5f6becec52",
+      "git_blob": "c865a6f519719e85072a1520662fbaf696df2c89",
+      "publication_commit": "20b60e63b6a6a796300130723b681d0a3b9aa014",
+      "final_repository_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0005-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0005-release.json",
+      "verified_at": "2026-09-16T06:18:28.888Z",
+      "limits": [
+        "Stress may increase or decrease intake; it does not establish a deterministic stress-to-binge-eating diagnosis.",
+        "Multicomponent obesity guidance supports diet, physical activity and behavior change but does not establish independent BodyallFit herbal efficacy.",
+        "Swelling has multiple possible causes and requires separate assessment; urgent signals are preserved.",
+        "No claim of cortisol normalization, edema cure, BMR restoration, guaranteed weight loss or superiority is made.",
+        "Both referenced 0005 images were absent and were removed without creating or substituting assets.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px viewport validation remains in the final Sol anomaly sweep; public desktop overflow was zero."
+      ]
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "sha256": "3eaa09a1aafe741a6697d2596c8892655763afb58303a5628a64f2dc29ea56aa",
+      "git_blob": "3929bd2ae51018f7def89856ed18892576fbac3a",
+      "publication_commit": "cc4e95a98b80be47a9745c94e730a5089296d17a",
+      "final_repository_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0005-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0005-release.json",
+      "verified_at": "2026-09-16T06:18:28.888Z",
+      "limits": [
+        "Stress may increase or decrease intake; it does not establish a deterministic stress-to-binge-eating diagnosis.",
+        "Multicomponent obesity guidance supports diet, physical activity and behavior change but does not establish independent BodyallFit herbal efficacy.",
+        "Swelling has multiple possible causes and requires separate assessment; urgent signals are preserved.",
+        "No claim of cortisol normalization, edema cure, BMR restoration, guaranteed weight loss or superiority is made.",
+        "Both referenced 0005 images were absent and were removed without creating or substituting assets.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px viewport validation remains in the final Sol anomaly sweep; public desktop overflow was zero."
+      ]
     }
   ],
   "constraints": {
@@ -3384,11 +3460,11 @@
     "count_is_current_verified_lower_bound": true,
     "existing_rework_verified_under_20260915_request": 13,
     "historically_accepted_not_yet_reworked_under_20260915_request": 72,
-    "latest_standard_not_confirmed_or_remaining": 9,
-    "latest_standard_published_confirmed": 147,
+    "latest_standard_not_confirmed_or_remaining": 6,
+    "latest_standard_published_confirmed": 150,
     "new_publications_this_turn": 3,
-    "phase1_strengthened_completed": 62,
-    "phase1_strengthened_remaining": 9,
+    "phase1_strengthened_completed": 65,
+    "phase1_strengthened_remaining": 6,
     "priority_strengthened_completed": 35,
     "priority_strengthened_remaining": 0,
     "priority_strengthened_total": 35,
@@ -3497,13 +3573,13 @@
     "recommendation_measurement": "UNMEASURED"
   },
   "latest_recovery_persistence": {
-    "at": "2026-09-16T06:01:37.694Z",
-    "status": "EXACT_READBACK_CONFIRMED_AFTER_BODYALLFIT0002_PUBLIC_RELEASE",
+    "at": "2026-09-16T06:18:28.888Z",
+    "status": "PENDING_EXACT_READBACK_AFTER_BODYALLFIT0005_PUBLIC_RELEASE",
     "candidate_files_exact": true,
-    "bodyallfit0002_source_record_exact": true,
+    "bodyallfit0005_source_record_exact": true,
     "review_record_exact": true,
     "release_record_exact": true,
-    "current_json_blob_before_confirmation": "bf6e88a70119efc629b3b2da95559c266e45085b"
+    "current_json_blob_before_write": "9d12cc9a194172774f9fff416058ab776caa407b"
   },
   "latest_release": {
     "topic": "BodyallFit encyclopedia 0002 postpartum and menopause abdominal weight care KO/EN/CN",
@@ -3819,7 +3895,7 @@
     ]
   },
   "next": "RESUME PHASE1 BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html KO→EN→CN: resolve the document-specific two-missing-images hold without creating new assets, verify stress/edema/craving claims and the full HTML, then deploy immediately and publicly verify.",
-  "next_priority": "RESUME PHASE1 BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html KO→EN→CN: resolve the document-specific two-missing-images hold without creating new assets, verify stress/edema/craving claims and the full HTML, then deploy immediately and publicly verify.",
+  "next_priority": "RESUME PHASE1 BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html KO→EN→CN: correct SURMOUNT/PMID 40832789 alignment and GLP-1 muscle/BMR claims, apply the user-authorized immediate-deployment approval assumption, directly review the full HTML, deploy sequentially, and publicly verify.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -3973,7 +4049,7 @@
   },
   "previous_public_validation": {
     "status": "PASS_PUBLIC_USER_APPROVED_IMMEDIATE_DEPLOYMENT",
-    "record": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
+    "record": "ops/html-recovery/reviews/20260916-bodyallfit0005-final-candidate.json",
     "candidate_exact_recovery_readback": true,
     "candidate_static_content_schema_pass": true,
     "responsive_static_guard_pass": true,
@@ -3987,7 +4063,7 @@
     "public_schema_faq_pass": true,
     "public_images_loaded_with_reserved_dimensions": true,
     "public_overflow_zero": true,
-    "note": "Exact candidates passed full-source medical, evidence, translation, schema and responsive-CSS review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare, successful Pages workflow and direct public content/schema/image/desktop zero-overflow verification passed. Direct 360px recheck is retained in the final Sol anomaly sweep."
+    "note": "Both missing image references were removed. Exact candidates passed full-source medical, evidence, translation and schema review; sequential optimistic-lock deployment, exact main readback, intended-files-only compare, successful Pages workflow and direct public content/schema/desktop zero-overflow verification passed. Direct 360px recheck remains in the final Sol anomaly sweep."
   },
   "previous_release": {
     "topic": "Herbmed encyclopedia 0008 shallow sleep/night palpitations triage and separated Tian Wang Bu Xin Dan/neck-function care KO/EN/CN",
@@ -4380,7 +4456,7 @@
     "reason": "Do not republish private preview and recovery-artifact identifiers in a public repository."
   },
   "public_branch": "main",
-  "public_commit": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
+  "public_commit": "cc4e95a98b80be47a9745c94e730a5089296d17a",
   "recovery_branch": "recovery/html-20260914",
   "related_hub_findings": [
     {
@@ -4501,8 +4577,8 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T06:08:22.486Z",
-  "version": "V280_BODYALLFIT0005_CANDIDATE_READY_SINGLE_WRITER",
+  "updated_at": "2026-09-16T06:18:28.888Z",
+  "version": "V281_BODYALLFIT0005_PUBLIC_PASS_NEXT_BODYALLFIT0007",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
     "phase": "RESUME_PHASE1_PENDING",
@@ -4568,7 +4644,10 @@
       "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html"
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html"
     ],
     "phase1_initial_paths": [
       "encyclopedia/0003.foot-pain.html",
@@ -4644,9 +4723,6 @@
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
     "phase1_pending_paths": [
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
       "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
       "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
       "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
@@ -5063,18 +5139,6 @@
     "priority_record_exact_readback": true,
     "record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
     "resume_phase1_pending_paths": [
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
       "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
       "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
       "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
