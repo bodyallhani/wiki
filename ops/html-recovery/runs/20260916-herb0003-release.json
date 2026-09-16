@@ -1,0 +1,92 @@
+{
+  "base_main_head": "148ce1dc237940f8fda3f2109c303b5f26ed37cf",
+  "compare_ahead_by": 3,
+  "constraints": [
+    "Make and Google indexing were not touched.",
+    "No new URL or language file was created.",
+    "Direct 360px browser emulation remains for the final focused anomaly sweep."
+  ],
+  "files": [
+    {
+      "git_blob": "8ca1383a26f38a6b54880bc2c2a6e2e87952d01c",
+      "github_readback_exact": true,
+      "path": "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html",
+      "public_booking_cta": true,
+      "public_canonical_og_hreflang": true,
+      "public_desktop_overflow_px": 0,
+      "public_image": {
+        "count": 1,
+        "dimensions_reserved": true,
+        "loaded": true,
+        "natural": "1376x768"
+      },
+      "public_marker_verified": true,
+      "public_schema_parse": true,
+      "public_title_h1_verified": true,
+      "publication_commit": "563e1634fe1b75f71a8a26cae8bcb90ea132e519",
+      "sha256": "af290c712b42eb9208397b1f29d5481c5ef31524c6bef655e97dced1ad63eb0a",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html"
+    },
+    {
+      "git_blob": "d224497ebd4146994e6c1cb25314aed990954e89",
+      "github_readback_exact": true,
+      "path": "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html",
+      "public_booking_cta": true,
+      "public_canonical_og_hreflang": true,
+      "public_desktop_overflow_px": 0,
+      "public_image": {
+        "count": 1,
+        "dimensions_reserved": true,
+        "loaded": true,
+        "natural": "1376x768"
+      },
+      "public_marker_verified": true,
+      "public_schema_parse": true,
+      "public_title_h1_verified": true,
+      "publication_commit": "aed2de28ca6310b561fd2f424be9045e7892f5f8",
+      "sha256": "697c4fcd127464d54070c89853e5320cd53495d93e8cff87248cf34725ffe105",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html"
+    },
+    {
+      "git_blob": "9fab81a107277a697a2d85de78134fa4bd575818",
+      "github_readback_exact": true,
+      "path": "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html",
+      "public_booking_cta": true,
+      "public_canonical_og_hreflang": true,
+      "public_desktop_overflow_px": 0,
+      "public_image": {
+        "count": 1,
+        "dimensions_reserved": true,
+        "loaded": true,
+        "natural": "1376x768"
+      },
+      "public_marker_verified": true,
+      "public_schema_parse": true,
+      "public_title_h1_verified": true,
+      "publication_commit": "45bb5d7d74cbffc8cb84bfaac8151885a43592dc",
+      "sha256": "99f65968d5d8b0efb02f7157848c28872e60c046badd2081de59f6d57f2bd1e0",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html"
+    }
+  ],
+  "final_main_head": "45bb5d7d74cbffc8cb84bfaac8151885a43592dc",
+  "intended_files_only": true,
+  "public_validation": {
+    "DOI_links_present": true,
+    "FAQ_body_cards": 5,
+    "JSONLD_types": [
+      "MedicalWebPage",
+      "MedicalClinic",
+      "LocalBusiness",
+      "MedicalTherapy",
+      "FAQPage"
+    ],
+    "NIDDK_links_present": true,
+    "actual_ai_recommendation_lift": "UNMEASURED",
+    "broken_or_inaccurate_second_image_removed": true,
+    "old_hours_removed": true,
+    "old_mechanistic_overclaims_removed": true,
+    "pages_propagated": true
+  },
+  "release_id": "20260916-herb0003-release",
+  "released_at": "2026-09-16T04:03:55.738Z"
+}
