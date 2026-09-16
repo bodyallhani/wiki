@@ -2890,8 +2890,8 @@
       "ops/html-recovery/runs/20260916-herb0001-release.json"
     ],
     "exact_readback": true,
-    "ledger_blob_before_exact_confirmation": "57cee37f75eff956b9cac5d538414c0b64d02cf6",
-    "ledger_exact_readback": false
+    "ledger_blob_before_exact_confirmation": "1a5995968d66abd26c7f9a58f4138fbae273e2c5",
+    "ledger_exact_readback": true
   },
   "latest_release": {
     "topic": "Herbmed encyclopedia 0001 persistent fatigue with lumbopelvic symptoms KO/EN/CN",
@@ -3012,12 +3012,12 @@
       "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html": "f05ea18bf3fdc81f5f4cc99088b4eabc5586d077",
       "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html": "f1881cf0cfe2903a39e4eb15591449ca40c1edb9"
     },
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_WRITE_PENDING_EXACT",
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
     "single_writer_active": false,
     "required_next": "Resume Herbmed encyclopedia 0003 KO/EN/CN from the freshly read ledger.",
     "review_record": "ops/html-recovery/reviews/20260916-herb0001-final-candidate.json",
     "release_record": "ops/html-recovery/runs/20260916-herb0001-release.json",
-    "ledger_exact_readback": false
+    "ledger_exact_readback": true
   },
   "pending_run": {
     "topic": "Herbmed/encyclopedia/0001 KO/EN/CN",
