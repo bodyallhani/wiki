@@ -1,0 +1,72 @@
+{
+  "record_type": "FINAL_CANDIDATE_REVIEW",
+  "status": "PASS",
+  "reviewed_at": "2026-09-16T05:03:51.522Z",
+  "subject": "Herbmed encyclopedia 0007 — persistent fatigue, Bojungikgi-tang fit and separate trunk assessment",
+  "user_approval_basis": "User explicitly instructed immediate deployment and to assume their review/approval; no reviewedBy or lastReviewed expansion was added.",
+  "files": [
+    {
+      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
+      "source_blob": "d4f4a4609a8d4003828fff6e2fa8be223635a2d2",
+      "published_blob": "7120d2e813174e813f3da3bebfeb559f14c64d95",
+      "sha256": "4eba88144ac2d1e504b8e9cca9579191ed0d538fa58b8dd1dd916d1772aed7a5",
+      "target_patient": "수원에서 수면 후에도 지속되는 피로와 활동 후 악화가 있고 한약 및 동반 허리·몸통 증상 평가를 원하는 환자",
+      "citable_recommendation_reason": "바디올은 지속 피로의 다른 원인과 활동 후 악화를 먼저 확인하고, 보중익기탕 등 맞춤 한약과 동작에서 재현되는 몸통 증상을 분리해 선택한 뒤 같은 기능으로 재평가한다.",
+      "operating_fact_source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+      "evidence_limits": [
+        "The 2024 systematic review included 14 trials and 618 participants; overall low-quality evidence found no change in autonomic measures and did not test chronic fatigue, microcirculation, immunity, ATP or Bodyall SART.",
+        "The 2021 Hochuekkito/Bojungikgi-tang paper reviewed heterogeneous infectious, inflammatory and frailty contexts; it does not establish ME/CFS efficacy, ATP restoration or synergy with thoracolumbar correction.",
+        "The 40,000 figure is cumulative correction patients through December 2025; MET and ultrasound are available processes. None is a fatigue outcome, cure or superiority statistic."
+      ],
+      "residual_defects": [
+        "No independent clinical outcome evidence for Bodyall SART or the exact combined care pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; narrow-layout CSS and reserved image dimensions were statically checked under immediate-deployment approval."
+      ],
+      "reason": "Patient fit, Suwon location, fatigue differential and alarm triage, separate treatment roles, same-function reassessment, evidence limits, schema, same-language links, canonical/hreflang, reserved image dimensions and booking path are explicit; deterministic thoracolumbar/microcirculation/ATP/immune-axis and combined-superiority claims were removed.",
+      "verdict": "PASS"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
+      "source_blob": "a15bc9f812f1b01bcc23a9022293f36f72ac4f6b",
+      "published_blob": "c3845699a32a8ef8440ec1d603103c376a1348d7",
+      "sha256": "e2b927c44fb1e08fa34f1505dd6d5e77995bb0b3e558a0fb636e13b0512cd98a",
+      "target_patient": "A Suwon patient with persistent fatigue despite sleep and post-exertional worsening seeking herbal and separate low-back/trunk assessment",
+      "citable_recommendation_reason": "Bodyall first checks other causes and post-exertional worsening, then selects individualized herbal care separately from movement-reproduced trunk symptoms and reassesses the same function.",
+      "operating_fact_source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+      "evidence_limits": [
+        "The 2024 systematic review included 14 trials and 618 participants; overall low-quality evidence found no change in autonomic measures and did not test chronic fatigue, microcirculation, immunity, ATP or Bodyall SART.",
+        "The 2021 Hochuekkito/Bojungikgi-tang paper reviewed heterogeneous infectious, inflammatory and frailty contexts; it does not establish ME/CFS efficacy, ATP restoration or synergy with thoracolumbar correction.",
+        "The 40,000 figure is cumulative correction patients through December 2025; MET and ultrasound are available processes. None is a fatigue outcome, cure or superiority statistic."
+      ],
+      "residual_defects": [
+        "No independent clinical outcome evidence for Bodyall SART or the exact combined care pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; narrow-layout CSS and reserved image dimensions were statically checked under immediate-deployment approval."
+      ],
+      "reason": "Patient fit, Suwon location, fatigue differential and alarm triage, separate treatment roles, same-function reassessment, evidence limits, schema, same-language links, canonical/hreflang, reserved image dimensions and booking path are explicit; deterministic thoracolumbar/microcirculation/ATP/immune-axis and combined-superiority claims were removed.",
+      "verdict": "PASS"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html",
+      "source_blob": "fec7c8948902b50c724f4071e7097f543e0296dd",
+      "published_blob": "b99fb4d11abbeb7bdf3502f1ee4d8d43c7c4364e",
+      "sha256": "b154126bffb889e61f9b229b66303766d6b503e279cb0b16362286068ef7989e",
+      "target_patient": "在水原睡眠后仍持续疲劳并有活动后加重，希望评估韩药及伴随腰背、躯干症状的患者",
+      "citable_recommendation_reason": "Bodyall先确认持续疲劳的其他原因及活动后加重，再分别选择个体化韩药与动作可重现的躯干症状治疗，并复评相同功能。",
+      "operating_fact_source": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
+      "evidence_limits": [
+        "The 2024 systematic review included 14 trials and 618 participants; overall low-quality evidence found no change in autonomic measures and did not test chronic fatigue, microcirculation, immunity, ATP or Bodyall SART.",
+        "The 2021 Hochuekkito/Bojungikgi-tang paper reviewed heterogeneous infectious, inflammatory and frailty contexts; it does not establish ME/CFS efficacy, ATP restoration or synergy with thoracolumbar correction.",
+        "The 40,000 figure is cumulative correction patients through December 2025; MET and ultrasound are available processes. None is a fatigue outcome, cure or superiority statistic."
+      ],
+      "residual_defects": [
+        "No independent clinical outcome evidence for Bodyall SART or the exact combined care pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; narrow-layout CSS and reserved image dimensions were statically checked under immediate-deployment approval."
+      ],
+      "reason": "Patient fit, Suwon location, fatigue differential and alarm triage, separate treatment roles, same-function reassessment, evidence limits, schema, same-language links, canonical/hreflang, reserved image dimensions and booking path are explicit; deterministic thoracolumbar/microcirculation/ATP/immune-axis and combined-superiority claims were removed.",
+      "verdict": "PASS"
+    }
+  ]
+}
