@@ -1,0 +1,65 @@
+{
+  "schema_version": "bodyall-html-release-v1",
+  "released_at": "2026-09-16T03:45:24.458Z",
+  "topic": "Herbmed encyclopedia 0001 persistent fatigue with lumbopelvic symptoms",
+  "status": "PUBLIC_VERIFIED",
+  "base_main_head": "1e646dfeb46eef69c458589d764c2f74ea42b35c",
+  "final_main_head": "148ce1dc237940f8fda3f2109c303b5f26ed37cf",
+  "paths": [
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html"
+  ],
+  "urls": [
+    "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
+    "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
+    "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html"
+  ],
+  "commits": [
+    "f42683326e722e291585e46b39990a1d7439b18e",
+    "09fc187f291fa1e3cac96f9f55821422714345de",
+    "148ce1dc237940f8fda3f2109c303b5f26ed37cf"
+  ],
+  "published_blobs": {
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html": "d0a120317ef234c4eb8250b0277e4a805c20045f",
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html": "f05ea18bf3fdc81f5f4cc99088b4eabc5586d077",
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html": "f1881cf0cfe2903a39e4eb15591449ca40c1edb9"
+  },
+  "sha256": {
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html": "92ded6871e08bb4783b0520290436f5766003c381ebb21f7d4add1e03f399d73",
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html": "6911ad8f1cb674dee19133d18895e5d0045c5764d0c63815518bf6e53ca66115",
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html": "956298feb951b5536a642d3ed86f46bafb56d6ae5d3d90b03862e7fdb2aa2c13"
+  },
+  "intended_files_only": true,
+  "compare_files": [
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html"
+  ],
+  "readback_exact": [
+    true,
+    true,
+    true
+  ],
+  "public_verification": {
+    "content_markers": true,
+    "titles_h1": true,
+    "jsonld_parse": true,
+    "faq_count": [
+      5,
+      5,
+      5
+    ],
+    "canonical_equals_og": true,
+    "hreflang_alignment": true,
+    "images_loaded": true,
+    "image_dimensions_reserved": true,
+    "desktop_overflow_zero": true,
+    "booking_cta": true,
+    "stale_review_metadata_absent": true,
+    "unverified_hours_absent": true
+  },
+  "review_record": "ops/html-recovery/reviews/20260916-herb0001-final-candidate.json",
+  "recommendation_measurement": "UNMEASURED",
+  "make_or_google_indexing_touched": false
+}
