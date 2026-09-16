@@ -1,6 +1,6 @@
 {
   "review_id": "20260916-thoracic-facet-final-candidate",
-  "stage": "PREDEPLOY_EXACT_CANDIDATE_PASS",
+  "stage": "DEPLOYED_AND_PUBLICLY_VERIFIED",
   "decision": "PASS",
   "exact_candidates": [
     {
@@ -68,8 +68,48 @@
   "residual_limits": [
     "바디올 고유 흉추/SART 임상성과 없음",
     "새 의료인·독립 번역 검수 표시 없음",
-    "실제 AI 추천률 및 경쟁 우위 미측정"
+    "실제 AI 추천률 및 경쟁 우위 미측정",
+    "Public response bytes were not independently re-hashed in-browser; GitHub main readback is exact to the reviewed candidate and live DOM/schema/image/layout checks passed."
   ],
   "pass_reason": "환자 조건·수원·진찰·치료 역할·동일 기능 재평가·예약/의뢰가 전면에 연결되고 과장 및 근거 범위를 교정했으며 exact 전체 문서와 데스크톱·360px 화면을 직접 검수함.",
-  "next_action": "Fresh-check ledger/main/target blobs, sequential KO→EN→CN deploy, public verification, ledger update."
+  "next_action": "Update release record and the latest recovery ledger, then resume with SART.html KO→EN→CN from the freshest ledger.",
+  "deployment": {
+    "baseline_main_head": "39f736aab07dceb75f4097e11c7c1504fd39a0ef",
+    "final_main_head": "f96f02279daab5133564e5ec1b2bdc86c6623861",
+    "files": [
+      {
+        "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
+        "publication_commit": "c9d524d306ecb4faa717e7d47c8e55fa92cc7b32",
+        "git_blob": "a721938605d4419e939b765682c688ee5f62fe76"
+      },
+      {
+        "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
+        "publication_commit": "8f2cdc6bf869dfd55ecfcd988862ab36413855ad",
+        "git_blob": "b17fd99516e8ffd86a909dda562fe1e729c0e9dd"
+      },
+      {
+        "path": "encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html",
+        "publication_commit": "f96f02279daab5133564e5ec1b2bdc86c6623861",
+        "git_blob": "7b0396dc7f90b5e2dde1843abf232d7f47ecf2e4"
+      }
+    ],
+    "compare": "Exactly the three intended 0022 KO/EN/CN files changed; 3 commits ahead, no unrelated files."
+  },
+  "public_verification": {
+    "verified_at": "2026-09-16T02:20:00Z",
+    "urls": [
+      "https://wiki.body-all.co.kr/encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_en.html",
+      "https://wiki.body-all.co.kr/encyclopedia/0022.t4-t8-thoracic-facet-syndrome-chuna-costovertebral-mobilization_cn.html"
+    ],
+    "checks": [
+      "All three public titles and H1s match the reviewed candidates.",
+      "MedicalWebPage + MedicalClinic/LocalBusiness + FAQPage(3) parsed in all languages.",
+      "Canonical, og:url, ko/en/zh-Hans/x-default hreflang and same-language links align.",
+      "manip2.jpg loaded at natural and reserved 500x405 dimensions.",
+      "Desktop document overflow is 0px in all languages; the exact candidates previously passed direct 1180px and 354px render review with 0px overflow.",
+      "Verified operating-fact qualifier is present; emergency signals, evidence limits, same-function retest and booking/referral path remain visible."
+    ],
+    "candidate_main_exact": true
+  }
 }
