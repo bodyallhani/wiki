@@ -149,13 +149,17 @@
     "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
     "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
     "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
-    "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html"
+    "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
+    "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
+    "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
+    "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html"
   ],
   "active_run": {
     "owner": "bodyallfit0007-phase1-release-20260916",
-    "single_writer_active": true,
-    "stage": "CANDIDATE_PASS_DEPLOYING",
+    "single_writer_active": false,
+    "stage": "COMPLETED_PUBLIC_VERIFIED",
     "base_main_head": "cc4e95a98b80be47a9745c94e730a5089296d17a",
+    "final_main_head": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
     "source_blobs": {
       "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html": "4a5b2332b91582145aa835c830c2d38ab717bbac",
       "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html": "5629c6f7f25b5e358000c1fb16a02a8522d1a348",
@@ -166,8 +170,15 @@
       "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html": "1c60bc0d9f896929b72e4d928c73e4ebc3c32dc79f908d8b7c883f1c6d3036fd",
       "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html": "2bf395ccef6c3e0355911856054342b484fb67bcc0d551d2c67bf734ba0d5efd"
     },
-    "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0007-final-candidate.json",
-    "updated_at": "2026-09-16T06:32:56.256Z"
+    "published_blobs": {
+      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html": "7d5537b90804212389f3c2dec519cbc75a7d00b6",
+      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html": "871e1b728b6b36150be1f513728d4aca090a46b1",
+      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html": "8b310739fa112852d6910ce874f24da78cb2cf16"
+    },
+    "pages_run_id": 35064331711,
+    "release_record": "ops/html-recovery/runs/20260916-bodyallfit0007-release.json",
+    "ledger_exact_readback": false,
+    "updated_at": "2026-09-16T06:38:57.223Z"
   },
   "additional_index_completion_rows": [
     {
@@ -3433,6 +3444,66 @@
         "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
         "Direct 360px viewport validation remains in the final Sol anomaly sweep; public desktop overflow was zero."
       ]
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "sha256": "ebe1b035cb5dbf4a2b214a5af07a345cb89bc87bf038efb376b324963b42de5d",
+      "git_blob": "7d5537b90804212389f3c2dec519cbc75a7d00b6",
+      "publication_commit": "8ef1a181cd6476bbde7ee47b9a9f57643c9d0cf9",
+      "final_repository_head": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0007-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0007-release.json",
+      "verified_at": "2026-09-16T06:38:57.223Z",
+      "limits": [
+        "SURMOUNT-1 original PMID 39996356 is distinct from correction PMID 40832789.",
+        "Lean mass is not equated with skeletal muscle, sarcopenia or BMR decline.",
+        "No Bodyall herbal muscle-preservation or BMR-restoration efficacy claim is made.",
+        "Actual non-branded AI recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation remains in the final Sol anomaly sweep; responsive CSS and public desktop overflow were checked."
+      ]
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "sha256": "1c60bc0d9f896929b72e4d928c73e4ebc3c32dc79f908d8b7c883f1c6d3036fd",
+      "git_blob": "871e1b728b6b36150be1f513728d4aca090a46b1",
+      "publication_commit": "f2e8178506677e1069bbd102ed170426afcc60d8",
+      "final_repository_head": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0007-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0007-release.json",
+      "verified_at": "2026-09-16T06:38:57.223Z",
+      "limits": [
+        "SURMOUNT-1 original PMID 39996356 is distinct from correction PMID 40832789.",
+        "Lean mass is not equated with skeletal muscle, sarcopenia or BMR decline.",
+        "No Bodyall herbal muscle-preservation or BMR-restoration efficacy claim is made.",
+        "Actual non-branded AI recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation remains in the final Sol anomaly sweep; responsive CSS and public desktop overflow were checked."
+      ]
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "sha256": "2bf395ccef6c3e0355911856054342b484fb67bcc0d551d2c67bf734ba0d5efd",
+      "git_blob": "8b310739fa112852d6910ce874f24da78cb2cf16",
+      "publication_commit": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
+      "final_repository_head": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0007-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0007-release.json",
+      "verified_at": "2026-09-16T06:38:57.223Z",
+      "limits": [
+        "SURMOUNT-1 original PMID 39996356 is distinct from correction PMID 40832789.",
+        "Lean mass is not equated with skeletal muscle, sarcopenia or BMR decline.",
+        "No Bodyall herbal muscle-preservation or BMR-restoration efficacy claim is made.",
+        "Actual non-branded AI recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation remains in the final Sol anomaly sweep; responsive CSS and public desktop overflow were checked."
+      ]
     }
   ],
   "constraints": {
@@ -3452,11 +3523,11 @@
     "count_is_current_verified_lower_bound": true,
     "existing_rework_verified_under_20260915_request": 13,
     "historically_accepted_not_yet_reworked_under_20260915_request": 72,
-    "latest_standard_not_confirmed_or_remaining": 6,
-    "latest_standard_published_confirmed": 150,
+    "latest_standard_not_confirmed_or_remaining": 3,
+    "latest_standard_published_confirmed": 153,
     "new_publications_this_turn": 3,
-    "phase1_strengthened_completed": 65,
-    "phase1_strengthened_remaining": 6,
+    "phase1_strengthened_completed": 68,
+    "phase1_strengthened_remaining": 3,
     "priority_strengthened_completed": 35,
     "priority_strengthened_remaining": 0,
     "priority_strengthened_total": 35,
@@ -3575,43 +3646,23 @@
     "current_json_blob_before_confirmation": "54f888363985e2cc9c8e88da0f52bb29016b7348"
   },
   "latest_release": {
-    "topic": "BodyallFit encyclopedia 0002 postpartum and menopause abdominal weight care KO/EN/CN",
-    "base_commit": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
-    "final_commit": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
-    "changed_files": [
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html"
-    ],
-    "newly_completed_existing_urls": [
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html"
-    ],
-    "reworked_existing_urls": [],
-    "original156_count_delta": 3,
-    "additional_index_count_delta": 0,
-    "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-bodyallfit0002-release.json",
-    "review": "ops/html-recovery/reviews/20260916-bodyallfit0002-final-candidate.json"
+    "status": "PUBLIC_PASS",
+    "topic": "BodyallFit encyclopedia 0007",
+    "final_main_head": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
+    "pages_run_id": 35064331711,
+    "record": "ops/html-recovery/runs/20260916-bodyallfit0007-release.json",
+    "updated_at": "2026-09-16T06:38:57.223Z"
   },
   "latest_validation": {
-    "status": "PASS_PUBLIC_USER_APPROVED_IMMEDIATE_DEPLOYMENT",
-    "record": "ops/html-recovery/reviews/20260916-bodyallfit0002-final-candidate.json",
-    "candidate_exact_recovery_readback": true,
-    "candidate_static_content_schema_pass": true,
-    "responsive_static_guard_pass": true,
-    "predeployment_desktop_render_pass": false,
-    "predeployment_narrow_render_pass": false,
-    "user_approved_immediate_deployment_override": true,
-    "main_readback_exact": true,
-    "intended_files_only_compare": true,
-    "public_verification": true,
-    "public_desktop_visual_pass": true,
-    "public_schema_faq_pass": true,
-    "public_images_loaded_with_reserved_dimensions": true,
-    "public_overflow_zero": true,
-    "note": "The inaccurate BMR mechanism figure and unsupported BMR-restoration/spot-reduction claims were removed. Exact KO/EN/CN candidates passed content, evidence, translation, metadata and schema review; sequential deployment, exact readback, intended-only compare, Pages success and direct public desktop/content/schema/image checks passed."
+    "topic": "BodyallFit encyclopedia 0007",
+    "public_urls": [
+      "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
+      "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
+      "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html"
+    ],
+    "canonical_og_hreflang_schema_faq_image_overflow": "PASS",
+    "actual_ai_recommendation_lift": "UNMEASURED",
+    "updated_at": "2026-09-16T06:38:57.223Z"
   },
   "legacy_next_before_existing_rework": "Resume existing encyclopedia/0003.foot-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
   "model_review_followup": {
@@ -3887,8 +3938,17 @@
       }
     ]
   },
-  "next": "DEPLOY BodyallFit encyclopedia 0007 KO→EN→CN sequentially, exact readback, then Pages public render/content verification.",
-  "next_priority": "RESUME PHASE1 BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html KO→EN→CN: correct SURMOUNT/PMID 40832789 alignment and GLP-1 muscle/BMR claims, apply the user-authorized immediate-deployment approval assumption, directly review the full HTML, deploy sequentially, and publicly verify.",
+  "next": "RESUME PHASE1 Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html KO→EN→CN: review Korean evidence full text and mechanism image, apply immediate-deployment approval assumption, deploy sequentially, publicly verify, then finish 156/156 and run the focused Sol anomaly sweep.",
+  "next_priority": {
+    "phase": "RESUME_PHASE1_PENDING",
+    "topic": "Herbmed encyclopedia 0002",
+    "paths": [
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
+    ],
+    "stage": "SOURCE_REVIEW_AND_CANDIDATE"
+  },
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -4449,7 +4509,7 @@
     "reason": "Do not republish private preview and recovery-artifact identifiers in a public repository."
   },
   "public_branch": "main",
-  "public_commit": "cc4e95a98b80be47a9745c94e730a5089296d17a",
+  "public_commit": "055c0d663d8e351db871f53a4c8e27f16f5bdc39",
   "recovery_branch": "recovery/html-20260914",
   "related_hub_findings": [
     {
@@ -4493,7 +4553,10 @@
     "BodyallFit/encyclopedia/index.html",
     "encyclopedia/0002.stiff-hands.html",
     "encyclopedia/0002.stiff-hands_en.html",
-    "encyclopedia/0002.stiff-hands_cn.html"
+    "encyclopedia/0002.stiff-hands_cn.html",
+    "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
+    "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
+    "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html"
   ],
   "rework_queue": [
     "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -4570,8 +4633,8 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T06:19:14.116Z",
-  "version": "V283_BODYALLFIT0007_CANDIDATE_PASS_DEPLOYING",
+  "updated_at": "2026-09-16T06:38:57.223Z",
+  "version": "V284_BODYALLFIT0007_PUBLIC_PASS_NEXT_HERBMED0002",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
     "phase": "RESUME_PHASE1_PENDING",
@@ -4640,7 +4703,10 @@
       "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
       "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
       "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
-      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html"
+      "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
+      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
+      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
+      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html"
     ],
     "phase1_initial_paths": [
       "encyclopedia/0003.foot-pain.html",
@@ -4716,9 +4782,6 @@
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
     "phase1_pending_paths": [
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
@@ -5132,9 +5195,6 @@
     "priority_record_exact_readback": true,
     "record": "ops/html-recovery/runs/20260915-uncompleted-first-owner-facts.json",
     "resume_phase1_pending_paths": [
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr.html",
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_en.html",
-      "BodyallFit/encyclopedia/0007.glp1-induced-sarcopenic-obesity-herbal-muscle-preservation-bmr_cn.html",
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
