@@ -1,0 +1,64 @@
+{
+  "record_type": "PUBLIC_RELEASE",
+  "status": "PUBLIC_VERIFIED",
+  "verified_at": "2026-09-16T05:03:51.522Z",
+  "base_main_head": "37db877200073183564c89df7e53101cf7f9c1c2",
+  "final_main_head": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
+  "compare_ahead_by": 3,
+  "change_scope_verified": true,
+  "unexpected_files": [],
+  "files": [
+    {
+      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
+      "git_blob": "7120d2e813174e813f3da3bebfeb559f14c64d95",
+      "publication_commit": "4b232fb56e33f0c0b06d7dcccb3ff2e14163c917",
+      "sha256": "4eba88144ac2d1e504b8e9cca9579191ed0d538fa58b8dd1dd916d1772aed7a5",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
+      "git_blob": "c3845699a32a8ef8440ec1d603103c376a1348d7",
+      "publication_commit": "b9e24a5bcbceec05eec26974bb508ed8364119ff",
+      "sha256": "e2b927c44fb1e08fa34f1505dd6d5e77995bb0b3e558a0fb636e13b0512cd98a",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html",
+      "git_blob": "b99fb4d11abbeb7bdf3502f1ee4d8d43c7c4364e",
+      "publication_commit": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
+      "sha256": "b154126bffb889e61f9b229b66303766d6b503e279cb0b16362286068ef7989e",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html"
+    }
+  ],
+  "public_validation": {
+    "all_three_markers": true,
+    "booking_link": true,
+    "canonical_equals_og_url": true,
+    "desktop_overflow_px": 0,
+    "desktop_screenshots_directly_reviewed": true,
+    "hero_intrinsic": "1376x768",
+    "hero_loaded": true,
+    "hreflang": [
+      "ko",
+      "en",
+      "zh-Hans",
+      "x-default"
+    ],
+    "reserved_dimensions": true,
+    "schema_types": [
+      "MedicalWebPage",
+      "MedicalClinic",
+      "MedicalTherapy",
+      "FAQPage"
+    ],
+    "visible_faq_count": 4,
+    "pages_workflow_head": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
+    "pages_workflow_conclusion": "success",
+    "image_note": "KO hero was incomplete on the first immediate read, then loaded at 1376x768 after explicit reload; EN and CN loaded directly."
+  },
+  "limitations": [
+    "Direct 360px browser emulation was unavailable; responsive CSS safeguards were checked statically under the user's immediate-deployment approval.",
+    "Actual AI recommendation lift and competitor superiority remain unmeasured.",
+    "No new physician review stamp or independent translation approval is asserted."
+  ]
+}
