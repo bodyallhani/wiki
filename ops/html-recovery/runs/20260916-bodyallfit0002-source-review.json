@@ -1,0 +1,55 @@
+{
+  "kind": "html_recovery_source_review",
+  "topic": "bodyallfit0002-postpartum-menopause-weight",
+  "reviewed_at": "2026-09-16T05:50:18.435Z",
+  "ledger_blob": "24c252da816319eacaf562c746c234faa70344eb",
+  "base_main_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
+  "sources": [
+    {
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
+      "blob_sha": "2672e900cfa65fdbb50ad97a569e3bf7eb66bed1"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
+      "blob_sha": "9ac86525e8c56307001e9af845614064c9ea789d"
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
+      "blob_sha": "cbb2aebb6095c9c481a6601dc8aa009f9afa6919"
+    }
+  ],
+  "findings": [
+    "The second BMR illustration implied a causal diagnosis from body shape and a metabolism-decline mechanism; removed rather than retained as clinical evidence.",
+    "Source copy overstated temporary BMR decline, BMR restoration, thermogenesis correction, fluid removal, muscle-loss prevention, body-fat-centered loss, uterine/pelvic circulation recovery and safety/effectiveness.",
+    "Chinese og:url omitted the 0002 filename prefix; corrected.",
+    "Unverified 365-day and detailed opening-hours claims were removed from visible content and schema.",
+    "Inherited reviewedBy/lastReviewed metadata was not added.",
+    "Postpartum and menopause are separated; obstetric/endocrine warning signs are preserved.",
+    "BodyallFit roles are explicit: individualized herbal safety/fit, food structure, aerobic/resistance activity, sleep/stress/lifestyle, and same-measure reassessment."
+  ],
+  "evidence": [
+    {
+      "source": "ACOG Committee Opinion 804",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period",
+      "limit": "Supports activity for most postpartum patients without contraindications and individualized recovery; not BodyallFit or herbal efficacy."
+    },
+    {
+      "source": "The Menopause Society, Midlife Weight Gain",
+      "url": "https://menopause.org/wp-content/uploads/for-women/MenoNote-Weight-Gain.pdf",
+      "limit": "Separates aging/lifestyle weight gain from menopause-related fat redistribution; does not establish herbal or BMR-restoration effects."
+    },
+    {
+      "source": "NICE NG246 Overweight and obesity management",
+      "url": "https://www.nice.org.uk/guidance/ng246",
+      "limit": "Supports multicomponent assessment/behavior/diet/activity and escalation options; not the exact BodyallFit combination."
+    }
+  ],
+  "operating_facts_used": [
+    "BodyallFit provides an integrated clinical pathway for individualized herbal, food, exercise and lifestyle management, as already reflected in the publicly verified BodyallFit index."
+  ],
+  "operating_facts_not_used": [
+    "40,000 correction-patient experience, MET and ultrasound were not used because they are not material evidence for postpartum or menopause weight outcomes."
+  ],
+  "actual_ai_recommendation_lift": "UNMEASURED",
+  "verdict": "PASS_TO_EXACT_CANDIDATE_REVIEW"
+}
