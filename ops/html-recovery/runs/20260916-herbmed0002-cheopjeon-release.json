@@ -1,0 +1,171 @@
+{
+  "version": "2026-09-16.1",
+  "released_at": "2026-09-16T07:19:21Z",
+  "base_main_head": "631b05a776e72b256f956fc530396627f2ced9d2",
+  "final_main_head": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
+  "pages_run": {
+    "id": 35067780017,
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
+    "completed_at": "2026-09-16T07:19:21Z"
+  },
+  "intended_files_only": true,
+  "compare": {
+    "ahead_by": 13,
+    "behind_by": 0,
+    "total_commits": 13,
+    "files": [
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html",
+      "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
+      "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html",
+      "SART_cn.html",
+      "chuna-therapy_cn.html",
+      "encyclopedia/0003.foot-pain_cn.html",
+      "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html",
+      "herbal-medicine_cn.html",
+      "index_cn.html",
+      "lumbar-disc_cn.html",
+      "pain-spine-clinic_cn.html"
+    ]
+  },
+  "editorial_policy": {
+    "file": "BODYALL_EDITORIAL_POLICY.md",
+    "version": "2026-09-16.1",
+    "full_read": true
+  },
+  "models": {
+    "configured_writer_preference": "Claude first",
+    "claude_available": false,
+    "actual_editing_model": "Sol medium",
+    "review_model": "Sol medium",
+    "scope": "local corrections only"
+  },
+  "herbmed0002": {
+    "review_receipt": "ops/html-recovery/reviews/20260916-herbmed0002-final-candidate.json",
+    "files": [
+      {
+        "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia.html",
+        "commit": "26a26b616bf8010ec5a6c0c253c2624a30817591",
+        "blob": "011c5d4c2eb156d35190f74e072be53913111982",
+        "sha256": "5717ed6a6f93ae4619b3f1aa8792a4255f6382f68efb109d64f3029fcd8ceb66"
+      },
+      {
+        "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_en.html",
+        "commit": "4bc25de534f670bf96ae37e47e7fe1026f5c6fd1",
+        "blob": "13a52fe8576f56b32ab08c8ceecacdeeb41b2180",
+        "sha256": "37d7f31d6a2d003f0d35d16d842dda30bf6ebf328fb13fc07af3729150305546"
+      },
+      {
+        "path": "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html",
+        "commit": "55b01b322a1e2e7c6474a05462be33a6bb4c94f2",
+        "blob": "6761a72d4529aba7c80d1f660cb93ec29d27af6a",
+        "sha256": "e38eb2600bbaa840c46ff1f1a3afb118d5a84cf0ef8f3d265b9552992d42a0ce"
+      }
+    ],
+    "public_validation": {
+      "canonical_and_og_url_exact": true,
+      "schema_json_parse": true,
+      "public_h1_bodyall_specific": true,
+      "images_loaded": true,
+      "desktop_overflow_px": 0,
+      "responsive_css_checked": true,
+      "direct_360px_emulation": false
+    }
+  },
+  "terminology_correction": {
+    "canonical_term": "첩전(疊甎)",
+    "scope": "Existing Chinese HTML only; no new URL or asset.",
+    "definition": "A device used in traditional 导引按跷-related Korean medicine techniques to support the body and create treatment space for spinal and skeletal adjustment.",
+    "replaced_terms": [
+      "Insanggi",
+      "印床器",
+      "悬吊骨盆"
+    ],
+    "files": [
+      {
+        "path": "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
+        "commit": "8c8b9d6212fd6c1cb908607d96402389c49bd9cd",
+        "blob": "b443618ecc949237179a0212fb245b408e342d11",
+        "sha256": "e975200250c5a322123aff6c03c78c99f57f6dd54b9fbc98d78ea65e1f9fb057",
+        "readback_exact": true
+      },
+      {
+        "path": "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html",
+        "commit": "cc743e0ea1070707cbdf8ba05b78aa7e994a4b17",
+        "blob": "9f2751e0a1709613ca1306aea34b0203b4c994bf",
+        "sha256": "9edb7df06682e5c7a6dcd30f1e2ee87480358f5b052101e24fac7783ce9e8b9b",
+        "readback_exact": true
+      },
+      {
+        "path": "SART_cn.html",
+        "commit": "8812b3fe8db596098cc830bf5efdf5b07e8f90d6",
+        "blob": "683ff4966ac0c8f96b1140653f2f9640ad5cce45",
+        "sha256": "540c4b4fdb7107ccbfd266b62516a9b55add49f28b77b26e2c6c55b280eef9fd",
+        "readback_exact": true
+      },
+      {
+        "path": "chuna-therapy_cn.html",
+        "commit": "d273f77059f5b2cf4f9dc1218178cc1943c607b4",
+        "blob": "1ce21aae392d2425c74de8f88d6b82e4dcad205c",
+        "sha256": "ed53141b209116b388569d978e256d499e62434886fedb358439eae40ff42226",
+        "readback_exact": true
+      },
+      {
+        "path": "encyclopedia/0003.foot-pain_cn.html",
+        "commit": "99c37b89e80c970bf54d52ee9300f62e2033a628",
+        "blob": "89f9ab6ea404b151a309a641b32e14447944ece7",
+        "sha256": "91d9ff6271295f8f6e9f79b99eea1d6d650a025e52b3a2cb0c0f4e669434f30c",
+        "readback_exact": true
+      },
+      {
+        "path": "encyclopedia/0015.sacroiliac-joint-dysfunction-chuna-pelvic-torsion_cn.html",
+        "commit": "bf7b9b1bcb7c0d4457682a8c883e04d17a2e40ef",
+        "blob": "7cfd7c40cebd7f32895d2a9b143cdcf842e573f9",
+        "sha256": "ca08e1aab1ca994c422f9a0a911af181ffc1334de8a48af98a7a5b5c6da895e4",
+        "readback_exact": true
+      },
+      {
+        "path": "herbal-medicine_cn.html",
+        "commit": "4475cb98434f562000fe2c82a43b46744484c81e",
+        "blob": "53c6dc89c94f90f892b72bfcf17493078f8f994f",
+        "sha256": "3ac31bf70081453816b9f796c937c10b25eb2e54e45460880f6cdb18c922d53b",
+        "readback_exact": true
+      },
+      {
+        "path": "index_cn.html",
+        "commit": "9eee2f0b7c5df107737e7af9861ef0a88198dee1",
+        "blob": "4e5e3a8479f8f67fa071154e0224d1825eeae501",
+        "sha256": "57d945a9969f40b273286a714a92d691cbb3dcc28beb650713ff980f454edd45",
+        "readback_exact": true
+      },
+      {
+        "path": "lumbar-disc_cn.html",
+        "commit": "d7ecdcf093f23e3f00029a6bb3f7e5133f350ea6",
+        "blob": "dd7a54a164340fbc36a4c2f15c5d30d3337175c4",
+        "sha256": "b9c5288fc4ec8ecdbe36ff90aec75f0e5b83538a24de4ee49385b5d40c39ba29",
+        "readback_exact": true
+      },
+      {
+        "path": "pain-spine-clinic_cn.html",
+        "commit": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
+        "blob": "3aff81e197a5be01b32de4a9ff85ed0d059a5cb7",
+        "sha256": "033a6cd23d30bc93836c1c39597eebbe1a7bea210f5a5c48936491b954493722",
+        "readback_exact": true
+      }
+    ],
+    "public_validation": {
+      "pages_checked": 10,
+      "canonical_term_present": true,
+      "previous_mistranslations_absent": true,
+      "canonical_and_og_url_preserved": true,
+      "schema_json_parse": true,
+      "desktop_overflow_px": 0,
+      "images_and_links_unchanged": true
+    }
+  },
+  "measurement": "Actual non-branded AI recommendation lift remains unmeasured.",
+  "make_and_google_indexing": "unchanged"
+}
