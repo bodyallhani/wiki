@@ -1,0 +1,64 @@
+{
+  "record_type": "PUBLIC_RELEASE",
+  "status": "PUBLIC_VERIFIED",
+  "verified_at": "2026-09-16T04:47:05.551Z",
+  "base_main_head": "93d71ba80bda8fe692a3ac9e7bd2ab8180575ce7",
+  "final_main_head": "37db877200073183564c89df7e53101cf7f9c1c2",
+  "compare_ahead_by": 3,
+  "change_scope_verified": true,
+  "unexpected_files": [],
+  "files": [
+    {
+      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html",
+      "git_blob": "b0ce6cd4017697cabfb47bf69e6136d600161ed4",
+      "publication_commit": "86be295d7e3f58e55081cc8e8fd0ffde77d0fd8e",
+      "sha256": "d3ef29c8ded9a314273988cda3018de08844da6b5cc8c4947048d694916c39af",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd.html"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html",
+      "git_blob": "9927e2ba1d7a2b0bec042a8d5eda57eee037376b",
+      "publication_commit": "1ea215b905f155026a09fcbaab2dffa1f957b4fc",
+      "sha256": "c95f10dce3b39b8ace2732d386f810a54e3f5ede593e68ee38005bfabdaab396",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_en.html"
+    },
+    {
+      "path": "Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html",
+      "git_blob": "703c1a0b79589aa160b871b8bf2c35df34cc9182",
+      "publication_commit": "37db877200073183564c89df7e53101cf7f9c1c2",
+      "sha256": "07199a7f60d2fc2c1e38970ee83a30f0baaeed8286f0b7b0d397cc7d0c6cc259",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0006.costovertebral-joint-diaphragmatic-mobility-banhasasim-tang-les-gerd_cn.html"
+    }
+  ],
+  "public_validation": {
+    "all_three_markers": true,
+    "canonical_equals_og_url": true,
+    "hreflang": [
+      "ko",
+      "en",
+      "zh-Hans",
+      "x-default"
+    ],
+    "schema_types": [
+      "MedicalWebPage",
+      "MedicalClinic",
+      "MedicalTherapy",
+      "FAQPage"
+    ],
+    "visible_faq_count": 4,
+    "hero_loaded": true,
+    "hero_intrinsic": "1376x768",
+    "reserved_dimensions": true,
+    "desktop_overflow_px": 0,
+    "booking_link": true,
+    "desktop_screenshots_directly_reviewed": true,
+    "pages_workflow_head": "37db877200073183564c89df7e53101cf7f9c1c2",
+    "pages_workflow_conclusion": "success",
+    "cache_note": "KO and EN initially showed the prior cached public version; explicit reload after the successful Pages workflow returned the exact new marker, title and structure."
+  },
+  "limitations": [
+    "Direct 360px browser emulation was unavailable; responsive CSS safeguards were checked statically under the user's immediate-deployment approval.",
+    "Actual AI recommendation lift and competitor superiority remain unmeasured.",
+    "No new physician review stamp or independent translation approval is asserted."
+  ]
+}
