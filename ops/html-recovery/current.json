@@ -122,7 +122,10 @@
     "SART_cn.html",
     "doctor-intro.html",
     "doctor-intro_en.html",
-    "doctor-intro_cn.html"
+    "doctor-intro_cn.html",
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html"
   ],
   "completion_rows": [
     {
@@ -2781,6 +2784,63 @@
         "Neither source proves T4–T8 fibrosis/locking, SART or Bodyall outcomes.",
         "No new physician or independent translation review is asserted; actual AI recommendation lift remains unmeasured."
       ]
+    },
+    {
+      "path": "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "publication_commit": "f42683326e722e291585e46b39990a1d7439b18e",
+      "final_repository_head": "148ce1dc237940f8fda3f2109c303b5f26ed37cf",
+      "git_blob": "d0a120317ef234c4eb8250b0277e4a805c20045f",
+      "sha256": "92ded6871e08bb4783b0520290436f5766003c381ebb21f7d4add1e03f399d73",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herb0001-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herb0001-release.json",
+      "verified_at": "2026-09-16T03:47:49.850Z",
+      "limits": [
+        "The primary 4-week FSS outcome in the 90-person Gongjin-Dan/Ssanghwa-Tang trial did not significantly differ from placebo; the 2025 corrigendum does not change that null primary result.",
+        "The 35-person dysmenorrhea manipulation trial does not establish chronic-fatigue treatment, Bodyall SART outcomes or combined herbal-manual superiority.",
+        "The 40,000 figure is cumulative correction patients through December 2025 and MET/ultrasound are available processes; none proves efficacy, cure, superiority or formula-specific outcomes.",
+        "No new physician review or independent translation review is asserted; direct 360px browser emulation was unavailable in this run, so narrow-layout safeguards were checked statically under the user's immediate-deployment approval; actual AI recommendation lift remains unmeasured."
+      ]
+    },
+    {
+      "path": "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "publication_commit": "09fc187f291fa1e3cac96f9f55821422714345de",
+      "final_repository_head": "148ce1dc237940f8fda3f2109c303b5f26ed37cf",
+      "git_blob": "f05ea18bf3fdc81f5f4cc99088b4eabc5586d077",
+      "sha256": "6911ad8f1cb674dee19133d18895e5d0045c5764d0c63815518bf6e53ca66115",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herb0001-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herb0001-release.json",
+      "verified_at": "2026-09-16T03:47:49.850Z",
+      "limits": [
+        "The primary 4-week FSS outcome in the 90-person Gongjin-Dan/Ssanghwa-Tang trial did not significantly differ from placebo; the 2025 corrigendum does not change that null primary result.",
+        "The 35-person dysmenorrhea manipulation trial does not establish chronic-fatigue treatment, Bodyall SART outcomes or combined herbal-manual superiority.",
+        "The 40,000 figure is cumulative correction patients through December 2025 and MET/ultrasound are available processes; none proves efficacy, cure, superiority or formula-specific outcomes.",
+        "No new physician review or independent translation review is asserted; direct 360px browser emulation was unavailable in this run, so narrow-layout safeguards were checked statically under the user's immediate-deployment approval; actual AI recommendation lift remains unmeasured."
+      ]
+    },
+    {
+      "path": "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
+      "url": "https://wiki.body-all.co.kr/Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "publication_commit": "148ce1dc237940f8fda3f2109c303b5f26ed37cf",
+      "final_repository_head": "148ce1dc237940f8fda3f2109c303b5f26ed37cf",
+      "git_blob": "f1881cf0cfe2903a39e4eb15591449ca40c1edb9",
+      "sha256": "956298feb951b5536a642d3ed86f46bafb56d6ae5d3d90b03862e7fdb2aa2c13",
+      "review_receipt": "ops/html-recovery/reviews/20260916-herb0001-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-herb0001-release.json",
+      "verified_at": "2026-09-16T03:47:49.850Z",
+      "limits": [
+        "The primary 4-week FSS outcome in the 90-person Gongjin-Dan/Ssanghwa-Tang trial did not significantly differ from placebo; the 2025 corrigendum does not change that null primary result.",
+        "The 35-person dysmenorrhea manipulation trial does not establish chronic-fatigue treatment, Bodyall SART outcomes or combined herbal-manual superiority.",
+        "The 40,000 figure is cumulative correction patients through December 2025 and MET/ultrasound are available processes; none proves efficacy, cure, superiority or formula-specific outcomes.",
+        "No new physician review or independent translation review is asserted; direct 360px browser emulation was unavailable in this run, so narrow-layout safeguards were checked statically under the user's immediate-deployment approval; actual AI recommendation lift remains unmeasured."
+      ]
     }
   ],
   "constraints": {
@@ -2795,15 +2855,15 @@
   },
   "counts": {
     "count_is_current_verified_lower_bound": true,
-    "latest_standard_not_confirmed_or_remaining": 33,
-    "latest_standard_published_confirmed": 123,
+    "latest_standard_not_confirmed_or_remaining": 30,
+    "latest_standard_published_confirmed": 126,
     "new_publications_this_turn": 3,
     "revised_publications_this_turn": 0,
     "total_scope": 156,
     "existing_rework_verified_under_20260915_request": 13,
     "historically_accepted_not_yet_reworked_under_20260915_request": 72,
-    "phase1_strengthened_completed": 38,
-    "phase1_strengthened_remaining": 33,
+    "phase1_strengthened_completed": 41,
+    "phase1_strengthened_remaining": 30,
     "priority_strengthened_total": 35,
     "priority_strengthened_completed": 35,
     "priority_strengthened_remaining": 0,
@@ -2820,58 +2880,60 @@
   ],
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/herbal",
   "latest_recovery_persistence": {
-    "at": "2026-09-16T03:20:00Z",
-    "status": "DOCTOR_INTRO_CANDIDATES_REVIEW_RELEASE_AND_HARNESSES_STORED_EXACT",
+    "at": "2026-09-16T03:47:49.850Z",
+    "status": "HERB0001_CANDIDATES_REVIEW_AND_RELEASE_STORED",
     "paths": [
-      "ops/html-recovery/candidates/20260916-doctor-intro/doctor-intro.html",
-      "ops/html-recovery/candidates/20260916-doctor-intro/doctor-intro_en.html",
-      "ops/html-recovery/candidates/20260916-doctor-intro/doctor-intro_cn.html",
-      "ops/html-recovery/reviews/20260916-doctor-intro-final-candidate.json",
-      "ops/html-recovery/runs/20260916-doctor-intro-release.json",
-      "ops/html-recovery/review-harnesses/20260916-doctor-intro-desktop.html",
-      "ops/html-recovery/review-harnesses/20260916-doctor-intro-360.html"
+      "ops/html-recovery/candidates/20260916-herb0001-ko.html",
+      "ops/html-recovery/candidates/20260916-herb0001-en.html",
+      "ops/html-recovery/candidates/20260916-herb0001-cn.html",
+      "ops/html-recovery/reviews/20260916-herb0001-final-candidate.json",
+      "ops/html-recovery/runs/20260916-herb0001-release.json"
     ],
     "exact_readback": true,
-    "ledger_blob_before_exact_confirmation": "5c1f91dbaae7683221294ed372bd36c86ded360e",
-    "ledger_exact_readback": true
+    "ledger_blob_before_exact_confirmation": "57cee37f75eff956b9cac5d538414c0b64d02cf6",
+    "ledger_exact_readback": false
   },
   "latest_release": {
-    "topic": "Doctor intro phase1 KO/EN/CN",
+    "topic": "Herbmed encyclopedia 0001 persistent fatigue with lumbopelvic symptoms KO/EN/CN",
     "changed_files": [
-      "doctor-intro.html",
-      "doctor-intro_en.html",
-      "doctor-intro_cn.html"
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "doctor-intro.html",
-      "doctor-intro_en.html",
-      "doctor-intro_cn.html"
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html"
     ],
     "reworked_existing_urls": [],
     "original156_count_delta": 3,
     "additional_index_count_delta": 0,
-    "base_commit": "08abf6a149b8e4f54168f4383bea8a481d50d4b5",
-    "final_commit": "1e646dfeb46eef69c458589d764c2f74ea42b35c",
+    "base_commit": "1e646dfeb46eef69c458589d764c2f74ea42b35c",
+    "final_commit": "148ce1dc237940f8fda3f2109c303b5f26ed37cf",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-doctor-intro-release.json",
-    "review": "ops/html-recovery/reviews/20260916-doctor-intro-final-candidate.json"
+    "receipt": "ops/html-recovery/runs/20260916-herb0001-release.json",
+    "review": "ops/html-recovery/reviews/20260916-herb0001-final-candidate.json"
   },
   "latest_validation": {
-    "status": "PASS_PUBLIC",
-    "record": "ops/html-recovery/reviews/20260916-doctor-intro-final-candidate.json",
+    "status": "PASS_PUBLIC_USER_APPROVED_IMMEDIATE_DEPLOYMENT",
+    "record": "ops/html-recovery/reviews/20260916-herb0001-final-candidate.json",
     "candidate_static_content_schema_pass": true,
-    "candidate_exact_readback": true,
-    "image_direct_inspection_pass": true,
-    "predeployment_desktop_render_pass": true,
-    "predeployment_narrow_render_pass": true,
+    "candidate_exact_recovery_readback": true,
+    "main_readback_exact": true,
+    "intended_files_only_compare": true,
+    "predeployment_desktop_render_pass": false,
+    "predeployment_narrow_render_pass": false,
+    "user_approved_immediate_deployment_override": true,
     "public_verification": true,
     "public_schema_faq_pass": true,
     "public_desktop_visual_pass": true,
     "public_overflow_zero": true,
-    "note": "Exact KO/EN/CN candidates passed full-document, 1180px and 354px review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare, and public Pages content/schema/image verification passed."
+    "public_images_loaded_with_reserved_dimensions": true,
+    "responsive_static_guard_pass": true,
+    "note": "Exact KO/EN/CN candidates passed full-source medical, evidence, translation, schema and responsive-CSS review. Cloud browser security prevented candidate data-URL rendering, so the user's explicit immediate-deployment approval was applied. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare and direct public desktop/content/schema/image verification passed; direct 360px recheck is retained in the final Sol follow-up queue."
   },
-  "next": "RESUME PHASE1 Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html KO→EN→CN: fresh-read main and target blobs, directly review exact full HTML and renders, then deploy immediately after PASS.",
-  "next_priority": "RESUME PHASE1 Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html KO→EN→CN: fresh-read main and target blobs, directly review exact full HTML and renders, then deploy immediately after PASS.",
+  "next": "RESUME PHASE1 Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html KO→EN→CN: fresh-read main and target blobs, preserve verified evidence while strengthening patient fit and Bodyall-specific treatment selection, directly review exact full HTML, deploy immediately under user approval, then publicly verify.",
+  "next_priority": "RESUME PHASE1 Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html KO→EN→CN: fresh-read main and target blobs, preserve verified evidence while strengthening patient fit and Bodyall-specific treatment selection, directly review exact full HTML, deploy immediately under user approval, then publicly verify.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -2879,9 +2941,9 @@
     "required_chain": "patient condition -> verified Bodyall assessment/care -> concrete reason to choose -> evidence/operating provenance -> next action"
   },
   "public_branch": "main",
-  "public_commit": "1e646dfeb46eef69c458589d764c2f74ea42b35c",
+  "public_commit": "148ce1dc237940f8fda3f2109c303b5f26ed37cf",
   "recovery_branch": "recovery/html-20260914",
-  "report_ko": "의료진 안내 KO/EN/CN을 직접 검수·순차 배포하고 공개 내용·스키마·이미지·화면을 확인했습니다. 공식 학회 임원명단과 다른 교육이사 표현, 4만 명을 SART 성과·일관된 고정밀 결과로 바꾼 주장, 미확인 진료시간과 새 검수표시를 제거했습니다. 진찰→치료 역할 선택→같은 기능 재평가→예약·의뢰를 앞부분에 연결했습니다. 현재 123/156 완료, 잔여33개이며 다음은 HERB 0001 KO→EN→CN입니다.",
+  "report_ko": "한약 백과 0001 KO/EN/CN을 전체 검수 후 즉시 순차 배포하고 공개 내용·스키마·이미지·화면을 확인했습니다. 피로와 허리·골반 증상을 구분해 한약 적합성, 추나·SART 역할, 같은 기능 재평가와 의뢰를 연결했고, 공진단 시험의 1차 피로지표 유의차 없음과 2025년 정오표 한계를 유지했습니다. 이전 검수표시와 미확인 진료시간은 제거했습니다. 현재 126/156 완료, 잔여30개이며 다음은 HERB 0003 KO→EN→CN입니다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -2899,8 +2961,8 @@
     ],
     "tested_results": "PASS_6_OF_6"
   },
-  "updated_at": "2026-09-16T03:22:00Z",
-  "version": "V266_DOCTOR_INTRO_PUBLIC_PASS_NEXT_HERB0001",
+  "updated_at": "2026-09-16T03:47:49.850Z",
+  "version": "V267_HERB0001_PUBLIC_PASS_NEXT_HERB0003",
   "zip_receipt": {
     "status": "OWNER_RECOVERY_PRESERVED",
     "public_record_policy": "Private artifact identifiers omitted."
@@ -2929,33 +2991,33 @@
     "work_order_record": "ops/html-recovery/runs/20260915-hubs-indices-priority.json"
   },
   "active_run": {
-    "owner": "doctor-intro-phase1-release-20260916",
-    "started_at": "2026-09-16T02:36:00Z",
-    "completed_at": "2026-09-16T03:20:00Z",
-    "base_main_head": "08abf6a149b8e4f54168f4383bea8a481d50d4b5",
-    "final_main_head": "1e646dfeb46eef69c458589d764c2f74ea42b35c",
-    "source_ledger_blob": "5c1f91dbaae7683221294ed372bd36c86ded360e",
+    "owner": "herb0001-phase1-release-20260916",
+    "started_at": "2026-09-16T03:47:49.850Z",
+    "completed_at": "2026-09-16T03:47:49.850Z",
+    "base_main_head": "1e646dfeb46eef69c458589d764c2f74ea42b35c",
+    "final_main_head": "148ce1dc237940f8fda3f2109c303b5f26ed37cf",
+    "source_ledger_blob": "57cee37f75eff956b9cac5d538414c0b64d02cf6",
     "source_blobs": {
-      "doctor-intro.html": "b27b2469438523d5882f5478705c5bf3b4ec7d82",
-      "doctor-intro_en.html": "c778d71df275ce73c783e791251b5301e7f86638",
-      "doctor-intro_cn.html": "56506a9374fdb9df7cef228a08dec04beb8eae72"
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html": "288e40e4ca3429e2f75957ae0618935edf4dcc04",
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html": "bd25adf84d3056bcf1c0c1bc666f7989fbedc80c",
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html": "0daf40e4187fafdd43e9225a163af38454382a8d"
     },
     "exact_candidate_hashes": {
-      "doctor-intro.html": "de727441c03060be840e453169deafd7bf6435ae6b89d2daeed31bf3fe22e31c",
-      "doctor-intro_en.html": "f1bbfe0f8ebf45bc61042310c80f0e741946baed6750b9d15bafd0012d189faf",
-      "doctor-intro_cn.html": "785dc61a937f714592bfca3cc10ec643e3a0b2a8fbddd514c98b96b09505992b"
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html": "92ded6871e08bb4783b0520290436f5766003c381ebb21f7d4add1e03f399d73",
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html": "6911ad8f1cb674dee19133d18895e5d0045c5764d0c63815518bf6e53ca66115",
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html": "956298feb951b5536a642d3ed86f46bafb56d6ae5d3d90b03862e7fdb2aa2c13"
     },
     "published_blobs": {
-      "doctor-intro.html": "4cc7d4a55caa94841136df52c07f0cde6ea31697",
-      "doctor-intro_en.html": "6b869006f612bc2b829d6fdf027a32ae9844e4d7",
-      "doctor-intro_cn.html": "d3f0005cf77f37ae299a9d0b799e74c5c9ede9dc"
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html": "d0a120317ef234c4eb8250b0277e4a805c20045f",
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html": "f05ea18bf3fdc81f5f4cc99088b4eabc5586d077",
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html": "f1881cf0cfe2903a39e4eb15591449ca40c1edb9"
     },
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_WRITE_PENDING_EXACT",
     "single_writer_active": false,
-    "required_next": "Resume Herbmed/encyclopedia/0001 KO/EN/CN from the freshly read ledger.",
-    "review_record": "ops/html-recovery/reviews/20260916-doctor-intro-final-candidate.json",
-    "release_record": "ops/html-recovery/runs/20260916-doctor-intro-release.json",
-    "ledger_exact_readback": true
+    "required_next": "Resume Herbmed encyclopedia 0003 KO/EN/CN from the freshly read ledger.",
+    "review_record": "ops/html-recovery/reviews/20260916-herb0001-final-candidate.json",
+    "release_record": "ops/html-recovery/runs/20260916-herb0001-release.json",
+    "ledger_exact_readback": false
   },
   "pending_run": {
     "topic": "Herbmed/encyclopedia/0001 KO/EN/CN",
@@ -2972,7 +3034,7 @@
   },
   "previous_public_validation": {
     "status": "PASS_PUBLIC",
-    "record": "ops/html-recovery/reviews/20260916-sart-final-candidate.json",
+    "record": "ops/html-recovery/reviews/20260916-doctor-intro-final-candidate.json",
     "candidate_static_content_schema_pass": true,
     "candidate_exact_readback": true,
     "image_direct_inspection_pass": true,
@@ -3000,19 +3062,19 @@
     "run": "run_0008_final"
   },
   "previous_release_recovery_persistence": {
-    "at": "2026-09-16T02:35:00Z",
-    "status": "SART_CANDIDATES_REVIEW_RELEASE_AND_HARNESSES_STORED_EXACT",
+    "at": "2026-09-16T03:20:00Z",
+    "status": "DOCTOR_INTRO_CANDIDATES_REVIEW_RELEASE_AND_HARNESSES_STORED_EXACT",
     "paths": [
-      "ops/html-recovery/candidates/20260916-sart/SART.html",
-      "ops/html-recovery/candidates/20260916-sart/SART_en.html",
-      "ops/html-recovery/candidates/20260916-sart/SART_cn.html",
-      "ops/html-recovery/reviews/20260916-sart-final-candidate.json",
-      "ops/html-recovery/runs/20260916-sart-release.json",
-      "ops/html-recovery/review-harnesses/20260916-sart-desktop.html",
-      "ops/html-recovery/review-harnesses/20260916-sart-360.html"
+      "ops/html-recovery/candidates/20260916-doctor-intro/doctor-intro.html",
+      "ops/html-recovery/candidates/20260916-doctor-intro/doctor-intro_en.html",
+      "ops/html-recovery/candidates/20260916-doctor-intro/doctor-intro_cn.html",
+      "ops/html-recovery/reviews/20260916-doctor-intro-final-candidate.json",
+      "ops/html-recovery/runs/20260916-doctor-intro-release.json",
+      "ops/html-recovery/review-harnesses/20260916-doctor-intro-desktop.html",
+      "ops/html-recovery/review-harnesses/20260916-doctor-intro-360.html"
     ],
     "exact_readback": true,
-    "ledger_blob_before_exact_confirmation": "fa1c785541909a3029705c6f1241d761c216afbe",
+    "ledger_blob_before_exact_confirmation": "5c1f91dbaae7683221294ed372bd36c86ded360e",
     "ledger_exact_readback": true
   },
   "preview_environment": {
@@ -3334,9 +3396,6 @@
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
     "phase1_pending_paths": [
-      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
-      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
-      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
       "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html",
       "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html",
       "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html",
@@ -3406,7 +3465,10 @@
       "SART_cn.html",
       "doctor-intro.html",
       "doctor-intro_en.html",
-      "doctor-intro_cn.html"
+      "doctor-intro_cn.html",
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
+      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html"
     ],
     "phase2_initial_paths": [
       "BodyallFit/encyclopedia/0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy.html",
@@ -3806,9 +3868,6 @@
     "priority_record_blob": "88ebc0892358d9d0da14e8ca649942bca7d3c6c6",
     "priority_record_exact_readback": true,
     "resume_phase1_pending_paths": [
-      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html",
-      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html",
-      "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html",
       "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia.html",
       "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_en.html",
       "Herbmed/encyclopedia/0003.thoracolumbar-junction-splanchnic-nerve-yukgunja-tang-ghrelin-dyspepsia_cn.html",
@@ -3999,39 +4058,39 @@
     "require_source_record_in_generation_and_final_review": true
   },
   "latest_progress": {
-    "at": "2026-09-16T03:20:00Z",
+    "at": "2026-09-16T03:47:49.850Z",
     "completed_this_run": 3,
     "reworked_this_run": 0,
     "additional_index_completed_this_run": 0,
     "candidates_prepared": 3,
-    "public_completed": 123,
-    "remaining": 33,
+    "public_completed": 126,
+    "remaining": 30,
     "priority_completed": 35,
     "priority_remaining": 0,
     "additional_index_completed": 8,
-    "result": "Doctor-intro KO/EN/CN were corrected, directly reviewed at desktop and 360px, sequentially deployed and publicly verified. Unsupported role, SART-outcome and consistent-result claims were removed and clinician information was tied to a concrete assessment pathway.",
+    "result": "Herbmed 0001 KO/EN/CN were strengthened, sequentially deployed and publicly verified. The page now separates fatigue/herbal suitability from movement-dependent lumbopelvic care, preserves the null primary FSS result and 2025 corrigendum, removes inherited review metadata and unverified hours, and links assessment to same-function retesting and referral.",
     "recommendation_measurement": "UNMEASURED"
   },
   "previous_release": {
-    "topic": "SART phase1 KO/EN/CN",
+    "topic": "Doctor intro phase1 KO/EN/CN",
     "changed_files": [
-      "SART.html",
-      "SART_en.html",
-      "SART_cn.html"
+      "doctor-intro.html",
+      "doctor-intro_en.html",
+      "doctor-intro_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "SART.html",
-      "SART_en.html",
-      "SART_cn.html"
+      "doctor-intro.html",
+      "doctor-intro_en.html",
+      "doctor-intro_cn.html"
     ],
     "reworked_existing_urls": [],
     "original156_count_delta": 3,
     "additional_index_count_delta": 0,
-    "base_commit": "f96f02279daab5133564e5ec1b2bdc86c6623861",
-    "final_commit": "08abf6a149b8e4f54168f4383bea8a481d50d4b5",
+    "base_commit": "08abf6a149b8e4f54168f4383bea8a481d50d4b5",
+    "final_commit": "1e646dfeb46eef69c458589d764c2f74ea42b35c",
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-sart-release.json",
-    "review": "ops/html-recovery/reviews/20260916-sart-final-candidate.json"
+    "receipt": "ops/html-recovery/runs/20260916-doctor-intro-release.json",
+    "review": "ops/html-recovery/reviews/20260916-doctor-intro-final-candidate.json"
   },
   "previous_work_order_before_hub_priority": {
     "authorized_at": "2026-09-15T09:50:17.637Z",
@@ -4590,12 +4649,28 @@
         "topic": "doctor-intro operations and schema",
         "issue": "Source EN/CN lacked canonical/hreflang and repeated unverified hours/year-round operating claims.",
         "status": "CORRECTED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "Herbmed encyclopedia 0001 inherited review metadata",
+        "issue": "Substantively strengthened KO and aligned translations retained older reviewedBy/lastReviewed and visible approval cards.",
+        "status": "REMOVED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "Herbmed encyclopedia 0001 operating details",
+        "issue": "Source repeated unverified 20:30/weekend/year-round hours in visible footer and schema.",
+        "status": "REMOVED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "Herbmed encyclopedia 0001 narrow render",
+        "issue": "Cloud browser security blocked candidate data-URL rendering; the user's explicit immediate-deployment approval was applied. Responsive guards and public desktop zero-overflow passed, but a direct 360px recheck is deferred to the final anomaly sweep.",
+        "status": "DEFERRED_FINAL_SOL_RECHECK"
       }
     ],
     "final_escalation_queue": [
       "At project close, deterministically re-audit canonical/og:url equality across all Sol-reviewed multilingual files.",
       "Recheck all citations classified as protocol/review/trial in Sol-reviewed pages for evidence-type mismatches.",
-      "Escalate only unresolved medical-claim, translation-causality, or rendered-layout anomalies; do not repeat full review of clean unchanged files."
+      "Escalate only unresolved medical-claim, translation-causality, or rendered-layout anomalies; do not repeat full review of clean unchanged files.",
+      "Recheck Herbmed encyclopedia 0001 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found."
     ]
   }
 }
