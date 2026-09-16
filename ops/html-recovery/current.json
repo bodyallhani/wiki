@@ -145,7 +145,7 @@
       "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html": "07846a6b09b82e26d8eac06db8ac1e242b87a048fb59a3d0e484e01ef20734b5"
     },
     "final_main_head": "93d71ba80bda8fe692a3ac9e7bd2ab8180575ce7",
-    "ledger_exact_readback": false,
+    "ledger_exact_readback": true,
     "owner": "herb0005-phase1-release-20260916",
     "published_blobs": {
       "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder.html": "fedb19c93c699e8b96349a132ce53fe95bf46fc9",
@@ -162,7 +162,7 @@
       "Herbmed/encyclopedia/0005.atlantoaxial-joint-vagus-nerve-chaihu-longgu-muli-panic-disorder_en.html": "38db51886c3f0941a7e8a6753da3bd9ee4bb6382"
     },
     "source_ledger_blob": "0254630c5ab2306a8caf03f71186fdf146e5c63c",
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_PENDING",
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
     "started_at": "2026-09-16T04:30:56.234Z"
   },
   "additional_index_completion_rows": [
@@ -3264,11 +3264,12 @@
     "reworked_this_run": 0
   },
   "latest_recovery_persistence": {
-    "at": "2026-09-16T04:30:56.234Z",
+    "at": "2026-09-16T04:31:28.770Z",
+    "status": "EXACT_READBACK_CONFIRMED",
+    "current_json_blob_before_confirmation": "8d5c5de3a053c951aefbdc46d79de8d4bf62672c",
     "candidate_files_exact": true,
-    "release_record_exact": true,
     "review_record_exact": true,
-    "status": "PENDING_EXACT_READBACK"
+    "release_record_exact": true
   },
   "latest_release": {
     "additional_index_count_delta": 0,
@@ -4186,7 +4187,7 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T04:30:56.234Z",
+  "updated_at": "2026-09-16T04:31:28.770Z",
   "version": "V270_HERB0005_PUBLIC_PASS_NEXT_HERB0006",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
