@@ -1,0 +1,26 @@
+{
+  "method": "Supported managed preview using exact candidate bytes in the existing owner-private review harness",
+  "candidates": {
+    "lumbar-disc_en.html": {
+      "sha256": "035c6aea8f5249fe98cc603c82f62b2d17183902609dca2757849842ad0d863f",
+      "desktop": {"viewport": 1280, "overflow": 0, "path_match": true},
+      "narrow": {"viewport": 360, "overflow": 0, "overflow_elements": []},
+      "images_loaded": 5,
+      "images_total": 5
+    },
+    "lumbar-disc_cn.html": {
+      "sha256": "dd070c1700fc67e599daa1c275a8fcf1afea8ae2fa4b8aa9a481d09c1219ed32",
+      "desktop": {"viewport": 1280, "overflow": 0, "path_match": true},
+      "narrow": {"viewport": 360, "overflow": 0, "overflow_elements": []},
+      "images_loaded": 5,
+      "images_total": 5
+    }
+  },
+  "observations": [
+    "English headings and opening answer remain readable at both widths.",
+    "Chinese historical 疊甎 and modern 反重力治疗器（引上器） wording renders without character corruption.",
+    "All lazy-loaded images were visited and loaded; the document itself has no horizontal overflow."
+  ],
+  "limitations": ["Width checks validate responsive layout and are not physical mobile-device emulation."],
+  "all_checks_passed": true
+}

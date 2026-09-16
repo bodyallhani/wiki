@@ -1,0 +1,45 @@
+{
+  "en": {
+    "sha256": "035c6aea8f5249fe98cc603c82f62b2d17183902609dca2757849842ad0d863f",
+    "bytes": 32912,
+    "changes": [
+      "Synchronise schema date and remove the editorial-sounding third FAQ entity to match the Korean representative.",
+      "Use the official modern device name and remove internal editorial wording and the automatic negative tail after the verified count.",
+      "Separate the modern gravity-opposing device name from its historical cheopjeon origin.",
+      "Replace a defensive causation heading with the patient question and a direct answer.",
+      "Use the accurate modern device name in the care-selection list.",
+      "Separate SART from adjunct procedures and summarize the actual meta-analysis results before the shorter pilot result.",
+      "Renumber the visit and reassessment section.",
+      "Keep the relevant exercise/manual-therapy guidance without an unrelated list of non-recommendations.",
+      "State the verified count and source directly without another automatic negative definition.",
+      "Remove the internal evaluation-style FAQ that is absent from the Korean representative.",
+      "Synchronise the visible modification date.",
+      "Repair the skipped reference heading level.",
+      "Remove a repeated negative tail from the pilot citation.",
+      "Link the author abstract used for the comparison-level summary.",
+      "Remove the unnecessary negative tail after the verified title.",
+      "Polished two English compounds after visual/editorial review without changing meaning."
+    ]
+  },
+  "cn": {
+    "sha256": "dd070c1700fc67e599daa1c275a8fcf1afea8ae2fa4b8aa9a481d09c1219ed32",
+    "bytes": 30737,
+    "changes": [
+      "同步结构化数据日期，并删除带内部评估口吻的第三条FAQ，使其与韩文代表稿一致。",
+      "使用现代装置的准确名称，并删除内部编辑措辞及已核实数字后的自动反驳句。",
+      "区分历史术语疊甎与现代反重力治疗器（引上器），并清除混入的韩文。",
+      "把防御性因果标题改为患者问题，并先给出直接回答。",
+      "在治疗选择列表中使用准确的现代装置名称。",
+      "将SART与附加治疗分开，并在较短的先导试验之前准确说明荟萃分析结果。",
+      "新增章节后顺延就诊准备与复评编号。",
+      "保留与运动、手法治疗有关的指南内容，删除无关的非推荐清单。",
+      "直接说明已核实数字与来源，不再追加自动否定定义。",
+      "删除韩文代表稿中不存在、带内部评估口吻的FAQ。",
+      "同步页面显示的修改日期。",
+      "修复参考文献标题层级。",
+      "删除参考文献中重复的否定尾句。",
+      "链接本次实际使用的作者摘要。",
+      "删除已核实职务后的无关否定尾句。"
+    ]
+  }
+}

@@ -3638,7 +3638,18 @@
       "lumbar-disc.html"
     ],
     "representative_record": "ops/html-recovery/drafts/20260916-representative-ko/review.json",
-    "sol_medium_ready": true
+    "sol_medium_ready": true,
+    "language_ready_paths": [
+      "lumbar-disc.html",
+      "lumbar-disc_en.html",
+      "lumbar-disc_cn.html"
+    ],
+    "public_exact_paths": [
+      "lumbar-disc_en.html",
+      "lumbar-disc_cn.html"
+    ],
+    "public_group_completed_paths": [],
+    "lumbar_release_record": "ops/html-recovery/drafts/20260916-lumbar-languages/release.json"
   },
   "execution_policy": {
     "active_editorial_direction": "ops/html-recovery/drafts/20260916-global-guide/BODYALL_APPLIED_DIRECTION.md",
@@ -4002,19 +4013,18 @@
       }
     ]
   },
-  "next": "Check latest common policy. Read representative-ko review and exact candidate; KO evidence/section/wording/render work is complete, so reuse it. Continue EN/ZH alignment and existing stored 35-priority group order, retaining index hub exception. Sol medium is suitable; Claude preferred for substantive body writing. Do not modify Make or repeat completed work.",
+  "next": "Obtain explicit user approval to move main non-forced from ee01494819992d644b69216c40de93c17f76419e to the already-prepared ce2561da6d97ba50b4e4cad6f35c3a69f69f1a05. Then verify exact KO/EN/ZH blob SHAs and live URLs before continuing cervical-disc KO/EN/CN. Do not repeat completed policy, evidence, language or render work.",
   "next_priority": {
-    "next_article_group": "cervical-disc KO/EN/CN",
+    "next_article_group": "cervical-disc KO/EN/CN after exact lumbar triplet verification",
     "nonpriority_rule": "Do not resume SART or other nonpriority articles until priority set is verified.",
     "paths": [
       "lumbar-disc.html",
-      "index.html",
-      "index_en.html",
-      "index_cn.html"
+      "lumbar-disc_en.html",
+      "lumbar-disc_cn.html"
     ],
     "phase": "OWNER_PRIORITY_GLOBAL_GUIDE_REFRESH",
-    "record": "ops/html-recovery/drafts/20260916-representative-ko/review.json",
-    "stage": "REPRESENTATIVE_KO_READY_CONTINUE_STORED_PRIORITY_GROUPS",
+    "record": "ops/html-recovery/drafts/20260916-lumbar-languages/release.json",
+    "stage": "LUMBAR_EXACT_KO_MAIN_REF_APPROVAL_REQUIRED_THEN_LIVE_VERIFY",
     "topic": "lumbar-disc representative KO and root index language set; then continue stored35-priority order"
   },
   "objective": {
@@ -4063,7 +4073,9 @@
     "latest_draft_files": 1,
     "make_unchanged": true,
     "pending_items": [
-      "LANGUAGE-AND-PRIORITY-ROLLOUT"
+      "EXACT_KO_MAIN_REF_UPDATE",
+      "LIVE_THREE_LANGUAGE_VERIFICATION",
+      "LANGUAGE_AND_PRIORITY_ROLLOUT"
     ],
     "persistence_authorization": {
       "approval_text": "승인",
@@ -4079,14 +4091,14 @@
     "policy_version": "2026-09-16.2",
     "previous_record": "ops/html-recovery/drafts/20260916-global-guide/review.json",
     "public_files_changed": 0,
-    "publication_blocker": "Representative KO is ready; complete language/group review and the retained release gates before publication.",
-    "record": "ops/html-recovery/drafts/20260916-representative-ko/review.json",
+    "publication_blocker": "Automatic approval review rejected the exact Korean full-file replacement on main; explicit user approval is required for the prepared non-forced ref update.",
+    "record": "ops/html-recovery/drafts/20260916-lumbar-languages/review.json",
     "retained_prior_drafts": 15,
-    "status": "KO_EDITORIAL_STATIC_AND_RESPONSIVE_RENDER_PASS_LANGUAGE_ROLLOUT_PENDING",
+    "status": "LUMBAR_RELEASE_BLOCKED_EXPLICIT_MAIN_REF_APPROVAL_REQUIRED",
     "story_framework_version": "2026-09-16.1",
     "terminology_hold": "RESOLVED_BY_OWNER_20260916",
     "unique_draft_paths": 15,
-    "updated_at": "2026-09-16T10:39:28.640336+00:00"
+    "updated_at": "2026-09-16T11:04:56.313Z"
   },
   "pending_run": null,
   "pipeline_review": {
@@ -4641,7 +4653,7 @@
     "reason": "Do not republish private preview and recovery-artifact identifiers in a public repository."
   },
   "public_branch": "main",
-  "public_commit": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
+  "public_commit": "ee01494819992d644b69216c40de93c17f76419e",
   "recovery_branch": "recovery/html-20260914",
   "related_hub_findings": [
     {
@@ -4651,7 +4663,7 @@
       "status": "HOLD_UNSUPPORTED_STRUCTURAL_AND_RECURRENCE_CLAIMS"
     }
   ],
-  "report_ko": "대표 허리 한국어 초안의 논문 결과·섹션 범위·방어 문구를 부분 수정하고 1280/360px 렌더 검수를 마쳤습니다. Sol 중간으로 전환 가능합니다. 새 기준 공개 적용 완료는 0개이며 기존 완료 이력과 Make를 보존합니다.",
+  "report_ko": "기준 2026-09-16.2로 lumbar-disc 한·영·중 편집·정적·1280/360 검수를 완료했습니다. 영문·중문 공개 blob은 정확하지만 한국어 전송에서 '는 '와 CSS 문자 1개가 누락되었습니다. 정확한 교정 커밋은 준비했으나 자동 승인 검토가 기본 브랜치 전체 파일 교체에 명시 승인을 요구해 ref 업데이트가 중단됐습니다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -4765,7 +4777,7 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T10:39:28.640336+00:00",
+  "updated_at": "2026-09-16T11:04:56.313Z",
   "version": "V285_POLICY_20260916_1_APPLIED_REPRESENTATIVE_HERBMED0002_KO",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
@@ -5413,5 +5425,13 @@
     "candidate_sha256": "50c74dae1e8c5313c89b136207a669dbcc46d856a0613e446a1b4665bfb3f761",
     "policy_version": "2026-09-16.2",
     "public_completed_under_global_guide": 0
+  },
+  "latest_release_attempt": {
+    "record": "ops/html-recovery/drafts/20260916-lumbar-languages/release.json",
+    "main_current": "ee01494819992d644b69216c40de93c17f76419e",
+    "prepared_exact_target": "ce2561da6d97ba50b4e4cad6f35c3a69f69f1a05",
+    "automatic_review": "REJECTED_EXPLICIT_USER_APPROVAL_REQUIRED",
+    "en_cn_exact": true,
+    "ko_exact": false
   }
 }

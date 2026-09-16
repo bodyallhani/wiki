@@ -1,0 +1,34 @@
+{
+  "status": "LUMBAR_KO_EN_ZH_EDITORIAL_STATIC_AND_RESPONSIVE_RENDER_PASS_READY_FOR_RELEASE",
+  "policy_version": "2026-09-16.2",
+  "policy_latest_full_read_this_turn": true,
+  "global_guide_sha256": "75ba44ac547ff449082c6cd8e2c771230e30b2d54025d6a7a91ed7db892f4790",
+  "representative_ko_record": "ops/html-recovery/drafts/20260916-representative-ko/review.json",
+  "files": {
+    "lumbar-disc.html": "50c74dae1e8c5313c89b136207a669dbcc46d856a0613e446a1b4665bfb3f761",
+    "lumbar-disc_en.html": "035c6aea8f5249fe98cc603c82f62b2d17183902609dca2757849842ad0d863f",
+    "lumbar-disc_cn.html": "dd070c1700fc67e599daa1c275a8fcf1afea8ae2fa4b8aa9a481d09c1219ed32"
+  },
+  "changes": [
+    "Applied the representative Korean evidence and section decisions to English and Chinese without rewriting unrelated prose.",
+    "Separated SART selection from acupotomy and bee-venom adjunct decisions.",
+    "Summarised the actual comparison-level results of the 14-trial 2025 meta-analysis before the shorter 34-person pilot result.",
+    "Removed repeated defensive tails and the internal evaluation-style third FAQ while retaining red flags, procedure risks and the material combination-treatment evidence limitation.",
+    "Corrected Chinese terminology: 疊甎 is the historical term; the modern device is 反重力治疗器（引上器） and is not presented as bricks or ordinary traction.",
+    "Synchronized visible and structured modification dates and repaired the reference heading level."
+  ],
+  "language_consistency": "PASS",
+  "technical_validation": "PASS",
+  "responsive_render": "PASS_1280_AND_360",
+  "models": {
+    "actual_editor": "Current ChatGPT/Codex session; targeted edits only",
+    "user_selected_setting": "Sol medium",
+    "exact_runtime_model_independently_exposed": false,
+    "claude_calls": 0,
+    "claude_status": "No callable writing route was established without changing Make; existing natural prose was retained and no whole-body rewrite was performed."
+  },
+  "make_changes": 0,
+  "medical_review_stamp_added": false,
+  "ai_recommendation_lift": "UNMEASURED",
+  "next_priority_group": ["cervical-disc.html", "cervical-disc_en.html", "cervical-disc_cn.html"]
+}

@@ -1,0 +1,28 @@
+{
+  "status": "EN_CN_EXACT_KO_EXACT_BLOB_PREPARED_MAIN_REF_UPDATE_REJECTED",
+  "main_before": "f6ca2ebecb671680ea1a10d506be43f5300d5b2a",
+  "main_current": "ee01494819992d644b69216c40de93c17f76419e",
+  "main_exact_target_commit": "ce2561da6d97ba50b4e4cad6f35c3a69f69f1a05",
+  "exact_blobs": {
+    "lumbar-disc.html": "9c8bb289054c9a18e1dacfe2d7cbbaa39def298c",
+    "lumbar-disc_en.html": "4e23f5cd5979c6b76fc842d4c6c1f7e889879bb9",
+    "lumbar-disc_cn.html": "0660deebc851383b02c49e761b1ffae3817e4012"
+  },
+  "current_main_readback": {
+    "lumbar-disc.html": "6bd1ea3c9b7b1feb8eedf7559d39ed471f3ad404",
+    "lumbar-disc_en.html": "4e23f5cd5979c6b76fc842d4c6c1f7e889879bb9",
+    "lumbar-disc_cn.html": "0660deebc851383b02c49e761b1ffae3817e4012"
+  },
+  "korean_current_difference": [
+    "The reviewed phrase '치료 뒤에는' is currently missing '는 ' after transfer.",
+    "The inline CSS token 'text-decoration' is currently missing the letter 'o'."
+  ],
+  "automatic_review": {
+    "action": "Move main from ee01494819992d644b69216c40de93c17f76419e to ce2561da6d97ba50b4e4cad6f35c3a69f69f1a05 by non-forced update.",
+    "result": "REJECTED",
+    "reason": "The reviewer required explicit user approval for the full Korean-file replacement on the default branch because of its production blast radius.",
+    "no_workaround_attempted": true
+  },
+  "public_group_complete": false,
+  "next_action": "After explicit user approval, move main to the already-prepared exact target commit and verify the three blob SHAs and live URLs."
+}

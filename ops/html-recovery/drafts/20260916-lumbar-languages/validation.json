@@ -1,0 +1,81 @@
+{
+  "en": {
+    "checks": {
+      "one_h1": true,
+      "numbered_sections_1_to_7": true,
+      "references_heading_h2": true,
+      "styles_unchanged": true,
+      "emergency_guidance_unchanged": true,
+      "image_files_dimensions_loading_preserved": true,
+      "image_alts_present": true,
+      "all_previous_links_retained": true,
+      "one_primary_abstract_link_added": true,
+      "unique_ids": true,
+      "local_fragments_resolve": true,
+      "json_ld_valid": true,
+      "schema_date_updated": true,
+      "visible_date_matches": true,
+      "two_relevant_faqs_schema_and_visible": true,
+      "no_internal_concrete_reason_faq": true,
+      "no_false_review_stamp": true,
+      "meta_analysis_result_and_limit_present": true,
+      "pilot_null_result_present": true,
+      "bodyall_selection_and_retest_present": true,
+      "verified_count_preserved": true,
+      "procedure_risks_preserved": true,
+      "abstract_link_present": true
+    },
+    "all_checks_passed": true,
+    "source_sha": "90ef9712e89a01841cf0e28ff368c7b5beecb190",
+    "candidate_sha256": "035c6aea8f5249fe98cc603c82f62b2d17183902609dca2757849842ad0d863f",
+    "bytes": 32912,
+    "images": 5,
+    "links": 42,
+    "visible_faqs": [
+      "Q. Do lumbar disc herniation and spinal stenosis always require surgery?",
+      "Q. Do I have to receive SART, acupotomy and bee-venom pharmacopuncture together?"
+    ]
+  },
+  "cn": {
+    "checks": {
+      "one_h1": true,
+      "numbered_sections_1_to_7": true,
+      "references_heading_h2": true,
+      "styles_unchanged": true,
+      "emergency_guidance_unchanged": true,
+      "image_files_dimensions_loading_preserved": true,
+      "image_alts_present": true,
+      "all_previous_links_retained": true,
+      "one_primary_abstract_link_added": true,
+      "unique_ids": true,
+      "local_fragments_resolve": true,
+      "json_ld_valid": true,
+      "schema_date_updated": true,
+      "visible_date_matches": true,
+      "two_relevant_faqs_schema_and_visible": true,
+      "no_internal_concrete_reason_faq": true,
+      "no_false_review_stamp": true,
+      "meta_analysis_result_and_limit_present": true,
+      "pilot_null_result_present": true,
+      "bodyall_selection_and_retest_present": true,
+      "verified_count_preserved": true,
+      "procedure_risks_preserved": true,
+      "abstract_link_present": true,
+      "historical_term_correct": true,
+      "modern_device_name_correct": true,
+      "no_korean_device_mistranslation": true,
+      "no_literal_simplified_brick_translation": true,
+      "not_presented_as_ordinary_traction": true
+    },
+    "all_checks_passed": true,
+    "source_sha": "dd7a54a164340fbc36a4c2f15c5d30d3337175c4",
+    "candidate_sha256": "dd070c1700fc67e599daa1c275a8fcf1afea8ae2fa4b8aa9a481d09c1219ed32",
+    "bytes": 30737,
+    "images": 5,
+    "links": 42,
+    "visible_faqs": [
+      "问：腰椎间盘突出与腰椎管狭窄都必须手术吗？",
+      "问：SART、针刀和蜂毒药针必须一起接受吗？"
+    ]
+  }
+}

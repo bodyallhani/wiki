@@ -1,0 +1,16 @@
+{
+  "representative_ko_sha256": "50c74dae1e8c5313c89b136207a669dbcc46d856a0613e446a1b4665bfb3f761",
+  "en_sha256": "035c6aea8f5249fe98cc603c82f62b2d17183902609dca2757849842ad0d863f",
+  "cn_sha256": "dd070c1700fc67e599daa1c275a8fcf1afea8ae2fa4b8aa9a481d09c1219ed32",
+  "checks": {
+    "three_languages_use_same_topic": true,
+    "meta_14_trials": true,
+    "combination_result_varies": true,
+    "pilot_between_group_null": true,
+    "device_historical_modern_meaning": true,
+    "sart_sacroiliac_retest": true,
+    "experience_date": true,
+    "document_date": true
+  },
+  "all_checks_passed": true
+}
