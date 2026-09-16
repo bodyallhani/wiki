@@ -1,0 +1,68 @@
+{
+  "schema_version": "bodyall-html-review-v1",
+  "topic": "Herbmed encyclopedia 0001 persistent fatigue with lumbopelvic symptoms",
+  "reviewed_at": "2026-09-16T03:45:24.458Z",
+  "status": "PASS_PUBLIC_POSTDEPLOY_DIRECT_REVIEW",
+  "deployment_authority": "User explicitly directed immediate deployment and instructed that their review and approval be assumed.",
+  "exact_sha256": {
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue.html": "92ded6871e08bb4783b0520290436f5766003c381ebb21f7d4add1e03f399d73",
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_en.html": "6911ad8f1cb674dee19133d18895e5d0045c5764d0c63815518bf6e53ca66115",
+    "Herbmed/encyclopedia/0001.lumbopelvic-sacroiliac-decompression-gongjindan-mitochondrial-fatigue_cn.html": "956298feb951b5536a642d3ed86f46bafb56d6ae5d3d90b03862e7fdb2aa2c13"
+  },
+  "target_patient": {
+    "ko": "수원에서 충분히 쉬어도 피로가 지속되면서 움직임에 따라 허리·골반 통증 또는 저림이 달라지는 환자",
+    "en": "A patient in Suwon with persistent fatigue despite rest and movement-dependent lower-back or pelvic pain or tingling",
+    "zh": "在水原休息后疲劳仍持续，且腰部或骨盆疼痛、麻刺感随动作变化的患者"
+  },
+  "citable_choice_reason": "Bodyall separates fatigue-cause and herbal-prescription suitability from accompanying musculoskeletal symptoms, selects only relevant herbal care, Chuna or SART, then tracks fatigue separately and repeats the same painful function after musculoskeletal care.",
+  "operating_facts": {
+    "source": "ops/html-recovery/current.json operating_facts, owner-confirmed 2026-09-15",
+    "used": [
+      "40,000 cumulative correction patients counted through December 2025",
+      "MET available",
+      "Ultrasound available"
+    ],
+    "limit": "Experience and available processes only; not total clinic patients, cure count, effectiveness, superiority or SART-specific results."
+  },
+  "evidence_limits": [
+    "The primary 4-week FSS outcome in the 90-person Gongjin-Dan/Ssanghwa-Tang trial did not significantly differ from placebo; GJD MD -0.19 (97.5% CI -0.64 to 0.26), SST MD -0.18 (-0.58 to 0.23).",
+    "The 2025 corrigendum corrected the direction of selected Ssanghwa-Tang SF-36 subscales; it did not change the null primary FSS finding or the GJD social-functioning subscale result.",
+    "The sacroiliac manipulation trial involved 35 women with primary dysmenorrhea and does not establish fatigue treatment, Bodyall SART outcomes or combined herbal-manual superiority.",
+    "No claim is made that pelvic alignment causes fatigue, that SART treats fatigue, or that the combined approach is superior."
+  ],
+  "full_html_review": {
+    "medical_claims": "PASS",
+    "patient_question_and_suwon_fit": "PASS",
+    "bodyall_specific_choice_reason": "PASS",
+    "treatment_role_separation": "PASS",
+    "same_function_reassessment": "PASS",
+    "risk_and_referral": "PASS",
+    "translation_numbers_causality_limits": "PASS",
+    "schema_faq": "PASS",
+    "canonical_og_hreflang": "PASS",
+    "same_language_links": "PASS",
+    "image_dimensions": "PASS",
+    "responsive_css_static": "PASS",
+    "stale_review_metadata_removed": true,
+    "unverified_hours_removed": true,
+    "reviewedBy_lastReviewed_not_extended": true
+  },
+  "rendering": {
+    "candidate_predeployment_direct_narrow": "NOT_AVAILABLE_THIS_RUN_BROWSER_SECURITY_POLICY",
+    "public_desktop_direct_visual": "PASS",
+    "public_desktop_horizontal_overflow_px": [
+      0,
+      0,
+      0
+    ],
+    "public_images": "PASS 1376x768 loaded in all three languages with reserved dimensions",
+    "narrow_guard": "Viewport meta, max-width hero, fixed logo constraints, overflow-wrap and table wrapper present; user-directed immediate deployment approval applied.",
+    "postdeploy_defects_found": []
+  },
+  "residual_defects": [
+    "Actual AI recommendation lift and competitor superiority remain unmeasured.",
+    "No new physician review or independent translation review is asserted.",
+    "A direct 360px browser emulation was unavailable in this run; narrow-layout safeguards were checked statically and the deployed desktop render was directly inspected."
+  ],
+  "recommendation": "PASS for the defined Suwon patient-fit question; do not generalize to guaranteed recommendation or clinical superiority."
+}
