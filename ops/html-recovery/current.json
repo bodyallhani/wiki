@@ -143,34 +143,37 @@
     "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html",
     "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
     "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
-    "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html"
+    "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
+    "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
+    "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
+    "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html"
   ],
   "active_run": {
-    "owner": "herb0008-phase1-release-20260916",
+    "owner": "bodyallfit0002-phase1-release-20260916",
     "single_writer_active": false,
-    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_EXACT",
-    "base_main_head": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
-    "final_main_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
+    "stage": "COMPLETED_PUBLIC_VERIFIED_LEDGER_CONFIRMATION_PENDING",
+    "base_main_head": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
+    "final_main_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
     "source_blobs": {
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html": "f0c49f575b523aef52e69f7a515d0950fdf7cf9f",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html": "f0abe0584dc9f2710937219f075959a1453642f4",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html": "b54125f85ab3aa4806acee9caa079520e67053e0"
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html": "2672e900cfa65fdbb50ad97a569e3bf7eb66bed1",
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html": "9ac86525e8c56307001e9af845614064c9ea789d",
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html": "cbb2aebb6095c9c481a6601dc8aa009f9afa6919"
     },
     "exact_candidate_hashes": {
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html": "3032f8c67aaef75687110f8ae2ace1af649537c7d549f5456de5f4c7fa51dd4f",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html": "7f126e1b1bb6c816d1336efb09c39d2df5ca9fc5fe6dec164b8c211085cca9f6",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html": "01fc068756d96da42612e7bf6d61bb388336a8fc375a3d64ec2125d6b1d72f66"
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html": "ee786e3ceba2cdd7ea0cc72d0cc01547cc1b4a19eae3bf1d202363a27a6cd4ed",
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html": "2bddcac480670675aa8961fbdbd6faa5b055c4bd61adbfdefd584ba9739a74a2",
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html": "cb436d2263d699c307ea0e7627a27fef7ca45152b80e819db2e4214a078cb15a"
     },
     "published_blobs": {
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html": "13409e328ca78181f23bef414d422f56d143cbc7",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html": "eb27868c89d69ba1f0535d345ec47a6de5db3c2c",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html": "49d42f72397d1b3dc3b5d914560c36c47949f3d9"
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html": "ce0aa8e5ebee3a13ef0a4b0c821c866793be30fa",
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html": "480c060d55fb0d39e51d1eba161397f01f963dd8",
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html": "9dd67ffff02b62d0c8384ea2c28ec5280f1fc53f"
     },
-    "review_record": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
-    "release_record": "ops/html-recovery/runs/20260916-herb0008-release.json",
-    "completed_at": "2026-09-16T05:42:44.468Z",
-    "ledger_exact_readback": true,
-    "required_next": "Resume BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html, _en.html and _cn.html from the freshly read ledger; preserve its BMR-image consistency hold unless actually resolved."
+    "review_record": "ops/html-recovery/reviews/20260916-bodyallfit0002-final-candidate.json",
+    "release_record": "ops/html-recovery/runs/20260916-bodyallfit0002-release.json",
+    "completed_at": "2026-09-16T05:59:27.019Z",
+    "ledger_exact_readback": false,
+    "required_next": "Resume BodyallFit encyclopedia 0005 KO/EN/CN from the freshly read ledger; preserve the missing-two-images hold unless resolved by removing broken references or using already-existing verified assets without creating new images."
   },
   "additional_index_completion_rows": [
     {
@@ -3307,6 +3310,69 @@
         "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
         "Direct 360px browser emulation was unavailable; responsive CSS and reserved image dimensions passed static review and public desktop overflow was zero."
       ]
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "sha256": "ee786e3ceba2cdd7ea0cc72d0cc01547cc1b4a19eae3bf1d202363a27a6cd4ed",
+      "git_blob": "ce0aa8e5ebee3a13ef0a4b0c821c866793be30fa",
+      "publication_commit": "8f2a52c528fe258b2e4b614210e79bbb2f53e2a5",
+      "final_repository_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0002-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0002-release.json",
+      "verified_at": "2026-09-16T05:59:27.019Z",
+      "limits": [
+        "ACOG postpartum activity guidance does not establish BodyallFit or herbal efficacy.",
+        "The Menopause Society distinguishes aging/lifestyle weight gain from menopause-related abdominal redistribution.",
+        "NICE obesity guidance supports multicomponent assessment and management but not the exact BodyallFit combination.",
+        "No independent outcome evidence establishes BMR restoration, spot reduction or superiority for this pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; responsive CSS and public desktop overflow were checked."
+      ]
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "sha256": "2bddcac480670675aa8961fbdbd6faa5b055c4bd61adbfdefd584ba9739a74a2",
+      "git_blob": "480c060d55fb0d39e51d1eba161397f01f963dd8",
+      "publication_commit": "1fdc5baf610f79ce4e98b0173c4f2cfa805078c2",
+      "final_repository_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0002-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0002-release.json",
+      "verified_at": "2026-09-16T05:59:27.019Z",
+      "limits": [
+        "ACOG postpartum activity guidance does not establish BodyallFit or herbal efficacy.",
+        "The Menopause Society distinguishes aging/lifestyle weight gain from menopause-related abdominal redistribution.",
+        "NICE obesity guidance supports multicomponent assessment and management but not the exact BodyallFit combination.",
+        "No independent outcome evidence establishes BMR restoration, spot reduction or superiority for this pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; responsive CSS and public desktop overflow were checked."
+      ]
+    },
+    {
+      "path": "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
+      "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
+      "status": "LATEST_STANDARD_PUBLISHED_PUBLIC_VERIFIED",
+      "latest_standard_completed": true,
+      "sha256": "cb436d2263d699c307ea0e7627a27fef7ca45152b80e819db2e4214a078cb15a",
+      "git_blob": "9dd67ffff02b62d0c8384ea2c28ec5280f1fc53f",
+      "publication_commit": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
+      "final_repository_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
+      "review_receipt": "ops/html-recovery/reviews/20260916-bodyallfit0002-final-candidate.json",
+      "verification_receipt": "ops/html-recovery/runs/20260916-bodyallfit0002-release.json",
+      "verified_at": "2026-09-16T05:59:27.019Z",
+      "limits": [
+        "ACOG postpartum activity guidance does not establish BodyallFit or herbal efficacy.",
+        "The Menopause Society distinguishes aging/lifestyle weight gain from menopause-related abdominal redistribution.",
+        "NICE obesity guidance supports multicomponent assessment and management but not the exact BodyallFit combination.",
+        "No independent outcome evidence establishes BMR restoration, spot reduction or superiority for this pathway.",
+        "Actual non-branded AI baseline/after recommendation lift remains unmeasured.",
+        "Direct 360px browser emulation was unavailable; responsive CSS and public desktop overflow were checked."
+      ]
     }
   ],
   "constraints": {
@@ -3326,11 +3392,11 @@
     "count_is_current_verified_lower_bound": true,
     "existing_rework_verified_under_20260915_request": 13,
     "historically_accepted_not_yet_reworked_under_20260915_request": 72,
-    "latest_standard_not_confirmed_or_remaining": 12,
-    "latest_standard_published_confirmed": 144,
+    "latest_standard_not_confirmed_or_remaining": 9,
+    "latest_standard_published_confirmed": 147,
     "new_publications_this_turn": 3,
-    "phase1_strengthened_completed": 59,
-    "phase1_strengthened_remaining": 12,
+    "phase1_strengthened_completed": 62,
+    "phase1_strengthened_remaining": 9,
     "priority_strengthened_completed": 35,
     "priority_strengthened_remaining": 0,
     "priority_strengthened_total": 35,
@@ -3422,55 +3488,55 @@
   ],
   "latest_local_run": "/workspace/scratch/5408c4109307/priority_hubs_20260915/herbal",
   "latest_progress": {
-    "at": "2026-09-16T05:42:44.468Z",
+    "at": "2026-09-16T05:59:27.019Z",
     "candidates_prepared": 3,
     "completed_this_run": 3,
     "reworked_this_run": 0,
     "additional_index_completed_this_run": 0,
-    "public_completed": 144,
-    "remaining": 12,
+    "public_completed": 147,
+    "remaining": 9,
     "priority_completed": 35,
     "priority_remaining": 0,
     "additional_index_completed": 8,
     "prepared_next_group": 0,
     "prepared_next_stage": "NOT_STARTED",
-    "result": "Herbmed 0008 KO/EN/CN were corrected, deployed and publicly verified. Unsupported deterministic craniocervical/vagus/baroreflex/slow-wave-sleep, cerebral-delivery and combined-care claims were removed; insomnia/palpitation triage, separate treatment roles and same-measure reassessment are explicit. Next is BodyallFit 0002 KO/EN/CN.",
-    "next_record": "ops/html-recovery/runs/20260916-herb0008-release.json",
+    "result": "BodyallFit 0002 KO/EN/CN were corrected, deployed and publicly verified. The BMR figure hold was resolved by removing the inaccurate mechanism image; BMR-restoration, spot-reduction and safety/effectiveness overclaims were removed. Next is BodyallFit 0005 KO/EN/CN, whose two missing-image hold must be handled without inventing assets.",
+    "next_record": "ops/html-recovery/runs/20260916-bodyallfit0002-release.json",
     "recommendation_measurement": "UNMEASURED"
   },
   "latest_recovery_persistence": {
-    "at": "2026-09-16T05:43:38.394Z",
-    "status": "EXACT_READBACK_CONFIRMED_AFTER_HERB0008_PUBLIC_RELEASE",
+    "at": "2026-09-16T05:59:27.019Z",
+    "status": "PENDING_EXACT_READBACK_AFTER_BODYALLFIT0002_PUBLIC_RELEASE",
     "candidate_files_exact": true,
-    "herb0008_source_record_exact": true,
+    "bodyallfit0002_source_record_exact": true,
     "review_record_exact": true,
     "release_record_exact": true,
-    "current_json_blob_before_confirmation": "361f6a2529d24a96458ee5660d66de083567ae1e"
+    "current_json_blob_before_confirmation": null
   },
   "latest_release": {
-    "topic": "Herbmed encyclopedia 0008 shallow sleep/night palpitations triage and separated Tian Wang Bu Xin Dan/neck-function care KO/EN/CN",
-    "base_commit": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
-    "final_commit": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
+    "topic": "BodyallFit encyclopedia 0002 postpartum and menopause abdominal weight care KO/EN/CN",
+    "base_commit": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
+    "final_commit": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
     "changed_files": [
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html"
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html"
     ],
     "newly_completed_existing_urls": [
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html"
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html"
     ],
     "reworked_existing_urls": [],
     "original156_count_delta": 3,
     "additional_index_count_delta": 0,
     "new_urls": 0,
-    "receipt": "ops/html-recovery/runs/20260916-herb0008-release.json",
-    "review": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json"
+    "receipt": "ops/html-recovery/runs/20260916-bodyallfit0002-release.json",
+    "review": "ops/html-recovery/reviews/20260916-bodyallfit0002-final-candidate.json"
   },
   "latest_validation": {
     "status": "PASS_PUBLIC_USER_APPROVED_IMMEDIATE_DEPLOYMENT",
-    "record": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
+    "record": "ops/html-recovery/reviews/20260916-bodyallfit0002-final-candidate.json",
     "candidate_exact_recovery_readback": true,
     "candidate_static_content_schema_pass": true,
     "responsive_static_guard_pass": true,
@@ -3484,7 +3550,7 @@
     "public_schema_faq_pass": true,
     "public_images_loaded_with_reserved_dimensions": true,
     "public_overflow_zero": true,
-    "note": "Exact candidates passed full-source medical, evidence, translation, schema and responsive-CSS review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare, successful Pages workflow and direct public content/schema/image/desktop zero-overflow verification passed. Direct 360px recheck is retained in the final Sol anomaly sweep."
+    "note": "The inaccurate BMR mechanism figure and unsupported BMR-restoration/spot-reduction claims were removed. Exact KO/EN/CN candidates passed content, evidence, translation, metadata and schema review; sequential deployment, exact readback, intended-only compare, Pages success and direct public desktop/content/schema/image checks passed."
   },
   "legacy_next_before_existing_rework": "Resume existing encyclopedia/0003.foot-pain.html KO→EN→CN after freshly reading current.json, main head and target blobs. Prepare and personally inspect exact full HTML and desktop/narrow renders; deploy only if the Bodyall-specific recommendation-fit gate passes. Continue to the following topic in the same run when safe.",
   "model_review_followup": {
@@ -3499,7 +3565,8 @@
       "Recheck Herbmed encyclopedia 0005 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found.",
       "Recheck Herbmed encyclopedia 0006 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found.",
       "Recheck Herbmed encyclopedia 0007 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found.",
-      "Recheck Herbmed encyclopedia 0008 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found."
+      "Recheck Herbmed encyclopedia 0008 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found.",
+      "Recheck BodyallFit encyclopedia 0002 KO/EN/CN at 360px in the final Sol anomaly sweep; only repair if an actual layout defect is found."
     ],
     "issues": [
       {
@@ -3736,11 +3803,31 @@
         "topic": "Herbmed encyclopedia 0008 narrow render",
         "issue": "Direct 360px browser emulation was unavailable; responsive guards passed static review and public desktop overflow was zero.",
         "status": "DEFERRED_FINAL_SOL_RECHECK"
+      },
+      {
+        "topic": "BodyallFit encyclopedia 0002 BMR image",
+        "issue": "The second illustration visually implied unsupported BMR diagnosis and restoration from abdominal appearance.",
+        "status": "REMOVED_BEFORE_PUBLICATION_HOLD_RESOLVED"
+      },
+      {
+        "topic": "BodyallFit encyclopedia 0002 claims",
+        "issue": "Source asserted BMR restoration, thermogenesis correction, fluid removal, uterine/pelvic circulation recovery, sarcopenia prevention, body-fat-centered loss and safe/effective treatment beyond evidence.",
+        "status": "CORRECTED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "BodyallFit encyclopedia 0002 Chinese metadata",
+        "issue": "Chinese og:url omitted the 0002 filename prefix.",
+        "status": "CORRECTED_BEFORE_PUBLICATION"
+      },
+      {
+        "topic": "BodyallFit encyclopedia 0002 narrow render",
+        "issue": "Direct 360px browser emulation was unavailable; responsive guards and public desktop zero-overflow passed.",
+        "status": "DEFERRED_FINAL_SOL_RECHECK"
       }
     ]
   },
-  "next": "RESUME PHASE1 BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html KO→EN→CN: preserve the document-specific BMR image-consistency hold, verify evidence and full HTML, deploy immediately only after the defect is actually resolved or safely removed, then publicly verify.",
-  "next_priority": "RESUME PHASE1 BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html KO→EN→CN: preserve the document-specific BMR image-consistency hold, verify evidence and full HTML, deploy immediately only after the defect is actually resolved or safely removed, then publicly verify.",
+  "next": "RESUME PHASE1 BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html KO→EN→CN: resolve the document-specific two-missing-images hold without creating new assets, verify stress/edema/craving claims and the full HTML, then deploy immediately and publicly verify.",
+  "next_priority": "RESUME PHASE1 BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html KO→EN→CN: resolve the document-specific two-missing-images hold without creating new assets, verify stress/edema/craving claims and the full HTML, then deploy immediately and publicly verify.",
   "objective": {
     "editorial_rule": "State verified strengths confidently; remove repetitive defensive caveats while retaining material risks and essential evidence limits.",
     "measurement_rule": "Editorial completion is separate from measured recommendation lift. Mention, citation and eligible recommendation must be counted separately using real fixed-query responses.",
@@ -3856,13 +3943,13 @@
     "status": "OWNER_PRIVATE_REVIEW_AVAILABLE"
   },
   "previous_existing_recovery_persistence": {
-    "at": "2026-09-16T05:09:25.399Z",
+    "at": "2026-09-16T05:43:38.394Z",
+    "status": "EXACT_READBACK_CONFIRMED_AFTER_HERB0008_PUBLIC_RELEASE",
     "candidate_files_exact": true,
-    "current_json_blob_before_confirmation": "dd0d65b7f8e44b364efbd3f4dfd79581656f3e3f",
-    "herb0007_source_record_exact": true,
-    "release_record_exact": true,
+    "herb0008_source_record_exact": true,
     "review_record_exact": true,
-    "status": "EXACT_READBACK_CONFIRMED_AFTER_HERB0007_PUBLIC_RELEASE"
+    "release_record_exact": true,
+    "current_json_blob_before_confirmation": "361f6a2529d24a96458ee5660d66de083567ae1e"
   },
   "previous_existing_validation": {
     "asset_errors": 3,
@@ -3893,43 +3980,43 @@
     "run": "run_0008_final"
   },
   "previous_public_validation": {
+    "status": "PASS_PUBLIC_USER_APPROVED_IMMEDIATE_DEPLOYMENT",
+    "record": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json",
     "candidate_exact_recovery_readback": true,
     "candidate_static_content_schema_pass": true,
-    "intended_files_only_compare": true,
-    "main_readback_exact": true,
-    "note": "Exact candidates passed full-source medical, evidence, translation, schema and responsive-CSS review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare, successful Pages workflow and direct public desktop/content/schema/image verification passed. KO hero required one explicit reload and then loaded at 1376x768. Direct 360px recheck is retained in the final Sol anomaly sweep.",
+    "responsive_static_guard_pass": true,
     "predeployment_desktop_render_pass": false,
     "predeployment_narrow_render_pass": false,
+    "user_approved_immediate_deployment_override": true,
+    "main_readback_exact": true,
+    "intended_files_only_compare": true,
+    "public_verification": true,
     "public_desktop_visual_pass": true,
+    "public_schema_faq_pass": true,
     "public_images_loaded_with_reserved_dimensions": true,
     "public_overflow_zero": true,
-    "public_schema_faq_pass": true,
-    "public_verification": true,
-    "record": "ops/html-recovery/reviews/20260916-herb0007-final-candidate.json",
-    "responsive_static_guard_pass": true,
-    "status": "PASS_PUBLIC_USER_APPROVED_IMMEDIATE_DEPLOYMENT",
-    "user_approved_immediate_deployment_override": true
+    "note": "Exact candidates passed full-source medical, evidence, translation, schema and responsive-CSS review. Sequential optimistic-lock deployment, exact main readback, intended-files-only compare, successful Pages workflow and direct public content/schema/image/desktop zero-overflow verification passed. Direct 360px recheck is retained in the final Sol anomaly sweep."
   },
   "previous_release": {
-    "additional_index_count_delta": 0,
-    "base_commit": "37db877200073183564c89df7e53101cf7f9c1c2",
+    "topic": "Herbmed encyclopedia 0008 shallow sleep/night palpitations triage and separated Tian Wang Bu Xin Dan/neck-function care KO/EN/CN",
+    "base_commit": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
+    "final_commit": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
     "changed_files": [
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html"
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html"
     ],
-    "final_commit": "c0adb8222182400b2e071f1d70a0876dac9b55ce",
-    "new_urls": 0,
     "newly_completed_existing_urls": [
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue.html",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_en.html",
-      "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html"
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html"
     ],
-    "original156_count_delta": 3,
-    "receipt": "ops/html-recovery/runs/20260916-herb0007-release.json",
-    "review": "ops/html-recovery/reviews/20260916-herb0007-final-candidate.json",
     "reworked_existing_urls": [],
-    "topic": "Herbmed encyclopedia 0007 persistent fatigue triage and separated Bojungikgi-tang/trunk care KO/EN/CN"
+    "original156_count_delta": 3,
+    "additional_index_count_delta": 0,
+    "new_urls": 0,
+    "receipt": "ops/html-recovery/runs/20260916-herb0008-release.json",
+    "review": "ops/html-recovery/reviews/20260916-herb0008-final-candidate.json"
   },
   "previous_release_recovery_persistence": {
     "at": "2026-09-16T04:50:10.512Z",
@@ -4301,7 +4388,7 @@
     "reason": "Do not republish private preview and recovery-artifact identifiers in a public repository."
   },
   "public_branch": "main",
-  "public_commit": "52183b70953ff1d34705809dfbf8bdfcae41faa0",
+  "public_commit": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
   "recovery_branch": "recovery/html-20260914",
   "related_hub_findings": [
     {
@@ -4311,7 +4398,7 @@
       "status": "HOLD_UNSUPPORTED_STRUCTURAL_AND_RECURRENCE_CLAIMS"
     }
   ],
-  "report_ko": "한약 백과 0008 KO/EN/CN을 수정·순차 배포하고 공개 내용·스키마·이미지·화면을 확인했습니다. 불면을 두개경추 배열·미주신경 압박·서파수면 억제로 단정하거나 SART가 미주신경 신호·뇌 미세순환·한약 전달을 회복한다는 주장을 제거하고, 불면·야간 두근거림 선별, 천왕보심단 등 한약 적합성, 동작과 연동된 목 기능 진료의 역할 분리 및 동일 지표 재평가를 명확히 했습니다. 현재 144/156 완료, 잔여 12개이며 다음은 BodyallFit 0002 KO→EN→CN입니다. 해당 문서의 BMR 그림 정합성 보류는 실제 해결 전까지 유지합니다.",
+  "report_ko": "BodyallFit 백과 0002 KO/EN/CN을 수정·순차 배포하고 공개 내용·스키마·이미지·화면을 확인했습니다. 보류 원인이던 부정확한 BMR 도식을 삭제하고, BMR 회복·복부 지방 선택 감량·안전하고 효과적이라는 과장을 제거했습니다. 산후 회복과 갱년기를 구분하고 한약·식사·운동·생활관리 역할 및 동일 지표 재평가를 명확히 했습니다. 현재 147/156 완료, 잔여 9개이며 다음은 이미지 2개 누락 보류가 있는 BodyallFit 0005 KO→EN→CN입니다.",
   "repository": "bodyallhani/wiki",
   "restart_guard": {
     "exact_readback": true,
@@ -4422,8 +4509,8 @@
     "traffic-accident_cn.html",
     "traffic-accident_en.html"
   ],
-  "updated_at": "2026-09-16T05:43:38.394Z",
-  "version": "V277_HERB0008_PUBLIC_PASS_LEDGER_EXACT_NEXT_BODYALLFIT0002",
+  "updated_at": "2026-09-16T05:59:27.019Z",
+  "version": "V278_BODYALLFIT0002_PUBLIC_PASS_NEXT_BODYALLFIT0005",
   "work_order": {
     "authorized_at": "2026-09-15T11:27:47.408Z",
     "phase": "RESUME_PHASE1_PENDING",
@@ -4486,7 +4573,10 @@
       "Herbmed/encyclopedia/0007.thoracolumbar-core-stability-bojungikgi-tang-immune-chronic-fatigue_cn.html",
       "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia.html",
       "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_en.html",
-      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html"
+      "Herbmed/encyclopedia/0008.craniocervical-junction-vagus-nerve-tianwang-buxin-dan-slow-wave-sleep-insomnia_cn.html",
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
+      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html"
     ],
     "phase1_initial_paths": [
       "encyclopedia/0003.foot-pain.html",
@@ -4562,9 +4652,6 @@
       "Herbmed/encyclopedia/0002.cervicothoracic-junction-stellate-ganglion-yokukansan-hrv-insomnia_cn.html"
     ],
     "phase1_pending_paths": [
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
-      "BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html",
       "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html",
       "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html",
       "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html",
