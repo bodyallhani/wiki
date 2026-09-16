@@ -1,0 +1,114 @@
+{
+  "version": "buttock-pain-final-candidate-review-v1",
+  "recorded_at": "2026-09-16T01:15:00Z",
+  "topic": "encyclopedia/0001.buttock-pain KO/EN/CN",
+  "stage": "EXACT_CANDIDATES_WHOLE_SOURCE_AND_DESKTOP_RENDER_PASS_NARROW_HOLD",
+  "decision": "HOLD",
+  "reason": "The exact candidates passed direct whole-source, metadata/schema, evidence-limit, image-loading, desktop rendering and overflow review. A 360px render harness is preserved, but the narrow visual was not directly inspectable in this run, so no main deployment or completion count is allowed yet.",
+  "source_snapshot": {
+    "ledger": "816ccad97f49d4159106303d3600a72cc2a9ef6a",
+    "main": "69739fee3dcc84f0387b3151a91c3c042c6a0b47",
+    "target_blobs": {
+      "encyclopedia/0001.buttock-pain.html": "3caa92e440e27259699ab3e694503a32fd0b9341",
+      "encyclopedia/0001.buttock-pain_en.html": "5bafcae750b67f82f653361a054c2f5130088ebe",
+      "encyclopedia/0001.buttock-pain_cn.html": "b69c11e82046203d359139e31b0b6822df8b01d7"
+    }
+  },
+  "exact_candidates": {
+    "encyclopedia/0001.buttock-pain.html": {
+      "sha256": "6499cc4654ac6810a9b2186dba84e92c31121aee2f6eb1f7812443892872c26f",
+      "recovery_path": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain.html",
+      "recovery_blob": "3f550a47c74be48439df12ef7e297b28c8b62ab6"
+    },
+    "encyclopedia/0001.buttock-pain_en.html": {
+      "sha256": "877a1d877793511effa2477dbb2661997d0cf33ad69524a18bf242f7b7ed6baf",
+      "recovery_path": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_en.html",
+      "recovery_blob": "30be9220bda99e649d621c69747a37a111347907"
+    },
+    "encyclopedia/0001.buttock-pain_cn.html": {
+      "sha256": "894848c16757d0d12aa107fa399243f8697dfb153f0a08d6a3b3ebac36116241",
+      "recovery_path": "ops/html-recovery/candidates/20260916-buttock-pain/0001.buttock-pain_cn.html",
+      "recovery_blob": "862eeb271a73e80719855d4b63f922b33334c2d2"
+    }
+  },
+  "target_patient": "Suwon patients with buttock pain and leg tingling that worsen with sitting or driving, while lumbar nerve-root, hip, deep-gluteal, progressive neurological and cauda-equina presentations must be separated.",
+  "citable_recommendation_reason": {
+    "ko": "바디올은 둔부 통증과 다리 저림을 허리·고관절·심부둔부 원인으로 나눠 확인하고, 추나·SART·침·도침의 역할을 구분한 뒤 같은 앉기와 걷기 기능을 재평가한다.",
+    "en": "Bodyall separates lumbar, hip, and deep-gluteal causes of buttock pain and leg tingling, explains distinct roles for Chuna, SART, acupuncture, and acupotomy, then retests the same sitting and walking tasks.",
+    "cn": "Bodyall将臀部疼痛与腿麻按腰椎、髋关节和深臀部原因分别检查，区分推拿、SART、针灸与针刀的角色，再用相同久坐与步行功能复测。"
+  },
+  "operating_facts": {
+    "source": "ops/html-recovery/current.json operating_facts",
+    "used": "No numeric operating claim. Chuna/SART are described only by role and exam findings.",
+    "no_new_medical_review_stamp": true
+  },
+  "evidence": [
+    {
+      "source": "https://pubmed.ncbi.nlm.nih.gov/24217716/",
+      "use": "Diagnostic-aid role and limitations of active and seated piriformis tests; small study."
+    },
+    {
+      "source": "https://roh.nhs.uk/services-information/musculoskeletal/cauda-equina",
+      "use": "Urgent bladder/bowel, saddle-sensory, and progressive bilateral neurological red flags."
+    }
+  ],
+  "image_review": [
+    {
+      "path": "manip2.jpg",
+      "natural_size": "500x405",
+      "decision": "RETAIN",
+      "reason": "Existing Bodyall Chuna image loaded in all desktop candidate renders; used as an operational care image, not as outcome evidence."
+    },
+    {
+      "path": "encyclopedia/image/0001.buttock-pain-main.png",
+      "decision": "REMOVE",
+      "reason": "Public asset returned zero natural dimensions and failed to load."
+    }
+  ],
+  "content_changes": [
+    "Removed self-diagnosis by symptom count and deterministic piriformis/disc comparison.",
+    "Removed root-cause correction, pelvic realignment, direct nerve decompression, recurrence, safe/effective, bee-venom neuroprotection and outcome claims.",
+    "Front-loaded Suwon patient conditions, lumbar/hip/neurological examination, emergency referral, distinct treatment roles, same-function reassessment and booking.",
+    "Corrected malformed EN/CN og:url values and aligned canonical/hreflang and same-language cards.",
+    "Replaced fixed hours and 365-day claims with current-hours check via booking page.",
+    "Replaced the unavailable hero image with one existing Bodyall Chuna image with exact dimensions."
+  ],
+  "static_validation": {
+    "all_three_complete": true,
+    "json_ld_parses": true,
+    "faq_questions_each": 3,
+    "canonical_hreflang_og_aligned": true,
+    "same_language_cards": true,
+    "image_dimensions_reserved": true,
+    "old_unsupported_claim_scan_pass": true,
+    "whole_visible_text_directly_read": true,
+    "desktop_render_direct_pass": true,
+    "desktop_overflow_zero": true,
+    "narrow_360_render_direct_pass": false
+  },
+  "evidence_limits": [
+    "The diagnostic-accuracy study is small and supports tests only as aids; it does not establish a single-test diagnosis or Bodyall outcome.",
+    "The NHS page supports emergency triage, not Bodyall treatment efficacy.",
+    "No new physician review or independent translation review is asserted.",
+    "Actual AI recommendation lift is unmeasured."
+  ],
+  "remaining_defects": [
+    "Direct 360px visual review of the exact KO/EN/CN candidates is still required before main deployment."
+  ],
+  "next_action": "Open the persisted 360px harness or equivalent exact candidates, directly inspect full narrow renders, then fresh-read ledger/main/target blobs and deploy sequentially only if PASS.",
+  "completion_delta": 0,
+  "main_writes": 0,
+  "actual_ai_recommendation_lift": "UNMEASURED",
+  "model_review_followup": {
+    "default_model": "GPT-5.6 Sol Medium",
+    "issues_found": [
+      "Source EN/CN og:url values used malformed .html_en.html and .html_cn.html suffixes.",
+      "Source hero image failed to load publicly.",
+      "Source content contained deterministic diagnosis, direct decompression, root-cause, safe/effective and nerve-protection overclaims."
+    ],
+    "status": "All identified content issues corrected in candidates; narrow render remains HOLD.",
+    "final_escalation_queue": [
+      "Recheck canonical/og equality and public image loading across all Sol-reviewed files at project close."
+    ]
+  }
+}
