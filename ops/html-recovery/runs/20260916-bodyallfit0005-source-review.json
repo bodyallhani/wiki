@@ -1,0 +1,42 @@
+{
+  "run_id": "bodyallfit0005-phase1-release-20260916",
+  "reviewed_at": "2026-09-16T06:11:12.932Z",
+  "main_head": "b890ab4d76f20a83bdbac2ecb15b05f9a5033306",
+  "target_blobs": {
+    "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution.html": "f5ddf137ff445ddfb29b9aee5fa454c337a7d36b",
+    "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_en.html": "ff563dbb91880efa61d5151c24c1807b16a3eeaa",
+    "BodyallFit/encyclopedia/0005.stress-induced-edema-obesity-food-craving-hpa-axis-herbal-constitution_cn.html": "499da61ba7b8e00b5198d749ace139c4e086bc10"
+  },
+  "document_hold": "BodyallFit0005 two missing images",
+  "finding": "The main image directory contains neither referenced 0005 webp file. Both HTML references were broken.",
+  "resolution": "Remove both references from all three language files. Do not create new assets and do not substitute an unrelated image.",
+  "medical_findings": [
+    "Removed deterministic cortisol-to-edema/BMR causal claims and unsupported thermogenesis/BMR recovery claims.",
+    "Removed claims that constitution-specific herbal medicine corrects edema, restores basal metabolism, or has proven safe/effective weight-loss outcomes.",
+    "Separated swelling assessment from weight management and preserved urgent/referral signals.",
+    "Aligned management roles with BodyallFit: conditional herbal prescription, food, activity, sleep/lifestyle, followed by same-measure reassessment."
+  ],
+  "evidence": [
+    {
+      "source": "Torres & Nowson 2007 PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17869482/",
+      "limit": "Stress may increase or decrease intake; it does not prove an individual causal diagnosis or BodyallFit efficacy."
+    },
+    {
+      "source": "NICE NG246 (2025)",
+      "url": "https://www.nice.org.uk/guidance/ng246/chapter/Physical-activity-and-diet",
+      "limit": "Supports multicomponent weight management; does not establish BodyallFit herbal efficacy."
+    },
+    {
+      "source": "NHS lymphoedema",
+      "url": "https://www.nhs.uk/conditions/lymphoedema/",
+      "limit": "Supports separate assessment of persistent swelling."
+    },
+    {
+      "source": "NHS DVT",
+      "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+      "limit": "Supports urgent assessment for unilateral painful swelling with chest symptoms."
+    }
+  ],
+  "result": "PASS_FOR_EXACT_CANDIDATE_REVIEW"
+}
