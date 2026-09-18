@@ -1,9 +1,11 @@
 name: Notify IndexNow after Pages deployment
 
 on:
-  workflow_run:
-    workflows: ["pages build and deployment"]
-    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - 'sitemap.xml'
+      - '**.html'
   workflow_dispatch:
     inputs:
       scope:
@@ -17,22 +19,18 @@ permissions:
   contents: read
 
 concurrency:
-  group: indexnow-${{ github.event.workflow_run.head_branch || github.ref }}
+  group: indexnow-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
   notify:
-    if: >-
-      github.event_name == 'workflow_dispatch' ||
-      (github.event.workflow_run.conclusion == 'success' &&
-       github.event.workflow_run.head_branch == 'main')
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - name: Check out deployed revision
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.sha }}
+          ref: ${{ github.sha }}
           fetch-depth: 2
 
       - name: Select sitemap URLs to notify
@@ -40,7 +38,7 @@ jobs:
         env:
           EVENT_NAME: ${{ github.event_name }}
           REQUESTED_SCOPE: ${{ inputs.scope || 'changed' }}
-          HEAD_SHA: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.sha }}
+          HEAD_SHA: ${{ github.sha }}
         run: |
           python3 - <<'PY'
           import os
@@ -87,6 +85,10 @@ jobs:
               fh.write(f'file={output}\n')
           print(f'Selected {len(selected)} sitemap URL(s).')
           PY
+
+      - name: Give GitHub Pages time to publish the same revision
+        if: steps.urls.outputs.count != '0'
+        run: sleep 90
 
       - name: Verify IndexNow ownership key
         if: steps.urls.outputs.count != '0'
