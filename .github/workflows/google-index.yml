@@ -4,6 +4,11 @@ name: Validate sitemap for published HTML
 # No Google Indexing API requests are made by this workflow.
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'sitemap.xml'
+      - '**.html'
 
 permissions:
   contents: read

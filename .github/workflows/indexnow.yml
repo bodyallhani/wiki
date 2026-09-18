@@ -1,0 +1,140 @@
+name: Notify IndexNow after Pages deployment
+
+on:
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: 'Submit all sitemap URLs once, or only HTML files changed by this commit.'
+        required: true
+        default: changed
+        type: choice
+        options: [changed, all]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-${{ github.event.workflow_run.head_branch || github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == 'main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out deployed revision
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.sha }}
+          fetch-depth: 2
+
+      - name: Select sitemap URLs to notify
+        id: urls
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REQUESTED_SCOPE: ${{ inputs.scope || 'changed' }}
+          HEAD_SHA: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          python3 - <<'PY'
+          import os
+          import pathlib
+          import subprocess
+          import urllib.parse
+          import xml.etree.ElementTree as ET
+
+          root = pathlib.Path.cwd()
+          ns = '{http://www.sitemaps.org/schemas/sitemap/0.9}'
+          sitemap = ET.fromstring((root / 'sitemap.xml').read_text(encoding='utf-8'))
+          published = {
+              (entry.findtext(ns + 'loc') or '').strip()
+              for entry in sitemap.findall(ns + 'url')
+          }
+          scope = os.environ['REQUESTED_SCOPE']
+          if scope == 'all':
+              selected = published
+          else:
+              head = os.environ['HEAD_SHA']
+              try:
+                  parent = subprocess.check_output(
+                      ['git', 'rev-parse', head + '^'], text=True
+                  ).strip()
+                  changed = subprocess.check_output(
+                      ['git', 'diff', '--name-only', parent, head], text=True
+                  ).splitlines()
+              except subprocess.CalledProcessError:
+                  changed = []
+              selected = set()
+              for path in changed:
+                  if not path.endswith('.html'):
+                      continue
+                  if path == 'index.html':
+                      url = 'https://wiki.body-all.co.kr/'
+                  else:
+                      url = 'https://wiki.body-all.co.kr/' + urllib.parse.quote(path)
+                  if url in published:
+                      selected.add(url)
+          output = pathlib.Path(os.environ['RUNNER_TEMP']) / 'indexnow-urls.txt'
+          output.write_text('\n'.join(sorted(selected)) + ('\n' if selected else ''), encoding='utf-8')
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as fh:
+              fh.write(f'count={len(selected)}\n')
+              fh.write(f'file={output}\n')
+          print(f'Selected {len(selected)} sitemap URL(s).')
+          PY
+
+      - name: Verify IndexNow ownership key
+        if: steps.urls.outputs.count != '0'
+        id: key
+        run: |
+          key_file="$(find . -maxdepth 1 -type f -name '*.txt' -regextype posix-extended -regex './[A-Za-z0-9-]{8,128}\.txt' -print -quit)"
+          test -n "$key_file"
+          key="$(tr -d '\r\n' < "$key_file")"
+          test "$key" = "$(basename "$key_file" .txt)"
+          printf 'key=%s\n' "$key" >> "$GITHUB_OUTPUT"
+
+      - name: Notify IndexNow in one bounded batch
+        if: steps.urls.outputs.count != '0'
+        env:
+          INDEXNOW_KEY: ${{ steps.key.outputs.key }}
+          URL_FILE: ${{ steps.urls.outputs.file }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.error
+          import urllib.request
+
+          urls = [line.strip() for line in open(os.environ['URL_FILE'], encoding='utf-8') if line.strip()]
+          if len(urls) > 10_000:
+              raise SystemExit('Refusing to send more than IndexNow\'s 10,000-URL batch limit')
+          key = os.environ['INDEXNOW_KEY']
+          payload = json.dumps({
+              'host': 'wiki.body-all.co.kr',
+              'key': key,
+              'keyLocation': f'https://wiki.body-all.co.kr/{key}.txt',
+              'urlList': urls,
+          }).encode('utf-8')
+          request = urllib.request.Request(
+              'https://api.indexnow.org/indexnow', data=payload,
+              headers={'Content-Type': 'application/json; charset=utf-8'}, method='POST'
+          )
+          try:
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  status = response.status
+          except urllib.error.HTTPError as error:
+              if error.code == 429:
+                  print('IndexNow returned 429; no retry was made to avoid duplicate/spam submissions.')
+                  raise SystemExit(0)
+              raise
+          if not 200 <= status < 300:
+              raise SystemExit(f'IndexNow returned unexpected HTTP {status}')
+          print(f'IndexNow accepted {len(urls)} URL(s) with HTTP {status}.')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as output:
+              output.write(f'IndexNow accepted {len(urls)} URL(s) (HTTP {status}).\n')
+          PY
