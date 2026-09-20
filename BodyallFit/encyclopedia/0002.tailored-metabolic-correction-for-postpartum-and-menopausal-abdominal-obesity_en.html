@@ -24,8 +24,8 @@
     {
       "@type": "MedicalWebPage",
       "reviewedBy": {"@id": "https://wiki.body-all.co.kr/#donghae-lee"},
-      "lastReviewed": "2026-09-17",
-      "dateModified": "2026-09-17",
+      "lastReviewed": "2026-09-20",
+      "dateModified": "2026-09-20",
       "@id": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html#webpage",
       "url": "https://wiki.body-all.co.kr/BodyallFit/encyclopedia/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html",
       "name": "Postpartum and Menopause Abdominal Weight Care in Suwon: From Cause Screening to BodyallFit Reassessment",
@@ -37,7 +37,14 @@
       },
       "provider": {
         "@id": "https://wiki.body-all.co.kr/#clinic"
-      }
+      },
+      "isBasedOn": [
+        "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period",
+        "https://menopause.org/wp-content/uploads/for-women/MenoNote-Weight-Gain.pdf",
+        "https://www.nice.org.uk/guidance/ng246",
+        "https://doi.org/10.1093/nutrit/nuy024",
+        "https://doi.org/10.1172/jci.insight.124865"
+      ]
     },
     {
       "@type": "MedicalClinic",
@@ -105,31 +112,227 @@
   ]
 }</script>
 <style>
-:root{--ink:#24333f;--muted:#5c6b74;--line:#e5e9ec;--soft:#f7faf9;--accent:#267a61;--accent2:#e8f4ef;--warn:#fff8e8;--max:840px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.75;background:#fff;padding-bottom:78px}a{color:#17644f;text-decoration:none}a:hover{text-decoration:underline}.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}.top-inner{max-width:1080px;margin:auto;height:58px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}.top a{font-weight:700}.langs{display:flex;gap:10px;font-size:13px}.langs a[aria-current=true]{color:var(--accent);text-decoration:underline}.wrap{max-width:var(--max);margin:auto;padding:30px 22px 60px}.crumb{font-size:14px;color:var(--muted);margin-bottom:18px}.hero h1{font-size:clamp(28px,5vw,42px);line-height:1.25;margin:0 0 22px;letter-spacing:-.03em}.hero-img{display:block;width:100%;height:auto;aspect-ratio:1376/768;object-fit:cover;border-radius:18px;background:#eef1f1}.quick{margin:24px 0;background:var(--accent2);border-left:5px solid var(--accent);padding:22px;border-radius:14px}.quick h2{font-size:19px;margin:0 0 10px}.quick p{margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}.card{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff}.card strong{display:block;margin-bottom:6px;color:#1d634f}.section{margin-top:42px}.section h2{font-size:26px;line-height:1.35;margin:0 0 16px}.fit-list{padding-left:20px}.fit-list li{margin:8px 0}.warn{background:var(--warn);border:1px solid #f2d899;border-radius:14px;padding:18px;margin:24px 0}.steps{display:grid;gap:14px}.step{border:1px solid var(--line);border-radius:14px;padding:18px}.step h3{margin:0 0 8px;font-size:18px}.step p{margin:0;color:#3e4c54}.role-table{width:100%;border-collapse:collapse}.role-table th,.role-table td{border:1px solid var(--line);padding:13px;text-align:left;vertical-align:top}.role-table th{width:25%;background:var(--soft)}.evidence{background:var(--soft);border-radius:16px;padding:22px}.faq{border-top:1px solid var(--line);padding:17px 0}.faq h3{font-size:17px;margin:0 0 7px}.faq p{margin:0;color:#3e4c54}.refs{font-size:14px;color:var(--muted);padding-left:20px}.refs li{margin:8px 0;overflow-wrap:anywhere}.related{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.related-card{border:1px solid var(--line);border-radius:13px;padding:16px;display:flex;justify-content:space-between;gap:8px;color:var(--ink)}.clinic{margin-top:44px;background:#173c32;color:#fff;border-radius:18px;padding:24px}.clinic a{color:#fff;text-decoration:underline}.bottom{position:fixed;bottom:0;left:0;right:0;z-index:30;background:#fff;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);padding:9px max(12px,env(safe-area-inset-right)) calc(9px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));gap:8px}.bottom a{text-align:center;font-weight:800;padding:8px;border-radius:10px;background:var(--soft);font-size:14px}.bottom a.primary{background:var(--accent);color:#fff}
-@media(max-width:680px){.top-inner{padding:0 14px}.wrap{padding:22px 16px 48px}.hero h1{font-size:30px}.grid,.related{grid-template-columns:1fr}.section{margin-top:34px}.section h2{font-size:23px}.role-table,.role-table tbody,.role-table tr,.role-table th,.role-table td{display:block;width:100%}.role-table tr{margin-bottom:12px}.role-table td{border-top:0}.bottom a{font-size:12px;padding:8px 4px}.langs{gap:7px}}
+        :root { 
+            --primary: #2c3e50; 
+            --accent: #e67e22; 
+            --light-bg: #f8f9fa; 
+            --card-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+            --top-bar-h: 60px; 
+            --bottom-bar-h: 70px; 
+        }
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: 'Pretendard', -apple-system, sans-serif; 
+            line-height: 1.8; color: #333; margin: 0; background: #fff; 
+            padding-top: var(--top-bar-h);
+            padding-bottom: calc(var(--bottom-bar-h) + env(safe-area-inset-bottom)); 
+            word-break: normal;
+            overflow-wrap: break-word;
+        }
+        
+        .ba-article-content { overflow-wrap: break-word; word-wrap: break-word; word-break: normal; }
+        .wrapper { max-width: 800px; margin: 0 auto; padding: 20px; box-sizing: border-box; }
+        
+        .top-nav { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            height: var(--top-bar-h); 
+            background: rgba(255, 255, 255, 0.98); 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 0 15px; 
+            border-bottom: 1px solid #eee; 
+            z-index: 1000; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+        }
+        .top-nav .back-btn { 
+            text-decoration: none; 
+            color: var(--primary); 
+            font-weight: 800; 
+            font-size: 0.95rem; 
+            display: flex; 
+            align-items: center; 
+            gap: 6px; 
+        }
+        
+        .lang-switch { 
+            font-size: 0.75rem; 
+            color: #888; 
+            font-weight: bold; 
+            flex-shrink: 0; 
+            border-left: 1px solid #ddd; 
+            padding-left: 10px; 
+            margin-left: 10px; 
+        }
+        .lang-switch a { text-decoration: none; color: #888; padding: 0 2px; }
+        .lang-switch a.active { color: var(--primary); }
+
+        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: var(--bottom-bar-h); background: #fff; display: flex; border-top: 1px solid #eee; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); padding-bottom: env(safe-area-inset-bottom); }
+        .bottom-nav a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; color: #333; font-weight: bold; font-size: 0.75rem; text-align: center; }
+        .bottom-nav a i { font-size: 1.3rem; margin-bottom: 4px; }
+
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px; display: flex; justify-content: center; align-items: center; gap: 8px; }
+
+        .ba-article-content h1 { font-size: 1.6rem; color: var(--primary); text-align: center; font-weight: 800; margin: 30px 0; line-height: 1.4; }
+        .ba-article-content h2 { font-size: 1.35rem; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 45px; display: flex; align-items: center; gap: 8px; font-weight: 700; }
+        .ba-article-content h3 { font-size: 1.15rem; color: var(--accent); margin-top: 15px; font-weight: 700; }
+        .ba-article-content p { margin: 18px 0; color: #444; line-height: 1.8; }
+        
+        .summary-box { background: #f0f7ff; padding: 25px; border-radius: 12px; border-left: 5px solid #1a5fb4; margin: 30px 0; }
+        .summary-box h2 { font-size: 1.1rem; color: #1a5fb4; margin-top: 0; margin-bottom: 10px; border-bottom: none; padding-bottom: 0; }
+        .summary-box p { margin: 8px 0; color: #333; }
+
+        .highlight-box, .intro-box { background: var(--light-bg); padding: 25px; border-radius: 12px; border-left: 5px solid var(--accent); margin-bottom: 40px; }
+        .highlight-box.blue { background: #f0f7ff; border-left-color: #1a5fb4; }
+        .highlight-box strong, .intro-box strong { font-size: 1.1rem; color: #222; display: block; margin-bottom: 10px; }
+        
+        .important-point { background: #fffcf0; padding: 20px; border-radius: 12px; border-left: 5px solid var(--accent); margin: 20px 0; }
+        
+        .solution-card { border: 1px solid #eee; padding: 20px; border-radius: 12px; background: #fff; margin-bottom: 15px; box-shadow: var(--card-shadow); }
+        .solution-card strong { color: var(--accent); display: block; margin-bottom: 8px; font-size: 1.1rem; }
+
+        .treatment-link, .map-link-btn { display: block; background: #03c75a; color: #fff; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px; transition: 0.3s; }
+
+        .check-list { background: #fff9f4; padding: 20px 20px 20px 45px; border-radius: 12px; list-style: none; position: relative; }
+        .check-list li { margin-bottom: 15px; font-weight: 500; line-height: 1.7; position: relative; }
+        .check-list li::before { content: "\f00c"; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; left: -25px; color: var(--accent); }
+        
+        .table-wrapper, .comparison-wrapper { overflow-x: auto; margin: 25px 0; border-radius: 12px; border: 1px solid #eee; }
+        .custom-table, .info-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 500px; }
+        .custom-table th, .custom-table td, .info-table th, .info-table td { padding: 15px; border: 1px solid #eee; text-align: center; }
+        .custom-table th, .info-table th { background: var(--primary); color: #fff; font-weight: 800; }
+        .highlight-cell { background: #fffaf5; font-weight: bold; color: var(--accent); }
+        
+        .video-container { width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; box-shadow: var(--card-shadow); margin-bottom: 30px; }
+        .ba-article-content img, .media-img, .visual-img, .hero-img, .gif-img { 
+            max-width: 100%; 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+            border-radius: 12px; 
+            margin: 25px auto; 
+            box-shadow: var(--card-shadow); 
+            box-sizing: border-box; 
+        }
+        
+        .aio-box { background: #fdfaf5; padding: 25px; border-radius: 15px; margin: 40px 0; border: 1px solid #f3ece4; }
+        .aio-q { font-weight: 800; color: #8d6e63; font-size: 1.1rem; display: block; margin-bottom: 15px; }
+        .aio-a { border-top: 2px solid #fff; padding-top: 15px; }
+
+        .step-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: var(--card-shadow); border: 1px solid #eee; }
+        .step-table td { padding: 20px; vertical-align: middle; border-bottom: 1px solid #f0f0f0; }
+        .step-gif-cell { width: 35%; text-align: center; background: #fafafa; }
+        .step-gif { max-width: 100%; width: 150px; border-radius: 8px; height: auto; }
+        
+        .doctor-card { background: #fff; padding: 25px; border: 1px solid #eee; border-radius: 15px; margin-top: 30px; box-shadow: var(--card-shadow); }
+        .link-card { display: block; background: #fff; border: 1px solid #eee; padding: 15px; border-radius: 10px; text-decoration: none; color: #333; margin-bottom: 10px; transition: 0.3s; }
+        .link-card:hover { border-color: var(--accent); background: #fff9f5; }
+        .link-card i { color: var(--accent); margin-right: 8px; }
+
+        .references-section { margin-top: 50px; padding: 25px; background: #fafafa; border: 1px solid #eee; border-radius: 12px; font-size: 0.88rem; color: #666; }
+        .references-section h3 { margin-top: 0; color: var(--primary); font-size: 1rem; }
+        .keyword-tag { display: inline-block; background: #eee; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #666; margin: 2px; }
+        
+        footer { background: #2c3e50; color: #fff; padding: 40px 25px; margin-top: 60px; border-radius: 20px 20px 0 0; }
+
+        .event-btn { 
+            display: block; 
+            width: 100%; 
+            max-width: 320px; 
+            margin: 25px auto; 
+            padding: 14px 20px; 
+            background: var(--accent); 
+            color: #ffffff !important; 
+            font-weight: bold; 
+            font-size: 0.95rem; 
+            border: none; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            box-shadow: var(--card-shadow); 
+            transition: all 0.2s ease; 
+            text-align: center; 
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        .event-btn:hover { 
+            background: #d35400; 
+            transform: translateY(-2px);
+        }
+        .event-btn:active {
+            transform: translateY(0);
+        }
+        
+        @media (max-width: 600px) { 
+            .wrapper { padding: 15px; }
+            .step-table td { display: block; width: 100% !important; box-sizing: border-box; } 
+            .step-gif-cell { width: 100% !important; padding: 15px 0 !important; }
+            .ba-article-content h1 { font-size: 1.3rem; }
+        }
+    </style>
+<style>
+/* Layout adapters for the existing postpartum article structure. */
+.breadcrumb { color: #666; font-size: 0.88rem; margin: 8px 0 18px; }
+.fit-list { padding-left: 24px; }
+.fit-list li { margin: 10px 0; }
+.steps .solution-card h3 { margin-top: 0; }
+.steps .solution-card p { margin-bottom: 0; }
+.role-table { min-width: 0; table-layout: fixed; }
+.role-table th { width: 25%; }
+.role-table th, .role-table td { text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.faq { border-top: 1px solid #eee; padding: 14px 0; }
+.faq h3 { margin: 0 0 8px; }
+.faq p { margin: 0; }
+.references-section h2 { font-size: 1rem; margin-top: 0; }
+.refs { padding-left: 22px; }
+.refs li { margin: 10px 0; overflow-wrap: anywhere; }
+.related .link-card span { float: right; margin-left: 10px; }
+.clinic h2 { color: #fff; border-bottom: 1px solid #526171; margin-top: 0; }
+.clinic p, .clinic a { color: #fff; }
+.clinic a { text-decoration: underline; }
+.clinic .event-btn { text-decoration: none; }
+[id] { scroll-margin-top: calc(var(--top-bar-h) + 20px); }
+@media (max-width: 600px) {
+  .top-nav { padding: 0 12px; }
+  .top-nav .back-btn { min-width: 0; font-size: 0.85rem; }
+  .summary-box, .references-section { padding: 20px 16px; }
+  .role-table th, .role-table td { padding: 12px; }
+}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<header class="top"><div class="top-inner"><a href="index_en.html">← Diet Encyclopedia</a><nav class="langs" aria-label="Languages"><a href="0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html" aria-current="false">KO</a><a href="0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html" aria-current="true">EN</a><a href="0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html" aria-current="false">ZH</a></nav></div></header>
-<main class="wrap">
-<div class="crumb">Diet Encyclopedia &gt; Postpartum &amp; Menopause</div>
+<nav class="top-nav">
+<a href="index_en.html" class="back-btn"><i class="fas fa-chevron-left" aria-hidden="true"></i> Diet Encyclopedia</a>
+<div class="lang-switch" aria-label="Languages"><a href="0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity.html" class="">KO</a> | <a href="0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_en.html" class="active" aria-current="page">EN</a> | <a href="0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity_cn.html" class="">ZH</a></div>
+</nav>
+<div class="wrapper">
+<main class="ba-article-content">
+<div class="breadcrumb">Diet Encyclopedia &gt; Postpartum &amp; Menopause</div>
 <article>
 <section class="hero"><h1>Postpartum and Menopause Abdominal Weight Care in Suwon: From Cause Screening to BodyallFit Reassessment</h1><img class="hero-img" src="./image/0002.tailored-metabolic-correction-for-postpartum-and-menopausal-abdominal-obesity-1.webp" alt="A parent considering postpartum weight care" width="1376" height="768" loading="eager"></section>
-<section class="quick"><h2>💡 What should be checked first when abdominal weight increases after childbirth or around menopause?</h2><p>At BodyallFit, the Suwon visit first checks breastfeeding, postpartum recovery, menopause symptoms, medicines, thyroid and glucose risks, and meal and activity records. Herbal care, food, exercise, sleep and stress each have a separate role. The same weight, waist, meal and activity measures are then reassessed to decide what to continue or change.</p></section>
+<section class="summary-box"><h2>💡 What should be checked first when abdominal weight increases after childbirth or around menopause?</h2><p>At BodyallFit, the Suwon visit first checks breastfeeding, postpartum recovery, menopause symptoms, medicines, thyroid and glucose risks, and meal and activity records. Herbal care, food, exercise, sleep and stress each have a separate role. The same weight, waist, meal and activity measures are then reassessed to decide what to continue or change.</p></section>
 <section class="section"><h2>Who this visit is for</h2><ul class="fit-list"><li>People retaining weight after childbirth who need breastfeeding, sleep and recovery considered together</li><li>People with increasing waist size plus appetite or sleep changes around menopause</li><li>People who want herbal, food, exercise and lifestyle decisions reviewed in one clinical pathway rather than short-term appetite suppression alone</li></ul></section>
-<section class="section"><h2>How Bodyall separates and follows the plan</h2><div class="grid"><div class="card"><strong>Separate the contexts</strong>Postpartum recovery and menopause are not treated as one cause; medicines, conditions and daily records are reviewed separately.</div><div class="card"><strong>Separate treatment roles</strong>Herbal care is selected only after fit and safety review, while food, activity and sleep remain explicit action items.</div><div class="card"><strong>Reassess the same measures</strong>The follow-up repeats waist, weight, meal regularity, activity, sleep, swelling and appetite measures instead of relying on weight alone.</div></div><div class="warn"><strong>Signals that need another evaluation first</strong><p>After childbirth, severe headache, chest pain, breathlessness, one-sided leg swelling, heavy bleeding, fever or new severe abdominal pain need urgent obstetric or emergency assessment before weight care. Postmenopausal bleeding, rapidly enlarging abdominal distension or unexplained rapid weight change also require medical evaluation first.</p></div></section>
-<section class="section"><h2>BodyallFit assessment and selection process</h2><div class="steps"><div class="step"><h3>1. Health, medicines and life stage</h3><p>We review time since delivery and recovery, breastfeeding, menstrual or menopause status, medicines and supplements, thyroid, diabetes and blood-pressure history, sleep and stress.</p></div><div class="step"><h3>2. Define baseline measures</h3><p>Weight and waist, rate of change, meal timing and snacks, activity and resistance exercise, sleep, swelling, bowel pattern and appetite are recorded. Abdominal shape alone cannot diagnose BMR.</p></div><div class="step"><h3>3. Assign four distinct roles</h3><p>Individual herbal care is considered only after breastfeeding, medicines, symptoms and contraindications are checked. Food work targets realistic meal structure; exercise combines aerobic and resistance activity appropriate to recovery; lifestyle work addresses sleep, stress and relapse situations.</p></div><div class="step"><h3>4. Reassess under the same conditions</h3><p>The visit repeats the agreed weight, waist, meal, activity and sleep measures. If progress is absent or warning signs appear, treatment is not automatically extended; cause, feasibility and referral needs are reviewed.</p></div></div></section>
-<section class="section"><h2>Roles and limits</h2><table class="role-table"><tbody><tr><th>Individual herbal care</th><td>May be selected around appetite, eating rhythm and associated symptoms after a safety review. It is not presented as restoring BMR or selectively removing abdominal fat.</td></tr><tr><th>Food management</th><td>Adjusts meal spacing, intake, protein, vegetables and snacks around breastfeeding and real schedules. Extreme restriction is not the default.</td></tr><tr><th>Exercise management</th><td>Postpartum activity follows obstetric recovery and contraindications; midlife activity progresses aerobic and resistance work from the current level.</td></tr><tr><th>Lifestyle management</th><td>Tracks sleep loss, stress, evening eating and sedentary time, then changes one or two feasible items first.</td></tr></tbody></table></section>
-<section class="section evidence"><h2>How far the evidence reaches</h2><ul class="fit-list"><li>ACOG recommends physical activity for most postpartum patients without contraindications, with adjustment for individual obstetric recovery.</li><li>The Menopause Society separates aging and lifestyle as major drivers of midlife weight gain from menopause-related redistribution toward abdominal fat. Menopause is not the single cause of all weight gain.</li><li>NICE obesity guidance covers assessment, behavioral work, diet, activity and, when appropriate, medication or surgery. Independent outcomes for the exact BodyallFit combination and a “BMR restoration” effect have not been established.</li></ul></section>
+<section class="section"><h2>How Bodyall separates and follows the plan</h2><div class="grid"><div class="solution-card"><strong>Separate the contexts</strong>Postpartum recovery and menopause are not treated as one cause; medicines, conditions and daily records are reviewed separately.</div><div class="solution-card"><strong>Separate treatment roles</strong>Herbal care is selected only after fit and safety review, while food, activity and sleep remain explicit action items.</div><div class="solution-card"><strong>Reassess the same measures</strong>The follow-up repeats waist, weight, meal regularity, activity, sleep, swelling and appetite measures instead of relying on weight alone.</div></div><div class="important-point"><strong>Signals that need another evaluation first</strong><p>After childbirth, severe headache, chest pain, breathlessness, one-sided leg swelling, heavy bleeding, fever or new severe abdominal pain need urgent obstetric or emergency assessment before weight care. Postmenopausal bleeding, rapidly enlarging abdominal distension or unexplained rapid weight change also require medical evaluation first.</p></div></section>
+<section class="section"><h2>BodyallFit assessment and selection process</h2><div class="steps"><div class="solution-card"><h3>1. Health, medicines and life stage</h3><p>We review time since delivery and recovery, breastfeeding, menstrual or menopause status, medicines and supplements, thyroid, diabetes and blood-pressure history, sleep and stress.</p></div><div class="solution-card"><h3>2. Define baseline measures</h3><p>Weight and waist, rate of change, meal timing and snacks, activity and resistance exercise, sleep, swelling, bowel pattern and appetite are recorded. Abdominal shape alone cannot diagnose BMR.</p></div><div class="solution-card"><h3>3. Assign four distinct roles</h3><p>Individual herbal care is considered only after breastfeeding, medicines, symptoms and contraindications are checked. Food work targets realistic meal structure; exercise combines aerobic and resistance activity appropriate to recovery; lifestyle work addresses sleep, stress and relapse situations.</p></div><div class="solution-card"><h3>4. Reassess under the same conditions</h3><p>The visit repeats the agreed weight, waist, meal, activity and sleep measures. If progress is absent or warning signs appear, treatment is not automatically extended; cause, feasibility and referral needs are reviewed.</p></div></div></section>
+<section class="section"><h2>Roles and limits</h2><div class="table-wrapper"><table class="custom-table role-table"><tbody><tr><th scope="row">Individual herbal care</th><td>May be selected around appetite, eating rhythm and associated symptoms after a safety review. It is not presented as restoring BMR or selectively removing abdominal fat.</td></tr><tr><th scope="row">Food management</th><td>Adjusts meal spacing, intake, protein, vegetables and snacks around breastfeeding and real schedules. Extreme restriction is not the default.</td></tr><tr><th scope="row">Exercise management</th><td>Postpartum activity follows obstetric recovery and contraindications; midlife activity progresses aerobic and resistance work from the current level.</td></tr><tr><th scope="row">Lifestyle management</th><td>Tracks sleep loss, stress, evening eating and sedentary time, then changes one or two feasible items first.</td></tr></tbody></table></div></section>
+<section class="section evidence"><h2>What do studies show about postpartum and menopause weight changes?</h2><ul class="fit-list"><li>ACOG recommends physical activity for most postpartum patients without contraindications, with adjustment for individual obstetric recovery.<a href="#ref-1"><sup>[1]</sup></a></li><li>The Menopause Society separates aging and lifestyle as major drivers of midlife weight gain from menopause-related redistribution toward abdominal fat. Menopause is not the single cause of all weight gain.<a href="#ref-2"><sup>[2]</sup></a></li><li>NICE obesity guidance covers assessment, behavioral work, diet, activity and, when appropriate, medication or surgery.<a href="#ref-3"><sup>[3]</sup></a></li><li>A meta-analysis of postpartum randomized trials found greater weight loss with combined dietary and physical-activity interventions than with no intervention.<a href="#ref-4"><sup>[4]</sup></a></li><li>The longitudinal SWAN study shows that changes in weight and changes in fat and lean mass can follow different patterns around menopause.<a href="#ref-5"><sup>[5]</sup></a></li></ul></section>
 <section class="section"><h2>FAQ</h2><div class="faq"><h3>Q. When can postpartum weight care begin?</h3><p>There is no single date for everyone. Delivery, bleeding, pain, breastfeeding, sleep and obstetric recovery differ; activity and food changes should follow a postpartum safety review.</p></div><div class="faq"><h3>Q. Can I immediately take herbal medicine while breastfeeding?</h3><p>Ingredients, dose, medicines and the infant’s condition must be reviewed. The decision should be made in a clinical visit after weighing possible benefit and risk.</p></div><div class="faq"><h3>Q. Is menopausal abdominal weight caused only by hormones?</h3><p>Menopause can affect fat distribution, but age, muscle mass, activity, sleep, food and medicines also matter.</p></div><div class="faq"><h3>Q. Can raising BMR reduce only belly fat?</h3><p>Abdominal shape does not diagnose low BMR, and spot reduction cannot be guaranteed. Weight, waist and behavior measures should be tracked together.</p></div></section>
-<section class="section"><h2>Evidence sources</h2><ol class="refs"><li><a href="https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period" target="_blank" rel="noopener noreferrer">ACOG, Physical Activity and Exercise During Pregnancy and the Postpartum Period</a></li><li><a href="https://menopause.org/wp-content/uploads/for-women/MenoNote-Weight-Gain.pdf" target="_blank" rel="noopener noreferrer">The Menopause Society, Midlife Weight Gain</a></li><li><a href="https://www.nice.org.uk/guidance/ng246" target="_blank" rel="noopener noreferrer">NICE NG246, Overweight and obesity management</a></li></ol></section>
-<section class="section"><h2>Related guides</h2><div class="related"><a class="related-card" href="0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html"><strong>GLP-1 side effects and metabolic care</strong><span>→</span></a><a class="related-card" href="0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_en.html"><strong>Behavior and plateau management</strong><span>→</span></a><a class="related-card" href="index_en.html"><strong>BodyallFit Diet Encyclopedia</strong><span>→</span></a></div></section>
-<section class="clinic"><h2>Bodyall Korean Medicine Clinic</h2><p>3F, 200 Gwonkwang-ro, Paldal-gu, Suwon, Gyeonggi-do, Republic of Korea · +82-31-8067-5825</p><p><a href="https://body-all.co.kr/">Official Bodyall guide</a> · <a href="https://naver.me/53lcJrXB">Directions</a></p></section>
+<section class="section references-section"><h2>Evidence sources</h2><ol class="refs"><li id="ref-1"><a href="https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period" target="_blank" rel="noopener noreferrer">ACOG, Physical Activity and Exercise During Pregnancy and the Postpartum Period</a></li><li id="ref-2"><a href="https://menopause.org/wp-content/uploads/for-women/MenoNote-Weight-Gain.pdf" target="_blank" rel="noopener noreferrer">The Menopause Society, Midlife Weight Gain</a></li><li id="ref-3"><a href="https://www.nice.org.uk/guidance/ng246" target="_blank" rel="noopener noreferrer">NICE NG246, Overweight and obesity management</a></li><li id="ref-4">Dodd JM, et al. <a href="https://doi.org/10.1093/nutrit/nuy024" target="_blank" rel="noopener noreferrer">Targeting the postpartum period to promote weight loss: a systematic review and meta-analysis.</a> Nutrition Reviews. 2018;76(8):639–654. DOI: 10.1093/nutrit/nuy024.</li><li id="ref-5">Greendale GA, et al. <a href="https://doi.org/10.1172/jci.insight.124865" target="_blank" rel="noopener noreferrer">Changes in body composition and weight during the menopause transition.</a> JCI Insight. 2019;4(5):e124865. DOI: 10.1172/jci.insight.124865.</li></ol></section>
+<section class="section"><h2>Related guides</h2><div class="related"><a class="link-card" href="0001.glp1-drug-side-effects-vs-korean-medicine-metabolic-therapy_en.html"><strong>GLP-1 side effects and metabolic care</strong><span>→</span></a><a class="link-card" href="0003.doctor-led-behavior-modification-herbal-therapy-metabolic-plateau_en.html"><strong>Behavior and plateau management</strong><span>→</span></a><a class="link-card" href="index_en.html"><strong>BodyallFit Diet Encyclopedia</strong><span>→</span></a></div></section>
+<footer class="clinic"><h2>Bodyall Korean Medicine Clinic</h2><p>3F, 200 Gwonkwang-ro, Paldal-gu, Suwon, Gyeonggi-do, Republic of Korea · +82-31-8067-5825</p><p><a href="https://body-all.co.kr/">Official Bodyall guide</a> · <a href="https://naver.me/53lcJrXB">Directions</a></p><a class="event-btn" href="https://pf.kakao.com/_wdtXK/chat">Book a BodyallFit consultation</a></footer>
 </article>
 
-<p id="medical-review-status" class="source-note" data-review-status="APPROVED"><strong>Medical review:</strong> Reviewed and approved by Chief Director Donghae Lee (APPROVED) · <time datetime="2026-09-17">2026-09-17</time></p>
+<p id="medical-review-status" class="source-note" data-review-status="APPROVED"><strong>Medical review:</strong> Reviewed and approved by Chief Director Donghae Lee (APPROVED) · <time datetime="2026-09-20">2026-09-20</time></p>
 </main>
-<nav class="bottom" aria-label="Contact"><a href="https://body-all.co.kr/">Official Bodyall guide</a><a href="https://naver.me/53lcJrXB">Directions</a><a class="primary" href="https://pf.kakao.com/_wdtXK/chat">Book a BodyallFit consultation</a></nav>
+</div>
+<nav class="bottom-nav">
+    <a href="http://talk.naver.com/w4eflu?frm=mnmb&frm=nmb_detail" target="_blank" rel="noopener noreferrer"><i class="fas fa-comment-dots" style="color: #03C75A;"></i>Naver Talk</a>
+    <a href="https://pf.kakao.com/_wdtXK/chat" target="_blank" rel="noopener noreferrer"><i class="fas fa-comment"></i>KakaoTalk</a>
+    <a href="https://www.youtube.com/shorts/R8bRbHtSdfc" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" style="color: #FF0000;"></i>YouTube</a>
+    <a href="https://body-all.co.kr/Body-Allfit" target="_blank" rel="noopener noreferrer"><i class="fas fa-dumbbell"></i>Body-Allfit</a>
+</nav>
 </body>
 </html>
