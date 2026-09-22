@@ -6,7 +6,7 @@ const $ = id => document.getElementById(id);
 const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
 const canonical = 'https://wiki.body-all.co.kr/contents/center-balance/';
 const storageKey = 'bodyall-center-balance-v2';
-const els = Object.fromEntries(['scene','stage','loading','start-panel','start','start-copy','hud','timer','danger-fill','target','target-time','score','combo','challenge-banner','challenger-name','challenge-time','countdown','count','touch-guide','touch-origin','touch-dot','impact-flash','toast','pause','best','plays','wins','close-calls','sound','info','result-dialog','result-label','result-title','result-time','result-message','result-badges','retry','challenge','new-pattern','share-status','pause-dialog','resume','quit','info-dialog'].map(id => [id, $(id)]));
+const els = Object.fromEntries(['scene','stage','loading','start-panel','start','start-copy','hud','timer','danger-fill','target','target-time','score','combo','challenge-banner','challenger-name','challenge-time','countdown','count','touch-guide','impact-flash','toast','pause','best','plays','wins','close-calls','sound','info','result-dialog','result-label','result-title','result-time','result-message','result-badges','retry','challenge','new-pattern','share-status','pause-dialog','resume','quit','info-dialog'].map(id => [id, $(id)]));
 
 let saved = {};
 try { saved = JSON.parse(localStorage.getItem(storageKey) || '{}') || {}; } catch { saved = {}; }
@@ -31,9 +31,7 @@ let resultTimer = 0;
 let audio = null;
 let dragging = false;
 let ragdoll = null;
-let dragStart = { x: 0, y: 0 };
 let hazardVisuals = [];
-let firstTouch = false;
 
 const params = new URLSearchParams(location.search);
 const sharedSeed = params.get('c');
@@ -51,7 +49,7 @@ function randomSeed() {
   return `bca-${Date.now().toString(36)}-${(value[0] || Math.random() * 1e8 | 0).toString(36)}`;
 }
 function persist() { try { localStorage.setItem(storageKey, JSON.stringify({ best, plays, wins, closeCalls, sound })); } catch { /* Optional local record only. */ } }
-function track(event, extra = {}) { window.dispatchEvent(new CustomEvent('bodyall:game-event', { detail: { event, game: 'center-balance', version: '2.0.0', ...extra } })); }
+function track(event, extra = {}) { window.dispatchEvent(new CustomEvent('bodyall:game-event', { detail: { event, game: 'center-balance', version: '2.1.0', ...extra } })); }
 function updateStats() {
   els.best.innerHTML = `${best.toFixed(2)}<small>초</small>`; els.plays.textContent = plays; els.wins.textContent = wins; els['close-calls'].textContent = closeCalls;
   els.sound.setAttribute('aria-pressed', String(sound)); els.sound.setAttribute('aria-label', sound ? '소리 끄기' : '소리 켜기'); els.sound.textContent = sound ? '♫' : '♪';
@@ -200,33 +198,29 @@ function visualUpdate(dt) {
   renderer.render(scene,camera);
 }
 
-// The whole 3D stage is the controller. Drag from any point like grabbing the character.
+// Press the side of the stage that should rise; the platform itself follows the finger.
 function setControl(x,z){ control.x=clamp(x,-1,1);control.z=clamp(z,-1,1);game?.setControl(control.x,control.z); }
-function moveTouch(event){
-  const dx=event.clientX-dragStart.x,dy=event.clientY-dragStart.y;setControl(dx/72,dy/72);
-  const length=Math.hypot(dx,dy),scale=length>46?46/length:1;els['touch-dot'].style.transform=`translate(${dx*scale}px,${dy*scale}px)`;
-}
+function tiltPlatform(event){const r=els.stage.getBoundingClientRect();setControl((event.clientX-r.left-r.width/2)/(r.width*.42),(event.clientY-r.top-r.height*.53)/(r.height*.38));}
 els.stage.addEventListener('pointerdown',event=>{
-  if((mode!=='playing'&&mode!=='countdown')||event.target.closest?.('button'))return;event.preventDefault();dragging=true;firstTouch=true;els['touch-guide'].hidden=true;
-  dragStart={x:event.clientX,y:event.clientY};const r=els.stage.getBoundingClientRect();els['touch-origin'].style.left=`${event.clientX-r.left}px`;els['touch-origin'].style.top=`${event.clientY-r.top}px`;els['touch-dot'].style.transform='translate(0,0)';els['touch-origin'].hidden=false;els.stage.setPointerCapture(event.pointerId);
+  if((mode!=='playing'&&mode!=='countdown')||event.target.closest?.('button'))return;event.preventDefault();dragging=true;els['touch-guide'].hidden=true;els.stage.classList.add('pressing');tiltPlatform(event);els.stage.setPointerCapture(event.pointerId);
 });
-els.stage.addEventListener('pointermove',event=>{if(dragging){event.preventDefault();moveTouch(event);}});
-for(const type of ['pointerup','pointercancel','lostpointercapture'])els.stage.addEventListener(type,()=>{if(!dragging)return;dragging=false;setControl(0,0);els['touch-origin'].hidden=true;});
+els.stage.addEventListener('pointermove',event=>{if(dragging){event.preventDefault();tiltPlatform(event);}});
+for(const type of ['pointerup','pointercancel','lostpointercapture'])els.stage.addEventListener(type,()=>{if(!dragging)return;dragging=false;setControl(0,0);els.stage.classList.remove('pressing');});
 const keys=new Set();document.addEventListener('keydown',e=>{if(['INPUT','TEXTAREA'].includes(e.target.tagName))return;if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','w','a','s','d','W','A','S','D'].includes(e.key)){e.preventDefault();keys.add(e.key);keyboardControl();}if((e.key==='p'||e.key==='P'||e.key==='Escape')&&mode==='playing')pause();});document.addEventListener('keyup',e=>{keys.delete(e.key);keyboardControl();});
 function keyboardControl(){let x=0,z=0;if(keys.has('ArrowLeft')||keys.has('a')||keys.has('A'))x--;if(keys.has('ArrowRight')||keys.has('d')||keys.has('D'))x++;if(keys.has('ArrowUp')||keys.has('w')||keys.has('W'))z--;if(keys.has('ArrowDown')||keys.has('s')||keys.has('S'))z++;setControl(x,z);}
 
 function startRound(seed=currentSeed){
   if(!validSeed(seed)||mode==='loading')return;
-  currentSeed=seed;if(ragdoll){ragdoll.dispose();ragdoll=null;}clearHazards();game=new BalanceGame(seed);ghostGame=challengeReplay.length?new BalanceGame(seed):null;replaySamples=[];sampleAt=0;setControl(0,0);character.visible=true;ghostCharacter.visible=!!ghostGame;firstTouch=false;
-  els.score.textContent='0';els.combo.hidden=true;els['touch-guide'].hidden=false;els['touch-origin'].hidden=true;
+  currentSeed=seed;if(ragdoll){ragdoll.dispose();ragdoll=null;}clearHazards();game=new BalanceGame(seed);ghostGame=challengeReplay.length?new BalanceGame(seed):null;replaySamples=[];sampleAt=0;setControl(0,0);character.visible=true;ghostCharacter.visible=!!ghostGame;
+  els.score.textContent='0';els.combo.hidden=true;els['touch-guide'].hidden=false;
   mode='countdown';countdownAt=3;els['start-panel'].hidden=true;els.hud.hidden=false;els.pause.hidden=false;els.countdown.hidden=false;els.count.textContent='3';els['result-dialog'].close();beep('count');track('game_start',{challenge:challengeTarget>0});
 }
 function pause(){if(mode!=='playing'&&mode!=='countdown')return;mode=mode==='playing'?'paused':'countdown-paused';game?.pause();els['pause-dialog'].showModal();}
 function resume(){if(!mode.includes('paused'))return;const wasCountdown=mode==='countdown-paused';mode=wasCountdown?'countdown':'playing';if(!wasCountdown)game?.start();els['pause-dialog'].close();lastFrame=performance.now();}
-function home(){mode='home';game=null;ghostGame=null;clearHazards();if(ragdoll){ragdoll.dispose();ragdoll=null;}character.visible=true;ghostCharacter.visible=false;platform.rotation.set(0,0,0);setControl(0,0);els['start-panel'].hidden=false;els.hud.hidden=true;els.pause.hidden=true;els.countdown.hidden=true;els['touch-guide'].hidden=true;els['touch-origin'].hidden=true;els['pause-dialog'].close();}
+function home(){mode='home';game=null;ghostGame=null;clearHazards();if(ragdoll){ragdoll.dispose();ragdoll=null;}character.visible=true;ghostCharacter.visible=false;platform.rotation.set(0,0,0);setControl(0,0);els.stage.classList.remove('pressing');els['start-panel'].hidden=false;els.hud.hidden=true;els.pause.hidden=true;els.countdown.hidden=true;els['touch-guide'].hidden=true;els['pause-dialog'].close();}
 function toast(message){els.toast.textContent=message;els.toast.classList.add('show');toastTimer=1.5;}
 function finishRound(){
-  const snap=game.snapshot();mode='ending';dragging=false;setControl(0,0);els['touch-origin'].hidden=true;els['touch-guide'].hidden=true;plays++;closeCalls+=snap.recoveries;const previousBest=best;if(snap.time>best)best=snap.time;const won=challengeTarget>0&&(challengeTarget>=ROUND_SECONDS-.005?snap.reason==='clear':snap.time>challengeTarget+.004);if(won)wins++;persist();updateStats();
+  const snap=game.snapshot();mode='ending';dragging=false;setControl(0,0);els.stage.classList.remove('pressing');els['touch-guide'].hidden=true;plays++;closeCalls+=snap.recoveries;const previousBest=best;if(snap.time>best)best=snap.time;const won=challengeTarget>0&&(challengeTarget>=ROUND_SECONDS-.005?snap.reason==='clear':snap.time>challengeTarget+.004);if(won)wins++;persist();updateStats();
   character.visible=false;ghostCharacter.visible=false;ragdoll=new Ragdoll(snap);resultTimer=1.15;beep(snap.reason==='clear'?'clear':'fall');track('game_complete',{seconds:+snap.time.toFixed(2),reason:snap.reason,recoveries:snap.recoveries,challenge_won:won});
   els['result-time'].textContent=snap.time.toFixed(2);els['result-badges'].replaceChildren();
   const badges=[];if(snap.reason==='clear')badges.push('20초 생존');if(snap.recoveries)badges.push(`기적의 회복 ${snap.recoveries}회`);if(snap.score>=2500)badges.push(`${snap.score.toLocaleString()}점`);if(snap.time>previousBest)badges.push('새로운 최고기록');if(won)badges.push('친구 기록 격파');if(snap.time<5)badges.push('순식간에 퇴장');
@@ -239,7 +233,7 @@ function finishRound(){
 function showResult(){if(!els['result-dialog'].open){els['share-status'].textContent='';els['result-dialog'].showModal();}}
 
 function update(dt){
-  if(mode==='countdown'){countdownAt-=dt;const n=Math.max(1,Math.ceil(countdownAt));if(els.count.textContent!==String(n)){els.count.textContent=String(n);beep('count');}if(countdownAt<=0){mode='playing';els.countdown.hidden=true;game.start();ghostGame?.start();toast('화면을 누르고 끌어 붙잡기!');beep('start');}}
+  if(mode==='countdown'){countdownAt-=dt;const n=Math.max(1,Math.ceil(countdownAt));if(els.count.textContent!==String(n)){els.count.textContent=String(n);beep('count');}if(countdownAt<=0){mode='playing';els.countdown.hidden=true;game.start();ghostGame?.start();toast('쏠리는 쪽 발판을 눌러 올리기!');beep('start');}}
   if(mode==='playing'){
     game.setControl(control.x,control.z);for(const event of game.advance(dt)){if(event.type==='warning')warnHazard(event);if(event.type==='impact')impactHazard(event);if(event.type==='recovery'){toast(`살았다! 회복 콤보 ×${event.combo}`);navigator.vibrate?.(18);beep('recover');}if(event.type==='end')finishRound();}
     if(ghostGame){const index=Math.min(challengeReplay.length-1,Math.floor(ghostGame.time*10));const sample=challengeReplay[index]||[0,0];ghostGame.setControl(sample[0],sample[1]);ghostGame.advance(dt);}
