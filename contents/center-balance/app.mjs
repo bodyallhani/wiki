@@ -177,7 +177,8 @@ let moverMesh = null;
 
 function clearGroup(group) {
   while (group.children.length) {
-    const object = group.children.pop();
+    const object = group.children[0];
+    group.remove(object);
     object.geometry?.dispose();
     object.material?.dispose();
   }
@@ -272,6 +273,7 @@ new ResizeObserver(resize).observe(els.stage);
 function startRound(seed = currentSeed) {
   if (!validSeed(seed) || mode === 'loading') return;
   currentSeed = seed;
+  mode = 'countdown';
   collapse?.dispose(); collapse = null;
   structure.visible = true;
   finalSnapshot = null;
@@ -288,7 +290,6 @@ function startRound(seed = currentSeed) {
   els.countdown.hidden = false;
   els.count.textContent = '3';
   els['result-dialog'].close();
-  mode = 'countdown';
   countdownAt = 2.45;
   beep('count');
   track('game_start', { challenge: challengeFloor > 0 });
