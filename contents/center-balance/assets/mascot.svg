@@ -1,13 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">중심잡아 캐릭터</title><desc id="desc">흔들리는 둥근 발판 위에서 균형을 잡는 귀여운 캐릭터</desc>
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dcece5"/><stop offset="1" stop-color="#f3dfba"/></linearGradient><radialGradient id="face" cx="35%" cy="25%"><stop stop-color="#fff7d9"/><stop offset="1" stop-color="#f1c98f"/></radialGradient><linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#4ea88b"/><stop offset="1" stop-color="#17604d"/></linearGradient></defs>
+  <title id="title">말랑 중심탑 캐릭터</title>
+  <desc id="desc">기울어진 말랑 탑 위에서 근육을 긴장시키며 중심을 잡는 귀여운 캐릭터</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dceee6"/><stop offset="1" stop-color="#f3dfba"/></linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#55ad8e"/><stop offset="1" stop-color="#17604d"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
   <rect width="512" height="512" rx="72" fill="url(#bg)"/>
-  <ellipse cx="256" cy="434" rx="181" ry="42" fill="#173f35" opacity=".15"/>
-  <g transform="rotate(8 256 286)"><path d="M105 398c22-51 280-66 307 0l-9 43c-56 42-241 39-298 0z" fill="#244f45"/><ellipse cx="258" cy="393" rx="154" ry="38" fill="#fff8e8" stroke="#173f35" stroke-width="11"/>
-  <path d="M218 322l-43 76" stroke="#263936" stroke-width="31" stroke-linecap="round"/><path d="M291 322l56 67" stroke="#263936" stroke-width="31" stroke-linecap="round"/><path d="M154 397h58" stroke="#e76b43" stroke-width="34" stroke-linecap="round"/><path d="M321 394h62" stroke="#e76b43" stroke-width="34" stroke-linecap="round"/>
-  <path d="M186 180c-20 40-23 112 1 153 30 34 112 35 140-1 20-48 17-113-5-151z" fill="url(#shirt)" stroke="#173f35" stroke-width="11"/>
-  <path d="M191 215l-67 55" stroke="#f0c88f" stroke-width="35" stroke-linecap="round"/><path d="M318 213l71-50" stroke="#f0c88f" stroke-width="35" stroke-linecap="round"/><circle cx="112" cy="278" r="22" fill="#f2cb94" stroke="#173f35" stroke-width="9"/><circle cx="400" cy="154" r="22" fill="#f2cb94" stroke="#173f35" stroke-width="9"/>
-  <circle cx="254" cy="136" r="87" fill="url(#face)" stroke="#173f35" stroke-width="11"/><path d="M183 125c2-62 50-91 103-73 31 10 52 37 55 74-22-22-49-31-78-26-30 5-55 11-80 25z" fill="#283b38"/>
-  <ellipse cx="224" cy="139" rx="8" ry="11" fill="#173f35"/><ellipse cx="286" cy="139" rx="8" ry="11" fill="#173f35"/><path d="M236 176c14 13 30 13 43-1" fill="none" stroke="#ad543d" stroke-width="8" stroke-linecap="round"/><circle cx="200" cy="167" r="10" fill="#e98570" opacity=".55"/><circle cx="309" cy="167" r="10" fill="#e98570" opacity=".55"/></g>
-  <path d="M71 97c29-24 52-32 79-33" fill="none" stroke="#e66a43" stroke-width="12" stroke-linecap="round"/><path d="M431 85c-27-22-50-28-75-28" fill="none" stroke="#e66a43" stroke-width="12" stroke-linecap="round"/>
+  <ellipse cx="258" cy="455" rx="176" ry="25" fill="#173f35" opacity=".15"/>
+  <g transform="rotate(8 260 330)">
+    <g stroke="#173f35" stroke-width="8">
+      <rect x="91" y="390" width="335" height="52" rx="26" fill="#f0b55f"/>
+      <rect x="115" y="342" width="300" height="51" rx="25" fill="#75b79f"/>
+      <rect x="92" y="294" width="311" height="51" rx="25" fill="#e98261"/>
+      <rect x="129" y="246" width="286" height="51" rx="25" fill="#89a8d3"/>
+    </g>
+    <path d="M224 246l-28 47M286 246l40 43" stroke="#273a36" stroke-width="25" stroke-linecap="round"/>
+    <path d="M181 291h43M307 291h43" stroke="#e76b43" stroke-width="27" stroke-linecap="round"/>
+    <path d="M200 128c-17 31-21 86-3 119 25 28 94 28 117 0 17-38 14-87-4-119z" fill="url(#shirt)" stroke="#173f35" stroke-width="9"/>
+    <path d="M201 157l-53 38M310 156l58-35" stroke="#f0c88f" stroke-width="28" stroke-linecap="round"/>
+    <circle cx="140" cy="201" r="18" fill="#f2cb94" stroke="#173f35" stroke-width="8"/>
+    <circle cx="377" cy="114" r="18" fill="#f2cb94" stroke="#173f35" stroke-width="8"/>
+    <circle cx="255" cy="90" r="70" fill="#f1c98f" stroke="#173f35" stroke-width="9"/>
+    <path d="M189 82c2-50 40-73 83-59 26 8 42 30 45 60-18-18-40-25-63-21-25 4-45 9-65 20z" fill="#283b38"/>
+    <ellipse cx="232" cy="93" rx="7" ry="9" fill="#173f35"/><ellipse cx="282" cy="93" rx="7" ry="9" fill="#173f35"/>
+    <path d="M241 121c11 10 24 10 35-1" fill="none" stroke="#ad543d" stroke-width="7" stroke-linecap="round"/>
+    <path d="M220 143v81M291 143v81" stroke="#f25343" stroke-width="12" stroke-linecap="round" opacity=".9" filter="url(#glow)"/>
+  </g>
+  <path d="M69 150c26-20 47-27 70-27M444 135c-24-19-44-24-67-24" fill="none" stroke="#e66a43" stroke-width="10" stroke-linecap="round"/>
 </svg>

@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
-  <meta name="theme-color" content="#efe9dc">
-  <title>중심잡아! — 20초 물리 생존 챌린지</title>
-  <meta name="description" content="화면을 눌러 발판을 직접 기울이고 귀여운 캐릭터를 20초 동안 지켜보세요. 같은 장애물에 친구와 도전하는 설치 없는 3D 물리게임입니다.">
+  <meta name="theme-color" content="#e8f0e9">
+  <title>말랑 중심탑 — 몸이 버티기 전에 중심을 맞춰라</title>
+  <meta name="description" content="움직이는 말랑 분절을 탭으로 쌓고, 캐릭터의 보상과 근육 과부하를 줄이며 중심을 회복하는 설치 없는 3D 물리게임입니다.">
   <link rel="canonical" href="https://wiki.body-all.co.kr/contents/center-balance/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
-  <meta property="og:title" content="중심잡아! — 20초만 버틸 수 있을까?">
-  <meta property="og:description" content="공, 바람, 발판 충격까지. 같은 난장판에서 내 기록을 넘겨봐.">
+  <meta property="og:title" content="말랑 중심탑 — 몇 층까지 중심을 지킬 수 있을까?">
+  <meta property="og:description" content="탑은 서 있어도 캐릭터는 버티고 있습니다. 탭 한 번으로 중심을 되찾아보세요.">
   <meta property="og:url" content="https://wiki.body-all.co.kr/contents/center-balance/">
   <meta property="og:image" content="https://wiki.body-all.co.kr/contents/center-balance/assets/share-card.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -21,53 +21,62 @@
   <a class="skip" href="#start">게임 시작으로 건너뛰기</a>
   <main class="page">
     <header class="topbar">
-      <a class="wordmark" href="../" aria-label="바디올 엔터테인먼트로 이동"><span class="mark">C</span><span>CENTER CLUB<small>A tiny game by Bodyall</small></span></a>
+      <a class="wordmark" href="../" aria-label="바디올 엔터테인먼트로 이동">
+        <span class="mark">M</span>
+        <span>MALLOW TOWER<small>A tiny game by Bodyall</small></span>
+      </a>
       <div class="top-actions">
         <button id="sound" class="icon-button" type="button" aria-pressed="false" aria-label="소리 켜기">♪</button>
         <button id="info" class="icon-button" type="button" aria-label="게임 안내">?</button>
       </div>
     </header>
 
-    <section class="game-shell" aria-label="중심잡아 게임">
+    <section class="game-shell" aria-label="말랑 중심탑 게임">
       <div class="game-head">
-        <div><span class="overline">DAILY BALANCE</span><h1>중심잡아!</h1></div>
-        <div class="best"><span>내 최고</span><strong id="best">0.00<small>초</small></strong></div>
+        <div><span class="overline">DAILY RECENTER</span><h1>말랑 중심탑</h1></div>
+        <div class="best"><span>내 최고</span><strong id="best">0<small>층</small></strong></div>
       </div>
 
       <div class="stage" id="stage">
-        <canvas id="scene" aria-label="흔들리는 발판 위 캐릭터의 중심을 잡는 3D 게임"></canvas>
-        <div class="loading" id="loading"><span class="loader"></span><strong>캐릭터 준비 중</strong><small>3D 물리엔진을 불러오고 있어요.</small></div>
+        <canvas id="scene" aria-label="말랑한 분절 탑 위에서 몸을 틀어 버티는 3D 캐릭터"></canvas>
+        <div class="loading" id="loading"><span class="loader"></span><strong>말랑 탑 준비 중</strong><small>3D 물리엔진을 불러오고 있어요.</small></div>
 
         <div class="hud" id="hud" hidden>
-          <div class="timer"><span>버틴 시간</span><strong id="timer">0.00</strong><small>/ 20초</small></div>
-          <div class="danger" aria-label="흔들림 위험도"><span id="danger-fill"></span></div>
-          <div class="target" id="target" hidden><span>친구 기록</span><strong id="target-time">0.00초</strong></div>
-          <div class="live-score"><span>SCORE</span><strong id="score">0</strong><b id="combo" hidden>COMBO ×1</b></div>
+          <div class="floor-stat"><span>현재 높이</span><strong><b id="floor-count">0</b>층</strong></div>
+          <div class="load-card" aria-label="캐릭터 근육 부하">
+            <div class="load-copy"><span>몸이 대신 버티는 힘</span><strong id="load-state">편안</strong><b id="load-percent">0%</b></div>
+            <div class="load-track"><i id="load-fill"></i><em class="limit"></em></div>
+            <div class="body-zones" aria-hidden="true"><i id="load-left">왼쪽</i><span>몸</span><i id="load-right">오른쪽</i></div>
+          </div>
+          <div class="score-stat"><span>SCORE</span><strong id="score">0</strong><b id="combo" hidden>척! ×1</b></div>
         </div>
 
         <div class="start-panel" id="start-panel">
-          <p class="kicker">공도 날아오고, 바람도 붑니다.</p>
-          <h2>딱 20초,<br><em>어떻게든 붙잡으세요.</em></h2>
-          <p class="rule">캐릭터가 쏠리는 쪽의 <b>발판을 눌러 들어 올리세요.</b> 누른 위치대로 발판이 움직입니다.</p>
-          <p class="challenge-banner" id="challenge-banner" hidden><b id="challenger-name">친구</b>의 <strong id="challenge-time">0.00초</strong>에 도전합니다.</p>
+          <p class="kicker">탑은 서 있어도, 몸은 버티고 있습니다.</p>
+          <h2>몸이 버티기 전에<br><em>중심을 되찾으세요.</em></h2>
+          <p class="rule">움직이는 말랑 분절이 원하는 위치에 왔을 때 <b>화면을 한 번 탭하세요.</b></p>
+          <p class="challenge-banner" id="challenge-banner" hidden><b>친구 기록</b> <strong id="challenge-score">0층</strong>에 도전합니다.</p>
           <button class="primary" id="start" type="button" disabled><span id="start-copy">준비 중…</span><b aria-hidden="true">→</b></button>
-          <small>설치 없음 · 회원가입 없음 · 한 판 20초</small>
+          <small>한 손가락 · 설치 없음 · 바로 재도전</small>
         </div>
 
-        <div class="countdown" id="countdown" hidden><span>중심을 잡으세요</span><strong id="count">3</strong></div>
-        <div class="touch-guide" id="touch-guide" hidden><span></span><b>쏠리는 쪽 발판을 누르세요</b></div>
+        <div class="countdown" id="countdown" hidden><span>중심을 보세요</span><strong id="count">3</strong></div>
+        <div class="touch-guide" id="touch-guide" hidden><span></span><b>지금이다 싶을 때 탭!</b></div>
+        <div class="center-message" id="center-message" aria-live="polite"></div>
         <div class="impact-flash" id="impact-flash"></div>
-        <div class="toast" id="toast" role="status" aria-live="polite"></div>
         <button class="pause" id="pause" type="button" hidden aria-label="일시정지">Ⅱ</button>
       </div>
-
     </section>
 
     <section class="today-card">
-      <span class="overline">TODAY'S RULE</span>
-      <h2 id="daily-title">오늘의 흔들림은 모두 같습니다.</h2>
-      <p>공, 돌풍, 발판 충격의 순서까지 모두 같습니다. 친구의 반투명 고스트보다 0.01초만 더 버텨보세요.</p>
-      <div class="mini-stats"><span><b id="plays">0</b>오늘 내 도전</span><span><b id="wins">0</b>친구 기록 격파</span><span><b id="close-calls">0</b>기적의 회복</span></div>
+      <span class="overline">WHY IT WOBBLES</span>
+      <h2>서 있는 것과 바로 서 있는 것은 다릅니다.</h2>
+      <p>탑이 기울면 캐릭터는 반대쪽 근육을 긴장시키고 몸을 틀어 넘어지지 않게 버팁니다. 다음 분절을 반대편에 놓아 구조의 중심을 되찾아보세요.</p>
+      <div class="mini-stats">
+        <span><b id="plays">0</b>오늘 내 도전</span>
+        <span><b id="perfect-total">0</b>정확한 정렬</span>
+        <span><b id="recovery-total">0</b>중심 회복</span>
+      </div>
     </section>
 
     <footer><a href="../">다른 게임 보기</a><span>© Bodyall</span></footer>
@@ -76,35 +85,46 @@
   <dialog id="result-dialog" class="modal result-modal">
     <div class="modal-card">
       <button class="modal-close" data-close aria-label="닫기">×</button>
-      <span class="result-label" id="result-label">이번 기록</span>
-      <h2 id="result-title">아직 중심이 남아 있습니다.</h2>
-      <div class="record"><strong id="result-time">0.00</strong><span>초</span></div>
+      <span class="result-label" id="result-label">이번 중심탑</span>
+      <h2 id="result-title">몸이 끝까지 버텼습니다.</h2>
+      <div class="record"><strong id="result-floor">0</strong><span>층</span></div>
       <p id="result-message"></p>
+      <div class="result-grid">
+        <span><small>최대 근육 부하</small><b id="result-load">0%</b></span>
+        <span><small>최대 기울기</small><b id="result-lean">0°</b></span>
+        <span><small>중심 회복</small><b id="result-recovery">0회</b></span>
+      </div>
       <div class="result-badges" id="result-badges"></div>
       <div class="result-actions">
-        <button class="primary" id="retry" type="button">같은 패턴 재도전</button>
+        <button class="primary" id="retry" type="button">바로 다시 쌓기</button>
         <button class="secondary" id="challenge" type="button">친구에게 도전장 보내기</button>
-        <button class="text-action" id="new-pattern" type="button">새로운 흔들림으로 하기</button>
+        <button class="text-action" id="new-pattern" type="button">새로운 경사로 하기</button>
       </div>
       <p class="share-status" id="share-status" role="status"></p>
       <aside class="maker-note">
-        <b>왜 ‘중심’을 소재로 만들었을까요?</b>
-        <p>사람의 움직임과 균형을 매일 관찰하는 바디올한의원이 만든 작은 게임입니다.</p>
-        <a href="https://wiki.body-all.co.kr/SART.html">바디올의 척추교정 알아보기 <span aria-hidden="true">→</span></a>
+        <b>몸이 버틴다고, 중심이 맞는 것은 아닙니다.</b>
+        <p>기울어진 탑에서 캐릭터가 몸을 틀어 버티듯, 긴장한 곳만이 아니라 몸이 무엇을 보상하고 있는지도 함께 보아야 합니다. 바디올한의원의 진료 관점에서 출발한 작은 게임입니다.</p>
+        <a href="https://wiki.body-all.co.kr/SART.html">바디올의 척추교정 이야기 <span aria-hidden="true">→</span></a>
       </aside>
     </div>
   </dialog>
 
   <dialog id="pause-dialog" class="modal compact-modal">
-    <div class="modal-card"><span class="result-label">잠깐 멈춤</span><h2>중심도 쉬어갈 수 있어요.</h2><p>게임 시간도 함께 멈췄습니다.</p><button class="primary" id="resume" type="button">계속하기</button><button class="text-action" id="quit" type="button">첫 화면으로</button></div>
+    <div class="modal-card"><span class="result-label">잠깐 멈춤</span><h2>몸도 잠시 힘을 뺍니다.</h2><p>게임과 근육 부하가 함께 멈췄습니다.</p><button class="primary" id="resume" type="button">계속 쌓기</button><button class="text-action" id="quit" type="button">첫 화면으로</button></div>
   </dialog>
 
   <dialog id="info-dialog" class="modal info-modal">
     <div class="modal-card">
       <button class="modal-close" data-close aria-label="닫기">×</button>
-      <span class="result-label">HOW TO PLAY</span><h2>발판을 기울여 받치세요!</h2>
-      <ol><li>캐릭터가 쏠리는 쪽 화면을 누르면 그쪽 발판이 올라옵니다.</li><li>누른 채 손가락을 옮기면 발판의 기울기도 그대로 따라옵니다.</li><li>공·돌풍·발판 충격을 버티며 20초를 채웁니다.</li></ol>
-      <p class="fine-print">게임 기록은 건강 상태, 균형 능력, 자세 또는 치료 필요성을 측정하지 않습니다. 공개 순위표와 위치 정보는 사용하지 않습니다.</p>
+      <span class="result-label">HOW TO PLAY</span>
+      <h2>탭 한 번으로 중심을 되찾으세요.</h2>
+      <ol>
+        <li>말랑 분절이 좌우로 움직입니다. 화면 어디든 탭하면 그 자리에 놓입니다.</li>
+        <li>탑이 기울면 캐릭터가 반대로 몸을 틀고 근육을 긴장시켜 버팁니다.</li>
+        <li>다음 분절을 반대쪽에 놓아 중심을 회복하면 큰 보너스를 얻습니다.</li>
+        <li>탑을 놓치거나 근육 부하가 한계에 닿으면 끝납니다.</li>
+      </ol>
+      <p class="fine-print">보상작용을 게임적으로 단순화한 표현입니다. 게임 기록과 부하 표시는 자세·척추 상태·건강 상태 또는 치료 필요성을 측정하지 않습니다.</p>
     </div>
   </dialog>
 

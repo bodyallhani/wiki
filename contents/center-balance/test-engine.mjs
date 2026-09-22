@@ -1,16 +1,46 @@
 import assert from 'node:assert/strict';
-import { BalanceGame, ROUND_SECONDS, validSeed, encodeReplay, decodeReplay } from './engine.mjs';
+import { TowerGame, validSeed } from './engine.mjs';
 
-assert.equal(validSeed('bca-20260922'), true);
+assert.equal(validSeed('mallow-20260922'), true);
 assert.equal(validSeed('../bad'), false);
-const a = new BalanceGame('bca-deterministic');
-const b = new BalanceGame('bca-deterministic');
+
+const a = new TowerGame('mallow-deterministic');
+const b = new TowerGame('mallow-deterministic');
 a.start(); b.start();
-for (let i=0;i<1800 && a.state==='playing';i++) { const x=Math.sin(i/80)*.6,z=Math.cos(i/95)*.4;a.setControl(x,z);b.setControl(x,z);a.advance(1/60);b.advance(1/60); }
-assert.deepEqual(a.snapshot(),b.snapshot(),'same seed and input must produce the same result');
-const encoded=encodeReplay([[0,0],[1,-1],[-.5,.5]]);const decoded=decodeReplay(encoded);
-assert.equal(decoded.length,3);assert.ok(Math.abs(decoded[1][0]-1)<.01);assert.ok(Math.abs(decoded[1][1]+1)<.01);
-const idle=new BalanceGame('bca-idle-test');idle.start();let sawWarning=false,sawImpact=false;for(let i=0;i<1800&&idle.state==='playing';i++){for(const event of idle.advance(1/60)){if(event.type==='warning')sawWarning=true;if(event.type==='impact')sawImpact=true;}}assert.equal(idle.state,'ended');assert.ok(idle.time>5&&idle.time<=ROUND_SECONDS,'an untouched platform must allow a generous opening');assert.ok(sawWarning&&sawImpact,'hazards must warn before impact');
-const tilted=new BalanceGame('bca-tilt-test');tilted.start();tilted.setControl(1,1);tilted.advance(1/60);const tilt=tilted.snapshot();assert.ok(tilt.platformX<0&&tilt.platformZ<0,'pressing the lower-right side must raise that side of the platform');
-const guided=new BalanceGame('bca-20260922');guided.start();for(let i=0;i<1805&&guided.state==='playing';i++){const s=guided.snapshot();guided.setControl(s.leanX*1.7+s.velocityX*.35,s.leanZ*1.7+s.velocityZ*.35);guided.advance(1/60);}assert.equal(guided.reason,'clear','a responsive player/controller must be able to clear the round');
-console.log('center-balance engine tests passed',a.snapshot());
+for (let i = 0; i < 900; i++) {
+  if (i === 140 || i === 320 || i === 540) { a.place(); b.place(); }
+  a.advance(1 / 60); b.advance(1 / 60);
+}
+assert.deepEqual(a.snapshot(), b.snapshot(), 'same seed and taps must produce the same tower');
+
+const guided = new TowerGame('mallow-guided');
+guided.start();
+for (let i = 0; i < 60 * 150 && guided.state === 'playing' && guided.level < 30; i++) {
+  const snap = guided.snapshot();
+  if (Math.abs(snap.mover.x - snap.idealX) < .035) guided.place();
+  guided.advance(1 / 60);
+}
+assert.equal(guided.level, 30, 'a precise player must be able to build a long tower');
+assert.equal(guided.state, 'playing');
+assert.equal(guided.perfects, 30);
+
+const recovering = new TowerGame('mallow-recovery');
+recovering.start();
+const recoveryEvents = [];
+for (let i = 0; i < 60 * 100 && recovering.state === 'playing' && recovering.level < 18; i++) {
+  const snap = recovering.snapshot();
+  const target = recovering.level < 4 ? snap.blocks.at(-1).x + .4 : snap.idealX;
+  if (Math.abs(snap.mover.x - target) < .035) recoveryEvents.push(...recovering.place());
+  recoveryEvents.push(...recovering.advance(1 / 60));
+}
+assert.ok(recovering.maxLoad > .5, 'crooked stacking must create visible compensation load');
+assert.ok(recoveryEvents.some(event => event.type === 'recovery'), 'counter-stacking must trigger a recovery');
+
+const missed = new TowerGame('mallow-miss');
+missed.start();
+while (Math.abs(missed.snapshot().mover.x) < 3.35) missed.advance(1 / 60);
+const endEvents = missed.place();
+assert.equal(missed.reason, 'miss');
+assert.ok(endEvents.some(event => event.type === 'end'));
+
+console.log('mallow-tower engine tests passed', guided.snapshot().score);
