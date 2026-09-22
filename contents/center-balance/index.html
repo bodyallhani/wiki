@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
   <meta name="theme-color" content="#efe9dc">
-  <title>중심잡아! — 30초 밸런스 챌린지</title>
-  <meta name="description" content="흔들리는 발판 위에서 30초를 버텨보세요. 친구의 기록에 같은 패턴으로 도전하는 설치 없는 3D 밸런스 게임입니다.">
+  <title>중심잡아! — 20초 물리 생존 챌린지</title>
+  <meta name="description" content="화면을 직접 끌어 귀여운 캐릭터를 붙잡고 20초를 버텨보세요. 같은 장애물에 친구와 도전하는 설치 없는 3D 물리게임입니다.">
   <link rel="canonical" href="https://wiki.body-all.co.kr/contents/center-balance/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
-  <meta property="og:title" content="중심잡아! — 30초만 버틸 수 있을까?">
-  <meta property="og:description" content="내 기록을 넘겨봐. 같은 흔들림, 같은 30초, 결과는 실력 차이.">
+  <meta property="og:title" content="중심잡아! — 20초만 버틸 수 있을까?">
+  <meta property="og:description" content="공, 바람, 발판 충격까지. 같은 난장판에서 내 기록을 넘겨봐.">
   <meta property="og:url" content="https://wiki.body-all.co.kr/contents/center-balance/">
   <meta property="og:image" content="https://wiki.body-all.co.kr/contents/center-balance/assets/share-card.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -39,40 +39,35 @@
         <div class="loading" id="loading"><span class="loader"></span><strong>캐릭터 준비 중</strong><small>3D 물리엔진을 불러오고 있어요.</small></div>
 
         <div class="hud" id="hud" hidden>
-          <div class="timer"><span>버틴 시간</span><strong id="timer">0.00</strong><small>/ 30초</small></div>
+          <div class="timer"><span>버틴 시간</span><strong id="timer">0.00</strong><small>/ 20초</small></div>
           <div class="danger" aria-label="흔들림 위험도"><span id="danger-fill"></span></div>
           <div class="target" id="target" hidden><span>친구 기록</span><strong id="target-time">0.00초</strong></div>
+          <div class="live-score"><span>SCORE</span><strong id="score">0</strong><b id="combo" hidden>COMBO ×1</b></div>
         </div>
 
         <div class="start-panel" id="start-panel">
-          <p class="kicker">귀여워 보여도 쉽지는 않습니다.</p>
-          <h2>딱 30초,<br><em>중심을 지켜보세요.</em></h2>
-          <p class="rule">파란 손잡이를 <b>캐릭터가 기울어지는 쪽</b>으로 움직여 발판을 받쳐주세요.</p>
+          <p class="kicker">공도 날아오고, 바람도 붑니다.</p>
+          <h2>딱 20초,<br><em>어떻게든 붙잡으세요.</em></h2>
+          <p class="rule">게임 화면을 누른 채 <b>기울어지는 방향으로 끌어서</b> 캐릭터를 붙잡으세요.</p>
           <p class="challenge-banner" id="challenge-banner" hidden><b id="challenger-name">친구</b>의 <strong id="challenge-time">0.00초</strong>에 도전합니다.</p>
           <button class="primary" id="start" type="button" disabled><span id="start-copy">준비 중…</span><b aria-hidden="true">→</b></button>
-          <small>설치 없음 · 회원가입 없음 · 한 판 30초</small>
+          <small>설치 없음 · 회원가입 없음 · 한 판 20초</small>
         </div>
 
         <div class="countdown" id="countdown" hidden><span>중심을 잡으세요</span><strong id="count">3</strong></div>
+        <div class="touch-guide" id="touch-guide" hidden><span></span><b>화면 어디든 누르고 끌기</b></div>
+        <div class="touch-origin" id="touch-origin" hidden><i id="touch-dot"></i></div>
+        <div class="impact-flash" id="impact-flash"></div>
         <div class="toast" id="toast" role="status" aria-live="polite"></div>
         <button class="pause" id="pause" type="button" hidden aria-label="일시정지">Ⅱ</button>
       </div>
 
-      <section class="control-card" id="control-card" aria-label="무게중심 조작판">
-        <div class="control-copy"><b>무게중심</b><span id="control-hint">손잡이를 움직여 연습해보세요.</span></div>
-        <div class="control-pad" id="control-pad" role="application" aria-label="캐릭터 무게중심 조작. 가운데 손잡이를 드래그하세요.">
-          <span class="axis horizontal"></span><span class="axis vertical"></span>
-          <span class="direction up">앞</span><span class="direction down">뒤</span><span class="direction left">왼쪽</span><span class="direction right">오른쪽</span>
-          <button class="control-knob" id="control-knob" type="button" aria-label="무게중심 손잡이"></button>
-        </div>
-        <p>PC에서는 방향키·WASD도 사용할 수 있습니다.</p>
-      </section>
     </section>
 
     <section class="today-card">
       <span class="overline">TODAY'S RULE</span>
       <h2 id="daily-title">오늘의 흔들림은 모두 같습니다.</h2>
-      <p>친구에게 도전장을 보내면 같은 패턴으로 겨룹니다. 최고 기록보다 가까운 사람 한 명을 이기는 게 먼저입니다.</p>
+      <p>공, 돌풍, 발판 충격의 순서까지 모두 같습니다. 친구의 반투명 고스트보다 0.01초만 더 버텨보세요.</p>
       <div class="mini-stats"><span><b id="plays">0</b>오늘 내 도전</span><span><b id="wins">0</b>친구 기록 격파</span><span><b id="close-calls">0</b>기적의 회복</span></div>
     </section>
 
@@ -108,8 +103,8 @@
   <dialog id="info-dialog" class="modal info-modal">
     <div class="modal-card">
       <button class="modal-close" data-close aria-label="닫기">×</button>
-      <span class="result-label">HOW TO PLAY</span><h2>기울어지는 쪽으로 받치기!</h2>
-      <ol><li>파란 손잡이를 캐릭터가 기울어지는 쪽으로 움직여 발판을 받칩니다.</li><li>급정거와 옆바람을 버티며 30초를 채웁니다.</li><li>결과에서 친구에게 같은 패턴의 도전장을 보냅니다.</li></ol>
+      <span class="result-label">HOW TO PLAY</span><h2>화면에서 캐릭터를 붙잡으세요!</h2>
+      <ol><li>게임 화면 어디든 누른 채 기울어지는 방향으로 끕니다.</li><li>공·돌풍·발판 충격을 피하며 20초를 채웁니다.</li><li>위험 구간에서 되살아나면 회복 콤보와 보너스 점수를 얻습니다.</li></ol>
       <p class="fine-print">게임 기록은 건강 상태, 균형 능력, 자세 또는 치료 필요성을 측정하지 않습니다. 공개 순위표와 위치 정보는 사용하지 않습니다.</p>
     </div>
   </dialog>

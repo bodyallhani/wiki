@@ -1,5 +1,5 @@
-export const VERSION = '1.0.0';
-export const ROUND_SECONDS = 30;
+export const VERSION = '2.0.0';
+export const ROUND_SECONDS = 20;
 export const FIXED_STEP = 1 / 60;
 
 const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
@@ -32,14 +32,23 @@ export class BalanceGame {
     this.time = 0; this.state = 'ready'; this.leanX = 0; this.leanZ = 0; this.velocityX = 0; this.velocityZ = 0;
     this.platformX = 0; this.platformZ = 0; this.controlX = 0; this.controlZ = 0; this.recoveries = 0;
     this.maxDanger = 0; this.wasDangerous = false; this.score = 0; this.reason = null; this.accumulator = 0;
-    this.events = []; this.gusts = this.makeGusts(); this.nextGust = 0; this.lastPhase = -1;
+    this.nearMissTime = 0; this.combo = 0; this.events = []; this.hazards = this.makeHazards();
+    this.nextWarning = 0; this.nextHazard = 0; this.lastPhase = -1;
   }
-  makeGusts() {
-    const result = []; let at = 4.8;
-    while (at < ROUND_SECONDS) {
+  makeHazards() {
+    const result = []; let at = 2.8; let index = 0;
+    const kinds = [
+      { kind: 'ball', label: '큰 공이 온다!', power: .48 },
+      { kind: 'gust', label: '옆바람!', power: .43 },
+      { kind: 'stomp', label: '발판 충격!', power: .54 },
+      { kind: 'capsule', label: '데굴데굴!', power: .5 }
+    ];
+    while (at < ROUND_SECONDS - .45) {
       const angle = this.random() * Math.PI * 2;
-      result.push({ at, x: Math.cos(angle) * (.32 + this.random() * .32), z: Math.sin(angle) * (.24 + this.random() * .28), label: this.random() > .5 ? '급정거!' : '옆바람!' });
-      at += 2.1 + this.random() * 1.8;
+      const kind = kinds[(index + Math.floor(this.random() * kinds.length)) % kinds.length];
+      const power = kind.power + this.random() * .13;
+      result.push({ id: index++, at, warnAt: at - .72, x: Math.cos(angle) * power, z: Math.sin(angle) * power, ...kind });
+      at += Math.max(1.65, 2.65 - index * .11 + this.random() * .55);
     }
     return result;
   }
@@ -55,18 +64,21 @@ export class BalanceGame {
   step(dt) {
     this.time += dt;
     const progress = clamp(this.time / ROUND_SECONDS, 0, 1);
-    const phase = Math.min(2, Math.floor(this.time / 10));
+    const phase = Math.min(3, Math.floor(this.time / 5));
     if (phase !== this.lastPhase) { this.lastPhase = phase; this.events.push({ type: 'phase', phase }); }
-    const amp = lerp(.032, .17, progress);
-    this.platformX = Math.sin(this.time * 1.18 + .7) * amp + Math.sin(this.time * 2.47) * amp * .32;
-    this.platformZ = Math.sin(this.time * .91 + 2.1) * amp * .82 + Math.sin(this.time * 2.13 + .4) * amp * .28;
-    while (this.nextGust < this.gusts.length && this.time >= this.gusts[this.nextGust].at) {
-      const gust = this.gusts[this.nextGust++]; this.velocityX += gust.x * (1 + progress * .55); this.velocityZ += gust.z * (1 + progress * .55);
-      this.events.push({ type: 'gust', ...gust });
+    const amp = lerp(.025, .125, progress);
+    this.platformX = Math.sin(this.time * 1.35 + .7) * amp + Math.sin(this.time * 2.83) * amp * .3;
+    this.platformZ = Math.sin(this.time * 1.03 + 2.1) * amp * .82 + Math.sin(this.time * 2.37 + .4) * amp * .25;
+    while (this.nextWarning < this.hazards.length && this.time >= this.hazards[this.nextWarning].warnAt) {
+      this.events.push({ type: 'warning', ...this.hazards[this.nextWarning++] });
     }
-    const instability = 1.35 + progress * 2.95;
-    const controlPower = 3.25 - progress * .28;
-    const damping = 1.42;
+    while (this.nextHazard < this.hazards.length && this.time >= this.hazards[this.nextHazard].at) {
+      const hazard = this.hazards[this.nextHazard++]; this.velocityX += hazard.x * (1 + progress * .48); this.velocityZ += hazard.z * (1 + progress * .48);
+      this.events.push({ type: 'impact', ...hazard });
+    }
+    const instability = 1.15 + progress * 2.25;
+    const controlPower = 4.15 - progress * .35;
+    const damping = 1.58;
     const noiseX = Math.sin(this.time * 3.31 + hashSeed(this.seed) % 19) * .028 * progress;
     const noiseZ = Math.sin(this.time * 2.73 + hashSeed(this.seed) % 13) * .026 * progress;
     const accelX = this.leanX * instability + this.platformZ * 2.15 - this.controlX * controlPower + noiseX - this.velocityX * damping;
@@ -75,14 +87,14 @@ export class BalanceGame {
     this.leanX += this.velocityX * dt; this.leanZ += this.velocityZ * dt;
     const danger = Math.hypot(this.leanX, this.leanZ) / .88;
     this.maxDanger = Math.max(this.maxDanger, danger);
-    if (danger > .7) this.wasDangerous = true;
-    if (this.wasDangerous && danger < .34) { this.wasDangerous = false; this.recoveries++; this.events.push({ type: 'recovery', count: this.recoveries }); }
-    this.score = Math.floor(this.time * 100 + this.recoveries * 250);
+    if (danger > .63) { this.wasDangerous = true; this.nearMissTime += dt; }
+    if (this.wasDangerous && danger < .32) { this.wasDangerous = false; this.recoveries++; this.combo++; this.events.push({ type: 'recovery', count: this.recoveries, combo: this.combo }); }
+    this.score = Math.floor(this.time * 100 + this.recoveries * 350 + this.nearMissTime * 130);
     if (danger >= 1) this.finish('fall');
     else if (this.time >= ROUND_SECONDS) { this.time = ROUND_SECONDS; this.score += 1000; this.finish('clear'); }
   }
   finish(reason) { if (this.state === 'ended') return; this.state = 'ended'; this.reason = reason; this.events.push({ type: 'end', reason }); }
-  snapshot() { return { version: VERSION, seed: this.seed, state: this.state, time: +this.time.toFixed(3), score: this.score, reason: this.reason, recoveries: this.recoveries, danger: Math.min(1, Math.hypot(this.leanX, this.leanZ) / .88), leanX: this.leanX, leanZ: this.leanZ, velocityX: this.velocityX, velocityZ: this.velocityZ, platformX: this.platformX, platformZ: this.platformZ }; }
+  snapshot() { return { version: VERSION, seed: this.seed, state: this.state, time: +this.time.toFixed(3), score: this.score, reason: this.reason, recoveries: this.recoveries, combo: this.combo, danger: Math.min(1, Math.hypot(this.leanX, this.leanZ) / .88), leanX: this.leanX, leanZ: this.leanZ, velocityX: this.velocityX, velocityZ: this.velocityZ, platformX: this.platformX, platformZ: this.platformZ }; }
 }
 
 export function encodeReplay(samples) {
