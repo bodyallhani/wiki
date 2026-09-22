@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#efe9dc">
+  <title>중심잡아! — 30초 밸런스 챌린지</title>
+  <meta name="description" content="흔들리는 발판 위에서 30초를 버텨보세요. 친구의 기록에 같은 패턴으로 도전하는 설치 없는 3D 밸런스 게임입니다.">
+  <link rel="canonical" href="https://wiki.body-all.co.kr/contents/center-balance/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:title" content="중심잡아! — 30초만 버틸 수 있을까?">
+  <meta property="og:description" content="내 기록을 넘겨봐. 같은 흔들림, 같은 30초, 결과는 실력 차이.">
+  <meta property="og:url" content="https://wiki.body-all.co.kr/contents/center-balance/">
+  <meta property="og:image" content="https://wiki.body-all.co.kr/contents/center-balance/assets/share-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="./assets/mascot.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a class="skip" href="#start">게임 시작으로 건너뛰기</a>
+  <main class="page">
+    <header class="topbar">
+      <a class="wordmark" href="../" aria-label="바디올 엔터테인먼트로 이동"><span class="mark">C</span><span>CENTER CLUB<small>A tiny game by Bodyall</small></span></a>
+      <div class="top-actions">
+        <button id="sound" class="icon-button" type="button" aria-pressed="false" aria-label="소리 켜기">♪</button>
+        <button id="info" class="icon-button" type="button" aria-label="게임 안내">?</button>
+      </div>
+    </header>
+
+    <section class="game-shell" aria-label="중심잡아 게임">
+      <div class="game-head">
+        <div><span class="overline">DAILY BALANCE</span><h1>중심잡아!</h1></div>
+        <div class="best"><span>내 최고</span><strong id="best">0.00<small>초</small></strong></div>
+      </div>
+
+      <div class="stage" id="stage">
+        <canvas id="scene" aria-label="흔들리는 발판 위 캐릭터의 중심을 잡는 3D 게임"></canvas>
+        <div class="loading" id="loading"><span class="loader"></span><strong>캐릭터 준비 중</strong><small>3D 물리엔진을 불러오고 있어요.</small></div>
+
+        <div class="hud" id="hud" hidden>
+          <div class="timer"><span>버틴 시간</span><strong id="timer">0.00</strong><small>/ 30초</small></div>
+          <div class="danger" aria-label="흔들림 위험도"><span id="danger-fill"></span></div>
+          <div class="target" id="target" hidden><span>친구 기록</span><strong id="target-time">0.00초</strong></div>
+        </div>
+
+        <div class="start-panel" id="start-panel">
+          <p class="kicker">귀여워 보여도 쉽지는 않습니다.</p>
+          <h2>딱 30초,<br><em>중심을 지켜보세요.</em></h2>
+          <p class="rule">파란 손잡이를 <b>캐릭터가 기울어지는 쪽</b>으로 움직여 발판을 받쳐주세요.</p>
+          <p class="challenge-banner" id="challenge-banner" hidden><b id="challenger-name">친구</b>의 <strong id="challenge-time">0.00초</strong>에 도전합니다.</p>
+          <button class="primary" id="start" type="button" disabled><span id="start-copy">준비 중…</span><b aria-hidden="true">→</b></button>
+          <small>설치 없음 · 회원가입 없음 · 한 판 30초</small>
+        </div>
+
+        <div class="countdown" id="countdown" hidden><span>중심을 잡으세요</span><strong id="count">3</strong></div>
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        <button class="pause" id="pause" type="button" hidden aria-label="일시정지">Ⅱ</button>
+      </div>
+
+      <section class="control-card" id="control-card" aria-label="무게중심 조작판">
+        <div class="control-copy"><b>무게중심</b><span id="control-hint">손잡이를 움직여 연습해보세요.</span></div>
+        <div class="control-pad" id="control-pad" role="application" aria-label="캐릭터 무게중심 조작. 가운데 손잡이를 드래그하세요.">
+          <span class="axis horizontal"></span><span class="axis vertical"></span>
+          <span class="direction up">앞</span><span class="direction down">뒤</span><span class="direction left">왼쪽</span><span class="direction right">오른쪽</span>
+          <button class="control-knob" id="control-knob" type="button" aria-label="무게중심 손잡이"></button>
+        </div>
+        <p>PC에서는 방향키·WASD도 사용할 수 있습니다.</p>
+      </section>
+    </section>
+
+    <section class="today-card">
+      <span class="overline">TODAY'S RULE</span>
+      <h2 id="daily-title">오늘의 흔들림은 모두 같습니다.</h2>
+      <p>친구에게 도전장을 보내면 같은 패턴으로 겨룹니다. 최고 기록보다 가까운 사람 한 명을 이기는 게 먼저입니다.</p>
+      <div class="mini-stats"><span><b id="plays">0</b>오늘 내 도전</span><span><b id="wins">0</b>친구 기록 격파</span><span><b id="close-calls">0</b>기적의 회복</span></div>
+    </section>
+
+    <footer><a href="../">다른 게임 보기</a><span>© Bodyall</span></footer>
+  </main>
+
+  <dialog id="result-dialog" class="modal result-modal">
+    <div class="modal-card">
+      <button class="modal-close" data-close aria-label="닫기">×</button>
+      <span class="result-label" id="result-label">이번 기록</span>
+      <h2 id="result-title">아직 중심이 남아 있습니다.</h2>
+      <div class="record"><strong id="result-time">0.00</strong><span>초</span></div>
+      <p id="result-message"></p>
+      <div class="result-badges" id="result-badges"></div>
+      <div class="result-actions">
+        <button class="primary" id="retry" type="button">같은 패턴 재도전</button>
+        <button class="secondary" id="challenge" type="button">친구에게 도전장 보내기</button>
+        <button class="text-action" id="new-pattern" type="button">새로운 흔들림으로 하기</button>
+      </div>
+      <p class="share-status" id="share-status" role="status"></p>
+      <aside class="maker-note">
+        <b>왜 ‘중심’을 소재로 만들었을까요?</b>
+        <p>사람의 움직임과 균형을 매일 관찰하는 바디올한의원이 만든 작은 게임입니다.</p>
+        <a href="https://wiki.body-all.co.kr/SART.html">바디올의 척추교정 알아보기 <span aria-hidden="true">→</span></a>
+      </aside>
+    </div>
+  </dialog>
+
+  <dialog id="pause-dialog" class="modal compact-modal">
+    <div class="modal-card"><span class="result-label">잠깐 멈춤</span><h2>중심도 쉬어갈 수 있어요.</h2><p>게임 시간도 함께 멈췄습니다.</p><button class="primary" id="resume" type="button">계속하기</button><button class="text-action" id="quit" type="button">첫 화면으로</button></div>
+  </dialog>
+
+  <dialog id="info-dialog" class="modal info-modal">
+    <div class="modal-card">
+      <button class="modal-close" data-close aria-label="닫기">×</button>
+      <span class="result-label">HOW TO PLAY</span><h2>기울어지는 쪽으로 받치기!</h2>
+      <ol><li>파란 손잡이를 캐릭터가 기울어지는 쪽으로 움직여 발판을 받칩니다.</li><li>급정거와 옆바람을 버티며 30초를 채웁니다.</li><li>결과에서 친구에게 같은 패턴의 도전장을 보냅니다.</li></ol>
+      <p class="fine-print">게임 기록은 건강 상태, 균형 능력, 자세 또는 치료 필요성을 측정하지 않습니다. 공개 순위표와 위치 정보는 사용하지 않습니다.</p>
+    </div>
+  </dialog>
+
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>
