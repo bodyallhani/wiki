@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
   <meta name="theme-color" content="#efe9dc">
   <title>중심잡아! — 20초 물리 생존 챌린지</title>
-  <meta name="description" content="화면을 직접 끌어 귀여운 캐릭터를 붙잡고 20초를 버텨보세요. 같은 장애물에 친구와 도전하는 설치 없는 3D 물리게임입니다.">
+  <meta name="description" content="화면을 눌러 발판을 직접 기울이고 귀여운 캐릭터를 20초 동안 지켜보세요. 같은 장애물에 친구와 도전하는 설치 없는 3D 물리게임입니다.">
   <link rel="canonical" href="https://wiki.body-all.co.kr/contents/center-balance/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
@@ -48,15 +48,14 @@
         <div class="start-panel" id="start-panel">
           <p class="kicker">공도 날아오고, 바람도 붑니다.</p>
           <h2>딱 20초,<br><em>어떻게든 붙잡으세요.</em></h2>
-          <p class="rule">게임 화면을 누른 채 <b>기울어지는 방향으로 끌어서</b> 캐릭터를 붙잡으세요.</p>
+          <p class="rule">캐릭터가 쏠리는 쪽의 <b>발판을 눌러 들어 올리세요.</b> 누른 위치대로 발판이 움직입니다.</p>
           <p class="challenge-banner" id="challenge-banner" hidden><b id="challenger-name">친구</b>의 <strong id="challenge-time">0.00초</strong>에 도전합니다.</p>
           <button class="primary" id="start" type="button" disabled><span id="start-copy">준비 중…</span><b aria-hidden="true">→</b></button>
           <small>설치 없음 · 회원가입 없음 · 한 판 20초</small>
         </div>
 
         <div class="countdown" id="countdown" hidden><span>중심을 잡으세요</span><strong id="count">3</strong></div>
-        <div class="touch-guide" id="touch-guide" hidden><span></span><b>화면 어디든 누르고 끌기</b></div>
-        <div class="touch-origin" id="touch-origin" hidden><i id="touch-dot"></i></div>
+        <div class="touch-guide" id="touch-guide" hidden><span></span><b>쏠리는 쪽 발판을 누르세요</b></div>
         <div class="impact-flash" id="impact-flash"></div>
         <div class="toast" id="toast" role="status" aria-live="polite"></div>
         <button class="pause" id="pause" type="button" hidden aria-label="일시정지">Ⅱ</button>
@@ -103,8 +102,8 @@
   <dialog id="info-dialog" class="modal info-modal">
     <div class="modal-card">
       <button class="modal-close" data-close aria-label="닫기">×</button>
-      <span class="result-label">HOW TO PLAY</span><h2>화면에서 캐릭터를 붙잡으세요!</h2>
-      <ol><li>게임 화면 어디든 누른 채 기울어지는 방향으로 끕니다.</li><li>공·돌풍·발판 충격을 피하며 20초를 채웁니다.</li><li>위험 구간에서 되살아나면 회복 콤보와 보너스 점수를 얻습니다.</li></ol>
+      <span class="result-label">HOW TO PLAY</span><h2>발판을 기울여 받치세요!</h2>
+      <ol><li>캐릭터가 쏠리는 쪽 화면을 누르면 그쪽 발판이 올라옵니다.</li><li>누른 채 손가락을 옮기면 발판의 기울기도 그대로 따라옵니다.</li><li>공·돌풍·발판 충격을 버티며 20초를 채웁니다.</li></ol>
       <p class="fine-print">게임 기록은 건강 상태, 균형 능력, 자세 또는 치료 필요성을 측정하지 않습니다. 공개 순위표와 위치 정보는 사용하지 않습니다.</p>
     </div>
   </dialog>
