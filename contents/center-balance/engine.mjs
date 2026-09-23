@@ -85,7 +85,7 @@ export class TowerGame {
     if (!due) return;
     const sequence = Math.floor((this.level - 4) / 3);
     const kind = ['tilt', 'settle', 'gust'][sequence % 3];
-    const direction = ((hashSeed(this.seed) + sequence * 13) & 1) ? 1 : -1;
+    const direction = sequence === 0 ? Math.sign(this.baseSlope || 1) : ((hashSeed(this.seed) + sequence * 13) & 1) ? 1 : -1;
     const tier = Math.floor(sequence / 3);
     this.hazard = {
       kind, direction, phase: 'warning', remaining: kind === 'tilt' && this.level === 4 ? 1.2 : .9,
