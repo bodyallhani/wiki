@@ -6,7 +6,7 @@ const $ = id => document.getElementById(id);
 const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
 const canonical = 'https://wiki.body-all.co.kr/contents/center-balance/';
 const storageKey = 'bodyall-mallow-tower-v3';
-const ids = ['scene','stage','loading','start-panel','start','start-copy','hud','floor-count','load-state','load-percent','load-fill','load-left','load-right','score','combo','challenge-banner','challenge-score','countdown','count','touch-guide','center-message','impact-flash','pause','best','plays','perfect-total','recovery-total','sound','info','result-dialog','result-label','result-title','result-floor','result-message','result-load','result-lean','result-recovery','result-badges','retry','challenge','new-pattern','share-status','pause-dialog','resume','quit','info-dialog'];
+const ids = ['scene','stage','loading','start-panel','start','start-copy','hud','floor-count','load-state','load-percent','load-fill','load-left','load-right','score','combo','challenge-banner','challenge-score','countdown','count','touch-guide','hazard-alert','hazard-arrow','hazard-copy','rescue-alert','rescue-time','center-message','impact-flash','pause','best','plays','perfect-total','recovery-total','sound','info','result-dialog','result-label','result-title','result-floor','result-message','result-load','result-lean','result-recovery','result-badges','retry','challenge','new-pattern','share-status','pause-dialog','resume','quit','info-dialog'];
 const els = Object.fromEntries(ids.map(id => [id, $(id)]));
 
 let saved = {};
@@ -167,7 +167,10 @@ function makeCharacter() {
     band.position.set(x, .52, .515); torsoPivot.add(band); return band;
   };
   const bands = [makeBand(-.27), makeBand(.27)];
-  root.userData.parts = { torsoPivot, torso, head, eyes, mouth, arms, legs, bands };
+  const stressHalo = new THREE.Mesh(new THREE.TorusGeometry(.76, .055, 10, 42), new THREE.MeshBasicMaterial({ color: 0xff594d, transparent: true, opacity: 0, depthWrite: false }));
+  stressHalo.position.set(0, 1.17, -.25); root.add(stressHalo);
+  const stressLight = new THREE.PointLight(0xff4a3d, 0, 3.8); stressLight.position.set(0, 1.05, .6); root.add(stressLight);
+  root.userData.parts = { torsoPivot, torso, head, eyes, mouth, arms, legs, bands, stressHalo, stressLight };
   root.scale.setScalar(.82);
   return root;
 }
@@ -284,6 +287,9 @@ function startRound(seed = currentSeed) {
   els.score.textContent = '0';
   els.combo.hidden = true;
   els['touch-guide'].hidden = false;
+  els['hazard-alert'].hidden = true;
+  els['hazard-alert'].classList.remove('active');
+  els['rescue-alert'].hidden = true;
   els['start-panel'].hidden = true;
   els.hud.hidden = false;
   els.pause.hidden = false;
@@ -321,6 +327,9 @@ function home() {
   els.pause.hidden = true;
   els.countdown.hidden = true;
   els['touch-guide'].hidden = true;
+  els['hazard-alert'].hidden = true;
+  els['hazard-alert'].classList.remove('active');
+  els['rescue-alert'].hidden = true;
   if (els['pause-dialog'].open) els['pause-dialog'].close();
 }
 function showMessage(text, type = '') {
@@ -348,6 +357,35 @@ function handleEvents(events) {
       flashRecovery();
       navigator.vibrate?.([25, 25, 45]);
       beep('recover');
+    }
+    if (event.type === 'hazardWarning') {
+      const labels = { tilt: '발판 경사가 변합니다', settle: '말랑층이 밀립니다', gust: '측풍이 불어옵니다' };
+      els['hazard-copy'].textContent = labels[event.kind];
+      els['hazard-arrow'].textContent = event.direction > 0 ? '→' : '←';
+      els['hazard-alert'].hidden = false;
+      navigator.vibrate?.([18, 45, 18]);
+      beep('warning');
+    }
+    if (event.type === 'hazardStart') {
+      els['hazard-alert'].classList.add('active');
+      showMessage(event.kind === 'gust' ? '휙! 몸이 바람을 버팁니다' : event.kind === 'settle' ? '출렁! 지지점이 움직였습니다' : '기울어진 곳에서 몸이 버팁니다', 'danger');
+      navigator.vibrate?.(35);
+    }
+    if (event.type === 'settled') {
+      const topMesh = placedGroup.children.at(-1);
+      if (topMesh) topMesh.position.x = event.x;
+    }
+    if (event.type === 'hazardEnd') {
+      els['hazard-alert'].hidden = true;
+      els['hazard-alert'].classList.remove('active');
+    }
+    if (event.type === 'rescueStart') {
+      showMessage('과부하! 반대편에 놓아 구조하세요', 'danger');
+      beep('danger');
+    }
+    if (event.type === 'rescueClear') {
+      showMessage('긴장이 풀리고 있습니다', 'recovery');
+      flashRecovery();
     }
     if (event.type === 'end') finishRound();
   }
@@ -430,22 +468,26 @@ function updateHud(snapshot) {
   for (const zone of [els['load-left'], els['load-right']]) zone.className = '';
   if (active) active.className = percent >= 70 ? 'active hot' : 'active';
   els.stage.classList.toggle('overload', percent >= 82);
+  els['rescue-alert'].hidden = !snapshot.dangerActive;
+  els['rescue-time'].textContent = snapshot.dangerRemaining.toFixed(1);
 }
 function updateCharacter(snapshot, dt) {
   const top = snapshot.blocks.at(-1);
   const topY = .05 + (snapshot.blocks.length - 1) * .49;
   character.position.x += (top.x - character.position.x) * Math.min(1, dt * 10);
   character.position.y += (topY + .51 - character.position.y) * Math.min(1, dt * 10);
-  const compensate = -snapshot.lean * 2.65;
+  const stress = snapshot.load;
+  const compensate = -snapshot.lean * (2.8 + stress * 1.9);
   character.rotation.z += (compensate - character.rotation.z) * Math.min(1, dt * 7);
   const parts = character.userData.parts;
-  parts.torsoPivot.rotation.z = -snapshot.lean * 1.7;
-  parts.head.rotation.z = snapshot.lean * .55;
-  parts.arms[0].rotation.z = -.35 - snapshot.lean * 2.1;
-  parts.arms[1].rotation.z = .35 - snapshot.lean * 2.1;
-  parts.legs[0].rotation.z = snapshot.lean * .7;
-  parts.legs[1].rotation.z = snapshot.lean * .7;
-  const stress = snapshot.load;
+  const shake = stress > .58 ? Math.sin(snapshot.time * 31) * (stress - .58) * .035 : 0;
+  parts.torsoPivot.rotation.z = -snapshot.lean * 2.3 + shake;
+  parts.torsoPivot.position.y = -.12 * stress;
+  parts.head.rotation.z = snapshot.lean * .72 - shake * .6;
+  parts.arms[0].rotation.z = -.35 - snapshot.lean * 3.2 - stress * .55;
+  parts.arms[1].rotation.z = .35 - snapshot.lean * 3.2 + stress * .55;
+  parts.legs[0].rotation.z = snapshot.lean * 1.05 - stress * .12;
+  parts.legs[1].rotation.z = snapshot.lean * 1.05 + stress * .12;
   const pulse = 1 + Math.sin(snapshot.time * 12) * stress * .07;
   for (const eye of parts.eyes) eye.scale.y = Math.max(.22, 1.35 - stress * .98);
   parts.mouth.scale.setScalar(1 + stress * 1.15);
@@ -459,13 +501,18 @@ function updateCharacter(snapshot, dt) {
     band.material.opacity = .12 + intensity * .88;
     band.scale.setScalar(index === hotIndex ? pulse : 1);
   });
+  parts.stressHalo.material.opacity = Math.max(0, (stress - .35) * .72);
+  parts.stressHalo.scale.setScalar(.9 + stress * .22 + Math.sin(snapshot.time * 10) * stress * .035);
+  parts.stressLight.intensity = Math.max(0, stress - .42) * 4.2;
 }
 function updateCamera(snapshot, dt) {
-  const towerHeight = .05 + snapshot.blocks.length * .49 + 1.5;
-  const targetY = clamp(towerHeight * .54 + 1.2, 3.1, 11.5);
-  const targetZ = clamp(10.8 + snapshot.level * .095, 10.8, 15.5);
-  camera.position.y += (targetY + 2.1 - camera.position.y) * Math.min(1, dt * 2.2);
+  const topY = .05 + (snapshot.blocks.length - 1) * .49;
+  const towerHeight = topY + 2.1;
+  const targetY = topY + .48;
+  const targetZ = clamp(10.35 + snapshot.load * 1.75 + snapshot.level * .025, 10.35, 13.9);
+  camera.position.y += (topY + 3.35 - camera.position.y) * Math.min(1, dt * 3.1);
   camera.position.z += (targetZ - camera.position.z) * Math.min(1, dt * 2.2);
+  camera.position.x += ((6.3 + snapshot.lean * 1.2) - camera.position.x) * Math.min(1, dt * 2.2);
   camera.lookAt(0, targetY, 0);
   centerLine.scale.y = Math.max(1, towerHeight / 5);
   centerLine.position.y = towerHeight * .5;
@@ -540,7 +587,7 @@ function beep(kind) {
   unlockAudio();
   if (!audio || audio.state !== 'running') return;
   const sets = {
-    count: [360], start: [430, 620], place: [220], perfect: [520, 740], recover: [540, 760, 1040], fall: [230, 155, 95]
+    count: [360], start: [430, 620], place: [220], perfect: [520, 740], recover: [540, 760, 1040], warning: [310, 310], danger: [190, 150], fall: [230, 155, 95]
   }[kind] || [430];
   sets.forEach((frequency, index) => {
     const oscillator = audio.createOscillator(), gain = audio.createGain(), at = audio.currentTime + index * .075;

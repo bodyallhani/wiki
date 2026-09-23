@@ -23,6 +23,33 @@ for (let i = 0; i < 60 * 150 && guided.state === 'playing' && guided.level < 30;
 assert.equal(guided.level, 30, 'a precise player must be able to build a long tower');
 assert.equal(guided.state, 'playing');
 assert.equal(guided.perfects, 30);
+assert.ok(guided.maxLoad >= .2, 'even a precise player must see compensation load from the changing ground');
+assert.ok(guided.snapshot().mover.speed >= 5, 'high floors must reach the intended speed tier');
+assert.ok(guided.snapshot().mover.width <= 1.35, 'high floors must use the narrow tier');
+
+const hazardGame = new TowerGame('mallow-hazards');
+hazardGame.start();
+const hazardEvents = [];
+for (let i = 0; i < 60 * 35 && hazardGame.state === 'playing' && hazardGame.level < 5; i++) {
+  const snap = hazardGame.snapshot();
+  if (Math.abs(snap.mover.x - snap.idealX) < .035) hazardEvents.push(...hazardGame.place());
+  hazardEvents.push(...hazardGame.advance(1 / 60));
+}
+assert.ok(hazardEvents.some(event => event.type === 'hazardWarning'), 'hazards must be telegraphed before they act');
+assert.ok(hazardEvents.some(event => event.type === 'hazardStart'), 'the first slope event must become active');
+
+const rescue = new TowerGame('mallow-rescue-window');
+rescue.start();
+rescue.load = .9;
+rescue.lean = .24;
+rescue.targetLean = .24;
+rescue.strain = .8;
+rescue.blocks.push({ x: 2, width: 2, hue: 0 });
+const rescueEvents = [];
+for (let i = 0; i < 55 && rescue.state === 'playing'; i++) rescueEvents.push(...rescue.advance(1 / 60));
+assert.equal(rescue.state, 'playing', 'high load must leave a playable rescue window');
+assert.ok(rescue.snapshot().dangerActive, 'rescue countdown must become visible during sustained overload');
+assert.ok(rescueEvents.some(event => event.type === 'rescueStart'));
 
 const recovering = new TowerGame('mallow-recovery');
 recovering.start();
