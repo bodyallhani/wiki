@@ -1,9 +1,12 @@
 {
-  "draftExecution": "369e6770fbef4bf993f9d7b03bf7f0e4",
-  "renderExecution": "65cda36e13834f2c85f3c30df96e6318",
-  "inputMode": "refinement of prior Claude draft; not an unassisted fresh-generation pass",
+  "draftExecution": "57d7dc0c334e4a71b76d2bf25e7c94f2",
+  "renderExecution": "e54b9d3a5a8a4d219ef3d01ee4d84773",
+  "inputMode": "Claude refinement of prior Claude draft through independent review, structure and hash gates",
   "assistantEditorialAccepted": true,
   "clinicianReviewStatus": "PENDING",
+  "documentHash": "ff08c7aa8aa90387165c22aefcac470d6e39f8a98cc002c398c81c80814a289f",
+  "draftHash": "861052a2ea80316b762f0c1a9735ea64a48436e7b0e4c32b0caf374a766b046d",
+  "receiptHash": "deafe4a8957014f58f1b617240da1e53c44514635def6b7059ad1cf0a9060909",
   "independentReviewAreas": [
     "research",
     "clinic",
@@ -13,34 +16,49 @@
   "requiredCriteria": 8,
   "corpusDocuments": 85,
   "comparedNearestDocuments": 6,
-  "renderHtmlChars": 23745,
+  "renderHtmlChars": 23069,
   "screens": {
     "desktop": {
       "width": 1280,
       "overflow": false,
-      "loadedImages": 2
+      "loadedImages": 2,
+      "h1": 1
     },
     "mobile": {
       "width": 390,
       "overflow": false,
-      "loadedImages": 2
+      "loadedImages": 2,
+      "h1": 1
     }
   },
+  "offline": {
+    "koreanFont": true,
+    "images": 2,
+    "overflow": false
+  },
+  "bodyProsePreserved": true,
   "robots": "noindex,nofollow",
   "images": [
     {
       "path": "./image/0028.postpartum-sacroiliac-pain-chuna-timing-suitability-1.webp",
-      "sha": "96203612df6408428d99ccf7fd33c4c3d2f5e25c",
-      "bytes": 714840
+      "sha": "bdfebd3774d23143dd0528165dd3c1eceb01b730",
+      "bytes": 851454
     },
     {
       "path": "./image/0028.postpartum-sacroiliac-pain-chuna-timing-suitability-2.webp",
-      "sha": "6cd825beb035b69d03f6364f274b47b08652e567",
-      "bytes": 560062
+      "sha": "3d0c6cd9c336b17b938c42813b9891877074c68d",
+      "bytes": 389134
     }
   ],
-  "productionIntegration": "BLOCKED_AUTO_REVIEW_SCOPE",
-  "latestFreshExecution": "90719d38682f4fbf9017790490f0d54d",
-  "latestFreshOutcome": "HELD_AFTER_BOUNDED_REPAIR",
-  "publicationPerformed": false
+  "productionIntegration": "NOT_APPLIED",
+  "latestFreshExecution": "133e8828b6004e509691f9f519c886e1",
+  "latestFreshOutcome": "TECHNICAL_PASS; not selected as final editorial specimen",
+  "publicationPerformed": false,
+  "testsPassed": 30,
+  "selectedFinalDraftStillPassesLatestGuard": true,
+  "latestFreshAssistantEditorialAccepted": false,
+  "latestFreshEditorialNotes": [
+    "The Wiezer population is pelvic girdle pain and related low back pain, not confirmed sacroiliac-joint pain alone. Preserve the original population wording.",
+    "The selected final HTML remains the independently reviewed refined Claude draft, which passes the latest guard."
+  ]
 }

@@ -321,6 +321,8 @@ def editorial_issues(candidate):
         issues.append("UNSUPPORTED_EXAM_CAUSE_DISCRIMINATION")
     if re.search(r"\d{3,}\s*편의?\s*(?:논문|연구)\s*중|체계적\s*문헌고찰\s*\d+편.{0,25}무작위.{0,20}\d+편", visible):
         issues.append("LITERATURE_SEARCH_INVENTORY")
+    if '32560862' in candidate and re.search(r"(?:산후\s*골반통|자연\s*경과).{0,45}(?:대부분|대다수).{0,30}(?:호전|나아|좋아)", visible):
+        issues.append("UNSUPPORTED_NATURAL_COURSE_QUANTIFIER")
     # Real 2026-09-24 drafts passed the model while burying the clinic value.
     # Apply only to articles that actually explain this confirmed SART process.
     support = re.search(r"역중력치료기|골반을.{0,30}(?:지지|받치)", visible)
@@ -367,11 +369,20 @@ def receipt(candidate, context, verdict, document=None):
     for key in criteria:
         if verdict.get("criteria", {}).get(key) is not True:
             errors.append("CRITERION:" + key)
-    checks = verdict.get("claim_checks", [])
+    raw_checks = verdict.get("claim_checks", [])
+    # Four required object fields prevent the model from filling an array with
+    # repeated research checks while silently omitting reader value. Keep old
+    # receipts readable without changing their content or identity.
+    checks = ([dict(value, area=area) for area, value in raw_checks.items()]
+              if isinstance(raw_checks, dict) else raw_checks)
     if {c.get("area") for c in checks} != {"research", "clinic", "safety", "reader_value"}:
         errors.append("CLAIM_CHECKS_INCOMPLETE")
     if any(c.get("supported") is not True for c in checks):
         errors.append("CLAIM_CHECK_FAILED")
+    for check in checks:
+        quote = normalize(check.get('draft_quote', ''))
+        if not quote or quote not in normalize(parse_page(candidate)['text']):
+            errors.append('UNVERIFIABLE_CLAIM_QUOTE:' + str(check.get('area', 'MISSING')))
     compared = verdict.get("compared", [])
     expected = {d["path"] for d in context.get("nearest", [])}
     actual = {d.get("path") for d in compared}

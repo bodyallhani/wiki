@@ -1,6 +1,6 @@
 {
   "scenarioId": 7577470,
-  "lastEdit": "2026-09-24T14:34:15.895Z",
+  "lastEdit": "2026-09-24T15:45:49.852Z",
   "writerModuleIds": [
     2,
     302
@@ -15,27 +15,34 @@
   ],
   "model": "claude-sonnet-5",
   "productionWriterScenarioId": 7319449,
-  "productionIntegration": "BLOCKED_AUTO_REVIEW_SCOPE",
+  "productionIntegration": "NOT_APPLIED",
   "externalExecution": "AUTHORIZED_AND_EXECUTED",
-  "lastModelPassExecution": "369e6770fbef4bf993f9d7b03bf7f0e4",
+  "lastModelPassExecution": "57d7dc0c334e4a71b76d2bf25e7c94f2",
   "writer_output_source": "2.content[1].text",
-  "production_integration_status": "not_applied_auto_review_rejected",
-  "production_input_gate": 1460,
-  "production_quality_merge": 1480,
+  "production_integration_status": "not_applied; earlier auto-review scope rejection; latest user standing approval recorded, no subsequent production write yet",
   "production_final_gate": 1205,
   "isolatedScenarioId": 7581728,
   "isolatedDispatcherId": 7582035,
-  "isolatedLastEdit": "2026-09-24T14:41:56.780Z",
+  "isolatedLastEdit": "2026-09-24T15:45:24.147Z",
   "review_claim_checks": [
     "research",
     "clinic",
     "safety",
     "reader_value"
   ],
-  "lastAcceptedRefinedDraftExecution": "369e6770fbef4bf993f9d7b03bf7f0e4",
-  "lastAcceptedRenderExecution": "65cda36e13834f2c85f3c30df96e6318",
-  "latestFreshValidation": "90719d38682f4fbf9017790490f0d54d",
-  "latestFreshValidationStatus": "HELD_AFTER_BOUNDED_REPAIR",
+  "lastAcceptedRefinedDraftExecution": "57d7dc0c334e4a71b76d2bf25e7c94f2",
+  "lastAcceptedRenderExecution": "e54b9d3a5a8a4d219ef3d01ee4d84773",
+  "latestFreshValidation": "133e8828b6004e509691f9f519c886e1",
+  "latestFreshValidationStatus": "TECHNICAL_PASS; final specimen is refined draft",
   "assistantEditorialAccepted": true,
-  "clinicianReviewStatus": "PENDING"
+  "clinicianReviewStatus": "PENDING",
+  "isolated_input_gate": 1460,
+  "isolated_quality_merge": 1480,
+  "editorialPriority": "Supported Bodyall differentiation is mandatory; excessive neutralization and buried patient value are defects.",
+  "latestRefinementValidation": "57d7dc0c334e4a71b76d2bf25e7c94f2",
+  "reviewerScope": "Reject actual unsupported claims; do not invent adverse implications or equate applying general clinic care to a postpartum complaint with a special postpartum protocol.",
+  "receiptFormat": "Four required review objects; exact unabridged compared paths; concise valid JSON; reviewer token budget 12288",
+  "review_claim_checks_shape": "required object: research, clinic, safety, reader_value; legacy arrays remain readable",
+  "reviewQuoteIdentity": "Every area quote must occur verbatim in the reviewed draft; a quote copied only from clinic inputs cannot pass.",
+  "latestFreshAssistantEditorialAccepted": false
 }

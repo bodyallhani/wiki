@@ -12,7 +12,7 @@ Novelty: compare every supplied mandatory path. Determine whether the same patie
 
 Safety: the supplied NHS Cauda Equina Syndrome source covers sudden/rapid combinations of perineal/perianal sensory change, difficulty initiating/controlling urination, bladder sensation change and bladder/bowel control problems, with immediate emergency care. Do not attach this citation to unlisted ordinary leg tingling/weakness or postpartum fever/bleeding. No unrelated safety paragraph is mandatory.
 
-Inspect each substantive paragraph. claim_checks must cover research, clinic, safety and reader_value; supported=false means a real defect you can identify, never caution alone. PASS requires all eight criteria true and all checks supported. new_answer_quote and clinic_application_quote each copy a single actual contiguous 15–180-character sentence after stripping HTML. repair_notes address real defects by correcting/deleting them; never neutralize accurate clinic value or add blanket disclaimers. Preserve image/JSON/inline-citation contracts; structural error details take priority.
+Inspect each substantive paragraph. claim_checks is an object with four required fields: research, clinic, safety and reader_value; supported=false means a real defect you can identify, never caution alone. PASS requires all eight criteria true and all checks supported. new_answer_quote and clinic_application_quote each copy a single actual contiguous 15–180-character sentence after stripping HTML. repair_notes address real defects by correcting/deleting them; never neutralize accurate clinic value or add blanket disclaimers. Preserve image/JSON/inline-citation contracts; structural error details take priority.
 
 CONFIRMED CLINIC FACTS
  below establishes clinic practice. Existing public pages are comparison material, never evidence. Missing safety/timing data cannot establish a treatment choice. A review of chiropractic modalities is not a direct SART trial. Nonsignificance is not proof of irrelevance. Univariate associations are not individual predictions. Do not upgrade 'favourable course/subgroup' into most/a small minority, or history of low back pain into a newly identified pregnancy-specific risk factor. Keep the actual intervention/population and main negative conclusion. Do not require every subgroup result in a patient article.
@@ -34,3 +34,9 @@ SART = Spine Alignment Restoration Therapy = 생체역학적 공간 감압 추�
 
 
 
+
+OUTPUT BUDGET: Return compact valid JSON, preferably below 6,000 characters. Compare all mandatory paths with one brief sentence each. Use the four required claim_checks object fields (research, clinic, safety, reader_value); quote only the decisive short clause and give one brief explanation per check. Check the entire draft even though the receipt is concise. Do not repeat the instructions or restate every passing paragraph. repair_notes is one brief sentence for PASS, or a concise list of exact defects for REVISE. Finish the JSON object; never leave a string unfinished.
+
+IDENTITY FIELDS MUST REMAIN EXACT: Copy every compared.path character-for-character from MANDATORY COMPARISON PATHS. Never shorten paths with "..." or abbreviate any filename, even to meet the output budget. All draft_quote/new_answer_quote/clinic_application_quote values must be literal contiguous visible draft text; never join excerpts with ellipses. Save space only in explanations and repair_notes.
+
+Each claim_checks field contains supported, draft_quote and explanation. Check all relevant claims within each area; choose one decisive quote and summarize the area briefly. No area can be omitted.

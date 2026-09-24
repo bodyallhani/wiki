@@ -92,38 +92,96 @@
       "type": "string"
     },
     "claim_checks": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "object",
-        "required": [
-          "area",
-          "supported",
-          "draft_quote",
-          "explanation"
-        ],
-        "properties": {
-          "area": {
-            "type": "string",
-            "enum": [
-              "research",
-              "clinic",
-              "safety",
-              "reader_value"
-            ]
+      "type": "object",
+      "required": [
+        "research",
+        "clinic",
+        "safety",
+        "reader_value"
+      ],
+      "properties": {
+        "research": {
+          "type": "object",
+          "required": [
+            "supported",
+            "draft_quote",
+            "explanation"
+          ],
+          "properties": {
+            "supported": {
+              "type": "boolean"
+            },
+            "explanation": {
+              "type": "string"
+            },
+            "draft_quote": {
+              "type": "string"
+            }
           },
-          "supported": {
-            "type": "boolean"
-          },
-          "explanation": {
-            "type": "string"
-          },
-          "draft_quote": {
-            "type": "string"
-          }
+          "additionalProperties": false
         },
-        "additionalProperties": false
-      }
+        "clinic": {
+          "type": "object",
+          "required": [
+            "supported",
+            "draft_quote",
+            "explanation"
+          ],
+          "properties": {
+            "supported": {
+              "type": "boolean"
+            },
+            "explanation": {
+              "type": "string"
+            },
+            "draft_quote": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "safety": {
+          "type": "object",
+          "required": [
+            "supported",
+            "draft_quote",
+            "explanation"
+          ],
+          "properties": {
+            "supported": {
+              "type": "boolean"
+            },
+            "explanation": {
+              "type": "string"
+            },
+            "draft_quote": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "reader_value": {
+          "type": "object",
+          "required": [
+            "supported",
+            "draft_quote",
+            "explanation"
+          ],
+          "properties": {
+            "supported": {
+              "type": "boolean"
+            },
+            "explanation": {
+              "type": "string"
+            },
+            "draft_quote": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": false

@@ -52,4 +52,26 @@ class EditorialRegressions(unittest.TestCase):
         self.assertEqual([], editorial_issues(clinical))
         self.assertIn('CLINIC_VALUE_BURIED', editorial_issues('<p>'+('연구 결과 설명입니다. '*100)+'</p>'+clinical))
 
+    def test_required_object_covers_all_four_review_areas(self):
+        checks={a:{'supported':True,'draft_quote':'실제 진료 과정입니다.','explanation':'Confirmed.'} for a in ('research','clinic','safety','reader_value')}
+        result=receipt('<p>실제 진료 과정입니다.</p>',{}, {'decision':'PASS','claim_checks':checks})
+        self.assertNotIn('CLAIM_CHECKS_INCOMPLETE',result['reason'])
+        self.assertNotIn('CLAIM_CHECK_FAILED',result['reason'])
+        self.assertEqual(result['review']['claim_checks'],checks)
+
+    def test_object_cannot_hide_a_missing_or_failed_area(self):
+        checks={a:{'supported':True,'draft_quote':'실제 진료 과정입니다.','explanation':'Confirmed.'} for a in ('research','clinic','safety')}
+        self.assertIn('CLAIM_CHECKS_INCOMPLETE',receipt('<p>실제 진료 과정입니다.</p>',{}, {'claim_checks':checks})['reason'])
+        checks['reader_value']={'supported':False,'draft_quote':'실제 진료 과정입니다.','explanation':'Missing decision.'}
+        self.assertIn('CLAIM_CHECK_FAILED',receipt('<p>실제 진료 과정입니다.</p>',{}, {'claim_checks':checks})['reason'])
+
+    def test_review_quote_must_be_in_the_draft_not_only_in_clinic_inputs(self):
+        checks={'reader_value':{'supported':True,'draft_quote':'입력에만 있는 진료 설명입니다.','explanation':'Correct.'}}
+        self.assertIn('UNVERIFIABLE_CLAIM_QUOTE:reader_value',receipt('<p>다른 설명입니다.</p>',{}, {'claim_checks':checks})['reason'])
+
+    def test_wiezer_favourable_course_is_not_a_majority_claim(self):
+        ref='<a href="https://pubmed.ncbi.nlm.nih.gov/32560862/">참고문헌</a>'
+        self.assertIn('UNSUPPORTED_NATURAL_COURSE_QUANTIFIER',editorial_issues('<p>산후 골반통은 자연 경과상 대부분 호전됩니다.</p>'+ref))
+        self.assertEqual([],editorial_issues('<p>산후 골반통은 자연스럽게 호전되는 경과를 보이지만 통증이 남는 경우도 있습니다.</p>'+ref))
+
 if __name__=='__main__': unittest.main()
