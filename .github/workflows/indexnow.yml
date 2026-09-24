@@ -6,6 +6,7 @@ on:
     paths:
       - 'sitemap.xml'
       - '**.html'
+      - 'indexnow-backfill.trigger'
   workflow_dispatch:
     inputs:
       scope:
@@ -54,20 +55,22 @@ jobs:
               (entry.findtext(ns + 'loc') or '').strip()
               for entry in sitemap.findall(ns + 'url')
           }
+          head = os.environ['HEAD_SHA']
+          try:
+              parent = subprocess.check_output(
+                  ['git', 'rev-parse', head + '^'], text=True
+              ).strip()
+              changed = subprocess.check_output(
+                  ['git', 'diff', '--name-only', parent, head], text=True
+              ).splitlines()
+          except subprocess.CalledProcessError:
+              changed = []
+
           scope = os.environ['REQUESTED_SCOPE']
-          if scope == 'all':
+          backfill_triggered = 'indexnow-backfill.trigger' in changed
+          if scope == 'all' or backfill_triggered:
               selected = published
           else:
-              head = os.environ['HEAD_SHA']
-              try:
-                  parent = subprocess.check_output(
-                      ['git', 'rev-parse', head + '^'], text=True
-                  ).strip()
-                  changed = subprocess.check_output(
-                      ['git', 'diff', '--name-only', parent, head], text=True
-                  ).splitlines()
-              except subprocess.CalledProcessError:
-                  changed = []
               selected = set()
               for path in changed:
                   if not path.endswith('.html'):
@@ -78,12 +81,15 @@ jobs:
                       url = 'https://wiki.body-all.co.kr/' + urllib.parse.quote(path)
                   if url in published:
                       selected.add(url)
+
           output = pathlib.Path(os.environ['RUNNER_TEMP']) / 'indexnow-urls.txt'
           output.write_text('\n'.join(sorted(selected)) + ('\n' if selected else ''), encoding='utf-8')
           with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as fh:
               fh.write(f'count={len(selected)}\n')
               fh.write(f'file={output}\n')
           print(f'Selected {len(selected)} sitemap URL(s).')
+          for url in sorted(selected):
+              print(f'Selected URL: {url}')
           PY
 
       - name: Give GitHub Pages time to publish the same revision
@@ -131,12 +137,14 @@ jobs:
                   status = response.status
           except urllib.error.HTTPError as error:
               if error.code == 429:
-                  print('IndexNow returned 429; no retry was made to avoid duplicate/spam submissions.')
-                  raise SystemExit(0)
+                  retry_after = error.headers.get('Retry-After', 'not provided')
+                  print(f'IndexNow returned HTTP 429; stopping without retry. Retry-After: {retry_after}')
+                  raise SystemExit(75)
               raise
           if not 200 <= status < 300:
               raise SystemExit(f'IndexNow returned unexpected HTTP {status}')
           print(f'IndexNow accepted {len(urls)} URL(s) with HTTP {status}.')
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as output:
-              output.write(f'IndexNow accepted {len(urls)} URL(s) (HTTP {status}).\n')
+              output.write(f'IndexNow accepted {len(urls)} URL(s) (HTTP {status}).\n\n')
+              output.write('This confirms API receipt, not search-engine crawling or indexing.\n')
           PY
