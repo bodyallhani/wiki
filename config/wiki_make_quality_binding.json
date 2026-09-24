@@ -1,6 +1,6 @@
 {
   "scenarioId": 7577470,
-  "lastEdit": "2026-09-24T13:23:09.538Z",
+  "lastEdit": "2026-09-24T14:34:15.895Z",
   "writerModuleIds": [
     2,
     302
@@ -15,8 +15,26 @@
   ],
   "model": "claude-sonnet-5",
   "productionWriterScenarioId": 7319449,
-  "productionIntegration": "NOT_APPLIED",
-  "externalExecution": "BLOCKED_PENDING_EXPLICIT_AUTHORIZATION",
-  "lastModelPassExecution": "dd893abe099746d28cab3cd3f3965d07",
-  "lastModelPassAcceptedByHumanEditor": false
+  "productionIntegration": "BLOCKED_AUTO_REVIEW_SCOPE",
+  "externalExecution": "AUTHORIZED_AND_EXECUTED",
+  "lastModelPassExecution": "e5b5e80322f84c1d9066d606f8a13d17",
+  "lastModelPassAcceptedByHumanEditor": false,
+  "writer_output_source": "2.content[1].text",
+  "production_integration_status": "not_applied",
+  "production_input_gate": 1460,
+  "production_quality_merge": 1480,
+  "production_final_gate": 1205,
+  "isolatedScenarioId": 7581728,
+  "isolatedDispatcherId": 7582035,
+  "isolatedLastEdit": "2026-09-24T14:33:28.076Z",
+  "review_claim_checks": [
+    "research",
+    "clinic",
+    "safety",
+    "reader_value"
+  ],
+  "lastAcceptedRefinedDraftExecution": "7169f1c2fe1a48dbb56dc0735eb2f632",
+  "lastAcceptedRenderExecution": "0984f8fea5274d88bf43cfda389dec58",
+  "latestFreshValidation": "90719d38682f4fbf9017790490f0d54d",
+  "latestFreshValidationStatus": "running"
 }

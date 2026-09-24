@@ -21,4 +21,21 @@ class EditorialRegressions(unittest.TestCase):
         self.assertIn('CRITERION:natural_patient_language',out['reason'])
         self.assertIn('CRITERION:no_redundant_caveats',out['reason'])
 
+    def test_observed_nested_markup_and_placeholder_are_blocked(self):
+        self.assertIn('NESTED_PARAGRAPH_MARKUP', editorial_issues('<p>진찰을 <p>확인합니다.</p></p>'))
+        self.assertIn('AUTHORING_PLACEHOLDER', editorial_issues('<p class="aio-q">이번 질문</p>'))
+
+    def test_rom_observation_cannot_establish_tissue_cause(self):
+        self.assertIn('UNSUPPORTED_EXAM_CAUSE_DISCRIMINATION', editorial_issues('<p>관절가동범위를 비교해 통증이 근육의 긴장 때문인지 관절 움직임 자체의 제한 때문인지를 가늠합니다.</p>'))
+
+    def test_specific_ces_reference_cannot_support_unlisted_symptoms(self):
+        link='<a href="https://www.torbayandsouthdevon.nhs.uk/cauda-equina-syndrome/">안내</a>'
+        self.assertIn('CES_CITATION_SCOPE_MISMATCH', editorial_issues('<p>다리로 뻗치는 힘 빠짐이나 감각 저하가 있으면 응급 진료를 받으세요.'+link+'</p>'))
+        self.assertEqual([], editorial_issues('<p>회음부 감각과 배뇨 조절에 갑작스러운 변화가 함께 나타나면 즉시 응급실로 가세요.'+link+'</p>'))
+
+    def test_model_pass_cannot_override_its_own_claim_failure(self):
+        review={'decision':'PASS','claim_checks':[{'area':a,'supported':True,'problem_quote':''} for a in ('research','clinic','safety','reader_value')]}
+        review['claim_checks'][1].update(supported=False,problem_quote='가동범위로 원인을 구별합니다')
+        self.assertIn('CLAIM_CHECK_FAILED', receipt('<p>가동범위로 원인을 구별합니다.</p>',{},review)['reason'])
+
 if __name__=='__main__': unittest.main()

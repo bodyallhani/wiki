@@ -1,0 +1,130 @@
+{
+  "type": "object",
+  "required": [
+    "claim_checks",
+    "decision",
+    "criteria",
+    "compared",
+    "new_answer_quote",
+    "clinic_application_quote",
+    "repair_notes"
+  ],
+  "properties": {
+    "compared": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "same_decision",
+          "difference"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "difference": {
+            "type": "string"
+          },
+          "same_decision": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "criteria": {
+      "type": "object",
+      "required": [
+        "new_patient_decision",
+        "substantive_answer_difference",
+        "source_fidelity",
+        "bodyall_facts_supported",
+        "useful_clinic_application",
+        "no_unsubstantiated_superiority",
+        "natural_patient_language",
+        "no_redundant_caveats"
+      ],
+      "properties": {
+        "source_fidelity": {
+          "type": "boolean"
+        },
+        "new_patient_decision": {
+          "type": "boolean"
+        },
+        "no_redundant_caveats": {
+          "type": "boolean"
+        },
+        "bodyall_facts_supported": {
+          "type": "boolean"
+        },
+        "natural_patient_language": {
+          "type": "boolean"
+        },
+        "useful_clinic_application": {
+          "type": "boolean"
+        },
+        "substantive_answer_difference": {
+          "type": "boolean"
+        },
+        "no_unsubstantiated_superiority": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "decision": {
+      "enum": [
+        "PASS",
+        "REVISE",
+        "UPDATE_OR_MERGE",
+        "BLOCK"
+      ],
+      "type": "string"
+    },
+    "repair_notes": {
+      "type": "string"
+    },
+    "new_answer_quote": {
+      "type": "string"
+    },
+    "clinic_application_quote": {
+      "type": "string"
+    },
+    "claim_checks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "area",
+          "supported",
+          "draft_quote",
+          "explanation"
+        ],
+        "properties": {
+          "area": {
+            "type": "string",
+            "enum": [
+              "research",
+              "clinic",
+              "safety",
+              "reader_value"
+            ]
+          },
+          "supported": {
+            "type": "boolean"
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "draft_quote": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

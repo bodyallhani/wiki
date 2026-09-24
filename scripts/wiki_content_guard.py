@@ -314,7 +314,31 @@ def editorial_issues(candidate):
         "AUTHORING_CONTEXT_LEAK": r"제공된 (?:연구|자료)|이번에 확인한 자료|이 글에서는.{0,100}(?:만들어|설명하지)|입력(?:에|에서) (?:없|확인)",
         "DEFENSIVE_CLINIC_DEFINITION": r"(?:특정|별도|고정된|특별한).{0,20}(?:프로토콜|절차).{0,20}(?:뜻|의미)|모든 환자에게 같은 SART 과정을 적용했다는 뜻은",
     }
-    return [name for name, pattern in patterns.items() if re.search(pattern, visible)]
+    issues = [name for name, pattern in patterns.items() if re.search(pattern, visible)]
+    if re.search(r"(?:프로토콜|절차).{0,55}(?:뜻|의미).{0,12}(?:아니|아닙)", visible):
+        issues.append("DEFENSIVE_CLINIC_DEFINITION")
+    if re.search(r"근육.{0,65}(?:때문|긴장).{0,65}관절.{0,65}(?:가늠|구분|구별|감별)", visible):
+        issues.append("UNSUPPORTED_EXAM_CAUSE_DISCRIMINATION")
+    for paragraph in re.findall(r"<p\b[^>]*>([\s\S]*?)</p>", candidate, re.I):
+        text = normalize(parse_page(paragraph)["text"])
+        if "torbayandsouthdevon.nhs.uk" in paragraph and re.search(r"(?:다리.{0,35}(?:힘 빠짐|감각 저하|저림)|출혈|발열)", text):
+            issues.append("CES_CITATION_SCOPE_MISMATCH")
+    if re.search(r"<h[23][^>]*>[^<]*(?:알 수 없|정보.{0,8}공백|범위 밖)[^<]*</h[23]>", candidate):
+        issues.append("AUTHORING_LIMITATION_SECTION")
+    if re.search(r"<(?:span|p)[^>]*>\s*(?:이번 질문|답변|이번 주제)\s*</", candidate):
+        issues.append("AUTHORING_PLACEHOLDER")
+    class ParagraphStructure(HTMLParser):
+        def __init__(self):
+            super().__init__(); self.open_p = False; self.invalid = False
+        def handle_starttag(self, tag, attrs):
+            if self.open_p and tag in {"p", "div", "section", "h1", "h2", "h3", "ul", "ol", "table"}:
+                self.invalid = True
+            if tag == "p": self.open_p = True
+        def handle_endtag(self, tag):
+            if tag == "p": self.open_p = False
+    structure = ParagraphStructure(); structure.feed(candidate)
+    if structure.invalid: issues.append("NESTED_PARAGRAPH_MARKUP")
+    return sorted(set(issues))
 
 
 def receipt(candidate, context, verdict, document=None):
@@ -334,6 +358,11 @@ def receipt(candidate, context, verdict, document=None):
     for key in criteria:
         if verdict.get("criteria", {}).get(key) is not True:
             errors.append("CRITERION:" + key)
+    checks = verdict.get("claim_checks", [])
+    if {c.get("area") for c in checks} != {"research", "clinic", "safety", "reader_value"}:
+        errors.append("CLAIM_CHECKS_INCOMPLETE")
+    if any(c.get("supported") is not True for c in checks):
+        errors.append("CLAIM_CHECK_FAILED")
     compared = verdict.get("compared", [])
     expected = {d["path"] for d in context.get("nearest", [])}
     actual = {d.get("path") for d in compared}
