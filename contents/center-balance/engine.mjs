@@ -1,7 +1,6 @@
-export const VERSION = '3.1.0';
+export const VERSION = '4.0.0';
 export const FIXED_STEP = 1 / 60;
-export const MAX_LOAD = 1;
-export const RESCUE_SECONDS = 2.2;
+export const FATIGUE_SECONDS = 2.6;
 
 const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
 
@@ -21,7 +20,11 @@ function randomFactory(seed) {
   };
 }
 
-export function validSeed(value) { return typeof value === 'string' && /^[a-zA-Z0-9_-]{4,42}$/.test(value); }
+export function validSeed(value) {
+  return typeof value === 'string' && /^[a-zA-Z0-9_-]{4,42}$/.test(value);
+}
+
+function massFor(index) { return 1 + index * .045; }
 
 export class TowerGame {
   constructor(seed) {
@@ -32,10 +35,6 @@ export class TowerGame {
   }
 
   reset() {
-    const slopeDirection = this.random() > .5 ? 1 : -1;
-    this.initialSlope = slopeDirection * (.018 + this.random() * .016);
-    this.baseSlope = this.initialSlope;
-    this.transientLean = 0;
     this.time = 0;
     this.state = 'ready';
     this.reason = null;
@@ -45,22 +44,27 @@ export class TowerGame {
     this.combo = 0;
     this.recoveries = 0;
     this.maxLoad = 0;
-    this.maxLean = Math.abs(this.baseSlope);
-    this.overloadTime = 0;
+    this.maxLean = 0;
+    this.fatigueTime = 0;
     this.dangerActive = false;
-    this.lean = this.baseSlope;
-    this.leanVelocity = 0;
-    this.targetLean = this.baseSlope;
-    this.strain = 0;
-    this.load = Math.abs(this.lean) * 2;
-    this.previousLoad = this.load;
-    this.blocks = [{ x: 0, width: 3.25, hue: 0, base: true }];
+    this.wobble = 0;
+    this.wobbleVelocity = 0;
+    this.settleLock = 0;
+    this.load = 0;
+    this.leftLoad = 0;
+    this.rightLoad = 0;
+    this.surfaceAngle = 0;
+    this.stability = 1;
+    this.blocks = [{
+      x: 0, width: 3.35, hue: 0, base: true,
+      angle: 0, y: .05, compressionLeft: 0, compressionRight: 0
+    }];
     this.mover = null;
-    this.hazard = null;
     this.accumulator = 0;
     this.events = [];
     this.lockout = 0;
     this.spawnMover();
+    this.solveStack();
   }
 
   start() { if (this.state === 'ready' || this.state === 'paused') this.state = 'playing'; }
@@ -68,96 +72,132 @@ export class TowerGame {
 
   spawnMover() {
     const direction = (this.level + (hashSeed(this.seed) & 1)) % 2 ? 1 : -1;
-    const width = Math.max(1.34, 2.32 - this.level * .043);
+    const width = Math.max(1.28, 2.28 - this.level * .047);
     this.mover = {
-      x: direction * 3.45,
+      x: direction * 3.42,
       direction: -direction,
       width,
-      speed: Math.min(5.15, 2.18 + this.level * .12),
+      speed: Math.min(4.75, 2.08 + this.level * .115),
       hue: (this.level * 47 + hashSeed(this.seed)) % 360
     };
-    this.scheduleHazard();
   }
 
-  scheduleHazard() {
-    if (this.hazard || this.level < 4) return;
-    const due = this.level === 4 || (this.level > 4 && (this.level - 4) % 3 === 0);
-    if (!due) return;
-    const sequence = Math.floor((this.level - 4) / 3);
-    const kind = ['tilt', 'settle', 'gust'][sequence % 3];
-    const direction = sequence === 0 ? Math.sign(this.baseSlope || 1) : ((hashSeed(this.seed) + sequence * 13) & 1) ? 1 : -1;
-    const tier = Math.floor(sequence / 3);
-    this.hazard = {
-      kind, direction, phase: 'warning', remaining: kind === 'tilt' && this.level === 4 ? 1.2 : .9,
-      duration: kind === 'gust' ? 1.8 : .75,
-      magnitude: kind === 'tilt' ? Math.min(.058 + tier * .009, .085) : kind === 'settle' ? Math.min(.13 + tier * .025, .22) : Math.min(.065 + tier * .012, .1),
-      applied: false
-    };
-    this.events.push({ type: 'hazardWarning', kind, direction, level: this.level });
-  }
+  analyze(candidate = null) {
+    const source = candidate ? [...this.blocks, candidate] : this.blocks;
+    const blocks = source.map(block => ({ ...block }));
+    let minMargin = 1;
+    let cumulativeAngle = 0;
+    let y = .05;
 
-  effectiveSlope() { return this.baseSlope + this.transientLean; }
+    blocks[0].angle = 0;
+    blocks[0].y = y;
+    blocks[0].compressionLeft = 0;
+    blocks[0].compressionRight = 0;
 
-  structuralLean(blocks = this.blocks) {
-    let weightedX = 0;
-    let totalWeight = 0;
-    for (let i = 1; i < blocks.length; i++) {
-      const weight = 1 + i * .22;
-      weightedX += blocks[i].x * weight;
-      totalWeight += weight;
+    for (let supportIndex = 0; supportIndex < blocks.length - 1; supportIndex++) {
+      const support = blocks[supportIndex];
+      const upper = blocks[supportIndex + 1];
+      let totalMass = 0;
+      let weightedX = 0;
+      for (let j = supportIndex + 1; j < blocks.length; j++) {
+        const mass = massFor(j);
+        totalMass += mass;
+        weightedX += blocks[j].x * mass;
+      }
+      const centerAbove = weightedX / Math.max(.001, totalMass);
+      const contactHalf = Math.max(.32, Math.min(support.width, upper.width) * .5);
+      const eccentricity = centerAbove - support.x;
+      const normalized = eccentricity / contactHalf;
+      const margin = 1 - Math.abs(normalized);
+      minMargin = Math.min(minMargin, margin);
+
+      const compliance = .0185 + Math.min(.009, totalMass * .0007);
+      const localAngle = -clamp(normalized, -1.35, 1.35) * compliance;
+      cumulativeAngle = clamp(cumulativeAngle + localAngle, -.235, .235);
+      const compression = Math.min(.16, totalMass * .0042);
+      const differential = clamp(normalized, -1, 1) * .052;
+      support.compressionLeft = clamp(compression - differential, 0, .2);
+      support.compressionRight = clamp(compression + differential, 0, .2);
+
+      y += .49 - (support.compressionLeft + support.compressionRight) * .5;
+      upper.angle = cumulativeAngle;
+      upper.y = y;
+      upper.compressionLeft = 0;
+      upper.compressionRight = 0;
     }
-    const center = totalWeight ? weightedX / totalWeight : 0;
-    const top = blocks.at(-1)?.x || 0;
-    const lower = blocks.length > 2 ? blocks.at(-2).x : 0;
-    const localKink = top - lower;
-    return clamp(this.effectiveSlope() + center * .082 + localKink * .034, -.31, .31);
+
+    const torque = clamp(Math.abs(cumulativeAngle) / .11 + Math.max(0, .25 - minMargin) * .55, 0, 1.25);
+    return { blocks, angle: cumulativeAngle, stability: minMargin, torque };
+  }
+
+  solveStack() {
+    const solved = this.analyze();
+    this.blocks = solved.blocks;
+    this.surfaceAngle = solved.angle + this.wobble;
+    this.stability = solved.stability;
+    const physicalLoad = clamp(solved.torque + Math.abs(this.wobble) * 2.2, 0, 1.15);
+    this.load += (physicalLoad - this.load) * .18;
+    const rightDown = this.surfaceAngle < 0;
+    const hot = clamp(this.load, 0, 1);
+    const assist = hot * .3;
+    this.leftLoad = rightDown ? hot : assist;
+    this.rightLoad = rightDown ? assist : hot;
   }
 
   idealX() {
     const support = this.blocks.at(-1);
-    let weightedX = 0;
-    let totalWeight = 0;
-    for (let i = 1; i < this.blocks.length; i++) {
-      const weight = 1 + i * .22;
-      weightedX += this.blocks[i].x * weight;
-      totalWeight += weight;
+    if (!this.mover) return support.x;
+    const reach = (support.width + this.mover.width) * .5 - .4;
+    const low = Math.max(-3.38, support.x - reach);
+    const high = Math.min(3.38, support.x + reach);
+    let bestX = clamp(support.x, low, high);
+    let bestCost = Infinity;
+    for (let i = 0; i <= 48; i++) {
+      const x = low + (high - low) * i / 48;
+      const result = this.analyze({ x, width: this.mover.width, hue: this.mover.hue });
+      const cost = Math.abs(result.angle) * 5 + Math.max(0, .3 - result.stability) * 2.4;
+      if (cost < bestCost) { bestCost = cost; bestX = x; }
     }
-    const newWeight = 1 + this.blocks.length * .22;
-    const desired = -(weightedX + this.effectiveSlope() / .082 * Math.max(1, totalWeight)) / newWeight;
-    const reach = (support.width + this.mover.width) * .5 - .42;
-    return clamp(clamp(desired, support.x - reach, support.x + reach), -3.42, 3.42);
+    return bestX;
   }
 
   place() {
     if (this.state !== 'playing' || this.lockout > 0 || !this.mover) return [];
     const support = this.blocks.at(-1);
     let x = this.mover.x;
-    const distance = Math.abs(x - support.x);
-    const overlap = (support.width + this.mover.width) * .5 - distance;
-    if (overlap < .38) {
+    const overlap = (support.width + this.mover.width) * .5 - Math.abs(x - support.x);
+    if (overlap < .34) {
       this.finish('miss');
       return this.flushEvents();
     }
 
     const ideal = this.idealX();
-    if (this.level < 2 && Math.abs(x - ideal) < .18) x = ideal;
+    if (this.level < 2 && Math.abs(x - ideal) < .16) x = ideal;
     const before = this.load;
-    const block = { x: +x.toFixed(4), width: this.mover.width, hue: this.mover.hue };
+    const block = {
+      x: +x.toFixed(4), width: this.mover.width, hue: this.mover.hue,
+      angle: 0, y: 0, compressionLeft: 0, compressionRight: 0
+    };
+    const projected = this.analyze(block);
     this.blocks.push(block);
     this.level++;
-    this.targetLean = this.structuralLean();
-    const projected = clamp(Math.abs(this.targetLean) / .22, 0, 1.4);
+    this.wobbleVelocity += clamp((x - support.x) * -.036, -.075, .075);
+    this.settleLock = .58;
+    this.solveStack();
+
     const accuracy = Math.abs(x - ideal);
-    const perfect = accuracy < .085;
-    if (perfect) { this.perfects++; this.combo++; }
-    else this.combo = 0;
-    const recovery = before >= .45 && projected <= before - .18;
+    const perfect = accuracy < .082;
+    if (perfect) { this.perfects++; this.combo++; } else this.combo = 0;
+    const recovery = before >= .36 && projected.torque <= before - .14;
     if (recovery) this.recoveries++;
-    this.score += 100 + (perfect ? 120 + this.combo * 20 : 0) + (recovery ? 350 + Math.round(before * 300) : 0);
-    this.events.push({ type: 'placed', block, level: this.level, perfect, accuracy, ideal, recovery, loadBefore: before, projectedLoad: projected });
+    this.score += 100 + (perfect ? 120 + this.combo * 20 : 0) + (recovery ? 380 + Math.round(before * 320) : 0);
+    this.events.push({
+      type: 'placed', block: { ...block }, level: this.level, perfect, accuracy, ideal,
+      recovery, loadBefore: before, projectedLoad: projected.torque
+    });
     if (perfect) this.events.push({ type: 'perfect', combo: this.combo });
-    if (recovery) this.events.push({ type: 'recovery', count: this.recoveries, from: before, to: projected });
-    this.lockout = .26;
+    if (recovery) this.events.push({ type: 'recovery', count: this.recoveries, from: before, to: projected.torque });
+    this.lockout = .25;
     this.spawnMover();
     return this.flushEvents();
   }
@@ -172,70 +212,39 @@ export class TowerGame {
     return this.flushEvents();
   }
 
-  stepHazard(dt) {
-    if (!this.hazard) { this.transientLean *= Math.max(0, 1 - dt * 5); return; }
-    const hazard = this.hazard;
-    hazard.remaining -= dt;
-    if (hazard.phase === 'warning') {
-      if (hazard.remaining <= 0) {
-        hazard.phase = 'active';
-        hazard.remaining = hazard.duration;
-        this.events.push({ type: 'hazardStart', kind: hazard.kind, direction: hazard.direction });
-        if (hazard.kind === 'tilt') {
-          this.baseSlope = clamp(this.baseSlope + hazard.direction * hazard.magnitude, -.13, .13);
-          hazard.applied = true;
-        } else if (hazard.kind === 'settle') {
-          const top = this.blocks.at(-1);
-          top.x = +(top.x + hazard.direction * hazard.magnitude).toFixed(4);
-          hazard.applied = true;
-          this.events.push({ type: 'settled', x: top.x, direction: hazard.direction });
-        }
-      }
-      return;
-    }
-    if (hazard.kind === 'gust') {
-      const progress = 1 - Math.max(0, hazard.remaining) / hazard.duration;
-      this.transientLean = hazard.direction * hazard.magnitude * Math.sin(progress * Math.PI);
-    }
-    if (hazard.remaining <= 0) {
-      const ended = hazard.kind;
-      this.transientLean = 0;
-      this.hazard = null;
-      this.events.push({ type: 'hazardEnd', kind: ended });
-    }
-  }
-
   step(dt) {
     this.time += dt;
     this.lockout = Math.max(0, this.lockout - dt);
-    this.stepHazard(dt);
+    this.settleLock = Math.max(0, this.settleLock - dt);
     if (this.lockout <= 0 && this.mover) {
       this.mover.x += this.mover.direction * this.mover.speed * dt;
-      if (this.mover.x > 3.48) { this.mover.x = 3.48; this.mover.direction = -1; }
-      if (this.mover.x < -3.48) { this.mover.x = -3.48; this.mover.direction = 1; }
+      if (this.mover.x > 3.46) { this.mover.x = 3.46; this.mover.direction = -1; }
+      if (this.mover.x < -3.46) { this.mover.x = -3.46; this.mover.direction = 1; }
     }
 
-    this.targetLean = this.structuralLean();
-    const spring = (this.targetLean - this.lean) * 10.5;
-    this.leanVelocity += (spring - this.leanVelocity * 5.1) * dt;
-    this.lean += this.leanVelocity * dt;
-    const instant = Math.abs(this.lean) / .22;
-    if (instant > .19) this.strain += (instant - .16) * dt * .21;
-    else this.strain -= dt * .14;
-    this.strain = clamp(this.strain, 0, 1);
-    this.previousLoad = this.load;
-    this.load = clamp(instant * .72 + this.strain * .67, 0, 1.15);
+    const spring = -this.wobble * 31;
+    this.wobbleVelocity += (spring - this.wobbleVelocity * 6.4) * dt;
+    this.wobble += this.wobbleVelocity * dt;
+    if (Math.abs(this.wobble) < .00005 && Math.abs(this.wobbleVelocity) < .0001) {
+      this.wobble = 0;
+      this.wobbleVelocity = 0;
+    }
+
     const wasDanger = this.dangerActive;
-    if (this.load > .72) this.overloadTime += dt;
-    else if (this.load < .61) this.overloadTime = Math.max(0, this.overloadTime - dt * 2.35);
-    this.dangerActive = this.overloadTime > .03;
-    if (!wasDanger && this.dangerActive) this.events.push({ type: 'rescueStart', seconds: RESCUE_SECONDS });
+    this.solveStack();
+    if (this.load > .8) this.fatigueTime += dt;
+    else if (this.load < .64) this.fatigueTime = Math.max(0, this.fatigueTime - dt * 2);
+    this.dangerActive = this.fatigueTime > .04;
+    if (!wasDanger && this.dangerActive) this.events.push({ type: 'rescueStart', seconds: FATIGUE_SECONDS });
     if (wasDanger && !this.dangerActive) this.events.push({ type: 'rescueClear' });
+
     this.maxLoad = Math.max(this.maxLoad, this.load);
-    this.maxLean = Math.max(this.maxLean, Math.abs(this.lean));
+    this.maxLean = Math.max(this.maxLean, Math.abs(this.surfaceAngle));
     this.score += dt * (8 + this.level * .55);
-    if (this.overloadTime >= RESCUE_SECONDS) this.finish('overload');
-    else if (Math.abs(this.lean) >= .305) this.finish('collapse');
+
+    if (this.settleLock <= 0 && this.stability < -.02) this.finish('collapse');
+    else if (Math.abs(this.surfaceAngle) >= .24) this.finish('collapse');
+    else if (this.fatigueTime >= FATIGUE_SECONDS) this.finish('overload');
   }
 
   finish(reason) {
@@ -252,13 +261,15 @@ export class TowerGame {
       version: VERSION, seed: this.seed, state: this.state, reason: this.reason,
       time: +this.time.toFixed(3), level: this.level, score: Math.floor(this.score),
       perfects: this.perfects, combo: this.combo, recoveries: this.recoveries,
-      lean: this.lean, targetLean: this.targetLean, load: Math.min(1, this.load),
-      strain: this.strain, maxLoad: Math.min(1, this.maxLoad), maxLean: this.maxLean,
-      overloadTime: this.overloadTime, dangerActive: this.dangerActive,
-      dangerRemaining: Math.max(0, RESCUE_SECONDS - this.overloadTime), baseSlope: this.baseSlope,
-      hazard: this.hazard ? { ...this.hazard } : null,
+      lean: this.surfaceAngle, surfaceAngle: this.surfaceAngle, load: Math.min(1, this.load),
+      leftLoad: this.leftLoad, rightLoad: this.rightLoad,
+      maxLoad: Math.min(1, this.maxLoad), maxLean: this.maxLean,
+      fatigueTime: this.fatigueTime, dangerActive: this.dangerActive,
+      dangerRemaining: Math.max(0, FATIGUE_SECONDS - this.fatigueTime),
+      stability: this.stability, wobble: this.wobble,
       mover: this.mover ? { ...this.mover } : null,
-      blocks: this.blocks.map(block => ({ ...block })), idealX: this.mover ? this.idealX() : 0
+      blocks: this.blocks.map(block => ({ ...block })),
+      idealX: this.mover ? this.idealX() : 0
     };
   }
 }

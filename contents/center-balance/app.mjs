@@ -5,8 +5,8 @@ import { TowerGame, validSeed, VERSION } from './engine.mjs';
 const $ = id => document.getElementById(id);
 const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
 const canonical = 'https://wiki.body-all.co.kr/contents/center-balance/';
-const storageKey = 'bodyall-mallow-tower-v3';
-const ids = ['scene','stage','loading','start-panel','start','start-copy','hud','floor-count','load-state','load-percent','load-fill','load-left','load-right','score','combo','challenge-banner','challenge-score','countdown','count','touch-guide','hazard-alert','hazard-arrow','hazard-copy','rescue-alert','rescue-time','center-message','impact-flash','pause','best','plays','perfect-total','recovery-total','sound','info','result-dialog','result-label','result-title','result-floor','result-message','result-load','result-lean','result-recovery','result-badges','retry','challenge','new-pattern','share-status','pause-dialog','resume','quit','info-dialog'];
+const storageKey = 'bodyall-mallow-tower-v4';
+const ids = ['scene','stage','loading','start-panel','start','start-copy','hud','floor-count','load-state','load-percent','load-fill','load-left','load-right','score','combo','challenge-banner','challenge-score','countdown','count','touch-guide','rescue-alert','rescue-time','center-message','impact-flash','pause','best','plays','perfect-total','recovery-total','sound','info','result-dialog','result-label','result-title','result-floor','result-message','result-load','result-lean','result-recovery','result-badges','retry','challenge','new-pattern','share-status','pause-dialog','resume','quit','info-dialog'];
 const els = Object.fromEntries(ids.map(id => [id, $(id)]));
 
 let saved = {};
@@ -135,42 +135,62 @@ function createLayer(block, index, moving = false) {
 
 function makeCharacter() {
   const root = new THREE.Group();
-  const skin = material(0xf2c992), green = material(0x2c896d), dark = material(0x263a36), cream = material(0xfff3dc), shoe = material(0xe86b43);
+  const skin = material(0xf2c992), dark = material(0x263a36), cream = material(0xfff3dc), shoe = material(0xe86b43);
   const pelvis = mesh(new THREE.SphereGeometry(.38, 20, 14), dark);
-  pelvis.scale.set(1, .68, .78); pelvis.position.y = .58; root.add(pelvis);
-  const torsoPivot = new THREE.Group(); torsoPivot.position.y = .68; root.add(torsoPivot);
-  const torso = mesh(new THREE.SphereGeometry(.55, 22, 16), green);
-  torso.scale.set(.88, 1.12, .75); torso.position.y = .55; torsoPivot.add(torso);
+  pelvis.scale.set(1, .68, .78); pelvis.position.y = .51; root.add(pelvis);
+
+  const torsoShell = mesh(
+    new THREE.CapsuleGeometry(.48, .72, 8, 18),
+    material(0x2c896d, { transparent: true, opacity: .72, depthWrite: false })
+  );
+  torsoShell.position.set(0, 1.12, -.08); torsoShell.scale.z = .72; root.add(torsoShell);
+
+  const spineRoot = new THREE.Group();
+  spineRoot.position.set(0, .66, .39);
+  root.add(spineRoot);
+  const spinePivots = [], vertebrae = [], musclesLeft = [], musclesRight = [];
+  let parent = spineRoot;
+  for (let i = 0; i < 7; i++) {
+    const pivot = new THREE.Group();
+    pivot.position.y = i ? .185 : 0;
+    parent.add(pivot);
+    const vertebra = mesh(new THREE.SphereGeometry(.105 - i * .003, 14, 9), material(0xeaf8ed, { emissive: 0x3d9f80, emissiveIntensity: .5 }));
+    vertebra.scale.set(1.12, .62, .72); pivot.add(vertebra);
+    for (const side of [-1, 1]) {
+      const muscleMat = material(0x58c69a, { emissive: 0x1d6e55, emissiveIntensity: .35, transparent: true, opacity: .65 });
+      const muscle = mesh(new THREE.CapsuleGeometry(.035, .13, 4, 7), muscleMat);
+      muscle.position.set(side * .16, .09, .015);
+      pivot.add(muscle);
+      (side < 0 ? musclesLeft : musclesRight).push(muscle);
+    }
+    spinePivots.push(pivot); vertebrae.push(vertebra); parent = pivot;
+  }
+
+  const shoulder = new THREE.Group(); shoulder.position.y = .2; parent.add(shoulder);
   const head = mesh(new THREE.SphereGeometry(.57, 24, 18), skin);
-  head.scale.set(1, .96, .92); head.position.y = 1.48; torsoPivot.add(head);
+  head.scale.set(1, .96, .92); head.position.y = .56; shoulder.add(head);
   const hair = mesh(new THREE.SphereGeometry(.58, 22, 14, 0, Math.PI * 2, 0, Math.PI * .47), dark);
-  hair.position.y = 1.58; torsoPivot.add(hair);
+  hair.position.y = .66; shoulder.add(hair);
   const eyeMat = material(0x17352e);
   const eyes = [];
   for (const x of [-.2, .2]) {
     const eye = mesh(new THREE.SphereGeometry(.047, 10, 7), eyeMat);
-    eye.position.set(x, 1.51, .53); eye.scale.y = 1.35; torsoPivot.add(eye); eyes.push(eye);
+    eye.position.set(x, .59, .53); eye.scale.y = 1.35; shoulder.add(eye); eyes.push(eye);
   }
   const mouth = new THREE.Mesh(new THREE.TorusGeometry(.09, .022, 7, 18, Math.PI), material(0xaa513e));
-  mouth.position.set(0, 1.31, .535); mouth.rotation.z = Math.PI; torsoPivot.add(mouth);
+  mouth.position.set(0, .39, .535); mouth.rotation.z = Math.PI; shoulder.add(mouth);
   const arms = [], legs = [];
   for (const side of [-1, 1]) {
-    const armPivot = new THREE.Group(); armPivot.position.set(side * .48, 1.15, 0); torsoPivot.add(armPivot);
+    const armPivot = new THREE.Group(); armPivot.position.set(side * .46, .1, 0); shoulder.add(armPivot);
     const arm = mesh(new THREE.CapsuleGeometry(.105, .45, 5, 9), skin); arm.position.y = -.3; armPivot.add(arm); arms.push(armPivot);
-    const legPivot = new THREE.Group(); legPivot.position.set(side * .21, .52, 0); root.add(legPivot);
+    const legPivot = new THREE.Group(); legPivot.position.set(side * .21, .45, 0); root.add(legPivot);
     const leg = mesh(new THREE.CapsuleGeometry(.12, .42, 5, 9), cream); leg.position.y = -.3; legPivot.add(leg); legs.push(legPivot);
     const foot = mesh(new THREE.SphereGeometry(.17, 12, 9), shoe); foot.scale.set(1, .62, 1.55); foot.position.set(0, -.57, .09); legPivot.add(foot);
   }
-  const makeBand = x => {
-    const bandMat = new THREE.MeshStandardMaterial({ color: 0x59c39b, emissive: 0x174c3d, emissiveIntensity: .25, roughness: .45, transparent: true, opacity: .15 });
-    const band = mesh(new THREE.CapsuleGeometry(.052, .72, 5, 9), bandMat);
-    band.position.set(x, .52, .515); torsoPivot.add(band); return band;
-  };
-  const bands = [makeBand(-.27), makeBand(.27)];
   const stressHalo = new THREE.Mesh(new THREE.TorusGeometry(.76, .055, 10, 42), new THREE.MeshBasicMaterial({ color: 0xff594d, transparent: true, opacity: 0, depthWrite: false }));
   stressHalo.position.set(0, 1.17, -.25); root.add(stressHalo);
   const stressLight = new THREE.PointLight(0xff4a3d, 0, 3.8); stressLight.position.set(0, 1.05, .6); root.add(stressLight);
-  root.userData.parts = { torsoPivot, torso, head, eyes, mouth, arms, legs, bands, stressHalo, stressLight };
+  root.userData.parts = { pelvis, torsoShell, spineRoot, spinePivots, vertebrae, musclesLeft, musclesRight, shoulder, head, eyes, mouth, arms, legs, stressHalo, stressLight };
   root.scale.setScalar(.82);
   return root;
 }
@@ -190,7 +210,8 @@ function rebuildTower(snapshot) {
   clearGroup(placedGroup);
   snapshot.blocks.forEach((block, index) => {
     const layer = createLayer(block, index, false);
-    layer.position.set(block.x, .05 + index * .49, 0);
+    layer.position.set(block.x, block.y, 0);
+    layer.rotation.z = block.angle || 0;
     if (block.base) layer.scale.set(1, 1.22, 1.68);
     placedGroup.add(layer);
   });
@@ -204,7 +225,8 @@ function updateMover(snapshot) {
     moverGroup.add(moverMesh);
   }
   moverMesh.userData.block = snapshot.mover;
-  moverMesh.position.set(snapshot.mover.x, .05 + (snapshot.level + 1) * .49, 0);
+  const top = snapshot.blocks.at(-1);
+  moverMesh.position.set(snapshot.mover.x, top.y + .49, 0);
 }
 function addPlacedLayer(event) {
   const layer = createLayer(event.block, event.level, false);
@@ -214,6 +236,21 @@ function addPlacedLayer(event) {
   blockAnimations.push({ mesh: layer, age: 0 });
   clearGroup(moverGroup);
   moverMesh = null;
+}
+
+function updatePlacedPhysics(snapshot) {
+  snapshot.blocks.forEach((block, index) => {
+    const layer = placedGroup.children[index];
+    if (!layer) return;
+    layer.position.x += (block.x - layer.position.x) * .35;
+    layer.position.y += (block.y - layer.position.y) * .35;
+    const wobbleShare = index / Math.max(1, snapshot.blocks.length - 1);
+    const visibleAngle = (block.angle || 0) + snapshot.wobble * wobbleShare;
+    layer.rotation.z += (visibleAngle - layer.rotation.z) * .28;
+    const compression = ((block.compressionLeft || 0) + (block.compressionRight || 0)) * .5;
+    const baseY = block.base ? 1.22 : 1;
+    layer.scale.y += ((baseY - compression * 1.9) - layer.scale.y) * .28;
+  });
 }
 
 // End-of-round physics -------------------------------------------------------
@@ -228,18 +265,15 @@ class CollapseWorld {
     const ground = new CANNON.Body({ mass: 0, material: groundMat, shape: new CANNON.Plane() });
     ground.quaternion.setFromEuler(-Math.PI / 2, 0, 0); ground.position.y = -.31; this.world.addBody(ground);
     this.entries = [];
-    const slope = -snapshot.baseSlope;
-    const transform = (x, y) => [x * Math.cos(slope) - y * Math.sin(slope), x * Math.sin(slope) + y * Math.cos(slope)];
     snapshot.blocks.forEach((block, index) => {
       const width = block.width;
-      const [x, y] = transform(block.x, .05 + index * .49);
       const body = new CANNON.Body({ mass: index ? 1 + index * .06 : 0, material: bodyMat, shape: new CANNON.Box(new CANNON.Vec3(width * .5, .255, .44)) });
-      body.position.set(x, y, 0); body.quaternion.setFromEuler(0, 0, slope); body.linearDamping = .02; body.angularDamping = .12; this.world.addBody(body);
-      const visual = createLayer(block, index, false); visual.position.set(x, y, 0); visual.quaternion.copy(body.quaternion); scene.add(visual);
+      body.position.set(block.x, block.y, 0); body.quaternion.setFromEuler(0, 0, block.angle || 0); body.linearDamping = .02; body.angularDamping = .12; this.world.addBody(body);
+      const visual = createLayer(block, index, false); visual.position.set(block.x, block.y, 0); visual.quaternion.copy(body.quaternion); scene.add(visual);
       this.entries.push({ body, mesh: visual });
     });
     const top = snapshot.blocks.at(-1);
-    const [cx, cy] = transform(top.x, .05 + (snapshot.blocks.length - 1) * .49 + 1.18);
+    const cx = top.x, cy = top.y + 1.18;
     const doll = [
       { r: .47, mass: 1, pos: [cx, cy + .63, 0], color: 0xf2c992 },
       { box: [.38, .48, .3], mass: 2, pos: [cx, cy, 0], color: 0x2c896d },
@@ -287,8 +321,6 @@ function startRound(seed = currentSeed) {
   els.score.textContent = '0';
   els.combo.hidden = true;
   els['touch-guide'].hidden = false;
-  els['hazard-alert'].hidden = true;
-  els['hazard-alert'].classList.remove('active');
   els['rescue-alert'].hidden = true;
   els['start-panel'].hidden = true;
   els.hud.hidden = false;
@@ -327,8 +359,6 @@ function home() {
   els.pause.hidden = true;
   els.countdown.hidden = true;
   els['touch-guide'].hidden = true;
-  els['hazard-alert'].hidden = true;
-  els['hazard-alert'].classList.remove('active');
   els['rescue-alert'].hidden = true;
   if (els['pause-dialog'].open) els['pause-dialog'].close();
 }
@@ -350,37 +380,19 @@ function handleEvents(events) {
       addPlacedLayer(event);
       navigator.vibrate?.(event.perfect ? 18 : 8);
       beep(event.perfect ? 'perfect' : 'place');
+      if (event.level === 1) showMessage('치우친 하중이 말랑층 한쪽을 누릅니다');
+      if (event.level === 2) showMessage('골반은 기울고, 척추는 머리를 세웁니다');
+      if (event.level === 3) showMessage('붉게 수축한 근육 반대편에 놓으세요');
     }
-    if (event.type === 'perfect') showMessage(event.combo > 1 ? `척! 정확한 정렬 ×${event.combo}` : '척! 정확한 정렬');
+    if (event.type === 'perfect' && event.combo > 3) showMessage(`척! 정확한 정렬 ×${event.combo}`);
     if (event.type === 'recovery') {
       showMessage('중심 회복! 몸이 힘을 뺍니다', 'recovery');
       flashRecovery();
       navigator.vibrate?.([25, 25, 45]);
       beep('recover');
     }
-    if (event.type === 'hazardWarning') {
-      const labels = { tilt: '발판 경사가 변합니다', settle: '말랑층이 밀립니다', gust: '측풍이 불어옵니다' };
-      els['hazard-copy'].textContent = labels[event.kind];
-      els['hazard-arrow'].textContent = event.direction > 0 ? '→' : '←';
-      els['hazard-alert'].hidden = false;
-      navigator.vibrate?.([18, 45, 18]);
-      beep('warning');
-    }
-    if (event.type === 'hazardStart') {
-      els['hazard-alert'].classList.add('active');
-      showMessage(event.kind === 'gust' ? '휙! 몸이 바람을 버팁니다' : event.kind === 'settle' ? '출렁! 지지점이 움직였습니다' : '기울어진 곳에서 몸이 버팁니다', 'danger');
-      navigator.vibrate?.(35);
-    }
-    if (event.type === 'settled') {
-      const topMesh = placedGroup.children.at(-1);
-      if (topMesh) topMesh.position.x = event.x;
-    }
-    if (event.type === 'hazardEnd') {
-      els['hazard-alert'].hidden = true;
-      els['hazard-alert'].classList.remove('active');
-    }
     if (event.type === 'rescueStart') {
-      showMessage('과부하! 반대편에 놓아 구조하세요', 'danger');
+      showMessage('척추 주변 근육 과부하! 반대편에 놓으세요', 'danger');
       beep('danger');
     }
     if (event.type === 'rescueClear') {
@@ -464,49 +476,61 @@ function updateHud(snapshot) {
   els['load-state'].textContent = state;
   els.combo.hidden = snapshot.combo < 2;
   els.combo.textContent = `척! ×${snapshot.combo}`;
-  const active = snapshot.lean > .012 ? els['load-left'] : snapshot.lean < -.012 ? els['load-right'] : null;
   for (const zone of [els['load-left'], els['load-right']]) zone.className = '';
-  if (active) active.className = percent >= 70 ? 'active hot' : 'active';
+  if (snapshot.leftLoad > .14) els['load-left'].className = snapshot.leftLoad >= .7 ? 'active hot' : 'active';
+  if (snapshot.rightLoad > .14) els['load-right'].className = snapshot.rightLoad >= .7 ? 'active hot' : 'active';
   els.stage.classList.toggle('overload', percent >= 82);
   els['rescue-alert'].hidden = !snapshot.dangerActive;
   els['rescue-time'].textContent = snapshot.dangerRemaining.toFixed(1);
 }
 function updateCharacter(snapshot, dt) {
   const top = snapshot.blocks.at(-1);
-  const topY = .05 + (snapshot.blocks.length - 1) * .49;
+  const topY = top.y;
   character.position.x += (top.x - character.position.x) * Math.min(1, dt * 10);
   character.position.y += (topY + .51 - character.position.y) * Math.min(1, dt * 10);
   const stress = snapshot.load;
-  const compensate = -snapshot.lean * (2.8 + stress * 1.9);
-  character.rotation.z += (compensate - character.rotation.z) * Math.min(1, dt * 7);
+  const surface = snapshot.surfaceAngle;
+  character.rotation.z += (0 - character.rotation.z) * Math.min(1, dt * 8);
   const parts = character.userData.parts;
   const shake = stress > .58 ? Math.sin(snapshot.time * 31) * (stress - .58) * .035 : 0;
-  parts.torsoPivot.rotation.z = -snapshot.lean * 2.3 + shake;
-  parts.torsoPivot.position.y = -.12 * stress;
-  parts.head.rotation.z = snapshot.lean * .72 - shake * .6;
-  parts.arms[0].rotation.z = -.35 - snapshot.lean * 3.2 - stress * .55;
-  parts.arms[1].rotation.z = .35 - snapshot.lean * 3.2 + stress * .55;
-  parts.legs[0].rotation.z = snapshot.lean * 1.05 - stress * .12;
-  parts.legs[1].rotation.z = snapshot.lean * 1.05 + stress * .12;
+  parts.pelvis.rotation.z += (surface - parts.pelvis.rotation.z) * Math.min(1, dt * 9);
+  parts.spineRoot.rotation.z += (surface - parts.spineRoot.rotation.z) * Math.min(1, dt * 9);
+  parts.torsoShell.rotation.z += ((surface * .16 + shake) - parts.torsoShell.rotation.z) * Math.min(1, dt * 8);
+  const weights = [.24, .23, .2, .16, .11, .04, -.05];
+  let correction = 0;
+  parts.spinePivots.forEach((pivot, index) => {
+    const target = -surface * weights[index] + shake * (index % 2 ? -.5 : .5);
+    pivot.rotation.z += (target - pivot.rotation.z) * Math.min(1, dt * 10);
+    correction += pivot.rotation.z;
+  });
+  const headCorrection = -(parts.spineRoot.rotation.z + correction);
+  parts.shoulder.rotation.z += (headCorrection - parts.shoulder.rotation.z) * Math.min(1, dt * 10);
+  parts.arms[0].rotation.z = -.35 - surface * 2.2 - stress * .52;
+  parts.arms[1].rotation.z = .35 - surface * 2.2 + stress * .52;
+  parts.legs[0].rotation.z = surface - stress * .08;
+  parts.legs[1].rotation.z = surface + stress * .08;
   const pulse = 1 + Math.sin(snapshot.time * 12) * stress * .07;
   for (const eye of parts.eyes) eye.scale.y = Math.max(.22, 1.35 - stress * .98);
   parts.mouth.scale.setScalar(1 + stress * 1.15);
-  const hotIndex = snapshot.lean >= 0 ? 0 : 1;
-  parts.bands.forEach((band, index) => {
-    const intensity = stress * (index === hotIndex ? 1 : .52);
+  const paintMuscles = (muscles, intensity) => muscles.forEach((muscle, index) => {
     const color = intensity > .72 ? 0xe53f3f : intensity > .42 ? 0xef8b3e : intensity > .18 ? 0xf0c24f : 0x57c29a;
-    band.material.color.setHex(color);
-    band.material.emissive.setHex(color);
-    band.material.emissiveIntensity = .25 + intensity * 1.7;
-    band.material.opacity = .12 + intensity * .88;
-    band.scale.setScalar(index === hotIndex ? pulse : 1);
+    muscle.material.color.setHex(color);
+    muscle.material.emissive.setHex(color);
+    muscle.material.emissiveIntensity = .3 + intensity * 1.8;
+    muscle.material.opacity = .5 + intensity * .5;
+    const swell = 1 + intensity * .45 + (index % 2 ? 0 : Math.sin(snapshot.time * 12) * intensity * .06);
+    muscle.scale.set(swell, pulse, swell);
   });
+  paintMuscles(parts.musclesLeft, snapshot.leftLoad);
+  paintMuscles(parts.musclesRight, snapshot.rightLoad);
+  parts.torsoShell.material.opacity = .7 - stress * .53;
+  parts.vertebrae.forEach(vertebra => { vertebra.material.emissiveIntensity = .45 + stress * 1.1; });
   parts.stressHalo.material.opacity = Math.max(0, (stress - .35) * .72);
   parts.stressHalo.scale.setScalar(.9 + stress * .22 + Math.sin(snapshot.time * 10) * stress * .035);
   parts.stressLight.intensity = Math.max(0, stress - .42) * 4.2;
 }
 function updateCamera(snapshot, dt) {
-  const topY = .05 + (snapshot.blocks.length - 1) * .49;
+  const topY = snapshot.blocks.at(-1).y;
   const towerHeight = topY + 2.1;
   const targetY = topY + .48;
   const targetZ = clamp(10.35 + snapshot.load * 1.75 + snapshot.level * .025, 10.35, 13.9);
@@ -520,8 +544,9 @@ function updateCamera(snapshot, dt) {
 function visualUpdate(dt) {
   const snapshot = game?.snapshot();
   if (snapshot && structure.visible) {
-    structure.rotation.z += (-snapshot.baseSlope - structure.rotation.z) * Math.min(1, dt * 5);
+    structure.rotation.z += (0 - structure.rotation.z) * Math.min(1, dt * 8);
     updateMover(snapshot);
+    updatePlacedPhysics(snapshot);
     updateCharacter(snapshot, dt);
     updateCamera(snapshot, dt);
   }

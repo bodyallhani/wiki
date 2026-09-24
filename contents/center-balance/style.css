@@ -100,11 +100,6 @@ h1 { font-size: clamp(31px, 6vw, 47px); line-height: 1; margin: 7px 0 0; letter-
 .touch-guide { position: absolute; z-index: 4; left: 50%; bottom: 24px; transform: translateX(-50%); display: flex; align-items: center; gap: 9px; color: #fff; background: #173f35df; padding: 9px 14px; border-radius: 99px; font-size: 11px; pointer-events: none; animation: breathe 1.15s ease-in-out infinite; }
 .touch-guide span { width: 20px; height: 20px; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 0 6px #ffffff28; }
 @keyframes breathe { 50% { transform: translateX(-50%) scale(1.035); } }
-.hazard-alert { position: absolute; z-index: 5; left: 50%; top: 108px; transform: translateX(-50%); display: flex; align-items: center; gap: 9px; min-width: 205px; justify-content: center; color: #713319; background: #fff3caed; border: 2px solid #efaa45; box-shadow: 0 8px 24px #7c3d1828; padding: 8px 14px; border-radius: 99px; font-size: 12px; pointer-events: none; animation: hazardWarn .38s ease-in-out infinite alternate; }
-.hazard-alert span { font-size: 24px; line-height: 1; }
-.hazard-alert.active { color: #fff; background: #e25b3eef; border-color: #ffb049; animation: hazardHit .18s linear infinite alternate; }
-@keyframes hazardWarn { to { transform: translateX(-50%) scale(1.045); } }
-@keyframes hazardHit { to { transform: translateX(calc(-50% + 2px)); } }
 .rescue-alert { position: absolute; z-index: 6; left: 50%; bottom: 27px; transform: translateX(-50%); min-width: 230px; color: #fff; background: #be342eef; border: 2px solid #ffbf73; border-radius: 15px; padding: 7px 12px; text-align: center; pointer-events: none; box-shadow: 0 0 30px #d43d3d88; animation: rescuePulse .4s ease-in-out infinite alternate; }
 .rescue-alert span, .rescue-alert small { display: block; font-size: 9px; font-weight: 900; letter-spacing: .04em; }
 .rescue-alert strong { font-size: 25px; line-height: 1; margin-right: 4px; font-variant-numeric: tabular-nums; }
@@ -179,7 +174,6 @@ footer a { color: inherit; font-weight: 800; }
   .load-copy span { display: none; }
   .load-copy strong { font-size: 11px; }
   .load-copy b { font-size: 13px; }
-  .hazard-alert { top: 94px; }
   .today-card { margin: 14px; border-radius: 18px; padding: 21px 19px; }
   footer { padding: 17px 18px 22px; }
   .record strong { font-size: 60px; }
