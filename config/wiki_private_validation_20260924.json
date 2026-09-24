@@ -1,0 +1,46 @@
+{
+  "draftExecution": "369e6770fbef4bf993f9d7b03bf7f0e4",
+  "renderExecution": "65cda36e13834f2c85f3c30df96e6318",
+  "inputMode": "refinement of prior Claude draft; not an unassisted fresh-generation pass",
+  "assistantEditorialAccepted": true,
+  "clinicianReviewStatus": "PENDING",
+  "independentReviewAreas": [
+    "research",
+    "clinic",
+    "safety",
+    "reader_value"
+  ],
+  "requiredCriteria": 8,
+  "corpusDocuments": 85,
+  "comparedNearestDocuments": 6,
+  "renderHtmlChars": 23745,
+  "screens": {
+    "desktop": {
+      "width": 1280,
+      "overflow": false,
+      "loadedImages": 2
+    },
+    "mobile": {
+      "width": 390,
+      "overflow": false,
+      "loadedImages": 2
+    }
+  },
+  "robots": "noindex,nofollow",
+  "images": [
+    {
+      "path": "./image/0028.postpartum-sacroiliac-pain-chuna-timing-suitability-1.webp",
+      "sha": "96203612df6408428d99ccf7fd33c4c3d2f5e25c",
+      "bytes": 714840
+    },
+    {
+      "path": "./image/0028.postpartum-sacroiliac-pain-chuna-timing-suitability-2.webp",
+      "sha": "6cd825beb035b69d03f6364f274b47b08652e567",
+      "bytes": 560062
+    }
+  ],
+  "productionIntegration": "BLOCKED_AUTO_REVIEW_SCOPE",
+  "latestFreshExecution": "90719d38682f4fbf9017790490f0d54d",
+  "latestFreshOutcome": "HELD_AFTER_BOUNDED_REPAIR",
+  "publicationPerformed": false
+}
