@@ -1,0 +1,22 @@
+{
+  "scenarioId": 7577470,
+  "lastEdit": "2026-09-24T13:23:09.538Z",
+  "writerModuleIds": [
+    2,
+    302
+  ],
+  "reviewerModuleIds": [
+    200,
+    306
+  ],
+  "receiptModuleIds": [
+    201,
+    307
+  ],
+  "model": "claude-sonnet-5",
+  "productionWriterScenarioId": 7319449,
+  "productionIntegration": "NOT_APPLIED",
+  "externalExecution": "BLOCKED_PENDING_EXPLICIT_AUTHORIZATION",
+  "lastModelPassExecution": "dd893abe099746d28cab3cd3f3965d07",
+  "lastModelPassAcceptedByHumanEditor": false
+}

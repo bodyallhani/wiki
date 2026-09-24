@@ -68,7 +68,13 @@ jobs:
 
           scope = os.environ['REQUESTED_SCOPE']
           backfill_triggered = 'indexnow-backfill.trigger' in changed
-          if scope == 'all' or backfill_triggered:
+          make_owned_release = any(path.startswith('.wiki-release/') and path.endswith('.json') for path in changed)
+          if make_owned_release and os.environ['EVENT_NAME'] == 'push':
+              # Make verifies the three approved pages and owns the single receipt.
+              # Do not send the same release once here and again from Make.
+              selected = set()
+              print('Make-managed wiki release: IndexNow is owned by its delivery gate.')
+          elif scope == 'all' or backfill_triggered:
               selected = published
           else:
               selected = set()
@@ -92,9 +98,12 @@ jobs:
               print(f'Selected URL: {url}')
           PY
 
-      - name: Give GitHub Pages time to publish the same revision
+      - name: Verify public HTML matches this revision
         if: steps.urls.outputs.count != '0'
-        run: sleep 90
+        env:
+          URL_FILE: ${{ steps.urls.outputs.file }}
+          HEAD_SHA: ${{ github.sha }}
+        run: python3 scripts/verify_public_revision.py
 
       - name: Verify IndexNow ownership key
         if: steps.urls.outputs.count != '0'
