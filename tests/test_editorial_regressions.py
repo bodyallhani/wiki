@@ -38,4 +38,18 @@ class EditorialRegressions(unittest.TestCase):
         review['claim_checks'][1].update(supported=False,problem_quote='가동범위로 원인을 구별합니다')
         self.assertIn('CLAIM_CHECK_FAILED', receipt('<p>가동범위로 원인을 구별합니다.</p>',{},review)['reason'])
 
+    def test_search_inventory_is_edited_but_evidence_size_is_retained(self):
+        self.assertIn('LITERATURE_SEARCH_INVENTORY', editorial_issues('<p>1611편의 논문 중 16편을 선정했습니다.</p>'))
+        self.assertEqual([], editorial_issues('<p>산후 요통의 수기치료 결과는 무작위시험 1편에 근거했습니다.</p>'))
+
+    def test_actual_study_scope_does_not_need_a_second_sart_denial(self):
+        scoped='<p>카이로프랙틱 수기치료 연구에서 산후 요통의 긍정적 결과가 보고됐지만 명확한 권고에는 근거가 부족했습니다.</p>'
+        self.assertEqual([], editorial_issues(scoped))
+        self.assertIn('REDUNDANT_SART_DENIAL', editorial_issues(scoped+'<p>SART를 직접 검증한 연구는 아닙니다.</p>'))
+
+    def test_specific_clinic_value_must_not_follow_a_long_literature_report(self):
+        clinical='<p>SART에서는 역중력치료기로 골반을 지지하고 천장관절을 다룹니다.</p>'
+        self.assertEqual([], editorial_issues(clinical))
+        self.assertIn('CLINIC_VALUE_BURIED', editorial_issues('<p>'+('연구 결과 설명입니다. '*100)+'</p>'+clinical))
+
 if __name__=='__main__': unittest.main()

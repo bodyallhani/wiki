@@ -319,8 +319,17 @@ def editorial_issues(candidate):
         issues.append("DEFENSIVE_CLINIC_DEFINITION")
     if re.search(r"근육.{0,65}(?:때문|긴장).{0,65}관절.{0,65}(?:가늠|구분|구별|감별)", visible):
         issues.append("UNSUPPORTED_EXAM_CAUSE_DISCRIMINATION")
+    if re.search(r"\d{3,}\s*편의?\s*(?:논문|연구)\s*중|체계적\s*문헌고찰\s*\d+편.{0,25}무작위.{0,20}\d+편", visible):
+        issues.append("LITERATURE_SEARCH_INVENTORY")
+    # Real 2026-09-24 drafts passed the model while burying the clinic value.
+    # Apply only to articles that actually explain this confirmed SART process.
+    support = re.search(r"역중력치료기|골반을.{0,30}(?:지지|받치)", visible)
+    if support and "SART" in visible and support.start() > 900:
+        issues.append("CLINIC_VALUE_BURIED")
     for paragraph in re.findall(r"<p\b[^>]*>([\s\S]*?)</p>", candidate, re.I):
         text = normalize(parse_page(paragraph)["text"])
+        if re.search(r"카이로프랙틱|수기치료|수기 치료", visible) and re.search(r"SART.{0,30}직접.{0,20}(?:검증|입증).{0,20}(?:아니|아닙|않)", text):
+            issues.append("REDUNDANT_SART_DENIAL")
         if "torbayandsouthdevon.nhs.uk" in paragraph and re.search(r"(?:다리.{0,35}(?:힘 빠짐|감각 저하|저림)|출혈|발열)", text):
             issues.append("CES_CITATION_SCOPE_MISMATCH")
     if re.search(r"<h[23][^>]*>[^<]*(?:알 수 없|정보.{0,8}공백|범위 밖)[^<]*</h[23]>", candidate):
