@@ -1,1 +1,13 @@
-{"version":1,"base_name":"0028.lumbar-disc-herniation-chuna-post-acute-timing","source_shas":["c5f03a9d97c0b0dc262cbfae8d0aeeeb9e5f2284","2a418b957a1eac0f89a4c06bf1124ae112945ffa"],"status":"PENDING"}
+{
+  "version": 1,
+  "base_name": "0028.lumbar-disc-herniation-chuna-post-acute-timing",
+  "source_shas": [
+    "c5f03a9d97c0b0dc262cbfae8d0aeeeb9e5f2284",
+    "2a418b957a1eac0f89a4c06bf1124ae112945ffa"
+  ],
+  "status": "DONE",
+  "output_shas": [
+    "ab88ad4359e25504a5a513b84cb968c3cb7cde5f",
+    "4bf9098dd0f7b4626519c893b2f9c9c0f029cb27"
+  ]
+}
