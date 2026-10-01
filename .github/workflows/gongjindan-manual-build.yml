@@ -51,6 +51,7 @@ jobs:
                       errors=[]
                       page.on('pageerror',lambda e:errors.append(str(e)))
                       page.goto('http://127.0.0.1:8765/Herbmed/gongjindan-manual'+suffix+'.html',wait_until='networkidle')
+                      page.evaluate("document.querySelectorAll('img').forEach(i=>i.loading='eager')")
                       page.locator('#research').scroll_into_view_if_needed()
                       page.wait_for_function('Array.from(document.images).every(i=>i.complete && i.naturalWidth>0)')
                       assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'),f'Overflow: {lang} {width}'
