@@ -1,4 +1,4 @@
-name: Check published Gongjindan guide URLs
+name: Verify updated musk photo and favicons
 on:
   push:
     branches: [gongjindan-manual-build-20261001]
@@ -6,48 +6,57 @@ on:
 permissions:
   contents: write
 jobs:
-  live:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           ref: gongjindan-manual-build-20261001
-      - name: Confirm live HTML and brochure images
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright
+      - run: python -m playwright install --with-deps chromium
+      - name: Inspect responsive photo cards
         run: |
-          python3 - <<'PY'
-          import urllib.request,time,json,concurrent.futures
+          python - <<'PY'
+          from playwright.sync_api import sync_playwright
           from pathlib import Path
-          root='https://wiki.body-all.co.kr/Herbmed/'
-          files=['gongjindan-manual.html','gongjindan-manual_en.html','gongjindan-manual_cn.html','gongjindan-assets/brochure-graph.jpg','gongjindan-assets/seed-brochure.jpg']
-          def check(path):
-              request=urllib.request.Request(root+path,headers={'User-Agent':'Bodyall-Guide-Verification/1.0','Cache-Control':'no-cache'})
-              with urllib.request.urlopen(request,timeout=20) as r:
-                  data=r.read()
-                  assert r.status==200
-                  if path.endswith('.html'):
-                      text=data.decode('utf-8')
-                      assert 'faq-search' in text and 'musk-documents' in text
-                      assert 'https://wiki.body-all.co.kr/Herbmed/encyclopedia/index.html' in text
-                      assert text.count('<details>')==30
-                  else:
-                      assert data[:2]==b'\xff\xd8'
-                  return {'url':root+path,'status':r.status,'bytes':len(data),'content_type':r.headers.get('Content-Type')}
-          for attempt in range(10):
-              try:
-                  with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
-                      report=list(pool.map(check,files))
-                  break
-              except Exception as error:
-                  print('Waiting for deployment:',error)
-                  if attempt==9:raise
-                  time.sleep(10)
-          Path('Herbmed/gongjindan-assets/live-report.json').write_text(json.dumps(report,indent=2))
-          print(json.dumps(report,indent=2))
+          from functools import partial
+          import threading,http.server,json
+          server=http.server.ThreadingHTTPServer(('127.0.0.1',8765),partial(http.server.SimpleHTTPRequestHandler,directory='.'))
+          threading.Thread(target=server.serve_forever,daemon=True).start()
+          report=[]
+          with sync_playwright() as p:
+              browser=p.chromium.launch()
+              for lang,suffix,removed in [('ko','','조제 과정'),('en','_en','preparation process'),('cn','_cn','调制过程')]:
+                  for width in [320,390,1280]:
+                      page=browser.new_page(viewport={'width':width,'height':900})
+                      errors=[]
+                      page.on('pageerror',lambda e:errors.append(str(e)))
+                      page.goto('http://127.0.0.1:8765/Herbmed/gongjindan-manual'+suffix+'.html',wait_until='networkidle')
+                      page.add_style_tag(content='html{scroll-behavior:auto!important}')
+                      proof=page.locator('#musk-documents')
+                      proof.scroll_into_view_if_needed()
+                      page.wait_for_function("document.querySelector('.musk-example img').complete && document.querySelector('.musk-example img').naturalWidth===750")
+                      dims=page.locator('.musk-example img').bounding_box()
+                      assert abs(dims['width']-dims['height'])<1
+                      assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+                      assert removed not in proof.inner_text()
+                      assert page.locator('link[rel="icon"]').get_attribute('href')=='https://wiki.body-all.co.kr/Bodyall%20Logo.png'
+                      assert page.locator('details').count()==30
+                      assert not errors,errors
+                      if width in [390,1280]:
+                          proof.screenshot(path='Herbmed/gongjindan-assets/'+lang+'-musk-'+str(width)+'-review.jpg',type='jpeg',quality=85)
+                      report.append({'language':lang,'width':width,'square_photo':True,'document_overflow':False,'favicon_correct':True,'preparation_offer_removed':True,'page_errors':errors})
+                      page.close()
+              browser.close()
+          Path('Herbmed/gongjindan-assets/photo-qa-report.json').write_text(json.dumps(report,indent=2))
           PY
-      - name: Save live check on build branch
+      - name: Save review evidence on build branch
         run: |
           git config user.name "Bodyall manual build"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add Herbmed/gongjindan-assets/live-report.json
-          git commit -m "Confirm live multilingual purchaser guide URLs"
+          git add Herbmed/gongjindan-assets
+          git commit -m "Verify authentication photo cards at mobile and desktop widths"
           git push origin HEAD:gongjindan-manual-build-20261001
