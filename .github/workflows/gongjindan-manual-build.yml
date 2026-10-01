@@ -1,4 +1,4 @@
-name: Verify mental stamina section
+name: Verify deer antler supporting card
 on:
   push:
     branches: [gongjindan-manual-build-20261001]
@@ -17,7 +17,7 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install playwright
       - run: python -m playwright install --with-deps chromium
-      - name: Check new navigation, worksheet and message
+      - name: Check supporting card and responsive layout
         run: |
           python - <<'PY'
           from playwright.sync_api import sync_playwright
@@ -36,40 +36,32 @@ jobs:
                       page.on('pageerror',lambda e:errors.append(str(e)))
                       page.goto('http://127.0.0.1:8765/Herbmed/gongjindan-manual'+suffix+'.html',wait_until='networkidle')
                       page.add_style_tag(content='html{scroll-behavior:auto!important}')
-                      nav=page.locator('nav.contents a')
-                      assert nav.count()==5
-                      assert nav.last.get_attribute('href')=='#mental-stamina'
-                      nav.last.click()
-                      assert page.evaluate('location.hash')=='#mental-stamina'
+                      card=page.locator('.antler-feature')
+                      assert card.count()==1
+                      assert card.locator('.antler-compare>div').count()==2
+                      assert '1,500' in card.inner_text()
+                      assert '400' in card.inner_text()
                       assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
-                      section=page.locator('#mental-stamina')
-                      assert section.locator('ol.steps>li').count()==4
-                      assert section.locator('.mental-worksheet dt').count()==5
-                      assert section.locator('a[href^="#ref-"]').count()==4
-                      example=page.locator('.mental-example')
-                      example.locator('summary').click()
-                      assert example.get_attribute('open') is not None
-                      assert example.locator('dt').count()==5
-                      for n in range(7,11):
-                          assert page.locator('#ref-'+str(n)).count()==1
                       assert page.locator('#faq details').count()==30
-                      assert page.locator('.closing-message').count()==1
-                      assert page.locator('link[rel="icon"]').get_attribute('href')=='https://wiki.body-all.co.kr/Bodyall%20Logo.png'
+                      assert page.locator('nav.contents a').count()==5
+                      assert page.locator('#mental-stamina').count()==1
                       assert not errors,errors
+                      assert page.evaluate("""() => {
+                        const card=document.querySelector('.antler-feature');
+                        const seed=document.querySelector('.seed-figure');
+                        return !!(seed.compareDocumentPosition(card)&Node.DOCUMENT_POSITION_FOLLOWING);
+                      }""")
                       if width in [390,1280]:
-                          page.locator('#mental-stamina h2').scroll_into_view_if_needed()
-                          page.screenshot(path='Herbmed/gongjindan-assets/'+lang+'-mental-'+str(width)+'-review.jpg',type='jpeg',quality=85)
-                          page.locator('.mental-worksheet').screenshot(path='Herbmed/gongjindan-assets/'+lang+'-worksheet-'+str(width)+'-review.jpg',type='jpeg',quality=85)
-                          page.locator('.closing-message').screenshot(path='Herbmed/gongjindan-assets/'+lang+'-closing-'+str(width)+'-review.jpg',type='jpeg',quality=85)
-                      report.append({'language':lang,'width':width,'menu_count':5,'step_count':4,'worksheet_fields':5,'references_added':4,'closing_message':True,'document_overflow':False,'page_errors':errors})
+                          card.screenshot(path='Herbmed/gongjindan-assets/'+lang+'-antler-'+str(width)+'-review.jpg',type='jpeg',quality=85)
+                      report.append({'language':lang,'width':width,'card_count':1,'after_musk_structure':True,'document_overflow':False,'page_errors':errors})
                       page.close()
               browser.close()
-          Path('Herbmed/gongjindan-assets/mental-qa-report.json').write_text(json.dumps(report,indent=2))
+          Path('Herbmed/gongjindan-assets/antler-qa-report.json').write_text(json.dumps(report,indent=2))
           PY
       - name: Save review evidence on build branch
         run: |
           git config user.name "Bodyall manual build"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add Herbmed/gongjindan-assets
-          git commit -m "Verify mental stamina navigation and multilingual worksheet"
+          git commit -m "Verify deer antler card in three languages"
           git push origin HEAD:gongjindan-manual-build-20261001
