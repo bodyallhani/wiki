@@ -1,0 +1,90 @@
+[
+  {
+    "name": "bro1",
+    "original": [
+      2041,
+      3969
+    ],
+    "review": [
+      1131,
+      2200
+    ]
+  },
+  {
+    "name": "bro2",
+    "original": [
+      2041,
+      3969
+    ],
+    "review": [
+      1131,
+      2200
+    ]
+  },
+  {
+    "name": "bro3",
+    "original": [
+      2041,
+      3969
+    ],
+    "review": [
+      1131,
+      2200
+    ]
+  },
+  {
+    "name": "9_hgmp_cert",
+    "original": [
+      4082,
+      3969
+    ],
+    "review": [
+      1500,
+      1458
+    ]
+  },
+  {
+    "name": "10_herb_contrast",
+    "original": [
+      1024,
+      1024
+    ],
+    "review": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "name": "11111",
+    "original": [
+      1024,
+      1024
+    ],
+    "review": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "name": "structure",
+    "original": [
+      1024,
+      1024
+    ],
+    "review": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "name": "3_seed_structure",
+    "original": [
+      2702,
+      2918
+    ],
+    "review": [
+      1500,
+      1620
+    ]
+  }
+]
