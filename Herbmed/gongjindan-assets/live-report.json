@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://wiki.body-all.co.kr/Herbmed/gongjindan-manual.html",
+    "status": 200,
+    "bytes": 35863,
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "url": "https://wiki.body-all.co.kr/Herbmed/gongjindan-manual_en.html",
+    "status": 200,
+    "bytes": 33336,
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "url": "https://wiki.body-all.co.kr/Herbmed/gongjindan-manual_cn.html",
+    "status": 200,
+    "bytes": 31311,
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "url": "https://wiki.body-all.co.kr/Herbmed/gongjindan-assets/brochure-graph.jpg",
+    "status": 200,
+    "bytes": 71326,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://wiki.body-all.co.kr/Herbmed/gongjindan-assets/seed-brochure.jpg",
+    "status": 200,
+    "bytes": 45155,
+    "content_type": "image/jpeg"
+  }
+]
