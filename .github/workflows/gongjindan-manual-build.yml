@@ -1,4 +1,4 @@
-name: Prepare Gongjindan manual images
+name: Verify Gongjindan purchaser guides
 on:
   push:
     branches: [gongjindan-manual-build-20261001]
@@ -6,7 +6,7 @@ on:
 permissions:
   contents: write
 jobs:
-  images:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,30 +15,74 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install Pillow
-      - name: Create review thumbnails from existing original assets
+      - run: python -m pip install Pillow playwright
+      - run: python -m playwright install --with-deps chromium
+      - name: Crop original brochure assets
         run: |
           python - <<'PY'
           from PIL import Image
           from pathlib import Path
-          import json
           dest=Path('Herbmed/gongjindan-assets')
-          dest.mkdir(parents=True,exist_ok=True)
-          report=[]
-          for name in ['bro1','bro2','bro3','9_hgmp_cert','10_herb_contrast','11111','structure','3_seed_structure']:
-              source=Path('gokkjd')/(name+'.png')
-              im=Image.open(source).convert('RGB')
-              original=im.size
-              im.thumbnail((1500,2200))
-              im.save(dest/(name+'-review.jpg'),quality=85,optimize=True)
-              report.append({'name':name,'original':original,'review':im.size})
-          (dest/'image-review.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+          for source,name,box,limit in [
+              ('bro2','brochure-graph',(.035,.145,.985,.505),(1400,1400)),
+              ('bro1','seed-brochure',(.08,.615,.925,.825),(1200,900))]:
+              im=Image.open('gokkjd/'+source+'.png').convert('RGB')
+              w,h=im.size
+              im=im.crop(tuple(round(v*(w if i%2==0 else h)) for i,v in enumerate(box)))
+              im.thumbnail(limit)
+              im.save(dest/(name+'.jpg'),quality=90,optimize=True)
           PY
-      - name: Save images to this isolated build branch
+      - name: Browser checks and screenshots
+        run: |
+          python - <<'PY'
+          from playwright.sync_api import sync_playwright
+          from pathlib import Path
+          import threading,http.server,json
+          from functools import partial
+          server=http.server.ThreadingHTTPServer(('127.0.0.1',8765),partial(http.server.SimpleHTTPRequestHandler,directory='.'))
+          threading.Thread(target=server.serve_forever,daemon=True).start()
+          dest=Path('Herbmed/gongjindan-assets')
+          report=[]
+          with sync_playwright() as p:
+              browser=p.chromium.launch()
+              for lang,suffix,query in [('ko','','커피'),('en','_en','coffee'),('cn','_cn','咖啡')]:
+                  for width in [320,390,768,1280]:
+                      page=browser.new_page(viewport={'width':width,'height':900},device_scale_factor=1)
+                      errors=[]
+                      page.on('pageerror',lambda e:errors.append(str(e)))
+                      page.goto('http://127.0.0.1:8765/Herbmed/gongjindan-manual'+suffix+'.html',wait_until='networkidle')
+                      page.locator('#research').scroll_into_view_if_needed()
+                      page.wait_for_function('Array.from(document.images).every(i=>i.complete && i.naturalWidth>0)')
+                      assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'),f'Overflow: {lang} {width}'
+                      assert page.locator('details').count()==30
+                      assert page.locator('nav.languages a[aria-current="page"]').count()==1
+                      assert not errors,errors
+                      page.locator('#faq-search').fill(query)
+                      visible=page.locator('details:visible').count()
+                      assert 0<visible<30
+                      page.locator('details:visible').first.locator('summary').click()
+                      assert page.locator('details[open]:visible').count()>0
+                      page.locator('#faq-search').fill('')
+                      assert page.locator('details:visible').count()==30
+                      assert page.locator('a[href="https://wiki.body-all.co.kr/Herbmed/encyclopedia/index.html"]').count()>=3
+                      if width==390:
+                          page.evaluate('window.scrollTo(0,0)')
+                          page.screenshot(path=str(dest/(lang+'-mobile-review.jpg')),type='jpeg',quality=80)
+                          page.locator('#difference').scroll_into_view_if_needed()
+                          page.screenshot(path=str(dest/(lang+'-comparison-review.jpg')),type='jpeg',quality=80)
+                      if width==1280:
+                          page.evaluate('window.scrollTo(0,0)')
+                          page.screenshot(path=str(dest/(lang+'-desktop-review.jpg')),type='jpeg',quality=80)
+                      report.append({'language':lang,'width':width,'faq_count':30,'search_matches':visible,'images_loaded':True,'page_errors':errors,'document_overflow':False})
+                      page.close()
+              browser.close()
+          (dest/'qa-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+          PY
+      - name: Save verified assets on build branch
         run: |
           git config user.name "Bodyall manual build"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add Herbmed/gongjindan-assets
           git diff --cached --quiet && exit 0
-          git commit -m "Prepare source image previews for purchaser manual"
+          git commit -m "Optimize original brochure images and verify multilingual layouts"
           git push origin HEAD:gongjindan-manual-build-20261001
