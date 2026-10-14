@@ -2,7 +2,7 @@
   "version": 1,
   "base_name": "0030.hip-osteoarthritis-exercise-choice",
   "approved_hash": "92c05897a6ff852dd0a329ab09c1967bf45876306bd427445919141722c5fa64",
-  "published_at": "2026-10-14T01:26:16+00:00",
+  "published_at": "2026-10-14T01:36:08+00:00",
   "languages": [
     "ko",
     "en",
@@ -18,5 +18,11 @@
   "manual_single_article_exception": true,
   "regular_schedule_changed": false,
   "new_machine_audit": "NOT_RUN_FOR_REVISED_TEXT",
-  "historical_audit_inherited": false
+  "historical_audit_inherited": false,
+  "prepared_at": "2026-10-14T01:26:16+00:00",
+  "first_publication_commit": "e35f868614af12efb00576c91c4ab0305ad6b8b6",
+  "public_page_observed_at": "2026-10-14T01:40:56+00:00",
+  "three_public_pages_observed_at": "2026-10-14T01:41:50+00:00",
+  "two_public_images_observed_at": "2026-10-14T01:43:12+00:00",
+  "public_sitemap_observed": false
 }
