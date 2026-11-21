@@ -28,9 +28,9 @@
     body{margin:0;color:var(--ink);background:#e8deca;font-family:system-ui,-apple-system,"Segoe UI","Noto Sans KR",sans-serif;line-height:1.6}
     .wrap{width:min(100%,920px);margin-inline:auto;padding:clamp(12px,4vw,40px)}
     .card{position:relative;isolation:isolate;overflow:hidden;border:1px solid #c7b58e;border-radius:clamp(18px,4vw,32px);background:var(--navy-deep);box-shadow:0 15px 45px #1d26342e}
-    .card::before{content:"";position:absolute;inset:0;z-index:1;background:url("Bodyall%20Logo.png") center 45%/min(91%,720px) auto no-repeat;opacity:.18;pointer-events:none}
-    .hero>*,.details>*{position:relative;z-index:2}
-    .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(14px,4vw,48px);padding:clamp(22px,5vw,48px);padding-bottom:clamp(32px,6vw,60px);background:linear-gradient(145deg,var(--cream),var(--cream-deep))}
+    .hero-symbol{position:absolute;top:7%;left:17%;width:66%;height:86%;overflow:hidden;opacity:.16;pointer-events:none}
+    .hero>div,.hero>.photo{position:relative;z-index:1}
+    .hero{position:relative;overflow:hidden;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(14px,4vw,48px);padding:clamp(22px,5vw,48px);padding-bottom:clamp(32px,6vw,60px);background:linear-gradient(145deg,var(--cream),var(--cream-deep))}
     .brand{border-left:3px solid #a27431;padding-left:12px;font-size:1.2rem;font-weight:850;letter-spacing:.025em}
     .eyebrow{letter-spacing:.16em;text-transform:uppercase;color:#634b25;font-weight:800;font-size:.8rem;margin:24px 0 6px}
     h1{font-size:clamp(2rem,6vw,4rem);font-weight:850;line-height:1.13;margin:0;letter-spacing:-.05em;word-break:keep-all;overflow-wrap:anywhere}
@@ -61,6 +61,10 @@
   <main class="wrap">
     <article class="card" aria-labelledby="event-title">
       <header class="hero">
+        <svg class="hero-symbol" viewBox="483 0 1528 1280" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <defs><clipPath id="clinic-symbol-only" clipPathUnits="userSpaceOnUse"><rect x="483" y="0" width="1528" height="1280"></rect></clipPath></defs>
+          <image href="Bodyall%20Logo.png" width="2494" height="1867" clip-path="url(#clinic-symbol-only)"></image>
+        </svg>
         <div>
           <div class="brand">바디올핏</div>
           <p class="eyebrow">연말 이벤트</p>
