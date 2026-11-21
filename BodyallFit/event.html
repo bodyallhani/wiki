@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>다이어트 한약(환) | 12월 20일까지 비대면 처방 상담 | 바디올한의원</title>
-  <meta name="description" content="바디올한의원 다이어트 한약(환). 올해 마지막 비대면 처방 상담은 2026년 12월 20일까지 접수합니다. 처방 가능 여부는 관련 기준과 진료 결과에 따라 결정됩니다." />
+  <title>바디올핏 다이어트 처방 이벤트 | 한 달분 98,000원</title>
+  <meta name="description" content="바디올핏 다이어트 처방. 한 달분 98,000원, 이벤트 참여 시 2주분 추가 증정(48,000원 상당). 올해 마지막 비대면 이벤트는 2026년 12월 20일까지 접수합니다." />
 
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
   <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png">
@@ -23,123 +23,66 @@
   </script>
 
   <style>
-    :root{
-      --bg:#f4f6fb;
-      --card:#ffffff;
-      --text:#0f172a;
-      --muted:#475569;
-      --brand:#1f3b76;
-      --line:#e5e7eb;
-    }
-    *{box-sizing:border-box;}
-    
-    /* 1. 바디 전체 배경을 DALL-E 이미지로 설정 */
-    body{
-      margin:0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif;
-      background-color: var(--bg);
-      background-image: url('https://res.cloudinary.com/k57don4w/image/fetch/q_auto,f_auto/https://res.cloudinary.com/k57don4w/image/upload/v1793459445/Sat_31_Oct_2026_15_10_43_GMT_majqob.png');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed; /* 스크롤 시 배경 고정 (고급스러운 패럴랙스 느낌) */
-      color:var(--text);
-    }
-
-    /* 2. 어두운/복잡한 이미지가 올 경우를 대비한 전체 화면 화이트 틴트(오버레이) */
-    .bg-overlay {
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(255, 255, 255, 0.4); /* 화사한 톤 유지 */
-      z-index: -1;
-    }
-
-    .wrap{
-      position: relative;
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 40px 16px 50px; /* 위아래 여백을 늘려 배경화면이 잘 보이도록 수정 */
-    }
-
-    /* 3. 글래스모피즘(반투명) 카드 디자인 - 가독성 완벽 보장 */
-    .card{
-      background: rgba(255, 255, 255, 0.92); /* 92% 하얀색으로 텍스트 완벽 보호 */
-      backdrop-filter: blur(12px); /* 뒷배경을 은은하게 뭉개줌 */
-      -webkit-backdrop-filter: blur(12px);
-      border:1px solid rgba(255, 255, 255, 0.6);
-      border-radius: 18px;
-      padding: 26px 18px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    
-    .badge-wrap { text-align: left; margin-bottom: 14px; }
-    .badge{
-      display:inline-flex; align-items:center; gap:8px;
-      padding: 8px 12px; border-radius:999px;
-      background: rgba(31,59,118,.08); color: var(--brand);
-      font-weight: 700; font-size: 13px;
-    }
-    .logo { width: 60px; height: auto; margin: 10px auto 20px; display: block; }
-    h1{ margin:0 0 10px; font-size: 32px; line-height: 1.25; letter-spacing: -0.02em; word-break: keep-all; }
-    .sub{ margin:0 0 18px; color: var(--muted); font-size: 16px; line-height: 1.6; word-break: keep-all; }
-    .hr{ height:1px; background:rgba(0,0,0,0.08); margin:16px 0; }
-    
-    .kv{ display:grid; grid-template-columns: 1fr; gap: 10px; margin-top: 6px; }
-    .kv .row{
-      display:flex; justify-content: space-between; align-items: center; gap: 12px;
-      padding: 10px 12px; border-radius: 12px;
-      background: rgba(248, 250, 252, 0.7); /* 표 안쪽도 살짝 투명하게 */
-      border:1px solid rgba(238, 242, 247, 0.8);
-    }
-    .k{ color:#334155; font-weight:700; }
-    .v{ color:#0f172a; font-weight:800; text-align:right; }
-    .note{ margin-top: 12px; color: #64748b; font-size: 13px; line-height: 1.6; text-align: left; }
-    
-    .btns{ display:grid; grid-template-columns: 1fr; gap: 10px; margin-top: 16px; }
-    a.btn{
-      display:flex; justify-content:center; align-items:center; gap:10px; text-decoration:none;
-      padding: 14px 14px; border-radius: 14px; font-weight: 900; letter-spacing: -0.01em;
-      border:1px solid transparent; transition: all 0.2s;
-    }
-    .primary{ background: var(--brand); color:#fff; }
-    .primary:hover { opacity: 0.9; transform: translateY(-1px); }
-    .ghost{ background:#fff; color: var(--brand); border-color: rgba(31,59,118,.25); }
-    
-    .footer{ margin-top: 14px; text-align:center; color:#64748b; font-size: 12px; line-height:1.6; }
+    :root{color-scheme:light;--cream:#fcf6e9;--cream-deep:#ecdfc2;--navy:#111d32;--navy-deep:#0b1425;--ink:#172338;--gold:#dfbf7d;--muted:#dce3ee}
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;color:var(--ink);background:#e8deca;font-family:system-ui,-apple-system,"Segoe UI","Noto Sans KR",sans-serif;line-height:1.6}
+    .wrap{width:min(100%,920px);margin-inline:auto;padding:clamp(12px,4vw,40px)}
+    .card{position:relative;isolation:isolate;overflow:hidden;border:1px solid #c7b58e;border-radius:clamp(18px,4vw,32px);background:var(--navy-deep);box-shadow:0 15px 45px #1d26342e}
+    .card::before{content:"";position:absolute;inset:0;z-index:1;background:url("Bodyall%20Logo.png") center 45%/min(91%,720px) auto no-repeat;opacity:.18;pointer-events:none}
+    .hero>*,.details>*{position:relative;z-index:2}
+    .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(14px,4vw,48px);padding:clamp(22px,5vw,48px);padding-bottom:clamp(32px,6vw,60px);background:linear-gradient(145deg,var(--cream),var(--cream-deep))}
+    .brand{border-left:3px solid #a27431;padding-left:12px;font-size:1.2rem;font-weight:850;letter-spacing:.025em}
+    .eyebrow{letter-spacing:.16em;text-transform:uppercase;color:#634b25;font-weight:800;font-size:.8rem;margin:24px 0 6px}
+    h1{font-size:clamp(2rem,6vw,4rem);font-weight:850;line-height:1.13;margin:0;letter-spacing:-.05em;word-break:keep-all;overflow-wrap:anywhere}
+    .hero-price{margin:20px 0 0;padding-top:15px;border-top:1px solid #a89169;color:#634b25;font-weight:750;line-height:1.3}
+    .hero-price strong{display:block;color:var(--ink);font-size:clamp(2rem,6vw,3.9rem);letter-spacing:-.06em;overflow-wrap:anywhere}
+    .photo{position:relative;isolation:isolate;margin:0;align-self:center;justify-self:center;width:min(100%,330px);padding:12px 15px 6px}
+    .photo::before{content:"";position:absolute;inset:-17% -23% -12%;background:radial-gradient(ellipse at 50% 45%,#4f91ec86 0%,#6fa4ed59 36%,#7faeed00 72%);pointer-events:none}
+    .photo svg{position:relative;display:block;width:100%;height:auto;filter:drop-shadow(0 14px 14px #08142385)}
+    .details{padding:clamp(22px,5vw,48px);color:#f7f3e6;background:linear-gradient(170deg,var(--navy),var(--navy-deep));border-top:2px solid #b7975c}
+    .offer{display:grid;gap:12px}
+    .offer p{margin:0;padding:clamp(14px,3vw,22px);border:1px solid #526178;border-radius:14px}
+    .offer span,.offer strong{display:block}
+    .offer strong{color:var(--gold);font-size:clamp(1.2rem,4.4vw,2.2rem);line-height:1.22;letter-spacing:-.03em;overflow-wrap:anywhere}
+    .deadline{margin:clamp(18px,4vw,32px) 0 0;font-size:clamp(1.1rem,4vw,1.55rem);word-break:keep-all;overflow-wrap:anywhere;line-height:1.45}
+    .deadline strong{color:var(--gold)}
+    .note{margin:.65rem 0 0;color:var(--muted);font-size:.93rem;word-break:keep-all;overflow-wrap:anywhere}
+    .btns{display:grid;gap:10px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);margin-top:24px}
+    a.btn{display:grid;place-items:center;min-height:48px;padding:10px;text-decoration:none;text-align:center;border:1px solid var(--gold);border-radius:10px;font-weight:800;word-break:keep-all;overflow-wrap:anywhere}
+    .primary{background:#efdaab;color:#172338}
+    .ghost{background:transparent;color:#f7f3e6}
+    a.btn:hover{text-decoration:underline}
+    a.btn:focus-visible{outline:2px solid #fff;outline-offset:3px}
+    .footer{color:var(--muted);margin:18px 0 0;text-align:center;font-size:.86rem}
+    @media(max-width:560px){.hero,.offer,.btns{grid-template-columns:1fr}.photo{width:min(69%,235px)}}
   </style>
 </head>
 <body>
-  <div class="bg-overlay"></div>
   <main class="wrap">
-    <section class="card">
-      <div class="badge-wrap">
-        <div class="badge">바디올핏 연말맞이 이벤트</div>
-      </div>
-
-      <h1>다이어트 한약(환)</h1>
-
-      <img src="https://raw.githubusercontent.com/bodyallhani/gen-intake/main/bodyall.png" alt="바디올한의원" class="logo">
-
-      <p class="sub">올해 마지막 비대면 처방 상담<br><strong><time datetime="2026-12-20">2026년 12월 20일</time>까지 접수</strong></p>
-
-      <div class="hr"></div>
-
-      <div class="kv">
-        <div class="row">
-          <div class="k">이벤트 기간</div>
-          <div class="v">2026.11.01 ~ 2026.12.20</div>
+    <article class="card" aria-labelledby="event-title">
+      <header class="hero">
+        <div>
+          <div class="brand">바디올핏</div>
+          <p class="eyebrow">연말 이벤트</p>
+          <h1 id="event-title">다이어트 처방</h1>
+          <p class="hero-price">한 달분 <strong>98,000원</strong></p>
         </div>
-        <div class="row">
-          <div class="k">DIET<br>혜택</div>
-          <div class="v">이벤트 참여시,<br>48,000원 상당의 2주분 추가증정</div>
-        </div>
-      </div>
+        <figure class="photo">
+          <svg viewBox="300 237 412 520" role="img" aria-labelledby="product-picture-title" xmlns="http://www.w3.org/2000/svg">
+            <title id="product-picture-title">바디올핏 다이어트 한약 제품 사진</title>
+            <defs><clipPath id="product-bottle-clip" clipPathUnits="userSpaceOnUse"><path d="M338 272 C338 261 364 258 398 255 C445 250 591 248 643 254 C666 257 678 260 679 268 L679 294 C678 302 682 306 682 312 L683 354 Q683 361 682 368 Q685 376 684 388 L684 686 Q682 709 665 720 C638 738 577 743 512 743 C443 743 382 738 354 723 C335 713 331 705 331 683 L331 394 Q331 377 333 365 L333 333 Q322 327 322 315 Q321 302 333 295 L338 292Z"></path></clipPath></defs>
+            <image href="img1.jpg" width="1024" height="1024" clip-path="url(#product-bottle-clip)"></image>
+          </svg>
+        </figure>
+      </header>
 
-      <p class="note">
-        ※ 위 접수 마감은 바디올한의원의 이번 행사 운영 일정입니다. 비대면 진료·처방 가능 여부는 관련 기준과 의료진의 진료 판단에 따라 결정됩니다.<br/>
-        ※ 할인 대신 ‘기간’을 더 드립니다. (기간 한정/조기 종료될 수 있음)<br/>
-        ※ 프로그램 구성/가격/기준은 아래 페이지에서 확인하실 수 있습니다.
-      </p>
+      <section class="details" aria-label="이벤트 가격 및 상담 접수 안내">
+        <div class="offer">
+          <p><span>올해 마지막 비대면 이벤트</span><strong>2주분 추가 증정</strong><span>(48,000원 상당) · 이벤트 참여 시</span></p>
+        </div>
+        <p class="deadline">바디올핏 이벤트 접수 마감<br><strong><time datetime="2026-12-20">2026년 12월 20일</time>까지</strong></p>
+        <p class="note">위 날짜는 바디올핏 행사 접수 마감일입니다. 비대면 진료·처방 가능 여부는 관련 기준과 의료진의 진료 판단에 따라 결정됩니다.</p>
+        <p class="note">프로그램 구성과 적용 조건은 아래 안내에서 확인하실 수 있습니다.</p>
 
       <div class="btns">
         <a class="btn primary"
@@ -156,12 +99,9 @@
           바디올핏 시작하기
         </a>
       </div>
-
-      <div class="footer">
-        바디올한의원 · BODYALL FIT PROGRAM
-      </div>
-    </section>
+        <p class="footer">바디올한의원 · BodyallFit</p>
+      </section>
+    </article>
   </main>
-
 </body>
 </html>
